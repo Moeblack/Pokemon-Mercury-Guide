@@ -25,6 +25,7 @@ def shell(title, body, relroot, extra='', section='', is_index=False, home=False
 <html lang="zh-CN">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{html.escape(title)} · 水银攻略</title>
+<meta name="description" content="宝可梦水银1.1玩家攻略：查宝可梦获取地点、道具出处、支线任务步骤、训练家队伍与交互地图。">
 <link rel="stylesheet" href="{relroot}assets/guide.css"><style>{ATLAS_CSS}</style>
 <script defer src="{relroot}assets/guide.js"></script>{extra}</head>
 <body><a class="skip-link" href="#main-content">跳到主要内容</a>
@@ -93,13 +94,15 @@ def main():
         body=render_article(rendered_text)
         (ROOT/'README.html').write_text(shell('使用说明',body,''),encoding='utf-8')
     counts={k:sum(r['section']==k and Path(r['url']).stem.isdigit() for r in records) for k in SECTIONS}
-    cards=''.join(f'<section class="card"><h2><a href="{k}/index.html">{v}</a></h2><p>{counts[k]} 个条目</p><a href="{k}/index.html">打开目录</a></section>' for k,v in SECTIONS.items())
+    card_copy = {'pokemon': ('找宝可梦', '捕获地点、进化方式与不同形态。'), 'items': ('找道具', '获取地点、购买渠道与道具用途。'), 'quests': ('做支线', '从接取条件到步骤与报酬。'), 'trainers': ('准备对战', '先看对手的队伍、等级与配招。')}
+    cards=''.join(f'<a class="browse-card" href="{k}/index.html"><span class="browse-number">0{i}</span><h3>{card_copy[k][0]} <span aria-hidden="true">↗</span></h3><p>{card_copy[k][1]}</p><small>{counts[k]:,} 条资料 · 浏览目录</small></a>' for i,k in enumerate(card_copy,1))
     filters = '<label><input type="radio" name="section" value="" checked>全部资料</label>' + ''.join(f'<label><input type="radio" name="section" value="{k}">{v}</label>' for k,v in SECTIONS.items())
-    body = f'''<div class="home-heading"><p class="eyebrow">水银 1.1 · 离线攻略</p><h1>查攻略，从名称或地点开始</h1><p>查任务步骤、道具出处、捕获地点与对手队伍，也可以按目录浏览。</p></div>
-<div class="atlas-feature"><strong>地图与野生Mega：</strong> <a href="pokemon/wild_mega.html">28种野生Mega所在地</a> · <a href="maps/index.html#map=3:76">打开RGB区域大地图</a></div>
-<section class="search-panel" aria-label="攻略搜索"><label for="q">搜索名称、地点或关键词</label><div class="searchbox"><input id="q" type="search" placeholder="例如：红色火球、泥炭块、月月熊、阿四" autocomplete="off" aria-describedby="search-help"><button id="clear-search" type="button">清除筛选</button></div><p id="search-help" class="muted">多个关键词用空格分隔，将查找同时包含这些词的资料。</p><fieldset><legend>筛选栏目</legend><div class="section-options">{filters}</div></fieldset></section>
-<p id="status" class="muted" role="status" aria-live="polite">输入关键词或选择栏目开始搜索，也可浏览下方目录。</p><div id="results"></div><button id="load-more" type="button" hidden>再显示60条</button>
-<div id="cards" class="cards">{cards}</div><noscript><p>搜索需要启用JavaScript；仍可使用上方栏目导航或目录阅读全部攻略。</p></noscript><p><a href="README.html">阅读资料说明</a> · <a href="data/delivery_summary.json">制作与覆盖记录</a></p>'''
+    body = f'''<div class="home-hero"><div class="hero-copy"><p class="eyebrow"><span class="version-tag">水银 1.1</span> 玩家攻略手册</p><h1>找到下一步，<br>继续冒险。</h1><p class="hero-description">宝可梦在哪里抓，道具去哪里找，下一场对战如何准备。<br class="wide-only">从一个名字开始，找到你需要的攻略。</p>
+<form id="search-form" class="search-panel" role="search" aria-label="攻略搜索"><label for="q">这次想找什么？</label><div class="searchbox"><input id="q" type="search" placeholder="宝可梦、道具、任务、训练家或地点" autocomplete="off" aria-describedby="search-help"><button class="search-submit" type="submit">搜索</button><button id="clear-search" type="button">重置</button></div><p id="search-help" class="muted">多个关键词用空格分隔，查找同时包含这些词的资料。</p><div class="quick-search" aria-label="搜索示例"><span>试着找</span><a href="#q=阿四">阿四</a><a href="#q=吃剩的东西">吃剩的东西</a><a href="#q=月月熊">月月熊</a></div><fieldset><legend>搜索范围</legend><div class="section-options">{filters}</div></fieldset></form></div>
+<a class="hero-map" href="maps/index.html#map=3:76"><div class="hero-map-image"><img src="maps/base/2f598d152e313dd7.png" width="1056" height="1024" alt="满金市商业区地图预览"><img class="hero-map-objects" src="maps/objects/3_76.png" width="1056" height="1024" alt=""></div><div class="hero-map-caption"><span class="eyebrow">不赶路，随便逛逛</span><strong>打开地图，发现本地看点 <span aria-hidden="true">→</span></strong><span>宝可梦 · 道具 · 任务 · 出入口</span></div></a></div>
+<section class="search-output" aria-label="搜索结果"><div class="search-status"><p id="status" class="muted" role="status" aria-live="polite">输入关键词开始搜索，或浏览下方攻略。</p><a id="map-search-link" href="maps/index.html" hidden>在地图中找地点 →</a></div><div id="results"></div><button id="load-more" type="button" hidden>再显示60条</button></section>
+<div id="cards"><div class="section-heading"><div><p class="eyebrow">按目标出发</p><h2>今天想完成什么？</h2></div><span class="muted">也可以直接浏览全部资料</span></div><div class="browse-grid">{cards}</div><a class="mega-feature" href="pokemon/wild_mega.html"><div><span class="eyebrow">特别探索</span><h2>寻找野生 Mega</h2><p>查看28种野生 Mega 的所在地与挑战记录。</p></div><span class="feature-arrow" aria-hidden="true">→</span></a></div>
+<noscript><p>搜索需要启用JavaScript；仍可使用栏目导航和目录阅读全部攻略。</p></noscript><details class="guide-about"><summary>关于这份攻略</summary><p>对应水银1.1版本。资料中的“待补”表示条件尚未整理清楚。</p><a href="README.html">阅读资料说明</a> · <a href="data/delivery_summary.json">制作与覆盖记录</a></details>'''
     payload=json.dumps(records,ensure_ascii=False).replace('<','\\u003c').replace('\u2028','\\u2028').replace('\u2029','\\u2029')
     (ROOT/'assets').mkdir(exist_ok=True)
     (ROOT/'assets/search-data.js').write_text('window.GUIDE_SEARCH_DATA = '+payload+';\n',encoding='utf-8')

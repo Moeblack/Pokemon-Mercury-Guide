@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>使用说明 · 水银攻略</title>
+<meta name="description" content="宝可梦水银1.1玩家攻略：查宝可梦获取地点、道具出处、支线任务步骤、训练家队伍与交互地图。">
 <link rel="stylesheet" href="assets/guide.css"><style>
 .atlas-cards{margin:32px 0;padding-top:8px;border-top:1px solid #d9e0eb}.atlas-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}.atlas-card{background:#fff;border:1px solid #d9e0eb;border-radius:10px;overflow:hidden}.atlas-card h3{font-size:16px;margin:12px 14px 6px}.atlas-card p{font-size:13px;line-height:1.6;margin:8px 14px 14px}.atlas-frame{height:240px;position:relative;background:#e8edf1}.atlas-frame img{position:absolute;width:100%;height:100%;object-fit:contain;image-rendering:pixelated}.atlas-frame svg{position:absolute;width:100%;height:100%;inset:0;pointer-events:none}.atlas-label{paint-order:stroke;stroke:#fff;stroke-width:3px;fill:#142b48;font-weight:bold;text-anchor:middle;dominant-baseline:central}.atlas-cards details{margin-top:16px}.atlas-cards summary{cursor:pointer;color:#155b9b;margin-bottom:12px}.atlas-feature{padding:12px 16px;background:#eaf0f8;border-radius:8px;margin:16px 0}.atlas-unavailable{height:240px;display:grid;place-items:center;color:#59677a;font-size:14px;padding:24px;text-align:center}
 </style>
@@ -9,8 +10,8 @@
 <body><a class="skip-link" href="#main-content">跳到主要内容</a>
 <header class="site-header"><a class="brand" href="index.html"><strong>宝可梦水银 1.1 · 玩家攻略</strong></a><nav aria-label="主要导航"><a href="quests/index.html">支线攻略</a><a href="items/index.html">道具搜集</a><a href="pokemon/index.html">宝可梦获取</a><a href="trainers/index.html">训练家配队</a><a href="maps/index.html">地点地图</a><a href="pokemon/wild_mega.html">野生Mega</a></nav></header>
 <main id="main-content" tabindex="-1"><nav class="breadcrumbs" aria-label="面包屑"><a href="index.html">首页</a><span aria-hidden="true"> / </span><span aria-current="page">使用说明</span></nav>
-<article class="article-content"><h1 id="11">宝可梦水银 1.1 · 玩家攻略</h1><details class="chapter-nav"><summary>本页目录</summary><ul><li class="chapter-level-2"><a href="#_1">四类目录</a></li><li class="chapter-level-2"><a href="#_2">怎样使用</a></li><li class="chapter-level-2"><a href="#_3">文件组织</a></li><li class="chapter-level-2"><a href="#rgbmega">RGB地图与野生Mega</a></li><li class="chapter-level-3"><a href="#_4">制作方案</a></li></ul></details>
-<p><strong>直接打开 <a href="index.html">攻略首页</a></strong>。这是本地离线攻略，不需要启动服务器；首页可按名称、地点或关键词搜索。</p>
+<article class="article-content"><h1 id="11">宝可梦水银 1.1 · 玩家攻略</h1><details class="chapter-nav"><summary>本页目录</summary><ul><li class="chapter-level-2"><a href="#_1">四类目录</a></li><li class="chapter-level-2"><a href="#_2">怎样使用</a></li><li class="chapter-level-2"><a href="#_3">文件组织</a></li><li class="chapter-level-2"><a href="#rgbmega">RGB地图与野生Mega</a></li><li class="chapter-level-3"><a href="#_4">制作方案</a></li><li class="chapter-level-2"><a href="#github-pages">GitHub Pages 发布</a></li></ul></details>
+<p><strong><a href="https://moeblack.github.io/Pokemon-Mercury-Guide/">在线攻略</a></strong> · <a href="https://github.com/Moeblack/Pokemon-Mercury-Guide">GitHub仓库</a> · <a href="index.html">本地攻略首页</a>。首页可按名称、地点或关键词搜索；发布包也支持直接打开HTML离线阅读。</p>
 <h2 id="_1">四类目录</h2>
 <div class="table-scroll" role="region" tabindex="0" aria-label="攻略表格，可横向滚动"><table>
 <thead>
@@ -59,7 +60,7 @@
 <li><code>data/</code>：结构化记录、目录范围、覆盖统计与补提取证据。</li>
 <li><code>scripts/</code>：各分类生成器与整合脚本；重生成某分类后运行<code>integrate_guide.py</code>，最后运行<code>build_site.py</code>。</li>
 </ul>
-<p>精灵图片与原始资料仍引用同级工程中的<code>../wiki_export/</code>资源，新地图底图保存在本攻略<code>maps/</code>内。移动攻略时应保留原资料的相对位置。ROM和存档未修改。</p>
+<p>研究工作区的精灵图片与原始资料引用同级工程<code>../wiki_export/</code>，地图底图保存在<code>maps/</code>内。公开发布使用独立的<code>_site/</code>：所需精灵图已收录到<code>assets/vendor/</code>，打包时改写图片路径；仅在本地工程存在的原始证据链接在网页版保留为文字说明。ROM与存档不包含在发布包内。</p>
 <h2 id="rgbmega">RGB地图与野生Mega</h2>
 <ul>
 <li><a href="maps/index.html#map=3:76">打开可缩放区域大地图</a></li>
@@ -73,6 +74,14 @@
 <p>副调色板按ROM实际加载方式读取<code>palettes+0xE0</code>，修正旧图配色偏差。图块包按地址缓存，主副组合生成一次图块图集；地图布局去重；一次批处理最多6路并行编码，攻略之间只复用图像并叠加矢量标记。区域只按连接方向和偏移拼接；楼梯和洞口作为入口跳转，冲突连接不强行拼合。</p>
 <p>界面离线运行，不加载CDN或服务器数据；支持搜索、筛选、缩放、点位与列表联动。出入口显示目标地图ID及对应入口编号，点击精确定位；双向对应与回程不同的记录分别标注。事件按入口、条件、类型归并；不同对象、条件、地图保留，奖励指令不累加为一次收益。详见<a href="data/atlas_event_identity_report.json">data/atlas_event_identity_report.json</a>。</p>
 <p>完整设计与字段约定见<a href="data/atlas_plan.json">data/atlas_plan.json</a>。生成顺序：<code>build_atlas_data.py</code> → <code>render_atlas.py</code> → <code>build_wild_mega_guide.py</code> → <code>integrate_guide.py</code> → <code>build_atlas_ui.py</code> → <code>build_site.py</code>。以上均通过<code>uv run</code>执行，地图渲染器按指纹增量复用，不逐张启动进程。</p>
-<p>截图来源问题见<a href="data/atlas_source_issues.json">data/atlas_source_issues.json</a>，建筑层明细见<a href="data/atlas_objects_report.json">data/atlas_objects_report.json</a>。已交付的冰天地<a href="maps/routes/ice_53_6_23_to_24.png">第二阶段路线图</a>及<a href="data/ice_53_6_route.json">前置条件与证据</a>保留供查阅。</p></article>
+<p>截图来源问题见<a href="data/atlas_source_issues.json">data/atlas_source_issues.json</a>，建筑层明细见<a href="data/atlas_objects_report.json">data/atlas_objects_report.json</a>。已交付的冰天地<a href="maps/routes/ice_53_6_23_to_24.png">第二阶段路线图</a>及<a href="data/ice_53_6_route.json">前置条件与证据</a>保留供查阅。</p>
+<h2 id="github-pages">GitHub Pages 发布</h2>
+<ul>
+<li>发布分支为远端<code>main</code>，工作流为<code>.github/workflows/pages.yml</code>。推送后自动打包并部署。</li>
+<li>现有生成页面与数据已提交，打包执行<code>uv run scripts/package_pages.py</code>，输出<code>_site/</code>，不需要父工程、ROM或存档。</li>
+<li>修改页面生成器后执行<code>uv run scripts/build_site.py</code>；地图摘要修改后执行<code>uv run scripts/build_atlas_ui.py</code>。提交生成产物后再推送。</li>
+<li>只有新增外部精灵图片时，在完整本地研究工作区执行<code>uv run scripts/package_pages.py --vendor-assets</code>，将新增<code>assets/vendor/</code>图片一并提交。</li>
+<li>首页提供目标导航、搜索示例和地图查询入口；地图技术信息由默认关闭的Debug开关控制。</li>
+</ul></article>
 <footer>资料依据指定水银1.1 ROM及解包记录。正文的“待补”表示该获取条件尚未整理清楚，不代表无法获得。</footer></main>
 <button id="back-to-top" type="button" hidden>返回顶部</button></body></html>

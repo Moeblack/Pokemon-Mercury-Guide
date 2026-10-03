@@ -9,3 +9,4 @@ data/runtime_trace/
 *.ewram
 *.iwram
 *.vram
+_site/

@@ -9,6 +9,8 @@
   const cards = document.querySelector('#cards');
   const more = document.querySelector('#load-more');
   const clear = document.querySelector('#clear-search');
+  const mapLink = document.querySelector('#map-search-link');
+  document.querySelector('#search-form')?.addEventListener('submit', event => { event.preventDefault(); if (Array.isArray(window.GUIDE_SEARCH_DATA) && !composing) { update(); status.scrollIntoView({block:'nearest'}); } });
   const normalize = (value) => value.trim().toLocaleLowerCase().normalize('NFKC');
   const source = window.GUIDE_SEARCH_DATA;
   if (!Array.isArray(source)) {
@@ -71,6 +73,7 @@
     more.hidden = true;
     more.removeAttribute('aria-disabled');
     cards.hidden = Boolean(terms.length || selected);
+    if (mapLink) { mapLink.hidden = !q.value.trim(); mapLink.href = 'maps/index.html#intent=find&q=' + encodeURIComponent(q.value.trim()); }
     if (!terms.length && !selected) {
       hits = [];
       status.textContent = '输入关键词或选择栏目开始搜索，也可浏览下方目录。';

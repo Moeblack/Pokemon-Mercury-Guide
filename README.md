@@ -1,6 +1,6 @@
 # 宝可梦水银 1.1 · 玩家攻略
 
-**直接打开 [攻略首页](index.html)**。这是本地离线攻略，不需要启动服务器；首页可按名称、地点或关键词搜索。
+**[在线攻略](https://moeblack.github.io/Pokemon-Mercury-Guide/)** · [GitHub仓库](https://github.com/Moeblack/Pokemon-Mercury-Guide) · [本地攻略首页](index.html)。首页可按名称、地点或关键词搜索；发布包也支持直接打开HTML离线阅读。
 
 ## 四类目录
 
@@ -28,7 +28,7 @@
 - `data/`：结构化记录、目录范围、覆盖统计与补提取证据。
 - `scripts/`：各分类生成器与整合脚本；重生成某分类后运行`integrate_guide.py`，最后运行`build_site.py`。
 
-精灵图片与原始资料仍引用同级工程中的`../wiki_export/`资源，新地图底图保存在本攻略`maps/`内。移动攻略时应保留原资料的相对位置。ROM和存档未修改。
+研究工作区的精灵图片与原始资料引用同级工程`../wiki_export/`，地图底图保存在`maps/`内。公开发布使用独立的`_site/`：所需精灵图已收录到`assets/vendor/`，打包时改写图片路径；仅在本地工程存在的原始证据链接在网页版保留为文字说明。ROM与存档不包含在发布包内。
 
 
 ## RGB地图与野生Mega
@@ -49,3 +49,11 @@
 完整设计与字段约定见[data/atlas_plan.json](data/atlas_plan.json)。生成顺序：`build_atlas_data.py` → `render_atlas.py` → `build_wild_mega_guide.py` → `integrate_guide.py` → `build_atlas_ui.py` → `build_site.py`。以上均通过`uv run`执行，地图渲染器按指纹增量复用，不逐张启动进程。
 
 截图来源问题见[data/atlas_source_issues.json](data/atlas_source_issues.json)，建筑层明细见[data/atlas_objects_report.json](data/atlas_objects_report.json)。已交付的冰天地[第二阶段路线图](maps/routes/ice_53_6_23_to_24.png)及[前置条件与证据](data/ice_53_6_route.json)保留供查阅。
+
+## GitHub Pages 发布
+
+- 发布分支为远端`main`，工作流为`.github/workflows/pages.yml`。推送后自动打包并部署。
+- 现有生成页面与数据已提交，打包执行`uv run scripts/package_pages.py`，输出`_site/`，不需要父工程、ROM或存档。
+- 修改页面生成器后执行`uv run scripts/build_site.py`；地图摘要修改后执行`uv run scripts/build_atlas_ui.py`。提交生成产物后再推送。
+- 只有新增外部精灵图片时，在完整本地研究工作区执行`uv run scripts/package_pages.py --vendor-assets`，将新增`assets/vendor/`图片一并提交。
+- 首页提供目标导航、搜索示例和地图查询入口；地图技术信息由默认关闭的Debug开关控制。
