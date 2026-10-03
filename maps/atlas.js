@@ -74,9 +74,9 @@
   function geometryLabel(p) { return p.geometry === 'trigger' ? `走入标出的 ${p.trigger_tiles.length} 格区域可触发对应事件；不是宝可梦站立位置，剧情条件仍需满足。` : placed(p) ? `已标出这条记录的位置，可在地图上查看。` : p.geometry === 'area' ? '资料只定位到这张地图，没有精确站位；请结合下方攻略寻找。' : '这条记录的具体位置尚未确定，可先阅读关联攻略。'; }
   const navigation = window.createAtlasNavigation({state,maps,regions,points,manifest,quality,guideURL,pageMatch,mapPageMatch,normalize,badge,number,guides:data.guides,normalizePage,
     onPoint:p=>selectPoint(p), onState:setNavigation,
-    onMap:chooseMap, onWorld:openWorldPicker
+    onMap:chooseMap, onWorld:openWorldPicker, onArea:id=>worldPicker.openSection(id)
   });
-  const worldPicker = window.createWorldPicker({state,maps,guideURL,onState:setNavigation,onMap:chooseMap});
+  const worldPicker = window.createWorldPicker({state,maps,points,guideURL,onState:setNavigation,onMap:chooseMap});
   function chooseMap(id) { state.point=null; $('detail').hidden=true; Object.assign(state,{intent:'browse',section:'local',topic:'all'}); selectMap(id); refreshResults(); viewport.focus({preventScroll:false}); }
   function openWorldPicker() { state.point=null; $('detail').hidden=true; Object.assign(state,{screen:'world',intent:'browse',section:'places'}); refreshResults(); writeHash(true); $('world-place').focus({preventScroll:false}); }
   $('open-world').onclick = openWorldPicker;

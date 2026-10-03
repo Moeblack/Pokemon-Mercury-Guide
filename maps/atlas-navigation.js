@@ -100,7 +100,7 @@ window.createAtlasNavigation = function(api) {
     if(terms.length){mapGroups(parent,ids);return;}
     const areas=Object.entries(window.ATLAS_WORLD.sections).filter(([,area])=>area.maps.some(row=>ids.includes(row.id))).sort((a,b)=>a[1].name.localeCompare(b[1].name,'zh'));
     const towns=areas.filter(([,area])=>!/(道路|水路|公路)$/.test(area.name)&&area.maps.some(row=>['CITY','TOWN'].includes(row.type)&&maps[row.id]&&!maps[row.id].source_issue));
-    const areaButton=([id,area])=>action(area.name,()=>{onState({screen:'world',worldSection:id});document.getElementById('world-selection-title').focus({preventScroll:false});},'neighbor-link');
+    const areaButton=([id,area])=>action(area.name,()=>api.onArea(id),'neighbor-link');
     if(towns.length){parent.append(el('h3','城镇','nav-heading'));const list=el('div',undefined,'town-list');for(const area of towns)list.append(areaButton(area));parent.append(list);}
     const others=areas.filter(area=>!towns.includes(area));if(others.length){const rest=el('details',undefined,'all-places');rest.append(el('summary',`道路与其他地点（${others.length}）`));paged(rest,others,areaButton);parent.append(rest);}
     const all=el('details',undefined,'all-places');all.append(el('summary',`按场景浏览（${ids.length}）`));all.addEventListener('toggle',()=>{if(all.open&&!all.dataset.loaded){mapGroups(all,ids);all.dataset.loaded='1';}});parent.append(all);
