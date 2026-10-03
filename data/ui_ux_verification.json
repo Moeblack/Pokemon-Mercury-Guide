@@ -1,0 +1,46 @@
+{
+  "scope": "离线UI/UX；不验证地图身份或ROM资料正确性",
+  "baseline": "4a5800f4",
+  "branch": "ui-ux/publication",
+  "home": {
+    "search": "找到 1 项，已显示 1 项。",
+    "pagination": "60→120",
+    "empty_recovery": true
+  },
+  "map": {
+    "history": true,
+    "dock": true,
+    "state_restoration": true,
+    "empty_recovery": true,
+    "selected_text_color": "rgb(23, 45, 54)",
+    "keyboard_pan": true,
+    "copy_feedback": "已复制当前地图、地点与筛选链接。"
+  },
+  "article": {
+    "toc_links": 4,
+    "broken_anchors": 0,
+    "scrollable_table": true,
+    "print_header_hidden": true
+  },
+  "responsive": {
+    "viewport": 390,
+    "pages": [
+      "首页",
+      "地图",
+      "阿四文章"
+    ],
+    "horizontal_overflow": false
+  },
+  "syntax": [
+    "maps/atlas.js",
+    "assets/search.js",
+    "assets/guide.js"
+  ],
+  "build_counts": {
+    "quests": 97,
+    "items": 750,
+    "pokemon": 1554,
+    "trainers": 743
+  },
+  "browser_script_errors": 0
+}

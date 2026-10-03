@@ -2,21 +2,25 @@
 <html lang="zh-CN">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>地图图鉴 · 宝可梦水银</title><link rel="stylesheet" href="atlas.css"><script defer src="atlas-data.js"></script><script defer src="atlas.js"></script></head>
 <body>
-<header><a href="../index.html">← 攻略首页</a><h1>地图图鉴 <small>宝可梦水银</small></h1><a href="../pokemon/wild_mega.html">野生 Mega →</a></header>
+<a class="skip-link" href="#viewport">跳到地图画布</a>
+<header><a class="brand" href="../index.html">宝可梦水银 <small>玩家攻略</small></a><nav aria-label="攻略导航"><a href="../index.html">搜索攻略</a><a href="index.html" aria-current="page">地图图鉴</a><a href="../pokemon/wild_mega.html">野生 Mega</a></nav></header>
+<div class="workspace-bar"><div><span class="eyebrow">地点与路线</span><h1>地图图鉴</h1></div><button id="toggle-nav" type="button" aria-expanded="true" aria-controls="navigation">收起导航</button></div>
 <main>
-<aside aria-label="地点导航">
-<div class="search-panel"><label for="search">搜索地图与地点</label><input id="search" type="search" placeholder="地图名、地点名、条件…" autocomplete="off"><fieldset id="filters"><legend>地点类型（可多选）</legend></fieldset><div id="page-scope" hidden><span></span><button id="clear-page" type="button">清除攻略筛选</button></div><p id="count" role="status"></p></div>
+<aside id="navigation" aria-label="地点导航">
+<div class="search-panel"><label for="search">搜索地图与地点</label><div class="search-row"><input id="search" type="search" placeholder="名称、地图编号、条件…" autocomplete="off"><button id="clear-filters" type="button">清除筛选</button></div><label class="scope-option"><input id="current-map" type="checkbox">仅当前地图</label><fieldset id="filters"><legend>地点类型（可多选）</legend></fieldset><div id="page-scope" hidden><span></span><button id="clear-page" type="button">清除攻略筛选</button></div><p id="count" role="status"></p></div>
 <div id="results" aria-label="搜索结果"></div>
-<section class="legend"><h2>地图图例</h2><div id="legend"></div><p>编号为各张地图内的地点编号；形状与颜色区分类型。深蓝堆叠标记显示地点数量，点击可逐项查看。范围记录仅提示所属地图，不代表精确位置。</p></section>
+<details class="legend"><summary>地图图例与定位说明</summary><div id="legend"></div><p>编号属于各自地图。聚合标记显示地点数量；范围记录与剧情触发格不代表人物站立位置。</p></details>
 </aside>
 <section class="map-panel" aria-label="地图浏览">
-<div class="map-toolbar"><div class="view-mode" role="group" aria-label="显示范围"><button id="mode-region" aria-pressed="true">区域拼接</button><button id="mode-map" aria-pressed="false">单张地图</button></div><span id="map-title"></span><label><input type="checkbox" id="boundaries" checked>边界 / 名称</label></div>
+<div class="map-heading"><h2 id="map-title"></h2><span id="map-quality" class="quality" role="status"></span></div>
+<div class="map-toolbar"><div class="view-mode" role="group" aria-label="显示范围"><button id="mode-region" aria-pressed="true">区域拼接</button><button id="mode-map" aria-pressed="false">单张地图</button></div><label><input type="checkbox" id="show-markers" checked>地点标记</label><label><input type="checkbox" id="boundaries" checked>边界 / 名称</label><button id="copy-location" type="button">复制定位链接</button></div>
 <div id="source-notice" role="status" hidden></div>
+<div class="link-feedback"><span id="copy-status" role="status"></span><label id="copy-fallback" hidden>定位链接<input id="location-link" readonly aria-label="可手动复制的定位链接"></label></div>
 <div id="viewport" tabindex="0" role="region" aria-label="地图画布，方向键平移，加减键缩放，F适应，0原生，Escape关闭明细"><div id="world"></div><div id="markers"></div><div id="empty" role="status"></div></div>
-<div class="zoom-controls" role="group" aria-label="地图缩放"><button id="zoom-in" aria-label="放大">＋</button><button id="zoom-out" aria-label="缩小">−</button><button id="fit">适应</button><button id="native">原生</button><button id="reset">复位</button></div>
+<div class="canvas-controls"><div class="zoom-controls" role="group" aria-label="地图缩放"><button id="zoom-in" aria-label="放大地图">＋</button><button id="zoom-out" aria-label="缩小地图">−</button><button id="fit">适应画布</button><button id="native">原生比例</button><button id="reset">复位视图</button></div><span id="view-status" aria-live="polite"></span></div>
 <div id="area-hint" role="status"></div>
-<section id="detail" hidden aria-labelledby="detail-title"><button id="close-detail" aria-label="关闭地点明细">×</button><p id="detail-kind"></p><h2 id="detail-title"></h2><p id="detail-map"></p><p id="detail-text"></p><p id="detail-geometry"></p><nav id="detail-links" aria-label="相关攻略"></nav></section>
-<footer><span id="view-status" aria-live="polite"></span><span>拖动平移 · 滚轮缩放 · 方向键移动</span></footer>
+<footer>拖动或方向键平移 · 滚轮或加减键缩放 · 图块可解码不等于场景身份已确认</footer>
 </section>
+<section id="detail" class="detail-panel" hidden aria-labelledby="detail-title"><button id="close-detail" aria-label="关闭地点明细">×</button><p id="detail-kind"></p><h2 id="detail-title"></h2><p id="detail-map"></p><p id="detail-text"></p><p id="detail-geometry"></p><nav id="detail-links" aria-label="相关攻略"></nav></section>
 </main>
 </body></html>

@@ -22,9 +22,26 @@
   }
   const enabled = new Set(Object.keys(kinds));
   const viewport = $('viewport'), world = $('world'), markers = $('markers');
-  const state = {map:null, point:null, page:'', mode:'region', query:'', scale:1, tx:0, ty:0, tiles:[], bounds:null};
+  const state = {map:null, point:null, page:'', mode:'region', query:'', currentOnly:false, scale:1, tx:0, ty:0, tiles:[], bounds:null};
   const tileNodes = new Map(), markerNodes = new Map();
   let frame = 0, filtered = [], lastFocus = null;
+  let writtenHash = null, searchTimer = 0, composing = false;
+  const normalize = value => String(value || '').normalize('NFKC').toLocaleLowerCase();
+  const searchText = new Map(points.map(p => [p.id, normalize(`${p.title || ''} ${p.detail || ''} ${p.map_id} ${maps[p.map_id]?.name || ''}`)]));
+  function quality(id) {
+    const m = maps[id], report = data.render?.maps?.[id];
+    if (report?.status === 'unavailable' || m?.render_status === 'unavailable') return {label:'无可用底图', warning:true};
+    if (m?.source_issue) return {label:'来源异常 / 同名布局', warning:true};
+    if (report?.status === 'partial' || m?.render_status === 'partial') return {label:'局部图块缺失', warning:true};
+    if (report?.status === 'ok' || m?.render_status === 'ok') return {label:'图块可解码', warning:false};
+    return {label:'渲染状态待确认', warning:true};
+  }
+  function clearFilters() {
+    clearTimeout(searchTimer); state.query = ''; state.currentOnly = false; state.page = '';
+    $('search').value = ''; $('current-map').checked = false;
+    for (const input of $('filters').querySelectorAll('input')) { input.checked = true; enabled.add(input.dataset.kind); }
+    refreshResults(); writeHash(); $('search').focus();
+  }
   function element(tag, text, cls) { const e = document.createElement(tag); if (text !== undefined) e.textContent = text; if (cls) e.className = cls; return e; }
   function badge(p) { return element('span', String(number.get(p.id)), `badge ${kinds[p.kind] ? p.kind : 'quest'}`); }
   function guideURL(page) {
@@ -49,48 +66,69 @@
   }
   function geometryLabel(p) { return p.geometry === 'trigger' ? `剧情触发区域 · ${p.trigger_tiles.length}格；不是宝可梦站立位置` : placed(p) ? `精确点位 · 格坐标 ${p.x}, ${p.y}` : p.geometry === 'area' ? '地图范围记录 · 未提供精确坐标' : '未定位记录 · 坐标缺失或越界，不在地图上打点'; }
   for (const [kind, label] of Object.entries(kinds)) {
-    const wrap = element('label'), input = element('input'); input.type = 'checkbox'; input.checked = true;
-    input.addEventListener('change', () => { input.checked ? enabled.add(kind) : enabled.delete(kind); refreshResults(); });
+    const wrap = element('label'), input = element('input'); input.type = 'checkbox'; input.checked = true; input.dataset.kind = kind;
+    input.addEventListener('change', () => { input.checked ? enabled.add(kind) : enabled.delete(kind); refreshResults(); writeHash(); });
     wrap.append(input, document.createTextNode(label)); $('filters').append(wrap);
     const key = element('span'); key.append(element('span', '·', `badge ${kind}`), document.createTextNode(label)); $('legend').append(key);
   }
-  function writeHash() {
+  function writeHash(push = false) {
     const hash = new URLSearchParams();
     if (state.map) hash.set('map', state.map);
     if (state.point) hash.set('point', state.point);
     if (state.page) hash.set('page', state.page);
-    // location.replace works under file:// without relying on History API permissions.
+    if (state.query) hash.set('q', state.query);
+    hash.set('mode', state.mode);
+    if (state.currentOnly) hash.set('scope', 'map');
+    if (enabled.size !== Object.keys(kinds).length) hash.set('types', [...enabled].join(','));
+    if (!$('show-markers').checked) hash.set('markers', '0');
+    if (!$('boundaries').checked) hash.set('labels', '0');
     const value = '#' + hash.toString();
-    if (location.hash !== value) location.replace(value);
+    if (location.hash === value) return;
+    try { history[push ? 'pushState' : 'replaceState'](null, '', value); }
+    catch { writtenHash = value; if (push) location.hash = value; else location.replace(value); }
   }
   function readHash() {
+    if (writtenHash === location.hash) { writtenHash = null; return; }
+    clearTimeout(searchTimer);
     const hash = new URLSearchParams(location.hash.slice(1));
-    const point = byId.get(hash.get('point'));
+    const point = byId.get(hash.get('point')), previousMode = state.mode;
     state.page = hash.get('page') || '';
     state.point = point?.id || null;
+    state.query = hash.get('q') || ''; $('search').value = state.query;
+    state.mode = hash.get('mode') === 'map' ? 'map' : 'region';
+    state.currentOnly = hash.get('scope') === 'map'; $('current-map').checked = state.currentOnly;
+    $('show-markers').checked = hash.get('markers') !== '0'; $('boundaries').checked = hash.get('labels') !== '0';
+    enabled.clear();
+    for (const kind of (hash.has('types') ? hash.get('types').split(',') : Object.keys(kinds))) if (kinds[kind]) enabled.add(kind);
+    for (const input of $('filters').querySelectorAll('input')) input.checked = enabled.has(input.dataset.kind);
     const pageMap = (manifest.page_locations || {})[normalizePage(state.page)]?.[0]?.map_id;
     const defaultMap = maps['3:76'] ? '3:76' : maps['3:66'] ? '3:66' : Object.keys(maps)[0];
     const id = point && maps[point.map_id] ? point.map_id : maps[hash.get('map')] ? hash.get('map') : maps[pageMap] ? pageMap : defaultMap;
-    if (id !== state.map) selectMap(id, false);
+    if (id !== state.map || previousMode !== state.mode) selectMap(id, false);
     refreshResults();
     if (point) selectPoint(point, false, false);
     else { state.point = null; $('detail').hidden = true; refreshHighlight(); schedule(); }
   }
   function refreshResults() {
-    const query = state.query.toLocaleLowerCase();
+    const terms = normalize(state.query).trim().split(/\s+/).filter(Boolean);
     const visibleMapIds = new Set(state.tiles.map(t => t.id));
     const currentRegion = maps[state.map]?.region;
     const sourceRank = id => maps[id]?.source_issue || data.render?.maps?.[id]?.status === 'unavailable' ? 1 : 0;
     const mapRank = id => id === state.map ? 0 : visibleMapIds.has(id) ? 1 : 2;
     const pointRank = p => p.map_id === state.map ? 0 : currentRegion != null && maps[p.map_id]?.region === currentRegion ? 1 : 2;
     const kindRank = {mega:0, quest:1, item:2, pokemon:3, trainer:4, warp:5};
-    filtered = points.filter(p => enabled.has(p.kind) && pageMatch(p) && (!query || `${p.title || ''} ${p.detail || ''} ${p.map_id} ${maps[p.map_id]?.name || ''}`.toLocaleLowerCase().includes(query)));
+    filtered = points.filter(p => enabled.has(p.kind) && pageMatch(p) && (!state.currentOnly || p.map_id === state.map) && terms.every(t => searchText.get(p.id).includes(t)));
     filtered.sort((a,b) => sourceRank(a.map_id)-sourceRank(b.map_id) || pointRank(a)-pointRank(b) || (kindRank[a.kind] ?? 6)-(kindRank[b.kind] ?? 6));
     const selectedIndex = filtered.findIndex(p => p.id === state.point);
     if (selectedIndex > 0) filtered.unshift(...filtered.splice(selectedIndex, 1));
-    const mapResults = Object.entries(maps).filter(([id, m]) => mapPageMatch(id) && (!query || `${id} ${m.name || ''}`.toLocaleLowerCase().includes(query)));
+    const mapResults = Object.entries(maps).filter(([id, m]) => mapPageMatch(id) && (!state.currentOnly || id === state.map) && terms.every(t => normalize(`${id} ${m.name || ''}`).includes(t)));
     mapResults.sort(([a],[b]) => sourceRank(a)-sourceRank(b) || mapRank(a)-mapRank(b));
     const results = $('results'); results.replaceChildren();
+    if (!mapResults.length && !filtered.length) {
+      const empty = element('div', undefined, 'no-results');
+      empty.append(element('strong', '没有匹配的地图或地点'), element('p', '试试其他名称，或清除当前筛选。'));
+      const clear = element('button', '清除筛选'); clear.onclick = clearFilters; empty.append(clear); results.append(empty);
+    }
     // Incremental list avoids constructing thousands of buttons on every keystroke.
     results.append(element('h2', `地图 · ${mapResults.length}`));
     const mapList = element('div'); results.append(mapList);
@@ -99,7 +137,7 @@
       for (const [id, m] of mapResults.slice(mapOffset, mapOffset + 8)) {
         const button = element('button', undefined, 'result map-result'); button.dataset.map = id;
         const text = element('span'); text.append(element('strong', m.name || id), element('small', `${id} · ${m.width} × ${m.height} 格`)); button.append(text);
-        if (m.source_issue || data.render?.maps?.[id]?.status === 'unavailable') text.append(element('small', m.source_issue ? '来源异常 / 同名不同布局' : 'ROM源失效 · 无可用底图', 'source-warning'));
+        const q = quality(id); text.append(element('small', q.label, `quality-label${q.warning ? ' source-warning' : ''}`));
         button.onclick = () => { state.point = null; $('detail').hidden = true; selectMap(id); refreshResults(); $('results').scrollTop = 0; };
         mapList.append(button);
       }
@@ -118,7 +156,7 @@
     }
     const morePoints = element('button', '显示更多地点'); morePoints.onclick = addPoints; results.append(morePoints);
     addMaps(); addPoints();
-    $('count').textContent = `${mapResults.length} 张地图 / ${filtered.length} 条地点；地图保留当前筛选结果`;
+    $('count').textContent = `${state.currentOnly ? '当前地图' : '全部地图'} · ${mapResults.length} 张地图 / ${filtered.length} 条地点`;
     $('page-scope').hidden = !state.page;
     $('page-scope').querySelector('span').textContent = `攻略关联：${state.page}`;
     schedule();
@@ -134,7 +172,9 @@
     }).filter(t => t.w > 0 && t.h > 0);
     state.bounds = state.tiles.length ? {x:Math.min(...state.tiles.map(t => t.x)), y:Math.min(...state.tiles.map(t => t.y)), right:Math.max(...state.tiles.map(t => t.x+t.w)), bottom:Math.max(...state.tiles.map(t => t.y+t.h))} : null;
     world.replaceChildren(); markers.replaceChildren(); tileNodes.clear(); markerNodes.clear();
-    $('map-title').textContent = state.mode === 'region' && region ? `${m.name || id}周边 · ${state.tiles.length}张连通地图` : m.name || id;
+    $('map-title').textContent = state.mode === 'region' && region ? `${m.name || id} [${id}] · ${state.tiles.length}张连通地图` : `${m.name || id} [${id}]`;
+    const q = quality(id); $('map-quality').textContent = q.label; $('map-quality').classList.toggle('warning', q.warning);
+    $('map-quality').title = '渲染状态与场景身份是不同信息；图块可解码不代表已确认正常游戏用途。';
     const notice = $('source-notice'), report = data.render?.maps?.[id];
     notice.replaceChildren();
     if (m.source_issue) {
@@ -149,16 +189,12 @@
     } else if (report?.status === 'unavailable') {
       notice.append(element('p', report.errors?.some(e => e.includes('0xFFFF')) ? `${id}：本图引用的图块描述表为FF填充，源数据失效；不再显示误生成的黑图。` : `${id}：ROM图块源无法解码，没有可用底图。`));
     }
+    if (report?.status === 'partial') notice.append(element('p', `${id}：本图存在局部图块或调色板缺口；已保留可显示内容，未将其标为完整实景。`));
     if (report?.object_errors?.length) notice.append(element('p', `${id}：${report.object_errors.length}个大型固定对象未绘制，图形或调色板来源尚未解析；地形底图仍可浏览。`));
     notice.hidden = !notice.childNodes.length;
-    requestAnimationFrame(() => {
-      const top = viewport.offsetTop;
-      document.querySelector('.zoom-controls').style.top = `${top + 12}px`;
-      $('detail').style.top = `${top + 56}px`;
-    });
     $('mode-region').setAttribute('aria-pressed', String(state.mode === 'region'));
     $('mode-map').setAttribute('aria-pressed', String(state.mode === 'map'));
-    fit(); refreshHighlight(); if (sync) writeHash();
+    fit(); refreshHighlight(); if (sync) writeHash(true);
   }
   function fit() {
     const b = state.bounds; if (!b) return;
@@ -204,12 +240,12 @@
     refreshResults();
     const activeRow = $('results').querySelector('.point-result.active');
     if (activeRow) $('results').scrollTop += activeRow.getBoundingClientRect().top - $('results').getBoundingClientRect().top - 8;
-    schedule(); if (sync) writeHash();
-    if (focus) $('close-detail').focus({preventScroll:true});
+    schedule(); if (sync) writeHash(true);
+    if (focus) $('close-detail').focus({preventScroll:!matchMedia('(max-width:760px)').matches});
   }
   function refreshHighlight() {
     for (const e of document.querySelectorAll('.point-result')) { const active = e.dataset.point === state.point; e.classList.toggle('active', active); e.setAttribute('aria-pressed', String(active)); }
-    for (const e of document.querySelectorAll('.map-result')) e.classList.toggle('active', e.dataset.map === state.map);
+    for (const e of document.querySelectorAll('.map-result')) { const active = e.dataset.map === state.map; e.classList.toggle('active', active); e.setAttribute('aria-pressed', String(active)); }
   }
   function schedule() { if (!frame) frame = requestAnimationFrame(draw); }
   function showCluster(members, anchor) {
@@ -269,11 +305,11 @@
         world.append(node); tileNodes.set(t.id, node);
       }
       node.querySelector('.map-name').style.transform = `scale(${1/s})`;
-      node.classList.toggle('selected-area', !!selection && !placed(selection) && selection.map_id === t.id);
+      node.classList.toggle('selected-area', $('show-markers').checked && !!selection && !placed(selection) && selection.map_id === t.id);
     }
     const tilesById = new Map(visible.map(t => [t.id,t]));
-    const candidates = filtered.slice();
-    if (selection && !candidates.includes(selection)) candidates.push(selection);
+    const candidates = $('show-markers').checked ? filtered.slice() : [];
+    if ($('show-markers').checked && selection && !candidates.includes(selection)) candidates.push(selection);
     for (const node of tileNodes.values()) node.querySelector('.trigger-regions')?.remove();
     for (const p of candidates.filter(p => p.geometry === 'trigger')) {
       const tile = tilesById.get(p.map_id), node = tileNodes.get(p.map_id); if (!tile || !node) continue;
@@ -320,8 +356,8 @@
     for (const [id,node] of markerNodes) if (!displayed.has(id)) { node.remove(); markerNodes.delete(id); }
     const tileIds = new Set(state.tiles.map(t => t.id));
     const areas = filtered.filter(p => tileIds.has(p.map_id) && !placed(p));
-    $('area-hint').textContent = selection && !placed(selection) ? `${selection.title}：${geometryLabel(selection)}。虚线框仅表示所属地图。` : areas.length ? `此视图有 ${areas.length} 条范围 / 未定位记录，请在左侧查看；不绘制虚构点位。` : '';
-    $('view-status').textContent = `${Math.round(s*100)}% · ${visible.length} / ${state.tiles.length} 张底图在视口附近`;
+    $('area-hint').textContent = selection && !placed(selection) ? `${selection.title}：${geometryLabel(selection)}。虚线框仅表示所属地图。` : areas.length ? `此视图有 ${areas.length} 条范围 / 未定位记录，可在导航列表查看；不绘制虚构点位。` : '';
+    $('view-status').textContent = `${Math.round(s*100)}% · ${visible.length} / ${state.tiles.length} 张底图${$('show-markers').checked ? '' : ' · 标记已隐藏'}`;
     if (state.map) $('empty').textContent = state.tiles.length ? '' : '此地图尚无有效尺寸，无法显示底图。';
   }
   function zoom(factor, x = viewport.clientWidth/2, y = viewport.clientHeight/2) {
@@ -333,9 +369,26 @@
   $('zoom-in').onclick = () => zoom(1.4); $('zoom-out').onclick = () => zoom(1/1.4);
   $('fit').onclick = fit; $('native').onclick = () => zoom(1/state.scale);
   $('reset').onclick = () => { state.point = null; $('detail').hidden = true; selectMap(state.map); refreshHighlight(); };
-  $('boundaries').onchange = schedule;
-  for (const mode of ['region','map']) $('mode-'+mode).onclick = () => { state.mode = mode; selectMap(state.map, false); const p = byId.get(state.point); if (p) focusPoint(p); schedule(); };
-  $('search').oninput = event => { state.query = event.target.value.trim(); refreshResults(); };
+  $('boundaries').onchange = () => { schedule(); writeHash(); };
+  $('show-markers').onchange = () => { schedule(); writeHash(); };
+  $('current-map').onchange = () => { state.currentOnly = $('current-map').checked; refreshResults(); writeHash(); };
+  $('clear-filters').onclick = clearFilters;
+  $('toggle-nav').onclick = () => {
+    const collapsed = document.body.classList.toggle('nav-collapsed');
+    $('toggle-nav').textContent = collapsed ? '展开导航' : '收起导航';
+    $('toggle-nav').setAttribute('aria-expanded', String(!collapsed)); schedule();
+  };
+  $('copy-location').onclick = async () => {
+    writeHash(); $('copy-fallback').hidden = true;
+    try { await navigator.clipboard.writeText(location.href); $('copy-status').textContent = '已复制当前地图、地点与筛选链接。'; }
+    catch { $('copy-fallback').hidden = false; $('location-link').value = location.href; $('location-link').focus(); $('location-link').select(); $('copy-status').textContent = '浏览器未允许自动复制，请复制下面的链接。'; }
+  };
+  for (const mode of ['region','map']) $('mode-'+mode).onclick = () => { state.mode = mode; selectMap(state.map, false); const p = byId.get(state.point); if (p) focusPoint(p); refreshResults(); writeHash(); };
+  const applySearch = () => { clearTimeout(searchTimer); state.query = $('search').value.trim(); refreshResults(); writeHash(); };
+  $('search').addEventListener('compositionstart', () => { composing = true; clearTimeout(searchTimer); });
+  $('search').addEventListener('compositionend', () => { composing = false; applySearch(); });
+  $('search').oninput = () => { clearTimeout(searchTimer); if (!composing) searchTimer = setTimeout(applySearch, 120); };
+  $('search').onkeydown = event => { if (event.isComposing) return; if (event.key === 'Enter') applySearch(); if (event.key === 'Escape') { event.stopPropagation(); $('search').value = ''; applySearch(); } };
   $('clear-page').onclick = () => { state.page = ''; refreshResults(); writeHash(); };
   viewport.addEventListener('wheel', event => { event.preventDefault(); const rect = viewport.getBoundingClientRect(); zoom(Math.exp(-Math.max(-120,Math.min(120,event.deltaY))*.002), event.clientX-rect.left, event.clientY-rect.top); }, {passive:false});
   let drag = null;
@@ -351,7 +404,13 @@
   });
   document.addEventListener('keydown', event => { if (event.key === 'Escape' && !$('detail').hidden) closeDetail(); });
   window.addEventListener('hashchange', readHash);
-  new ResizeObserver(() => schedule()).observe(viewport);
+  let oldWidth = viewport.clientWidth, oldHeight = viewport.clientHeight;
+  new ResizeObserver(() => {
+    const w = viewport.clientWidth, h = viewport.clientHeight;
+    if (oldWidth && oldHeight) { state.tx += (w-oldWidth)/2; state.ty += (h-oldHeight)/2; }
+    oldWidth = w; oldHeight = h; schedule();
+  }).observe(viewport);
   if (!Object.keys(maps).length) $('empty').textContent = '地图数据尚未生成，请先运行离线数据生成器。';
   readHash();
+  writeHash();
 })();

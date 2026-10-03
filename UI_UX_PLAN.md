@@ -1,0 +1,47 @@
+# 玩家攻略 UI/UX 优化清单
+
+## 基线与范围
+
+- 原仓库：同级 `player_guide`，基线提交 `4a5800f4`。
+- 本地 fork：`player_guide-ui-fork`；分支 `ui-ux/publication`；没有发布到远端服务。
+- 使用者任务：查找攻略、阅读长文、在地图与地点说明之间定位和返回。
+- 目标：减少地图遮挡、搜索和导航成本，统一离线阅读体验。
+- 界面操作仅改变显示、筛选和浏览位置，可清除或返回；不修改ROM、存档、地图身份及攻略事实。
+- 原始素材与证据仍引用同级 `wiki_export`、`maps_research` 等目录，fork不能单独搬离父工程后假定这些引用仍有效。
+- `data/runtime_trace/` 含本机模拟器及用户存档衍生快照，不纳入Git；其他既有资料和离线产物已保留。
+
+## 本轮实现清单
+
+| 编号 | 优化 | 明确行为 | 设计依据 |
+|---|---|---|---|
+| U01 | 统一视觉层级 | 纸色背景、深色文字、绿色强调；字号/间距一致，不以大量卡片替代信息层级 | rule/structure-before-containers |
+| U02 | 首页搜索 | 输入标签、可见分类、计数、分批显示、无结果恢复；URL保存搜索条件，中文输入完成后搜索 | rule/empty-state-action；rule/preserve-user-input |
+| U03 | 长文阅读 | 面包屑、可收起章节目录、返回顶部、打印样式；宽表格局部滚动 | rule/navigation-vs-action；rule/cover-reachable-states |
+| U04 | 地图布局 | 详情独立停靠，避免悬浮覆盖；导航可收起；窄屏上下布局 | rule/inline-before-modal；rule/preserve-mental-model |
+| U05 | 信息密度 | “仅当前地图”作用于搜索结果；“显示地点标记”只控制画布，保留结果与详情 | rule/name-object-scope-consequence；rule/smallest-intervention |
+| U06 | 浏览上下文 | 地图跳转可后退/前进，链接保留搜索、类型、视图和标记状态；输入变化不堆积历史记录 | rule/preserve-mental-model |
+| U07 | 资料状态 | 可解码、局部缺块、来源异常、无底图区分显示；不把可解码等同游戏实景已核实，不自动删除旧槽位 | rule/cover-reachable-states |
+| U08 | 键盘与恢复 | 可见焦点、清晰控制名称、跳到主要内容、空结果可清除；保留画布键盘操作 | rule/keyboard-complete-flow；rule/accessible-name-required |
+
+## 状态契约
+
+- 搜索：初始目录、正常结果、零结果、继续显示、查询/分类恢复。
+- 地图：有底图、缺块、源异常、无底图、标记隐藏、当前图筛选、详情开/关、导航开/关、宽屏/窄屏。
+- 不引入账户、权限、网络请求或不可逆操作；继续支持直接打开本地HTML，不加载CDN。
+- 地图像素内容和旧地图槽位问题不属于这轮UI完成声明。
+
+## 构建与核对
+
+仅重建fork的站点HTML；不重新解包或重绘地形。完成后由Main统一核对搜索、分页、详情、地图导航历史、筛选、窄屏及离线入口，并提交优化结果。
+
+## 实现结果
+
+- U01—U08 已在此fork实现；原仓库保留基线，不合并回原目录。
+- 首页搜索数据独立为 `assets/search-data.js`，首页HTML为4,899字节；搜索仍需加载完整本地索引，不将HTML缩小宣称为索引总量减少。
+- 首页/正文源文件：`scripts/build_site.py`、`assets/guide.css`、`assets/guide.js`、`assets/search.js`。
+- 地图源文件：`maps/index.html`、`maps/atlas.css`、`maps/atlas.js`。
+- `uv run scripts/build_site.py` 重建成功；三份前端脚本通过 `node --check`。
+- 使用实际Chromium、`file://`入口核对：阿四搜索、分类、60→120条分页、刷新恢复、零结果恢复；地图历史返回、当前图筛选、标记开关、详情不覆盖、URL状态恢复、导航收起、键盘平移、定位链接复制。
+- 文章目录4个锚点全部存在，表格局部滚动，打印隐藏导航；首页、地图、文章在390px宽度均无整页横向溢出，三个页面无脚本错误。
+- 已修复验证中发现的选中地点浅色底白字冲突。详见 `data/ui_ux_verification.json`。
+- 仍未解决的地图数据身份问题保持原记录；本次UI优化不声称地图内容已经全部正确。
