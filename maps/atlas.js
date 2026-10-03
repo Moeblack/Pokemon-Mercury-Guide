@@ -27,7 +27,7 @@
   let frame = 0, filtered = [], lastFocus = null;
   let writtenHash = null, searchTimer = 0, composing = false;
   const normalize = value => String(value || '').normalize('NFKC').toLocaleLowerCase();
-  const searchText = new Map(points.map(p => [p.id, normalize(`${p.title || ''} ${p.detail || ''} ${p.map_id} ${maps[p.map_id]?.name || ''}`)]));
+  const searchText = new Map(points.map(p => [p.id, normalize(`${p.title || ''} ${p.detail || ''} ${(p.search_aliases || []).join(' ')} ${p.map_id} ${maps[p.map_id]?.name || ''}`)]));
   function quality(id) {
     const m = maps[id], report = data.render?.maps?.[id];
     if (report?.status === 'unavailable' || m?.render_status === 'unavailable') return {label:'无可用底图', warning:true};

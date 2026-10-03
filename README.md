@@ -60,3 +60,10 @@
 - “游戏内地图”的地点点击、名称选择及左侧城镇按钮均直接打开场景，不再先筛选卡片。进入后可用“同地点场景”切换其他地图。默认场景按无来源异常、有底图、室外地图优先，同级优先攻略地点记录较多的场景；这只是浏览默认顺序，不定义游戏剧情入口。
 - 区域底图、热点与标定来源：原研究工程`reference/azoth-wiki/docs/locations/worldmap.png`、`worldmap_data.json`、`worldmap.html`；不是本轮新提取的ROM图形。场景归属取本ROM导出的`wiki_export/world/data/maps.json`地区编号，已核对参考地区名称一致；不导入参考百科的遭遇数据。
 - 区域导航生成器为`uv run scripts/build_world_picker.py`，需要完整本地研究工程；生成的`maps/world-data.js`和`maps/world/region.png`已随仓库发布，Pages部署不需要父工程。技术信息仍由默认关闭的Debug开关控制。
+
+## TM/HM招式名称
+
+- 网页、目录、搜索和地图将学习器显示为“TM01 · 真气拳”等形式；对应120个TM和8个HM。原始数据与Markdown中的游戏道具名保留，不改写ROM资料。
+- `data/tm_names.json`保存道具索引、游戏内原名、TM/HM编号、招式ID及名称。对应链为`TM_CASE道具.unk19 - 1 → tmhm.slot → move_id / move_name`，源表来自`../wiki_export/core/data/tmhm.json`，ROM招式表地址为`0x097E87AA`。
+- TM51—TM58在游戏内名为“招式学习器51”等，网页统一显示TM编号与招式名；搜索仍支持原名。显示转换器为`scripts/tm_names.py`，保留链接地址和代码片段。
+- 完整研究工作区可执行`uv run scripts/build_tm_names.py`更新冻结映射，再执行`uv run scripts/build_site.py`和`uv run scripts/build_atlas_ui.py`。普通页面重建只需要仓库内的冻结映射。

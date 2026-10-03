@@ -10,7 +10,7 @@
 <body><a class="skip-link" href="#main-content">跳到主要内容</a>
 <header class="site-header"><a class="brand" href="index.html"><strong>宝可梦水银 1.1 · 玩家攻略</strong></a><nav aria-label="主要导航"><a href="quests/index.html">支线攻略</a><a href="items/index.html">道具搜集</a><a href="pokemon/index.html">宝可梦获取</a><a href="trainers/index.html">训练家配队</a><a href="maps/index.html">地点地图</a><a href="pokemon/wild_mega.html">野生Mega</a></nav></header>
 <main id="main-content" tabindex="-1"><nav class="breadcrumbs" aria-label="面包屑"><a href="index.html">首页</a><span aria-hidden="true"> / </span><span aria-current="page">使用说明</span></nav>
-<article class="article-content"><h1 id="11">宝可梦水银 1.1 · 玩家攻略</h1><details class="chapter-nav"><summary>本页目录</summary><ul><li class="chapter-level-2"><a href="#_1">四类目录</a></li><li class="chapter-level-2"><a href="#_2">怎样使用</a></li><li class="chapter-level-2"><a href="#_3">文件组织</a></li><li class="chapter-level-2"><a href="#rgbmega">RGB地图与野生Mega</a></li><li class="chapter-level-3"><a href="#_4">制作方案</a></li><li class="chapter-level-2"><a href="#github-pages">GitHub Pages 发布</a></li></ul></details>
+<article class="article-content"><h1 id="11">宝可梦水银 1.1 · 玩家攻略</h1><details class="chapter-nav"><summary>本页目录</summary><ul><li class="chapter-level-2"><a href="#_1">四类目录</a></li><li class="chapter-level-2"><a href="#_2">怎样使用</a></li><li class="chapter-level-2"><a href="#_3">文件组织</a></li><li class="chapter-level-2"><a href="#rgbmega">RGB地图与野生Mega</a></li><li class="chapter-level-3"><a href="#_4">制作方案</a></li><li class="chapter-level-2"><a href="#github-pages">GitHub Pages 发布</a></li><li class="chapter-level-2"><a href="#tmhm">TM/HM招式名称</a></li></ul></details>
 <p><strong><a href="https://moeblack.github.io/Pokemon-Mercury-Guide/">在线攻略</a></strong> · <a href="https://github.com/Moeblack/Pokemon-Mercury-Guide">GitHub仓库</a> · <a href="index.html">本地攻略首页</a>。首页可按名称、地点或关键词搜索；发布包也支持直接打开HTML离线阅读。</p>
 <h2 id="_1">四类目录</h2>
 <div class="table-scroll" role="region" tabindex="0" aria-label="攻略表格，可横向滚动"><table>
@@ -85,6 +85,13 @@
 <li>“游戏内地图”的地点点击、名称选择及左侧城镇按钮均直接打开场景，不再先筛选卡片。进入后可用“同地点场景”切换其他地图。默认场景按无来源异常、有底图、室外地图优先，同级优先攻略地点记录较多的场景；这只是浏览默认顺序，不定义游戏剧情入口。</li>
 <li>区域底图、热点与标定来源：原研究工程<code>reference/azoth-wiki/docs/locations/worldmap.png</code>、<code>worldmap_data.json</code>、<code>worldmap.html</code>；不是本轮新提取的ROM图形。场景归属取本ROM导出的<code>wiki_export/world/data/maps.json</code>地区编号，已核对参考地区名称一致；不导入参考百科的遭遇数据。</li>
 <li>区域导航生成器为<code>uv run scripts/build_world_picker.py</code>，需要完整本地研究工程；生成的<code>maps/world-data.js</code>和<code>maps/world/region.png</code>已随仓库发布，Pages部署不需要父工程。技术信息仍由默认关闭的Debug开关控制。</li>
+</ul>
+<h2 id="tmhm">TM/HM招式名称</h2>
+<ul>
+<li>网页、目录、搜索和地图将学习器显示为“TM01 · 真气拳”等形式；对应120个TM和8个HM。原始数据与Markdown中的游戏道具名保留，不改写ROM资料。</li>
+<li><code>data/tm_names.json</code>保存道具索引、游戏内原名、TM/HM编号、招式ID及名称。对应链为<code>TM_CASE道具.unk19 - 1 → tmhm.slot → move_id / move_name</code>，源表来自<code>../wiki_export/core/data/tmhm.json</code>，ROM招式表地址为<code>0x097E87AA</code>。</li>
+<li>TM51—TM58在游戏内名为“招式学习器51”等，网页统一显示TM编号与招式名；搜索仍支持原名。显示转换器为<code>scripts/tm_names.py</code>，保留链接地址和代码片段。</li>
+<li>完整研究工作区可执行<code>uv run scripts/build_tm_names.py</code>更新冻结映射，再执行<code>uv run scripts/build_site.py</code>和<code>uv run scripts/build_atlas_ui.py</code>。普通页面重建只需要仓库内的冻结映射。</li>
 </ul></article>
 <footer>资料依据指定水银1.1 ROM及解包记录。正文的“待补”表示该获取条件尚未整理清楚，不代表无法获得。</footer></main>
 <button id="back-to-top" type="button" hidden>返回顶部</button></body></html>

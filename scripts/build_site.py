@@ -7,6 +7,7 @@ from pathlib import Path
 import json, re, html, os
 import markdown
 from atlas_cards import AtlasCards, CSS as ATLAS_CSS
+from tm_names import TMNames
 ROOT = Path(__file__).resolve().parents[1]
 SECTIONS = {'quests':'支线攻略','items':'道具搜集','pokemon':'宝可梦获取','trainers':'训练家配队'}
 
@@ -60,9 +61,10 @@ def render_article(text):
 def main():
     records=[]
     atlas=AtlasCards(ROOT)
+    tm_names=TMNames(ROOT)
     for section in SECTIONS:
         for p in sorted((ROOT/section).rglob('*.md')):
-            text=p.read_text(encoding='utf-8-sig')
+            text=tm_names.markdown(p.read_text(encoding='utf-8-sig'))
             match=re.search(r'^#\s+(.+)',text,re.M)
             title=match.group(1) if match else p.stem
             # Rewrite only guide Markdown links with existing local targets. Evidence links remain unchanged.
@@ -78,7 +80,7 @@ def main():
             rendered_text=re.sub(r'(\]\()([^\s)]+)(\))',rewrite,text)
             rendered_text=rendered_text.replace('<details>','<details markdown="1">')
             body=render_article(rendered_text)
-            body += atlas.cards(p)
+            body += tm_names.markdown(atlas.cards(p))
             depth=len(p.relative_to(ROOT).parts)-1
             out=p.with_suffix('.html')
             out.write_text(shell(title,body,'../'*depth,section=section,is_index=p == ROOT/section/'index.md',mega=p == ROOT/'pokemon/wild_mega.md'),encoding='utf-8')
@@ -86,6 +88,8 @@ def main():
                 plain=re.sub(r'\[[^\]]*\]\([^)]*\)',lambda m:m.group(0).split(']')[0][1:],text)
                 plain=re.sub(r'[`#*|>]|0x[0-9A-Fa-f]+',' ',plain)
                 plain=re.sub(r'\s+',' ',plain)
+                if section == 'items' and p.stem.isdigit():
+                    plain += ' ' + tm_names.search_aliases(int(p.stem))
                 records.append({'title':title,'section':section,'url':out.relative_to(ROOT).as_posix(),'text':plain})
     p=ROOT/'README.md'
     if p.exists():

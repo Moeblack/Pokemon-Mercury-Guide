@@ -1,0 +1,1292 @@
+{
+  "source": {
+    "mapping": "../wiki_export/core/data/tmhm.json",
+    "items": "data/items.json",
+    "join": "TM_CASE item.unk19 - 1 = tmhm.slot",
+    "rom_move_table": "0x097E87AA"
+  },
+  "tm_count": 120,
+  "hm_count": 8,
+  "items": [
+    {
+      "item_index": 289,
+      "item_id": 289,
+      "raw_name": "TM01",
+      "slot": 0,
+      "label": "TM01",
+      "move_id": 264,
+      "move_name": "真气拳",
+      "display_name": "TM01 · 真气拳"
+    },
+    {
+      "item_index": 290,
+      "item_id": 290,
+      "raw_name": "TM02",
+      "slot": 1,
+      "label": "TM02",
+      "move_id": 337,
+      "move_name": "龙爪",
+      "display_name": "TM02 · 龙爪"
+    },
+    {
+      "item_index": 291,
+      "item_id": 291,
+      "raw_name": "TM03",
+      "slot": 2,
+      "label": "TM03",
+      "move_id": 352,
+      "move_name": "水之波动",
+      "display_name": "TM03 · 水之波动"
+    },
+    {
+      "item_index": 292,
+      "item_id": 292,
+      "raw_name": "TM04",
+      "slot": 3,
+      "label": "TM04",
+      "move_id": 347,
+      "move_name": "冥想",
+      "display_name": "TM04 · 冥想"
+    },
+    {
+      "item_index": 293,
+      "item_id": 293,
+      "raw_name": "TM05",
+      "slot": 4,
+      "label": "TM05",
+      "move_id": 46,
+      "move_name": "吼叫",
+      "display_name": "TM05 · 吼叫"
+    },
+    {
+      "item_index": 294,
+      "item_id": 294,
+      "raw_name": "TM06",
+      "slot": 5,
+      "label": "TM06",
+      "move_id": 92,
+      "move_name": "剧毒",
+      "display_name": "TM06 · 剧毒"
+    },
+    {
+      "item_index": 295,
+      "item_id": 295,
+      "raw_name": "TM07",
+      "slot": 6,
+      "label": "TM07",
+      "move_id": 258,
+      "move_name": "冰雹",
+      "display_name": "TM07 · 冰雹"
+    },
+    {
+      "item_index": 296,
+      "item_id": 296,
+      "raw_name": "TM08",
+      "slot": 7,
+      "label": "TM08",
+      "move_id": 339,
+      "move_name": "健美",
+      "display_name": "TM08 · 健美"
+    },
+    {
+      "item_index": 297,
+      "item_id": 297,
+      "raw_name": "TM09",
+      "slot": 8,
+      "label": "TM09",
+      "move_id": 331,
+      "move_name": "种子机关枪",
+      "display_name": "TM09 · 种子机关枪"
+    },
+    {
+      "item_index": 298,
+      "item_id": 298,
+      "raw_name": "TM10",
+      "slot": 9,
+      "label": "TM10",
+      "move_id": 237,
+      "move_name": "觉醒力量",
+      "display_name": "TM10 · 觉醒力量"
+    },
+    {
+      "item_index": 299,
+      "item_id": 299,
+      "raw_name": "TM11",
+      "slot": 10,
+      "label": "TM11",
+      "move_id": 241,
+      "move_name": "大晴天",
+      "display_name": "TM11 · 大晴天"
+    },
+    {
+      "item_index": 300,
+      "item_id": 300,
+      "raw_name": "TM12",
+      "slot": 11,
+      "label": "TM12",
+      "move_id": 269,
+      "move_name": "挑衅",
+      "display_name": "TM12 · 挑衅"
+    },
+    {
+      "item_index": 301,
+      "item_id": 301,
+      "raw_name": "TM13",
+      "slot": 12,
+      "label": "TM13",
+      "move_id": 58,
+      "move_name": "冰冻光束",
+      "display_name": "TM13 · 冰冻光束"
+    },
+    {
+      "item_index": 302,
+      "item_id": 302,
+      "raw_name": "TM14",
+      "slot": 13,
+      "label": "TM14",
+      "move_id": 59,
+      "move_name": "暴风雪",
+      "display_name": "TM14 · 暴风雪"
+    },
+    {
+      "item_index": 303,
+      "item_id": 303,
+      "raw_name": "TM15",
+      "slot": 14,
+      "label": "TM15",
+      "move_id": 63,
+      "move_name": "破坏光线",
+      "display_name": "TM15 · 破坏光线"
+    },
+    {
+      "item_index": 304,
+      "item_id": 304,
+      "raw_name": "TM16",
+      "slot": 15,
+      "label": "TM16",
+      "move_id": 113,
+      "move_name": "光墙",
+      "display_name": "TM16 · 光墙"
+    },
+    {
+      "item_index": 305,
+      "item_id": 305,
+      "raw_name": "TM17",
+      "slot": 16,
+      "label": "TM17",
+      "move_id": 182,
+      "move_name": "守住",
+      "display_name": "TM17 · 守住"
+    },
+    {
+      "item_index": 306,
+      "item_id": 306,
+      "raw_name": "TM18",
+      "slot": 17,
+      "label": "TM18",
+      "move_id": 240,
+      "move_name": "求雨",
+      "display_name": "TM18 · 求雨"
+    },
+    {
+      "item_index": 307,
+      "item_id": 307,
+      "raw_name": "TM19",
+      "slot": 18,
+      "label": "TM19",
+      "move_id": 202,
+      "move_name": "终极吸取",
+      "display_name": "TM19 · 终极吸取"
+    },
+    {
+      "item_index": 308,
+      "item_id": 308,
+      "raw_name": "TM20",
+      "slot": 19,
+      "label": "TM20",
+      "move_id": 219,
+      "move_name": "神秘守护",
+      "display_name": "TM20 · 神秘守护"
+    },
+    {
+      "item_index": 309,
+      "item_id": 309,
+      "raw_name": "TM21",
+      "slot": 20,
+      "label": "TM21",
+      "move_id": 218,
+      "move_name": "迁怒",
+      "display_name": "TM21 · 迁怒"
+    },
+    {
+      "item_index": 310,
+      "item_id": 310,
+      "raw_name": "TM22",
+      "slot": 21,
+      "label": "TM22",
+      "move_id": 76,
+      "move_name": "日光束",
+      "display_name": "TM22 · 日光束"
+    },
+    {
+      "item_index": 311,
+      "item_id": 311,
+      "raw_name": "TM23",
+      "slot": 22,
+      "label": "TM23",
+      "move_id": 231,
+      "move_name": "铁尾",
+      "display_name": "TM23 · 铁尾"
+    },
+    {
+      "item_index": 312,
+      "item_id": 312,
+      "raw_name": "TM24",
+      "slot": 23,
+      "label": "TM24",
+      "move_id": 85,
+      "move_name": "十万伏特",
+      "display_name": "TM24 · 十万伏特"
+    },
+    {
+      "item_index": 313,
+      "item_id": 313,
+      "raw_name": "TM25",
+      "slot": 24,
+      "label": "TM25",
+      "move_id": 87,
+      "move_name": "打雷",
+      "display_name": "TM25 · 打雷"
+    },
+    {
+      "item_index": 314,
+      "item_id": 314,
+      "raw_name": "TM26",
+      "slot": 25,
+      "label": "TM26",
+      "move_id": 89,
+      "move_name": "地震",
+      "display_name": "TM26 · 地震"
+    },
+    {
+      "item_index": 315,
+      "item_id": 315,
+      "raw_name": "TM27",
+      "slot": 26,
+      "label": "TM27",
+      "move_id": 216,
+      "move_name": "报恩",
+      "display_name": "TM27 · 报恩"
+    },
+    {
+      "item_index": 316,
+      "item_id": 316,
+      "raw_name": "TM28",
+      "slot": 27,
+      "label": "TM28",
+      "move_id": 91,
+      "move_name": "挖洞",
+      "display_name": "TM28 · 挖洞"
+    },
+    {
+      "item_index": 317,
+      "item_id": 317,
+      "raw_name": "TM29",
+      "slot": 28,
+      "label": "TM29",
+      "move_id": 94,
+      "move_name": "精神强念",
+      "display_name": "TM29 · 精神强念"
+    },
+    {
+      "item_index": 318,
+      "item_id": 318,
+      "raw_name": "TM30",
+      "slot": 29,
+      "label": "TM30",
+      "move_id": 247,
+      "move_name": "暗影球",
+      "display_name": "TM30 · 暗影球"
+    },
+    {
+      "item_index": 319,
+      "item_id": 319,
+      "raw_name": "TM31",
+      "slot": 30,
+      "label": "TM31",
+      "move_id": 280,
+      "move_name": "劈瓦",
+      "display_name": "TM31 · 劈瓦"
+    },
+    {
+      "item_index": 320,
+      "item_id": 320,
+      "raw_name": "TM32",
+      "slot": 31,
+      "label": "TM32",
+      "move_id": 104,
+      "move_name": "影子分身",
+      "display_name": "TM32 · 影子分身"
+    },
+    {
+      "item_index": 321,
+      "item_id": 321,
+      "raw_name": "TM33",
+      "slot": 32,
+      "label": "TM33",
+      "move_id": 115,
+      "move_name": "反射壁",
+      "display_name": "TM33 · 反射壁"
+    },
+    {
+      "item_index": 322,
+      "item_id": 322,
+      "raw_name": "TM34",
+      "slot": 33,
+      "label": "TM34",
+      "move_id": 351,
+      "move_name": "电击波",
+      "display_name": "TM34 · 电击波"
+    },
+    {
+      "item_index": 323,
+      "item_id": 323,
+      "raw_name": "TM35",
+      "slot": 34,
+      "label": "TM35",
+      "move_id": 53,
+      "move_name": "喷射火焰",
+      "display_name": "TM35 · 喷射火焰"
+    },
+    {
+      "item_index": 324,
+      "item_id": 324,
+      "raw_name": "TM36",
+      "slot": 35,
+      "label": "TM36",
+      "move_id": 188,
+      "move_name": "污泥炸弹",
+      "display_name": "TM36 · 污泥炸弹"
+    },
+    {
+      "item_index": 325,
+      "item_id": 325,
+      "raw_name": "TM37",
+      "slot": 36,
+      "label": "TM37",
+      "move_id": 201,
+      "move_name": "沙暴",
+      "display_name": "TM37 · 沙暴"
+    },
+    {
+      "item_index": 326,
+      "item_id": 326,
+      "raw_name": "TM38",
+      "slot": 37,
+      "label": "TM38",
+      "move_id": 126,
+      "move_name": "大字爆炎",
+      "display_name": "TM38 · 大字爆炎"
+    },
+    {
+      "item_index": 327,
+      "item_id": 327,
+      "raw_name": "TM39",
+      "slot": 38,
+      "label": "TM39",
+      "move_id": 317,
+      "move_name": "岩石封锁",
+      "display_name": "TM39 · 岩石封锁"
+    },
+    {
+      "item_index": 328,
+      "item_id": 328,
+      "raw_name": "TM40",
+      "slot": 39,
+      "label": "TM40",
+      "move_id": 332,
+      "move_name": "燕返",
+      "display_name": "TM40 · 燕返"
+    },
+    {
+      "item_index": 329,
+      "item_id": 329,
+      "raw_name": "TM41",
+      "slot": 40,
+      "label": "TM41",
+      "move_id": 259,
+      "move_name": "无理取闹",
+      "display_name": "TM41 · 无理取闹"
+    },
+    {
+      "item_index": 330,
+      "item_id": 330,
+      "raw_name": "TM42",
+      "slot": 41,
+      "label": "TM42",
+      "move_id": 263,
+      "move_name": "硬撑",
+      "display_name": "TM42 · 硬撑"
+    },
+    {
+      "item_index": 331,
+      "item_id": 331,
+      "raw_name": "TM43",
+      "slot": 42,
+      "label": "TM43",
+      "move_id": 290,
+      "move_name": "秘密之力",
+      "display_name": "TM43 · 秘密之力"
+    },
+    {
+      "item_index": 332,
+      "item_id": 332,
+      "raw_name": "TM44",
+      "slot": 43,
+      "label": "TM44",
+      "move_id": 156,
+      "move_name": "睡觉",
+      "display_name": "TM44 · 睡觉"
+    },
+    {
+      "item_index": 333,
+      "item_id": 333,
+      "raw_name": "TM45",
+      "slot": 44,
+      "label": "TM45",
+      "move_id": 213,
+      "move_name": "迷人",
+      "display_name": "TM45 · 迷人"
+    },
+    {
+      "item_index": 334,
+      "item_id": 334,
+      "raw_name": "TM46",
+      "slot": 45,
+      "label": "TM46",
+      "move_id": 168,
+      "move_name": "小偷",
+      "display_name": "TM46 · 小偷"
+    },
+    {
+      "item_index": 335,
+      "item_id": 335,
+      "raw_name": "TM47",
+      "slot": 46,
+      "label": "TM47",
+      "move_id": 211,
+      "move_name": "钢翼",
+      "display_name": "TM47 · 钢翼"
+    },
+    {
+      "item_index": 336,
+      "item_id": 336,
+      "raw_name": "TM48",
+      "slot": 47,
+      "label": "TM48",
+      "move_id": 285,
+      "move_name": "特性互换",
+      "display_name": "TM48 · 特性互换"
+    },
+    {
+      "item_index": 337,
+      "item_id": 337,
+      "raw_name": "TM49",
+      "slot": 48,
+      "label": "TM49",
+      "move_id": 355,
+      "move_name": "吸血之牙",
+      "display_name": "TM49 · 吸血之牙"
+    },
+    {
+      "item_index": 338,
+      "item_id": 338,
+      "raw_name": "TM50",
+      "slot": 49,
+      "label": "TM50",
+      "move_id": 315,
+      "move_name": "过热",
+      "display_name": "TM50 · 过热"
+    },
+    {
+      "item_index": 339,
+      "item_id": 339,
+      "raw_name": "HM01",
+      "slot": 120,
+      "label": "HM01",
+      "move_id": 15,
+      "move_name": "居合劈",
+      "display_name": "HM01 · 居合劈"
+    },
+    {
+      "item_index": 340,
+      "item_id": 340,
+      "raw_name": "HM02",
+      "slot": 121,
+      "label": "HM02",
+      "move_id": 19,
+      "move_name": "飞翔",
+      "display_name": "HM02 · 飞翔"
+    },
+    {
+      "item_index": 341,
+      "item_id": 341,
+      "raw_name": "HM03",
+      "slot": 122,
+      "label": "HM03",
+      "move_id": 57,
+      "move_name": "冲浪",
+      "display_name": "HM03 · 冲浪"
+    },
+    {
+      "item_index": 342,
+      "item_id": 342,
+      "raw_name": "HM04",
+      "slot": 123,
+      "label": "HM04",
+      "move_id": 70,
+      "move_name": "怪力",
+      "display_name": "HM04 · 怪力"
+    },
+    {
+      "item_index": 343,
+      "item_id": 343,
+      "raw_name": "HM05",
+      "slot": 124,
+      "label": "HM05",
+      "move_id": 250,
+      "move_name": "潮旋",
+      "display_name": "HM05 · 潮旋"
+    },
+    {
+      "item_index": 344,
+      "item_id": 344,
+      "raw_name": "HM06",
+      "slot": 125,
+      "label": "HM06",
+      "move_id": 249,
+      "move_name": "碎岩",
+      "display_name": "HM06 · 碎岩"
+    },
+    {
+      "item_index": 345,
+      "item_id": 345,
+      "raw_name": "HM07",
+      "slot": 126,
+      "label": "HM07",
+      "move_id": 127,
+      "move_name": "攀瀑",
+      "display_name": "HM07 · 攀瀑"
+    },
+    {
+      "item_index": 346,
+      "item_id": 346,
+      "raw_name": "HM08",
+      "slot": 127,
+      "label": "HM08",
+      "move_id": 392,
+      "move_name": "攀岩",
+      "display_name": "HM08 · 攀岩"
+    },
+    {
+      "item_index": 376,
+      "item_id": 376,
+      "raw_name": "招式学习器51",
+      "slot": 50,
+      "label": "TM51",
+      "move_id": 395,
+      "move_name": "羽栖",
+      "display_name": "TM51 · 羽栖"
+    },
+    {
+      "item_index": 377,
+      "item_id": 377,
+      "raw_name": "招式学习器52",
+      "slot": 51,
+      "label": "TM52",
+      "move_id": 374,
+      "move_name": "真气弹",
+      "display_name": "TM52 · 真气弹"
+    },
+    {
+      "item_index": 378,
+      "item_id": 378,
+      "raw_name": "招式学习器53",
+      "slot": 52,
+      "label": "TM53",
+      "move_id": 373,
+      "move_name": "能量球",
+      "display_name": "TM53 · 能量球"
+    },
+    {
+      "item_index": 379,
+      "item_id": 379,
+      "raw_name": "招式学习器54",
+      "slot": 53,
+      "label": "TM54",
+      "move_id": 206,
+      "move_name": "点到为止",
+      "display_name": "TM54 · 点到为止"
+    },
+    {
+      "item_index": 380,
+      "item_id": 380,
+      "raw_name": "招式学习器55",
+      "slot": 54,
+      "label": "TM55",
+      "move_id": 460,
+      "move_name": "盐水",
+      "display_name": "TM55 · 盐水"
+    },
+    {
+      "item_index": 381,
+      "item_id": 381,
+      "raw_name": "招式学习器56",
+      "slot": 55,
+      "label": "TM56",
+      "move_id": 409,
+      "move_name": "磨爪",
+      "display_name": "TM56 · 磨爪"
+    },
+    {
+      "item_index": 382,
+      "item_id": 382,
+      "raw_name": "招式学习器57",
+      "slot": 56,
+      "label": "TM57",
+      "move_id": 364,
+      "move_name": "充电光束",
+      "display_name": "TM57 · 充电光束"
+    },
+    {
+      "item_index": 383,
+      "item_id": 383,
+      "raw_name": "招式学习器58",
+      "slot": 57,
+      "label": "TM58",
+      "move_id": 203,
+      "move_name": "挺住",
+      "display_name": "TM58 · 挺住"
+    },
+    {
+      "item_index": 384,
+      "item_id": 384,
+      "raw_name": "TM59",
+      "slot": 58,
+      "label": "TM59",
+      "move_id": 370,
+      "move_name": "龙之波动",
+      "display_name": "TM59 · 龙之波动"
+    },
+    {
+      "item_index": 385,
+      "item_id": 385,
+      "raw_name": "TM60",
+      "slot": 59,
+      "label": "TM60",
+      "move_id": 371,
+      "move_name": "吸取拳",
+      "display_name": "TM60 · 吸取拳"
+    },
+    {
+      "item_index": 386,
+      "item_id": 386,
+      "raw_name": "TM61",
+      "slot": 60,
+      "label": "TM61",
+      "move_id": 261,
+      "move_name": "磷火",
+      "display_name": "TM61 · 磷火"
+    },
+    {
+      "item_index": 387,
+      "item_id": 387,
+      "raw_name": "TM62",
+      "slot": 61,
+      "label": "TM62",
+      "move_id": 318,
+      "move_name": "银色旋风",
+      "display_name": "TM62 · 银色旋风"
+    },
+    {
+      "item_index": 388,
+      "item_id": 388,
+      "raw_name": "TM63",
+      "slot": 62,
+      "label": "TM63",
+      "move_id": 422,
+      "move_name": "毒液冲击",
+      "display_name": "TM63 · 毒液冲击"
+    },
+    {
+      "item_index": 389,
+      "item_id": 389,
+      "raw_name": "TM64",
+      "slot": 63,
+      "label": "TM64",
+      "move_id": 153,
+      "move_name": "大爆炸",
+      "display_name": "TM64 · 大爆炸"
+    },
+    {
+      "item_index": 390,
+      "item_id": 390,
+      "raw_name": "TM65",
+      "slot": 64,
+      "label": "TM65",
+      "move_id": 397,
+      "move_name": "暗影爪",
+      "display_name": "TM65 · 暗影爪"
+    },
+    {
+      "item_index": 391,
+      "item_id": 391,
+      "raw_name": "TM66",
+      "slot": 65,
+      "label": "TM66",
+      "move_id": 430,
+      "move_name": "以牙还牙",
+      "display_name": "TM66 · 以牙还牙"
+    },
+    {
+      "item_index": 392,
+      "item_id": 392,
+      "raw_name": "TM67",
+      "slot": 66,
+      "label": "TM67",
+      "move_id": 278,
+      "move_name": "回收利用",
+      "display_name": "TM67 · 回收利用"
+    },
+    {
+      "item_index": 393,
+      "item_id": 393,
+      "raw_name": "TM68",
+      "slot": 67,
+      "label": "TM68",
+      "move_id": 376,
+      "move_name": "终极冲击",
+      "display_name": "TM68 · 终极冲击"
+    },
+    {
+      "item_index": 394,
+      "item_id": 394,
+      "raw_name": "TM69",
+      "slot": 68,
+      "label": "TM69",
+      "move_id": 393,
+      "move_name": "岩石打磨",
+      "display_name": "TM69 · 岩石打磨"
+    },
+    {
+      "item_index": 395,
+      "item_id": 395,
+      "raw_name": "TM70",
+      "slot": 69,
+      "label": "TM70",
+      "move_id": 148,
+      "move_name": "闪光",
+      "display_name": "TM70 · 闪光"
+    },
+    {
+      "item_index": 396,
+      "item_id": 396,
+      "raw_name": "TM71",
+      "slot": 70,
+      "label": "TM71",
+      "move_id": 429,
+      "move_name": "尖石攻击",
+      "display_name": "TM71 · 尖石攻击"
+    },
+    {
+      "item_index": 397,
+      "item_id": 397,
+      "raw_name": "TM72",
+      "slot": 71,
+      "label": "TM72",
+      "move_id": 360,
+      "move_name": "雪崩",
+      "display_name": "TM72 · 雪崩"
+    },
+    {
+      "item_index": 398,
+      "item_id": 398,
+      "raw_name": "TM73",
+      "slot": 72,
+      "label": "TM73",
+      "move_id": 86,
+      "move_name": "电磁波",
+      "display_name": "TM73 · 电磁波"
+    },
+    {
+      "item_index": 399,
+      "item_id": 399,
+      "raw_name": "TM74",
+      "slot": 73,
+      "label": "TM74",
+      "move_id": 510,
+      "move_name": "陀螺球",
+      "display_name": "TM74 · 陀螺球"
+    },
+    {
+      "item_index": 400,
+      "item_id": 400,
+      "raw_name": "TM75",
+      "slot": 74,
+      "label": "TM75",
+      "move_id": 14,
+      "move_name": "剑舞",
+      "display_name": "TM75 · 剑舞"
+    },
+    {
+      "item_index": 401,
+      "item_id": 401,
+      "raw_name": "TM76",
+      "slot": 75,
+      "label": "TM76",
+      "move_id": 468,
+      "move_name": "隐形岩",
+      "display_name": "TM76 · 隐形岩"
+    },
+    {
+      "item_index": 402,
+      "item_id": 402,
+      "raw_name": "TM77",
+      "slot": 76,
+      "label": "TM77",
+      "move_id": 406,
+      "move_name": "蓄能焰袭",
+      "display_name": "TM77 · 蓄能焰袭"
+    },
+    {
+      "item_index": 403,
+      "item_id": 403,
+      "raw_name": "TM78",
+      "slot": 77,
+      "label": "TM78",
+      "move_id": 417,
+      "move_name": "下盘踢",
+      "display_name": "TM78 · 下盘踢"
+    },
+    {
+      "item_index": 404,
+      "item_id": 404,
+      "raw_name": "TM79",
+      "slot": 78,
+      "label": "TM79",
+      "move_id": 367,
+      "move_name": "恶之波动",
+      "display_name": "TM79 · 恶之波动"
+    },
+    {
+      "item_index": 405,
+      "item_id": 405,
+      "raw_name": "TM80",
+      "slot": 79,
+      "label": "TM80",
+      "move_id": 157,
+      "move_name": "岩崩",
+      "display_name": "TM80 · 岩崩"
+    },
+    {
+      "item_index": 406,
+      "item_id": 406,
+      "raw_name": "TM81",
+      "slot": 80,
+      "label": "TM81",
+      "move_id": 400,
+      "move_name": "十字剪",
+      "display_name": "TM81 · 十字剪"
+    },
+    {
+      "item_index": 407,
+      "item_id": 407,
+      "raw_name": "TM82",
+      "slot": 81,
+      "label": "TM82",
+      "move_id": 214,
+      "move_name": "梦话",
+      "display_name": "TM82 · 梦话"
+    },
+    {
+      "item_index": 408,
+      "item_id": 408,
+      "raw_name": "TM83",
+      "slot": 82,
+      "label": "TM83",
+      "move_id": 459,
+      "move_name": "热水",
+      "display_name": "TM83 · 热水"
+    },
+    {
+      "item_index": 409,
+      "item_id": 409,
+      "raw_name": "TM84",
+      "slot": 83,
+      "label": "TM84",
+      "move_id": 424,
+      "move_name": "毒击",
+      "display_name": "TM84 · 毒击"
+    },
+    {
+      "item_index": 410,
+      "item_id": 410,
+      "raw_name": "TM85",
+      "slot": 84,
+      "label": "TM85",
+      "move_id": 138,
+      "move_name": "食梦",
+      "display_name": "TM85 · 食梦"
+    },
+    {
+      "item_index": 411,
+      "item_id": 411,
+      "raw_name": "TM86",
+      "slot": 85,
+      "label": "TM86",
+      "move_id": 377,
+      "move_name": "打草结",
+      "display_name": "TM86 · 打草结"
+    },
+    {
+      "item_index": 412,
+      "item_id": 412,
+      "raw_name": "TM87",
+      "slot": 86,
+      "label": "TM87",
+      "move_id": 207,
+      "move_name": "虚张声势",
+      "display_name": "TM87 · 虚张声势"
+    },
+    {
+      "item_index": 413,
+      "item_id": 413,
+      "raw_name": "TM88",
+      "slot": 87,
+      "label": "TM88",
+      "move_id": 451,
+      "move_name": "啄食",
+      "display_name": "TM88 · 啄食"
+    },
+    {
+      "item_index": 414,
+      "item_id": 414,
+      "raw_name": "TM89",
+      "slot": 88,
+      "label": "TM89",
+      "move_id": 442,
+      "move_name": "急速折返",
+      "display_name": "TM89 · 急速折返"
+    },
+    {
+      "item_index": 415,
+      "item_id": 415,
+      "raw_name": "TM90",
+      "slot": 89,
+      "label": "TM90",
+      "move_id": 164,
+      "move_name": "替身",
+      "display_name": "TM90 · 替身"
+    },
+    {
+      "item_index": 416,
+      "item_id": 416,
+      "raw_name": "TM91",
+      "slot": 90,
+      "label": "TM91",
+      "move_id": 449,
+      "move_name": "加农光炮",
+      "display_name": "TM91 · 加农光炮"
+    },
+    {
+      "item_index": 417,
+      "item_id": 417,
+      "raw_name": "TM92",
+      "slot": 91,
+      "label": "TM92",
+      "move_id": 443,
+      "move_name": "伏特替换",
+      "display_name": "TM92 · 伏特替换"
+    },
+    {
+      "item_index": 418,
+      "item_id": 418,
+      "raw_name": "TM93",
+      "slot": 92,
+      "label": "TM93",
+      "move_id": 444,
+      "move_name": "龙尾",
+      "display_name": "TM93 · 龙尾"
+    },
+    {
+      "item_index": 419,
+      "item_id": 419,
+      "raw_name": "TM94",
+      "slot": 93,
+      "label": "TM94",
+      "move_id": 474,
+      "move_name": "烧净",
+      "display_name": "TM94 · 烧净"
+    },
+    {
+      "item_index": 420,
+      "item_id": 420,
+      "raw_name": "TM95",
+      "slot": 94,
+      "label": "TM95",
+      "move_id": 419,
+      "move_name": "虫之抵抗",
+      "display_name": "TM95 · 虫之抵抗"
+    },
+    {
+      "item_index": 421,
+      "item_id": 421,
+      "raw_name": "TM96",
+      "slot": 95,
+      "label": "TM96",
+      "move_id": 404,
+      "move_name": "重踏",
+      "display_name": "TM96 · 重踏"
+    },
+    {
+      "item_index": 422,
+      "item_id": 422,
+      "raw_name": "TM97",
+      "slot": 96,
+      "label": "TM97",
+      "move_id": 407,
+      "move_name": "冰息",
+      "display_name": "TM97 · 冰息"
+    },
+    {
+      "item_index": 423,
+      "item_id": 423,
+      "raw_name": "TM98",
+      "slot": 97,
+      "label": "TM98",
+      "move_id": 414,
+      "move_name": "自我激励",
+      "display_name": "TM98 · 自我激励"
+    },
+    {
+      "item_index": 424,
+      "item_id": 424,
+      "raw_name": "TM99",
+      "slot": 98,
+      "label": "TM99",
+      "move_id": 423,
+      "move_name": "疯狂伏特",
+      "display_name": "TM99 · 疯狂伏特"
+    },
+    {
+      "item_index": 425,
+      "item_id": 425,
+      "raw_name": "TM100",
+      "slot": 99,
+      "label": "TM100",
+      "move_id": 570,
+      "move_name": "纠缠不休",
+      "display_name": "TM100 · 纠缠不休"
+    },
+    {
+      "item_index": 426,
+      "item_id": 426,
+      "raw_name": "TM101",
+      "slot": 100,
+      "label": "TM101",
+      "move_id": 571,
+      "move_name": "增强拳",
+      "display_name": "TM101 · 增强拳"
+    },
+    {
+      "item_index": 427,
+      "item_id": 427,
+      "raw_name": "TM102",
+      "slot": 101,
+      "label": "TM102",
+      "move_id": 466,
+      "move_name": "魔法闪耀",
+      "display_name": "TM102 · 魔法闪耀"
+    },
+    {
+      "item_index": 428,
+      "item_id": 428,
+      "raw_name": "TM103",
+      "slot": 102,
+      "label": "TM103",
+      "move_id": 531,
+      "move_name": "污泥波",
+      "display_name": "TM103 · 污泥波"
+    },
+    {
+      "item_index": 429,
+      "item_id": 429,
+      "raw_name": "TM104",
+      "slot": 103,
+      "label": "TM104",
+      "move_id": 502,
+      "move_name": "精神冲击",
+      "display_name": "TM104 · 精神冲击"
+    },
+    {
+      "item_index": 430,
+      "item_id": 430,
+      "raw_name": "TM105",
+      "slot": 104,
+      "label": "TM105",
+      "move_id": 582,
+      "move_name": "狂舞挥打",
+      "display_name": "TM105 · 狂舞挥打"
+    },
+    {
+      "item_index": 431,
+      "item_id": 431,
+      "raw_name": "TM106",
+      "slot": 105,
+      "label": "TM106",
+      "move_id": 610,
+      "move_name": "修长之角",
+      "display_name": "TM106 · 修长之角"
+    },
+    {
+      "item_index": 432,
+      "item_id": 432,
+      "raw_name": "TM107",
+      "slot": 106,
+      "label": "TM107",
+      "move_id": 440,
+      "move_name": "杂技",
+      "display_name": "TM107 · 杂技"
+    },
+    {
+      "item_index": 433,
+      "item_id": 433,
+      "raw_name": "TM108",
+      "slot": 107,
+      "label": "TM108",
+      "move_id": 418,
+      "move_name": "大声咆哮",
+      "display_name": "TM108 · 大声咆哮"
+    },
+    {
+      "item_index": 434,
+      "item_id": 434,
+      "raw_name": "TM109",
+      "slot": 108,
+      "label": "TM109",
+      "move_id": 516,
+      "move_name": "清除浓雾",
+      "display_name": "TM109 · 清除浓雾"
+    },
+    {
+      "item_index": 435,
+      "item_id": 435,
+      "raw_name": "TM110",
+      "slot": 109,
+      "label": "TM110",
+      "move_id": 465,
+      "move_name": "吸取之吻",
+      "display_name": "TM110 · 吸取之吻"
+    },
+    {
+      "item_index": 436,
+      "item_id": 436,
+      "raw_name": "TM111",
+      "slot": 110,
+      "label": "TM111",
+      "move_id": 508,
+      "move_name": "击落",
+      "display_name": "TM111 · 击落"
+    },
+    {
+      "item_index": 437,
+      "item_id": 437,
+      "raw_name": "TM112",
+      "slot": 111,
+      "label": "TM112",
+      "move_id": 503,
+      "move_name": "轮唱",
+      "display_name": "TM112 · 轮唱"
+    },
+    {
+      "item_index": 438,
+      "item_id": 438,
+      "raw_name": "TM113",
+      "slot": 112,
+      "label": "TM113",
+      "move_id": 538,
+      "move_name": "回声",
+      "display_name": "TM113 · 回声"
+    },
+    {
+      "item_index": 439,
+      "item_id": 439,
+      "raw_name": "TM114",
+      "slot": 113,
+      "label": "TM114",
+      "move_id": 506,
+      "move_name": "自然之恩",
+      "display_name": "TM114 · 自然之恩"
+    },
+    {
+      "item_index": 440,
+      "item_id": 440,
+      "raw_name": "TM115",
+      "slot": 114,
+      "label": "TM115",
+      "move_id": 671,
+      "move_name": "延后",
+      "display_name": "TM115 · 延后"
+    },
+    {
+      "item_index": 441,
+      "item_id": 441,
+      "raw_name": "TM116",
+      "slot": 115,
+      "label": "TM116",
+      "move_id": 632,
+      "move_name": "戏法空间",
+      "display_name": "TM116 · 戏法空间"
+    },
+    {
+      "item_index": 442,
+      "item_id": 442,
+      "raw_name": "TM117",
+      "slot": 116,
+      "label": "TM117",
+      "move_id": 643,
+      "move_name": "投掷",
+      "display_name": "TM117 · 投掷"
+    },
+    {
+      "item_index": 443,
+      "item_id": 443,
+      "raw_name": "TM118",
+      "slot": 117,
+      "label": "TM118",
+      "move_id": 579,
+      "move_name": "极光幕",
+      "display_name": "TM118 · 极光幕"
+    },
+    {
+      "item_index": 444,
+      "item_id": 444,
+      "raw_name": "TM119",
+      "slot": 118,
+      "label": "TM119",
+      "move_id": 675,
+      "move_name": "自由落体",
+      "display_name": "TM119 · 自由落体"
+    },
+    {
+      "item_index": 445,
+      "item_id": 445,
+      "raw_name": "TM120",
+      "slot": 119,
+      "label": "TM120",
+      "move_id": 267,
+      "move_name": "自然之力",
+      "display_name": "TM120 · 自然之力"
+    }
+  ]
+}
