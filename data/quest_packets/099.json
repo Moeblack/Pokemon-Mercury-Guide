@@ -1,0 +1,1308 @@
+{
+ "title": "被解开的封印",
+ "quest_id": 99,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b6b8",
+    "title": "被解开的封印",
+    "title_address": "0x8e3b78f",
+    "description": "这样下去可不妙...\n封印的神奇法术要被解开了...\n请来城镇的西南角帮帮我...",
+    "description_address": "0x8e3b76b",
+    "unknown_u16": 69,
+    "unknown_u16_hex": "0x0045",
+    "accept_flag": 6319,
+    "accept_flag_hex": "0x18AF",
+    "complete_flag": 6322,
+    "complete_flag_hex": "0x18B2",
+    "map_group": 3,
+    "map_num": 71,
+    "tail_hex": "05 01 00 00",
+    "index": 99,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe397e4",
+      "title": "被解开的封印",
+      "description_address": "0x8e39966",
+      "description": "这样下去可不妙...\\n封印的神奇法术要被解开了...\\n请来城镇的西南角帮帮我..."
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39966",
+    "legacy_match_count": 1,
+    "current_description": "找到楔石，并前往\n黑暗洞穴深处的深坑。",
+    "catalog_map": {
+     "id": "3:71",
+     "name": "烟墨市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08F3E6FD",
+    "0x08F3E743",
+    "0x08F3E91F",
+    "0x08F3EBDB",
+    "0x08F3EDBC"
+   ],
+   "event_roots": [
+    {
+     "script": "0x087BA75B",
+     "map_id": "3:71",
+     "place": "烟墨市",
+     "kind": "人物",
+     "local_id": 10,
+     "event_index": 9,
+     "x": 4,
+     "y": 31,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n071.md"
+    },
+    {
+     "script": "0x08F3EDBC",
+     "map_id": "1:125",
+     "place": "黑暗洞穴",
+     "kind": "人物",
+     "local_id": 15,
+     "event_index": 14,
+     "x": 27,
+     "y": 41,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g01_n125.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x087B2A58",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B2A58",
+       "command": "checkitem",
+       "args": [
+        638,
+        1
+       ],
+       "item_name": "楔石"
+      },
+      {
+       "at": "0x087B2A5D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B2A62",
+       "command": "goto_if",
+       "args": [
+        1,
+        150202674
+       ],
+       "targets": [
+        "0x08F3E932"
+       ]
+      },
+      {
+       "at": "0x087B2A68",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150203822
+       ],
+       "texts": [
+        {
+         "address": "0x08F3EDAE",
+         "text": "诡异的深坑……"
+        }
+       ]
+      },
+      {
+       "at": "0x087B2A6E",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B2A70",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x087BA75B",
+     "event_roots": [
+      {
+       "map_id": "3:71",
+       "place": "烟墨市",
+       "kind": "人物",
+       "local_id": 10,
+       "event_index": 9,
+       "x": 4,
+       "y": 31,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n071.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x087BA75B",
+       "command": "applymovement",
+       "args": [
+        20,
+        142321515
+       ]
+      },
+      {
+       "at": "0x087BA762",
+       "command": "waitmovement",
+       "args": [
+        20
+       ]
+      },
+      {
+       "at": "0x087BA765",
+       "command": "goto",
+       "args": [
+        150202109
+       ],
+       "targets": [
+        "0x08F3E6FD"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x087BA784",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087BA784",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x087BA787",
+       "command": "goto_if",
+       "args": [
+        1,
+        150202137
+       ],
+       "targets": [
+        "0x08F3E719"
+       ]
+      },
+      {
+       "at": "0x087BA78D",
+       "command": "applymovement",
+       "args": [
+        20,
+        142321562
+       ]
+      },
+      {
+       "at": "0x087BA794",
+       "command": "waitmovement",
+       "args": [
+        20
+       ]
+      },
+      {
+       "at": "0x087BA797",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x087BA798",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x087BA7C0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087BA7C0",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087BA7C5",
+       "command": "goto_if",
+       "args": [
+        1,
+        150202179
+       ],
+       "targets": [
+        "0x08F3E743"
+       ]
+      },
+      {
+       "at": "0x087BA7CB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150202262
+       ],
+       "texts": [
+        {
+         "address": "0x08F3E796",
+         "text": "这样下去可不妙……"
+        }
+       ]
+      },
+      {
+       "at": "0x087BA7D1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087BA7D3",
+       "command": "applymovement",
+       "args": [
+        20,
+        142321562
+       ]
+      },
+      {
+       "at": "0x087BA7DA",
+       "command": "waitmovement",
+       "args": [
+        20
+       ]
+      },
+      {
+       "at": "0x087BA7DD",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x087BA7DE",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3E6FD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3E6FD",
+       "command": "checkflag",
+       "args": [
+        6319
+       ],
+       "task_flag_labels": [
+        {
+         "title": "被解开的封印",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3E700",
+       "command": "goto_if",
+       "args": [
+        1,
+        150202252
+       ],
+       "targets": [
+        "0x08F3E78C"
+       ]
+      },
+      {
+       "at": "0x08F3E706",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150202262
+       ],
+       "texts": [
+        {
+         "address": "0x08F3E796",
+         "text": "这样下去可不妙……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3E70C",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F3E70E",
+       "command": "goto",
+       "args": [
+        142321540
+       ],
+       "targets": [
+        "0x087BA784"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F3E719",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3E719",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F3E71C",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150202281
+       ]
+      },
+      {
+       "at": "0x08F3E723",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F3E726",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150202285
+       ],
+       "texts": [
+        {
+         "address": "0x08F3E7AD",
+         "text": "我等你很久了！\n那个，有个很重要的事要和你说……\n以前城都各处发生过灾难。\n那是在几百年前……\n在城都招灾惹祸的家伙\n虽然被封印在了黑暗洞穴的深处……\n可是不知为何，\n封印的神奇法术被解开了……\n这样下去可不妙……\n拜托你了，\n把被解开的封印复原吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3E72C",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F3E72E",
+       "command": "goto",
+       "args": [
+        142321600
+       ],
+       "targets": [
+        "0x087BA7C0"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F3E743",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3E743",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3E746",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150202514
+       ],
+       "texts": [
+        {
+         "address": "0x08F3E892",
+         "text": "接受任务:<被解开的封印>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3E74C",
+       "command": "setflag",
+       "args": [
+        6319
+       ],
+       "task_flag_labels": [
+        {
+         "title": "被解开的封印",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3E74F",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3E754",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3E759",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F3E75E",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F3E763",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F3E768",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150202543
+       ],
+       "texts": [
+        {
+         "address": "0x08F3E8AF",
+         "text": "谢谢你！\n你相信我了啊……！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3E76E",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F3E770",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142289336
+       ],
+       "texts": [
+        {
+         "address": "0x087B29B8",
+         "text": "黑暗洞穴的深处有个深坑，\n如果你找到了一种\n叫楔石的石头的话……\n把楔石放入那个深坑……\n应该就可以把封印复原了。\n楔石好像可以通过用探险套装\n对洞穴的墙壁进行开采获得……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3E776",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3E778",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F3E77D",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F3E77E",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3E78C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3E78C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150202585
+       ],
+       "texts": [
+        {
+         "address": "0x08F3E8D9",
+         "text": "黑暗洞穴的深处有个深坑，\n把楔石放入那个深坑……\n应该就可以把封印复原了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3E792",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3E794",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3E91F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3E91F",
+       "command": "checkflag",
+       "args": [
+        6319
+       ],
+       "task_flag_labels": [
+        {
+         "title": "被解开的封印",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3E922",
+       "command": "goto_if",
+       "args": [
+        1,
+        142289496
+       ],
+       "targets": [
+        "0x087B2A58"
+       ]
+      },
+      {
+       "at": "0x08F3E928",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150203822
+       ],
+       "texts": [
+        {
+         "address": "0x08F3EDAE",
+         "text": "诡异的深坑……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3E92E",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F3E930",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3E932",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3E932",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150203291
+       ],
+       "texts": [
+        {
+         "address": "0x08F3EB9B",
+         "text": "诡异的深坑……\n持有的楔石看起来\n形状正好与之吻合。\n要使用楔石吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3E938",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F3E93A",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3E93F",
+       "command": "goto_if",
+       "args": [
+        1,
+        150203355
+       ],
+       "targets": [
+        "0x08F3EBDB"
+       ]
+      },
+      {
+       "at": "0x08F3E945",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F3E946",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3EBDB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3EBDB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150203798
+       ],
+       "texts": [
+        {
+         "address": "0x08F3ED96",
+         "text": "将所持的楔石放了进去！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3EBE1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3EBE3",
+       "command": "fadescreenspeed",
+       "args": [
+        1,
+        2
+       ]
+      },
+      {
+       "at": "0x08F3EBE6",
+       "command": "callasm",
+       "args": [
+        147456081
+       ]
+      },
+      {
+       "at": "0x08F3EBEB",
+       "command": "fadescreenspeed",
+       "args": [
+        0,
+        2
+       ]
+      },
+      {
+       "at": "0x08F3EBEE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150203767
+       ],
+       "texts": [
+        {
+         "address": "0x08F3ED77",
+         "text": "楔石消失了……？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3EBF4",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3EBF6",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08F3EBF9",
+       "command": "clearflag",
+       "args": [
+        6320
+       ]
+      },
+      {
+       "at": "0x08F3EBFC",
+       "command": "addobject",
+       "args": [
+        17
+       ]
+      },
+      {
+       "at": "0x08F3EBFF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150203787
+       ],
+       "texts": [
+        {
+         "address": "0x08F3ED8B",
+         "text": "谢谢你……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3EC05",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3EC07",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F3EC0A",
+       "command": "applymovement",
+       "args": [
+        255,
+        150203783
+       ]
+      },
+      {
+       "at": "0x08F3EC11",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F3EC14",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150203604
+       ],
+       "texts": [
+        {
+         "address": "0x08F3ECD4",
+         "text": "在委托你之前，\n我一共找过31个人。\n所以……\n你是第32个。\n这样一来……\n封印也就解除了。\n曾经使用神奇法术的旅人\n也应该不会和我计较了吧……\n谢谢你陪我。\n你永远都不要忘记我哦……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3EC1A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3EC1C",
+       "command": "fadescreenspeed",
+       "args": [
+        1,
+        2
+       ]
+      },
+      {
+       "at": "0x08F3EC1F",
+       "command": "removeobject",
+       "args": [
+        17
+       ]
+      },
+      {
+       "at": "0x08F3EC22",
+       "command": "setflag",
+       "args": [
+        6320
+       ]
+      },
+      {
+       "at": "0x08F3EC25",
+       "command": "fadescreenspeed",
+       "args": [
+        0,
+        2
+       ]
+      },
+      {
+       "at": "0x08F3EC28",
+       "command": "clearflag",
+       "args": [
+        6321
+       ]
+      },
+      {
+       "at": "0x08F3EC2B",
+       "command": "addobject",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08F3EC2E",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F3EC31",
+       "command": "applymovement",
+       "args": [
+        255,
+        150203783
+       ]
+      },
+      {
+       "at": "0x08F3EC38",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F3EC3B",
+       "command": "setflag",
+       "args": [
+        6301
+       ]
+      },
+      {
+       "at": "0x08F3EC3E",
+       "command": "setwildbattle",
+       "args": [
+        495,
+        25,
+        0
+       ],
+       "species_name": "花岩怪"
+      },
+      {
+       "at": "0x08F3EC44",
+       "command": "dowildbattle",
+       "args": []
+      },
+      {
+       "at": "0x08F3EC45",
+       "command": "fadescreenspeed",
+       "args": [
+        1,
+        2
+       ]
+      },
+      {
+       "at": "0x08F3EC48",
+       "command": "removeobject",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08F3EC4B",
+       "command": "setflag",
+       "args": [
+        6321
+       ]
+      },
+      {
+       "at": "0x08F3EC4E",
+       "command": "fadescreenspeed",
+       "args": [
+        0,
+        2
+       ]
+      },
+      {
+       "at": "0x08F3EC51",
+       "command": "setflag",
+       "args": [
+        6322
+       ],
+       "task_flag_labels": [
+        {
+         "title": "被解开的封印",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3EC54",
+       "command": "goto",
+       "args": [
+        150203875
+       ],
+       "targets": [
+        "0x08F3EDE3"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F3EDBC",
+     "event_roots": [
+      {
+       "map_id": "1:125",
+       "place": "黑暗洞穴",
+       "kind": "人物",
+       "local_id": 15,
+       "event_index": 14,
+       "x": 27,
+       "y": 41,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g01_n125.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F3EDBC",
+       "command": "checkflag",
+       "args": [
+        6322
+       ],
+       "task_flag_labels": [
+        {
+         "title": "被解开的封印",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3EDBF",
+       "command": "goto_if",
+       "args": [
+        1,
+        150203866
+       ],
+       "targets": [
+        "0x08F3EDDA"
+       ]
+      },
+      {
+       "at": "0x08F3EDC5",
+       "command": "comparevartovalue",
+       "args": [
+        32780,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F3EDCA",
+       "command": "goto_if",
+       "args": [
+        1,
+        150202655
+       ],
+       "targets": [
+        "0x08F3E91F"
+       ]
+      },
+      {
+       "at": "0x08F3EDD0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150203822
+       ],
+       "texts": [
+        {
+         "address": "0x08F3EDAE",
+         "text": "诡异的深坑……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3EDD6",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F3EDD8",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3EDDA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3EDDA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150203822
+       ],
+       "texts": [
+        {
+         "address": "0x08F3EDAE",
+         "text": "诡异的深坑……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3EDE0",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F3EDE2",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3EDE3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3EDE3",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3EDE6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150203543
+       ],
+       "texts": [
+        {
+         "address": "0x08F3EC97",
+         "text": "完成任务:<被解开的封印>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3EDEC",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3EDF1",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3EDF6",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F3EDFB",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F3EE00",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F3EE05",
+       "command": "addvar",
+       "args": [
+        20789,
+        5
+       ]
+      },
+      {
+       "at": "0x08F3EE0A",
+       "command": "addmoney",
+       "args": [
+        108,
+        0
+       ]
+      },
+      {
+       "at": "0x08F3EE10",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150204143
+       ],
+       "texts": [
+        {
+         "address": "0x08F3EEEF",
+         "text": "获得了5点BracerPoints和108$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3EE16",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3EE18",
+       "command": "removeitem",
+       "args": [
+        638,
+        1
+       ],
+       "item_name": "楔石"
+      },
+      {
+       "at": "0x08F3EE1D",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F3EE22",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

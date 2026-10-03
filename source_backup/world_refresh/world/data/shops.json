@@ -1,0 +1,5107 @@
+{
+ "shops": [
+  {
+   "script_addr": "0x08164992",
+   "instr_addr": "0x081649A8",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x81649b8",
+   "list_valid": true,
+   "item_count": 9,
+   "items": [
+    {
+     "index": 2,
+     "name": "高级球",
+     "price": 800,
+     "itemId": 2
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 19,
+     "name": "全复药",
+     "price": 3000,
+     "itemId": 19
+    },
+    {
+     "index": 20,
+     "name": "全满药",
+     "price": 2500,
+     "itemId": 20
+    },
+    {
+     "index": 21,
+     "name": "厉害伤药",
+     "price": 1500,
+     "itemId": 21
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 23,
+     "name": "万灵药",
+     "price": 400,
+     "itemId": 23
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 84,
+     "name": "黄金喷雾",
+     "price": 900,
+     "itemId": 84
+    }
+   ],
+   "maps": [
+    {
+     "group": 2,
+     "num": 10,
+     "name_zh": "训练师之塔"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x0816499A:goto_if"
+   ],
+   "raw_list": "0002 0003 0013 0014 0015 0018 0017 0055 0054",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/0",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/081649A8.md"
+  },
+  {
+   "script_addr": "0x081676D3",
+   "instr_addr": "0x081676D3",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x81676e4",
+   "list_valid": true,
+   "item_count": 2,
+   "items": [
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 26,
+     "name": "美味之水",
+     "price": 200,
+     "itemId": 26
+    }
+   ],
+   "maps": [
+    {
+     "group": 3,
+     "num": 13,
+     "name_zh": "吉野市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0003 001a",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/1",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/081676D3.md"
+  },
+  {
+   "script_addr": "0x081676EC",
+   "instr_addr": "0x081676EC",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x81676fc",
+   "list_valid": true,
+   "item_count": 4,
+   "items": [
+    {
+     "index": 2,
+     "name": "高级球",
+     "price": 800,
+     "itemId": 2
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 27,
+     "name": "劲爽汽水",
+     "price": 300,
+     "itemId": 27
+    },
+    {
+     "index": 26,
+     "name": "美味之水",
+     "price": 200,
+     "itemId": 26
+    }
+   ],
+   "maps": [
+    {
+     "group": 3,
+     "num": 13,
+     "name_zh": "吉野市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0002 0003 001b 001a",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/2",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/081676EC.md"
+  },
+  {
+   "script_addr": "0x08167708",
+   "instr_addr": "0x08167708",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x8167718",
+   "list_valid": true,
+   "item_count": 6,
+   "items": [
+    {
+     "index": 2,
+     "name": "高级球",
+     "price": 800,
+     "itemId": 2
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 28,
+     "name": "果汁牛奶",
+     "price": 350,
+     "itemId": 28
+    },
+    {
+     "index": 27,
+     "name": "劲爽汽水",
+     "price": 300,
+     "itemId": 27
+    },
+    {
+     "index": 26,
+     "name": "美味之水",
+     "price": 200,
+     "itemId": 26
+    },
+    {
+     "index": 29,
+     "name": "哞哞鲜奶",
+     "price": 600,
+     "itemId": 29
+    }
+   ],
+   "maps": [
+    {
+     "group": 3,
+     "num": 13,
+     "name_zh": "吉野市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0002 0003 001c 001b 001a 001d",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/3",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/08167708.md"
+  },
+  {
+   "script_addr": "0x08167728",
+   "instr_addr": "0x08167728",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x8167738",
+   "list_valid": true,
+   "item_count": 8,
+   "items": [
+    {
+     "index": 2,
+     "name": "高级球",
+     "price": 800,
+     "itemId": 2
+    },
+    {
+     "index": 9,
+     "name": "重复球",
+     "price": 1000,
+     "itemId": 9
+    },
+    {
+     "index": 10,
+     "name": "计时球",
+     "price": 1000,
+     "itemId": 10
+    },
+    {
+     "index": 28,
+     "name": "果汁牛奶",
+     "price": 350,
+     "itemId": 28
+    },
+    {
+     "index": 27,
+     "name": "劲爽汽水",
+     "price": 300,
+     "itemId": 27
+    },
+    {
+     "index": 26,
+     "name": "美味之水",
+     "price": 200,
+     "itemId": 26
+    },
+    {
+     "index": 29,
+     "name": "哞哞鲜奶",
+     "price": 600,
+     "itemId": 29
+    },
+    {
+     "index": 38,
+     "name": "釜炎仙贝",
+     "price": 350,
+     "itemId": 38
+    }
+   ],
+   "maps": [
+    {
+     "group": 3,
+     "num": 13,
+     "name_zh": "吉野市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0002 0009 000a 001c 001b 001a 001d 0026",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/4",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/08167728.md"
+  },
+  {
+   "script_addr": "0x0816A268",
+   "instr_addr": "0x0816A289",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x816a298",
+   "list_valid": true,
+   "item_count": 4,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    }
+   ],
+   "maps": [
+    {
+     "group": 5,
+     "num": 3,
+     "name_zh": "常青市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x0816A26F:goto_if",
+    "0x0816A27D:goto_if"
+   ],
+   "raw_list": "0004 000d 000e 0012",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/5",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/0816A289.md"
+  },
+  {
+   "script_addr": "0x0816A6E0",
+   "instr_addr": "0x0816A6F6",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x816a708",
+   "list_valid": true,
+   "item_count": 8,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    }
+   ],
+   "maps": [
+    {
+     "group": 6,
+     "num": 3,
+     "name_zh": "尼比市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x0816A6E8:goto_if"
+   ],
+   "raw_list": "0004 000d 000e 0012 0011 000f 0055 0056",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/6",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/0816A6F6.md"
+  },
+  {
+   "script_addr": "0x0816ACB0",
+   "instr_addr": "0x0816ACC6",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x816acd8",
+   "list_valid": true,
+   "item_count": 9,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    }
+   ],
+   "maps": [
+    {
+     "group": 7,
+     "num": 7,
+     "name_zh": "华蓝市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x0816ACB8:goto_if"
+   ],
+   "raw_list": "0004 0016 000d 000e 0012 0011 000f 0055 0056",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/7",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/0816ACC6.md"
+  },
+  {
+   "script_addr": "0x0816B36B",
+   "instr_addr": "0x0816B381",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x816b390",
+   "list_valid": true,
+   "item_count": 9,
+   "items": [
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 83,
+     "name": "白银喷雾",
+     "price": 700,
+     "itemId": 83
+    }
+   ],
+   "maps": [
+    {
+     "group": 8,
+     "num": 5,
+     "name_zh": "紫苑镇"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x0816B373:goto_if"
+   ],
+   "raw_list": "0003 0016 0018 000e 0012 000f 0010 0055 0053",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/8",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/0816B381.md"
+  },
+  {
+   "script_addr": "0x0816B666",
+   "instr_addr": "0x0816B67C",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x816b68c",
+   "list_valid": true,
+   "item_count": 7,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    }
+   ],
+   "maps": [
+    {
+     "group": 9,
+     "num": 5,
+     "name_zh": "枯叶市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x0816B66E:goto_if"
+   ],
+   "raw_list": "0004 0016 000e 0012 0011 0010 0056",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/9",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/0816B67C.md"
+  },
+  {
+   "script_addr": "0x0816BB10",
+   "instr_addr": "0x0816BB26",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x816bb38",
+   "list_valid": true,
+   "item_count": 9,
+   "items": [
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 83,
+     "name": "白银喷雾",
+     "price": 700,
+     "itemId": 83
+    }
+   ],
+   "maps": [
+    {
+     "group": 10,
+     "num": 1,
+     "name_zh": "玉虹市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x0816BB18:goto_if"
+   ],
+   "raw_list": "0003 0016 0018 000e 0012 0011 000f 0010 0053",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/10",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/0816BB26.md"
+  },
+  {
+   "script_addr": "0x0816BB4E",
+   "instr_addr": "0x0816BB64",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x816bb74",
+   "list_valid": true,
+   "item_count": 6,
+   "items": [
+    {
+     "index": 293,
+     "name": "TM05",
+     "price": 8000,
+     "itemId": 293
+    },
+    {
+     "index": 303,
+     "name": "TM15",
+     "price": 8000,
+     "itemId": 303
+    },
+    {
+     "index": 316,
+     "name": "TM28",
+     "price": 8000,
+     "itemId": 316
+    },
+    {
+     "index": 319,
+     "name": "TM31",
+     "price": 8000,
+     "itemId": 319
+    },
+    {
+     "index": 331,
+     "name": "TM43",
+     "price": 8000,
+     "itemId": 331
+    },
+    {
+     "index": 333,
+     "name": "TM45",
+     "price": 8000,
+     "itemId": 333
+    }
+   ],
+   "maps": [
+    {
+     "group": 10,
+     "num": 1,
+     "name_zh": "玉虹市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x0816BB56:goto_if"
+   ],
+   "raw_list": "0125 012f 013c 013f 014b 014d",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/11",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/0816BB64.md"
+  },
+  {
+   "script_addr": "0x0816BC0A",
+   "instr_addr": "0x0816BC20",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x816bc30",
+   "list_valid": true,
+   "item_count": 6,
+   "items": [
+    {
+     "index": 80,
+     "name": "皮皮玩偶",
+     "price": 300,
+     "itemId": 80
+    },
+    {
+     "index": 132,
+     "name": "复古邮件",
+     "price": 50,
+     "itemId": 132
+    },
+    {
+     "index": 95,
+     "name": "火之石",
+     "price": 3000,
+     "itemId": 95
+    },
+    {
+     "index": 96,
+     "name": "雷之石",
+     "price": 3000,
+     "itemId": 96
+    },
+    {
+     "index": 97,
+     "name": "水之石",
+     "price": 3000,
+     "itemId": 97
+    },
+    {
+     "index": 98,
+     "name": "叶之石",
+     "price": 3000,
+     "itemId": 98
+    }
+   ],
+   "maps": [
+    {
+     "group": 10,
+     "num": 3,
+     "name_zh": "玉虹市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x0816BC12:goto_if"
+   ],
+   "raw_list": "0050 0084 005f 0060 0061 0062",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/12",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/0816BC20.md"
+  },
+  {
+   "script_addr": "0x0816BC5C",
+   "instr_addr": "0x0816BC72",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x816bc84",
+   "list_valid": true,
+   "item_count": 7,
+   "items": [
+    {
+     "index": 75,
+     "name": "力量强化",
+     "price": 1000,
+     "itemId": 75
+    },
+    {
+     "index": 76,
+     "name": "防御强化",
+     "price": 2000,
+     "itemId": 76
+    },
+    {
+     "index": 77,
+     "name": "速度强化",
+     "price": 1000,
+     "itemId": 77
+    },
+    {
+     "index": 79,
+     "name": "特攻强化",
+     "price": 1000,
+     "itemId": 79
+    },
+    {
+     "index": 78,
+     "name": "命中强化",
+     "price": 1000,
+     "itemId": 78
+    },
+    {
+     "index": 73,
+     "name": "能力防守",
+     "price": 1500,
+     "itemId": 73
+    },
+    {
+     "index": 74,
+     "name": "要害攻击",
+     "price": 1000,
+     "itemId": 74
+    }
+   ],
+   "maps": [
+    {
+     "group": 10,
+     "num": 4,
+     "name_zh": "玉虹市"
+    },
+    {
+     "group": 50,
+     "num": 15,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x0816BC64:goto_if"
+   ],
+   "raw_list": "004b 004c 004d 004f 004e 0049 004a",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/13",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/0816BC72.md"
+  },
+  {
+   "script_addr": "0x0816BC96",
+   "instr_addr": "0x0816BCAC",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x816bcbc",
+   "list_valid": true,
+   "item_count": 6,
+   "items": [
+    {
+     "index": 63,
+     "name": "HP增强剂",
+     "price": 10000,
+     "itemId": 63
+    },
+    {
+     "index": 64,
+     "name": "攻击增强剂",
+     "price": 10000,
+     "itemId": 64
+    },
+    {
+     "index": 65,
+     "name": "防御增强剂",
+     "price": 10000,
+     "itemId": 65
+    },
+    {
+     "index": 67,
+     "name": "特攻增强剂",
+     "price": 10000,
+     "itemId": 67
+    },
+    {
+     "index": 70,
+     "name": "特防增强剂",
+     "price": 10000,
+     "itemId": 70
+    },
+    {
+     "index": 66,
+     "name": "速度增强剂",
+     "price": 10000,
+     "itemId": 66
+    }
+   ],
+   "maps": [
+    {
+     "group": 10,
+     "num": 4,
+     "name_zh": "玉虹市"
+    },
+    {
+     "group": 50,
+     "num": 17,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x0816BC9E:goto_if"
+   ],
+   "raw_list": "003f 0040 0041 0043 0046 0042",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/14",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/0816BCAC.md"
+  },
+  {
+   "script_addr": "0x0816D4F3",
+   "instr_addr": "0x0816D509",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x816d518",
+   "list_valid": true,
+   "item_count": 6,
+   "items": [
+    {
+     "index": 2,
+     "name": "高级球",
+     "price": 800,
+     "itemId": 2
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 23,
+     "name": "万灵药",
+     "price": 400,
+     "itemId": 23
+    },
+    {
+     "index": 84,
+     "name": "黄金喷雾",
+     "price": 900,
+     "itemId": 84
+    }
+   ],
+   "maps": [
+    {
+     "group": 11,
+     "num": 1,
+     "name_zh": "浅红市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x0816D4FB:goto_if"
+   ],
+   "raw_list": "0002 0003 0016 0018 0017 0054",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/15",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/0816D509.md"
+  },
+  {
+   "script_addr": "0x0816EA22",
+   "instr_addr": "0x0816EA38",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x816ea48",
+   "list_valid": true,
+   "item_count": 7,
+   "items": [
+    {
+     "index": 2,
+     "name": "高级球",
+     "price": 800,
+     "itemId": 2
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 21,
+     "name": "厉害伤药",
+     "price": 1500,
+     "itemId": 21
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 23,
+     "name": "万灵药",
+     "price": 400,
+     "itemId": 23
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 84,
+     "name": "黄金喷雾",
+     "price": 900,
+     "itemId": 84
+    }
+   ],
+   "maps": [
+    {
+     "group": 12,
+     "num": 7,
+     "name_zh": "红莲岛"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x0816EA2A:goto_if"
+   ],
+   "raw_list": "0002 0003 0015 0018 0017 0055 0054",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/16",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/0816EA38.md"
+  },
+  {
+   "script_addr": "0x0816EFB5",
+   "instr_addr": "0x0816EFCB",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x816efdc",
+   "list_valid": true,
+   "item_count": 6,
+   "items": [
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 21,
+     "name": "厉害伤药",
+     "price": 1500,
+     "itemId": 21
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 23,
+     "name": "万灵药",
+     "price": 400,
+     "itemId": 23
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 84,
+     "name": "黄金喷雾",
+     "price": 900,
+     "itemId": 84
+    }
+   ],
+   "maps": [
+    {
+     "group": 14,
+     "num": 5,
+     "name_zh": "山吹市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x0816EFBD:goto_if"
+   ],
+   "raw_list": "0003 0015 0018 0017 0055 0054",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/17",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/0816EFCB.md"
+  },
+  {
+   "script_addr": "0x089C78DF",
+   "instr_addr": "0x089C78EE",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89c7a23",
+   "list_valid": true,
+   "item_count": 3,
+   "items": [
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    }
+   ],
+   "maps": [
+    {
+     "group": 31,
+     "num": 2,
+     "name_zh": "烟墨市"
+    },
+    {
+     "group": 34,
+     "num": 3,
+     "name_zh": "石英高原"
+    },
+    {
+     "group": 45,
+     "num": 1,
+     "name_zh": "吉野市"
+    },
+    {
+     "group": 46,
+     "num": 3,
+     "name_zh": "桔梗市"
+    },
+    {
+     "group": 47,
+     "num": 4,
+     "name_zh": "桧皮镇"
+    },
+    {
+     "group": 48,
+     "num": 7,
+     "name_zh": "缘朱市"
+    },
+    {
+     "group": 49,
+     "num": 11,
+     "name_zh": "浅葱市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x089C78DF:checkflag",
+    "0x089C78E2:goto_if"
+   ],
+   "raw_list": "000d 000e 0012",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/18",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089C78EE.md"
+  },
+  {
+   "script_addr": "0x089C7965",
+   "instr_addr": "0x089C7965",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89c7a2c",
+   "list_valid": true,
+   "item_count": 19,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 2,
+     "name": "高级球",
+     "price": 800,
+     "itemId": 2
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 21,
+     "name": "厉害伤药",
+     "price": 1500,
+     "itemId": 21
+    },
+    {
+     "index": 20,
+     "name": "全满药",
+     "price": 2500,
+     "itemId": 20
+    },
+    {
+     "index": 19,
+     "name": "全复药",
+     "price": 3000,
+     "itemId": 19
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 23,
+     "name": "万灵药",
+     "price": 400,
+     "itemId": 23
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    },
+    {
+     "index": 83,
+     "name": "白银喷雾",
+     "price": 700,
+     "itemId": 83
+    },
+    {
+     "index": 84,
+     "name": "黄金喷雾",
+     "price": 900,
+     "itemId": 84
+    }
+   ],
+   "maps": [
+    {
+     "group": 31,
+     "num": 2,
+     "name_zh": "烟墨市"
+    },
+    {
+     "group": 34,
+     "num": 3,
+     "name_zh": "石英高原"
+    },
+    {
+     "group": 45,
+     "num": 1,
+     "name_zh": "吉野市"
+    },
+    {
+     "group": 46,
+     "num": 3,
+     "name_zh": "桔梗市"
+    },
+    {
+     "group": 47,
+     "num": 4,
+     "name_zh": "桧皮镇"
+    },
+    {
+     "group": 48,
+     "num": 7,
+     "name_zh": "缘朱市"
+    },
+    {
+     "group": 49,
+     "num": 11,
+     "name_zh": "浅葱市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 0003 0002 000d 0016 0015 0014 0013 0018 000e 0012 0011 000f 0010 0017 0055 0056 0053 0054",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/19",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089C7965.md"
+  },
+  {
+   "script_addr": "0x089C7970",
+   "instr_addr": "0x089C7970",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89c7a55",
+   "list_valid": true,
+   "item_count": 18,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 2,
+     "name": "高级球",
+     "price": 800,
+     "itemId": 2
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 21,
+     "name": "厉害伤药",
+     "price": 1500,
+     "itemId": 21
+    },
+    {
+     "index": 20,
+     "name": "全满药",
+     "price": 2500,
+     "itemId": 20
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 23,
+     "name": "万灵药",
+     "price": 400,
+     "itemId": 23
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    },
+    {
+     "index": 83,
+     "name": "白银喷雾",
+     "price": 700,
+     "itemId": 83
+    },
+    {
+     "index": 84,
+     "name": "黄金喷雾",
+     "price": 900,
+     "itemId": 84
+    }
+   ],
+   "maps": [
+    {
+     "group": 31,
+     "num": 2,
+     "name_zh": "烟墨市"
+    },
+    {
+     "group": 34,
+     "num": 3,
+     "name_zh": "石英高原"
+    },
+    {
+     "group": 45,
+     "num": 1,
+     "name_zh": "吉野市"
+    },
+    {
+     "group": 46,
+     "num": 3,
+     "name_zh": "桔梗市"
+    },
+    {
+     "group": 47,
+     "num": 4,
+     "name_zh": "桧皮镇"
+    },
+    {
+     "group": 48,
+     "num": 7,
+     "name_zh": "缘朱市"
+    },
+    {
+     "group": 49,
+     "num": 11,
+     "name_zh": "浅葱市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 0003 0002 000d 0016 0015 0014 0018 000e 0012 0011 000f 0010 0017 0055 0056 0053 0054",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/20",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089C7970.md"
+  },
+  {
+   "script_addr": "0x089C797B",
+   "instr_addr": "0x089C797B",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89c7a7c",
+   "list_valid": true,
+   "item_count": 17,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 2,
+     "name": "高级球",
+     "price": 800,
+     "itemId": 2
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 21,
+     "name": "厉害伤药",
+     "price": 1500,
+     "itemId": 21
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 23,
+     "name": "万灵药",
+     "price": 400,
+     "itemId": 23
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    },
+    {
+     "index": 83,
+     "name": "白银喷雾",
+     "price": 700,
+     "itemId": 83
+    },
+    {
+     "index": 84,
+     "name": "黄金喷雾",
+     "price": 900,
+     "itemId": 84
+    }
+   ],
+   "maps": [
+    {
+     "group": 31,
+     "num": 2,
+     "name_zh": "烟墨市"
+    },
+    {
+     "group": 34,
+     "num": 3,
+     "name_zh": "石英高原"
+    },
+    {
+     "group": 45,
+     "num": 1,
+     "name_zh": "吉野市"
+    },
+    {
+     "group": 46,
+     "num": 3,
+     "name_zh": "桔梗市"
+    },
+    {
+     "group": 47,
+     "num": 4,
+     "name_zh": "桧皮镇"
+    },
+    {
+     "group": 48,
+     "num": 7,
+     "name_zh": "缘朱市"
+    },
+    {
+     "group": 49,
+     "num": 11,
+     "name_zh": "浅葱市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 0003 0002 000d 0016 0015 0018 000e 0012 0011 000f 0010 0017 0055 0056 0053 0054",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/21",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089C797B.md"
+  },
+  {
+   "script_addr": "0x089C7986",
+   "instr_addr": "0x089C7986",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89c7aa1",
+   "list_valid": true,
+   "item_count": 16,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 2,
+     "name": "高级球",
+     "price": 800,
+     "itemId": 2
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 21,
+     "name": "厉害伤药",
+     "price": 1500,
+     "itemId": 21
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 23,
+     "name": "万灵药",
+     "price": 400,
+     "itemId": 23
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    },
+    {
+     "index": 83,
+     "name": "白银喷雾",
+     "price": 700,
+     "itemId": 83
+    }
+   ],
+   "maps": [
+    {
+     "group": 31,
+     "num": 2,
+     "name_zh": "烟墨市"
+    },
+    {
+     "group": 34,
+     "num": 3,
+     "name_zh": "石英高原"
+    },
+    {
+     "group": 45,
+     "num": 1,
+     "name_zh": "吉野市"
+    },
+    {
+     "group": 46,
+     "num": 3,
+     "name_zh": "桔梗市"
+    },
+    {
+     "group": 47,
+     "num": 4,
+     "name_zh": "桧皮镇"
+    },
+    {
+     "group": 48,
+     "num": 7,
+     "name_zh": "缘朱市"
+    },
+    {
+     "group": 49,
+     "num": 11,
+     "name_zh": "浅葱市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 0003 0002 000d 0016 0015 0018 000e 0012 0011 000f 0010 0017 0055 0056 0053",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/22",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089C7986.md"
+  },
+  {
+   "script_addr": "0x089C7991",
+   "instr_addr": "0x089C7991",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89c7ac4",
+   "list_valid": true,
+   "item_count": 13,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    },
+    {
+     "index": 83,
+     "name": "白银喷雾",
+     "price": 700,
+     "itemId": 83
+    }
+   ],
+   "maps": [
+    {
+     "group": 31,
+     "num": 2,
+     "name_zh": "烟墨市"
+    },
+    {
+     "group": 34,
+     "num": 3,
+     "name_zh": "石英高原"
+    },
+    {
+     "group": 45,
+     "num": 1,
+     "name_zh": "吉野市"
+    },
+    {
+     "group": 46,
+     "num": 3,
+     "name_zh": "桔梗市"
+    },
+    {
+     "group": 47,
+     "num": 4,
+     "name_zh": "桧皮镇"
+    },
+    {
+     "group": 48,
+     "num": 7,
+     "name_zh": "缘朱市"
+    },
+    {
+     "group": 49,
+     "num": 11,
+     "name_zh": "浅葱市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 0003 000d 0016 0018 000e 0012 0011 000f 0010 0055 0056 0053",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/23",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089C7991.md"
+  },
+  {
+   "script_addr": "0x089C799C",
+   "instr_addr": "0x089C799C",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89c7ae1",
+   "list_valid": true,
+   "item_count": 12,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    }
+   ],
+   "maps": [
+    {
+     "group": 31,
+     "num": 2,
+     "name_zh": "烟墨市"
+    },
+    {
+     "group": 34,
+     "num": 3,
+     "name_zh": "石英高原"
+    },
+    {
+     "group": 45,
+     "num": 1,
+     "name_zh": "吉野市"
+    },
+    {
+     "group": 46,
+     "num": 3,
+     "name_zh": "桔梗市"
+    },
+    {
+     "group": 47,
+     "num": 4,
+     "name_zh": "桧皮镇"
+    },
+    {
+     "group": 48,
+     "num": 7,
+     "name_zh": "缘朱市"
+    },
+    {
+     "group": 49,
+     "num": 11,
+     "name_zh": "浅葱市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 0003 000d 0016 0018 000e 0012 0011 000f 0010 0055 0056",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/24",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089C799C.md"
+  },
+  {
+   "script_addr": "0x089C79A7",
+   "instr_addr": "0x089C79A7",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89c7afc",
+   "list_valid": true,
+   "item_count": 11,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    }
+   ],
+   "maps": [
+    {
+     "group": 31,
+     "num": 2,
+     "name_zh": "烟墨市"
+    },
+    {
+     "group": 34,
+     "num": 3,
+     "name_zh": "石英高原"
+    },
+    {
+     "group": 45,
+     "num": 1,
+     "name_zh": "吉野市"
+    },
+    {
+     "group": 46,
+     "num": 3,
+     "name_zh": "桔梗市"
+    },
+    {
+     "group": 47,
+     "num": 4,
+     "name_zh": "桧皮镇"
+    },
+    {
+     "group": 48,
+     "num": 7,
+     "name_zh": "缘朱市"
+    },
+    {
+     "group": 49,
+     "num": 11,
+     "name_zh": "浅葱市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 0003 000d 0016 000e 0012 0011 000f 0010 0055 0056",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/25",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089C79A7.md"
+  },
+  {
+   "script_addr": "0x089C79B2",
+   "instr_addr": "0x089C79B2",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89c7b15",
+   "list_valid": true,
+   "item_count": 9,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    }
+   ],
+   "maps": [
+    {
+     "group": 31,
+     "num": 2,
+     "name_zh": "烟墨市"
+    },
+    {
+     "group": 34,
+     "num": 3,
+     "name_zh": "石英高原"
+    },
+    {
+     "group": 45,
+     "num": 1,
+     "name_zh": "吉野市"
+    },
+    {
+     "group": 46,
+     "num": 3,
+     "name_zh": "桔梗市"
+    },
+    {
+     "group": 47,
+     "num": 4,
+     "name_zh": "桧皮镇"
+    },
+    {
+     "group": 48,
+     "num": 7,
+     "name_zh": "缘朱市"
+    },
+    {
+     "group": 49,
+     "num": 11,
+     "name_zh": "浅葱市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 000d 0016 000e 0012 0011 000f 0010 0056",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/26",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089C79B2.md"
+  },
+  {
+   "script_addr": "0x089C79BD",
+   "instr_addr": "0x089C79BD",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89c7b2a",
+   "list_valid": true,
+   "item_count": 4,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    }
+   ],
+   "maps": [
+    {
+     "group": 31,
+     "num": 2,
+     "name_zh": "烟墨市"
+    },
+    {
+     "group": 34,
+     "num": 3,
+     "name_zh": "石英高原"
+    },
+    {
+     "group": 45,
+     "num": 1,
+     "name_zh": "吉野市"
+    },
+    {
+     "group": 46,
+     "num": 3,
+     "name_zh": "桔梗市"
+    },
+    {
+     "group": 47,
+     "num": 4,
+     "name_zh": "桧皮镇"
+    },
+    {
+     "group": 48,
+     "num": 7,
+     "name_zh": "缘朱市"
+    },
+    {
+     "group": 49,
+     "num": 11,
+     "name_zh": "浅葱市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 000d 000e 0012",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/27",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089C79BD.md"
+  },
+  {
+   "script_addr": "0x08F4F28D",
+   "instr_addr": "0x08F4F293",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x8f4f68e",
+   "list_valid": true,
+   "item_count": 4,
+   "items": [
+    {
+     "index": 129,
+     "name": "热带邮件",
+     "price": 50,
+     "itemId": 129
+    },
+    {
+     "index": 131,
+     "name": "奇迹邮件",
+     "price": 50,
+     "itemId": 131
+    },
+    {
+     "index": 240,
+     "name": "黑暗球",
+     "price": 1000,
+     "itemId": 240
+    },
+    {
+     "index": 6,
+     "name": "捕网球",
+     "price": 1000,
+     "itemId": 6
+    }
+   ],
+   "maps": [
+    {
+     "group": 31,
+     "num": 2,
+     "name_zh": "烟墨市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0081 0083 00f0 0006",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/28",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/08F4F293.md"
+  },
+  {
+   "script_addr": "0x08F3FA46",
+   "instr_addr": "0x08F3FA4D",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x8f40046",
+   "list_valid": true,
+   "item_count": 18,
+   "items": [
+    {
+     "index": 655,
+     "name": "一般宝石",
+     "price": 2000,
+     "itemId": 655
+    },
+    {
+     "index": 656,
+     "name": "格斗宝石",
+     "price": 2000,
+     "itemId": 656
+    },
+    {
+     "index": 657,
+     "name": "飞行宝石",
+     "price": 2000,
+     "itemId": 657
+    },
+    {
+     "index": 658,
+     "name": "毒之宝石",
+     "price": 2000,
+     "itemId": 658
+    },
+    {
+     "index": 659,
+     "name": "地面宝石",
+     "price": 2000,
+     "itemId": 659
+    },
+    {
+     "index": 660,
+     "name": "岩石宝石",
+     "price": 2000,
+     "itemId": 660
+    },
+    {
+     "index": 661,
+     "name": "虫之宝石",
+     "price": 2000,
+     "itemId": 661
+    },
+    {
+     "index": 662,
+     "name": "幽灵宝石",
+     "price": 2000,
+     "itemId": 662
+    },
+    {
+     "index": 663,
+     "name": "钢之宝石",
+     "price": 2000,
+     "itemId": 663
+    },
+    {
+     "index": 664,
+     "name": "火之宝石",
+     "price": 2000,
+     "itemId": 664
+    },
+    {
+     "index": 665,
+     "name": "水之宝石",
+     "price": 2000,
+     "itemId": 665
+    },
+    {
+     "index": 666,
+     "name": "草之宝石",
+     "price": 2000,
+     "itemId": 666
+    },
+    {
+     "index": 667,
+     "name": "电之宝石",
+     "price": 2000,
+     "itemId": 667
+    },
+    {
+     "index": 668,
+     "name": "超能力宝石",
+     "price": 2000,
+     "itemId": 668
+    },
+    {
+     "index": 669,
+     "name": "冰之宝石",
+     "price": 2000,
+     "itemId": 669
+    },
+    {
+     "index": 670,
+     "name": "龙之宝石",
+     "price": 2000,
+     "itemId": 670
+    },
+    {
+     "index": 671,
+     "name": "恶之宝石",
+     "price": 2000,
+     "itemId": 671
+    },
+    {
+     "index": 672,
+     "name": "妖精宝石",
+     "price": 2000,
+     "itemId": 672
+    }
+   ],
+   "maps": [
+    {
+     "group": 32,
+     "num": 0,
+     "name_zh": "烟墨市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "028f 0290 0291 0292 0293 0294 0295 0296 0297 0298 0299 029a 029b 029c 029d 029e 029f 02a0",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/29",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/08F3FA4D.md"
+  },
+  {
+   "script_addr": "0x08EDCDDF",
+   "instr_addr": "0x08EDCDF2",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x8edce02",
+   "list_valid": true,
+   "item_count": 6,
+   "items": [
+    {
+     "index": 709,
+     "name": "逃脱按键",
+     "price": 4000,
+     "itemId": 709
+    },
+    {
+     "index": 715,
+     "name": "胆怯球",
+     "price": 4000,
+     "itemId": 715
+    },
+    {
+     "index": 724,
+     "name": "打空保险",
+     "price": 4000,
+     "itemId": 724
+    },
+    {
+     "index": 726,
+     "name": "万能伞",
+     "price": 4000,
+     "itemId": 726
+    },
+    {
+     "index": 703,
+     "name": "气球",
+     "price": 4000,
+     "itemId": 703
+    },
+    {
+     "index": 543,
+     "name": "机变骰子",
+     "price": 10000,
+     "itemId": 543
+    }
+   ],
+   "maps": [
+    {
+     "group": 35,
+     "num": 1,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "02c5 02cb 02d4 02d6 02bf 021f",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/30",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/08EDCDF2.md"
+  },
+  {
+   "script_addr": "0x08171CAE",
+   "instr_addr": "0x08171CC4",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x8171cd4",
+   "list_valid": true,
+   "item_count": 8,
+   "items": [
+    {
+     "index": 2,
+     "name": "高级球",
+     "price": 800,
+     "itemId": 2
+    },
+    {
+     "index": 19,
+     "name": "全复药",
+     "price": 3000,
+     "itemId": 19
+    },
+    {
+     "index": 20,
+     "name": "全满药",
+     "price": 2500,
+     "itemId": 20
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 23,
+     "name": "万灵药",
+     "price": 400,
+     "itemId": 23
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 84,
+     "name": "黄金喷雾",
+     "price": 900,
+     "itemId": 84
+    }
+   ],
+   "maps": [
+    {
+     "group": 35,
+     "num": 7,
+     "name_zh": "桧皮镇"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x08171CB6:goto_if"
+   ],
+   "raw_list": "0002 0013 0014 0018 0010 0017 0055 0054",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/31",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/08171CC4.md"
+  },
+  {
+   "script_addr": "0x08171E66",
+   "instr_addr": "0x08171E7C",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x8171e8c",
+   "list_valid": true,
+   "item_count": 8,
+   "items": [
+    {
+     "index": 2,
+     "name": "高级球",
+     "price": 800,
+     "itemId": 2
+    },
+    {
+     "index": 19,
+     "name": "全复药",
+     "price": 3000,
+     "itemId": 19
+    },
+    {
+     "index": 20,
+     "name": "全满药",
+     "price": 2500,
+     "itemId": 20
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 23,
+     "name": "万灵药",
+     "price": 400,
+     "itemId": 23
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 84,
+     "name": "黄金喷雾",
+     "price": 900,
+     "itemId": 84
+    },
+    {
+     "index": 130,
+     "name": "梦境邮件",
+     "price": 50,
+     "itemId": 130
+    }
+   ],
+   "maps": [
+    {
+     "group": 37,
+     "num": 4,
+     "name_zh": "城都矿山"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x08171E6E:goto_if"
+   ],
+   "raw_list": "0002 0013 0014 0018 0017 0055 0054 0082",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/32",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/08171E7C.md"
+  },
+  {
+   "script_addr": "0x089C7B34",
+   "instr_addr": "0x089C7B43",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89c7bbb",
+   "list_valid": true,
+   "item_count": 3,
+   "items": [
+    {
+     "index": 121,
+     "name": "橙色邮件",
+     "price": 50,
+     "itemId": 121
+    },
+    {
+     "index": 122,
+     "name": "港口邮件",
+     "price": 50,
+     "itemId": 122
+    },
+    {
+     "index": 123,
+     "name": "闪亮邮件",
+     "price": 50,
+     "itemId": 123
+    }
+   ],
+   "maps": [
+    {
+     "group": 45,
+     "num": 1,
+     "name_zh": "吉野市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x089C7B34:checkflag",
+    "0x089C7B37:goto_if"
+   ],
+   "raw_list": "0079 007a 007b",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/33",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089C7B43.md"
+  },
+  {
+   "script_addr": "0x089C7B53",
+   "instr_addr": "0x089C7B5B",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89c7bc4",
+   "list_valid": true,
+   "item_count": 4,
+   "items": [
+    {
+     "index": 121,
+     "name": "橙色邮件",
+     "price": 50,
+     "itemId": 121
+    },
+    {
+     "index": 122,
+     "name": "港口邮件",
+     "price": 50,
+     "itemId": 122
+    },
+    {
+     "index": 123,
+     "name": "闪亮邮件",
+     "price": 50,
+     "itemId": 123
+    },
+    {
+     "index": 241,
+     "name": "治愈球",
+     "price": 300,
+     "itemId": 241
+    }
+   ],
+   "maps": [
+    {
+     "group": 45,
+     "num": 1,
+     "name_zh": "吉野市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0079 007a 007b 00f1",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/34",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089C7B5B.md"
+  },
+  {
+   "script_addr": "0x089CF854",
+   "instr_addr": "0x089CF85A",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89cf892",
+   "list_valid": true,
+   "item_count": 4,
+   "items": [
+    {
+     "index": 126,
+     "name": "波涛邮件",
+     "price": 50,
+     "itemId": 126
+    },
+    {
+     "index": 127,
+     "name": "珠宝邮件",
+     "price": 50,
+     "itemId": 127
+    },
+    {
+     "index": 241,
+     "name": "治愈球",
+     "price": 300,
+     "itemId": 241
+    },
+    {
+     "index": 6,
+     "name": "捕网球",
+     "price": 1000,
+     "itemId": 6
+    }
+   ],
+   "maps": [
+    {
+     "group": 46,
+     "num": 3,
+     "name_zh": "桔梗市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "007e 007f 00f1 0006",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/35",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089CF85A.md"
+  },
+  {
+   "script_addr": "0x089D55BE",
+   "instr_addr": "0x089D55C4",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89d55fc",
+   "list_valid": true,
+   "item_count": 3,
+   "items": [
+    {
+     "index": 132,
+     "name": "复古邮件",
+     "price": 50,
+     "itemId": 132
+    },
+    {
+     "index": 8,
+     "name": "巢穴球",
+     "price": 1000,
+     "itemId": 8
+    },
+    {
+     "index": 6,
+     "name": "捕网球",
+     "price": 1000,
+     "itemId": 6
+    }
+   ],
+   "maps": [
+    {
+     "group": 47,
+     "num": 4,
+     "name_zh": "桧皮镇"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0084 0008 0006",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/36",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089D55C4.md"
+  },
+  {
+   "script_addr": "0x089D9510",
+   "instr_addr": "0x089D9516",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89d954e",
+   "list_valid": true,
+   "item_count": 3,
+   "items": [
+    {
+     "index": 130,
+     "name": "梦境邮件",
+     "price": 50,
+     "itemId": 130
+    },
+    {
+     "index": 240,
+     "name": "黑暗球",
+     "price": 1000,
+     "itemId": 240
+    },
+    {
+     "index": 9,
+     "name": "重复球",
+     "price": 1000,
+     "itemId": 9
+    }
+   ],
+   "maps": [
+    {
+     "group": 48,
+     "num": 7,
+     "name_zh": "缘朱市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0082 00f0 0009",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/37",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089D9516.md"
+  },
+  {
+   "script_addr": "0x089DA532",
+   "instr_addr": "0x089DA538",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89da629",
+   "list_valid": true,
+   "item_count": 5,
+   "items": [
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 21,
+     "name": "厉害伤药",
+     "price": 1500,
+     "itemId": 21
+    },
+    {
+     "index": 23,
+     "name": "万灵药",
+     "price": 400,
+     "itemId": 23
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    }
+   ],
+   "maps": [
+    {
+     "group": 49,
+     "num": 4,
+     "name_zh": "湛蓝市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "000d 0016 0015 0017 0018",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/38",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089DA538.md"
+  },
+  {
+   "script_addr": "0x089F2544",
+   "instr_addr": "0x089F254A",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x8f4f828",
+   "list_valid": true,
+   "item_count": 5,
+   "items": [
+    {
+     "index": 124,
+     "name": "机械邮件",
+     "price": 50,
+     "itemId": 124
+    },
+    {
+     "index": 125,
+     "name": "木纹邮件",
+     "price": 50,
+     "itemId": 125
+    },
+    {
+     "index": 126,
+     "name": "波涛邮件",
+     "price": 50,
+     "itemId": 126
+    },
+    {
+     "index": 241,
+     "name": "治愈球",
+     "price": 300,
+     "itemId": 241
+    },
+    {
+     "index": 6,
+     "name": "捕网球",
+     "price": 1000,
+     "itemId": 6
+    }
+   ],
+   "maps": [
+    {
+     "group": 49,
+     "num": 11,
+     "name_zh": "浅葱市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "007c 007d 007e 00f1 0006",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/39",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089F254A.md"
+  },
+  {
+   "script_addr": "0x089DEFEB",
+   "instr_addr": "0x089DEFF2",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89df092",
+   "list_valid": true,
+   "item_count": 4,
+   "items": [
+    {
+     "index": 30,
+     "name": "元气粉",
+     "price": 500,
+     "itemId": 30
+    },
+    {
+     "index": 31,
+     "name": "元气根",
+     "price": 1200,
+     "itemId": 31
+    },
+    {
+     "index": 32,
+     "name": "万能粉",
+     "price": 300,
+     "itemId": 32
+    },
+    {
+     "index": 33,
+     "name": "复活草",
+     "price": 2800,
+     "itemId": 33
+    }
+   ],
+   "maps": [
+    {
+     "group": 50,
+     "num": 5,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "001e 001f 0020 0021",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/40",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089DEFF2.md"
+  },
+  {
+   "script_addr": "0x08AEB82A",
+   "instr_addr": "0x08AEB840",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x8aeb88d",
+   "list_valid": true,
+   "item_count": 9,
+   "items": [
+    {
+     "index": 159,
+     "name": "玉黍果",
+     "price": 500,
+     "itemId": 159
+    },
+    {
+     "index": 160,
+     "name": "岳竹果",
+     "price": 500,
+     "itemId": 160
+    },
+    {
+     "index": 161,
+     "name": "茸丹果",
+     "price": 500,
+     "itemId": 161
+    },
+    {
+     "index": 162,
+     "name": "檬柠果",
+     "price": 500,
+     "itemId": 162
+    },
+    {
+     "index": 163,
+     "name": "刺角果",
+     "price": 500,
+     "itemId": 163
+    },
+    {
+     "index": 164,
+     "name": "椰木果",
+     "price": 500,
+     "itemId": 164
+    },
+    {
+     "index": 165,
+     "name": "瓜西果",
+     "price": 500,
+     "itemId": 165
+    },
+    {
+     "index": 166,
+     "name": "金枕果",
+     "price": 500,
+     "itemId": 166
+    },
+    {
+     "index": 167,
+     "name": "靛莓果",
+     "price": 500,
+     "itemId": 167
+    }
+   ],
+   "maps": [
+    {
+     "group": 50,
+     "num": 7,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x08AEB832:goto_if"
+   ],
+   "raw_list": "009f 00a0 00a1 00a2 00a3 00a4 00a5 00a6 00a7",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/41",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/08AEB840.md"
+  },
+  {
+   "script_addr": "0x089ED4FA",
+   "instr_addr": "0x089ED510",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89ee392",
+   "list_valid": true,
+   "item_count": 6,
+   "items": [
+    {
+     "index": 57,
+     "name": "体力之羽",
+     "price": 3000,
+     "itemId": 57
+    },
+    {
+     "index": 58,
+     "name": "肌力之羽",
+     "price": 3000,
+     "itemId": 58
+    },
+    {
+     "index": 59,
+     "name": "抵抗之羽",
+     "price": 3000,
+     "itemId": 59
+    },
+    {
+     "index": 60,
+     "name": "智力之羽",
+     "price": 3000,
+     "itemId": 60
+    },
+    {
+     "index": 61,
+     "name": "精神之羽",
+     "price": 3000,
+     "itemId": 61
+    },
+    {
+     "index": 62,
+     "name": "瞬发之羽",
+     "price": 3000,
+     "itemId": 62
+    }
+   ],
+   "maps": [
+    {
+     "group": 50,
+     "num": 10,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x089ED502:goto_if"
+   ],
+   "raw_list": "0039 003a 003b 003c 003d 003e",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/42",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089ED510.md"
+  },
+  {
+   "script_addr": "0x089EADB8",
+   "instr_addr": "0x089EADC7",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89ebacf",
+   "list_valid": true,
+   "item_count": 4,
+   "items": [
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 80,
+     "name": "皮皮玩偶",
+     "price": 300,
+     "itemId": 80
+    }
+   ],
+   "maps": [
+    {
+     "group": 50,
+     "num": 16,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x089EADB8:checkflag",
+    "0x089EADBB:goto_if"
+   ],
+   "raw_list": "000d 000e 0012 0050",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/43",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089EADC7.md"
+  },
+  {
+   "script_addr": "0x089EB937",
+   "instr_addr": "0x089EB937",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89ebada",
+   "list_valid": true,
+   "item_count": 23,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 2,
+     "name": "高级球",
+     "price": 800,
+     "itemId": 2
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 21,
+     "name": "厉害伤药",
+     "price": 1500,
+     "itemId": 21
+    },
+    {
+     "index": 20,
+     "name": "全满药",
+     "price": 2500,
+     "itemId": 20
+    },
+    {
+     "index": 19,
+     "name": "全复药",
+     "price": 3000,
+     "itemId": 19
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 23,
+     "name": "万灵药",
+     "price": 400,
+     "itemId": 23
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    },
+    {
+     "index": 83,
+     "name": "白银喷雾",
+     "price": 700,
+     "itemId": 83
+    },
+    {
+     "index": 84,
+     "name": "黄金喷雾",
+     "price": 900,
+     "itemId": 84
+    },
+    {
+     "index": 80,
+     "name": "皮皮玩偶",
+     "price": 300,
+     "itemId": 80
+    },
+    {
+     "index": 130,
+     "name": "梦境邮件",
+     "price": 50,
+     "itemId": 130
+    },
+    {
+     "index": 128,
+     "name": "影子邮件",
+     "price": 50,
+     "itemId": 128
+    },
+    {
+     "index": 126,
+     "name": "波涛邮件",
+     "price": 50,
+     "itemId": 126
+    }
+   ],
+   "maps": [
+    {
+     "group": 50,
+     "num": 16,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 0003 0002 000d 0016 0015 0014 0013 0018 000e 0012 0011 000f 0010 0017 0055 0056 0053 0054 0050 0082 0080 007e",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/44",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089EB937.md"
+  },
+  {
+   "script_addr": "0x089EB942",
+   "instr_addr": "0x089EB942",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89ebb0d",
+   "list_valid": true,
+   "item_count": 22,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 2,
+     "name": "高级球",
+     "price": 800,
+     "itemId": 2
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 21,
+     "name": "厉害伤药",
+     "price": 1500,
+     "itemId": 21
+    },
+    {
+     "index": 20,
+     "name": "全满药",
+     "price": 2500,
+     "itemId": 20
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 23,
+     "name": "万灵药",
+     "price": 400,
+     "itemId": 23
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    },
+    {
+     "index": 83,
+     "name": "白银喷雾",
+     "price": 700,
+     "itemId": 83
+    },
+    {
+     "index": 84,
+     "name": "黄金喷雾",
+     "price": 900,
+     "itemId": 84
+    },
+    {
+     "index": 80,
+     "name": "皮皮玩偶",
+     "price": 300,
+     "itemId": 80
+    },
+    {
+     "index": 130,
+     "name": "梦境邮件",
+     "price": 50,
+     "itemId": 130
+    },
+    {
+     "index": 128,
+     "name": "影子邮件",
+     "price": 50,
+     "itemId": 128
+    },
+    {
+     "index": 126,
+     "name": "波涛邮件",
+     "price": 50,
+     "itemId": 126
+    }
+   ],
+   "maps": [
+    {
+     "group": 50,
+     "num": 16,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 0003 0002 000d 0016 0015 0014 0018 000e 0012 0011 000f 0010 0017 0055 0056 0053 0054 0050 0082 0080 007e",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/45",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089EB942.md"
+  },
+  {
+   "script_addr": "0x089EB94D",
+   "instr_addr": "0x089EB94D",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89ebb3e",
+   "list_valid": true,
+   "item_count": 21,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 2,
+     "name": "高级球",
+     "price": 800,
+     "itemId": 2
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 21,
+     "name": "厉害伤药",
+     "price": 1500,
+     "itemId": 21
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 23,
+     "name": "万灵药",
+     "price": 400,
+     "itemId": 23
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    },
+    {
+     "index": 83,
+     "name": "白银喷雾",
+     "price": 700,
+     "itemId": 83
+    },
+    {
+     "index": 84,
+     "name": "黄金喷雾",
+     "price": 900,
+     "itemId": 84
+    },
+    {
+     "index": 80,
+     "name": "皮皮玩偶",
+     "price": 300,
+     "itemId": 80
+    },
+    {
+     "index": 130,
+     "name": "梦境邮件",
+     "price": 50,
+     "itemId": 130
+    },
+    {
+     "index": 128,
+     "name": "影子邮件",
+     "price": 50,
+     "itemId": 128
+    },
+    {
+     "index": 126,
+     "name": "波涛邮件",
+     "price": 50,
+     "itemId": 126
+    }
+   ],
+   "maps": [
+    {
+     "group": 50,
+     "num": 16,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 0003 0002 000d 0016 0015 0018 000e 0012 0011 000f 0010 0017 0055 0056 0053 0054 0050 0082 0080 007e",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/46",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089EB94D.md"
+  },
+  {
+   "script_addr": "0x089EB958",
+   "instr_addr": "0x089EB958",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89ebb6d",
+   "list_valid": true,
+   "item_count": 20,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 2,
+     "name": "高级球",
+     "price": 800,
+     "itemId": 2
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 21,
+     "name": "厉害伤药",
+     "price": 1500,
+     "itemId": 21
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 23,
+     "name": "万灵药",
+     "price": 400,
+     "itemId": 23
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    },
+    {
+     "index": 83,
+     "name": "白银喷雾",
+     "price": 700,
+     "itemId": 83
+    },
+    {
+     "index": 80,
+     "name": "皮皮玩偶",
+     "price": 300,
+     "itemId": 80
+    },
+    {
+     "index": 130,
+     "name": "梦境邮件",
+     "price": 50,
+     "itemId": 130
+    },
+    {
+     "index": 128,
+     "name": "影子邮件",
+     "price": 50,
+     "itemId": 128
+    },
+    {
+     "index": 126,
+     "name": "波涛邮件",
+     "price": 50,
+     "itemId": 126
+    }
+   ],
+   "maps": [
+    {
+     "group": 50,
+     "num": 16,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 0003 0002 000d 0016 0015 0018 000e 0012 0011 000f 0010 0017 0055 0056 0053 0050 0082 0080 007e",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/47",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089EB958.md"
+  },
+  {
+   "script_addr": "0x089EB963",
+   "instr_addr": "0x089EB963",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89ebb9a",
+   "list_valid": true,
+   "item_count": 17,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    },
+    {
+     "index": 83,
+     "name": "白银喷雾",
+     "price": 700,
+     "itemId": 83
+    },
+    {
+     "index": 80,
+     "name": "皮皮玩偶",
+     "price": 300,
+     "itemId": 80
+    },
+    {
+     "index": 130,
+     "name": "梦境邮件",
+     "price": 50,
+     "itemId": 130
+    },
+    {
+     "index": 128,
+     "name": "影子邮件",
+     "price": 50,
+     "itemId": 128
+    },
+    {
+     "index": 126,
+     "name": "波涛邮件",
+     "price": 50,
+     "itemId": 126
+    }
+   ],
+   "maps": [
+    {
+     "group": 50,
+     "num": 16,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 0003 000d 0016 0018 000e 0012 0011 000f 0010 0055 0056 0053 0050 0082 0080 007e",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/48",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089EB963.md"
+  },
+  {
+   "script_addr": "0x089EB96E",
+   "instr_addr": "0x089EB96E",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89ebbc1",
+   "list_valid": true,
+   "item_count": 16,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 24,
+     "name": "活力碎片",
+     "price": 2000,
+     "itemId": 24
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    },
+    {
+     "index": 80,
+     "name": "皮皮玩偶",
+     "price": 300,
+     "itemId": 80
+    },
+    {
+     "index": 130,
+     "name": "梦境邮件",
+     "price": 50,
+     "itemId": 130
+    },
+    {
+     "index": 128,
+     "name": "影子邮件",
+     "price": 50,
+     "itemId": 128
+    },
+    {
+     "index": 126,
+     "name": "波涛邮件",
+     "price": 50,
+     "itemId": 126
+    }
+   ],
+   "maps": [
+    {
+     "group": 50,
+     "num": 16,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 0003 000d 0016 0018 000e 0012 0011 000f 0010 0055 0056 0050 0082 0080 007e",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/49",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089EB96E.md"
+  },
+  {
+   "script_addr": "0x089EB983",
+   "instr_addr": "0x089EB983",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89ebbe6",
+   "list_valid": true,
+   "item_count": 15,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 3,
+     "name": "超级球",
+     "price": 600,
+     "itemId": 3
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 85,
+     "name": "离洞绳",
+     "price": 1000,
+     "itemId": 85
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    },
+    {
+     "index": 80,
+     "name": "皮皮玩偶",
+     "price": 300,
+     "itemId": 80
+    },
+    {
+     "index": 130,
+     "name": "梦境邮件",
+     "price": 50,
+     "itemId": 130
+    },
+    {
+     "index": 128,
+     "name": "影子邮件",
+     "price": 50,
+     "itemId": 128
+    },
+    {
+     "index": 126,
+     "name": "波涛邮件",
+     "price": 50,
+     "itemId": 126
+    }
+   ],
+   "maps": [
+    {
+     "group": 50,
+     "num": 16,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 0003 000d 0016 000e 0012 0011 000f 0010 0055 0056 0050 0082 0080 007e",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/50",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089EB983.md"
+  },
+  {
+   "script_addr": "0x089EB98E",
+   "instr_addr": "0x089EB98E",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89ebc09",
+   "list_valid": true,
+   "item_count": 13,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 22,
+     "name": "好伤药",
+     "price": 700,
+     "itemId": 22
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 17,
+     "name": "解眠药",
+     "price": 200,
+     "itemId": 17
+    },
+    {
+     "index": 15,
+     "name": "灼伤药",
+     "price": 200,
+     "itemId": 15
+    },
+    {
+     "index": 16,
+     "name": "解冻药",
+     "price": 200,
+     "itemId": 16
+    },
+    {
+     "index": 86,
+     "name": "除虫喷雾",
+     "price": 400,
+     "itemId": 86
+    },
+    {
+     "index": 80,
+     "name": "皮皮玩偶",
+     "price": 300,
+     "itemId": 80
+    },
+    {
+     "index": 130,
+     "name": "梦境邮件",
+     "price": 50,
+     "itemId": 130
+    },
+    {
+     "index": 128,
+     "name": "影子邮件",
+     "price": 50,
+     "itemId": 128
+    },
+    {
+     "index": 126,
+     "name": "波涛邮件",
+     "price": 50,
+     "itemId": 126
+    }
+   ],
+   "maps": [
+    {
+     "group": 50,
+     "num": 16,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 000d 0016 000e 0012 0011 000f 0010 0056 0050 0082 0080 007e",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/51",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089EB98E.md"
+  },
+  {
+   "script_addr": "0x089EB9A8",
+   "instr_addr": "0x089EB9A8",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89ebc28",
+   "list_valid": true,
+   "item_count": 8,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 14,
+     "name": "解毒药",
+     "price": 200,
+     "itemId": 14
+    },
+    {
+     "index": 18,
+     "name": "解麻药",
+     "price": 200,
+     "itemId": 18
+    },
+    {
+     "index": 80,
+     "name": "皮皮玩偶",
+     "price": 300,
+     "itemId": 80
+    },
+    {
+     "index": 130,
+     "name": "梦境邮件",
+     "price": 50,
+     "itemId": 130
+    },
+    {
+     "index": 128,
+     "name": "影子邮件",
+     "price": 50,
+     "itemId": 128
+    },
+    {
+     "index": 126,
+     "name": "波涛邮件",
+     "price": 50,
+     "itemId": 126
+    }
+   ],
+   "maps": [
+    {
+     "group": 50,
+     "num": 16,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 000d 000e 0012 0050 0082 0080 007e",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/52",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089EB9A8.md"
+  },
+  {
+   "script_addr": "0x089EAB83",
+   "instr_addr": "0x089EAB99",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x89eb8b4",
+   "list_valid": true,
+   "item_count": 12,
+   "items": [
+    {
+     "index": 395,
+     "name": "TM70",
+     "price": 8000,
+     "itemId": 395
+    },
+    {
+     "index": 305,
+     "name": "TM17",
+     "price": 8000,
+     "itemId": 305
+    },
+    {
+     "index": 379,
+     "name": "招式学习器54",
+     "price": 8000,
+     "itemId": 379
+    },
+    {
+     "index": 439,
+     "name": "TM114",
+     "price": 8000,
+     "itemId": 439
+    },
+    {
+     "index": 304,
+     "name": "TM16",
+     "price": 8000,
+     "itemId": 304
+    },
+    {
+     "index": 321,
+     "name": "TM33",
+     "price": 8000,
+     "itemId": 321
+    },
+    {
+     "index": 310,
+     "name": "TM22",
+     "price": 8000,
+     "itemId": 310
+    },
+    {
+     "index": 377,
+     "name": "招式学习器52",
+     "price": 8000,
+     "itemId": 377
+    },
+    {
+     "index": 326,
+     "name": "TM38",
+     "price": 8000,
+     "itemId": 326
+    },
+    {
+     "index": 313,
+     "name": "TM25",
+     "price": 8000,
+     "itemId": 313
+    },
+    {
+     "index": 302,
+     "name": "TM14",
+     "price": 8000,
+     "itemId": 302
+    },
+    {
+     "index": 303,
+     "name": "TM15",
+     "price": 8000,
+     "itemId": 303
+    }
+   ],
+   "maps": [
+    {
+     "group": 50,
+     "num": 18,
+     "name_zh": "满金市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x089EAB8B:goto_if"
+   ],
+   "raw_list": "018b 0131 017b 01b7 0130 0141 0136 0179 0146 0139 012e 012f",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/53",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/089EAB99.md"
+  },
+  {
+   "script_addr": "0x08AAB01F",
+   "instr_addr": "0x08AAB01F",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x8aab0e0",
+   "list_valid": true,
+   "item_count": 3,
+   "items": [
+    {
+     "index": 4,
+     "name": "精灵球",
+     "price": 200,
+     "itemId": 4
+    },
+    {
+     "index": 13,
+     "name": "伤药",
+     "price": 200,
+     "itemId": 13
+    },
+    {
+     "index": 103,
+     "name": "小蘑菇",
+     "price": 500,
+     "itemId": 103
+    }
+   ],
+   "maps": [
+    {
+     "group": 53,
+     "num": 2,
+     "name_zh": "卡吉镇"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "0004 000d 0067",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/54",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/08AAB01F.md"
+  },
+  {
+   "script_addr": "0x08D56220",
+   "instr_addr": "0x08D56226",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x8d5660c",
+   "list_valid": true,
+   "item_count": 6,
+   "items": [
+    {
+     "index": 737,
+     "name": "金之护符",
+     "price": 10000,
+     "itemId": 737
+    },
+    {
+     "index": 738,
+     "name": "银之护符",
+     "price": 10000,
+     "itemId": 738
+    },
+    {
+     "index": 743,
+     "name": "水晶护符",
+     "price": 10000,
+     "itemId": 743
+    },
+    {
+     "index": 280,
+     "name": "蓝色羽毛",
+     "price": 65535,
+     "itemId": 280
+    },
+    {
+     "index": 285,
+     "name": "黄色羽毛",
+     "price": 65535,
+     "itemId": 285
+    },
+    {
+     "index": 279,
+     "name": "红色羽毛",
+     "price": 65535,
+     "itemId": 279
+    }
+   ],
+   "maps": [
+    {
+     "group": 55,
+     "num": 5,
+     "name_zh": "缘朱市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "02e1 02e2 02e7 0118 011d 0117",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/55",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/08D56226.md"
+  },
+  {
+   "script_addr": "0x08D562BB",
+   "instr_addr": "0x08D562C1",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x8d56446",
+   "list_valid": true,
+   "item_count": 4,
+   "items": [
+    {
+     "index": 744,
+     "name": "黑奇石",
+     "price": 10000,
+     "itemId": 744
+    },
+    {
+     "index": 745,
+     "name": "泥炭块",
+     "price": 10000,
+     "itemId": 745
+    },
+    {
+     "index": 746,
+     "name": "宝可梦图鉴",
+     "price": 65535,
+     "itemId": 746
+    },
+    {
+     "index": 747,
+     "name": "精灵球模具",
+     "price": 65535,
+     "itemId": 747
+    }
+   ],
+   "maps": [
+    {
+     "group": 55,
+     "num": 5,
+     "name_zh": "缘朱市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "02e8 02e9 02ea 02eb",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/56",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/08D562C1.md"
+  },
+  {
+   "script_addr": "0x08D562D0",
+   "instr_addr": "0x08D562D6",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x8d56482",
+   "list_valid": true,
+   "item_count": 3,
+   "items": [
+    {
+     "index": 748,
+     "name": "卡比丘",
+     "price": 5000,
+     "itemId": 748
+    },
+    {
+     "index": 278,
+     "name": "伊布尾巴",
+     "price": 5000,
+     "itemId": 278
+    },
+    {
+     "index": 749,
+     "name": "长舌头",
+     "price": 10000,
+     "itemId": 749
+    }
+   ],
+   "maps": [
+    {
+     "group": 55,
+     "num": 5,
+     "name_zh": "缘朱市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [],
+   "raw_list": "02ec 0116 02ed",
+   "source": {
+    "path": "encounters_research/out/shops.json",
+    "json_pointer": "/shops/57",
+    "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2"
+   },
+   "page_path": "world/pages/shops/08D562D6.md"
+  }
+ ],
+ "rejected_invalid_pointer": [
+  {
+   "script_addr": "0x08990B94",
+   "instr_addr": "0x08990C8E",
+   "opcode": "0x88",
+   "kind": "pokemartbp",
+   "list_addr": "0x2b072b07",
+   "list_valid": false,
+   "item_count": 0,
+   "items": [],
+   "maps": [
+    {
+     "group": 3,
+     "num": 67,
+     "name_zh": "吉野市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x08990B95:goto_if",
+    "0x08990B9B:goto_if",
+    "0x08990BA1:call_if",
+    "0x08990BA7:call_if",
+    "0x08990BAD:call_if",
+    "0x08990BB3:goto_if",
+    "0x08990BB9:goto_if",
+    "0x08990BBF:goto_if",
+    "0x08990BCB:call_if",
+    "0x08990BD9:goto_if"
+   ],
+   "raw_list": "",
+   "classification": "suspected_desync",
+   "root_cause": "列表参数不是 ROM 道具指针（0x2b072b07 / 0x88328732），据此拒绝计入有效库存；疑似上游脚本解析失步：根脚本 0x08990B94(map 3:67/local12 对象 script) 位于 0x0898-0x0899 数据/文本区（该字节型 32063306 全 ROM 出现 469 次），解码器可能把数据当指令前进。根因尚待上游脚本解析/第一处分派失步确认。原始记录保留，不作库存结论。"
+  },
+  {
+   "script_addr": "0x08990B94",
+   "instr_addr": "0x08990CA8",
+   "opcode": "0x86",
+   "kind": "pokemart",
+   "list_addr": "0x88328732",
+   "list_valid": false,
+   "item_count": 0,
+   "items": [],
+   "maps": [
+    {
+     "group": 3,
+     "num": 67,
+     "name_zh": "吉野市"
+    }
+   ],
+   "shared_flags": [],
+   "conditions_heuristic": [
+    "0x08990B95:goto_if",
+    "0x08990B9B:goto_if",
+    "0x08990BA1:call_if",
+    "0x08990BA7:call_if",
+    "0x08990BAD:call_if",
+    "0x08990BB3:goto_if",
+    "0x08990BB9:goto_if",
+    "0x08990BBF:goto_if",
+    "0x08990BCB:call_if",
+    "0x08990BD9:goto_if",
+    "0x08990C93:call_if",
+    "0x08990C99:call_if"
+   ],
+   "raw_list": "",
+   "classification": "suspected_desync",
+   "root_cause": "列表参数不是 ROM 道具指针（0x2b072b07 / 0x88328732），据此拒绝计入有效库存；疑似上游脚本解析失步：根脚本 0x08990B94(map 3:67/local12 对象 script) 位于 0x0898-0x0899 数据/文本区（该字节型 32063306 全 ROM 出现 469 次），解码器可能把数据当指令前进。根因尚待上游脚本解析/第一处分派失步确认。原始记录保留，不作库存结论。"
+  }
+ ],
+ "note": "静态商店库存。item 名/价格为 ROM items 表内嵌值；条件列仅为脚本前文条件指令启发式，未证明剧情解锁。"
+}

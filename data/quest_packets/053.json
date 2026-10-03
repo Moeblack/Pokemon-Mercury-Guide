@@ -1,0 +1,1333 @@
+{
+ "title": "如梦似幻般的银",
+ "quest_id": 53,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b320",
+    "title": "如梦似幻般的银",
+    "title_address": "0x8e3c5f8",
+    "description": "我最近遇到了一件很复杂\n的事，有兴趣的请来地下\n商业街的服装店找我。",
+    "description_address": "0x8e3c5c9",
+    "unknown_u16": 85,
+    "unknown_u16_hex": "0x0055",
+    "accept_flag": 5988,
+    "accept_flag_hex": "0x1764",
+    "complete_flag": 5989,
+    "complete_flag_hex": "0x1765",
+    "map_group": 50,
+    "map_num": 11,
+    "tail_hex": "01 01 00 00",
+    "index": 53,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe395e4",
+      "title": "如梦似幻般的银",
+      "description_address": "0x8e3a52d",
+      "description": "我最近遇到了一件很复杂\\n的事，有兴趣的请来地下\\n商业街的服装店找我。"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a52d",
+    "legacy_match_count": 1,
+    "current_description": "寻找有关服装店店员\n梦中见到的银色宝可梦的线索。",
+    "catalog_map": {
+     "id": "50:11",
+     "name": "满金市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x087B641E",
+    "0x087B7720",
+    "0x08AEE9E2",
+    "0x08AEEF18"
+   ],
+   "event_roots": [
+    {
+     "script": "0x087B626F",
+     "map_id": "50:11",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 5,
+     "y": 12,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g50_n011.md"
+    },
+    {
+     "script": "0x087B641E",
+     "map_id": "48:1",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 1,
+     "event_index": 0,
+     "x": 4,
+     "y": 4,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g48_n001.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x087B626F",
+     "event_roots": [
+      {
+       "map_id": "50:11",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 5,
+       "y": 12,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n011.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x087B626F",
+       "command": "applymovement",
+       "args": [
+        11,
+        142304284
+       ]
+      },
+      {
+       "at": "0x087B6276",
+       "command": "waitmovement",
+       "args": [
+        11
+       ]
+      },
+      {
+       "at": "0x087B6279",
+       "command": "goto",
+       "args": [
+        145680847
+       ],
+       "targets": [
+        "0x08AEE9CF"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x087B641E",
+     "event_roots": [
+      {
+       "map_id": "48:1",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 4,
+       "y": 4,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g48_n001.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x087B641E",
+       "command": "checkflag",
+       "args": [
+        3325
+       ]
+      },
+      {
+       "at": "0x087B6421",
+       "command": "goto_if",
+       "args": [
+        1,
+        144538021
+       ],
+       "targets": [
+        "0x089D79A5"
+       ]
+      },
+      {
+       "at": "0x087B6427",
+       "command": "checkflag",
+       "args": [
+        5988
+       ],
+       "task_flag_labels": [
+        {
+         "title": "如梦似幻般的银",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x087B642A",
+       "command": "goto_if",
+       "args": [
+        1,
+        142304388
+       ],
+       "targets": [
+        "0x087B6484"
+       ]
+      },
+      {
+       "at": "0x087B6430",
+       "command": "goto",
+       "args": [
+        144538021
+       ],
+       "targets": [
+        "0x089D79A5"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x087B6465",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B6465",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B646A",
+       "command": "goto_if",
+       "args": [
+        1,
+        145680934
+       ],
+       "targets": [
+        "0x08AEEA26"
+       ]
+      },
+      {
+       "at": "0x087B6470",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145681509
+       ],
+       "texts": [
+        {
+         "address": "0x08AEEC65",
+         "text": "好吧……\n我再努力回想一下……"
+        }
+       ]
+      },
+      {
+       "at": "0x087B6476",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B6478",
+       "command": "applymovement",
+       "args": [
+        11,
+        142304728
+       ]
+      },
+      {
+       "at": "0x087B647F",
+       "command": "waitmovement",
+       "args": [
+        11
+       ]
+      },
+      {
+       "at": "0x087B6482",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x087B6483",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x087B6484",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B6484",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142307774
+       ],
+       "texts": [
+        {
+         "address": "0x087B71BE",
+         "text": "你好，\n是想向我打听什么事吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x087B648A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B648C",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x087B648F",
+       "command": "applymovement",
+       "args": [
+        32783,
+        142307736
+       ]
+      },
+      {
+       "at": "0x087B6496",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x087B6499",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142307471
+       ],
+       "texts": [
+        {
+         "address": "0x087B708F",
+         "text": "……哦？有着银白色\n巨大翅膀的宝可梦？\n那是我小时候的事情。\n天空忽然变得漆黑，然后马上\n一只很大的宝可梦飞了出来。\n那只像龙一样，\n又像鸟一样的宝可梦……\n我也只见过那一次。\n不过，听说那只宝可梦\n与大海息息相关。\n如果你想了解更多，\n不妨去浅葱市的灯塔附近，\n问问那里常年出海的水手吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B649F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B64A1",
+       "command": "setflag",
+       "args": [
+        3325
+       ]
+      },
+      {
+       "at": "0x087B64A4",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B64A7",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B64AA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142307739
+       ],
+       "texts": [
+        {
+         "address": "0x087B719B",
+         "text": "任务<如梦似幻般的银>目标改变!"
+        }
+       ]
+      },
+      {
+       "at": "0x087B64B0",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B64B5",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B64BA",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x087B64BF",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x087B64C4",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x087B64C9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142304588
+       ],
+       "texts": [
+        {
+         "address": "0x087B654C",
+         "text": "去浅葱市的灯塔附近，\n问问那里常年出海的水手……\n有关有着银白色\n巨大翅膀的宝可梦的情报吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B64CF",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B64D1",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x087B64D6",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x087B6665",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B6665",
+       "command": "checkflag",
+       "args": [
+        3327
+       ]
+      },
+      {
+       "at": "0x087B6668",
+       "command": "goto_if",
+       "args": [
+        1,
+        142309102
+       ],
+       "targets": [
+        "0x087B76EE"
+       ]
+      },
+      {
+       "at": "0x087B666E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142307213
+       ],
+       "texts": [
+        {
+         "address": "0x087B6F8D",
+         "text": "……太感谢了！\n我听说缘朱市\n流传着最古老的传说，\n或许住在那里的\n老人会知道些什么？"
+        }
+       ]
+      },
+      {
+       "at": "0x087B6674",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B6676",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x087B76EE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B76EE",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x087B76EF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142309818
+       ],
+       "texts": [
+        {
+         "address": "0x087B79BA",
+         "text": "啊，你回来了！\n怎么样，打听到了关于\n那只银色宝可梦的线索了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x087B76F5",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B76F7",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x087B76FA",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145681187
+       ]
+      },
+      {
+       "at": "0x087B7701",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x087B7704",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142309462
+       ],
+       "texts": [
+        {
+         "address": "0x087B7856",
+         "text": "像龙又像鸟……\n被称为海之神的宝可梦……\n而且就在漩涡岛的某处……\n这绝对错不了，\n完全符合我梦境里的感觉！\n湛蓝市的太太说要在\n漩涡岛外围的海域静静等待是吧？\n我迫不及待想要\n见识一下那伟大的身姿了……\n我已经向店长请好假了\n连防雨的高级相机……\n我都提前准备好了！\n不过……听说漩涡岛附近\n的海域海浪湍急，非常危险。\n你和你的宝可梦\n状态怎么样？\n准备好和我一起\n向着漩涡岛出发了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x087B770A",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B770C",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B7711",
+       "command": "goto_if",
+       "args": [
+        1,
+        142309296
+       ],
+       "targets": [
+        "0x087B77B0"
+       ]
+      },
+      {
+       "at": "0x087B7717",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142309398
+       ],
+       "texts": [
+        {
+         "address": "0x087B7816",
+         "text": "没关系，\n谨慎一点是好事。\n你先去做好万全的准备吧，\n我在这里等你！"
+        }
+       ]
+      },
+      {
+       "at": "0x087B771D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B771F",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x087B7720",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B7720",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        738
+       ],
+       "possible_names_not_semantics": {
+        "species": "四季鹿",
+        "item": "银之护符",
+        "move": "诡异咒语"
+       }
+      },
+      {
+       "at": "0x087B7725",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x087B772A",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x087B772C",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B772F",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x087B7730",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B7733",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B7736",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145682412
+       ],
+       "texts": [
+        {
+         "address": "0x08AEEFEC",
+         "text": "任务完成:<如梦似幻般的银>"
+        }
+       ]
+      },
+      {
+       "at": "0x087B773C",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B7741",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B7746",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x087B774B",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x087B7750",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x087B7755",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142312652
+       ],
+       "texts": [
+        {
+         "address": "0x087B84CC",
+         "text": "获得了8点BracerPoints和10000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x087B775B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B775D",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x087B7762",
+       "command": "addvar",
+       "args": [
+        20789,
+        8
+       ]
+      },
+      {
+       "at": "0x087B7767",
+       "command": "setflag",
+       "args": [
+        5989
+       ],
+       "task_flag_labels": [
+        {
+         "title": "如梦似幻般的银",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x087B776A",
+       "command": "addmoney",
+       "args": [
+        10000,
+        0
+       ]
+      },
+      {
+       "at": "0x087B7770",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x087B7773",
+       "command": "applymovement",
+       "args": [
+        2,
+        142309289
+       ]
+      },
+      {
+       "at": "0x087B777A",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x087B777D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142311917
+       ]
+      },
+      {
+       "at": "0x087B7783",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B7785",
+       "command": "setvar",
+       "args": [
+        16537,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x087B778A",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x087B77B0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B77B0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142309317
+       ],
+       "texts": [
+        {
+         "address": "0x087B77C5",
+         "text": "太棒了，\n我就知道你可以的啦！\n事不宜迟，海之神……还有\n我的“美极套装”灵感，我们来啦！"
+        }
+       ]
+      },
+      {
+       "at": "0x087B77B6",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B77B8",
+       "command": "warpmuted",
+       "args": [
+        52,
+        30,
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x087B77C0",
+       "command": "pause",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x087B77C3",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x087B84EF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B84EF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142312782
+       ],
+       "texts": [
+        {
+         "address": "0x087B854E",
+         "text": "这一次的旅途，\n从那个奇妙的梦境，\n到最终雷雨交加的高空飞行……\n能和你一起见证传说，\n真的是太好了！"
+        }
+       ]
+      },
+      {
+       "at": "0x087B84F5",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B84F7",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089D79A5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089D79A5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144538031
+       ],
+       "texts": [
+        {
+         "address": "0x089D79AF",
+         "text": "那是我小时候的事情。\n天空忽然变得漆黑，然后马上\n一只很大的宝可梦飞了出来。\n那个像龙一样，\n又像鸟一样的宝可梦\n究竟是什么呢？"
+        }
+       ]
+      },
+      {
+       "at": "0x089D79AB",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089D79AD",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE9CF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE9CF",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AEE9D2",
+       "command": "goto_if",
+       "args": [
+        1,
+        145680866
+       ],
+       "targets": [
+        "0x08AEE9E2"
+       ]
+      },
+      {
+       "at": "0x08AEE9D8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144569671
+       ],
+       "texts": [
+        {
+         "address": "0x089DF547",
+         "text": "欢迎光临！\n本店会综合为您搭配服装和发型！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE9DE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEE9E0",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE9E2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE9E2",
+       "command": "checkflag",
+       "args": [
+        5989
+       ],
+       "task_flag_labels": [
+        {
+         "title": "如梦似幻般的银",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE9E5",
+       "command": "goto_if",
+       "args": [
+        1,
+        142312687
+       ],
+       "targets": [
+        "0x087B84EF"
+       ]
+      },
+      {
+       "at": "0x08AEE9EB",
+       "command": "checkflag",
+       "args": [
+        5988
+       ],
+       "task_flag_labels": [
+        {
+         "title": "如梦似幻般的银",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE9EE",
+       "command": "goto_if",
+       "args": [
+        1,
+        142304869
+       ],
+       "targets": [
+        "0x087B6665"
+       ]
+      },
+      {
+       "at": "0x08AEE9F4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144569671
+       ],
+       "texts": [
+        {
+         "address": "0x089DF547",
+         "text": "欢迎光临！\n本店会综合为您搭配服装和发型！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE9FA",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEE9FC",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145681187
+       ]
+      },
+      {
+       "at": "0x08AEEA03",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEEA06",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AEEA09",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145681537
+       ],
+       "texts": [
+        {
+         "address": "0x08AEEC81",
+         "text": "请问是看见了我的委托吗？\n事情是这样的……\n最近几天，\n我总是反复做一个梦……\n梦里有一只巨大的宝可梦……\n它有着银白色的身体\n和深蓝色的背鳍，\n静静地沉睡在深海之中。\n它张开翅膀的瞬间，\n我脑海中似乎涌现出了\n无数的设计灵感！\n我想把它制作成\n顶级的美极套装！\n可是……\n光凭梦境中的模糊印象，\n我无法完成最终的图纸。\n你能帮我去各地打听一下，\n这到底是什么宝可梦吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEEA0F",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AEEA11",
+       "command": "goto",
+       "args": [
+        142304357
+       ],
+       "targets": [
+        "0x087B6465"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEEA26",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEEA26",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEEA29",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145681407
+       ],
+       "texts": [
+        {
+         "address": "0x08AEEBFF",
+         "text": "接受任务:<如梦似幻般的银>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEEA2F",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEEA34",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEEA39",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AEEA3E",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AEEA43",
+       "command": "goto",
+       "args": [
+        145682200
+       ],
+       "targets": [
+        "0x08AEEF18"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEEF18",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEEF18",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AEEF1D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142307213
+       ],
+       "texts": [
+        {
+         "address": "0x087B6F8D",
+         "text": "……太感谢了！\n我听说缘朱市\n流传着最古老的传说，\n或许住在那里的\n老人会知道些什么？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEEF23",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEEF25",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AEEF2A",
+       "command": "setflag",
+       "args": [
+        5988
+       ],
+       "task_flag_labels": [
+        {
+         "title": "如梦似幻般的银",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEEF2D",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

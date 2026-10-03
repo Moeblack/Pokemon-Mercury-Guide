@@ -1,0 +1,387 @@
+{
+ "title": "漆黑的魅影",
+ "quest_id": 93,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b640",
+    "title": "漆黑的魅影",
+    "title_address": "0x8e3be8a",
+    "description": "魅影终将消散，\n但信念与爱永不熄灭。",
+    "description_address": "0x8e3be68",
+    "unknown_u16": 705,
+    "unknown_u16_hex": "0x02C1",
+    "accept_flag": 6149,
+    "accept_flag_hex": "0x1805",
+    "complete_flag": 6149,
+    "complete_flag_hex": "0x1805",
+    "map_group": 56,
+    "map_num": 43,
+    "tail_hex": "00 00 00 00",
+    "index": 93,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3be68",
+    "legacy_match_count": 0,
+    "current_description": "魅影终将消散，\n但信念与爱永不熄灭。",
+    "catalog_map": {
+     "id": "56:43",
+     "name": "幻影之森"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08D55BFD",
+    "0x08EC6E54"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08EC6E54",
+     "map_id": "56:43",
+     "place": "幻影之森",
+     "kind": "调查点",
+     "local_id": null,
+     "event_index": 0,
+     "x": 8,
+     "y": 5,
+     "facing": "script_facing_any",
+     "map_page": "../../wiki_export/world/pages/maps/g56_n043.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08D55BFD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08D55BFD",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08D55C00",
+       "command": "loadpointer",
+       "args": [
+        0,
+        148200573
+       ],
+       "texts": [
+        {
+         "address": "0x08D55C7D",
+         "text": "仔细一看，\n后面还有一段话。"
+        }
+       ]
+      },
+      {
+       "at": "0x08D55C06",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08D55C08",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08D55C0B",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x08D55C10",
+       "command": "addmoney",
+       "args": [
+        5000,
+        0
+       ]
+      },
+      {
+       "at": "0x08D55C16",
+       "command": "loadpointer",
+       "args": [
+        0,
+        148200546
+       ],
+       "texts": [
+        {
+         "address": "0x08D55C62",
+         "text": "完成任务:<漆黑的魅影>"
+        }
+       ]
+      },
+      {
+       "at": "0x08D55C1C",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08D55C21",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08D55C26",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08D55C2B",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08D55C30",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08D55C35",
+       "command": "loadpointer",
+       "args": [
+        0,
+        148200601
+       ],
+       "texts": [
+        {
+         "address": "0x08D55C99",
+         "text": "“魅影终将消散，\n但信念与爱永不熄灭。”"
+        }
+       ]
+      },
+      {
+       "at": "0x08D55C3B",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08D55C3D",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08D55C42",
+       "command": "setflag",
+       "args": [
+        6149
+       ],
+       "task_flag_labels": [
+        {
+         "title": "漆黑的魅影",
+         "role": "accept_flag"
+        },
+        {
+         "title": "漆黑的魅影",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08D55C45",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EC6E54"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EC6E54",
+     "event_roots": [
+      {
+       "map_id": "56:43",
+       "place": "幻影之森",
+       "kind": "调查点",
+       "local_id": null,
+       "event_index": 0,
+       "x": 8,
+       "y": 5,
+       "facing": "script_facing_any",
+       "map_page": "../../wiki_export/world/pages/maps/g56_n043.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EC6E54",
+       "command": "loadpointer",
+       "args": [
+        0,
+        148200527
+       ]
+      },
+      {
+       "at": "0x08EC6E5A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC6E5C",
+       "command": "checkflag",
+       "args": [
+        6149
+       ],
+       "task_flag_labels": [
+        {
+         "title": "漆黑的魅影",
+         "role": "accept_flag"
+        },
+        {
+         "title": "漆黑的魅影",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC6E5F",
+       "command": "goto_if",
+       "args": [
+        1,
+        149712496
+       ],
+       "targets": [
+        "0x08EC6E70"
+       ]
+      },
+      {
+       "at": "0x08EC6E65",
+       "command": "checkflag",
+       "args": [
+        6139
+       ],
+       "task_flag_labels": [
+        {
+         "title": "海浪卷走的乌波",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC6E68",
+       "command": "goto_if",
+       "args": [
+        1,
+        148200445
+       ],
+       "targets": [
+        "0x08D55BFD"
+       ]
+      },
+      {
+       "at": "0x08EC6E6E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "bg",
+       "where": "56:43"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EC6E70",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC6E70",
+       "command": "loadpointer",
+       "args": [
+        0,
+        148200601
+       ],
+       "texts": [
+        {
+         "address": "0x08D55C99",
+         "text": "“魅影终将消散，\n但信念与爱永不熄灭。”"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC6E76",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EC6E78",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EC6E54"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

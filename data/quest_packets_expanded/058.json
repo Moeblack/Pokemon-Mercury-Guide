@@ -1,0 +1,1381 @@
+{
+ "title": "传递信件",
+ "quest_id": 58,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b384",
+    "title": "传递信件",
+    "title_address": "0x8e3c1d8",
+    "description": "帮助35号道路的警卫\n给31号道路的朋友送信。",
+    "description_address": "0x8e3c1af",
+    "unknown_u16": 241,
+    "unknown_u16_hex": "0x00F1",
+    "accept_flag": 2581,
+    "accept_flag_hex": "0x0A15",
+    "complete_flag": 2582,
+    "complete_flag_hex": "0x0A16",
+    "map_group": 44,
+    "map_num": 8,
+    "tail_hex": "04 01 00 00",
+    "index": 58,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3c1af",
+    "legacy_match_count": 0,
+    "current_description": "帮助35号道路的警卫\n给31号道路的朋友送信。",
+    "catalog_map": {
+     "id": "44:8",
+     "name": "35号道路"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08F48DC6",
+    "0x08F48DCF",
+    "0x08F4937F",
+    "0x08F493A5",
+    "0x08F494C7",
+    "0x08F49515",
+    "0x08F5873F"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F4937F",
+     "map_id": "44:8",
+     "place": "35号道路",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 5,
+     "y": 10,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g44_n008.md"
+    },
+    {
+     "script": "0x08F493A5",
+     "map_id": "3:83",
+     "place": "31号道路",
+     "kind": "人物",
+     "local_id": 10,
+     "event_index": 9,
+     "x": 18,
+     "y": 8,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n083.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08F48DC6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F48DC6",
+       "command": "checkflag",
+       "args": [
+        2582
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传递信件",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F48DC9",
+       "command": "goto_if",
+       "args": [
+        1,
+        150245619
+       ],
+       "targets": [
+        "0x08F490F3"
+       ]
+      },
+      {
+       "at": "0x08F48DCF",
+       "command": "checkflag",
+       "args": [
+        2581
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传递信件",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F48DD2",
+       "command": "goto_if",
+       "args": [
+        1,
+        150247221
+       ],
+       "targets": [
+        "0x08F49735"
+       ]
+      },
+      {
+       "at": "0x08F48DD8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150247666
+       ]
+      },
+      {
+       "at": "0x08F48DDE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F48DE0",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=58"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F48DCF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F48DCF",
+       "command": "checkflag",
+       "args": [
+        2581
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传递信件",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F48DD2",
+       "command": "goto_if",
+       "args": [
+        1,
+        150247221
+       ],
+       "targets": [
+        "0x08F49735"
+       ]
+      },
+      {
+       "at": "0x08F48DD8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150247666
+       ]
+      },
+      {
+       "at": "0x08F48DDE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F48DE0",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=58"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F490F3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F490F3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150247666
+       ]
+      },
+      {
+       "at": "0x08F490F9",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F490FB",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F48DC6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F4937F",
+     "event_roots": [
+      {
+       "map_id": "44:8",
+       "place": "35号道路",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 5,
+       "y": 10,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g44_n008.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F4937F",
+       "command": "checkflag",
+       "args": [
+        2581
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传递信件",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F49382",
+       "command": "goto_if",
+       "args": [
+        1,
+        150246677
+       ],
+       "targets": [
+        "0x08F49515"
+       ]
+      },
+      {
+       "at": "0x08F49388",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08F49389",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150247100
+       ],
+       "texts": [
+        {
+         "address": "0x08F496BC",
+         "text": "诶，那个谁！\n前几天，收到朋友的邮件。\n我倒是写了回信，\n但我在这里又走不开，\n想让你替我拿过去呢。\n我的朋友在31号道路。\n你愿意吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F4938F",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F49391",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F49396",
+       "command": "goto_if",
+       "args": [
+        1,
+        150246599
+       ],
+       "targets": [
+        "0x08F494C7"
+       ]
+      },
+      {
+       "at": "0x08F4939C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150246980
+       ],
+       "texts": [
+        {
+         "address": "0x08F49644",
+         "text": "是么……\n你也很忙啊。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F493A2",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F493A4",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "44:8/local2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F493A5",
+     "event_roots": [
+      {
+       "map_id": "3:83",
+       "place": "31号道路",
+       "kind": "人物",
+       "local_id": 10,
+       "event_index": 9,
+       "x": 18,
+       "y": 8,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n083.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F493A5",
+       "command": "checkflag",
+       "args": [
+        2582
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传递信件",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F493A8",
+       "command": "goto_if",
+       "args": [
+        1,
+        150246337
+       ],
+       "targets": [
+        "0x08F493C1"
+       ]
+      },
+      {
+       "at": "0x08F493AE",
+       "command": "checkflag",
+       "args": [
+        2581
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传递信件",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F493B1",
+       "command": "goto_if",
+       "args": [
+        1,
+        150247249
+       ],
+       "targets": [
+        "0x08F49751"
+       ]
+      },
+      {
+       "at": "0x08F493B7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150247760
+       ],
+       "texts": [
+        {
+         "address": "0x08F49950",
+         "text": "嗯为了\n找宝可梦走了太多的路。\n脚又疼，头又困……\n如果我是野生宝可梦，\n那抓我简直不废吹灰之力。\n呼噜……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F493BD",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F493BF",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "3:83/local10"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F493C1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F493C1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150247760
+       ],
+       "texts": [
+        {
+         "address": "0x08F49950",
+         "text": "嗯为了\n找宝可梦走了太多的路。\n脚又疼，头又困……\n如果我是野生宝可梦，\n那抓我简直不废吹灰之力。\n呼噜……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F493C7",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F493C9",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F493A5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F494C7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F494C7",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F494CA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150247001
+       ],
+       "texts": [
+        {
+         "address": "0x08F49659",
+         "text": "接受任务:<送信>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F494D0",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F494D5",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F494DA",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F494DF",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F494E4",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F494E9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150247022
+       ],
+       "texts": [
+        {
+         "address": "0x08F4966E",
+         "text": "太好了！谢谢！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F494EF",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F494F1",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F494F6",
+       "command": "setflag",
+       "args": [
+        2581
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传递信件",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F494F9",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F494FC",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        274
+       ],
+       "possible_names_not_semantics": {
+        "species": "戟脊龙",
+        "item": "信件",
+        "move": "借助"
+       }
+      },
+      {
+       "at": "0x08F49501",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F49506",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F49508",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F4950B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150247037
+       ],
+       "texts": [
+        {
+         "address": "0x08F4967D",
+         "text": "朋友在31号道路。\n看上去就是个\n很想要看信的家伙，\n去了就知道啦！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F49511",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F49513",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F4937F"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F49515",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F49515",
+       "command": "checkflag",
+       "args": [
+        2582
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传递信件",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F49518",
+       "command": "goto_if",
+       "args": [
+        1,
+        150246696
+       ],
+       "targets": [
+        "0x08F49528"
+       ]
+      },
+      {
+       "at": "0x08F4951E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150247037
+       ],
+       "texts": [
+        {
+         "address": "0x08F4967D",
+         "text": "朋友在31号道路。\n看上去就是个\n很想要看信的家伙，\n去了就知道啦！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F49524",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F49526",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F4937F"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F49528",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F49528",
+       "command": "checkflag",
+       "args": [
+        2583
+       ]
+      },
+      {
+       "at": "0x08F4952B",
+       "command": "goto_if",
+       "args": [
+        1,
+        150246738
+       ],
+       "targets": [
+        "0x08F49552"
+       ]
+      },
+      {
+       "at": "0x08F49531",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150246875
+       ],
+       "texts": [
+        {
+         "address": "0x08F495DB",
+         "text": "谢谢你替我送信！\n诶？你说我在装忙？\n嗯，对不起……\n其实我是能走开的。\n我利用了你的好意，\n为表歉意，\n这个送给你。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F49537",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F49539",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        63
+       ],
+       "possible_names_not_semantics": {
+        "species": "凯西",
+        "item": "HP增强剂",
+        "move": "破坏光线"
+       }
+      },
+      {
+       "at": "0x08F4953E",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F49543",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F49545",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150246770
+       ],
+       "texts": [
+        {
+         "address": "0x08F49572",
+         "text": "我的朋友在睡觉吧？\n总是在睡觉呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F4954B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F4954D",
+       "command": "setflag",
+       "args": [
+        2583
+       ]
+      },
+      {
+       "at": "0x08F49550",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F49515"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F49552",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F49552",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150246748
+       ],
+       "texts": [
+        {
+         "address": "0x08F4955C",
+         "text": "今天也没有异常状况！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F49558",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F4955A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F49528"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F49735",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F49735",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150247493
+       ]
+      },
+      {
+       "at": "0x08F4973B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F4973D",
+       "command": "removeitem",
+       "args": [
+        274,
+        1
+       ],
+       "item_name": "信件"
+      },
+      {
+       "at": "0x08F49742",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F49745",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150247766
+       ]
+      },
+      {
+       "at": "0x08F4974C",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F4974F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        2546532367
+       ]
+      },
+      {
+       "at": "0x08F49755",
+       "command": null,
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F48DCF"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F49751",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F49751",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150247369
+       ]
+      },
+      {
+       "at": "0x08F49757",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F49759",
+       "command": "removeitem",
+       "args": [
+        274,
+        1
+       ],
+       "item_name": "信件"
+      },
+      {
+       "at": "0x08F4975E",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F49761",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150247860
+       ]
+      },
+      {
+       "at": "0x08F49768",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F4976B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150247587
+       ],
+       "texts": [
+        {
+         "address": "0x08F498A3",
+         "text": "哇，这是\n朋友发来的邮件呢！\n什么，什么……\n信上写道：\n谢谢来信，冒险很有趣\n就是超音蝠不喜欢……！\n……之前跟\n朋友去黑暗穴探险，\n那个洞\n连接着其他道路呢……\n对了！\n还得感谢你帮忙送信呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F49771",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F49773",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F49774",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        332
+       ],
+       "possible_names_not_semantics": {
+        "species": "大颚蚁",
+        "item": "TM44",
+        "move": "燕返"
+       }
+      },
+      {
+       "at": "0x08F49779",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F4977E",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F49780",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F49781",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F49784",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        537
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕路奇亚",
+        "item": "经验糖果S",
+        "move": "暗黑爆破"
+       }
+      },
+      {
+       "at": "0x08F49789",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F4978E",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F49790",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F49793",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150247491
+       ]
+      },
+      {
+       "at": "0x08F49799",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F4979B",
+       "command": "addvar",
+       "args": [
+        20789,
+        5
+       ]
+      },
+      {
+       "at": "0x08F497A0",
+       "command": "addmoney",
+       "args": [
+        5000,
+        0
+       ]
+      },
+      {
+       "at": "0x08F497A6",
+       "command": "pause",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08F497A9",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F497AC",
+       "command": "goto",
+       "args": [
+        150308671
+       ],
+       "targets": [
+        "0x08F5873F"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F493A5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5873F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5873F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150247435
+       ],
+       "texts": [
+        {
+         "address": "0x08F4980B",
+         "text": "完成任务:<送信>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F58745",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5874A",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5874F",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F58754",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F58759",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F5875E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150247456
+       ],
+       "texts": [
+        {
+         "address": "0x08F49820",
+         "text": "获得了5点BracerPoints和5000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F58764",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F58766",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F5876B",
+       "command": "setflag",
+       "args": [
+        2582
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传递信件",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5876E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F49751"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3813 @@
+{
+ "title": "喇叭芽塔的妖怪",
+ "quest_id": 28,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b12c",
+    "title": "喇叭芽塔的妖怪",
+    "title_address": "0x8e3ca1d",
+    "description": "传说到了晚上，喇叭芽之塔里会\n出现妖怪，希望有人可以查证\n这则都市传说的真伪。",
+    "description_address": "0x8e3c9f8",
+    "unknown_u16": 193,
+    "unknown_u16_hex": "0x00C1",
+    "accept_flag": 5493,
+    "accept_flag_hex": "0x1575",
+    "complete_flag": 5494,
+    "complete_flag_hex": "0x1576",
+    "map_group": 3,
+    "map_num": 68,
+    "tail_hex": "10 00 00 00",
+    "index": 28,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe394d4",
+      "title": "喇叭芽之塔的妖怪",
+      "description_address": "0x8e3aa6a",
+      "description": "传说到了晚上，喇叭芽之塔里会\\n出现妖怪，希望有人可以查证\\n这则都市传说的真伪。"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3aa6a",
+    "legacy_match_count": 1,
+    "current_description": "去查清关于喇叭芽之塔\n的妖怪的真相吧！",
+    "catalog_map": {
+     "id": "3:68",
+     "name": "桔梗市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x089E750F",
+    "0x089E7518",
+    "0x089E76D2",
+    "0x089E7775",
+    "0x089E777E",
+    "0x089E77E7",
+    "0x089E7806",
+    "0x089E788A",
+    "0x089E78DD",
+    "0x089E78FD",
+    "0x089E8432"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F5124B",
+     "map_id": "3:68",
+     "place": "桔梗市",
+     "kind": "人物",
+     "local_id": 10,
+     "event_index": 9,
+     "x": 46,
+     "y": 64,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n068.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089CE918",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089CE918",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144501026
+       ],
+       "texts": [
+        {
+         "address": "0x089CE922",
+         "text": "传说到了晚上，喇叭芽之塔里\n会出现妖怪哦。\n就算让精灵和它战斗，\n普通系的技能\n也完全没有用呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x089CE91E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089CE920",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E788A"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E750F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E750F",
+       "command": "checkflag",
+       "args": [
+        5494
+       ],
+       "task_flag_labels": [
+        {
+         "title": "喇叭芽塔的妖怪",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7512",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603174
+       ],
+       "targets": [
+        "0x089E7826"
+       ]
+      },
+      {
+       "at": "0x089E7518",
+       "command": "checkflag",
+       "args": [
+        5493
+       ],
+       "task_flag_labels": [
+        {
+         "title": "喇叭芽塔的妖怪",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E751B",
+       "command": "goto_if",
+       "args": [
+        1,
+        144602886
+       ],
+       "targets": [
+        "0x089E7706"
+       ]
+      },
+      {
+       "at": "0x089E7521",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E7524",
+       "command": "goto_if",
+       "args": [
+        1,
+        144602416
+       ],
+       "targets": [
+        "0x089E7530"
+       ]
+      },
+      {
+       "at": "0x089E752A",
+       "command": "goto",
+       "args": [
+        144501016
+       ],
+       "targets": [
+        "0x089CE918"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=28"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7518",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7518",
+       "command": "checkflag",
+       "args": [
+        5493
+       ],
+       "task_flag_labels": [
+        {
+         "title": "喇叭芽塔的妖怪",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E751B",
+       "command": "goto_if",
+       "args": [
+        1,
+        144602886
+       ],
+       "targets": [
+        "0x089E7706"
+       ]
+      },
+      {
+       "at": "0x089E7521",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E7524",
+       "command": "goto_if",
+       "args": [
+        1,
+        144602416
+       ],
+       "targets": [
+        "0x089E7530"
+       ]
+      },
+      {
+       "at": "0x089E752A",
+       "command": "goto",
+       "args": [
+        144501016
+       ],
+       "targets": [
+        "0x089CE918"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=28"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7530",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7530",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144501026
+       ],
+       "texts": [
+        {
+         "address": "0x089CE922",
+         "text": "传说到了晚上，喇叭芽之塔里\n会出现妖怪哦。\n就算让精灵和它战斗，\n普通系的技能\n也完全没有用呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7536",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7538",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144603394
+       ]
+      },
+      {
+       "at": "0x089E753F",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E7542",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E7545",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603397
+       ]
+      },
+      {
+       "at": "0x089E754B",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E754D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E7552",
+       "command": "goto_if",
+       "args": [
+        1,
+        144602834
+       ],
+       "targets": [
+        "0x089E76D2"
+       ]
+      },
+      {
+       "at": "0x089E7558",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603462
+       ],
+       "texts": [
+        {
+         "address": "0x089E7946",
+         "text": "氯Á"
+        }
+       ]
+      },
+      {
+       "at": "0x089E755E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7560",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7518"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E76D2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E76D2",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E76D5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603227
+       ],
+       "texts": [
+        {
+         "address": "0x089E785B",
+         "text": "厕"
+        }
+       ]
+      },
+      {
+       "at": "0x089E76DB",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E76E0",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E76E5",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x089E76EA",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E76EF",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x089E76F4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603258
+       ]
+      },
+      {
+       "at": "0x089E76FA",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E76FC",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E7701",
+       "command": "setflag",
+       "args": [
+        5493
+       ],
+       "task_flag_labels": [
+        {
+         "title": "喇叭芽塔的妖怪",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7704",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7530"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7706",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7706",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603597
+       ]
+      },
+      {
+       "at": "0x089E770C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E770E",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x089E7711",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x089E7714",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x089E7715",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x089E771A",
+       "command": "goto_if",
+       "args": [
+        1,
+        144602943
+       ],
+       "targets": [
+        "0x089E773F"
+       ]
+      },
+      {
+       "at": "0x089E7720",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089E7725",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x089E772A",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        92
+       ],
+       "possible_names_not_semantics": {
+        "species": "鬼斯",
+        "item": "灵界之布",
+        "move": "剧毒"
+       }
+      },
+      {
+       "at": "0x089E772F",
+       "command": "goto_if",
+       "args": [
+        1,
+        144602953
+       ],
+       "targets": [
+        "0x089E7749"
+       ]
+      },
+      {
+       "at": "0x089E7735",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603345
+       ]
+      },
+      {
+       "at": "0x089E773B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E773D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7518"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E773F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E773F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603323
+       ]
+      },
+      {
+       "at": "0x089E7745",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7747",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7706"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7749",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7749",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603637
+       ]
+      },
+      {
+       "at": "0x089E774F",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E7751",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089E7756",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603142
+       ],
+       "targets": [
+        "0x089E7806"
+       ]
+      },
+      {
+       "at": "0x089E775C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603756
+       ],
+       "texts": [
+        {
+         "address": "0x089E7A6C",
+         "text": "e！\n希望你可以捕获喇叭芽塔的妖怪，\n并将它展示给我看看。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7762",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7764",
+       "command": "goto",
+       "args": [
+        144602986
+       ],
+       "targets": [
+        "0x089E776A"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7706"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E776A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E776A",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        48
+       ],
+       "possible_names_not_semantics": {
+        "species": "毛球",
+        "item": "红色碎片",
+        "move": "超音波"
+       }
+      },
+      {
+       "at": "0x089E776F",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E7774",
+       "command": "callstd",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x089E7776",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x089E7777",
+       "command": "copybyte",
+       "args": [
+        2031943942,
+        1965754526
+       ]
+      },
+      {
+       "at": "0x089E7780",
+       "command": "copybyte",
+       "args": [
+        2015035654,
+        2519402654
+       ]
+      },
+      {
+       "at": "0x089E7789",
+       "command": "loadbyte",
+       "args": [
+        6,
+        1
+       ]
+      },
+      {
+       "at": "0x089E778C",
+       "command": "getpokenewsactive",
+       "args": [
+        40567
+       ]
+      },
+      {
+       "at": "0x089E778F",
+       "command": "gotostd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E7791",
+       "command": "subvar",
+       "args": [
+        40169,
+        65288
+       ]
+      },
+      {
+       "at": "0x089E7796",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144501026
+       ],
+       "texts": [
+        {
+         "address": "0x089CE922",
+         "text": "传说到了晚上，喇叭芽之塔里\n会出现妖怪哦。\n就算让精灵和它战斗，\n普通系的技能\n也完全没有用呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E779C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E779E",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144603641
+       ]
+      },
+      {
+       "at": "0x089E77A5",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E77A8",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E77AB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603644
+       ]
+      },
+      {
+       "at": "0x089E77B1",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E77B3",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E77B8",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603111
+       ],
+       "targets": [
+        "0x089E77E7"
+       ]
+      },
+      {
+       "at": "0x089E77BE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603709
+       ]
+      },
+      {
+       "at": "0x089E77C4",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E77C6",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7749"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7775",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7775",
+       "command": "checkflag",
+       "args": [
+        5494
+       ],
+       "task_flag_labels": [
+        {
+         "title": "喇叭芽塔的妖怪",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7778",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603421
+       ],
+       "targets": [
+        "0x089E791D"
+       ]
+      },
+      {
+       "at": "0x089E777E",
+       "command": "checkflag",
+       "args": [
+        5493
+       ],
+       "task_flag_labels": [
+        {
+         "title": "喇叭芽塔的妖怪",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7781",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603163
+       ],
+       "targets": [
+        "0x089E781B"
+       ]
+      },
+      {
+       "at": "0x089E7787",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E778A",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603030
+       ],
+       "targets": [
+        "0x089E7796"
+       ]
+      },
+      {
+       "at": "0x089E7790",
+       "command": "goto",
+       "args": [
+        144501016
+       ],
+       "targets": [
+        "0x089CE918"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=28"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E777E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E777E",
+       "command": "checkflag",
+       "args": [
+        5493
+       ],
+       "task_flag_labels": [
+        {
+         "title": "喇叭芽塔的妖怪",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7781",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603163
+       ],
+       "targets": [
+        "0x089E781B"
+       ]
+      },
+      {
+       "at": "0x089E7787",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E778A",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603030
+       ],
+       "targets": [
+        "0x089E7796"
+       ]
+      },
+      {
+       "at": "0x089E7790",
+       "command": "goto",
+       "args": [
+        144501016
+       ],
+       "targets": [
+        "0x089CE918"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=28"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7796",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7796",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144501026
+       ],
+       "texts": [
+        {
+         "address": "0x089CE922",
+         "text": "传说到了晚上，喇叭芽之塔里\n会出现妖怪哦。\n就算让精灵和它战斗，\n普通系的技能\n也完全没有用呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E779C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E779E",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144603641
+       ]
+      },
+      {
+       "at": "0x089E77A5",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E77A8",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E77AB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603644
+       ]
+      },
+      {
+       "at": "0x089E77B1",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E77B3",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E77B8",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603111
+       ],
+       "targets": [
+        "0x089E77E7"
+       ]
+      },
+      {
+       "at": "0x089E77BE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603709
+       ]
+      },
+      {
+       "at": "0x089E77C4",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E77C6",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E777E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E77E7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E77E7",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E77EA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603474
+       ],
+       "texts": [
+        {
+         "address": "0x089E7952",
+         "text": "Á"
+        }
+       ]
+      },
+      {
+       "at": "0x089E77F0",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E77F5",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E77FA",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x089E77FF",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E7804",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x089E7809",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603505
+       ]
+      },
+      {
+       "at": "0x089E780F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7811",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E7816",
+       "command": "setflag",
+       "args": [
+        5493
+       ],
+       "task_flag_labels": [
+        {
+         "title": "喇叭芽塔的妖怪",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7819",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7796"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7806",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7806",
+       "command": "forceupdatepos",
+       "args": [
+        2203
+       ]
+      },
+      {
+       "at": "0x089E7809",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603505
+       ]
+      },
+      {
+       "at": "0x089E780F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7811",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E7816",
+       "command": "setflag",
+       "args": [
+        5493
+       ],
+       "task_flag_labels": [
+        {
+         "title": "喇叭芽塔的妖怪",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7819",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7749"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E781B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E781B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603844
+       ]
+      },
+      {
+       "at": "0x089E7821",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7823",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x089E7826",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x089E7829",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x089E782A",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x089E782F",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603220
+       ],
+       "targets": [
+        "0x089E7854"
+       ]
+      },
+      {
+       "at": "0x089E7835",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089E783A",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x089E783F",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        92
+       ],
+       "possible_names_not_semantics": {
+        "species": "鬼斯",
+        "item": "灵界之布",
+        "move": "剧毒"
+       }
+      },
+      {
+       "at": "0x089E7844",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603230
+       ],
+       "targets": [
+        "0x089E785E"
+       ]
+      },
+      {
+       "at": "0x089E784A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603592
+       ]
+      },
+      {
+       "at": "0x089E7850",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7852",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E777E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7826",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7826",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x089E7829",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x089E782A",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x089E782F",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603220
+       ],
+       "targets": [
+        "0x089E7854"
+       ]
+      },
+      {
+       "at": "0x089E7835",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089E783A",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x089E783F",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        92
+       ],
+       "possible_names_not_semantics": {
+        "species": "鬼斯",
+        "item": "灵界之布",
+        "move": "剧毒"
+       }
+      },
+      {
+       "at": "0x089E7844",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603230
+       ],
+       "targets": [
+        "0x089E785E"
+       ]
+      },
+      {
+       "at": "0x089E784A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603592
+       ]
+      },
+      {
+       "at": "0x089E7850",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7852",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E750F"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7854",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7854",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603570
+       ]
+      },
+      {
+       "at": "0x089E785A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E785C",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E781B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E785E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E785E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603884
+       ]
+      },
+      {
+       "at": "0x089E7864",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E7866",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089E786B",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603389
+       ],
+       "targets": [
+        "0x089E78FD"
+       ]
+      },
+      {
+       "at": "0x089E7871",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144604003
+       ]
+      },
+      {
+       "at": "0x089E7877",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7879",
+       "command": "goto",
+       "args": [
+        144603263
+       ],
+       "targets": [
+        "0x089E787F"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E781B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E787F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E787F",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        48
+       ],
+       "possible_names_not_semantics": {
+        "species": "毛球",
+        "item": "红色碎片",
+        "move": "超音波"
+       }
+      },
+      {
+       "at": "0x089E7884",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E7889",
+       "command": "callstd",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x089E788B",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x089E788C",
+       "command": "copybyte",
+       "args": [
+        2048065798,
+        1965754526
+       ]
+      },
+      {
+       "at": "0x089E7895",
+       "command": "copybyte",
+       "args": [
+        2031157510,
+        2519402654
+       ]
+      },
+      {
+       "at": "0x089E789E",
+       "command": "loadbyte",
+       "args": [
+        6,
+        1
+       ]
+      },
+      {
+       "at": "0x089E78A1",
+       "command": "spritefacevirtual",
+       "args": [
+        120,
+        158
+       ]
+      },
+      {
+       "at": "0x089E78A4",
+       "command": "gotostd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E78A6",
+       "command": "subvar",
+       "args": [
+        40169,
+        65288
+       ]
+      },
+      {
+       "at": "0x089E78AB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144501026
+       ],
+       "texts": [
+        {
+         "address": "0x089CE922",
+         "text": "传说到了晚上，喇叭芽之塔里\n会出现妖怪哦。\n就算让精灵和它战斗，\n普通系的技能\n也完全没有用呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E78B1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E78B3",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144603887
+       ]
+      },
+      {
+       "at": "0x089E78BA",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E78BD",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E78C0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603890
+       ],
+       "texts": [
+        {
+         "address": "0x089E7AF2",
+         "text": "你是协会的训练家，\n对吧？\n你能帮我查证一下\n这则都市传说的真伪吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E78C6",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E78C8",
+       "command": "goto",
+       "args": [
+        150279686
+       ],
+       "targets": [
+        "0x08F51606"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E785E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E788A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E788A",
+       "command": "checkflag",
+       "args": [
+        5494
+       ],
+       "task_flag_labels": [
+        {
+         "title": "喇叭芽塔的妖怪",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E788D",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603667
+       ],
+       "targets": [
+        "0x089E7A13"
+       ]
+      },
+      {
+       "at": "0x089E7893",
+       "command": "checkflag",
+       "args": [
+        5493
+       ],
+       "task_flag_labels": [
+        {
+         "title": "喇叭芽塔的妖怪",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7896",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603409
+       ],
+       "targets": [
+        "0x089E7911"
+       ]
+      },
+      {
+       "at": "0x089E789C",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E789F",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603307
+       ],
+       "targets": [
+        "0x089E78AB"
+       ]
+      },
+      {
+       "at": "0x089E78A5",
+       "command": "goto",
+       "args": [
+        144501016
+       ],
+       "targets": [
+        "0x089CE918"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF44A0"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E78AB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E78AB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144501026
+       ],
+       "texts": [
+        {
+         "address": "0x089CE922",
+         "text": "传说到了晚上，喇叭芽之塔里\n会出现妖怪哦。\n就算让精灵和它战斗，\n普通系的技能\n也完全没有用呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E78B1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E78B3",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144603887
+       ]
+      },
+      {
+       "at": "0x089E78BA",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E78BD",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E78C0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603890
+       ],
+       "texts": [
+        {
+         "address": "0x089E7AF2",
+         "text": "你是协会的训练家，\n对吧？\n你能帮我查证一下\n这则都市传说的真伪吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E78C6",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E78C8",
+       "command": "goto",
+       "args": [
+        150279686
+       ],
+       "targets": [
+        "0x08F51606"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E788A"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E78DD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E78DD",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E78E0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603720
+       ],
+       "texts": [
+        {
+         "address": "0x089E7A48",
+         "text": "接受任务:<喇叭芽塔的妖怪>"
+        }
+       ]
+      },
+      {
+       "at": "0x089E78E6",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E78EB",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E78F0",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x089E78F5",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E78FA",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x089E78FF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603751
+       ],
+       "texts": [
+        {
+         "address": "0x089E7A67",
+         "text": "谢谢你！\n希望你可以捕获喇叭芽塔的妖怪，\n并将它展示给我看看。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7905",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7907",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E790C",
+       "command": "setflag",
+       "args": [
+        5493
+       ],
+       "task_flag_labels": [
+        {
+         "title": "喇叭芽塔的妖怪",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E790F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F51606"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E78FD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E78FD",
+       "command": "messageautoscroll",
+       "args": [
+        1728057096
+       ]
+      },
+      {
+       "at": "0x089E7902",
+       "command": "giveegg",
+       "args": [
+        2206
+       ],
+       "species_name": null
+      },
+      {
+       "at": "0x089E7905",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7907",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E790C",
+       "command": "setflag",
+       "args": [
+        5493
+       ],
+       "task_flag_labels": [
+        {
+         "title": "喇叭芽塔的妖怪",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E790F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E785E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7911",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7911",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144604090
+       ],
+       "texts": [
+        {
+         "address": "0x089E7BBA",
+         "text": "怎么样，\n你捕捉到喇叭芽之塔的妖怪了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7917",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7919",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x089E791C",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x089E791F",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x089E7920",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x089E7925",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603466
+       ],
+       "targets": [
+        "0x089E794A"
+       ]
+      },
+      {
+       "at": "0x089E792B",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089E7930",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x089E7935",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        92
+       ],
+       "possible_names_not_semantics": {
+        "species": "鬼斯",
+        "item": "灵界之布",
+        "move": "剧毒"
+       }
+      },
+      {
+       "at": "0x089E793A",
+       "command": "goto_if",
+       "args": [
+        1,
+        144604624
+       ],
+       "targets": [
+        "0x089E7DD0"
+       ]
+      },
+      {
+       "at": "0x089E7940",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603838
+       ],
+       "texts": [
+        {
+         "address": "0x089E7ABE",
+         "text": "不是，这只宝可梦\n怎么看都不像是妖怪吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7946",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7948",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E788A"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E791D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E791D",
+       "command": "sethealingplace",
+       "args": [
+        9984
+       ]
+      },
+      {
+       "at": "0x089E7920",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x089E7925",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603466
+       ],
+       "targets": [
+        "0x089E794A"
+       ]
+      },
+      {
+       "at": "0x089E792B",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089E7930",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x089E7935",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        92
+       ],
+       "possible_names_not_semantics": {
+        "species": "鬼斯",
+        "item": "灵界之布",
+        "move": "剧毒"
+       }
+      },
+      {
+       "at": "0x089E793A",
+       "command": "goto_if",
+       "args": [
+        1,
+        144604624
+       ],
+       "targets": [
+        "0x089E7DD0"
+       ]
+      },
+      {
+       "at": "0x089E7940",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603838
+       ],
+       "texts": [
+        {
+         "address": "0x089E7ABE",
+         "text": "不是，这只宝可梦\n怎么看都不像是妖怪吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7946",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7948",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7775"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E794A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E794A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603816
+       ],
+       "texts": [
+        {
+         "address": "0x089E7AA8",
+         "text": "你不会也害怕妖怪吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7950",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7952",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7911"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7954",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7954",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144604130
+       ],
+       "texts": [
+        {
+         "address": "0x089E7BE2",
+         "text": "传说中的喇叭芽塔的妖怪，\n原来就长这个样子吗？\n看上去一点都不可怕呢，\n甚至还有点可，可爱呢？\n那么，\n你相信这个世界上有鬼吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E795A",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E795C",
+       "command": "goto",
+       "args": [
+        145633288
+       ],
+       "targets": [
+        "0x08AE3008"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE33DC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7975",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7975",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        48
+       ],
+       "possible_names_not_semantics": {
+        "species": "毛球",
+        "item": "红色碎片",
+        "move": "超音波"
+       }
+      },
+      {
+       "at": "0x089E797A",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E797F",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E7981",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089E7984",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        536
+       ],
+       "possible_names_not_semantics": {
+        "species": "帝牙卢卡",
+        "item": "经验糖果XS",
+        "move": "找伙伴"
+       }
+      },
+      {
+       "at": "0x089E7989",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E798E",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E7990",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089E7993",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144604310
+       ],
+       "texts": [
+        {
+         "address": "0x089E7C96",
+         "text": "这是我在路边捡的一些道具，\n你就不用客气了！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7999",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E799B",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089E799E",
+       "command": "goto",
+       "args": [
+        145635524
+       ],
+       "targets": [
+        "0x08AE38C4"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7F65"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E79F3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E79F3",
+       "command": "goto",
+       "args": [
+        144607012
+       ],
+       "targets": [
+        "0x089E8724"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE3008"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7A13",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7A13",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603677
+       ],
+       "texts": [
+        {
+         "address": "0x089E7A1D",
+         "text": "喇叭芽之塔的妖怪……\n这个谜团总算是解开了。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7A19",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7A1B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E788A"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7DD0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7DD0",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x089E7DD1",
+       "command": "goto",
+       "args": [
+        145632873
+       ],
+       "targets": [
+        "0x08AE2E69"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7911"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7F65",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7F65",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x089E7F66",
+       "command": "goto",
+       "args": [
+        144603509
+       ],
+       "targets": [
+        "0x089E7975"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE3008"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E8432",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E8432",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E8437",
+       "command": "setflag",
+       "args": [
+        5494
+       ],
+       "task_flag_labels": [
+        {
+         "title": "喇叭芽塔的妖怪",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E843A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE3924"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E8724",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E8724",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144604354
+       ]
+      },
+      {
+       "at": "0x089E872A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E872C",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144603887
+       ]
+      },
+      {
+       "at": "0x089E8733",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E8736",
+       "command": "pause",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x089E8739",
+       "command": "goto",
+       "args": [
+        145634231
+       ],
+       "targets": [
+        "0x08AE33B7"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E79F3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE2E69",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE2E69",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE2E6A",
+       "command": "showpokepic",
+       "args": [
+        92,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08AE2E6F",
+       "command": "pause",
+       "args": [
+        96
+       ]
+      },
+      {
+       "at": "0x08AE2E72",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08AE2E73",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE2E76",
+       "command": "goto",
+       "args": [
+        145634268
+       ],
+       "targets": [
+        "0x08AE33DC"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7DD0"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE3008",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE3008",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE3009",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AE300E",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603635
+       ],
+       "targets": [
+        "0x089E79F3"
+       ]
+      },
+      {
+       "at": "0x08AE3014",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144606819
+       ],
+       "texts": [
+        {
+         "address": "0x089E8663",
+         "text": "真的？\n真有相信的啊……\n总之，谢谢你对我的帮助！\n这是给你的报酬。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE301A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE301C",
+       "command": "goto",
+       "args": [
+        144605029
+       ],
+       "targets": [
+        "0x089E7F65"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7954"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE33B7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE33B7",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE33B9",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE33BA",
+       "command": "cry",
+       "args": [
+        92,
+        255
+       ]
+      },
+      {
+       "at": "0x08AE33BF",
+       "command": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x08AE33C0",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE33C3",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE33C4",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AE33C6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144604500
+       ]
+      },
+      {
+       "at": "0x08AE33CC",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE33CE",
+       "command": "goto",
+       "args": [
+        144605029
+       ],
+       "targets": [
+        "0x089E7F65"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E8724"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE33DC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE33DC",
+       "command": "goto",
+       "args": [
+        144603476
+       ],
+       "targets": [
+        "0x089E7954"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE2E69"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE38C4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE38C4",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AE38C5",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE38C8",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x08AE38C9",
+       "command": "showmoney",
+       "args": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE38CD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145636957
+       ],
+       "texts": [
+        {
+         "address": "0x08AE3E5D",
+         "text": "这些钱…也给你！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE38D3",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AE38D5",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE38DB",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08AE38DE",
+       "command": "updatemoney",
+       "args": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE38E2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145636974
+       ],
+       "texts": [
+        {
+         "address": "0x08AE3E6E",
+         "text": "多亏了你，终于解开了\n喇叭芽之塔的谜团。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE38E8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE38EA",
+       "command": "hidemoney",
+       "args": [
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE38ED",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AE38EE",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE38F1",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE38F4",
+       "command": "goto",
+       "args": [
+        145635620
+       ],
+       "targets": [
+        "0x08AE3924"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7975"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE3924",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE3924",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603604
+       ],
+       "texts": [
+        {
+         "address": "0x089E79D4",
+         "text": "完成任务:<喇叭芽塔的妖怪>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE392A",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE392F",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE3934",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE3939",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AE393E",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AE3943",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08AE3948",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145687241
+       ],
+       "texts": [
+        {
+         "address": "0x08AF02C9",
+         "text": "获得了3点BracerPoints!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE394E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE3950",
+       "command": "goto",
+       "args": [
+        144606258
+       ],
+       "targets": [
+        "0x089E8432"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE38C4"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF44A0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF44A0",
+       "command": "checkflag",
+       "args": [
+        6026
+       ]
+      },
+      {
+       "at": "0x08AF44A3",
+       "command": "goto_if",
+       "args": [
+        1,
+        145704111
+       ],
+       "targets": [
+        "0x08AF44AF"
+       ]
+      },
+      {
+       "at": "0x08AF44A9",
+       "command": "goto",
+       "args": [
+        144603274
+       ],
+       "targets": [
+        "0x089E788A"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5124B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF44AF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF44AF",
+       "command": "checkflag",
+       "args": [
+        6027
+       ]
+      },
+      {
+       "at": "0x08AF44B2",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603274
+       ],
+       "targets": [
+        "0x089E788A"
+       ]
+      },
+      {
+       "at": "0x08AF44B8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145704130
+       ],
+       "texts": [
+        {
+         "address": "0x08AF44C2",
+         "text": "喇叭芽之塔怎么了？\n难道说…是塔内的幽灵干的吗！？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF44BE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF44C0",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF44A0"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5124B",
+     "event_roots": [
+      {
+       "map_id": "3:68",
+       "place": "桔梗市",
+       "kind": "人物",
+       "local_id": 10,
+       "event_index": 9,
+       "x": 46,
+       "y": 64,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n068.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5124B",
+       "command": "applymovement",
+       "args": [
+        44,
+        150275920
+       ]
+      },
+      {
+       "at": "0x08F51252",
+       "command": "waitmovement",
+       "args": [
+        44
+       ]
+      },
+      {
+       "at": "0x08F51255",
+       "command": "goto",
+       "args": [
+        145704096
+       ],
+       "targets": [
+        "0x08AF44A0"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "3:68/local10"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F51606",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F51606",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5160B",
+       "command": "goto_if",
+       "args": [
+        1,
+        144603357
+       ],
+       "targets": [
+        "0x089E78DD"
+       ]
+      },
+      {
+       "at": "0x08F51611",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144603955
+       ],
+       "texts": [
+        {
+         "address": "0x089E7B33",
+         "text": "不愿意就不愿意吧，\n我才不会…不会害怕妖怪呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F51617",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F51619",
+       "command": "applymovement",
+       "args": [
+        44,
+        150279653
+       ]
+      },
+      {
+       "at": "0x08F51620",
+       "command": "waitmovement",
+       "args": [
+        44
+       ]
+      },
+      {
+       "at": "0x08F51623",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F51624",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E78AB"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

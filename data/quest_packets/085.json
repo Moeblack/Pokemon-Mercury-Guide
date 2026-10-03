@@ -1,0 +1,2379 @@
+{
+ "title": "电气鼠派对",
+ "quest_id": 85,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b5a0",
+    "title": "电气鼠派对",
+    "title_address": "0x8e3c0bd",
+    "description": "我想举办一场\n盛大的电气鼠派对！\n想参与的请来城市南部找我哦！",
+    "description_address": "0x8e3c086",
+    "unknown_u16": 97,
+    "unknown_u16_hex": "0x0061",
+    "accept_flag": 6085,
+    "accept_flag_hex": "0x17C5",
+    "complete_flag": 6087,
+    "complete_flag_hex": "0x17C7",
+    "map_group": 3,
+    "map_num": 72,
+    "tail_hex": "0b 00 00 00",
+    "index": 85,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39714",
+      "title": "电气鼠派对",
+      "description_address": "0x8e39e9c",
+      "description": "我想举办一场\\n盛大的电气鼠派对！\\n想参与的请来城市南部找我哦！"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39e9c",
+    "legacy_match_count": 1,
+    "current_description": "帮助浅葱市的女孩\n收集电气鼠宝可梦，\n组织一场电气鼠派对。",
+    "catalog_map": {
+     "id": "3:72",
+     "name": "浅葱市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AFE20E",
+    "0x08AFE35A",
+    "0x08AFE54B",
+    "0x08AFF0BA",
+    "0x08AFF10B",
+    "0x08AFF194"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08AFF0BA",
+     "map_id": "56:19",
+     "place": "不知名遗迹",
+     "kind": "调查点",
+     "local_id": null,
+     "event_index": 0,
+     "x": 1,
+     "y": 2,
+     "facing": "script_facing_any",
+     "map_page": "../../wiki_export/world/pages/maps/g56_n019.md"
+    },
+    {
+     "script": "0x08AFF0BA",
+     "map_id": "56:32",
+     "place": "40号水路",
+     "kind": "调查点",
+     "local_id": null,
+     "event_index": 0,
+     "x": 3,
+     "y": 0,
+     "facing": "script_facing_any",
+     "map_page": "../../wiki_export/world/pages/maps/g56_n032.md"
+    },
+    {
+     "script": "0x08F5EDF2",
+     "map_id": "3:72",
+     "place": "浅葱市",
+     "kind": "人物",
+     "local_id": 34,
+     "event_index": 32,
+     "x": 14,
+     "y": 36,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n072.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08A68F8C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08A68F8C",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08A68F91",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        172
+       ],
+       "possible_names_not_semantics": {
+        "species": "皮丘",
+        "item": "杏子果",
+        "move": "火焰轮"
+       }
+      },
+      {
+       "at": "0x08A68F96",
+       "command": "goto_if",
+       "args": [
+        1,
+        145744861
+       ],
+       "targets": [
+        "0x08AFE3DD"
+       ]
+      },
+      {
+       "at": "0x08A68F9C",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08A68FA1",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1100
+       ],
+       "possible_names_not_semantics": {
+        "species": "皮丘",
+        "item": null,
+        "move": null
+       }
+      },
+      {
+       "at": "0x08A68FA6",
+       "command": "goto_if",
+       "args": [
+        1,
+        145744861
+       ],
+       "targets": [
+        "0x08AFE3DD"
+       ]
+      },
+      {
+       "at": "0x08A68FAC",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08A68FAD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145745999
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE84F",
+         "text": "天哪……\n你是在开玩笑吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08A68FB3",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08A68FB5",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08A69261",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08A69261",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08A69266",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        25
+       ],
+       "possible_names_not_semantics": {
+        "species": "皮卡丘",
+        "item": "活力块",
+        "move": "百万吨重踢"
+       }
+      },
+      {
+       "at": "0x08A6926B",
+       "command": "goto_if",
+       "args": [
+        1,
+        145744930
+       ],
+       "targets": [
+        "0x08AFE422"
+       ]
+      },
+      {
+       "at": "0x08A69271",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08A69276",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1087
+       ],
+       "possible_names_not_semantics": {
+        "species": "皮卡丘",
+        "item": null,
+        "move": null
+       }
+      },
+      {
+       "at": "0x08A6927B",
+       "command": "goto_if",
+       "args": [
+        1,
+        145744930
+       ],
+       "targets": [
+        "0x08AFE422"
+       ]
+      },
+      {
+       "at": "0x08A69281",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08A69282",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145745999
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE84F",
+         "text": "天哪……\n你是在开玩笑吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08A69288",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08A6928A",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFE20E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFE20E",
+       "command": "checkflag",
+       "args": [
+        6085
+       ],
+       "task_flag_labels": [
+        {
+         "title": "电气鼠派对",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE211",
+       "command": "goto_if",
+       "args": [
+        1,
+        145744782
+       ],
+       "targets": [
+        "0x08AFE38E"
+       ]
+      },
+      {
+       "at": "0x08AFE217",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145745122
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE4E2",
+         "text": "正电拍拍和\n负电拍拍真的好可爱呀！\n我超\n喜欢电气鼠宝可梦！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE21D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFE21F",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AFE222",
+       "command": "goto_if",
+       "args": [
+        1,
+        145744688
+       ],
+       "targets": [
+        "0x08AFE330"
+       ]
+      },
+      {
+       "at": "0x08AFE228",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFE330",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFE330",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AFE333",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144523284
+       ]
+      },
+      {
+       "at": "0x08AFE33A",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AFE33D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145745448
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE628",
+         "text": "你是？\n是看见了我的请求吗？\n太好了！\n我想让可爱的\n电气鼠宝可梦们齐聚一堂，\n举行一场盛大的派对！\n可惜，现在我身边只有\n正电拍拍和负电拍拍……\n你能为我带来\n皮丘、皮卡丘、帕奇利兹\n还有托戈德玛尔吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE343",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AFE345",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFE34A",
+       "command": "goto",
+       "args": [
+        150335328
+       ],
+       "targets": [
+        "0x08F5EF60"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFE35A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFE35A",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFE35D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145745688
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE718",
+         "text": "接受任务:<电气鼠派对>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE363",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFE368",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFE36D",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AFE372",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AFE377",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AFE37C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145745715
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE733",
+         "text": "真的是……太感谢你了！没有你，\n我真的不知道该怎么办了……\n那么，就请你帮我把\n皮丘、皮卡丘、帕奇利兹\n还有托戈德玛尔带过来吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE382",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFE384",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AFE389",
+       "command": "setflag",
+       "args": [
+        6085
+       ],
+       "task_flag_labels": [
+        {
+         "title": "电气鼠派对",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE38C",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFE38E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFE38E",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AFE38F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145745832
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE7A8",
+         "text": "怎么样，\n你把皮丘、皮卡丘、帕奇利兹\n还有托戈德玛尔都带过来了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE395",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AFE397",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFE39C",
+       "command": "goto_if",
+       "args": [
+        1,
+        145744812
+       ],
+       "targets": [
+        "0x08AFE3AC"
+       ]
+      },
+      {
+       "at": "0x08AFE3A2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145745895
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE7E7",
+         "text": "好吧，\n如果你把可爱的电气鼠\n宝可梦们都带过来了，\n请务必给我看看！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE3A8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFE3AA",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFE3AC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFE3AC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145745962
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE82A",
+         "text": "真的吗！？\n那么先把皮丘给我看看吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE3B2",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFE3B4",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AFE3B5",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AFE3B8",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x08AFE3BB",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08AFE3BC",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AFE3C1",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AFE3C2",
+       "command": "goto",
+       "args": [
+        145133452
+       ],
+       "targets": [
+        "0x08A68F8C"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFE3DD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFE3DD",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AFE3DE",
+       "command": "showpokepic",
+       "args": [
+        172,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08AFE3E3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145746024
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE868",
+         "text": "哇噢！\n这近似菱形的黑色耳朵……\n没错，这就是皮丘！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE3E9",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AFE3EB",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08AFE3EC",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AFE3ED",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AFE3F0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145746072
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE898",
+         "text": "嗯哼\n接下来是…皮卡丘！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE3F6",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AFE3F8",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AFE3FB",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x08AFE3FE",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08AFE3FF",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AFE404",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AFE405",
+       "command": "goto",
+       "args": [
+        145134177
+       ],
+       "targets": [
+        "0x08A69261"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFE422",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFE422",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AFE423",
+       "command": "showpokepic",
+       "args": [
+        25,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08AFE428",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145746100
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE8B4",
+         "text": "没错！\n脸颊上的红色电力袋……\n毫无疑问是皮卡丘了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE42E",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AFE430",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08AFE431",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AFE432",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AFE435",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145746149
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE8E5",
+         "text": "好耶！\n然后就是…帕奇利兹！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE43B",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AFE43D",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AFE440",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x08AFE443",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08AFE444",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AFE449",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AFE44A",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08AFE44F",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        470
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕奇利兹",
+        "item": "圆形护符",
+        "move": "治愈之愿"
+       }
+      },
+      {
+       "at": "0x08AFE454",
+       "command": "goto_if",
+       "args": [
+        1,
+        145744999
+       ],
+       "targets": [
+        "0x08AFE467"
+       ]
+      },
+      {
+       "at": "0x08AFE45A",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AFE45B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145745999
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE84F",
+         "text": "天哪……\n你是在开玩笑吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE461",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFE463",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFE467",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFE467",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AFE468",
+       "command": "showpokepic",
+       "args": [
+        470,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08AFE46D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145746178
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE902",
+         "text": "没问题！\n尾部末端的尖状物……\n是帕奇利兹无误了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE473",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AFE475",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08AFE476",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AFE477",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AFE47A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145746225
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE931",
+         "text": "好的，\n最后就是…托戈德玛尔了捏！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE480",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AFE482",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AFE485",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x08AFE488",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08AFE489",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AFE48E",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AFE48F",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08AFE494",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        994
+       ],
+       "possible_names_not_semantics": {
+        "species": "托戈德玛尔",
+        "item": null,
+        "move": "双光束"
+       }
+      },
+      {
+       "at": "0x08AFE499",
+       "command": "goto_if",
+       "args": [
+        1,
+        145745068
+       ],
+       "targets": [
+        "0x08AFE4AC"
+       ]
+      },
+      {
+       "at": "0x08AFE49F",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AFE4A0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145745999
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE84F",
+         "text": "天哪……\n你是在开玩笑吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE4A6",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFE4A8",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFE4AC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFE4AC",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AFE4AD",
+       "command": "showpokepic",
+       "args": [
+        994,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08AFE4B2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145746260
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE954",
+         "text": "哦耶，尖尖的刺！\n果然是托戈德玛尔呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE4B8",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AFE4BA",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08AFE4BB",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AFE4BC",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AFE4BF",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AFE4C2",
+       "command": "applymovement",
+       "args": [
+        255,
+        145745119
+       ]
+      },
+      {
+       "at": "0x08AFE4C9",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AFE4CC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145746299
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE97B",
+         "text": "诶！？不好意思……\n我一旦情绪激动起来，\n就容易怪叫……\n不过，可爱的\n电气鼠们终于齐聚一堂了\n接下来就让我们开始电气鼠派对吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE4D2",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AFE4D4",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AFE4D5",
+       "command": "goto",
+       "args": [
+        145747366
+       ],
+       "targets": [
+        "0x08AFEDA6"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFE54B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFE54B",
+       "command": "checkflag",
+       "args": [
+        6087
+       ],
+       "task_flag_labels": [
+        {
+         "title": "电气鼠派对",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFE54E",
+       "command": "goto_if",
+       "args": [
+        1,
+        145747657
+       ],
+       "targets": [
+        "0x08AFEEC9"
+       ]
+      },
+      {
+       "at": "0x08AFE554",
+       "command": "goto",
+       "args": [
+        145744398
+       ],
+       "targets": [
+        "0x08AFE20E"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFEDA6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFEDA6",
+       "command": "warpmuted",
+       "args": [
+        56,
+        31,
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AFEDAE",
+       "command": "pause",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08AFEDB1",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFEEC9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFEEC9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145748926
+       ],
+       "texts": [
+        {
+         "address": "0x08AFF3BE",
+         "text": "无论遇见什么烦心事，\n只要看见电气鼠们\n可爱的脸和天使般的笑容，\n就感觉瞬间被治愈了呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFEECF",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFEED1",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFF0BA",
+     "event_roots": [
+      {
+       "map_id": "56:19",
+       "place": "不知名遗迹",
+       "kind": "调查点",
+       "local_id": null,
+       "event_index": 0,
+       "x": 1,
+       "y": 2,
+       "facing": "script_facing_any",
+       "map_page": "../../wiki_export/world/pages/maps/g56_n019.md"
+      },
+      {
+       "map_id": "56:32",
+       "place": "40号水路",
+       "kind": "调查点",
+       "local_id": null,
+       "event_index": 0,
+       "x": 3,
+       "y": 0,
+       "facing": "script_facing_any",
+       "map_page": "../../wiki_export/world/pages/maps/g56_n032.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AFF0BA",
+       "command": "checkflag",
+       "args": [
+        6087
+       ],
+       "task_flag_labels": [
+        {
+         "title": "电气鼠派对",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFF0BD",
+       "command": "goto_if",
+       "args": [
+        1,
+        145748173
+       ],
+       "targets": [
+        "0x08AFF0CD"
+       ]
+      },
+      {
+       "at": "0x08AFF0C3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145748460
+       ],
+       "texts": [
+        {
+         "address": "0x08AFF1EC",
+         "text": "书架上面放满了关于\n宝可梦对战的书。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFF0C9",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFF0CB",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFF0CD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFF0CD",
+       "command": "checkflag",
+       "args": [
+        6089
+       ]
+      },
+      {
+       "at": "0x08AFF0D0",
+       "command": "goto_if",
+       "args": [
+        1,
+        145748450
+       ],
+       "targets": [
+        "0x08AFF1E2"
+       ]
+      },
+      {
+       "at": "0x08AFF0D6",
+       "command": "goto",
+       "args": [
+        145748201
+       ],
+       "targets": [
+        "0x08AFF0E9"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFF0E9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFF0E9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145748412
+       ],
+       "texts": [
+        {
+         "address": "0x08AFF1BC",
+         "text": "这里似乎很适合拍照，\n要拍一张照片吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFF0EF",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AFF0F1",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFF0F6",
+       "command": "goto_if",
+       "args": [
+        1,
+        145748536
+       ],
+       "targets": [
+        "0x08AFF238"
+       ]
+      },
+      {
+       "at": "0x08AFF0FC",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AFF0FD",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFF10B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFF10B",
+       "command": "checkflag",
+       "args": [
+        6087
+       ],
+       "task_flag_labels": [
+        {
+         "title": "电气鼠派对",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFF10E",
+       "command": "goto_if",
+       "args": [
+        1,
+        145748249
+       ],
+       "targets": [
+        "0x08AFF119"
+       ]
+      },
+      {
+       "at": "0x08AFF114",
+       "command": "setflag",
+       "args": [
+        6090
+       ]
+      },
+      {
+       "at": "0x08AFF117",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFF119",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFF119",
+       "command": "checkflag",
+       "args": [
+        6089
+       ]
+      },
+      {
+       "at": "0x08AFF11C",
+       "command": "goto_if",
+       "args": [
+        1,
+        145748263
+       ],
+       "targets": [
+        "0x08AFF127"
+       ]
+      },
+      {
+       "at": "0x08AFF122",
+       "command": "clearflag",
+       "args": [
+        6090
+       ]
+      },
+      {
+       "at": "0x08AFF125",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFF127",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFF127",
+       "command": "setflag",
+       "args": [
+        6090
+       ]
+      },
+      {
+       "at": "0x08AFF12A",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFF194",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFF194",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AFF199",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145748093
+       ],
+       "texts": [
+        {
+         "address": "0x08AFF07D",
+         "text": "获得了5点BracerPoints和5000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFF19F",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AFF1A1",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AFF1A6",
+       "command": "setflag",
+       "args": [
+        6087
+       ],
+       "task_flag_labels": [
+        {
+         "title": "电气鼠派对",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFF1A9",
+       "command": "setvar",
+       "args": [
+        20904,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AFF1AE",
+       "command": "pause",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08AFF1B1",
+       "command": "signmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AFF1B2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149691611
+       ],
+       "texts": [
+        {
+         "address": "0x08EC1CDB",
+         "text": "感觉拍照时\n见到了什么奇怪的东西……\n是错觉吗？\n似乎感受到了从40号道路\n上方的洋馆传来的气息……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFF1B8",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AFF1BA",
+       "command": "normalmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AFF1BB",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFF1E2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFF1E2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145748460
+       ],
+       "texts": [
+        {
+         "address": "0x08AFF1EC",
+         "text": "书架上面放满了关于\n宝可梦对战的书。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFF1E8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFF1EA",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFF238",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFF238",
+       "command": "callasm",
+       "args": [
+        144089105
+       ]
+      },
+      {
+       "at": "0x08AFF23D",
+       "command": "clearflag",
+       "args": [
+        5483
+       ]
+      },
+      {
+       "at": "0x08AFF240",
+       "command": "clearflag",
+       "args": [
+        5484
+       ]
+      },
+      {
+       "at": "0x08AFF243",
+       "command": "clearflag",
+       "args": [
+        5485
+       ]
+      },
+      {
+       "at": "0x08AFF246",
+       "command": "clearflag",
+       "args": [
+        5486
+       ]
+      },
+      {
+       "at": "0x08AFF249",
+       "command": "clearflag",
+       "args": [
+        5487
+       ]
+      },
+      {
+       "at": "0x08AFF24C",
+       "command": "clearflag",
+       "args": [
+        5488
+       ]
+      },
+      {
+       "at": "0x08AFF24F",
+       "command": "countpokemon",
+       "args": []
+      },
+      {
+       "at": "0x08AFF250",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        5
+       ],
+       "possible_names_not_semantics": {
+        "species": "火恐龙",
+        "item": "狩猎球",
+        "move": "百万吨重拳"
+       }
+      },
+      {
+       "at": "0x08AFF255",
+       "command": "goto_if",
+       "args": [
+        1,
+        145748703
+       ],
+       "targets": [
+        "0x08AFF2DF"
+       ]
+      },
+      {
+       "at": "0x08AFF25B",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        4
+       ],
+       "possible_names_not_semantics": {
+        "species": "小火龙",
+        "item": "精灵球",
+        "move": "连续拳"
+       }
+      },
+      {
+       "at": "0x08AFF260",
+       "command": "goto_if",
+       "args": [
+        1,
+        145748712
+       ],
+       "targets": [
+        "0x08AFF2E8"
+       ]
+      },
+      {
+       "at": "0x08AFF266",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x08AFF26B",
+       "command": "goto_if",
+       "args": [
+        1,
+        145748724
+       ],
+       "targets": [
+        "0x08AFF2F4"
+       ]
+      },
+      {
+       "at": "0x08AFF271",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AFF276",
+       "command": "goto_if",
+       "args": [
+        1,
+        145748739
+       ],
+       "targets": [
+        "0x08AFF303"
+       ]
+      },
+      {
+       "at": "0x08AFF27C",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFF281",
+       "command": "goto_if",
+       "args": [
+        1,
+        145748757
+       ],
+       "targets": [
+        "0x08AFF315"
+       ]
+      },
+      {
+       "at": "0x08AFF287",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        6
+       ],
+       "possible_names_not_semantics": {
+        "species": "喷火龙",
+        "item": "捕网球",
+        "move": "聚宝功"
+       }
+      },
+      {
+       "at": "0x08AFF28C",
+       "command": "goto_if",
+       "args": [
+        1,
+        145749042
+       ],
+       "targets": [
+        "0x08AFF432"
+       ]
+      },
+      {
+       "at": "0x08AFF292",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFF2DF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFF2DF",
+       "command": "setflag",
+       "args": [
+        5488
+       ]
+      },
+      {
+       "at": "0x08AFF2E2",
+       "command": "goto",
+       "args": [
+        145749042
+       ],
+       "targets": [
+        "0x08AFF432"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFF2E8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFF2E8",
+       "command": "setflag",
+       "args": [
+        5488
+       ]
+      },
+      {
+       "at": "0x08AFF2EB",
+       "command": "setflag",
+       "args": [
+        5487
+       ]
+      },
+      {
+       "at": "0x08AFF2EE",
+       "command": "goto",
+       "args": [
+        145749042
+       ],
+       "targets": [
+        "0x08AFF432"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFF2F4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFF2F4",
+       "command": "setflag",
+       "args": [
+        5488
+       ]
+      },
+      {
+       "at": "0x08AFF2F7",
+       "command": "setflag",
+       "args": [
+        5487
+       ]
+      },
+      {
+       "at": "0x08AFF2FA",
+       "command": "setflag",
+       "args": [
+        5486
+       ]
+      },
+      {
+       "at": "0x08AFF2FD",
+       "command": "goto",
+       "args": [
+        145749042
+       ],
+       "targets": [
+        "0x08AFF432"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFF303",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFF303",
+       "command": "setflag",
+       "args": [
+        5488
+       ]
+      },
+      {
+       "at": "0x08AFF306",
+       "command": "setflag",
+       "args": [
+        5487
+       ]
+      },
+      {
+       "at": "0x08AFF309",
+       "command": "setflag",
+       "args": [
+        5486
+       ]
+      },
+      {
+       "at": "0x08AFF30C",
+       "command": "setflag",
+       "args": [
+        5485
+       ]
+      },
+      {
+       "at": "0x08AFF30F",
+       "command": "goto",
+       "args": [
+        145749042
+       ],
+       "targets": [
+        "0x08AFF432"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFF315",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFF315",
+       "command": "setflag",
+       "args": [
+        5488
+       ]
+      },
+      {
+       "at": "0x08AFF318",
+       "command": "setflag",
+       "args": [
+        5487
+       ]
+      },
+      {
+       "at": "0x08AFF31B",
+       "command": "setflag",
+       "args": [
+        5486
+       ]
+      },
+      {
+       "at": "0x08AFF31E",
+       "command": "setflag",
+       "args": [
+        5485
+       ]
+      },
+      {
+       "at": "0x08AFF321",
+       "command": "setflag",
+       "args": [
+        5484
+       ]
+      },
+      {
+       "at": "0x08AFF324",
+       "command": "goto",
+       "args": [
+        145749042
+       ],
+       "targets": [
+        "0x08AFF432"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFF432",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFF432",
+       "command": "warpmuted",
+       "args": [
+        56,
+        32,
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AFF43A",
+       "command": "pause",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08AFF43D",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F5EDF2",
+     "event_roots": [
+      {
+       "map_id": "3:72",
+       "place": "浅葱市",
+       "kind": "人物",
+       "local_id": 34,
+       "event_index": 32,
+       "x": 14,
+       "y": 36,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n072.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5EDF2",
+       "command": "applymovement",
+       "args": [
+        38,
+        150335215
+       ]
+      },
+      {
+       "at": "0x08F5EDF9",
+       "command": "waitmovement",
+       "args": [
+        38
+       ]
+      },
+      {
+       "at": "0x08F5EDFC",
+       "command": "goto",
+       "args": [
+        145745227
+       ],
+       "targets": [
+        "0x08AFE54B"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F5EF60",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5EF60",
+       "command": "goto_if",
+       "args": [
+        1,
+        145744730
+       ],
+       "targets": [
+        "0x08AFE35A"
+       ]
+      },
+      {
+       "at": "0x08F5EF66",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145745636
+       ],
+       "texts": [
+        {
+         "address": "0x08AFE6E4",
+         "text": "怎么会这样！？难道……\n你不喜欢可爱的电气鼠宝可梦吗！？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5EF6C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5EF6E",
+       "command": "applymovement",
+       "args": [
+        38,
+        150335928
+       ]
+      },
+      {
+       "at": "0x08F5EF75",
+       "command": "waitmovement",
+       "args": [
+        38
+       ]
+      },
+      {
+       "at": "0x08F5EF78",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5EF79",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1050 @@
+{
+ "title": "如期未至的朋友",
+ "quest_id": 49,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b2d0",
+    "title": "如期未至的朋友",
+    "title_address": "0x8e3c6ad",
+    "description": "我和我的朋友约好了在\n精灵中心见面，可是他迟迟\n没有到，他会不会是迷路了？",
+    "description_address": "0x8e3c682",
+    "unknown_u16": 161,
+    "unknown_u16_hex": "0x00A1",
+    "accept_flag": 5976,
+    "accept_flag_hex": "0x1758",
+    "complete_flag": 5978,
+    "complete_flag_hex": "0x175A",
+    "map_group": 50,
+    "map_num": 3,
+    "tail_hex": "02 01 00 00",
+    "index": 49,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe395d4",
+      "title": "如期未至的朋友",
+      "description_address": "0x8e3a57d",
+      "description": "我和我的朋友约好了在\\n精灵中心见面，可是他迟迟\\n没有到，他会不会是迷路了？"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a57d",
+    "legacy_match_count": 1,
+    "current_description": "帮助满金市精灵中心的\n露营少女找到她的朋友。",
+    "catalog_map": {
+     "id": "50:3",
+     "name": "满金市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AEC4A3",
+    "0x08AEC6E5",
+    "0x08AEC723",
+    "0x08AECA4C",
+    "0x08ED5CA2"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08AECA4C",
+     "map_id": "56:15",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 5,
+     "y": 16,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g56_n015.md"
+    },
+    {
+     "script": "0x08F56A68",
+     "map_id": "50:3",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 12,
+     "event_index": 10,
+     "x": 11,
+     "y": 4,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g50_n003.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08AEC071",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEC071",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AEC074",
+       "command": "goto_if",
+       "args": [
+        1,
+        145671331
+       ],
+       "targets": [
+        "0x08AEC4A3"
+       ]
+      },
+      {
+       "at": "0x08AEC07A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145672255
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC83F",
+         "text": "明明说好在精灵中心见面的……\n他究竟到哪里去了？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC080",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEC082",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEC4A3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEC4A3",
+       "command": "checkflag",
+       "args": [
+        5977
+       ]
+      },
+      {
+       "at": "0x08AEC4A6",
+       "command": "goto_if",
+       "args": [
+        1,
+        145671971
+       ],
+       "targets": [
+        "0x08AEC723"
+       ]
+      },
+      {
+       "at": "0x08AEC4AC",
+       "command": "checkflag",
+       "args": [
+        5976
+       ],
+       "task_flag_labels": [
+        {
+         "title": "如期未至的朋友",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC4AF",
+       "command": "goto_if",
+       "args": [
+        1,
+        145671961
+       ],
+       "targets": [
+        "0x08AEC719"
+       ]
+      },
+      {
+       "at": "0x08AEC4B5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145672255
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC83F",
+         "text": "明明说好在精灵中心见面的……\n他究竟到哪里去了？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC4BB",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEC4BD",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEC4C0",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145672514
+       ]
+      },
+      {
+       "at": "0x08AEC4C7",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AEC4CA",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AEC4CB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145672302
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC86E",
+         "text": "你好，请问是\n看见了我的委托吗？\n我和我的朋友约好了\n在精灵中心见面，\n可是他迟迟没有到……\n你能帮我找找他吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC4D1",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AEC4D3",
+       "command": "goto",
+       "args": [
+        150301501
+       ],
+       "targets": [
+        "0x08F56B3D"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEC6E5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEC6E5",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEC6E8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145672483
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC923",
+         "text": "接受任务:<如期未至的朋友>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC6EE",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEC6F3",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEC6F8",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AEC6FD",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AEC702",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AEC707",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145672433
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC8F1",
+         "text": "那拜托你了！\n他和我一样，\n也是一身露营少年的装扮。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC70D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEC70F",
+       "command": "setflag",
+       "args": [
+        5976
+       ],
+       "task_flag_labels": [
+        {
+         "title": "如期未至的朋友",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC712",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AEC717",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEC719",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEC719",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145672433
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC8F1",
+         "text": "那拜托你了！\n他和我一样，\n也是一身露营少年的装扮。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC71F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEC721",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEC723",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEC723",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145672083
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC793",
+         "text": "谢谢你！\n原来他是跑到另外\n一个精灵中心去了呢……\n这是给你的报酬！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC729",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEC72B",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AEC72E",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        402
+       ],
+       "possible_names_not_semantics": {
+        "species": "雷吉艾斯",
+        "item": "TM77",
+        "move": "掉包"
+       }
+      },
+      {
+       "at": "0x08AEC733",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEC738",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AEC73A",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AEC73D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145672147
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC7D3",
+         "text": "我们接下来准备去自然公园了，\n那么再见啦！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC743",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEC745",
+       "command": "fadescreenspeed",
+       "args": [
+        1,
+        2
+       ]
+      },
+      {
+       "at": "0x08AEC748",
+       "command": "removeobject",
+       "args": [
+        12
+       ]
+      },
+      {
+       "at": "0x08AEC74B",
+       "command": "removeobject",
+       "args": [
+        22
+       ]
+      },
+      {
+       "at": "0x08AEC74E",
+       "command": "setflag",
+       "args": [
+        5979
+       ]
+      },
+      {
+       "at": "0x08AEC751",
+       "command": "setflag",
+       "args": [
+        5978
+       ],
+       "task_flag_labels": [
+        {
+         "title": "如期未至的朋友",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC754",
+       "command": "fadescreenspeed",
+       "args": [
+        0,
+        2
+       ]
+      },
+      {
+       "at": "0x08AEC757",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEC75A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145672189
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC7FD",
+         "text": "接受任务:<如期未至的朋友>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC760",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEC765",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEC76A",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AEC76F",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AEC774",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AEC779",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145672220
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC81C",
+         "text": "获得了3点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC77F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEC781",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AEC786",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08AEC78B",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AEC791",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AECA4C",
+     "event_roots": [
+      {
+       "map_id": "56:15",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 5,
+       "y": 16,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g56_n015.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AECA4C",
+       "command": "checkflag",
+       "args": [
+        5976
+       ],
+       "task_flag_labels": [
+        {
+         "title": "如期未至的朋友",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AECA4F",
+       "command": "goto_if",
+       "args": [
+        1,
+        145672799
+       ],
+       "targets": [
+        "0x08AECA5F"
+       ]
+      },
+      {
+       "at": "0x08AECA55",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145672842
+       ],
+       "texts": [
+        {
+         "address": "0x08AECA8A",
+         "text": "怎么回事呢？\n她怎么还没来呢…？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AECA5B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AECA5D",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AECA5F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AECA5F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145672842
+       ],
+       "texts": [
+        {
+         "address": "0x08AECA8A",
+         "text": "怎么回事呢？\n她怎么还没来呢…？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AECA65",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AECA67",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AECA6A",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145672964
+       ]
+      },
+      {
+       "at": "0x08AECA71",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AECA74",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145672873
+       ],
+       "texts": [
+        {
+         "address": "0x08AECAA9",
+         "text": "什么？\n你说有人在精灵中心等我？\n那这里又是哪里？\n难不成是刚刚路过的……\n噢噢，我知道了！谢谢你！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AECA7A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AECA7C",
+       "command": "fadescreenspeed",
+       "args": [
+        1,
+        2
+       ]
+      },
+      {
+       "at": "0x08AECA7F",
+       "command": "removeobject",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x08AECA82",
+       "command": "setflag",
+       "args": [
+        5977
+       ]
+      },
+      {
+       "at": "0x08AECA85",
+       "command": "fadescreenspeed",
+       "args": [
+        0,
+        2
+       ]
+      },
+      {
+       "at": "0x08AECA88",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08ED5CA2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08ED5CA2",
+       "command": "checkflag",
+       "args": [
+        5978
+       ],
+       "task_flag_labels": [
+        {
+         "title": "如期未至的朋友",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED5CA5",
+       "command": "goto_if",
+       "args": [
+        1,
+        149773488
+       ],
+       "targets": [
+        "0x08ED5CB0"
+       ]
+      },
+      {
+       "at": "0x08ED5CAB",
+       "command": "clearflag",
+       "args": [
+        5979
+       ]
+      },
+      {
+       "at": "0x08ED5CAE",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08ED5CB0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08ED5CB0",
+       "command": "setflag",
+       "args": [
+        5979
+       ]
+      },
+      {
+       "at": "0x08ED5CB3",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F56A68",
+     "event_roots": [
+      {
+       "map_id": "50:3",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 12,
+       "event_index": 10,
+       "x": 11,
+       "y": 4,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n003.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F56A68",
+       "command": "applymovement",
+       "args": [
+        13,
+        150301427
+       ]
+      },
+      {
+       "at": "0x08F56A6F",
+       "command": "waitmovement",
+       "args": [
+        13
+       ]
+      },
+      {
+       "at": "0x08F56A72",
+       "command": "goto",
+       "args": [
+        145670257
+       ],
+       "targets": [
+        "0x08AEC071"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F56B3D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F56B3D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F56B42",
+       "command": "goto_if",
+       "args": [
+        1,
+        145671909
+       ],
+       "targets": [
+        "0x08AEC6E5"
+       ]
+      },
+      {
+       "at": "0x08F56B48",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145672406
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC8D6",
+         "text": "好吧，\n那我再等一下他吧……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F56B4E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F56B50",
+       "command": "applymovement",
+       "args": [
+        13,
+        150301533
+       ]
+      },
+      {
+       "at": "0x08F56B57",
+       "command": "waitmovement",
+       "args": [
+        13
+       ]
+      },
+      {
+       "at": "0x08F56B5A",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F56B5B",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

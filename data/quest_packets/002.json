@@ -1,0 +1,3097 @@
+{
+ "title": "皮丘的旅途",
+ "quest_id": 2,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3af24",
+    "title": "皮丘的旅途",
+    "title_address": "0x8e3c94a",
+    "description": "带着皮丘\n去桐树林看看吧。",
+    "description_address": "0x8e3c931",
+    "unknown_u16": 221,
+    "unknown_u16_hex": "0x00DD",
+    "accept_flag": 5794,
+    "accept_flag_hex": "0x16A2",
+    "complete_flag": 5795,
+    "complete_flag_hex": "0x16A3",
+    "map_group": 0,
+    "map_num": 0,
+    "tail_hex": "00 00 00 00",
+    "index": 2,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3c931",
+    "legacy_match_count": 0,
+    "current_description": "带着皮丘\n去桐树林看看吧。",
+    "catalog_map": null
+   },
+   "direct_flag_scripts": [
+    "0x08AC5B42",
+    "0x08AE646E",
+    "0x08AE74A4",
+    "0x08AE81FB"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08AAC1FE",
+     "map_id": "3:67",
+     "place": "吉野市",
+     "kind": "人物",
+     "local_id": 7,
+     "event_index": 5,
+     "x": 13,
+     "y": 13,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n067.md"
+    },
+    {
+     "script": "0x08D568C3",
+     "map_id": "1:121",
+     "place": "桐树林",
+     "kind": "人物",
+     "local_id": 33,
+     "event_index": 31,
+     "x": 7,
+     "y": 47,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g01_n121.md"
+    },
+    {
+     "script": "0x08D568C3",
+     "map_id": "1:121",
+     "place": "桐树林",
+     "kind": "调查点",
+     "local_id": null,
+     "event_index": 2,
+     "x": 6,
+     "y": 47,
+     "facing": "script_facing_any",
+     "map_page": "../../wiki_export/world/pages/maps/g01_n121.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089D4B81",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089D4B81",
+       "command": "signmsg",
+       "args": []
+      },
+      {
+       "at": "0x089D4B82",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144526417
+       ],
+       "texts": [
+        {
+         "address": "0x089D4C51",
+         "text": "桐树林里的祠堂……\n供奉着森林之神。"
+        }
+       ]
+      },
+      {
+       "at": "0x089D4B88",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x089D4B8A",
+       "command": "normalmsg",
+       "args": []
+      },
+      {
+       "at": "0x089D4B8B",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AAC1FE",
+     "event_roots": [
+      {
+       "map_id": "3:67",
+       "place": "吉野市",
+       "kind": "人物",
+       "local_id": 7,
+       "event_index": 5,
+       "x": 13,
+       "y": 13,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n067.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AAC1FE",
+       "command": "checkflag",
+       "args": [
+        5699
+       ]
+      },
+      {
+       "at": "0x08AAC201",
+       "command": "goto_if",
+       "args": [
+        1,
+        145408553
+       ],
+       "targets": [
+        "0x08AAC229"
+       ]
+      },
+      {
+       "at": "0x08AAC207",
+       "command": "call",
+       "args": [
+        144473272
+       ],
+       "targets": [
+        "0x089C7CB8"
+       ]
+      },
+      {
+       "at": "0x08AAC20C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145408641
+       ]
+      },
+      {
+       "at": "0x08AAC212",
+       "command": "call",
+       "args": [
+        144473279
+       ],
+       "targets": [
+        "0x089C7CBF"
+       ]
+      },
+      {
+       "at": "0x08AAC217",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145408650
+       ],
+       "texts": [
+        {
+         "address": "0x08AAC28A",
+         "text": "你就是[玩家/变量]吧？\n我叫小黄，是大木博士的助手。\n空木博士已经把事情告诉我了。\n目前沟通宝可梦还需要做一些准备，\n趁这个时间，\n请你把咕咕带回来给我看看吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AAC21D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AAC21F",
+       "command": "call",
+       "args": [
+        144473407
+       ],
+       "targets": [
+        "0x089C7D3F"
+       ]
+      },
+      {
+       "at": "0x08AAC224",
+       "command": "setflag",
+       "args": [
+        5699
+       ]
+      },
+      {
+       "at": "0x08AAC227",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AAC229",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AAC229",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AAC22A",
+       "command": "call",
+       "args": [
+        144473272
+       ],
+       "targets": [
+        "0x089C7CB8"
+       ]
+      },
+      {
+       "at": "0x08AAC22F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145408641
+       ]
+      },
+      {
+       "at": "0x08AAC235",
+       "command": "call",
+       "args": [
+        144473279
+       ],
+       "targets": [
+        "0x089C7CBF"
+       ]
+      },
+      {
+       "at": "0x08AAC23A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145408815
+       ],
+       "texts": [
+        {
+         "address": "0x08AAC32F",
+         "text": "我跟随大木博士到城都，\n正是想来调查飞行系宝可梦，\n你已经把咕咕带回来了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AAC240",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AAC242",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AAC247",
+       "command": "goto_if",
+       "args": [
+        1,
+        145409595
+       ],
+       "targets": [
+        "0x08AAC63B"
+       ]
+      },
+      {
+       "at": "0x08AAC24D",
+       "command": "goto",
+       "args": [
+        145410175
+       ],
+       "targets": [
+        "0x08AAC87F"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AAC57E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AAC57E",
+       "command": "call",
+       "args": [
+        144473272
+       ],
+       "targets": [
+        "0x089C7CB8"
+       ]
+      },
+      {
+       "at": "0x08AAC583",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145408641
+       ]
+      },
+      {
+       "at": "0x08AAC589",
+       "command": "call",
+       "args": [
+        144473279
+       ],
+       "targets": [
+        "0x089C7CBF"
+       ]
+      },
+      {
+       "at": "0x08AAC58E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145410147
+       ],
+       "texts": [
+        {
+         "address": "0x08AAC863",
+         "text": "好吧……\n我期待着你的好消息！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AAC594",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AAC596",
+       "command": "call",
+       "args": [
+        144473407
+       ],
+       "targets": [
+        "0x089C7D3F"
+       ]
+      },
+      {
+       "at": "0x08AAC59B",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AAC63B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AAC63B",
+       "command": "call",
+       "args": [
+        144473407
+       ],
+       "targets": [
+        "0x089C7D3F"
+       ]
+      },
+      {
+       "at": "0x08AAC640",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AAC641",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AAC644",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x08AAC647",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08AAC648",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x08AAC64D",
+       "command": "goto_if",
+       "args": [
+        1,
+        145409406
+       ],
+       "targets": [
+        "0x08AAC57E"
+       ]
+      },
+      {
+       "at": "0x08AAC653",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AAC658",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08AAC65D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        163
+       ],
+       "possible_names_not_semantics": {
+        "species": "咕咕",
+        "item": "刺角果",
+        "move": "劈开"
+       }
+      },
+      {
+       "at": "0x08AAC662",
+       "command": "goto_if",
+       "args": [
+        1,
+        145410189
+       ],
+       "targets": [
+        "0x08AAC88D"
+       ]
+      },
+      {
+       "at": "0x08AAC668",
+       "command": "call",
+       "args": [
+        144473272
+       ],
+       "targets": [
+        "0x089C7CB8"
+       ]
+      },
+      {
+       "at": "0x08AAC66D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145408641
+       ]
+      },
+      {
+       "at": "0x08AAC673",
+       "command": "call",
+       "args": [
+        144473279
+       ],
+       "targets": [
+        "0x089C7CBF"
+       ]
+      },
+      {
+       "at": "0x08AAC678",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145409148
+       ],
+       "texts": [
+        {
+         "address": "0x08AAC47C",
+         "text": "不对不对，\n这只宝可梦怎么看也不像咕咕吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AAC67E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AAC680",
+       "command": "call",
+       "args": [
+        144473407
+       ],
+       "targets": [
+        "0x089C7D3F"
+       ]
+      },
+      {
+       "at": "0x08AAC685",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AAC87F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AAC87F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145410147
+       ],
+       "texts": [
+        {
+         "address": "0x08AAC863",
+         "text": "好吧……\n我期待着你的好消息！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AAC885",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AAC887",
+       "command": "call",
+       "args": [
+        144473407
+       ],
+       "targets": [
+        "0x089C7D3F"
+       ]
+      },
+      {
+       "at": "0x08AAC88C",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AAC88D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AAC88D",
+       "command": "call",
+       "args": [
+        144473272
+       ],
+       "targets": [
+        "0x089C7CB8"
+       ]
+      },
+      {
+       "at": "0x08AAC892",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145408641
+       ]
+      },
+      {
+       "at": "0x08AAC898",
+       "command": "call",
+       "args": [
+        144473279
+       ],
+       "targets": [
+        "0x089C7CBF"
+       ]
+      },
+      {
+       "at": "0x08AAC89D",
+       "command": "goto",
+       "args": [
+        145501070
+       ],
+       "targets": [
+        "0x08AC2B8E"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AAC9E8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AAC9E8",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145410572
+       ]
+      },
+      {
+       "at": "0x08AAC9EF",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x08AAC9F2",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AAC9F4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AAC9F4",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145415057
+       ]
+      },
+      {
+       "at": "0x08AAC9FB",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x08AAC9FE",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AACA00",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AACA00",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145416186
+       ]
+      },
+      {
+       "at": "0x08AACA07",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x08AACA0A",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AADB66",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AADB66",
+       "command": "goto",
+       "args": [
+        145415085
+       ],
+       "targets": [
+        "0x08AADBAD"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AADBAD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AADBAD",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AADBAE",
+       "command": "call",
+       "args": [
+        144473407
+       ],
+       "targets": [
+        "0x089C7D3F"
+       ]
+      },
+      {
+       "at": "0x08AADBB3",
+       "command": "comparevartovalue",
+       "args": [
+        32780,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AADBB8",
+       "command": "call_if",
+       "args": [
+        1,
+        145410536
+       ],
+       "targets": [
+        "0x08AAC9E8"
+       ]
+      },
+      {
+       "at": "0x08AADBBE",
+       "command": "comparevartovalue",
+       "args": [
+        32780,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AADBC3",
+       "command": "call_if",
+       "args": [
+        1,
+        145410548
+       ],
+       "targets": [
+        "0x08AAC9F4"
+       ]
+      },
+      {
+       "at": "0x08AADBC9",
+       "command": "goto",
+       "args": [
+        145511120
+       ],
+       "targets": [
+        "0x08AC52D0"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AC2B8E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC2B8E",
+       "command": "showpokepic",
+       "args": [
+        163,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08AC2B93",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145511865
+       ],
+       "texts": [
+        {
+         "address": "0x08AC55B9",
+         "text": "这就是咕咕啊，\n在关都地区从没有见过呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC2B99",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AC2B9B",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08AC2B9C",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC2B9F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145411451
+       ],
+       "texts": [
+        {
+         "address": "0x08AACD7B",
+         "text": "嗯，正好也准备好了，\n让我们看看有什么线索吧…\n皮丘告诉我，\n跟它一起玩耍的另一只皮丘，\n看见了空地上有一阵扭曲\n便跑过去了看了一下，\n然后就消失不见了……\n随着超自然现象而消失不见吗…？\n我听说过一个叫桐树林的地方，\n那里时常会有超自然现象发生。\n或许去那里可以找到什么线索？\n那么你先带着皮丘\n去桐树林看看吧。\n嗯……时间不早了，\n我得去和大木博士汇合了。\n那么后会有期了，[玩家/变量]！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC2BA5",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AC2BA7",
+       "command": "goto",
+       "args": [
+        145415014
+       ],
+       "targets": [
+        "0x08AADB66"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AC52D0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC52D0",
+       "command": "comparevartovalue",
+       "args": [
+        32780,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x08AC52D5",
+       "command": "call_if",
+       "args": [
+        1,
+        145410560
+       ],
+       "targets": [
+        "0x08AACA00"
+       ]
+      },
+      {
+       "at": "0x08AC52DB",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC52DE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145511943
+       ],
+       "texts": [
+        {
+         "address": "0x08AC5607",
+         "text": "接受任务:<皮丘的旅途>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC52E4",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AC52E9",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AC52EE",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AC52F3",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AC52F8",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AC52FD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145511970
+       ],
+       "texts": [
+        {
+         "address": "0x08AC5622",
+         "text": "带着皮丘去桐树林看看吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC5303",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AC5305",
+       "command": "goto",
+       "args": [
+        145513282
+       ],
+       "targets": [
+        "0x08AC5B42"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AC5B42",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC5B42",
+       "command": "setflag",
+       "args": [
+        5794
+       ],
+       "task_flag_labels": [
+        {
+         "title": "皮丘的旅途",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC5B45",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AC5B4A",
+       "command": "removeobject",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x08AC5B4D",
+       "command": "setflag",
+       "args": [
+        5700
+       ]
+      },
+      {
+       "at": "0x08AC5B50",
+       "command": "setflag",
+       "args": [
+        5705
+       ]
+      },
+      {
+       "at": "0x08AC5B53",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AE646E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE646E",
+       "command": "checkflag",
+       "args": [
+        5794
+       ],
+       "task_flag_labels": [
+        {
+         "title": "皮丘的旅途",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE6471",
+       "command": "goto_if",
+       "args": [
+        1,
+        145650852
+       ],
+       "targets": [
+        "0x08AE74A4"
+       ]
+      },
+      {
+       "at": "0x08AE6477",
+       "command": "goto",
+       "args": [
+        144526209
+       ],
+       "targets": [
+        "0x089D4B81"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE74A4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE74A4",
+       "command": "checkflag",
+       "args": [
+        5795
+       ],
+       "task_flag_labels": [
+        {
+         "title": "皮丘的旅途",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE74A7",
+       "command": "goto_if",
+       "args": [
+        1,
+        144526209
+       ],
+       "targets": [
+        "0x089D4B81"
+       ]
+      },
+      {
+       "at": "0x08AE74AD",
+       "command": "signmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AE74AE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144526417
+       ],
+       "texts": [
+        {
+         "address": "0x089D4C51",
+         "text": "桐树林里的祠堂……\n供奉着森林之神。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE74B4",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE74B6",
+       "command": "normalmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AE74B7",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AE74BA",
+       "command": "applymovement",
+       "args": [
+        255,
+        145652485
+       ]
+      },
+      {
+       "at": "0x08AE74C1",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AE74C4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145652488
+       ],
+       "texts": [
+        {
+         "address": "0x08AE7B08",
+         "text": "总感觉祠堂和皮丘有什么联系……\n要将队伍里的皮丘放出来吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE74CA",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE74CC",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE74D1",
+       "command": "goto_if",
+       "args": [
+        1,
+        145650906
+       ],
+       "targets": [
+        "0x08AE74DA"
+       ]
+      },
+      {
+       "at": "0x08AE74D7",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AE74D8",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AE74DA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE74DA",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE74DD",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x08AE74E0",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08AE74E1",
+       "command": "goto",
+       "args": [
+        150284474
+       ],
+       "targets": [
+        "0x08F528BA"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE74FB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE74FB",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE74FD",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08AE7500",
+       "command": "callasm",
+       "args": [
+        147456081
+       ]
+      },
+      {
+       "at": "0x08AE7505",
+       "command": "getplayerpos",
+       "args": [
+        32772,
+        32773
+       ]
+      },
+      {
+       "at": "0x08AE750A",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        6
+       ],
+       "possible_names_not_semantics": {
+        "species": "喷火龙",
+        "item": "捕网球",
+        "move": "聚宝功"
+       }
+      },
+      {
+       "at": "0x08AE750F",
+       "command": "goto_if",
+       "args": [
+        1,
+        145650988
+       ],
+       "targets": [
+        "0x08AE752C"
+       ]
+      },
+      {
+       "at": "0x08AE7515",
+       "command": "goto",
+       "args": [
+        145652714
+       ],
+       "targets": [
+        "0x08AE7BEA"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE752C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE752C",
+       "command": "applymovement",
+       "args": [
+        255,
+        145651009
+       ]
+      },
+      {
+       "at": "0x08AE7533",
+       "command": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08AE7536",
+       "command": "goto",
+       "args": [
+        145652714
+       ],
+       "targets": [
+        "0x08AE7BEA"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7545",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7545",
+       "command": "playsong",
+       "args": [
+        371,
+        51
+       ]
+      },
+      {
+       "at": "0x08AE7549",
+       "command": "applymovement",
+       "args": [
+        51,
+        145652451
+       ]
+      },
+      {
+       "at": "0x08AE7550",
+       "command": "waitmovement",
+       "args": [
+        51
+       ]
+      },
+      {
+       "at": "0x08AE7553",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AE7556",
+       "command": "applymovement",
+       "args": [
+        255,
+        145652485
+       ]
+      },
+      {
+       "at": "0x08AE755D",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AE7560",
+       "command": "applymovement",
+       "args": [
+        51,
+        145652457
+       ]
+      },
+      {
+       "at": "0x08AE7567",
+       "command": "waitmovement",
+       "args": [
+        51
+       ]
+      },
+      {
+       "at": "0x08AE756A",
+       "command": "applymovement",
+       "args": [
+        255,
+        145652434
+       ]
+      },
+      {
+       "at": "0x08AE7571",
+       "command": "applymovement",
+       "args": [
+        52,
+        145652438
+       ]
+      },
+      {
+       "at": "0x08AE7578",
+       "command": "applymovement",
+       "args": [
+        51,
+        145652445
+       ]
+      },
+      {
+       "at": "0x08AE757F",
+       "command": "waitmovement",
+       "args": [
+        52
+       ]
+      },
+      {
+       "at": "0x08AE7582",
+       "command": "waitmovement",
+       "args": [
+        51
+       ]
+      },
+      {
+       "at": "0x08AE7585",
+       "command": "applymovement",
+       "args": [
+        52,
+        145652384
+       ]
+      },
+      {
+       "at": "0x08AE758C",
+       "command": "applymovement",
+       "args": [
+        51,
+        145652409
+       ]
+      },
+      {
+       "at": "0x08AE7593",
+       "command": "pause",
+       "args": [
+        80
+       ]
+      },
+      {
+       "at": "0x08AE7596",
+       "command": "applymovement",
+       "args": [
+        53,
+        145652083
+       ]
+      },
+      {
+       "at": "0x08AE759D",
+       "command": "waitmovement",
+       "args": [
+        53
+       ]
+      },
+      {
+       "at": "0x08AE75A0",
+       "command": "applymovement",
+       "args": [
+        255,
+        145652101
+       ]
+      },
+      {
+       "at": "0x08AE75A7",
+       "command": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08AE75AA",
+       "command": "setvar",
+       "args": [
+        32774,
+        52
+       ],
+       "possible_names_not_semantics": {
+        "species": "喵喵",
+        "item": "愤怒馒头",
+        "move": "火花"
+       }
+      },
+      {
+       "at": "0x08AE75AF",
+       "command": "call",
+       "args": [
+        144461359
+       ],
+       "targets": [
+        "0x089C4E2F"
+       ]
+      },
+      {
+       "at": "0x08AE75B4",
+       "command": "call",
+       "args": [
+        144461379
+       ],
+       "targets": [
+        "0x089C4E43"
+       ]
+      },
+      {
+       "at": "0x08AE75B9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144525799
+       ]
+      },
+      {
+       "at": "0x08AE75BF",
+       "command": "call",
+       "args": [
+        144461409
+       ],
+       "targets": [
+        "0x089C4E61"
+       ]
+      },
+      {
+       "at": "0x08AE75C4",
+       "command": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08AE75C9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145652105
+       ],
+       "texts": [
+        {
+         "address": "0x08AE7989",
+         "text": "哎呀哎呀，\n不可以在祠堂恶作剧！\n森林之神会惩罚你们的！\n以前有人目击到祠堂附近\n有少年和宝可梦消失的事件，\n据说是能够自由穿梭时间的\n宝可梦的力量造成的…"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE75CF",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE75D1",
+       "command": "call",
+       "args": [
+        144461436
+       ],
+       "targets": [
+        "0x089C4E7C"
+       ]
+      },
+      {
+       "at": "0x08AE75D6",
+       "command": "call",
+       "args": [
+        144461451
+       ],
+       "targets": [
+        "0x089C4E8B"
+       ]
+      },
+      {
+       "at": "0x08AE75DB",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE75DE",
+       "command": "applymovement",
+       "args": [
+        255,
+        145652075
+       ]
+      },
+      {
+       "at": "0x08AE75E5",
+       "command": "applymovement",
+       "args": [
+        53,
+        145652075
+       ]
+      },
+      {
+       "at": "0x08AE75EC",
+       "command": "applymovement",
+       "args": [
+        51,
+        145652079
+       ]
+      },
+      {
+       "at": "0x08AE75F3",
+       "command": "applymovement",
+       "args": [
+        52,
+        145652079
+       ]
+      },
+      {
+       "at": "0x08AE75FA",
+       "command": "waitmovement",
+       "args": [
+        51
+       ]
+      },
+      {
+       "at": "0x08AE75FD",
+       "command": "setvar",
+       "args": [
+        32774,
+        52
+       ],
+       "possible_names_not_semantics": {
+        "species": "喵喵",
+        "item": "愤怒馒头",
+        "move": "火花"
+       }
+      },
+      {
+       "at": "0x08AE7602",
+       "command": "call",
+       "args": [
+        144461359
+       ],
+       "targets": [
+        "0x089C4E2F"
+       ]
+      },
+      {
+       "at": "0x08AE7607",
+       "command": "call",
+       "args": [
+        144461379
+       ],
+       "targets": [
+        "0x089C4E43"
+       ]
+      },
+      {
+       "at": "0x08AE760C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144525799
+       ]
+      },
+      {
+       "at": "0x08AE7612",
+       "command": "call",
+       "args": [
+        144461409
+       ],
+       "targets": [
+        "0x089C4E61"
+       ]
+      },
+      {
+       "at": "0x08AE7617",
+       "command": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08AE761C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145652253
+       ],
+       "texts": [
+        {
+         "address": "0x08AE7A1D",
+         "text": "哎呀哎呀，这孩子是……\n这不是连我也不知道是何时\n住进了这个森林的皮丘吗？\n第一次见面的时候\n它看上去很寂寞的样子……\n今天看上去精神真好！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7622",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE7624",
+       "command": "call",
+       "args": [
+        144461436
+       ],
+       "targets": [
+        "0x089C4E7C"
+       ]
+      },
+      {
+       "at": "0x08AE7629",
+       "command": "call",
+       "args": [
+        144461451
+       ],
+       "targets": [
+        "0x089C4E8B"
+       ]
+      },
+      {
+       "at": "0x08AE762E",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE7631",
+       "command": "applymovement",
+       "args": [
+        52,
+        145652060
+       ]
+      },
+      {
+       "at": "0x08AE7638",
+       "command": "applymovement",
+       "args": [
+        51,
+        145652065
+       ]
+      },
+      {
+       "at": "0x08AE763F",
+       "command": "pause",
+       "args": [
+        80
+       ]
+      },
+      {
+       "at": "0x08AE7642",
+       "command": "setvar",
+       "args": [
+        32774,
+        52
+       ],
+       "possible_names_not_semantics": {
+        "species": "喵喵",
+        "item": "愤怒馒头",
+        "move": "火花"
+       }
+      },
+      {
+       "at": "0x08AE7647",
+       "command": "call",
+       "args": [
+        144461359
+       ],
+       "targets": [
+        "0x089C4E2F"
+       ]
+      },
+      {
+       "at": "0x08AE764C",
+       "command": "call",
+       "args": [
+        144461379
+       ],
+       "targets": [
+        "0x089C4E43"
+       ]
+      },
+      {
+       "at": "0x08AE7651",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144525799
+       ]
+      },
+      {
+       "at": "0x08AE7657",
+       "command": "call",
+       "args": [
+        144461409
+       ],
+       "targets": [
+        "0x089C4E61"
+       ]
+      },
+      {
+       "at": "0x08AE765C",
+       "command": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08AE7661",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145651862
+       ],
+       "texts": [
+        {
+         "address": "0x08AE7896",
+         "text": "原来如此，原来如此，\n看来它交到了\n很多好朋友啊！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7667",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE7669",
+       "command": "call",
+       "args": [
+        144461436
+       ],
+       "targets": [
+        "0x089C4E7C"
+       ]
+      },
+      {
+       "at": "0x08AE766E",
+       "command": "call",
+       "args": [
+        144461451
+       ],
+       "targets": [
+        "0x089C4E8B"
+       ]
+      },
+      {
+       "at": "0x08AE7673",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE7676",
+       "command": "applymovement",
+       "args": [
+        51,
+        145652070
+       ]
+      },
+      {
+       "at": "0x08AE767D",
+       "command": "waitmovement",
+       "args": [
+        51
+       ]
+      },
+      {
+       "at": "0x08AE7680",
+       "command": "cry",
+       "args": [
+        172,
+        255
+       ]
+      },
+      {
+       "at": "0x08AE7685",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145652037
+       ]
+      },
+      {
+       "at": "0x08AE768B",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE768D",
+       "command": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x08AE768E",
+       "command": "setvar",
+       "args": [
+        32774,
+        52
+       ],
+       "possible_names_not_semantics": {
+        "species": "喵喵",
+        "item": "愤怒馒头",
+        "move": "火花"
+       }
+      },
+      {
+       "at": "0x08AE7693",
+       "command": "call",
+       "args": [
+        144461359
+       ],
+       "targets": [
+        "0x089C4E2F"
+       ]
+      },
+      {
+       "at": "0x08AE7698",
+       "command": "call",
+       "args": [
+        144461379
+       ],
+       "targets": [
+        "0x089C4E43"
+       ]
+      },
+      {
+       "at": "0x08AE769D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144525799
+       ]
+      },
+      {
+       "at": "0x08AE76A3",
+       "command": "call",
+       "args": [
+        144461409
+       ],
+       "targets": [
+        "0x089C4E61"
+       ]
+      },
+      {
+       "at": "0x08AE76A8",
+       "command": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08AE76AD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145651910
+       ],
+       "texts": [
+        {
+         "address": "0x08AE78C6",
+         "text": "哦哦，对了！\n把精灵球当做礼物送给\n年轻的宝可梦训练家吧！\n这是老夫还是宝可梦训练家时\n用过的球啊！\n不用担心不用担心，\n这还能用的啦！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE76B3",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE76B5",
+       "command": "call",
+       "args": [
+        144461436
+       ],
+       "targets": [
+        "0x089C4E7C"
+       ]
+      },
+      {
+       "at": "0x08AE76BA",
+       "command": "call",
+       "args": [
+        144461451
+       ],
+       "targets": [
+        "0x089C4E8B"
+       ]
+      },
+      {
+       "at": "0x08AE76BF",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE76C2",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE76C4",
+       "command": "removeobject",
+       "args": [
+        51
+       ]
+      },
+      {
+       "at": "0x08AE76C7",
+       "command": "setflag",
+       "args": [
+        5956
+       ]
+      },
+      {
+       "at": "0x08AE76CA",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08AE76CD",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AE76CF",
+       "command": "goto",
+       "args": [
+        145653315
+       ],
+       "targets": [
+        "0x08AE7E43"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7B77",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7B77",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145651577
+       ],
+       "texts": [
+        {
+         "address": "0x08AE7779",
+         "text": "任务完成:<皮丘的旅途>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7B7D",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE7B82",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE7B87",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE7B8C",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AE7B91",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AE7B96",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145651604
+       ],
+       "texts": [
+        {
+         "address": "0x08AE7794",
+         "text": "获得了6点BracerPoints!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7B9C",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE7B9E",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AE7BA3",
+       "command": "addvar",
+       "args": [
+        20789,
+        6
+       ]
+      },
+      {
+       "at": "0x08AE7BA8",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AE7BAD",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7BEA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7BEA",
+       "command": "goto",
+       "args": [
+        145653447
+       ],
+       "targets": [
+        "0x08AE7EC7"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7E43",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7E43",
+       "command": "preparemsg",
+       "args": [
+        145651825
+       ],
+       "texts": [
+        {
+         "address": "0x08AE7871",
+         "text": "刺刺耳皮丘\n钻进了[玩家/变量]的精灵球！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7E48",
+       "command": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x08AE7E4B",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08AE7E4C",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AE7E4D",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AE7E4E",
+       "command": "givepokemon",
+       "args": [
+        1100,
+        5,
+        0,
+        0,
+        0,
+        0
+       ],
+       "species_name": "皮丘"
+      },
+      {
+       "at": "0x08AE7E5D",
+       "command": "applymovement",
+       "args": [
+        52,
+        145653469
+       ]
+      },
+      {
+       "at": "0x08AE7E64",
+       "command": "applymovement",
+       "args": [
+        53,
+        145651632
+       ]
+      },
+      {
+       "at": "0x08AE7E6B",
+       "command": "applymovement",
+       "args": [
+        255,
+        145652101
+       ]
+      },
+      {
+       "at": "0x08AE7E72",
+       "command": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08AE7E75",
+       "command": "waitmovement",
+       "args": [
+        52
+       ]
+      },
+      {
+       "at": "0x08AE7E78",
+       "command": "setvar",
+       "args": [
+        32774,
+        52
+       ],
+       "possible_names_not_semantics": {
+        "species": "喵喵",
+        "item": "愤怒馒头",
+        "move": "火花"
+       }
+      },
+      {
+       "at": "0x08AE7E7D",
+       "command": "call",
+       "args": [
+        144461359
+       ],
+       "targets": [
+        "0x089C4E2F"
+       ]
+      },
+      {
+       "at": "0x08AE7E82",
+       "command": "call",
+       "args": [
+        144461379
+       ],
+       "targets": [
+        "0x089C4E43"
+       ]
+      },
+      {
+       "at": "0x08AE7E87",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144525799
+       ]
+      },
+      {
+       "at": "0x08AE7E8D",
+       "command": "call",
+       "args": [
+        144461409
+       ],
+       "targets": [
+        "0x089C4E61"
+       ]
+      },
+      {
+       "at": "0x08AE7E92",
+       "command": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08AE7E97",
+       "command": "goto",
+       "args": [
+        145654305
+       ],
+       "targets": [
+        "0x08AE8221"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7EC7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7EC7",
+       "command": "clearflag",
+       "args": [
+        5956
+       ]
+      },
+      {
+       "at": "0x08AE7ECA",
+       "command": "clearflag",
+       "args": [
+        5957
+       ]
+      },
+      {
+       "at": "0x08AE7ECD",
+       "command": "addobject",
+       "args": [
+        51
+       ]
+      },
+      {
+       "at": "0x08AE7ED0",
+       "command": "addobject",
+       "args": [
+        52
+       ]
+      },
+      {
+       "at": "0x08AE7ED3",
+       "command": "addobject",
+       "args": [
+        53
+       ]
+      },
+      {
+       "at": "0x08AE7ED6",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AE7ED8",
+       "command": "goto",
+       "args": [
+        145651013
+       ],
+       "targets": [
+        "0x08AE7545"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE81FB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE81FB",
+       "command": "applymovement",
+       "args": [
+        53,
+        145651635
+       ]
+      },
+      {
+       "at": "0x08AE8202",
+       "command": "waitmovement",
+       "args": [
+        53
+       ]
+      },
+      {
+       "at": "0x08AE8205",
+       "command": "fadedefaultbgm",
+       "args": []
+      },
+      {
+       "at": "0x08AE8206",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE8208",
+       "command": "removeobject",
+       "args": [
+        52
+       ]
+      },
+      {
+       "at": "0x08AE820B",
+       "command": "removeobject",
+       "args": [
+        53
+       ]
+      },
+      {
+       "at": "0x08AE820E",
+       "command": "setflag",
+       "args": [
+        5957
+       ]
+      },
+      {
+       "at": "0x08AE8211",
+       "command": "setflag",
+       "args": [
+        5795
+       ],
+       "task_flag_labels": [
+        {
+         "title": "皮丘的旅途",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8214",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08AE8217",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AE8219",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE821C",
+       "command": "goto",
+       "args": [
+        145652599
+       ],
+       "targets": [
+        "0x08AE7B77"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE8221",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8221",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145651653
+       ],
+       "texts": [
+        {
+         "address": "0x08AE77C5",
+         "text": "这个锯齿状的耳朵，\n似乎是因为穿梭时间\n的力量残留造成的呢……\n年轻的时候，\n我的朋友因为一次意外\n跟他的拉普拉斯走散了，\n他一直在后悔……\n这孩子跟朋友在一起\n也很开心吧，好好珍惜它！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8227",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE8229",
+       "command": "call",
+       "args": [
+        144461436
+       ],
+       "targets": [
+        "0x089C4E7C"
+       ]
+      },
+      {
+       "at": "0x08AE822E",
+       "command": "call",
+       "args": [
+        144461451
+       ],
+       "targets": [
+        "0x089C4E8B"
+       ]
+      },
+      {
+       "at": "0x08AE8233",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE8236",
+       "command": "goto",
+       "args": [
+        145654267
+       ],
+       "targets": [
+        "0x08AE81FB"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08D568C3",
+     "event_roots": [
+      {
+       "map_id": "1:121",
+       "place": "桐树林",
+       "kind": "人物",
+       "local_id": 33,
+       "event_index": 31,
+       "x": 7,
+       "y": 47,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g01_n121.md"
+      },
+      {
+       "map_id": "1:121",
+       "place": "桐树林",
+       "kind": "调查点",
+       "local_id": null,
+       "event_index": 2,
+       "x": 6,
+       "y": 47,
+       "facing": "script_facing_any",
+       "map_page": "../../wiki_export/world/pages/maps/g01_n121.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08D568C3",
+       "command": "checkflag",
+       "args": [
+        5846
+       ],
+       "task_flag_labels": [
+        {
+         "title": "孩子一生平安",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08D568C6",
+       "command": "goto_if",
+       "args": [
+        1,
+        145646702
+       ],
+       "targets": [
+        "0x08AE646E"
+       ]
+      },
+      {
+       "at": "0x08D568CC",
+       "command": "checkflag",
+       "args": [
+        5846
+       ],
+       "task_flag_labels": [
+        {
+         "title": "孩子一生平安",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08D568CF",
+       "command": "goto_if",
+       "args": [
+        1,
+        145646702
+       ],
+       "targets": [
+        "0x08AE646E"
+       ]
+      },
+      {
+       "at": "0x08D568D5",
+       "command": "checkflag",
+       "args": [
+        5845
+       ]
+      },
+      {
+       "at": "0x08D568D8",
+       "command": "goto_if",
+       "args": [
+        1,
+        145646702
+       ],
+       "targets": [
+        "0x08AE646E"
+       ]
+      },
+      {
+       "at": "0x08D568DE",
+       "command": "checkflag",
+       "args": [
+        5842
+       ]
+      },
+      {
+       "at": "0x08D568E1",
+       "command": "goto_if",
+       "args": [
+        1,
+        148204286
+       ],
+       "targets": [
+        "0x08D56AFE"
+       ]
+      },
+      {
+       "at": "0x08D568E7",
+       "command": "goto",
+       "args": [
+        145646702
+       ],
+       "targets": [
+        "0x08AE646E"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08D56AFE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08D56AFE",
+       "command": "signmsg",
+       "args": []
+      },
+      {
+       "at": "0x08D56AFF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144526417
+       ],
+       "texts": [
+        {
+         "address": "0x089D4C51",
+         "text": "桐树林里的祠堂……\n供奉着森林之神。"
+        }
+       ]
+      },
+      {
+       "at": "0x08D56B05",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08D56B07",
+       "command": "normalmsg",
+       "args": []
+      },
+      {
+       "at": "0x08D56B08",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08D56B0B",
+       "command": "applymovement",
+       "args": [
+        255,
+        148203757
+       ]
+      },
+      {
+       "at": "0x08D56B12",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08D56B15",
+       "command": "loadpointer",
+       "args": [
+        0,
+        148204851
+       ],
+       "texts": [
+        {
+         "address": "0x08D56D33",
+         "text": "要将包裹放在这里吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08D56B1B",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08D56B1D",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08D56B1E",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08D56B23",
+       "command": "goto_if",
+       "args": [
+        1,
+        148204872
+       ],
+       "targets": [
+        "0x08D56D48"
+       ]
+      },
+      {
+       "at": "0x08D56B29",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08D56D48",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08D56D48",
+       "command": "getplayerpos",
+       "args": [
+        32772,
+        32773
+       ]
+      },
+      {
+       "at": "0x08D56D4D",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x08D56D52",
+       "command": "goto_if",
+       "args": [
+        1,
+        148205064
+       ],
+       "targets": [
+        "0x08D56E08"
+       ]
+      },
+      {
+       "at": "0x08D56D58",
+       "command": "warpmuted",
+       "args": [
+        55,
+        40,
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08D56D60",
+       "command": "pause",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08D56D63",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08D56E08",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08D56E08",
+       "command": "warpmuted",
+       "args": [
+        55,
+        40,
+        1,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08D56E10",
+       "command": "pause",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08D56E13",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F528BA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F528BA",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08F528BF",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        172
+       ],
+       "possible_names_not_semantics": {
+        "species": "皮丘",
+        "item": "杏子果",
+        "move": "火焰轮"
+       }
+      },
+      {
+       "at": "0x08F528C4",
+       "command": "goto_if",
+       "args": [
+        1,
+        145650939
+       ],
+       "targets": [
+        "0x08AE74FB"
+       ]
+      },
+      {
+       "at": "0x08F528CA",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        25
+       ],
+       "possible_names_not_semantics": {
+        "species": "皮卡丘",
+        "item": "活力块",
+        "move": "百万吨重踢"
+       }
+      },
+      {
+       "at": "0x08F528CF",
+       "command": "goto_if",
+       "args": [
+        1,
+        145650939
+       ],
+       "targets": [
+        "0x08AE74FB"
+       ]
+      },
+      {
+       "at": "0x08F528D5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145652468
+       ],
+       "texts": [
+        {
+         "address": "0x08AE7AF4",
+         "text": "似乎没有反应……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F528DB",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F528DD",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [
+    "0x089C4E2F",
+    "0x089C4E43",
+    "0x089C4E61",
+    "0x089C4E7C",
+    "0x089C4E8B",
+    "0x089C7CB8",
+    "0x089C7CBF",
+    "0x089C7D3F"
+   ],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

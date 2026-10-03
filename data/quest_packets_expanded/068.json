@@ -1,0 +1,1630 @@
+{
+ "title": "闪闪发光的误会",
+ "quest_id": 68,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b44c",
+    "title": "闪闪发光的误会",
+    "title_address": "0x8e3b85a",
+    "description": "解除勾魂眼与小碎钻\n之间闪闪发光的误会。",
+    "description_address": "0x8e3b833",
+    "unknown_u16": 101,
+    "unknown_u16_hex": "0x0065",
+    "accept_flag": 3095,
+    "accept_flag_hex": "0x0C17",
+    "complete_flag": 3095,
+    "complete_flag_hex": "0x0C17",
+    "map_group": 51,
+    "map_num": 9,
+    "tail_hex": "02 01 00 00",
+    "index": 68,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3b833",
+    "legacy_match_count": 0,
+    "current_description": "解除勾魂眼与小碎钻\n之间闪闪发光的误会。",
+    "catalog_map": {
+     "id": "51:9",
+     "name": "城都矿山"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x09CE07B2"
+   ],
+   "event_roots": [
+    {
+     "script": "0x09CE0540",
+     "map_id": "51:9",
+     "place": "城都矿山",
+     "kind": "人物",
+     "local_id": 31,
+     "event_index": 19,
+     "x": 22,
+     "y": 41,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g51_n009.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x09CE0540",
+     "event_roots": [
+      {
+       "map_id": "51:9",
+       "place": "城都矿山",
+       "kind": "人物",
+       "local_id": 31,
+       "event_index": 19,
+       "x": 22,
+       "y": 41,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g51_n009.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x09CE0540",
+       "command": "callasm",
+       "args": [
+        147456081
+       ]
+      },
+      {
+       "at": "0x09CE0545",
+       "command": "goto",
+       "args": [
+        164496747
+       ],
+       "targets": [
+        "0x09CE056B"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "51:9/local31"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CE056B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CE056B",
+       "command": "setvar",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CE0570",
+       "command": "setvar",
+       "args": [
+        32772,
+        46
+       ],
+       "possible_names_not_semantics": {
+        "species": "派拉斯",
+        "item": "浅滩海盐",
+        "move": "吼叫"
+       }
+      },
+      {
+       "at": "0x09CE0575",
+       "command": "setvar",
+       "args": [
+        32773,
+        79
+       ],
+       "possible_names_not_semantics": {
+        "species": "呆呆兽",
+        "item": "特攻强化",
+        "move": "催眠粉"
+       }
+      },
+      {
+       "at": "0x09CE057A",
+       "command": "setvar",
+       "args": [
+        32774,
+        267
+       ],
+       "possible_names_not_semantics": {
+        "species": "头巾混混",
+        "item": "Z-Power Ring",
+        "move": "自然之力"
+       }
+      },
+      {
+       "at": "0x09CE057F",
+       "command": "setvar",
+       "args": [
+        32775,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CE0584",
+       "command": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x09CE0587",
+       "command": "cry",
+       "args": [
+        811,
+        255
+       ]
+      },
+      {
+       "at": "0x09CE058C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165358019
+       ],
+       "texts": [
+        {
+         "address": "0x09DB29C3",
+         "text": "小碎钻：钻……钻呜……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE0592",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE0594",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CE0599",
+       "command": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x09CE059C",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE059F",
+       "command": "setvar",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CE05A4",
+       "command": "setvar",
+       "args": [
+        32772,
+        46
+       ],
+       "possible_names_not_semantics": {
+        "species": "派拉斯",
+        "item": "浅滩海盐",
+        "move": "吼叫"
+       }
+      },
+      {
+       "at": "0x09CE05A9",
+       "command": "setvar",
+       "args": [
+        32773,
+        79
+       ],
+       "possible_names_not_semantics": {
+        "species": "呆呆兽",
+        "item": "特攻强化",
+        "move": "催眠粉"
+       }
+      },
+      {
+       "at": "0x09CE05AE",
+       "command": "setvar",
+       "args": [
+        32774,
+        265
+       ],
+       "possible_names_not_semantics": {
+        "species": "大力鳄",
+        "item": "夏日祭门票",
+        "move": "清醒"
+       }
+      },
+      {
+       "at": "0x09CE05B3",
+       "command": "setvar",
+       "args": [
+        32775,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CE05B8",
+       "command": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x09CE05BB",
+       "command": "cry",
+       "args": [
+        322,
+        255
+       ]
+      },
+      {
+       "at": "0x09CE05C0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165358037
+       ],
+       "texts": [
+        {
+         "address": "0x09DB29D5",
+         "text": "勾魂眼：桀桀桀……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE05C6",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE05C8",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CE05CD",
+       "command": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x09CE05D0",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE05D3",
+       "command": "movesprite",
+       "args": [
+        32,
+        25,
+        34
+       ]
+      },
+      {
+       "at": "0x09CE05DA",
+       "command": "applymovement",
+       "args": [
+        32,
+        164496714
+       ]
+      },
+      {
+       "at": "0x09CE05E1",
+       "command": "waitmovement",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x09CE05E4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165358707
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2C73",
+         "text": "糟了……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE05EA",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE05EC",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CE05EF",
+       "command": "applymovement",
+       "args": [
+        255,
+        164496723
+       ]
+      },
+      {
+       "at": "0x09CE05F6",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CE05F9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165358714
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2C7A",
+         "text": "我正在这里\n观察宝可梦的生态。\n图鉴上记载，\n勾魂眼最喜欢吃宝石，\n它们是小碎钻的绝对天敌！\n这也是大自然的残酷法则……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE05FF",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE0601",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CE0604",
+       "command": "applymovement",
+       "args": [
+        31,
+        164496726
+       ]
+      },
+      {
+       "at": "0x09CE060B",
+       "command": "cry",
+       "args": [
+        322,
+        255
+       ]
+      },
+      {
+       "at": "0x09CE0610",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CE0613",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CE0616",
+       "command": "applymovement",
+       "args": [
+        255,
+        164496729
+       ]
+      },
+      {
+       "at": "0x09CE061D",
+       "command": "applymovement",
+       "args": [
+        32,
+        164496729
+       ]
+      },
+      {
+       "at": "0x09CE0624",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CE0627",
+       "command": "setflag",
+       "args": [
+        2749
+       ]
+      },
+      {
+       "at": "0x09CE062A",
+       "command": "setvar",
+       "args": [
+        20544,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CE062F",
+       "command": "setflag",
+       "args": [
+        2315
+       ]
+      },
+      {
+       "at": "0x09CE0632",
+       "command": "setvar",
+       "args": [
+        32768,
+        261
+       ],
+       "possible_names_not_semantics": {
+        "species": "洛奇亚",
+        "item": "探宝器",
+        "move": "磷火"
+       }
+      },
+      {
+       "at": "0x09CE0637",
+       "command": "setvar",
+       "args": [
+        32769,
+        105
+       ],
+       "possible_names_not_semantics": {
+        "species": "嘎啦嘎啦",
+        "item": "芳香蘑菇",
+        "move": "自我再生"
+       }
+      },
+      {
+       "at": "0x09CE063C",
+       "command": "setvar",
+       "args": [
+        32770,
+        535
+       ],
+       "possible_names_not_semantics": {
+        "species": "亚克诺姆",
+        "item": "喷火龙进化石Y",
+        "move": "欺诈"
+       }
+      },
+      {
+       "at": "0x09CE0641",
+       "command": "setvar",
+       "args": [
+        32771,
+        389
+       ],
+       "possible_names_not_semantics": {
+        "species": "摇篮百合",
+        "item": "TM64",
+        "move": "力量宝石"
+       }
+      },
+      {
+       "at": "0x09CE0646",
+       "command": "setwildbattle",
+       "args": [
+        322,
+        28,
+        671
+       ],
+       "species_name": "勾魂眼"
+      },
+      {
+       "at": "0x09CE064C",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CE064F",
+       "command": "special",
+       "args": [
+        312
+       ]
+      },
+      {
+       "at": "0x09CE0652",
+       "command": "pause",
+       "args": [
+        160
+       ]
+      },
+      {
+       "at": "0x09CE0655",
+       "command": "setvar",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CE065A",
+       "command": "setvar",
+       "args": [
+        32772,
+        46
+       ],
+       "possible_names_not_semantics": {
+        "species": "派拉斯",
+        "item": "浅滩海盐",
+        "move": "吼叫"
+       }
+      },
+      {
+       "at": "0x09CE065F",
+       "command": "setvar",
+       "args": [
+        32773,
+        79
+       ],
+       "possible_names_not_semantics": {
+        "species": "呆呆兽",
+        "item": "特攻强化",
+        "move": "催眠粉"
+       }
+      },
+      {
+       "at": "0x09CE0664",
+       "command": "setvar",
+       "args": [
+        32774,
+        266
+       ],
+       "possible_names_not_semantics": {
+        "species": "大食花",
+        "item": "Contest Pass",
+        "move": "看我嘛"
+       }
+      },
+      {
+       "at": "0x09CE0669",
+       "command": "setvar",
+       "args": [
+        32775,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CE066E",
+       "command": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x09CE0671",
+       "command": "cry",
+       "args": [
+        322,
+        255
+       ]
+      },
+      {
+       "at": "0x09CE0676",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165358824
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2CE8",
+         "text": "呜呜……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE067C",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE067E",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CE0683",
+       "command": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x09CE0686",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE0689",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CE068C",
+       "command": "applymovement",
+       "args": [
+        32,
+        164496732
+       ]
+      },
+      {
+       "at": "0x09CE0693",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x09CE0696",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165358831
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2CEF",
+         "text": "诶？这只勾魂眼……\n好像没有什么恶意？\n等等，[玩家/变量]！\n你看那块石头！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE069C",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE069E",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CE06A1",
+       "command": "applymovement",
+       "args": [
+        31,
+        164496734
+       ]
+      },
+      {
+       "at": "0x09CE06A8",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CE06AB",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CE06AE",
+       "command": "applymovement",
+       "args": [
+        30,
+        164496737
+       ]
+      },
+      {
+       "at": "0x09CE06B5",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CE06B8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165358888
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2D28",
+         "text": "看见勾魂眼抱着的宝石，\n小碎钻突然明白了什么。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE06BE",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE06C0",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE06C3",
+       "command": "setvar",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CE06C8",
+       "command": "setvar",
+       "args": [
+        32772,
+        46
+       ],
+       "possible_names_not_semantics": {
+        "species": "派拉斯",
+        "item": "浅滩海盐",
+        "move": "吼叫"
+       }
+      },
+      {
+       "at": "0x09CE06CD",
+       "command": "setvar",
+       "args": [
+        32773,
+        79
+       ],
+       "possible_names_not_semantics": {
+        "species": "呆呆兽",
+        "item": "特攻强化",
+        "move": "催眠粉"
+       }
+      },
+      {
+       "at": "0x09CE06D2",
+       "command": "setvar",
+       "args": [
+        32774,
+        268
+       ],
+       "possible_names_not_semantics": {
+        "species": "龙头地鼠",
+        "item": "杰尼龟喷壶",
+        "move": "充电"
+       }
+      },
+      {
+       "at": "0x09CE06D7",
+       "command": "setvar",
+       "args": [
+        32775,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CE06DC",
+       "command": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x09CE06DF",
+       "command": "cry",
+       "args": [
+        811,
+        255
+       ]
+      },
+      {
+       "at": "0x09CE06E4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165358932
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2D54",
+         "text": "小碎钻：钻！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE06EA",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE06EC",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CE06F1",
+       "command": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x09CE06F4",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE06F7",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CE06F9",
+       "command": "sound",
+       "args": [
+        34
+       ]
+      },
+      {
+       "at": "0x09CE06FC",
+       "command": "writebytetoaddr",
+       "args": [
+        64,
+        67108882
+       ]
+      },
+      {
+       "at": "0x09CE0702",
+       "command": "callasm",
+       "args": [
+        143327233
+       ]
+      },
+      {
+       "at": "0x09CE0707",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE070A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165358943
+       ]
+      },
+      {
+       "at": "0x09CE0710",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE0712",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE0715",
+       "command": "writebytetoaddr",
+       "args": [
+        0,
+        67108882
+       ]
+      },
+      {
+       "at": "0x09CE071B",
+       "command": "callasm",
+       "args": [
+        143327545
+       ]
+      },
+      {
+       "at": "0x09CE0720",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE0723",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CE0725",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CE0728",
+       "command": "applymovement",
+       "args": [
+        31,
+        164496739
+       ]
+      },
+      {
+       "at": "0x09CE072F",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CE0732",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE0735",
+       "command": "setvar",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CE073A",
+       "command": "setvar",
+       "args": [
+        32772,
+        46
+       ],
+       "possible_names_not_semantics": {
+        "species": "派拉斯",
+        "item": "浅滩海盐",
+        "move": "吼叫"
+       }
+      },
+      {
+       "at": "0x09CE073F",
+       "command": "setvar",
+       "args": [
+        32773,
+        79
+       ],
+       "possible_names_not_semantics": {
+        "species": "呆呆兽",
+        "item": "特攻强化",
+        "move": "催眠粉"
+       }
+      },
+      {
+       "at": "0x09CE0744",
+       "command": "setvar",
+       "args": [
+        32774,
+        265
+       ],
+       "possible_names_not_semantics": {
+        "species": "大力鳄",
+        "item": "夏日祭门票",
+        "move": "清醒"
+       }
+      },
+      {
+       "at": "0x09CE0749",
+       "command": "setvar",
+       "args": [
+        32775,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CE074E",
+       "command": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x09CE0751",
+       "command": "cry",
+       "args": [
+        322,
+        255
+       ]
+      },
+      {
+       "at": "0x09CE0756",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165359067
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2DDB",
+         "text": "桀！！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE075C",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE075E",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CE0763",
+       "command": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x09CE0766",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE0769",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165358053
+       ],
+       "texts": [
+        {
+         "address": "0x09DB29E5",
+         "text": "小碎钻\n骄傲地挺起了胸膛，\n勾魂眼则像个\n小跟班一样讨好地望着它。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE076F",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE0771",
+       "command": "applymovement",
+       "args": [
+        32,
+        164496741
+       ]
+      },
+      {
+       "at": "0x09CE0778",
+       "command": "waitmovement",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x09CE077B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165358115
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2A23",
+         "text": "原来如此……太惊人了！\n这只勾魂眼\n根本不是想吃小碎钻，\n而是因为它超级进化以后，\n胸口的宝石膨胀起来，\n只靠自己根本弄不干净……\n所以才一路追赶小碎钻……\n是想利用小碎钻\n身上极其坚硬的钻石，\n来帮它抛光这颗宝石啊！！\n勾魂眼那副天生吓人的笑脸，\n再加上图鉴里可怕的天敌传说……\n难怪小碎钻会被吓得一路逃跑。\n这简直是\n宝可梦世界里最大的乌龙！\n呼，虽然是个误会。\n但如果不是你打破僵局，\n它们俩恐怕\n永远无法理解彼此吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE0781",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE0783",
+       "command": "applymovement",
+       "args": [
+        31,
+        164496744
+       ]
+      },
+      {
+       "at": "0x09CE078A",
+       "command": "waitmovement",
+       "args": [
+        31
+       ]
+      },
+      {
+       "at": "0x09CE078D",
+       "command": "applymovement",
+       "args": [
+        32,
+        164496741
+       ]
+      },
+      {
+       "at": "0x09CE0794",
+       "command": "waitmovement",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x09CE0797",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165358500
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2BA4",
+         "text": "勾魂眼好像有东西要给你！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE079D",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE079F",
+       "command": "pause",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x09CE07A2",
+       "command": "preparemsg",
+       "args": [
+        165358524
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2BBC",
+         "text": "[玩家/变量]将超级勾魂眼的波动\n储存在了超级石中。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE07A7",
+       "command": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x09CE07AA",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x09CE07AB",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x09CE07AC",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x09CE07AD",
+       "command": "goto",
+       "args": [
+        164497330
+       ],
+       "targets": [
+        "0x09CE07B2"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CE0540"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CE07B2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CE07B2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165358569
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2BE9",
+         "text": "天敌竟然\n变成了抛光师和雇主……\n宝可梦的生态，真是比\n书本上写的要有趣一万倍啊！\n我要赶紧把这个课题写成论文！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE07B8",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE07BA",
+       "command": "setflag",
+       "args": [
+        3095
+       ],
+       "task_flag_labels": [
+        {
+         "title": "闪闪发光的误会",
+         "role": "accept_flag"
+        },
+        {
+         "title": "闪闪发光的误会",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE07BD",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CE07BF",
+       "command": "removeobject",
+       "args": [
+        30
+       ]
+      },
+      {
+       "at": "0x09CE07C2",
+       "command": "removeobject",
+       "args": [
+        31
+       ]
+      },
+      {
+       "at": "0x09CE07C5",
+       "command": "removeobject",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x09CE07C8",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x09CE07CB",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CE07CD",
+       "command": "addmoney",
+       "args": [
+        6000,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE07D3",
+       "command": "addvar",
+       "args": [
+        20789,
+        6
+       ]
+      },
+      {
+       "at": "0x09CE07D8",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CE07DB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142296759
+       ],
+       "texts": [
+        {
+         "address": "0x087B46B7",
+         "text": "完成任务:<闪闪发光的误会>"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE07E1",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CE07E6",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CE07EB",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x09CE07F0",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x09CE07F5",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x09CE07FA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165358673
+       ]
+      },
+      {
+       "at": "0x09CE0800",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CE0802",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CE0807",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE080A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CE056B"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1984 @@
+{
+ "title": "要进化的绿毛虫",
+ "quest_id": 22,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b0b4",
+    "title": "要进化的绿毛虫",
+    "title_address": "0x8e3cbee",
+    "description": "我想亲手培育一只绿毛虫，\n并让它进化。各位如果抓到\n它的话，能否将它让给我呢？",
+    "description_address": "0x8e3cbcd",
+    "unknown_u16": 89,
+    "unknown_u16_hex": "0x0059",
+    "accept_flag": 5466,
+    "accept_flag_hex": "0x155A",
+    "complete_flag": 5467,
+    "complete_flag_hex": "0x155B",
+    "map_group": 45,
+    "map_num": 4,
+    "tail_hex": "02 01 00 00",
+    "index": 22,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39474",
+      "title": "要进化的绿毛虫",
+      "description_address": "0x8e3ac5f",
+      "description": "我想亲手培育一只绿毛虫，\\n并让它进化。各位如果抓到\\n它的话，能否将它让给我呢？"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3ac5f",
+    "legacy_match_count": 1,
+    "current_description": "帮助吉野市的女孩\n收服一只绿毛虫。",
+    "catalog_map": {
+     "id": "45:4",
+     "name": "吉野市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x089E2D1F",
+    "0x089E2D65",
+    "0x089E2DE6",
+    "0x089E2E3F",
+    "0x089E329D"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F50377",
+     "map_id": "45:4",
+     "place": "吉野市",
+     "kind": "人物",
+     "local_id": 1,
+     "event_index": 0,
+     "x": 8,
+     "y": 4,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g45_n004.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089C8817",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089C8817",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144476193
+       ],
+       "texts": [
+        {
+         "address": "0x089C8821",
+         "text": "精灵发生变化吗？\n如果发生这样的事，\n我一定会吓一跳呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x089C881D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089C881F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E2D1F"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E2D1F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E2D1F",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E2D22",
+       "command": "goto_if",
+       "args": [
+        0,
+        144476183
+       ],
+       "targets": [
+        "0x089C8817"
+       ]
+      },
+      {
+       "at": "0x089E2D28",
+       "command": "checkflag",
+       "args": [
+        5466
+       ],
+       "task_flag_labels": [
+        {
+         "title": "要进化的绿毛虫",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E2D2B",
+       "command": "call_if",
+       "args": [
+        1,
+        144584273
+       ],
+       "targets": [
+        "0x089E2E51"
+       ]
+      },
+      {
+       "at": "0x089E2D31",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144476193
+       ],
+       "texts": [
+        {
+         "address": "0x089C8821",
+         "text": "精灵发生变化吗？\n如果发生这样的事，\n我一定会吓一跳呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E2D37",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E2D39",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E2D3C",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144584734
+       ]
+      },
+      {
+       "at": "0x089E2D43",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089E2D46",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E2D49",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144584506
+       ],
+       "texts": [
+        {
+         "address": "0x089E2F3A",
+         "text": "你看到了我的支援请求吗？\n我听指路爷爷说过，\n宝可梦通过战斗等行为获得经验后，\n就会发生被称为进化的现象！\n不但外表会改变，还会变得更强哦！\n我想亲手培育一只绿毛虫，\n并且让它进化呢！\n你是训练家，对吧？\n如果捉到绿毛虫的话，\n可以将它让给我吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E2D4F",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E2D51",
+       "command": "goto",
+       "args": [
+        150275156
+       ],
+       "targets": [
+        "0x08F50454"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E2D65"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E2D65",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E2D65",
+       "command": "checkflag",
+       "args": [
+        5467
+       ],
+       "task_flag_labels": [
+        {
+         "title": "要进化的绿毛虫",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E2D68",
+       "command": "goto_if",
+       "args": [
+        1,
+        144584246
+       ],
+       "targets": [
+        "0x089E2E36"
+       ]
+      },
+      {
+       "at": "0x089E2D6E",
+       "command": "goto",
+       "args": [
+        144583967
+       ],
+       "targets": [
+        "0x089E2D1F"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F50377"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E2DE6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E2DE6",
+       "command": "setflag",
+       "args": [
+        5466
+       ],
+       "task_flag_labels": [
+        {
+         "title": "要进化的绿毛虫",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E2DE9",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E2DEC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144586329
+       ],
+       "texts": [
+        {
+         "address": "0x089E3659",
+         "text": "接受任务:<要进化的绿毛虫>"
+        }
+       ]
+      },
+      {
+       "at": "0x089E2DF2",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E2DF7",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E2DFC",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x089E2E01",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E2E06",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x089E2E0B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144584873
+       ],
+       "texts": [
+        {
+         "address": "0x089E30A9",
+         "text": "谢谢你，我会准备好谢礼的。\n捕捉绿毛虫的事就拜托你了！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E2E11",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E2E13",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E2E18",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5070C"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E2E19",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E2E19",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E2E1A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144585820
+       ],
+       "texts": [
+        {
+         "address": "0x089E345C",
+         "text": "怎么样？\n你收服到绿毛虫了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E2E20",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E2E22",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E2E27",
+       "command": "goto_if",
+       "args": [
+        1,
+        144585177
+       ],
+       "targets": [
+        "0x089E31D9"
+       ]
+      },
+      {
+       "at": "0x089E2E2D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144585850
+       ],
+       "texts": [
+        {
+         "address": "0x089E347A",
+         "text": "好吧，加油！\n我会等着你的好消息。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E2E33",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E2E35",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E2E51"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E2E36",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E2E36",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144587151
+       ],
+       "texts": [
+        {
+         "address": "0x089E398F",
+         "text": "绿毛虫以后会变成什么样子呢？\n会是一条绿色的巨龙吗？\n真是令人期待呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E2E3C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E2E3E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E2D65"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E2E3F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E2E3F",
+       "command": "checkflag",
+       "args": [
+        5467
+       ],
+       "task_flag_labels": [
+        {
+         "title": "要进化的绿毛虫",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E2E42",
+       "command": "goto_if",
+       "args": [
+        1,
+        144584269
+       ],
+       "targets": [
+        "0x089E2E4D"
+       ]
+      },
+      {
+       "at": "0x089E2E48",
+       "command": "setflag",
+       "args": [
+        5468
+       ]
+      },
+      {
+       "at": "0x089E2E4B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "map_script",
+       "where": "45:4/tag3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E2E4D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E2E4D",
+       "command": "clearflag",
+       "args": [
+        5468
+       ]
+      },
+      {
+       "at": "0x089E2E50",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E2E3F"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E2E51",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E2E51",
+       "command": "comparevartovalue",
+       "args": [
+        32780,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E2E56",
+       "command": "goto_if",
+       "args": [
+        1,
+        144584403
+       ],
+       "targets": [
+        "0x089E2ED3"
+       ]
+      },
+      {
+       "at": "0x089E2E5C",
+       "command": "comparevartovalue",
+       "args": [
+        32780,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E2E61",
+       "command": "goto_if",
+       "args": [
+        1,
+        144584419
+       ],
+       "targets": [
+        "0x089E2EE3"
+       ]
+      },
+      {
+       "at": "0x089E2E67",
+       "command": "goto",
+       "args": [
+        144584217
+       ],
+       "targets": [
+        "0x089E2E19"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E2D1F"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E2ED3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E2ED3",
+       "command": "applymovement",
+       "args": [
+        255,
+        144584435
+       ]
+      },
+      {
+       "at": "0x089E2EDA",
+       "command": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x089E2EDD",
+       "command": "goto",
+       "args": [
+        144584217
+       ],
+       "targets": [
+        "0x089E2E19"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E2E51"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E2EE3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E2EE3",
+       "command": "applymovement",
+       "args": [
+        255,
+        144588158
+       ]
+      },
+      {
+       "at": "0x089E2EEA",
+       "command": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x089E2EED",
+       "command": "goto",
+       "args": [
+        144584217
+       ],
+       "targets": [
+        "0x089E2E19"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E2E51"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E31D9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E31D9",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x089E31DA",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x089E31DD",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x089E31E0",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x089E31E1",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x089E31E6",
+       "command": "goto_if",
+       "args": [
+        1,
+        144585227
+       ],
+       "targets": [
+        "0x089E320B"
+       ]
+      },
+      {
+       "at": "0x089E31EC",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089E31F1",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x089E31F6",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        10
+       ],
+       "possible_names_not_semantics": {
+        "species": "绿毛虫",
+        "item": "计时球",
+        "move": "抓"
+       }
+      },
+      {
+       "at": "0x089E31FB",
+       "command": "goto_if",
+       "args": [
+        1,
+        144585373
+       ],
+       "targets": [
+        "0x089E329D"
+       ]
+      },
+      {
+       "at": "0x089E3201",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144586415
+       ],
+       "texts": [
+        {
+         "address": "0x089E36AF",
+         "text": "诶，绿毛虫应该不长这样吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E3207",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E3209",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E2E19"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E320B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E320B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144585850
+       ],
+       "texts": [
+        {
+         "address": "0x089E347A",
+         "text": "好吧，加油！\n我会等着你的好消息。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E3211",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E3213",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E31D9"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E329D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E329D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144588069
+       ],
+       "texts": [
+        {
+         "address": "0x089E3D25",
+         "text": "真的要让出\n这只宝可梦吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E32A3",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E32A5",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089E32AA",
+       "command": "goto_if",
+       "args": [
+        1,
+        144585939
+       ],
+       "targets": [
+        "0x089E34D3"
+       ]
+      },
+      {
+       "at": "0x089E32B0",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x089E32B1",
+       "command": "setflag",
+       "args": [
+        5467
+       ],
+       "task_flag_labels": [
+        {
+         "title": "要进化的绿毛虫",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E32B4",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089E32B6",
+       "command": "special",
+       "args": [
+        98
+       ]
+      },
+      {
+       "at": "0x089E32B9",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x089E32BC",
+       "command": "movesprite",
+       "args": [
+        127,
+        9,
+        4
+       ]
+      },
+      {
+       "at": "0x089E32C3",
+       "command": "movesprite",
+       "args": [
+        255,
+        9,
+        4
+       ]
+      },
+      {
+       "at": "0x089E32CA",
+       "command": "movesprite",
+       "args": [
+        254,
+        9,
+        5
+       ]
+      },
+      {
+       "at": "0x089E32D1",
+       "command": "callasm",
+       "args": [
+        147456081
+       ]
+      },
+      {
+       "at": "0x089E32D6",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x089E32D9",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144585739
+       ]
+      },
+      {
+       "at": "0x089E32E0",
+       "command": "spriteface",
+       "args": [
+        255,
+        2
+       ]
+      },
+      {
+       "at": "0x089E32E4",
+       "command": "addobject",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x089E32E7",
+       "command": "movesprite",
+       "args": [
+        3,
+        8,
+        3
+       ]
+      },
+      {
+       "at": "0x089E32EE",
+       "command": "applymovement",
+       "args": [
+        3,
+        144585733
+       ]
+      },
+      {
+       "at": "0x089E32F5",
+       "command": "clearflag",
+       "args": [
+        5468
+       ]
+      },
+      {
+       "at": "0x089E32F8",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E32FA",
+       "command": "cry",
+       "args": [
+        10,
+        255
+       ]
+      },
+      {
+       "at": "0x089E32FF",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144587936
+       ]
+      },
+      {
+       "at": "0x089E3306",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089E3309",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E330C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144585625
+       ],
+       "texts": [
+        {
+         "address": "0x089E3399",
+         "text": "太可爱了，绿毛虫！\n不知道以后会进化成什么样子呢？\n就让我们拭目以待吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E3312",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x089E3314",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E3317",
+       "command": "applymovement",
+       "args": [
+        2,
+        144585742
+       ]
+      },
+      {
+       "at": "0x089E331E",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E3321",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E3324",
+       "command": "goto",
+       "args": [
+        144586604
+       ],
+       "targets": [
+        "0x089E376C"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E31D9"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E34D3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E34D3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144586469
+       ],
+       "texts": [
+        {
+         "address": "0x089E36E5",
+         "text": "好吧，\n我理解你的感受。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E34D9",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E34DB",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E730B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E373A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E373A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144586493
+       ],
+       "texts": [
+        {
+         "address": "0x089E36FD",
+         "text": "任务完成:<要进化的绿毛虫>"
+        }
+       ]
+      },
+      {
+       "at": "0x089E3740",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E3745",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E374A",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x089E374F",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E3754",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x089E3759",
+       "command": "goto",
+       "args": [
+        144588125
+       ],
+       "targets": [
+        "0x089E3D5D"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AC43DD"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E376C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E376C",
+       "command": "applymovement",
+       "args": [
+        1,
+        144585953
+       ]
+      },
+      {
+       "at": "0x089E3773",
+       "command": "applymovement",
+       "args": [
+        255,
+        144585953
+       ]
+      },
+      {
+       "at": "0x089E377A",
+       "command": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x089E377D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144585748
+       ],
+       "texts": [
+        {
+         "address": "0x089E3414",
+         "text": "喂，怎么了？\n你没有什么事吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E3783",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x089E3785",
+       "command": "applymovement",
+       "args": [
+        2,
+        144585949
+       ]
+      },
+      {
+       "at": "0x089E378C",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E378F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144585777
+       ],
+       "texts": [
+        {
+         "address": "0x089E3431",
+         "text": "没……没什么事。\n只是喝水呛到了。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E3795",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x089E3797",
+       "command": "applymovement",
+       "args": [
+        1,
+        144585935
+       ]
+      },
+      {
+       "at": "0x089E379E",
+       "command": "waitmovement",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089E37A1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144585886
+       ],
+       "texts": [
+        {
+         "address": "0x089E349E",
+         "text": "没事就好，\n你一定也很喜欢绿毛虫吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E37A7",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x089E37A9",
+       "command": "applymovement",
+       "args": [
+        1,
+        144585736
+       ]
+      },
+      {
+       "at": "0x089E37B0",
+       "command": "waitmovement",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089E37B3",
+       "command": "goto",
+       "args": [
+        144587969
+       ],
+       "targets": [
+        "0x089E3CC1"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E329D"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E3CC1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E3CC1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144585696
+       ],
+       "texts": [
+        {
+         "address": "0x089E33E0",
+         "text": "真是太感谢你了。\n来，这是给你的报酬！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E3CC7",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E3CC9",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        536
+       ],
+       "possible_names_not_semantics": {
+        "species": "帝牙卢卡",
+        "item": "经验糖果XS",
+        "move": "找伙伴"
+       }
+      },
+      {
+       "at": "0x089E3CCE",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E3CD3",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E3CD5",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E3CD8",
+       "command": "goto",
+       "args": [
+        145507293
+       ],
+       "targets": [
+        "0x08AC43DD"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E376C"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E3D5D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E3D5D",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x089E3D62",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145687078
+       ],
+       "texts": [
+        {
+         "address": "0x08AF0226",
+         "text": "获得了3点BracerPoints!"
+        }
+       ]
+      },
+      {
+       "at": "0x089E3D68",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E3D6A",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E3D6F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E373A"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AC43DD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC43DD",
+       "command": "showmoney",
+       "args": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AC43E1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145507974
+       ],
+       "texts": [
+        {
+         "address": "0x08AC4686",
+         "text": "还有这些零花钱……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC43E7",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AC43E9",
+       "command": "addmoney",
+       "args": [
+        5000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AC43EF",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08AC43F2",
+       "command": "updatemoney",
+       "args": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AC43F6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145507993
+       ],
+       "texts": [
+        {
+         "address": "0x08AC4699",
+         "text": "这是我的一点心意啦！\n真的是太感谢你了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC43FC",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC43FE",
+       "command": "hidemoney",
+       "args": [
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AC4401",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC4404",
+       "command": "goto",
+       "args": [
+        144586554
+       ],
+       "targets": [
+        "0x089E373A"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E3CC1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F50377",
+     "event_roots": [
+      {
+       "map_id": "45:4",
+       "place": "吉野市",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 8,
+       "y": 4,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g45_n004.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F50377",
+       "command": "applymovement",
+       "args": [
+        4,
+        150275075
+       ]
+      },
+      {
+       "at": "0x08F5037E",
+       "command": "waitmovement",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F50381",
+       "command": "goto",
+       "args": [
+        144584037
+       ],
+       "targets": [
+        "0x089E2D65"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "45:4/local1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F50454",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F50454",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F50459",
+       "command": "goto_if",
+       "args": [
+        1,
+        150275852
+       ],
+       "targets": [
+        "0x08F5070C"
+       ]
+      },
+      {
+       "at": "0x08F5045F",
+       "command": "goto",
+       "args": [
+        150277434
+       ],
+       "targets": [
+        "0x08F50D3A"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E2D1F"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5070C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5070C",
+       "command": "setflag",
+       "args": [
+        2625
+       ]
+      },
+      {
+       "at": "0x08F5070F",
+       "command": "goto",
+       "args": [
+        144584166
+       ],
+       "targets": [
+        "0x089E2DE6"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F50454"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F50D3A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F50D3A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144584738
+       ],
+       "texts": [
+        {
+         "address": "0x089E3022",
+         "text": "这样吗……\n很抱歉占用了你的时间。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F50D40",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F50D42",
+       "command": "applymovement",
+       "args": [
+        4,
+        150275187
+       ]
+      },
+      {
+       "at": "0x08F50D49",
+       "command": "waitmovement",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F50D4C",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F50D4D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F50454"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

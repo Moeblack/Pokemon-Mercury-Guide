@@ -1,0 +1,2380 @@
+{
+ "title": "深夜电视异闻录",
+ "quest_id": 87,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b5c8",
+    "title": "深夜电视异闻录",
+    "title_address": "0x8e3c077",
+    "description": "深夜电视的传闻令我很在意，\n可我不敢靠近那间洋馆...\n有人能去确认这个传闻吗？",
+    "description_address": "0x8e3c048",
+    "unknown_u16": 11373,
+    "unknown_u16_hex": "0x2C6D",
+    "accept_flag": 6034,
+    "accept_flag_hex": "0x1792",
+    "complete_flag": 6102,
+    "complete_flag_hex": "0x17D6",
+    "map_group": 49,
+    "map_num": 8,
+    "tail_hex": "02 01 00 00",
+    "index": 87,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39704",
+      "title": "深夜电视异闻录",
+      "description_address": "0x8e39f40",
+      "description": "深夜电视的传闻令我很在意，\\n可我不敢靠近那间洋馆...\\n有人能去确认这个传闻吗？"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39f40",
+    "legacy_match_count": 1,
+    "current_description": "调查40号道路上方的洋馆\n中的有关深夜电视的传闻。",
+    "catalog_map": {
+     "id": "49:8",
+     "name": "浅葱市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AC3CD0",
+    "0x08AC3CE7",
+    "0x08AC3D27",
+    "0x08AC4443",
+    "0x08D53603",
+    "0x08EC1A78",
+    "0x08EC1C2B",
+    "0x08EC1ECE",
+    "0x08EC1F8C"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08EC1A78",
+     "map_id": "56:21",
+     "place": "不知名遗迹",
+     "kind": "调查点",
+     "local_id": null,
+     "event_index": 0,
+     "x": 10,
+     "y": 2,
+     "facing": "script_facing_north",
+     "map_page": "../../wiki_export/world/pages/maps/g56_n021.md"
+    },
+    {
+     "script": "0x08EC1A78",
+     "map_id": "56:21",
+     "place": "不知名遗迹",
+     "kind": "调查点",
+     "local_id": null,
+     "event_index": 1,
+     "x": 11,
+     "y": 2,
+     "facing": "script_facing_north",
+     "map_page": "../../wiki_export/world/pages/maps/g56_n021.md"
+    },
+    {
+     "script": "0x08F5EDE3",
+     "map_id": "49:8",
+     "place": "浅葱市",
+     "kind": "人物",
+     "local_id": 1,
+     "event_index": 0,
+     "x": 8,
+     "y": 4,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g49_n008.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08AB6EDF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB6EDF",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AB6EE2",
+       "command": "goto_if",
+       "args": [
+        1,
+        145505575
+       ],
+       "targets": [
+        "0x08AC3D27"
+       ]
+      },
+      {
+       "at": "0x08AB6EE8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145507585
+       ],
+       "texts": [
+        {
+         "address": "0x08AC4501",
+         "text": "深夜电视这种东西，\n真的存在吗…？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB6EEE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB6EF0",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AFA649"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AC3CD0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC3CD0",
+       "command": "checkflag",
+       "args": [
+        6034
+       ],
+       "task_flag_labels": [
+        {
+         "title": "深夜电视异闻录",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC3CD3",
+       "command": "goto_if",
+       "args": [
+        1,
+        145505602
+       ],
+       "targets": [
+        "0x08AC3D42"
+       ]
+      },
+      {
+       "at": "0x08AC3CD9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145507462
+       ],
+       "texts": [
+        {
+         "address": "0x08AC4486",
+         "text": "草b相信这则传闻吗……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC3CDF",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC3CE1",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AC3CE4",
+       "command": "applymovement",
+       "args": [
+        32783,
+        102208043
+       ]
+      },
+      {
+       "at": "0x08AC3CEB",
+       "command": "nop1",
+       "args": []
+      },
+      {
+       "at": "0x08AC3CEC",
+       "command": "hideobject",
+       "args": [
+        44093,
+        8,
+        15
+       ]
+      },
+      {
+       "at": "0x08AC3CF1",
+       "command": "nop",
+       "args": []
+      },
+      {
+       "at": "0x08AC3CF2",
+       "command": "setobjectsubpriority",
+       "args": [
+        44100,
+        8,
+        9,
+        2
+       ]
+      },
+      {
+       "at": "0x08AC3CF8",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AC3CFB",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145507493
+       ]
+      },
+      {
+       "at": "0x08AC3D02",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AC3D05",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145509108
+       ],
+       "texts": [
+        {
+         "address": "0x08AC4AF4",
+         "text": "你听说过深夜电视吗？\n传闻在40号路上方的洋馆中，\n有一台一直关着的电视。\n可是如果是在午夜12点，\n你一个人看那台关着的电视的话，\n只要盯着自己在画面上倒映出\n的脸一直看，就会看见另一个人。\n那个人就是你命中注定的对象。\n这是一则很有趣的传闻，\n对吧？\n可是我的修炼还不够，\n还不敢进入那间洋馆……\n所以你能帮我去洋馆调查一下吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC3D0B",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AC3D0D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AC3D12",
+       "command": "goto_if",
+       "args": [
+        1,
+        145505570
+       ],
+       "targets": [
+        "0x08AC3D22"
+       ]
+      },
+      {
+       "at": "0x08AC3D18",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145505628
+       ],
+       "texts": [
+        {
+         "address": "0x08AC3D5C",
+         "text": "?框厕"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC3D1E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC3D20",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=87"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AC3CE7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC3CE7",
+       "command": "checkflag",
+       "args": [
+        6034
+       ],
+       "task_flag_labels": [
+        {
+         "title": "深夜电视异闻录",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC3CEA",
+       "command": "goto_if",
+       "args": [
+        1,
+        145505625
+       ],
+       "targets": [
+        "0x08AC3D59"
+       ]
+      },
+      {
+       "at": "0x08AC3CF0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145507496
+       ],
+       "texts": [
+        {
+         "address": "0x08AC44A8",
+         "text": "<深夜电视的秘密>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC3CF6",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC3CF8",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AC3CFB",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145507493
+       ]
+      },
+      {
+       "at": "0x08AC3D02",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AC3D05",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145509108
+       ],
+       "texts": [
+        {
+         "address": "0x08AC4AF4",
+         "text": "你听说过深夜电视吗？\n传闻在40号路上方的洋馆中，\n有一台一直关着的电视。\n可是如果是在午夜12点，\n你一个人看那台关着的电视的话，\n只要盯着自己在画面上倒映出\n的脸一直看，就会看见另一个人。\n那个人就是你命中注定的对象。\n这是一则很有趣的传闻，\n对吧？\n可是我的修炼还不够，\n还不敢进入那间洋馆……\n所以你能帮我去洋馆调查一下吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC3D0B",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AC3D0D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AC3D12",
+       "command": "goto_if",
+       "args": [
+        1,
+        145505570
+       ],
+       "targets": [
+        "0x08AC3D22"
+       ]
+      },
+      {
+       "at": "0x08AC3D18",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145505628
+       ],
+       "texts": [
+        {
+         "address": "0x08AC3D5C",
+         "text": "?框厕"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC3D1E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC3D20",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=87"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AC3D22",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC3D22",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC3D25",
+       "command": "loadpointer",
+       "args": [
+        0,
+        102208043
+       ]
+      },
+      {
+       "at": "0x08AC3D2B",
+       "command": "nop1",
+       "args": []
+      },
+      {
+       "at": "0x08AC3D2C",
+       "command": "checkmonobedience",
+       "args": [
+        60446
+       ]
+      },
+      {
+       "at": "0x08AC3D2F",
+       "command": "gotostd",
+       "args": [
+        15
+       ]
+      },
+      {
+       "at": "0x08AC3D31",
+       "command": "nop",
+       "args": []
+      },
+      {
+       "at": "0x08AC3D32",
+       "command": "nop1",
+       "args": []
+      },
+      {
+       "at": "0x08AC3D33",
+       "command": "removeitem",
+       "args": [
+        2220,
+        521
+       ],
+       "item_name": null
+      },
+      {
+       "at": "0x08AC3D38",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AC3D3B",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145507582
+       ]
+      },
+      {
+       "at": "0x08AC3D42",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AC3D45",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145509108
+       ],
+       "texts": [
+        {
+         "address": "0x08AC4AF4",
+         "text": "你听说过深夜电视吗？\n传闻在40号路上方的洋馆中，\n有一台一直关着的电视。\n可是如果是在午夜12点，\n你一个人看那台关着的电视的话，\n只要盯着自己在画面上倒映出\n的脸一直看，就会看见另一个人。\n那个人就是你命中注定的对象。\n这是一则很有趣的传闻，\n对吧？\n可是我的修炼还不够，\n还不敢进入那间洋馆……\n所以你能帮我去洋馆调查一下吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC3D4B",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AC3D4D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AC3D52",
+       "command": "goto",
+       "args": [
+        150335189
+       ],
+       "targets": [
+        "0x08F5EED5"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AC3CD0"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AC3D27",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC3D27",
+       "command": "checkflag",
+       "args": [
+        6034
+       ],
+       "task_flag_labels": [
+        {
+         "title": "深夜电视异闻录",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC3D2A",
+       "command": "goto_if",
+       "args": [
+        1,
+        149692110
+       ],
+       "targets": [
+        "0x08EC1ECE"
+       ]
+      },
+      {
+       "at": "0x08AC3D30",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145507585
+       ],
+       "texts": [
+        {
+         "address": "0x08AC4501",
+         "text": "深夜电视这种东西，\n真的存在吗…？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC3D36",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC3D38",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AC3D3B",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145507582
+       ]
+      },
+      {
+       "at": "0x08AC3D42",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AC3D45",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145509108
+       ],
+       "texts": [
+        {
+         "address": "0x08AC4AF4",
+         "text": "你听说过深夜电视吗？\n传闻在40号路上方的洋馆中，\n有一台一直关着的电视。\n可是如果是在午夜12点，\n你一个人看那台关着的电视的话，\n只要盯着自己在画面上倒映出\n的脸一直看，就会看见另一个人。\n那个人就是你命中注定的对象。\n这是一则很有趣的传闻，\n对吧？\n可是我的修炼还不够，\n还不敢进入那间洋馆……\n所以你能帮我去洋馆调查一下吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC3D4B",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AC3D4D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AC3D52",
+       "command": "goto",
+       "args": [
+        150335189
+       ],
+       "targets": [
+        "0x08F5EED5"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AB6EDF"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AC3D42",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC3D42",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AC3D45",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145509108
+       ],
+       "texts": [
+        {
+         "address": "0x08AC4AF4",
+         "text": "你听说过深夜电视吗？\n传闻在40号路上方的洋馆中，\n有一台一直关着的电视。\n可是如果是在午夜12点，\n你一个人看那台关着的电视的话，\n只要盯着自己在画面上倒映出\n的脸一直看，就会看见另一个人。\n那个人就是你命中注定的对象。\n这是一则很有趣的传闻，\n对吧？\n可是我的修炼还不够，\n还不敢进入那间洋馆……\n所以你能帮我去洋馆调查一下吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC3D4B",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AC3D4D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AC3D52",
+       "command": "goto",
+       "args": [
+        150335189
+       ],
+       "targets": [
+        "0x08F5EED5"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AC3CD0"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AC3D59",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC3D59",
+       "command": "nop",
+       "args": []
+      },
+      {
+       "at": "0x08AC3D5A",
+       "command": "bufferpokemon",
+       "args": [
+        68,
+        2220
+       ]
+      },
+      {
+       "at": "0x08AC3D5E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC3D60",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AC3CE7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AC4443",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC4443",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC4446",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145507484
+       ],
+       "texts": [
+        {
+         "address": "0x08AC449C",
+         "text": "接受任务:<深夜电视的秘密>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC444C",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AC4451",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AC4456",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AC445B",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AC4460",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AC4465",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145507515
+       ],
+       "texts": [
+        {
+         "address": "0x08AC44BB",
+         "text": "太、太感谢你了！请记住\n是要在午夜12点观看关着的电视哦。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC446B",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AC446D",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AC4472",
+       "command": "setflag",
+       "args": [
+        6034
+       ],
+       "task_flag_labels": [
+        {
+         "title": "深夜电视异闻录",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC4475",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AC4478",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5EED5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF49E9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF49E9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145705510
+       ],
+       "texts": [
+        {
+         "address": "0x08AF4A26",
+         "text": "电视机里倒映出了\n某个人的样子……\n又似乎是某只宝可梦的样子？\n敲几下电视机好像就会出来，\n要敲敲看吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF49EF",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AF49F1",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF49F6",
+       "command": "goto_if",
+       "args": [
+        1,
+        145705471
+       ],
+       "targets": [
+        "0x08AF49FF"
+       ]
+      },
+      {
+       "at": "0x08AF49FC",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08AF49FD",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EC1C2B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF49FF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF49FF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145705608
+       ],
+       "texts": [
+        {
+         "address": "0x08AF4A88",
+         "text": "[玩家/变量]\n用力敲打了电视机！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF4A05",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF4A07",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AF4A0A",
+       "command": "applymovement",
+       "args": [
+        255,
+        145705631
+       ]
+      },
+      {
+       "at": "0x08AF4A11",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AF4A14",
+       "command": "goto",
+       "args": [
+        145751592
+       ],
+       "targets": [
+        "0x08AFFE28"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF49E9"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AFA649",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFA649",
+       "command": "checkflag",
+       "args": [
+        6072
+       ]
+      },
+      {
+       "at": "0x08AFA64C",
+       "command": "goto_if",
+       "args": [
+        1,
+        145452767
+       ],
+       "targets": [
+        "0x08AB6EDF"
+       ]
+      },
+      {
+       "at": "0x08AFA652",
+       "command": "checkflag",
+       "args": [
+        6074
+       ]
+      },
+      {
+       "at": "0x08AFA655",
+       "command": "goto_if",
+       "args": [
+        1,
+        145735465
+       ],
+       "targets": [
+        "0x08AFBF29"
+       ]
+      },
+      {
+       "at": "0x08AFA65B",
+       "command": "goto",
+       "args": [
+        145452767
+       ],
+       "targets": [
+        "0x08AB6EDF"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5EDE3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AFBF29",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFBF29",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145736418
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC2E2",
+         "text": "啊！肚子好饿啊！\n嗯……你是？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFBF2F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFBF31",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AFBF34",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145735512
+       ]
+      },
+      {
+       "at": "0x08AFBF3B",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AFBF3E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145738709
+       ],
+       "texts": [
+        {
+         "address": "0x08AFCBD5",
+         "text": "闻到了大海的味道……\n你是餐厅送外卖的人吧！？\n刚学习完<<成龙传说>>中的武术，\n正想奖励一下自己……\n毕竟吃饱了\n才有力气继续修炼啦！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFBF44",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFBF46",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFBF49",
+       "command": "signmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AFBF4A",
+       "command": "goto",
+       "args": [
+        150335114
+       ],
+       "targets": [
+        "0x08F5EE8A"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AFA649"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AFF865",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFF865",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145507515
+       ],
+       "texts": [
+        {
+         "address": "0x08AC44BB",
+         "text": "太、太感谢你了！请记住\n是要在午夜12点观看关着的电视哦。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFF86B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFF86D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EC1ECE"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AFFE28",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFFE28",
+       "command": "setwildbattle",
+       "args": [
+        532,
+        20,
+        0
+       ],
+       "species_name": "洛托姆"
+      },
+      {
+       "at": "0x08AFFE2E",
+       "command": "dowildbattle",
+       "args": []
+      },
+      {
+       "at": "0x08AFFE2F",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AFFE32",
+       "command": "applymovement",
+       "args": [
+        255,
+        145751841
+       ]
+      },
+      {
+       "at": "0x08AFFE39",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AFFE3C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145751844
+       ],
+       "texts": [
+        {
+         "address": "0x08AFFF24",
+         "text": "原来是宝可梦的恶作剧吗…？\n可是总感觉事情没有这么简单……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFFE42",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFFE44",
+       "command": "signmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AFFE45",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFFE48",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145705634
+       ],
+       "texts": [
+        {
+         "address": "0x08AF4AA2",
+         "text": "吾即汝、汝即吾……\n汝……开启门扉之人啊……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFFE4E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFFE50",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AFFE53",
+       "command": "applymovement",
+       "args": [
+        255,
+        145751827
+       ]
+      },
+      {
+       "at": "0x08AFFE5A",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AFFE5D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145751757
+       ],
+       "texts": [
+        {
+         "address": "0x08AFFECD",
+         "text": "感觉正在被\n一股力量吸入电视……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFFE63",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFFE65",
+       "command": "normalmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AFFE66",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFFE69",
+       "command": "setvar",
+       "args": [
+        32774,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AFFE6E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145751822
+       ],
+       "texts": [
+        {
+         "address": "0x08AFFF0E",
+         "text": "……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFFE74",
+       "command": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x08AFFE77",
+       "command": "setvar",
+       "args": [
+        32774,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFFE7C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145751830
+       ],
+       "texts": [
+        {
+         "address": "0x08AFFF16",
+         "text": "闭上眼睛"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFFE82",
+       "command": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x08AFFE85",
+       "command": "goto",
+       "args": [
+        148189976
+       ],
+       "targets": [
+        "0x08D53318"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF49FF"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08D53318",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08D53318",
+       "command": "preparemsg",
+       "args": [
+        145751789
+       ],
+       "texts": [
+        {
+         "address": "0x08AFFEED",
+         "text": "感觉越来越困了……\n要闭上眼睛吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08D5331D",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08D5331E",
+       "command": "multichoice",
+       "args": [
+        1,
+        8,
+        32,
+        1
+       ]
+      },
+      {
+       "at": "0x08D53323",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08D53324",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08D53327",
+       "command": "warpmuted",
+       "args": [
+        56,
+        39,
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08D5332F",
+       "command": "pause",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08D53332",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AFFE28"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08D53603",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08D53603",
+       "command": "checkflag",
+       "args": [
+        6102
+       ],
+       "task_flag_labels": [
+        {
+         "title": "深夜电视异闻录",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08D53606",
+       "command": "goto_if",
+       "args": [
+        1,
+        148190737
+       ],
+       "targets": [
+        "0x08D53611"
+       ]
+      },
+      {
+       "at": "0x08D5360C",
+       "command": "setflag",
+       "args": [
+        6103
+       ]
+      },
+      {
+       "at": "0x08D5360F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EC198C"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08D53611",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08D53611",
+       "command": "checkflag",
+       "args": [
+        6104
+       ]
+      },
+      {
+       "at": "0x08D53614",
+       "command": "goto_if",
+       "args": [
+        1,
+        148190751
+       ],
+       "targets": [
+        "0x08D5361F"
+       ]
+      },
+      {
+       "at": "0x08D5361A",
+       "command": "clearflag",
+       "args": [
+        6103
+       ]
+      },
+      {
+       "at": "0x08D5361D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08D53603"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08D5361F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08D5361F",
+       "command": "setflag",
+       "args": [
+        6103
+       ]
+      },
+      {
+       "at": "0x08D53622",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08D53611"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EC1A78",
+     "event_roots": [
+      {
+       "map_id": "56:21",
+       "place": "不知名遗迹",
+       "kind": "调查点",
+       "local_id": null,
+       "event_index": 0,
+       "x": 10,
+       "y": 2,
+       "facing": "script_facing_north",
+       "map_page": "../../wiki_export/world/pages/maps/g56_n021.md"
+      },
+      {
+       "map_id": "56:21",
+       "place": "不知名遗迹",
+       "kind": "调查点",
+       "local_id": null,
+       "event_index": 1,
+       "x": 11,
+       "y": 2,
+       "facing": "script_facing_north",
+       "map_page": "../../wiki_export/world/pages/maps/g56_n021.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EC1A78",
+       "command": "checkflag",
+       "args": [
+        6034
+       ],
+       "task_flag_labels": [
+        {
+         "title": "深夜电视异闻录",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC1A7B",
+       "command": "goto_if",
+       "args": [
+        1,
+        149691435
+       ],
+       "targets": [
+        "0x08EC1C2B"
+       ]
+      },
+      {
+       "at": "0x08EC1A81",
+       "command": "goto",
+       "args": [
+        149691469
+       ],
+       "targets": [
+        "0x08EC1C4D"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "bg",
+       "where": "56:21"
+      },
+      {
+       "kind": "bg",
+       "where": "56:21"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EC1C2B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC1C2B",
+       "command": "checkflag",
+       "args": [
+        6102
+       ],
+       "task_flag_labels": [
+        {
+         "title": "深夜电视异闻录",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC1C2E",
+       "command": "goto_if",
+       "args": [
+        1,
+        149691469
+       ],
+       "targets": [
+        "0x08EC1C4D"
+       ]
+      },
+      {
+       "at": "0x08EC1C34",
+       "command": "special",
+       "args": [
+        161
+       ]
+      },
+      {
+       "at": "0x08EC1C37",
+       "command": "special2",
+       "args": [
+        32781,
+        217
+       ]
+      },
+      {
+       "at": "0x08EC1C3C",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08EC1C41",
+       "command": "goto_if",
+       "args": [
+        1,
+        145705449
+       ],
+       "targets": [
+        "0x08AF49E9"
+       ]
+      },
+      {
+       "at": "0x08EC1C47",
+       "command": "goto",
+       "args": [
+        149691469
+       ],
+       "targets": [
+        "0x08EC1C4D"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EC1A78"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EC1C4D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC1C4D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149691792
+       ],
+       "texts": [
+        {
+         "address": "0x08EC1D90",
+         "text": "好可疑的电视机……\n感觉在朝这里看……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC1C53",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC1C55",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EC1A78"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EC1ECE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC1ECE",
+       "command": "checkflag",
+       "args": [
+        6102
+       ],
+       "task_flag_labels": [
+        {
+         "title": "深夜电视异闻录",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC1ED1",
+       "command": "goto_if",
+       "args": [
+        1,
+        149692291
+       ],
+       "targets": [
+        "0x08EC1F83"
+       ]
+      },
+      {
+       "at": "0x08EC1ED7",
+       "command": "goto",
+       "args": [
+        145750117
+       ],
+       "targets": [
+        "0x08AFF865"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AC3D27"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EC1F83",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC1F83",
+       "command": "loadpointer",
+       "args": [
+        0,
+        148189681
+       ],
+       "texts": [
+        {
+         "address": "0x08D531F1",
+         "text": "这可是我珍藏的武林秘籍，\n你要好好使用它哦！\n话又说回来，\n知道这是宝可梦的恶作剧以后，\n我还是挺失落的……\n我还真挺想看一看\n我命中注定的对象长什么样呢。\n如果可以的话，\n我希望是一名潮到出水的型男！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC1F89",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC1F8B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EC1ECE"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EC1F8C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC1F8C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145697621
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2B55",
+         "text": "获得了4点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC1F92",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC1F94",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EC1F99",
+       "command": "setflag",
+       "args": [
+        6102
+       ],
+       "task_flag_labels": [
+        {
+         "title": "深夜电视异闻录",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC1F9C",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EC1F9F",
+       "command": "signmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EC1FA0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        148189900
+       ],
+       "texts": [
+        {
+         "address": "0x08D532CC",
+         "text": "那个电视的事……\n还是有些令人在意。\n有空的话再去那里看看吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC1FA6",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC1FA8",
+       "command": "normalmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EC1FA9",
+       "command": "setvar",
+       "args": [
+        20904,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08EC1FAE",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08D53000"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5EDE3",
+     "event_roots": [
+      {
+       "map_id": "49:8",
+       "place": "浅葱市",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 8,
+       "y": 4,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g49_n008.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5EDE3",
+       "command": "applymovement",
+       "args": [
+        2,
+        150335032
+       ]
+      },
+      {
+       "at": "0x08F5EDEA",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5EDED",
+       "command": "goto",
+       "args": [
+        145729097
+       ],
+       "targets": [
+        "0x08AFA649"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "49:8/local1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5EE8A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5EE8A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145738684
+       ],
+       "texts": [
+        {
+         "address": "0x08AFCBBC",
+         "text": "将外卖交给了顾客！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5EE90",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08F5EE92",
+       "command": "normalmsg",
+       "args": []
+      },
+      {
+       "at": "0x08F5EE93",
+       "command": "setflag",
+       "args": [
+        6072
+       ]
+      },
+      {
+       "at": "0x08F5EE96",
+       "command": "applymovement",
+       "args": [
+        2,
+        150335926
+       ]
+      },
+      {
+       "at": "0x08F5EE9D",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5EEA0",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5EEA1",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AFBF29"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5EED5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5EED5",
+       "command": "goto_if",
+       "args": [
+        1,
+        145507395
+       ],
+       "targets": [
+        "0x08AC4443"
+       ]
+      },
+      {
+       "at": "0x08F5EEDB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145507453
+       ],
+       "texts": [
+        {
+         "address": "0x08AC447D",
+         "text": "果然，\n你也不相信这则传闻吗……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5EEE1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5EEE3",
+       "command": "applymovement",
+       "args": [
+        2,
+        150335926
+       ]
+      },
+      {
+       "at": "0x08F5EEEA",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5EEED",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5EEEE",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AC3D27"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

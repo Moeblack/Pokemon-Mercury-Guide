@@ -1,0 +1,1700 @@
+{
+ "title": "成为一般系大师",
+ "quest_id": 46,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b294",
+    "title": "成为一般系大师",
+    "title_address": "0x8e3c78d",
+    "description": "我想成为像小茜馆主那样\n专精一般属性的训练师。\n可以来商业区陪我进行特训吗？",
+    "description_address": "0x8e3c76e",
+    "unknown_u16": 685,
+    "unknown_u16_hex": "0x02AD",
+    "accept_flag": 5762,
+    "accept_flag_hex": "0x1682",
+    "complete_flag": 5760,
+    "complete_flag_hex": "0x1680",
+    "map_group": 3,
+    "map_num": 76,
+    "tail_hex": "0a 00 00 00",
+    "index": 46,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe394f4",
+      "title": "要成为一般属性大师",
+      "description_address": "0x8e3a909",
+      "description": "我想成为像小茜馆主那样\\n专精一般属性的训练师。\\n可以来商业区陪我进行特训吗？"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a909",
+    "legacy_match_count": 1,
+    "current_description": "帮助满金市的少女\n进行对战特训。",
+    "catalog_map": {
+     "id": "3:76",
+     "name": "满金市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AE7BFA",
+    "0x08AE7D6C",
+    "0x08AE7DCF"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F56CCA",
+     "map_id": "3:76",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 24,
+     "event_index": 23,
+     "x": 48,
+     "y": 47,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n076.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089C5EA8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089C5EA8",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089C5EAA",
+       "command": "special",
+       "args": [
+        158
+       ]
+      },
+      {
+       "at": "0x089C5EAD",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x089C5EAE",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7BFA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7BFA",
+       "command": "checkflag",
+       "args": [
+        5760
+       ],
+       "task_flag_labels": [
+        {
+         "title": "成为一般系大师",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7BFD",
+       "command": "goto_if",
+       "args": [
+        1,
+        145652776
+       ],
+       "targets": [
+        "0x08AE7C28"
+       ]
+      },
+      {
+       "at": "0x08AE7C03",
+       "command": "checkflag",
+       "args": [
+        5761
+       ]
+      },
+      {
+       "at": "0x08AE7C06",
+       "command": "goto_if",
+       "args": [
+        1,
+        145652805
+       ],
+       "targets": [
+        "0x08AE7C45"
+       ]
+      },
+      {
+       "at": "0x08AE7C0C",
+       "command": "checkflag",
+       "args": [
+        5762
+       ],
+       "task_flag_labels": [
+        {
+         "title": "成为一般系大师",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7C0F",
+       "command": "goto_if",
+       "args": [
+        1,
+        145652833
+       ],
+       "targets": [
+        "0x08AE7C61"
+       ]
+      },
+      {
+       "at": "0x08AE7C15",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150302714
+       ],
+       "texts": [
+        {
+         "address": "0x08F56FFA",
+         "text": "小茜馆主的一般属性宝可梦\n真是又强大又可爱呀……\n要是有获得了满金道馆\n徽章的训练家帮帮我就好了……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7C1B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE7C1D",
+       "command": "goto",
+       "args": [
+        150301260
+       ],
+       "targets": [
+        "0x08F56A4C"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7C28",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7C28",
+       "command": "checkflag",
+       "args": [
+        5958
+       ]
+      },
+      {
+       "at": "0x08AE7C2B",
+       "command": "goto_if",
+       "args": [
+        1,
+        145652795
+       ],
+       "targets": [
+        "0x08AE7C3B"
+       ]
+      },
+      {
+       "at": "0x08AE7C31",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145653523
+       ],
+       "texts": [
+        {
+         "address": "0x08AE7F13",
+         "text": "向尾喵在你那边还好吗？\n如果有时它不乖的话，\n也请不要凶它太多哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7C37",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE7C39",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7C3B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7C3B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145653587
+       ],
+       "texts": [
+        {
+         "address": "0x08AE7F53",
+         "text": "哇！你真的成为冠军了啊！\n有没有带着向尾喵\n登入名人堂呢？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7C41",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE7C43",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7C45",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7C45",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE7C46",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE7C47",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145653643
+       ],
+       "texts": [
+        {
+         "address": "0x08AE7F8B",
+         "text": "如果可以的话，\n请带着我的向尾喵\n成为宝可梦大师吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7C4D",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE7C4F",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE7C54",
+       "command": "goto_if",
+       "args": [
+        0,
+        145653173
+       ],
+       "targets": [
+        "0x08AE7DB5"
+       ]
+      },
+      {
+       "at": "0x08AE7C5A",
+       "command": "goto",
+       "args": [
+        145652898
+       ],
+       "targets": [
+        "0x08AE7CA2"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7C61",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7C61",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE7C62",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE7C63",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145653694
+       ],
+       "texts": [
+        {
+         "address": "0x08AE7FBE",
+         "text": "怎么样？\n准备好开始特训了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7C69",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE7C6B",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE7C70",
+       "command": "goto_if",
+       "args": [
+        0,
+        145653163
+       ],
+       "targets": [
+        "0x08AE7DAB"
+       ]
+      },
+      {
+       "at": "0x08AE7C76",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145653724
+       ],
+       "texts": [
+        {
+         "address": "0x08AE7FDC",
+         "text": "那么，就请你来\n当我的对手啦！\n一般属性的弱点我都在\n脑海里演练过很多遍啦，\n肯定没问题的！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7C7C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE7C7E",
+       "command": "trainerbattle0",
+       "args": [
+        3,
+        263,
+        0,
+        145653811
+       ]
+      },
+      {
+       "at": "0x08AE7C88",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145653830
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8046",
+         "text": "呜……\n宝可梦对战果然好可怕……\n和想象中的完全不一样呀！\n而且一般属性的宝可梦\n对战也好难驾驭，\n看来我是和这条路无缘了呀。\n不过……也许你可以\n成为一般属性的大师呢！\n如果可以的话，\n请带着我的向尾喵\n成为宝可梦大师吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7C8E",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE7C90",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE7C95",
+       "command": "goto_if",
+       "args": [
+        0,
+        145653173
+       ],
+       "targets": [
+        "0x08AE7DB5"
+       ]
+      },
+      {
+       "at": "0x08AE7C9B",
+       "command": "goto",
+       "args": [
+        145652898
+       ],
+       "targets": [
+        "0x08AE7CA2"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7CA2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7CA2",
+       "command": "countpokemon",
+       "args": []
+      },
+      {
+       "at": "0x08AE7CA3",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        6
+       ],
+       "possible_names_not_semantics": {
+        "species": "喷火龙",
+        "item": "捕网球",
+        "move": "聚宝功"
+       }
+      },
+      {
+       "at": "0x08AE7CA8",
+       "command": "goto_if",
+       "args": [
+        1,
+        145653186
+       ],
+       "targets": [
+        "0x08AE7DC2"
+       ]
+      },
+      {
+       "at": "0x08AE7CAE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145654035
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8113",
+         "text": "那么，\n就请照顾好这孩子啦！\n它可能不太擅长独自战斗，\n但如果是在双打对战中，\n它能起到很特别的作用哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7CB4",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE7CB6",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE7CB9",
+       "command": "call",
+       "args": [
+        144572174
+       ],
+       "targets": [
+        "0x089DFF0E"
+       ]
+      },
+      {
+       "at": "0x08AE7CBE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145654133
+       ]
+      },
+      {
+       "at": "0x08AE7CC4",
+       "command": "call",
+       "args": [
+        144572204
+       ],
+       "targets": [
+        "0x089DFF2C"
+       ]
+      },
+      {
+       "at": "0x08AE7CC9",
+       "command": "setvar",
+       "args": [
+        32774,
+        76
+       ],
+       "possible_names_not_semantics": {
+        "species": "隆隆岩",
+        "item": "防御强化",
+        "move": "日光束"
+       }
+      },
+      {
+       "at": "0x08AE7CCE",
+       "command": "call",
+       "args": [
+        144461359
+       ],
+       "targets": [
+        "0x089C4E2F"
+       ]
+      },
+      {
+       "at": "0x08AE7CD3",
+       "command": "cry",
+       "args": [
+        315,
+        255
+       ]
+      },
+      {
+       "at": "0x08AE7CD8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145654143
+       ],
+       "texts": [
+        {
+         "address": "0x08AE817F",
+         "text": "喵帕斯！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7CDE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE7CE0",
+       "command": "call",
+       "args": [
+        144572231
+       ],
+       "targets": [
+        "0x089DFF47"
+       ]
+      },
+      {
+       "at": "0x08AE7CE5",
+       "command": "call",
+       "args": [
+        144461451
+       ],
+       "targets": [
+        "0x089C4E8B"
+       ]
+      },
+      {
+       "at": "0x08AE7CEA",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE7CEC",
+       "command": "removeobject",
+       "args": [
+        25
+       ]
+      },
+      {
+       "at": "0x08AE7CEF",
+       "command": "setflag",
+       "args": [
+        5611
+       ]
+      },
+      {
+       "at": "0x08AE7CF2",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08AE7CF5",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AE7CF7",
+       "command": "setvar",
+       "args": [
+        32768,
+        458
+       ],
+       "possible_names_not_semantics": {
+        "species": "伦琴猫",
+        "item": "佛柑果",
+        "move": "突袭"
+       }
+      },
+      {
+       "at": "0x08AE7CFC",
+       "command": "setvar",
+       "args": [
+        32769,
+        252
+       ],
+       "possible_names_not_semantics": {
+        "species": "蛋",
+        "item": "梦境球",
+        "move": "击掌奇袭"
+       }
+      },
+      {
+       "at": "0x08AE7D01",
+       "command": "setvar",
+       "args": [
+        32770,
+        655
+       ],
+       "possible_names_not_semantics": {
+        "species": "麻麻小鱼",
+        "item": "一般宝石",
+        "move": "单纯光束"
+       }
+      },
+      {
+       "at": "0x08AE7D06",
+       "command": "setvar",
+       "args": [
+        32771,
+        270
+       ],
+       "possible_names_not_semantics": {
+        "species": "雷丘",
+        "item": "Soot Sack",
+        "move": "帮助"
+       }
+      },
+      {
+       "at": "0x08AE7D0B",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AE7D10",
+       "command": "setvar",
+       "args": [
+        32773,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AE7D15",
+       "command": "setvar",
+       "args": [
+        32774,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE7D1A",
+       "command": "setvar",
+       "args": [
+        32775,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE7D1F",
+       "command": "setvar",
+       "args": [
+        32776,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE7D24",
+       "command": "setvar",
+       "args": [
+        32777,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE7D29",
+       "command": "setvar",
+       "args": [
+        32778,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE7D2E",
+       "command": "setvar",
+       "args": [
+        32779,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE7D33",
+       "command": "goto",
+       "args": [
+        150309476
+       ],
+       "targets": [
+        "0x08F58A64"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7D6C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7D6C",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE7D6F",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE7D72",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145654198
+       ],
+       "texts": [
+        {
+         "address": "0x08AE81B6",
+         "text": "完成任务:<要成为一般属性大师>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7D78",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE7D7D",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE7D82",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE7D87",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AE7D8C",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AE7D91",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145654233
+       ],
+       "texts": [
+        {
+         "address": "0x08AE81D9",
+         "text": "获得了5点BracerPoints!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7D97",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE7D99",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AE7D9E",
+       "command": "clearflag",
+       "args": [
+        5611
+       ]
+      },
+      {
+       "at": "0x08AE7DA1",
+       "command": "setflag",
+       "args": [
+        5760
+       ],
+       "task_flag_labels": [
+        {
+         "title": "成为一般系大师",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7DA4",
+       "command": "addvar",
+       "args": [
+        20789,
+        5
+       ]
+      },
+      {
+       "at": "0x08AE7DA9",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7DAB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7DAB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145654331
+       ],
+       "texts": [
+        {
+         "address": "0x08AE823B",
+         "text": "等你准备好了，\n就来找我吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7DB1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE7DB3",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7DB5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7DB5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145654359
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8257",
+         "text": "呜……那那那，\n如果你回心转意了就跟我说哦！\n我会一直在这里的！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7DBB",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE7DBD",
+       "command": "setflag",
+       "args": [
+        5761
+       ]
+      },
+      {
+       "at": "0x08AE7DC0",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7DC2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7DC2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145654419
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8293",
+         "text": "啊……你随行的宝可梦已经满了，\n寄放掉一些宝可梦再来吧，\n我会一直在这里的！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7DC8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE7DCA",
+       "command": "setflag",
+       "args": [
+        5761
+       ]
+      },
+      {
+       "at": "0x08AE7DCD",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7DCF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7DCF",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AE7DD2",
+       "command": "applymovement",
+       "args": [
+        24,
+        145654904
+       ]
+      },
+      {
+       "at": "0x08AE7DD9",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AE7DDC",
+       "command": "waitmovement",
+       "args": [
+        24
+       ]
+      },
+      {
+       "at": "0x08AE7DDF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145654491
+       ],
+       "texts": [
+        {
+         "address": "0x08AE82DB",
+         "text": "你看到了我的支援请求吗？\n我想成为专精一般属性的训练家，\n就像小茜馆主一样！\n但是……我并不擅长对战，\n别说实战经验了，\n就连一般属性宝可梦的作战方式\n都只能在脑子里想想。\n你得到了小茜馆主的\n常规徽章对吧？\n那就说明你一定和\n她的宝可梦交过手，\n并且很熟知她的战斗方法吧！\n能拜托你帮我和\n我的向尾喵特训吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7DE5",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE7DE7",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE7DEC",
+       "command": "goto_if",
+       "args": [
+        0,
+        150301878
+       ],
+       "targets": [
+        "0x08F56CB6"
+       ]
+      },
+      {
+       "at": "0x08AE7DF2",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE7DF5",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE7DF8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145654779
+       ],
+       "texts": [
+        {
+         "address": "0x08AE83FB",
+         "text": "接受任务:<要成为一般属性大师>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7DFE",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE7E03",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE7E08",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE7E0D",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AE7E12",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AE7E17",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145654814
+       ],
+       "texts": [
+        {
+         "address": "0x08AE841E",
+         "text": "谢谢你！\n等你准备好了，\n就来找我吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7E1D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE7E1F",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AE7E24",
+       "command": "setflag",
+       "args": [
+        5762
+       ],
+       "task_flag_labels": [
+        {
+         "title": "成为一般系大师",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7E27",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F56A4C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F56A4C",
+       "command": "checkflag",
+       "args": [
+        2083
+       ]
+      },
+      {
+       "at": "0x08F56A4F",
+       "command": "goto_if",
+       "args": [
+        1,
+        145653199
+       ],
+       "targets": [
+        "0x08AE7DCF"
+       ]
+      },
+      {
+       "at": "0x08F56A55",
+       "command": "applymovement",
+       "args": [
+        46,
+        150301282
+       ]
+      },
+      {
+       "at": "0x08F56A5C",
+       "command": "waitmovement",
+       "args": [
+        46
+       ]
+      },
+      {
+       "at": "0x08F56A5F",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F56A60",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F56CB6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F56CB6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145654850
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8442",
+         "text": "这样吗……\n很抱歉占用了你的时间，\n我再自己想想办法吧……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F56CBC",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F56CBE",
+       "command": "applymovement",
+       "args": [
+        46,
+        150301282
+       ]
+      },
+      {
+       "at": "0x08F56CC5",
+       "command": "waitmovement",
+       "args": [
+        46
+       ]
+      },
+      {
+       "at": "0x08F56CC8",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F56CC9",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F56CCA",
+     "event_roots": [
+      {
+       "map_id": "3:76",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 24,
+       "event_index": 23,
+       "x": 48,
+       "y": 47,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n076.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F56CCA",
+       "command": "applymovement",
+       "args": [
+        46,
+        150301876
+       ]
+      },
+      {
+       "at": "0x08F56CD1",
+       "command": "waitmovement",
+       "args": [
+        46
+       ]
+      },
+      {
+       "at": "0x08F56CD4",
+       "command": "goto",
+       "args": [
+        145652730
+       ],
+       "targets": [
+        "0x08AE7BFA"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F5876F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5876F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145654174
+       ],
+       "texts": [
+        {
+         "address": "0x08AE819E",
+         "text": "要给向尾喵起个昵称吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F58775",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F58777",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5877C",
+       "command": "goto_if",
+       "args": [
+        0,
+        150309343
+       ],
+       "targets": [
+        "0x08F589DF"
+       ]
+      },
+      {
+       "at": "0x08F58782",
+       "command": "countpokemon",
+       "args": []
+      },
+      {
+       "at": "0x08F58783",
+       "command": "subvar",
+       "args": [
+        32781,
+        1
+       ]
+      },
+      {
+       "at": "0x08F58788",
+       "command": "copyvar",
+       "args": [
+        32772,
+        32781
+       ]
+      },
+      {
+       "at": "0x08F5878D",
+       "command": "call",
+       "args": [
+        144465576
+       ],
+       "targets": [
+        "0x089C5EA8"
+       ]
+      },
+      {
+       "at": "0x08F58792",
+       "command": "goto",
+       "args": [
+        150309343
+       ],
+       "targets": [
+        "0x08F589DF"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F589DF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F589DF",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        537
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕路奇亚",
+        "item": "经验糖果S",
+        "move": "暗黑爆破"
+       }
+      },
+      {
+       "at": "0x08F589E4",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F589E9",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F589EB",
+       "command": "pause",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08F589EE",
+       "command": "goto",
+       "args": [
+        145653100
+       ],
+       "targets": [
+        "0x08AE7D6C"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F58A64",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F58A64",
+       "command": "givepokemon",
+       "args": [
+        315,
+        20,
+        709,
+        1,
+        1,
+        1
+       ],
+       "species_name": "向尾喵"
+      },
+      {
+       "at": "0x08F58A73",
+       "command": "preparemsg",
+       "args": [
+        150309453
+       ],
+       "texts": [
+        {
+         "address": "0x08F58A4D",
+         "text": "[玩家/变量]得到了向尾喵！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F58A78",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08F58A79",
+       "command": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x08F58A7C",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08F58A7D",
+       "command": "goto",
+       "args": [
+        150308719
+       ],
+       "targets": [
+        "0x08F5876F"
+       ]
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [
+    "0x089C4E2F",
+    "0x089C4E8B",
+    "0x089DFF0E",
+    "0x089DFF2C",
+    "0x089DFF47"
+   ],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

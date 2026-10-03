@@ -1,0 +1,95 @@
+{
+ "maps": 871,
+ "unique_layouts": 755,
+ "regions": 771,
+ "stitched_regions": 11,
+ "points": 8756,
+ "point_types": {
+  "item": 1956,
+  "pokemon": 3130,
+  "quest": 207,
+  "trainer": 862,
+  "mega": 30,
+  "warp": 2571
+ },
+ "geometry": {
+  "point": 4635,
+  "area": 4004,
+  "trigger": 109,
+  "unplaced": 8
+ },
+ "guide_pages_with_maps": 1535,
+ "connection_conflicts": 60,
+ "largest_regions": [
+  [
+   184592,
+   "region_3_12",
+   24,
+   556,
+   332
+  ],
+  [
+   183872,
+   "region_3_0",
+   35,
+   416,
+   442
+  ],
+  [
+   134736,
+   "region_3_16",
+   22,
+   336,
+   401
+  ],
+  [
+   48511,
+   "region_3_70",
+   7,
+   349,
+   139
+  ],
+  [
+   30240,
+   "region_3_17",
+   5,
+   168,
+   180
+  ],
+  [
+   19200,
+   "region_3_18",
+   5,
+   96,
+   200
+  ],
+  [
+   15840,
+   "region_3_14",
+   4,
+   144,
+   110
+  ],
+  [
+   11776,
+   "region_52_23",
+   2,
+   64,
+   184
+  ],
+  [
+   10976,
+   "region_56_25",
+   2,
+   112,
+   98
+  ],
+  [
+   8024,
+   "region_3_99",
+   2,
+   68,
+   118
+  ]
+ ]
+}

@@ -1,0 +1,772 @@
+{
+ "title": "迷路的小锯鳄",
+ "quest_id": 75,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b4d8",
+    "title": "迷路的小锯鳄",
+    "title_address": "0x8e3c1a2",
+    "description": "帮夏日祭上\n迷路的小锯鳄找到主人。",
+    "description_address": "0x8e3c181",
+    "unknown_u16": 189,
+    "unknown_u16_hex": "0x00BD",
+    "accept_flag": 2682,
+    "accept_flag_hex": "0x0A7A",
+    "complete_flag": 2682,
+    "complete_flag_hex": "0x0A7A",
+    "map_group": 3,
+    "map_num": 70,
+    "tail_hex": "16 00 00 00",
+    "index": 75,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3c181",
+    "legacy_match_count": 0,
+    "current_description": "帮夏日祭上\n迷路的小锯鳄找到主人。",
+    "catalog_map": {
+     "id": "3:70",
+     "name": "缘朱市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08F5B921",
+    "0x08F5BB8D",
+    "0x08F5BCAC"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F5BB77",
+     "map_id": "55:34",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 7,
+     "event_index": 6,
+     "x": 3,
+     "y": 9,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g55_n034.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08F5B921",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5B921",
+       "command": "checkflag",
+       "args": [
+        2682
+       ],
+       "task_flag_labels": [
+        {
+         "title": "迷路的小锯鳄",
+         "role": "accept_flag"
+        },
+        {
+         "title": "迷路的小锯鳄",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5B924",
+       "command": "goto_if",
+       "args": [
+        1,
+        150322037
+       ],
+       "targets": [
+        "0x08F5BB75"
+       ]
+      },
+      {
+       "at": "0x08F5B92A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150322110
+       ]
+      },
+      {
+       "at": "0x08F5B930",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5B932",
+       "command": null,
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=75"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5BB75",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5BB75",
+       "command": "loadpointer",
+       "args": [
+        0,
+        101349675
+       ]
+      },
+      {
+       "at": "0x08F5BB7B",
+       "command": "nop1",
+       "args": []
+      },
+      {
+       "at": "0x08F5BB7C",
+       "command": "showcontestresults",
+       "args": []
+      },
+      {
+       "at": "0x08F5BB7D",
+       "command": "vgoto_if",
+       "args": [
+        245,
+        3539996424
+       ]
+      },
+      {
+       "at": "0x08F5BB83",
+       "command": "vgoto_if",
+       "args": [
+        245,
+        687999240
+       ]
+      },
+      {
+       "at": "0x08F5BB89",
+       "command": "braillemessage",
+       "args": [
+        738132490
+       ]
+      },
+      {
+       "at": "0x08F5BB8E",
+       "command": "giveegg",
+       "args": [
+        1546
+       ],
+       "species_name": "破空焰"
+      },
+      {
+       "at": "0x08F5BB91",
+       "command": "nop1",
+       "args": []
+      },
+      {
+       "at": "0x08F5BB92",
+       "command": "unloadhelp",
+       "args": []
+      },
+      {
+       "at": "0x08F5BB93",
+       "command": "vgoto_if",
+       "args": [
+        245,
+        301993736
+       ]
+      },
+      {
+       "at": "0x08F5BB99",
+       "command": "vcall_if",
+       "args": [
+        245,
+        1778518280
+       ]
+      },
+      {
+       "at": "0x08F5BB9F",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        537
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕路奇亚",
+        "item": "经验糖果S",
+        "move": "暗黑爆破"
+       }
+      },
+      {
+       "at": "0x08F5BBA4",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F5BBA9",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F5BBAB",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F5BBAE",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F5BBAF",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        748
+       ],
+       "possible_names_not_semantics": {
+        "species": "盖诺赛克特",
+        "item": "卡比丘",
+        "move": "玛哈布芙达"
+       }
+      },
+      {
+       "at": "0x08F5BBB4",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5BBB9",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F5BBBB",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F5BBBC",
+       "command": "goto",
+       "args": [
+        150322348
+       ],
+       "targets": [
+        "0x08F5BCAC"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B921"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5BB77",
+     "event_roots": [
+      {
+       "map_id": "55:34",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 7,
+       "event_index": 6,
+       "x": 3,
+       "y": 9,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g55_n034.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5BB77",
+       "command": "checkflag",
+       "args": [
+        2681
+       ]
+      },
+      {
+       "at": "0x08F5BB7A",
+       "command": "goto_if",
+       "args": [
+        1,
+        150322061
+       ],
+       "targets": [
+        "0x08F5BB8D"
+       ]
+      },
+      {
+       "at": "0x08F5BB80",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150322131
+       ],
+       "texts": [
+        {
+         "address": "0x08F5BBD3",
+         "text": "你有看见一只小锯鳄吗？\n明明刚才还在我身边的……\n转眼间却不见了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5BB86",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5BB88",
+       "command": "setflag",
+       "args": [
+        2680
+       ]
+      },
+      {
+       "at": "0x08F5BB8B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "55:34/local7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5BB8D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5BB8D",
+       "command": "checkflag",
+       "args": [
+        2682
+       ],
+       "task_flag_labels": [
+        {
+         "title": "迷路的小锯鳄",
+         "role": "accept_flag"
+        },
+        {
+         "title": "迷路的小锯鳄",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5BB90",
+       "command": "goto_if",
+       "args": [
+        1,
+        150322121
+       ],
+       "targets": [
+        "0x08F5BBC9"
+       ]
+      },
+      {
+       "at": "0x08F5BB96",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150322194
+       ],
+       "texts": [
+        {
+         "address": "0x08F5BC12",
+         "text": "是你帮我找到了小锯鳄吧？\n这个就作为谢礼送给你了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5BB9C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5BB9E",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F5BB9F",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        537
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕路奇亚",
+        "item": "经验糖果S",
+        "move": "暗黑爆破"
+       }
+      },
+      {
+       "at": "0x08F5BBA4",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F5BBA9",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F5BBAB",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F5BBAE",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F5BBAF",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        748
+       ],
+       "possible_names_not_semantics": {
+        "species": "盖诺赛克特",
+        "item": "卡比丘",
+        "move": "玛哈布芙达"
+       }
+      },
+      {
+       "at": "0x08F5BBB4",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5BBB9",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F5BBBB",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F5BBBC",
+       "command": "goto",
+       "args": [
+        150322348
+       ],
+       "targets": [
+        "0x08F5BCAC"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5BB77"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5BBC9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5BBC9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150322244
+       ],
+       "texts": [
+        {
+         "address": "0x08F5BC44",
+         "text": "多亏你帮我找到了小锯鳄，\n不然让它跑去缘朱舞场就可糟了。\n上次它在缘朱舞场使出了水枪，\n差点打乱了整场演出……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5BBCF",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5BBD1",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5BB8D"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5BCAC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5BCAC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150322244
+       ],
+       "texts": [
+        {
+         "address": "0x08F5BC44",
+         "text": "多亏你帮我找到了小锯鳄，\n不然让它跑去缘朱舞场就可糟了。\n上次它在缘朱舞场使出了水枪，\n差点打乱了整场演出……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5BCB2",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5BCB4",
+       "command": "setflag",
+       "args": [
+        2682
+       ],
+       "task_flag_labels": [
+        {
+         "title": "迷路的小锯鳄",
+         "role": "accept_flag"
+        },
+        {
+         "title": "迷路的小锯鳄",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5BCB7",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F5BCBA",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5BCBD",
+       "command": "addvar",
+       "args": [
+        20789,
+        8
+       ]
+      },
+      {
+       "at": "0x08F5BCC2",
+       "command": "addmoney",
+       "args": [
+        6000,
+        0
+       ]
+      },
+      {
+       "at": "0x08F5BCC8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150322601
+       ],
+       "texts": [
+        {
+         "address": "0x08F5BDA9",
+         "text": "完成任务:<迷路的小锯鳄>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5BCCE",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5BCD3",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5BCD8",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F5BCDD",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F5BCE2",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F5BCE7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150322566
+       ],
+       "texts": [
+        {
+         "address": "0x08F5BD86",
+         "text": "获得了8点BracerPoints和6000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5BCED",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F5BCEF",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F5BCF4",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5BB8D"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

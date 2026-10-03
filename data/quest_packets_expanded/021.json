@@ -1,0 +1,3867 @@
+{
+ "title": "收集研究所物资",
+ "quest_id": 21,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b0a0",
+    "title": "收集研究所物资",
+    "title_address": "0x8e3cb25",
+    "description": "帮助空木博士的妻子\n收集研究所需要的物资。",
+    "description_address": "0x8e3cafc",
+    "unknown_u16": 685,
+    "unknown_u16_hex": "0x02AD",
+    "accept_flag": 5472,
+    "accept_flag_hex": "0x1560",
+    "complete_flag": 5473,
+    "complete_flag_hex": "0x1561",
+    "map_group": 43,
+    "map_num": 5,
+    "tail_hex": "02 01 00 00",
+    "index": 21,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3cafc",
+    "legacy_match_count": 0,
+    "current_description": "帮助空木博士的妻子\n收集研究所需要的物资。",
+    "catalog_map": {
+     "id": "43:5",
+     "name": "若叶镇"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x089E438D",
+    "0x089E4396",
+    "0x089E4402",
+    "0x089E440B",
+    "0x089E4477",
+    "0x089E4480",
+    "0x089E44EC",
+    "0x089E44F5",
+    "0x089E4561",
+    "0x089E456A",
+    "0x089E45D6",
+    "0x089E4661",
+    "0x089E46D5"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F50277",
+     "map_id": "43:5",
+     "place": "若叶镇",
+     "kind": "人物",
+     "local_id": 6,
+     "event_index": 5,
+     "x": 6,
+     "y": 8,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g43_n005.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089E2EBF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E2EBF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144589643
+       ],
+       "texts": [
+        {
+         "address": "0x089E434B",
+         "text": "哎呀，[玩家/变量]！\n我家的老公看起来永远都很忙，\n所以我偶尔也会来这里帮他。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E2EC5",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E2EC7",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E45D6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E438D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E438D",
+       "command": "checkflag",
+       "args": [
+        5473
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E4390",
+       "command": "goto_if",
+       "args": [
+        1,
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      },
+      {
+       "at": "0x089E4396",
+       "command": "checkflag",
+       "args": [
+        5472
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E4399",
+       "command": "goto_if",
+       "args": [
+        1,
+        144589797
+       ],
+       "targets": [
+        "0x089E43E5"
+       ]
+      },
+      {
+       "at": "0x089E439F",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E43A2",
+       "command": "goto_if",
+       "args": [
+        1,
+        144589742
+       ],
+       "targets": [
+        "0x089E43AE"
+       ]
+      },
+      {
+       "at": "0x089E43A8",
+       "command": "goto",
+       "args": [
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=21"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E4396",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E4396",
+       "command": "checkflag",
+       "args": [
+        5472
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E4399",
+       "command": "goto_if",
+       "args": [
+        1,
+        144589797
+       ],
+       "targets": [
+        "0x089E43E5"
+       ]
+      },
+      {
+       "at": "0x089E439F",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E43A2",
+       "command": "goto_if",
+       "args": [
+        1,
+        144589742
+       ],
+       "targets": [
+        "0x089E43AE"
+       ]
+      },
+      {
+       "at": "0x089E43A8",
+       "command": "goto",
+       "args": [
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=21"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E43AE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E43AE",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E43AF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144589643
+       ],
+       "texts": [
+        {
+         "address": "0x089E434B",
+         "text": "哎呀，[玩家/变量]！\n我家的老公看起来永远都很忙，\n所以我偶尔也会来这里帮他。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E43B5",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E43B7",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144523284
+       ]
+      },
+      {
+       "at": "0x089E43BE",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089E43C1",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E43C4",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E43C7",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E43C8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590089
+       ]
+      },
+      {
+       "at": "0x089E43CE",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E43D0",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E43D5",
+       "command": "goto_if",
+       "args": [
+        1,
+        144589964
+       ],
+       "targets": [
+        "0x089E448C"
+       ]
+      },
+      {
+       "at": "0x089E43DB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590155
+       ]
+      },
+      {
+       "at": "0x089E43E1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E43E3",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E4396"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E43E5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E43E5",
+       "command": "checkitem",
+       "args": [
+        139,
+        3
+       ],
+       "item_name": "橙橙果"
+      },
+      {
+       "at": "0x089E43EA",
+       "command": "goto_if",
+       "args": [
+        4,
+        144589818
+       ],
+       "targets": [
+        "0x089E43FA"
+       ]
+      },
+      {
+       "at": "0x089E43F0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590237
+       ]
+      },
+      {
+       "at": "0x089E43F6",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E43F8",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E4396"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E43FA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E43FA",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E43FB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590268
+       ]
+      },
+      {
+       "at": "0x089E4401",
+       "command": "callstd",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x089E4403",
+       "command": "settrainerflag",
+       "args": [
+        1557
+       ]
+      },
+      {
+       "at": "0x089E4406",
+       "command": "nop1",
+       "args": []
+      },
+      {
+       "at": "0x089E4407",
+       "command": "vbufferstring",
+       "args": [
+        46,
+        1613432990
+       ]
+      },
+      {
+       "at": "0x089E440D",
+       "command": "copybyte",
+       "args": [
+        1146749190,
+        2519402654
+       ]
+      },
+      {
+       "at": "0x089E4416",
+       "command": "loadbyte",
+       "args": [
+        6,
+        1
+       ]
+      },
+      {
+       "at": "0x089E4419",
+       "command": "callasm",
+       "args": [
+        84450884
+       ]
+      },
+      {
+       "at": "0x089E441E",
+       "command": "vbufferstring",
+       "args": [
+        46,
+        1526663326
+       ]
+      },
+      {
+       "at": "0x089E4424",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144589643
+       ],
+       "texts": [
+        {
+         "address": "0x089E434B",
+         "text": "哎呀，[玩家/变量]！\n我家的老公看起来永远都很忙，\n所以我偶尔也会来这里帮他。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E442A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E442C",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144523284
+       ]
+      },
+      {
+       "at": "0x089E4433",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089E4436",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E4439",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E443C",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E443D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590206
+       ]
+      },
+      {
+       "at": "0x089E4443",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E4445",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E444A",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590081
+       ],
+       "targets": [
+        "0x089E4501"
+       ]
+      },
+      {
+       "at": "0x089E4450",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590272
+       ]
+      },
+      {
+       "at": "0x089E4456",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E4458",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E43E5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E4402",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E4402",
+       "command": "checkflag",
+       "args": [
+        5473
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E4405",
+       "command": "goto_if",
+       "args": [
+        1,
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      },
+      {
+       "at": "0x089E440B",
+       "command": "checkflag",
+       "args": [
+        5472
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E440E",
+       "command": "goto_if",
+       "args": [
+        1,
+        144589914
+       ],
+       "targets": [
+        "0x089E445A"
+       ]
+      },
+      {
+       "at": "0x089E4414",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E4417",
+       "command": "goto_if",
+       "args": [
+        1,
+        144589859
+       ],
+       "targets": [
+        "0x089E4423"
+       ]
+      },
+      {
+       "at": "0x089E441D",
+       "command": "goto",
+       "args": [
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=21"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E440B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E440B",
+       "command": "checkflag",
+       "args": [
+        5472
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E440E",
+       "command": "goto_if",
+       "args": [
+        1,
+        144589914
+       ],
+       "targets": [
+        "0x089E445A"
+       ]
+      },
+      {
+       "at": "0x089E4414",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E4417",
+       "command": "goto_if",
+       "args": [
+        1,
+        144589859
+       ],
+       "targets": [
+        "0x089E4423"
+       ]
+      },
+      {
+       "at": "0x089E441D",
+       "command": "goto",
+       "args": [
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=21"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E4423",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E4423",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E4424",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144589643
+       ],
+       "texts": [
+        {
+         "address": "0x089E434B",
+         "text": "哎呀，[玩家/变量]！\n我家的老公看起来永远都很忙，\n所以我偶尔也会来这里帮他。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E442A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E442C",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144523284
+       ]
+      },
+      {
+       "at": "0x089E4433",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089E4436",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E4439",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E443C",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E443D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590206
+       ]
+      },
+      {
+       "at": "0x089E4443",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E4445",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E444A",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590081
+       ],
+       "targets": [
+        "0x089E4501"
+       ]
+      },
+      {
+       "at": "0x089E4450",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590272
+       ]
+      },
+      {
+       "at": "0x089E4456",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E4458",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E440B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E445A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E445A",
+       "command": "checkitem",
+       "args": [
+        139,
+        3
+       ],
+       "item_name": "橙橙果"
+      },
+      {
+       "at": "0x089E445F",
+       "command": "goto_if",
+       "args": [
+        4,
+        144589935
+       ],
+       "targets": [
+        "0x089E446F"
+       ]
+      },
+      {
+       "at": "0x089E4465",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590354
+       ]
+      },
+      {
+       "at": "0x089E446B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E446D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E440B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E446F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E446F",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E4470",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590385
+       ]
+      },
+      {
+       "at": "0x089E4476",
+       "command": "callstd",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x089E4478",
+       "command": "settrainerflag",
+       "args": [
+        1557
+       ]
+      },
+      {
+       "at": "0x089E447B",
+       "command": "nop1",
+       "args": []
+      },
+      {
+       "at": "0x089E447C",
+       "command": "vbufferstring",
+       "args": [
+        46,
+        1613432990
+       ]
+      },
+      {
+       "at": "0x089E4482",
+       "command": "copybyte",
+       "args": [
+        1154416902,
+        2519402654
+       ]
+      },
+      {
+       "at": "0x089E448B",
+       "command": "loadbyte",
+       "args": [
+        6,
+        1
+       ]
+      },
+      {
+       "at": "0x089E448E",
+       "command": "fadescreenspeed",
+       "args": [
+        68,
+        158
+       ]
+      },
+      {
+       "at": "0x089E4491",
+       "command": "gotostd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E4493",
+       "command": "vbufferstring",
+       "args": [
+        46,
+        1526663326
+       ]
+      },
+      {
+       "at": "0x089E4499",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144589643
+       ],
+       "texts": [
+        {
+         "address": "0x089E434B",
+         "text": "哎呀，[玩家/变量]！\n我家的老公看起来永远都很忙，\n所以我偶尔也会来这里帮他。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E449F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E44A1",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144523284
+       ]
+      },
+      {
+       "at": "0x089E44A8",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089E44AB",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E44AE",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E44B1",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E44B2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590323
+       ]
+      },
+      {
+       "at": "0x089E44B8",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E44BA",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E44BF",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590198
+       ],
+       "targets": [
+        "0x089E4576"
+       ]
+      },
+      {
+       "at": "0x089E44C5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590389
+       ]
+      },
+      {
+       "at": "0x089E44CB",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E44CD",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E445A"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E4477",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E4477",
+       "command": "checkflag",
+       "args": [
+        5473
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E447A",
+       "command": "goto_if",
+       "args": [
+        1,
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      },
+      {
+       "at": "0x089E4480",
+       "command": "checkflag",
+       "args": [
+        5472
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E4483",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590031
+       ],
+       "targets": [
+        "0x089E44CF"
+       ]
+      },
+      {
+       "at": "0x089E4489",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E448C",
+       "command": "goto_if",
+       "args": [
+        1,
+        144589976
+       ],
+       "targets": [
+        "0x089E4498"
+       ]
+      },
+      {
+       "at": "0x089E4492",
+       "command": "goto",
+       "args": [
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=21"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E4480",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E4480",
+       "command": "checkflag",
+       "args": [
+        5472
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E4483",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590031
+       ],
+       "targets": [
+        "0x089E44CF"
+       ]
+      },
+      {
+       "at": "0x089E4489",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E448C",
+       "command": "goto_if",
+       "args": [
+        1,
+        144589976
+       ],
+       "targets": [
+        "0x089E4498"
+       ]
+      },
+      {
+       "at": "0x089E4492",
+       "command": "goto",
+       "args": [
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=21"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E448C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E448C",
+       "command": "goto_if",
+       "args": [
+        1,
+        144589976
+       ],
+       "targets": [
+        "0x089E4498"
+       ]
+      },
+      {
+       "at": "0x089E4492",
+       "command": "goto",
+       "args": [
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E43AE"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E4498",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E4498",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E4499",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144589643
+       ],
+       "texts": [
+        {
+         "address": "0x089E434B",
+         "text": "哎呀，[玩家/变量]！\n我家的老公看起来永远都很忙，\n所以我偶尔也会来这里帮他。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E449F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E44A1",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144523284
+       ]
+      },
+      {
+       "at": "0x089E44A8",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089E44AB",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E44AE",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E44B1",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E44B2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590323
+       ]
+      },
+      {
+       "at": "0x089E44B8",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E44BA",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E44BF",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590198
+       ],
+       "targets": [
+        "0x089E4576"
+       ]
+      },
+      {
+       "at": "0x089E44C5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590389
+       ]
+      },
+      {
+       "at": "0x089E44CB",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E44CD",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E4480"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E44CF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E44CF",
+       "command": "checkitem",
+       "args": [
+        139,
+        3
+       ],
+       "item_name": "橙橙果"
+      },
+      {
+       "at": "0x089E44D4",
+       "command": "goto_if",
+       "args": [
+        4,
+        144590052
+       ],
+       "targets": [
+        "0x089E44E4"
+       ]
+      },
+      {
+       "at": "0x089E44DA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590471
+       ]
+      },
+      {
+       "at": "0x089E44E0",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E44E2",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E4480"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E44E4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E44E4",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E44E5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590502
+       ]
+      },
+      {
+       "at": "0x089E44EB",
+       "command": "callstd",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x089E44ED",
+       "command": "settrainerflag",
+       "args": [
+        1557
+       ]
+      },
+      {
+       "at": "0x089E44F0",
+       "command": "nop1",
+       "args": []
+      },
+      {
+       "at": "0x089E44F1",
+       "command": "vbufferstring",
+       "args": [
+        46,
+        1613432990
+       ]
+      },
+      {
+       "at": "0x089E44F7",
+       "command": "copybyte",
+       "args": [
+        1162084614,
+        2519402654
+       ]
+      },
+      {
+       "at": "0x089E4500",
+       "command": "loadbyte",
+       "args": [
+        6,
+        1
+       ]
+      },
+      {
+       "at": "0x089E4503",
+       "command": "killscript",
+       "args": []
+      },
+      {
+       "at": "0x089E4504",
+       "command": "removeitem",
+       "args": [
+        2206,
+        48901
+       ],
+       "item_name": null
+      },
+      {
+       "at": "0x089E4509",
+       "command": "gettime",
+       "args": []
+      },
+      {
+       "at": "0x089E450A",
+       "command": "waitfieldeffect",
+       "args": [
+        65288
+       ]
+      },
+      {
+       "at": "0x089E450D",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E450E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144589643
+       ],
+       "texts": [
+        {
+         "address": "0x089E434B",
+         "text": "哎呀，[玩家/变量]！\n我家的老公看起来永远都很忙，\n所以我偶尔也会来这里帮他。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E4514",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E4516",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144523284
+       ]
+      },
+      {
+       "at": "0x089E451D",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089E4520",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E4523",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E4526",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E4527",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590440
+       ]
+      },
+      {
+       "at": "0x089E452D",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E452F",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E4534",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590315
+       ],
+       "targets": [
+        "0x089E45EB"
+       ]
+      },
+      {
+       "at": "0x089E453A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590506
+       ]
+      },
+      {
+       "at": "0x089E4540",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E4542",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E44CF"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E44EC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E44EC",
+       "command": "checkflag",
+       "args": [
+        5473
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E44EF",
+       "command": "goto_if",
+       "args": [
+        1,
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      },
+      {
+       "at": "0x089E44F5",
+       "command": "checkflag",
+       "args": [
+        5472
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E44F8",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590148
+       ],
+       "targets": [
+        "0x089E4544"
+       ]
+      },
+      {
+       "at": "0x089E44FE",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E4501",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590093
+       ],
+       "targets": [
+        "0x089E450D"
+       ]
+      },
+      {
+       "at": "0x089E4507",
+       "command": "goto",
+       "args": [
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=21"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E44F5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E44F5",
+       "command": "checkflag",
+       "args": [
+        5472
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E44F8",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590148
+       ],
+       "targets": [
+        "0x089E4544"
+       ]
+      },
+      {
+       "at": "0x089E44FE",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E4501",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590093
+       ],
+       "targets": [
+        "0x089E450D"
+       ]
+      },
+      {
+       "at": "0x089E4507",
+       "command": "goto",
+       "args": [
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=21"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E4501",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E4501",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590093
+       ],
+       "targets": [
+        "0x089E450D"
+       ]
+      },
+      {
+       "at": "0x089E4507",
+       "command": "goto",
+       "args": [
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E4423"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E450D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E450D",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E450E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144589643
+       ],
+       "texts": [
+        {
+         "address": "0x089E434B",
+         "text": "哎呀，[玩家/变量]！\n我家的老公看起来永远都很忙，\n所以我偶尔也会来这里帮他。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E4514",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E4516",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144523284
+       ]
+      },
+      {
+       "at": "0x089E451D",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089E4520",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E4523",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E4526",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E4527",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590440
+       ]
+      },
+      {
+       "at": "0x089E452D",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E452F",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E4534",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590315
+       ],
+       "targets": [
+        "0x089E45EB"
+       ]
+      },
+      {
+       "at": "0x089E453A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590506
+       ]
+      },
+      {
+       "at": "0x089E4540",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E4542",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E44F5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E4544",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E4544",
+       "command": "checkitem",
+       "args": [
+        139,
+        3
+       ],
+       "item_name": "橙橙果"
+      },
+      {
+       "at": "0x089E4549",
+       "command": "goto_if",
+       "args": [
+        4,
+        144590169
+       ],
+       "targets": [
+        "0x089E4559"
+       ]
+      },
+      {
+       "at": "0x089E454F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590588
+       ]
+      },
+      {
+       "at": "0x089E4555",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E4557",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E44F5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E4559",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E4559",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E455A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590619
+       ]
+      },
+      {
+       "at": "0x089E4560",
+       "command": "callstd",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x089E4562",
+       "command": "settrainerflag",
+       "args": [
+        1557
+       ]
+      },
+      {
+       "at": "0x089E4565",
+       "command": "nop1",
+       "args": []
+      },
+      {
+       "at": "0x089E4566",
+       "command": "vbufferstring",
+       "args": [
+        46,
+        1613432990
+       ]
+      },
+      {
+       "at": "0x089E456C",
+       "command": "copybyte",
+       "args": [
+        1169752326,
+        2519402654
+       ]
+      },
+      {
+       "at": "0x089E4575",
+       "command": "loadbyte",
+       "args": [
+        6,
+        1
+       ]
+      },
+      {
+       "at": "0x089E4578",
+       "command": "bufferattack",
+       "args": [
+        69,
+        2206
+       ]
+      },
+      {
+       "at": "0x089E457C",
+       "command": "goto",
+       "args": [
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E4544"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E4561",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E4561",
+       "command": "checkflag",
+       "args": [
+        5473
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E4564",
+       "command": "goto_if",
+       "args": [
+        1,
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      },
+      {
+       "at": "0x089E456A",
+       "command": "checkflag",
+       "args": [
+        5472
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E456D",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590265
+       ],
+       "targets": [
+        "0x089E45B9"
+       ]
+      },
+      {
+       "at": "0x089E4573",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E4576",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590210
+       ],
+       "targets": [
+        "0x089E4582"
+       ]
+      },
+      {
+       "at": "0x089E457C",
+       "command": "goto",
+       "args": [
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=21"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E456A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E456A",
+       "command": "checkflag",
+       "args": [
+        5472
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E456D",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590265
+       ],
+       "targets": [
+        "0x089E45B9"
+       ]
+      },
+      {
+       "at": "0x089E4573",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E4576",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590210
+       ],
+       "targets": [
+        "0x089E4582"
+       ]
+      },
+      {
+       "at": "0x089E457C",
+       "command": "goto",
+       "args": [
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=21"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E4576",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E4576",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590210
+       ],
+       "targets": [
+        "0x089E4582"
+       ]
+      },
+      {
+       "at": "0x089E457C",
+       "command": "goto",
+       "args": [
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E4498"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E4582",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E4582",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E4583",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144589643
+       ],
+       "texts": [
+        {
+         "address": "0x089E434B",
+         "text": "哎呀，[玩家/变量]！\n我家的老公看起来永远都很忙，\n所以我偶尔也会来这里帮他。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E4589",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E458B",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144523284
+       ]
+      },
+      {
+       "at": "0x089E4592",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089E4595",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E4598",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E459B",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E459C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590557
+       ]
+      },
+      {
+       "at": "0x089E45A2",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E45A4",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E45A9",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590432
+       ],
+       "targets": [
+        "0x089E4660"
+       ]
+      },
+      {
+       "at": "0x089E45AF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590623
+       ]
+      },
+      {
+       "at": "0x089E45B5",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E45B7",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E456A"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E45B9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E45B9",
+       "command": "checkitem",
+       "args": [
+        139,
+        3
+       ],
+       "item_name": "橙橙果"
+      },
+      {
+       "at": "0x089E45BE",
+       "command": "goto_if",
+       "args": [
+        4,
+        144590286
+       ],
+       "targets": [
+        "0x089E45CE"
+       ]
+      },
+      {
+       "at": "0x089E45C4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590705
+       ],
+       "texts": [
+        {
+         "address": "0x089E4771",
+         "text": "…\n[玩家/变量]，可以帮我收集五颗橙橙果吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E45CA",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E45CC",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E456A"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E45CE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E45CE",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E45CF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590736
+       ]
+      },
+      {
+       "at": "0x089E45D5",
+       "command": "callstd",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x089E45D7",
+       "command": "settrainerflag",
+       "args": [
+        1557
+       ]
+      },
+      {
+       "at": "0x089E45DA",
+       "command": "nop1",
+       "args": []
+      },
+      {
+       "at": "0x089E45DB",
+       "command": null,
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E45B9"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E45D6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E45D6",
+       "command": "checkflag",
+       "args": [
+        5473
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E45D9",
+       "command": "goto_if",
+       "args": [
+        1,
+        145686266
+       ],
+       "targets": [
+        "0x08AEFEFA"
+       ]
+      },
+      {
+       "at": "0x089E45DF",
+       "command": "checkflag",
+       "args": [
+        5472
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E45E2",
+       "command": "goto_if",
+       "args": [
+        1,
+        144591049
+       ],
+       "targets": [
+        "0x089E48C9"
+       ]
+      },
+      {
+       "at": "0x089E45E8",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E45EB",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590327
+       ],
+       "targets": [
+        "0x089E45F7"
+       ]
+      },
+      {
+       "at": "0x089E45F1",
+       "command": "goto",
+       "args": [
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F50277"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E45EB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E45EB",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590327
+       ],
+       "targets": [
+        "0x089E45F7"
+       ]
+      },
+      {
+       "at": "0x089E45F1",
+       "command": "goto",
+       "args": [
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E450D"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E45F7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E45F7",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E45F8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144589643
+       ],
+       "texts": [
+        {
+         "address": "0x089E434B",
+         "text": "哎呀，[玩家/变量]！\n我家的老公看起来永远都很忙，\n所以我偶尔也会来这里帮他。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E45FE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E4600",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144523284
+       ]
+      },
+      {
+       "at": "0x089E4607",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089E460A",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E460D",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E4610",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E4611",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590674
+       ],
+       "texts": [
+        {
+         "address": "0x089E4752",
+         "text": "对了，\n研究所里的食物好像不够了……\n[玩家/变量]，可以帮我收集五颗橙橙果吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E4617",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E4619",
+       "command": "goto",
+       "args": [
+        150275726
+       ],
+       "targets": [
+        "0x08F5068E"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E45D6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E4643",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E4643",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E4644",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590853
+       ],
+       "texts": [
+        {
+         "address": "0x089E4805",
+         "text": "要将五颗橙橙果\n交给博士的妻子吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E464A",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E464C",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E4651",
+       "command": "goto_if",
+       "args": [
+        1,
+        150276074
+       ],
+       "targets": [
+        "0x08F507EA"
+       ]
+      },
+      {
+       "at": "0x089E4657",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590822
+       ],
+       "texts": [
+        {
+         "address": "0x089E47E6",
+         "text": "加油哦，[玩家/变量]！\n不要太勉强自己了。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E465D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E465F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E48C9"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E4660",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E4660",
+       "command": null,
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E4582"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E4661",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E4661",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E4664",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144523284
+       ]
+      },
+      {
+       "at": "0x089E466B",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089E466E",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x089E4671",
+       "command": "removeitem",
+       "args": [
+        139,
+        5
+       ],
+       "item_name": "橙橙果"
+      },
+      {
+       "at": "0x089E4676",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590888
+       ],
+       "texts": [
+        {
+         "address": "0x089E4828",
+         "text": "哎呀，太辛苦你了！\n谢谢你在百忙之中\n愿意抽空来帮忙。\n这是给你的报酬，\n应该会对你的冒险有很大帮助。\n请不要客气哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E467C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E467E",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        536
+       ],
+       "possible_names_not_semantics": {
+        "species": "帝牙卢卡",
+        "item": "经验糖果XS",
+        "move": "找伙伴"
+       }
+      },
+      {
+       "at": "0x089E4683",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E4688",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E468A",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089E468D",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x089E4692",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        5
+       ],
+       "possible_names_not_semantics": {
+        "species": "火恐龙",
+        "item": "狩猎球",
+        "move": "百万吨重拳"
+       }
+      },
+      {
+       "at": "0x089E4697",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E4699",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089E469C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144592334
+       ],
+       "texts": [
+        {
+         "address": "0x089E4DCE",
+         "text": "完成任务:<收集研究所物资>"
+        }
+       ]
+      },
+      {
+       "at": "0x089E46A2",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E46A7",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E46AC",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x089E46B1",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E46B6",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x089E46BB",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E46BE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145686949
+       ],
+       "texts": [
+        {
+         "address": "0x08AF01A5",
+         "text": "获得了4点BracerPoints!"
+        }
+       ]
+      },
+      {
+       "at": "0x089E46C4",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E46C6",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E46CB",
+       "command": "setflag",
+       "args": [
+        5473
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E46CE",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x089E46D3",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F507EA"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E46D5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E46D5",
+       "command": "setflag",
+       "args": [
+        5472
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集研究所物资",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E46D8",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E46DB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144591629
+       ],
+       "texts": [
+        {
+         "address": "0x089E4B0D",
+         "text": "接受任务:<收集研究所物资>"
+        }
+       ]
+      },
+      {
+       "at": "0x089E46E1",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E46E6",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E46EB",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x089E46F0",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E46F5",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x089E46FA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590801
+       ],
+       "texts": [
+        {
+         "address": "0x089E47D1",
+         "text": "那么就拜托你了，[玩家/变量]！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E4700",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E4702",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E4707",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F506E6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E48C9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E48C9",
+       "command": "checkitem",
+       "args": [
+        139,
+        5
+       ],
+       "item_name": "橙橙果"
+      },
+      {
+       "at": "0x089E48CE",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E48D3",
+       "command": "goto_if",
+       "args": [
+        1,
+        144590403
+       ],
+       "targets": [
+        "0x089E4643"
+       ]
+      },
+      {
+       "at": "0x089E48D9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590822
+       ],
+       "texts": [
+        {
+         "address": "0x089E47E6",
+         "text": "加油哦，[玩家/变量]！\n不要太勉强自己了。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E48DF",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E48E1",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E45D6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEFEFA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEFEFA",
+       "command": "checkflag",
+       "args": [
+        5966
+       ]
+      },
+      {
+       "at": "0x08AEFEFD",
+       "command": "goto_if",
+       "args": [
+        1,
+        144584383
+       ],
+       "targets": [
+        "0x089E2EBF"
+       ]
+      },
+      {
+       "at": "0x08AEFF03",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AEFF04",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145686390
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFF76",
+         "text": "对了，[玩家/变量]！\n要留个电话吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEFF0A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEFF0C",
+       "command": "fanfare",
+       "args": [
+        317
+       ]
+      },
+      {
+       "at": "0x08AEFF0F",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AEFF12",
+       "command": "preparemsg",
+       "args": [
+        145686976
+       ],
+       "texts": [
+        {
+         "address": "0x08AF01C0",
+         "text": "[玩家/变量]把博士妻子的电话号码\n登陆到了精灵齿轮！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEFF17",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08AEFF18",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AEFF19",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145686342
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFF46",
+         "text": "如果以后还有事需要\n帮忙的话，我会电话联系你的。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEFF1F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEFF21",
+       "command": "setflag",
+       "args": [
+        5966
+       ]
+      },
+      {
+       "at": "0x08AEFF24",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E45D6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F50277",
+     "event_roots": [
+      {
+       "map_id": "43:5",
+       "place": "若叶镇",
+       "kind": "人物",
+       "local_id": 6,
+       "event_index": 5,
+       "x": 6,
+       "y": 8,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g43_n005.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F50277",
+       "command": "applymovement",
+       "args": [
+        7,
+        150275071
+       ]
+      },
+      {
+       "at": "0x08F5027E",
+       "command": "waitmovement",
+       "args": [
+        7
+       ]
+      },
+      {
+       "at": "0x08F50281",
+       "command": "goto",
+       "args": [
+        144590294
+       ],
+       "targets": [
+        "0x089E45D6"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "43:5/local6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5068E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5068E",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F50693",
+       "command": "goto_if",
+       "args": [
+        1,
+        150275814
+       ],
+       "targets": [
+        "0x08F506E6"
+       ]
+      },
+      {
+       "at": "0x08F50699",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144590740
+       ],
+       "texts": [
+        {
+         "address": "0x089E4794",
+         "text": "好吧，\n我知道你也有很多事要去做。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5069F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F506A1",
+       "command": "applymovement",
+       "args": [
+        7,
+        150275773
+       ]
+      },
+      {
+       "at": "0x08F506A8",
+       "command": "waitmovement",
+       "args": [
+        7
+       ]
+      },
+      {
+       "at": "0x08F506AB",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F506AC",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E45F7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F506E6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F506E6",
+       "command": "setflag",
+       "args": [
+        2629
+       ]
+      },
+      {
+       "at": "0x08F506E9",
+       "command": "goto",
+       "args": [
+        144590549
+       ],
+       "targets": [
+        "0x089E46D5"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5068E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F507EA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F507EA",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F507EB",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F507EE",
+       "command": "goto",
+       "args": [
+        144590433
+       ],
+       "targets": [
+        "0x089E4661"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E4643"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,425 @@
+{
+ "generated": "2026-10-03T16:41:12",
+ "kind": "extended_coord_script",
+ "bases": {
+  "0x09CDCA89": "coord table 0x09DFCA74 / header 0x09DFC9C4",
+  "0x09CDCD1D": "coord table 0x09DFCA74 / header 0x09DFC9C4",
+  "0x09CDCF65": "coord table 0x09DFCA74 / header 0x09DFC9C4",
+  "0x09CDD7BC": "coord table 0x09DFC0F0 / header 0x09DFC0C4"
+ },
+ "roots": {
+  "0x09CDCA89": {
+   "reachable_scripts": 8,
+   "dialogue": [
+    {
+     "at": "0x09CDCB3F",
+     "cmd": "loadpointer",
+     "text": "那、那个……请等一下！\\p……太好了，赶上了。\\n\\var[01]……你没事吧？\\p之前在浅葱市的灯塔\\n你和大家为了光儿，为了我，\\l那么勇敢地对抗火箭队……\\p那、那份恩情，我一直记在心里！\\p所以……这次轮到我来保护你了！"
+    },
+    {
+     "at": "0x09CDCBAA",
+     "cmd": "loadpointer",
+     "text": "钢……钢属性是……\\n非常坚硬的！\\l绝对不会让它伤害到你！"
+    },
+    {
+     "at": "0x09CDCBC9",
+     "cmd": "loadpointer",
+     "text": "将与蜜柑共同作战，\\n请选择参战的宝可梦。"
+    },
+    {
+     "at": "0x09CDCC2A",
+     "cmd": "loadpointer",
+     "text": "太好了，它暂时安静下来了。"
+    },
+    {
+     "at": "0x09CDCC38",
+     "cmd": "preparemsg",
+     "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将化石翼龙超级进化的波动\\n储存在了超级石中。"
+    },
+    {
+     "at": "0x09CDCC5A",
+     "cmd": "loadpointer",
+     "text": "那个，\\var[01]……\\n请让宝可梦们稍微休息一下吧。"
+    },
+    {
+     "at": "0x09CDCC89",
+     "cmd": "loadpointer",
+     "text": "请继续前进吧，\\var[01]。\\p这只化石翼龙……\\n就由我和大钢蛇来拦住！\\l请一定要小心……"
+    }
+   ],
+   "setflags": [
+    "0x908",
+    "0x90b",
+    "0x90c",
+    "0xabd",
+    "0xc0b"
+   ],
+   "clearflags": [
+    "0x1482"
+   ],
+   "specials": [
+    "0",
+    "245",
+    "275",
+    "276",
+    "310",
+    "312",
+    "39",
+    "40",
+    "90"
+   ],
+   "applymovement": [
+    [
+     127,
+     164482320
+    ],
+    [
+     127,
+     164482323
+    ],
+    [
+     175,
+     164482311
+    ],
+    [
+     178,
+     164482311
+    ],
+    [
+     255,
+     164482299
+    ],
+    [
+     255,
+     164482302
+    ],
+    [
+     255,
+     164482304
+    ],
+    [
+     255,
+     164482307
+    ],
+    [
+     255,
+     164482326
+    ]
+   ],
+   "note": "setflag 0x0908/0x090b/0x090c/0x0abd and the special/heal block come from a shared tail reachable from every root; the per-root unique flag is the differing setflag."
+  },
+  "0x09CDCD1D": {
+   "reachable_scripts": 8,
+   "dialogue": [
+    {
+     "at": "0x09CDCDD3",
+     "cmd": "loadpointer",
+     "text": "别怕，\\var[01]！\\p说到昆虫宝可梦的知识，\\n我绝不会输给任何人！\\p即使面对因超级进化而暴走的\\n虫属性宝可梦……\\p我也一定能找到办法，\\n让它冷静下来！\\p让它见识一下，\\n我们的厉害吧！"
+    },
+    {
+     "at": "0x09CDCE39",
+     "cmd": "loadpointer",
+     "text": "将与阿笔共同作战，\\n请选择参战的宝可梦。"
+    },
+    {
+     "at": "0x09CDCE9A",
+     "cmd": "loadpointer",
+     "text": "凯罗斯似乎平静了一些……"
+    },
+    {
+     "at": "0x09CDCEA8",
+     "cmd": "preparemsg",
+     "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级凯罗斯的波动\\n储存在了超级石中。"
+    },
+    {
+     "at": "0x09CDCECA",
+     "cmd": "loadpointer",
+     "text": "哇，比想象中还要难对付呢。\\p不过，它作为虫属性的\\n极限研究对象，真是再好不过！\\p……不对，\\n现在不是搞研究的时候！\\p你快去广播塔，\\n一定要阻止火箭队！\\p\\var[01]，不要停下脚步！\\p宝可梦的体力，\\n我来帮你恢复。"
+    },
+    {
+     "at": "0x09CDCEF9",
+     "cmd": "loadpointer",
+     "text": "这只凯罗斯就交给我来安抚！\\p快去吧，\\n去斩断这一切的源头！"
+    }
+   ],
+   "setflags": [
+    "0x908",
+    "0x90b",
+    "0x90c",
+    "0xabd",
+    "0xc09"
+   ],
+   "clearflags": [
+    "0x1483"
+   ],
+   "specials": [
+    "0",
+    "245",
+    "275",
+    "276",
+    "310",
+    "312",
+    "39",
+    "40",
+    "90"
+   ],
+   "applymovement": [
+    [
+     127,
+     164482904
+    ],
+    [
+     127,
+     164482907
+    ],
+    [
+     174,
+     164482895
+    ],
+    [
+     176,
+     164482895
+    ],
+    [
+     255,
+     164482883
+    ],
+    [
+     255,
+     164482886
+    ],
+    [
+     255,
+     164482888
+    ],
+    [
+     255,
+     164482891
+    ],
+    [
+     255,
+     164482910
+    ]
+   ],
+   "note": "setflag 0x0908/0x090b/0x090c/0x0abd and the special/heal block come from a shared tail reachable from every root; the per-root unique flag is the differing setflag."
+  },
+  "0x09CDCF65": {
+   "reachable_scripts": 9,
+   "dialogue": [
+    {
+     "at": "0x09CDD035",
+     "cmd": "loadpointer",
+     "text": "\\var[01]！抱歉，\\n我来迟了！\\p天空中散布的异样电波，\\n干扰了鸟宝可梦的飞行。\\p降落稍微花了点时间。"
+    },
+    {
+     "at": "0x09CDD0A0",
+     "cmd": "loadpointer",
+     "text": "它要过来了！\\n我们一起上！"
+    },
+    {
+     "at": "0x09CDD0BF",
+     "cmd": "loadpointer",
+     "text": "将与阿速共同作战，\\n请选择参战的宝可梦。"
+    },
+    {
+     "at": "0x09CDD120",
+     "cmd": "loadpointer",
+     "text": "长耳兔似乎平静了一些……"
+    },
+    {
+     "at": "0x09CDD12E",
+     "cmd": "preparemsg",
+     "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级长耳兔的波动\\n储存在了超级石中。"
+    },
+    {
+     "at": "0x09CDD150",
+     "cmd": "loadpointer",
+     "text": "呼……总算压制住\\n它的行动了。\\p\\var[01]，你的宝可梦\\n都累了吧？\\l快用这个恢复一下体力！"
+    },
+    {
+     "at": "0x09CDD17F",
+     "cmd": "loadpointer",
+     "text": "这只长耳兔交给我，\\n我会和大比鸟在天空中，\\l一直盯着它的！\\p你快向广播塔去！\\p去击碎那些玷污天空，\\n伤害宝可梦的混蛋们，\\l粉碎他们的野心！"
+    }
+   ],
+   "setflags": [
+    "0x908",
+    "0x90b",
+    "0x90c",
+    "0xabd",
+    "0xc27"
+   ],
+   "clearflags": [
+    "0x1483",
+    "0x1484"
+   ],
+   "specials": [
+    "0",
+    "245",
+    "275",
+    "276",
+    "310",
+    "312",
+    "39",
+    "40",
+    "90"
+   ],
+   "applymovement": [
+    [
+     127,
+     164483600
+    ],
+    [
+     127,
+     164483603
+    ],
+    [
+     177,
+     164483591
+    ],
+    [
+     179,
+     164483591
+    ],
+    [
+     255,
+     164483569
+    ],
+    [
+     255,
+     164483573
+    ],
+    [
+     255,
+     164483576
+    ],
+    [
+     255,
+     164483580
+    ],
+    [
+     255,
+     164483585
+    ],
+    [
+     255,
+     164483606
+    ]
+   ],
+   "note": "setflag 0x0908/0x090b/0x090c/0x0abd and the special/heal block come from a shared tail reachable from every root; the per-root unique flag is the differing setflag."
+  },
+  "0x09CDD7BC": {
+   "reachable_scripts": 9,
+   "dialogue": [
+    {
+     "at": "0x09CDD889",
+     "cmd": "loadpointer",
+     "text": "\\var[01]！\\n看来你也被这些失控的\\l宝可梦绊住了脚步。\\p拥有极高智商的胡地，\\n一旦因为超级进化而暴走，\\l它的精神力将是极其危险的武器。"
+    },
+    {
+     "at": "0x09CDD8F4",
+     "cmd": "loadpointer",
+     "text": "我们上，\\var[01]！"
+    },
+    {
+     "at": "0x09CDD913",
+     "cmd": "loadpointer",
+     "text": "将与松叶共同作战，\\n请选择参战的宝可梦。"
+    },
+    {
+     "at": "0x09CDD974",
+     "cmd": "loadpointer",
+     "text": "胡地似乎平静了一些……"
+    },
+    {
+     "at": "0x09CDD982",
+     "cmd": "preparemsg",
+     "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级胡地的波动\\n储存在了超级石中。"
+    },
+    {
+     "at": "0x09CDD9A4",
+     "cmd": "loadpointer",
+     "text": "我来帮你\\n处理宝可梦的伤势吧！"
+    },
+    {
+     "at": "0x09CDD9D3",
+     "cmd": "loadpointer",
+     "text": "\\var[01]，听我说……\\n之前在缘朱市的图书馆，\\p我们推测银色之羽遗落在\\n某座古老的塔上。\\p我查阅了更多的古籍，\\n终于明白了……\\p如今的满金广播塔，\\n在改建之前正是一座\\l历史悠久的木造古塔！"
+    },
+    {
+     "at": "0x09CDDA07",
+     "cmd": "loadpointer",
+     "text": "也就是说……\\n阿波罗占领广播塔，\\l根本不是为了控制电台节目！\\p他真正的目的，\\n是藏在这里的……银色之羽！\\p集齐海声铃铛碎片和银色之羽，\\n他们就能……\\p总之，这只胡地交给我。\\n\\var[01]！快进去！\\p赶在阿波罗得到银色之羽前，\\n粉碎他们的野心！"
+    }
+   ],
+   "setflags": [
+    "0x908",
+    "0x90b",
+    "0x90c",
+    "0xabd",
+    "0xc05"
+   ],
+   "clearflags": [
+    "0x1485"
+   ],
+   "specials": [
+    "0",
+    "245",
+    "275",
+    "276",
+    "310",
+    "312",
+    "39",
+    "40",
+    "90"
+   ],
+   "applymovement": [
+    [
+     28,
+     164485766
+    ],
+    [
+     29,
+     164485766
+    ],
+    [
+     127,
+     164485775
+    ],
+    [
+     127,
+     164485777
+    ],
+    [
+     255,
+     164485749
+    ],
+    [
+     255,
+     164485752
+    ],
+    [
+     255,
+     164485754
+    ],
+    [
+     255,
+     164485757
+    ],
+    [
+     255,
+     164485761
+    ],
+    [
+     255,
+     164485779
+    ],
+    [
+     255,
+     164485781
+    ]
+   ],
+   "note": "setflag 0x0908/0x090b/0x090c/0x0abd and the special/heal block come from a shared tail reachable from every root; the per-root unique flag is the differing setflag."
+  }
+ }
+}

@@ -1,0 +1,2584 @@
+{
+ "title": "痛苦的大食花",
+ "quest_id": 27,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b118",
+    "title": "痛苦的大食花",
+    "title_address": "0x8e3b924",
+    "description": "前往桔梗市树海的深处\n将大食花丛痛苦中解救出来。",
+    "description_address": "0x8e3b8f5",
+    "unknown_u16": 637,
+    "unknown_u16_hex": "0x027D",
+    "accept_flag": 3180,
+    "accept_flag_hex": "0x0C6C",
+    "complete_flag": 3182,
+    "complete_flag_hex": "0x0C6E",
+    "map_group": 1,
+    "map_num": 88,
+    "tail_hex": "04 01 00 00",
+    "index": 27,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3b8f5",
+    "legacy_match_count": 0,
+    "current_description": "前往桔梗市树海的深处\n将大食花丛痛苦中解救出来。",
+    "catalog_map": {
+     "id": "1:88",
+     "name": "喇叭芽之塔"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x087B217F",
+    "0x08EEC593",
+    "0x08EEC9AC",
+    "0x08EECE13"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F50432",
+     "map_id": "1:88",
+     "place": "喇叭芽之塔",
+     "kind": "人物",
+     "local_id": 5,
+     "event_index": 4,
+     "x": 16,
+     "y": 10,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g01_n088.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x087B217F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B217F",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x087B2180",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        537
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕路奇亚",
+        "item": "经验糖果S",
+        "move": "暗黑爆破"
+       }
+      },
+      {
+       "at": "0x087B2185",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B218A",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x087B218C",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x087B218D",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B2190",
+       "command": "setflag",
+       "args": [
+        3182
+       ],
+       "task_flag_labels": [
+        {
+         "title": "痛苦的大食花",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x087B2193",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B2196",
+       "command": "addvar",
+       "args": [
+        20789,
+        8
+       ]
+      },
+      {
+       "at": "0x087B219B",
+       "command": "addmoney",
+       "args": [
+        10000,
+        0
+       ]
+      },
+      {
+       "at": "0x087B21A1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149867693
+       ],
+       "texts": [
+        {
+         "address": "0x08EECCAD",
+         "text": "完成任务:<痛苦的大食花>"
+        }
+       ]
+      },
+      {
+       "at": "0x087B21A7",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B21AC",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B21B1",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x087B21B6",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x087B21BB",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x087B21C0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149867657
+       ],
+       "texts": [
+        {
+         "address": "0x08EECC89",
+         "text": "获得了8点BracerPoints和10000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x087B21C6",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B21C8",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x087B21CD",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B21D0",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EECAE3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089CFCF5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089CFCF5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144506111
+       ],
+       "texts": [
+        {
+         "address": "0x089CFCFF",
+         "text": "喇叭芽的性格很平和……\n但它同时也是毒属性的宝可梦。\n如果不小心中毒了，\n就快点去精灵中心治疗吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x089CFCFB",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089CFCFD",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7288"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089D0C62",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089D0C62",
+       "command": "checkflag",
+       "args": [
+        4361
+       ]
+      },
+      {
+       "at": "0x089D0C65",
+       "command": "goto_if",
+       "args": [
+        1,
+        144510351
+       ],
+       "targets": [
+        "0x089D0D8F"
+       ]
+      },
+      {
+       "at": "0x089D0C6B",
+       "command": "setflag",
+       "args": [
+        4360
+       ]
+      },
+      {
+       "at": "0x089D0C6E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EEC593"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089D0D8F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089D0D8F",
+       "command": "spritebehave",
+       "args": [
+        32,
+        9
+       ]
+      },
+      {
+       "at": "0x089D0D93",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089D0C62"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E34D3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E34D3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144586469
+       ],
+       "texts": [
+        {
+         "address": "0x089E36E5",
+         "text": "好吧，\n我理解你的感受。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E34D9",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E34DB",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E730B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7288",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7288",
+       "command": "checkflag",
+       "args": [
+        5489
+       ],
+       "task_flag_labels": [
+        {
+         "title": "修行的难题",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E728B",
+       "command": "goto_if",
+       "args": [
+        1,
+        144601810
+       ],
+       "targets": [
+        "0x089E72D2"
+       ]
+      },
+      {
+       "at": "0x089E7291",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E7294",
+       "command": "goto_if",
+       "args": [
+        1,
+        144601760
+       ],
+       "targets": [
+        "0x089E72A0"
+       ]
+      },
+      {
+       "at": "0x089E729A",
+       "command": "goto",
+       "args": [
+        144506101
+       ],
+       "targets": [
+        "0x089CFCF5"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E76AC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E72A0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E72A0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144506111
+       ],
+       "texts": [
+        {
+         "address": "0x089CFCFF",
+         "text": "喇叭芽的性格很平和……\n但它同时也是毒属性的宝可梦。\n如果不小心中毒了，\n就快点去精灵中心治疗吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E72A6",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E72A8",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144601988
+       ]
+      },
+      {
+       "at": "0x089E72AF",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E72B2",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E72B5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144602000
+       ],
+       "texts": [
+        {
+         "address": "0x089E7390",
+         "text": "你就是游击士协会的训练家吗？\n请帮帮老朽吧。\n这里是喇叭芽之塔，\n据传说是一只超过30米高\n的喇叭芽建造了塔中央的通心柱。\n虽然不知道这个传说的真实性，\n但老朽可以理解，\n这座塔看似摇摇晃晃，\n实际则是采取自喇叭芽根茎\n的灵感而来的柔结构，\n拥有很好的防震性能，\n也因此这里是喇叭芽的修行圣地。\n可惜老朽始终没能捕捉到喇叭芽，\n你能帮我捕捉一只赠与老朽么？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E72BB",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E72BD",
+       "command": "goto",
+       "args": [
+        150276237
+       ],
+       "targets": [
+        "0x08F5088D"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7288"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E72D2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E72D2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144602554
+       ],
+       "texts": [
+        {
+         "address": "0x089E75BA",
+         "text": "怎么样，\n你捕捉到喇叭芽了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E72D8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E72DA",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x089E72DD",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x089E72E0",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x089E72E1",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x089E72E6",
+       "command": "goto_if",
+       "args": [
+        1,
+        144601978
+       ],
+       "targets": [
+        "0x089E737A"
+       ]
+      },
+      {
+       "at": "0x089E72EC",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089E72F1",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x089E72F6",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        69
+       ],
+       "possible_names_not_semantics": {
+        "species": "喇叭芽",
+        "item": "PP提升剂",
+        "move": "地球上投"
+       }
+      },
+      {
+       "at": "0x089E72FB",
+       "command": "goto_if",
+       "args": [
+        1,
+        144602828
+       ],
+       "targets": [
+        "0x089E76CC"
+       ]
+      },
+      {
+       "at": "0x089E7301",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144602652
+       ],
+       "texts": [
+        {
+         "address": "0x089E761C",
+         "text": "咦，\n喇叭芽不应该长这样吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7307",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7309",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E7288"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E730B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E730B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144588069
+       ],
+       "texts": [
+        {
+         "address": "0x089E3D25",
+         "text": "真的要让出\n这只宝可梦吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7311",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E7313",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089E7318",
+       "command": "goto_if",
+       "args": [
+        1,
+        144585939
+       ],
+       "targets": [
+        "0x089E34D3"
+       ]
+      },
+      {
+       "at": "0x089E731E",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x089E731F",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089E7321",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x089E7322",
+       "command": "special",
+       "args": [
+        98
+       ]
+      },
+      {
+       "at": "0x089E7325",
+       "command": "setflag",
+       "args": [
+        5490
+       ],
+       "task_flag_labels": [
+        {
+         "title": "修行的难题",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7328",
+       "command": "clearflag",
+       "args": [
+        5491
+       ]
+      },
+      {
+       "at": "0x089E732B",
+       "command": "addobject",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x089E732E",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E7330",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144602680
+       ],
+       "texts": [
+        {
+         "address": "0x089E7638",
+         "text": "没错！\n这就是老朽梦寐以求的喇叭芽！\n太好了，\n这下子可以好好修行了。\n作为感谢，\n这个送给你吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7336",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7338",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x089E7339",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        699
+       ],
+       "possible_names_not_semantics": {
+        "species": "酋雷姆",
+        "item": "大根茎",
+        "move": "气场轮"
+       }
+      },
+      {
+       "at": "0x089E733E",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E7343",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E7345",
+       "command": "goto",
+       "args": [
+        150280413
+       ],
+       "targets": [
+        "0x08F518DD"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E76CC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E737A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E737A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144602584
+       ],
+       "texts": [
+        {
+         "address": "0x089E75D8",
+         "text": "捕捉喇叭芽的事就拜托你了！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7380",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7382",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E72D2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E74DC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E74DC",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E74DF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144602527
+       ],
+       "texts": [
+        {
+         "address": "0x089E759F",
+         "text": "接受任务:<修行的难题>"
+        }
+       ]
+      },
+      {
+       "at": "0x089E74E5",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E74EA",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E74EF",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x089E74F4",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E74F9",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x089E74FE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144602503
+       ],
+       "texts": [
+        {
+         "address": "0x089E7587",
+         "text": "太好了，\n那就拜托你了！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7504",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7506",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E750B",
+       "command": "setflag",
+       "args": [
+        5489
+       ],
+       "task_flag_labels": [
+        {
+         "title": "修行的难题",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E750E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F51241"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E76AC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E76AC",
+       "command": "checkflag",
+       "args": [
+        5490
+       ],
+       "task_flag_labels": [
+        {
+         "title": "修行的难题",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E76AF",
+       "command": "goto_if",
+       "args": [
+        1,
+        149866924
+       ],
+       "targets": [
+        "0x08EEC9AC"
+       ]
+      },
+      {
+       "at": "0x089E76B5",
+       "command": "goto",
+       "args": [
+        144601736
+       ],
+       "targets": [
+        "0x089E7288"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F50432"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E76CC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E76CC",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x089E76CD",
+       "command": "goto",
+       "args": [
+        144601867
+       ],
+       "targets": [
+        "0x089E730B"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E72D2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E77D9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E77D9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145687241
+       ],
+       "texts": [
+        {
+         "address": "0x08AF02C9",
+         "text": "获得了3点BracerPoints!"
+        }
+       ]
+      },
+      {
+       "at": "0x089E77DF",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E77E1",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E77E6",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE3153"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE3153",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE3153",
+       "command": "showmoney",
+       "args": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE3157",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145633988
+       ],
+       "texts": [
+        {
+         "address": "0x08AE32C4",
+         "text": "还有这些钱……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE315D",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AE315F",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE3165",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08AE3168",
+       "command": "updatemoney",
+       "args": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE316C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150280378
+       ],
+       "texts": [
+        {
+         "address": "0x08F518BA",
+         "text": "这是给你的一些报酬，\n谢谢你的帮忙！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE3172",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE3174",
+       "command": "hidemoney",
+       "args": [
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE3177",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AE3178",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE317B",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE317E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144602770
+       ],
+       "texts": [
+        {
+         "address": "0x089E7692",
+         "text": "完成任务:<修行的难题>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE3184",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE3189",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE318E",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE3193",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AE3198",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AE319D",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08AE31A2",
+       "command": "goto",
+       "args": [
+        144603097
+       ],
+       "targets": [
+        "0x089E77D9"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EECC80"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EEC585",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEC585",
+       "command": "checkflag",
+       "args": [
+        3178
+       ]
+      },
+      {
+       "at": "0x08EEC588",
+       "command": "goto_if",
+       "args": [
+        0,
+        149867641
+       ],
+       "targets": [
+        "0x08EECC79"
+       ]
+      },
+      {
+       "at": "0x08EEC58E",
+       "command": "goto",
+       "args": [
+        144506101
+       ],
+       "targets": [
+        "0x089CFCF5"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EEC9AC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EEC593",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEC593",
+       "command": "setflag",
+       "args": [
+        3181
+       ]
+      },
+      {
+       "at": "0x08EEC596",
+       "command": "checkflag",
+       "args": [
+        3180
+       ],
+       "task_flag_labels": [
+        {
+         "title": "痛苦的大食花",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEC599",
+       "command": "call_if",
+       "args": [
+        1,
+        149865893
+       ],
+       "targets": [
+        "0x08EEC5A5"
+       ]
+      },
+      {
+       "at": "0x08EEC59F",
+       "command": "goto",
+       "args": [
+        144510050
+       ],
+       "targets": [
+        "0x089D0C62"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "map_script",
+       "where": "3:68/tag3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EEC5A5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEC5A5",
+       "command": "checkflag",
+       "args": [
+        3127
+       ]
+      },
+      {
+       "at": "0x08EEC5A8",
+       "command": "call_if",
+       "args": [
+        0,
+        149866220
+       ],
+       "targets": [
+        "0x08EEC6EC"
+       ]
+      },
+      {
+       "at": "0x08EEC5AE",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EEC593"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EEC5B1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEC5B1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149866768
+       ],
+       "texts": [
+        {
+         "address": "0x08EEC910",
+         "text": "老朽能遇到你\n这样热心的训练家，\n真是莫大的缘分啊。\n如果不嫌弃的话，\n能和老朽交换一下电话号码吗？\n等这只喇叭芽\n的修行有了成果，\n老朽想第一时间\n与你分享这份喜悦。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEC5B7",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EEC5B9",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08EEC5BE",
+       "command": "goto_if",
+       "args": [
+        1,
+        149866133
+       ],
+       "targets": [
+        "0x08EEC695"
+       ]
+      },
+      {
+       "at": "0x08EEC5C4",
+       "command": "fanfare",
+       "args": [
+        317
+       ]
+      },
+      {
+       "at": "0x08EEC5C7",
+       "command": "setflag",
+       "args": [
+        3178
+       ]
+      },
+      {
+       "at": "0x08EEC5CA",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EEC5CD",
+       "command": "preparemsg",
+       "args": [
+        149866084
+       ],
+       "texts": [
+        {
+         "address": "0x08EEC664",
+         "text": "[玩家/变量]把僧侣勿念的电话号码\n登陆到了精灵齿轮！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEC5D2",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08EEC5D3",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EEC5D4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149865950
+       ],
+       "texts": [
+        {
+         "address": "0x08EEC5DE",
+         "text": "呵呵，真是太感谢了！\n那么，如果喇叭芽在修行中\n有了什么惊人的变化……\n老朽一定会打电话通知你的。\n平时在外旅行也要注意安全啊，\n年轻的训练家！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEC5DA",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EEC5DC",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EECC79"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EEC695",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEC695",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149866143
+       ],
+       "texts": [
+        {
+         "address": "0x08EEC69F",
+         "text": "这样啊……\n老朽会一直在\n喇叭芽之塔里修行，\n如果你改变主意了，\n随时欢迎来找老朽。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEC69B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EEC69D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EEC5B1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EEC6EC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEC6EC",
+       "command": "clearflag",
+       "args": [
+        3181
+       ]
+      },
+      {
+       "at": "0x08EEC6EF",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EEC5A5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EEC9AC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEC9AC",
+       "command": "checkflag",
+       "args": [
+        3182
+       ],
+       "task_flag_labels": [
+        {
+         "title": "痛苦的大食花",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEC9AF",
+       "command": "goto_if",
+       "args": [
+        1,
+        149866995
+       ],
+       "targets": [
+        "0x08EEC9F3"
+       ]
+      },
+      {
+       "at": "0x08EEC9B5",
+       "command": "checkflag",
+       "args": [
+        3127
+       ]
+      },
+      {
+       "at": "0x08EEC9B8",
+       "command": "goto_if",
+       "args": [
+        1,
+        149867235
+       ],
+       "targets": [
+        "0x08EECAE3"
+       ]
+      },
+      {
+       "at": "0x08EEC9BE",
+       "command": "checkflag",
+       "args": [
+        3180
+       ],
+       "task_flag_labels": [
+        {
+         "title": "痛苦的大食花",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEC9C1",
+       "command": "goto_if",
+       "args": [
+        1,
+        149868041
+       ],
+       "targets": [
+        "0x08EECE09"
+       ]
+      },
+      {
+       "at": "0x08EEC9C7",
+       "command": "checkflag",
+       "args": [
+        3179
+       ]
+      },
+      {
+       "at": "0x08EEC9CA",
+       "command": "goto_if",
+       "args": [
+        1,
+        149868051
+       ],
+       "targets": [
+        "0x08EECE13"
+       ]
+      },
+      {
+       "at": "0x08EEC9D0",
+       "command": "goto",
+       "args": [
+        149865861
+       ],
+       "targets": [
+        "0x08EEC585"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E76AC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EEC9F3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEC9F3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149867005
+       ],
+       "texts": [
+        {
+         "address": "0x08EEC9FD",
+         "text": "经过上次那场惊险的意外，\n老朽正在与大食花从头培养默契。\n那股沉睡在\n它体内的神秘力量，\n虽然十分危险，但也\n证明了它拥有着无限的潜力。\n只要老朽与它\n真正做到心意相通，\n总有一天，一定能以平和的姿态\n去接纳那股力量吧。\n这一切都要\n感谢你啊，[玩家/变量]！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEC9F9",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EEC9FB",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EEC9AC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EECAE3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EECAE3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149867806
+       ],
+       "texts": [
+        {
+         "address": "0x08EECD1E",
+         "text": "[玩家/变量]！你回来了！\n多亏了你的帮助，\n大食花已经恢复了冷静。\n大食花能在彻底失控前，\n强忍着痛苦跑到这无人的树海，\n说明它心里一直\n有着温柔的底线啊。\n大食花之前那痛苦的表现……\n恐怕是因为老朽\n与它的羁绊还不够深，\n无法驾驭那股\n沉睡在它体内的神秘力量啊。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EECAE9",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EECAEB",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EECAEC",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EECAEF",
+       "command": "applymovement",
+       "args": [
+        5,
+        149867803
+       ]
+      },
+      {
+       "at": "0x08EECAF6",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EECAF9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149867722
+       ],
+       "texts": [
+        {
+         "address": "0x08EECCCA",
+         "text": "[玩家/变量]，这次也多亏了你。\n老朽会带着它\n从基础重新开始修行的！\n那么……\n这些是给你的报酬！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EECAFF",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EECB01",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EECB04",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EECB05",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        677
+       ],
+       "possible_names_not_semantics": {
+        "species": "驹刀小兵",
+        "item": "光之黏土",
+        "move": "牵手"
+       }
+      },
+      {
+       "at": "0x08EECB0A",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EECB0F",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EECB11",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EECB12",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EECB15",
+       "command": "goto",
+       "args": [
+        142287231
+       ],
+       "targets": [
+        "0x087B217F"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EEC9AC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EECC79",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EECC79",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EECC7A",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08EECC7B",
+       "command": "goto",
+       "args": [
+        149865905
+       ],
+       "targets": [
+        "0x08EEC5B1"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EEC585"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EECC80",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EECC80",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EECC81",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EECC84",
+       "command": "goto",
+       "args": [
+        145633619
+       ],
+       "targets": [
+        "0x08AE3153"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F518DD"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EECE09",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EECE09",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149869136
+       ],
+       "texts": [
+        {
+         "address": "0x08EED250",
+         "text": "喇叭芽之塔后面的那片树海……\n光靠步行是走不过去的。\n需要在通往塔的桥边使用\n冲浪游到对岸的陆地才能到达。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EECE0F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EECE11",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EEC9AC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EECE13",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EECE13",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149868385
+       ],
+       "texts": [
+        {
+         "address": "0x08EECF61",
+         "text": "[玩家/变量]！你总算来了！\n多亏了你的帮助，喇叭芽\n不仅修行的进度飞快，\n还顺利地进化成了大食花。\n可是就在前阵子……\n它突然变得非常狂躁，\n浑身散发着\n让人不寒而栗的彩色光芒……\n它似乎非常痛苦，\n为了不伤及塔里的修行者……\n它竟然逃到了\n塔后的树海深处去了！\n拜托你了……\n去树海深处寻找它，\n将它从痛苦中解救出来吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EECE19",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EECE1B",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EECE1C",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EECE1F",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EECE22",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149868668
+       ],
+       "texts": [
+        {
+         "address": "0x08EED07C",
+         "text": "接受任务:<痛苦的大食花>"
+        }
+       ]
+      },
+      {
+       "at": "0x08EECE28",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EECE2D",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EECE32",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08EECE37",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EECE3C",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08EECE41",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149869136
+       ],
+       "texts": [
+        {
+         "address": "0x08EED250",
+         "text": "喇叭芽之塔后面的那片树海……\n光靠步行是走不过去的。\n需要在通往塔的桥边使用\n冲浪游到对岸的陆地才能到达。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EECE47",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EECE49",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EECE4E",
+       "command": "setflag",
+       "args": [
+        3180
+       ],
+       "task_flag_labels": [
+        {
+         "title": "痛苦的大食花",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EECE51",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EEC9AC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F50432",
+     "event_roots": [
+      {
+       "map_id": "1:88",
+       "place": "喇叭芽之塔",
+       "kind": "人物",
+       "local_id": 5,
+       "event_index": 4,
+       "x": 16,
+       "y": 10,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g01_n088.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F50432",
+       "command": "applymovement",
+       "args": [
+        15,
+        150276098
+       ]
+      },
+      {
+       "at": "0x08F50439",
+       "command": "waitmovement",
+       "args": [
+        15
+       ]
+      },
+      {
+       "at": "0x08F5043C",
+       "command": "goto",
+       "args": [
+        144602796
+       ],
+       "targets": [
+        "0x089E76AC"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "1:88/local5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5088D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5088D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F50892",
+       "command": "goto_if",
+       "args": [
+        1,
+        150278721
+       ],
+       "targets": [
+        "0x08F51241"
+       ]
+      },
+      {
+       "at": "0x08F50898",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144602476
+       ],
+       "texts": [
+        {
+         "address": "0x089E756C",
+         "text": "好吧，\n不好意思打扰你了……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5089E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F508A0",
+       "command": "applymovement",
+       "args": [
+        15,
+        150276269
+       ]
+      },
+      {
+       "at": "0x08F508A7",
+       "command": "waitmovement",
+       "args": [
+        15
+       ]
+      },
+      {
+       "at": "0x08F508AA",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F508AB",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E72A0"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F51241",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F51241",
+       "command": "setflag",
+       "args": [
+        2642
+       ]
+      },
+      {
+       "at": "0x08F51244",
+       "command": "goto",
+       "args": [
+        144602332
+       ],
+       "targets": [
+        "0x089E74DC"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5088D"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F518DD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F518DD",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F518E0",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F518E1",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        536
+       ],
+       "possible_names_not_semantics": {
+        "species": "帝牙卢卡",
+        "item": "经验糖果XS",
+        "move": "找伙伴"
+       }
+      },
+      {
+       "at": "0x08F518E6",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F518EB",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F518ED",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F518EE",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F518F1",
+       "command": "goto",
+       "args": [
+        149867648
+       ],
+       "targets": [
+        "0x08EECC80"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E730B"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

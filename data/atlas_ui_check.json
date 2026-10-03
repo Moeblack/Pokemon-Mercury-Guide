@@ -1,0 +1,134 @@
+{
+  "scope": "离线地图UI：优先排序、精确定位、缩放、移动端、聚合、入口跳转、范围无虚构点位",
+  "basic": {
+    "initial": {
+      "title": "满金市·商业区周边 · 22张连通地图",
+      "count": "871 张地图 / 8762 条地点；地图保留当前筛选结果",
+      "firstMap": "满金市·商业区",
+      "firstPoint": "超级头巾混混",
+      "images": [
+        {
+          "loaded": true,
+          "src": "../maps/base/3f51d86e57631e39.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/a98fcee9994ce10e.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/f1359801c49f1dd2.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/6d7db6290b170ab2.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/97e836fedb390dc9.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/36071ca8c7ad165f.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/2f598d152e313dd7.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/296b687eb30da845.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/1a2dd87935988ee3.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/5f659a9f461a7c37.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/52e3c9de51e7c67c.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/e8687da85ad1a234.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/f78bab192666a272.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/a9a6354d2badcc54.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/c52abb899031e2aa.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/4e9f1b6d9715052e.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/f35e6dda488e5827.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/f58f1397766020a3.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/b3924a5a1fad3474.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/53c302cc3b464b15.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/ef160757d5dc4bf8.png"
+        },
+        {
+          "loaded": true,
+          "src": "../maps/base/bc129fe61c3093f6.png"
+        }
+      ]
+    },
+    "focused": {
+      "title": "超级头巾混混",
+      "map": "满金市·商业区",
+      "geometry": "精确点位 · 格坐标 55, 6",
+      "zoom": "210% · 1 / 22 张底图在视口附近",
+      "links": [
+        "../pokemon/wild_mega.html"
+      ]
+    },
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "viewportHeight": 463.53125
+    }
+  },
+  "interaction": {
+    "cluster": {
+      "title": "19 个地点",
+      "members": 19
+    },
+    "warp": {
+      "button": "进入 2号公路 →",
+      "after": "2号公路"
+    },
+    "area": {
+      "label": "地图范围记录 · 未提供精确坐标",
+      "activePins": 0
+    }
+  },
+  "browser_errors": {
+    "entries": [],
+    "nextSeq": 0,
+    "dropped": 0
+  }
+}

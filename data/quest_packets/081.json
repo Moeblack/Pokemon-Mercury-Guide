@@ -1,0 +1,1459 @@
+{
+ "title": "外卖订单的配送",
+ "quest_id": 81,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b550",
+    "title": "外卖订单的配送",
+    "title_address": "0x8e3c3cc",
+    "description": "负责送外卖的小哥感冒了，\n可是店里还有订单需要配送...\n有人能来餐厅帮帮我们吗？",
+    "description_address": "0x8e3c3a9",
+    "unknown_u16": 805,
+    "unknown_u16_hex": "0x0325",
+    "accept_flag": 6070,
+    "accept_flag_hex": "0x17B6",
+    "complete_flag": 6069,
+    "complete_flag_hex": "0x17B5",
+    "map_group": 49,
+    "map_num": 17,
+    "tail_hex": "01 01 00 00",
+    "index": 81,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe396d4",
+      "title": "外卖订单的配送",
+      "description_address": "0x8e39ff6",
+      "description": "负责送外卖的小哥感冒了，\\n可是店里还有订单需要配送...\\n有人能来餐厅帮帮我们吗？"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39ff6",
+    "legacy_match_count": 1,
+    "current_description": "帮助浅葱市餐厅的\n老板配送外卖订单。",
+    "catalog_map": {
+     "id": "49:17",
+     "name": "浅葱市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AF99DF",
+    "0x08AFC3B7",
+    "0x08AFC437",
+    "0x08AFD0DC"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08AF99DF",
+     "map_id": "49:6",
+     "place": "浅葱市",
+     "kind": "人物",
+     "local_id": 5,
+     "event_index": 2,
+     "x": 12,
+     "y": 3,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g49_n006.md"
+    },
+    {
+     "script": "0x08F5EE3A",
+     "map_id": "49:17",
+     "place": "浅葱市",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 10,
+     "y": 4,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g49_n017.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089DB04C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089DB04C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144552022
+       ],
+       "texts": [
+        {
+         "address": "0x089DB056",
+         "text": "你知道关都地区吗？\n貌似那里有着许多珍稀的宝可梦呢！\n我真想去关都呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x089DB052",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089DB054",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089F3275",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F3275",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144650879
+       ],
+       "texts": [
+        {
+         "address": "0x089F327F",
+         "text": "这个浅葱市食堂里面，\n有很多的菜都能让那些\n自卖自夸的海男满足！"
+        }
+       ]
+      },
+      {
+       "at": "0x089F327B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089F327D",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AF99DF",
+     "event_roots": [
+      {
+       "map_id": "49:6",
+       "place": "浅葱市",
+       "kind": "人物",
+       "local_id": 5,
+       "event_index": 2,
+       "x": 12,
+       "y": 3,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g49_n006.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AF99DF",
+       "command": "checkflag",
+       "args": [
+        6071
+       ]
+      },
+      {
+       "at": "0x08AF99E2",
+       "command": "goto_if",
+       "args": [
+        1,
+        144552012
+       ],
+       "targets": [
+        "0x089DB04C"
+       ]
+      },
+      {
+       "at": "0x08AF99E8",
+       "command": "checkflag",
+       "args": [
+        6070
+       ],
+       "task_flag_labels": [
+        {
+         "title": "外卖订单的配送",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF99EB",
+       "command": "goto_if",
+       "args": [
+        1,
+        145734453
+       ],
+       "targets": [
+        "0x08AFBB35"
+       ]
+      },
+      {
+       "at": "0x08AF99F1",
+       "command": "goto",
+       "args": [
+        144552012
+       ],
+       "targets": [
+        "0x089DB04C"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFBB35",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFBB35",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144552022
+       ],
+       "texts": [
+        {
+         "address": "0x089DB056",
+         "text": "你知道关都地区吗？\n貌似那里有着许多珍稀的宝可梦呢！\n我真想去关都呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFBB3B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFBB3D",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AFBB40",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145738657
+       ]
+      },
+      {
+       "at": "0x08AFBB47",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AFBB4A",
+       "command": "goto",
+       "args": [
+        145738659
+       ],
+       "targets": [
+        "0x08AFCBA3"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFC3B7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFC3B7",
+       "command": "checkflag",
+       "args": [
+        6069
+       ],
+       "task_flag_labels": [
+        {
+         "title": "外卖订单的配送",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC3BA",
+       "command": "goto_if",
+       "args": [
+        1,
+        144650869
+       ],
+       "targets": [
+        "0x089F3275"
+       ]
+      },
+      {
+       "at": "0x08AFC3C0",
+       "command": "checkflag",
+       "args": [
+        6073
+       ]
+      },
+      {
+       "at": "0x08AFC3C3",
+       "command": "goto_if",
+       "args": [
+        1,
+        145737046
+       ],
+       "targets": [
+        "0x08AFC556"
+       ]
+      },
+      {
+       "at": "0x08AFC3C9",
+       "command": "checkflag",
+       "args": [
+        6075
+       ]
+      },
+      {
+       "at": "0x08AFC3CC",
+       "command": "goto_if",
+       "args": [
+        1,
+        145736858
+       ],
+       "targets": [
+        "0x08AFC49A"
+       ]
+      },
+      {
+       "at": "0x08AFC3D2",
+       "command": "checkflag",
+       "args": [
+        6072
+       ]
+      },
+      {
+       "at": "0x08AFC3D5",
+       "command": "goto_if",
+       "args": [
+        1,
+        145737012
+       ],
+       "targets": [
+        "0x08AFC534"
+       ]
+      },
+      {
+       "at": "0x08AFC3DB",
+       "command": "checkflag",
+       "args": [
+        6074
+       ]
+      },
+      {
+       "at": "0x08AFC3DE",
+       "command": "goto_if",
+       "args": [
+        1,
+        145736848
+       ],
+       "targets": [
+        "0x08AFC490"
+       ]
+      },
+      {
+       "at": "0x08AFC3E4",
+       "command": "checkflag",
+       "args": [
+        6071
+       ]
+      },
+      {
+       "at": "0x08AFC3E7",
+       "command": "goto_if",
+       "args": [
+        1,
+        145736978
+       ],
+       "targets": [
+        "0x08AFC512"
+       ]
+      },
+      {
+       "at": "0x08AFC3ED",
+       "command": "checkflag",
+       "args": [
+        6070
+       ],
+       "task_flag_labels": [
+        {
+         "title": "外卖订单的配送",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC3F0",
+       "command": "goto_if",
+       "args": [
+        1,
+        145736838
+       ],
+       "targets": [
+        "0x08AFC486"
+       ]
+      },
+      {
+       "at": "0x08AFC3F6",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AFC3F9",
+       "command": "goto_if",
+       "args": [
+        1,
+        145736709
+       ],
+       "targets": [
+        "0x08AFC405"
+       ]
+      },
+      {
+       "at": "0x08AFC3FF",
+       "command": "goto",
+       "args": [
+        144650869
+       ],
+       "targets": [
+        "0x089F3275"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFC405",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFC405",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145738289
+       ],
+       "texts": [
+        {
+         "address": "0x08AFCA31",
+         "text": "怎么办怎么办……\n负责送外卖的打工小哥\n得了感冒来不了了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC40B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFC40D",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AFC410",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145738286
+       ]
+      },
+      {
+       "at": "0x08AFC417",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AFC41A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145738210
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC9E2",
+         "text": "你是之前和空木博士\n一起吃饭的那个孩子吧？\n能不能拜托你\n帮忙送一下外卖呢……？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC420",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AFC422",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFC427",
+       "command": "goto",
+       "args": [
+        150336213
+       ],
+       "targets": [
+        "0x08F5F2D5"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFC437",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFC437",
+       "command": "setflag",
+       "args": [
+        6070
+       ],
+       "task_flag_labels": [
+        {
+         "title": "外卖订单的配送",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC43A",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AFC43D",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFC440",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145738027
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC92B",
+         "text": "接受任务:<外卖订单的配送>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC446",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFC44B",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFC450",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AFC455",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AFC45A",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AFC45F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145737923
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC8C3",
+         "text": "谢谢你！\n真是帮我大忙了！\n至于要送到哪里去嘛……\n对不起，我忘了问地址了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC465",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFC467",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AFC46C",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AFC46F",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AFC472",
+       "command": "applymovement",
+       "args": [
+        255,
+        145737920
+       ]
+      },
+      {
+       "at": "0x08AFC479",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AFC47C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145737762
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC822",
+         "text": "但电话那头传来了船舶行驶的声音……\n你能推测出要送去哪里吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC482",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFC484",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFC486",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFC486",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145737659
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC7BB",
+         "text": "至于要送到哪里去嘛……\n对不起，我忘了问地址了。\n但电话那头传来了船舶行驶的声音……\n你能推测出要送去哪里吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC48C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFC48E",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFC490",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFC490",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145736868
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC4A4",
+         "text": "电话那头传来了踢腿的声音……\n你能推测出要送去哪里吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC496",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFC498",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFC49A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFC49A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145736925
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC4DD",
+         "text": "电话那头传来了海浪的声音……\n你能推测出要送去哪里吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC4A0",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFC4A2",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFC512",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFC512",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145737533
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC73D",
+         "text": "谢谢你帮我送外卖！\n不过……\n刚刚又来了新的订单……\n至于要送到哪里去嘛……\n对不起，我忘了问地址了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC518",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFC51A",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AFC51D",
+       "command": "applymovement",
+       "args": [
+        255,
+        145737920
+       ]
+      },
+      {
+       "at": "0x08AFC524",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AFC527",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145737474
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC702",
+         "text": "但电话那头传来了踢腿的声音……\n你能推测出要送去哪里吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC52D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFC52F",
+       "command": "setflag",
+       "args": [
+        6074
+       ]
+      },
+      {
+       "at": "0x08AFC532",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFC534",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFC534",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145737290
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC64A",
+         "text": "谢谢你帮我送外卖！\n不过……\n刚刚又来了新的订单……\n别这样看着我……\n我保证这是最后一单了！\n至于要送到哪里去嘛……\n对不起，我忘了问地址了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC53A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFC53C",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AFC53F",
+       "command": "applymovement",
+       "args": [
+        255,
+        145737920
+       ]
+      },
+      {
+       "at": "0x08AFC546",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AFC549",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145737419
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC6CB",
+         "text": "但电话那头传来了海浪的声音……\n你能推测出要送去哪里吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC54F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFC551",
+       "command": "setflag",
+       "args": [
+        6075
+       ]
+      },
+      {
+       "at": "0x08AFC554",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFC556",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFC556",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145737243
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC61B",
+         "text": "谢谢你帮我送外卖！\n虽然不多，但请收下这谢礼吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC55C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFC55E",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x08AFC55F",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        197
+       ],
+       "possible_names_not_semantics": {
+        "species": "月亮伊布",
+        "item": "幸运蛋",
+        "move": "看穿"
+       }
+      },
+      {
+       "at": "0x08AFC564",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFC569",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AFC56B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145737821
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC85D",
+         "text": "这就是廉价劳动力吗……\n与雇用外卖员相比，\n这点成本根本不值一提。\n哈哈，以后要不\n就采用外包的形式……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC571",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFC573",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AFC576",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145737240
+       ]
+      },
+      {
+       "at": "0x08AFC57D",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AFC580",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145737220
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC604",
+         "text": "嗯？\n我什么都没说！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFC586",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFC588",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFC58B",
+       "command": "goto",
+       "args": [
+        145739996
+       ],
+       "targets": [
+        "0x08AFD0DC"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFCBA3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFCBA3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145738554
+       ],
+       "texts": [
+        {
+         "address": "0x08AFCB3A",
+         "text": "哦，你是送外卖的吗？\n谢谢你特地送过来！\n我所乘坐的班次延误了……\n在这里等候的我饥渴难耐，\n便点了一份外卖……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFCBA9",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFCBAB",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFCBAE",
+       "command": "signmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AFCBAF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145738684
+       ],
+       "texts": [
+        {
+         "address": "0x08AFCBBC",
+         "text": "将外卖交给了顾客！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFCBB5",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08AFCBB7",
+       "command": "normalmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AFCBB8",
+       "command": "setflag",
+       "args": [
+        6071
+       ]
+      },
+      {
+       "at": "0x08AFCBBB",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFD0DC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFD0DC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145737154
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC5C2",
+         "text": "完成任务:<外卖订单的配送>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD0E2",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFD0E7",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFD0EC",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AFD0F1",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AFD0F6",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AFD0FB",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08AFD100",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145737185
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC5E1",
+         "text": "获得了3点BracerPoints和3000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD106",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFD108",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AFD10D",
+       "command": "addmoney",
+       "args": [
+        3000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AFD113",
+       "command": "setflag",
+       "args": [
+        6069
+       ],
+       "task_flag_labels": [
+        {
+         "title": "外卖订单的配送",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD116",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F5EE3A",
+     "event_roots": [
+      {
+       "map_id": "49:17",
+       "place": "浅葱市",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 10,
+       "y": 4,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g49_n017.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5EE3A",
+       "command": "applymovement",
+       "args": [
+        5,
+        150335934
+       ]
+      },
+      {
+       "at": "0x08F5EE41",
+       "command": "waitmovement",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F5EE44",
+       "command": "goto",
+       "args": [
+        145736631
+       ],
+       "targets": [
+        "0x08AFC3B7"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F5F2D5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5F2D5",
+       "command": "goto_if",
+       "args": [
+        1,
+        145736759
+       ],
+       "targets": [
+        "0x08AFC437"
+       ]
+      },
+      {
+       "at": "0x08F5F2DB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145738058
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC94A",
+         "text": "呃……好吧。\n你也得了感冒吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5F2E1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5F2E3",
+       "command": "applymovement",
+       "args": [
+        5,
+        150336377
+       ]
+      },
+      {
+       "at": "0x08F5F2EA",
+       "command": "waitmovement",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F5F2ED",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5F2EE",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,5408 @@
+{
+ "rom": "宝可梦水银FC~致150年后的你 Version 1.1 (1).gba",
+ "sha256": "131b009df7ab252deff0d6a0518ab82f88e82c940ee68d50d31033a899f7e3dd",
+ "encoding": "2-byte lead(0x01-0x1E)/trail from the wiki charmap + engine control codes decoded first (0xFA=\\l, 0xFB=\\p, 0xFE=\\n; 0xFD/0xF8/0xF9 one parameter; 0xFC control code with pret text.c parameter counts); 0xFF terminates",
+ "count": 370,
+ "strings": {
+  "0x08199421": {
+   "addr": "0x08199421",
+   "text": "哪一只宝可梦想要\\n忘记技能？",
+   "bytes": 27,
+   "raw": "09ba0f0b108c016307d709660e180ef1fe0d6405b205a709d23dff",
+   "referenced_by": [
+    {
+     "script": "0x0816D8B0",
+     "at": "0x0816D8B2",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08199445": {
+   "addr": "0x08199445",
+   "text": "要忘记哪个技能？",
+   "bytes": 16,
+   "raw": "0ef10d6405b209ba046005a709d23dff",
+   "referenced_by": [
+    {
+     "script": "0x0816D8B0",
+     "at": "0x0816D8E5",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08199465": {
+   "addr": "0x08199465",
+   "text": "\\var[02]好像只会\\n一个技能……",
+   "bytes": 22,
+   "raw": "fd0204e90e1e108c056efe0f0b046005a709d2b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x0816D92A",
+     "at": "0x0816D92F",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08199485": {
+   "addr": "0x08199485",
+   "text": "嗯！\\var[02]的\\var[03]吗？\\n要忘记这个技能？",
+   "bytes": 29,
+   "raw": "14613cfd02030bfd03092a3dfe0ef10d6405b21055046005a709d23dff",
+   "referenced_by": [
+    {
+     "script": "0x0816D8B0",
+     "at": "0x0816D902",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x081994B1": {
+   "addr": "0x081994B1",
+   "text": "完美搞定！\\p\\var[02]已经将\\n\\var[03]忘得一干二净了。",
+   "bytes": 37,
+   "raw": "0d520958044d034d3cfbfd020f21075d05f4fefd030d64030a0f0b043303a3076b089e37ff",
+   "referenced_by": [
+    {
+     "script": "0x0816D919",
+     "at": "0x0816D922",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x081994EA": {
+   "addr": "0x081994EA",
+   "text": "如果你有别的技能想要忘记\\n那么欢迎再次光临。",
+   "bytes": 43,
+   "raw": "0b6704c309d90f7e01ad030b05a709d20e180ef10d6405b2fe09bd094c05430f5b0fe502ae04aa08ac37ff",
+   "referenced_by": [
+    {
+     "script": "0x0816D941",
+     "at": "0x0816D943",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x0819951F": {
+   "addr": "0x0819951F",
+   "text": "你在想什么？\\n蛋怎么可能会学技能。",
+   "bytes": 32,
+   "raw": "09d90fe60e180bee094c3dfe02ee100a094c07d709d2056e0e9005a709d237ff",
+   "referenced_by": [
+    {
+     "script": "0x0816D937",
+     "at": "0x0816D939",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x081A2B88": {
+   "addr": "0x081A2B88",
+   "text": "我是宝可梦技能研究狂。\\p我知道宝可梦成长\\n所学的每个基本技能。\\p同时，我还在收集蘑菇。\\p给我小蘑菇。\\n或者一个大蘑菇。\\p如果你有的话，\\n我就教给一只宝可梦一个技能。",
+   "bytes": 150,
+   "raw": "0d980c0c016307d7096605a709d20eb9076f080837fb0d98107b0307016307d70966024b0226fe0c9c0e90030b095704600586017b05a709d237fb0d140bed3b0d9805460fe60c1a059a0998048537fb04620d980e2c0998048537fe057f10520f0b046002d30998048537fb0b6704c309d90f7e030b053d3bfe0d98077d071e04620f0b108c016307d709660f0b046005a709d237ff",
+   "referenced_by": [
+    {
+     "script": "0x08171619",
+     "at": "0x08171640",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x081A2C63": {
+   "addr": "0x081A2C63",
+   "text": "嗯……嗯……\\n没错！你的身上有蘑菇的香味！\\p你想让我教给你宝可梦\\n一个技能吗？",
+   "bytes": 69,
+   "raw": "1461b0b01461b0b0fe095302cd3c09d9030b0bcb0bad0f7e09980485030b0e100d7c3cfb09d90e180b430d98071e046209d9016307d70966fe0f0b046005a709d2092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x081716A5",
+     "at": "0x081716A7",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x081A2CC3": {
+   "addr": "0x081A2CC3",
+   "text": "那教给那只宝可梦好呢？",
+   "bytes": 22,
+   "raw": "09bd071e046209bd108c016307d7096604e909ce3dff",
+   "referenced_by": [
+    {
+     "script": "0x081716BE",
+     "at": "0x081716C0",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x081A2CE1": {
+   "addr": "0x081A2CE1",
+   "text": "教给它哪个技能好呢？",
+   "bytes": 20,
+   "raw": "071e04620c9f09ba046005a709d204e909ce3dff",
+   "referenced_by": [
+    {
+     "script": "0x081716F4",
+     "at": "0x081716F6",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x081A2CFC": {
+   "addr": "0x081A2CFC",
+   "text": "抱歉……\\p我不能把这个技能\\n教给这只宝可梦。",
+   "bytes": 40,
+   "raw": "01640ad1b0b0fb0d9801d609d201301055046005a709d2fe071e04621055108c016307d7096637ff",
+   "referenced_by": [
+    {
+     "script": "0x08171782",
+     "at": "0x08171784",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x081A2D43": {
+   "addr": "0x081A2D43",
+   "text": "那么，我需要一个或两个的蘑菇。\\n你打算给我哪个？",
+   "bytes": 45,
+   "raw": "09bd094c3b0d980e730ef10f0b0460057f08900460030b0998048537fe09d902d20c8604620d9809ba04603dff",
+   "referenced_by": [
+    {
+     "script": "0x0817175B",
+     "at": "0x0817175C",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x081A2D85": {
+   "addr": "0x081A2D85",
+   "text": "\\var[01]给了\\n两个小蘑菇。",
+   "bytes": 19,
+   "raw": "fd010462089efe089004600e2c0998048537ff",
+   "referenced_by": [
+    {
+     "script": "0x08171741",
+     "at": "0x0817174A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x081A2DB3": {
+   "addr": "0x081A2DB3",
+   "text": "\\var[01]给了\\n一个大蘑菇。",
+   "bytes": 19,
+   "raw": "fd010462089efe0f0b046002d30998048537ff",
+   "referenced_by": [
+    {
+     "script": "0x08171727",
+     "at": "0x08171730",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x081A2DE0": {
+   "addr": "0x081A2DE0",
+   "text": "如果你想让你的宝可梦学习\\n一个技能，就给我一个或两个蘑菇。",
+   "bytes": 56,
+   "raw": "0b6704c309d90e180b4309d9030b016307d709660e900dd4fe0f0b046005a709d23b077d04620d980f0b0460057f089004600998048537ff",
+   "referenced_by": [
+    {
+     "script": "0x0817179E",
+     "at": "0x081717A0",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x081A2E20": {
+   "addr": "0x081A2E20",
+   "text": "哼？\\n我不能教给一颗蛋什么技能。",
+   "bytes": 30,
+   "raw": "050e3dfe0d9801d609d2071e04620f0b07d302ee0bee094c05a709d237ff",
+   "referenced_by": [
+    {
+     "script": "0x08171790",
+     "at": "0x08171792",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B03D8": {
+   "addr": "0x087B03D8",
+   "text": "金色王冠",
+   "bytes": 9,
+   "raw": "07420b890d5d04a2ff",
+   "referenced_by": [
+    {
+     "script": "0x087B000A",
+     "at": "0x087B0022",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B03E3": {
+   "addr": "0x087B03E3",
+   "text": "银色王冠",
+   "bytes": 9,
+   "raw": "0f480b890d5d04a2ff",
+   "referenced_by": [
+    {
+     "script": "0x087B000A",
+     "at": "0x087B0030",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B03EE": {
+   "addr": "0x087B03EE",
+   "text": "哟，\\var[01]！\\n你和宝可梦的羁绊变得更深了吗？\\p如果是你的话，我随时准备着\\n为你进行极限特训哦！\\p要用金色还是银色王冠来让\\n50级以上的宝可梦进行极限特训？",
+   "bytes": 138,
+   "raw": "0f623bfd013cfe09d904f3016307d70966030b19ac014c01a1030a04660bcc089e092a3dfb0b6704c30c0c09d9030b053d3b0d980c890bed10eb017510f4fe0d7009d9074a0e5b05960e0b0cd90e9e0a133cfb0ef10f7107420b8905460c0c0f480b890d5d04a208290b43fea6a105a10f240bad030b016307d70966074a0e5b05960e0b0cd90e9e3dff",
+   "referenced_by": [
+    {
+     "script": "0x087B000A",
+     "at": "0x087B0038",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x087B047A": {
+   "addr": "0x087B047A",
+   "text": "好勒！\\n你想让哪一只宝可梦\\l进行极限特训？",
+   "bytes": 39,
+   "raw": "04e9084a3cfe09d90e180b4309ba0f0b108c016307d70966fa074a0e5b05960e0b0cd90e9e3dff",
+   "referenced_by": [
+    {
+     "script": "0x087B0097",
+     "at": "0x087B00A9",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x087B00C0",
+     "at": "0x087B00D2",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B04A3": {
+   "addr": "0x087B04A3",
+   "text": "怎…怎么会，对极限特训\\n没有兴趣么……？\\p不会的，不可能，绝对不可能！\\n你也有很多事放不下，对吧？\\p下次有时间的话，\\n要记得来找我哦！",
+   "bytes": 118,
+   "raw": "100ab0100a094c056e3b037905960e0b0cd90e9efe09530f7e0e560b24094cb0b03dfb01d6056e030b3b01d607d709d23b07a8037901d607d709d23cfe09d90f020f7e050b03850c0703c801d60de63b037901283dfb0de602ae0f7e0bed05cf030b053d3bfe0ef105b2030a082910450d980a133cff",
+   "referenced_by": [
+    {
+     "script": "0x087B05C8",
+     "at": "0x087B05CA",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B051B": {
+   "addr": "0x087B051B",
+   "text": "唉，\\n你好像并没有这个道具吧？",
+   "bytes": 28,
+   "raw": "01053bfe09d904e90e1e01bd09530f7e105504600307078f01283dff",
+   "referenced_by": [
+    {
+     "script": "0x087B06F2",
+     "at": "0x087B06F4",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B0539": {
+   "addr": "0x087B0539",
+   "text": "感觉怎么样？我已经\\n把它的能力锻炼到极限了哦！",
+   "bytes": 44,
+   "raw": "043a07a5100a094c0ee23d0d980f21075dfe01300c9f030b09d2087903720889030405960e0b089e0a133cff",
+   "referenced_by": [
+    {
+     "script": "0x087B077E",
+     "at": "0x087B0790",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x087B026D",
+     "at": "0x087B029B",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x087B02A8",
+     "at": "0x087B02D6",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x087B02E3",
+     "at": "0x087B0311",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x087B031E",
+     "at": "0x087B034C",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x087B0359",
+     "at": "0x087B0387",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x087B0394",
+     "at": "0x087B03C2",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B056C": {
+   "addr": "0x087B056C",
+   "text": "体力",
+   "bytes": 5,
+   "raw": "0ce60879ff",
+   "referenced_by": [
+    {
+     "script": "0x087B019C",
+     "at": "0x087B01A8",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B0573": {
+   "addr": "0x087B0573",
+   "text": "攻击",
+   "bytes": 5,
+   "raw": "046d0584ff",
+   "referenced_by": [
+    {
+     "script": "0x087B019C",
+     "at": "0x087B01B6",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B057A": {
+   "addr": "0x087B057A",
+   "text": "防御",
+   "bytes": 5,
+   "raw": "03c30fa7ff",
+   "referenced_by": [
+    {
+     "script": "0x087B019C",
+     "at": "0x087B01C4",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B0581": {
+   "addr": "0x087B0581",
+   "text": "速度",
+   "bytes": 5,
+   "raw": "0c7c036dff",
+   "referenced_by": [
+    {
+     "script": "0x087B019C",
+     "at": "0x087B01D2",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B0588": {
+   "addr": "0x087B0588",
+   "text": "特攻",
+   "bytes": 5,
+   "raw": "0cd9046dff",
+   "referenced_by": [
+    {
+     "script": "0x087B019C",
+     "at": "0x087B01E0",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B058F": {
+   "addr": "0x087B058F",
+   "text": "特防",
+   "bytes": 5,
+   "raw": "0cd903c3ff",
+   "referenced_by": [
+    {
+     "script": "0x087B019C",
+     "at": "0x087B01EE",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B0596": {
+   "addr": "0x087B0596",
+   "text": "你想让你的宝可梦训练\\n哪一项能力呢？",
+   "bytes": 35,
+   "raw": "09d90e180b4309d9030b016307d709660e9e088afe09ba0f0b0e1b09d2087909ce3dff",
+   "referenced_by": [
+    {
+     "script": "0x087B019C",
+     "at": "0x087B01F6",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x087B0909": {
+   "addr": "0x087B0909",
+   "text": "哎呀……\\n你的宝可梦的等级不够吧？",
+   "bytes": 31,
+   "raw": "01040ea6b0b0fe09d9030b016307d70966030b030f05a101d6048301283dff",
+   "referenced_by": [
+    {
+     "script": "0x087B08E7",
+     "at": "0x087B08F9",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089CE922": {
+   "addr": "0x089CE922",
+   "text": "传说到了晚上，喇叭芽之塔里\\n会出现妖怪哦。\\p就算让精灵和它战斗，\\n普通系的技能\\l也完全没有用呢！",
+   "bytes": 89,
+   "raw": "028b0c580304089e0d550bad3b082301270ea8107f0ca10864fe056e02780e030ee6049e0a1337fb077d0c860b43075b08bc04f30c9f1030035c3bfe0a900d100dd9030b05a709d2fa0f020d520b2b09530f7e0f7109ce3cff",
+   "referenced_by": [
+    {
+     "script": "0x089E7530",
+     "at": "0x089E7532",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089CE918",
+     "at": "0x089CE91A",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E7796",
+     "at": "0x089E7798",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E776A",
+     "at": "0x089E7798",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E787F",
+     "at": "0x089E78AD",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089CF82E": {
+   "addr": "0x089CF82E",
+   "text": "我的波波的名字\\n是最甜甜甜甜的小草莓！",
+   "bytes": 37,
+   "raw": "0d98030b01c301c3030b0993110efe0c0c11260cf10cf10cf10cf1030b0e2c020113273cff",
+   "referenced_by": [
+    {
+     "script": "0x089CF824",
+     "at": "0x089CF826",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089D05A1": {
+   "addr": "0x089D05A1",
+   "text": "施主竟然能来到这里！\\p在这座喇叭芽之塔，\\n通过修行来确认\\l人与精灵能否\\l通往光明的未来。\\p接下来，最后的考验\\n就是贫僧了！\\p那么就让贫僧确认一下\\n施主和精灵的羁绊吧！",
+   "bytes": 153,
+   "raw": "0be510c807690b3b09d208290304105508643cfb0fe610551131082301270ea8107f0ca13bfe0d1004c50e690e5b08290b370b4ffa0b4b0f99075b08bc09d203f4fa0d100d6104aa098f030b0d7a082937fb07250de608293b11260522030b07ca0ed2fe077d0c0c0a710b8c089e3cfb09bd094c077d0b430a710b8c0b370b4f0f0b0de6fe0be510c804f3075b08bc030b19ac014c01283cff",
+   "referenced_by": [
+    {
+     "script": "0x089D04AE",
+     "at": "0x089D04C9",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089D069D": {
+   "addr": "0x089D069D",
+   "text": "希望你的旅途\\n可以充实你的心灵……",
+   "bytes": 32,
+   "raw": "0dc70d6309d9030b08f40d26fe07d70f2402660bf109d9030b0e4f08bcb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x089D0501",
+     "at": "0x089D0513",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089D34E3": {
+   "addr": "0x089D34E3",
+   "text": "一到周五，\\n这个洞窟的深处就会\\l传出精灵的叫声。",
+   "bytes": 45,
+   "raw": "0f0b030410ad0dab3bfe10550460035907ed030b0bcc0286077d056efa028b0278075b08bc030b07220bd737ff",
+   "referenced_by": [
+    {
+     "script": "0x08F50F5D",
+     "at": "0x08F50F69",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089D3D8C": {
+   "addr": "0x089D3D8C",
+   "text": "哇，是你！\\n你看到了我的支援请求，对吧？\\p事情是这样的……\\n最近我的大牙狸时不时会发光，\\l为此我特地拜访了空木博士。\\p博士告诉我，\\n这是快要进化的迹象。\\p可…可是！！\\n我不想失去如此可爱的大牙狸！\\p我听说有一种叫不变之石的石头，\\n可以让精灵永不进化。\\p我想如果有不变之石的话，\\n我的问题就可以解决了吧！\\p那么……\\n你愿意帮我的忙吗？",
+   "bytes": 298,
+   "raw": "0d433b0c0c09d93cfe09d907c20304089e0d98030b10780fba0b0d0b153b037901283dfb0c070b0b0c0c10550ee2030bb0b0fe1126074e0d98030b02d30ea9085f0bed01d60bed056e03a504aa3bfa0d7002ab0d980cd9031f013c03c6089e07e309b401c40c0437fb01c40c0404500c820d983bfe10550c0c08030ef1074a053c030b058e0e2037fb07d7b007d70c0c3c3cfe0d9801d60e180be30b250b6702ab07d7010d030b02d30ea9085f3cfb0d980d070c580f7e0f0b10a7072201d601a1107f0beb030b0beb0d1f3bfe07d70f240b43075b08bc0f6e01d6074a053c37fb0d980e180b6704c30f7e01d601a1107f0beb030b053d3bfe0d98030b0d900ce3077d07d70f24073407a6089e01283cfb09bd094cb0b0fe09d90fc40f32014e0d98030b093e092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x089D3C96",
+     "at": "0x089D3CB9",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E2E7B",
+     "at": "0x089E2E97",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089D3EBC": {
+   "addr": "0x089D3EBC",
+   "text": "好吧，\\n呜呜。",
+   "bytes": 12,
+   "raw": "04e901283bfe0d9e0d9e37ff",
+   "referenced_by": [
+    {
+     "script": "0x089D3C96",
+     "at": "0x089D3CCC",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E2E7B",
+     "at": "0x089E2EAA",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089D3ECA": {
+   "addr": "0x089D3ECA",
+   "text": "真的吗？\\n真是太…太感谢你了！",
+   "bytes": 27,
+   "raw": "1059030b092a3dfe10590c0c0cacb00cac043a0e4609d9089e3cff",
+   "referenced_by": [
+    {
+     "script": "0x089D3CD4",
+     "at": "0x089D3CD9",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E34E3",
+     "at": "0x089E350A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089D3EE7": {
+   "addr": "0x089D3EE7",
+   "text": "如果你有找到不变之石的话，\\n要记得和我联系哦！",
+   "bytes": 44,
+   "raw": "0b6704c309d90f7e1045030401d601a1107f0beb030b053d3bfe0ef105b2030a04f30d98087d0dd90a133cff",
+   "referenced_by": [
+    {
+     "script": "0x089D3CD4",
+     "at": "0x089D3CE1",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E34E3",
+     "at": "0x089E3512",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E3214",
+     "at": "0x089E3226",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E3269",
+     "at": "0x089E327F",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089D3F18": {
+   "addr": "0x089D3F18",
+   "text": "哇！\\n没想到你真的找到了不变之石！\\p我已经不知道如何来\\n表达我的谢意了。\\p这…这是我的一点小心意！",
+   "bytes": 90,
+   "raw": "0d433cfe09530e18030409d91059030b10450304089e01d601a1107f0beb3cfb0d980f21075d01d6107b03070b6704f40829fe01aa02cf0d98030b0e460f32089e37fb1055b010550c0c0d98030b0f0b032a0e2c0e4f0f323cff",
+   "referenced_by": [
+    {
+     "script": "0x089D3D03",
+     "at": "0x089D3D1E",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089D3F74": {
+   "addr": "0x089D3F74",
+   "text": "我不是很懂这些道具，\\n但是它们应该对作为训练家的你，\\l还是有一点用处的吧！",
+   "bytes": 70,
+   "raw": "0d9801d60c0c050b035310550e340307078f3bfe02e90c0c0c9f095f0f54042d0379112f0d700e9e088a05bd030b09d93bfa05460c0c0f7e0f0b032a0f710286030b01283cff",
+   "referenced_by": [
+    {
+     "script": "0x089E3DB5",
+     "at": "0x089E3DD5",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089D3FBC": {
+   "addr": "0x089D3FBC",
+   "text": "看！\\n我的大牙狸可爱吗？\\l你也来一起玩吧！",
+   "bytes": 38,
+   "raw": "07c23cfe0d98030b02d30ea9085f07d7010d092a3dfa09d90f0208290f0b0aab0d4e01283cff",
+   "referenced_by": [
+    {
+     "script": "0x089D3D67",
+     "at": "0x089D3D69",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089D4C51": {
+   "addr": "0x089D4C51",
+   "text": "桐树林里的祠堂……\\n供奉着森林之神。",
+   "bytes": 33,
+   "raw": "0d110c3c08a90864030b19250cc4b0b0fe047103f110f40b8b08a9107f0bcf37ff",
+   "referenced_by": [
+    {
+     "script": "0x08AE7278",
+     "at": "0x08AE7284",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089D4B81",
+     "at": "0x089D4B84",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089D7A31": {
+   "addr": "0x089D7A31",
+   "text": "那么大的宝可梦\\n真的存在么？\\l如果真有，那一定非常厉害。",
+   "bytes": 52,
+   "raw": "09bd094c02d3030b016307d70966fe1059030b02c60fe6094c3dfa0b6704c310590f7e3b09bd0f0b034d03ca0225086c04cc37ff",
+   "referenced_by": [
+    {
+     "script": "0x089D7A27",
+     "at": "0x089D7A29",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089D901F": {
+   "addr": "0x089D901F",
+   "text": "说起头上的花，\\n每个月都会换上不同的呢！",
+   "bytes": 38,
+   "raw": "0c580aab0d1f0bad030b05353bfe095704600fce0361056e05480bad01d60d14030b09ce3cff",
+   "referenced_by": [
+    {
+     "script": "0x089D8FB8",
+     "at": "0x089D8FC8",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089DB056": {
+   "addr": "0x089DB056",
+   "text": "你知道关都地区吗？\\n貌似那里有着许多珍稀的宝可梦呢！\\l我真想去关都呢。",
+   "bytes": 66,
+   "raw": "09d9107b030704a00361031f0b1a092a3dfe094a0c6909bd08640f7e10f40e78038510570dc5030b016307d7096609ce3cfa0d9810590e180b2504a0036109ce37ff",
+   "referenced_by": [
+    {
+     "script": "0x08AFABE8",
+     "at": "0x08AFABEA",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089DB04C",
+     "at": "0x089DB04E",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AFB867",
+     "at": "0x08AFB869",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E0057": {
+   "addr": "0x089E0057",
+   "text": "我是从遥远的地方\\n到城都来留学的。\\p这只呆呆兽也是从\\n那儿陪我过来的伙伴。",
+   "bytes": 70,
+   "raw": "0d980c0c02b30eea0fc2030b031f03c0fe030402490361082908c70e90030b37fb1055108c02d402d40c230f020c0c02b3fe09bd039e0a400d9804c50829030b057c014837ff",
+   "referenced_by": [
+    {
+     "script": "0x08EE6813",
+     "at": "0x08EE6828",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E3559": {
+   "addr": "0x089E3559",
+   "text": "要将不变之石\\n交给女孩吗？",
+   "bytes": 25,
+   "raw": "0ef105f401d601a1107f0bebfe070d04620a0b04c8092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x089E3269",
+     "at": "0x089E326C",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E434B": {
+   "addr": "0x089E434B",
+   "text": "哎呀，\\var[01]！\\p我家的老公看起来永远都很忙，\\n所以我偶尔也会来这里帮他。",
+   "bytes": 63,
+   "raw": "01040ea63bfd013cfb0d9805bd030b0844047307c20aab08290f6e0fc20361050b093e3bfe0c9c0f240d980a1903a00f02056e082910550864014e0c9e37ff",
+   "referenced_by": [
+    {
+     "script": "0x089E43AE",
+     "at": "0x089E43B1",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E2EBF",
+     "at": "0x089E2EC1",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E4423",
+     "at": "0x089E4426",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E4498",
+     "at": "0x089E449B",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E450D",
+     "at": "0x089E4510",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E4582",
+     "at": "0x089E4585",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E43FA",
+     "at": "0x089E4426",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E446F",
+     "at": "0x089E449B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E4752": {
+   "addr": "0x089E4752",
+   "text": "对了，\\n研究所里的食物好像不够了……\\l\\var[01]，可以帮我收集五颗橙橙果吗？",
+   "bytes": 62,
+   "raw": "0379089e3bfe0eb9076f0c9c0864030b0bef0db504e90e1e01d60483089eb0b0fafd013b07d70f24014e0d980c1a059a0dab07d3024a024a04c3092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x089E45F7",
+     "at": "0x089E4613",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E4771": {
+   "addr": "0x089E4771",
+   "text": "…\\l\\var[01]，可以帮我收集五颗橙橙果吗？",
+   "bytes": 31,
+   "raw": "b0fafd013b07d70f24014e0d980c1a059a0dab07d3024a024a04c3092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x089E45B9",
+     "at": "0x089E45C6",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E4794": {
+   "addr": "0x089E4794",
+   "text": "好吧，\\n我知道你也有很多事要去做。",
+   "bytes": 32,
+   "raw": "04e901283bfe0d98107b030709d90f020f7e050b03850c070ef10b25112e37ff",
+   "referenced_by": [
+    {
+     "script": "0x08F5068E",
+     "at": "0x08F5069B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E47D1": {
+   "addr": "0x089E47D1",
+   "text": "那么就拜托你了，\\var[01]！",
+   "bytes": 19,
+   "raw": "09bd094c077d013c0d3809d9089e3bfd013cff",
+   "referenced_by": [
+    {
+     "script": "0x089E46D5",
+     "at": "0x089E46FC",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E785B": {
+   "addr": "0x089E785B",
+   "text": "厕",
+   "bytes": 3,
+   "raw": "0202ff",
+   "referenced_by": [
+    {
+     "script": "0x089E76D2",
+     "at": "0x089E76D7",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E7946": {
+   "addr": "0x089E7946",
+   "text": "氯Á",
+   "bytes": 4,
+   "raw": "090202ff",
+   "referenced_by": [
+    {
+     "script": "0x089E7530",
+     "at": "0x089E755A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E7A67": {
+   "addr": "0x089E7A67",
+   "text": "谢谢你！\\n希望你可以捕获喇叭芽塔的妖怪，\\l并将它展示给我看看。",
+   "bytes": 58,
+   "raw": "0e460e4609d93cfe0dc70d6309d907d70f2401d1057e082301270ea80ca1030b0ee6049e3bfa01bd05f40c9f102c0c0304620d9807c207c237ff",
+   "referenced_by": [
+    {
+     "script": "0x089E78DD",
+     "at": "0x089E7901",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E7A6C": {
+   "addr": "0x089E7A6C",
+   "text": "e！\\n希望你可以捕获喇叭芽塔的妖怪，\\l并将它展示给我看看。",
+   "bytes": 53,
+   "raw": "d93cfe0dc70d6309d907d70f2401d1057e082301270ea80ca1030b0ee6049e3bfa01bd05f40c9f102c0c0304620d9807c207c237ff",
+   "referenced_by": [
+    {
+     "script": "0x089E7749",
+     "at": "0x089E775E",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E7AA8": {
+   "addr": "0x089E7AA8",
+   "text": "你不会也害怕妖怪吧？",
+   "bytes": 20,
+   "raw": "09d901d6056e0f0204cc0a1f0ee6049e01283dff",
+   "referenced_by": [
+    {
+     "script": "0x089E794A",
+     "at": "0x089E794C",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E7ABE": {
+   "addr": "0x089E7ABE",
+   "text": "不是，这只宝可梦\\n怎么看都不像是妖怪吧？",
+   "bytes": 38,
+   "raw": "01d60c0c3b1055108c016307d70966fe100a094c07c2036101d60e1e0c0c0ee6049e01283dff",
+   "referenced_by": [
+    {
+     "script": "0x089E791D",
+     "at": "0x089E7942",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E7AF2": {
+   "addr": "0x089E7AF2",
+   "text": "你是协会的训练家，\\n对吧？\\p你能帮我查证一下\\n这则都市传说的真伪吗？",
+   "bytes": 63,
+   "raw": "09d90c0c0e38056e030b0e9e088a05bd3bfe037901283dfb09d909d2014e0d98020d10750f0b0de6fe1055100703610c15028b0c58030b10590d77092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x089E787F",
+     "at": "0x089E78C2",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E7B33": {
+   "addr": "0x089E7B33",
+   "text": "不愿意就不愿意吧，\\n我才不会…不会害怕妖怪呢！",
+   "bytes": 43,
+   "raw": "01d60fc40f32077d01d60fc40f3201283bfe0d9801e001d6056eb001d6056e04cc0a1f0ee6049e09ce3cff",
+   "referenced_by": [
+    {
+     "script": "0x08F51606",
+     "at": "0x08F51613",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E7BE2": {
+   "addr": "0x089E7BE2",
+   "text": "传说中的喇叭芽塔的妖怪，\\n原来就长这个样子吗？\\p看上去一点都不可怕呢，\\n甚至还有点可，可爱呢？\\p那么，\\n你相信这个世界上有鬼吗？",
+   "bytes": 117,
+   "raw": "028b0c5810a1030b082301270ea80ca1030b0ee6049e3bfe0fb90829077d0226105504600ee2110b092a3dfb07c20bad0b250f0b032a036101d607d70a1f09ce3bfe0bd3109205460f7e032a07d73b07d7010d09ce3dfb09bd094c3bfe09d90e0d0e50105504600c0507390bad0f7e04b5092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x089E7954",
+     "at": "0x089E7956",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E7C96": {
+   "addr": "0x089E7C96",
+   "text": "这是我在路边捡的一些道具，\\n你就不用客气了！",
+   "bytes": 42,
+   "raw": "10550c0c0d980fe608e8019c05dc030b0f0b0e340307078f3bfe09d9077d01d60f7107db0ab3089e3cff",
+   "referenced_by": [
+    {
+     "script": "0x089E7975",
+     "at": "0x089E7995",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E7FC8": {
+   "addr": "0x089E7FC8",
+   "text": "前辈，\\n姆克儿的事怎么样了？",
+   "bytes": 26,
+   "raw": "0ac9016f3bfe09ad07d9039e030b0c07100a094c0ee2089e3dff",
+   "referenced_by": [
+    {
+     "script": "0x089E7E4E",
+     "at": "0x089E7E58",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E7E56",
+     "at": "0x089E7E58",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E7FE6": {
+   "addr": "0x089E7FE6",
+   "text": "不对，\\n这不是姆克儿吧？",
+   "bytes": 22,
+   "raw": "01d603793bfe105501d60c0c09ad07d9039e01283dff",
+   "referenced_by": [
+    {
+     "script": "0x089E7E4E",
+     "at": "0x089E7E87",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x089E7E56",
+     "at": "0x089E7E87",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E8056": {
+   "addr": "0x089E8056",
+   "text": "呜呜……\\n好吧。",
+   "bytes": 13,
+   "raw": "0d9e0d9eb0b0fe04e9012837ff",
+   "referenced_by": [
+    {
+     "script": "0x08F51625",
+     "at": "0x08F51632",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E8065": {
+   "addr": "0x089E8065",
+   "text": "加油啊，\\n寻找姆克儿的前辈！",
+   "bytes": 26,
+   "raw": "05be0f7b01003bfe0e99104509ad07d9039e030b0ac9016f3cff",
+   "referenced_by": [
+    {
+     "script": "0x089E7EAD",
+     "at": "0x089E7EAF",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E80A0": {
+   "addr": "0x089E80A0",
+   "text": "姆克儿的事，\\n就拜托前辈啦！",
+   "bytes": 26,
+   "raw": "09ad07d9039e030b0c073bfe077d013c0d380ac9016f08273cff",
+   "referenced_by": [
+    {
+     "script": "0x089E7EBE",
+     "at": "0x089E7EE2",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E80BE": {
+   "addr": "0x089E80BE",
+   "text": "这就是姆克儿吗？\\n小小的……香香的……\\l嘿嘿……我的姆克儿……\\l简直就和我的小草莓一样可爱嘛！",
+   "bytes": 82,
+   "raw": "1055077d0c0c09ad07d9039e092a3dfe0e2c0e2c030bb0b00e100e10030bb0b0fa05080508b0b00d98030b09ad07d9039eb0b0fa05dd1082077d04f30d98030b0e2c020113270f0b0ee207d7010d09293cff",
+   "referenced_by": [
+    {
+     "script": "0x08AE321D",
+     "at": "0x08AE3240",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x089E8663": {
+   "addr": "0x089E8663",
+   "text": "真的？\\n真有相信的啊……\\p总之，谢谢你对我的帮助！\\n这是给你的报酬。",
+   "bytes": 60,
+   "raw": "1059030b3dfe10590f7e0e0d0e50030b0100b0b0fb1114107f3b0e460e4609d903790d98030b014e10cb3cfe10550c0c046209d9030b0165026c37ff",
+   "referenced_by": [
+    {
+     "script": "0x08AE3008",
+     "at": "0x08AE3016",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089E945C": {
+   "addr": "0x089E945C",
+   "text": "前辈，\\n你看见了我的委托吗？\\p想要摸一摸姆克儿的，\\n正是我哦。\\p来自神奥地区的姆克儿，\\n看着就很治愈！\\l摸起来一定很舒服的！\\p怎么样，\\n前辈愿意帮帮我吗？",
+   "bytes": 138,
+   "raw": "0ac9016f3bfe09d907c205e6089e0d98030b0d750d38092a3dfb0e180ef109960f0b099609ad07d9039e030b3bfe10700c0c0d980a1337fb0829110c0bcf0121031f0b1a030b09ad07d9039e3bfe07c210f4077d050b109f0fa83cfa09960aab08290f0b034d050b0c2b040a030b3cfb100a094c0ee23bfe0ac9016f0fc40f32014e014e0d98092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x089E7E8F",
+     "at": "0x089E7E92",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089ECF58": {
+   "addr": "0x089ECF58",
+   "text": "欢迎光临宝可梦美容院！\\p我是美发兄弟的弟弟！\\p我的卖点就是价格优惠！\\n只要300元就能把你的宝可梦\\l变漂亮哦！\\p美发后光泽会更漂亮，\\n会更加黏主人哦。\\p怎样？\\n要让我来做吗？",
+   "bytes": 156,
+   "raw": "05430f5b04aa08ac016307d7096609580b5d0fc63cfb0d980c0c095803a50e610323030b032303233cfb0d98030b092e032a077d0c0c05c6045b0f73056a3cfe108c0ef1a4a1a10fb6077d09d2013009d9030b016307d70966fa01a10a6a08940a133cfb095803a5052204aa1008056e04660a6a08943bfe056e046605be1a5610c80b4b0a1337fb100a0ee23dfe0ef10b430d980829112e092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x089ECC78",
+     "at": "0x089ECC7E",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089ECFF6": {
+   "addr": "0x089ECFF6",
+   "text": "这样啊？\\n真是遗憾啊。",
+   "bytes": 20,
+   "raw": "10550ee201003dfe10590c0c0f1504dc010037ff",
+   "referenced_by": [
+    {
+     "script": "0x089ECC78",
+     "at": "0x089ECC91",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089ED03D": {
+   "addr": "0x089ED03D",
+   "text": "钱好像不够呢。",
+   "bytes": 14,
+   "raw": "0ac704e90e1e01d6048309ce37ff",
+   "referenced_by": [
+    {
+     "script": "0x089ECCAF",
+     "at": "0x089ECCC2",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089ED04D": {
+   "addr": "0x089ED04D",
+   "text": "要把哪只宝可梦变漂亮呢？",
+   "bytes": 24,
+   "raw": "0ef1013009ba108c016307d7096601a10a6a089409ce3dff",
+   "referenced_by": [
+    {
+     "script": "0x089ECE31",
+     "at": "0x089ECE33",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089ED067": {
+   "addr": "0x089ED067",
+   "text": "好的！\\n我会做得很好的！",
+   "bytes": 22,
+   "raw": "04e9030b3cfe0d98056e112e030a050b04e9030b3cff",
+   "referenced_by": [
+    {
+     "script": "0x089ECE31",
+     "at": "0x089ECE70",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089ED07F": {
+   "addr": "0x089ED07F",
+   "text": "好了，完成了！",
+   "bytes": 13,
+   "raw": "04e9089e3b0d52024b089e3cff",
+   "referenced_by": [
+    {
+     "script": "0x089ECE31",
+     "at": "0x089ECE83",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089ED08E": {
+   "addr": "0x089ED08E",
+   "text": "这只宝可梦的毛发\\n看上去很柔顺呢，\\l或许它并不需要美发？",
+   "bytes": 53,
+   "raw": "1055108c016307d70966030b094303a5fe07c20bad0b25050b0b610c5609ce3bfa057f0e780c9f01bd01d60e730ef1095803a53dff",
+   "referenced_by": [
+    {
+     "script": "0x089ECEA8",
+     "at": "0x089ECEAA",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089ED0C5": {
+   "addr": "0x089ED0C5",
+   "text": "\\var[02]\\n看上去很高兴！",
+   "bytes": 17,
+   "raw": "fd02fe07c20bad0b25050b04490e563cff",
+   "referenced_by": [
+    {
+     "script": "0x089ECEB2",
+     "at": "0x089ECEC5",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089ED0D8": {
+   "addr": "0x089ED0D8",
+   "text": "\\var[02]\\n看上去非常高兴！",
+   "bytes": 19,
+   "raw": "fd02fe07c20bad0b2503ca022504490e563cff",
+   "referenced_by": [
+    {
+     "script": "0x089ECEDA",
+     "at": "0x089ECEED",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089ED0ED": {
+   "addr": "0x089ED0ED",
+   "text": "\\var[02]\\n看上去稍微有点高兴！",
+   "bytes": 23,
+   "raw": "fd02fe07c20bad0b250bb20d680f7e032a04490e563cff",
+   "referenced_by": [
+    {
+     "script": "0x089ECF41",
+     "at": "0x089ECF43",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x089EFE46": {
+   "addr": "0x089EFE46",
+   "text": "你好！\\n这里是缘朱图书馆。\\p馆内禁止喧哗，\\n请保持安静。",
+   "bytes": 50,
+   "raw": "09d904e93cfe105508640c0c0fc110bd0d240c2e04a537fb04a509d0074d108a0e8505363bfe0b0d016002580111076237ff",
+   "referenced_by": [
+    {
+     "script": "0x08AF335F",
+     "at": "0x08AF336A",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AF3356",
+     "at": "0x08AF336A",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AF334C",
+     "at": "0x08AF334E",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AA497D": {
+   "addr": "0x08AA497D",
+   "text": "栽培一颗树果，\\n能结出好多树果。\\p这样一来\\n树果就会越来越多。\\p可以的话，\\n你也来种种树果吧！",
+   "bytes": 85,
+   "raw": "0fe00a3d0f0b07d30c3c04c33bfe09d20733027804e903850c3c04c337fb10550ee20f0b0829fe0c3c04c3077d056e0fc908290fc9038537fb07d70f24030b053d3bfe09d90f02082910a710a70c3c04c301283cff",
+   "referenced_by": [
+    {
+     "script": "0x08AA492F",
+     "at": "0x08AA493A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AA49D4": {
+   "addr": "0x08AA49D4",
+   "text": "欢迎明天再来哦。\\n我会去收集其他树果给你的。\\p请把树果埋在\\n松软的土地中栽培吧！",
+   "bytes": 75,
+   "raw": "05430f5b098f0ced0fe508290a1337fe0d98056e0b250c1a059a0a9f0c9e0c3c04c3046209d9030b37fb0b0d01300c3c04c3092b0fe6fe0c6c0b6d030b0d29031f10a10fe00a3d01283cff",
+   "referenced_by": [
+    {
+     "script": "0x08AA4946",
+     "at": "0x08AA4948",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AA4964",
+     "at": "0x08AA4972",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AA9688": {
+   "addr": "0x08AA9688",
+   "text": "拥有闪光的秘传学习机之后，\\n无论多么灰暗的地方，\\p都可以通过精灵齿轮\\n呼唤周围的宝可梦来照亮！\\p不过，要在战斗之外使用，\\n必须先持有特定的道馆徽章。",
+   "bytes": 138,
+   "raw": "0f630f7e0b9f04aa030b0970028b0e900dd40587107f05223bfe0da409150385094c055f0114030b031f03c03bfb036107d70f240d1004c5075b08bc025f0910fe0523054a10ad0d6d030b016307d709660829104808943cfb01d604c53b0ef10fe61030035c107f0d4a0bf50f713bfe01950e760dec02580f7e0cd9034d030b030704a50562103537ff",
+   "referenced_by": [
+    {
+     "script": "0x089D457B",
+     "at": "0x089D458D",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AAF81F": {
+   "addr": "0x08AAF81F",
+   "text": "使用树果培养皿，\\n不管是哪里得到的树果，\\l都可以安心培育！\\p啊，对了！\\n树果也送给你！\\l只有培养皿是没用的。",
+   "bytes": 97,
+   "raw": "0bf50f710c3c04c30a3d0ee1098b3bfe01d604a40c0c09ba0864030a0304030b0c3c04c33bfa036107d70f2401110e4f0a3d0fab3cfb01003b0379089e3cfe0c3c04c30f020c70046209d93cfa108c0f7e0a3d0ee1098b0c0c09530f71030b37ff",
+   "referenced_by": [
+    {
+     "script": "0x08AF09FC",
+     "at": "0x08AF0A12",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AB22FC": {
+   "addr": "0x08AB22FC",
+   "text": "ñ>滢Ó",
+   "bytes": 6,
+   "raw": "298616040eff",
+   "referenced_by": [
+    {
+     "script": "0x08AAFF25",
+     "at": "0x08AAFF35",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AAFF13",
+     "at": "0x08AAFF35",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AB1985",
+     "at": "0x08AB199B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AB2391": {
+   "addr": "0x08AB2391",
+   "text": "宽Ó",
+   "bytes": 4,
+   "raw": "08040eff",
+   "referenced_by": [
+    {
+     "script": "0x08AB1985",
+     "at": "0x08AB19C5",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AAFF5C",
+     "at": "0x08AAFF63",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AB27DC": {
+   "addr": "0x08AB27DC",
+   "text": "嘎",
+   "bytes": 3,
+   "raw": "042cff",
+   "referenced_by": [
+    {
+     "script": "0x08AB1A05",
+     "at": "0x08AB1A15",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AB19F3",
+     "at": "0x08AB1A15",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AB1E9D",
+     "at": "0x08AB1EB3",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AB27E7": {
+   "addr": "0x08AB27E7",
+   "text": "氯篙",
+   "bytes": 5,
+   "raw": "09020447ff",
+   "referenced_by": [
+    {
+     "script": "0x08AB19DD",
+     "at": "0x08AB19E2",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AB31E2": {
+   "addr": "0x08AB31E2",
+   "text": "É霸;!宽Ó",
+   "bytes": 9,
+   "raw": "06013336ab08040eff",
+   "referenced_by": [
+    {
+     "script": "0x08AB2367",
+     "at": "0x08AB237A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AC2B71": {
+   "addr": "0x08AC2B71",
+   "text": "对了……\\n还有这些钱……",
+   "bytes": 20,
+   "raw": "0379089eb0b0fe05460f7e10550e340ac7b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08AC20B8",
+     "at": "0x08AC20BA",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AC2D2E": {
+   "addr": "0x08AC2D2E",
+   "text": "这也是给你的报酬……\\n收好啦！",
+   "bytes": 27,
+   "raw": "10550f020c0c046209d9030b0165026cb0b0fe0c1a04e908273cff",
+   "referenced_by": [
+    {
+     "script": "0x08AC20B8",
+     "at": "0x08AC20CF",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AC3D5C": {
+   "addr": "0x08AC3D5C",
+   "text": "?框厕",
+   "bytes": 6,
+   "raw": "ac08090202ff",
+   "referenced_by": [
+    {
+     "script": "0x08AC3CD0",
+     "at": "0x08AC3D1A",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AC3CE7",
+     "at": "0x08AC3D1A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AC447D": {
+   "addr": "0x08AC447D",
+   "text": "果然，\\n你也不相信这则传闻吗……",
+   "bytes": 29,
+   "raw": "04c30b3b3bfe09d90f0201d60e0d0e5010551007028b0d8b092ab0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08F5EED5",
+     "at": "0x08F5EEDD",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AC4486": {
+   "addr": "0x08AC4486",
+   "text": "草b相信这则传闻吗……",
+   "bytes": 20,
+   "raw": "0201d60e0d0e5010551007028b0d8b092ab0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08AC3CD0",
+     "at": "0x08AC3CDB",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AC44BB": {
+   "addr": "0x08AC44BB",
+   "text": "太、太感谢你了！请记住\\n是要在\\ctrl[01 06]\\ctrl[03 09]午夜12点\\ctrl[01 02]\\ctrl[03 03]观看关着的电视哦。",
+   "bytes": 65,
+   "raw": "0cac3a0cac043a0e4609d9089e3c0b0d05b210d0fe0c0c0ef10fe6fc0106fc03090dad0f09a2a3032afc0102fc030304a307c204a010f4030b032e0c180a1337ff",
+   "referenced_by": [
+    {
+     "script": "0x08AC4443",
+     "at": "0x08AC4467",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AC4AF4": {
+   "addr": "0x08AC4AF4",
+   "text": "你听说过深夜电视吗？\\n传闻在40号路上方的洋馆中，\\l有一台一直关着的电视。\\l可是如果是在午夜12点，\\l你一个人看那台关着的电视的话，\\p只要盯着自己在画面上倒映出\\n的脸一直看，就会看见另一个人。\\l那个人就是你命中注定的对象。\\p这是一则很有趣的传闻，\\n对吧？\\p可是我的修炼还不够，\\n还不敢进入那间洋馆……\\l所以你能帮我去洋馆调查一下吗？",
+   "bytes": 303,
+   "raw": "09d90d070c5804c50bcc0f09032e0c18092a3dfe028b0d8b0fe6a5a104eb08e80bad03c0030b0edc04a510a13bfa0f7e0f0b0ca90f0b108204a010f4030b032e0c1837fa07d70c0c0b6704c30c0c0fe60dad0f09a2a3032a3bfa09d90f0b04600b4b07c209bd0ca904a010f4030b032e0c18030b053d3bfb108c0ef1034710f4110c05a50fe6053a097e0bad03000f610278fe030b08860f0b108207c23b077d056e07c205e608c00f0b04600b4b37fa09bd04600b4b077d0c0c09d9099410a110d1034d030b03790e2037fb10550c0c0f0b1007050b0f7e0b24030b028b0d8b3bfe037901283dfb07d70c0c0d98030b0e690889054601d604833bfe054601d6043c074a0b6b09bd05cf0edc04a5b0b0fa0c9c0f2409d909d2014e0d980b250edc04a5033e020d0f0b0de6092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AC3CD0",
+     "at": "0x08AC3D07",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AC3CE7",
+     "at": "0x08AC3D07",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AC3D42",
+     "at": "0x08AC3D47",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AC3D22",
+     "at": "0x08AC3D47",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE3620": {
+   "addr": "0x08AE3620",
+   "text": "你要碰碰它吗？",
+   "bytes": 14,
+   "raw": "09d90ef10a530a530c9f092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AE321D",
+     "at": "0x08AE3225",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE3630": {
+   "addr": "0x08AE3630",
+   "text": "你要摸摸它吗？",
+   "bytes": 14,
+   "raw": "09d90ef1099609960c9f092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AE321D",
+     "at": "0x08AE3233",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE3640": {
+   "addr": "0x08AE3640",
+   "text": "不要\\symbol[D3]\\symbol[D3]!\\p果然还是看看就满足了呢，\\n它不像我的小草莓一样温顺呀……\\p不管怎么样，\\n谢谢你，前辈！",
+   "bytes": 88,
+   "raw": "01d60ef1f9d3f9d3abfb04c30b3b05460c0c07c207c2077d0934111b089e09ce3bfe0c9f01d60e1e0d98030b0e2c020113270f0b0ee20d880c560ea6b0b0fb01d604a4100a094c0ee23bfe0e460e4609d93b0ac9016f3cff",
+   "referenced_by": [
+    {
+     "script": "0x08AE399F",
+     "at": "0x08AE39B9",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE369C": {
+   "addr": "0x08AE369C",
+   "text": "这是我的一点零花钱…\\n分你一点吧！",
+   "bytes": 32,
+   "raw": "10550c0c0d98030b0f0b032a08b605350ac7b0fe03d909d90f0b032a01283cff",
+   "referenced_by": [
+    {
+     "script": "0x08AE33E1",
+     "at": "0x08AE33EC",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE36BE": {
+   "addr": "0x08AE36BE",
+   "text": "我果然还是\\n更喜欢我的小草莓呢！",
+   "bytes": 31,
+   "raw": "0d9804c30b3b05460c0cfe04660dd605430d98030b0e2c0201132709ce3cff",
+   "referenced_by": [
+    {
+     "script": "0x08AE33E1",
+     "at": "0x08AE3401",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE3E5D": {
+   "addr": "0x08AE3E5D",
+   "text": "这些钱…也给你！",
+   "bytes": 15,
+   "raw": "10550e340ac7b00f02046209d93cff",
+   "referenced_by": [
+    {
+     "script": "0x08AE38C4",
+     "at": "0x08AE38CF",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE3E6E": {
+   "addr": "0x08AE3E6E",
+   "text": "多亏了你，终于解开了\\n喇叭芽之塔的谜团。",
+   "bytes": 38,
+   "raw": "0385080e089e09d93b10a60f88073407b8089efe082301270ea8107f0ca1030b096d0d2d37ff",
+   "referenced_by": [
+    {
+     "script": "0x08AE38C4",
+     "at": "0x08AE38E4",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE5A63": {
+   "addr": "0x08AE5A63",
+   "text": "好嘞，\\n那么我们一起出发吧！",
+   "bytes": 26,
+   "raw": "04e9146b3bfe09bd094c0d98095f0f0b0aab027803a501283cff",
+   "referenced_by": [
+    {
+     "script": "0x08ED1E1B",
+     "at": "0x08ED1E1D",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AE5A46",
+     "at": "0x08AE5A48",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE5A7F": {
+   "addr": "0x08AE5A7F",
+   "text": "怎么，还有事吗？",
+   "bytes": 15,
+   "raw": "100a094c3b05460f7e0c07092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08ED195E",
+     "at": "0x08ED1984",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AE58F1",
+     "at": "0x08AE591F",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE5A90": {
+   "addr": "0x08AE5A90",
+   "text": "怎么样，\\n准备好前往拍摄场地了吗？",
+   "bytes": 32,
+   "raw": "100a094c0ee23bfe10eb017504e90ac90d610a210bc10223031f089e092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08ED195E",
+     "at": "0x08ED1971",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AE58F1",
+     "at": "0x08AE590C",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE5ACF": {
+   "addr": "0x08AE5ACF",
+   "text": "好嘞！\\n如果你准备好拍摄了，\\l就告诉哥哥我哦！",
+   "bytes": 42,
+   "raw": "04e9146b3cfe0b6704c309d910eb017504e90a210bc1089e3bfa077d04500c82045104510d980a133cff",
+   "referenced_by": [
+    {
+     "script": "0x08ECFFB6",
+     "at": "0x08ECFFDD",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AE5885",
+     "at": "0x08AE58B5",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE5B04": {
+   "addr": "0x08AE5B04",
+   "text": "你好啊！！\\p我是精灵迷所熟知的\\n电视教学的阿始大哥哥！",
+   "bytes": 50,
+   "raw": "09d904e901003c3cfb0d980c0c075b08bc096c0c9c0c31107b030bfe032e0c18071e0e90030b01010c0102d3045104513cff",
+   "referenced_by": [
+    {
+     "script": "0x08AE5581",
+     "at": "0x08AE559C",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AE5820",
+     "at": "0x08AE583B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE5B3B": {
+   "addr": "0x08AE5B3B",
+   "text": "你看到了哥哥我的委托吗？\\n事情是这样的，哥哥我现在\\l正准备拍摄新的教学电视节目。\\p与往期节目不同的是，\\n新节目需要其他人配合参演。\\l怎么样，你愿意配合哥哥我参演吗？",
+   "bytes": 153,
+   "raw": "09d907c20304089e045104510d98030b0d750d38092a3dfe0c070b0b0c0c10550ee2030b3b045104510d980e030fe6fa107010eb01750a210bc10e4d030b071e0e90032e0c18072c09b537fb0f990d610a95072c09b501d60d14030b0c0c3bfe0e4d072c09b50e730ef10a9f0c9e0b4b0a4104f501e90ec637fa100a094c0ee23b09d90fc40f320a4104f5045104510d9801e90ec6092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AE5820",
+     "at": "0x08AE5865",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE5BD6": {
+   "addr": "0x08AE5BD6",
+   "text": "怎…怎么会，对大哥哥\\n没有兴趣么……？\\p不会的，不可能，绝对不可能！\\n你也有很多事放不下，对吧？\\p下次有时间的话，\\n要记得来找哥哥我哦！",
+   "bytes": 120,
+   "raw": "100ab0100a094c056e3b037902d304510451fe09530f7e0e560b24094cb0b03dfb01d6056e030b3b01d607d709d23b07a8037901d607d709d23cfe09d90f020f7e050b03850c0703c801d60de63b037901283dfb0de602ae0f7e0bed05cf030b053d3bfe0ef105b2030a08291045045104510d980a133cff",
+   "referenced_by": [
+    {
+     "script": "0x08ECFF66",
+     "at": "0x08ECFFA5",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08F508B1",
+     "at": "0x08F508BE",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE77F1": {
+   "addr": "0x08AE77F1",
+   "text": "w留造成的呢……\\p年轻的时候，\\n我的朋友因为一次意外\\l跟他的拉普拉斯走散了，\\l他一直在后悔……\\p这孩子跟朋友在一起\\n也很开心吧，好好珍惜它！",
+   "bytes": 126,
+   "raw": "eb08c71001024b030b09ceb0b0fb09e00b03030b0bed05213bfe0d98030b0a500f7f0f420d700f0b02ae0f320d4afa04640c9e030b08220a9008220c5c11170b80089e3bfa0c9e0f0b10820fe605220567b0b0fb105504c8110b04640a500f7f0fe60f0b0aabfe0f02050b07b80e4f01283b04e904e910570dcb0c9f3cff",
+   "referenced_by": [
+    {
+     "script": "0x08AE7319",
+     "at": "0x08AE73EB",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE78C8": {
+   "addr": "0x08AE78C8",
+   "text": "哦，对了！\\n把精灵球当做礼物送给\\l年轻的宝可梦训练家吧！\\p这是老夫还是宝可梦训练家时\\n用过的球啊！\\p不用担心不用担心，\\n这还能用的啦！",
+   "bytes": 123,
+   "raw": "0a133b0379089e3cfe0130075b08bc0b1402ef112e08660db50c700462fa09e00b03030b016307d709660e9e088a05bd01283cfb10550c0c084403f505460c0c016307d709660e9e088a05bd0bedfe0f7104c5030b0b1401003cfb01d60f7102e10e4f01d60f7102e10e4f3bfe1055054609d20f71030b08273cff",
+   "referenced_by": [
+    {
+     "script": "0x08AE72AE",
+     "at": "0x08AE72C7",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE78DC": {
+   "addr": "0x08AE78DC",
+   "text": "+礼物送给\\l年轻的宝可梦训练家吧！\\p这是老夫还是宝可梦训练家时\\n用过的球啊！\\p不用担心不用担心，\\n这还能用的啦！",
+   "bytes": 103,
+   "raw": "2e08660db50c700462fa09e00b03030b016307d709660e9e088a05bd01283cfb10550c0c084403f505460c0c016307d709660e9e088a05bd0bedfe0f7104c5030b0b1401003cfb01d60f7102e10e4f01d60f7102e10e4f3bfe1055054609d20f71030b08273cff",
+   "referenced_by": [
+    {
+     "script": "0x08AE7278",
+     "at": "0x08AE729A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE8757": {
+   "addr": "0x08AE8757",
+   "text": "我们是满金市的五姐妹！\\n我们的美丽可不会\\p输给缘朱市的和服女孩哦！\\n不过，\\l我们之中有两个人已经名花有主了呢。",
+   "bytes": 103,
+   "raw": "0d98095f0c0c093407420c15030b0dab0735095b3cfe0d98095f030b0958086b07d701d6056efb0c2904620fc110bd0c15030b04f3040a0a0b04c80a133cfe01d604c53bfa0d98095f107f10a10f7e089004600b4b0f21075d099305350f7e10c8089e09ce37ff",
+   "referenced_by": [
+    {
+     "script": "0x08AE870F",
+     "at": "0x08AE871A",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AE8706",
+     "at": "0x08AE871A",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AE872C",
+     "at": "0x08AE872E",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AE8722",
+     "at": "0x08AE8724",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE87C0": {
+   "addr": "0x08AE87C0",
+   "text": "要把桧皮镇\\n男子的信件送给她吗？",
+   "bytes": 31,
+   "raw": "0ef1013017940a5f1065fe09c6110b030b0e5005e90c7004620ca0092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AE872C",
+     "at": "0x08AE8736",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE87E1": {
+   "addr": "0x08AE87E1",
+   "text": "什么，在想我的事件？\\n哎呀，你是我的倾慕者吗？\\l……？\\l不是吗？真可惜！",
+   "bytes": 61,
+   "raw": "0bee094c3b0fe60e180d98030b0c0705e93dfe01040ea63b09d90c0c0d98030b0b0509b31052092a3dfab0b03dfa01d60c0c092a3d105907d70dcb3cff",
+   "referenced_by": [
+    {
+     "script": "0x08AE874A",
+     "at": "0x08AE874C",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE8872": {
+   "addr": "0x08AE8872",
+   "text": "我们虽然是亲姐妹，\\n但是喜欢的属性都不一样!\\p比如说，三妹喜欢水系的精灵，\\n而四妹喜欢妖精系的精灵！",
+   "bytes": 93,
+   "raw": "0d98095f0c870b3b0c0c0af00735095b3bfe02e90c0c0dd60543030b0c390e5f036101d60f0b0ee2abfb01850b670c583b0b7d095b0dd605430c510dd9030b075b08bc3bfe039d0c67095b0dd605430ee6075b0dd9030b075b08bc3cff",
+   "referenced_by": [
+    {
+     "script": "0x08AE882A",
+     "at": "0x08AE8835",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AE8821",
+     "at": "0x08AE8835",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AE8847",
+     "at": "0x08AE8849",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AE883D",
+     "at": "0x08AE883F",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE88D1": {
+   "addr": "0x08AE88D1",
+   "text": "要把桧皮镇\\n男子的信件送给她吗？",
+   "bytes": 31,
+   "raw": "0ef1013017940a5f1065fe09c6110b030b0e5005e90c7004620ca0092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AE8847",
+     "at": "0x08AE8851",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AE88F2": {
+   "addr": "0x08AE88F2",
+   "text": "呀，\\n我已经有男朋友了！",
+   "bytes": 22,
+   "raw": "0ea63bfe0d980f21075d0f7e09c60a500f7f089e3cff",
+   "referenced_by": [
+    {
+     "script": "0x08AE8865",
+     "at": "0x08AE8867",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEC0E6": {
+   "addr": "0x08AEC0E6",
+   "text": "火斑喵对\\var[01]充满了好感！",
+   "bytes": 22,
+   "raw": "057d013e14350379fd0102660934089e04e9043a3cff",
+   "referenced_by": [
+    {
+     "script": "0x08AEC091",
+     "at": "0x08AEC0CC",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEC104": {
+   "addr": "0x08AEC104",
+   "text": "火斑喵似乎对\\var[01]不是很感兴趣……",
+   "bytes": 29,
+   "raw": "057d013e14350c6905240379fd0101d60c0c050b043a0e560b24b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08AEB8AA",
+     "at": "0x08AEB8BA",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEC123": {
+   "addr": "0x08AEC123",
+   "text": "火斑喵似乎对\\var[01]身上的\\n大马拉萨达非常感兴趣！\\l要将大马拉萨达分给它吗？",
+   "bytes": 67,
+   "raw": "057d013e14350c6905240379fd010bcb0bad030bfe02d3092708220b7802cf03ca0225043a0e560b243cfa0ef105f402d3092708220b7802cf03d904620c9f092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AEB8C2",
+     "at": "0x08AEB8D9",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AEC046",
+     "at": "0x08AEC057",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEC168": {
+   "addr": "0x08AEC168",
+   "text": "火斑喵看上去很伤心……",
+   "bytes": 21,
+   "raw": "057d013e143507c20bad0b25050b0ba90e4fb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08AEC046",
+     "at": "0x08AEC06A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEC17F": {
+   "addr": "0x08AEC17F",
+   "text": "火斑喵开心地吃下了大马拉萨达！",
+   "bytes": 30,
+   "raw": "057d013e143507b80e4f031f02560de6089e02d3092708220b7802cf3cff",
+   "referenced_by": [
+    {
+     "script": "0x08AEC091",
+     "at": "0x08AEC098",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEC19F": {
+   "addr": "0x08AEC19F",
+   "text": "火斑喵似乎想要给\\var[01]什么……",
+   "bytes": 25,
+   "raw": "057d013e14350c6905240e180ef10462fd010bee094cb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08AEC091",
+     "at": "0x08AEC0AD",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEC1BA": {
+   "addr": "0x08AEC1BA",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]得了火斑喵的蛋！",
+   "bytes": 24,
+   "raw": "fc0106fc0309fd01030a089e057d013e1435030b02ee3cff",
+   "referenced_by": [
+    {
+     "script": "0x08AEC091",
+     "at": "0x08AEC0B7",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x08AEC7A9": {
+   "addr": "0x08AEC7A9",
+   "text": "外\\l一个精灵中心去了呢……\\l这是给你的报酬！",
+   "bytes": 40,
+   "raw": "0d4afa0f0b0460075b08bc10a10e4f0b25089e09ceb0b0fa10550c0c046209d9030b0165026c3cff",
+   "referenced_by": [
+    {
+     "script": "0x08AEC3D4",
+     "at": "0x08AEC3DF",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEC7D8": {
+   "addr": "0x08AEC7D8",
+   "text": "œ下来准备去自然公园了，\\n那么再见啦！",
+   "bytes": 35,
+   "raw": "250de6082910eb01750b25110c0b3b04730fbc089e3bfe09bd094c0fe505e608273cff",
+   "referenced_by": [
+    {
+     "script": "0x08AEC3D4",
+     "at": "0x08AEC3F5",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AECDC3": {
+   "addr": "0x08AECDC3",
+   "text": "\\p侩",
+   "bytes": 4,
+   "raw": "fb0802ff",
+   "referenced_by": [
+    {
+     "script": "0x08AECC7E",
+     "at": "0x08AECCD6",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEEBC6": {
+   "addr": "0x08AEEBC6",
+   "text": "怎么样，\\n你找到那只宝可梦了吗？",
+   "bytes": 30,
+   "raw": "100a094c0ee23bfe09d91045030409bd108c016307d70966089e092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF1C6",
+     "at": "0x08AEF1C8",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AEF340",
+     "at": "0x08AEF342",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEEBE6": {
+   "addr": "0x08AEEBE6",
+   "text": "不对……\\n应该不是这样的。",
+   "bytes": 23,
+   "raw": "01d60379b0b0fe0f54042d01d60c0c10550ee2030b37ff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF1C6",
+     "at": "0x08AEF1FA",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AEF340",
+     "at": "0x08AEF374",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF1BF": {
+   "addr": "0x08AEF1BF",
+   "text": "ó阿\\p侩",
+   "bytes": 7,
+   "raw": "230101fb0802ff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF05E",
+     "at": "0x08AEF072",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AEF055",
+     "at": "0x08AEF072",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AEF07A",
+     "at": "0x08AEF07C",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF2A8": {
+   "addr": "0x08AEF2A8",
+   "text": "ï魏啊É兵Ö-侩",
+   "bytes": 13,
+   "raw": "210d8001000601b5f2ae0802ff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF144",
+     "at": "0x08AEF158",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AEF13B",
+     "at": "0x08AEF158",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AEF160",
+     "at": "0x08AEF162",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF3FA": {
+   "addr": "0x08AEF3FA",
+   "text": "美发",
+   "bytes": 5,
+   "raw": "095803a5ff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF273",
+     "at": "0x08AEF27D",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF465": {
+   "addr": "0x08AEF465",
+   "text": "闲聊",
+   "bytes": 5,
+   "raw": "0df40897ff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF160",
+     "at": "0x08AEF18A",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AEF273",
+     "at": "0x08AEF28B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF46C": {
+   "addr": "0x08AEF46C",
+   "text": "您好！\\n请问您想要干什么？",
+   "bytes": 24,
+   "raw": "09f004e93cfe0b0d0d9009f00e180ef104330bee094c3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF273",
+     "at": "0x08AEF293",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x08AEF486": {
+   "addr": "0x08AEF486",
+   "text": "那只时髦的宝可梦……\\n还真是令人在意呢。",
+   "bytes": 37,
+   "raw": "09bd108c0bed1e35030b016307d70966b0b0fe054610590c0c08c10b4b0fe60f3209ce37ff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF2B5",
+     "at": "0x08AEF2D2",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AEF2DA",
+     "at": "0x08AEF2DC",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF492": {
+   "addr": "0x08AEF492",
+   "text": "可梦……\\n还真是令人在意呢。",
+   "bytes": 25,
+   "raw": "07d70966b0b0fe054610590c0c08c10b4b0fe60f3209ce37ff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF192",
+     "at": "0x08AEF19A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF4AD": {
+   "addr": "0x08AEF4AD",
+   "text": "您…您好！\\n请问是看见了我的委托吗，\\l那是\\ctrl[01 06]\\ctrl[03 09]周一\\ctrl[01 02]\\ctrl[03 03]的时候，\\l我正在自然公园散步，\\p忽然一只宝可梦出现在我面前……\\n它看起来像一只\\l有着厚厚的皮毛的狗。\\p我从未见过如此时髦，\\n毛发如此精细的宝可梦。\\p可正当我准备仔细打量它时，\\n它就跑到高草丛中消失不见了。\\p如果你有发现这只宝可梦的话，\\n可以收服它，\\l并把它给我看看吗？",
+   "bytes": 299,
+   "raw": "09f0b009f004e93cfe0b0d0d900c0c07c205e6089e0d98030b0d750d38092a3bfa09bd0c0cfc0106fc030910ad0f0bfc0102fc0303030b0bed05213bfa0d9810700fe6110c0b3b04730fbc0b8001d83bfb05250b3b0f0b108c016307d7096602780e030fe60d98097e0ac9b0b0fe0c9f07c20aab08290e1e0f0b108cfa0f7e10f405200520030b0a5f0943030b047f37fb0d9802b30d7a05e604c50b6702ab0bed1e353bfe094303a50b6702ab075b0ddc030b016307d7096637fb07d7107002ef0d9810eb017511080ddc02d208920c9f0bed3bfe0c9f077d0a3903040449020102b410a10e280be301d605e6089e37fb0b6704c309d90f7e03a50e031055108c016307d70966030b053d3bfe07d70f240c1a040a0c9f3bfa01bd01300c9f04620d9807c207c2092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF2DA",
+     "at": "0x08AEF2F1",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF4B1": {
+   "addr": "0x08AEF4B1",
+   "text": ":好！\\n请问是看见了我的委托吗，\\l那是\\ctrl[01 06]\\ctrl[03 09]周一\\ctrl[01 02]\\ctrl[03 03]的时候，\\l我正在自然公园散步，\\p忽然一只宝可梦出现在我面前……\\n它看起来像一只\\l有着厚厚的皮毛的狗。\\p我从未见过如此时髦，\\n毛发如此精细的宝可梦。\\p可正当我准备仔细打量它时，\\n它就跑到高草丛中消失不见了。\\p如果你有发现这只宝可梦的话，\\n可以收服它，\\l并把它给我看看吗？",
+   "bytes": 295,
+   "raw": "f004e93cfe0b0d0d900c0c07c205e6089e0d98030b0d750d38092a3bfa09bd0c0cfc0106fc030910ad0f0bfc0102fc0303030b0bed05213bfa0d9810700fe6110c0b3b04730fbc0b8001d83bfb05250b3b0f0b108c016307d7096602780e030fe60d98097e0ac9b0b0fe0c9f07c20aab08290e1e0f0b108cfa0f7e10f405200520030b0a5f0943030b047f37fb0d9802b30d7a05e604c50b6702ab0bed1e353bfe094303a50b6702ab075b0ddc030b016307d7096637fb07d7107002ef0d9810eb017511080ddc02d208920c9f0bed3bfe0c9f077d0a3903040449020102b410a10e280be301d605e6089e37fb0b6704c309d90f7e03a50e031055108c016307d70966030b053d3bfe07d70f240c1a040a0c9f3bfa01bd01300c9f04620d9807c207c2092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF202",
+     "at": "0x08AEF204",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AEF192",
+     "at": "0x08AEF1B9",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF4FA": {
+   "addr": "0x08AEF4FA",
+   "text": "步，\\p忽然一只宝可梦出现在我面前……\\n它看起来像一只\\l有着厚厚的皮毛的狗。\\p我从未见过如此时髦，\\n毛发如此精细的宝可梦。\\p可正当我准备仔细打量它时，\\n它就跑到高草丛中消失不见了。\\p如果你有发现这只宝可梦的话，\\n可以收服它，\\l并把它给我看看吗？",
+   "bytes": 222,
+   "raw": "01d83bfb05250b3b0f0b108c016307d7096602780e030fe60d98097e0ac9b0b0fe0c9f07c20aab08290e1e0f0b108cfa0f7e10f405200520030b0a5f0943030b047f37fb0d9802b30d7a05e604c50b6702ab0bed1e353bfe094303a50b6702ab075b0ddc030b016307d7096637fb07d7107002ef0d9810eb017511080ddc02d208920c9f0bed3bfe0c9f077d0a3903040449020102b410a10e280be301d605e6089e37fb0b6704c309d90f7e03a50e031055108c016307d70966030b053d3bfe07d70f240c1a040a0c9f3bfa01bd01300c9f04620d9807c207c2092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF20C",
+     "at": "0x08AEF220",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF59E": {
+   "addr": "0x08AEF59E",
+   "text": "如果你有发现这只宝可梦的话，\\n可以收服它，\\l并把它给我看看吗？",
+   "bytes": 58,
+   "raw": "0b6704c309d90f7e03a50e031055108c016307d70966030b053d3bfe07d70f240c1a040a0c9f3bfa01bd01300c9f04620d9807c207c2092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF20C",
+     "at": "0x08AEF244",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF5BD": {
+   "addr": "0x08AEF5BD",
+   "text": "ô收服它，\\l并把它给我看看吗？",
+   "bytes": 27,
+   "raw": "240c1a040a0c9f3bfa01bd01300c9f04620d9807c207c2092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF20C",
+     "at": "0x08AEF263",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF5E0": {
+   "addr": "0x08AEF5E0",
+   "text": "好吧……可是我好想\\n再看一看那只宝可梦的毛发…",
+   "bytes": 43,
+   "raw": "04e90128b0b007d70c0c0d9804e90e18fe0fe507c20f0b07c209bd108c016307d70966030b094303a5b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08F56E42",
+     "at": "0x08F56E4F",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF62C": {
+   "addr": "0x08AEF62C",
+   "text": "麻烦你了！\\n\\ctrl[01 06]\\ctrl[03 09]周一\\ctrl[01 02]\\ctrl[03 03]和\\ctrl[01 06]\\ctrl[03 09]自然公园\\ctrl[01 02]\\ctrl[03 03]……\\l是否会和这个有关呢？",
+   "bytes": 71,
+   "raw": "092303b609d9089e3cfefc0106fc030910ad0f0bfc0102fc030304f3fc0106fc0309110c0b3b04730fbcfc0102fc0303b0b0fa0c0c03f4056e04f3105504600f7e04a009ce3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF37C",
+     "at": "0x08AEF37E",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AEF30C",
+     "at": "0x08AEF333",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF675": {
+   "addr": "0x08AEF675",
+   "text": "没错…！\\n这正是那只很时髦的宝可梦！\\l让我看看……",
+   "bytes": 44,
+   "raw": "095302cdb03cfe105510700c0c09bd108c050b0bed1e35030b016307d709663cfa0b430d9807c207c2b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF386",
+     "at": "0x08AEF39A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF6A3": {
+   "addr": "0x08AEF6A3",
+   "text": "没想到还有\\n这样独特的宝可梦呢，\\p我很想为它打理毛发，\\n可是我担心我的技术不足……\\p如果你有空的话，\\n请把它给我的兄长看看吧！",
+   "bytes": 116,
+   "raw": "09530e18030405460f7efe10550ee203650cd9030b016307d7096609ce3bfb0d98050b0e180d700c9f02d20862094303a53bfe07d70c0c0d9802e10e4f0d98030b05a70c3a01d6111bb0b0fb0b6704c309d90f7e07e3030b053d3bfe0b0d01300c9f04620d98030b0e61022607c207c201283cff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF386",
+     "at": "0x08AEF3A8",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF738": {
+   "addr": "0x08AEF738",
+   "text": "\\ctrl[06 00]获得了3点BracerPoints和4000$!",
+   "bytes": 33,
+   "raw": "fc0600057e030a089ea4032abce6d5d7d9e6cae3dde2e8e704f3a5a1a1a1b7abff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF9A1",
+     "at": "0x08AEF9A8",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AEF75B": {
+   "addr": "0x08AEF75B",
+   "text": "如果你有空的话，请把\\n那只宝可梦给我的兄长看看吧！",
+   "bytes": 48,
+   "raw": "0b6704c309d90f7e07e3030b053d3b0b0d0130fe09bd108c016307d7096604620d98030b0e61022607c207c201283cff",
+   "referenced_by": [
+    {
+     "script": "0x08AEF3ED",
+     "at": "0x08AEF3EF",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AF018A": {
+   "addr": "0x08AF018A",
+   "text": "\\ctrl[06 00]获得了3点BracerPoints!",
+   "bytes": 26,
+   "raw": "fc0600057e030a089ea4032abce6d5d7d9e6cae3dde2e8e7abff",
+   "referenced_by": [
+    {
+     "script": "0x089E35C6",
+     "at": "0x089E35E7",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AF02C9": {
+   "addr": "0x08AF02C9",
+   "text": "\\ctrl[06 00]获得了3点BracerPoints!",
+   "bytes": 26,
+   "raw": "fc0600057e030a089ea4032abce6d5d7d9e6cae3dde2e8e7abff",
+   "referenced_by": [
+    {
+     "script": "0x08AE3924",
+     "at": "0x08AE394A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AF04DE": {
+   "addr": "0x08AF04DE",
+   "text": "\\var[01]，我们留个电话吧？",
+   "bytes": 19,
+   "raw": "fd013b0d98095f08c70460032e053d01283dff",
+   "referenced_by": [
+    {
+     "script": "0x08AF031B",
+     "at": "0x08AF0336",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AF04F3": {
+   "addr": "0x08AF04F3",
+   "text": "\\ctrl[01 06]\\ctrl[03 fc]\\var[01]把阿始的电话号码\\n登陆到了精灵齿轮！",
+   "bytes": 43,
+   "raw": "fc0106fc03fcfd01013001010c01030b032e053d04eb0925fe030e08ee0304089e075b08bc025f09103cff",
+   "referenced_by": [
+    {
+     "script": "0x08AF031B",
+     "at": "0x08AF0348",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x08AF05FF": {
+   "addr": "0x08AF05FF",
+   "text": "这次的录制辛苦你了！\\n下次需要拍摄的时候，\\l我会联系你哦！",
+   "bytes": 54,
+   "raw": "105502ae030b08ed10970e4c07ee09d9089e3cfe0de602ae0e730ef10a210bc1030b0bed05213bfa0d98056e087d0dd909d90a133cff",
+   "referenced_by": [
+    {
+     "script": "0x08AF04BC",
+     "at": "0x08AF04CE",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AF031B",
+     "at": "0x08AF0360",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AF0636": {
+   "addr": "0x08AF0636",
+   "text": "\\ctrl[06 00]获得了2点BracerPoints!",
+   "bytes": 26,
+   "raw": "fc0600057e030a089ea3032abce6d5d7d9e6cae3dde2e8e7abff",
+   "referenced_by": [
+    {
+     "script": "0x08AE33E1",
+     "at": "0x08AE3437",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AF0B55": {
+   "addr": "0x08AF0B55",
+   "text": "你好，请问你可以帮我解决\\n挡在36号道路的奇怪的树吗？",
+   "bytes": 50,
+   "raw": "09d904e93b0b0d0d9009d907d70f24014e0d98073407a6fe02f00fe6a4a704eb030708e8030b0aa1049e030b0c3c092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AF09FC",
+     "at": "0x08AF0A3B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AF0BB0": {
+   "addr": "0x08AF0BB0",
+   "text": "好吧……呜呜……",
+   "bytes": 13,
+   "raw": "04e90128b0b00d9e0d9eb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08F56C15",
+     "at": "0x08F56C22",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AF0BBF": {
+   "addr": "0x08AF0BBF",
+   "text": "谢谢你…\\n如果奇怪的树离开了，\\l我们店里的生意一定会好很多吧！",
+   "bytes": 58,
+   "raw": "0e460e4609d9b0fe0b6704c30aa1049e030b0c3c086007b8089e3bfa0d98095f03310864030b0bd80f320f0b034d056e04e9050b038501283cff",
+   "referenced_by": [
+    {
+     "script": "0x08AF0A59",
+     "at": "0x08AF0A7D",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AF276E": {
+   "addr": "0x08AF276E",
+   "text": "是…是你！\\n你有看见我的委托吗？\\p我家里的钥匙丢了，\\n现在打不开家门而回不了家……\\l你能帮我找找钥匙吗？",
+   "bytes": 94,
+   "raw": "0c0cb00c0c09d93cfe09d90f7e07c205e60d98030b0d750d38092a3dfb0d9805bd0864030b0fcb0259034f089e3bfe0e030fe602d201d607b805bd095d039d056501d6089e05bdb0b0fa09d909d2014e0d98104510450fcb0259092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AF260B",
+     "at": "0x08AF2615",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AF25BD",
+     "at": "0x08AF2615",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AF2795": {
+   "addr": "0x08AF2795",
+   "text": "匙丢了，\\n现在打不开家门而回不了家……\\l你能帮我找找钥匙吗？",
+   "bytes": 55,
+   "raw": "0259034f089e3bfe0e030fe602d201d607b805bd095d039d056501d6089e05bdb0b0fa09d909d2014e0d98104510450fcb0259092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AF25BD",
+     "at": "0x08AF25E1",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AF27CE": {
+   "addr": "0x08AF27CE",
+   "text": "好…好吧，\\n我会自己再找找看的。",
+   "bytes": 29,
+   "raw": "04e9b004e901283bfe0d98056e110c05a50fe51045104507c2030b37ff",
+   "referenced_by": [
+    {
+     "script": "0x08F5B842",
+     "at": "0x08F5B84F",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AF2808": {
+   "addr": "0x08AF2808",
+   "text": "真的是太感谢你了，\\n我想钥匙应该就在\\l缘朱市内某处吧……\\l毕竟我最近也没有去其他地方……\\l对了，这个也给你吧。",
+   "bytes": 100,
+   "raw": "1059030b0c0c0cac043a0e4609d9089e3bfe0d980e180fcb02590f54042d077d0fe6fa0fc110bd0c1509d009a902860128b0b0fa018c07690d981126074e0f0209530f7e0b250a9f0c9e031f03c0b0b0fa0379089e3b105504600f02046209d9012837ff",
+   "referenced_by": [
+    {
+     "script": "0x08AF2630",
+     "at": "0x08AF2654",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AF286E": {
+   "addr": "0x08AF286E",
+   "text": "这个探宝器应该\\n会对你有所帮助吧。\\p虽然肉眼看不见，\\n但各地都散落着隐藏道具。\\p当你靠近隐藏道具时，\\n探宝器便会有反应。\\l试着用探宝器找到钥匙吧！",
+   "bytes": 135,
+   "raw": "105504600cbe01630ab20f54042dfe056e037909d90f7e0c9c014e10cb012837fb0c870b3b0b620ec407c201d605e63bfe02e90461031f03610b80091e10f40f4e01f30307078f37fb02ef09d907cd074e0f4e01f30307078f0bed3bfe0cbe01630ab201a0056e0f7e03b70f5437fa0c1910f40f710cbe01630ab2104503040fcb025901283cff",
+   "referenced_by": [
+    {
+     "script": "0x08AF2630",
+     "at": "0x08AF2676",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AF2B55": {
+   "addr": "0x08AF2B55",
+   "text": "\\ctrl[06 00]获得了4点BracerPoints和4000$!",
+   "bytes": 33,
+   "raw": "fc0600057e030a089ea5032abce6d5d7d9e6cae3dde2e8e704f3a5a1a1a1b7abff",
+   "referenced_by": [
+    {
+     "script": "0x08AFFA84",
+     "at": "0x08AFFADC",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AFB0EF": {
+   "addr": "0x08AFB0EF",
+   "text": "\\ctrl[06 00]将外卖交给了顾客！",
+   "bytes": 21,
+   "raw": "fc060005f40d4a092e070d0462089e049307db3cff",
+   "referenced_by": [
+    {
+     "script": "0x08AFABE8",
+     "at": "0x08AFAC0A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AFB9FD": {
+   "addr": "0x08AFB9FD",
+   "text": "\\ctrl[06 00]将外卖交给了顾客！",
+   "bytes": 21,
+   "raw": "fc060005f40d4a092e070d0462089e049307db3cff",
+   "referenced_by": [
+    {
+     "script": "0x08AFB867",
+     "at": "0x08AFB889",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AFCA68": {
+   "addr": "0x08AFCA68",
+   "text": "哦，你是送外卖的吗？\\n谢谢你特地送过来！\\p我所乘坐的班次延误了……\\n在这里等候的我饥渴难耐，\\l便点了一份外卖……",
+   "bytes": 101,
+   "raw": "0a133b09d90c0c0c700d4a092e030b092a3dfe0e460e4609d90cd9031f0c7004c508293cfb0d980c9c024d1130030b013f02ae0ebc0db9089eb0b0fe0fe610550864030f0521030b0d98058d07d809c709c33bfa01a0032a089e0f0b03e00d4a092eb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08AFABE8",
+     "at": "0x08AFABFF",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AFCAD1": {
+   "addr": "0x08AFCAD1",
+   "text": "哦，你是送外卖的吗？\\n谢谢你特地送过来！\\p我所乘坐的班次延误了……\\n在这里等候的我饥渴难耐，\\l便点了一份外卖……",
+   "bytes": 101,
+   "raw": "0a133b09d90c0c0c700d4a092e030b092a3dfe0e460e4609d90cd9031f0c7004c508293cfb0d980c9c024d1130030b013f02ae0ebc0db9089eb0b0fe0fe610550864030f0521030b0d98058d07d809c709c33bfa01a0032a089e0f0b03e00d4a092eb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08AFB867",
+     "at": "0x08AFB87E",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AFCEBA": {
+   "addr": "0x08AFCEBA",
+   "text": "穿着白色长裙的女孩\\n居然是宝可梦……\\l感觉…更兴奋了！",
+   "bytes": 49,
+   "raw": "028910f401360b8902260b39030b0a0b04c8fe07830b3b0c0c016307d70966b0b0fa043a07a5b004660e5603df089e3cff",
+   "referenced_by": [
+    {
+     "script": "0x08AFCEB0",
+     "at": "0x08AFCEB2",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AFD1F9": {
+   "addr": "0x08AFD1F9",
+   "text": "你…你看见了我的委托吗？\\n那是\\ctrl[01 06]\\ctrl[03 09]周二\\ctrl[01 02]\\ctrl[03 03]的晚上，\\l我正在灯塔附近散步。\\p忽然之间，我注意到灯塔上\\n正站立着一名穿着白色长裙的女孩……\\p天呐！\\n她就如同天上的明月一般皎洁！\\p可我只是一名平平无奇的水手，\\n又怎么有勇气去见她？\\p所以……你能够代替我\\n去见那名穿着白色长裙的女孩吗？",
+   "bytes": 259,
+   "raw": "09d9b009d907c205e6089e0d98030b0d750d38092a3dfe09bd0c0cfc0106fc030910ad03a3fc0102fc0303030b0d550bad3bfa0d9810700fe6030d0ca10427074e0b8001d837fb05250b3b107f05cf3b0d9810d10f320304030d0ca10badfe10701031087510f40f0b0993028910f401360b8902260b39030b0a0b04c8b0b0fb0ced09bb3cfe0ca0077d0b670d140ced0bad030b098f0fce0f0b01421a5a07323cfb07d70d98108c0c0c0f0b09930a780a780da40aa1030b0c510c1b3bfe0f84100a094c0f7e0f700ab30b2505e60ca03dfb0c9c0f24b0b009d909d2048302da0ce70d98fe0b2505e609bd0993028910f401360b8902260b39030b0a0b04c8092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AFCF17",
+     "at": "0x08AFCF26",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AFD277": {
+   "addr": "0x08AFD277",
+   "text": "…\\p天呐！\\n她就如同天上的明月一般皎洁！\\p可我只是一名平平无奇的水手，\\n又怎么有勇气去见她？\\p所以……你能够代替我\\n去见那名穿着白色长裙的女孩吗？",
+   "bytes": 133,
+   "raw": "b0fb0ced09bb3cfe0ca0077d0b670d140ced0bad030b098f0fce0f0b01421a5a07323cfb07d70d98108c0c0c0f0b09930a780a780da40aa1030b0c510c1b3bfe0f84100a094c0f7e0f700ab30b2505e60ca03dfb0c9c0f24b0b009d909d2048302da0ce70d98fe0b2505e609bd0993028910f401360b8902260b39030b0a0b04c8092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AFCE86",
+     "at": "0x08AFCEA8",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AFD2FE": {
+   "addr": "0x08AFD2FE",
+   "text": "果然如此吗，\\n毕竟我只是一名平平无奇的水手呢……",
+   "bytes": 45,
+   "raw": "04c30b3b0b6702ab092a3bfe018c07690d98108c0c0c0f0b09930a780a780da40aa1030b0c510c1b09ceb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08F5EF7A",
+     "at": "0x08F5EF82",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AFD34C": {
+   "addr": "0x08AFD34C",
+   "text": "太感谢你了！\\n难道这就是命运的馈赠吗！？\\p那么就拜托你了，\\n我当时是在\\ctrl[01 06]\\ctrl[03 09]周二\\ctrl[01 02]\\ctrl[03 03]看到她的。",
+   "bytes": 89,
+   "raw": "0cac043a0e4609d9089e3cfe09c703071055077d0c0c09940fd7030b0816100e092a3c3dfb09bd094c077d013c0d3809d9089e3bfe0d9802ef0bed0c0c0fe6fc0106fc030910ad03a3fc0102fc030307c203040ca0030b37ff",
+   "referenced_by": [
+    {
+     "script": "0x08AFD402",
+     "at": "0x08AFD409",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AFFA63": {
+   "addr": "0x08AFFA63",
+   "text": "·框场阿\\p来Y绻",
+   "bytes": 14,
+   "raw": "af080902230101fb0829d31702ff",
+   "referenced_by": [
+    {
+     "script": "0x08AFF9B9",
+     "at": "0x08AFF9C4",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AFFAEC": {
+   "addr": "0x08AFFAEC",
+   "text": "太阳珊瑚的情况……\\n最近总感觉不太对呢。",
+   "bytes": 37,
+   "raw": "0cac0edd0b980526030b0b0b080db0b0fe1126074e1114043a07a501d60cac037909ce37ff",
+   "referenced_by": [
+    {
+     "script": "0x08AFF9D5",
+     "at": "0x08AFF9F8",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AFFB13": {
+   "addr": "0x08AFFB13",
+   "text": "是你，\\n看见了我的委托吗？\\p我的太阳珊瑚最近看上去\\n总是一副无精打采的样子。\\p哪怕是用了秘传之药\\n也没有任何效果……\\p我怀疑这和上方的洞穴深处\\n传来的恐怖气息有关。\\p你能够帮我\\n调查一下上方的洞穴吗？",
+   "bytes": 185,
+   "raw": "0c0c09d93bfe07c205e6089e0d98030b0d750d38092a3dfb0d98030b0cac0edd0b9805261126074e07c20bad0b25fe11140c0c0f0b041b0da4075b02d201e4030b0ee2110b37fb09ba0a1f0c0c0f71089e0970028b107f0ef0fe0f0209530f7e0b4e04f40e3204c3b0b0fb0d9805400f19105504f30bad03c0030b03590e910bcc0286fe028b0829030b07e401db0ab30dc60f7e04a037fb09d909d20483014e0d98fe033e020d0f0b0de60bad03c0030b03590e91092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AFFA13",
+     "at": "0x08AFFA22",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AFFBCE": {
+   "addr": "0x08AFFBCE",
+   "text": "好吧，\\n也许是我多虑了……",
+   "bytes": 23,
+   "raw": "04e901283bfe0f020e780c0c0d9803850901089eb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08AFFA33",
+     "at": "0x08AFFA35",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EC3209",
+     "at": "0x08EC3211",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AFFC06": {
+   "addr": "0x08AFFC06",
+   "text": "太感谢你了！\\n如果能调查清楚\\l洞穴深处恐怖气息的源头，\\l说不定就能解决太阳珊瑚的问题……",
+   "bytes": 82,
+   "raw": "0cac043a0e4609d9089e3cfe0b6704c309d2033e020d0b070280fa03590e910bcc028607e401db0ab30dc6030b0fc00d1f3bfa0c5801d6034d077d09d2073407a60cac0edd0b980526030b0d900ce3b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08AFFA71",
+     "at": "0x08AFFA7C",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08AFFA3D",
+     "at": "0x08AFFA61",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AFFC5A": {
+   "addr": "0x08AFFC5A",
+   "text": "嗨，感觉太阳珊瑚\\n最近又变得精神起来了呢！\\p嗯…？\\n原来洞穴的深处\\l栖息着一只巨大的超坏星吗？",
+   "bytes": 86,
+   "raw": "14673b043a07a50cac0edd0b980526fe1126074e0f8401a1030a075b0bcf0aab0829089e09ce3cfb1461b03dfe0fb9082903590e91030b0bcc0286fa0a970dc610f40f0b108c078e02d3030b022e05420e52092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08AFFA84",
+     "at": "0x08AFFA86",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08AFFCB2": {
+   "addr": "0x08AFFCB2",
+   "text": "噢，我明白了！\\p传说在超坏星爬过的地方，\\n会散落太阳珊瑚的碎屑……\\l这也是太阳珊瑚会不安的原因吧？\\p现在多亏了你驱赶了超坏星，\\n太阳珊瑚又变得有精神起来啦！\\p来，这是给你的报酬。",
+   "bytes": 163,
+   "raw": "147a3b0d98098f0136089e3cfb028b0c580fe6022e05420e520a1d04c5030b031f03c03bfe056e0b80091e0cac0edd0b980526030b0c8c0e47b0b0fa10550f020c0c0cac0edd0b980526056e01d60111030b0fb90f4201283dfb0e030fe60385080e089e09d90b1f0439089e022e05420e523bfe0cac0edd0b9805260f8401a1030a0f7e075b0bcf0aab082908273cfb08293b10550c0c046209d9030b0165026c37ff",
+   "referenced_by": [
+    {
+     "script": "0x08AFFA84",
+     "at": "0x08AFFA9B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EB217D": {
+   "addr": "0x08EB217D",
+   "text": "呃……我想说什么来着？\\n我想起来了，我就是遗忘大师。\\p我能让宝可梦忘记\\n它们学会的技能。\\p你需要我展示一下这门绝活吗？",
+   "bytes": 108,
+   "raw": "13f5b0b00d980e180c580bee094c082910f43dfe0d980e180aab0829089e3b0d98077d0c0c0f150d6402d30be237fb0d9809d20b43016307d709660d6405b2fe0c9f095f0e90056e030b05a709d237fb09d90e730ef10d98102c0c030f0b0de61055095d07a8057b092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x0816D895",
+     "at": "0x0816D899",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EC50E2": {
+   "addr": "0x08EC50E2",
+   "text": "警告！你所确认的\\n个体即将失控超级进化！\\p是否要应对\\n失控超级进化的个体？",
+   "bytes": 69,
+   "raw": "075f04503c09d90c9c0b370b4f030bfe04600ce6059f05f40be307e6022e05a1074a053c3cfb0c0c03f40ef10f540379fe0be307e6022e05a1074a053c030b04600ce63dff",
+   "referenced_by": [
+    {
+     "script": "0x08EDE570",
+     "at": "0x08EDE5CC",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EDE58E",
+     "at": "0x08EDE5CC",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EC527C": {
+   "addr": "0x08EC527C",
+   "text": "\\var[01]和亚玄\\n一同行动！",
+   "bytes": 19,
+   "raw": "fd0104f30eb00e89fe0f0b0d140e5b03543cff",
+   "referenced_by": [
+    {
+     "script": "0x08EC545B",
+     "at": "0x08EC5462",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EC529A": {
+   "addr": "0x08EC529A",
+   "text": "……你是？\\n哦，你叫\\var[01]啊，\\l我叫亚玄。\\p我是个好奇心旺盛的训练家，\\n一直都在这里修行。\\l可以的话我们一起走吧。\\l宝可梦们好像有点不安。\\p如果你的宝可梦受伤了，\\n我会帮它回复的。",
+   "bytes": 157,
+   "raw": "b0b009d90c0c3dfe0a133b09d90722fd0101003bfa0d9807220eb00e8937fb0d980c0c046004e90aa10e4f0d620bde030b0e9e088a05bd3bfe0f0b108203610fe6105508640e690e5b37fa07d70f24030b053d0d98095f0f0b0aab1117012837fa016307d70966095f04e90e1e0f7e032a01d6011137fb0b6704c309d9030b016307d709660c210ba9089e3bfe0d98056e014e0c9f0565041e030b37ff",
+   "referenced_by": [
+    {
+     "script": "0x08EC51E3",
+     "at": "0x08EC523D",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08ED534D": {
+   "addr": "0x08ED534D",
+   "text": "精灵齿轮检测到周围的\\n超级能浓度正在极速上升！",
+   "bytes": 45,
+   "raw": "075b08bc025f091005d70206030410ad0d6d030bfe022e05a109d20a05036d10700fe605960c7c0bad0bdb3cff",
+   "referenced_by": [
+    {
+     "script": "0x08EDE570",
+     "at": "0x08EDE5B0",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EDE58E",
+     "at": "0x08EDE5B0",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EDEBD4": {
+   "addr": "0x08EDEBD4",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将呆壳兽超级进化的波动\\n储存在了超级石中。",
+   "bytes": 49,
+   "raw": "fc0106fc0309fd0105f402d407d50c23022e05a1074a053c030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x08EDE95F",
+     "at": "0x08EDE98F",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x08EDEC07": {
+   "addr": "0x08EDEC07",
+   "text": "尾巴上的大舌贝\\n似乎闪耀着光芒……",
+   "bytes": 32,
+   "raw": "0d78012c0bad030b02d30bbe0171fe0c6905240b9f0ef210f404aa093ab0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08EDE95F",
+     "at": "0x08EDE978",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EDEC29": {
+   "addr": "0x08EDEC29",
+   "text": "呆呆兽好像很痛苦的样子……",
+   "bytes": 25,
+   "raw": "02d402d40c2304e90e1e050b0d1c07ee030b0ee2110bb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08EDE570",
+     "at": "0x08EDE585",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE7577": {
+   "addr": "0x08EE7577",
+   "text": "无论是人类还是宝可梦，那份\\n拼尽全力想要保护孩子的心情，\\l都是完全一样的呀。",
+   "bytes": 72,
+   "raw": "0da409150c0c0b4b085505460c0c016307d709663b09bd03e0fe0a6f07510b2b08790e180ef10160053104c8110b030b0e4f0b0b3bfa03610c0c0d520b2b0f0b0ee2030b0ea637ff",
+   "referenced_by": [
+    {
+     "script": "0x08EE6C58",
+     "at": "0x08EE6C5A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE7A54": {
+   "addr": "0x08EE7A54",
+   "text": "天哪……真是\\n既可怕又感人的故事。\\p无论是人类还是宝可梦，那份\\n拼尽全力想要保护孩子的心情，\\l都是完全一样的呀。\\p就算力量再怎么微弱，\\n只要是为了守护\\l怀里的这个小生命……\\p作为母亲，\\n就能爆发出难以想象的勇气。\\p谢谢你，\\var[01]！\\n不仅帮我把供品带到了祠堂，\\l还保全了一对母子的安全！\\p我以后也一定会\\n像那只狩猎凤蝶一样，\\p为了孩子们，\\n变得更加坚强！\\p谢谢你给了我\\n这么多的帮助啦！\\p这些可能有些微不足道，\\n但也请你收下！",
+   "bytes": 380,
+   "raw": "0ced09bab0b010590c0cfe05b307d70a1f0f84043a0b4b030b04920c0737fb0da409150c0c0b4b085505460c0c016307d709663b09bd03e0fe0a6f07510b2b08790e180ef10160053104c8110b030b0e4f0b0b3bfa03610c0c0d520b2b0f0b0ee2030b0ea637fb077d0c86087908920fe5100a094c0d680b753bfe108c0ef10c0c0d70089e0c1d0531fa05400864030b105504600e2c0bd80994b0b0fb112f0d7009ae0af03bfe077d09d2016903a5027809c70f240e180e20030b0f700ab337fb0e460e4609d93bfd013cfe01d60748014e0d98013004710a7202d80304089e19250cc43bfa054601600b2b089e0f0b037909ae110b030b01110b2b3cfb0d980f2405220f020f0b034d056efe0e1e09bd108c14f108a703f203420f0b0ee23bfb0d70089e04c8110b095f3bfe01a1030a046605be05cc0ad83cfb0e460e4609d90462089e0d98fe1055094c0385030b014e10cb08273cfb10550e3407d709d20f7e0e340d6801d6111b03073bfe02e90f020b0d09d90c1a0de63cff",
+   "referenced_by": [
+    {
+     "script": "0x08EE7834",
+     "at": "0x08EE7864",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE7CAA": {
+   "addr": "0x08EE7CAA",
+   "text": "\\ctrl[01 02]\\ctrl[03 03]\\var[01]将在\\n桐树林发生的事告诉了太太。",
+   "bytes": 39,
+   "raw": "fc0102fc0303fd0105f40fe6fe0d110c3c08a903a50bd8030b0c0704500c82089e0cac0cac37ff",
+   "referenced_by": [
+    {
+     "script": "0x08EE7834",
+     "at": "0x08EE7848",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE7CD3": {
+   "addr": "0x08EE7CD3",
+   "text": "你都完成了吗？\\n真的是非常感谢你。",
+   "bytes": 32,
+   "raw": "09d903610d52024b089e092a3dfe1059030b0c0c03ca0225043a0e4609d937ff",
+   "referenced_by": [
+    {
+     "script": "0x08EE7834",
+     "at": "0x08EE783F",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE97B9": {
+   "addr": "0x08EE97B9",
+   "text": "厉Á",
+   "bytes": 4,
+   "raw": "086c02ff",
+   "referenced_by": [
+    {
+     "script": "0x08EE9162",
+     "at": "0x08EE9225",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE9136",
+     "at": "0x08EE9225",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE921C",
+     "at": "0x08EE9225",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE90F6",
+     "at": "0x08EE9225",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE91DC",
+     "at": "0x08EE9225",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE9091",
+     "at": "0x08EE9225",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE9429",
+     "at": "0x08EE94C0",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE9AF7": {
+   "addr": "0x08EE9AF7",
+   "text": "……是你啊，\\var[01]。\\n抱歉，让你看到这难看的一幕。",
+   "bytes": 40,
+   "raw": "b0b00c0c09d901003bfd0137fe01640ad13b0b4309d907c20304105509c707c2030b0f0b09b137ff",
+   "referenced_by": [
+    {
+     "script": "0x08EE9574",
+     "at": "0x08EE9588",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE9429",
+     "at": "0x08EE9588",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE9B21": {
+   "addr": "0x08EE9B21",
+   "text": "这只波波……\\n它的翅膀先天发育不全，\\l骨骼也很脆弱。\\p如果是从生物学的角度来看，\\n它是不可能飞起来的。",
+   "bytes": 93,
+   "raw": "1055108c01c301c3b0b0fe0c9f030b026301510dec0ced03a50fab01d60b2b3bfa048f1e1f0f02050b02c00b7537fb0b6704c30c0c02b30bd80db50e90030b0719036d082907c23bfe0c9f0c0c01d607d709d203cc0aab0829030b37ff",
+   "referenced_by": [
+    {
+     "script": "0x08EE9574",
+     "at": "0x08EE95C1",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE9429",
+     "at": "0x08EE95C1",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE9B80": {
+   "addr": "0x08EE9B80",
+   "text": "我已经告诉它很多次了，\\n“待在地面上吧”，“我会保护你的”。\\l可是……你看。",
+   "bytes": 65,
+   "raw": "0d980f21075d04500c820c9f050b038502ae089e3bfeb102dd0fe6031f097e0bad0128b23bb10d98056e0160053109d9030bb237fa07d70c0cb0b009d907c237ff",
+   "referenced_by": [
+    {
+     "script": "0x08EE9574",
+     "at": "0x08EE95F1",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE9429",
+     "at": "0x08EE95F1",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE9B9D": {
+   "addr": "0x08EE9B9D",
+   "text": "面上吧”，“我会保护你的”。\\l可是……你看。",
+   "bytes": 36,
+   "raw": "097e0bad0128b23bb10d98056e0160053109d9030bb237fa07d70c0cb0b009d907c237ff",
+   "referenced_by": [
+    {
+     "script": "0x08EE9429",
+     "at": "0x08EE9559",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE9BC3": {
+   "addr": "0x08EE9BC3",
+   "text": "波啵！",
+   "bytes": 6,
+   "raw": "01c3143f3cff",
+   "referenced_by": [
+    {
+     "script": "0x08EE9574",
+     "at": "0x08EE9627",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE9429",
+     "at": "0x08EE9627",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE9BCB": {
+   "addr": "0x08EE9BCB",
+   "text": "波……啵……",
+   "bytes": 9,
+   "raw": "01c3b0b0143fb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08EE9574",
+     "at": "0x08EE9680",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE9429",
+     "at": "0x08EE9680",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE9BD6": {
+   "addr": "0x08EE9BD6",
+   "text": "为什么呢？\\p明明知道会痛，\\n明明知道可能会摔死……\\p为什么还要如此执着于天空？",
+   "bytes": 71,
+   "raw": "0d700bee094c09ce3dfb098f098f107b0307056e0d1c3bfe098f098f107b030707d709d2056e0c470c63b0b0fb0d700bee094c05460ef10b6702ab108510f40f880ced07e33dff",
+   "referenced_by": [
+    {
+     "script": "0x08EE969A",
+     "at": "0x08EE96AD",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE9574",
+     "at": "0x08EE96AD",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE9429",
+     "at": "0x08EE96AD",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE9C1F": {
+   "addr": "0x08EE9C1F",
+   "text": "父亲把这间道馆\\n交给我的时候说过：\\p“阿速，你要成为\\n华丽地飞舞于空中的驯鸟师。”\\p我一直以为，\\n鸟是因为拥有翅膀才会飞，\\l是因为这是它们的本能，\\l或者是为了捕食和生存……\\p但是看着这只波波，我突然\\n对自己一直以来的信念产生了动摇。",
+   "bytes": 212,
+   "raw": "04220af00130105505cf030704a5fe070d04620d98030b0bed05210c5804c53efbb101010c7c3b09d90ef1024b0d70fe0537086b031f03cc0dae0f8807e310a1030b0e9a09e70be237b2fb0d980f0b10820f240d703bfe09e70c0c0f420d700f630f7e0263015101e0056e03cc3bfa0c0c0f420d7010550c0c0c9f095f030b017b09d23bfa057f10520c0c0d70089e01d10bef04f30bd802c6b0b0fb02e90c0c07c210f41055108c01c301c33b0d980d230b3bfe0379110c05a50f0b10820f240829030b0e5009e4021e0bd8089e03540ee837ff",
+   "referenced_by": [
+    {
+     "script": "0x08EE969A",
+     "at": "0x08EE96ED",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE9574",
+     "at": "0x08EE96ED",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE9429",
+     "at": "0x08EE96ED",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE9CF5": {
+   "addr": "0x08EE9CF5",
+   "text": "\\var[01]，作为击败过\\n我的训练家，能不能帮我一个忙？",
+   "bytes": 43,
+   "raw": "fd013b112f0d700584013b04c5fe0d98030b0e9e088a05bd3b09d201d609d2014e0d980f0b0460093e3dff",
+   "referenced_by": [
+    {
+     "script": "0x08EE969A",
+     "at": "0x08EE9722",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE9574",
+     "at": "0x08EE9722",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08EE9429",
+     "at": "0x08EE9722",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE9D22": {
+   "addr": "0x08EE9D22",
+   "text": "我想知道……\\n“鸟，究竟是为什么会飞？”\\p你可以帮我去问问\\n这个城市里最有智慧的人吗？\\p比如宝可梦学校的初始老师，\\n还有喇叭芽之塔的长老。\\p我想听听他们的答案。",
+   "bytes": 145,
+   "raw": "0d980e18107b0307b0b0feb109e73b076f07690c0c0d700bee094c056e03cc3db2fb09d907d70f24014e0d980b250d900d90fe1055046002490c15086411260f7e10980568030b0b4b092a3dfb01850b67016307d709660e900e2e030b02770c0108440be23bfe05460f7e082301270ea8107f0ca1030b0226084437fb0d980e180d070d070c9e095f030b02d0011737ff",
+   "referenced_by": [
+    {
+     "script": "0x08EEB149",
+     "at": "0x08EEB150",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE9DD4": {
+   "addr": "0x08EE9DD4",
+   "text": "这样啊……\\n抱歉，打扰你了。",
+   "bytes": 24,
+   "raw": "10550ee20100b0b0fe01640ad13b02d20b4509d9089e37ff",
+   "referenced_by": [
+    {
+     "script": "0x08EEB161",
+     "at": "0x08EEB187",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EE9DE0": {
+   "addr": "0x08EE9DE0",
+   "text": "W，打扰你了。",
+   "bytes": 12,
+   "raw": "d13b02d20b4509d9089e37ff",
+   "referenced_by": [
+    {
+     "script": "0x08EE9342",
+     "at": "0x08EE934C",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F34537": {
+   "addr": "0x08F34537",
+   "text": "周四\\ctrl[01 02]\\ctrl[03 03]的晚上，我在桐树林\\n发现了一个穿着粉色玩偶装的人。\\p可还没有等我反应过来，\\n他就抱住了我……\\l把我送出了桐树林，\\l随后消失得无影无踪……\\p我真的很想知道……\\n玩偶装里的人到底长什么样子！\\p所以……请问\\n你能够帮我调查这件事吗？",
+   "bytes": 214,
+   "raw": "10ad0c67fc0102fc0303030b0d550bad3b0d980fe60d110c3c08a9fe03a50e03089e0f0b0460028910f403de0b890d4e0a1910df030b0b4b37fb07d7054609530f7e030f0d9803b70f5404c508293bfe0c9e077d016410d0089e0d98b0b0fa01300d980c700278089e0d110c3c08a93bfa0c8905220e280be3030a0da40f5e0da41111b0b0fb0d981059030b050b0e18107b0307b0b0fe0d4e0a1910df0864030b0b4b0304031e02260bee094c0ee2110b3cfb0c9c0f24b0b00b0d0d90fe09d909d20483014e0d98033e020d105505e90c07092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08F342EF",
+     "at": "0x08F3431B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F34552": {
+   "addr": "0x08F34552",
+   "text": "\\n发现了一个穿着粉色玩偶装的人。\\p可还没有等我反应过来，\\n他就抱住了我……\\l把我送出了桐树林，\\l随后消失得无影无踪……\\p我真的很想知道……\\n玩偶装里的人到底长什么样子！\\p所以……请问\\n你能够帮我调查这件事吗？",
+   "bytes": 187,
+   "raw": "fe03a50e03089e0f0b0460028910f403de0b890d4e0a1910df030b0b4b37fb07d7054609530f7e030f0d9803b70f5404c508293bfe0c9e077d016410d0089e0d98b0b0fa01300d980c700278089e0d110c3c08a93bfa0c8905220e280be3030a0da40f5e0da41111b0b0fb0d981059030b050b0e18107b0307b0b0fe0d4e0a1910df0864030b0b4b0304031e02260bee094c0ee2110b3cfb0c9c0f24b0b00b0d0d90fe09d909d20483014e0d98033e020d105505e90c07092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08F34323",
+     "at": "0x08F34328",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F34570": {
+   "addr": "0x08F34570",
+   "text": "\\p可还没有等我反应过来，\\n他就抱住了我……\\l把我送出了桐树林，\\l随后消失得无影无踪……\\p我真的很想知道……\\n玩偶装里的人到底长什么样子！\\p所以……请问\\n你能够帮我调查这件事吗？",
+   "bytes": 157,
+   "raw": "fb07d7054609530f7e030f0d9803b70f5404c508293bfe0c9e077d016410d0089e0d98b0b0fa01300d980c700278089e0d110c3c08a93bfa0c8905220e280be3030a0da40f5e0da41111b0b0fb0d981059030b050b0e18107b0307b0b0fe0d4e0a1910df0864030b0b4b0304031e02260bee094c0ee2110b3cfb0c9c0f24b0b00b0d0d90fe09d909d20483014e0d98033e020d105505e90c07092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08F34365",
+     "at": "0x08F34370",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08F34323",
+     "at": "0x08F34347",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F345A2": {
+   "addr": "0x08F345A2",
+   "text": "树林，\\l随后消失得无影无踪……\\p我真的很想知道……\\n玩偶装里的人到底长什么样子！\\p所以……请问\\n你能够帮我调查这件事吗？",
+   "bytes": 107,
+   "raw": "0c3c08a93bfa0c8905220e280be3030a0da40f5e0da41111b0b0fb0d981059030b050b0e18107b0307b0b0fe0d4e0a1910df0864030b0b4b0304031e02260bee094c0ee2110b3cfb0c9c0f24b0b00b0d0d90fe09d909d20483014e0d98033e020d105505e90c07092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08F34378",
+     "at": "0x08F34383",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F345CC": {
+   "addr": "0x08F345CC",
+   "text": "…\\n玩偶装里的人到底长什么样子！\\p所以……请问\\n你能够帮我调查这件事吗？",
+   "bytes": 65,
+   "raw": "b0fe0d4e0a1910df0864030b0b4b0304031e02260bee094c0ee2110b3cfb0c9c0f24b0b00b0d0d90fe09d909d20483014e0d98033e020d105505e90c07092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08F34378",
+     "at": "0x08F34399",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F3471A": {
+   "addr": "0x08F3471A",
+   "text": "\\ctrl[06 00]获得了3点BracerPoints和4000$!",
+   "bytes": 33,
+   "raw": "fc0600057e030a089ea4032abce6d5d7d9e6cae3dde2e8e704f3a5a1a1a1b7abff",
+   "referenced_by": [
+    {
+     "script": "0x08F34A95",
+     "at": "0x08F34AFC",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08F34D7F",
+     "at": "0x08F34DE6",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F34889": {
+   "addr": "0x08F34889",
+   "text": "可惜，洞窟深处需要\\n有学会冲浪的宝可梦才能抵达。\\p所以……\\n你能够帮我调查这件事吗？",
+   "bytes": 77,
+   "raw": "07d70dcb3b035907ed0bcc02860e730ef1fe0f7e0e90056e02670840030b016307d7096601e009d2031d02cf37fb0c9c0f24b0b0fe09d909d20483014e0d98033e020d105505e90c07092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08F34856",
+     "at": "0x08F3486E",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F348D8": {
+   "addr": "0x08F348D8",
+   "text": "这样吗？\\n那太遗憾了！",
+   "bytes": 20,
+   "raw": "10550ee2092a3dfe09bd0cac0f1504dc089e3cff",
+   "referenced_by": [
+    {
+     "script": "0x08F34856",
+     "at": "0x08F34881",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F3490D": {
+   "addr": "0x08F3490D",
+   "text": "谢谢你！\\p如果你收服了每\\ctrl[01 06]\\ctrl[03 09]周五\\ctrl[01 02]\\ctrl[03 03]\\n在洞窟深处发出叫声的精灵，\\l就把它给我看看吧。",
+   "bytes": 83,
+   "raw": "0e460e4609d93cfb0b6704c309d90c1a040a089e0957fc0106fc030910ad0dabfc0102fc0303fe0fe6035907ed0bcc028603a5027807220bd7030b075b08bc3bfa077d01300c9f04620d9807c207c2012837ff",
+   "referenced_by": [
+    {
+     "script": "0x08F3499D",
+     "at": "0x08F349C1",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F34962": {
+   "addr": "0x08F34962",
+   "text": "你收服到了每\\ctrl[01 06]\\ctrl[03 09]周五\\ctrl[01 02]\\ctrl[03 03]\\n在洞窟深处发出叫声的精灵吗？",
+   "bytes": 57,
+   "raw": "09d90c1a040a0304089e0957fc0106fc030910ad0dabfc0102fc0303fe0fe6035907ed0bcc028603a5027807220bd7030b075b08bc092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08F349D1",
+     "at": "0x08F349DC",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F34A18": {
+   "addr": "0x08F34A18",
+   "text": "不对……这怎么看\\n也不是那只宝可梦吧？",
+   "bytes": 35,
+   "raw": "01d60379b0b01055100a094c07c2fe0f0201d60c0c09bd108c016307d7096601283dff",
+   "referenced_by": [
+    {
+     "script": "0x08F349D1",
+     "at": "0x08F34A10",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F34A47": {
+   "addr": "0x08F34A47",
+   "text": "好吧，如果你收服到了\\n那只宝可梦，就给我看看吧！",
+   "bytes": 45,
+   "raw": "04e901283b0b6704c309d90c1a040a0304089efe09bd108c016307d709663b077d04620d9807c207c201283cff",
+   "referenced_by": [
+    {
+     "script": "0x08F34A3D",
+     "at": "0x08F34A3F",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F34B73": {
+   "addr": "0x08F34B73",
+   "text": "可惜，洞窟深处需要\\n有学会冲浪的宝可梦才能抵达。\\p所以……\\n你能够帮我调查这件事吗？",
+   "bytes": 77,
+   "raw": "07d70dcb3b035907ed0bcc02860e730ef1fe0f7e0e90056e02670840030b016307d7096601e009d2031d02cf37fb0c9c0f24b0b0fe09d909d20483014e0d98033e020d105505e90c07092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08F34B40",
+     "at": "0x08F34B58",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F34BC2": {
+   "addr": "0x08F34BC2",
+   "text": "这样吗？\\n那太遗憾了！",
+   "bytes": 20,
+   "raw": "10550ee2092a3dfe09bd0cac0f1504dc089e3cff",
+   "referenced_by": [
+    {
+     "script": "0x08F5131D",
+     "at": "0x08F5132A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F34BF7": {
+   "addr": "0x08F34BF7",
+   "text": "谢谢你！\\p如果你收服了每\\ctrl[01 06]\\ctrl[03 09]周五\\ctrl[01 02]\\ctrl[03 03]\\n在洞窟深处发出叫声的精灵，\\l就把它给我看看吧。",
+   "bytes": 83,
+   "raw": "0e460e4609d93cfb0b6704c309d90c1a040a089e0957fc0106fc030910ad0dabfc0102fc0303fe0fe6035907ed0bcc028603a5027807220bd7030b075b08bc3bfa077d01300c9f04620d9807c207c2012837ff",
+   "referenced_by": [
+    {
+     "script": "0x08F34C87",
+     "at": "0x08F34CAB",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F34C4C": {
+   "addr": "0x08F34C4C",
+   "text": "你收服到了每\\ctrl[01 06]\\ctrl[03 09]周五\\ctrl[01 02]\\ctrl[03 03]在\\n洞窟深处发出叫声的精灵吗？",
+   "bytes": 57,
+   "raw": "09d90c1a040a0304089e0957fc0106fc030910ad0dabfc0102fc03030fe6fe035907ed0bcc028603a5027807220bd7030b075b08bc092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08F34CBB",
+     "at": "0x08F34CC6",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F34D02": {
+   "addr": "0x08F34D02",
+   "text": "不对……这怎么看\\n也不是那只宝可梦吧？",
+   "bytes": 35,
+   "raw": "01d60379b0b01055100a094c07c2fe0f0201d60c0c09bd108c016307d7096601283dff",
+   "referenced_by": [
+    {
+     "script": "0x08F34CBB",
+     "at": "0x08F34CFA",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F34D31": {
+   "addr": "0x08F34D31",
+   "text": "好吧，如果你收服到了\\n那只宝可梦，就给我看看吧！",
+   "bytes": 45,
+   "raw": "04e901283b0b6704c309d90c1a040a0304089efe09bd108c016307d709663b077d04620d9807c207c201283cff",
+   "referenced_by": [
+    {
+     "script": "0x08F34D27",
+     "at": "0x08F34D29",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F34E00": {
+   "addr": "0x08F34E00",
+   "text": "没想到能够\\n在这里见到拉普拉斯……\\p多亏了你，我才\\n能够在收集之路上继续前进！",
+   "bytes": 72,
+   "raw": "09530e18030409d20483fe0fe61055086405e6030408220a9008220c5cb0b0fb0385080e089e09d93b0d9801e0fe09d204830fe60c1a059a107f08e80bad05b70e830ac9074a3cff",
+   "referenced_by": [
+    {
+     "script": "0x08F34DF6",
+     "at": "0x08F34DF8",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F34E4A": {
+   "addr": "0x08F34E4A",
+   "text": "这就是……\\n洞窟深处的宝可梦吗？\\p这只宝可梦\\n应该叫拉普拉斯，对吧？",
+   "bytes": 61,
+   "raw": "1055077d0c0cb0b0fe035907ed0bcc0286030b016307d70966092a3dfb1055108c016307d70966fe0f54042d072208220a9008220c5c3b037901283dff",
+   "referenced_by": [
+    {
+     "script": "0x08F34D7F",
+     "at": "0x08F34D94",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F34E89": {
+   "addr": "0x08F34E89",
+   "text": "骑着拉普拉斯的少年……\\n这是我曾经听过的一首歌。\\p没想到在今天，\\n我真的见到拉普拉斯了！\\p谢谢你，\\n这个就请你收下吧。",
+   "bytes": 107,
+   "raw": "0aaa10f408220a9008220c5c030b0bb709e0b0b0fe10550c0c0d98100d075d0d0704c5030b0f0b0c1c045237fb09530e1803040fe607430ced3bfe0d981059030b05e6030408220a9008220c5c089e3cfb0e460e4609d93bfe10550460077d0b0d09d90c1a0de6012837ff",
+   "referenced_by": [
+    {
+     "script": "0x08F34D7F",
+     "at": "0x08F34DA1",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F3552D": {
+   "addr": "0x08F3552D",
+   "text": "怎么样？\\n你收服到黑色的千针鱼了吗？",
+   "bytes": 34,
+   "raw": "100a094c0ee23dfe09d90c1a040a030405090b89030b0ac0105e0f91089e092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08F353E1",
+     "at": "0x08F353EC",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F35568": {
+   "addr": "0x08F35568",
+   "text": "难道真的是错觉吗……",
+   "bytes": 19,
+   "raw": "09c703071059030b0c0c02cd07a5092ab0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08F35428",
+     "at": "0x08F3542A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F3557D": {
+   "addr": "0x08F3557D",
+   "text": "不知道的事情还很多……\\p有空就去\\n缘朱市的图书馆查阅一下资料吧。",
+   "bytes": 60,
+   "raw": "01d6107b0307030b0c070b0b0546050b0385b0b0fb0f7e07e3077d0b25fe0fc110bd0c15030b0d240c2e04a5020d0fd00f0b0de6110208a2012837ff",
+   "referenced_by": [
+    {
+     "script": "0x08F3543B",
+     "at": "0x08F3543D",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F355E7": {
+   "addr": "0x08F355E7",
+   "text": "没错！\\n这就是我那天看到的……\\p比起我们经常见到的千针鱼，\\n它的毒针更短更粗……",
+   "bytes": 72,
+   "raw": "095302cd3cfe1055077d0c0c0d9809bd0ced07c20304030bb0b0fb01850aab0d98095f075d022505e60304030b0ac0105e0f913bfe0c9f030b0363105e04660371046602b6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08F3544F",
+     "at": "0x08F35464",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F35632": {
+   "addr": "0x08F35632",
+   "text": "总感觉它\\n不是来自这个地区，\\l甚至是这个时代的宝可梦呢……\\p可它为什么又会\\n出现在这个时间，这个地点呢？\\p不知道的事情还很多……\\n但还是谢谢你，让我见到了它！\\l这是给你的报酬。",
+   "bytes": 160,
+   "raw": "1114043a07a50c9ffe01d60c0c0829110c10550460031f0b1a3bfa0bd310920c0c105504600bed02da030b016307d7096609ceb0b0fb07d70c9f0d700bee094c0f84056efe02780e030fe6105504600bed05cf3b10550460031f032a09ce3dfb01d6107b0307030b0c070b0b0546050b0385b0b0fe02e905460c0c0e460e4609d93b0b430d9805e60304089e0c9f3cfa10550c0c046209d9030b0165026c37ff",
+   "referenced_by": [
+    {
+     "script": "0x08F3544F",
+     "at": "0x08F35471",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F356F1": {
+   "addr": "0x08F356F1",
+   "text": "\\ctrl[06 00]获得了3点BracerPoints和4000$!",
+   "bytes": 33,
+   "raw": "fc0600057e030a089ea4032abce6d5d7d9e6cae3dde2e8e704f3a5a1a1a1b7abff",
+   "referenced_by": [
+    {
+     "script": "0x08F3544F",
+     "at": "0x08F354B6",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F35714": {
+   "addr": "0x08F35714",
+   "text": "你来啦！\\n事情是这样的……\\p那天我正在\\ctrl[01 06]\\ctrl[03 09]41号水路\\ctrl[01 02]\\ctrl[03 03]游泳，\\n游到潮旋附近时，\\l忽然间感到一阵眩晕……\\p接着，一只黑色的\\n千针鱼从我面前游过。\\p之后我想游过去追上它，\\n却再也找不到了。\\l我都怀疑那是不是错觉了……\\p所以，你能够帮我调查一下吗？",
+   "bytes": 222,
+   "raw": "09d9082908273cfe0c070b0b0c0c10550ee2030bb0b0fb09bd0ced0d9810700fe6fc0106fc0309a5a204eb0c5108e8fc0102fc03030f7c0f6c3bfe0f7c030402330e880427074e0bed3bfa05250b3b05cf043a03040f0b10660e8c0fdab0b0fb072510f43b0f0b108c05090b89030bfe0ac0105e0f9102b30d98097e0ac90f7c04c537fb107f05220d980e180f7c04c50b2510e60bad0c9f3bfe0b340fe50f02104501d60304089e37fa0d98036105400f1909bd0c0c01d60c0c02cd07a5089eb0b0fb0c9c0f243b09d909d20483014e0d98033e020d0f0b0de6092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08F354C6",
+     "at": "0x08F354DE",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F357F4": {
+   "addr": "0x08F357F4",
+   "text": "嗯……\\n或许那真的是我的错觉。",
+   "bytes": 27,
+   "raw": "1461b0b0fe057f0e7809bd1059030b0c0c0d98030b02cd07a537ff",
+   "referenced_by": [
+    {
+     "script": "0x08F502A7",
+     "at": "0x08F502B4",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F3582E": {
+   "addr": "0x08F3582E",
+   "text": "太感谢你了！\\p如果你收服了那只\\n黑色的千针鱼，就给我看看吧。",
+   "bytes": 56,
+   "raw": "0cac043a0e4609d9089e3cfb0b6704c309d90c1a040a089e09bd108cfe05090b89030b0ac0105e0f913b077d04620d9807c207c2012837ff",
+   "referenced_by": [
+    {
+     "script": "0x08F354F9",
+     "at": "0x08F3551D",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F3EE23": {
+   "addr": "0x08F3EE23",
+   "text": "珍贵的玻璃哨……\\n究竟在何处呢？",
+   "bytes": 29,
+   "raw": "105704bb030b01be087a0bb8b0b0fe076f07690fe604f4028609ce3dff",
+   "referenced_by": [
+    {
+     "script": "0x08F3F30D",
+     "at": "0x08F3F318",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08F3F304",
+     "at": "0x08F3F318",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F3F090": {
+   "addr": "0x08F3F090",
+   "text": "怎么会……！",
+   "bytes": 10,
+   "raw": "100a094c056eb0b03cff",
+   "referenced_by": [
+    {
+     "script": "0x08F3F329",
+     "at": "0x08F3F34B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F3F0B7": {
+   "addr": "0x08F3F0B7",
+   "text": "太好了……！\\p如果你找齐了红色、黄色、蓝色、\\n黑色、白色五种颜色的玻璃哨，\\p请务必联系我！",
+   "bytes": 79,
+   "raw": "0cac04e9089eb0b03cfb0b6704c309d910450aa6089e051b0b893a05530b893a082b0b893afe05090b893a01360b890dab10a70ebe0b89030b01be087a0bb83bfb0b0d0db70195087d0dd90d983cff",
+   "referenced_by": [
+    {
+     "script": "0x08F3F353",
+     "at": "0x08F3F37A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F3F108": {
+   "addr": "0x08F3F108",
+   "text": "如果你找齐了红色、黄色、蓝色、\\n黑色、白色五种颜色的玻璃哨，\\p请务必联系我！\\p听说这附近有\\n情报商人知晓相关的情报。",
+   "bytes": 106,
+   "raw": "0b6704c309d910450aa6089e051b0b893a05530b893a082b0b893afe05090b893a01360b890dab10a70ebe0b89030b01be087a0bb83bfb0b0d0db70195087d0dd90d983cfb0d070c5810550427074e0f7efe0b0b01650baa0b4b107b0e2b0e0d04a0030b0b0b016537ff",
+   "referenced_by": [
+    {
+     "script": "0x08F3F4B6",
+     "at": "0x08F3F4B8",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F3F174": {
+   "addr": "0x08F3F174",
+   "text": "什么！？\\n五种颜色的玻璃哨都找齐了？\\p我不是在做梦吧……\\n这精致的做工……\\l的确是出自琉璃工坊之手！\\p好吧！\\n这个就交给你了！",
+   "bytes": 111,
+   "raw": "0bee094c3c3dfe0dab10a70ebe0b89030b01be087a0bb8036110450aa6089e3dfb0d9801d60c0c0fe6112e09660128b0b0fe1055075b1093030b112e046cb0b0fa030b0b370c0c0278110c08c3087a046c03be107f0c1b3cfb04e901283cfe10550460077d070d046209d9089e3cff",
+   "referenced_by": [
+    {
+     "script": "0x08F3F3EF",
+     "at": "0x08F3F45A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F3F2A7": {
+   "addr": "0x08F3F2A7",
+   "text": "\\ctrl[06 00]获得了5点BracerPoints和15000$!",
+   "bytes": 34,
+   "raw": "fc0600057e030a089ea6032abce6d5d7d9e6cae3dde2e8e704f3a2a6a1a1a1b7abff",
+   "referenced_by": [
+    {
+     "script": "0x08F3F3EF",
+     "at": "0x08F3F4A6",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F3F2CB": {
+   "addr": "0x08F3F2CB",
+   "text": "嗯？\\n想要买珍贵的宝石吗？",
+   "bytes": 24,
+   "raw": "14613dfe0e180ef1092c105704bb030b01630beb092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08F3F4C0",
+     "at": "0x08F3F4C2",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x08F3F2E5": {
+   "addr": "0x08F3F2E5",
+   "text": "好好珍惜\\n来自大富豪的慈悲吧！",
+   "bytes": 29,
+   "raw": "04e904e910570dcbfe0829110c02d3042504e6030b02a8016c01283cff",
+   "referenced_by": [
+    {
+     "script": "0x08F3F4C0",
+     "at": "0x08F3F4CE",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F3FF6F": {
+   "addr": "0x08F3FF6F",
+   "text": "¿啊0\\symbol[00]",
+   "bytes": 7,
+   "raw": "510100a1f900ff",
+   "referenced_by": [
+    {
+     "script": "0x08F3EE97",
+     "at": "0x08F3EEB9",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F4006C": {
+   "addr": "0x08F4006C",
+   "text": "你看到了我的委托吗？\\p是这样的……\\n最近龙穴出现了一只\\l神秘的宝可梦。\\p它喜欢对路过的训练家恶作剧。\\p可由于它潜藏在地洞里，\\n大家拿它也没有办法……\\p不过……有人似乎在\\n\\ctrl[01 06]\\ctrl[03 09]周六\\ctrl[01 02]\\ctrl[03 03]看见它钻出了地洞。\\l这也许是一个突破口……\\p你能帮大家\\n教训一下这只爱捣乱的宝可梦吗？",
+   "bytes": 248,
+   "raw": "09d907c20304089e0d98030b0d750d38092a3dfb0c0c10550ee2030bb0b0fe1126074e08cd0e9102780e03089e0f0b108cfa0bcf0970030b016307d7096637fb0c9f0dd60543037908e804c5030b0e9e088a05bd0396112f079737fb07d70f770f880c9f0aca01f30fe6031f035908643bfe02d305bd09b90c9f0f0209530f7e014b03abb0b0fb01d604c5b0b00f7e0b4b0c6905240fe6fefc0106fc030910ad08ccfc0102fc030307c205e60c9f11220278089e031f035937fa10550f020e780c0c0f0b04600d230a8107e8b0b0fb09d909d2014e02d305bdfe071e0e9e0f0b0de61055108c010d02f5090c030b016307d70966092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08F3FB1C",
+     "at": "0x08F3FB29",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x08F3FAC1",
+     "at": "0x08F3FAC3",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F400BE": {
+   "addr": "0x08F400BE",
+   "text": "家恶作剧。\\p可由于它潜藏在地洞里，\\n大家拿它也没有办法……\\p不过……有人似乎在\\n\\ctrl[01 06]\\ctrl[03 09]周六\\ctrl[01 02]\\ctrl[03 03]看见它钻出了地洞。\\l这也许是一个突破口……\\p你能帮大家\\n教训一下这只爱捣乱的宝可梦吗？",
+   "bytes": 166,
+   "raw": "05bd0396112f079737fb07d70f770f880c9f0aca01f30fe6031f035908643bfe02d305bd09b90c9f0f0209530f7e014b03abb0b0fb01d604c5b0b00f7e0b4b0c6905240fe6fefc0106fc030910ad08ccfc0102fc030307c205e60c9f11220278089e031f035937fa10550f020e780c0c0f0b04600d230a8107e8b0b0fb09d909d2014e02d305bdfe071e0e9e0f0b0de61055108c010d02f5090c030b016307d70966092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x08F3FAC1",
+     "at": "0x08F3FAD7",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F40166": {
+   "addr": "0x08F40166",
+   "text": "……你也害怕了吗？",
+   "bytes": 16,
+   "raw": "b0b009d90f0204cc0a1f089e092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x087BA8A9",
+     "at": "0x087BA8B6",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F40194": {
+   "addr": "0x08F40194",
+   "text": "真是太感谢了……\\p记得是在\\ctrl[01 06]\\ctrl[03 09]周六\\ctrl[01 02]\\ctrl[03 03]的时候哦，\\n只有在那天才有机会遇见它……",
+   "bytes": 76,
+   "raw": "10590c0c0cac043a0e46089eb0b0fb05b2030a0c0c0fe6fc0106fc030910ad08ccfc0102fc0303030b0bed05210a133bfe108c0f7e0fe609bd0ced01e00f7e0587056e0fa405e60c9fb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08F3FB49",
+     "at": "0x08F3FB79",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F502DB": {
+   "addr": "0x08F502DB",
+   "text": "黑色的千针鱼……\\p我是在\\ctrl[01 06]\\ctrl[03 09]41号水路\\ctrl[01 02]\\ctrl[03 03]\\n的\\ctrl[01 06]\\ctrl[03 09]潮旋\\ctrl[01 02]\\ctrl[03 03]附近遇到的。",
+   "bytes": 72,
+   "raw": "05090b89030b0ac0105e0f91b0b0fb0d980c0c0fe6fc0106fc0309a5a204eb0c5108e8fc0102fc0303fe030bfc0106fc030902330e88fc0102fc03030427074e0fa40304030b37ff",
+   "referenced_by": [
+    {
+     "script": "0x08F35445",
+     "at": "0x08F35447",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F504A5": {
+   "addr": "0x08F504A5",
+   "text": "嗯？\\n你是在开玩笑吧……\\p黑色的千针鱼……\\p我是在\\ctrl[01 06]\\ctrl[03 09]41号水路\\ctrl[01 02]\\ctrl[03 03]\\n的\\ctrl[01 06]\\ctrl[03 09]潮旋\\ctrl[01 02]\\ctrl[03 03]附近遇到的。",
+   "bytes": 93,
+   "raw": "14613dfe09d90c0c0fe607b80d4e0e310128b0b0fb05090b89030b0ac0105e0f91b0b0fb0d980c0c0fe6fc0106fc0309a5a204eb0c5108e8fc0102fc0303fe030bfc0106fc030902330e88fc0102fc03030427074e0fa40304030b37ff",
+   "referenced_by": [
+    {
+     "script": "0x08F353E1",
+     "at": "0x08F3541E",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F5BC44": {
+   "addr": "0x08F5BC44",
+   "text": "多亏你帮我找到了小锯鳄，\\n不然让它跑去缘朱舞场就可糟了。\\p上次它在缘朱舞场使出了水枪，\\n差点打乱了整场演出……",
+   "bytes": 103,
+   "raw": "0385080e09d9014e0d9810450304089e0e2c07921df13bfe01d60b3b0b430c9f0a390b250fc110bd0dae0223077d07d70fef089e37fb0bad02ae0c9f0fe60fc110bd0dae02230bf50278089e0c510ad23bfe0212032a02d2090c089e106e02230ec60278b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08F5BCAC",
+     "at": "0x08F5BCAE",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F5BD86": {
+   "addr": "0x08F5BD86",
+   "text": "\\ctrl[06 00]获得了8点BracerPoints和6000$!",
+   "bytes": 33,
+   "raw": "fc0600057e030a089ea9032abce6d5d7d9e6cae3dde2e8e704f3a7a1a1a1b7abff",
+   "referenced_by": [
+    {
+     "script": "0x08F5BCAC",
+     "at": "0x08F5BCE9",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F5C1EE": {
+   "addr": "0x08F5C1EE",
+   "text": "哇！是你！\\p真没想到\\n会在这里再见到你！\\p请允许我再次向你表达感谢！\\n请收下这个！",
+   "bytes": 74,
+   "raw": "0d433c0c0c09d93cfb105909530e180304fe056e0fe6105508640fe505e6030409d93cfb0b0d0fd60e780d980fe502ae0e1f09d901aa02cf043a0e463cfe0b0d0c1a0de6105504603cff",
+   "referenced_by": [
+    {
+     "script": "0x08F5C111",
+     "at": "0x08F5C113",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F5C23A": {
+   "addr": "0x08F5C23A",
+   "text": "嘿嘿……\\n嘿嘿嘿……\\p她答应了！她答应了！\\n太好了……！\\p要是那时候\\n没有你帮忙找回玩偶，\\p我现在肯定还在\\n满金市的垃圾堆里哭呢！\\p\\var[01]，\\n你真的是我的恩人！\\l也就是我们要请的头号贵宾！\\p以后不管我\\n在哪里弄丢了东西……\\p啊不对！\\n不管我在哪里遇到困难，\\l我都会想起你的帮助的！",
+   "bytes": 243,
+   "raw": "05080508b0b0fe050805080508b0b0fb0ca002d00f54089e3c0ca002d00f54089e3cfe0cac04e9089eb0b03cfb0ef10c0c09bd0bed0521fe09530f7e09d9014e093e104505650d4e0a193bfb0d980e030fe607dd034d05460fe6fe093407420c15030b082105850376086407ec09ce3cfbfd013bfe09d91059030b0c0c0d98030b039c0b4b3cfa0f02077d0c0c0d98095f0ef10b0d030b0d1f04eb04bb01b33cfb0f24052201d604a40d98fe0fe609ba08640a07034f089e03500dbdb0b0fb010001d603793cfe01d604a40d980fe609ba08640fa40304081c09c73bfa0d980361056e0e180aab09d9030b014e10cb030b3cff",
+   "referenced_by": [
+    {
+     "script": "0x08F5C111",
+     "at": "0x08F5C13C",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08F5F1C0": {
+   "addr": "0x08F5F1C0",
+   "text": "水君很明显\\n已经意识到了你的存在，\\p缘朱市的传说上说\\n传说中的宝可梦\\l好像会贴近到它认可的\\l人类身边来。\\p今后我也要像你那样\\n更加积极去面对水君才行……",
+   "bytes": 142,
+   "raw": "0c5107ad050b098f0e01fe0f21075d0f320bf20304089e09d9030b02c60fe63bfb0fc110bd0c15030b028b0c580bad0c58fe028b0c5810a1030b016307d70966fa04e90e1e056e0d03074e03040c9f0b4f07d7030bfa0b4b08550bcb019c082937fb074305220d980f020ef10e1e09d909bd0ee2fe046605be058a05960b25097e03790c5107ad01e00e5bb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08F5EEA4",
+     "at": "0x08F5EEC0",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9BCE0": {
+   "addr": "0x09D9BCE0",
+   "text": "哎呀呀……糟了！\\n我天天对镜练习，\\l就是这门遗忘之术。\\p结果一不小心，\\n把这门手艺忘了！",
+   "bytes": 78,
+   "raw": "01040ea60ea6b0b00fef089e3cfe0d980ced0ced03790765088a0dd43bfa077d0c0c1055095d0f150d64107f0c3a37fb073304c30f0b01d60e2c0e4f3bfe01301055095d0c1b0f250d64089e3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD08BA",
+     "at": "0x09CD08D5",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD08C3",
+     "at": "0x09CD08D5",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9BD2E": {
+   "addr": "0x09D9BD2E",
+   "text": "年轻人，你有\\n心之鳞片吗？\\p只要请那边的\\n技能研究狂帮忙，\\l我说不定就能想起这门手艺！",
+   "bytes": 79,
+   "raw": "09e00b030b4b3b09d90f7efe0e4f107f08ae0a67092a3dfb108c0ef10b0d09bd019c030bfe05a709d20eb9076f0808014e093e3bfa0d980c5801d6034d077d09d20e180aab1055095d0c1b0f253cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD08E9",
+     "at": "0x09CD08F8",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9BD7D": {
+   "addr": "0x09D9BD7D",
+   "text": "这样啊……\\n要是你见到心之鳞片，\\l可一定替我留意啊！",
+   "bytes": 47,
+   "raw": "10550ee20100b0b0fe0ef10c0c09d905e603040e4f107f08ae0a673bfa07d70f0b034d0ce70d9808c70f3201003cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD08E9",
+     "at": "0x09CD090B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9BDAC": {
+   "addr": "0x09D9BDAC",
+   "text": "拜托你了！\\n找到心之鳞片后，\\l就交给那边的招式教学狂。\\p只要他肯帮忙，\\n我也许就能想起来！",
+   "bytes": 82,
+   "raw": "013c0d3809d9089e3cfe104503040e4f107f08ae0a6705223bfa077d070d046209bd019c030b10430c02071e0e90080837fb108c0ef10c9e07dd014e093e3bfe0d980f020e78077d09d20e180aab08293cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD2F2A",
+     "at": "0x09CD2F2C",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD0916",
+     "at": "0x09CD093D",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9BE1B": {
+   "addr": "0x09D9BE1B",
+   "text": "你还没带来\\n心之鳞片啊。\\p等你找到了，\\n我就帮大叔试试。",
+   "bytes": 51,
+   "raw": "09d90546095302d80829fe0e4f107f08ae0a67010037fb030f09d910450304089e3bfe0d98077d014e02d30c2a0c190c1937ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD2F40",
+     "at": "0x09CD2F66",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD2F49",
+     "at": "0x09CD2F66",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9BE4E": {
+   "addr": "0x09D9BE4E",
+   "text": "哦？你真找到了\\n心之鳞片！\\p好，我这就帮他\\n把记忆捞回来。",
+   "bytes": 52,
+   "raw": "0a133d09d9105910450304089efe0e4f107f08ae0a673cfb04e93b0d981055077d014e0c9efe013005b20f3408410565082937ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD2F6E",
+     "at": "0x09CD2F75",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9BE82": {
+   "addr": "0x09D9BE82",
+   "text": "……想起来了！！\\n那股空白掉的感觉……\\p我终于想起来了！\\n这枚水晶护符送给你！",
+   "bytes": 68,
+   "raw": "b0b00e180aab0829089e3c3cfe09bd049107e30136033b030b043a07a5b0b0fb0d9810a60f880e180aab0829089e3cfe1055094e0c510757053104070c70046209d93cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD2F6E",
+     "at": "0x09CD2FB1",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9BEE3": {
+   "addr": "0x09D9BEE3",
+   "text": "\\ctrl[06 00]获得了4点BracerPoints和4000$!\\ctrl[07]",
+   "bytes": 35,
+   "raw": "fc0600057e030a089ea5032abce6d5d7d9e6cae3dde2e8e704f3a5a1a1a1b7abfc07ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD2F6E",
+     "at": "0x09CD300A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9BF06": {
+   "addr": "0x09D9BF06",
+   "text": "那么，作为报答，\\n我今后免费为你服务。\\p想让宝可梦\\n遗忘招式时，\\l随时来找老夫吧。",
+   "bytes": 74,
+   "raw": "09bd094c3b112f0d70016502d03bfe0d9807430522097a03d40d7009d9040a0db737fb0e180b43016307d70966fe0f150d6410430c020bed3bfa0c890bed08291045084403f5012837ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD2F6E",
+     "at": "0x09CD3017",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9BF50": {
+   "addr": "0x09D9BF50",
+   "text": "噢！Bonjour！你好！\\n多么耀眼的灵魂啊！\\p我是梅丽莎，\\n来自神奥的家缘市。\\p我受邀来到这里担任嘉宾后，\\n一直在寻找最顶尖的华丽演出！\\p可要展现宝可梦的极致魅力，\\n只有热情还不够。\\l还得拥有真正的艺术感才行！",
+   "bytes": 187,
+   "raw": "147a3cbce3e2dee3e9e63c09d904e93cfe0385094c0ef20ec4030b08bc057701003cfb0d980c0c094f086b0b8d3bfe0829110c0bcf0121030b05bd0fc10c1537fb0d980c210ee4082903041055086402e10b4e05b901b305223bfe0f0b10820fe60e9910451126034a05cd030b0537086b0ec602783cfb07d70ef1102c0e03016307d70966030b059610931e2708793bfe108c0f7e0b480b0b054601d6048337fa0546030a0f630f7e10591070030b0f250c3a043a01e00e5b3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3121",
+     "at": "0x09CD3141",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD312C",
+     "at": "0x09CD3141",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9C00B": {
+   "addr": "0x09D9C00B",
+   "text": "哦呵呵呵呵呵！\\n如果你能让我看看，\\l那五种属性头巾……\\p帅气的红色、美丽的蓝色，\\n可爱的粉色、聪明的绿色，\\l还有强壮的黄色！\\n只要凑齐这五色，我就送你\\n一份很有潜力的惊喜礼物！\\p如果你还没什么头绪的话，\\n我倒是听闻过一些有趣的消息哦。\\p热情的红色与强壮的黄色，\\n听说在这座会场里就能寻得线索。\\p海风吹拂的湛蓝市和浅葱市，\\n似乎有人拥有蓝色与粉色呢。\\p至于聪明的绿色嘛……听说\\n34号道路往下冲浪，\\l会找到一片森林，\\l那里或许会有答案。\\p去回应那些追寻色彩的声音吧，\\n让我看看你的艺术品味！\\l哦呵呵呵！",
+   "bytes": 454,
+   "raw": "0a1304ed04ed04ed04ed04ed3cfe0b6704c309d909d20b430d9807c207c23bfa09bd0dab10a70c390e5f0d1f073fb0b0fb0c4a0ab3030b051b0b893a0958086b030b082b0b893bfe07d7010d030b03de0b893a02af098f030b09060b893bfa05460f7e0ad810e2030b05530b893cfe108c0ef102b50aa610550dab0b893b0d98077d0c7009d9fe0f0b03e0050b0f7e0aca0879030b075a0dd608660db53cfb0b6704c309d9054609530bee094c0d1f0e82030b053d3bfe0d9803000c0c0d070d8b04c50f0b0e340f7e0b24030b0e280dc60a1337fb0b480b0b030b051b0b890f990ad810e2030b05530b893bfe0d070c580fe610551131056e02230864077d09d20e99030a0e0c0c9a37fb04c903ea02950403030b1032082b0c1504f30acc02b00c153bfe0c6905240f7e0b4b0f630f7e082b0b890f9903de0b8909ce37fb10920f8802af098f030b09060b890929b0b00d070c58fea4a504eb030708e80d610de6026708403bfa056e104503040f0b0a670b8b08a93bfa09bd0864057f0e78056e0f7e02d0011737fb0b2505650f5409bd0e3410e60e990b8901e5030b0bd70f4401283bfe0b430d9807c207c209d9030b0f250c3a0a720d7c3cfa0a1304ed04ed04ed3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD315F",
+     "at": "0x09CD3173",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9C1D1": {
+   "addr": "0x09D9C1D1",
+   "text": "这样呀？\\n那就等你准备好后，\\l再来回应我的审美吧！",
+   "bytes": 46,
+   "raw": "10550ee20ea63dfe09bd077d030f09d910eb017504e905223bfa0fe5082905650f540d98030b0bd1095801283cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD315F",
+     "at": "0x09CD3186",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9C1FF": {
+   "addr": "0x09D9C1FF",
+   "text": "去集齐那五种头巾后，\\n再来向我展示吧！\\l让我看看你的色彩品味！\\p如果你还没什么头绪的话，\\n我倒是听闻过一些有趣的消息哦。\\p热情的红色与强壮的黄色，\\n听说在这座会场里就能寻得线索。\\p海风吹拂的湛蓝市和浅葱市，\\n似乎有人拥有蓝色与粉色呢。\\p至于聪明的绿色嘛……听说\\n34号道路往下冲浪，\\l会找到一片森林，\\l那里或许会有答案。\\p去回应那些追寻色彩的声音吧，\\n让我看看你的艺术品味！\\l哦呵呵呵！",
+   "bytes": 353,
+   "raw": "0b25059a0aa609bd0dab10a70d1f073f05223bfe0fe508290e1f0d98102c0c0301283cfa0b430d9807c207c209d9030b0b8901e50a720d7c3cfb0b6704c309d9054609530bee094c0d1f0e82030b053d3bfe0d9803000c0c0d070d8b04c50f0b0e340f7e0b24030b0e280dc60a1337fb0b480b0b030b051b0b890f990ad810e2030b05530b893bfe0d070c580fe610551131056e02230864077d09d20e99030a0e0c0c9a37fb04c903ea02950403030b1032082b0c1504f30acc02b00c153bfe0c6905240f7e0b4b0f630f7e082b0b890f9903de0b8909ce37fb10920f8802af098f030b09060b890929b0b00d070c58fea4a504eb030708e80d610de6026708403bfa056e104503040f0b0a670b8b08a93bfa09bd0864057f0e78056e0f7e02d0011737fb0b2505650f5409bd0e3410e60e990b8901e5030b0bd70f4401283bfe0b430d9807c207c209d9030b0f250c3a0a720d7c3cfa0a1304ed04ed04ed3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD319B",
+     "at": "0x09CD31CB",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9C42F": {
+   "addr": "0x09D9C42F",
+   "text": "噢！我已经感觉到\\n色彩灵感在跳动了！\\p你已经把那五种头巾\\n都带来了吗？",
+   "bytes": 65,
+   "raw": "147a3c0d980f21075d043a07a50304fe0b8901e508bc043a0fe60d020354089e3cfb09d90f21075d013009bd0dab10a70d1f073ffe036102d80829089e092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x09CD31DB",
+     "at": "0x09CD31E2",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9C655": {
+   "addr": "0x09D9C655",
+   "text": "……咳，我虽是幽灵属性的专家，\\n却也追求变化之美。\\p这只丑丑鱼，\\n是我在神奥的天冠山里，\\l费尽力气才钓到的！",
+   "bytes": 97,
+   "raw": "b0b007d63b0d980c870c0c0f7208bc0c390e5f030b10d705bd3bfe0b340f0210e60b1501a1053c107f095837fb1055108c027502750f913bfe0c0c0d980fe60bcf0121030b0ced04a20b9b08643bfa03d4075108790ab301e0033d0304030b3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3267",
+     "at": "0x09CD32AD",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9C6B6": {
+   "addr": "0x09D9C6B6",
+   "text": "噢！说起那时，\\n我就要抓狂！\\p那座大山，那片水域，\\n竟只有几个钓点有它！\\p我穿着晚礼服，\\n在黑漆漆的洞里，\\p把每个落脚点都试遍了！\\n这简直是对时尚达人体能的考验！",
+   "bytes": 146,
+   "raw": "147a3c0c580aab09bd0bed3bfe0d98077d0ef110d408083cfb09bd113102d30b9b3b09bd0a670c510fa03bfe0769108c0f7e05a30460033d032a0f7e0c9f3cfb0d98028910f40d550866040a3bfe0fe605090a9c0a9c030b035908643bfb013009570460091e0717032a03610c1901a6089e3cfe105505dd10820c0c03790bed0bae02cf0b4b0ce609d2030b07ca0ed23cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3267",
+     "at": "0x09CD32B5",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9C786": {
+   "addr": "0x09D9C786",
+   "text": "\\ctrl[06 00]获得了10点BracerPoints和10000$!\\ctrl[07]",
+   "bytes": 37,
+   "raw": "fc0600057e030a089ea2a1032abce6d5d7d9e6cae3dde2e8e704f3a2a1a1a1a1b7abfc07ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3267",
+     "at": "0x09CD32F8",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9C7AB": {
+   "addr": "0x09D9C7AB",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]获得了丑丑鱼！",
+   "bytes": 22,
+   "raw": "fc0106fc0309fd01057e030a089e027502750f913cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3267",
+     "at": "0x09CD329E",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9C7C1": {
+   "addr": "0x09D9C7C1",
+   "text": "努力去培养它吧！\\n虽然它现在的样子，\\l和华丽还差得远。\\p但若你用那五色头巾，\\n所象征的魅力去培育……\\p它一定能进化成，\\n城都从未见过的\\l最美丽的宝可梦！\\p噢呵呵呵呵呵！",
+   "bytes": 152,
+   "raw": "0a0908790b250a3d0ee10c9f01283cfe0c870b3b0c9f0e030fe6030b0ee2110b3bfa04f30537086b05460212030a0fc237fb02e90b7409d90f7109bd0dab0b890d1f073f3bfe0c9c0e20106a030b1e2708790b250a3d0fabb0b0fb0c9f0f0b034d09d2074a053c024b3bfe0249036102b30d7a05e604c5030bfa11260958086b030b016307d709663cfb147a04ed04ed04ed04ed04ed3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD331A",
+     "at": "0x09CD3321",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD3267",
+     "at": "0x09CD330A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9C861": {
+   "addr": "0x09D9C861",
+   "text": "不行……\\n还是没反应！",
+   "bytes": 19,
+   "raw": "01d60e5bb0b0fe05460c0c095303b70f543cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3362",
+     "at": "0x09CD3381",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9C874": {
+   "addr": "0x09D9C874",
+   "text": "啊，是\\var[01]啊！\\n让你见笑了……\\p身为虫属性道馆的馆主，\\n我却一直没法让\\l巨钳螳螂超级进化……\\p究竟是哪里\\n出了问题呢？",
+   "bytes": 103,
+   "raw": "01003b0c0cfd0101003cfe0b4309d905e60e31089eb0b0fb0bcb0d7002680c390e5f030704a5030b04a510c83bfe0d980b340f0b1082095303ab0b43fa078e0ac81c801c62022e05a1074a053cb0b0fb076f07690c0c09ba0864fe0278089e0d900ce309ce3dff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3362",
+     "at": "0x09CD33B3",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9C8DB": {
+   "addr": "0x09D9C8DB",
+   "text": "不好了！\\n桐树林里出现了一只\\l长着岩石斧头的虫子，\\p正在疯狂砍树！",
+   "bytes": 61,
+   "raw": "01d604e9089e3cfe0d110c3c08a9086402780e03089e0f0b108cfa022610f40ebb0beb04150d1f030b0268110b3bfb10700fe603eb080807c10c3c3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3362",
+     "at": "0x09CD33DA",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9C918": {
+   "addr": "0x09D9C918",
+   "text": "长着岩石斧头的虫子？\\n难道是新发现的宝可梦？！\\p巨钳螳螂，我们走！",
+   "bytes": 60,
+   "raw": "022610f40ebb0beb04150d1f030b0268110b3dfe09c703070c0c0e4d03a50e03030b016307d709663d3cfb078e0ac81c801c623b0d98095f11173cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3362",
+     "at": "0x09CD33FE",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9C954": {
+   "addr": "0x09D9C954",
+   "text": "那只长着\\n岩石斧头的虫子……\\p你也去看看吧。",
+   "bytes": 40,
+   "raw": "09bd108c022610f4fe0ebb0beb04150d1f030b0268110bb0b0fb09d90f020b2507c207c2012837ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3362",
+     "at": "0x09CD3454",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9CED7": {
+   "addr": "0x09D9CED7",
+   "text": "我男朋友他啊，\\n居然因怯场，\\p不敢去报名参加\\n华丽大赛。\\p真头疼啊……",
+   "bytes": 62,
+   "raw": "0d9809c60a500f7f0c9e01003bfe07830b3b0f420aec02233bfb01d6043c0b250165099301e905befe0537086b02d30b7c37fb10590d1f0cdc0100b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD39C8",
+     "at": "0x09CD39E3",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD39D3",
+     "at": "0x09CD39E3",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9CF15": {
+   "addr": "0x09D9CF15",
+   "text": "你愿意帮我\\n推他一把吗？\\p只要你先通过\\n大师级华丽大赛，\\p他一定会被鼓舞到的！",
+   "bytes": 72,
+   "raw": "09d90fc40f32014e0d98fe0d2e0c9e0f0b0130092a3dfb108c0ef109d90dec0d1004c5fe02d30be205a10537086b02d30b7c3bfb0c9e0f0b034d056e0178048c0dae0304030b3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD39F7",
+     "at": "0x09CD3A06",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9CF5D": {
+   "addr": "0x09D9CF5D",
+   "text": "这样啊……\\n那我再想想别的办法吧。",
+   "bytes": 31,
+   "raw": "10550ee20100b0b0fe09bd0d980fe50e180e1801ad030b014b03ab012837ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD39F7",
+     "at": "0x09CD3A19",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9CF7C": {
+   "addr": "0x09D9CF7C",
+   "text": "要是你先通过\\n大师级华丽大赛，\\p再去和他说说看……\\p他说不定就能\\n鼓起勇气了！",
+   "bytes": 71,
+   "raw": "0ef10c0c09d90dec0d1004c5fe02d30be205a10537086b02d30b7c3bfb0fe50b2504f30c9e0c580c5807c2b0b0fb0c9e0c5801d6034d077d09d2fe048c0aab0f700ab3089e3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3A5B",
+     "at": "0x09CD3A6F",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD3A24",
+     "at": "0x09CD3A4B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9CFC3": {
+   "addr": "0x09D9CFC3",
+   "text": "你已经通过了\\n大师级华丽大赛吧？\\p快去和他说说看，\\n他肯定会被你鼓舞的！",
+   "bytes": 67,
+   "raw": "09d90f21075d0d1004c5089efe02d30be205a10537086b02d30b7c01283dfb08030b2504f30c9e0c580c5807c23bfe0c9e07dd034d056e017809d9048c0dae030b3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3A77",
+     "at": "0x09CD3A79",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9D006": {
+   "addr": "0x09D9D006",
+   "text": "我男朋友受你的影响，\\n终于下定决心去报名了。\\p呵呵，这是谢礼哦。",
+   "bytes": 59,
+   "raw": "0d9809c60a500f7f0c2109d9030b0f5e0e193bfe10a60f880de6034d07a60e4f0b2501650993089e37fb04ed04ed3b10550c0c0e4608660a1337ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3A81",
+     "at": "0x09CD3A83",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9D041": {
+   "addr": "0x09D9D041",
+   "text": "我等不及看他在\\n舞台上的表现了……",
+   "bytes": 32,
+   "raw": "0d98030f01d6059b07c20c9e0fe6fe0dae0ca90bad030b01aa0e03089eb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3AEB",
+     "at": "0x09CD3AED",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD3A81",
+     "at": "0x09CD3ADC",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9D061": {
+   "addr": "0x09D9D061",
+   "text": "不行不行……\\n我一想到站上\\l华丽大赛的舞台，\\p就紧张得不敢报名。",
+   "bytes": 58,
+   "raw": "01d60e5b01d60e5bb0b0fe0d980f0b0e18030410310badfa0537086b02d30b7c030b0dae0ca93bfb077d07461038030a01d6043c0165099337ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3B1C",
+     "at": "0x09CD3B1E",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9D09B": {
+   "addr": "0x09D9D09B",
+   "text": "我还是不敢参赛……\\p要是能看到有人\\n在大师级舞台上\\p堂堂正正地表演\\n就好了。",
+   "bytes": 70,
+   "raw": "0d9805460c0c01d6043c01e90b7cb0b0fb0ef10c0c09d207c203040f7e0b4bfe0fe602d30be205a10dae0ca90badfb0cc40cc410701070031f01aa0ec6fe077d04e9089e37ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3AF5",
+     "at": "0x09CD3B14",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9D0E1": {
+   "addr": "0x09D9D0E1",
+   "text": "看到你在台上\\n堂堂正正的表现，\\p我备受鼓舞啊！\\p好，没问题！\\n我绝对没问题的！\\p没问题啊！\\n谢谢你鼓励了我！\\p这些送给你！",
+   "bytes": 108,
+   "raw": "07c2030409d90fe60ca90badfe0cc40cc410701070030b01aa0e033bfb0d9801750c21048c0dae01003cfb04e93b09530d900ce33cfe0d9807a8037909530d900ce3030b3cfb09530d900ce301003cfe0e460e4609d9048c086d089e0d983cfb10550e340c70046209d93cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3B26",
+     "at": "0x09CD3B28",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9D14D": {
+   "addr": "0x09D9D14D",
+   "text": "好，没问题！\\n我这就去报名，\\p绝对没问题的！",
+   "bytes": 39,
+   "raw": "04e93b09530d900ce33cfe0d981055077d0b25016509933bfb07a8037909530d900ce3030b3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3B41",
+     "at": "0x09CD3B43",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9D1AA": {
+   "addr": "0x09D9D1AA",
+   "text": "\\ctrl[06 00]获得了5点BracerPoints和6000$!\\ctrl[07]",
+   "bytes": 35,
+   "raw": "fc0600057e030a089ea6032abce6d5d7d9e6cae3dde2e8e704f3a7a1a1a1b7abfc07ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3A81",
+     "at": "0x09CD3ACF",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9D86D": {
+   "addr": "0x09D9D86D",
+   "text": "你正在城都到处旅行对吧？\\n能不能帮我一个忙？\\p帮我去拍几张绝景的\\n照片回来？\\p我需要这些照片来\\n寻找写稿的灵感！",
+   "bytes": 104,
+   "raw": "09d910700fe6024903610304028608f40e5b037901283dfe09d201d609d2014e0d980f0b0460093e3dfb014e0d980b250a2105a3103807a80760030bfe10480a67056508293dfb0d980e730ef110550e3410480a670829fe0e9910450e3f044f030b08bc043a3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3E9B",
+     "at": "0x09CD3EAF",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9D8D5": {
+   "addr": "0x09D9D8D5",
+   "text": "这样啊……\\n那我再想想别的办法吧。\\p要是你改变主意了，\\n随时再来找我哦！",
+   "bytes": 65,
+   "raw": "10550ee20100b0b0fe09bd0d980fe50e180e1801ad030b014b03ab012837fb0ef10c0c09d9042e01a110c80f32089e3bfe0c890bed0fe5082910450d980a133cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3E9B",
+     "at": "0x09CD3EC2",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9D916": {
+   "addr": "0x09D9D916",
+   "text": "我需要四处地点的照片：\\n擂钵山的山顶、\\p海之彼岸的孤崖，\\n喇叭芽之塔的塔顶，\\p还有寂静之丘的顶端。\\n只要有了照片作参考，\\p我就能把这些景色\\n传达给全城都的听众了！\\p不过海之彼岸\\n究竟要如何抵达呢\\symbol[D3]\\p听说浅葱市的精灵中心\\n有人正在研究这个问题呢\\symbol[D3]",
+   "bytes": 227,
+   "raw": "0d980e730ef10c670286031f032a030b10480a673efe085301c20b9b030b0b9b034a3afb04c9107f01880115030b048a0eab3bfe082301270ea8107f0ca1030b0ca1034a3bfb05460f7e05b00762107f0b12030b034a037037fe108c0ef10f7e089e10480a67112f01e907ca3bfb0d98077d09d2013010550e3407600b89fe028b02cf04620b2b02490361030b0d0710ab089e3cfb01d604c504c9107f01880115fe076f07690ef10b6704f4031d02cf09cef9d3fb0d070c580acc02b00c15030b075b08bc10a10e4ffe0f7e0b4b10700fe60eb9076f105504600d900ce309cef9d3ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3F3B",
+     "at": "0x09CD3F42",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD3ED2",
+     "at": "0x09CD3F02",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9DB35": {
+   "addr": "0x09D9DB35",
+   "text": "对了，我以前曾抓到过一只\\n催眠貘。\\p可它老是让葵妍在工作时\\n困得直打哈欠，\\p我实在拿它没办法了。\\p既然你这么会寻找灵感，\\n那就交给你来培养吧！",
+   "bytes": 131,
+   "raw": "0379089e3b0d980f240ac9100d10d4030404c50f0b108cfe02bf09771d9237fb07d70c9f08440c0c0b430812167f0fe6046c112f0bedfe081c030a108202d204c60ad03bfb0d980bf10fe609b90c9f0953014b03ab089e37fb05b30b3b09d91055094c056e0e99104508bc043a3bfe09bd077d070d046209d908290a3d0ee101283cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3F52",
+     "at": "0x09CD3F88",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9DBB8": {
+   "addr": "0x09D9DBB8",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]获得了催眠貘！",
+   "bytes": 22,
+   "raw": "fc0106fc0309fd01057e030a089e02bf09771d923cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3F52",
+     "at": "0x09CD3FB5",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9DC0C": {
+   "addr": "0x09D9DC0C",
+   "text": "\\ctrl[06 00]获得了15点BracerPoints和10000$!\\ctrl[07]",
+   "bytes": 37,
+   "raw": "fc0600057e030a089ea2a6032abce6d5d7d9e6cae3dde2e8e704f3a2a1a1a1a1b7abfc07ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD3F52",
+     "at": "0x09CD3FF9",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9DC31": {
+   "addr": "0x09D9DC31",
+   "text": "这期节目播出的时候，\\n我一定会在特别鸣谢里\\l念出你的名字哦！\\p要记得收听我的节目哦，\\n拜拜！",
+   "bytes": 85,
+   "raw": "10550a95072c09b501c00278030b0bed05213bfe0d980f0b034d056e0fe60cd901ad09910e460864fa09e4027809d9030b0993110e0a133cfb0ef105b2030a0c1a0d070d98030b072c09b50a133bfe013c013c3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD401B",
+     "at": "0x09CD4022",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD3F52",
+     "at": "0x09CD400B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9DC8D": {
+   "addr": "0x09D9DC8D",
+   "text": "呼……感觉心里一块大石头\\n扑通一下掉下来了。\\p让你见笑了，\\var[01]。\\n每次一遇到事情，\\l我就只会哭个不停。\\p但这还是我第一次，\\n哭得这么痛快、\\l这么轻松！",
+   "bytes": 132,
+   "raw": "0523b0b0043a07a50e4f08640f0b080002d30beb0d1ffe0a860d100f0b0de6033b0de60829089e37fb0b4309d905e60e31089e3bfd0137fe095702ae0f0b0fa403040c070b0b3bfa0d98077d108c056e07ec046001d60d0b37fb02e9105505460c0c0d9803210f0b02ae3bfe07ec030a1055094c0d1c08033afa1055094c0b030c6c3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD404B",
+     "at": "0x09CD4063",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9DD11": {
+   "addr": "0x09D9DD11",
+   "text": "原来，这孩子和我是\\n一样的。\\p我们都在强迫自己，\\n去适应不属于自己的\\l节奏。\\p其实，皮皮进化成\\n皮可西，\\l并不是失去了活力，\\p而是变得更加温柔、\\n更加沉静了而已。\\p不需要每天都那么\\n元气满满的。\\p累的时候就逃离城市，\\n来这里晒晒月光，\\l痛痛快快地哭一场！\\p这也是很棒的战斗策略，\\n对吧？",
+   "bytes": 256,
+   "raw": "0fb908293b105504c8110b04f30d980c0cfe0f0b0ee2030b37fb0d98095f03610fe60ad80a83110c05a53bfe0b250c0f0f5401d60c390f88110c05a5030bfa072c111837fb0a9f0bf13b0a5f0a5f074a053c024bfe0a5f07d70dbd3bfa01bd01d60c0c0be30b25089e057b08793bfb039d0c0c01a1030a046605be0d880b613afe046605be02430762089e039d0f2137fb01d60e730ef109570ced036109bd094cfe0fb60ab309340934030b37fb0850030b0bed0521077d0cd4086002490c153bfe0829105508640b970b970fce04aa3bfa0d1c0d1c08030803031f07ec0f0b02233cfb10550f020c0c050b0153030b1030035c0203090e3bfe037901283dff",
+   "referenced_by": [
+    {
+     "script": "0x09CD404B",
+     "at": "0x09CD4096",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9DE11": {
+   "addr": "0x09D9DE11",
+   "text": "诶？皮可西？",
+   "bytes": 11,
+   "raw": "12163d0a5f07d70dbd3dff",
+   "referenced_by": [
+    {
+     "script": "0x09CD404B",
+     "at": "0x09CD40C7",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9DE1C": {
+   "addr": "0x09D9DE1C",
+   "text": "好温暖的波动……\\n\\var[01]！皮可西告诉我，\\l它现在感觉前所未有的好！\\p为了感谢你倾听我们的心声，\\n它想和你来一场\\l没有任何负担的、\\p最纯粹的对战！\\n现在的我们，绝对不弱哦！",
+   "bytes": 150,
+   "raw": "04e90d880a0c030b01c30354b0b0fefd013c0a5f07d70dbd04500c820d983bfa0c9f0e030fe6043a07a50ac90c9c0d7a0f7e030b04e93cfb0d70089e043a0e4609d90b050d070d98095f030b0e4f0bd73bfe0c9f0e1804f309d908290f0b0223fa09530f7e0b4e04f4042402e1030b3afb1126029f02c2030b037910303cfe0e030fe6030b0d98095f3b07a8037901d60b750a133cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD404B",
+     "at": "0x09CD40F6",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9DECA": {
+   "addr": "0x09D9DECA",
+   "text": "呼……打得真痛快！\\n不仅是皮可西，\\p连我的心跳现在都\\n完全平静下来了呢。\\p\\var[01]，谢谢你\\n陪我大哭了一场，\\p还见证了皮可西\\n真正的力量。\\p这是给你的谢礼！",
+   "bytes": 134,
+   "raw": "0523b0b002d2030a10590d1c08033cfe01d607480c0c0a5f07d70dbd3bfb087f0d98030b0e4f0d020e030fe60361fe0d520b2b0a7807620de60829089e09ce37fbfd013b0e460e4609d9fe0a400d9802d307ec089e0f0b02233bfb054605e61075089e0a5f07d70dbdfe10591070030b0879089237fb10550c0c046209d9030b0e4608663cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD404B",
+     "at": "0x09CD4173",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9DF50": {
+   "addr": "0x09D9DF50",
+   "text": "作为道馆馆主，除了徽章，\\n我还想把这份接纳自我的\\l奇迹光芒也分享给你。",
+   "bytes": 66,
+   "raw": "112f0d70030704a504a510c83b027f089e056210353bfe0d9805460e180130105503e0072509bf110c0d98030bfa0aa1058e04aa093a0f0203d90e1a046209d937ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD404B",
+     "at": "0x09CD41A4",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9DF92": {
+   "addr": "0x09D9DF92",
+   "text": "好了！压力释放完毕！\\n虽然满金市的节奏很快，\\p但我可是那座城市的\\n道馆馆主啊！\\p只要心里装着这片月光，\\n明天我也能继续在\\p那片霓虹灯下\\n闪闪发光！\\p我们要回去了哦！\\n\\var[01]，祝你接下来的旅行\\p也能顺顺利利！",
+   "bytes": 184,
+   "raw": "04e9089e3c0ea208790c1203c80d52018c3cfe0c870b3b093407420c15030b072c1118050b08033bfb02e90d9807d70c0c09bd113102490c15030bfe030704a504a510c801003cfb108c0ef10e4f086410df10f410550a670fce04aa3bfe098f0ced0d980f0209d205b70e830fe6fb09bd0a6709d40516030d0de6fe0b9f0b9f03a504aa3cfb0d98095f0ef105650b25089e0a133cfefd013b10d209d907250de60829030b08f40e5bfb0f0209d20c560c56087008703cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD404B",
+     "at": "0x09CD41D9",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9E04A": {
+   "addr": "0x09D9E04A",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]小茜将皮可西超级进化的\\n波动储存在了\\var[01]的超级石中。",
+   "bytes": 55,
+   "raw": "fc0106fc03090e2c130205f40a5f07d70dbd022e05a1074a053c030bfe01c30354028202c60fe6089efd01030b022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD404B",
+     "at": "0x09CD41BB",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9E0A0": {
+   "addr": "0x09D9E0A0",
+   "text": "\\ctrl[06 00]获得了10点BracerPoints和12000$!\\ctrl[07]",
+   "bytes": 37,
+   "raw": "fc0600057e030a089ea2a1032abce6d5d7d9e6cae3dde2e8e704f3a2a3a1a1a1b7abfc07ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD404B",
+     "at": "0x09CD4221",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA14CC": {
+   "addr": "0x09DA14CC",
+   "text": "\\ctrl[06 00]获得了8点BracerPoints和9000$!\\ctrl[07]",
+   "bytes": 35,
+   "raw": "fc0600057e030a089ea9032abce6d5d7d9e6cae3dde2e8e704f3aaa1a1a1b7abfc07ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD02F4",
+     "at": "0x09CD032F",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA14EF": {
+   "addr": "0x09DA14EF",
+   "text": "你听得到吗……？\\p这些徘徊在\\n阿露福遗迹的未知图腾，\\p正在释放着\\n某种不可思议的电波。\\p如果只是一只两只，\\n那电波微弱得根本无法解读。\\p但若是将所有形态的\\n未知图腾聚集在一起……\\p也许就能引发\\n足以唤醒宇宙的共鸣。",
+   "bytes": 195,
+   "raw": "09d90d07030a0304092ab0b03dfb10550e340a24053f0fe6fe010108e7040d0f15058e030b0d7a107b0d240cdb3bfb10700fe60c1203c810f4fe09a910a701d607d70c5f0f39030b032e01c337fb0b6704c3108c0c0c0f0b108c0890108c3bfe09bd032e01c30d680b75030a0463017b0da403ab0734036637fb02e90b740c0c05f40c9c0f7e0e590cad030bfe0d7a107b0d240cdb078b059a0fe60f0b0aabb0b0fb0f020e78077d09d20f4d03a5fe111b0f24054a0e5c0f9c10b7030b047a099137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD0194",
+     "at": "0x09CD01AA",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD019F",
+     "at": "0x09CD01AA",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA15B2": {
+   "addr": "0x09DA15B2",
+   "text": "你是训练家吧？\\p如果你能将所有\\n形态的未知图腾全都收服，\\l并向我展示那个奇迹……\\p我就将我从电波中领悟到的\\n“力量的真相”传授给你。\\p怎么样？\\n你要协助我见证这个奇迹吗？",
+   "bytes": 155,
+   "raw": "09d90c0c0e9e088a05bd01283dfb0b6704c309d909d205f40c9c0f7efe0e590cad030b0d7a107b0d240cdb0b2b03610c1a040a3bfa01bd0e1f0d98102c0c0309bd04600aa1058eb0b0fb0d98077d05f40d9802b3032e01c310a108bf0db80304030bfeb108790892030b10590e0db2028b0c1f046209d937fb100a094c0ee23dfe09d90ef10e3810cb0d9805e61075105504600aa1058e092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x09CD0194",
+     "at": "0x09CD01BF",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD019F",
+     "at": "0x09CD01BF",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA164D": {
+   "addr": "0x09DA164D",
+   "text": "呵呵呵……我感受到了。\\n你的波长里充满了\\l探求未知的好奇心。\\p那么，去收集所有的\\n未知图腾吧，\\p我会在这里等你的好消息。",
+   "bytes": 109,
+   "raw": "04ed04ed04edb0b00d98043a0c210304089e37fe09d9030b01c30226086402660934089efa0cbe0b150d7a107b030b04e90aa10e4f37fb09bd094c3b0b250c1a059a0c9c0f7e030bfe0d7a107b0d240cdb01283bfb0d98056e0fe610550864030f09d9030b04e90e280dc637ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD01DA",
+     "at": "0x09CD01EB",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD02EA",
+     "at": "0x09CD02EC",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA16BA": {
+   "addr": "0x09DA16BA",
+   "text": "这样啊……\\p看来现在的你，还无法\\n与这股宇宙的电波产生共鸣呢。\\p如果你改变主意了，\\n随时欢迎你再来找我。",
+   "bytes": 95,
+   "raw": "10550ee20100b0b0fb07c208290e030fe6030b09d93b05460da403abfe0f99105504910f9c10b7030b032e01c3021e0bd8047a099109ce37fb0b6704c309d9042e01a110c80f32089e3bfe0c890bed05430f5b09d90fe5082910450d9837ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD0194",
+     "at": "0x09CD01D2",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD019F",
+     "at": "0x09CD01D2",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA1719": {
+   "addr": "0x09DA1719",
+   "text": "……这是何等惊人的共鸣！\\p你随身携带的宝可梦图鉴里，\\n所有未知图腾的电波交织在了一起，\\l简直就像是一个完整的小型宇宙！\\p我看到了……\\n我终于理解了！\\p这就是隐藏在每个生命\\n最深处的潜能！\\p感谢你向我展示了这等奇迹。\\p作为约定的回报，\\n请收下这个吧。",
+   "bytes": 226,
+   "raw": "b0b010550c0c04f4030f075a0b4b030b047a09913cfb09d90c890bcb0e3a02d8030b016307d709660d2405e308643bfe0c9c0f7e0d7a107b0d240cdb030b032e01c3070d10800fe6089e0f0b0aab3bfa05dd1082077d0e1e0c0c0f0b04600d52106e030b0e2c0e580f9c10b73cfb0d9807c20304089eb0b0fe0d9810a60f8808620734089e3cfb1055077d0c0c0f4e01f30fe6095704600bd80994fe11260bcc0286030b0aca09d23cfb043a0e4609d90e1f0d98102c0c03089e1055030f0aa1058e37fb112f0d700fc8034d030b056501653bfe0b0d0c1a0de610550460012837ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD02F4",
+     "at": "0x09CD02F6",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA17FB": {
+   "addr": "0x09DA17FB",
+   "text": "这张招式学习器里\\n记录的招式，\\p名为“觉醒力量”。\\p它能将宝可梦体内沉睡的潜能，\\n化作真实的攻击释放出来。\\p并且，根据宝可梦自身\\n波长的不同，\\p这股力量的“属性”\\n也会发生改变。\\p是一股深不可测的\\n力量呢……",
+   "bytes": 186,
+   "raw": "1055103810430c020e900dd40ab20864fe05b208ed030b10430c023bfb09930d70b107a50e5c08790892b237fb0c9f09d205f4016307d709660ce609d002430c52030b0aca09d23bfe053c112f10590bf1030b046d05840c1203c80278082937fb01bd0aeb3b0463078d016307d70966110c0bcbfe01c30226030b01d60d143bfb1055049108790892030bb10c390e5fb2fe0f02056e03a50bd8042e01a137fb0c0c0f0b04910bcc01d607d70206030bfe0879089209ceb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD02F4",
+     "at": "0x09CD030B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA18B5": {
+   "addr": "0x09DA18B5",
+   "text": "多亏了你集齐的未知图腾……\\p我现在不仅能看穿\\n宝可梦觉醒力量的属性，\\l甚至能够引导、改变它的波长。\\p那么，如果你想要洞悉或改变\\n宝可梦觉醒力量的属性，\\p欢迎随时找我。",
+   "bytes": 153,
+   "raw": "0385080e089e09d9059a0aa6030b0d7a107b0d240cdbb0b0fb0d980e030fe601d6074809d207c20289fe016307d7096607a50e5c08790892030b0c390e5f3bfa0bd3109209d204830f4d03033a042e01a10c9f030b01c3022637fb09bd094c3b0b6704c309d90e180ef103590dc8057f042e01a1fe016307d7096607a50e5c08790892030b0c390e5f3bfb05430f5b0c890bed10450d9837ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD02F4",
+     "at": "0x09CD033C",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA194E": {
+   "addr": "0x09DA194E",
+   "text": "你想要洞悉谁的\\n觉醒力量属性？\\p或者是……\\n想改变谁的觉醒力量属性呢？",
+   "bytes": 64,
+   "raw": "09d90e180ef103590dc80c50030bfe07a50e5c087908920c390e5f3dfb057f10520c0cb0b0fe0e18042e01a10c50030b07a50e5c087908920c390e5f09ce3dff",
+   "referenced_by": [
+    {
+     "script": "0x09CD0344",
+     "at": "0x09CD0361",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09DA198E": {
+   "addr": "0x09DA198E",
+   "text": "查看潜能属性",
+   "bytes": 13,
+   "raw": "020d07c20aca09d20c390e5fff",
+   "referenced_by": [
+    {
+     "script": "0x09CD0344",
+     "at": "0x09CD034B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA199B": {
+   "addr": "0x09DA199B",
+   "text": "改变潜能属性",
+   "bytes": 13,
+   "raw": "042e01a10aca09d20c390e5fff",
+   "referenced_by": [
+    {
+     "script": "0x09CD0344",
+     "at": "0x09CD0359",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA19A8": {
+   "addr": "0x09DA19A8",
+   "text": "请选择一只你想洞悉的\\n宝可梦吧。",
+   "bytes": 31,
+   "raw": "0b0d0e8a10060f0b108c09d90e1803590dc8030bfe016307d70966012837ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD0386",
+     "at": "0x09CD0388",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA19C7": {
+   "addr": "0x09DA19C7",
+   "text": "唔唔唔……我看到了！\\n那孩子体内流动的能量波长！\\p如果这只\\var[02]\\n使用觉醒力量，\\p它的属性将会是\\n\\var[03]属性！\\p\\var[03]属性的力量，\\n正沉睡在它的体内哦。",
+   "bytes": 126,
+   "raw": "142b142b142bb0b00d9807c20304089e3cfe09bd04c8110b0ce609d008ca0354030b09d2089201c302263cfb0b6704c31055108cfd02fe0bf50f7107a50e5c087908923bfb0c9f030b0c390e5f05f4056e0c0cfefd030c390e5f3cfbfd030c390e5f030b087908923bfe107002430c520fe60c9f030b0ce609d00a1337ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD03B7",
+     "at": "0x09CD03B9",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA1A45": {
+   "addr": "0x09DA1A45",
+   "text": "想要引导宝可梦体内的波长，\\n需要心之鳞片来作为引导的媒介。\\p如果你拥有心之鳞片，\\n我就可以为你的宝可梦改变潜能。",
+   "bytes": 106,
+   "raw": "0e180ef10f4d0303016307d709660ce609d0030b01c302263bfe0e730ef10e4f107f08ae0a670829112f0d700f4d0303030b0955073b37fb0b6704c309d90f630f7e0e4f107f08ae0a673bfe0d98077d07d70f240d7009d9030b016307d70966042e01a10aca09d237ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD03C1",
+     "at": "0x09CD03C3",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA1AAF": {
+   "addr": "0x09DA1AAF",
+   "text": "很遗憾，你的包包里\\n似乎并没有我需要的心之鳞片呢。\\p如果你能找到它，\\n再来阿露福遗迹找我吧。",
+   "bytes": 86,
+   "raw": "050b0f1504dc3b09d9030b015b015b0864fe0c69052401bd09530f7e0d980e730ef1030b0e4f107f08ae0a6709ce37fb0b6704c309d909d2104503040c9f3bfe0fe50829010108e7040d0f15058e10450d98012837ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD03C1",
+     "at": "0x09CD03DB",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA1B05": {
+   "addr": "0x09DA1B05",
+   "text": "很好，\\n你确实带着心之鳞片呢。",
+   "bytes": 28,
+   "raw": "050b04e93bfe09d90b370bf102d810f40e4f107f08ae0a6709ce37ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD03E3",
+     "at": "0x09CD03E5",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA1B21": {
+   "addr": "0x09DA1B21",
+   "text": "那么，你想要将宝可梦的\\n觉醒力量引导至哪种属性？",
+   "bytes": 46,
+   "raw": "09bd094c3b09d90e180ef105f4016307d70966030bfe07a50e5c087908920f4d0303109209ba10a70c390e5f3dff",
+   "referenced_by": [
+    {
+     "script": "0x09CD03E3",
+     "at": "0x09CD03EC",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09DA1B4F": {
+   "addr": "0x09DA1B4F",
+   "text": "你想要改变哪只\\n宝可梦的觉醒力量属性？",
+   "bytes": 37,
+   "raw": "09d90e180ef1042e01a109ba108cfe016307d70966030b07a50e5c087908920c390e5f3dff",
+   "referenced_by": [
+    {
+     "script": "0x09CD03E3",
+     "at": "0x09CD041B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA1B74": {
+   "addr": "0x09DA1B74",
+   "text": "我明白了……\\n那么，我要开始了。",
+   "bytes": 28,
+   "raw": "0d98098f0136089eb0b0fe09bd094c3b0d980ef107b80c01089e37ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD044A",
+     "at": "0x09CD044C",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA1B90": {
+   "addr": "0x09DA1B90",
+   "text": "呼……仪式完成了。\\p现在的\\var[02]，\\n它体内的潜能已经被成功重塑。\\p如果你现在让它\\n使用觉醒力量，\\p它将会释放出\\n纯粹的\\var[04]属性！\\p生命的可能性，\\n真是无穷无尽呢。",
+   "bytes": 140,
+   "raw": "0523b0b00f170c020d52024b089e37fb0e030fe6030bfd023bfe0c9f0ce609d0030b0aca09d20f21075d0178024b046e10a90c7f37fb0b6704c309d90e030fe60b430c9ffe0bf50f7107a50e5c087908923bfb0c9f05f4056e0c1203c80278fe029f02c2030bfd040c390e5f3cfb0bd80994030b07d709d20e5f3bfe10590c0c0da40b100da4075109ce37ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD044A",
+     "at": "0x09CD0463",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA1C1C": {
+   "addr": "0x09DA1C1C",
+   "text": "唔……这孩子的波长\\n现在还无法解读。\\p请换一只宝可梦\\n让我看看吧。",
+   "bytes": 60,
+   "raw": "142bb0b0105504c8110b030b01c30226fe0e030fe605460da403ab0734036637fb0b0d05480f0b108c016307d70966fe0b430d9807c207c2012837ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD0386",
+     "at": "0x09CD03AF",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD03E3",
+     "at": "0x09CD0442",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA1C58": {
+   "addr": "0x09DA1C58",
+   "text": "呵呵呵……\\p如果你想再次倾听潜能的声音，\\n随时欢迎你来找我。",
+   "bytes": 55,
+   "raw": "04ed04ed04edb0b0fb0b6704c309d90e180fe502ae0b050d070aca09d2030b0bd70f443bfe0c890bed05430f5b09d9082910450d9837ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD046B",
+     "at": "0x09CD046D",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA3FFC": {
+   "addr": "0x09DA3FFC",
+   "text": "难道就没有办法了吗……",
+   "bytes": 21,
+   "raw": "09c70307077d09530f7e014b03ab089e092ab0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5B67",
+     "at": "0x09CD5B8C",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD5B72",
+     "at": "0x09CD5B8C",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA4011": {
+   "addr": "0x09DA4011",
+   "text": "……是你啊，\\var[01]。\\n道馆战已经结束了。\\p如果你是来寻求特训的，\\n今天我没有那个心情。\\p冬天之所以严酷，\\n是因为它能让一切静止。\\p流水会停下，生命会冬眠……\\p我曾经以为只要足够冷，\\n就连时间也可以冻结。\\p只要冻结了时间，\\n那些失去的东西……\\l就不会离我而去。",
+   "bytes": 226,
+   "raw": "b0b00c0c09d901003bfd0137fe030704a510300f21075d07330c3d089e37fb0b6704c309d90c0c08290e990b150cd90e9e030b3bfe07430ced0d9809530f7e09bd04600e4f0b0b37fb03510ced107f0c9c0f240eb807ef3bfe0c0c0f420d700c9f09d20b430f0b0ae90762108a37fb08ca0c51056e0d0b0de63b0bd80994056e03510977b0b0fb0d98100d075d0f240d70108c0ef1111b048308593bfe077d087f0bed05cf0f0207d70f240358073337fb108c0ef103580733089e0bed05cf3bfe09bd0e340be30b25030b03500dbdb0b0fa077d01d6056e08600d98039d0b2537ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5B67",
+     "at": "0x09CD5BBE",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD5B72",
+     "at": "0x09CD5BBE",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA40F3": {
+   "addr": "0x09DA40F3",
+   "text": "在冰天地的最深处，有一面\\n无论用什么高温都无法融化的冰壁。\\p三十年来，\\n我无数次前往那里，\\l试图将其凿开……\\p但每一次，碎裂的都只有\\n我那颗早就被冻死的心。\\p我以为，那是\\n大自然在惩罚我的软弱，\\p把我的一半灵魂\\n永远封死在了里面。\\p\\var[01]，你的眼神里\\n燃烧着像火焰一样的热度。\\p如果是你的话，\\n那份不屈的意志，\\l或许能帮我创造奇迹。\\p我想请你和我\\n一起去趟冰天地。\\p去看看那个……\\n被我遗弃在暴风雪里的家人。",
+   "bytes": 366,
+   "raw": "0fe601b60ced031f030b11260bcc02863b0f7e0f0b097efe0da409150f710bee094c04490d8803610da403ab0b5a053c030b01b6019737fb0b7d0bea09e008293bfe0d980da40c4202ae0ac90d6109bd08643bfa0c190d2405f40a9f0ff007b8b0b0fb02e909570f0b02ae3b0c8c08a4030b0361108c0f7efe0d9809bd07d30ff3077d017803580c63030b0e4f37fb0d980f240d703b09bd0c0cfe02d3110c0b3b0fe6024f03a60d98030b0b6d0b753bfb01300d98030b0f0b014a08bc0577fe0f6e0fc203e50c630fe6089e0864097e37fbfd013b09d9030b0ec40bcf0864fe0b3c0bb310f40e1e057d0ecf0f0b0ee2030b0b48036d37fb0b6704c30c0c09d9030b053d3bfe09bd03e001d60b1e030b0f32108f3bfa057f0e7809d2014e0d98029410010aa1058e37fb0d980e180b0d09d904f30d98fe0f0b0aab0b250ccc01b60ced031f37fb0b2507c207c209bd0460b0b0fe01780d980f150ab50fe6016603ea0e920864030b05bd0b4b37ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5B67",
+     "at": "0x09CD5BEF",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD5B72",
+     "at": "0x09CD5BEF",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA4261": {
+   "addr": "0x09DA4261",
+   "text": "你愿意陪我走这一趟吗？",
+   "bytes": 22,
+   "raw": "09d90fc40f320a400d98111710550f0b0ccc092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5B67",
+     "at": "0x09CD5BFC",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD5B72",
+     "at": "0x09CD5BFC",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA4296": {
+   "addr": "0x09DA4296",
+   "text": "……谢谢你，\\var[01]。\\p我已经记不清，有多久\\n没从别人身上感受到\\l这种直达心底的温度了。\\p或许，这就是春天\\n即将来临的预兆吧。\\p事不宜迟，\\n我先出发去冰天地了！",
+   "bytes": 138,
+   "raw": "b0b00e460e4609d93bfd0137fb0d980f21075d05b201d60b073b0f7e03850773fe095302b301ad0b4b0bcb0bad043a0c210304fa105510a7108202cf0e4f031e030b0d88036d089e37fb057f0e783b1055077d0c0c029a0cedfe059f05f4082908ac030b0fb0104a012837fb0c0701d60f1b025b3bfe0d980dec027803a50b2501b60ced031f089e3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5C2B",
+     "at": "0x09CD5C68",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA4320": {
+   "addr": "0x09DA4320",
+   "text": "……是啊，暴风雪的严寒，\\n并不是每个人都有义务去承受的。\\p这是我自己造下的孽，\\n三十年的沉淀，\\p对你这个年纪的孩子\\n来说确实太沉重了。\\p不过，如果哪天你的内心里\\n燃起了足以融化冰雪的觉悟……\\l我会在这里等你。",
+   "bytes": 189,
+   "raw": "b0b00c0c01003b016603ea0e92030b0eb804d43bfe01bd01d60c0c095704600b4b03610f7e0f350db70b2502520c21030b37fb10550c0c0d98110c05a510010de6030b09eb3bfe0b7d0bea09e0030b024303343bfb037909d91055046009e005b8030b04c8110bfe08290c580b370bf10cac024310a9089e37fb01d604c53b0b6704c309ba0ced09d9030b09d00e4f0864fe0b3c0aab089e111b0f240b5a053c01b60e92030b07a50db8b0b0fa0d98056e0fe610550864030f09d937ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5B67",
+     "at": "0x09CD5C19",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD5B72",
+     "at": "0x09CD5C19",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA43DD": {
+   "addr": "0x09DA43DD",
+   "text": "我会先去冰天地。\\p那面冰壁……\\n还有被我留在那里的过去，\\p都已经等得太久了。",
+   "bytes": 69,
+   "raw": "0d98056e0dec0b2501b60ced031f37fb09bd097e01b60197b0b0fe05460f7e01780d9808c70fe609bd0864030b04c50b253bfb03610f21075d030f030a0cac0773089e37ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5C89",
+     "at": "0x09CD5C9A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA4422": {
+   "addr": "0x09DA4422",
+   "text": "时间不会被冻结。\\p正因为如此，\\n我们才更该珍惜\\p还能并肩走下去的今天。",
+   "bytes": 65,
+   "raw": "0bed05cf01d6056e01780358073337fb10700f420d700b6702ab3bfe0d98095f01e00466042d10570dcbfb054609d201bd05d211170de60b25030b07430ced37ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5CAC",
+     "at": "0x09CD5CBD",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA4463": {
+   "addr": "0x09DA4463",
+   "text": "你来了啊……",
+   "bytes": 11,
+   "raw": "09d90829089e0100b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5CCF",
+     "at": "0x09CD5CE9",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA446E": {
+   "addr": "0x09DA446E",
+   "text": "就是这里……\\n三十年前的那个冬天……\\p我带着我的\\n两只拉普拉斯来到了这里，\\l为了追求所谓的冰之极意……\\p我以为凭借自己的实力，\\n足以征服这地底的严寒……\\p然而，地面上连日的特大暴风雪\\n引发了山体剧烈的震动……\\l冰天地发生了极大的大塌方。\\p成百上千吨的巨大碎冰和岩石，\\n裹挟着极寒的地下气流，\\p就像白色的海啸一样\\n在狭窄的洞窟中倾泻而下！\\p我差点被\\n落下的冰岩砸断了腿，\\p只能绝望地看着\\n那足以粉碎一切的冰瀑扑面而来。",
+   "bytes": 381,
+   "raw": "077d0c0c10550864b0b0fe0b7d0bea09e00ac9030b09bd046003510cedb0b0fb0d9802d810f40d98030bfe0890108c08220a9008220c5c08290304089e105508643bfa0d70089e10e60b150c9c0d83030b01b6107f05960f32b0b0fb0d980f240d700a79073a110c05a5030b0bf108793bfe111b0f24106a040a1055031f031e030b0eb804d4b0b0fb0b3b039d3b031f097e0bad087f0b55030b0cd902d3016603ea0e92fe0f4d03a5089e0b9b0ce6079708a5030b10630354b0b0fa01b60ced031f03a50bd8089e059602d3030b02d30c9d03c037fb024b01380bad0ac0037b030b078e02d30c8c01b604f30ebb0beb3bfe04c40e3910f4059604d4030b031f0de60ab308ca3bfb077d0e1e01360b89030b04c90e300f0b0ee2fe0fe60de51020030b035907ed10a10b050e45039d0de63cfb0d980212032a0178fe091e0de6030b01b60ebb0fde0374089e0d303bfb108c09d207a80d63031f07c210f4fe09bd111b0f2403de0c8c0f0b0ae9030b01b60a940a86097e039d082937ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5CCF",
+     "at": "0x09CD5D22",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA45EB": {
+   "addr": "0x09DA45EB",
+   "text": "就在那个瞬间……\\n我的那两只拉普拉斯，\\l平时性情最温和的它们，\\p却爆发出了一股\\n连我都觉得骇人的力量。\\p它们用尽最后的力气，\\n咬住我的衣服，\\p将我狠狠甩进了\\n一处安全的岩洞缝隙里！\\p当我从昏迷中爬起来的时候……\\n洞穴里的震动已经停止了。\\p但它们……\\n却为了保护我，\\p用自己庞大的身躯挡住了\\n呼啸而下的碎冰与落石，\\p被这万年不化的坚冰\\n彻底封死在通道里。\\p我爬到这里，\\n隔着这层冰……\\p眼睁睁地看着\\n它们的体温一点点消失。\\p我甚至能看到……\\n它们直到生命的最后一刻，\\l都还把身体紧紧地蜷缩在一起，\\l身下似乎死死地护着什么……\\p从那天起，\\n我就亲手掐死了心中的热情。\\p我不允许\\n自己再去信任牵绊，\\p因为牵绊带来的温度，\\n在这幽暗残酷的冰穴里……\\p只会让人在失去的瞬间，感受到\\n那种连灵魂都被撕裂的痛楚！\\p……可是今天，\\n我要把它们带回……！",
+   "bytes": 663,
+   "raw": "077d0fe609bd04600c5505cfb0b0fe0d98030b09bd0890108c08220a9008220c5c3bfa0a780bed0e5f0b0b11260d8804f3030b0c9f095f3bfb0b34016903a50278089e0f0b0491fe087f0d98036107a5030a04cd0b4b030b0879089237fb0c9f095f0f71075111260522030b08790ab33bfe0eee10d00d98030b0f12040a3bfb05f40d98050c050c0c49074a089efe0f0b028601110b2b030b0ebb035903ef0dda08643cfb02ef0d9802b30575096c10a10a1d0aab0829030b0bed0521b0b0fe03590e910864030b106303540f21075d0d0b108a089e37fb02e90c9f095fb0b0fe0b340d70089e016005310d983bfb0f71110c05a50a3002d3030b0bcb0b1d02f010d0089efe05230e30039d0de6030b0c8c01b60f99091e0beb3bfb017810550d5a09e001d6053c030b05cc01b6fe023b031e03e50c630fe60d100307086437fb0d980a1d0304105508643bfe045e10f41055020701b6b0b0fb0ec410691069031f07c210f4fe0c9f095f030b0ce60d880f0b032a032a0e280be337fb0d980bd3109209d207c20304b0b0fe0c9f095f108203040bd80994030b112605220f0b07da3bfa0361054601300bcb0ce607460746031f1c600c980fe60f0b0aab3bfa0bcb0de60c6905240c630c63031f053110f40bee094cb0b0fb02b309bd0ced0aab3bfe0d98077d0af00c1b0ab90c63089e0e4f10a1030b0b480b0b37fb0d9801d60fd60e78fe110c05a50fe50b250e500b4e0abc014c3bfb0f420d700abc014c02d80829030b0d88036d3bfe0fe610550f72011401eb07ef030b01b60e910864b0b0fb108c056e0b430b4b0fe60be30b25030b0c5505cf3b043a0c210304fe09bd10a7087f08bc0577036101780c5d08a4030b0d1c02803cfbb0b007d70c0c07430ced3bfe0d980ef101300c9f095f02d80565b0b03cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5CCF",
+     "at": "0x09CD5D57",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA4882": {
+   "addr": "0x09DA4882",
+   "text": "这是……信使鸟？！\\n不对！\\p这冰冷得\\n毫无生命迹象的金属身躯……\\p我们一起迎击它吧，\\var[01]！",
+   "bytes": 76,
+   "raw": "10550c0cb0b00e500bf509e73d3cfe01d603793cfb105501b60859030afe04e70da40bd80994058e0e20030b07420c390bcb0b1db0b0fb0d98095f0f0b0aab0f5b05840c9f01283bfd013cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5CCF",
+     "at": "0x09CD5DC5",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA48CE": {
+   "addr": "0x09DA48CE",
+   "text": "铁包袱消失了……",
+   "bytes": 15,
+   "raw": "0d04015b040e0e280be3089eb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5CCF",
+     "at": "0x09CD5E0D",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA48DD": {
+   "addr": "0x09DA48DD",
+   "text": "冰壁……碎了……！？\\p\\var[01]……\\n我先进去了！",
+   "bytes": 32,
+   "raw": "01b60197b0b00c8c089eb0b03c3dfbfd01b0b0fe0d980dec074a0b25089e3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5CCF",
+     "at": "0x09CD5E4B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA48FD": {
+   "addr": "0x09DA48FD",
+   "text": "冰雾散去……\\p两只拉普拉斯的身体\\n依然保持着当年的模样，\\p但已经没有了生命气息。\\p然而，在它们\\n巨大身躯围成的避风港里……\\l有一个散发着微弱蓝光的东西。",
+   "bytes": 139,
+   "raw": "01b60db30b800b25b0b0fb0890108c08220a9008220c5c030b0bcb0ce6fe0f100b3b0160025810f402ef09e0030b09990ee23bfb02e90f21075d09530f7e089e0bd809940ab30dc637fb0b3b039d3b0fe60c9f095ffe078e02d30bcb0b1d0d6d024b030b019903ea04450864b0b0fa0f7e0f0b04600b8003a510f40d680b75082b04aa030b03500dbd37ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5E6C",
+     "at": "0x09CD5E9B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA4988": {
+   "addr": "0x09DA4988",
+   "text": "这是……一个蛋？\\p怎么可能……\\p在这种绝对零度的环境下……\\n三十年了……\\p这颗蛋……\\n竟然还有微弱的温度？！\\p难道说……\\n在这暗无天日的冰壁下，\\p它们即使失去了生命，\\n也一直用彼此的躯体，\\l死死护住这最后一丝余温吗……\\p它们……\\n在用生命抗拒着被冻结的命运……",
+   "bytes": 225,
+   "raw": "10550c0cb0b00f0b046002ee3dfb100a094c07d709d2b0b0fb0fe6105510a707a8037908b6036d030b054407630de6b0b0fe0b7d0bea09e0089eb0b0fb105507d302eeb0b0fe07690b3b05460f7e0d680b75030b0d88036d3d3cfb09c703070c58b0b0fe0fe6105501140da40ced0b55030b01b601970de63bfb0c9f095f059f0bf50be30b25089e0bd809943bfe0f020f0b10820f71018802ab030b0b1d0ce63bfa0c630c63053110d01055112605220f0b0c620f8e0d88092ab0b0fb0c9f095fb0b0fe0fe60f710bd8099407c7078c10f4017803580733030b09940fd7b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5E6C",
+     "at": "0x09CD5ED6",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA4A69": {
+   "addr": "0x09DA4A69",
+   "text": "这么多年来，\\n我一直试图冻结时间。\\p我以为只要时间不流动，\\n我就不用面对\\l失去它们的痛苦。\\p但是……\\n看着这颗蛋，我明白了。\\p它们用生命保护这颗蛋，\\n不是为了让它被冻住。\\p而是为了让它……孵化。\\p它们相信的不是\\n静止的冬天，\\p而是流动的未来啊。\\p是我……\\p是我这个顽固的家伙，\\n把春天挡在了门外三十年。",
+   "bytes": 269,
+   "raw": "1055094c038509e008293bfe0d980f0b10820c190d24035807330bed05cf37fb0d980f240d70108c0ef10bed05cf01d608ca03543bfe0d98077d01d60f71097e0379fa0be30b250c9f095f030b0d1c07ee37fb02e90c0cb0b0fe07c210f4105507d302ee3b0d98098f0136089e37fb0c9f095f0f710bd8099401600531105507d302ee3bfe01d60c0c0d70089e0b430c9f0178035810d037fb039d0c0c0d70089e0b430c9fb0b00401053c37fb0c9f095f0e0d0e50030b01d60c0cfe0762108a030b03510ced3bfb039d0c0c08ca0354030b0d7a0829010037fb0c0c0d98b0b0fb0c0c0d98105504600d4f0494030b05bd057c3bfe0130029a0ced02f00fe6089e095d0d4a0b7d0bea09e037ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5E6C",
+     "at": "0x09CD5F1E",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA4B76": {
+   "addr": "0x09DA4B76",
+   "text": "在柳伯体温的感召下，\\n加上刚才激烈战斗余温的激发，\\l蛋壳发出了清脆的碎裂声。",
+   "bytes": 72,
+   "raw": "0fe608cb01c90ce60d88030b043a104c0de63bfe05be0bad043f01e0058f08a51030035c0f8e0d88030b058f03a53bfa02ee07d503a50278089e0b0702c0030b0c8c08a40bd737ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5E6C",
+     "at": "0x09CD5F3A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA4BBE": {
+   "addr": "0x09DA4BBE",
+   "text": "小拉普拉斯：呜……？",
+   "bytes": 17,
+   "raw": "0e2c08220a9008220c5c3e0d9eb0b03dff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5E6C",
+     "at": "0x09CD5F58",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA4BCF": {
+   "addr": "0x09DA4BCF",
+   "text": "……！\\p啊……\\p啊啊……\\p好久不见……\\p欢迎回来。",
+   "bytes": 37,
+   "raw": "b0b03cfb0100b0b0fb01000100b0b0fb04e9077301d605e6b0b0fb05430f5b0565082937ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5E6C",
+     "at": "0x09CD5F6F",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA4BF4": {
+   "addr": "0x09DA4BF4",
+   "text": "\\var[01]……让你见笑了。\\p三十年的积雪一旦融化，\\n原来会化作如此汹涌的感情啊。\\p既然春天已经到来，\\n我这把老骨头，\\p也不能再继续沉睡下去了！\\p宝可梦训练家之间，\\n是不需要多余言语的！\\p为了感谢你击碎了\\n我心中的坚冰……\\p也为了庆祝这孩子\\n崭新的生命！\\p\\var[01]！\\n用你的全部实力，\\p来接下我这不再迷惘的\\n极寒吧！！",
+   "bytes": 271,
+   "raw": "fd01b0b00b4309d905e60e31089e37fb0b7d0bea09e0030b058a0e920f0b02e70b5a053c3bfe0fb90829056e053c112f0b6702ab0e650f6d030b043a0b0b010037fb05b30b3b029a0ced0f21075d030408293bfe0d98105501300844048f0d1f3bfb0f0201d609d20fe505b70e8302430c520de60b25089e3cfb016307d709660e9e088a05bd107f05cf3bfe0c0c01d60e730ef103850f8e0ebd0f9d030b3cfb0d70089e043a0e4609d905840c8c089efe0d980e4f10a1030b05cc01b6b0b0fb0f020d70089e0b0e10d2105504c8110bfe102b0e4d030b0bd809943cfbfd013cfe0f7109d9030b0b2b01da0bf108793bfb082907250de60d98105501d60fe5096c156e030bfe059604d401283c3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5E6C",
+     "at": "0x09CD5F9E",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA4D17": {
+   "addr": "0x09DA4D17",
+   "text": "如同破冰的春水一般，\\n你的决心不仅温暖，\\p而且势不可挡，\\var[01]。\\p谢谢你陪我走这一趟，\\n更谢谢你刚才那场\\l倾尽全力的对战。\\p那只像机械一般的信使鸟，\\n就像是我过去的心结，\\p凝结了三十年执念的\\n坚冰一样……\\p但是，在现在与未来的\\n碰撞下，\\p终于彻底崩塌、粉碎……",
+   "bytes": 230,
+   "raw": "0b670d140a8101b6030b029a0c510f0b01423bfe09d9030b07a60e4f01d607480d880a0c3bfb039d0aeb0c0b01d607d702f03bfd0137fb0e460e4609d90a400d98111710550f0b0ccc3bfe04660e460e4609d9043f01e009bd0223fa0b0507510b2b0879030b0379103037fb09bd108c0e1e05870e400f0b0142030b0e500bf509e73bfe077d0e1e0c0c0d9804c50b25030b0e4f07333bfb09f30733089e0b7d0bea09e0108509e4030bfe05cc01b60f0b0ee2b0b0fb02e90c0c3b0fe60e030fe60f990d7a0829030bfe0a5310e10de63bfb10a60f88023b031e017d0c9d3a03de0c8cb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5E6C",
+     "at": "0x09CD5FDC",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA4DFD": {
+   "addr": "0x09DA4DFD",
+   "text": "这只拉普拉斯……\\p被暴风雪冻结了整整三十年，\\n才终于等来了它的破壳。\\p坦白说，\\n在看到它的一瞬间，\\p我曾想过把它托付给你。\\p因为我觉得自己已经是\\n风烛残年，\\p不配再陪伴它走过\\n崭新的未来……\\p但在刚才与你的对战中，\\n老夫改变主意了。\\p既然是我这个顽固的老头子，\\n把它的春天挡在门外三十年……\\p那我就有责任，\\n用我余下的全部生命，\\p去填补这孩子缺失的时光！\\p我要亲自抚养它长大，\\n带着它去看遍城都的\\l春夏秋冬。\\p哪怕再次面对严冬，\\n只要有这孩子在身边，\\p我也不会觉得寒冷了。\\p再次感谢你，\\var[01]！\\n这个送给你……",
+   "bytes": 456,
+   "raw": "1055108c08220a9008220c5cb0b0fb0178016603ea0e9203580733089e106e106e0b7d0bea09e03bfe01e010a60f88030f0829089e0c9f030b0a8107d537fb0cba01360c583bfe0fe607c203040c9f030b0f0b0c5505cf3bfb0d98100d0e1804c501300c9f0d380420046209d937fb0f420d700d9807a5030a110c05a50f21075d0c0cfe03ea10c301eb09e03bfb01d60a410fe50a4001480c9f111704c5fe102b0e4d030b0d7a0829b0b0fb02e90fe6043f01e00f9909d9030b0379103010a13bfe084403f5042e01a110c80f32089e37fb05b30b3b0c0c0d98105504600d4f0494030b08440d1f110b3bfe01300c9f030b029a0ced02f00fe6095d0d4a0b7d0bea09e0b0b0fb09bd0d98077d0f7e10050b4e3bfe0f710d980f8e0de6030b0b2b01da0bd809943bfb0b250cef01d4105504c8110b0b310be3030b0bed04aa3cfb0d980ef10af0110c04110ee10c9f022602d33bfe02d810f40c9f0b2507c201a602490361030bfa029a0de80b11035137fb09ba0a1f0fe502ae097e03790eb803513bfe108c0ef10f7e105504c8110b0fe60bcb019c3bfb0d980f0201d6056e07a5030a04d40859089e37fb0fe502ae043a0e4609d93bfd013cfe105504600c70046209d9b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5E6C",
+     "at": "0x09CD600A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA4FC5": {
+   "addr": "0x09DA4FC5",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]柳伯将雪妖女超级进化的\\n波动储存在了\\var[01]的超级石中。",
+   "bytes": 55,
+   "raw": "fc0106fc030908cb01c905f40e920ee60a0b022e05a1074a053c030bfe01c30354028202c60fe6089efd01030b022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5E6C",
+     "at": "0x09CD601E",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09DA4FFC": {
+   "addr": "0x09DA4FFC",
+   "text": "带着这个继续你的旅途吧……\\p千万别像我曾经那样，\\n妄图用寒冰去强行\\l留住什么。\\p不管是时间，还是人，\\n都是无法被冻结的。\\p正因为时间会流逝，\\n正因为生命会消逝……\\p我们在有限时间里留下的足迹，\\n才显得如此珍贵。\\p好了，后会有期！",
+   "bytes": 205,
+   "raw": "02d810f41055046005b70e8309d9030b08f40d260128b0b0fb0ac00d5a01ad0e1e0d98100d075d09bd0ee23bfe0d650d240f7104d401b60b250ad80e5bfa08c710d00bee094c37fb01d604a40c0c0bed05cf3b05460c0c0b4b3bfe03610c0c0da403ab017803580733030b37fb10700f420d700bed05cf056e08ca0c0a3bfe10700f420d700bd80994056e0e280c0ab0b0fb0d98095f0fe60f7e0e0b0bed05cf086408c70de6030b111b058e3bfe01e00e01030a0b6702ab105704bb37fb04e9089e3b0522056e0f7e0a953cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5E6C",
+     "at": "0x09CD603C",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA50C9": {
+   "addr": "0x09DA50C9",
+   "text": "见证了冬之柳伯\\n冰封之心的融化……\\p时间无法被冻结，\\n但爱可以穿越三十年的暴风雪，\\l将生命延续下去……",
+   "bytes": 93,
+   "raw": "05e61075089e0351107f08cb01c9fe01b603e5107f0e4f030b0b5a053cb0b0fb0bed05cf0da403ab0178035807333bfe02e9010d07d70f2402890fc90b7d0bea09e0030b016603ea0e923bfa05f40bd809940ebc0e830de60b25b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5E6C",
+     "at": "0x09CD605E",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA5145": {
+   "addr": "0x09DA5145",
+   "text": "\\ctrl[06 00]获得了10点BracerPoints和12000$!\\ctrl[07]",
+   "bytes": 37,
+   "raw": "fc0600057e030a089ea2a1032abce6d5d7d9e6cae3dde2e8e704f3a2a3a1a1a1b7abfc07ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD5E6C",
+     "at": "0x09CD60A6",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA7C07": {
+   "addr": "0x09DA7C07",
+   "text": "哦，是\\var[01]啊。\\n你也是来劝我的？\\p哼，现在的年轻人\\n都太浮躁了。",
+   "bytes": 55,
+   "raw": "0a133b0c0cfd01010037fe09d90f020c0c08290b300d98030b3dfb050e3b0e030fe6030b09e00b030b4bfe03610cac040b0ff6089e37ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD82F3",
+     "at": "0x09CD830D",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA7C3E": {
+   "addr": "0x09DA7C3E",
+   "text": "……不过，如果你真想帮这丫头，\\n就去给我找一个粉球果来。\\p我正好需要它做一个特别的球。\\n没有粉球果，一切免谈！",
+   "bytes": 100,
+   "raw": "b0b001d604c53b0b6704c309d910590e18014e10550ea70d1f3bfe077d0b2504620d9810450f0b046003de0b1404c3082937fb0d98107004e90e730ef10c9f112e0f0b04600cd901ad030b0b1437fe09530f7e03de0b1404c33b0f0b0ae9097a0cb93cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD82F3",
+     "at": "0x09CD834A",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD836A",
+     "at": "0x09CD838B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA7CA2": {
+   "addr": "0x09DA7CA2",
+   "text": "哼，找到粉球果了吗？",
+   "bytes": 19,
+   "raw": "050e3b1045030403de0b1404c3089e092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x09CD83A0",
+     "at": "0x09CD83B1",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA7CB5": {
+   "addr": "0x09DA7CB5",
+   "text": "哦哦！就是这个色泽！\\p等着，老夫这就让你们见识一下，\\n什么叫做结合了桧皮镇\\l传统的究极艺术！",
+   "bytes": 85,
+   "raw": "0a130a133c077d0c0c105504600b8910083cfb030f10f43b084403f51055077d0b4309d9095f05e60bf20f0b0de63bfe0bee094c0722112e073304f5089e17940a5f1065fa028b0d1b030b076f05960f250c3a3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD83A0",
+     "at": "0x09CD83E2",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA7D0A": {
+   "addr": "0x09DA7D0A",
+   "text": "哇……",
+   "bytes": 5,
+   "raw": "0d43b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD84B4",
+     "at": "0x09CD84BB",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD84AA",
+     "at": "0x09CD84BB",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA7D0F": {
+   "addr": "0x09DA7D0F",
+   "text": "绝赞！粉球果的汁液染出的颜色，\\n完美还原了呆呆兽那\\l充满大智若愚气质的粉色！\\p这才是我们桧皮镇的最强Cosplay！\\n穿着这个去惊艳全场吧！",
+   "bytes": 125,
+   "raw": "07a80fea3c03de0b1404c3030b107e0f0a0b3e0278030b0ebe0b893bfe0d52095805460fb9089e02d402d40c2309bdfa0266093402d310980b740f8c0ab3109b030b03de0b893cfb105501e00c0c0d98095f17940a5f1065030b11260ad8bde3e7e4e0d5ed3cfe028910f4105504600b25075a0ec70b2b022301283cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD84B4",
+     "at": "0x09CD84DC",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD84AA",
+     "at": "0x09CD84DC",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA7D8C": {
+   "addr": "0x09DA7D8C",
+   "text": "我最喜欢爷爷了！！",
+   "bytes": 17,
+   "raw": "0d9811260dd605430ef60ef6089e3c3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD84B4",
+     "at": "0x09CD84F1",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD84AA",
+     "at": "0x09CD84F1",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA7D9D": {
+   "addr": "0x09DA7D9D",
+   "text": "\\var[01]，多亏了你的\\n粉球果！\\p不过……这可是难得的盛会，\\n老夫看你骨骼清奇，\\l难道你没有参加的意向吗？",
+   "bytes": 88,
+   "raw": "fd013b0385080e089e09d9030bfe03de0b1404c33cfb01d604c5b0b0105507d70c0c09c7030a030b0bde056e3bfe084403f507c209d9048f1e1f0b070aa13bfa09c7030709d909530f7e01e905be030b0f320e1f092a3dff",
+   "referenced_by": [
+    {
+     "script": "0x09CD84B4",
+     "at": "0x09CD851C",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD84AA",
+     "at": "0x09CD851C",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA7DF5": {
+   "addr": "0x09DA7DF5",
+   "text": "在考虑要Cos什么吗？\\p听好了，真正的Cosplay\\n不需要多么奢华，\\p只要能唤起大家心中\\n最初的感动与共鸣，\\l就是最棒的作品！",
+   "bytes": 109,
+   "raw": "0fe607ca09010ef1bde3e70bee094c092a3dfb0d0704e9089e3b10591070030bbde3e7e4e0d5edfe01d60e730ef10385094c0bbb05373bfb108c0ef109d2054a0aab02d305bd0e4f10a1fe11260277030b043a03540f99047a09913bfa077d0c0c11260153030b112f0a723cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD84B4",
+     "at": "0x09CD854D",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD84AA",
+     "at": "0x09CD854D",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DA7E62": {
+   "addr": "0x09DA7E62",
+   "text": "\\var[01]似乎想到了什么……\\p也许该回若叶镇的家，\\n去问问妈妈？",
+   "bytes": 51,
+   "raw": "fd010c6905240e180304089e0bee094cb0b0fb0f020e78042d05650b740f061065030b05bd3bfe0b250d900d90092209223dff",
+   "referenced_by": [
+    {
+     "script": "0x09CD84B4",
+     "at": "0x09CD8566",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD84AA",
+     "at": "0x09CD8566",
+     "cmd": "loadpointer"
+    }
+   ]
+  }
+ }
+}

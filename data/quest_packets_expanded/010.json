@@ -1,0 +1,1975 @@
+{
+ "title": "纯白的魅影",
+ "quest_id": 10,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3afc4",
+    "title": "纯白的魅影",
+    "title_address": "0x8e3b9f5",
+    "description": "寻找木木枭时，\n遭遇了洗翠索罗亚克的幻影。\n小心它的速度，准备迎战！",
+    "description_address": "0x8e3b9b6",
+    "unknown_u16": 6005,
+    "unknown_u16_hex": "0x1775",
+    "accept_flag": 3027,
+    "accept_flag_hex": "0x0BD3",
+    "complete_flag": 3028,
+    "complete_flag_hex": "0x0BD4",
+    "map_group": 56,
+    "map_num": 42,
+    "tail_hex": "00 00 00 00",
+    "index": 10,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3b9b6",
+    "legacy_match_count": 0,
+    "current_description": "寻找木木枭时，\n遭遇了洗翠索罗亚克的幻影。\n小心它的速度，准备迎战！",
+    "catalog_map": {
+     "id": "56:42",
+     "name": "擂钵山"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x09CD10CC",
+    "0x09CD112F",
+    "0x09CD113D"
+   ],
+   "event_roots": [
+    {
+     "script": "0x09CD10CC",
+     "map_id": "52:24",
+     "place": "纯白冻土",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 16,
+     "y": 116,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g52_n024.md"
+    },
+    {
+     "script": "0x09CD10CC",
+     "map_id": "52:24",
+     "place": "纯白冻土",
+     "kind": "坐标事件",
+     "local_id": null,
+     "event_index": 0,
+     "x": 2,
+     "y": 4,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g52_n024.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x09CD10CC",
+     "event_roots": [
+      {
+       "map_id": "52:24",
+       "place": "纯白冻土",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 16,
+       "y": 116,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g52_n024.md"
+      },
+      {
+       "map_id": "52:24",
+       "place": "纯白冻土",
+       "kind": "坐标事件",
+       "local_id": null,
+       "event_index": 0,
+       "x": 2,
+       "y": 4,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g52_n024.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x09CD10CC",
+       "command": "callasm",
+       "args": [
+        164801765
+       ]
+      },
+      {
+       "at": "0x09CD10D1",
+       "command": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x09CD10D6",
+       "command": "setflag",
+       "args": [
+        3027
+       ],
+       "task_flag_labels": [
+        {
+         "title": "纯白的魅影",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD10D9",
+       "command": "setflag",
+       "args": [
+        3036
+       ]
+      },
+      {
+       "at": "0x09CD10DC",
+       "command": "setvar",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CD10E1",
+       "command": "setvar",
+       "args": [
+        32772,
+        50
+       ],
+       "possible_names_not_semantics": {
+        "species": "地鼠",
+        "item": "黄色碎片",
+        "move": "定身法"
+       }
+      },
+      {
+       "at": "0x09CD10E6",
+       "command": "setvar",
+       "args": [
+        32773,
+        79
+       ],
+       "possible_names_not_semantics": {
+        "species": "呆呆兽",
+        "item": "特攻强化",
+        "move": "催眠粉"
+       }
+      },
+      {
+       "at": "0x09CD10EB",
+       "command": "setvar",
+       "args": [
+        32774,
+        259
+       ],
+       "possible_names_not_semantics": {
+        "species": "土王",
+        "item": "音速自行车",
+        "move": "无理取闹"
+       }
+      },
+      {
+       "at": "0x09CD10F0",
+       "command": "setvar",
+       "args": [
+        32775,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CD10F5",
+       "command": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x09CD10F8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165283336
+       ],
+       "texts": [
+        {
+         "address": "0x09DA0608",
+         "text": "木木枭看上去\n似乎有点奇怪……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD10FE",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD1100",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CD1105",
+       "command": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x09CD1108",
+       "command": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x09CD110D",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD1110",
+       "command": "applymovement",
+       "args": [
+        255,
+        164434832
+       ]
+      },
+      {
+       "at": "0x09CD1117",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD111A",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD111C",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x09CD111F",
+       "command": "comparevartovalue",
+       "args": [
+        32780,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x09CD1124",
+       "command": "goto_if",
+       "args": [
+        1,
+        164434223
+       ],
+       "targets": [
+        "0x09CD112F"
+       ]
+      },
+      {
+       "at": "0x09CD112A",
+       "command": "goto",
+       "args": [
+        164434237
+       ],
+       "targets": [
+        "0x09CD113D"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "52:24/local2"
+      },
+      {
+       "kind": "coord",
+       "where": "52:24"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD112F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD112F",
+       "command": "applymovement",
+       "args": [
+        255,
+        164434844
+       ]
+      },
+      {
+       "at": "0x09CD1136",
+       "command": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x09CD1139",
+       "command": "spriteface",
+       "args": [
+        255,
+        3
+       ]
+      },
+      {
+       "at": "0x09CD113D",
+       "command": "setflag",
+       "args": [
+        3045
+       ]
+      },
+      {
+       "at": "0x09CD1140",
+       "command": "clearflag",
+       "args": [
+        3046
+       ]
+      },
+      {
+       "at": "0x09CD1143",
+       "command": "removeobject",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CD1146",
+       "command": "addobject",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD1149",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD114B",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD114E",
+       "command": "applymovement",
+       "args": [
+        255,
+        164434828
+       ]
+      },
+      {
+       "at": "0x09CD1155",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD1158",
+       "command": "cry",
+       "args": [
+        1245,
+        255
+       ]
+      },
+      {
+       "at": "0x09CD115D",
+       "command": "setflag",
+       "args": [
+        2315
+       ]
+      },
+      {
+       "at": "0x09CD1160",
+       "command": "setvar",
+       "args": [
+        32768,
+        779
+       ],
+       "possible_names_not_semantics": {
+        "species": "花洁夫人",
+        "item": null,
+        "move": "冤冤相报"
+       }
+      },
+      {
+       "at": "0x09CD1165",
+       "command": "setvar",
+       "args": [
+        32769,
+        247
+       ],
+       "possible_names_not_semantics": {
+        "species": "沙基拉斯",
+        "item": "甜蜜球",
+        "move": "暗影球"
+       }
+      },
+      {
+       "at": "0x09CD116A",
+       "command": "setvar",
+       "args": [
+        32770,
+        304
+       ],
+       "possible_names_not_semantics": {
+        "species": "傲骨燕",
+        "item": "TM16",
+        "move": "巨声"
+       }
+      },
+      {
+       "at": "0x09CD116F",
+       "command": "setvar",
+       "args": [
+        32771,
+        386
+       ],
+       "possible_names_not_semantics": {
+        "species": "电萤虫",
+        "item": "TM61",
+        "move": "诡计"
+       }
+      },
+      {
+       "at": "0x09CD1174",
+       "command": "setwildbattle",
+       "args": [
+        1245,
+        30,
+        0
+       ],
+       "species_name": "索罗亚克"
+      },
+      {
+       "at": "0x09CD117A",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD117D",
+       "command": "special",
+       "args": [
+        312
+       ]
+      },
+      {
+       "at": "0x09CD1180",
+       "command": "pause",
+       "args": [
+        144
+       ]
+      },
+      {
+       "at": "0x09CD1183",
+       "command": "setflag",
+       "args": [
+        3037
+       ]
+      },
+      {
+       "at": "0x09CD1186",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD1188",
+       "command": "setflag",
+       "args": [
+        3046
+       ]
+      },
+      {
+       "at": "0x09CD118B",
+       "command": "clearflag",
+       "args": [
+        3047
+       ]
+      },
+      {
+       "at": "0x09CD118E",
+       "command": "addobject",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x09CD1191",
+       "command": "addobject",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD1194",
+       "command": "removeobject",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD1197",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD1199",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CD119C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165281686
+       ],
+       "texts": [
+        {
+         "address": "0x09D9FF96",
+         "text": "完成任务:<纯白的魅影>"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD11A2",
+       "command": "call",
+       "args": [
+        164434750
+       ],
+       "targets": [
+        "0x09CD133E"
+       ]
+      },
+      {
+       "at": "0x09CD11A7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165283579
+       ],
+       "texts": [
+        {
+         "address": "0x09DA06FB",
+         "text": "索罗亚克消失了……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD11AD",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD11AF",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CD11B4",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD11B7",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CD11BC",
+       "command": "special",
+       "args": [
+        90
+       ]
+      },
+      {
+       "at": "0x09CD11BF",
+       "command": "setflag",
+       "args": [
+        3028
+       ],
+       "task_flag_labels": [
+        {
+         "title": "纯白的魅影",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD11C2",
+       "command": "setflag",
+       "args": [
+        3026
+       ],
+       "task_flag_labels": [
+        {
+         "title": "冻土上的捉迷藏",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD11C5",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CD11CA",
+       "command": "goto",
+       "args": [
+        164434438
+       ],
+       "targets": [
+        "0x09CD1206"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD10CC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD113D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD113D",
+       "command": "setflag",
+       "args": [
+        3045
+       ]
+      },
+      {
+       "at": "0x09CD1140",
+       "command": "clearflag",
+       "args": [
+        3046
+       ]
+      },
+      {
+       "at": "0x09CD1143",
+       "command": "removeobject",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CD1146",
+       "command": "addobject",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD1149",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD114B",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD114E",
+       "command": "applymovement",
+       "args": [
+        255,
+        164434828
+       ]
+      },
+      {
+       "at": "0x09CD1155",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD1158",
+       "command": "cry",
+       "args": [
+        1245,
+        255
+       ]
+      },
+      {
+       "at": "0x09CD115D",
+       "command": "setflag",
+       "args": [
+        2315
+       ]
+      },
+      {
+       "at": "0x09CD1160",
+       "command": "setvar",
+       "args": [
+        32768,
+        779
+       ],
+       "possible_names_not_semantics": {
+        "species": "花洁夫人",
+        "item": null,
+        "move": "冤冤相报"
+       }
+      },
+      {
+       "at": "0x09CD1165",
+       "command": "setvar",
+       "args": [
+        32769,
+        247
+       ],
+       "possible_names_not_semantics": {
+        "species": "沙基拉斯",
+        "item": "甜蜜球",
+        "move": "暗影球"
+       }
+      },
+      {
+       "at": "0x09CD116A",
+       "command": "setvar",
+       "args": [
+        32770,
+        304
+       ],
+       "possible_names_not_semantics": {
+        "species": "傲骨燕",
+        "item": "TM16",
+        "move": "巨声"
+       }
+      },
+      {
+       "at": "0x09CD116F",
+       "command": "setvar",
+       "args": [
+        32771,
+        386
+       ],
+       "possible_names_not_semantics": {
+        "species": "电萤虫",
+        "item": "TM61",
+        "move": "诡计"
+       }
+      },
+      {
+       "at": "0x09CD1174",
+       "command": "setwildbattle",
+       "args": [
+        1245,
+        30,
+        0
+       ],
+       "species_name": "索罗亚克"
+      },
+      {
+       "at": "0x09CD117A",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD117D",
+       "command": "special",
+       "args": [
+        312
+       ]
+      },
+      {
+       "at": "0x09CD1180",
+       "command": "pause",
+       "args": [
+        144
+       ]
+      },
+      {
+       "at": "0x09CD1183",
+       "command": "setflag",
+       "args": [
+        3037
+       ]
+      },
+      {
+       "at": "0x09CD1186",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD1188",
+       "command": "setflag",
+       "args": [
+        3046
+       ]
+      },
+      {
+       "at": "0x09CD118B",
+       "command": "clearflag",
+       "args": [
+        3047
+       ]
+      },
+      {
+       "at": "0x09CD118E",
+       "command": "addobject",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x09CD1191",
+       "command": "addobject",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD1194",
+       "command": "removeobject",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD1197",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD1199",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CD119C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165281686
+       ],
+       "texts": [
+        {
+         "address": "0x09D9FF96",
+         "text": "完成任务:<纯白的魅影>"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD11A2",
+       "command": "call",
+       "args": [
+        164434750
+       ],
+       "targets": [
+        "0x09CD133E"
+       ]
+      },
+      {
+       "at": "0x09CD11A7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165283579
+       ],
+       "texts": [
+        {
+         "address": "0x09DA06FB",
+         "text": "索罗亚克消失了……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD11AD",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD11AF",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CD11B4",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD11B7",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CD11BC",
+       "command": "special",
+       "args": [
+        90
+       ]
+      },
+      {
+       "at": "0x09CD11BF",
+       "command": "setflag",
+       "args": [
+        3028
+       ],
+       "task_flag_labels": [
+        {
+         "title": "纯白的魅影",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD11C2",
+       "command": "setflag",
+       "args": [
+        3026
+       ],
+       "task_flag_labels": [
+        {
+         "title": "冻土上的捉迷藏",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD11C5",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CD11CA",
+       "command": "goto",
+       "args": [
+        164434438
+       ],
+       "targets": [
+        "0x09CD1206"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD10CC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD1206",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD1206",
+       "command": "callasm",
+       "args": [
+        164801765
+       ]
+      },
+      {
+       "at": "0x09CD120B",
+       "command": "setflag",
+       "args": [
+        3029
+       ],
+       "task_flag_labels": [
+        {
+         "title": "在未知的土地上",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD120E",
+       "command": "applymovement",
+       "args": [
+        5,
+        164434996
+       ]
+      },
+      {
+       "at": "0x09CD1215",
+       "command": "applymovement",
+       "args": [
+        4,
+        164435006
+       ]
+      },
+      {
+       "at": "0x09CD121C",
+       "command": "waitmovement",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x09CD121F",
+       "command": "waitmovement",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD1222",
+       "command": "call",
+       "args": [
+        164434779
+       ],
+       "targets": [
+        "0x09CD135B"
+       ]
+      },
+      {
+       "at": "0x09CD1227",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165283612
+       ],
+       "texts": [
+        {
+         "address": "0x09DA071C",
+         "text": "哎呀呀！\n真是太惊险了！\n我都为你捏了一把冷汗啊，\n年轻的陌生人！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD122D",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD122F",
+       "command": "call",
+       "args": [
+        164434813
+       ],
+       "targets": [
+        "0x09CD137D"
+       ]
+      },
+      {
+       "at": "0x09CD1234",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD1237",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD123A",
+       "command": "applymovement",
+       "args": [
+        255,
+        164434828
+       ]
+      },
+      {
+       "at": "0x09CD1241",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD1244",
+       "command": "spriteface",
+       "args": [
+        255,
+        4
+       ]
+      },
+      {
+       "at": "0x09CD1248",
+       "command": "fadesong",
+       "args": [
+        477
+       ]
+      },
+      {
+       "at": "0x09CD124B",
+       "command": "call",
+       "args": [
+        164434779
+       ],
+       "targets": [
+        "0x09CD135B"
+       ]
+      },
+      {
+       "at": "0x09CD1250",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165283672
+       ],
+       "texts": [
+        {
+         "address": "0x09DA0758",
+         "text": "噢，请原谅我的失礼。\n我还没自我介绍。\n我是拉苯，\n是洗翠地区的\n宝可梦研究员。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD1256",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD1258",
+       "command": "call",
+       "args": [
+        164434813
+       ],
+       "targets": [
+        "0x09CD137D"
+       ]
+      },
+      {
+       "at": "0x09CD125D",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD1260",
+       "command": "call",
+       "args": [
+        164434796
+       ],
+       "targets": [
+        "0x09CD136C"
+       ]
+      },
+      {
+       "at": "0x09CD1265",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165283744
+       ],
+       "texts": [
+        {
+         "address": "0x09DA07A0",
+         "text": "我刚才正在远处观察\n这片冻土的生态，\n结果就看见你和那只\n可怕的索罗亚克战斗！\n要知道，宝可梦可是非常、\n非常可怕的生物啊！\n你竟然能指挥它们作战？\n对了，刚才这只木木枭\n一直躲在树洞里\n瑟瑟发抖……\n我看它望着你的方向，\n它是你的宝可梦吗？\n来，快回到你主人的\n身边吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD126B",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD126D",
+       "command": "call",
+       "args": [
+        164434813
+       ],
+       "targets": [
+        "0x09CD137D"
+       ]
+      },
+      {
+       "at": "0x09CD1272",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD1275",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD1278",
+       "command": "applymovement",
+       "args": [
+        5,
+        164434828
+       ]
+      },
+      {
+       "at": "0x09CD127F",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD1282",
+       "command": "call",
+       "args": [
+        164434796
+       ],
+       "targets": [
+        "0x09CD136C"
+       ]
+      },
+      {
+       "at": "0x09CD1287",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165283991
+       ],
+       "texts": [
+        {
+         "address": "0x09DA0897",
+         "text": "哦哦哦！等等！\n你身边跟着的\n那两个小家伙是……\n火球鼠，还有水水獭？！\n这真是不可思议！\n火球鼠、水水獭、木木枭……\n草克制水，水克制火，\n火又克制草！\n这三只宝可梦构成了\n完美又和谐的\n属性三角关系啊！\n原来如此……\n我懂了！\n这是一个绝妙的启发！\n我最近正发愁，\n该挑什么宝可梦\n来引导新人调查队员。\n如果把这三只\n彼此制衡、\n又能够和谐相处的宝可梦，\n作为初学者的初始搭档……\n也许能大大减轻人们\n接触宝可梦时的恐惧呢！\n看到它们对你\n如此依恋的样子，\n真是让人感慨万千……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD128D",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD128F",
+       "command": "call",
+       "args": [
+        164434813
+       ],
+       "targets": [
+        "0x09CD137D"
+       ]
+      },
+      {
+       "at": "0x09CD1294",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD1297",
+       "command": "applymovement",
+       "args": [
+        5,
+        164435017
+       ]
+      },
+      {
+       "at": "0x09CD129E",
+       "command": "waitmovement",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD12A1",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD12A4",
+       "command": "applymovement",
+       "args": [
+        5,
+        164434830
+       ]
+      },
+      {
+       "at": "0x09CD12AB",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD12AE",
+       "command": "spriteface",
+       "args": [
+        5,
+        3
+       ]
+      },
+      {
+       "at": "0x09CD12B2",
+       "command": "call",
+       "args": [
+        164434796
+       ],
+       "targets": [
+        "0x09CD136C"
+       ]
+      },
+      {
+       "at": "0x09CD12B7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165284419
+       ],
+       "texts": [
+        {
+         "address": "0x09DA0A43",
+         "text": "你知道吗？在这个洗翠地区，\n人们对宝可梦充满恐惧。\n大家把它们当成\n会伤人的野兽，\n当成不可理喻的怪物。\n甚至连银河队的\n马加木老大，\n也总是斥责我。\n在他眼里，我每天去观察、\n记录这些生物的生态，\n不过是毫无用处的\n过家家行为。\n不去斩除危险，\n反而去研究危险，\n简直是愚不可及。\n但是……我有一个梦想！\n我要把所有宝可梦的生态\n都记录下来，\n我要编纂出这个世界上\n第一本宝可梦图鉴！\n因为恐惧往往来源于未知。\n只要人们了解它们的习性，\n知道它们也会像这样\n互相依靠……\n恐惧就会变成好奇，\n好奇就会变成理解！\n哪怕马加木老大不认可我，\n哪怕我注定是个怪人，\n一个不被理解的怪人，\n我也绝不会停下记录的笔！\n我相信，这份记录\n会像种子一样\n在时光里流传下去。\n也许要等上一百年，\n甚至几百年……\n但我坚信，在遥远的未来，\n人类一定能和这些奇妙生物\n消除隔阂，\n成为并肩同行的伙伴！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD12BD",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD12BF",
+       "command": "call",
+       "args": [
+        164434813
+       ],
+       "targets": [
+        "0x09CD137D"
+       ]
+      },
+      {
+       "at": "0x09CD12C4",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD12C7",
+       "command": "call",
+       "args": [
+        164434796
+       ],
+       "targets": [
+        "0x09CD136C"
+       ]
+      },
+      {
+       "at": "0x09CD12CC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165285126
+       ],
+       "texts": [
+        {
+         "address": "0x09DA0D06",
+         "text": "拥有这种平衡力量的你，\n简直是天生的调查队员！\n如果可以的话，\n真希望你能加入我们，\n一起来见证\n那个未来的开端啊！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD12D2",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD12D4",
+       "command": "call",
+       "args": [
+        164434813
+       ],
+       "targets": [
+        "0x09CD137D"
+       ]
+      },
+      {
+       "at": "0x09CD12D9",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD12DC",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD12DF",
+       "command": "applymovement",
+       "args": [
+        255,
+        164434828
+       ]
+      },
+      {
+       "at": "0x09CD12E6",
+       "command": "call",
+       "args": [
+        164434819
+       ],
+       "targets": [
+        "0x09CD1383"
+       ]
+      },
+      {
+       "at": "0x09CD12EB",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD12ED",
+       "command": "applymovement",
+       "args": [
+        255,
+        164434855
+       ]
+      },
+      {
+       "at": "0x09CD12F4",
+       "command": "applymovement",
+       "args": [
+        4,
+        164434855
+       ]
+      },
+      {
+       "at": "0x09CD12FB",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD12FD",
+       "command": "callasm",
+       "args": [
+        165022489
+       ]
+      },
+      {
+       "at": "0x09CD1302",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD1305",
+       "command": "applymovement",
+       "args": [
+        5,
+        164434830
+       ]
+      },
+      {
+       "at": "0x09CD130C",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD130F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165281744
+       ],
+       "texts": [
+        {
+         "address": "0x09D9FFD0",
+         "text": "完成任务:<在未知的土地上>"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD1315",
+       "command": "call",
+       "args": [
+        164434750
+       ],
+       "targets": [
+        "0x09CD133E"
+       ]
+      },
+      {
+       "at": "0x09CD131A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165285233
+       ],
+       "texts": [
+        {
+         "address": "0x09DA0D71",
+         "text": "消失了吗！？\n看来，洗翠地区\n并不是你该留下的地方。\n虽然只是短短一会儿，\n但很高兴认识你。\n请替我去看看那个……\n你所在的未来吧……！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD1320",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD1322",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CD1327",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD132A",
+       "command": "setflag",
+       "args": [
+        3030
+       ],
+       "task_flag_labels": [
+        {
+         "title": "在未知的土地上",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD132D",
+       "command": "setflag",
+       "args": [
+        3032
+       ],
+       "task_flag_labels": [
+        {
+         "title": "来自未来的回响",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD1330",
+       "command": "setvar",
+       "args": [
+        20943,
+        6
+       ],
+       "possible_names_not_semantics": {
+        "species": "喷火龙",
+        "item": "捕网球",
+        "move": "聚宝功"
+       }
+      },
+      {
+       "at": "0x09CD1335",
+       "command": "warpmuted",
+       "args": [
+        42,
+        0,
+        255,
+        3,
+        4
+       ]
+      },
+      {
+       "at": "0x09CD133D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD11D9"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD133E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD133E",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CD1341",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD1346",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD134B",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x09CD1350",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x09CD1355",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x09CD135A",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD0C22"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD135B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD135B",
+       "command": "call",
+       "args": [
+        144452428
+       ],
+       "targets": [
+        "0x089C2B4C"
+       ]
+      },
+      {
+       "at": "0x09CD1360",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165283596
+       ]
+      },
+      {
+       "at": "0x09CD1366",
+       "command": "call",
+       "args": [
+        144452458
+       ],
+       "targets": [
+        "0x089C2B6A"
+       ]
+      },
+      {
+       "at": "0x09CD136B",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD1206"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD136C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD136C",
+       "command": "call",
+       "args": [
+        144452428
+       ],
+       "targets": [
+        "0x089C2B4C"
+       ]
+      },
+      {
+       "at": "0x09CD1371",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165283603
+       ],
+       "texts": [
+        {
+         "address": "0x09DA0713",
+         "text": "拉苯博士"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD1377",
+       "command": "call",
+       "args": [
+        144452458
+       ],
+       "targets": [
+        "0x089C2B6A"
+       ]
+      },
+      {
+       "at": "0x09CD137C",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD11EF"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD137D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD137D",
+       "command": "call",
+       "args": [
+        144452505
+       ],
+       "targets": [
+        "0x089C2B99"
+       ]
+      },
+      {
+       "at": "0x09CD1382",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD11EF"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD1383",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD1383",
+       "command": "callasm",
+       "args": [
+        165022185
+       ]
+      },
+      {
+       "at": "0x09CD1388",
+       "command": "pause",
+       "args": [
+        120
+       ]
+      },
+      {
+       "at": "0x09CD138B",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD1206"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [
+    "0x089C2B4C",
+    "0x089C2B6A",
+    "0x089C2B99"
+   ],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

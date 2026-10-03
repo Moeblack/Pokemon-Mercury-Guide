@@ -1,0 +1,993 @@
+{
+ "title": "海星连接宇宙",
+ "quest_id": 86,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b5b4",
+    "title": "海星连接宇宙",
+    "title_address": "0x8e3b896",
+    "description": "受邀参加通过宝石海星的\n力量和宇宙交流的集会。",
+    "description_address": "0x8e3b869",
+    "unknown_u16": 193,
+    "unknown_u16_hex": "0x00C1",
+    "accept_flag": 3303,
+    "accept_flag_hex": "0x0CE7",
+    "complete_flag": 3304,
+    "complete_flag_hex": "0x0CE8",
+    "map_group": 3,
+    "map_num": 72,
+    "tail_hex": "08 00 00 00",
+    "index": 86,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3b869",
+    "legacy_match_count": 0,
+    "current_description": "受邀参加通过宝石海星的\n力量和宇宙交流的集会。",
+    "catalog_map": {
+     "id": "3:72",
+     "name": "浅葱市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x087B3726",
+    "0x087B3FF4"
+   ],
+   "event_roots": [
+    {
+     "script": "0x087B06E9",
+     "map_id": "3:72",
+     "place": "浅葱市",
+     "kind": "人物",
+     "local_id": 46,
+     "event_index": 44,
+     "x": 35,
+     "y": 50,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n072.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x087B06E9",
+     "event_roots": [
+      {
+       "map_id": "3:72",
+       "place": "浅葱市",
+       "kind": "人物",
+       "local_id": 46,
+       "event_index": 44,
+       "x": 35,
+       "y": 50,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n072.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x087B06E9",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x087B06EA",
+       "command": "goto",
+       "args": [
+        142292774
+       ],
+       "targets": [
+        "0x087B3726"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "3:72/local46"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B3726",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B3726",
+       "command": "checkflag",
+       "args": [
+        3303
+       ],
+       "task_flag_labels": [
+        {
+         "title": "海星连接宇宙",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x087B3729",
+       "command": "goto_if",
+       "args": [
+        1,
+        142292899
+       ],
+       "targets": [
+        "0x087B37A3"
+       ]
+      },
+      {
+       "at": "0x087B372F",
+       "command": "setvar",
+       "args": [
+        32774,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x087B3734",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142293318
+       ],
+       "texts": [
+        {
+         "address": "0x087B3946",
+         "text": "不是"
+        }
+       ]
+      },
+      {
+       "at": "0x087B373A",
+       "command": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B373D",
+       "command": "setvar",
+       "args": [
+        32774,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B3742",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142293325
+       ],
+       "texts": [
+        {
+         "address": "0x087B394D",
+         "text": "什么意思？"
+        }
+       ]
+      },
+      {
+       "at": "0x087B3748",
+       "command": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B374B",
+       "command": "preparemsg",
+       "args": [
+        142293337
+       ],
+       "texts": [
+        {
+         "address": "0x087B3959",
+         "text": "现在……直接在我脑海里\n呼唤我的人就是你吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x087B3750",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x087B3751",
+       "command": "multichoice",
+       "args": [
+        18,
+        8,
+        32,
+        1
+       ]
+      },
+      {
+       "at": "0x087B3756",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x087B3757",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B375A",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x087B375D",
+       "command": "applymovement",
+       "args": [
+        46,
+        142293315
+       ]
+      },
+      {
+       "at": "0x087B3764",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x087B3767",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142293142
+       ],
+       "texts": [
+        {
+         "address": "0x087B3896",
+         "text": "我们是同道中人，\n你不需要有顾虑。\n与宝石海星一起生活的\n训练家齐聚一堂……\n共同邀请在宇宙的宝石海星\n驾临到大地上……\n这个集会，\n希望你务必前来参加。\n宝石海星就是\n从宇宙驾临的星星。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B376D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B376F",
+       "command": "setflag",
+       "args": [
+        3303
+       ],
+       "task_flag_labels": [
+        {
+         "title": "海星连接宇宙",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x087B3772",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B3775",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142293051
+       ],
+       "texts": [
+        {
+         "address": "0x087B383B",
+         "text": "接受任务:<海星连接宇宙>"
+        }
+       ]
+      },
+      {
+       "at": "0x087B377B",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B3780",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B3785",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x087B378A",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x087B378F",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x087B3794",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142293080
+       ],
+       "texts": [
+        {
+         "address": "0x087B3858",
+         "text": "请在晚上……\n带宝石海星过来吧。\n而且队伍里\n不能有其他的宝可梦。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B379A",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B379C",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x087B37A1",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B06E9"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B37A3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B37A3",
+       "command": "checkflag",
+       "args": [
+        5553
+       ]
+      },
+      {
+       "at": "0x087B37A6",
+       "command": "goto_if",
+       "args": [
+        0,
+        142292918
+       ],
+       "targets": [
+        "0x087B37B6"
+       ]
+      },
+      {
+       "at": "0x087B37AC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142293080
+       ],
+       "texts": [
+        {
+         "address": "0x087B3858",
+         "text": "请在晚上……\n带宝石海星过来吧。\n而且队伍里\n不能有其他的宝可梦。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B37B2",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B37B4",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B3726"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B37B6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B37B6",
+       "command": "countpokemon",
+       "args": []
+      },
+      {
+       "at": "0x087B37B7",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B37BC",
+       "command": "goto_if",
+       "args": [
+        1,
+        142292940
+       ],
+       "targets": [
+        "0x087B37CC"
+       ]
+      },
+      {
+       "at": "0x087B37C2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142293080
+       ],
+       "texts": [
+        {
+         "address": "0x087B3858",
+         "text": "请在晚上……\n带宝石海星过来吧。\n而且队伍里\n不能有其他的宝可梦。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B37C8",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B37CA",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B37A3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B37CC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B37CC",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x087B37D1",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x087B37D6",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x087B37DB",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        121
+       ],
+       "possible_names_not_semantics": {
+        "species": "宝石海星",
+        "item": "橙色邮件",
+        "move": "炸蛋"
+       }
+      },
+      {
+       "at": "0x087B37E0",
+       "command": "goto_if",
+       "args": [
+        1,
+        142292976
+       ],
+       "targets": [
+        "0x087B37F0"
+       ]
+      },
+      {
+       "at": "0x087B37E6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142293080
+       ],
+       "texts": [
+        {
+         "address": "0x087B3858",
+         "text": "请在晚上……\n带宝石海星过来吧。\n而且队伍里\n不能有其他的宝可梦。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B37EC",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B37EE",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B37B6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B37F0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B37F0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142292997
+       ],
+       "texts": [
+        {
+         "address": "0x087B3805",
+         "text": "看来你和宝石海星一起来了啊。\n那么我们的集会就此开始。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B37F6",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B37F8",
+       "command": "warpmuted",
+       "args": [
+        52,
+        27,
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x087B3800",
+       "command": "pause",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x087B3803",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B37CC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B3FF4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B3FF4",
+       "command": "applymovement",
+       "args": [
+        7,
+        142296095
+       ]
+      },
+      {
+       "at": "0x087B3FFB",
+       "command": "applymovement",
+       "args": [
+        6,
+        142296095
+       ]
+      },
+      {
+       "at": "0x087B4002",
+       "command": "waitmovement",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B4005",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142294685
+       ],
+       "texts": [
+        {
+         "address": "0x087B3E9D",
+         "text": "辛苦你了。\n这个给你，以表谢意。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B400B",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B400D",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        114
+       ],
+       "possible_names_not_semantics": {
+        "species": "蔓藤怪",
+        "item": "彗星碎片",
+        "move": "黑雾"
+       }
+      },
+      {
+       "at": "0x087B4012",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        6
+       ],
+       "possible_names_not_semantics": {
+        "species": "喷火龙",
+        "item": "捕网球",
+        "move": "聚宝功"
+       }
+      },
+      {
+       "at": "0x087B4017",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x087B4019",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B401C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142294663
+       ],
+       "texts": [
+        {
+         "address": "0x087B3E87",
+         "text": "那么让我们有缘再见。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B4022",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B4024",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B4027",
+       "command": "addmoney",
+       "args": [
+        6000,
+        0
+       ]
+      },
+      {
+       "at": "0x087B402D",
+       "command": "addvar",
+       "args": [
+        20789,
+        6
+       ]
+      },
+      {
+       "at": "0x087B4032",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B4035",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142294634
+       ],
+       "texts": [
+        {
+         "address": "0x087B3E6A",
+         "text": "完成任务:<海星连接宇宙>"
+        }
+       ]
+      },
+      {
+       "at": "0x087B403B",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B4040",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B4045",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x087B404A",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x087B404F",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x087B4054",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142294599
+       ],
+       "texts": [
+        {
+         "address": "0x087B3E47",
+         "text": "获得了6点BracerPoints和6000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x087B405A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B405C",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x087B4061",
+       "command": "setflag",
+       "args": [
+        3304
+       ],
+       "task_flag_labels": [
+        {
+         "title": "海星连接宇宙",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x087B4064",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B4067",
+       "command": "warpmuted",
+       "args": [
+        3,
+        72,
+        255,
+        35,
+        49
+       ]
+      },
+      {
+       "at": "0x087B406F",
+       "command": "pause",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x087B4072",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B4B23"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

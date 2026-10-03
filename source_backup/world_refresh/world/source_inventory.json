@@ -1,0 +1,5842 @@
+{
+  "inventory_version": 1,
+  "created_date": "2026-10-03",
+  "purpose": "供Main按Wiki资料版块选择有限提取，不替Main选择总体方案。",
+  "root": "C:\\Users\\Moeblack\\Downloads\\宝可梦水银\\解包研究",
+  "scope": "14份明确JSON/JSONL全字段盘点，3份精确补充JSON和已指定README/机制报告；仅写world/source_inventory.json与.md。",
+  "method": {
+    "runtime": "Python标准库；读取既有JSON/JSONL全量聚合，无ROM读取/反汇编/游戏运行/渲染/项目测试。",
+    "schema_notation": "$为根，[]为数组元素，{key}为数值/ROM地址/map group:num字典键；object_schema按相同字段与观察类型合并路径，包含全量源中观察到的全部字段（不表示各字段必填）。计数另列counts_actual，不用首条样本推断全schema。",
+    "examples": "代表记录仅为明确标记的projection，不复制大量记录/文本；_count为原数组长度，_first只示首元素，_field_names只列深层字段；完整记录由source_json_pointer回查原源。",
+    "counts": "实际数组/对象计数；README历史值不作为当前计数。"
+  },
+  "directory_listing_nonrecursive": {
+    "maps_research/out/maps": [
+      "headers.json",
+      "layouts.json",
+      "mapsec_names.json",
+      "per_map/",
+      "png/",
+      "render_report.json",
+      "tilesets.json"
+    ],
+    "maps_research/out/events": [
+      "events.json",
+      "problems.json"
+    ],
+    "maps_research/out/scripts": [
+      "decode_failure_analysis.json",
+      "decode_failures.json",
+      "opcode_args_from_rom.json",
+      "opcode_table.json",
+      "scripts.json",
+      "std_and_special.json",
+      "text.json",
+      "text.txt"
+    ],
+    "trainers_research/out": [
+      "evidence_disasm.txt",
+      "evidence_forced_shiny.txt",
+      "live_builder_disasm.txt",
+      "live_flags0.txt",
+      "live_flags23.txt",
+      "overrides.json",
+      "trainer_table_raw.bin",
+      "trainer_usage.json",
+      "trainers.csv",
+      "trainers.json",
+      "whitney.json"
+    ],
+    "encounters_research/out": [
+      "broadcast.csv",
+      "early_game_resources.json",
+      "encounters.csv",
+      "encounters.json",
+      "shops.csv",
+      "shops.json",
+      "swarm.csv"
+    ],
+    "parallel_acceleration/map_relations": [
+      "README.md",
+      "alias_integration_audit.json",
+      "anomalies.json",
+      "backup_pre_d0_consumer_20261003_041753/",
+      "backup_pre_dynamic_20261003_035159/",
+      "build_alias_integration_audit.py",
+      "build_d0_callee_windows.py",
+      "build_d0_consumer_integration.py",
+      "build_d0_consumer_window.py",
+      "build_d0_reference_semantics.py",
+      "build_dangling_source_evidence.py",
+      "build_dynamic_warp_integration.py",
+      "build_dynamic_warp_reference.py",
+      "build_dynamic_warp_rom_candidates.py",
+      "build_dynamic_warp_rom_windows.py",
+      "build_hma_script_extensions.py",
+      "build_id_space_integration_audit.py",
+      "build_map_relations.py",
+      "build_opcode_alias_evidence.py",
+      "build_remaining_alias_evidence.py",
+      "build_template_root_paths.py",
+      "d0_callee_windows.json",
+      "d0_callee_windows.md",
+      "d0_consumer_integration.json",
+      "d0_consumer_integration.md",
+      "d0_consumer_window.json",
+      "d0_consumer_window.md",
+      "d0_reference_semantics.json",
+      "d0_reference_semantics.md",
+      "dangling.json",
+      "dangling_source_evidence.json",
+      "dangling_source_evidence.md",
+      "dynamic_edges.json",
+      "dynamic_warp_integration.json",
+      "dynamic_warp_integration.md",
+      "dynamic_warp_reference.json",
+      "dynamic_warp_reference.md",
+      "dynamic_warp_rom_candidates.json",
+      "dynamic_warp_rom_candidates.md",
+      "dynamic_warp_rom_windows.json",
+      "dynamic_warp_rom_windows.md",
+      "edges.jsonl",
+      "hma_script_extensions.json",
+      "hma_script_extensions.md",
+      "id_space_integration_audit.json",
+      "nodes.json",
+      "opcode_alias_evidence.json",
+      "opcode_alias_evidence.md",
+      "remaining_alias_evidence.json",
+      "remaining_alias_evidence.md",
+      "special_209_210.json",
+      "template_root_paths.json",
+      "var_flag_index.jsonl",
+      "var_flag_stats.json"
+    ]
+  },
+  "sources": [
+    {
+      "path": "maps_research/out/maps/headers.json",
+      "exists": true,
+      "size_bytes": 1320026,
+      "file_sha256": "7ab72ff51bc591d614b043411aacf8991cad297725d8b7e3f527fa3d2c4d7ff2",
+      "top_level_type": "dict",
+      "counts_actual": {
+        "maps": 871,
+        "groups": 58,
+        "nonempty_map_name_zh": 871,
+        "distinct_used_region_map_section_ids": 124
+      },
+      "stable_ids": "group + num（group:num）；本快照871唯一。header_addr为来源地址，map_name_zh不唯一。",
+      "semantic_status": "地图名/地区段名已有map_name_zh、region_map_section_id、map_name_ptr；这是区域段名称，未有独立大地区归属字段。name_guess_vanilla/group_name_vanilla为参考猜测，不能作为改版地点身份。",
+      "object_schema": [
+        {
+          "paths": [
+            "$"
+          ],
+          "fields": {
+            "rom": [
+              "string"
+            ],
+            "sha256": [
+              "string"
+            ],
+            "g_map_groups_addr": [
+              "string"
+            ],
+            "group_count": [
+              "integer"
+            ],
+            "group_sizes": [
+              "array"
+            ],
+            "map_count": [
+              "integer"
+            ],
+            "maps": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/maps/[]"
+          ],
+          "fields": {
+            "group": [
+              "integer"
+            ],
+            "num": [
+              "integer"
+            ],
+            "name_guess_vanilla": [
+              "null",
+              "string"
+            ],
+            "group_name_vanilla": [
+              "null",
+              "string"
+            ],
+            "header_addr": [
+              "string"
+            ],
+            "header_raw": [
+              "string"
+            ],
+            "map_layout_addr": [
+              "string"
+            ],
+            "events_addr": [
+              "string"
+            ],
+            "map_scripts_addr": [
+              "string"
+            ],
+            "connections_addr": [
+              "string"
+            ],
+            "music": [
+              "integer"
+            ],
+            "map_layout_id": [
+              "integer"
+            ],
+            "region_map_section_id": [
+              "integer"
+            ],
+            "cave": [
+              "integer"
+            ],
+            "weather": [
+              "integer"
+            ],
+            "weather_name": [
+              "string"
+            ],
+            "map_type": [
+              "integer"
+            ],
+            "map_type_name": [
+              "string"
+            ],
+            "biking_allowed": [
+              "integer"
+            ],
+            "flags": [
+              "integer"
+            ],
+            "flags_decoded": [
+              "object"
+            ],
+            "floor_num": [
+              "integer"
+            ],
+            "battle_type": [
+              "integer"
+            ],
+            "layout": [
+              "object"
+            ],
+            "border": [
+              "object"
+            ],
+            "metatile_layer_type_histogram": [
+              "object"
+            ],
+            "metatile_behavior_top": [
+              "array"
+            ],
+            "map_name_zh": [
+              "string"
+            ],
+            "map_name_ptr": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/maps/[]/flags_decoded"
+          ],
+          "fields": {
+            "allow_escape_rope": [
+              "boolean"
+            ],
+            "allow_running": [
+              "boolean"
+            ],
+            "show_map_name": [
+              "boolean"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/maps/[]/layout"
+          ],
+          "fields": {
+            "address": [
+              "string"
+            ],
+            "width": [
+              "integer"
+            ],
+            "height": [
+              "integer"
+            ],
+            "border": [
+              "string"
+            ],
+            "map": [
+              "string"
+            ],
+            "primary_tileset": [
+              "string"
+            ],
+            "secondary_tileset": [
+              "string"
+            ],
+            "border_width": [
+              "integer"
+            ],
+            "border_height": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/maps/[]/border"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "raw": [
+              "string"
+            ],
+            "metatile_ids": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/maps/[]/metatile_layer_type_histogram"
+          ],
+          "fields": {
+            "{key}": [
+              "integer"
+            ]
+          }
+        }
+      ],
+      "representative_projections": [
+        {
+          "source_json_pointer": "/maps/0",
+          "projection": {
+            "group": 0,
+            "num": 0,
+            "name_guess_vanilla": "BattleColosseum_2P",
+            "group_name_vanilla": "Link",
+            "header_addr": "0x0834F188",
+            "header_raw": "e8892d08dce03a0878041608000000002f012f00c400000800000008",
+            "map_layout_addr": "0x082D89E8",
+            "events_addr": "0x083AE0DC",
+            "map_scripts_addr": "0x08160478",
+            "connections_addr": "0x00000000",
+            "music": 303,
+            "map_layout_id": 47,
+            "region_map_section_id": 196,
+            "cave": 0,
+            "weather": 0,
+            "weather_name": "NONE",
+            "map_type": 8,
+            "map_type_name": "INDOOR",
+            "biking_allowed": 0,
+            "flags": 0,
+            "flags_decoded": {
+              "allow_escape_rope": false,
+              "allow_running": false,
+              "show_map_name": false
+            },
+            "floor_num": 0,
+            "battle_type": 8,
+            "layout": {
+              "address": "0x082D89E8",
+              "width": 14,
+              "height": 9,
+              "border": "0x082D88E4",
+              "map": "0x082D88EC",
+              "primary_tileset": "0x082D4BB4",
+              "secondary_tileset": "0x082D4C44",
+              "border_width": 2,
+              "border_height": 2
+            },
+            "border": {
+              "addr": "0x082D88E4",
+              "metatile_ids": {
+                "_count": 4,
+                "_first": 641
+              }
+            },
+            "metatile_layer_type_histogram": {
+              "0": 104,
+              "2": 22
+            },
+            "metatile_behavior_top": {
+              "_count": 2,
+              "_first": {
+                "_count": 2,
+                "_first": 0
+              }
+            },
+            "map_name_zh": "彩虹百货大楼",
+            "map_name_ptr": "0x083EF22E"
+          }
+        },
+        {
+          "source_json_pointer": "/maps/596",
+          "projection": {
+            "group": 50,
+            "num": 28,
+            "name_guess_vanilla": null,
+            "group_name_vanilla": null,
+            "header_addr": "0x08CB0E18",
+            "header_raw": "e813cb084002b008b4c3a008000000001301f3019300000800000000",
+            "map_layout_addr": "0x08CB13E8",
+            "events_addr": "0x08B00240",
+            "map_scripts_addr": "0x08A0C3B4",
+            "connections_addr": "0x00000000",
+            "music": 275,
+            "map_layout_id": 499,
+            "region_map_section_id": 147,
+            "cave": 0,
+            "weather": 0,
+            "weather_name": "NONE",
+            "map_type": 8,
+            "map_type_name": "INDOOR",
+            "biking_allowed": 0,
+            "flags": 0,
+            "flags_decoded": {
+              "allow_escape_rope": false,
+              "allow_running": false,
+              "show_map_name": false
+            },
+            "floor_num": 0,
+            "battle_type": 0,
+            "layout": {
+              "address": "0x08CB13E8",
+              "width": 29,
+              "height": 25,
+              "border": "0x08CB0E34",
+              "map": "0x08CB0E3C",
+              "primary_tileset": "0x082D4BB4",
+              "secondary_tileset": "0x08A0017C",
+              "border_width": 2,
+              "border_height": 2
+            },
+            "border": {
+              "addr": "0x08CB0E34",
+              "metatile_ids": {
+                "_count": 4,
+                "_first": 0
+              }
+            },
+            "metatile_layer_type_histogram": {
+              "0": 550,
+              "2": 175
+            },
+            "metatile_behavior_top": {
+              "_count": 5,
+              "_first": {
+                "_count": 2,
+                "_first": 0
+              }
+            },
+            "map_name_zh": "满金市",
+            "map_name_ptr": "0x083EEF94"
+          }
+        }
+      ]
+    },
+    {
+      "path": "maps_research/out/events/events.json",
+      "exists": true,
+      "size_bytes": 5235915,
+      "file_sha256": "e525183683453d3f2a889a3456fe6a11ef1b4bdd88c6bffba087faf27add2c6e",
+      "top_level_type": "dict",
+      "counts_actual": {
+        "maps": 871,
+        "objects": 6412,
+        "warps": 2861,
+        "coord_events": 724,
+        "bg_events": 1830,
+        "hidden_items_kind7": 451
+      },
+      "stable_ids": "maps的group:num键；子事件用(group,num,event_kind,index)，object另有local_id；addr为ROM来源，不把local_id跨图当唯一。",
+      "semantic_status": "隐藏道具已为bg_events.kind=7结构化：hidden_item_id/hidden_item_flag_offset/quantity/underfoot及坐标；需关联核心道具index。普通物品球/赠送等仍需脚本层提取。",
+      "object_schema": [
+        {
+          "paths": [
+            "$"
+          ],
+          "fields": {
+            "rom": [
+              "string"
+            ],
+            "sha256": [
+              "string"
+            ],
+            "map_count": [
+              "integer"
+            ],
+            "maps": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/maps"
+          ],
+          "fields": {
+            "{key}": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/maps/{key}"
+          ],
+          "fields": {
+            "group": [
+              "integer"
+            ],
+            "num": [
+              "integer"
+            ],
+            "name_guess_vanilla": [
+              "null",
+              "string"
+            ],
+            "events_addr": [
+              "string"
+            ],
+            "objects": [
+              "array"
+            ],
+            "warps": [
+              "array"
+            ],
+            "coord_events": [
+              "array"
+            ],
+            "bg_events": [
+              "array"
+            ],
+            "counts": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/maps/{key}/objects/[]"
+          ],
+          "fields": {
+            "index": [
+              "integer"
+            ],
+            "addr": [
+              "string"
+            ],
+            "raw": [
+              "string"
+            ],
+            "local_id": [
+              "integer"
+            ],
+            "graphics_id_low": [
+              "integer"
+            ],
+            "in_connection": [
+              "integer"
+            ],
+            "graphics_id_high": [
+              "integer"
+            ],
+            "graphics_id": [
+              "integer"
+            ],
+            "x": [
+              "integer"
+            ],
+            "y": [
+              "integer"
+            ],
+            "elevation": [
+              "integer"
+            ],
+            "movement_type": [
+              "integer"
+            ],
+            "movement_range_x": [
+              "integer"
+            ],
+            "movement_range_y": [
+              "integer"
+            ],
+            "trainer_type": [
+              "integer"
+            ],
+            "trainer_range_berry_tree_id": [
+              "integer"
+            ],
+            "script": [
+              "string"
+            ],
+            "script_is_rom": [
+              "boolean"
+            ],
+            "flag_id": [
+              "integer"
+            ],
+            "flag_id2": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/maps/{key}/warps/[]"
+          ],
+          "fields": {
+            "index": [
+              "integer"
+            ],
+            "addr": [
+              "string"
+            ],
+            "raw": [
+              "string"
+            ],
+            "x": [
+              "integer"
+            ],
+            "y": [
+              "integer"
+            ],
+            "elevation": [
+              "integer"
+            ],
+            "warp_id": [
+              "integer"
+            ],
+            "map_num": [
+              "integer"
+            ],
+            "map_group": [
+              "integer"
+            ],
+            "map_defined": [
+              "boolean"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/maps/{key}/coord_events/[]"
+          ],
+          "fields": {
+            "index": [
+              "integer"
+            ],
+            "addr": [
+              "string"
+            ],
+            "raw": [
+              "string"
+            ],
+            "x": [
+              "integer"
+            ],
+            "y": [
+              "integer"
+            ],
+            "elevation": [
+              "integer"
+            ],
+            "trigger": [
+              "integer"
+            ],
+            "index_var": [
+              "integer"
+            ],
+            "script": [
+              "string"
+            ],
+            "script_is_rom": [
+              "boolean"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/maps/{key}/counts"
+          ],
+          "fields": {
+            "objects": [
+              "integer"
+            ],
+            "warps": [
+              "integer"
+            ],
+            "coord": [
+              "integer"
+            ],
+            "bg": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/maps/{key}/bg_events/[]"
+          ],
+          "fields": {
+            "index": [
+              "integer"
+            ],
+            "addr": [
+              "string"
+            ],
+            "raw": [
+              "string"
+            ],
+            "x": [
+              "integer"
+            ],
+            "y": [
+              "integer"
+            ],
+            "elevation": [
+              "integer"
+            ],
+            "kind": [
+              "integer"
+            ],
+            "kind_name": [
+              "string"
+            ],
+            "script": [
+              "string"
+            ],
+            "script_is_rom": [
+              "boolean"
+            ],
+            "hidden_item_raw": [
+              "string"
+            ],
+            "hidden_item_id": [
+              "integer"
+            ],
+            "hidden_item_flag_offset": [
+              "integer"
+            ],
+            "quantity": [
+              "integer"
+            ],
+            "underfoot": [
+              "boolean"
+            ],
+            "note": [
+              "string"
+            ]
+          }
+        }
+      ],
+      "representative_projections": [
+        {
+          "source_json_pointer": "/maps/0:0",
+          "projection": {
+            "group": 0,
+            "num": 0,
+            "name_guess_vanilla": "BattleColosseum_2P",
+            "events_addr": "0x083AE0DC",
+            "objects": {
+              "_count": 1,
+              "_first": {
+                "index": 0,
+                "addr": "0x083AE094",
+                "local_id": 1,
+                "graphics_id_low": 66,
+                "in_connection": 0,
+                "graphics_id_high": 0,
+                "graphics_id": 66,
+                "x": 9,
+                "y": 3,
+                "elevation": 3,
+                "movement_type": 9,
+                "movement_range_x": 0,
+                "movement_range_y": 0,
+                "trainer_type": 0,
+                "trainer_range_berry_tree_id": 0,
+                "script": "0x081BB9AF",
+                "script_is_rom": true,
+                "flag_id": 0,
+                "flag_id2": 0
+              }
+            },
+            "warps": {
+              "_count": 2,
+              "_first": {
+                "index": 0,
+                "addr": "0x083AE0AC",
+                "x": 6,
+                "y": 8,
+                "elevation": 3,
+                "warp_id": 127,
+                "map_num": 127,
+                "map_group": 127,
+                "map_defined": false
+              }
+            },
+            "coord_events": {
+              "_count": 2,
+              "_first": {
+                "index": 0,
+                "addr": "0x083AE0BC",
+                "x": 3,
+                "y": 5,
+                "elevation": 3,
+                "trigger": 16384,
+                "index_var": 0,
+                "script": "0x081BB8C3",
+                "script_is_rom": true
+              }
+            },
+            "bg_events": [],
+            "counts": {
+              "objects": 1,
+              "warps": 2,
+              "coord": 2,
+              "bg": 0
+            }
+          }
+        },
+        {
+          "source_json_pointer": "/maps/1:0/bg_events/6",
+          "projection": {
+            "index": 6,
+            "addr": "0x083AE4C0",
+            "x": 3,
+            "y": 22,
+            "elevation": 3,
+            "kind": 7,
+            "kind_name": "hidden_item",
+            "hidden_item_raw": "0x0100000D",
+            "hidden_item_id": 13,
+            "hidden_item_flag_offset": 0,
+            "quantity": 1,
+            "underfoot": false
+          }
+        }
+      ]
+    },
+    {
+      "path": "maps_research/out/scripts/text.json",
+      "exists": true,
+      "size_bytes": 3427566,
+      "file_sha256": "f9a72ef3b7f8022fe882df00974af419511bd1f643a8abf019d73860f1fa9caf",
+      "top_level_type": "dict",
+      "counts_actual": {
+        "strings": 7513
+      },
+      "stable_ids": "strings的ROM地址键及addr；同文本可有多个地址，不以text去重身份。",
+      "semantic_status": "text及raw、bytes、referenced_by.script/at/cmd已结构化；Unicode字表为外部注释；\\n/\\p/\\l等控制符不得当普通字母或删去。",
+      "object_schema": [
+        {
+          "paths": [
+            "$"
+          ],
+          "fields": {
+            "rom": [
+              "string"
+            ],
+            "sha256": [
+              "string"
+            ],
+            "encoding": [
+              "string"
+            ],
+            "count": [
+              "integer"
+            ],
+            "strings": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/strings"
+          ],
+          "fields": {
+            "{key}": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/strings/{key}"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "text": [
+              "string"
+            ],
+            "bytes": [
+              "integer"
+            ],
+            "raw": [
+              "string"
+            ],
+            "referenced_by": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/strings/{key}/referenced_by/[]"
+          ],
+          "fields": {
+            "script": [
+              "string"
+            ],
+            "at": [
+              "string"
+            ],
+            "cmd": [
+              "string"
+            ]
+          }
+        }
+      ],
+      "representative_projections": [
+        {
+          "source_json_pointer": "/strings/0x08172255",
+          "projection": {
+            "addr": "0x08172255",
+            "text": "我和朋友们来这里\\n收服虫系的宝可梦。\\p他们都渴望用\\n自己的宝可梦去战斗！",
+            "bytes": 68,
+            "referenced_by": {
+              "_count": 1,
+              "_first": {
+                "script": "0x08160529",
+                "at": "0x0816052B",
+                "cmd": "loadpointer"
+              }
+            }
+          }
+        },
+        {
+          "source_json_pointer": "/strings/0x08172315",
+          "projection": {
+            "addr": "0x08172315",
+            "text": "嘘！你这样会把虫子吓跑的。\\n下次再来打一场，怎么样？",
+            "bytes": 48,
+            "referenced_by": {
+              "_count": 1,
+              "_first": {
+                "script": "0x08160571",
+                "at": "0x08160581",
+                "cmd": "loadpointer"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "maps_research/out/scripts/scripts.json",
+      "exists": true,
+      "size_bytes": 41009576,
+      "file_sha256": "5f9f42f5f024d130e2b81de7e96252710548c547f2002603156d5fc28a55bd00",
+      "top_level_type": "dict",
+      "counts_actual": {
+        "entry_count_field": 6680,
+        "scripts": 12627,
+        "instruction_count_field": 102298,
+        "instruction_occurrences_including_stop_markers": 102322,
+        "roots_with_runtime_stop": 24
+      },
+      "stable_ids": "scripts的ROM地址键及addr；instruction addr可能在多个脚本块重复，应保留source script/raw，不以出现数作唯一指令数。",
+      "semantic_status": "sources(kind,where)、指令args(width,value,addr,class)、分支/文本指针分类已结构化，但没有任务/剧情步骤/可达条件解算。24个stop根不因解释stop而可信；原始解码只可作候选提取输入。",
+      "object_schema": [
+        {
+          "paths": [
+            "$"
+          ],
+          "fields": {
+            "rom": [
+              "string"
+            ],
+            "sha256": [
+              "string"
+            ],
+            "opcode_table_source": [
+              "string"
+            ],
+            "entry_count": [
+              "integer"
+            ],
+            "script_count": [
+              "integer"
+            ],
+            "instruction_count": [
+              "integer"
+            ],
+            "undefined_opcode_hits": [
+              "object"
+            ],
+            "sentinel_script_values": [
+              "object"
+            ],
+            "scripts": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/undefined_opcode_hits",
+            "$/sentinel_script_values"
+          ],
+          "fields": {
+            "{key}": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/scripts"
+          ],
+          "fields": {
+            "{key}": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/scripts/{key}"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "sources": [
+              "array"
+            ],
+            "instructions": [
+              "array"
+            ],
+            "unknown_at": [
+              "null",
+              "string"
+            ],
+            "bytes": [
+              "integer"
+            ],
+            "runtime_stop": [
+              "object"
+            ],
+            "terminated_by_FF": [
+              "boolean"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/scripts/{key}/sources/[]"
+          ],
+          "fields": {
+            "kind": [
+              "string"
+            ],
+            "where": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/scripts/{key}/instructions/[]"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "opcode": [
+              "string"
+            ],
+            "name": [
+              "null",
+              "string"
+            ],
+            "names": [
+              "array"
+            ],
+            "args": [
+              "array"
+            ],
+            "raw": [
+              "string"
+            ],
+            "layout_source": [
+              "string"
+            ],
+            "note": [
+              "string"
+            ],
+            "runtime_stop": [
+              "object"
+            ],
+            "layout_evidence": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/scripts/{key}/instructions/[]/args/[]"
+          ],
+          "fields": {
+            "width": [
+              "integer"
+            ],
+            "value": [
+              "integer"
+            ],
+            "addr": [
+              "string"
+            ],
+            "class": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/scripts/{key}/instructions/[]/runtime_stop",
+            "$/scripts/{key}/runtime_stop"
+          ],
+          "fields": {
+            "table_start": [
+              "string"
+            ],
+            "table_end": [
+              "string"
+            ],
+            "table_count": [
+              "integer"
+            ],
+            "stop_handler": [
+              "string"
+            ],
+            "condition": [
+              "string"
+            ],
+            "evidence": [
+              "object"
+            ],
+            "root_validity": [
+              "string"
+            ],
+            "prior_desynchronization": [
+              "string"
+            ],
+            "kind": [
+              "string"
+            ],
+            "opcode": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/scripts/{key}/instructions/[]/runtime_stop/evidence",
+            "$/scripts/{key}/runtime_stop/evidence"
+          ],
+          "fields": {
+            "path": [
+              "string"
+            ],
+            "sha256": [
+              "string"
+            ],
+            "parameter_source": [
+              "object"
+            ],
+            "runner_source": [
+              "string"
+            ],
+            "runner_sha256": [
+              "string"
+            ],
+            "rom_sha256": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/scripts/{key}/instructions/[]/runtime_stop/evidence/parameter_source",
+            "$/scripts/{key}/runtime_stop/evidence/parameter_source"
+          ],
+          "fields": {
+            "path": [
+              "string"
+            ],
+            "sha256": [
+              "string"
+            ],
+            "fields": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/scripts/{key}/instructions/[]/runtime_stop/evidence/parameter_source/fields",
+            "$/scripts/{key}/runtime_stop/evidence/parameter_source/fields"
+          ],
+          "fields": {
+            "gScriptCmdTable": [
+              "string"
+            ],
+            "gScriptCmdTableEnd": [
+              "string"
+            ],
+            "command_count": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/scripts/{key}/instructions/[]/layout_evidence"
+          ],
+          "fields": {
+            "rom_sha256": [
+              "string"
+            ],
+            "fields": [
+              "array"
+            ],
+            "total_length": [
+              "integer"
+            ],
+            "layout_source": [
+              "string"
+            ],
+            "evidence_path": [
+              "string"
+            ],
+            "evidence_sha256": [
+              "string"
+            ],
+            "confirmation_method": [
+              "string"
+            ],
+            "scope_note": [
+              "string"
+            ]
+          }
+        }
+      ],
+      "representative_projections": [
+        {
+          "source_json_pointer": "/scripts/0x0800156C",
+          "projection": {
+            "addr": "0x0800156C",
+            "sources": {
+              "_count": 1,
+              "_first": {
+                "kind": "object",
+                "where": "52:13/local4"
+              }
+            },
+            "instructions": {
+              "_count": 4,
+              "_first": {
+                "addr": "0x0800156C",
+                "opcode": "0x2E",
+                "name": "gettime",
+                "names": {
+                  "_count": 1,
+                  "_first": "gettime"
+                },
+                "args": [],
+                "layout_source": "macro"
+              }
+            },
+            "unknown_at": "0x08001571",
+            "bytes": 5
+          }
+        },
+        {
+          "source_json_pointer": "/scripts/0x08161AC8",
+          "projection": {
+            "addr": "0x08161AC8",
+            "sources": {
+              "_count": 1,
+              "_first": {
+                "kind": "object",
+                "where": "1:53/local2"
+              }
+            },
+            "instructions": {
+              "_count": 16,
+              "_first": {
+                "addr": "0x08161AC8",
+                "opcode": "0x6A",
+                "name": "lock",
+                "names": {
+                  "_count": 1,
+                  "_first": "lock"
+                },
+                "args": [],
+                "layout_source": "macro"
+              }
+            },
+            "unknown_at": null,
+            "bytes": 74
+          }
+        }
+      ]
+    },
+    {
+      "path": "trainers_research/out/trainers.json",
+      "exists": true,
+      "size_bytes": 2549528,
+      "file_sha256": "448e2fb777dff98daadd351d9057f001e89b68a3d2d9b089a60e2c6bb50b0034",
+      "top_level_type": "dict",
+      "counts_actual": {
+        "ordinary_trainers": 743,
+        "party_members": 1892,
+        "ev_spread_members": 273,
+        "forced_shiny_members": 3
+      },
+      "stable_ids": "id（0..742普通表），party用(id,slot)；name不唯一；919/920不得补成普通记录。",
+      "semantic_status": "队伍名/等级/物种/持物/招式/部分EV及Camomons/强制闪光派生已有；trainerClass仅ID，名称表未恢复；level不是已证明每场实际缩放后等级。",
+      "object_schema": [
+        {
+          "paths": [
+            "$"
+          ],
+          "fields": {
+            "rom": [
+              "string"
+            ],
+            "gTrainers": [
+              "string"
+            ],
+            "record_size": [
+              "integer"
+            ],
+            "count": [
+              "integer"
+            ],
+            "fields_present": [
+              "array"
+            ],
+            "fields_not_in_rom_record": [
+              "array"
+            ],
+            "derived_fields": [
+              "object"
+            ],
+            "unknown_fields": [
+              "object"
+            ],
+            "trainers": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/derived_fields"
+          ],
+          "fields": {
+            "ev_spread": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/unknown_fields"
+          ],
+          "fields": {
+            "iv_raw_high_byte": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/trainers/[]"
+          ],
+          "fields": {
+            "id": [
+              "integer"
+            ],
+            "address": [
+              "string"
+            ],
+            "partyFlags_raw": [
+              "integer"
+            ],
+            "partyFlags": [
+              "object"
+            ],
+            "trainerClass": [
+              "integer"
+            ],
+            "encounterMusic": [
+              "integer"
+            ],
+            "gender": [
+              "integer"
+            ],
+            "trainerPic": [
+              "integer"
+            ],
+            "name": [
+              "string"
+            ],
+            "items": [
+              "array"
+            ],
+            "doubleBattle": [
+              "integer"
+            ],
+            "aiFlags": [
+              "string"
+            ],
+            "partySize": [
+              "integer"
+            ],
+            "partyPtr": [
+              "string"
+            ],
+            "record_raw": [
+              "string"
+            ],
+            "party_raw": [
+              "null",
+              "string"
+            ],
+            "party": [
+              "array"
+            ],
+            "party_parse": [
+              "string"
+            ],
+            "special_rules": [
+              "array"
+            ],
+            "trainer_forced_shiny": [
+              "null",
+              "object"
+            ],
+            "scripts": [
+              "array"
+            ],
+            "script_types": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/trainers/[]/partyFlags"
+          ],
+          "fields": {
+            "custom_moves": [
+              "boolean"
+            ],
+            "has_item": [
+              "boolean"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/trainers/[]/trainer_forced_shiny"
+          ],
+          "fields": {
+            "slots": [
+              "array"
+            ],
+            "slotCount": [
+              "integer"
+            ],
+            "table": [
+              "string"
+            ],
+            "ForceMonShiny": [
+              "string"
+            ],
+            "shiny_check": [
+              "string"
+            ],
+            "note": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/trainers/[]/party/[]"
+          ],
+          "fields": {
+            "slot": [
+              "integer"
+            ],
+            "iv_raw": [
+              "integer"
+            ],
+            "iv_semantics": [
+              "string"
+            ],
+            "level": [
+              "integer"
+            ],
+            "species_id": [
+              "integer"
+            ],
+            "species_name": [
+              "string"
+            ],
+            "species_types": [
+              "array"
+            ],
+            "raw": [
+              "string"
+            ],
+            "heldItem": [
+              "integer",
+              "null"
+            ],
+            "heldItem_name": [
+              "null",
+              "string"
+            ],
+            "moves": [
+              "array",
+              "null"
+            ],
+            "ev_spread_index": [
+              "integer",
+              "null"
+            ],
+            "ev_spread": [
+              "null",
+              "object"
+            ],
+            "ev_spread_gate": [
+              "object"
+            ],
+            "battle_types_camomons": [
+              "array"
+            ],
+            "battle_types_camomons_names": [
+              "array"
+            ],
+            "camomons_source_moves": [
+              "array"
+            ],
+            "forced_shiny": [
+              "boolean"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/trainers/[]/party/[]/ev_spread"
+          ],
+          "fields": {
+            "index": [
+              "integer"
+            ],
+            "address": [
+              "string"
+            ],
+            "nature": [
+              "integer"
+            ],
+            "ivs": [
+              "integer"
+            ],
+            "hp_ev": [
+              "integer"
+            ],
+            "atk_ev": [
+              "integer"
+            ],
+            "def_ev": [
+              "integer"
+            ],
+            "spe_ev": [
+              "integer"
+            ],
+            "spa_ev": [
+              "integer"
+            ],
+            "spd_ev": [
+              "integer"
+            ],
+            "ball": [
+              "integer"
+            ],
+            "ability": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/trainers/[]/scripts/[]"
+          ],
+          "fields": {
+            "type": [
+              "integer"
+            ],
+            "mode": [
+              "string"
+            ],
+            "role": [
+              "string"
+            ],
+            "script": [
+              "string"
+            ],
+            "insn_addr": [
+              "string"
+            ],
+            "sources": [
+              "array"
+            ],
+            "args": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/trainers/[]/scripts/[]/sources/[]"
+          ],
+          "fields": {
+            "kind": [
+              "string"
+            ],
+            "where": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/trainers/[]/scripts/[]/args/[]"
+          ],
+          "fields": {
+            "width": [
+              "integer"
+            ],
+            "value": [
+              "integer"
+            ],
+            "class": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/trainers/[]/party/[]/moves/[]"
+          ],
+          "fields": {
+            "id": [
+              "integer"
+            ],
+            "name": [
+              "string"
+            ],
+            "type": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/trainers/[]/party/[]/ev_spread_gate"
+          ],
+          "fields": {
+            "partyFlags": [
+              "integer"
+            ],
+            "aiFlags_gt_1": [
+              "boolean"
+            ],
+            "rom_evidence": [
+              "array"
+            ]
+          }
+        }
+      ],
+      "representative_projections": [
+        {
+          "source_json_pointer": "/trainers/111",
+          "projection": {
+            "id": 111,
+            "address": "0x0823FC20",
+            "partyFlags_raw": 3,
+            "partyFlags": {
+              "custom_moves": true,
+              "has_item": true
+            },
+            "trainerClass": 84,
+            "encounterMusic": 0,
+            "gender": 0,
+            "trainerPic": 118,
+            "name": "小茜",
+            "items": {
+              "_count": 4,
+              "_first": 13
+            },
+            "doubleBattle": 0,
+            "aiFlags": "0x00000007",
+            "partySize": 4,
+            "partyPtr": "0x08B2D380",
+            "party": {
+              "_count": 4,
+              "_first": {
+                "slot": 0,
+                "iv_raw": 9,
+                "iv_semantics": "low_byte=EV/IV/nature/ability spread index (live gate pf==3 && aiFlags>1)",
+                "level": 17,
+                "species_id": 35,
+                "species_name": "皮皮",
+                "species_types": {
+                  "_count": 2,
+                  "_first": 23
+                },
+                "heldItem": 700,
+                "heldItem_name": "进化奇石",
+                "moves": {
+                  "_count": 4,
+                  "_first": {
+                    "_field_names": [
+                      "id",
+                      "name",
+                      "type"
+                    ]
+                  }
+                },
+                "ev_spread_index": 9,
+                "ev_spread": {
+                  "_field_names": [
+                    "index",
+                    "address",
+                    "nature",
+                    "ivs",
+                    "hp_ev",
+                    "atk_ev",
+                    "def_ev",
+                    "spe_ev",
+                    "spa_ev",
+                    "spd_ev",
+                    "ball",
+                    "ability"
+                  ]
+                },
+                "battle_types_camomons": {
+                  "_count": 2,
+                  "_first": 23
+                },
+                "battle_types_camomons_names": {
+                  "_count": 2,
+                  "_first": "妖精"
+                },
+                "camomons_source_moves": {
+                  "_count": 2,
+                  "_first": "天使之吻"
+                }
+              }
+            },
+            "party_parse": "ok",
+            "special_rules": {
+              "_count": 1,
+              "_first": "camomons_first_two_moves"
+            },
+            "trainer_forced_shiny": null,
+            "scripts": {
+              "_count": 3,
+              "_first": {
+                "type": 0,
+                "mode": "TRAINER_BATTLE_SINGLE",
+                "role": "single",
+                "script": "0x081A9999",
+                "insn_addr": "0x081A9999",
+                "sources": {
+                  "_count": 1,
+                  "_first": {
+                    "_field_names": [
+                      "kind",
+                      "where"
+                    ]
+                  }
+                },
+                "args": {
+                  "_count": 5,
+                  "_first": {
+                    "_field_names": [
+                      "width",
+                      "value",
+                      "class"
+                    ]
+                  }
+                }
+              }
+            },
+            "script_types": {
+              "_count": 3,
+              "_first": 0
+            }
+          }
+        },
+        {
+          "source_json_pointer": "/trainers/403",
+          "projection": {
+            "id": 403,
+            "address": "0x082429C0",
+            "partyFlags_raw": 3,
+            "partyFlags": {
+              "custom_moves": true,
+              "has_item": true
+            },
+            "trainerClass": 47,
+            "encounterMusic": 4,
+            "gender": 0,
+            "trainerPic": 50,
+            "name": "兰斯",
+            "items": {
+              "_count": 4,
+              "_first": 0
+            },
+            "doubleBattle": 0,
+            "aiFlags": "0x00000007",
+            "partySize": 3,
+            "partyPtr": "0x09DDCC2C",
+            "party": {
+              "_count": 3,
+              "_first": {
+                "slot": 0,
+                "iv_raw": 2,
+                "iv_semantics": "low_byte=EV/IV/nature/ability spread index (live gate pf==3 && aiFlags>1)",
+                "level": 46,
+                "species_id": 880,
+                "species_name": "暴鲤龙",
+                "species_types": {
+                  "_count": 2,
+                  "_first": 11
+                },
+                "heldItem": 678,
+                "heldItem_name": "生命宝珠",
+                "moves": {
+                  "_count": 4,
+                  "_first": {
+                    "_field_names": [
+                      "id",
+                      "name",
+                      "type"
+                    ]
+                  }
+                },
+                "ev_spread_index": 2,
+                "ev_spread": {
+                  "_field_names": [
+                    "index",
+                    "address",
+                    "nature",
+                    "ivs",
+                    "hp_ev",
+                    "atk_ev",
+                    "def_ev",
+                    "spe_ev",
+                    "spa_ev",
+                    "spd_ev",
+                    "ball",
+                    "ability"
+                  ]
+                },
+                "forced_shiny": true
+              }
+            },
+            "party_parse": "ok",
+            "special_rules": [],
+            "trainer_forced_shiny": {
+              "slots": {
+                "_count": 3,
+                "_first": 0
+              },
+              "slotCount": 3,
+              "table": "forced_shiny_trainer_table",
+              "ForceMonShiny": "0x09D06A6A",
+              "shiny_check": "0x0804449C",
+              "note": "slots 槽位创建后被强制闪光：循环重掷 PID，并用拒绝分支保持与原 PID 相同的派生值；逐条件地址: nature 0x09D06B30(0x08042EB4=PID%25 vs sp+0x14); gender 0x09D06B3E(0x0803F78C(species [excerpt]"
+            },
+            "scripts": {
+              "_count": 1,
+              "_first": {
+                "type": 0,
+                "mode": "TRAINER_BATTLE_SINGLE",
+                "role": "single",
+                "script": "0x08161131",
+                "insn_addr": "0x08161131",
+                "sources": {
+                  "_count": 1,
+                  "_first": {
+                    "_field_names": [
+                      "kind",
+                      "where"
+                    ]
+                  }
+                },
+                "args": {
+                  "_count": 5,
+                  "_first": {
+                    "_field_names": [
+                      "width",
+                      "value",
+                      "class"
+                    ]
+                  }
+                }
+              }
+            },
+            "script_types": {
+              "_count": 1,
+              "_first": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "trainers_research/out/trainer_usage.json",
+      "exists": true,
+      "size_bytes": 788019,
+      "file_sha256": "8f70e52e24006672cffaf44b5305b808ca40f18e55a1fa6890d1c3f55a826940",
+      "top_level_type": "dict",
+      "counts_actual": {
+        "trainer_ids": 547,
+        "usage_records": 1133,
+        "out_of_base_ids": [
+          "919",
+          "920",
+          "921"
+        ]
+      },
+      "stable_ids": "usage的训练家ID字符串键；引用用(trainer_id,script,insn_addr,role)，type/mode仅保留现成语义标签。",
+      "semantic_status": "547是被脚本引用的ID数，1133是使用记录数；out_of_table为数据遗留键，不代表非法；type9的OAK_TUTORIAL标签不能用来命名本ROM mode9人物。",
+      "object_schema": [
+        {
+          "paths": [
+            "$"
+          ],
+          "fields": {
+            "trainerbattle_type_histogram": [
+              "object"
+            ],
+            "trainer_ids_referenced": [
+              "integer"
+            ],
+            "out_of_table": [
+              "object"
+            ],
+            "usage": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/trainerbattle_type_histogram",
+            "$/out_of_table"
+          ],
+          "fields": {
+            "{key}": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/trainerbattle_type_histogram/{key}"
+          ],
+          "fields": {
+            "count": [
+              "integer"
+            ],
+            "name": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/out_of_table/{key}"
+          ],
+          "fields": {
+            "script_types": [
+              "array"
+            ],
+            "usages": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/out_of_table/{key}/usages/[]",
+            "$/usage/{key}/[]"
+          ],
+          "fields": {
+            "type": [
+              "integer"
+            ],
+            "mode": [
+              "string"
+            ],
+            "role": [
+              "string"
+            ],
+            "script": [
+              "string"
+            ],
+            "insn_addr": [
+              "string"
+            ],
+            "sources": [
+              "array"
+            ],
+            "args": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/out_of_table/{key}/usages/[]/sources/[]",
+            "$/usage/{key}/[]/sources/[]"
+          ],
+          "fields": {
+            "kind": [
+              "string"
+            ],
+            "where": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/out_of_table/{key}/usages/[]/args/[]"
+          ],
+          "fields": {
+            "width": [
+              "integer"
+            ],
+            "value": [
+              "integer"
+            ],
+            "class": [
+              "null"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/usage"
+          ],
+          "fields": {
+            "{key}": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/usage/{key}/[]/args/[]"
+          ],
+          "fields": {
+            "width": [
+              "integer"
+            ],
+            "value": [
+              "integer"
+            ],
+            "class": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      ],
+      "representative_projections": [
+        {
+          "source_json_pointer": "/usage/111",
+          "projection": {
+            "_count": 3,
+            "_first": {
+              "type": 0,
+              "mode": "TRAINER_BATTLE_SINGLE",
+              "role": "single",
+              "script": "0x081A9999",
+              "insn_addr": "0x081A9999",
+              "sources": {
+                "_count": 1,
+                "_first": {
+                  "_field_names": [
+                    "kind",
+                    "where"
+                  ]
+                }
+              },
+              "args": {
+                "_count": 5,
+                "_first": {
+                  "_field_names": [
+                    "width",
+                    "value",
+                    "class"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "source_json_pointer": "/usage/920",
+          "projection": {
+            "_count": 5,
+            "_first": {
+              "type": 9,
+              "mode": "TRAINER_BATTLE_OAK_TUTORIAL",
+              "role": "single",
+              "script": "0x08AEE5D5",
+              "insn_addr": "0x08AEE5E2",
+              "sources": {
+                "_count": 1,
+                "_first": {
+                  "_field_names": [
+                    "kind",
+                    "where"
+                  ]
+                }
+              },
+              "args": {
+                "_count": 5,
+                "_first": {
+                  "_field_names": [
+                    "width",
+                    "value",
+                    "class"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "trainers_research/out/overrides.json",
+      "exists": true,
+      "size_bytes": 121541,
+      "file_sha256": "7742cefa590664f3f3c67e71ad9a6d5cd3719be5ed1818b87be5a9972046bb00",
+      "top_level_type": "dict",
+      "counts_actual": {
+        "ev_spreads": 126,
+        "forced_shiny_records": 1,
+        "mirror_candidate_records": 151,
+        "deprecated_records_not_additional": 1
+      },
+      "stable_ids": "spread index；forced_shiny trainerId及slot；mirror条目id/address/index按原字段保存，不作为再战选表依据。",
+      "semantic_status": "forced_shiny表为训练家403前三槽强制闪光；special_override_table_DEPRECATED不可当第二张生效表；151镜像候选消费者/作用未证。",
+      "object_schema": [
+        {
+          "paths": [
+            "$"
+          ],
+          "fields": {
+            "gTrainersWithEvsSpreads": [
+              "object"
+            ],
+            "forced_shiny_trainer_table": [
+              "object"
+            ],
+            "special_override_table_DEPRECATED": [
+              "object"
+            ],
+            "trainer_record_mirror_candidate": [
+              "object"
+            ],
+            "special_rules": [
+              "object"
+            ],
+            "trainer_special_rules": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/gTrainersWithEvsSpreads"
+          ],
+          "fields": {
+            "address": [
+              "string"
+            ],
+            "stride": [
+              "integer"
+            ],
+            "count_used": [
+              "integer"
+            ],
+            "fields": [
+              "array"
+            ],
+            "entries": [
+              "array"
+            ],
+            "live_gate": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/gTrainersWithEvsSpreads/entries/[]"
+          ],
+          "fields": {
+            "index": [
+              "integer"
+            ],
+            "address": [
+              "string"
+            ],
+            "nature": [
+              "integer"
+            ],
+            "ivs": [
+              "integer"
+            ],
+            "hp_ev": [
+              "integer"
+            ],
+            "atk_ev": [
+              "integer"
+            ],
+            "def_ev": [
+              "integer"
+            ],
+            "spe_ev": [
+              "integer"
+            ],
+            "spa_ev": [
+              "integer"
+            ],
+            "spd_ev": [
+              "integer"
+            ],
+            "ball": [
+              "integer"
+            ],
+            "ability": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/forced_shiny_trainer_table"
+          ],
+          "fields": {
+            "header": [
+              "string"
+            ],
+            "count": [
+              "integer"
+            ],
+            "base": [
+              "string"
+            ],
+            "stride": [
+              "integer"
+            ],
+            "record_layout": [
+              "string"
+            ],
+            "consumer": [
+              "string"
+            ],
+            "entries": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/forced_shiny_trainer_table/entries/[]",
+            "$/special_override_table_DEPRECATED/entries/[]"
+          ],
+          "fields": {
+            "index": [
+              "integer"
+            ],
+            "address": [
+              "string"
+            ],
+            "trainerId": [
+              "integer"
+            ],
+            "slotCount": [
+              "integer"
+            ],
+            "slots": [
+              "array"
+            ],
+            "raw": [
+              "string"
+            ],
+            "consumer": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/special_override_table_DEPRECATED"
+          ],
+          "fields": {
+            "deprecated": [
+              "boolean"
+            ],
+            "reason": [
+              "string"
+            ],
+            "header": [
+              "string"
+            ],
+            "count": [
+              "integer"
+            ],
+            "base": [
+              "string"
+            ],
+            "stride": [
+              "integer"
+            ],
+            "entries": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/trainer_record_mirror_candidate"
+          ],
+          "fields": {
+            "base": [
+              "string"
+            ],
+            "stride": [
+              "integer"
+            ],
+            "count": [
+              "integer"
+            ],
+            "role": [
+              "string"
+            ],
+            "entries": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/trainer_record_mirror_candidate/entries/[]"
+          ],
+          "fields": {
+            "address": [
+              "string"
+            ],
+            "partyFlags_raw": [
+              "integer"
+            ],
+            "partyFlags": [
+              "object"
+            ],
+            "trainerClass": [
+              "integer"
+            ],
+            "encounterMusic": [
+              "integer"
+            ],
+            "gender": [
+              "integer"
+            ],
+            "trainerPic": [
+              "integer"
+            ],
+            "name": [
+              "string"
+            ],
+            "items": [
+              "array"
+            ],
+            "doubleBattle": [
+              "integer"
+            ],
+            "aiFlags": [
+              "string"
+            ],
+            "partySize": [
+              "integer"
+            ],
+            "partyPtr": [
+              "string"
+            ],
+            "record_raw": [
+              "string"
+            ],
+            "id": [
+              "integer"
+            ],
+            "matches_base_record": [
+              "boolean"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/trainer_record_mirror_candidate/entries/[]/partyFlags"
+          ],
+          "fields": {
+            "custom_moves": [
+              "boolean"
+            ],
+            "has_item": [
+              "boolean"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/special_rules"
+          ],
+          "fields": {
+            "camomons_first_two_moves": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/special_rules/camomons_first_two_moves"
+          ],
+          "fields": {
+            "description": [
+              "string"
+            ],
+            "evidence": [
+              "object"
+            ],
+            "trainer_ids": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/special_rules/camomons_first_two_moves/evidence"
+          ],
+          "fields": {
+            "rule_text": [
+              "array"
+            ],
+            "var": [
+              "object"
+            ],
+            "flag": [
+              "string"
+            ],
+            "type_loader": [
+              "string"
+            ],
+            "applies_to": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/special_rules/camomons_first_two_moves/evidence/var"
+          ],
+          "fields": {
+            "id": [
+              "integer"
+            ],
+            "name_if_known": [
+              "string"
+            ],
+            "set_by": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/trainer_special_rules"
+          ],
+          "fields": {
+            "{key}": [
+              "array"
+            ]
+          }
+        }
+      ],
+      "representative_projections": [
+        {
+          "source_json_pointer": "/gTrainersWithEvsSpreads/entries/9",
+          "projection": {
+            "index": 9,
+            "address": "0x09DB89B2",
+            "nature": 15,
+            "ivs": 31,
+            "hp_ev": 6,
+            "atk_ev": 0,
+            "def_ev": 252,
+            "spe_ev": 0,
+            "spa_ev": 252,
+            "spd_ev": 0,
+            "ball": 254,
+            "ability": 3
+          }
+        },
+        {
+          "source_json_pointer": "/forced_shiny_trainer_table/entries/0",
+          "projection": {
+            "index": 0,
+            "address": "0x09DDA7B2",
+            "trainerId": 403,
+            "slotCount": 3,
+            "slots": {
+              "_count": 3,
+              "_first": 0
+            },
+            "consumer": "0x09D0AEA6 (select) / 0x09D0AF58-AF64 (slot compare) -> 0x09D0AF68 BL 0x09D06A6A"
+          }
+        }
+      ]
+    },
+    {
+      "path": "encounters_research/out/encounters.json",
+      "exists": true,
+      "size_bytes": 1648635,
+      "file_sha256": "37eb8635e2952e74a2e39cfd62a20d3edb4def344f131b7ab04cada388371458",
+      "top_level_type": "dict",
+      "counts_actual": {
+        "time_tables": 4,
+        "map_records_by_time": {
+          "day": 133,
+          "morning": 94,
+          "evening": 95,
+          "night": 100
+        },
+        "map_time_records": 422,
+        "slot_rows": 6624,
+        "swarm_records": 16,
+        "broadcast_records": 100,
+        "broadcast_sets": 300,
+        "broadcast_species_slots": 1200
+      },
+      "stable_ids": "table时间键 + map_group + map_num + method + slot；entry_addr/info_addr/wild_addr保留证据；广播index/table_addr+set.day_of_week+slot，群聚addr/mapsec_id。",
+      "semantic_status": "普通槽的权重在probabilities中，而非每槽自带；钓竿必须分组，第三字段碎岩/撞树共用；广播40/20/20/20为触发后内部选择，不是总体遇见概率。",
+      "object_schema": [
+        {
+          "paths": [
+            "$"
+          ],
+          "fields": {
+            "rom": [
+              "string"
+            ],
+            "sha256": [
+              "string"
+            ],
+            "evidence": [
+              "object"
+            ],
+            "slot_counts": [
+              "object"
+            ],
+            "rod_groups": [
+              "object"
+            ],
+            "probabilities": [
+              "object"
+            ],
+            "tables": [
+              "object"
+            ],
+            "swarm": [
+              "object"
+            ],
+            "broadcast": [
+              "object"
+            ],
+            "unresolved": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/evidence"
+          ],
+          "fields": {
+            "time_table_getter": [
+              "string"
+            ],
+            "callers_of_getter": [
+              "string"
+            ],
+            "headbutt_vs_rocksmash": [
+              "string"
+            ],
+            "default_table_slot": [
+              "string"
+            ],
+            "stride": [
+              "integer"
+            ],
+            "terminator": [
+              "string"
+            ],
+            "info_struct": [
+              "string"
+            ],
+            "slot_counts": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/slot_counts"
+          ],
+          "fields": {
+            "land": [
+              "integer"
+            ],
+            "water": [
+              "integer"
+            ],
+            "rock_smash_headbutt": [
+              "integer"
+            ],
+            "fishing": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/rod_groups",
+            "$/tables/day/entries/[]/fishing/rod_groups",
+            "$/tables/morning/entries/[]/fishing/rod_groups",
+            "$/tables/evening/entries/[]/fishing/rod_groups",
+            "$/tables/night/entries/[]/fishing/rod_groups"
+          ],
+          "fields": {
+            "old_rod": [
+              "array"
+            ],
+            "good_rod": [
+              "array"
+            ],
+            "super_rod": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/probabilities"
+          ],
+          "fields": {
+            "land": [
+              "object"
+            ],
+            "water": [
+              "object"
+            ],
+            "rock_smash_headbutt": [
+              "object"
+            ],
+            "fishing": [
+              "object"
+            ],
+            "note": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/probabilities/land",
+            "$/probabilities/water",
+            "$/probabilities/rock_smash_headbutt"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "weights": [
+              "array"
+            ],
+            "cumulative_thresholds": [
+              "array"
+            ],
+            "slots": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/probabilities/fishing"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "weights": [
+              "array"
+            ],
+            "old_rod": [
+              "object"
+            ],
+            "good_rod": [
+              "object"
+            ],
+            "super_rod": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/probabilities/fishing/old_rod",
+            "$/probabilities/fishing/good_rod",
+            "$/probabilities/fishing/super_rod"
+          ],
+          "fields": {
+            "slots": [
+              "array"
+            ],
+            "weights": [
+              "array"
+            ],
+            "cumulative": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/tables"
+          ],
+          "fields": {
+            "day": [
+              "object"
+            ],
+            "morning": [
+              "object"
+            ],
+            "evening": [
+              "object"
+            ],
+            "night": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/tables/day"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "pointer_slot": [
+              "string"
+            ],
+            "hour_band": [
+              "string"
+            ],
+            "time_band_zh": [
+              "string"
+            ],
+            "selector_index": [
+              "integer"
+            ],
+            "count": [
+              "integer"
+            ],
+            "terminator": [
+              "object"
+            ],
+            "raw_span": [
+              "array"
+            ],
+            "entries": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/tables/day/terminator",
+            "$/tables/morning/terminator",
+            "$/tables/evening/terminator",
+            "$/tables/night/terminator"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "map_group": [
+              "integer"
+            ],
+            "map_num": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/tables/day/entries/[]",
+            "$/tables/morning/entries/[]",
+            "$/tables/evening/entries/[]",
+            "$/tables/night/entries/[]"
+          ],
+          "fields": {
+            "map_group": [
+              "integer"
+            ],
+            "map_num": [
+              "integer"
+            ],
+            "map_name_zh": [
+              "string"
+            ],
+            "mapsec_id": [
+              "integer"
+            ],
+            "entry_addr": [
+              "string"
+            ],
+            "land": [
+              "null",
+              "object"
+            ],
+            "water": [
+              "null",
+              "object"
+            ],
+            "rock_smash_headbutt": [
+              "null",
+              "object"
+            ],
+            "fishing": [
+              "null",
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/tables/day/entries/[]/land",
+            "$/tables/day/entries/[]/water",
+            "$/tables/day/entries/[]/rock_smash_headbutt",
+            "$/tables/morning/entries/[]/land",
+            "$/tables/morning/entries/[]/water",
+            "$/tables/morning/entries/[]/rock_smash_headbutt",
+            "$/tables/evening/entries/[]/land",
+            "$/tables/evening/entries/[]/water",
+            "$/tables/evening/entries/[]/rock_smash_headbutt",
+            "$/tables/night/entries/[]/land",
+            "$/tables/night/entries/[]/water",
+            "$/tables/night/entries/[]/rock_smash_headbutt"
+          ],
+          "fields": {
+            "rate": [
+              "integer"
+            ],
+            "info_addr": [
+              "string"
+            ],
+            "wild_addr": [
+              "string"
+            ],
+            "slots": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/tables/day/entries/[]/land/slots/[]",
+            "$/tables/day/entries/[]/rock_smash_headbutt/slots/[]",
+            "$/tables/day/entries/[]/water/slots/[]",
+            "$/tables/day/entries/[]/fishing/slots/[]",
+            "$/tables/day/entries/[]/fishing/rod_groups/old_rod/[]",
+            "$/tables/day/entries/[]/fishing/rod_groups/good_rod/[]",
+            "$/tables/day/entries/[]/fishing/rod_groups/super_rod/[]",
+            "$/tables/morning/entries/[]/land/slots/[]",
+            "$/tables/morning/entries/[]/rock_smash_headbutt/slots/[]",
+            "$/tables/morning/entries/[]/water/slots/[]",
+            "$/tables/morning/entries/[]/fishing/slots/[]",
+            "$/tables/morning/entries/[]/fishing/rod_groups/old_rod/[]",
+            "$/tables/morning/entries/[]/fishing/rod_groups/good_rod/[]",
+            "$/tables/morning/entries/[]/fishing/rod_groups/super_rod/[]",
+            "$/tables/evening/entries/[]/land/slots/[]",
+            "$/tables/evening/entries/[]/rock_smash_headbutt/slots/[]",
+            "$/tables/evening/entries/[]/water/slots/[]",
+            "$/tables/evening/entries/[]/fishing/slots/[]",
+            "$/tables/evening/entries/[]/fishing/rod_groups/old_rod/[]",
+            "$/tables/evening/entries/[]/fishing/rod_groups/good_rod/[]",
+            "$/tables/evening/entries/[]/fishing/rod_groups/super_rod/[]",
+            "$/tables/night/entries/[]/land/slots/[]",
+            "$/tables/night/entries/[]/rock_smash_headbutt/slots/[]",
+            "$/tables/night/entries/[]/water/slots/[]",
+            "$/tables/night/entries/[]/fishing/slots/[]",
+            "$/tables/night/entries/[]/fishing/rod_groups/old_rod/[]",
+            "$/tables/night/entries/[]/fishing/rod_groups/good_rod/[]",
+            "$/tables/night/entries/[]/fishing/rod_groups/super_rod/[]"
+          ],
+          "fields": {
+            "slot": [
+              "integer"
+            ],
+            "min_level": [
+              "integer"
+            ],
+            "max_level": [
+              "integer"
+            ],
+            "species_id": [
+              "integer"
+            ],
+            "species_name": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/tables/day/entries/[]/fishing",
+            "$/tables/morning/entries/[]/fishing",
+            "$/tables/evening/entries/[]/fishing",
+            "$/tables/night/entries/[]/fishing"
+          ],
+          "fields": {
+            "rate": [
+              "integer"
+            ],
+            "info_addr": [
+              "string"
+            ],
+            "wild_addr": [
+              "string"
+            ],
+            "slots": [
+              "array"
+            ],
+            "rod_groups": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/tables/morning",
+            "$/tables/evening",
+            "$/tables/night"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "pointer_slot": [
+              "null"
+            ],
+            "hour_band": [
+              "string"
+            ],
+            "time_band_zh": [
+              "string"
+            ],
+            "selector_index": [
+              "integer"
+            ],
+            "count": [
+              "integer"
+            ],
+            "terminator": [
+              "object"
+            ],
+            "raw_span": [
+              "array"
+            ],
+            "entries": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/swarm"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "stride": [
+              "integer"
+            ],
+            "struct": [
+              "string"
+            ],
+            "terminator": [
+              "string"
+            ],
+            "count": [
+              "integer"
+            ],
+            "entries": [
+              "array"
+            ],
+            "note": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/swarm/entries/[]"
+          ],
+          "fields": {
+            "mapsec_id": [
+              "integer"
+            ],
+            "mapsec_name": [
+              "string"
+            ],
+            "species_id": [
+              "integer"
+            ],
+            "species_name": [
+              "string"
+            ],
+            "addr": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/broadcast"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "stride": [
+              "integer"
+            ],
+            "count": [
+              "integer"
+            ],
+            "struct": [
+              "string"
+            ],
+            "set_to_weekday": [
+              "string"
+            ],
+            "slot_weights_percent": [
+              "array"
+            ],
+            "fallback_tables": [
+              "object"
+            ],
+            "entries": [
+              "array"
+            ],
+            "evidence": [
+              "object"
+            ],
+            "gating": [
+              "object"
+            ],
+            "probability_semantics": [
+              "object"
+            ],
+            "weekday_evidence": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/broadcast/fallback_tables"
+          ],
+          "fields": {
+            "default_and_sunday": [
+              "object"
+            ],
+            "wednesday_miss": [
+              "object"
+            ],
+            "thursday_miss": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/broadcast/fallback_tables/default_and_sunday",
+            "$/broadcast/fallback_tables/wednesday_miss",
+            "$/broadcast/fallback_tables/thursday_miss"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "slots": [
+              "array"
+            ],
+            "species": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/broadcast/fallback_tables/default_and_sunday/species/[]",
+            "$/broadcast/fallback_tables/wednesday_miss/species/[]",
+            "$/broadcast/fallback_tables/thursday_miss/species/[]"
+          ],
+          "fields": {
+            "species_id": [
+              "integer"
+            ],
+            "species_name": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/broadcast/entries/[]"
+          ],
+          "fields": {
+            "index": [
+              "integer"
+            ],
+            "table_addr": [
+              "string"
+            ],
+            "map_group": [
+              "integer"
+            ],
+            "map_num": [
+              "integer"
+            ],
+            "map_name_zh": [
+              "string"
+            ],
+            "sets": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/broadcast/entries/[]/sets/[]"
+          ],
+          "fields": {
+            "day_of_week": [
+              "integer"
+            ],
+            "day_name": [
+              "string"
+            ],
+            "wiki_region": [
+              "string"
+            ],
+            "slots": [
+              "array"
+            ],
+            "slot_weights_percent": [
+              "array"
+            ],
+            "species": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/broadcast/entries/[]/sets/[]/species/[]"
+          ],
+          "fields": {
+            "slot": [
+              "integer"
+            ],
+            "species_id": [
+              "integer"
+            ],
+            "species_name": [
+              "string"
+            ],
+            "weight_percent": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/broadcast/evidence"
+          ],
+          "fields": {
+            "literal_ref": [
+              "string"
+            ],
+            "entry_fn": [
+              "string"
+            ],
+            "weekday_source": [
+              "string"
+            ],
+            "selection": [
+              "string"
+            ],
+            "weights": [
+              "string"
+            ],
+            "gating": [
+              "string"
+            ],
+            "callers_of_getter": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/broadcast/gating"
+          ],
+          "fields": {
+            "day_condition": [
+              "string"
+            ],
+            "flag_0x17A1_6049": [
+              "object"
+            ],
+            "flag_0x1F_31": [
+              "object"
+            ],
+            "extra_conditions": [
+              "string"
+            ],
+            "lore_enabling": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/broadcast/gating/flag_0x17A1_6049"
+          ],
+          "fields": {
+            "check": [
+              "string"
+            ],
+            "setter_scripts": [
+              "array"
+            ],
+            "related_flag": [
+              "string"
+            ],
+            "semantics": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/broadcast/gating/flag_0x1F_31"
+          ],
+          "fields": {
+            "getter_sites": [
+              "array"
+            ],
+            "getter_logic": [
+              "string"
+            ],
+            "code_setter": [
+              "string"
+            ],
+            "setter_context": [
+              "string"
+            ],
+            "script_setter_note": [
+              "string"
+            ],
+            "semantics": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/broadcast/probability_semantics"
+          ],
+          "fields": {
+            "slot_weights": [
+              "string"
+            ],
+            "replacement": [
+              "string"
+            ],
+            "trigger": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/broadcast/weekday_evidence"
+          ],
+          "fields": {
+            "offset_proof": [
+              "string"
+            ],
+            "day4_equals_thursday": [
+              "string"
+            ],
+            "day3_and_day0": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/unresolved/[]"
+          ],
+          "fields": {
+            "item": [
+              "string"
+            ],
+            "status": [
+              "string"
+            ],
+            "evidence": [
+              "string"
+            ]
+          }
+        }
+      ],
+      "representative_projections": [
+        {
+          "source_json_pointer": "/tables/day/entries/1",
+          "projection": {
+            "map_group": 1,
+            "map_num": 40,
+            "map_name_zh": "冠军之路",
+            "mapsec_id": 132,
+            "entry_addr": "0x9e395c8",
+            "land": {
+              "rate": 7,
+              "info_addr": "0x9e3a174",
+              "wild_addr": "0x9e3a17c",
+              "slots": {
+                "_count": 12,
+                "_first": {
+                  "_field_names": [
+                    "slot",
+                    "min_level",
+                    "max_level",
+                    "species_id",
+                    "species_name"
+                  ]
+                }
+              }
+            },
+            "water": {
+              "rate": 7,
+              "info_addr": "0x9e3a158",
+              "wild_addr": "0x9e3a160",
+              "slots": {
+                "_count": 5,
+                "_first": {
+                  "_field_names": [
+                    "slot",
+                    "min_level",
+                    "max_level",
+                    "species_id",
+                    "species_name"
+                  ]
+                }
+              }
+            },
+            "rock_smash_headbutt": {
+              "rate": 75,
+              "info_addr": "0x9e3a0d4",
+              "wild_addr": "0x9e3a0dc",
+              "slots": {
+                "_count": 5,
+                "_first": {
+                  "_field_names": [
+                    "slot",
+                    "min_level",
+                    "max_level",
+                    "species_id",
+                    "species_name"
+                  ]
+                }
+              }
+            },
+            "fishing": {
+              "rate": 30,
+              "info_addr": "0x9e3a128",
+              "wild_addr": "0x9e3a130",
+              "slots": {
+                "_count": 10,
+                "_first": {
+                  "_field_names": [
+                    "slot",
+                    "min_level",
+                    "max_level",
+                    "species_id",
+                    "species_name"
+                  ]
+                }
+              },
+              "rod_groups": {
+                "old_rod": {
+                  "_count": 2,
+                  "_first": {
+                    "_field_names": [
+                      "slot",
+                      "min_level",
+                      "max_level",
+                      "species_id",
+                      "species_name"
+                    ]
+                  }
+                },
+                "good_rod": {
+                  "_count": 3,
+                  "_first": {
+                    "_field_names": [
+                      "slot",
+                      "min_level",
+                      "max_level",
+                      "species_id",
+                      "species_name"
+                    ]
+                  }
+                },
+                "super_rod": {
+                  "_count": 5,
+                  "_first": {
+                    "_field_names": [
+                      "slot",
+                      "min_level",
+                      "max_level",
+                      "species_id",
+                      "species_name"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "source_json_pointer": "/broadcast/entries/0",
+          "projection": {
+            "index": 0,
+            "table_addr": "0x9dddbe0",
+            "map_group": 3,
+            "map_num": 106,
+            "map_name_zh": "26号道路",
+            "sets": {
+              "_count": 3,
+              "_first": {
+                "day_of_week": 3,
+                "day_name": "Wednesday",
+                "wiki_region": "丰缘(Hoenn)",
+                "slots": {
+                  "_count": 4,
+                  "_first": 289
+                },
+                "slot_weights_percent": {
+                  "_count": 4,
+                  "_first": 40
+                },
+                "species": {
+                  "_count": 4,
+                  "_first": {
+                    "_field_names": [
+                      "slot",
+                      "species_id",
+                      "species_name",
+                      "weight_percent"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "encounters_research/out/shops.json",
+      "exists": true,
+      "size_bytes": 86116,
+      "file_sha256": "36749085f0dc9d692ad5477f0311500425a5ea1c01a7e76c1a82bfb26ab5b0e2",
+      "top_level_type": "dict",
+      "counts_actual": {
+        "valid_shops": 58,
+        "rejected_invalid_pointer": 2,
+        "item_rows": 518
+      },
+      "stable_ids": "instr_addr本快照58唯一，保留script_addr与list_addr；库存列表可共享；道具用index关联核心，不只用itemId。",
+      "semantic_status": "price为核心道具表值，保留kind(pokemart/pokemartbp)及原列表；不能自动当作所有商店最终货币/折扣/动态价格。conditions_heuristic不是剧情解锁证明；2坏指针不得入库存。",
+      "object_schema": [
+        {
+          "paths": [
+            "$"
+          ],
+          "fields": {
+            "note": [
+              "string"
+            ],
+            "count": [
+              "integer"
+            ],
+            "shops": [
+              "array"
+            ],
+            "rejected_invalid_pointer": [
+              "array"
+            ],
+            "unresolved": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/shops/[]"
+          ],
+          "fields": {
+            "script_addr": [
+              "string"
+            ],
+            "instr_addr": [
+              "string"
+            ],
+            "opcode": [
+              "string"
+            ],
+            "kind": [
+              "string"
+            ],
+            "list_addr": [
+              "string"
+            ],
+            "list_valid": [
+              "boolean"
+            ],
+            "item_count": [
+              "integer"
+            ],
+            "items": [
+              "array"
+            ],
+            "maps": [
+              "array"
+            ],
+            "shared_flags": [
+              "array"
+            ],
+            "conditions_heuristic": [
+              "array"
+            ],
+            "raw_list": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/shops/[]/items/[]"
+          ],
+          "fields": {
+            "index": [
+              "integer"
+            ],
+            "name": [
+              "string"
+            ],
+            "price": [
+              "integer"
+            ],
+            "itemId": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/shops/[]/maps/[]",
+            "$/rejected_invalid_pointer/[]/maps/[]"
+          ],
+          "fields": {
+            "group": [
+              "integer"
+            ],
+            "num": [
+              "integer"
+            ],
+            "name_zh": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/rejected_invalid_pointer/[]"
+          ],
+          "fields": {
+            "script_addr": [
+              "string"
+            ],
+            "instr_addr": [
+              "string"
+            ],
+            "opcode": [
+              "string"
+            ],
+            "kind": [
+              "string"
+            ],
+            "list_addr": [
+              "string"
+            ],
+            "list_valid": [
+              "boolean"
+            ],
+            "item_count": [
+              "integer"
+            ],
+            "items": [
+              "array"
+            ],
+            "maps": [
+              "array"
+            ],
+            "shared_flags": [
+              "array"
+            ],
+            "conditions_heuristic": [
+              "array"
+            ],
+            "raw_list": [
+              "string"
+            ],
+            "classification": [
+              "string"
+            ],
+            "root_cause": [
+              "string"
+            ]
+          }
+        }
+      ],
+      "representative_projections": [
+        {
+          "source_json_pointer": "/shops/0",
+          "projection": {
+            "script_addr": "0x08164992",
+            "instr_addr": "0x081649A8",
+            "opcode": "0x86",
+            "kind": "pokemart",
+            "list_addr": "0x81649b8",
+            "list_valid": true,
+            "item_count": 9,
+            "items": {
+              "_count": 9,
+              "_first": {
+                "index": 2,
+                "name": "高级球",
+                "price": 800,
+                "itemId": 2
+              }
+            },
+            "maps": {
+              "_count": 1,
+              "_first": {
+                "group": 2,
+                "num": 10,
+                "name_zh": "训练师之塔"
+              }
+            },
+            "shared_flags": [],
+            "conditions_heuristic": {
+              "_count": 1,
+              "_first": "0x0816499A:goto_if"
+            },
+            "raw_list": "0002 0003 0013 0014 0015 0018 0017 0055 0054"
+          }
+        },
+        {
+          "source_json_pointer": "/rejected_invalid_pointer/0",
+          "projection": {
+            "script_addr": "0x08990B94",
+            "instr_addr": "0x08990C8E",
+            "opcode": "0x88",
+            "kind": "pokemartbp",
+            "list_addr": "0x2b072b07",
+            "list_valid": false,
+            "item_count": 0,
+            "items": [],
+            "maps": {
+              "_count": 1,
+              "_first": {
+                "group": 3,
+                "num": 67,
+                "name_zh": "吉野市"
+              }
+            },
+            "shared_flags": [],
+            "conditions_heuristic": {
+              "_count": 10,
+              "_first": "0x08990B95:goto_if"
+            },
+            "raw_list": "",
+            "classification": "suspected_desync",
+            "root_cause": "列表参数不是 ROM 道具指针（0x2b072b07 / 0x88328732），据此拒绝计入有效库存；疑似上游脚本解析失步：根脚本 0x08990B94(map 3:67/local12 对象 script) 位于 0x0898-0x0899 数据/文本区（该字节型 32063 [excerpt]"
+          }
+        }
+      ]
+    },
+    {
+      "path": "encounters_research/out/early_game_resources.json",
+      "exists": true,
+      "size_bytes": 65142,
+      "file_sha256": "6669dc8d829cd8705681a5f7403778fcd4b53aea401f7101a964244a3718545c",
+      "top_level_type": "dict",
+      "counts_actual": {
+        "encounter_named_groups": 4,
+        "encounter_map_keys": 8,
+        "encounter_nonempty_map_keys": 6,
+        "encounter_map_time_keys": 24,
+        "shop_named_groups": 7,
+        "goldenrod_counter_records": 16
+      },
+      "stable_ids": "命名分组只是检索标签；遭遇回链map group:num+time+method；商店回链instr_addr，不能将重复摘要当新来源。",
+      "semantic_status": "筛选/重复摘要，不是完整获取数据库；自然公园1:114和55:59时段映射为空，不能推断无任何遭遇或玩家已能到达。",
+      "object_schema": [
+        {
+          "paths": [
+            "$"
+          ],
+          "fields": {
+            "encounters": [
+              "object"
+            ],
+            "shops": [
+              "object"
+            ],
+            "notes": [
+              "array"
+            ],
+            "满金百货_all": [
+              "array"
+            ],
+            "static_purchasable": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/encounters"
+          ],
+          "fields": {
+            "自然公园": [
+              "object"
+            ],
+            "35号道路": [
+              "object"
+            ],
+            "连接洞": [
+              "object"
+            ],
+            "黑暗洞穴": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/encounters/自然公园",
+            "$/encounters/35号道路",
+            "$/encounters/连接洞",
+            "$/encounters/黑暗洞穴"
+          ],
+          "fields": {
+            "{key}": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/encounters/自然公园/{key}",
+            "$/encounters/35号道路/{key}",
+            "$/encounters/连接洞/{key}",
+            "$/encounters/黑暗洞穴/{key}"
+          ],
+          "fields": {
+            "day": [
+              "object"
+            ],
+            "morning": [
+              "object"
+            ],
+            "evening": [
+              "object"
+            ],
+            "night": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/encounters/自然公园/{key}/day",
+            "$/encounters/自然公园/{key}/evening",
+            "$/encounters/自然公园/{key}/night",
+            "$/encounters/35号道路/{key}/evening",
+            "$/encounters/35号道路/{key}/night"
+          ],
+          "fields": {
+            "land": [
+              "object"
+            ],
+            "rock_smash_headbutt": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/encounters/自然公园/{key}/day/land",
+            "$/encounters/自然公园/{key}/day/rock_smash_headbutt",
+            "$/encounters/自然公园/{key}/morning/land",
+            "$/encounters/自然公园/{key}/evening/land",
+            "$/encounters/自然公园/{key}/evening/rock_smash_headbutt",
+            "$/encounters/自然公园/{key}/night/land",
+            "$/encounters/自然公园/{key}/night/rock_smash_headbutt",
+            "$/encounters/35号道路/{key}/day/land",
+            "$/encounters/35号道路/{key}/day/water",
+            "$/encounters/35号道路/{key}/day/rock_smash_headbutt",
+            "$/encounters/35号道路/{key}/morning/land",
+            "$/encounters/35号道路/{key}/evening/land",
+            "$/encounters/35号道路/{key}/evening/rock_smash_headbutt",
+            "$/encounters/35号道路/{key}/night/land",
+            "$/encounters/35号道路/{key}/night/rock_smash_headbutt",
+            "$/encounters/连接洞/{key}/day/land",
+            "$/encounters/连接洞/{key}/day/water",
+            "$/encounters/连接洞/{key}/morning/land",
+            "$/encounters/连接洞/{key}/evening/land",
+            "$/encounters/连接洞/{key}/evening/water",
+            "$/encounters/连接洞/{key}/night/land",
+            "$/encounters/连接洞/{key}/night/water",
+            "$/encounters/黑暗洞穴/{key}/day/land",
+            "$/encounters/黑暗洞穴/{key}/day/water",
+            "$/encounters/黑暗洞穴/{key}/day/rock_smash_headbutt",
+            "$/encounters/黑暗洞穴/{key}/morning/land",
+            "$/encounters/黑暗洞穴/{key}/evening/land",
+            "$/encounters/黑暗洞穴/{key}/evening/water",
+            "$/encounters/黑暗洞穴/{key}/night/land",
+            "$/encounters/黑暗洞穴/{key}/night/water"
+          ],
+          "fields": {
+            "rate": [
+              "integer"
+            ],
+            "slots": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/encounters/自然公园/{key}/morning",
+            "$/encounters/35号道路/{key}/morning",
+            "$/encounters/连接洞/{key}/morning",
+            "$/encounters/黑暗洞穴/{key}/morning"
+          ],
+          "fields": {
+            "land": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/encounters/35号道路/{key}/day",
+            "$/encounters/黑暗洞穴/{key}/day"
+          ],
+          "fields": {
+            "land": [
+              "object"
+            ],
+            "water": [
+              "object"
+            ],
+            "rock_smash_headbutt": [
+              "object"
+            ],
+            "fishing": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/encounters/35号道路/{key}/day/fishing",
+            "$/encounters/连接洞/{key}/day/fishing",
+            "$/encounters/黑暗洞穴/{key}/day/fishing"
+          ],
+          "fields": {
+            "rate": [
+              "integer"
+            ],
+            "rod_groups": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/encounters/35号道路/{key}/day/fishing/rod_groups",
+            "$/encounters/连接洞/{key}/day/fishing/rod_groups",
+            "$/encounters/黑暗洞穴/{key}/day/fishing/rod_groups"
+          ],
+          "fields": {
+            "old_rod": [
+              "array"
+            ],
+            "good_rod": [
+              "array"
+            ],
+            "super_rod": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/encounters/连接洞/{key}/day"
+          ],
+          "fields": {
+            "land": [
+              "object"
+            ],
+            "water": [
+              "object"
+            ],
+            "fishing": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/encounters/连接洞/{key}/evening",
+            "$/encounters/连接洞/{key}/night",
+            "$/encounters/黑暗洞穴/{key}/evening",
+            "$/encounters/黑暗洞穴/{key}/night"
+          ],
+          "fields": {
+            "land": [
+              "object"
+            ],
+            "water": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/shops"
+          ],
+          "fields": {
+            "常青市": [
+              "object"
+            ],
+            "尼比市": [
+              "object"
+            ],
+            "华蓝市": [
+              "object"
+            ],
+            "枯叶市": [
+              "object"
+            ],
+            "玉虹市": [
+              "object"
+            ],
+            "满金市": [
+              "object"
+            ],
+            "满金市-技能机层": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/shops/常青市",
+            "$/shops/尼比市",
+            "$/shops/华蓝市",
+            "$/shops/枯叶市",
+            "$/shops/玉虹市",
+            "$/shops/满金市",
+            "$/shops/满金市-技能机层"
+          ],
+          "fields": {
+            "map": [
+              "string"
+            ],
+            "inventories": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/shops/常青市/inventories/[]",
+            "$/shops/尼比市/inventories/[]",
+            "$/shops/华蓝市/inventories/[]",
+            "$/shops/枯叶市/inventories/[]",
+            "$/shops/玉虹市/inventories/[]",
+            "$/shops/满金市/inventories/[]",
+            "$/shops/满金市-技能机层/inventories/[]"
+          ],
+          "fields": {
+            "kind": [
+              "string"
+            ],
+            "list_addr": [
+              "string"
+            ],
+            "items": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/满金百货_all/[]"
+          ],
+          "fields": {
+            "instr": [
+              "string"
+            ],
+            "list_addr": [
+              "string"
+            ],
+            "items": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/static_purchasable"
+          ],
+          "fields": {
+            "candy_ids_68_72_536_540": [
+              "array"
+            ],
+            "tm_shops": [
+              "array"
+            ]
+          }
+        }
+      ],
+      "representative_projections": [
+        {
+          "source_json_pointer": "/encounters/自然公园/1:124/day",
+          "projection": {
+            "land": {
+              "rate": 15,
+              "slots": {
+                "_count": 12,
+                "_first": {
+                  "_count": 3,
+                  "_first": "向日种子"
+                }
+              }
+            },
+            "rock_smash_headbutt": {
+              "rate": 75,
+              "slots": {
+                "_count": 5,
+                "_first": {
+                  "_count": 3,
+                  "_first": "榛果球"
+                }
+              }
+            }
+          }
+        },
+        {
+          "source_json_pointer": "/满金百货_all/0",
+          "projection": {
+            "instr": "0x0816BC72",
+            "list_addr": "0x816bc84",
+            "items": {
+              "_count": 7,
+              "_first": {
+                "_count": 3,
+                "_first": "力量强化"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "parallel_acceleration/map_relations/nodes.json",
+      "exists": true,
+      "size_bytes": 388351,
+      "file_sha256": "1126436f6a70b197b19bdf57cb5d92d501c79bffa826972a7175cf565e8dba85",
+      "top_level_type": "dict",
+      "counts_actual": {
+        "nodes": 871,
+        "groups": 58
+      },
+      "stable_ids": "id=group:num（871唯一），key=gNN_nNNN为文件名键。",
+      "semantic_status": "地图名称与事件/脚本指针可join，不包含所有剧情状态。",
+      "object_schema": [
+        {
+          "paths": [
+            "$"
+          ],
+          "fields": {
+            "rom": [
+              "string"
+            ],
+            "sha256": [
+              "string"
+            ],
+            "source_file": [
+              "string"
+            ],
+            "source_sha256": [
+              "string"
+            ],
+            "map_count": [
+              "integer"
+            ],
+            "group_count": [
+              "integer"
+            ],
+            "group_sizes": [
+              "array"
+            ],
+            "nodes": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/nodes/[]"
+          ],
+          "fields": {
+            "id": [
+              "string"
+            ],
+            "group": [
+              "integer"
+            ],
+            "num": [
+              "integer"
+            ],
+            "key": [
+              "string"
+            ],
+            "name_zh": [
+              "string"
+            ],
+            "name_guess_vanilla": [
+              "null",
+              "string"
+            ],
+            "header_addr": [
+              "string"
+            ],
+            "events_addr": [
+              "string"
+            ],
+            "connections_addr": [
+              "string"
+            ],
+            "map_scripts_addr": [
+              "string"
+            ],
+            "map_layout_addr": [
+              "string"
+            ],
+            "map_layout_id": [
+              "integer"
+            ],
+            "region_map_section_id": [
+              "integer"
+            ],
+            "map_type": [
+              "integer"
+            ],
+            "width": [
+              "integer"
+            ],
+            "height": [
+              "integer"
+            ]
+          }
+        }
+      ],
+      "representative_projections": [
+        {
+          "source_json_pointer": "/nodes/0",
+          "projection": {
+            "id": "0:0",
+            "group": 0,
+            "num": 0,
+            "key": "g00_n000",
+            "name_zh": "彩虹百货大楼",
+            "name_guess_vanilla": "BattleColosseum_2P",
+            "header_addr": "0x0834F188",
+            "events_addr": "0x083AE0DC",
+            "connections_addr": "0x00000000",
+            "map_scripts_addr": "0x08160478",
+            "map_layout_addr": "0x082D89E8",
+            "map_layout_id": 47,
+            "region_map_section_id": 196,
+            "map_type": 8,
+            "width": 14,
+            "height": 9
+          }
+        },
+        {
+          "source_json_pointer": "/nodes/1",
+          "projection": {
+            "id": "0:1",
+            "group": 0,
+            "num": 1,
+            "key": "g00_n001",
+            "name_zh": "彩虹百货大楼",
+            "name_guess_vanilla": "TradeCenter",
+            "header_addr": "0x0834F1A4",
+            "events_addr": "0x083AE138",
+            "connections_addr": "0x00000000",
+            "map_scripts_addr": "0x08160479",
+            "map_layout_addr": "0x082D8AE4",
+            "map_layout_id": 48,
+            "region_map_section_id": 196,
+            "map_type": 8,
+            "width": 12,
+            "height": 9
+          }
+        }
+      ]
+    },
+    {
+      "path": "parallel_acceleration/map_relations/edges.jsonl",
+      "exists": true,
+      "size_bytes": 1899433,
+      "file_sha256": "a46ac019afe180223649c57fa35ea67b2d631eb5244bf1b09abba1b289221956",
+      "top_level_type": "list",
+      "counts_actual": {
+        "edges": 3105,
+        "static_warps": 2816,
+        "dynamic_warps": 45,
+        "connections": 244
+      },
+      "stable_ids": "edge_id为现成顺序ID，跨重建稳定性无保证；推荐来源复合键(source.map,source_object.kind,index)，本快照3105唯一，附source_object.addr。",
+      "semantic_status": "connection方向标签来源reference_label；图存在边不证明可通行；45动态边为runtime保存warp。",
+      "object_schema": [
+        {
+          "paths": [
+            "$/[]"
+          ],
+          "fields": {
+            "edge_id": [
+              "string"
+            ],
+            "type": [
+              "string"
+            ],
+            "source": [
+              "object"
+            ],
+            "source_object": [
+              "object"
+            ],
+            "target": [
+              "object"
+            ],
+            "evidence": [
+              "string"
+            ],
+            "source_file": [
+              "string"
+            ],
+            "source_sha256": [
+              "string"
+            ],
+            "consumer_evidence": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/[]/source"
+          ],
+          "fields": {
+            "map": [
+              "string"
+            ],
+            "group": [
+              "integer"
+            ],
+            "num": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/[]/source_object"
+          ],
+          "fields": {
+            "kind": [
+              "string"
+            ],
+            "index": [
+              "integer"
+            ],
+            "addr": [
+              "string"
+            ],
+            "raw": [
+              "string"
+            ],
+            "fields": [
+              "object"
+            ],
+            "struct_note": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/[]/source_object/fields"
+          ],
+          "fields": {
+            "x": [
+              "integer"
+            ],
+            "y": [
+              "integer"
+            ],
+            "elevation": [
+              "integer"
+            ],
+            "warp_id": [
+              "integer"
+            ],
+            "map_num": [
+              "integer"
+            ],
+            "map_group": [
+              "integer"
+            ],
+            "direction": [
+              "integer"
+            ],
+            "direction_label": [
+              "string"
+            ],
+            "direction_label_source": [
+              "string"
+            ],
+            "offset_u32": [
+              "integer"
+            ],
+            "offset_s32": [
+              "integer"
+            ],
+            "mapGroup": [
+              "integer"
+            ],
+            "mapNum": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/[]/target"
+          ],
+          "fields": {
+            "map": [
+              "null",
+              "string"
+            ],
+            "group": [
+              "integer"
+            ],
+            "num": [
+              "integer"
+            ],
+            "map_defined": [
+              "boolean"
+            ],
+            "raw_map_defined_flag": [
+              "boolean"
+            ],
+            "target_warp_id": [
+              "integer",
+              "null"
+            ],
+            "resolution": [
+              "string"
+            ],
+            "runtime_source": [
+              "object"
+            ],
+            "destination_address": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/[]/target/runtime_source"
+          ],
+          "fields": {
+            "pointer_address": [
+              "string"
+            ],
+            "offset": [
+              "integer"
+            ],
+            "size": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/[]/consumer_evidence"
+          ],
+          "fields": {
+            "warp_mapnum_read": [
+              "object"
+            ],
+            "mapnum_cmp_127": [
+              "object"
+            ],
+            "dynamic_call": [
+              "object"
+            ],
+            "copy_function": [
+              "object"
+            ],
+            "note": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/[]/consumer_evidence/warp_mapnum_read"
+          ],
+          "fields": {
+            "window": [
+              "string"
+            ],
+            "read_addr": [
+              "string"
+            ],
+            "field_offset": [
+              "integer"
+            ],
+            "field": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/[]/consumer_evidence/mapnum_cmp_127"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "value": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/[]/consumer_evidence/dynamic_call"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "target": [
+              "string"
+            ],
+            "symbol": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/[]/consumer_evidence/copy_function"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "saveblock_ptr_literal_addr": [
+              "string"
+            ],
+            "saveblock_ptr": [
+              "string"
+            ],
+            "dst_literal_addr": [
+              "string"
+            ],
+            "destination": [
+              "string"
+            ],
+            "read_offsets": [
+              "array"
+            ],
+            "copy_size": [
+              "integer"
+            ]
+          }
+        }
+      ],
+      "representative_projections": [
+        {
+          "source_json_pointer": "/0",
+          "projection": {
+            "edge_id": "e00001",
+            "type": "warp",
+            "source": {
+              "map": "0:0",
+              "group": 0,
+              "num": 0
+            },
+            "source_object": {
+              "kind": "warp_event",
+              "index": 0,
+              "addr": "0x083AE0AC",
+              "fields": {
+                "x": 6,
+                "y": 8,
+                "elevation": 3,
+                "warp_id": 127,
+                "map_num": 127,
+                "map_group": 127
+              }
+            },
+            "target": {
+              "map": null,
+              "group": 127,
+              "num": 127,
+              "map_defined": false,
+              "raw_map_defined_flag": false,
+              "target_warp_id": 127,
+              "resolution": "dynamic_saved_warp",
+              "runtime_source": {
+                "pointer_address": "0x03005008",
+                "offset": 20,
+                "size": 8
+              },
+              "destination_address": "0x02031DBC"
+            },
+            "source_file": "maps_research/out/events/events.json",
+            "source_sha256": "131b009df7ab252deff0d6a0518ab82f88e82c940ee68d50d31033a899f7e3dd"
+          }
+        },
+        {
+          "source_json_pointer": "/2861",
+          "projection": {
+            "edge_id": "e02862",
+            "type": "connection",
+            "source": {
+              "map": "1:110",
+              "group": 1,
+              "num": 110
+            },
+            "source_object": {
+              "kind": "map_connection",
+              "index": 0,
+              "addr": "0x8c181d0",
+              "fields": {
+                "direction": 4,
+                "direction_label": "EAST",
+                "direction_label_source": "reference_label",
+                "offset_u32": 21,
+                "offset_s32": 21,
+                "mapGroup": 3,
+                "mapNum": 113
+              },
+              "struct_note": "12-byte entry: u32 direction@0, u32 offset@4, u8 mapGroup@8, u8 mapNum@9, 2 pad; layout verified 244/244 targets land in real map nodes; dir [excerpt]"
+            },
+            "target": {
+              "map": "3:113",
+              "group": 3,
+              "num": 113,
+              "map_defined": true,
+              "target_warp_id": null
+            },
+            "source_file": "maps_research/out/maps/headers.json",
+            "source_sha256": "131b009df7ab252deff0d6a0518ab82f88e82c940ee68d50d31033a899f7e3dd"
+          }
+        }
+      ]
+    },
+    {
+      "path": "parallel_acceleration/map_relations/dynamic_edges.json",
+      "exists": true,
+      "size_bytes": 79994,
+      "file_sha256": "ee820db12306da036fdd6eb303a8aecb7400e6eaef3a0dde40389e9c279b40ce",
+      "top_level_type": "dict",
+      "counts_actual": {
+        "dynamic_edges": 45,
+        "fixed_destinations_resolved": 0
+      },
+      "stable_ids": "同edges；edge_id用于本快照join；target.map=null，禁止生成127:127真实地图。",
+      "semantic_status": "consumer证据已知从保存块+20复制8字节至0x02031DBC，实际运行值未知。",
+      "object_schema": [
+        {
+          "paths": [
+            "$"
+          ],
+          "fields": {
+            "note": [
+              "string"
+            ],
+            "count": [
+              "integer"
+            ],
+            "destination_address": [
+              "string"
+            ],
+            "runtime_source": [
+              "object"
+            ],
+            "items": [
+              "array"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/runtime_source",
+            "$/items/[]/target/runtime_source"
+          ],
+          "fields": {
+            "pointer_address": [
+              "string"
+            ],
+            "offset": [
+              "integer"
+            ],
+            "size": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/items/[]"
+          ],
+          "fields": {
+            "edge_id": [
+              "string"
+            ],
+            "type": [
+              "string"
+            ],
+            "source": [
+              "object"
+            ],
+            "source_object": [
+              "object"
+            ],
+            "target": [
+              "object"
+            ],
+            "evidence": [
+              "string"
+            ],
+            "source_file": [
+              "string"
+            ],
+            "source_sha256": [
+              "string"
+            ],
+            "consumer_evidence": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/items/[]/source"
+          ],
+          "fields": {
+            "map": [
+              "string"
+            ],
+            "group": [
+              "integer"
+            ],
+            "num": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/items/[]/source_object"
+          ],
+          "fields": {
+            "kind": [
+              "string"
+            ],
+            "index": [
+              "integer"
+            ],
+            "addr": [
+              "string"
+            ],
+            "raw": [
+              "string"
+            ],
+            "fields": [
+              "object"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/items/[]/source_object/fields"
+          ],
+          "fields": {
+            "x": [
+              "integer"
+            ],
+            "y": [
+              "integer"
+            ],
+            "elevation": [
+              "integer"
+            ],
+            "warp_id": [
+              "integer"
+            ],
+            "map_num": [
+              "integer"
+            ],
+            "map_group": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/items/[]/target"
+          ],
+          "fields": {
+            "map": [
+              "null"
+            ],
+            "group": [
+              "integer"
+            ],
+            "num": [
+              "integer"
+            ],
+            "map_defined": [
+              "boolean"
+            ],
+            "raw_map_defined_flag": [
+              "boolean"
+            ],
+            "target_warp_id": [
+              "integer"
+            ],
+            "resolution": [
+              "string"
+            ],
+            "runtime_source": [
+              "object"
+            ],
+            "destination_address": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/items/[]/consumer_evidence"
+          ],
+          "fields": {
+            "warp_mapnum_read": [
+              "object"
+            ],
+            "mapnum_cmp_127": [
+              "object"
+            ],
+            "dynamic_call": [
+              "object"
+            ],
+            "copy_function": [
+              "object"
+            ],
+            "note": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/items/[]/consumer_evidence/warp_mapnum_read"
+          ],
+          "fields": {
+            "window": [
+              "string"
+            ],
+            "read_addr": [
+              "string"
+            ],
+            "field_offset": [
+              "integer"
+            ],
+            "field": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/items/[]/consumer_evidence/mapnum_cmp_127"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "value": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/items/[]/consumer_evidence/dynamic_call"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "target": [
+              "string"
+            ],
+            "symbol": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/items/[]/consumer_evidence/copy_function"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "saveblock_ptr_literal_addr": [
+              "string"
+            ],
+            "saveblock_ptr": [
+              "string"
+            ],
+            "dst_literal_addr": [
+              "string"
+            ],
+            "destination": [
+              "string"
+            ],
+            "read_offsets": [
+              "array"
+            ],
+            "copy_size": [
+              "integer"
+            ]
+          }
+        }
+      ],
+      "representative_projections": [
+        {
+          "source_json_pointer": "/items/0",
+          "projection": {
+            "edge_id": "e00001",
+            "type": "warp",
+            "source": {
+              "map": "0:0",
+              "group": 0,
+              "num": 0
+            },
+            "source_object": {
+              "kind": "warp_event",
+              "index": 0,
+              "addr": "0x083AE0AC",
+              "fields": {
+                "x": 6,
+                "y": 8,
+                "elevation": 3,
+                "warp_id": 127,
+                "map_num": 127,
+                "map_group": 127
+              }
+            },
+            "target": {
+              "map": null,
+              "group": 127,
+              "num": 127,
+              "map_defined": false,
+              "raw_map_defined_flag": false,
+              "target_warp_id": 127,
+              "resolution": "dynamic_saved_warp",
+              "runtime_source": {
+                "pointer_address": "0x03005008",
+                "offset": 20,
+                "size": 8
+              },
+              "destination_address": "0x02031DBC"
+            },
+            "source_file": "maps_research/out/events/events.json",
+            "source_sha256": "131b009df7ab252deff0d6a0518ab82f88e82c940ee68d50d31033a899f7e3dd"
+          }
+        },
+        {
+          "source_json_pointer": "/items/1",
+          "projection": {
+            "edge_id": "e00002",
+            "type": "warp",
+            "source": {
+              "map": "0:0",
+              "group": 0,
+              "num": 0
+            },
+            "source_object": {
+              "kind": "warp_event",
+              "index": 1,
+              "addr": "0x083AE0B4",
+              "fields": {
+                "x": 7,
+                "y": 8,
+                "elevation": 3,
+                "warp_id": 127,
+                "map_num": 127,
+                "map_group": 127
+              }
+            },
+            "target": {
+              "map": null,
+              "group": 127,
+              "num": 127,
+              "map_defined": false,
+              "raw_map_defined_flag": false,
+              "target_warp_id": 127,
+              "resolution": "dynamic_saved_warp",
+              "runtime_source": {
+                "pointer_address": "0x03005008",
+                "offset": 20,
+                "size": 8
+              },
+              "destination_address": "0x02031DBC"
+            },
+            "source_file": "maps_research/out/events/events.json",
+            "source_sha256": "131b009df7ab252deff0d6a0518ab82f88e82c940ee68d50d31033a899f7e3dd"
+          }
+        }
+      ]
+    },
+    {
+      "path": "parallel_acceleration/map_relations/var_flag_index.jsonl",
+      "exists": true,
+      "size_bytes": 13611320,
+      "file_sha256": "1a32ad0504f1cece16f3a181a5440e0df111456b2af5bae2cd4ec20788e2ad0a",
+      "top_level_type": "list",
+      "counts_actual": {
+        "records": 22419,
+        "unique_instruction_addresses": 22419,
+        "d0_records": 44
+      },
+      "stable_ids": "addr本快照22419唯一；保留opcode/raw；变量或旗标须连同kind/flag_space/role解释，不能只按整数合并不同空间。",
+      "semantic_status": "已有读/写/别名/根与地图索引，不是剧情条件求解器；D0的44条确认normal/write+read，但不确认所有flag业务语义/有效性，0x3833保留未定。",
+      "object_schema": [
+        {
+          "paths": [
+            "$/[]"
+          ],
+          "fields": {
+            "addr": [
+              "string"
+            ],
+            "opcode": [
+              "string"
+            ],
+            "name": [
+              "string"
+            ],
+            "layout_source": [
+              "string"
+            ],
+            "raw": [
+              "string"
+            ],
+            "kind": [
+              "string"
+            ],
+            "access": [
+              "string"
+            ],
+            "action": [
+              "string"
+            ],
+            "target_var": [
+              "integer",
+              "null"
+            ],
+            "source_var": [
+              "integer",
+              "null"
+            ],
+            "flag_id": [
+              "integer",
+              "null"
+            ],
+            "flag_space": [
+              "null",
+              "string"
+            ],
+            "var_ids": [
+              "array"
+            ],
+            "target_role": [
+              "null",
+              "string"
+            ],
+            "source_role": [
+              "null",
+              "string"
+            ],
+            "source_literal": [
+              "integer",
+              "null"
+            ],
+            "potential_variable_source": [
+              "null"
+            ],
+            "special_id": [
+              "integer",
+              "null"
+            ],
+            "evidence": [
+              "string"
+            ],
+            "source_scripts": [
+              "array"
+            ],
+            "roots": [
+              "array"
+            ],
+            "maps": [
+              "array"
+            ],
+            "name_aliases": [
+              "array"
+            ],
+            "operand_validity": [
+              "string"
+            ],
+            "value_literal": [
+              "integer"
+            ],
+            "value_role": [
+              "string"
+            ],
+            "worldmapflag_id": [
+              "integer"
+            ],
+            "role": [
+              "string"
+            ],
+            "pending_consumer_semantics": [
+              "boolean"
+            ],
+            "consumer_evidence": [
+              "object"
+            ],
+            "trainer_id": [
+              "integer"
+            ],
+            "reference_derived_flag_id": [
+              "integer"
+            ],
+            "derivation_evidence": [
+              "string"
+            ],
+            "operand_raw_target": [
+              "integer"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/[]/roots/[]"
+          ],
+          "fields": {
+            "kind": [
+              "string"
+            ],
+            "where": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/[]/consumer_evidence"
+          ],
+          "fields": {
+            "consumer_confirmed": [
+              "boolean"
+            ],
+            "handler": [
+              "object"
+            ],
+            "handler_direct_flag_call": [
+              "boolean"
+            ],
+            "u16_id_conversion": [
+              "boolean"
+            ],
+            "callees": [
+              "array"
+            ],
+            "callees_file": [
+              "string"
+            ],
+            "note": [
+              "string"
+            ],
+            "callees_sha256": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/[]/consumer_evidence/handler"
+          ],
+          "fields": {
+            "window": [
+              "string"
+            ],
+            "length": [
+              "integer"
+            ],
+            "file": [
+              "string"
+            ],
+            "sha256": [
+              "string"
+            ]
+          }
+        },
+        {
+          "paths": [
+            "$/[]/consumer_evidence/callees/[]"
+          ],
+          "fields": {
+            "to": [
+              "string"
+            ],
+            "sym_equal": [
+              "string"
+            ],
+            "flag_calls": [
+              "array"
+            ]
+          }
+        }
+      ],
+      "representative_projections": [
+        {
+          "source_json_pointer": "/0",
+          "projection": {
+            "addr": "0x08160487",
+            "opcode": "0x29",
+            "name": "setflag",
+            "layout_source": "macro",
+            "kind": "flag",
+            "access": "write",
+            "action": "setflag",
+            "target_var": null,
+            "source_var": null,
+            "flag_id": 99,
+            "flag_space": "normal",
+            "var_ids": [],
+            "target_role": null,
+            "source_role": null,
+            "source_literal": null,
+            "potential_variable_source": null,
+            "special_id": null,
+            "source_scripts": {
+              "_count": 1,
+              "_first": "0x08160487"
+            },
+            "roots": {
+              "_count": 1,
+              "_first": {
+                "kind": "map_script",
+                "where": "0:4/tag5"
+              }
+            },
+            "maps": {
+              "_count": 1,
+              "_first": "0:4"
+            },
+            "name_aliases": {
+              "_count": 1,
+              "_first": "setflag"
+            }
+          }
+        },
+        {
+          "source_json_pointer": "/17",
+          "projection": {
+            "addr": "0x08160525",
+            "opcode": "0xD0",
+            "name": "setworldmapflag",
+            "layout_source": "macro",
+            "kind": "flag",
+            "access": "write+read",
+            "action": "setworldmapflag",
+            "target_var": null,
+            "source_var": null,
+            "flag_id": 2212,
+            "flag_space": "normal",
+            "var_ids": [],
+            "target_role": null,
+            "source_role": null,
+            "source_literal": null,
+            "potential_variable_source": null,
+            "special_id": null,
+            "source_scripts": {
+              "_count": 1,
+              "_first": "0x08160525"
+            },
+            "roots": {
+              "_count": 1,
+              "_first": {
+                "kind": "map_script",
+                "where": "1:0/tag3"
+              }
+            },
+            "maps": {
+              "_count": 1,
+              "_first": "1:0"
+            },
+            "name_aliases": {
+              "_count": 1,
+              "_first": "setworldmapflag"
+            },
+            "worldmapflag_id": 2212,
+            "role": "worldmap",
+            "pending_consumer_semantics": false
+          }
+        }
+      ]
+    }
+  ],
+  "supplemental_sources": [
+    {
+      "path": "maps_research/out/maps/mapsec_names.json",
+      "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6",
+      "top_level_fields": [
+        "rom",
+        "sMapNames",
+        "mapsec_start",
+        "count",
+        "decoder",
+        "names"
+      ],
+      "count_actual": 165,
+      "stable_id": "names字典键/mapsec_id；ptr为来源地址",
+      "representative_projections": [
+        {
+          "source_json_pointer": "/names/0",
+          "projection": {
+            "mapsec": "0x58",
+            "mapsec_id": 88,
+            "ptr": "0x083EECFC",
+            "name": "真新镇",
+            "bytes": 7
+          }
+        },
+        {
+          "source_json_pointer": "/names/1",
+          "projection": {
+            "mapsec": "0x59",
+            "mapsec_id": 89,
+            "ptr": "0x083EED08",
+            "name": "常青市",
+            "bytes": 7
+          }
+        }
+      ]
+    },
+    {
+      "path": "maps_research/out/maps/render_report.json",
+      "file_sha256": "cc445bd0ccfe7ef46280946357cd10302e5ba757ffd9b59ed16a85eb629913e0",
+      "top_level_fields": [
+        "rendered",
+        "skipped_or_tile_problems",
+        "maps_with_out_of_range_tile_ids"
+      ],
+      "counts_actual": {
+        "rendered": 862,
+        "problem_keys": 413,
+        "tile_gap_maps": 102
+      }
+    },
+    {
+      "path": "trainers_research/out/whitney.json",
+      "file_sha256": "d516df84780b017dbeda9822f4bd643ec489325743e38b2099fa07f6f622df56",
+      "top_level_fields": [
+        "subject",
+        "table",
+        "table_selection",
+        "extra_checks",
+        "records",
+        "species_typing_note",
+        "consumer_status",
+        "party_first_field",
+        "camomons_resolution",
+        "steel_fairy_observation",
+        "branches",
+        "caveats"
+      ],
+      "counts_actual": {
+        "records": 2
+      },
+      "note": "小茜详细规则入口；只复用报告，不新增底层研究。"
+    }
+  ],
+  "acquisition_instruction_inventory": {
+    "givepokemon": {
+      "instruction_occurrences": 48,
+      "unique_addresses": 48,
+      "representative": {
+        "script": "0x08161AC8",
+        "instruction": {
+          "addr": "0x08161AE0",
+          "opcode": "0x79",
+          "name": "givepokemon",
+          "names": [
+            "givepokemon"
+          ],
+          "args": [
+            {
+              "width": 2,
+              "value": 131,
+              "addr": "0x08161AE1"
+            },
+            {
+              "width": 1,
+              "value": 25,
+              "addr": "0x08161AE3"
+            },
+            {
+              "width": 2,
+              "value": 0,
+              "addr": "0x08161AE4"
+            },
+            {
+              "width": 4,
+              "value": 0,
+              "addr": "0x08161AE6"
+            },
+            {
+              "width": 4,
+              "value": 0,
+              "addr": "0x08161AEA"
+            },
+            {
+              "width": 1,
+              "value": 0,
+              "addr": "0x08161AEE"
+            }
+          ],
+          "raw": "798300190000000000000000000000",
+          "layout_source": "macro"
+        }
+      }
+    },
+    "giveegg": {
+      "instruction_occurrences": 7,
+      "unique_addresses": 7,
+      "representative": {
+        "script": "0x081688BA",
+        "instruction": {
+          "addr": "0x081688C9",
+          "opcode": "0x7A",
+          "name": "giveegg",
+          "names": [
+            "giveegg"
+          ],
+          "args": [
+            {
+              "width": 2,
+              "value": 175,
+              "addr": "0x081688CA"
+            }
+          ],
+          "raw": "7aaf00",
+          "layout_source": "macro"
+        }
+      }
+    },
+    "setwildbattle": {
+      "instruction_occurrences": 79,
+      "unique_addresses": 78,
+      "representative": {
+        "script": "0x081624F5",
+        "instruction": {
+          "addr": "0x0816251D",
+          "opcode": "0xB6",
+          "name": "setwildbattle",
+          "names": [
+            "setwildbattle",
+            "wildbattle"
+          ],
+          "args": [
+            {
+              "width": 2,
+              "value": 150,
+              "addr": "0x0816251E"
+            },
+            {
+              "width": 1,
+              "value": 70,
+              "addr": "0x08162520"
+            },
+            {
+              "width": 2,
+              "value": 0,
+              "addr": "0x08162521"
+            }
+          ],
+          "raw": "b69600460000",
+          "layout_source": "macro"
+        }
+      }
+    },
+    "dowildbattle": {
+      "instruction_occurrences": 52,
+      "unique_addresses": 52,
+      "representative": {
+        "script": "0x0816388D",
+        "instruction": {
+          "addr": "0x081638B0",
+          "opcode": "0xB7",
+          "name": "dowildbattle",
+          "names": [
+            "dowildbattle"
+          ],
+          "args": [],
+          "raw": "b7",
+          "layout_source": "macro"
+        }
+      }
+    },
+    "additem": {
+      "instruction_occurrences": 95,
+      "unique_addresses": 95,
+      "representative": {
+        "script": "0x0816071B",
+        "instruction": {
+          "addr": "0x08160733",
+          "opcode": "0x44",
+          "name": "additem",
+          "names": [
+            "additem"
+          ],
+          "args": [
+            {
+              "width": 2,
+              "value": 358,
+              "addr": "0x08160734"
+            },
+            {
+              "width": 2,
+              "value": 1,
+              "addr": "0x08160736"
+            }
+          ],
+          "raw": "4466010100",
+          "layout_source": "macro"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    {
+      "section": "地图与地区",
+      "available": "871地图、中文地图/地区段名称、事件、坐标、地图类型、天气/music编号；静态关系图；165条mapsec名称池。",
+      "needs_extraction": "按地图合并字段/关联核心名称与媒体；若需要关都/城都等大地区分类，当前14输入无独立归属字段，须由Main决定是否补取或标注。"
+    },
+    {
+      "section": "训练师与队伍",
+      "available": "743普通记录、1892队员、名字/等级/持物/招式/脚本引用、273 EV配置命中、111的Camomons与403的强制闪光。",
+      "needs_extraction": "玩家可读队伍目录及地图关联；训练师职业名、特殊ID人物/队伍、全等级缩放公式不在现成结构化字段内。"
+    },
+    {
+      "section": "野生获取、广播与群聚",
+      "available": "422时段地图记录/6624槽，权重表及分钓竿组、16群聚、100广播。",
+      "needs_extraction": "把method/slot与全局权重/时段/地图join成获取目录，保留rate与槽权重区别；不计算未证总体概率。"
+    },
+    {
+      "section": "商店",
+      "available": "58有效静态库存，item index/name/price/itemId、地图和启发式前文条件；2拒绝记录。",
+      "needs_extraction": "物品→商店反向目录、kind与价格语境展示；不把前文条件写成确定解锁攻略。"
+    },
+    {
+      "section": "隐藏道具",
+      "available": "451条kind7事件有道具ID/数量/旗标偏移/坐标/underfoot，是结构化字段，不仅文本。",
+      "needs_extraction": "join核心道具名/index与地图名，原始flag offset不直接编造全局flag语义。"
+    },
+    {
+      "section": "赠送/蛋/定点宝可梦与普通道具获取",
+      "available": "脚本已有givepokemon/giveegg/setwildbattle/additem参数结构，详acquisition_instruction_inventory；不是仅自然语言原文。",
+      "needs_extraction": "尚无独立可信获取目录；需从现成脚本有限提取来源/参数/变量/条件，保留候选级别与坏根排除；不能把78条setwildbattle地址直接说成78处可捕获宝可梦。"
+    },
+    {
+      "section": "文本与剧情",
+      "available": "7513文本带引用，12627脚本带source/branch/args，22419变量旗标索引含根/地图。",
+      "needs_extraction": "生成文本检索与地图/事件/脚本相互链接即可复用；剧情章节/任务步骤/先后可达性不是已有字段，另按Main所选范围补取。"
+    },
+    {
+      "section": "系统机制和音乐",
+      "available": "已证Camomons、EV、广播/群聚、时段、GB双曲表、mode9条件性机制等准确报告入口。",
+      "needs_extraction": "将现有规则与边界整理为目录；RTC仅启用记录且实际时钟未确认，完整缩放/特殊队伍不猜。"
+    }
+  ],
+  "mechanisms": [
+    {
+      "topic": "第三道馆Camomons与小茜",
+      "reports": [
+        "README_解包说明.md",
+        "trainers_research/README.md",
+        "trainers_research/out/whitney.json",
+        "trainers_research/out/trainers.json",
+        "trainers_research/out/overrides.json"
+      ],
+      "confirmed_rules": [
+        "规则对双方适用：所有宝可梦属性改为前两个招式的属性，不能按基础物种属性推断。",
+        "初战ID111：皮皮17、长耳兔19、姆克鸟21、大奶罐23；大奶罐嬉闹/铁头对应妖精/钢，持吃剩的东西。",
+        "仅ID111已有special_rules；ID392同名不构成同规则证据。"
+      ],
+      "limits": [
+        "派生属性和配队推论不等于实战验证。"
+      ]
+    },
+    {
+      "topic": "EV spreads与强制闪光",
+      "reports": [
+        "trainers_research/README.md",
+        "trainers_research/README.md",
+        "trainers_research/out/overrides.json"
+      ],
+      "confirmed_rules": [
+        "partyFlags==3且aiFlags>1、索引1..125时首u16低字节作spread索引；10B字段为nature/ivs/hp_ev/atk_ev/def_ev/spe_ev/spa_ev/spd_ev/ball/ability。",
+        "训练家403槽0/1/2强制闪光；不是队伍替换表。"
+      ],
+      "limits": [
+        "高字节含义未证；151镜像候选不作为选表；ability策略不保证每场观测值。"
+      ]
+    },
+    {
+      "topic": "等级缩放",
+      "reports": [
+        "trainers_research/README.md",
+        "trainers_research/out/trainers.json"
+      ],
+      "confirmed_rules": [
+        "现成README定位IsBossTrainerClassForLevelScaling等消费者及普通队伍level字段。"
+      ],
+      "limits": [
+        "当前入口仅局部消费者证据；没有完整缩放公式/触发条件导出，不套官方规则，不把表内等级作为所有实际战斗等级。"
+      ]
+    },
+    {
+      "topic": "广播",
+      "reports": [
+        "encounters_research/README.md",
+        "encounters_research/out/encounters.json"
+      ],
+      "confirmed_rules": [
+        "consumer 0x09D647B0读取0x09DDDBE0，100条×26byte；每条3组各4物种。",
+        "dayOfWeek数值3/4/0分别选set0/1/2，其他星期及未命中走现成fallback；星期标签和证据强度原样保留。",
+        "触发后槽权重40/20/20/20；Flag0x17A1==0、Flag31!=0、[sp+0xc]==0、rand%3!=0等为现成门控字段。"
+      ],
+      "limits": [
+        "旧0x09DDDBC6/101条已撤回；内部槽权重不是总体遭遇率；收音机卡剧情与旗标实现、UI/状态生命周期未全面闭合。"
+      ]
+    },
+    {
+      "topic": "群聚",
+      "reports": [
+        "encounters_research/out/encounters.json",
+        "encounters_research/README.md"
+      ],
+      "confirmed_rules": [
+        "0x09E3CDCE共16条{u16 mapsec_id,u16 species}，mapsec_id==0终止；按地区段关联，多地图可能共用。"
+      ],
+      "limits": [
+        "不凭静态表断言当前群聚已激活或可达。"
+      ]
+    },
+    {
+      "topic": "时段与RTC",
+      "reports": [
+        "encounters_research/README.md",
+        "encounters_research/out/encounters.json"
+      ],
+      "confirmed_rules": [
+        "现成表选择时段：清晨05:00–09:59、白天10:00–16:59、黄昏17:00–18:59、夜晚19:00–04:59。"
+      ],
+      "limits": [
+        "Main确认当前仅有模拟器RTC启用记录，未提供完整RTC报告路径；游戏实际时钟正确性未确认。此处不猜RTC报告路径，不全面反编译。"
+      ],
+      "rtc_report_path": null,
+      "rtc_status_source": "2026-10-03本任务Main补充指示"
+    },
+    {
+      "topic": "mode9环境覆盖生命周期",
+      "reports": [
+        "parallel_acceleration/save_evidence/environment_override_lifecycle.md",
+        "parallel_acceleration/save_evidence/environment_override_lifecycle.json",
+        "parallel_acceleration/save_evidence/mode9_parameter_semantics.md",
+        "parallel_acceleration/save_evidence/mode9_end_callback_window.md"
+      ],
+      "confirmed_rules": [
+        "状态conditional_resume_and_cleanup_mechanism_documented；14根写5007为12/19，mode9消费13byte并保存5C+14到0x020386C4。",
+        "存在config提前结束分支；callback汇合并安装priority10恢复task，满足条件才清外层门控；保存值保持且续接执行后，7根直接清5007为0、7根经clearflag再清0。"
+      ],
+      "limits": [
+        "C1–C8及7项open_conditions必须保留；不是全路径finally，不保证异步必执行/5007必清，不是恢复任意旧值。",
+        "919/920走特殊builder，人物/队伍算法未证，普通743目录无join不是漏普通记录。"
+      ]
+    },
+    {
+      "topic": "GB播放器、双音乐表与音乐目录",
+      "reports": [
+        "audio_research/README.md",
+        "README_解包说明.md"
+      ],
+      "confirmed_rules": [
+        "flag0x174D清零用0x08960000常规表，置位用0x08DA0000 GB表；脚本0x08AEA158及文本确认开关语义。",
+        "两表各386项；主表385非空，第二表104差异曲目；现成MIDI/SF2/WAV保留。",
+        "叫声两个1554条视图按cry mode选择，不受GB曲目表开关支配。"
+      ],
+      "limits": [
+        "曲名中的原版/参考标签不是ROM内建中文标题；WAV为参考渲染非硬件录音，未做声学验收。"
+      ],
+      "directories": [
+        "audio_research/out/midi/",
+        "audio_research/out/sf2/",
+        "audio_research/out/wav/",
+        "audio_research/out_alt_table/",
+        "audio_research/out/cries/"
+      ]
+    }
+  ],
+  "media_references": [
+    {
+      "kind": "static_map",
+      "manifest_paths": [
+        "maps_research/out/MANIFEST.json",
+        "maps_research/out/maps/render_report.json",
+        "maps_research/out/maps/per_map/index.json"
+      ],
+      "media_reference": "maps_research/out/maps/png/gNN_nNNN.png",
+      "known_counts": {
+        "maps": 871,
+        "rendered_png": 862,
+        "not_rendered": 9,
+        "static_tile_coverage_gap_maps": 102
+      },
+      "note": "仅引用现成静态PNG。render_report.skipped_or_tile_problems的413键含多类问题，不等于413张未渲染地图；9张未渲染与102张覆盖缺口按现成报告/README区分。"
+    },
+    {
+      "kind": "pokemon_sprites",
+      "manifest_paths": [
+        "out/sprites/sprite_manifest.json"
+      ],
+      "media_reference": [
+        "out/sprites/frames/{front,back}/",
+        "out/sprites/frames_shiny/{front,back}/"
+      ],
+      "note": "仅提供现成manifest与路径；不在本任务读全媒体、渲染或重组frame×palette_page。"
+    },
+    {
+      "kind": "music_audio",
+      "manifest_paths": [
+        "audio_research/README.md",
+        "audio_research/out/cries/cries.json"
+      ],
+      "media_reference": [
+        "audio_research/out/midi/",
+        "audio_research/out/sf2/",
+        "audio_research/out/wav/",
+        "audio_research/out_alt_table/"
+      ],
+      "note": "曲目目录/数目来自已读音频README，未扫描或重新验收媒体；不猜未在报告明确给出的manifest文件名。"
+    }
+  ],
+  "limits": [
+    "本盘点服务Wiki版块选择，不以完整代码、全ROM字节覆盖、全函数追踪为完成标准；本次仅盘点，不实现完整导出器。",
+    "数据为既有静态提取，不证明任何特定存档的剧情可达、已解锁或实际战斗结果。",
+    "871张图；45动态warp固定目的地runtime未知，不能补造127:127地图；dangling=0不等于剧情图完整。",
+    "743只计普通trainer；919/920进入特殊builder，不是普通表漏项/非法。参考type名称不得覆盖本ROM特殊路径含义。",
+    "24越界stop根的停止机制已有解释，但来源/此前失步/可达性未因此确认；对候选获取/商店/剧情不得无条件信任。",
+    "type、dow、广播槽权重与门控只按现成证据；内部权重不当总体概率。",
+    "已读地图README含旧计数/旧限制（如6102文本/12381脚本、中文名未恢复等），以本次实际JSON计数和根README现行纠正为准，不改旧文件。",
+    "已有shops README坏根原因属历史阶段；根README已指出0x08990B94落在map3:77方块数组且对象模板有runtime覆盖，不能只以静态坏指针断言游戏执行。",
+    "source_sha256/sha256在多个原始JSON中为ROM摘要，不能替代文件摘要；本盘点file_sha256为实际文件字节hash。",
+    "地址与复合ID稳定性限当前精确ROM版本；中文标签用外部字表，参考vanilla/weekday/type语义须保留原证据级别。"
+  ],
+  "out_of_scope_handoff": [
+    {
+      "to": "Main/core",
+      "path": "C:/Users/Moeblack/Downloads/PKHeX-Mercury/docs/mercury-save-format.md",
+      "note": "用户/Main给定成长经验入口0803E830→09DFE8CC，行步长0x400；本任务只转交路径，未读取或扩展此范围。"
+    }
+  ],
+  "mapping_contract_inputs": {
+    "map_key": "headers.maps[]:(group,num) -> events.maps[\"group:num\"] -> nodes.nodes[].id；map_name_zh为显示名，非唯一ID。",
+    "map_to_script": "events.maps[map].objects/coord_events/bg_events的script；scripts.sources.kind=object/bg/coord/map_script/map_script_table的where含group:num。map_scripts_addr只为指针，现成脚本sources已提供直接归属。branch.where为父脚本ROM地址，递归继承地图来源并防环；std_script/code_referenced不强行分配地图。",
+    "script_to_text": "scripts.instructions[].args[].class=text时把整数value规范为ROM地址join text.strings键；反向text.referenced_by[].script为块地址、at为参数地址（不是必然instruction.addr），cmd为命令名。保留来源/控制符、共享引用、多地图归属。",
+    "example": {
+      "map": "1:0",
+      "object_local_id": 1,
+      "script": "0x08160529",
+      "instruction": "0x08160529",
+      "argument_address": "0x0816052B",
+      "text": "0x08172255",
+      "class": "text"
+    },
+    "trainer_to_script": "trainer_usage.usage[trainer_id][]或trainers[].scripts为已有引用；其sources可经上面的branch继承地图，不能将branch.where误当map id。",
+    "shops_to_map": "shops[].maps[]已解析group,num,name_zh；instr_addr保留库存发生点；一个库存可关联多图。",
+    "npc_story_grouping": "依据地图NPC/事件身份及明确脚本指令分组；不靠文本关键词证明物品可得，不臆造线性通关流程。"
+  },
+  "validation": {
+    "input_files_all_present": true,
+    "required_sources": 14,
+    "supplemental_json": 3,
+    "directory_walk": "仅6个明确父目录非递归列文件；未全工程遍历",
+    "input_file_hashes_unchanged": true,
+    "example_source_pointers_resolve": true,
+    "key_counts_and_text_parameter_join_verified": true,
+    "note": "限定现成JSON聚合与关键join验证；未运行游戏/测试套件/旧提取器。"
+  }
+}

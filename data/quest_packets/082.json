@@ -1,0 +1,943 @@
+{
+ "title": "白色长裙的女孩",
+ "quest_id": 82,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b564",
+    "title": "白色长裙的女孩",
+    "title_address": "0x8e3c39a",
+    "description": "我被出现在灯塔的穿着白色长裙\n的女孩迷住了...有人能帮我吗？\n我在精灵中心的北面。",
+    "description_address": "0x8e3c360",
+    "unknown_u16": 249,
+    "unknown_u16_hex": "0x00F9",
+    "accept_flag": 6076,
+    "accept_flag_hex": "0x17BC",
+    "complete_flag": 6077,
+    "complete_flag_hex": "0x17BD",
+    "map_group": 3,
+    "map_num": 72,
+    "tail_hex": "0c 00 00 00",
+    "index": 82,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe396e4",
+      "title": "白色长裙的女孩",
+      "description_address": "0x8e39f99",
+      "description": "我被出现在灯塔的穿着白色长裙\\n的女孩迷住了...有人能帮我吗？\\n我在精灵中心的北面。"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39f99",
+    "legacy_match_count": 1,
+    "current_description": "代替浅葱市的水手\n去见周二出现在灯塔的\n穿着白色长裙的女孩。",
+    "catalog_map": {
+     "id": "3:72",
+     "name": "浅葱市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AFCEF2",
+    "0x08AFD402",
+    "0x08AFD539"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F5EE01",
+     "map_id": "3:72",
+     "place": "浅葱市",
+     "kind": "人物",
+     "local_id": 26,
+     "event_index": 25,
+     "x": 13,
+     "y": 26,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n072.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08AFCEF2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFCEF2",
+       "command": "checkflag",
+       "args": [
+        6077
+       ],
+       "task_flag_labels": [
+        {
+         "title": "白色长裙的女孩",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFCEF5",
+       "command": "goto_if",
+       "args": [
+        1,
+        145739585
+       ],
+       "targets": [
+        "0x08AFCF41"
+       ]
+      },
+      {
+       "at": "0x08AFCEFB",
+       "command": "checkflag",
+       "args": [
+        6076
+       ],
+       "task_flag_labels": [
+        {
+         "title": "白色长裙的女孩",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFCEFE",
+       "command": "goto_if",
+       "args": [
+        1,
+        145739646
+       ],
+       "targets": [
+        "0x08AFCF7E"
+       ]
+      },
+      {
+       "at": "0x08AFCF04",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145740242
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD1D2",
+         "text": "白色长裙的女孩……\n无论如何也忘不掉啊！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFCF0A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFCF0C",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AFCF0F",
+       "command": "goto_if",
+       "args": [
+        1,
+        145739543
+       ],
+       "targets": [
+        "0x08AFCF17"
+       ]
+      },
+      {
+       "at": "0x08AFCF15",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFCF17",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFCF17",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AFCF1A",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144523284
+       ]
+      },
+      {
+       "at": "0x08AFCF21",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AFCF24",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145740281
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD1F9",
+         "text": "你…你看见了我的委托吗？\n那是周二的晚上，\n我正在灯塔附近散步。\n忽然之间，我注意到灯塔上\n正站立着一名穿着白色长裙的女孩……\n天呐！\n她就如同天上的明月一般皎洁！\n可我只是一名平平无奇的水手，\n又怎么有勇气去见她？\n所以……你能够代替我\n去见那名穿着白色长裙的女孩吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFCF2A",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AFCF2C",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFCF31",
+       "command": "goto",
+       "args": [
+        150335354
+       ],
+       "targets": [
+        "0x08F5EF7A"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFCF41",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFCF41",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145739595
+       ],
+       "texts": [
+        {
+         "address": "0x08AFCF4B",
+         "text": "穿着白色长裙的女孩\n居然是宝可梦……\n感觉…更兴奋了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFCF47",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFCF49",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFCF7E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFCF7E",
+       "command": "checkflag",
+       "args": [
+        6078
+       ]
+      },
+      {
+       "at": "0x08AFCF81",
+       "command": "goto_if",
+       "args": [
+        1,
+        145739665
+       ],
+       "targets": [
+        "0x08AFCF91"
+       ]
+      },
+      {
+       "at": "0x08AFCF87",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145740620
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD34C",
+         "text": "太感谢你了！\n难道这就是命运的馈赠吗！？\n那么就拜托你了，\n我当时是在周二看到她的。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFCF8D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFCF8F",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFCF91",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFCF91",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AFCF94",
+       "command": "writebytetoaddr",
+       "args": [
+        112,
+        67108882
+       ]
+      },
+      {
+       "at": "0x08AFCF9A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145740055
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD117",
+         "text": "什么！！？？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFCFA0",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFCFA2",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AFCFA5",
+       "command": "writebytetoaddr",
+       "args": [
+        0,
+        67108882
+       ]
+      },
+      {
+       "at": "0x08AFCFAB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145740066
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD122",
+         "text": "穿白色长裙的女孩，\n原来是一只宝可梦！？\n怎么感觉……\n更兴奋了呢?"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFCFB1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFCFB3",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AFCFB6",
+       "command": "applymovement",
+       "args": [
+        255,
+        145739939
+       ]
+      },
+      {
+       "at": "0x08AFCFBD",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AFCFC0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145740131
+       ]
+      },
+      {
+       "at": "0x08AFCFC6",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFCFC8",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AFCFC9",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        198
+       ],
+       "possible_names_not_semantics": {
+        "species": "黑暗鸦",
+        "item": "焦点镜",
+        "move": "骨棒乱打"
+       }
+      },
+      {
+       "at": "0x08AFCFCE",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFCFD3",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AFCFD5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145739834
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD03A",
+         "text": "这是焦点镜，\n能够使宝可梦的命中要害等级提升。\n就像穿白色长裙的女孩是宝可梦\n这件事击中了我的要害一样……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFCFDB",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFCFDD",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFCFE0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145739803
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD01B",
+         "text": "完成任务:<白色长裙的女孩>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFCFE6",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFCFEB",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFCFF0",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AFCFF5",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AFCFFA",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AFCFFF",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x08AFD004",
+       "command": "goto",
+       "args": [
+        145741113
+       ],
+       "targets": [
+        "0x08AFD539"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFD19E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFD19E",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFD1A1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145740589
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD32D",
+         "text": "接受任务:<白色长裙的女孩>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD1A7",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFD1AC",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFD1B1",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AFD1B6",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AFD1BB",
+       "command": "goto",
+       "args": [
+        145740802
+       ],
+       "targets": [
+        "0x08AFD402"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AFD402",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFD402",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AFD407",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145740620
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD34C",
+         "text": "太感谢你了！\n难道这就是命运的馈赠吗！？\n那么就拜托你了，\n我当时是在周二看到她的。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD40D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFD40F",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AFD414",
+       "command": "setflag",
+       "args": [
+        6076
+       ],
+       "task_flag_labels": [
+        {
+         "title": "白色长裙的女孩",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD417",
+       "command": "checkflag",
+       "args": [
+        5524
+       ]
+      },
+      {
+       "at": "0x08AFD41A",
+       "command": "goto_if",
+       "args": [
+        0,
+        145741109
+       ],
+       "targets": [
+        "0x08AFD535"
+       ]
+      },
+      {
+       "at": "0x08AFD420",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFD535",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFD535",
+       "command": "clearflag",
+       "args": [
+        5527
+       ]
+      },
+      {
+       "at": "0x08AFD538",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AFD539",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFD539",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AFD53F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145697621
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2B55",
+         "text": "获得了4点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD545",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFD547",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AFD54C",
+       "command": "setflag",
+       "args": [
+        6077
+       ],
+       "task_flag_labels": [
+        {
+         "title": "白色长裙的女孩",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD54F",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F5EE01",
+     "event_roots": [
+      {
+       "map_id": "3:72",
+       "place": "浅葱市",
+       "kind": "人物",
+       "local_id": 26,
+       "event_index": 25,
+       "x": 13,
+       "y": 26,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n072.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5EE01",
+       "command": "applymovement",
+       "args": [
+        39,
+        150335217
+       ]
+      },
+      {
+       "at": "0x08F5EE08",
+       "command": "waitmovement",
+       "args": [
+        39
+       ]
+      },
+      {
+       "at": "0x08F5EE0B",
+       "command": "goto",
+       "args": [
+        145739506
+       ],
+       "targets": [
+        "0x08AFCEF2"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F5EF7A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5EF7A",
+       "command": "goto_if",
+       "args": [
+        1,
+        145740190
+       ],
+       "targets": [
+        "0x08AFD19E"
+       ]
+      },
+      {
+       "at": "0x08F5EF80",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145740542
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD2FE",
+         "text": "果然如此吗，\n毕竟我只是一名平平无奇的水手呢……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5EF86",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5EF88",
+       "command": "applymovement",
+       "args": [
+        39,
+        150335930
+       ]
+      },
+      {
+       "at": "0x08F5EF8F",
+       "command": "waitmovement",
+       "args": [
+        39
+       ]
+      },
+      {
+       "at": "0x08F5EF92",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5EF93",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

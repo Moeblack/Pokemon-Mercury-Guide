@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "goal": "从ROM批量渲染正常RGB地图，拼接有空间依据的区域，并使攻略中的地点直接显示地图和标记",
+  "ownership": {"Main": "研究判断、data/atlas_points.json、data/atlas_manifest.json、scripts/build_atlas_data.py、攻略地点接入、野生Mega正文及最终批执行", "AtlasRenderer": "scripts/render_atlas.py、maps/base/、maps/overview/、data/atlas_render_report.json", "AtlasUI": "scripts/build_atlas_ui.py、maps/index.html、maps/atlas.css、maps/atlas.js、maps/atlas-data.js"},
+  "render": {
+    "source": "ROM + maps_research/out/maps/headers.json + out/tilesets/manifest.json + out/tilesets/anim_tables.json",
+    "palette_fix": "实际入口080599C8跳09D1E1E8；09D1E262..270在isSecondary==1时读取palettes+0xE0。主槽0..6从主palettes加载；副槽7..12从副palettes+0xE0加载。BGR555转R=bits0..4 G=5..9 B=10..14，按*255//31扩展。背景palette0色0置黑；颜色索引0按透明叠加至不透明RGB背景。",
+    "pixel_model": "4bpp低半字节在左；8x8 tile；按ROM 0805A9B8→09C8BDA0的实际分派合成。层类型0/1先填BG3=0x3014再画两层；2画BG3/BG1；3读取12个word画三层（metatile步长仍16字节）；4画BG3/BG2。保留顶层BG遮挡掩码。",
+    "animation_snapshot": "利用现有ROM动画计划按计数1..255,0完整顺序应用主/副写入，冻结周期结束的静态快照；不重新解码全部帧，不应用夜色或天气滤镜",
+    "cache": "ROM读取一次；每个tileset源图块读取一次；主副tileset组合生成一次1024块RGB metatile atlas；layout按map地址、尺寸和tileset组合去重；所有地图别名引用同一底图",
+    "batch": "一次进程运行全部任务。组合缓存由主线程先生成并冻结；ThreadPoolExecutor最多6任务并行拼接/PNG编码，共享只读ROM与atlas，不为每张地图启动Python。PNG压缩级别3；摘要与manifest最后单次写入。",
+    "output": "maps/base/<layout-key>.png（RGB、原生16像素/格）；maps/overview/<region-id>.png（RGB，最长边最多4096，整数缩小）。不生成每页一份位图，不分配整个世界的原生超大画布。区域在UI中使用各底图按偏移无损拼接；overview只是导航预览。",
+    "object_layer": "建筑并非全在metatile中：独立maps/objects透明层恢复64x64、bank0静态图形、movement0/7/8/9/10且flag0的固定对象；按动画帧朝向及翻转、原生脚部锚点定位，并受顶层BG遮挡。条件对象及未解析调色板单独记录，不叠加所有剧情状态。",
+    "limits": "源图块不可解码或尚未写入的VRAM图块须在report保留；缺图不得用旧错误配色图冒充。atlas_manifest记录每图可用状态与缺块数。"
+  },
+  "spatial": {"unit": "metatile，左上原点，x向右y向下；像素中心=(x*16+8,y*16+8)", "connections": "仅使用world/data/maps.json的connection边：south=(offset,source.height)，north=(offset,-target.height)，west=(-target.width,offset)，east=(source.width,offset)。合并坐标一致且矩形不重叠的分量；冲突边保留为导航而不强行拼接。warp只作有坐标的入口跳转。", "unknown": "无x/y时geometry=area；越界坐标保留为unplaced并不在错误位置打点；共用战斗场景与真实NPC地点分开"},
+  "point_schema": {"id": "稳定字符串", "map_id": "group:num", "kind": "mega|quest|item|pokemon|trainer|warp", "title": "中文名", "geometry": "point|area|unplaced", "x": "格坐标或null", "y": "格坐标或null", "detail": "玩家条件摘要", "links": [{"page": "相对player_guide的HTML路径", "label": "中文"}], "source": "来源文件/字段或脚本；不在默认UI展示"},
+  "manifest_schema": {"maps": "map_id到{id,name,width,height,image,region,origin:[x,y],points:[point_id],warps:[],render_status}字典；image相对player_guide根", "regions": "region_id到{id,name,maps:[map_id],width,height,overview}字典", "page_locations": "相对player_guide的md路径到[{map_id,point_ids:[]}]字典", "points_file": "data/atlas_points.json，{points:[...]}"},
+  "uiux": ["离线file://可直接运行，生成JS数据包，不使用fetch加载本地JSON", "左侧地图/地点搜索与类型筛选，右侧可拖拽缩放地图；移动端上下布局", "区分区域拼接与单图视图；默认定位来自攻略链接的map/point/page", "hash格式#map=3:76&point=<id>，支持page=quests/015.md筛出当前攻略相关地点", "点位使用形状+颜色+编号，列表与地图双向定位；Mega与普通野生分布严格分开", "未给精确坐标的分布列入侧栏和地图范围说明，不在中心虚构图钉", "缩放按钮、适应屏幕、原生比例、键盘操作、重置视图；图像缩放采用pixelated", "地图按视口批量加载底图，不一次塞入全部871张；保持标记点击尺寸在屏幕上稳定", "攻略中批量插入共享底图的懒加载地图卡片与SVG标注，超出首批卡片折叠；不为每条攻略重渲染图片", "标记点击打开中文说明与原攻略；楼梯入口可跳转目标图，不伪装为同一平面"],
+  "execution_order": ["Main生成manifest与统一points（含野生Mega新发现的动态绑定和剧情坐标）", "单次批量RGB渲染并输出全部底图/区域概览", "生成离线地图UI，统一将地图卡片接入攻略HTML", "一次汇总核对图像模式尺寸、覆盖和本地链接；不逐图启动验证或性能实验"]
+}

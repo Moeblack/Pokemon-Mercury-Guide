@@ -1,0 +1,361 @@
+{
+ "rom": "宝可梦水银FC~致150年后的你 Version 1.1 (1).gba",
+ "pattern": "16 40 50 01 00 (setvar 0x5040 = 1)",
+ "pattern_count": 31,
+ "window": "0x09CD47FE..0x09CD505F (stride 0x8F, 16 entries)",
+ "scene_signature": "69 19 07 80 0F 80 at root start; pointer table 0x09DD9E5C",
+ "battle_branch_rule": "bytes 29 BD 0A immediately before pattern -> root = a - 3",
+ "scene_root_rule": "window patterns: root = a - 0x43, header must equal 69 19 07 80 0F 80",
+ "root_count": 50,
+ "extended_coord_roots": [
+  {
+   "root": "0x09CDCA89",
+   "kind": "extended_coord_script",
+   "basis": "coord event table 0x09DFCA74 / events header 0x09DFC9C4"
+  },
+  {
+   "root": "0x09CDCD1D",
+   "kind": "extended_coord_script",
+   "basis": "coord event table 0x09DFCA74 / events header 0x09DFC9C4"
+  },
+  {
+   "root": "0x09CDCF65",
+   "kind": "extended_coord_script",
+   "basis": "coord event table 0x09DFCA74 / events header 0x09DFC9C4"
+  },
+  {
+   "root": "0x09CDD7BC",
+   "kind": "extended_coord_script",
+   "basis": "coord event table 0x09DFC0F0 / events header 0x09DFC0C4"
+  }
+ ],
+ "records": [
+  {
+   "pattern": "0x087B3D95",
+   "roots": [],
+   "battle_branch": false,
+   "scene_root": null,
+   "notes": [
+    "no 29 BD 0A immediately before pattern"
+   ]
+  },
+  {
+   "pattern": "0x087B4139",
+   "roots": [
+    "0x087B4136"
+   ],
+   "battle_branch": true,
+   "scene_root": null,
+   "notes": []
+  },
+  {
+   "pattern": "0x087B44E2",
+   "roots": [
+    "0x087B44DF"
+   ],
+   "battle_branch": true,
+   "scene_root": null,
+   "notes": []
+  },
+  {
+   "pattern": "0x087B5851",
+   "roots": [
+    "0x087B584E"
+   ],
+   "battle_branch": true,
+   "scene_root": null,
+   "notes": []
+  },
+  {
+   "pattern": "0x087BCD0A",
+   "roots": [
+    "0x087BCD07"
+   ],
+   "battle_branch": true,
+   "scene_root": null,
+   "notes": []
+  },
+  {
+   "pattern": "0x087BD28C",
+   "roots": [
+    "0x087BD289"
+   ],
+   "battle_branch": true,
+   "scene_root": null,
+   "notes": []
+  },
+  {
+   "pattern": "0x08ED5240",
+   "roots": [
+    "0x08ED523D"
+   ],
+   "battle_branch": true,
+   "scene_root": null,
+   "notes": []
+  },
+  {
+   "pattern": "0x08ED5255",
+   "roots": [
+    "0x08ED5252"
+   ],
+   "battle_branch": true,
+   "scene_root": null,
+   "notes": []
+  },
+  {
+   "pattern": "0x08EDE962",
+   "roots": [
+    "0x08EDE95F"
+   ],
+   "battle_branch": true,
+   "scene_root": null,
+   "notes": []
+  },
+  {
+   "pattern": "0x08EECE6C",
+   "roots": [
+    "0x08EECE69"
+   ],
+   "battle_branch": true,
+   "scene_root": null,
+   "notes": []
+  },
+  {
+   "pattern": "0x09CD47FE",
+   "roots": [
+    "0x09CD47FB",
+    "0x09CD47BB"
+   ],
+   "battle_branch": true,
+   "scene_root": "0x09CD47BB",
+   "notes": [],
+   "scene_root_addr": "0x09CD47BB",
+   "scene_root_head": "69 19 07 80 0f 80"
+  },
+  {
+   "pattern": "0x09CD488D",
+   "roots": [
+    "0x09CD488A",
+    "0x09CD484A"
+   ],
+   "battle_branch": true,
+   "scene_root": "0x09CD484A",
+   "notes": [],
+   "scene_root_addr": "0x09CD484A",
+   "scene_root_head": "69 19 07 80 0f 80"
+  },
+  {
+   "pattern": "0x09CD491C",
+   "roots": [
+    "0x09CD4919",
+    "0x09CD48D9"
+   ],
+   "battle_branch": true,
+   "scene_root": "0x09CD48D9",
+   "notes": [],
+   "scene_root_addr": "0x09CD48D9",
+   "scene_root_head": "69 19 07 80 0f 80"
+  },
+  {
+   "pattern": "0x09CD49AB",
+   "roots": [
+    "0x09CD49A8",
+    "0x09CD4968"
+   ],
+   "battle_branch": true,
+   "scene_root": "0x09CD4968",
+   "notes": [],
+   "scene_root_addr": "0x09CD4968",
+   "scene_root_head": "69 19 07 80 0f 80"
+  },
+  {
+   "pattern": "0x09CD4A3A",
+   "roots": [
+    "0x09CD4A37",
+    "0x09CD49F7"
+   ],
+   "battle_branch": true,
+   "scene_root": "0x09CD49F7",
+   "notes": [],
+   "scene_root_addr": "0x09CD49F7",
+   "scene_root_head": "69 19 07 80 0f 80"
+  },
+  {
+   "pattern": "0x09CD4AC9",
+   "roots": [
+    "0x09CD4AC6",
+    "0x09CD4A86"
+   ],
+   "battle_branch": true,
+   "scene_root": "0x09CD4A86",
+   "notes": [],
+   "scene_root_addr": "0x09CD4A86",
+   "scene_root_head": "69 19 07 80 0f 80"
+  },
+  {
+   "pattern": "0x09CD4B58",
+   "roots": [
+    "0x09CD4B55",
+    "0x09CD4B15"
+   ],
+   "battle_branch": true,
+   "scene_root": "0x09CD4B15",
+   "notes": [],
+   "scene_root_addr": "0x09CD4B15",
+   "scene_root_head": "69 19 07 80 0f 80"
+  },
+  {
+   "pattern": "0x09CD4BE7",
+   "roots": [
+    "0x09CD4BE4",
+    "0x09CD4BA4"
+   ],
+   "battle_branch": true,
+   "scene_root": "0x09CD4BA4",
+   "notes": [],
+   "scene_root_addr": "0x09CD4BA4",
+   "scene_root_head": "69 19 07 80 0f 80"
+  },
+  {
+   "pattern": "0x09CD4C76",
+   "roots": [
+    "0x09CD4C73",
+    "0x09CD4C33"
+   ],
+   "battle_branch": true,
+   "scene_root": "0x09CD4C33",
+   "notes": [],
+   "scene_root_addr": "0x09CD4C33",
+   "scene_root_head": "69 19 07 80 0f 80"
+  },
+  {
+   "pattern": "0x09CD4D05",
+   "roots": [
+    "0x09CD4D02",
+    "0x09CD4CC2"
+   ],
+   "battle_branch": true,
+   "scene_root": "0x09CD4CC2",
+   "notes": [],
+   "scene_root_addr": "0x09CD4CC2",
+   "scene_root_head": "69 19 07 80 0f 80"
+  },
+  {
+   "pattern": "0x09CD4D94",
+   "roots": [
+    "0x09CD4D91",
+    "0x09CD4D51"
+   ],
+   "battle_branch": true,
+   "scene_root": "0x09CD4D51",
+   "notes": [],
+   "scene_root_addr": "0x09CD4D51",
+   "scene_root_head": "69 19 07 80 0f 80"
+  },
+  {
+   "pattern": "0x09CD4E23",
+   "roots": [
+    "0x09CD4E20",
+    "0x09CD4DE0"
+   ],
+   "battle_branch": true,
+   "scene_root": "0x09CD4DE0",
+   "notes": [],
+   "scene_root_addr": "0x09CD4DE0",
+   "scene_root_head": "69 19 07 80 0f 80"
+  },
+  {
+   "pattern": "0x09CD4EB2",
+   "roots": [
+    "0x09CD4EAF",
+    "0x09CD4E6F"
+   ],
+   "battle_branch": true,
+   "scene_root": "0x09CD4E6F",
+   "notes": [],
+   "scene_root_addr": "0x09CD4E6F",
+   "scene_root_head": "69 19 07 80 0f 80"
+  },
+  {
+   "pattern": "0x09CD4F41",
+   "roots": [
+    "0x09CD4F3E",
+    "0x09CD4EFE"
+   ],
+   "battle_branch": true,
+   "scene_root": "0x09CD4EFE",
+   "notes": [],
+   "scene_root_addr": "0x09CD4EFE",
+   "scene_root_head": "69 19 07 80 0f 80"
+  },
+  {
+   "pattern": "0x09CD4FD0",
+   "roots": [
+    "0x09CD4FCD",
+    "0x09CD4F8D"
+   ],
+   "battle_branch": true,
+   "scene_root": "0x09CD4F8D",
+   "notes": [],
+   "scene_root_addr": "0x09CD4F8D",
+   "scene_root_head": "69 19 07 80 0f 80"
+  },
+  {
+   "pattern": "0x09CD505F",
+   "roots": [
+    "0x09CD505C",
+    "0x09CD501C"
+   ],
+   "battle_branch": true,
+   "scene_root": "0x09CD501C",
+   "notes": [],
+   "scene_root_addr": "0x09CD501C",
+   "scene_root_head": "69 19 07 80 0f 80"
+  },
+  {
+   "pattern": "0x09CDCBFF",
+   "roots": [
+    "0x09CDCBFC"
+   ],
+   "battle_branch": true,
+   "scene_root": null,
+   "notes": []
+  },
+  {
+   "pattern": "0x09CDCE6F",
+   "roots": [
+    "0x09CDCE6C"
+   ],
+   "battle_branch": true,
+   "scene_root": null,
+   "notes": []
+  },
+  {
+   "pattern": "0x09CDD0F5",
+   "roots": [
+    "0x09CDD0F2"
+   ],
+   "battle_branch": true,
+   "scene_root": null,
+   "notes": []
+  },
+  {
+   "pattern": "0x09CDD949",
+   "roots": [
+    "0x09CDD946"
+   ],
+   "battle_branch": true,
+   "scene_root": null,
+   "notes": []
+  },
+  {
+   "pattern": "0x09CE062A",
+   "roots": [
+    "0x09CE0627"
+   ],
+   "battle_branch": true,
+   "scene_root": null,
+   "notes": []
+  }
+ ]
+}

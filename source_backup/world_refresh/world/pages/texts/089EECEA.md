@@ -1,0 +1,35 @@
+# 文本 0x089EECEA
+
+来源：`maps_research/out/scripts/text.json`，JSON pointer `/strings/0x089EECEA`。
+
+控制符按原导出保留；Unicode为外部字表注释。
+
+## 完整解码原文
+
+```text
+钱好像不够呢。
+```
+
+## 原字节
+
+`0ac704e90e1e01d6048309ce37ff`
+
+bytes：14
+
+## 来源引用
+
+| 脚本 | 指令 | 参数at | 命令 | 地图 |
+|---|---|---|---|---|
+| 0x089EEBF8 | 0x089EEBF8 | 0x089EEBFA | loadpointer | [50:9 满金市](../maps/g50_n009.md) / [55:7 满金市](../maps/g55_n007.md) |
+
+原referenced_by（完整）：
+
+```json
+[
+ {
+  "script": "0x089EEBF8",
+  "at": "0x089EEBFA",
+  "cmd": "loadpointer"
+ }
+]
+```

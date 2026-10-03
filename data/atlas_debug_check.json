@@ -1,0 +1,57 @@
+{
+  "black": {
+    "notice": "0:0：这是原BattleColosseum_2P槽位，中文名称来自共用地区段196。副metatile表0x082C61C4为FF填充；此前渲染器误判为正常黑图。该源表无法恢复原图，不代表存在一张可浏览的百货大楼底图。",
+    "images": 0,
+    "status": "unavailable"
+  },
+  "search_first": "3:90",
+  "mega_count": 1,
+  "trigger_rects": 5,
+  "portal": {
+    "source": 23,
+    "target_map": "53:5",
+    "target_number": 21,
+    "reciprocal": true,
+    "button": "定位到 冰天地 [53:5] 21号入口 →",
+    "arrived": {
+      "hash": "#map=53%3A5&point=warp-71283061e6297a",
+      "map": "冰天地 [53:5]",
+      "geometry": "精确点位 · 格坐标 24, 7"
+    }
+  },
+  "final_renderer": "mercury-rgb-atlas-2-native-layers",
+  "violet_final": {
+    "map": "3:68",
+    "object_count": 7,
+    "visual": "补回商店及道馆主体，已在最终版本查看",
+    "reload_required": true
+  },
+  "native_bg_evidence": {
+    "hook": "0805A9B8 -> 09C8BDA0",
+    "dispatch_table": "09C8BE1C",
+    "targets": [
+      "0805AA6C",
+      "0805AA6C",
+      "0805AA0C",
+      "09C8BDC0",
+      "0805A9CE"
+    ],
+    "triple_layer": "09C8BE00..09C8BE14读取word8..11，0805A99C保持16字节metatile步长"
+  },
+  "objects_evidence": {
+    "lookup_hook": "0805F2C8 -> 09D0D294",
+    "bank_pointer_literal": "09D0D328",
+    "banks": "09DD1058",
+    "bank0": "08961600",
+    "palette_table": "09E02DC4",
+    "graphics": [
+      162,
+      163,
+      230
+    ],
+    "size": [
+      64,
+      64
+    ]
+  }
+}

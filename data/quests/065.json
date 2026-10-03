@@ -1,0 +1,93 @@
+{
+  "id": 65,
+  "title": "怯场的男友",
+  "start_locations": [
+    {
+      "map_id": "35:4",
+      "place": "满金市（华丽大赛会场）",
+      "x": null,
+      "y": null,
+      "npc_hint": "求助的少女（脚本未出现在导出地图对象表，坐标未定位）"
+    }
+  ],
+  "requirements": [
+    "前置旗标 4246（未定位）",
+    "需通过大师级华丽大赛（脚本以旗标 6352 检查）"
+  ],
+  "steps": [
+    {
+      "text": "与少女交谈，她诉苦男友因怯场不敢报名华丽大赛。",
+      "source_scripts": [
+        "0x09CD39C8",
+        "0x09CD39D3"
+      ],
+      "map_id": "35:4"
+    },
+    {
+      "text": "满足前置后她请求先通过大师级华丽大赛来鼓舞男友；选「是」接受任务（setflag 2975）。",
+      "source_scripts": [
+        "0x09CD39F7",
+        "0x09CD3A24"
+      ]
+    },
+    {
+      "text": "与男友交谈；未通过大师级时他只会说仍不敢报名。",
+      "source_scripts": [
+        "0x09CD3AF5",
+        "0x09CD3B1C"
+      ]
+    },
+    {
+      "text": "通过大师级华丽大赛（旗标 6352）。",
+      "source_scripts": []
+    },
+    {
+      "text": "再与男友交谈，他受鼓舞决定报名，赠送 经验糖果S ×3（setorcopyvar 0x8000=537,0x8001=3,callstd0；setflag 2977）。",
+      "source_scripts": [
+        "0x09CD3AF5",
+        "0x09CD3B26"
+      ]
+    },
+    {
+      "text": "回少女处，她说男友已报名并给谢礼 黄色头巾 ×1，结算 5 BP + 6000$，完成（setflag 2976）。",
+      "source_scripts": [
+        "0x09CD3A81"
+      ]
+    },
+    {
+      "text": "完成后少女与男友各有收尾对白。",
+      "source_scripts": [
+        "0x09CD3AEB",
+        "0x09CD3B41"
+      ]
+    }
+  ],
+  "completion": [
+    "完成旗标 2976 被设置",
+    "提示「完成任务:<怯场的男友>」",
+    "男友报名旗标 2977"
+  ],
+  "rewards": [
+    "经验糖果S ×3（537，来自男友）",
+    "黄色头巾 ×1（258，来自少女）",
+    "5 BracerPoints + 6000$"
+  ],
+  "pitfalls": [
+    "须先与少女接取、再通过大师级，男友对白才会改变；顺序不对只会重复「不敢参赛」。",
+    "少女正式委托依赖前置旗标 4246。",
+    "少女/男友坐标未定位，勿臆测。"
+  ],
+  "related_items": [
+    537,
+    258
+  ],
+  "related_species": [],
+  "related_trainers": [],
+  "open_questions": [
+    "前置旗标 4246 的来源未定位。",
+    "少女与男友所在具体坐标未定位（0x09CD39C8 / 0x09CD3AF5 未出现在任何导出地图对象表）。",
+    "「通过大师级」旗标 6352 的设置位置未定位。"
+  ],
+  "source_packet": "data/quest_packets_expanded/065.json",
+  "status": "compiled"
+}

@@ -1,0 +1,35 @@
+# 文本 0x08AAD6FF
+
+来源：`maps_research/out/scripts/text.json`，JSON pointer `/strings/0x08AAD6FF`。
+
+控制符按原导出保留；Unicode为外部字表注释。
+
+## 完整解码原文
+
+```text
+聚气
+```
+
+## 原字节
+
+`078b0ab3ff`
+
+bytes：5
+
+## 来源引用
+
+| 脚本 | 指令 | 参数at | 命令 | 地图 |
+|---|---|---|---|---|
+| 0x08AE272B | 0x08AE273E | 0x08AE2740 | loadpointer | [31:3 对战开拓区](../maps/g31_n003.md) / [34:1 石英高原](../maps/g34_n001.md) / [45:0 吉野市](../maps/g45_n000.md) |
+
+原referenced_by（完整）：
+
+```json
+[
+ {
+  "script": "0x08AE272B",
+  "at": "0x08AE2740",
+  "cmd": "loadpointer"
+ }
+]
+```

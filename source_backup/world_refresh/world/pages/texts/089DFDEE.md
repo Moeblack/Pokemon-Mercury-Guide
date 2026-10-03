@@ -1,0 +1,35 @@
+# 文本 0x089DFDEE
+
+来源：`maps_research/out/scripts/text.json`，JSON pointer `/strings/0x089DFDEE`。
+
+控制符按原导出保留；Unicode为外部字表注释。
+
+## 完整解码原文
+
+```text
+向尾喵：喵帕斯！
+```
+
+## 原字节
+
+`0e1f0d7814353e14350a1e0c5c3cff`
+
+bytes：15
+
+## 来源引用
+
+| 脚本 | 指令 | 参数at | 命令 | 地图 |
+|---|---|---|---|---|
+| 0x08AA2A51 | 0x08AA2A72 | 0x08AA2A74 | loadpointer | [3:76 满金市](../maps/g03_n076.md) |
+
+原referenced_by（完整）：
+
+```json
+[
+ {
+  "script": "0x08AA2A51",
+  "at": "0x08AA2A74",
+  "cmd": "loadpointer"
+ }
+]
+```

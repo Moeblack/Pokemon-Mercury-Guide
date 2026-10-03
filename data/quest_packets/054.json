@@ -1,0 +1,1326 @@
+{
+ "title": "失散的过动猿",
+ "quest_id": 54,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b334",
+    "title": "失散的过动猿",
+    "title_address": "0x8e3c579",
+    "description": "我和我的过动猿走散了，\n请问有人愿意帮忙找找吗？\n我现在在港湾区。",
+    "description_address": "0x8e3c554",
+    "unknown_u16": 11197,
+    "unknown_u16_hex": "0x2BBD",
+    "accept_flag": 5993,
+    "accept_flag_hex": "0x1769",
+    "complete_flag": 5996,
+    "complete_flag_hex": "0x176C",
+    "map_group": 3,
+    "map_num": 78,
+    "tail_hex": "00 00 00 00",
+    "index": 54,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe395f4",
+      "title": "失散的过动猿",
+      "description_address": "0x8e3a42c",
+      "description": "我和我的过动猿走散了，\\n请问有人愿意帮忙找找吗？\\n我现在在港湾区。"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a42c",
+    "legacy_match_count": 1,
+    "current_description": "帮助搬家公司的\n员工找到走散的过动猿。",
+    "catalog_map": {
+     "id": "3:78",
+     "name": "满金市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AEF9B7",
+    "0x08AEF9FB",
+    "0x08AEFA39",
+    "0x08AEFC98"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08AEFC98",
+     "map_id": "50:36",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 10,
+     "event_index": 9,
+     "x": 13,
+     "y": 12,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g50_n036.md"
+    },
+    {
+     "script": "0x08AEFC98",
+     "map_id": "50:36",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 30,
+     "event_index": 10,
+     "x": 13,
+     "y": 12,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g50_n036.md"
+    },
+    {
+     "script": "0x08F56B06",
+     "map_id": "3:78",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 8,
+     "event_index": 7,
+     "x": 19,
+     "y": 18,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n078.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08AEEE12",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEEE12",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AEEE15",
+       "command": "goto_if",
+       "args": [
+        1,
+        145684919
+       ],
+       "targets": [
+        "0x08AEF9B7"
+       ]
+      },
+      {
+       "at": "0x08AEEE1B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145685161
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFAA9",
+         "text": "这该如何是好呢……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEEE21",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEEE23",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEF9B7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEF9B7",
+       "command": "checkflag",
+       "args": [
+        5994
+       ]
+      },
+      {
+       "at": "0x08AEF9BA",
+       "command": "goto_if",
+       "args": [
+        1,
+        145685049
+       ],
+       "targets": [
+        "0x08AEFA39"
+       ]
+      },
+      {
+       "at": "0x08AEF9C0",
+       "command": "checkflag",
+       "args": [
+        5993
+       ],
+       "task_flag_labels": [
+        {
+         "title": "失散的过动猿",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEF9C3",
+       "command": "goto_if",
+       "args": [
+        1,
+        145685039
+       ],
+       "targets": [
+        "0x08AEFA2F"
+       ]
+      },
+      {
+       "at": "0x08AEF9C9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145685161
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFAA9",
+         "text": "这该如何是好呢……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEF9CF",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEF9D1",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEF9D4",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145685180
+       ]
+      },
+      {
+       "at": "0x08AEF9DB",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AEF9DE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145685183
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFABF",
+         "text": "我是搬家公司的员工，\n现在正准备出发，\n将货物运往未白镇。\n可是在这关键的时刻，\n负责搬运货物的过动猿却走散了……\n你能帮我找找它吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEF9E4",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AEF9E6",
+       "command": "goto",
+       "args": [
+        150301686
+       ],
+       "targets": [
+        "0x08F56BF6"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEF9FB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEF9FB",
+       "command": "setflag",
+       "args": [
+        5993
+       ],
+       "task_flag_labels": [
+        {
+         "title": "失散的过动猿",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEF9FE",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEFA01",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145685356
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFB6C",
+         "text": "接受任务:<走散的过动猿>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEFA07",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEFA0C",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEFA11",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AEFA16",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AEFA1B",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AEFA20",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145685385
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFB89",
+         "text": "真的是太感谢你了！\n我记得在去满金百货之前，\n过动猿还是在的……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEFA26",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEFA28",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AEFA2D",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEFA2F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEFA2F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145685385
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFB89",
+         "text": "真的是太感谢你了！\n我记得在去满金百货之前，\n过动猿还是在的……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEFA35",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEFA37",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEFA39",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEFA39",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145685446
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFBC6",
+         "text": "谢谢你帮我找到了过动猿，\n这是给你的报酬！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEFA3F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEFA41",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AEFA44",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AEFA45",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        440
+       ],
+       "possible_names_not_semantics": {
+        "species": "草苗龟",
+        "item": "TM115",
+        "move": "杂技"
+       }
+      },
+      {
+       "at": "0x08AEFA4A",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEFA4F",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AEFA51",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AEFA54",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150308416
+       ],
+       "texts": [
+        {
+         "address": "0x08F58640",
+         "text": "进化以后的样子\n看上去有些麻烦呢…\n可是它看上去也没有\n达到能够进化的等级呢。\n难道是……坚决不愿意\n上班的心情使它进化了吗？\n早知道，还是豪力……\n算了，以后的事\n以后再说吧。\n我们先出发了，再见！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEFA5A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEFA5C",
+       "command": "fadescreenspeed",
+       "args": [
+        1,
+        2
+       ]
+      },
+      {
+       "at": "0x08AEFA5F",
+       "command": "removeobject",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x08AEFA62",
+       "command": "removeobject",
+       "args": [
+        23
+       ]
+      },
+      {
+       "at": "0x08AEFA65",
+       "command": "setflag",
+       "args": [
+        5995
+       ]
+      },
+      {
+       "at": "0x08AEFA68",
+       "command": "setflag",
+       "args": [
+        5996
+       ],
+       "task_flag_labels": [
+        {
+         "title": "失散的过动猿",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEFA6B",
+       "command": "fadescreenspeed",
+       "args": [
+        0,
+        2
+       ]
+      },
+      {
+       "at": "0x08AEFA6E",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEFA71",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x08AEFA76",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AEFA7C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145685574
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFC46",
+         "text": "完成任务:<走散的过动猿>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEFA82",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEFA87",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEFA8C",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AEFA91",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AEFA96",
+       "command": "goto",
+       "args": [
+        145685637
+       ],
+       "targets": [
+        "0x08AEFC85"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEFC85",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEFC85",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AEFC8A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145685603
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFC63",
+         "text": "获得了4点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEFC90",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEFC92",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AEFC97",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEFC98",
+     "event_roots": [
+      {
+       "map_id": "50:36",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 10,
+       "event_index": 9,
+       "x": 13,
+       "y": 12,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n036.md"
+      },
+      {
+       "map_id": "50:36",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 30,
+       "event_index": 10,
+       "x": 13,
+       "y": 12,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n036.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AEFC98",
+       "command": "checkflag",
+       "args": [
+        5993
+       ],
+       "task_flag_labels": [
+        {
+         "title": "失散的过动猿",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEFC9B",
+       "command": "goto_if",
+       "args": [
+        1,
+        145685685
+       ],
+       "targets": [
+        "0x08AEFCB5"
+       ]
+      },
+      {
+       "at": "0x08AEFCA1",
+       "command": "cry",
+       "args": [
+        365,
+        255
+       ]
+      },
+      {
+       "at": "0x08AEFCA6",
+       "command": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08AEFCAB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145685857
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFD61",
+         "text": "过动猿\n看上去和这里格格不入……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEFCB1",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEFCB3",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEFCB5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEFCB5",
+       "command": "cry",
+       "args": [
+        365,
+        255
+       ]
+      },
+      {
+       "at": "0x08AEFCBA",
+       "command": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08AEFCBF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145685857
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFD61",
+         "text": "过动猿\n看上去和这里格格不入……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEFCC5",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEFCC7",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08AEFCCA",
+       "command": "applymovement",
+       "args": [
+        127,
+        145685992
+       ]
+      },
+      {
+       "at": "0x08AEFCD1",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08AEFCD4",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08AEFCD7",
+       "command": "applymovement",
+       "args": [
+        5,
+        145685995
+       ]
+      },
+      {
+       "at": "0x08AEFCDE",
+       "command": "waitmovement",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AEFCE1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145685889
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFD81",
+         "text": "这只过动猿不知道\n是什么时候混进来的…\n这是你的宝可梦吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEFCE7",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEFCE9",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08AEFCEC",
+       "command": "applymovement",
+       "args": [
+        127,
+        145685999
+       ]
+      },
+      {
+       "at": "0x08AEFCF3",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08AEFCF6",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08AEFCF9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145686002
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFDF2",
+         "text": "原来如此，过动猿可能是误认为\n豪力是搬家公司的宝可梦，\n才跟到这里来的吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEFCFF",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEFD01",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEFD04",
+       "command": "applymovement",
+       "args": [
+        255,
+        145685854
+       ]
+      },
+      {
+       "at": "0x08AEFD0B",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AEFD0E",
+       "command": "fadescreenspeed",
+       "args": [
+        3,
+        3
+       ]
+      },
+      {
+       "at": "0x08AEFD11",
+       "command": "removeobject",
+       "args": [
+        10
+       ]
+      },
+      {
+       "at": "0x08AEFD14",
+       "command": "setflag",
+       "args": [
+        5994
+       ]
+      },
+      {
+       "at": "0x08AEFD17",
+       "command": "clearflag",
+       "args": [
+        5997
+       ]
+      },
+      {
+       "at": "0x08AEFD1A",
+       "command": "addobject",
+       "args": [
+        30
+       ]
+      },
+      {
+       "at": "0x08AEFD1D",
+       "command": "setvar",
+       "args": [
+        32783,
+        30
+       ],
+       "possible_names_not_semantics": {
+        "species": "尼多娜",
+        "item": "元气粉",
+        "move": "角撞"
+       }
+      },
+      {
+       "at": "0x08AEFD22",
+       "command": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08AEFD27",
+       "command": "fadescreenspeed",
+       "args": [
+        2,
+        3
+       ]
+      },
+      {
+       "at": "0x08AEFD2A",
+       "command": "goto",
+       "args": [
+        150308374
+       ],
+       "targets": [
+        "0x08F58616"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F56B06",
+     "event_roots": [
+      {
+       "map_id": "3:78",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 8,
+       "event_index": 7,
+       "x": 19,
+       "y": 18,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n078.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F56B06",
+       "command": "applymovement",
+       "args": [
+        25,
+        150301613
+       ]
+      },
+      {
+       "at": "0x08F56B0D",
+       "command": "waitmovement",
+       "args": [
+        25
+       ]
+      },
+      {
+       "at": "0x08F56B10",
+       "command": "goto",
+       "args": [
+        145681938
+       ],
+       "targets": [
+        "0x08AEEE12"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F56BF6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F56BF6",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F56BFB",
+       "command": "goto_if",
+       "args": [
+        1,
+        145684987
+       ],
+       "targets": [
+        "0x08AEF9FB"
+       ]
+      },
+      {
+       "at": "0x08F56C01",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145685308
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFB3C",
+         "text": "这该怎么办呢……\n万一出了差错，\n我是要负责任的……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F56C07",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F56C09",
+       "command": "applymovement",
+       "args": [
+        25,
+        150302008
+       ]
+      },
+      {
+       "at": "0x08F56C10",
+       "command": "waitmovement",
+       "args": [
+        25
+       ]
+      },
+      {
+       "at": "0x08F56C13",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F56C14",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F58616",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F58616",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145685946
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFDBA",
+         "text": "过动猿进化成了请假王，\n请假王不愿意回去上班！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5861C",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F5861E",
+       "command": "setflag",
+       "args": [
+        5733
+       ]
+      },
+      {
+       "at": "0x08F58621",
+       "command": "setflag",
+       "args": [
+        2306
+       ]
+      },
+      {
+       "at": "0x08F58624",
+       "command": "setwildbattle",
+       "args": [
+        366,
+        16,
+        200
+       ],
+       "species_name": "请假王"
+      },
+      {
+       "at": "0x08F5862A",
+       "command": "dowildbattle",
+       "args": []
+      },
+      {
+       "at": "0x08F5862B",
+       "command": "fadescreenspeed",
+       "args": [
+        1,
+        2
+       ]
+      },
+      {
+       "at": "0x08F5862E",
+       "command": "setflag",
+       "args": [
+        5997
+       ]
+      },
+      {
+       "at": "0x08F58631",
+       "command": "goto",
+       "args": [
+        150319890
+       ],
+       "targets": [
+        "0x08F5B312"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F5B312",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5B312",
+       "command": "removeobject",
+       "args": [
+        30
+       ]
+      },
+      {
+       "at": "0x08F5B315",
+       "command": "fadescreenspeed",
+       "args": [
+        0,
+        2
+       ]
+      },
+      {
+       "at": "0x08F5B318",
+       "command": "clearflag",
+       "args": [
+        5733
+       ]
+      },
+      {
+       "at": "0x08F5B31B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145685834
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFD4A",
+         "text": "请假王乖乖回去了…"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5B321",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F5B323",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

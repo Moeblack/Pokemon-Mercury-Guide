@@ -1,0 +1,39 @@
+{
+  "id": 33,
+  "title": "阿始的极限秀",
+  "start_locations": [
+    {"map_id": "46:0", "place": "桔梗市・宝可梦中心（室内）", "x": 14, "y": 10, "npc_hint": "阿始（local_id 20）"}
+  ],
+  "requirements": [
+    "前置旗标 4246 已置位（共用接取进度条件；置位剧情由 Main 定位）",
+    "旗标 2832 已置位（来源未在本包定位，满足后阿始才会拿出极限秀邀约）"
+  ],
+  "steps": [
+    {"text": "与阿始对话，他提出新的极限秀节目录制并邀你参演（邀约脚本 0x08ECFF66，该段正文未提取）。", "source_scripts": ["0x08ECC632", "0x08ECFF66"], "map_id": "46:0"},
+    {"text": "选择配合，置接取旗标 2833，显示“接受任务:<阿始的极限秀>”，他说“好嘞！如果你准备好拍摄了，就告诉哥哥我哦！”。", "source_scripts": ["0x08ECFFB6"], "map_id": "46:0"},
+    {"text": "再次与阿始对话，确认前往拍摄场地，他说“好嘞，那么我们一起出发吧！”，传送至拍摄地图 52:16。", "source_scripts": ["0x08ED195E", "0x08ED1E1B"], "map_id": "46:0"},
+    {"text": "在拍摄地图 52:16 完成本期录影（该地图训练师栏关联 359 阿始，流程细节未在包内）。", "source_scripts": ["0x08ED20B2"], "map_id": "52:16"},
+    {"text": "录影结算置完成旗标 2834、获得 8 点 BracerPoints 并传送回桔梗市。", "source_scripts": ["0x08ED20B2"], "map_id": "52:16"},
+    {"text": "回到桔梗市再与阿始对话，他说录制辛苦了、下次会联系你（置旗标 5968）。", "source_scripts": ["0x08AF04BC"], "map_id": "46:0"}
+  ],
+  "completion": [
+    "完成旗标 2834 置位即本期录影结束；完成后再对话只重复收尾对白。"
+  ],
+  "rewards": [
+    "8 点 BracerPoints"
+  ],
+  "pitfalls": [
+    "除前置旗标 4246 外还需旗标 2832，否则阿始只谈教学电视/新节目而不提极限秀。",
+    "拍摄在独立地图 52:16 进行，需接取后再次对话并确认出发。"
+  ],
+  "related_items": [],
+  "related_species": [],
+  "related_trainers": [359],
+  "open_questions": [
+    "邀约对白正文（0x08ECFF66 的 loadpointer 指向 0x08ED1873）未在包内提取。",
+    "旗标 2832 的置位来源未定位。",
+    "52:16 内部演出/对战脚本不在本包内。"
+  ],
+  "source_packet": "data/quest_packets/033.json",
+  "status": "compiled"
+}

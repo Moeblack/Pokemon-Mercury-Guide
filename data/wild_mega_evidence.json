@@ -1,0 +1,7706 @@
+{
+ "criterion": "setflag2749 scripts and their parsed event ancestry; Mega identity additionally requires battle/form or explicit dialogue evidence",
+ "events": [
+  {
+   "seed": "0x087B3A28",
+   "roots": [],
+   "blocks": [
+    {
+     "script": "0x087B3A28",
+     "sources": [
+      {
+       "kind": "map_script_table",
+       "where": "52:27"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x087B3A28",
+       "cmd": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x087B3A2B",
+       "cmd": "applymovement",
+       "args": [
+        127,
+        142295022
+       ]
+      },
+      {
+       "at": "0x087B3A32",
+       "cmd": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x087B3A35",
+       "cmd": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x087B3A38",
+       "cmd": "applymovement",
+       "args": [
+        6,
+        142295018
+       ]
+      },
+      {
+       "at": "0x087B3A3F",
+       "cmd": "waitmovement",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B3A42",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294946
+       ],
+       "texts": [
+        {
+         "address": "0x087B3FA2",
+         "text": "来呼唤在宇宙的\\n宝石海星吧。\\p只要宝石海星和训练家\\n心意相通就不会有问题。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B3A48",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B3A4A",
+       "cmd": "applymovement",
+       "args": [
+        2,
+        142294932
+       ]
+      },
+      {
+       "at": "0x087B3A51",
+       "cmd": "applymovement",
+       "args": [
+        4,
+        142294932
+       ]
+      },
+      {
+       "at": "0x087B3A58",
+       "cmd": "applymovement",
+       "args": [
+        10,
+        142294932
+       ]
+      },
+      {
+       "at": "0x087B3A5F",
+       "cmd": "applymovement",
+       "args": [
+        9,
+        142294932
+       ]
+      },
+      {
+       "at": "0x087B3A66",
+       "cmd": "cry",
+       "args": [
+        121,
+        255
+       ]
+      },
+      {
+       "at": "0x087B3A6B",
+       "cmd": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x087B3A6C",
+       "cmd": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B3A6F",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3A75",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B3A77",
+       "cmd": "applymovement",
+       "args": [
+        3,
+        142294936
+       ]
+      },
+      {
+       "at": "0x087B3A7E",
+       "cmd": "applymovement",
+       "args": [
+        5,
+        142294936
+       ]
+      },
+      {
+       "at": "0x087B3A85",
+       "cmd": "applymovement",
+       "args": [
+        11,
+        142294936
+       ]
+      },
+      {
+       "at": "0x087B3A8C",
+       "cmd": "applymovement",
+       "args": [
+        12,
+        142294936
+       ]
+      },
+      {
+       "at": "0x087B3A93",
+       "cmd": "cry",
+       "args": [
+        121,
+        255
+       ]
+      },
+      {
+       "at": "0x087B3A98",
+       "cmd": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x087B3A99",
+       "cmd": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B3A9C",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3AA2",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B3AA4",
+       "cmd": "applymovement",
+       "args": [
+        6,
+        142295018
+       ]
+      },
+      {
+       "at": "0x087B3AAB",
+       "cmd": "waitmovement",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B3AAE",
+       "cmd": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x087B3AB1",
+       "cmd": "applymovement",
+       "args": [
+        127,
+        142295025
+       ]
+      },
+      {
+       "at": "0x087B3AB8",
+       "cmd": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x087B3ABB",
+       "cmd": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x087B3ABE",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        0
+       ]
+      },
+      {
+       "at": "0x087B3AC3",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3AC9",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B3ACC",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        1
+       ]
+      },
+      {
+       "at": "0x087B3AD1",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3AD7",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B3ADA",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        2
+       ]
+      },
+      {
+       "at": "0x087B3ADF",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3AE5",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B3AE8",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        3
+       ]
+      },
+      {
+       "at": "0x087B3AED",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3AF3",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B3AF6",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        4
+       ]
+      },
+      {
+       "at": "0x087B3AFB",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3B01",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B3B04",
+       "cmd": "preparemsg",
+       "args": [
+        142294908
+       ],
+       "texts": [
+        {
+         "address": "0x087B3F7C",
+         "text": "你也一起来吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B3B09",
+       "cmd": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x087B3B0A",
+       "cmd": "multichoice",
+       "args": [
+        22,
+        3,
+        35,
+        1
+       ]
+      },
+      {
+       "at": "0x087B3B0F",
+       "cmd": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x087B3B10",
+       "cmd": "applymovement",
+       "args": [
+        255,
+        142294924
+       ]
+      },
+      {
+       "at": "0x087B3B17",
+       "cmd": "applymovement",
+       "args": [
+        1,
+        142294924
+       ]
+      },
+      {
+       "at": "0x087B3B1E",
+       "cmd": "applymovement",
+       "args": [
+        2,
+        142294932
+       ]
+      },
+      {
+       "at": "0x087B3B25",
+       "cmd": "applymovement",
+       "args": [
+        4,
+        142294932
+       ]
+      },
+      {
+       "at": "0x087B3B2C",
+       "cmd": "applymovement",
+       "args": [
+        10,
+        142294932
+       ]
+      },
+      {
+       "at": "0x087B3B33",
+       "cmd": "applymovement",
+       "args": [
+        9,
+        142294932
+       ]
+      },
+      {
+       "at": "0x087B3B3A",
+       "cmd": "applymovement",
+       "args": [
+        3,
+        142294936
+       ]
+      },
+      {
+       "at": "0x087B3B41",
+       "cmd": "applymovement",
+       "args": [
+        5,
+        142294936
+       ]
+      },
+      {
+       "at": "0x087B3B48",
+       "cmd": "applymovement",
+       "args": [
+        11,
+        142294936
+       ]
+      },
+      {
+       "at": "0x087B3B4F",
+       "cmd": "applymovement",
+       "args": [
+        12,
+        142294936
+       ]
+      },
+      {
+       "at": "0x087B3B56",
+       "cmd": "applymovement",
+       "args": [
+        6,
+        142294850
+       ]
+      },
+      {
+       "at": "0x087B3B5D",
+       "cmd": "applymovement",
+       "args": [
+        7,
+        142294850
+       ]
+      },
+      {
+       "at": "0x087B3B64",
+       "cmd": "cry",
+       "args": [
+        121,
+        255
+       ]
+      },
+      {
+       "at": "0x087B3B69",
+       "cmd": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x087B3B6A",
+       "cmd": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x087B3B6D",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3B73",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B3B75",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B3B78",
+       "cmd": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x087B3B7B",
+       "cmd": "applymovement",
+       "args": [
+        127,
+        142295022
+       ]
+      },
+      {
+       "at": "0x087B3B82",
+       "cmd": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x087B3B85",
+       "cmd": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x087B3B88",
+       "cmd": "applymovement",
+       "args": [
+        6,
+        142295018
+       ]
+      },
+      {
+       "at": "0x087B3B8F",
+       "cmd": "waitmovement",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B3B92",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        0
+       ]
+      },
+      {
+       "at": "0x087B3B97",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3B9D",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B3BA0",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        1
+       ]
+      },
+      {
+       "at": "0x087B3BA5",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3BAB",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B3BAE",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        2
+       ]
+      },
+      {
+       "at": "0x087B3BB3",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3BB9",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B3BBC",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        3
+       ]
+      },
+      {
+       "at": "0x087B3BC1",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3BC7",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B3BCA",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        4
+       ]
+      },
+      {
+       "at": "0x087B3BCF",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3BD5",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B3BD8",
+       "cmd": "preparemsg",
+       "args": [
+        142294896
+       ],
+       "texts": [
+        {
+         "address": "0x087B3F70",
+         "text": "再加把劲！"
+        }
+       ]
+      },
+      {
+       "at": "0x087B3BDD",
+       "cmd": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x087B3BDE",
+       "cmd": "multichoice",
+       "args": [
+        22,
+        3,
+        35,
+        1
+       ]
+      },
+      {
+       "at": "0x087B3BE3",
+       "cmd": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x087B3BE4",
+       "cmd": "applymovement",
+       "args": [
+        255,
+        142294924
+       ]
+      },
+      {
+       "at": "0x087B3BEB",
+       "cmd": "applymovement",
+       "args": [
+        1,
+        142294924
+       ]
+      },
+      {
+       "at": "0x087B3BF2",
+       "cmd": "applymovement",
+       "args": [
+        2,
+        142294932
+       ]
+      },
+      {
+       "at": "0x087B3BF9",
+       "cmd": "applymovement",
+       "args": [
+        4,
+        142294932
+       ]
+      },
+      {
+       "at": "0x087B3C00",
+       "cmd": "applymovement",
+       "args": [
+        10,
+        142294932
+       ]
+      },
+      {
+       "at": "0x087B3C07",
+       "cmd": "applymovement",
+       "args": [
+        9,
+        142294932
+       ]
+      },
+      {
+       "at": "0x087B3C0E",
+       "cmd": "applymovement",
+       "args": [
+        3,
+        142294936
+       ]
+      },
+      {
+       "at": "0x087B3C15",
+       "cmd": "applymovement",
+       "args": [
+        5,
+        142294936
+       ]
+      },
+      {
+       "at": "0x087B3C1C",
+       "cmd": "applymovement",
+       "args": [
+        11,
+        142294936
+       ]
+      },
+      {
+       "at": "0x087B3C23",
+       "cmd": "applymovement",
+       "args": [
+        12,
+        142294936
+       ]
+      },
+      {
+       "at": "0x087B3C2A",
+       "cmd": "applymovement",
+       "args": [
+        6,
+        142294850
+       ]
+      },
+      {
+       "at": "0x087B3C31",
+       "cmd": "applymovement",
+       "args": [
+        7,
+        142294850
+       ]
+      },
+      {
+       "at": "0x087B3C38",
+       "cmd": "cry",
+       "args": [
+        121,
+        255
+       ]
+      },
+      {
+       "at": "0x087B3C3D",
+       "cmd": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x087B3C3E",
+       "cmd": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x087B3C41",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3C47",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B3C49",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B3C4C",
+       "cmd": "applymovement",
+       "args": [
+        6,
+        142295018
+       ]
+      },
+      {
+       "at": "0x087B3C53",
+       "cmd": "waitmovement",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B3C56",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        0
+       ]
+      },
+      {
+       "at": "0x087B3C5B",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3C61",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B3C64",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        1
+       ]
+      },
+      {
+       "at": "0x087B3C69",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3C6F",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B3C72",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        2
+       ]
+      },
+      {
+       "at": "0x087B3C77",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3C7D",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B3C80",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        3
+       ]
+      },
+      {
+       "at": "0x087B3C85",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3C8B",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B3C8E",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        4
+       ]
+      },
+      {
+       "at": "0x087B3C93",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3C99",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x087B3C9C",
+       "cmd": "preparemsg",
+       "args": [
+        142294854
+       ],
+       "texts": [
+        {
+         "address": "0x087B3F46",
+         "text": "为了在宇宙的宝石海星，\\n让我们团结一心吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B3CA1",
+       "cmd": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x087B3CA2",
+       "cmd": "multichoice",
+       "args": [
+        22,
+        3,
+        35,
+        1
+       ]
+      },
+      {
+       "at": "0x087B3CA7",
+       "cmd": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x087B3CA8",
+       "cmd": "applymovement",
+       "args": [
+        255,
+        142294924
+       ]
+      },
+      {
+       "at": "0x087B3CAF",
+       "cmd": "applymovement",
+       "args": [
+        1,
+        142294924
+       ]
+      },
+      {
+       "at": "0x087B3CB6",
+       "cmd": "applymovement",
+       "args": [
+        2,
+        142294932
+       ]
+      },
+      {
+       "at": "0x087B3CBD",
+       "cmd": "applymovement",
+       "args": [
+        4,
+        142294932
+       ]
+      },
+      {
+       "at": "0x087B3CC4",
+       "cmd": "applymovement",
+       "args": [
+        10,
+        142294932
+       ]
+      },
+      {
+       "at": "0x087B3CCB",
+       "cmd": "applymovement",
+       "args": [
+        9,
+        142294932
+       ]
+      },
+      {
+       "at": "0x087B3CD2",
+       "cmd": "applymovement",
+       "args": [
+        3,
+        142294936
+       ]
+      },
+      {
+       "at": "0x087B3CD9",
+       "cmd": "applymovement",
+       "args": [
+        5,
+        142294936
+       ]
+      },
+      {
+       "at": "0x087B3CE0",
+       "cmd": "applymovement",
+       "args": [
+        11,
+        142294936
+       ]
+      },
+      {
+       "at": "0x087B3CE7",
+       "cmd": "applymovement",
+       "args": [
+        12,
+        142294936
+       ]
+      },
+      {
+       "at": "0x087B3CEE",
+       "cmd": "applymovement",
+       "args": [
+        6,
+        142294850
+       ]
+      },
+      {
+       "at": "0x087B3CF5",
+       "cmd": "applymovement",
+       "args": [
+        7,
+        142294850
+       ]
+      },
+      {
+       "at": "0x087B3CFC",
+       "cmd": "cry",
+       "args": [
+        121,
+        255
+       ]
+      },
+      {
+       "at": "0x087B3D01",
+       "cmd": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x087B3D02",
+       "cmd": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x087B3D05",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294940
+       ]
+      },
+      {
+       "at": "0x087B3D0B",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B3D0D",
+       "cmd": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x087B3D10",
+       "cmd": "applymovement",
+       "args": [
+        127,
+        142295025
+       ]
+      },
+      {
+       "at": "0x087B3D17",
+       "cmd": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x087B3D1A",
+       "cmd": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x087B3D1D",
+       "cmd": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x087B3D20",
+       "cmd": "applymovement",
+       "args": [
+        8,
+        142294843
+       ]
+      },
+      {
+       "at": "0x087B3D27",
+       "cmd": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x087B3D2A",
+       "cmd": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x087B3D2D",
+       "cmd": "applymovement",
+       "args": [
+        127,
+        142295022
+       ]
+      },
+      {
+       "at": "0x087B3D34",
+       "cmd": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x087B3D37",
+       "cmd": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x087B3D3A",
+       "cmd": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x087B3D3C",
+       "cmd": "movesprite",
+       "args": [
+        13,
+        8,
+        9
+       ]
+      },
+      {
+       "at": "0x087B3D43",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B3D46",
+       "cmd": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x087B3D48",
+       "cmd": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x087B3D4B",
+       "cmd": "applymovement",
+       "args": [
+        2,
+        142294840
+       ]
+      },
+      {
+       "at": "0x087B3D52",
+       "cmd": "applymovement",
+       "args": [
+        9,
+        142294840
+       ]
+      },
+      {
+       "at": "0x087B3D59",
+       "cmd": "applymovement",
+       "args": [
+        3,
+        142294840
+       ]
+      },
+      {
+       "at": "0x087B3D60",
+       "cmd": "applymovement",
+       "args": [
+        11,
+        142294840
+       ]
+      },
+      {
+       "at": "0x087B3D67",
+       "cmd": "applymovement",
+       "args": [
+        6,
+        142294840
+       ]
+      },
+      {
+       "at": "0x087B3D6E",
+       "cmd": "applymovement",
+       "args": [
+        255,
+        142294840
+       ]
+      },
+      {
+       "at": "0x087B3D75",
+       "cmd": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x087B3D78",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294797
+       ],
+       "texts": [
+        {
+         "address": "0x087B3F0D",
+         "text": "各位，欢喜吧。\\n新的宝石海星驾临到大地上了。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B3D7E",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B3D80",
+       "cmd": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x087B3D83",
+       "cmd": "applymovement",
+       "args": [
+        13,
+        142294794
+       ]
+      },
+      {
+       "at": "0x087B3D8A",
+       "cmd": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x087B3D8D",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294765
+       ],
+       "texts": [
+        {
+         "address": "0x087B3EED",
+         "text": "宝石海星\\n想要对\\var[01]发起挑战！"
+        }
+       ]
+      },
+      {
+       "at": "0x087B3D93",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B3D95",
+       "cmd": "setvar",
+       "args": [
+        20544,
+        1
+       ]
+      },
+      {
+       "at": "0x087B3D9A",
+       "cmd": "setflag",
+       "args": [
+        2315
+       ]
+      },
+      {
+       "at": "0x087B3D9D",
+       "cmd": "setflag",
+       "args": [
+        2749
+       ]
+      },
+      {
+       "at": "0x087B3DA0",
+       "cmd": "setflag",
+       "args": [
+        2750
+       ]
+      },
+      {
+       "at": "0x087B3DA3",
+       "cmd": "goto",
+       "args": [
+        142297891
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x087B3FF4",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B4B23"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x087B3FF4",
+       "cmd": "applymovement",
+       "args": [
+        7,
+        142296095
+       ]
+      },
+      {
+       "at": "0x087B3FFB",
+       "cmd": "applymovement",
+       "args": [
+        6,
+        142296095
+       ]
+      },
+      {
+       "at": "0x087B4002",
+       "cmd": "waitmovement",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B4005",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294685
+       ],
+       "texts": [
+        {
+         "address": "0x087B3E9D",
+         "text": "辛苦你了。\\n这个给你，以表谢意。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B400B",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B400D",
+       "cmd": "setorcopyvar",
+       "args": [
+        32768,
+        114
+       ]
+      },
+      {
+       "at": "0x087B4012",
+       "cmd": "setorcopyvar",
+       "args": [
+        32769,
+        6
+       ]
+      },
+      {
+       "at": "0x087B4017",
+       "cmd": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x087B4019",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B401C",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294663
+       ],
+       "texts": [
+        {
+         "address": "0x087B3E87",
+         "text": "那么让我们有缘再见。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B4022",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B4024",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B4027",
+       "cmd": "addmoney",
+       "args": [
+        6000,
+        0
+       ]
+      },
+      {
+       "at": "0x087B402D",
+       "cmd": "addvar",
+       "args": [
+        20789,
+        6
+       ]
+      },
+      {
+       "at": "0x087B4032",
+       "cmd": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B4035",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294634
+       ]
+      },
+      {
+       "at": "0x087B403B",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        1
+       ]
+      },
+      {
+       "at": "0x087B4040",
+       "cmd": "setvar",
+       "args": [
+        32769,
+        1
+       ]
+      },
+      {
+       "at": "0x087B4045",
+       "cmd": "setvar",
+       "args": [
+        32770,
+        28
+       ]
+      },
+      {
+       "at": "0x087B404A",
+       "cmd": "setvar",
+       "args": [
+        32771,
+        2
+       ]
+      },
+      {
+       "at": "0x087B404F",
+       "cmd": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x087B4054",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142294599
+       ],
+       "texts": [
+        {
+         "address": "0x087B3E47",
+         "text": "\\ctrl[06 00]获得了6点BracerPoints和6000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x087B405A",
+       "cmd": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B405C",
+       "cmd": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x087B4061",
+       "cmd": "setflag",
+       "args": [
+        3304
+       ]
+      },
+      {
+       "at": "0x087B4064",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B4067",
+       "cmd": "warpmuted",
+       "args": [
+        3,
+        72,
+        255,
+        35,
+        49
+       ]
+      },
+      {
+       "at": "0x087B406F",
+       "cmd": "pause",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x087B4072",
+       "cmd": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x087B4B23",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B3A28"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x087B4B23",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        357
+       ]
+      },
+      {
+       "at": "0x087B4B28",
+       "cmd": "setvar",
+       "args": [
+        32769,
+        391
+       ]
+      },
+      {
+       "at": "0x087B4B2D",
+       "cmd": "setvar",
+       "args": [
+        32770,
+        229
+       ]
+      },
+      {
+       "at": "0x087B4B32",
+       "cmd": "setvar",
+       "args": [
+        32771,
+        728
+       ]
+      },
+      {
+       "at": "0x087B4B37",
+       "cmd": "setwildbattle",
+       "args": [
+        276,
+        25,
+        665
+       ],
+       "species": "宝石海星"
+      },
+      {
+       "at": "0x087B4B3D",
+       "cmd": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x087B4B40",
+       "cmd": "special",
+       "args": [
+        312
+       ]
+      },
+      {
+       "at": "0x087B4B43",
+       "cmd": "pause",
+       "args": [
+        160
+       ]
+      },
+      {
+       "at": "0x087B4B46",
+       "cmd": "setflag",
+       "args": [
+        3122
+       ]
+      },
+      {
+       "at": "0x087B4B49",
+       "cmd": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x087B4B4B",
+       "cmd": "movesprite",
+       "args": [
+        13,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x087B4B52",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B4B55",
+       "cmd": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x087B4B57",
+       "cmd": "preparemsg",
+       "args": [
+        142294716
+       ],
+       "texts": [
+        {
+         "address": "0x087B3EBC",
+         "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级宝石海星的波动\\n储存在了超级石中。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B4B5C",
+       "cmd": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x087B4B5F",
+       "cmd": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x087B4B60",
+       "cmd": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x087B4B61",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x087B4B62",
+       "cmd": "goto",
+       "args": [
+        142295028
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "seed": "0x087B5827",
+   "roots": [
+    {
+     "script": "0x087B5827",
+     "map_id": "3:100",
+     "place": "愤怒之湖",
+     "kind": "objects",
+     "x": 45,
+     "y": 29,
+     "local_id": 3,
+     "flag_id": 6312
+    }
+   ],
+   "blocks": [
+    {
+     "script": "0x087B5827",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "3:100/local3"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x087B5827",
+       "cmd": "cry",
+       "args": [
+        130,
+        255
+       ]
+      },
+      {
+       "at": "0x087B582C",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142301383
+       ],
+       "texts": [
+        {
+         "address": "0x087B58C7",
+         "text": "暴鲤龙：轰隆隆！！"
+        }
+       ]
+      },
+      {
+       "at": "0x087B5832",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B5834",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        5
+       ]
+      },
+      {
+       "at": "0x087B5839",
+       "cmd": "setvar",
+       "args": [
+        32773,
+        0
+       ]
+      },
+      {
+       "at": "0x087B583E",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        32
+       ]
+      },
+      {
+       "at": "0x087B5843",
+       "cmd": "setvar",
+       "args": [
+        32775,
+        3
+       ]
+      },
+      {
+       "at": "0x087B5848",
+       "cmd": "special",
+       "args": [
+        310
+       ]
+      },
+      {
+       "at": "0x087B584B",
+       "cmd": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x087B584E",
+       "cmd": "setflag",
+       "args": [
+        2749
+       ]
+      },
+      {
+       "at": "0x087B5851",
+       "cmd": "setvar",
+       "args": [
+        20544,
+        1
+       ]
+      },
+      {
+       "at": "0x087B5856",
+       "cmd": "setflag",
+       "args": [
+        2315
+       ]
+      },
+      {
+       "at": "0x087B5859",
+       "cmd": "setflag",
+       "args": [
+        2315
+       ]
+      },
+      {
+       "at": "0x087B585C",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        127
+       ]
+      },
+      {
+       "at": "0x087B5861",
+       "cmd": "setvar",
+       "args": [
+        32769,
+        242
+       ]
+      },
+      {
+       "at": "0x087B5866",
+       "cmd": "setvar",
+       "args": [
+        32770,
+        89
+       ]
+      },
+      {
+       "at": "0x087B586B",
+       "cmd": "setvar",
+       "args": [
+        32771,
+        349
+       ]
+      },
+      {
+       "at": "0x087B5870",
+       "cmd": "setflag",
+       "args": [
+        2323
+       ]
+      },
+      {
+       "at": "0x087B5873",
+       "cmd": "setwildbattle",
+       "args": [
+        130,
+        38,
+        674
+       ],
+       "species": "暴鲤龙"
+      },
+      {
+       "at": "0x087B5879",
+       "cmd": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x087B587C",
+       "cmd": "special",
+       "args": [
+        312
+       ]
+      },
+      {
+       "at": "0x087B587F",
+       "cmd": "pause",
+       "args": [
+        160
+       ]
+      },
+      {
+       "at": "0x087B5882",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142301448
+       ],
+       "texts": [
+        {
+         "address": "0x087B5908",
+         "text": "暴鲤龙的力量被削弱了，\\n趁现在制服它吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x087B5888",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x087B588A",
+       "cmd": "setflag",
+       "args": [
+        2323
+       ]
+      },
+      {
+       "at": "0x087B588D",
+       "cmd": "setwildbattle",
+       "args": [
+        130,
+        38,
+        0
+       ],
+       "species": "暴鲤龙"
+      },
+      {
+       "at": "0x087B5893",
+       "cmd": "dowildbattle",
+       "args": []
+      },
+      {
+       "at": "0x087B5894",
+       "cmd": "preparemsg",
+       "args": [
+        142301401
+       ],
+       "texts": [
+        {
+         "address": "0x087B58D9",
+         "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级暴鲤龙的波动\\n储存在了超级石中。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B5899",
+       "cmd": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x087B589C",
+       "cmd": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x087B589D",
+       "cmd": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x087B589E",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x087B589F",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B58A2",
+       "cmd": "setflag",
+       "args": [
+        3082
+       ]
+      },
+      {
+       "at": "0x087B58A5",
+       "cmd": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x087B58A7",
+       "cmd": "removeobject",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x087B58AA",
+       "cmd": "setflag",
+       "args": [
+        6312
+       ]
+      },
+      {
+       "at": "0x087B58AD",
+       "cmd": "setflag",
+       "args": [
+        6313
+       ]
+      },
+      {
+       "at": "0x087B58B0",
+       "cmd": "setflag",
+       "args": [
+        5409
+       ]
+      },
+      {
+       "at": "0x087B58B3",
+       "cmd": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x087B58B5",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B58B8",
+       "cmd": "setorcopyvar",
+       "args": [
+        32768,
+        548
+       ]
+      },
+      {
+       "at": "0x087B58BD",
+       "cmd": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ]
+      },
+      {
+       "at": "0x087B58C2",
+       "cmd": "callstd",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x087B58C4",
+       "cmd": "release",
+       "args": []
+      },
+      {
+       "at": "0x087B58C5",
+       "cmd": "end",
+       "args": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "seed": "0x087BCCF0",
+   "roots": [
+    {
+     "script": "0x087BCCF0",
+     "map_id": "53:14",
+     "place": "满金市",
+     "kind": "objects",
+     "x": 18,
+     "y": 2,
+     "local_id": 8,
+     "flag_id": 3089
+    }
+   ],
+   "blocks": [
+    {
+     "script": "0x087BCCF0",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "53:14/local8"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x087BCCF0",
+       "cmd": "copyvar",
+       "args": [
+        32775,
+        32783
+       ]
+      },
+      {
+       "at": "0x087BCCF5",
+       "cmd": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x087BCCFA",
+       "cmd": "cry",
+       "args": [
+        229,
+        255
+       ]
+      },
+      {
+       "at": "0x087BCCFF",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142331212
+       ]
+      },
+      {
+       "at": "0x087BCD05",
+       "cmd": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087BCD07",
+       "cmd": "setflag",
+       "args": [
+        2749
+       ]
+      },
+      {
+       "at": "0x087BCD0A",
+       "cmd": "setvar",
+       "args": [
+        20544,
+        1
+       ]
+      },
+      {
+       "at": "0x087BCD0F",
+       "cmd": "setflag",
+       "args": [
+        2315
+       ]
+      },
+      {
+       "at": "0x087BCD12",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        126
+       ]
+      },
+      {
+       "at": "0x087BCD17",
+       "cmd": "setvar",
+       "args": [
+        32769,
+        737
+       ]
+      },
+      {
+       "at": "0x087BCD1C",
+       "cmd": "setvar",
+       "args": [
+        32770,
+        731
+       ]
+      },
+      {
+       "at": "0x087BCD21",
+       "cmd": "setvar",
+       "args": [
+        32771,
+        386
+       ]
+      },
+      {
+       "at": "0x087BCD26",
+       "cmd": "setwildbattle",
+       "args": [
+        229,
+        40,
+        215
+       ],
+       "species": "黑鲁加"
+      },
+      {
+       "at": "0x087BCD2C",
+       "cmd": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x087BCD2F",
+       "cmd": "special",
+       "args": [
+        312
+       ]
+      },
+      {
+       "at": "0x087BCD32",
+       "cmd": "pause",
+       "args": [
+        160
+       ]
+      },
+      {
+       "at": "0x087BCD35",
+       "cmd": "setflag",
+       "args": [
+        3089
+       ]
+      },
+      {
+       "at": "0x087BCD38",
+       "cmd": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x087BCD3A",
+       "cmd": "removeobject",
+       "args": [
+        32775
+       ]
+      },
+      {
+       "at": "0x087BCD3D",
+       "cmd": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x087BCD3F",
+       "cmd": "preparemsg",
+       "args": [
+        142331228
+       ],
+       "texts": [
+        {
+         "address": "0x087BCD5C",
+         "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级黑鲁加的波动\\n储存在了超级石中。"
+        }
+       ]
+      },
+      {
+       "at": "0x087BCD44",
+       "cmd": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x087BCD47",
+       "cmd": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x087BCD48",
+       "cmd": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x087BCD49",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x087BCD4A",
+       "cmd": "end",
+       "args": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "seed": "0x087BD272",
+   "roots": [
+    {
+     "script": "0x087BD272",
+     "map_id": "55:24",
+     "place": "铃铛塔",
+     "kind": "objects",
+     "x": 20,
+     "y": 5,
+     "local_id": 1,
+     "flag_id": 5281
+    }
+   ],
+   "blocks": [
+    {
+     "script": "0x087BD272",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "55:24/local1"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x087BD272",
+       "cmd": "copyvar",
+       "args": [
+        32775,
+        32783
+       ]
+      },
+      {
+       "at": "0x087BD277",
+       "cmd": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x087BD27C",
+       "cmd": "cry",
+       "args": [
+        411,
+        255
+       ]
+      },
+      {
+       "at": "0x087BD281",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142332622
+       ]
+      },
+      {
+       "at": "0x087BD287",
+       "cmd": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087BD289",
+       "cmd": "setflag",
+       "args": [
+        2749
+       ]
+      },
+      {
+       "at": "0x087BD28C",
+       "cmd": "setvar",
+       "args": [
+        20544,
+        1
+       ]
+      },
+      {
+       "at": "0x087BD291",
+       "cmd": "setflag",
+       "args": [
+        2315
+       ]
+      },
+      {
+       "at": "0x087BD294",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        94
+       ]
+      },
+      {
+       "at": "0x087BD299",
+       "cmd": "setvar",
+       "args": [
+        32769,
+        247
+       ]
+      },
+      {
+       "at": "0x087BD29E",
+       "cmd": "setvar",
+       "args": [
+        32770,
+        466
+       ]
+      },
+      {
+       "at": "0x087BD2A3",
+       "cmd": "setvar",
+       "args": [
+        32771,
+        373
+       ]
+      },
+      {
+       "at": "0x087BD2A8",
+       "cmd": "setwildbattle",
+       "args": [
+        411,
+        45,
+        0
+       ],
+       "species": "风铃铃"
+      },
+      {
+       "at": "0x087BD2AE",
+       "cmd": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x087BD2B1",
+       "cmd": "special",
+       "args": [
+        312
+       ]
+      },
+      {
+       "at": "0x087BD2B4",
+       "cmd": "pause",
+       "args": [
+        160
+       ]
+      },
+      {
+       "at": "0x087BD2B7",
+       "cmd": "setflag",
+       "args": [
+        5281
+       ]
+      },
+      {
+       "at": "0x087BD2BA",
+       "cmd": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x087BD2BC",
+       "cmd": "removeobject",
+       "args": [
+        32775
+       ]
+      },
+      {
+       "at": "0x087BD2BF",
+       "cmd": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x087BD2C1",
+       "cmd": "preparemsg",
+       "args": [
+        142332632
+       ],
+       "texts": [
+        {
+         "address": "0x087BD2D8",
+         "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级风铃铃的波动\\n储存在了超级石中。"
+        }
+       ]
+      },
+      {
+       "at": "0x087BD2C6",
+       "cmd": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x087BD2C9",
+       "cmd": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x087BD2CA",
+       "cmd": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x087BD2CB",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x087BD2CC",
+       "cmd": "end",
+       "args": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "seed": "0x087BD9C5",
+   "roots": [
+    {
+     "script": "0x087BDA14",
+     "map_id": "56:53",
+     "place": "脐之岩",
+     "kind": "coord_events",
+     "x": 17,
+     "y": 11,
+     "local_id": null,
+     "flag_id": null
+    }
+   ],
+   "blocks": [
+    {
+     "script": "0x087BD9C5",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F40357"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x087BD9C5",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        537
+       ]
+      },
+      {
+       "at": "0x087BD9CA",
+       "cmd": "setvar",
+       "args": [
+        32769,
+        177
+       ]
+      },
+      {
+       "at": "0x087BD9CF",
+       "cmd": "setvar",
+       "args": [
+        32770,
+        105
+       ]
+      },
+      {
+       "at": "0x087BD9D4",
+       "cmd": "setvar",
+       "args": [
+        32771,
+        540
+       ]
+      },
+      {
+       "at": "0x087BD9D9",
+       "cmd": "setflag",
+       "args": [
+        2749
+       ]
+      },
+      {
+       "at": "0x087BD9DC",
+       "cmd": "setflag",
+       "args": [
+        2750
+       ]
+      },
+      {
+       "at": "0x087BD9DF",
+       "cmd": "setvar",
+       "args": [
+        20544,
+        0
+       ]
+      },
+      {
+       "at": "0x087BD9E4",
+       "cmd": "setflag",
+       "args": [
+        6330
+       ]
+      },
+      {
+       "at": "0x087BD9E7",
+       "cmd": "setflag",
+       "args": [
+        6332
+       ]
+      },
+      {
+       "at": "0x087BD9EA",
+       "cmd": "setflag",
+       "args": [
+        2315
+       ]
+      },
+      {
+       "at": "0x087BD9ED",
+       "cmd": "setwildbattle",
+       "args": [
+        261,
+        47,
+        0
+       ],
+       "species": "洛奇亚"
+      },
+      {
+       "at": "0x087BD9F3",
+       "cmd": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x087BD9F6",
+       "cmd": "special",
+       "args": [
+        312
+       ]
+      },
+      {
+       "at": "0x087BD9F9",
+       "cmd": "pause",
+       "args": [
+        160
+       ]
+      },
+      {
+       "at": "0x087BD9FC",
+       "cmd": "goto",
+       "args": [
+        150209460
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x087BDA14",
+     "sources": [
+      {
+       "kind": "coord",
+       "where": "56:53"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x087BDA14",
+       "cmd": "callasm",
+       "args": [
+        147456081
+       ]
+      },
+      {
+       "at": "0x087BDA19",
+       "cmd": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x087BDA1A",
+       "cmd": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x087BDA1B",
+       "cmd": "goto",
+       "args": [
+        150209252
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F402E4",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087BDA14"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F402E4",
+       "cmd": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08F402E7",
+       "cmd": "applymovement",
+       "args": [
+        127,
+        150209553
+       ]
+      },
+      {
+       "at": "0x08F402EE",
+       "cmd": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08F402F1",
+       "cmd": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08F402F4",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        0
+       ]
+      },
+      {
+       "at": "0x08F402F9",
+       "cmd": "special",
+       "args": [
+        90
+       ]
+      },
+      {
+       "at": "0x08F402FC",
+       "cmd": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08F402FD",
+       "cmd": "applymovement",
+       "args": [
+        1,
+        150209559
+       ]
+      },
+      {
+       "at": "0x08F40304",
+       "cmd": "cry",
+       "args": [
+        249,
+        255
+       ]
+      },
+      {
+       "at": "0x08F40309",
+       "cmd": "goto",
+       "args": [
+        150209356
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F4034C",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F402E4"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F4034C",
+       "cmd": "callasm",
+       "args": [
+        147456081
+       ]
+      },
+      {
+       "at": "0x08F40351",
+       "cmd": "goto",
+       "args": [
+        150209367
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F40357",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F4034C"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F40357",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        2
+       ]
+      },
+      {
+       "at": "0x08F4035C",
+       "cmd": "setvar",
+       "args": [
+        32773,
+        0
+       ]
+      },
+      {
+       "at": "0x08F40361",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        32
+       ]
+      },
+      {
+       "at": "0x08F40366",
+       "cmd": "setvar",
+       "args": [
+        32775,
+        3
+       ]
+      },
+      {
+       "at": "0x08F4036B",
+       "cmd": "special",
+       "args": [
+        310
+       ]
+      },
+      {
+       "at": "0x08F4036E",
+       "cmd": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x08F4036F",
+       "cmd": "applymovement",
+       "args": [
+        1,
+        150209562
+       ]
+      },
+      {
+       "at": "0x08F40376",
+       "cmd": "waitmovement",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F40379",
+       "cmd": "applymovement",
+       "args": [
+        1,
+        150209564
+       ]
+      },
+      {
+       "at": "0x08F40380",
+       "cmd": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08F40383",
+       "cmd": "applymovement",
+       "args": [
+        127,
+        150209570
+       ]
+      },
+      {
+       "at": "0x08F4038A",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        1
+       ]
+      },
+      {
+       "at": "0x08F4038F",
+       "cmd": "special",
+       "args": [
+        90
+       ]
+      },
+      {
+       "at": "0x08F40392",
+       "cmd": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08F40395",
+       "cmd": "waitmovement",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F40398",
+       "cmd": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08F4039B",
+       "cmd": "goto",
+       "args": [
+        142334405
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F403B4",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087BD9C5"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F403B4",
+       "cmd": "goto",
+       "args": [
+        150209466
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F403BA",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F403B4"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F403BA",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        2
+       ]
+      },
+      {
+       "at": "0x08F403BF",
+       "cmd": "setvar",
+       "args": [
+        32773,
+        0
+       ]
+      },
+      {
+       "at": "0x08F403C4",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        32
+       ]
+      },
+      {
+       "at": "0x08F403C9",
+       "cmd": "setvar",
+       "args": [
+        32775,
+        3
+       ]
+      },
+      {
+       "at": "0x08F403CE",
+       "cmd": "special",
+       "args": [
+        310
+       ]
+      },
+      {
+       "at": "0x08F403D1",
+       "cmd": "goto",
+       "args": [
+        150209594
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F403E4",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F4043A"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F403E4",
+       "cmd": "clearflag",
+       "args": [
+        6333
+       ]
+      },
+      {
+       "at": "0x08F403E7",
+       "cmd": "addobject",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F403EA",
+       "cmd": "applymovement",
+       "args": [
+        2,
+        150209581
+       ]
+      },
+      {
+       "at": "0x08F403F1",
+       "cmd": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F403F4",
+       "cmd": "applymovement",
+       "args": [
+        255,
+        150209592
+       ]
+      },
+      {
+       "at": "0x08F403FB",
+       "cmd": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08F403FE",
+       "cmd": "goto",
+       "args": [
+        150211201
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F4043A",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F403BA"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F4043A",
+       "cmd": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08F4043B",
+       "cmd": "goto",
+       "args": [
+        150209508
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F4051A",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F40AAA"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F4051A",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        127
+       ]
+      },
+      {
+       "at": "0x08F4051F",
+       "cmd": "call",
+       "args": [
+        144461359
+       ]
+      },
+      {
+       "at": "0x08F40524",
+       "cmd": "call",
+       "args": [
+        144461379
+       ]
+      },
+      {
+       "at": "0x08F40529",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        144662744
+       ]
+      },
+      {
+       "at": "0x08F4052F",
+       "cmd": "call",
+       "args": [
+        144461409
+       ]
+      },
+      {
+       "at": "0x08F40534",
+       "cmd": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08F40539",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        150211164
+       ],
+       "texts": [
+        {
+         "address": "0x08F40A5C",
+         "text": "\\var[01]……！\\n你没事吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F4053F",
+       "cmd": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F40541",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08F40542",
+       "cmd": "call",
+       "args": [
+        144461436
+       ]
+      },
+      {
+       "at": "0x08F40547",
+       "cmd": "call",
+       "args": [
+        144461451
+       ]
+      },
+      {
+       "at": "0x08F4054C",
+       "cmd": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F4054F",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        126
+       ]
+      },
+      {
+       "at": "0x08F40554",
+       "cmd": "call",
+       "args": [
+        144461359
+       ]
+      },
+      {
+       "at": "0x08F40559",
+       "cmd": "call",
+       "args": [
+        144461379
+       ]
+      },
+      {
+       "at": "0x08F4055E",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        144662744
+       ]
+      },
+      {
+       "at": "0x08F40564",
+       "cmd": "call",
+       "args": [
+        144461409
+       ]
+      },
+      {
+       "at": "0x08F40569",
+       "cmd": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08F4056E",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        150210195
+       ],
+       "texts": [
+        {
+         "address": "0x08F40693",
+         "text": "洛奇亚……\\n暂时被牵制住了。\\p接下来就由我来……吹奏时之笛，\\n让时拉比净化洛奇亚……\\p这样一来，\\n一切就都结束了……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F40574",
+       "cmd": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F40576",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08F40577",
+       "cmd": "call",
+       "args": [
+        144461436
+       ]
+      },
+      {
+       "at": "0x08F4057C",
+       "cmd": "call",
+       "args": [
+        144461451
+       ]
+      },
+      {
+       "at": "0x08F40581",
+       "cmd": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F40584",
+       "cmd": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F40587",
+       "cmd": "applymovement",
+       "args": [
+        2,
+        150221184
+       ]
+      },
+      {
+       "at": "0x08F4058E",
+       "cmd": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F40591",
+       "cmd": "playsong",
+       "args": [
+        490,
+        51
+       ]
+      },
+      {
+       "at": "0x08F40595",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        126
+       ]
+      },
+      {
+       "at": "0x08F4059A",
+       "cmd": "call",
+       "args": [
+        144461359
+       ]
+      },
+      {
+       "at": "0x08F4059F",
+       "cmd": "call",
+       "args": [
+        144461379
+       ]
+      },
+      {
+       "at": "0x08F405A4",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        144662744
+       ]
+      },
+      {
+       "at": "0x08F405AA",
+       "cmd": "call",
+       "args": [
+        144461409
+       ]
+      },
+      {
+       "at": "0x08F405AF",
+       "cmd": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08F405B4",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        150210298
+       ],
+       "texts": [
+        {
+         "address": "0x08F406FA",
+         "text": "在这之前，\\n我必须……向你道歉。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F405BA",
+       "cmd": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F405BC",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08F405BD",
+       "cmd": "call",
+       "args": [
+        144461436
+       ]
+      },
+      {
+       "at": "0x08F405C2",
+       "cmd": "call",
+       "args": [
+        144461451
+       ]
+      },
+      {
+       "at": "0x08F405C7",
+       "cmd": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F405CA",
+       "cmd": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F405CD",
+       "cmd": "applymovement",
+       "args": [
+        255,
+        150211153
+       ]
+      },
+      {
+       "at": "0x08F405D4",
+       "cmd": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F405D7",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        126
+       ]
+      },
+      {
+       "at": "0x08F405DC",
+       "cmd": "call",
+       "args": [
+        144461359
+       ]
+      },
+      {
+       "at": "0x08F405E1",
+       "cmd": "call",
+       "args": [
+        144461379
+       ]
+      },
+      {
+       "at": "0x08F405E6",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        144662744
+       ]
+      },
+      {
+       "at": "0x08F405EC",
+       "cmd": "call",
+       "args": [
+        144461409
+       ]
+      },
+      {
+       "at": "0x08F405F1",
+       "cmd": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08F405F6",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        150210328
+       ],
+       "texts": [
+        {
+         "address": "0x08F40718",
+         "text": "对不起，\\var[01]。\\n一直瞒着大家……\\p时之笛的作用……\\n并不是召唤时拉比。\\p而是……\\n通过特殊音律产生的共振，\\l激起大量的时之波纹……\\l从而打开连接不同时空的通道。\\p而作为吹奏者的我，\\n将与另一侧的时拉比交换……\\p也就是说……\\n我会前往某个未知的时空，\\l而时拉比……会来到这里……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F405FC",
+       "cmd": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F405FE",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08F405FF",
+       "cmd": "goto",
+       "args": [
+        150211252
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F40A81",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F403E4"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F40A81",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        126
+       ]
+      },
+      {
+       "at": "0x08F40A86",
+       "cmd": "call",
+       "args": [
+        144461359
+       ]
+      },
+      {
+       "at": "0x08F40A8B",
+       "cmd": "call",
+       "args": [
+        144461379
+       ]
+      },
+      {
+       "at": "0x08F40A90",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        144662744
+       ]
+      },
+      {
+       "at": "0x08F40A96",
+       "cmd": "call",
+       "args": [
+        144461409
+       ]
+      },
+      {
+       "at": "0x08F40A9B",
+       "cmd": "call",
+       "args": [
+        144461436
+       ]
+      },
+      {
+       "at": "0x08F40AA0",
+       "cmd": "call",
+       "args": [
+        144461451
+       ]
+      },
+      {
+       "at": "0x08F40AA5",
+       "cmd": "goto",
+       "args": [
+        150211242
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F40AAA",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F40A81"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F40AAA",
+       "cmd": "setvar",
+       "args": [
+        32783,
+        2
+       ]
+      },
+      {
+       "at": "0x08F40AAF",
+       "cmd": "goto",
+       "args": [
+        150209818
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F40AB4",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F4051A"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F40AB4",
+       "cmd": "call",
+       "args": [
+        144461436
+       ]
+      },
+      {
+       "at": "0x08F40AB9",
+       "cmd": "call",
+       "args": [
+        144461451
+       ]
+      },
+      {
+       "at": "0x08F40ABE",
+       "cmd": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F40AC1",
+       "cmd": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F40AC4",
+       "cmd": "applymovement",
+       "args": [
+        255,
+        150221192
+       ]
+      },
+      {
+       "at": "0x08F40ACB",
+       "cmd": "pause",
+       "args": [
+        96
+       ]
+      },
+      {
+       "at": "0x08F40ACE",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        0
+       ]
+      },
+      {
+       "at": "0x08F40AD3",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        150211400
+       ]
+      },
+      {
+       "at": "0x08F40AD9",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x08F40ADC",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        1
+       ]
+      },
+      {
+       "at": "0x08F40AE1",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        150211400
+       ]
+      },
+      {
+       "at": "0x08F40AE7",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x08F40AEA",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        2
+       ]
+      },
+      {
+       "at": "0x08F40AEF",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        150211400
+       ]
+      },
+      {
+       "at": "0x08F40AF5",
+       "cmd": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x08F40AF8",
+       "cmd": "call",
+       "args": [
+        144461379
+       ]
+      },
+      {
+       "at": "0x08F40AFD",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        144662744
+       ]
+      },
+      {
+       "at": "0x08F40B03",
+       "cmd": "call",
+       "args": [
+        144461409
+       ]
+      },
+      {
+       "at": "0x08F40B08",
+       "cmd": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08F40B0D",
+       "cmd": "goto",
+       "args": [
+        150211366
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F40B26",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F40AB4"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F40B26",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        150211007
+       ]
+      },
+      {
+       "at": "0x08F40B2C",
+       "cmd": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F40B2E",
+       "cmd": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08F40B2F",
+       "cmd": "multichoice",
+       "args": [
+        20,
+        6,
+        33,
+        1
+       ]
+      },
+      {
+       "at": "0x08F40B34",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08F40B35",
+       "cmd": "call",
+       "args": [
+        144461436
+       ]
+      },
+      {
+       "at": "0x08F40B3A",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F40B3D",
+       "cmd": "goto",
+       "args": [
+        150214413
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F40B50",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F4170D"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F40B50",
+       "cmd": "setvar",
+       "args": [
+        32775,
+        1
+       ]
+      },
+      {
+       "at": "0x08F40B55",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        0
+       ]
+      },
+      {
+       "at": "0x08F40B5A",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        130
+       ]
+      },
+      {
+       "at": "0x08F40B5F",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        84
+       ]
+      },
+      {
+       "at": "0x08F40B64",
+       "cmd": "setvar",
+       "args": [
+        32773,
+        36
+       ]
+      },
+      {
+       "at": "0x08F40B69",
+       "cmd": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x08F40B6C",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        1
+       ]
+      },
+      {
+       "at": "0x08F40B71",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        131
+       ]
+      },
+      {
+       "at": "0x08F40B76",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        148
+       ]
+      },
+      {
+       "at": "0x08F40B7B",
+       "cmd": "setvar",
+       "args": [
+        32773,
+        36
+       ]
+      },
+      {
+       "at": "0x08F40B80",
+       "cmd": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x08F40B83",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        2
+       ]
+      },
+      {
+       "at": "0x08F40B88",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        132
+       ]
+      },
+      {
+       "at": "0x08F40B8D",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        84
+       ]
+      },
+      {
+       "at": "0x08F40B92",
+       "cmd": "setvar",
+       "args": [
+        32773,
+        100
+       ]
+      },
+      {
+       "at": "0x08F40B97",
+       "cmd": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x08F40B9A",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        3
+       ]
+      },
+      {
+       "at": "0x08F40B9F",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        133
+       ]
+      },
+      {
+       "at": "0x08F40BA4",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        148
+       ]
+      },
+      {
+       "at": "0x08F40BA9",
+       "cmd": "setvar",
+       "args": [
+        32773,
+        100
+       ]
+      },
+      {
+       "at": "0x08F40BAE",
+       "cmd": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x08F40BB1",
+       "cmd": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08F40BB6",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        150212305
+       ]
+      },
+      {
+       "at": "0x08F40BBC",
+       "cmd": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F40BBE",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08F40BBF",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        0
+       ]
+      },
+      {
+       "at": "0x08F40BC4",
+       "cmd": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x08F40BC7",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        1
+       ]
+      },
+      {
+       "at": "0x08F40BCC",
+       "cmd": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x08F40BCF",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        2
+       ]
+      },
+      {
+       "at": "0x08F40BD4",
+       "cmd": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x08F40BD7",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        3
+       ]
+      },
+      {
+       "at": "0x08F40BDC",
+       "cmd": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x08F40BDF",
+       "cmd": "goto",
+       "args": [
+        150222501
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F4170D",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F40B26"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F4170D",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        4
+       ]
+      },
+      {
+       "at": "0x08F41712",
+       "cmd": "special",
+       "args": [
+        90
+       ]
+      },
+      {
+       "at": "0x08F41715",
+       "cmd": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08F41716",
+       "cmd": "applymovement",
+       "args": [
+        2,
+        150215174
+       ]
+      },
+      {
+       "at": "0x08F4171D",
+       "cmd": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F41720",
+       "cmd": "goto",
+       "args": [
+        150211408
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F41A09",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F436A5"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F41A09",
+       "cmd": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F41A0C",
+       "cmd": "applymovement",
+       "args": [
+        2,
+        150216266
+       ]
+      },
+      {
+       "at": "0x08F41A13",
+       "cmd": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F41A16",
+       "cmd": "clearflag",
+       "args": [
+        6335
+       ]
+      },
+      {
+       "at": "0x08F41A19",
+       "cmd": "addobject",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08F41A1C",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F41A1F",
+       "cmd": "fadescreen",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08F41A21",
+       "cmd": "removeobject",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08F41A24",
+       "cmd": "setflag",
+       "args": [
+        6335
+       ]
+      },
+      {
+       "at": "0x08F41A27",
+       "cmd": "sound",
+       "args": [
+        15
+       ]
+      },
+      {
+       "at": "0x08F41A2A",
+       "cmd": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08F41A2D",
+       "cmd": "addobject",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F41A30",
+       "cmd": "clearflag",
+       "args": [
+        6336
+       ]
+      },
+      {
+       "at": "0x08F41A33",
+       "cmd": "fadescreen",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F41A35",
+       "cmd": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F41A38",
+       "cmd": "applymovement",
+       "args": [
+        255,
+        150221192
+       ]
+      },
+      {
+       "at": "0x08F41A3F",
+       "cmd": "pause",
+       "args": [
+        96
+       ]
+      },
+      {
+       "at": "0x08F41A42",
+       "cmd": "cry",
+       "args": [
+        178,
+        255
+       ]
+      },
+      {
+       "at": "0x08F41A47",
+       "cmd": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x08F41A48",
+       "cmd": "sound",
+       "args": [
+        39
+       ]
+      },
+      {
+       "at": "0x08F41A4B",
+       "cmd": "applymovement",
+       "args": [
+        255,
+        150216220
+       ]
+      },
+      {
+       "at": "0x08F41A52",
+       "cmd": "pause",
+       "args": [
+        117
+       ]
+      },
+      {
+       "at": "0x08F41A55",
+       "cmd": "sound",
+       "args": [
+        40
+       ]
+      },
+      {
+       "at": "0x08F41A58",
+       "cmd": "fadescreenspeed",
+       "args": [
+        1,
+        2
+       ]
+      },
+      {
+       "at": "0x08F41A5B",
+       "cmd": "writebytetoaddr",
+       "args": [
+        64,
+        67108882
+       ]
+      },
+      {
+       "at": "0x08F41A61",
+       "cmd": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08F41A64",
+       "cmd": "callasm",
+       "args": [
+        143327233
+       ]
+      },
+      {
+       "at": "0x08F41A69",
+       "cmd": "goto",
+       "args": [
+        150216300
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F41E6C",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F41A09"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F41E6C",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        150216209
+       ],
+       "texts": [
+        {
+         "address": "0x08F41E11",
+         "text": "散华……！！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F41E72",
+       "cmd": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F41E74",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08F41E75",
+       "cmd": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F41E78",
+       "cmd": "writebytetoaddr",
+       "args": [
+        0,
+        67108882
+       ]
+      },
+      {
+       "at": "0x08F41E7E",
+       "cmd": "callasm",
+       "args": [
+        143327545
+       ]
+      },
+      {
+       "at": "0x08F41E83",
+       "cmd": "goto",
+       "args": [
+        150217350
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F42286",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F41E6C"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F42286",
+       "cmd": "applymovement",
+       "args": [
+        255,
+        150217348
+       ]
+      },
+      {
+       "at": "0x08F4228D",
+       "cmd": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08F42290",
+       "cmd": "fadescreenspeed",
+       "args": [
+        0,
+        2
+       ]
+      },
+      {
+       "at": "0x08F42293",
+       "cmd": "goto",
+       "args": [
+        150217368
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F42298",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F42286"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F42298",
+       "cmd": "sound",
+       "args": [
+        15
+       ]
+      },
+      {
+       "at": "0x08F4229B",
+       "cmd": "fadescreen",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08F4229D",
+       "cmd": "removeobject",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F422A0",
+       "cmd": "setflag",
+       "args": [
+        6336
+       ]
+      },
+      {
+       "at": "0x08F422A3",
+       "cmd": "fadescreen",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F422A5",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        127
+       ]
+      },
+      {
+       "at": "0x08F422AA",
+       "cmd": "call",
+       "args": [
+        144461359
+       ]
+      },
+      {
+       "at": "0x08F422AF",
+       "cmd": "call",
+       "args": [
+        144461379
+       ]
+      },
+      {
+       "at": "0x08F422B4",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        144662744
+       ]
+      },
+      {
+       "at": "0x08F422BA",
+       "cmd": "call",
+       "args": [
+        144461409
+       ]
+      },
+      {
+       "at": "0x08F422BF",
+       "cmd": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08F422C4",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        150221198
+       ]
+      },
+      {
+       "at": "0x08F422CA",
+       "cmd": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F422CC",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08F422CD",
+       "cmd": "call",
+       "args": [
+        144461436
+       ]
+      },
+      {
+       "at": "0x08F422D2",
+       "cmd": "call",
+       "args": [
+        144461451
+       ]
+      },
+      {
+       "at": "0x08F422D7",
+       "cmd": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F422DA",
+       "cmd": "goto",
+       "args": [
+        150221253
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F42713",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F431C5"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F42713",
+       "cmd": "applymovement",
+       "args": [
+        2,
+        150219823
+       ]
+      },
+      {
+       "at": "0x08F4271A",
+       "cmd": "goto",
+       "args": [
+        150221075
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F42C32",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F4412D"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F42C32",
+       "cmd": "removeobject",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F42C35",
+       "cmd": "setflag",
+       "args": [
+        6333
+       ]
+      },
+      {
+       "at": "0x08F42C38",
+       "cmd": "addobject",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F42C3B",
+       "cmd": "clearflag",
+       "args": [
+        6334
+       ]
+      },
+      {
+       "at": "0x08F42C3E",
+       "cmd": "playsong",
+       "args": [
+        491,
+        255
+       ]
+      },
+      {
+       "at": "0x08F42C42",
+       "cmd": "applymovement",
+       "args": [
+        5,
+        145423511
+       ]
+      },
+      {
+       "at": "0x08F42C49",
+       "cmd": "goto",
+       "args": [
+        150229268
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F43113",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F42713"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F43113",
+       "cmd": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08F43116",
+       "cmd": "applymovement",
+       "args": [
+        127,
+        150219823
+       ]
+      },
+      {
+       "at": "0x08F4311D",
+       "cmd": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08F43120",
+       "cmd": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08F43123",
+       "cmd": "goto",
+       "args": [
+        150221123
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F43143",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F43113"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F43143",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        126
+       ]
+      },
+      {
+       "at": "0x08F43148",
+       "cmd": "call",
+       "args": [
+        144461359
+       ]
+      },
+      {
+       "at": "0x08F4314D",
+       "cmd": "call",
+       "args": [
+        144461379
+       ]
+      },
+      {
+       "at": "0x08F43152",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        144662744
+       ]
+      },
+      {
+       "at": "0x08F43158",
+       "cmd": "call",
+       "args": [
+        144461409
+       ]
+      },
+      {
+       "at": "0x08F4315D",
+       "cmd": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08F43162",
+       "cmd": "fadesong",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F43165",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        150219749
+       ],
+       "texts": [
+        {
+         "address": "0x08F42BE5",
+         "text": "洛奇亚……\\n请你再忍耐一下……\\l这一切……马上就要结束了……\\l再……再坚持一下就好……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F4316B",
+       "cmd": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F4316D",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08F4316E",
+       "cmd": "call",
+       "args": [
+        144461436
+       ]
+      },
+      {
+       "at": "0x08F43173",
+       "cmd": "call",
+       "args": [
+        144461451
+       ]
+      },
+      {
+       "at": "0x08F43178",
+       "cmd": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F4317B",
+       "cmd": "goto",
+       "args": [
+        150222487
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F431C5",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F42298"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F431C5",
+       "cmd": "goto",
+       "args": [
+        150218515
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F43697",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F43143"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F43697",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        0
+       ]
+      },
+      {
+       "at": "0x08F4369C",
+       "cmd": "special",
+       "args": [
+        90
+       ]
+      },
+      {
+       "at": "0x08F4369F",
+       "cmd": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08F436A0",
+       "cmd": "goto",
+       "args": [
+        150222514
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F436A5",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F40B50"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F436A5",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        5
+       ]
+      },
+      {
+       "at": "0x08F436AA",
+       "cmd": "special",
+       "args": [
+        90
+       ]
+      },
+      {
+       "at": "0x08F436AD",
+       "cmd": "goto",
+       "args": [
+        150215177
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F436B2",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F43697"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F436B2",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        126
+       ]
+      },
+      {
+       "at": "0x08F436B7",
+       "cmd": "call",
+       "args": [
+        144461359
+       ]
+      },
+      {
+       "at": "0x08F436BC",
+       "cmd": "call",
+       "args": [
+        144461379
+       ]
+      },
+      {
+       "at": "0x08F436C1",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        144662744
+       ]
+      },
+      {
+       "at": "0x08F436C7",
+       "cmd": "call",
+       "args": [
+        144461409
+       ]
+      },
+      {
+       "at": "0x08F436CC",
+       "cmd": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08F436D1",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        150223854
+       ]
+      },
+      {
+       "at": "0x08F436D7",
+       "cmd": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F436D9",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08F436DA",
+       "cmd": "call",
+       "args": [
+        144461436
+       ]
+      },
+      {
+       "at": "0x08F436DF",
+       "cmd": "call",
+       "args": [
+        144461451
+       ]
+      },
+      {
+       "at": "0x08F436E4",
+       "cmd": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F436E7",
+       "cmd": "goto",
+       "args": [
+        150225197
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F4412D",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F436B2"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F4412D",
+       "cmd": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F44130",
+       "cmd": "goto",
+       "args": [
+        150219826
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F44BB1",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F45149"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F44BB1",
+       "cmd": "pause",
+       "args": [
+        1440
+       ]
+      },
+      {
+       "at": "0x08F44BB4",
+       "cmd": "fadescreenspeed",
+       "args": [
+        1,
+        4
+       ]
+      },
+      {
+       "at": "0x08F44BB7",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        6
+       ]
+      },
+      {
+       "at": "0x08F44BBC",
+       "cmd": "special",
+       "args": [
+        90
+       ]
+      },
+      {
+       "at": "0x08F44BBF",
+       "cmd": "goto",
+       "args": [
+        150229281
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F45113",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F45121"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F45113",
+       "cmd": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F45114",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F42C32"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F45114",
+       "cmd": "copyvar",
+       "args": [
+        16400,
+        20511
+       ]
+      },
+      {
+       "at": "0x08F45119",
+       "cmd": "setflag",
+       "args": [
+        4161
+       ]
+      },
+      {
+       "at": "0x08F4511C",
+       "cmd": "goto",
+       "args": [
+        150229300
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F45121",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F44BB1"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F45121",
+       "cmd": "warpspinenter",
+       "args": [
+        56,
+        54,
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08F45129",
+       "cmd": "special",
+       "args": [
+        154
+       ]
+      },
+      {
+       "at": "0x08F4512C",
+       "cmd": "pause",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08F4512F",
+       "cmd": "goto",
+       "args": [
+        150229267
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F45134",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F45114"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F45134",
+       "cmd": "setflag",
+       "args": [
+        6337
+       ]
+      },
+      {
+       "at": "0x08F45137",
+       "cmd": "goto",
+       "args": [
+        150229321
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F45149",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F45134"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F45149",
+       "cmd": "pause",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x08F4514C",
+       "cmd": "callasm",
+       "args": [
+        144090177
+       ]
+      },
+      {
+       "at": "0x08F45151",
+       "cmd": "goto",
+       "args": [
+        150227889
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "seed": "0x08ED523D",
+   "roots": [
+    {
+     "script": "0x08EC50A5",
+     "map_id": "1:96",
+     "place": "寂静之丘",
+     "kind": "coord_events",
+     "x": 17,
+     "y": 14,
+     "local_id": null,
+     "flag_id": null
+    }
+   ],
+   "blocks": [
+    {
+     "script": "0x08EC50A5",
+     "sources": [
+      {
+       "kind": "coord",
+       "where": "1:96"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EC50A5",
+       "cmd": "checkflag",
+       "args": [
+        2748
+       ]
+      },
+      {
+       "at": "0x08EC50A8",
+       "cmd": "goto_if",
+       "args": [
+        1,
+        149705050
+       ]
+      },
+      {
+       "at": "0x08EC50AE",
+       "cmd": "applymovement",
+       "args": [
+        255,
+        149705046
+       ]
+      },
+      {
+       "at": "0x08EC50B5",
+       "cmd": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08EC50B8",
+       "cmd": "sound",
+       "args": [
+        103
+       ]
+      },
+      {
+       "at": "0x08EC50BB",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        149704930
+       ],
+       "texts": [
+        {
+         "address": "0x08EC50E2",
+         "text": "警告！你所确认的\\n个体即将失控超级进化！\\p是否要应对\\n失控超级进化的个体？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC50C1",
+       "cmd": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC50C3",
+       "cmd": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ]
+      },
+      {
+       "at": "0x08EC50C8",
+       "cmd": "goto_if",
+       "args": [
+        1,
+        149705053
+       ]
+      },
+      {
+       "at": "0x08EC50CE",
+       "cmd": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EC50CF",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC50D2",
+       "cmd": "applymovement",
+       "args": [
+        255,
+        149704926
+       ]
+      },
+      {
+       "at": "0x08EC50D9",
+       "cmd": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08EC50DC",
+       "cmd": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC515A",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EC50A5"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EC515A",
+       "cmd": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EC515B",
+       "cmd": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC515D",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EC50A5"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EC515D",
+       "cmd": "goto",
+       "args": [
+        149770813
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08ED523D",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EC515D"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08ED523D",
+       "cmd": "setflag",
+       "args": [
+        2749
+       ]
+      },
+      {
+       "at": "0x08ED5240",
+       "cmd": "setvar",
+       "args": [
+        20544,
+        1
+       ]
+      },
+      {
+       "at": "0x08ED5245",
+       "cmd": "setwildbattle",
+       "args": [
+        451,
+        45,
+        0
+       ],
+       "species": "姆克鹰"
+      },
+      {
+       "at": "0x08ED524B",
+       "cmd": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08ED524E",
+       "cmd": "special",
+       "args": [
+        312
+       ]
+      },
+      {
+       "at": "0x08ED5251",
+       "cmd": "end",
+       "args": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "seed": "0x08EDE95F",
+   "roots": [
+    {
+     "script": "0x08EDE58A",
+     "map_id": "1:94",
+     "place": "呆呆兽之井",
+     "kind": "objects",
+     "x": 20,
+     "y": 8,
+     "local_id": 2,
+     "flag_id": 2920
+    }
+   ],
+   "blocks": [
+    {
+     "script": "0x08EDE58A",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "1:94/local2"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EDE58A",
+       "cmd": "checkflag",
+       "args": [
+        2918
+       ]
+      },
+      {
+       "at": "0x08EDE58D",
+       "cmd": "goto_if",
+       "args": [
+        1,
+        149808552
+       ]
+      },
+      {
+       "at": "0x08EDE593",
+       "cmd": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08EDE598",
+       "cmd": "cry",
+       "args": [
+        80,
+        255
+       ]
+      },
+      {
+       "at": "0x08EDE59D",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        149810217
+       ],
+       "texts": [
+        {
+         "address": "0x08EDEC29",
+         "text": "呆呆兽好像很痛苦的样子……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDE5A3",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EDE5A5",
+       "cmd": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EDE5A6",
+       "cmd": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDE5A8",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EDE58A"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EDE5A8",
+       "cmd": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08EDE5AD",
+       "cmd": "signmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EDE5AE",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        149771085
+       ],
+       "texts": [
+        {
+         "address": "0x08ED534D",
+         "text": "精灵齿轮检测到周围的\\n超级能浓度正在极速上升！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDE5B4",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EDE5B6",
+       "cmd": "normalmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EDE5B7",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EDE5BA",
+       "cmd": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EDE5BD",
+       "cmd": "applymovement",
+       "args": [
+        255,
+        149770862
+       ]
+      },
+      {
+       "at": "0x08EDE5C4",
+       "cmd": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EDE5C7",
+       "cmd": "sound",
+       "args": [
+        103
+       ]
+      },
+      {
+       "at": "0x08EDE5CA",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        149704930
+       ],
+       "texts": [
+        {
+         "address": "0x08EC50E2",
+         "text": "警告！你所确认的\\n个体即将失控超级进化！\\p是否要应对\\n失控超级进化的个体？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDE5D0",
+       "cmd": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EDE5D2",
+       "cmd": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ]
+      },
+      {
+       "at": "0x08EDE5D7",
+       "cmd": "goto_if",
+       "args": [
+        1,
+        149813571
+       ]
+      },
+      {
+       "at": "0x08EDE5DD",
+       "cmd": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EDE5DE",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EDE5E1",
+       "cmd": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDE95F",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EDF943"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EDE95F",
+       "cmd": "setflag",
+       "args": [
+        2749
+       ]
+      },
+      {
+       "at": "0x08EDE962",
+       "cmd": "setvar",
+       "args": [
+        20544,
+        1
+       ]
+      },
+      {
+       "at": "0x08EDE967",
+       "cmd": "setwildbattle",
+       "args": [
+        80,
+        30,
+        0
+       ],
+       "species": "呆壳兽"
+      },
+      {
+       "at": "0x08EDE96D",
+       "cmd": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EDE970",
+       "cmd": "special",
+       "args": [
+        312
+       ]
+      },
+      {
+       "at": "0x08EDE973",
+       "cmd": "pause",
+       "args": [
+        160
+       ]
+      },
+      {
+       "at": "0x08EDE976",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        149810183
+       ],
+       "texts": [
+        {
+         "address": "0x08EDEC07",
+         "text": "尾巴上的大舌贝\\n似乎闪耀着光芒……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDE97C",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EDE97E",
+       "cmd": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EDE981",
+       "cmd": "applymovement",
+       "args": [
+        255,
+        149770862
+       ]
+      },
+      {
+       "at": "0x08EDE988",
+       "cmd": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EDE98B",
+       "cmd": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x08EDE98E",
+       "cmd": "preparemsg",
+       "args": [
+        149810132
+       ],
+       "texts": [
+        {
+         "address": "0x08EDEBD4",
+         "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将呆壳兽超级进化的波动\\n储存在了超级石中。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDE993",
+       "cmd": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EDE994",
+       "cmd": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08EDE995",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08EDE996",
+       "cmd": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EDE997",
+       "cmd": "setflag",
+       "args": [
+        3078
+       ]
+      },
+      {
+       "at": "0x08EDE99A",
+       "cmd": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EDE99C",
+       "cmd": "removeobject",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDE99F",
+       "cmd": "setflag",
+       "args": [
+        2920
+       ]
+      },
+      {
+       "at": "0x08EDE9A2",
+       "cmd": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08EDE9A5",
+       "cmd": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EDE9A7",
+       "cmd": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDF943",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EDE5A8"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EDF943",
+       "cmd": "setflag",
+       "args": [
+        2316
+       ]
+      },
+      {
+       "at": "0x08EDF946",
+       "cmd": "goto",
+       "args": [
+        149809503
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "seed": "0x08EECE52",
+   "roots": [
+    {
+     "script": "0x08EECE52",
+     "map_id": "3:68",
+     "place": "桔梗市",
+     "kind": "objects",
+     "x": 32,
+     "y": 8,
+     "local_id": 42,
+     "flag_id": 3181
+    }
+   ],
+   "blocks": [
+    {
+     "script": "0x08EECE52",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "3:68/local42"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EECE52",
+       "cmd": "copyvar",
+       "args": [
+        32775,
+        32783
+       ]
+      },
+      {
+       "at": "0x08EECE57",
+       "cmd": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08EECE5C",
+       "cmd": "cry",
+       "args": [
+        71,
+        255
+       ]
+      },
+      {
+       "at": "0x08EECE61",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        149868771
+       ]
+      },
+      {
+       "at": "0x08EECE67",
+       "cmd": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EECE69",
+       "cmd": "setflag",
+       "args": [
+        2749
+       ]
+      },
+      {
+       "at": "0x08EECE6C",
+       "cmd": "setvar",
+       "args": [
+        20544,
+        1
+       ]
+      },
+      {
+       "at": "0x08EECE71",
+       "cmd": "setflag",
+       "args": [
+        2315
+       ]
+      },
+      {
+       "at": "0x08EECE74",
+       "cmd": "setflag",
+       "args": [
+        2315
+       ]
+      },
+      {
+       "at": "0x08EECE77",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        428
+       ]
+      },
+      {
+       "at": "0x08EECE7C",
+       "cmd": "setvar",
+       "args": [
+        32769,
+        188
+       ]
+      },
+      {
+       "at": "0x08EECE81",
+       "cmd": "setvar",
+       "args": [
+        32770,
+        202
+       ]
+      },
+      {
+       "at": "0x08EECE86",
+       "cmd": "setvar",
+       "args": [
+        32771,
+        74
+       ]
+      },
+      {
+       "at": "0x08EECE8B",
+       "cmd": "setwildbattle",
+       "args": [
+        71,
+        28,
+        675
+       ],
+       "species": "大食花"
+      },
+      {
+       "at": "0x08EECE91",
+       "cmd": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EECE94",
+       "cmd": "special",
+       "args": [
+        312
+       ]
+      },
+      {
+       "at": "0x08EECE97",
+       "cmd": "pause",
+       "args": [
+        160
+       ]
+      },
+      {
+       "at": "0x08EECE9A",
+       "cmd": "setflag",
+       "args": [
+        3127
+       ]
+      },
+      {
+       "at": "0x08EECE9D",
+       "cmd": "setflag",
+       "args": [
+        3181
+       ]
+      },
+      {
+       "at": "0x08EECEA0",
+       "cmd": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EECEA2",
+       "cmd": "removeobject",
+       "args": [
+        32775
+       ]
+      },
+      {
+       "at": "0x08EECEA5",
+       "cmd": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EECEA7",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        149868696
+       ],
+       "texts": [
+        {
+         "address": "0x08EED098",
+         "text": "大食花冷静了下来。\\n似乎回到了喇叭芽之塔……\\p它身上似乎还有什么\\n残留的气息……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EECEAD",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EECEAF",
+       "cmd": "pause",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08EECEB2",
+       "cmd": "preparemsg",
+       "args": [
+        149868782
+       ],
+       "texts": [
+        {
+         "address": "0x08EED0EE",
+         "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级大食花的波动\\n储存在了超级石中。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EECEB7",
+       "cmd": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x08EECEBA",
+       "cmd": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08EECEBB",
+       "cmd": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EECEBC",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08EECEBD",
+       "cmd": "end",
+       "args": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "seed": "0x09CE056B",
+   "roots": [
+    {
+     "script": "0x09CE0540",
+     "map_id": "51:9",
+     "place": "城都矿山",
+     "kind": "objects",
+     "x": 22,
+     "y": 41,
+     "local_id": 31,
+     "flag_id": 3095
+    }
+   ],
+   "blocks": [
+    {
+     "script": "0x09CE0540",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "51:9/local31"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x09CE0540",
+       "cmd": "callasm",
+       "args": [
+        147456081
+       ]
+      },
+      {
+       "at": "0x09CE0545",
+       "cmd": "goto",
+       "args": [
+        164496747
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x09CE056B",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CE0540"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x09CE056B",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE0570",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        46
+       ]
+      },
+      {
+       "at": "0x09CE0575",
+       "cmd": "setvar",
+       "args": [
+        32773,
+        79
+       ]
+      },
+      {
+       "at": "0x09CE057A",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        267
+       ]
+      },
+      {
+       "at": "0x09CE057F",
+       "cmd": "setvar",
+       "args": [
+        32775,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE0584",
+       "cmd": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x09CE0587",
+       "cmd": "cry",
+       "args": [
+        811,
+        255
+       ]
+      },
+      {
+       "at": "0x09CE058C",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        165358019
+       ],
+       "texts": [
+        {
+         "address": "0x09DB29C3",
+         "text": "小碎钻：钻……钻呜……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE0592",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE0594",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE0599",
+       "cmd": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x09CE059C",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE059F",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE05A4",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        46
+       ]
+      },
+      {
+       "at": "0x09CE05A9",
+       "cmd": "setvar",
+       "args": [
+        32773,
+        79
+       ]
+      },
+      {
+       "at": "0x09CE05AE",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        265
+       ]
+      },
+      {
+       "at": "0x09CE05B3",
+       "cmd": "setvar",
+       "args": [
+        32775,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE05B8",
+       "cmd": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x09CE05BB",
+       "cmd": "cry",
+       "args": [
+        322,
+        255
+       ]
+      },
+      {
+       "at": "0x09CE05C0",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        165358037
+       ],
+       "texts": [
+        {
+         "address": "0x09DB29D5",
+         "text": "勾魂眼：桀桀桀……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE05C6",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE05C8",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE05CD",
+       "cmd": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x09CE05D0",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE05D3",
+       "cmd": "movesprite",
+       "args": [
+        32,
+        25,
+        34
+       ]
+      },
+      {
+       "at": "0x09CE05DA",
+       "cmd": "applymovement",
+       "args": [
+        32,
+        164496714
+       ]
+      },
+      {
+       "at": "0x09CE05E1",
+       "cmd": "waitmovement",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x09CE05E4",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        165358707
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2C73",
+         "text": "糟了……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE05EA",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE05EC",
+       "cmd": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CE05EF",
+       "cmd": "applymovement",
+       "args": [
+        255,
+        164496723
+       ]
+      },
+      {
+       "at": "0x09CE05F6",
+       "cmd": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CE05F9",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        165358714
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2C7A",
+         "text": "我正在这里\\n观察宝可梦的生态。\\p图鉴上记载，\\n勾魂眼最喜欢吃宝石，\\l它们是小碎钻的绝对天敌！\\l这也是大自然的残酷法则……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE05FF",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE0601",
+       "cmd": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CE0604",
+       "cmd": "applymovement",
+       "args": [
+        31,
+        164496726
+       ]
+      },
+      {
+       "at": "0x09CE060B",
+       "cmd": "cry",
+       "args": [
+        322,
+        255
+       ]
+      },
+      {
+       "at": "0x09CE0610",
+       "cmd": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CE0613",
+       "cmd": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CE0616",
+       "cmd": "applymovement",
+       "args": [
+        255,
+        164496729
+       ]
+      },
+      {
+       "at": "0x09CE061D",
+       "cmd": "applymovement",
+       "args": [
+        32,
+        164496729
+       ]
+      },
+      {
+       "at": "0x09CE0624",
+       "cmd": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CE0627",
+       "cmd": "setflag",
+       "args": [
+        2749
+       ]
+      },
+      {
+       "at": "0x09CE062A",
+       "cmd": "setvar",
+       "args": [
+        20544,
+        1
+       ]
+      },
+      {
+       "at": "0x09CE062F",
+       "cmd": "setflag",
+       "args": [
+        2315
+       ]
+      },
+      {
+       "at": "0x09CE0632",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        261
+       ]
+      },
+      {
+       "at": "0x09CE0637",
+       "cmd": "setvar",
+       "args": [
+        32769,
+        105
+       ]
+      },
+      {
+       "at": "0x09CE063C",
+       "cmd": "setvar",
+       "args": [
+        32770,
+        535
+       ]
+      },
+      {
+       "at": "0x09CE0641",
+       "cmd": "setvar",
+       "args": [
+        32771,
+        389
+       ]
+      },
+      {
+       "at": "0x09CE0646",
+       "cmd": "setwildbattle",
+       "args": [
+        322,
+        28,
+        671
+       ],
+       "species": "勾魂眼"
+      },
+      {
+       "at": "0x09CE064C",
+       "cmd": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CE064F",
+       "cmd": "special",
+       "args": [
+        312
+       ]
+      },
+      {
+       "at": "0x09CE0652",
+       "cmd": "pause",
+       "args": [
+        160
+       ]
+      },
+      {
+       "at": "0x09CE0655",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE065A",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        46
+       ]
+      },
+      {
+       "at": "0x09CE065F",
+       "cmd": "setvar",
+       "args": [
+        32773,
+        79
+       ]
+      },
+      {
+       "at": "0x09CE0664",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        266
+       ]
+      },
+      {
+       "at": "0x09CE0669",
+       "cmd": "setvar",
+       "args": [
+        32775,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE066E",
+       "cmd": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x09CE0671",
+       "cmd": "cry",
+       "args": [
+        322,
+        255
+       ]
+      },
+      {
+       "at": "0x09CE0676",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        165358824
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2CE8",
+         "text": "呜呜……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE067C",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE067E",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE0683",
+       "cmd": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x09CE0686",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE0689",
+       "cmd": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CE068C",
+       "cmd": "applymovement",
+       "args": [
+        32,
+        164496732
+       ]
+      },
+      {
+       "at": "0x09CE0693",
+       "cmd": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x09CE0696",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        165358831
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2CEF",
+         "text": "诶？这只勾魂眼……\\n好像没有什么恶意？\\p等等，\\var[01]！\\n你看那块石头！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE069C",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE069E",
+       "cmd": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CE06A1",
+       "cmd": "applymovement",
+       "args": [
+        31,
+        164496734
+       ]
+      },
+      {
+       "at": "0x09CE06A8",
+       "cmd": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CE06AB",
+       "cmd": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CE06AE",
+       "cmd": "applymovement",
+       "args": [
+        30,
+        164496737
+       ]
+      },
+      {
+       "at": "0x09CE06B5",
+       "cmd": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CE06B8",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        165358888
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2D28",
+         "text": "看见勾魂眼抱着的宝石，\\n小碎钻突然明白了什么。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE06BE",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE06C0",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE06C3",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE06C8",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        46
+       ]
+      },
+      {
+       "at": "0x09CE06CD",
+       "cmd": "setvar",
+       "args": [
+        32773,
+        79
+       ]
+      },
+      {
+       "at": "0x09CE06D2",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        268
+       ]
+      },
+      {
+       "at": "0x09CE06D7",
+       "cmd": "setvar",
+       "args": [
+        32775,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE06DC",
+       "cmd": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x09CE06DF",
+       "cmd": "cry",
+       "args": [
+        811,
+        255
+       ]
+      },
+      {
+       "at": "0x09CE06E4",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        165358932
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2D54",
+         "text": "小碎钻：钻！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE06EA",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE06EC",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE06F1",
+       "cmd": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x09CE06F4",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE06F7",
+       "cmd": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CE06F9",
+       "cmd": "sound",
+       "args": [
+        34
+       ]
+      },
+      {
+       "at": "0x09CE06FC",
+       "cmd": "writebytetoaddr",
+       "args": [
+        64,
+        67108882
+       ]
+      },
+      {
+       "at": "0x09CE0702",
+       "cmd": "callasm",
+       "args": [
+        143327233
+       ]
+      },
+      {
+       "at": "0x09CE0707",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE070A",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        165358943
+       ]
+      },
+      {
+       "at": "0x09CE0710",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE0712",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE0715",
+       "cmd": "writebytetoaddr",
+       "args": [
+        0,
+        67108882
+       ]
+      },
+      {
+       "at": "0x09CE071B",
+       "cmd": "callasm",
+       "args": [
+        143327545
+       ]
+      },
+      {
+       "at": "0x09CE0720",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE0723",
+       "cmd": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CE0725",
+       "cmd": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CE0728",
+       "cmd": "applymovement",
+       "args": [
+        31,
+        164496739
+       ]
+      },
+      {
+       "at": "0x09CE072F",
+       "cmd": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CE0732",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE0735",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE073A",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        46
+       ]
+      },
+      {
+       "at": "0x09CE073F",
+       "cmd": "setvar",
+       "args": [
+        32773,
+        79
+       ]
+      },
+      {
+       "at": "0x09CE0744",
+       "cmd": "setvar",
+       "args": [
+        32774,
+        265
+       ]
+      },
+      {
+       "at": "0x09CE0749",
+       "cmd": "setvar",
+       "args": [
+        32775,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE074E",
+       "cmd": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x09CE0751",
+       "cmd": "cry",
+       "args": [
+        322,
+        255
+       ]
+      },
+      {
+       "at": "0x09CE0756",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        165359067
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2DDB",
+         "text": "桀！！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE075C",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE075E",
+       "cmd": "setvar",
+       "args": [
+        32772,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE0763",
+       "cmd": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x09CE0766",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE0769",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        165358053
+       ],
+       "texts": [
+        {
+         "address": "0x09DB29E5",
+         "text": "小碎钻\\n骄傲地挺起了胸膛，\\p勾魂眼则像个\\n小跟班一样讨好地望着它。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE076F",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE0771",
+       "cmd": "applymovement",
+       "args": [
+        32,
+        164496741
+       ]
+      },
+      {
+       "at": "0x09CE0778",
+       "cmd": "waitmovement",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x09CE077B",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        165358115
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2A23",
+         "text": "原来如此……太惊人了！\\p这只勾魂眼\\n根本不是想吃小碎钻，\\p而是因为它超级进化以后，\\n胸口的宝石膨胀起来，\\l只靠自己根本弄不干净……\\p所以才一路追赶小碎钻……\\p是想利用小碎钻\\n身上极其坚硬的钻石，\\l来帮它抛光这颗宝石啊！！\\p勾魂眼那副天生吓人的笑脸，\\n再加上图鉴里可怕的天敌传说……\\l难怪小碎钻会被吓得一路逃跑。\\p这简直是\\n宝可梦世界里最大的乌龙！\\p呼，虽然是个误会。\\n但如果不是你打破僵局，\\p它们俩恐怕\\n永远无法理解彼此吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE0781",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE0783",
+       "cmd": "applymovement",
+       "args": [
+        31,
+        164496744
+       ]
+      },
+      {
+       "at": "0x09CE078A",
+       "cmd": "waitmovement",
+       "args": [
+        31
+       ]
+      },
+      {
+       "at": "0x09CE078D",
+       "cmd": "applymovement",
+       "args": [
+        32,
+        164496741
+       ]
+      },
+      {
+       "at": "0x09CE0794",
+       "cmd": "waitmovement",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x09CE0797",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        165358500
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2BA4",
+         "text": "勾魂眼好像有东西要给你！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE079D",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE079F",
+       "cmd": "pause",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x09CE07A2",
+       "cmd": "preparemsg",
+       "args": [
+        165358524
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2BBC",
+         "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级勾魂眼的波动\\n储存在了超级石中。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE07A7",
+       "cmd": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x09CE07AA",
+       "cmd": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x09CE07AB",
+       "cmd": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x09CE07AC",
+       "cmd": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x09CE07AD",
+       "cmd": "goto",
+       "args": [
+        164497330
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x09CE07B2",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CE056B"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x09CE07B2",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        165358569
+       ],
+       "texts": [
+        {
+         "address": "0x09DB2BE9",
+         "text": "天敌竟然\\n变成了抛光师和雇主……\\p宝可梦的生态，真是比\\n书本上写的要有趣一万倍啊！\\l我要赶紧把这个课题写成论文！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CE07B8",
+       "cmd": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CE07BA",
+       "cmd": "setflag",
+       "args": [
+        3095
+       ]
+      },
+      {
+       "at": "0x09CE07BD",
+       "cmd": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CE07BF",
+       "cmd": "removeobject",
+       "args": [
+        30
+       ]
+      },
+      {
+       "at": "0x09CE07C2",
+       "cmd": "removeobject",
+       "args": [
+        31
+       ]
+      },
+      {
+       "at": "0x09CE07C5",
+       "cmd": "removeobject",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x09CE07C8",
+       "cmd": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x09CE07CB",
+       "cmd": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CE07CD",
+       "cmd": "addmoney",
+       "args": [
+        6000,
+        0
+       ]
+      },
+      {
+       "at": "0x09CE07D3",
+       "cmd": "addvar",
+       "args": [
+        20789,
+        6
+       ]
+      },
+      {
+       "at": "0x09CE07D8",
+       "cmd": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CE07DB",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        142296759
+       ]
+      },
+      {
+       "at": "0x09CE07E1",
+       "cmd": "setvar",
+       "args": [
+        32768,
+        1
+       ]
+      },
+      {
+       "at": "0x09CE07E6",
+       "cmd": "setvar",
+       "args": [
+        32769,
+        1
+       ]
+      },
+      {
+       "at": "0x09CE07EB",
+       "cmd": "setvar",
+       "args": [
+        32770,
+        28
+       ]
+      },
+      {
+       "at": "0x09CE07F0",
+       "cmd": "setvar",
+       "args": [
+        32771,
+        2
+       ]
+      },
+      {
+       "at": "0x09CE07F5",
+       "cmd": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x09CE07FA",
+       "cmd": "loadpointer",
+       "args": [
+        0,
+        165358673
+       ]
+      },
+      {
+       "at": "0x09CE0800",
+       "cmd": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CE0802",
+       "cmd": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CE0807",
+       "cmd": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CE080A",
+       "cmd": "end",
+       "args": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,903 @@
+{
+ "title": "穿玩偶装的人",
+ "quest_id": 40,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b21c",
+    "title": "穿玩偶装的人",
+    "title_address": "0x8e3c28c",
+    "description": "我在桐树林遇到了\n穿着粉色玩偶装的人...\n我现在在通往桐树林的过道。",
+    "description_address": "0x8e3c265",
+    "unknown_u16": 81,
+    "unknown_u16_hex": "0x0051",
+    "accept_flag": 6285,
+    "accept_flag_hex": "0x188D",
+    "complete_flag": 6287,
+    "complete_flag_hex": "0x188F",
+    "map_group": 44,
+    "map_num": 5,
+    "tail_hex": "04 01 00 00",
+    "index": 40,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39544",
+      "title": "穿玩偶装的人",
+      "description_address": "0x8e3a0f7",
+      "description": "我在桐树林遇到了\\n穿着粉色玩偶装的人...\\n我现在在通往桐树林的过道。"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a0f7",
+    "legacy_match_count": 1,
+    "current_description": "调查周四出现在\n桐树林的穿着玩偶装的人。",
+    "catalog_map": {
+     "id": "44:5",
+     "name": "桧皮镇"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08F343C7",
+    "0x08F343FB",
+    "0x08F34450",
+    "0x08F347BD"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F50AEC",
+     "map_id": "44:5",
+     "place": "桧皮镇",
+     "kind": "人物",
+     "local_id": 4,
+     "event_index": 3,
+     "x": 7,
+     "y": 9,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g44_n005.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08F343B4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F343B4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150160595
+       ],
+       "texts": [
+        {
+         "address": "0x08F344D3",
+         "text": "森林里那个身影……\n无论如何都很令人在意啊。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F343BA",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F343BC",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08F343BF",
+       "command": "goto_if",
+       "args": [
+        1,
+        150160327
+       ],
+       "targets": [
+        "0x08F343C7"
+       ]
+      },
+      {
+       "at": "0x08F343C5",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F343C7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F343C7",
+       "command": "checkflag",
+       "args": [
+        6285
+       ],
+       "task_flag_labels": [
+        {
+         "title": "穿玩偶装的人",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F343CA",
+       "command": "goto_if",
+       "args": [
+        1,
+        150160445
+       ],
+       "targets": [
+        "0x08F3443D"
+       ]
+      },
+      {
+       "at": "0x08F343D0",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F343D1",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F343D4",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150160592
+       ]
+      },
+      {
+       "at": "0x08F343DB",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F343DE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150160638
+       ],
+       "texts": [
+        {
+         "address": "0x08F344FE",
+         "text": "是你吗？\n看见了我的委托吧？\n其实是这么回事……\n好像是在周四的晚上，我在桐树林\n发现了一个穿着粉色玩偶装的人。\n可还没有等我反应过来，\n他就抱住了我……\n把我送出了桐树林，\n随后消失得无影无踪……\n我真的很想知道……\n玩偶装里的人到底长什么样子！\n所以……请问\n你能够帮我调查这件事吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F343E4",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F343E6",
+       "command": "goto",
+       "args": [
+        150278011
+       ],
+       "targets": [
+        "0x08F50F7B"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F343FB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F343FB",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F343FE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150160938
+       ],
+       "texts": [
+        {
+         "address": "0x08F3462A",
+         "text": "接受任务:<穿玩偶服的人?>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34404",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F34409",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3440E",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F34413",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F34418",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F3441D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150160968
+       ],
+       "texts": [
+        {
+         "address": "0x08F34648",
+         "text": "那么就麻烦你了！\n我是在周四遇见他的。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34423",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34425",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F3442A",
+       "command": "setflag",
+       "args": [
+        6285
+       ],
+       "task_flag_labels": [
+        {
+         "title": "穿玩偶装的人",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3442D",
+       "command": "checkflag",
+       "args": [
+        5532
+       ]
+      },
+      {
+       "at": "0x08F34430",
+       "command": "goto_if",
+       "args": [
+        0,
+        150160440
+       ],
+       "targets": [
+        "0x08F34438"
+       ]
+      },
+      {
+       "at": "0x08F34436",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F34438",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34438",
+       "command": "clearflag",
+       "args": [
+        6288
+       ]
+      },
+      {
+       "at": "0x08F3443B",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3443D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3443D",
+       "command": "checkflag",
+       "args": [
+        6286
+       ]
+      },
+      {
+       "at": "0x08F34440",
+       "command": "goto_if",
+       "args": [
+        1,
+        150160464
+       ],
+       "targets": [
+        "0x08F34450"
+       ]
+      },
+      {
+       "at": "0x08F34446",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150160968
+       ],
+       "texts": [
+        {
+         "address": "0x08F34648",
+         "text": "那么就麻烦你了！\n我是在周四遇见他的。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3444C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3444E",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F34450",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34450",
+       "command": "checkflag",
+       "args": [
+        6287
+       ],
+       "task_flag_labels": [
+        {
+         "title": "穿玩偶装的人",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34453",
+       "command": "goto_if",
+       "args": [
+        1,
+        150160582
+       ],
+       "targets": [
+        "0x08F344C6"
+       ]
+      },
+      {
+       "at": "0x08F34459",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150161018
+       ],
+       "texts": [
+        {
+         "address": "0x08F3467A",
+         "text": "调查得怎么样了？\n有看到玩偶服下的面孔吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3445F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34461",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F34462",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F34465",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150160592
+       ]
+      },
+      {
+       "at": "0x08F3446C",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F3446F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150161060
+       ],
+       "texts": [
+        {
+         "address": "0x08F346A4",
+         "text": "什么！？\n原来那是一只宝可梦吗！？\n真是令人意想不到的结果呢……\n嗯，总之我明白了。\n虽然也没有完全明白……\n好了，这是给你的报酬。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34475",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34477",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F34478",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        717
+       ],
+       "possible_names_not_semantics": {
+        "species": "洛托姆",
+        "item": "部位护具",
+        "move": "臂贝武器"
+       }
+      },
+      {
+       "at": "0x08F3447D",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F34482",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F34484",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34487",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3448A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150161213
+       ],
+       "texts": [
+        {
+         "address": "0x08F3473D",
+         "text": "完成任务:<穿玩偶服的人?>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34490",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F34495",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3449A",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F3449F",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F344A4",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F344A9",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08F344AE",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08F344B4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150161178
+       ],
+       "texts": [
+        {
+         "address": "0x08F3471A",
+         "text": "获得了3点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F344BA",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F344BC",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F344C1",
+       "command": "setflag",
+       "args": [
+        6287
+       ],
+       "task_flag_labels": [
+        {
+         "title": "穿玩偶装的人",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F344C4",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F344C6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F344C6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150161243
+       ],
+       "texts": [
+        {
+         "address": "0x08F3475B",
+         "text": "被穿着熊抱着的感觉很舒服，\n不过有时候也害怕会用力过猛呢。\n所以我给你的\n部位护具应该能够派上用场吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F344CC",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F344CE",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F347BD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F347BD",
+       "command": "checkflag",
+       "args": [
+        6285
+       ],
+       "task_flag_labels": [
+        {
+         "title": "穿玩偶装的人",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F347C0",
+       "command": "goto_if",
+       "args": [
+        1,
+        150160327
+       ],
+       "targets": [
+        "0x08F343C7"
+       ]
+      },
+      {
+       "at": "0x08F347C6",
+       "command": "goto",
+       "args": [
+        150160308
+       ],
+       "targets": [
+        "0x08F343B4"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F50AEC",
+     "event_roots": [
+      {
+       "map_id": "44:5",
+       "place": "桧皮镇",
+       "kind": "人物",
+       "local_id": 4,
+       "event_index": 3,
+       "x": 7,
+       "y": 9,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g44_n005.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F50AEC",
+       "command": "applymovement",
+       "args": [
+        5,
+        150277865
+       ]
+      },
+      {
+       "at": "0x08F50AF3",
+       "command": "waitmovement",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F50AF6",
+       "command": "goto",
+       "args": [
+        150161341
+       ],
+       "targets": [
+        "0x08F347BD"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F50F7B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F50F7B",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F50F80",
+       "command": "goto_if",
+       "args": [
+        1,
+        150160379
+       ],
+       "targets": [
+        "0x08F343FB"
+       ]
+      },
+      {
+       "at": "0x08F50F86",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150160911
+       ],
+       "texts": [
+        {
+         "address": "0x08F3460F",
+         "text": "好吧……\n我会想其他的办法。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F50F8C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F50F8E",
+       "command": "applymovement",
+       "args": [
+        5,
+        150279852
+       ]
+      },
+      {
+       "at": "0x08F50F95",
+       "command": "waitmovement",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F50F98",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F50F99",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

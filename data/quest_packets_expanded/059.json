@@ -1,0 +1,1636 @@
+{
+ "title": "五彩斑斓的头巾",
+ "quest_id": 59,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b398",
+    "title": "五彩斑斓的头巾",
+    "title_address": "0x8e3bc73",
+    "description": "我正在收集五种颜色的头巾！\n感兴趣的可以前往\n华丽大赛会场找我，哦呵呵呵！",
+    "description_address": "0x8e3bc54",
+    "unknown_u16": 11741,
+    "unknown_u16_hex": "0x2DDD",
+    "accept_flag": 2962,
+    "accept_flag_hex": "0x0B92",
+    "complete_flag": 2963,
+    "complete_flag_hex": "0x0B93",
+    "map_group": 35,
+    "map_num": 4,
+    "tail_hex": "03 01 00 00",
+    "index": 59,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39624",
+      "title": "五彩斑斓的头巾",
+      "description_address": "0x8e39911",
+      "description": "我正在收集五种颜色的头巾！\\n感兴趣的可以前往\\n华丽大赛会场找我，哦呵呵呵！"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39911",
+    "legacy_match_count": 1,
+    "current_description": "帮助梅丽莎\n收集五种颜色的头巾。",
+    "catalog_map": {
+     "id": "35:4",
+     "name": "满金市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x09CD3121",
+    "0x09CD312C",
+    "0x09CD319B",
+    "0x09CD3267"
+   ],
+   "event_roots": [],
+   "scripts": [
+    {
+     "script": "0x09CD3121",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3121",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3122",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x09CD3123",
+       "command": "checkflag",
+       "args": [
+        2963
+       ],
+       "task_flag_labels": [
+        {
+         "title": "五彩斑斓的头巾",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3126",
+       "command": "goto_if",
+       "args": [
+        1,
+        164442906
+       ],
+       "targets": [
+        "0x09CD331A"
+       ]
+      },
+      {
+       "at": "0x09CD312C",
+       "command": "checkflag",
+       "args": [
+        2962
+       ],
+       "task_flag_labels": [
+        {
+         "title": "五彩斑斓的头巾",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD312F",
+       "command": "goto_if",
+       "args": [
+        1,
+        164442587
+       ],
+       "targets": [
+        "0x09CD31DB"
+       ]
+      },
+      {
+       "at": "0x09CD3135",
+       "command": "call",
+       "args": [
+        164442929
+       ],
+       "targets": [
+        "0x09CD3331"
+       ]
+      },
+      {
+       "at": "0x09CD313A",
+       "command": "call",
+       "args": [
+        164442951
+       ],
+       "targets": [
+        "0x09CD3347"
+       ]
+      },
+      {
+       "at": "0x09CD313F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165265232
+       ],
+       "texts": [
+        {
+         "address": "0x09D9BF50",
+         "text": "噢！Bonjour！你好！\n多么耀眼的灵魂啊！\n我是梅丽莎，\n来自神奥的家缘市。\n我受邀来到这里担任嘉宾后，\n一直在寻找最顶尖的华丽演出！\n可要展现宝可梦的极致魅力，\n只有热情还不够。\n还得拥有真正的艺术感才行！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3145",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3147",
+       "command": "call",
+       "args": [
+        164442968
+       ],
+       "targets": [
+        "0x09CD3358"
+       ]
+      },
+      {
+       "at": "0x09CD314C",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD314F",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x09CD3152",
+       "command": "goto_if",
+       "args": [
+        1,
+        164442463
+       ],
+       "targets": [
+        "0x09CD315F"
+       ]
+      },
+      {
+       "at": "0x09CD3158",
+       "command": "call",
+       "args": [
+        164442940
+       ],
+       "targets": [
+        "0x09CD333C"
+       ]
+      },
+      {
+       "at": "0x09CD315D",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD315E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_catalog_flag_anchor",
+       "where": "059"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD312C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD312C",
+       "command": "checkflag",
+       "args": [
+        2962
+       ],
+       "task_flag_labels": [
+        {
+         "title": "五彩斑斓的头巾",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD312F",
+       "command": "goto_if",
+       "args": [
+        1,
+        164442587
+       ],
+       "targets": [
+        "0x09CD31DB"
+       ]
+      },
+      {
+       "at": "0x09CD3135",
+       "command": "call",
+       "args": [
+        164442929
+       ],
+       "targets": [
+        "0x09CD3331"
+       ]
+      },
+      {
+       "at": "0x09CD313A",
+       "command": "call",
+       "args": [
+        164442951
+       ],
+       "targets": [
+        "0x09CD3347"
+       ]
+      },
+      {
+       "at": "0x09CD313F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165265232
+       ],
+       "texts": [
+        {
+         "address": "0x09D9BF50",
+         "text": "噢！Bonjour！你好！\n多么耀眼的灵魂啊！\n我是梅丽莎，\n来自神奥的家缘市。\n我受邀来到这里担任嘉宾后，\n一直在寻找最顶尖的华丽演出！\n可要展现宝可梦的极致魅力，\n只有热情还不够。\n还得拥有真正的艺术感才行！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3145",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3147",
+       "command": "call",
+       "args": [
+        164442968
+       ],
+       "targets": [
+        "0x09CD3358"
+       ]
+      },
+      {
+       "at": "0x09CD314C",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD314F",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x09CD3152",
+       "command": "goto_if",
+       "args": [
+        1,
+        164442463
+       ],
+       "targets": [
+        "0x09CD315F"
+       ]
+      },
+      {
+       "at": "0x09CD3158",
+       "command": "call",
+       "args": [
+        164442940
+       ],
+       "targets": [
+        "0x09CD333C"
+       ]
+      },
+      {
+       "at": "0x09CD315D",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD315E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=59"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD315F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD315F",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD3162",
+       "command": "applymovement",
+       "args": [
+        7,
+        164442974
+       ]
+      },
+      {
+       "at": "0x09CD3169",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD316C",
+       "command": "call",
+       "args": [
+        164442951
+       ],
+       "targets": [
+        "0x09CD3347"
+       ]
+      },
+      {
+       "at": "0x09CD3171",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165265419
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C00B",
+         "text": "哦呵呵呵呵呵！\n如果你能让我看看，\n那五种属性头巾……\n帅气的红色、美丽的蓝色，\n可爱的粉色、聪明的绿色，\n还有强壮的黄色！\n只要凑齐这五色，我就送你\n一份很有潜力的惊喜礼物！\n如果你还没什么头绪的话，\n我倒是听闻过一些有趣的消息哦。\n热情的红色与强壮的黄色，\n听说在这座会场里就能寻得线索。\n海风吹拂的湛蓝市和浅葱市，\n似乎有人拥有蓝色与粉色呢。\n至于聪明的绿色嘛……听说\n34号道路往下冲浪，\n会找到一片森林，\n那里或许会有答案。\n去回应那些追寻色彩的声音吧，\n让我看看你的艺术品味！\n哦呵呵呵！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3177",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD3179",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD317E",
+       "command": "goto_if",
+       "args": [
+        1,
+        164442523
+       ],
+       "targets": [
+        "0x09CD319B"
+       ]
+      },
+      {
+       "at": "0x09CD3184",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165265873
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C1D1",
+         "text": "这样呀？\n那就等你准备好后，\n再来回应我的审美吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD318A",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD318C",
+       "command": "call",
+       "args": [
+        164442968
+       ],
+       "targets": [
+        "0x09CD3358"
+       ]
+      },
+      {
+       "at": "0x09CD3191",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD3194",
+       "command": "call",
+       "args": [
+        164442940
+       ],
+       "targets": [
+        "0x09CD333C"
+       ]
+      },
+      {
+       "at": "0x09CD3199",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD319A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3121"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD319B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD319B",
+       "command": "call",
+       "args": [
+        164442968
+       ],
+       "targets": [
+        "0x09CD3358"
+       ]
+      },
+      {
+       "at": "0x09CD31A0",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD31A1",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD31A4",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CD31A7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165267272
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C748",
+         "text": "接受任务:<五彩斑斓的头巾>"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD31AD",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD31B2",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD31B7",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x09CD31BC",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x09CD31C1",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x09CD31C6",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD31C9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165265919
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C1FF",
+         "text": "去集齐那五种头巾后，\n再来向我展示吧！\n让我看看你的色彩品味！\n如果你还没什么头绪的话，\n我倒是听闻过一些有趣的消息哦。\n热情的红色与强壮的黄色，\n听说在这座会场里就能寻得线索。\n海风吹拂的湛蓝市和浅葱市，\n似乎有人拥有蓝色与粉色呢。\n至于聪明的绿色嘛……听说\n34号道路往下冲浪，\n会找到一片森林，\n那里或许会有答案。\n去回应那些追寻色彩的声音吧，\n让我看看你的艺术品味！\n哦呵呵呵！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD31CF",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD31D1",
+       "command": "setflag",
+       "args": [
+        2962
+       ],
+       "task_flag_labels": [
+        {
+         "title": "五彩斑斓的头巾",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD31D4",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CD31D9",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD31DA",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD315F"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD31DB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD31DB",
+       "command": "call",
+       "args": [
+        164442951
+       ],
+       "targets": [
+        "0x09CD3347"
+       ]
+      },
+      {
+       "at": "0x09CD31E0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165266479
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C42F",
+         "text": "噢！我已经感觉到\n色彩灵感在跳动了！\n你已经把那五种头巾\n都带来了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD31E6",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD31E8",
+       "command": "call",
+       "args": [
+        164442968
+       ],
+       "targets": [
+        "0x09CD3358"
+       ]
+      },
+      {
+       "at": "0x09CD31ED",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD31EE",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD31F1",
+       "command": "applymovement",
+       "args": [
+        7,
+        164442976
+       ]
+      },
+      {
+       "at": "0x09CD31F8",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD31FB",
+       "command": "checkitem",
+       "args": [
+        254,
+        1
+       ],
+       "item_name": "红色头巾"
+      },
+      {
+       "at": "0x09CD3200",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD3205",
+       "command": "goto_if",
+       "args": [
+        5,
+        164442704
+       ],
+       "targets": [
+        "0x09CD3250"
+       ]
+      },
+      {
+       "at": "0x09CD320B",
+       "command": "checkitem",
+       "args": [
+        255,
+        1
+       ],
+       "item_name": "蓝色头巾"
+      },
+      {
+       "at": "0x09CD3210",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD3215",
+       "command": "goto_if",
+       "args": [
+        5,
+        164442704
+       ],
+       "targets": [
+        "0x09CD3250"
+       ]
+      },
+      {
+       "at": "0x09CD321B",
+       "command": "checkitem",
+       "args": [
+        256,
+        1
+       ],
+       "item_name": "粉红头巾"
+      },
+      {
+       "at": "0x09CD3220",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD3225",
+       "command": "goto_if",
+       "args": [
+        5,
+        164442704
+       ],
+       "targets": [
+        "0x09CD3250"
+       ]
+      },
+      {
+       "at": "0x09CD322B",
+       "command": "checkitem",
+       "args": [
+        257,
+        1
+       ],
+       "item_name": "绿色头巾"
+      },
+      {
+       "at": "0x09CD3230",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD3235",
+       "command": "goto_if",
+       "args": [
+        5,
+        164442704
+       ],
+       "targets": [
+        "0x09CD3250"
+       ]
+      },
+      {
+       "at": "0x09CD323B",
+       "command": "checkitem",
+       "args": [
+        258,
+        1
+       ],
+       "item_name": "黄色头巾"
+      },
+      {
+       "at": "0x09CD3240",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD3245",
+       "command": "goto_if",
+       "args": [
+        5,
+        164442704
+       ],
+       "targets": [
+        "0x09CD3250"
+       ]
+      },
+      {
+       "at": "0x09CD324B",
+       "command": "goto",
+       "args": [
+        164442727
+       ],
+       "targets": [
+        "0x09CD3267"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3121"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3250",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3250",
+       "command": "call",
+       "args": [
+        164442951
+       ],
+       "targets": [
+        "0x09CD3347"
+       ]
+      },
+      {
+       "at": "0x09CD3255",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165266544
+       ]
+      },
+      {
+       "at": "0x09CD325B",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD325D",
+       "command": "call",
+       "args": [
+        164442968
+       ],
+       "targets": [
+        "0x09CD3358"
+       ]
+      },
+      {
+       "at": "0x09CD3262",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD3265",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3266",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD31DB"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3267",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3267",
+       "command": "call",
+       "args": [
+        164442951
+       ],
+       "targets": [
+        "0x09CD3347"
+       ]
+      },
+      {
+       "at": "0x09CD326C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165266898
+       ]
+      },
+      {
+       "at": "0x09CD3272",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3274",
+       "command": "call",
+       "args": [
+        164442968
+       ],
+       "targets": [
+        "0x09CD3358"
+       ]
+      },
+      {
+       "at": "0x09CD3279",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD327C",
+       "command": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x09CD327F",
+       "command": "showpokepic",
+       "args": [
+        328,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x09CD3284",
+       "command": "setflag",
+       "args": [
+        2904
+       ]
+      },
+      {
+       "at": "0x09CD3287",
+       "command": "setflag",
+       "args": [
+        2323
+       ]
+      },
+      {
+       "at": "0x09CD328A",
+       "command": "givepokemon",
+       "args": [
+        328,
+        20,
+        0,
+        0,
+        0,
+        0
+       ],
+       "species_name": "丑丑鱼"
+      },
+      {
+       "at": "0x09CD3299",
+       "command": "bufferpokemon",
+       "args": [
+        1,
+        328
+       ]
+      },
+      {
+       "at": "0x09CD329D",
+       "command": "preparemsg",
+       "args": [
+        165267371
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C7AB",
+         "text": "[玩家/变量]获得了丑丑鱼！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD32A2",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x09CD32A3",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x09CD32A4",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x09CD32A5",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x09CD32A6",
+       "command": "call",
+       "args": [
+        164442951
+       ],
+       "targets": [
+        "0x09CD3347"
+       ]
+      },
+      {
+       "at": "0x09CD32AB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165267029
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C655",
+         "text": "……咳，我虽是幽灵属性的专家，\n却也追求变化之美。\n这只丑丑鱼，\n是我在神奥的天冠山里，\n费尽力气才钓到的！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD32B1",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x09CD32B3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165267126
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C6B6",
+         "text": "噢！说起那时，\n我就要抓狂！\n那座大山，那片水域，\n竟只有几个钓点有它！\n我穿着晚礼服，\n在黑漆漆的洞里，\n把每个落脚点都试遍了！\n这简直是对时尚达人体能的考验！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD32B9",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD32BB",
+       "command": "call",
+       "args": [
+        164442968
+       ],
+       "targets": [
+        "0x09CD3358"
+       ]
+      },
+      {
+       "at": "0x09CD32C0",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD32C3",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CD32C6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165267303
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C767",
+         "text": "完成任务:<五彩斑斓的头巾>"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD32CC",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD32D1",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD32D6",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x09CD32DB",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x09CD32E0",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x09CD32E5",
+       "command": "addvar",
+       "args": [
+        20789,
+        10
+       ]
+      },
+      {
+       "at": "0x09CD32EA",
+       "command": "addmoney",
+       "args": [
+        10000,
+        0
+       ]
+      },
+      {
+       "at": "0x09CD32F0",
+       "command": "setflag",
+       "args": [
+        2963
+       ],
+       "task_flag_labels": [
+        {
+         "title": "五彩斑斓的头巾",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD32F3",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD32F6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165267334
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C786",
+         "text": "获得了10点BracerPoints和10000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD32FC",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD32FE",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CD3303",
+       "command": "call",
+       "args": [
+        164442951
+       ],
+       "targets": [
+        "0x09CD3347"
+       ]
+      },
+      {
+       "at": "0x09CD3308",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165267393
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C7C1",
+         "text": "努力去培养它吧！\n虽然它现在的样子，\n和华丽还差得远。\n但若你用那五色头巾，\n所象征的魅力去培育……\n它一定能进化成，\n城都从未见过的\n最美丽的宝可梦！\n噢呵呵呵呵呵！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD330E",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3310",
+       "command": "call",
+       "args": [
+        164442968
+       ],
+       "targets": [
+        "0x09CD3358"
+       ]
+      },
+      {
+       "at": "0x09CD3315",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD3318",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3319",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD31DB"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD331A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD331A",
+       "command": "call",
+       "args": [
+        164442951
+       ],
+       "targets": [
+        "0x09CD3347"
+       ]
+      },
+      {
+       "at": "0x09CD331F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165267393
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C7C1",
+         "text": "努力去培养它吧！\n虽然它现在的样子，\n和华丽还差得远。\n但若你用那五色头巾，\n所象征的魅力去培育……\n它一定能进化成，\n城都从未见过的\n最美丽的宝可梦！\n噢呵呵呵呵呵！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3325",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3327",
+       "command": "call",
+       "args": [
+        164442968
+       ],
+       "targets": [
+        "0x09CD3358"
+       ]
+      },
+      {
+       "at": "0x09CD332C",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD332F",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3330",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3121"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3331",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3331",
+       "command": "applymovement",
+       "args": [
+        9,
+        150275628
+       ]
+      },
+      {
+       "at": "0x09CD3338",
+       "command": "waitmovement",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x09CD333B",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3121"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD333C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD333C",
+       "command": "applymovement",
+       "args": [
+        9,
+        150275618
+       ]
+      },
+      {
+       "at": "0x09CD3343",
+       "command": "waitmovement",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x09CD3346",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3121"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3347",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3347",
+       "command": "call",
+       "args": [
+        144452428
+       ],
+       "targets": [
+        "0x089C2B4C"
+       ]
+      },
+      {
+       "at": "0x09CD334C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165267545
+       ]
+      },
+      {
+       "at": "0x09CD3352",
+       "command": "call",
+       "args": [
+        144452458
+       ],
+       "targets": [
+        "0x089C2B6A"
+       ]
+      },
+      {
+       "at": "0x09CD3357",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3121"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3358",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3358",
+       "command": "call",
+       "args": [
+        144452505
+       ],
+       "targets": [
+        "0x089C2B99"
+       ]
+      },
+      {
+       "at": "0x09CD335D",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3121"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [
+    "0x089C2B4C",
+    "0x089C2B6A",
+    "0x089C2B99"
+   ],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

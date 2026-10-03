@@ -1,0 +1,2413 @@
+{
+ "title": "海之传说",
+ "quest_id": 84,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b58c",
+    "title": "海之传说",
+    "title_address": "0x8e3bca1",
+    "description": "调查有关海之彼岸\n的王子的传说。",
+    "description_address": "0x8e3bc82",
+    "unknown_u16": 93,
+    "unknown_u16_hex": "0x005D",
+    "accept_flag": 2849,
+    "accept_flag_hex": "0x0B21",
+    "complete_flag": 2853,
+    "complete_flag_hex": "0x0B25",
+    "map_group": 49,
+    "map_num": 10,
+    "tail_hex": "00 01 00 00",
+    "index": 84,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3bc82",
+    "legacy_match_count": 0,
+    "current_description": "调查有关海之彼岸\n的王子的传说。",
+    "catalog_map": {
+     "id": "49:10",
+     "name": "浅葱市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08ED3E19",
+    "0x08ED3F25",
+    "0x08ED4710"
+   ],
+   "event_roots": [
+    {
+     "script": "0x089F0FCA",
+     "map_id": "52:5",
+     "place": "缘朱市",
+     "kind": "调查点",
+     "local_id": null,
+     "event_index": 8,
+     "x": 13,
+     "y": 36,
+     "facing": "script_facing_north",
+     "map_page": "../../wiki_export/world/pages/maps/g52_n005.md"
+    },
+    {
+     "script": "0x089F0FCA",
+     "map_id": "52:5",
+     "place": "缘朱市",
+     "kind": "调查点",
+     "local_id": null,
+     "event_index": 9,
+     "x": 14,
+     "y": 36,
+     "facing": "script_facing_any",
+     "map_page": "../../wiki_export/world/pages/maps/g52_n005.md"
+    },
+    {
+     "script": "0x089F0FCA",
+     "map_id": "55:33",
+     "place": "缘朱市",
+     "kind": "调查点",
+     "local_id": null,
+     "event_index": 8,
+     "x": 13,
+     "y": 36,
+     "facing": "script_facing_north",
+     "map_page": "../../wiki_export/world/pages/maps/g55_n033.md"
+    },
+    {
+     "script": "0x089F0FCA",
+     "map_id": "55:33",
+     "place": "缘朱市",
+     "kind": "调查点",
+     "local_id": null,
+     "event_index": 9,
+     "x": 14,
+     "y": 36,
+     "facing": "script_facing_any",
+     "map_page": "../../wiki_export/world/pages/maps/g55_n033.md"
+    },
+    {
+     "script": "0x08F5EE10",
+     "map_id": "49:10",
+     "place": "浅葱市",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 6,
+     "y": 17,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g49_n010.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x087B1B00",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B1B00",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142286225
+       ],
+       "texts": [
+        {
+         "address": "0x087B1D91",
+         "text": "沧海的王子……\n玛纳霏……\n没想到真的有一天\n能够见证这古老的海之传说呢。\n谢谢你，[玩家/变量]！"
+        }
+       ]
+      },
+      {
+       "at": "0x087B1B06",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B1B08",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08ED3F25"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F0FCA",
+     "event_roots": [
+      {
+       "map_id": "52:5",
+       "place": "缘朱市",
+       "kind": "调查点",
+       "local_id": null,
+       "event_index": 8,
+       "x": 13,
+       "y": 36,
+       "facing": "script_facing_north",
+       "map_page": "../../wiki_export/world/pages/maps/g52_n005.md"
+      },
+      {
+       "map_id": "52:5",
+       "place": "缘朱市",
+       "kind": "调查点",
+       "local_id": null,
+       "event_index": 9,
+       "x": 14,
+       "y": 36,
+       "facing": "script_facing_any",
+       "map_page": "../../wiki_export/world/pages/maps/g52_n005.md"
+      },
+      {
+       "map_id": "55:33",
+       "place": "缘朱市",
+       "kind": "调查点",
+       "local_id": null,
+       "event_index": 8,
+       "x": 13,
+       "y": 36,
+       "facing": "script_facing_north",
+       "map_page": "../../wiki_export/world/pages/maps/g55_n033.md"
+      },
+      {
+       "map_id": "55:33",
+       "place": "缘朱市",
+       "kind": "调查点",
+       "local_id": null,
+       "event_index": 9,
+       "x": 14,
+       "y": 36,
+       "facing": "script_facing_any",
+       "map_page": "../../wiki_export/world/pages/maps/g55_n033.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x089F0FCA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144642091
+       ],
+       "texts": [
+        {
+         "address": "0x089F102B",
+         "text": "这里放着一本最近被发现的书，\n书中的古代文字已被解读。\n<<海之传说>>……\n要读读看吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089F0FD0",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089F0FD2",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089F0FD7",
+       "command": "goto_if",
+       "args": [
+        1,
+        144642023
+       ],
+       "targets": [
+        "0x089F0FE7"
+       ]
+      },
+      {
+       "at": "0x089F0FDD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144642172
+       ],
+       "texts": [
+        {
+         "address": "0x089F107C",
+         "text": "[玩家/变量]\n把书放回了原处。"
+        }
+       ]
+      },
+      {
+       "at": "0x089F0FE3",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089F0FE5",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "bg",
+       "where": "52:5"
+      },
+      {
+       "kind": "bg",
+       "where": "52:5"
+      },
+      {
+       "kind": "bg",
+       "where": "55:33"
+      },
+      {
+       "kind": "bg",
+       "where": "55:33"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F0FE7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F0FE7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144642193
+       ],
+       "texts": [
+        {
+         "address": "0x089F1091",
+         "text": "在很久以前，海之彼岸\n有一只被称为王子的宝可梦，\n人类的勇者委托了海里的宝可梦，\n希望能见上王子一面。\n……要继续阅读吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089F0FED",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089F0FEF",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089F0FF4",
+       "command": "goto_if",
+       "args": [
+        1,
+        144642052
+       ],
+       "targets": [
+        "0x089F1004"
+       ]
+      },
+      {
+       "at": "0x089F0FFA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144642172
+       ],
+       "texts": [
+        {
+         "address": "0x089F107C",
+         "text": "[玩家/变量]\n把书放回了原处。"
+        }
+       ]
+      },
+      {
+       "at": "0x089F1000",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089F1002",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089F0FCA"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F1004",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F1004",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144642315
+       ],
+       "texts": [
+        {
+         "address": "0x089F110B",
+         "text": "小球飞鱼，泳圈鼬和拥有大针的千针鱼\n这三只宝可梦认可了人类的勇者，\n并和对方共同前进。\n勇者们在黄昏下朝着大海出航，\n进入耸立在水面上的海之门。\n……要继续阅读吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089F100A",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089F100C",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089F1011",
+       "command": "goto_if",
+       "args": [
+        1,
+        149767952
+       ],
+       "targets": [
+        "0x08ED4710"
+       ]
+      },
+      {
+       "at": "0x089F1017",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144642172
+       ],
+       "texts": [
+        {
+         "address": "0x089F107C",
+         "text": "[玩家/变量]\n把书放回了原处。"
+        }
+       ]
+      },
+      {
+       "at": "0x089F101D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089F101F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089F0FE7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F2532",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F2532",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144647875
+       ],
+       "texts": [
+        {
+         "address": "0x089F26C3",
+         "text": "有些人吹嘘说，\n他拥有生活在海之彼岸\n帕底亚才有的珍稀宝可梦！"
+        }
+       ]
+      },
+      {
+       "at": "0x089F2538",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089F253A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF8BD4"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF8BD4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF8BD4",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AF8BD7",
+       "command": "goto_if",
+       "args": [
+        1,
+        145741003
+       ],
+       "targets": [
+        "0x08AFD4CB"
+       ]
+      },
+      {
+       "at": "0x08AF8BDD",
+       "command": "goto",
+       "args": [
+        144647474
+       ],
+       "targets": [
+        "0x089F2532"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5EE10"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AFD4CB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFD4CB",
+       "command": "checkflag",
+       "args": [
+        6080
+       ],
+       "task_flag_labels": [
+        {
+         "title": "彼岸的宝可梦",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD4CE",
+       "command": "goto_if",
+       "args": [
+        1,
+        149765657
+       ],
+       "targets": [
+        "0x08ED3E19"
+       ]
+      },
+      {
+       "at": "0x08AFD4D4",
+       "command": "checkflag",
+       "args": [
+        6082
+       ]
+      },
+      {
+       "at": "0x08AFD4D7",
+       "command": "goto_if",
+       "args": [
+        1,
+        145741206
+       ],
+       "targets": [
+        "0x08AFD596"
+       ]
+      },
+      {
+       "at": "0x08AFD4DD",
+       "command": "checkflag",
+       "args": [
+        6079
+       ],
+       "task_flag_labels": [
+        {
+         "title": "彼岸的宝可梦",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD4E0",
+       "command": "goto_if",
+       "args": [
+        1,
+        145741196
+       ],
+       "targets": [
+        "0x08AFD58C"
+       ]
+      },
+      {
+       "at": "0x08AFD4E6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144647875
+       ],
+       "texts": [
+        {
+         "address": "0x089F26C3",
+         "text": "有些人吹嘘说，\n他拥有生活在海之彼岸\n帕底亚才有的珍稀宝可梦！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD4EC",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFD4EE",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AFD4F1",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144523284
+       ]
+      },
+      {
+       "at": "0x08AFD4F8",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AFD4FB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145741516
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD6CC",
+         "text": "是你收到了我的请求吗？\n附近新来了一个大叔，\n吹嘘说他拥有\n海之彼岸才有的宝可梦…\n你能帮忙探查一下这是真的吗？\n当然，我会支付报酬的。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD501",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AFD503",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFD508",
+       "command": "goto",
+       "args": [
+        150335380
+       ],
+       "targets": [
+        "0x08F5EF94"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF8BD4"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AFD550",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFD550",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFD553",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145741683
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD773",
+         "text": "接受任务:<彼岸的宝可梦>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD559",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFD55E",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFD563",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AFD568",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AFD56D",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AFD572",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145741712
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD790",
+         "text": "那么就拜托你了，\n查明这件事的真相吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD578",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFD57A",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AFD57F",
+       "command": "setflag",
+       "args": [
+        6079
+       ],
+       "task_flag_labels": [
+        {
+         "title": "彼岸的宝可梦",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD582",
+       "command": "clearflag",
+       "args": [
+        6081
+       ]
+      },
+      {
+       "at": "0x08AFD585",
+       "command": "setvar",
+       "args": [
+        20904,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFD58A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EC1D36"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AFD58C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFD58C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145741712
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD790",
+         "text": "那么就拜托你了，\n查明这件事的真相吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD592",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFD594",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AFD4CB"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AFD596",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFD596",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145741289
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD5E9",
+         "text": "原来如此，\n是用颜料伪装的嘛！\n我就知道那个大叔不是好人！\n谢谢你帮我调查这件事，\n这是给你的报酬！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD59C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFD59E",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AFD59F",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        256
+       ],
+       "possible_names_not_semantics": {
+        "species": "土龙节节",
+        "item": "粉红头巾",
+        "move": "吞下"
+       }
+      },
+      {
+       "at": "0x08AFD5A4",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AFD5A9",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AFD5AB",
+       "command": "goto",
+       "args": [
+        149691727
+       ],
+       "targets": [
+        "0x08EC1D4F"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AFD4CB"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AFD7B5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AFD7B5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145737185
+       ],
+       "texts": [
+        {
+         "address": "0x08AFC5E1",
+         "text": "获得了3点BracerPoints和3000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD7BB",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AFD7BD",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AFD7C2",
+       "command": "addmoney",
+       "args": [
+        3000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AFD7C8",
+       "command": "setflag",
+       "args": [
+        6080
+       ],
+       "task_flag_labels": [
+        {
+         "title": "彼岸的宝可梦",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AFD7CB",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EC1D4F"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EC1D36",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC1D36",
+       "command": "setflag",
+       "args": [
+        2631
+       ]
+      },
+      {
+       "at": "0x08EC1D39",
+       "command": "goto",
+       "args": [
+        145741136
+       ],
+       "targets": [
+        "0x08AFD550"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5EF94"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EC1D4F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC1D4F",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EC1D50",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC1D53",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EC1D54",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        537
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕路奇亚",
+        "item": "经验糖果S",
+        "move": "暗黑爆破"
+       }
+      },
+      {
+       "at": "0x08EC1D59",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC1D5E",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EC1D60",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EC1D61",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC1D64",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC1D67",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145741383
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD647",
+         "text": "完成任务:<彼岸的宝可梦>"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC1D6D",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC1D72",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC1D77",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08EC1D7C",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EC1D81",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08EC1D86",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08EC1D8B",
+       "command": "goto",
+       "args": [
+        145741749
+       ],
+       "targets": [
+        "0x08AFD7B5"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AFD596"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08ED3E19",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08ED3E19",
+       "command": "checkflag",
+       "args": [
+        2850
+       ]
+      },
+      {
+       "at": "0x08ED3E1C",
+       "command": "goto_if",
+       "args": [
+        1,
+        149765860
+       ],
+       "targets": [
+        "0x08ED3EE4"
+       ]
+      },
+      {
+       "at": "0x08ED3E22",
+       "command": "checkflag",
+       "args": [
+        2849
+       ],
+       "task_flag_labels": [
+        {
+         "title": "海之传说",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED3E25",
+       "command": "goto_if",
+       "args": [
+        1,
+        149767536
+       ],
+       "targets": [
+        "0x08ED4570"
+       ]
+      },
+      {
+       "at": "0x08ED3E2B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149767732
+       ]
+      },
+      {
+       "at": "0x08ED3E31",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08ED3E33",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08ED3E36",
+       "command": "applymovement",
+       "args": [
+        32783,
+        149767729
+       ]
+      },
+      {
+       "at": "0x08ED3E3D",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08ED3E40",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149767617
+       ],
+       "texts": [
+        {
+         "address": "0x08ED45C1",
+         "text": "我想起来了！\n是在缘朱市的图书馆！\n我曾经在那里\n看过一本破旧的绘本，\n里面似乎记载了关于\n“海之彼岸”和“王子”的传说。"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED3E46",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08ED3E48",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08ED3E4B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149767592
+       ],
+       "texts": [
+        {
+         "address": "0x08ED45A8",
+         "text": "接受任务:<海之传说>"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED3E51",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08ED3E56",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08ED3E5B",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08ED3E60",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08ED3E65",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08ED3E6A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149767546
+       ],
+       "texts": [
+        {
+         "address": "0x08ED457A",
+         "text": "[玩家/变量]，有空的话去缘朱市的\n图书馆帮我查证一下吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED3E70",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08ED3E72",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08ED3E77",
+       "command": "setflag",
+       "args": [
+        2849
+       ],
+       "task_flag_labels": [
+        {
+         "title": "海之传说",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED3E7A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AFD4CB"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08ED3EE4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08ED3EE4",
+       "command": "checkflag",
+       "args": [
+        2851
+       ]
+      },
+      {
+       "at": "0x08ED3EE7",
+       "command": "goto_if",
+       "args": [
+        1,
+        149765903
+       ],
+       "targets": [
+        "0x08ED3F0F"
+       ]
+      },
+      {
+       "at": "0x08ED3EED",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149767490
+       ],
+       "texts": [
+        {
+         "address": "0x08ED4542",
+         "text": "你找到了吗！？我看一下\n你存在备忘录上的内容……"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED3EF3",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08ED3EF5",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08ED3EF8",
+       "command": "applymovement",
+       "args": [
+        32783,
+        149767729
+       ]
+      },
+      {
+       "at": "0x08ED3EFF",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08ED3F02",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149766900
+       ],
+       "texts": [
+        {
+         "address": "0x08ED42F4",
+         "text": "小球飞鱼、泳圈鼬，\n还有拥有大针的千针鱼？\n这难道是在书上记载的……\n洗翠地区的那种浑身\n长满巨大毒刺的千针鱼吗？！\n原来这个传说不仅\n跨越了海洋，还跨越了时空啊！\n还有书里提到的地标……\n黄昏下出航、耸立在水面上的海之门……\n我全明白了！\n湛蓝市北部的破海洞穴中央，\n有一处被巨大的漩涡封锁……\n那就是传说中的海之门。\n传说中，只有被那三只\n宝可梦认可的勇者，\n才能平息漩涡，\n见到海之彼岸的王子。\n[玩家/变量]，\n去验证这个传说吧！\n在队伍中带上小球飞鱼、泳圈鼬，\n还有拥有大针的千针鱼……\n然后去湛蓝市\n北部的破海洞穴看看吧！\n不要忘记传说中提到的时间，\n一定要在黄昏时分前往哦！\n还有拥有大针的千针鱼……\n或许在湛蓝市有什么相关的线索吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED3F08",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08ED3F0A",
+       "command": "setflag",
+       "args": [
+        2851
+       ]
+      },
+      {
+       "at": "0x08ED3F0D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08ED3E19"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08ED3F0F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08ED3F0F",
+       "command": "checkflag",
+       "args": [
+        2852
+       ]
+      },
+      {
+       "at": "0x08ED3F12",
+       "command": "goto_if",
+       "args": [
+        1,
+        149765925
+       ],
+       "targets": [
+        "0x08ED3F25"
+       ]
+      },
+      {
+       "at": "0x08ED3F18",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149766672
+       ],
+       "texts": [
+        {
+         "address": "0x08ED4210",
+         "text": "[玩家/变量]，\n去验证这个传说吧！\n在队伍中带上小球飞鱼、泳圈鼬，\n还有拥有大针的千针鱼……\n然后去湛蓝市\n北部的破海洞穴看看吧！\n不要忘记传说中提到的时间，\n一定要在黄昏时分前往哦！\n还有拥有大针的千针鱼……\n或许在湛蓝市有什么相关的线索吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED3F1E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08ED3F20",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08ED3EE4"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08ED3F25",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08ED3F25",
+       "command": "checkflag",
+       "args": [
+        2853
+       ],
+       "task_flag_labels": [
+        {
+         "title": "海之传说",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED3F28",
+       "command": "goto_if",
+       "args": [
+        1,
+        142285568
+       ],
+       "targets": [
+        "0x087B1B00"
+       ]
+      },
+      {
+       "at": "0x08ED3F2E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149766590
+       ],
+       "texts": [
+        {
+         "address": "0x08ED41BE",
+         "text": "啊，[玩家/变量]！\n你终于回来了！\n怎么样？破海洞穴\n的那个大漩涡……\n传说中的海之门真的打开了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED3F34",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08ED3F36",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08ED3F39",
+       "command": "applymovement",
+       "args": [
+        32783,
+        149767729
+       ]
+      },
+      {
+       "at": "0x08ED3F40",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08ED3F43",
+       "command": "showpokepic",
+       "args": [
+        543,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08ED3F48",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149766146
+       ],
+       "texts": [
+        {
+         "address": "0x08ED4002",
+         "text": "天呐……\n这、这简直不可思议！\n如同蔚蓝海水般纯净的身体，\n还有那充满灵性的眼神……\n这就是沧海的王子！\n传说竟然是真的！\n只要集齐了那三只\n被大海认可的宝可梦，\n再配上勇者的心……\n神话就会在现实中重现！\n仔细想想，这件事\n真是太奇妙了，对吧？\n那个骗子大叔\n随口胡编乱造的海之彼岸，\n原本只是一个\n用来骗取钱财的谎言。\n可是，正是因为你\n不愿意被谎言蒙蔽，\n一路追寻真相，\n才让我们触碰到了\n这份沉睡在\n城都历史深处的真实神话。\n[玩家/变量]，谢谢你让我\n亲眼见证了传说的诞生！\n这是给你的报酬！"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED3F4E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08ED3F50",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08ED3F51",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08ED3F52",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08ED3F53",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08ED3F54",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08ED3F57",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        665
+       ],
+       "possible_names_not_semantics": {
+        "species": "双斧战龙",
+        "item": "水之宝石",
+        "move": "查封"
+       }
+      },
+      {
+       "at": "0x08ED3F5C",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08ED3F61",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08ED3F63",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08ED3F64",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08ED3F67",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        639
+       ],
+       "possible_names_not_semantics": {
+        "species": "萌芽鹿",
+        "item": "银色王冠",
+        "move": "水流环"
+       }
+      },
+      {
+       "at": "0x08ED3F6C",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08ED3F71",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08ED3F73",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08ED3F74",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08ED3F77",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        537
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕路奇亚",
+        "item": "经验糖果S",
+        "move": "暗黑爆破"
+       }
+      },
+      {
+       "at": "0x08ED3F7C",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08ED3F81",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08ED3F83",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08ED3F84",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08ED3F87",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08ED3F8A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149766121
+       ],
+       "texts": [
+        {
+         "address": "0x08ED3FE9",
+         "text": "完成任务:<海之传说>"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED3F90",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08ED3F95",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08ED3F9A",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08ED3F9F",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08ED3FA4",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08ED3FA9",
+       "command": "addvar",
+       "args": [
+        20789,
+        8
+       ]
+      },
+      {
+       "at": "0x08ED3FAE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149766086
+       ],
+       "texts": [
+        {
+         "address": "0x08ED3FC6",
+         "text": "获得了8点BracerPoints和8000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED3FB4",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08ED3FB6",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08ED3FBB",
+       "command": "addmoney",
+       "args": [
+        8000,
+        0
+       ]
+      },
+      {
+       "at": "0x08ED3FC1",
+       "command": "setflag",
+       "args": [
+        2853
+       ],
+       "task_flag_labels": [
+        {
+         "title": "海之传说",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED3FC4",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08ED3F0F"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08ED4570",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08ED4570",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149767546
+       ],
+       "texts": [
+        {
+         "address": "0x08ED457A",
+         "text": "[玩家/变量]，有空的话去缘朱市的\n图书馆帮我查证一下吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED4576",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08ED4578",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08ED3E19"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08ED4710",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08ED4710",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144642469
+       ],
+       "texts": [
+        {
+         "address": "0x089F11A5",
+         "text": "王子得知了这个消息。\n为了迎接勇者，\n来到了海边小洞。"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED4716",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08ED4718",
+       "command": "checkflag",
+       "args": [
+        2850
+       ]
+      },
+      {
+       "at": "0x08ED471B",
+       "command": "goto_if",
+       "args": [
+        1,
+        149768064
+       ],
+       "targets": [
+        "0x08ED4780"
+       ]
+      },
+      {
+       "at": "0x08ED4721",
+       "command": "checkflag",
+       "args": [
+        2849
+       ],
+       "task_flag_labels": [
+        {
+         "title": "海之传说",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED4724",
+       "command": "goto_if",
+       "args": [
+        1,
+        149768067
+       ],
+       "targets": [
+        "0x08ED4783"
+       ]
+      },
+      {
+       "at": "0x08ED472A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089F1004"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08ED4780",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08ED4780",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08ED4781",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08ED4710"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08ED4783",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08ED4783",
+       "command": "signmsg",
+       "args": []
+      },
+      {
+       "at": "0x08ED4784",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149768082
+       ],
+       "texts": [
+        {
+         "address": "0x08ED4792",
+         "text": "这就是女孩\n提到的那本书吗？\n[玩家/变量]将书中的内容\n记在了精灵齿轮的备忘录上。"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED478A",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08ED478C",
+       "command": "normalmsg",
+       "args": []
+      },
+      {
+       "at": "0x08ED478D",
+       "command": "setflag",
+       "args": [
+        2850
+       ]
+      },
+      {
+       "at": "0x08ED4790",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08ED4710"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5EE10",
+     "event_roots": [
+      {
+       "map_id": "49:10",
+       "place": "浅葱市",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 6,
+       "y": 17,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g49_n010.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5EE10",
+       "command": "applymovement",
+       "args": [
+        50,
+        150335219
+       ]
+      },
+      {
+       "at": "0x08F5EE17",
+       "command": "waitmovement",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08F5EE1A",
+       "command": "goto",
+       "args": [
+        145722324
+       ],
+       "targets": [
+        "0x08AF8BD4"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "49:10/local2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5EF94",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5EF94",
+       "command": "goto_if",
+       "args": [
+        1,
+        149691702
+       ],
+       "targets": [
+        "0x08EC1D36"
+       ]
+      },
+      {
+       "at": "0x08F5EF9A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145741644
+       ],
+       "texts": [
+        {
+         "address": "0x08AFD74C",
+         "text": "哈哈，\n毕竟不是每个人都和我一样无聊……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5EFA0",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5EFA2",
+       "command": "applymovement",
+       "args": [
+        50,
+        150335932
+       ]
+      },
+      {
+       "at": "0x08F5EFA9",
+       "command": "waitmovement",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08F5EFAC",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5EFAD",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AFD4CB"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,5231 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>形态、重复全国号与占位槽 · 水银攻略</title><style>*{box-sizing:border-box}body{margin:0;color:#243247;background:#f5f7fb;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}header{background:#142b48;color:white;padding:22px max(22px,calc((100vw - 1180px)/2))}header a{color:#e5efff;text-decoration:none}nav{display:flex;gap:20px;flex-wrap:wrap;font-size:15px}main{max-width:1180px;margin:auto;padding:28px 22px 60px}h1{font-size:30px;line-height:1.4}h2{margin-top:32px;border-bottom:1px solid #d9e0eb;padding-bottom:8px}a{color:#155b9b}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow:auto;background:white}td,th{padding:10px 12px;border:1px solid #dde4ed;text-align:left;min-width:65px}th{background:#eaf0f8}tr:nth-child(even){background:#f7f9fc}code{font-size:.88em;background:#edf0f5;padding:2px 4px;border-radius:3px;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:15px;background:#edf0f5}img{max-width:100%;height:auto;image-rendering:pixelated}blockquote{border-left:4px solid #809cbe;background:#edf2f8;margin:18px 0;padding:10px 18px}input,select{font:inherit;padding:10px 14px;border:1px solid #bccbdd;border-radius:7px}input{flex:1;min-width:180px}.searchbox{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px}.card{background:white;border:1px solid #dbe3ee;border-radius:10px;padding:20px}.result{background:white;margin:10px 0;padding:14px 18px;border-radius:7px;border:1px solid #e0e6ee}.result small,.muted{color:#60718a}.badge{background:#e7eff9;border-radius:4px;padding:2px 7px;font-size:13px}details{margin:15px 0}footer{margin-top:40px;border-top:1px solid #dde4ed;padding-top:15px;color:#60718a;font-size:13px}@media(max-width:600px){main{padding:16px 12px}h1{font-size:25px}td,th{padding:8px}}
+.atlas-cards{margin:32px 0;padding-top:8px;border-top:1px solid #d9e0eb}.atlas-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}.atlas-card{background:#fff;border:1px solid #d9e0eb;border-radius:10px;overflow:hidden}.atlas-card h3{font-size:16px;margin:12px 14px 6px}.atlas-card p{font-size:13px;line-height:1.6;margin:8px 14px 14px}.atlas-frame{height:240px;position:relative;background:#e8edf1}.atlas-frame img{position:absolute;width:100%;height:100%;object-fit:contain;image-rendering:pixelated}.atlas-frame svg{position:absolute;width:100%;height:100%;inset:0;pointer-events:none}.atlas-label{paint-order:stroke;stroke:#fff;stroke-width:3px;fill:#142b48;font-weight:bold;text-anchor:middle;dominant-baseline:central}.atlas-cards details{margin-top:16px}.atlas-cards summary{cursor:pointer;color:#155b9b;margin-bottom:12px}.atlas-feature{padding:12px 16px;background:#eaf0f8;border-radius:8px;margin:16px 0}.atlas-unavailable{height:240px;display:grid;place-items:center;color:#59677a;font-size:14px;padding:24px;text-align:center}
+</style><header><a href="../index.html"><strong>宝可梦水银 1.1 · 玩家攻略</strong></a><nav><a href="../quests/index.html">支线攻略</a><a href="../items/index.html">道具搜集</a><a href="../pokemon/index.html">宝可梦获取</a><a href="../trainers/index.html">训练家配队</a><a href="../maps/index.html">地点地图</a><a href="../pokemon/wild_mega.html">野生Mega</a></nav></header><main><h1 id="_1">形态、重复全国号与占位槽</h1>
+<p>内部槽共有 <strong>1554</strong> 个；全国图鉴号 1435 个槽有、119 个槽没有。全国号可重复（同一全国号的多个槽代表不同形态/数据槽），本资料<strong>不合并</strong>同名形态，也不据重复编号擅自命名形态。</p>
+<ul>
+<li><a href="index.html">返回宝可梦索引</a> ｜ <a href="by_location.html">地点索引</a></li>
+</ul>
+<h2 id="1">1. 占位 / 无效槽</h2>
+<p>共 123 行：119 个占位槽（种族值全为 0，其中 119 个还带有全国图鉴号映射）与 4 个无全国图鉴号的特殊内码槽。它们<strong>不是</strong>可获得或可遭遇的宝可梦，单独列出以便区分「1554 个槽 ≠ 1554 种宝可梦」。</p>
+<table>
+<thead>
+<tr>
+<th>内部槽</th>
+<th>名称</th>
+<th>全国号</th>
+<th>标记</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="0000.html">0000</a></td>
+<td>??????</td>
+<td>无</td>
+<td>all_base_stats_zero、name_placeholder</td>
+</tr>
+<tr>
+<td><a href="0252.html">0252</a></td>
+<td>蛋</td>
+<td>无</td>
+<td>all_base_stats_zero</td>
+</tr>
+<tr>
+<td><a href="0253.html">0253</a></td>
+<td>MISSINGNO.</td>
+<td>无</td>
+<td>no_national_dex_number</td>
+</tr>
+<tr>
+<td><a href="0260.html">0260</a></td>
+<td>杰克霜精</td>
+<td>无</td>
+<td>no_national_dex_number</td>
+</tr>
+<tr>
+<td><a href="0261.html">0261</a></td>
+<td>洛奇亚</td>
+<td>无</td>
+<td>no_national_dex_number</td>
+</tr>
+<tr>
+<td><a href="0412.html">0412</a></td>
+<td>坏蛋</td>
+<td>无</td>
+<td>all_base_stats_zero</td>
+</tr>
+<tr>
+<td><a href="0706.html">0706</a></td>
+<td>战士</td>
+<td>无</td>
+<td>no_national_dex_number</td>
+</tr>
+<tr>
+<td><a href="1294.html">1294</a></td>
+<td>1</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1295.html">1295</a></td>
+<td>2</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1296.html">1296</a></td>
+<td>3</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1297.html">1297</a></td>
+<td>4</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1298.html">1298</a></td>
+<td>5</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1299.html">1299</a></td>
+<td>6</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1300.html">1300</a></td>
+<td>7</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1301.html">1301</a></td>
+<td>8</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1302.html">1302</a></td>
+<td>9</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1303.html">1303</a></td>
+<td>10</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1304.html">1304</a></td>
+<td>11</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1305.html">1305</a></td>
+<td>12</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1306.html">1306</a></td>
+<td>13</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1307.html">1307</a></td>
+<td>14</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1308.html">1308</a></td>
+<td>15</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1309.html">1309</a></td>
+<td>16</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1310.html">1310</a></td>
+<td>17</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1311.html">1311</a></td>
+<td>18</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1312.html">1312</a></td>
+<td>19</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1313.html">1313</a></td>
+<td>20</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1314.html">1314</a></td>
+<td>21</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1315.html">1315</a></td>
+<td>22</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1316.html">1316</a></td>
+<td>23</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1317.html">1317</a></td>
+<td>24</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1318.html">1318</a></td>
+<td>25</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1319.html">1319</a></td>
+<td>26</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1320.html">1320</a></td>
+<td>27</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1321.html">1321</a></td>
+<td>28</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1322.html">1322</a></td>
+<td>29</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1323.html">1323</a></td>
+<td>30</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1324.html">1324</a></td>
+<td>31</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1325.html">1325</a></td>
+<td>32</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1326.html">1326</a></td>
+<td>33</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1327.html">1327</a></td>
+<td>34</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1328.html">1328</a></td>
+<td>35</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1329.html">1329</a></td>
+<td>36</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1330.html">1330</a></td>
+<td>37</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1331.html">1331</a></td>
+<td>38</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1332.html">1332</a></td>
+<td>39</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1333.html">1333</a></td>
+<td>40</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1334.html">1334</a></td>
+<td>41</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1335.html">1335</a></td>
+<td>42</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1336.html">1336</a></td>
+<td>43</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1337.html">1337</a></td>
+<td>44</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1338.html">1338</a></td>
+<td>45</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1339.html">1339</a></td>
+<td>46</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1340.html">1340</a></td>
+<td>47</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1341.html">1341</a></td>
+<td>48</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1342.html">1342</a></td>
+<td>49</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1343.html">1343</a></td>
+<td>50</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1344.html">1344</a></td>
+<td>51</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1345.html">1345</a></td>
+<td>52</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1346.html">1346</a></td>
+<td>53</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1347.html">1347</a></td>
+<td>54</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1348.html">1348</a></td>
+<td>55</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1349.html">1349</a></td>
+<td>56</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1350.html">1350</a></td>
+<td>57</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1351.html">1351</a></td>
+<td>58</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1352.html">1352</a></td>
+<td>59</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1353.html">1353</a></td>
+<td>60</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1354.html">1354</a></td>
+<td>61</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1355.html">1355</a></td>
+<td>62</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1356.html">1356</a></td>
+<td>63</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1357.html">1357</a></td>
+<td>64</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1358.html">1358</a></td>
+<td>65</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1359.html">1359</a></td>
+<td>66</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1360.html">1360</a></td>
+<td>67</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1361.html">1361</a></td>
+<td>68</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1362.html">1362</a></td>
+<td>69</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1363.html">1363</a></td>
+<td>70</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1364.html">1364</a></td>
+<td>71</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1365.html">1365</a></td>
+<td>72</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1366.html">1366</a></td>
+<td>73</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1367.html">1367</a></td>
+<td>74</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1368.html">1368</a></td>
+<td>75</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1369.html">1369</a></td>
+<td>76</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1370.html">1370</a></td>
+<td>77</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1371.html">1371</a></td>
+<td>78</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1372.html">1372</a></td>
+<td>79</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1373.html">1373</a></td>
+<td>80</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1374.html">1374</a></td>
+<td>81</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1375.html">1375</a></td>
+<td>82</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1376.html">1376</a></td>
+<td>83</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1377.html">1377</a></td>
+<td>84</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1378.html">1378</a></td>
+<td>85</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1379.html">1379</a></td>
+<td>86</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1380.html">1380</a></td>
+<td>87</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1381.html">1381</a></td>
+<td>88</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1382.html">1382</a></td>
+<td>89</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1383.html">1383</a></td>
+<td>90</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1384.html">1384</a></td>
+<td>91</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1385.html">1385</a></td>
+<td>92</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1386.html">1386</a></td>
+<td>93</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1387.html">1387</a></td>
+<td>94</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1388.html">1388</a></td>
+<td>95</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1389.html">1389</a></td>
+<td>96</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1390.html">1390</a></td>
+<td>97</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1391.html">1391</a></td>
+<td>98</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1392.html">1392</a></td>
+<td>99</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1393.html">1393</a></td>
+<td>100</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1394.html">1394</a></td>
+<td>101</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1395.html">1395</a></td>
+<td>102</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1396.html">1396</a></td>
+<td>103</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1397.html">1397</a></td>
+<td>104</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1398.html">1398</a></td>
+<td>105</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1399.html">1399</a></td>
+<td>106</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1400.html">1400</a></td>
+<td>107</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1489.html">1489</a></td>
+<td>弃世猴</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1490.html">1490</a></td>
+<td>土王</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1492.html">1492</a></td>
+<td>土龙节节</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1493.html">1493</a></td>
+<td>土龙节节</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1526.html">1526</a></td>
+<td>乌波</td>
+<td>无</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1540.html">1540</a></td>
+<td>厄诡碰</td>
+<td>1017</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1541.html">1541</a></td>
+<td>厄诡碰</td>
+<td>1017</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1542.html">1542</a></td>
+<td>厄诡碰</td>
+<td>1017</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+<tr>
+<td><a href="1543.html">1543</a></td>
+<td>厄诡碰</td>
+<td>1017</td>
+<td>all_base_stats_zero、levelup_absent_null_slot</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2">2. 全国图鉴号重复的槽（同名形态不合并）</h2>
+<p>同一全国号出现在多个内部槽时，各自独立成页。共 228 个全国号出现重复，涉及 637 个槽。</p>
+<table>
+<thead>
+<tr>
+<th>全国号</th>
+<th>中文名</th>
+<th>内部槽</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0003</td>
+<td>妙蛙花</td>
+<td><a href="0003.html">0003</a></td>
+</tr>
+<tr>
+<td>0003</td>
+<td>妙蛙花</td>
+<td><a href="0869.html">0869</a></td>
+</tr>
+<tr>
+<td>0003</td>
+<td>妙蛙花</td>
+<td><a href="1260.html">1260</a></td>
+</tr>
+<tr>
+<td>0006</td>
+<td>喷火龙</td>
+<td><a href="0006.html">0006</a></td>
+</tr>
+<tr>
+<td>0006</td>
+<td>喷火龙</td>
+<td><a href="0870.html">0870</a></td>
+</tr>
+<tr>
+<td>0006</td>
+<td>喷火龙</td>
+<td><a href="0871.html">0871</a></td>
+</tr>
+<tr>
+<td>0006</td>
+<td>喷火龙</td>
+<td><a href="1261.html">1261</a></td>
+</tr>
+<tr>
+<td>0009</td>
+<td>水箭龟</td>
+<td><a href="0009.html">0009</a></td>
+</tr>
+<tr>
+<td>0009</td>
+<td>水箭龟</td>
+<td><a href="0872.html">0872</a></td>
+</tr>
+<tr>
+<td>0009</td>
+<td>水箭龟</td>
+<td><a href="1262.html">1262</a></td>
+</tr>
+<tr>
+<td>0012</td>
+<td>巴大蝶</td>
+<td><a href="0012.html">0012</a></td>
+</tr>
+<tr>
+<td>0012</td>
+<td>巴大蝶</td>
+<td><a href="1263.html">1263</a></td>
+</tr>
+<tr>
+<td>0015</td>
+<td>大针蜂</td>
+<td><a href="0015.html">0015</a></td>
+</tr>
+<tr>
+<td>0015</td>
+<td>大针蜂</td>
+<td><a href="0873.html">0873</a></td>
+</tr>
+<tr>
+<td>0018</td>
+<td>大比鸟</td>
+<td><a href="0018.html">0018</a></td>
+</tr>
+<tr>
+<td>0018</td>
+<td>大比鸟</td>
+<td><a href="0874.html">0874</a></td>
+</tr>
+<tr>
+<td>0019</td>
+<td>小拉达</td>
+<td><a href="0019.html">0019</a></td>
+</tr>
+<tr>
+<td>0019</td>
+<td>小拉达</td>
+<td><a href="1020.html">1020</a></td>
+</tr>
+<tr>
+<td>0020</td>
+<td>拉达</td>
+<td><a href="0020.html">0020</a></td>
+</tr>
+<tr>
+<td>0020</td>
+<td>拉达</td>
+<td><a href="1021.html">1021</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="0025.html">0025</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="1085.html">1085</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="1086.html">1086</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="1087.html">1087</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="1088.html">1088</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="1089.html">1089</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="1090.html">1090</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="1091.html">1091</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="1092.html">1092</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="1093.html">1093</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="1094.html">1094</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="1095.html">1095</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="1096.html">1096</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="1097.html">1097</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="1098.html">1098</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="1099.html">1099</a></td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘</td>
+<td><a href="1264.html">1264</a></td>
+</tr>
+<tr>
+<td>0026</td>
+<td>雷丘</td>
+<td><a href="0026.html">0026</a></td>
+</tr>
+<tr>
+<td>0026</td>
+<td>雷丘</td>
+<td><a href="0270.html">0270</a></td>
+</tr>
+<tr>
+<td>0026</td>
+<td>雷丘</td>
+<td><a href="1022.html">1022</a></td>
+</tr>
+<tr>
+<td>0027</td>
+<td>穿山鼠</td>
+<td><a href="0027.html">0027</a></td>
+</tr>
+<tr>
+<td>0027</td>
+<td>穿山鼠</td>
+<td><a href="1023.html">1023</a></td>
+</tr>
+<tr>
+<td>0028</td>
+<td>穿山王</td>
+<td><a href="0028.html">0028</a></td>
+</tr>
+<tr>
+<td>0028</td>
+<td>穿山王</td>
+<td><a href="1024.html">1024</a></td>
+</tr>
+<tr>
+<td>0036</td>
+<td>皮可西</td>
+<td><a href="0036.html">0036</a></td>
+</tr>
+<tr>
+<td>0036</td>
+<td>皮可西</td>
+<td><a href="0271.html">0271</a></td>
+</tr>
+<tr>
+<td>0037</td>
+<td>六尾</td>
+<td><a href="0037.html">0037</a></td>
+</tr>
+<tr>
+<td>0037</td>
+<td>六尾</td>
+<td><a href="1025.html">1025</a></td>
+</tr>
+<tr>
+<td>0038</td>
+<td>九尾</td>
+<td><a href="0038.html">0038</a></td>
+</tr>
+<tr>
+<td>0038</td>
+<td>九尾</td>
+<td><a href="1026.html">1026</a></td>
+</tr>
+<tr>
+<td>0050</td>
+<td>地鼠</td>
+<td><a href="0050.html">0050</a></td>
+</tr>
+<tr>
+<td>0050</td>
+<td>地鼠</td>
+<td><a href="1027.html">1027</a></td>
+</tr>
+<tr>
+<td>0051</td>
+<td>三地鼠</td>
+<td><a href="0051.html">0051</a></td>
+</tr>
+<tr>
+<td>0051</td>
+<td>三地鼠</td>
+<td><a href="1028.html">1028</a></td>
+</tr>
+<tr>
+<td>0052</td>
+<td>喵喵</td>
+<td><a href="0052.html">0052</a></td>
+</tr>
+<tr>
+<td>0052</td>
+<td>喵喵</td>
+<td><a href="1029.html">1029</a></td>
+</tr>
+<tr>
+<td>0052</td>
+<td>喵喵</td>
+<td><a href="1212.html">1212</a></td>
+</tr>
+<tr>
+<td>0052</td>
+<td>喵喵</td>
+<td><a href="1265.html">1265</a></td>
+</tr>
+<tr>
+<td>0053</td>
+<td>猫老大</td>
+<td><a href="0053.html">0053</a></td>
+</tr>
+<tr>
+<td>0053</td>
+<td>猫老大</td>
+<td><a href="1030.html">1030</a></td>
+</tr>
+<tr>
+<td>0058</td>
+<td>卡蒂狗</td>
+<td><a href="0058.html">0058</a></td>
+</tr>
+<tr>
+<td>0058</td>
+<td>卡蒂狗</td>
+<td><a href="1234.html">1234</a></td>
+</tr>
+<tr>
+<td>0059</td>
+<td>风速狗</td>
+<td><a href="0059.html">0059</a></td>
+</tr>
+<tr>
+<td>0059</td>
+<td>风速狗</td>
+<td><a href="1235.html">1235</a></td>
+</tr>
+<tr>
+<td>0065</td>
+<td>胡地</td>
+<td><a href="0065.html">0065</a></td>
+</tr>
+<tr>
+<td>0065</td>
+<td>胡地</td>
+<td><a href="0875.html">0875</a></td>
+</tr>
+<tr>
+<td>0068</td>
+<td>怪力</td>
+<td><a href="0068.html">0068</a></td>
+</tr>
+<tr>
+<td>0068</td>
+<td>怪力</td>
+<td><a href="1266.html">1266</a></td>
+</tr>
+<tr>
+<td>0071</td>
+<td>大食花</td>
+<td><a href="0071.html">0071</a></td>
+</tr>
+<tr>
+<td>0071</td>
+<td>大食花</td>
+<td><a href="0266.html">0266</a></td>
+</tr>
+<tr>
+<td>0074</td>
+<td>小拳石</td>
+<td><a href="0074.html">0074</a></td>
+</tr>
+<tr>
+<td>0074</td>
+<td>小拳石</td>
+<td><a href="1031.html">1031</a></td>
+</tr>
+<tr>
+<td>0075</td>
+<td>隆隆石</td>
+<td><a href="0075.html">0075</a></td>
+</tr>
+<tr>
+<td>0075</td>
+<td>隆隆石</td>
+<td><a href="1032.html">1032</a></td>
+</tr>
+<tr>
+<td>0076</td>
+<td>隆隆岩</td>
+<td><a href="0076.html">0076</a></td>
+</tr>
+<tr>
+<td>0076</td>
+<td>隆隆岩</td>
+<td><a href="1033.html">1033</a></td>
+</tr>
+<tr>
+<td>0077</td>
+<td>小火马</td>
+<td><a href="0077.html">0077</a></td>
+</tr>
+<tr>
+<td>0077</td>
+<td>小火马</td>
+<td><a href="1213.html">1213</a></td>
+</tr>
+<tr>
+<td>0078</td>
+<td>烈焰马</td>
+<td><a href="0078.html">0078</a></td>
+</tr>
+<tr>
+<td>0078</td>
+<td>烈焰马</td>
+<td><a href="1214.html">1214</a></td>
+</tr>
+<tr>
+<td>0079</td>
+<td>呆呆兽</td>
+<td><a href="0079.html">0079</a></td>
+</tr>
+<tr>
+<td>0079</td>
+<td>呆呆兽</td>
+<td><a href="1215.html">1215</a></td>
+</tr>
+<tr>
+<td>0080</td>
+<td>呆壳兽</td>
+<td><a href="0080.html">0080</a></td>
+</tr>
+<tr>
+<td>0080</td>
+<td>呆壳兽</td>
+<td><a href="0876.html">0876</a></td>
+</tr>
+<tr>
+<td>0080</td>
+<td>呆壳兽</td>
+<td><a href="1216.html">1216</a></td>
+</tr>
+<tr>
+<td>0083</td>
+<td>大葱鸭</td>
+<td><a href="0083.html">0083</a></td>
+</tr>
+<tr>
+<td>0083</td>
+<td>大葱鸭</td>
+<td><a href="1217.html">1217</a></td>
+</tr>
+<tr>
+<td>0088</td>
+<td>臭泥</td>
+<td><a href="0088.html">0088</a></td>
+</tr>
+<tr>
+<td>0088</td>
+<td>臭泥</td>
+<td><a href="1034.html">1034</a></td>
+</tr>
+<tr>
+<td>0089</td>
+<td>臭臭泥</td>
+<td><a href="0089.html">0089</a></td>
+</tr>
+<tr>
+<td>0089</td>
+<td>臭臭泥</td>
+<td><a href="1035.html">1035</a></td>
+</tr>
+<tr>
+<td>0094</td>
+<td>耿鬼</td>
+<td><a href="0094.html">0094</a></td>
+</tr>
+<tr>
+<td>0094</td>
+<td>耿鬼</td>
+<td><a href="0877.html">0877</a></td>
+</tr>
+<tr>
+<td>0094</td>
+<td>耿鬼</td>
+<td><a href="1267.html">1267</a></td>
+</tr>
+<tr>
+<td>0099</td>
+<td>巨钳蟹</td>
+<td><a href="0099.html">0099</a></td>
+</tr>
+<tr>
+<td>0099</td>
+<td>巨钳蟹</td>
+<td><a href="1268.html">1268</a></td>
+</tr>
+<tr>
+<td>0100</td>
+<td>霹雳电球</td>
+<td><a href="0100.html">0100</a></td>
+</tr>
+<tr>
+<td>0100</td>
+<td>霹雳电球</td>
+<td><a href="1236.html">1236</a></td>
+</tr>
+<tr>
+<td>0101</td>
+<td>顽皮雷弹</td>
+<td><a href="0101.html">0101</a></td>
+</tr>
+<tr>
+<td>0101</td>
+<td>顽皮雷弹</td>
+<td><a href="1237.html">1237</a></td>
+</tr>
+<tr>
+<td>0102</td>
+<td>蛋蛋</td>
+<td><a href="0102.html">0102</a></td>
+</tr>
+<tr>
+<td>0102</td>
+<td>蛋蛋</td>
+<td><a href="1036.html">1036</a></td>
+</tr>
+<tr>
+<td>0103</td>
+<td>椰蛋树</td>
+<td><a href="0103.html">0103</a></td>
+</tr>
+<tr>
+<td>0103</td>
+<td>椰蛋树</td>
+<td><a href="1037.html">1037</a></td>
+</tr>
+<tr>
+<td>0104</td>
+<td>卡拉卡拉</td>
+<td><a href="0104.html">0104</a></td>
+</tr>
+<tr>
+<td>0104</td>
+<td>卡拉卡拉</td>
+<td><a href="1038.html">1038</a></td>
+</tr>
+<tr>
+<td>0105</td>
+<td>嘎啦嘎啦</td>
+<td><a href="0105.html">0105</a></td>
+</tr>
+<tr>
+<td>0105</td>
+<td>嘎啦嘎啦</td>
+<td><a href="1039.html">1039</a></td>
+</tr>
+<tr>
+<td>0109</td>
+<td>瓦斯弹</td>
+<td><a href="0109.html">0109</a></td>
+</tr>
+<tr>
+<td>0109</td>
+<td>瓦斯弹</td>
+<td><a href="1218.html">1218</a></td>
+</tr>
+<tr>
+<td>0110</td>
+<td>双弹瓦斯</td>
+<td><a href="0110.html">0110</a></td>
+</tr>
+<tr>
+<td>0110</td>
+<td>双弹瓦斯</td>
+<td><a href="1219.html">1219</a></td>
+</tr>
+<tr>
+<td>0115</td>
+<td>袋兽</td>
+<td><a href="0115.html">0115</a></td>
+</tr>
+<tr>
+<td>0115</td>
+<td>袋兽</td>
+<td><a href="0878.html">0878</a></td>
+</tr>
+<tr>
+<td>0121</td>
+<td>宝石海星</td>
+<td><a href="0121.html">0121</a></td>
+</tr>
+<tr>
+<td>0121</td>
+<td>宝石海星</td>
+<td><a href="0276.html">0276</a></td>
+</tr>
+<tr>
+<td>0122</td>
+<td>魔墙人偶</td>
+<td><a href="0122.html">0122</a></td>
+</tr>
+<tr>
+<td>0122</td>
+<td>魔墙人偶</td>
+<td><a href="1220.html">1220</a></td>
+</tr>
+<tr>
+<td>0127</td>
+<td>凯罗斯</td>
+<td><a href="0127.html">0127</a></td>
+</tr>
+<tr>
+<td>0127</td>
+<td>凯罗斯</td>
+<td><a href="0879.html">0879</a></td>
+</tr>
+<tr>
+<td>0128</td>
+<td>肯泰罗</td>
+<td><a href="0128.html">0128</a></td>
+</tr>
+<tr>
+<td>0128</td>
+<td>肯泰罗</td>
+<td><a href="1523.html">1523</a></td>
+</tr>
+<tr>
+<td>0128</td>
+<td>肯泰罗</td>
+<td><a href="1524.html">1524</a></td>
+</tr>
+<tr>
+<td>0128</td>
+<td>肯泰罗</td>
+<td><a href="1525.html">1525</a></td>
+</tr>
+<tr>
+<td>0130</td>
+<td>暴鲤龙</td>
+<td><a href="0130.html">0130</a></td>
+</tr>
+<tr>
+<td>0130</td>
+<td>暴鲤龙</td>
+<td><a href="0880.html">0880</a></td>
+</tr>
+<tr>
+<td>0131</td>
+<td>拉普拉斯</td>
+<td><a href="0131.html">0131</a></td>
+</tr>
+<tr>
+<td>0131</td>
+<td>拉普拉斯</td>
+<td><a href="1269.html">1269</a></td>
+</tr>
+<tr>
+<td>0133</td>
+<td>伊布</td>
+<td><a href="0133.html">0133</a></td>
+</tr>
+<tr>
+<td>0133</td>
+<td>伊布</td>
+<td><a href="1270.html">1270</a></td>
+</tr>
+<tr>
+<td>0142</td>
+<td>化石翼龙</td>
+<td><a href="0142.html">0142</a></td>
+</tr>
+<tr>
+<td>0142</td>
+<td>化石翼龙</td>
+<td><a href="0881.html">0881</a></td>
+</tr>
+<tr>
+<td>0143</td>
+<td>卡比兽</td>
+<td><a href="0143.html">0143</a></td>
+</tr>
+<tr>
+<td>0143</td>
+<td>卡比兽</td>
+<td><a href="1271.html">1271</a></td>
+</tr>
+<tr>
+<td>0144</td>
+<td>急冻鸟</td>
+<td><a href="0144.html">0144</a></td>
+</tr>
+<tr>
+<td>0144</td>
+<td>急冻鸟</td>
+<td><a href="1221.html">1221</a></td>
+</tr>
+<tr>
+<td>0145</td>
+<td>闪电鸟</td>
+<td><a href="0145.html">0145</a></td>
+</tr>
+<tr>
+<td>0145</td>
+<td>闪电鸟</td>
+<td><a href="1222.html">1222</a></td>
+</tr>
+<tr>
+<td>0146</td>
+<td>火焰鸟</td>
+<td><a href="0146.html">0146</a></td>
+</tr>
+<tr>
+<td>0146</td>
+<td>火焰鸟</td>
+<td><a href="1223.html">1223</a></td>
+</tr>
+<tr>
+<td>0149</td>
+<td>快龙</td>
+<td><a href="0149.html">0149</a></td>
+</tr>
+<tr>
+<td>0149</td>
+<td>快龙</td>
+<td><a href="1403.html">1403</a></td>
+</tr>
+<tr>
+<td>0150</td>
+<td>超梦</td>
+<td><a href="0150.html">0150</a></td>
+</tr>
+<tr>
+<td>0150</td>
+<td>超梦</td>
+<td><a href="0882.html">0882</a></td>
+</tr>
+<tr>
+<td>0150</td>
+<td>超梦</td>
+<td><a href="0883.html">0883</a></td>
+</tr>
+<tr>
+<td>0154</td>
+<td>大竺葵</td>
+<td><a href="0154.html">0154</a></td>
+</tr>
+<tr>
+<td>0154</td>
+<td>大竺葵</td>
+<td><a href="0263.html">0263</a></td>
+</tr>
+<tr>
+<td>0157</td>
+<td>火暴兽</td>
+<td><a href="0157.html">0157</a></td>
+</tr>
+<tr>
+<td>0157</td>
+<td>火暴兽</td>
+<td><a href="0264.html">0264</a></td>
+</tr>
+<tr>
+<td>0157</td>
+<td>火暴兽</td>
+<td><a href="1238.html">1238</a></td>
+</tr>
+<tr>
+<td>0160</td>
+<td>大力鳄</td>
+<td><a href="0160.html">0160</a></td>
+</tr>
+<tr>
+<td>0160</td>
+<td>大力鳄</td>
+<td><a href="0265.html">0265</a></td>
+</tr>
+<tr>
+<td>0166</td>
+<td>安瓢虫</td>
+<td><a href="0166.html">0166</a></td>
+</tr>
+<tr>
+<td>0166</td>
+<td>安瓢虫</td>
+<td><a href="1406.html">1406</a></td>
+</tr>
+<tr>
+<td>0172</td>
+<td>皮丘</td>
+<td><a href="0172.html">0172</a></td>
+</tr>
+<tr>
+<td>0172</td>
+<td>皮丘</td>
+<td><a href="1100.html">1100</a></td>
+</tr>
+<tr>
+<td>0181</td>
+<td>电龙</td>
+<td><a href="0181.html">0181</a></td>
+</tr>
+<tr>
+<td>0181</td>
+<td>电龙</td>
+<td><a href="0884.html">0884</a></td>
+</tr>
+<tr>
+<td>0189</td>
+<td>毽子棉</td>
+<td><a href="0189.html">0189</a></td>
+</tr>
+<tr>
+<td>0189</td>
+<td>毽子棉</td>
+<td><a href="1405.html">1405</a></td>
+</tr>
+<tr>
+<td>0194</td>
+<td>乌波</td>
+<td><a href="0194.html">0194</a></td>
+</tr>
+<tr>
+<td>0194</td>
+<td>乌波</td>
+<td><a href="0258.html">0258</a></td>
+</tr>
+<tr>
+<td>0199</td>
+<td>呆呆王</td>
+<td><a href="0199.html">0199</a></td>
+</tr>
+<tr>
+<td>0199</td>
+<td>呆呆王</td>
+<td><a href="1224.html">1224</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0201.html">0201</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0413.html">0413</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0414.html">0414</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0415.html">0415</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0416.html">0416</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0417.html">0417</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0418.html">0418</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0419.html">0419</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0420.html">0420</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0421.html">0421</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0422.html">0422</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0423.html">0423</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0424.html">0424</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0425.html">0425</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0426.html">0426</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0427.html">0427</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0428.html">0428</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0429.html">0429</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0430.html">0430</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0431.html">0431</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0432.html">0432</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0433.html">0433</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0434.html">0434</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0435.html">0435</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0436.html">0436</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0437.html">0437</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0438.html">0438</a></td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾</td>
+<td><a href="0439.html">0439</a></td>
+</tr>
+<tr>
+<td>0208</td>
+<td>大钢蛇</td>
+<td><a href="0208.html">0208</a></td>
+</tr>
+<tr>
+<td>0208</td>
+<td>大钢蛇</td>
+<td><a href="0885.html">0885</a></td>
+</tr>
+<tr>
+<td>0211</td>
+<td>千针鱼</td>
+<td><a href="0211.html">0211</a></td>
+</tr>
+<tr>
+<td>0211</td>
+<td>千针鱼</td>
+<td><a href="1239.html">1239</a></td>
+</tr>
+<tr>
+<td>0212</td>
+<td>巨钳螳螂</td>
+<td><a href="0212.html">0212</a></td>
+</tr>
+<tr>
+<td>0212</td>
+<td>巨钳螳螂</td>
+<td><a href="0886.html">0886</a></td>
+</tr>
+<tr>
+<td>0214</td>
+<td>赫拉克罗斯</td>
+<td><a href="0214.html">0214</a></td>
+</tr>
+<tr>
+<td>0214</td>
+<td>赫拉克罗斯</td>
+<td><a href="0887.html">0887</a></td>
+</tr>
+<tr>
+<td>0215</td>
+<td>狃拉</td>
+<td><a href="0215.html">0215</a></td>
+</tr>
+<tr>
+<td>0215</td>
+<td>狃拉</td>
+<td><a href="1240.html">1240</a></td>
+</tr>
+<tr>
+<td>0222</td>
+<td>太阳珊瑚</td>
+<td><a href="0222.html">0222</a></td>
+</tr>
+<tr>
+<td>0222</td>
+<td>太阳珊瑚</td>
+<td><a href="1225.html">1225</a></td>
+</tr>
+<tr>
+<td>0225</td>
+<td>信使鸟</td>
+<td><a href="0225.html">0225</a></td>
+</tr>
+<tr>
+<td>0225</td>
+<td>信使鸟</td>
+<td><a href="1407.html">1407</a></td>
+</tr>
+<tr>
+<td>0227</td>
+<td>盔甲鸟</td>
+<td><a href="0227.html">0227</a></td>
+</tr>
+<tr>
+<td>0227</td>
+<td>盔甲鸟</td>
+<td><a href="0272.html">0272</a></td>
+</tr>
+<tr>
+<td>0229</td>
+<td>黑鲁加</td>
+<td><a href="0229.html">0229</a></td>
+</tr>
+<tr>
+<td>0229</td>
+<td>黑鲁加</td>
+<td><a href="0888.html">0888</a></td>
+</tr>
+<tr>
+<td>0235</td>
+<td>图图犬</td>
+<td><a href="0235.html">0235</a></td>
+</tr>
+<tr>
+<td>0235</td>
+<td>图图犬</td>
+<td><a href="1404.html">1404</a></td>
+</tr>
+<tr>
+<td>0248</td>
+<td>班基拉斯</td>
+<td><a href="0248.html">0248</a></td>
+</tr>
+<tr>
+<td>0248</td>
+<td>班基拉斯</td>
+<td><a href="0889.html">0889</a></td>
+</tr>
+<tr>
+<td>0254</td>
+<td>蜥蜴王</td>
+<td><a href="0279.html">0279</a></td>
+</tr>
+<tr>
+<td>0254</td>
+<td>蜥蜴王</td>
+<td><a href="0890.html">0890</a></td>
+</tr>
+<tr>
+<td>0257</td>
+<td>火焰鸡</td>
+<td><a href="0282.html">0282</a></td>
+</tr>
+<tr>
+<td>0257</td>
+<td>火焰鸡</td>
+<td><a href="0891.html">0891</a></td>
+</tr>
+<tr>
+<td>0260</td>
+<td>巨沼怪</td>
+<td><a href="0285.html">0285</a></td>
+</tr>
+<tr>
+<td>0260</td>
+<td>巨沼怪</td>
+<td><a href="0892.html">0892</a></td>
+</tr>
+<tr>
+<td>0263</td>
+<td>蛇纹熊</td>
+<td><a href="0288.html">0288</a></td>
+</tr>
+<tr>
+<td>0263</td>
+<td>蛇纹熊</td>
+<td><a href="1226.html">1226</a></td>
+</tr>
+<tr>
+<td>0264</td>
+<td>直冲熊</td>
+<td><a href="0289.html">0289</a></td>
+</tr>
+<tr>
+<td>0264</td>
+<td>直冲熊</td>
+<td><a href="1227.html">1227</a></td>
+</tr>
+<tr>
+<td>0282</td>
+<td>沙奈朵</td>
+<td><a href="0394.html">0394</a></td>
+</tr>
+<tr>
+<td>0282</td>
+<td>沙奈朵</td>
+<td><a href="0893.html">0893</a></td>
+</tr>
+<tr>
+<td>0302</td>
+<td>勾魂眼</td>
+<td><a href="0322.html">0322</a></td>
+</tr>
+<tr>
+<td>0302</td>
+<td>勾魂眼</td>
+<td><a href="0894.html">0894</a></td>
+</tr>
+<tr>
+<td>0303</td>
+<td>大嘴娃</td>
+<td><a href="0355.html">0355</a></td>
+</tr>
+<tr>
+<td>0303</td>
+<td>大嘴娃</td>
+<td><a href="0895.html">0895</a></td>
+</tr>
+<tr>
+<td>0306</td>
+<td>波士可多拉</td>
+<td><a href="0384.html">0384</a></td>
+</tr>
+<tr>
+<td>0306</td>
+<td>波士可多拉</td>
+<td><a href="0896.html">0896</a></td>
+</tr>
+<tr>
+<td>0308</td>
+<td>恰雷姆</td>
+<td><a href="0357.html">0357</a></td>
+</tr>
+<tr>
+<td>0308</td>
+<td>恰雷姆</td>
+<td><a href="0897.html">0897</a></td>
+</tr>
+<tr>
+<td>0310</td>
+<td>雷电兽</td>
+<td><a href="0338.html">0338</a></td>
+</tr>
+<tr>
+<td>0310</td>
+<td>雷电兽</td>
+<td><a href="0898.html">0898</a></td>
+</tr>
+<tr>
+<td>0319</td>
+<td>巨牙鲨</td>
+<td><a href="0331.html">0331</a></td>
+</tr>
+<tr>
+<td>0319</td>
+<td>巨牙鲨</td>
+<td><a href="0899.html">0899</a></td>
+</tr>
+<tr>
+<td>0323</td>
+<td>喷火驼</td>
+<td><a href="0340.html">0340</a></td>
+</tr>
+<tr>
+<td>0323</td>
+<td>喷火驼</td>
+<td><a href="0900.html">0900</a></td>
+</tr>
+<tr>
+<td>0334</td>
+<td>七夕青鸟</td>
+<td><a href="0359.html">0359</a></td>
+</tr>
+<tr>
+<td>0334</td>
+<td>七夕青鸟</td>
+<td><a href="0901.html">0901</a></td>
+</tr>
+<tr>
+<td>0354</td>
+<td>诅咒娃娃</td>
+<td><a href="0378.html">0378</a></td>
+</tr>
+<tr>
+<td>0354</td>
+<td>诅咒娃娃</td>
+<td><a href="0902.html">0902</a></td>
+</tr>
+<tr>
+<td>0358</td>
+<td>风铃铃</td>
+<td><a href="0411.html">0411</a></td>
+</tr>
+<tr>
+<td>0358</td>
+<td>风铃铃</td>
+<td><a href="1402.html">1402</a></td>
+</tr>
+<tr>
+<td>0359</td>
+<td>阿勃梭鲁</td>
+<td><a href="0376.html">0376</a></td>
+</tr>
+<tr>
+<td>0359</td>
+<td>阿勃梭鲁</td>
+<td><a href="0903.html">0903</a></td>
+</tr>
+<tr>
+<td>0362</td>
+<td>冰鬼护</td>
+<td><a href="0347.html">0347</a></td>
+</tr>
+<tr>
+<td>0362</td>
+<td>冰鬼护</td>
+<td><a href="0904.html">0904</a></td>
+</tr>
+<tr>
+<td>0373</td>
+<td>暴飞龙</td>
+<td><a href="0397.html">0397</a></td>
+</tr>
+<tr>
+<td>0373</td>
+<td>暴飞龙</td>
+<td><a href="0905.html">0905</a></td>
+</tr>
+<tr>
+<td>0376</td>
+<td>巨金怪</td>
+<td><a href="0400.html">0400</a></td>
+</tr>
+<tr>
+<td>0376</td>
+<td>巨金怪</td>
+<td><a href="0906.html">0906</a></td>
+</tr>
+<tr>
+<td>0380</td>
+<td>拉帝亚斯</td>
+<td><a href="0407.html">0407</a></td>
+</tr>
+<tr>
+<td>0380</td>
+<td>拉帝亚斯</td>
+<td><a href="0907.html">0907</a></td>
+</tr>
+<tr>
+<td>0381</td>
+<td>拉帝欧斯</td>
+<td><a href="0408.html">0408</a></td>
+</tr>
+<tr>
+<td>0381</td>
+<td>拉帝欧斯</td>
+<td><a href="0908.html">0908</a></td>
+</tr>
+<tr>
+<td>0382</td>
+<td>盖欧卡</td>
+<td><a href="0404.html">0404</a></td>
+</tr>
+<tr>
+<td>0382</td>
+<td>盖欧卡</td>
+<td><a href="0910.html">0910</a></td>
+</tr>
+<tr>
+<td>0383</td>
+<td>固拉多</td>
+<td><a href="0405.html">0405</a></td>
+</tr>
+<tr>
+<td>0383</td>
+<td>固拉多</td>
+<td><a href="0909.html">0909</a></td>
+</tr>
+<tr>
+<td>0384</td>
+<td>烈空坐</td>
+<td><a href="0406.html">0406</a></td>
+</tr>
+<tr>
+<td>0384</td>
+<td>烈空坐</td>
+<td><a href="0911.html">0911</a></td>
+</tr>
+<tr>
+<td>0386</td>
+<td>代欧奇希斯</td>
+<td><a href="0410.html">0410</a></td>
+</tr>
+<tr>
+<td>0386</td>
+<td>代欧奇希斯</td>
+<td><a href="1040.html">1040</a></td>
+</tr>
+<tr>
+<td>0386</td>
+<td>代欧奇希斯</td>
+<td><a href="1041.html">1041</a></td>
+</tr>
+<tr>
+<td>0386</td>
+<td>代欧奇希斯</td>
+<td><a href="1042.html">1042</a></td>
+</tr>
+<tr>
+<td>0398</td>
+<td>姆克鹰</td>
+<td><a href="0273.html">0273</a></td>
+</tr>
+<tr>
+<td>0398</td>
+<td>姆克鹰</td>
+<td><a href="0451.html">0451</a></td>
+</tr>
+<tr>
+<td>0412</td>
+<td>结草儿</td>
+<td><a href="0465.html">0465</a></td>
+</tr>
+<tr>
+<td>0412</td>
+<td>结草儿</td>
+<td><a href="0707.html">0707</a></td>
+</tr>
+<tr>
+<td>0412</td>
+<td>结草儿</td>
+<td><a href="0708.html">0708</a></td>
+</tr>
+<tr>
+<td>0413</td>
+<td>结草贵妇</td>
+<td><a href="0466.html">0466</a></td>
+</tr>
+<tr>
+<td>0413</td>
+<td>结草贵妇</td>
+<td><a href="0709.html">0709</a></td>
+</tr>
+<tr>
+<td>0413</td>
+<td>结草贵妇</td>
+<td><a href="0710.html">0710</a></td>
+</tr>
+<tr>
+<td>0421</td>
+<td>樱花儿</td>
+<td><a href="0474.html">0474</a></td>
+</tr>
+<tr>
+<td>0421</td>
+<td>樱花儿</td>
+<td><a href="0751.html">0751</a></td>
+</tr>
+<tr>
+<td>0422</td>
+<td>无壳海兔</td>
+<td><a href="0475.html">0475</a></td>
+</tr>
+<tr>
+<td>0422</td>
+<td>无壳海兔</td>
+<td><a href="0711.html">0711</a></td>
+</tr>
+<tr>
+<td>0423</td>
+<td>海兔兽</td>
+<td><a href="0476.html">0476</a></td>
+</tr>
+<tr>
+<td>0423</td>
+<td>海兔兽</td>
+<td><a href="0712.html">0712</a></td>
+</tr>
+<tr>
+<td>0428</td>
+<td>长耳兔</td>
+<td><a href="0481.html">0481</a></td>
+</tr>
+<tr>
+<td>0428</td>
+<td>长耳兔</td>
+<td><a href="0912.html">0912</a></td>
+</tr>
+<tr>
+<td>0439</td>
+<td>魔尼尼</td>
+<td><a href="0492.html">0492</a></td>
+</tr>
+<tr>
+<td>0439</td>
+<td>魔尼尼</td>
+<td><a href="1228.html">1228</a></td>
+</tr>
+<tr>
+<td>0445</td>
+<td>烈咬陆鲨</td>
+<td><a href="0498.html">0498</a></td>
+</tr>
+<tr>
+<td>0445</td>
+<td>烈咬陆鲨</td>
+<td><a href="0913.html">0913</a></td>
+</tr>
+<tr>
+<td>0448</td>
+<td>路卡利欧</td>
+<td><a href="0501.html">0501</a></td>
+</tr>
+<tr>
+<td>0448</td>
+<td>路卡利欧</td>
+<td><a href="0914.html">0914</a></td>
+</tr>
+<tr>
+<td>0449</td>
+<td>沙河马</td>
+<td><a href="0502.html">0502</a></td>
+</tr>
+<tr>
+<td>0449</td>
+<td>沙河马</td>
+<td><a href="0744.html">0744</a></td>
+</tr>
+<tr>
+<td>0450</td>
+<td>河马兽</td>
+<td><a href="0503.html">0503</a></td>
+</tr>
+<tr>
+<td>0450</td>
+<td>河马兽</td>
+<td><a href="0745.html">0745</a></td>
+</tr>
+<tr>
+<td>0460</td>
+<td>暴雪王</td>
+<td><a href="0513.html">0513</a></td>
+</tr>
+<tr>
+<td>0460</td>
+<td>暴雪王</td>
+<td><a href="0915.html">0915</a></td>
+</tr>
+<tr>
+<td>0475</td>
+<td>艾路雷朵</td>
+<td><a href="0528.html">0528</a></td>
+</tr>
+<tr>
+<td>0475</td>
+<td>艾路雷朵</td>
+<td><a href="0916.html">0916</a></td>
+</tr>
+<tr>
+<td>0478</td>
+<td>雪妖女</td>
+<td><a href="0531.html">0531</a></td>
+</tr>
+<tr>
+<td>0478</td>
+<td>雪妖女</td>
+<td><a href="1491.html">1491</a></td>
+</tr>
+<tr>
+<td>0479</td>
+<td>洛托姆</td>
+<td><a href="0532.html">0532</a></td>
+</tr>
+<tr>
+<td>0479</td>
+<td>洛托姆</td>
+<td><a href="0713.html">0713</a></td>
+</tr>
+<tr>
+<td>0479</td>
+<td>洛托姆</td>
+<td><a href="0714.html">0714</a></td>
+</tr>
+<tr>
+<td>0479</td>
+<td>洛托姆</td>
+<td><a href="0715.html">0715</a></td>
+</tr>
+<tr>
+<td>0479</td>
+<td>洛托姆</td>
+<td><a href="0716.html">0716</a></td>
+</tr>
+<tr>
+<td>0479</td>
+<td>洛托姆</td>
+<td><a href="0717.html">0717</a></td>
+</tr>
+<tr>
+<td>0483</td>
+<td>帝牙卢卡</td>
+<td><a href="0536.html">0536</a></td>
+</tr>
+<tr>
+<td>0483</td>
+<td>帝牙卢卡</td>
+<td><a href="0919.html">0919</a></td>
+</tr>
+<tr>
+<td>0484</td>
+<td>帕路奇亚</td>
+<td><a href="0537.html">0537</a></td>
+</tr>
+<tr>
+<td>0484</td>
+<td>帕路奇亚</td>
+<td><a href="0920.html">0920</a></td>
+</tr>
+<tr>
+<td>0487</td>
+<td>骑拉帝纳</td>
+<td><a href="0540.html">0540</a></td>
+</tr>
+<tr>
+<td>0487</td>
+<td>骑拉帝纳</td>
+<td><a href="0718.html">0718</a></td>
+</tr>
+<tr>
+<td>0492</td>
+<td>谢米</td>
+<td><a href="0545.html">0545</a></td>
+</tr>
+<tr>
+<td>0492</td>
+<td>谢米</td>
+<td><a href="0719.html">0719</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0546.html">0546</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0720.html">0720</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0721.html">0721</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0722.html">0722</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0723.html">0723</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0724.html">0724</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0725.html">0725</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0726.html">0726</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0727.html">0727</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0728.html">0728</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0729.html">0729</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0730.html">0730</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0731.html">0731</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0732.html">0732</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0733.html">0733</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0734.html">0734</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0735.html">0735</a></td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯</td>
+<td><a href="0834.html">0834</a></td>
+</tr>
+<tr>
+<td>0503</td>
+<td>大剑鬼</td>
+<td><a href="0556.html">0556</a></td>
+</tr>
+<tr>
+<td>0503</td>
+<td>大剑鬼</td>
+<td><a href="1241.html">1241</a></td>
+</tr>
+<tr>
+<td>0521</td>
+<td>高傲雉鸡</td>
+<td><a href="0574.html">0574</a></td>
+</tr>
+<tr>
+<td>0521</td>
+<td>高傲雉鸡</td>
+<td><a href="0703.html">0703</a></td>
+</tr>
+<tr>
+<td>0530</td>
+<td>龙头地鼠</td>
+<td><a href="0268.html">0268</a></td>
+</tr>
+<tr>
+<td>0530</td>
+<td>龙头地鼠</td>
+<td><a href="0583.html">0583</a></td>
+</tr>
+<tr>
+<td>0531</td>
+<td>差不多娃娃</td>
+<td><a href="0584.html">0584</a></td>
+</tr>
+<tr>
+<td>0531</td>
+<td>差不多娃娃</td>
+<td><a href="0917.html">0917</a></td>
+</tr>
+<tr>
+<td>0549</td>
+<td>裙儿小姐</td>
+<td><a href="0602.html">0602</a></td>
+</tr>
+<tr>
+<td>0549</td>
+<td>裙儿小姐</td>
+<td><a href="1242.html">1242</a></td>
+</tr>
+<tr>
+<td>0550</td>
+<td>野蛮鲈鱼</td>
+<td><a href="0603.html">0603</a></td>
+</tr>
+<tr>
+<td>0550</td>
+<td>野蛮鲈鱼</td>
+<td><a href="0736.html">0736</a></td>
+</tr>
+<tr>
+<td>0550</td>
+<td>野蛮鲈鱼</td>
+<td><a href="1243.html">1243</a></td>
+</tr>
+<tr>
+<td>0554</td>
+<td>火红不倒翁</td>
+<td><a href="0607.html">0607</a></td>
+</tr>
+<tr>
+<td>0554</td>
+<td>火红不倒翁</td>
+<td><a href="1229.html">1229</a></td>
+</tr>
+<tr>
+<td>0555</td>
+<td>达摩狒狒</td>
+<td><a href="0608.html">0608</a></td>
+</tr>
+<tr>
+<td>0555</td>
+<td>达摩狒狒</td>
+<td><a href="0737.html">0737</a></td>
+</tr>
+<tr>
+<td>0555</td>
+<td>达摩狒狒</td>
+<td><a href="1230.html">1230</a></td>
+</tr>
+<tr>
+<td>0555</td>
+<td>达摩狒狒</td>
+<td><a href="1231.html">1231</a></td>
+</tr>
+<tr>
+<td>0560</td>
+<td>头巾混混</td>
+<td><a href="0267.html">0267</a></td>
+</tr>
+<tr>
+<td>0560</td>
+<td>头巾混混</td>
+<td><a href="0613.html">0613</a></td>
+</tr>
+<tr>
+<td>0562</td>
+<td>哭哭面具</td>
+<td><a href="0615.html">0615</a></td>
+</tr>
+<tr>
+<td>0562</td>
+<td>哭哭面具</td>
+<td><a href="1232.html">1232</a></td>
+</tr>
+<tr>
+<td>0569</td>
+<td>灰尘山</td>
+<td><a href="0622.html">0622</a></td>
+</tr>
+<tr>
+<td>0569</td>
+<td>灰尘山</td>
+<td><a href="1272.html">1272</a></td>
+</tr>
+<tr>
+<td>0570</td>
+<td>索罗亚</td>
+<td><a href="0623.html">0623</a></td>
+</tr>
+<tr>
+<td>0570</td>
+<td>索罗亚</td>
+<td><a href="1244.html">1244</a></td>
+</tr>
+<tr>
+<td>0571</td>
+<td>索罗亚克</td>
+<td><a href="0624.html">0624</a></td>
+</tr>
+<tr>
+<td>0571</td>
+<td>索罗亚克</td>
+<td><a href="1245.html">1245</a></td>
+</tr>
+<tr>
+<td>0585</td>
+<td>四季鹿</td>
+<td><a href="0638.html">0638</a></td>
+</tr>
+<tr>
+<td>0585</td>
+<td>四季鹿</td>
+<td><a href="0738.html">0738</a></td>
+</tr>
+<tr>
+<td>0585</td>
+<td>四季鹿</td>
+<td><a href="0739.html">0739</a></td>
+</tr>
+<tr>
+<td>0585</td>
+<td>四季鹿</td>
+<td><a href="0740.html">0740</a></td>
+</tr>
+<tr>
+<td>0586</td>
+<td>萌芽鹿</td>
+<td><a href="0639.html">0639</a></td>
+</tr>
+<tr>
+<td>0586</td>
+<td>萌芽鹿</td>
+<td><a href="0741.html">0741</a></td>
+</tr>
+<tr>
+<td>0586</td>
+<td>萌芽鹿</td>
+<td><a href="0742.html">0742</a></td>
+</tr>
+<tr>
+<td>0586</td>
+<td>萌芽鹿</td>
+<td><a href="0743.html">0743</a></td>
+</tr>
+<tr>
+<td>0592</td>
+<td>轻飘飘</td>
+<td><a href="0645.html">0645</a></td>
+</tr>
+<tr>
+<td>0592</td>
+<td>轻飘飘</td>
+<td><a href="0704.html">0704</a></td>
+</tr>
+<tr>
+<td>0593</td>
+<td>胖嘟嘟</td>
+<td><a href="0646.html">0646</a></td>
+</tr>
+<tr>
+<td>0593</td>
+<td>胖嘟嘟</td>
+<td><a href="0705.html">0705</a></td>
+</tr>
+<tr>
+<td>0604</td>
+<td>麻麻鳗鱼王</td>
+<td><a href="0269.html">0269</a></td>
+</tr>
+<tr>
+<td>0604</td>
+<td>麻麻鳗鱼王</td>
+<td><a href="0657.html">0657</a></td>
+</tr>
+<tr>
+<td>0609</td>
+<td>水晶灯火灵</td>
+<td><a href="0262.html">0262</a></td>
+</tr>
+<tr>
+<td>0609</td>
+<td>水晶灯火灵</td>
+<td><a href="0662.html">0662</a></td>
+</tr>
+<tr>
+<td>0618</td>
+<td>泥巴鱼</td>
+<td><a href="0671.html">0671</a></td>
+</tr>
+<tr>
+<td>0618</td>
+<td>泥巴鱼</td>
+<td><a href="1233.html">1233</a></td>
+</tr>
+<tr>
+<td>0628</td>
+<td>勇士雄鹰</td>
+<td><a href="0681.html">0681</a></td>
+</tr>
+<tr>
+<td>0628</td>
+<td>勇士雄鹰</td>
+<td><a href="1246.html">1246</a></td>
+</tr>
+<tr>
+<td>0641</td>
+<td>龙卷云</td>
+<td><a href="0694.html">0694</a></td>
+</tr>
+<tr>
+<td>0641</td>
+<td>龙卷云</td>
+<td><a href="0754.html">0754</a></td>
+</tr>
+<tr>
+<td>0642</td>
+<td>雷电云</td>
+<td><a href="0695.html">0695</a></td>
+</tr>
+<tr>
+<td>0642</td>
+<td>雷电云</td>
+<td><a href="0755.html">0755</a></td>
+</tr>
+<tr>
+<td>0645</td>
+<td>土地云</td>
+<td><a href="0698.html">0698</a></td>
+</tr>
+<tr>
+<td>0645</td>
+<td>土地云</td>
+<td><a href="0756.html">0756</a></td>
+</tr>
+<tr>
+<td>0646</td>
+<td>酋雷姆</td>
+<td><a href="0699.html">0699</a></td>
+</tr>
+<tr>
+<td>0646</td>
+<td>酋雷姆</td>
+<td><a href="0752.html">0752</a></td>
+</tr>
+<tr>
+<td>0646</td>
+<td>酋雷姆</td>
+<td><a href="0753.html">0753</a></td>
+</tr>
+<tr>
+<td>0647</td>
+<td>凯路迪欧</td>
+<td><a href="0700.html">0700</a></td>
+</tr>
+<tr>
+<td>0647</td>
+<td>凯路迪欧</td>
+<td><a href="0757.html">0757</a></td>
+</tr>
+<tr>
+<td>0648</td>
+<td>美洛耶塔</td>
+<td><a href="0701.html">0701</a></td>
+</tr>
+<tr>
+<td>0648</td>
+<td>美洛耶塔</td>
+<td><a href="0746.html">0746</a></td>
+</tr>
+<tr>
+<td>0649</td>
+<td>盖诺赛克特</td>
+<td><a href="0702.html">0702</a></td>
+</tr>
+<tr>
+<td>0649</td>
+<td>盖诺赛克特</td>
+<td><a href="0747.html">0747</a></td>
+</tr>
+<tr>
+<td>0649</td>
+<td>盖诺赛克特</td>
+<td><a href="0748.html">0748</a></td>
+</tr>
+<tr>
+<td>0649</td>
+<td>盖诺赛克特</td>
+<td><a href="0749.html">0749</a></td>
+</tr>
+<tr>
+<td>0649</td>
+<td>盖诺赛克特</td>
+<td><a href="0750.html">0750</a></td>
+</tr>
+<tr>
+<td>0658</td>
+<td>甲贺忍蛙</td>
+<td><a href="0766.html">0766</a></td>
+</tr>
+<tr>
+<td>0658</td>
+<td>甲贺忍蛙</td>
+<td><a href="0839.html">0839</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0774.html">0774</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0868.html">0868</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0921.html">0921</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0922.html">0922</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0923.html">0923</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0924.html">0924</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0925.html">0925</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0926.html">0926</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0927.html">0927</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0928.html">0928</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0929.html">0929</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0930.html">0930</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0931.html">0931</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0932.html">0932</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0933.html">0933</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0934.html">0934</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0935.html">0935</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0936.html">0936</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0937.html">0937</a></td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶</td>
+<td><a href="0938.html">0938</a></td>
+</tr>
+<tr>
+<td>0668</td>
+<td>火炎狮</td>
+<td><a href="0776.html">0776</a></td>
+</tr>
+<tr>
+<td>0668</td>
+<td>火炎狮</td>
+<td><a href="0831.html">0831</a></td>
+</tr>
+<tr>
+<td>0669</td>
+<td>花蓓蓓</td>
+<td><a href="0777.html">0777</a></td>
+</tr>
+<tr>
+<td>0669</td>
+<td>花蓓蓓</td>
+<td><a href="0840.html">0840</a></td>
+</tr>
+<tr>
+<td>0669</td>
+<td>花蓓蓓</td>
+<td><a href="0841.html">0841</a></td>
+</tr>
+<tr>
+<td>0669</td>
+<td>花蓓蓓</td>
+<td><a href="0842.html">0842</a></td>
+</tr>
+<tr>
+<td>0669</td>
+<td>花蓓蓓</td>
+<td><a href="0843.html">0843</a></td>
+</tr>
+<tr>
+<td>0670</td>
+<td>花叶蒂</td>
+<td><a href="0778.html">0778</a></td>
+</tr>
+<tr>
+<td>0670</td>
+<td>花叶蒂</td>
+<td><a href="0844.html">0844</a></td>
+</tr>
+<tr>
+<td>0670</td>
+<td>花叶蒂</td>
+<td><a href="0845.html">0845</a></td>
+</tr>
+<tr>
+<td>0670</td>
+<td>花叶蒂</td>
+<td><a href="0846.html">0846</a></td>
+</tr>
+<tr>
+<td>0670</td>
+<td>花叶蒂</td>
+<td><a href="0847.html">0847</a></td>
+</tr>
+<tr>
+<td>0670</td>
+<td>花叶蒂</td>
+<td><a href="0848.html">0848</a></td>
+</tr>
+<tr>
+<td>0671</td>
+<td>花洁夫人</td>
+<td><a href="0779.html">0779</a></td>
+</tr>
+<tr>
+<td>0671</td>
+<td>花洁夫人</td>
+<td><a href="0849.html">0849</a></td>
+</tr>
+<tr>
+<td>0671</td>
+<td>花洁夫人</td>
+<td><a href="0850.html">0850</a></td>
+</tr>
+<tr>
+<td>0671</td>
+<td>花洁夫人</td>
+<td><a href="0851.html">0851</a></td>
+</tr>
+<tr>
+<td>0671</td>
+<td>花洁夫人</td>
+<td><a href="0852.html">0852</a></td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚</td>
+<td><a href="0784.html">0784</a></td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚</td>
+<td><a href="0859.html">0859</a></td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚</td>
+<td><a href="0860.html">0860</a></td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚</td>
+<td><a href="0861.html">0861</a></td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚</td>
+<td><a href="0862.html">0862</a></td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚</td>
+<td><a href="0863.html">0863</a></td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚</td>
+<td><a href="0864.html">0864</a></td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚</td>
+<td><a href="0865.html">0865</a></td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚</td>
+<td><a href="0866.html">0866</a></td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚</td>
+<td><a href="0867.html">0867</a></td>
+</tr>
+<tr>
+<td>0678</td>
+<td>超能妙喵</td>
+<td><a href="0786.html">0786</a></td>
+</tr>
+<tr>
+<td>0678</td>
+<td>超能妙喵</td>
+<td><a href="0832.html">0832</a></td>
+</tr>
+<tr>
+<td>0681</td>
+<td>坚盾剑怪</td>
+<td><a href="0789.html">0789</a></td>
+</tr>
+<tr>
+<td>0681</td>
+<td>坚盾剑怪</td>
+<td><a href="0833.html">0833</a></td>
+</tr>
+<tr>
+<td>0705</td>
+<td>黏美儿</td>
+<td><a href="0813.html">0813</a></td>
+</tr>
+<tr>
+<td>0705</td>
+<td>黏美儿</td>
+<td><a href="1247.html">1247</a></td>
+</tr>
+<tr>
+<td>0706</td>
+<td>黏美龙</td>
+<td><a href="0814.html">0814</a></td>
+</tr>
+<tr>
+<td>0706</td>
+<td>黏美龙</td>
+<td><a href="1248.html">1248</a></td>
+</tr>
+<tr>
+<td>0710</td>
+<td>南瓜精</td>
+<td><a href="0818.html">0818</a></td>
+</tr>
+<tr>
+<td>0710</td>
+<td>南瓜精</td>
+<td><a href="0853.html">0853</a></td>
+</tr>
+<tr>
+<td>0710</td>
+<td>南瓜精</td>
+<td><a href="0854.html">0854</a></td>
+</tr>
+<tr>
+<td>0710</td>
+<td>南瓜精</td>
+<td><a href="0855.html">0855</a></td>
+</tr>
+<tr>
+<td>0711</td>
+<td>南瓜怪人</td>
+<td><a href="0819.html">0819</a></td>
+</tr>
+<tr>
+<td>0711</td>
+<td>南瓜怪人</td>
+<td><a href="0856.html">0856</a></td>
+</tr>
+<tr>
+<td>0711</td>
+<td>南瓜怪人</td>
+<td><a href="0857.html">0857</a></td>
+</tr>
+<tr>
+<td>0711</td>
+<td>南瓜怪人</td>
+<td><a href="0858.html">0858</a></td>
+</tr>
+<tr>
+<td>0713</td>
+<td>冰岩怪</td>
+<td><a href="0821.html">0821</a></td>
+</tr>
+<tr>
+<td>0713</td>
+<td>冰岩怪</td>
+<td><a href="1249.html">1249</a></td>
+</tr>
+<tr>
+<td>0716</td>
+<td>哲尔尼亚斯</td>
+<td><a href="0824.html">0824</a></td>
+</tr>
+<tr>
+<td>0716</td>
+<td>哲尔尼亚斯</td>
+<td><a href="1101.html">1101</a></td>
+</tr>
+<tr>
+<td>0718</td>
+<td>基格尔德</td>
+<td><a href="0826.html">0826</a></td>
+</tr>
+<tr>
+<td>0718</td>
+<td>基格尔德</td>
+<td><a href="0835.html">0835</a></td>
+</tr>
+<tr>
+<td>0718</td>
+<td>基格尔德</td>
+<td><a href="0836.html">0836</a></td>
+</tr>
+<tr>
+<td>0718</td>
+<td>基格尔德</td>
+<td><a href="0837.html">0837</a></td>
+</tr>
+<tr>
+<td>0718</td>
+<td>基格尔德</td>
+<td><a href="0838.html">0838</a></td>
+</tr>
+<tr>
+<td>0719</td>
+<td>蒂安希</td>
+<td><a href="0827.html">0827</a></td>
+</tr>
+<tr>
+<td>0719</td>
+<td>蒂安希</td>
+<td><a href="0918.html">0918</a></td>
+</tr>
+<tr>
+<td>0720</td>
+<td>胡帕</td>
+<td><a href="0828.html">0828</a></td>
+</tr>
+<tr>
+<td>0720</td>
+<td>胡帕</td>
+<td><a href="0829.html">0829</a></td>
+</tr>
+<tr>
+<td>0724</td>
+<td>狙射树枭</td>
+<td><a href="0941.html">0941</a></td>
+</tr>
+<tr>
+<td>0724</td>
+<td>狙射树枭</td>
+<td><a href="1250.html">1250</a></td>
+</tr>
+<tr>
+<td>0741</td>
+<td>花舞鸟</td>
+<td><a href="0958.html">0958</a></td>
+</tr>
+<tr>
+<td>0741</td>
+<td>花舞鸟</td>
+<td><a href="1043.html">1043</a></td>
+</tr>
+<tr>
+<td>0741</td>
+<td>花舞鸟</td>
+<td><a href="1044.html">1044</a></td>
+</tr>
+<tr>
+<td>0741</td>
+<td>花舞鸟</td>
+<td><a href="1045.html">1045</a></td>
+</tr>
+<tr>
+<td>0745</td>
+<td>鬃岩狼人</td>
+<td><a href="0962.html">0962</a></td>
+</tr>
+<tr>
+<td>0745</td>
+<td>鬃岩狼人</td>
+<td><a href="1046.html">1046</a></td>
+</tr>
+<tr>
+<td>0745</td>
+<td>鬃岩狼人</td>
+<td><a href="1082.html">1082</a></td>
+</tr>
+<tr>
+<td>0746</td>
+<td>弱丁鱼</td>
+<td><a href="0963.html">0963</a></td>
+</tr>
+<tr>
+<td>0746</td>
+<td>弱丁鱼</td>
+<td><a href="1047.html">1047</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="0990.html">0990</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1048.html">1048</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1049.html">1049</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1050.html">1050</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1051.html">1051</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1052.html">1052</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1053.html">1053</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1054.html">1054</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1055.html">1055</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1056.html">1056</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1057.html">1057</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1058.html">1058</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1059.html">1059</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1060.html">1060</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1061.html">1061</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1062.html">1062</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1063.html">1063</a></td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽</td>
+<td><a href="1064.html">1064</a></td>
+</tr>
+<tr>
+<td>0774</td>
+<td>小陨星</td>
+<td><a href="0991.html">0991</a></td>
+</tr>
+<tr>
+<td>0774</td>
+<td>小陨星</td>
+<td><a href="1065.html">1065</a></td>
+</tr>
+<tr>
+<td>0774</td>
+<td>小陨星</td>
+<td><a href="1066.html">1066</a></td>
+</tr>
+<tr>
+<td>0774</td>
+<td>小陨星</td>
+<td><a href="1067.html">1067</a></td>
+</tr>
+<tr>
+<td>0774</td>
+<td>小陨星</td>
+<td><a href="1068.html">1068</a></td>
+</tr>
+<tr>
+<td>0774</td>
+<td>小陨星</td>
+<td><a href="1069.html">1069</a></td>
+</tr>
+<tr>
+<td>0774</td>
+<td>小陨星</td>
+<td><a href="1070.html">1070</a></td>
+</tr>
+<tr>
+<td>0774</td>
+<td>小陨星</td>
+<td><a href="1071.html">1071</a></td>
+</tr>
+<tr>
+<td>0778</td>
+<td>谜拟Q</td>
+<td><a href="0995.html">0995</a></td>
+</tr>
+<tr>
+<td>0778</td>
+<td>谜拟Q</td>
+<td><a href="1072.html">1072</a></td>
+</tr>
+<tr>
+<td>0800</td>
+<td>奈克洛兹玛</td>
+<td><a href="1017.html">1017</a></td>
+</tr>
+<tr>
+<td>0800</td>
+<td>奈克洛兹玛</td>
+<td><a href="1079.html">1079</a></td>
+</tr>
+<tr>
+<td>0800</td>
+<td>奈克洛兹玛</td>
+<td><a href="1080.html">1080</a></td>
+</tr>
+<tr>
+<td>0800</td>
+<td>奈克洛兹玛</td>
+<td><a href="1081.html">1081</a></td>
+</tr>
+<tr>
+<td>0801</td>
+<td>玛机雅娜</td>
+<td><a href="1018.html">1018</a></td>
+</tr>
+<tr>
+<td>0801</td>
+<td>玛机雅娜</td>
+<td><a href="1073.html">1073</a></td>
+</tr>
+<tr>
+<td>0809</td>
+<td>美录梅塔</td>
+<td><a href="1084.html">1084</a></td>
+</tr>
+<tr>
+<td>0809</td>
+<td>美录梅塔</td>
+<td><a href="1273.html">1273</a></td>
+</tr>
+<tr>
+<td>0812</td>
+<td>轰擂金刚猩</td>
+<td><a href="1104.html">1104</a></td>
+</tr>
+<tr>
+<td>0812</td>
+<td>轰擂金刚猩</td>
+<td><a href="1274.html">1274</a></td>
+</tr>
+<tr>
+<td>0815</td>
+<td>闪焰王牌</td>
+<td><a href="1107.html">1107</a></td>
+</tr>
+<tr>
+<td>0815</td>
+<td>闪焰王牌</td>
+<td><a href="1275.html">1275</a></td>
+</tr>
+<tr>
+<td>0818</td>
+<td>千面避役</td>
+<td><a href="1110.html">1110</a></td>
+</tr>
+<tr>
+<td>0818</td>
+<td>千面避役</td>
+<td><a href="1276.html">1276</a></td>
+</tr>
+<tr>
+<td>0823</td>
+<td>钢铠鸦</td>
+<td><a href="1115.html">1115</a></td>
+</tr>
+<tr>
+<td>0823</td>
+<td>钢铠鸦</td>
+<td><a href="1277.html">1277</a></td>
+</tr>
+<tr>
+<td>0826</td>
+<td>以欧路普</td>
+<td><a href="1118.html">1118</a></td>
+</tr>
+<tr>
+<td>0826</td>
+<td>以欧路普</td>
+<td><a href="1278.html">1278</a></td>
+</tr>
+<tr>
+<td>0834</td>
+<td>暴噬龟</td>
+<td><a href="1126.html">1126</a></td>
+</tr>
+<tr>
+<td>0834</td>
+<td>暴噬龟</td>
+<td><a href="1279.html">1279</a></td>
+</tr>
+<tr>
+<td>0839</td>
+<td>巨炭山</td>
+<td><a href="1131.html">1131</a></td>
+</tr>
+<tr>
+<td>0839</td>
+<td>巨炭山</td>
+<td><a href="1280.html">1280</a></td>
+</tr>
+<tr>
+<td>0841</td>
+<td>苹裹龙</td>
+<td><a href="1133.html">1133</a></td>
+</tr>
+<tr>
+<td>0841</td>
+<td>苹裹龙</td>
+<td><a href="1281.html">1281</a></td>
+</tr>
+<tr>
+<td>0842</td>
+<td>丰蜜龙</td>
+<td><a href="1134.html">1134</a></td>
+</tr>
+<tr>
+<td>0842</td>
+<td>丰蜜龙</td>
+<td><a href="1282.html">1282</a></td>
+</tr>
+<tr>
+<td>0844</td>
+<td>沙螺蟒</td>
+<td><a href="1136.html">1136</a></td>
+</tr>
+<tr>
+<td>0844</td>
+<td>沙螺蟒</td>
+<td><a href="1283.html">1283</a></td>
+</tr>
+<tr>
+<td>0845</td>
+<td>古月鸟</td>
+<td><a href="1137.html">1137</a></td>
+</tr>
+<tr>
+<td>0845</td>
+<td>古月鸟</td>
+<td><a href="1191.html">1191</a></td>
+</tr>
+<tr>
+<td>0845</td>
+<td>古月鸟</td>
+<td><a href="1192.html">1192</a></td>
+</tr>
+<tr>
+<td>0849</td>
+<td>颤弦蝾螈</td>
+<td><a href="1141.html">1141</a></td>
+</tr>
+<tr>
+<td>0849</td>
+<td>颤弦蝾螈</td>
+<td><a href="1193.html">1193</a></td>
+</tr>
+<tr>
+<td>0849</td>
+<td>颤弦蝾螈</td>
+<td><a href="1284.html">1284</a></td>
+</tr>
+<tr>
+<td>0849</td>
+<td>颤弦蝾螈</td>
+<td><a href="1285.html">1285</a></td>
+</tr>
+<tr>
+<td>0851</td>
+<td>焚焰蚣</td>
+<td><a href="1143.html">1143</a></td>
+</tr>
+<tr>
+<td>0851</td>
+<td>焚焰蚣</td>
+<td><a href="1286.html">1286</a></td>
+</tr>
+<tr>
+<td>0854</td>
+<td>来悲茶</td>
+<td><a href="1146.html">1146</a></td>
+</tr>
+<tr>
+<td>0854</td>
+<td>来悲茶</td>
+<td><a href="1194.html">1194</a></td>
+</tr>
+<tr>
+<td>0855</td>
+<td>怖思壶</td>
+<td><a href="1147.html">1147</a></td>
+</tr>
+<tr>
+<td>0855</td>
+<td>怖思壶</td>
+<td><a href="1195.html">1195</a></td>
+</tr>
+<tr>
+<td>0858</td>
+<td>布莉姆温</td>
+<td><a href="1150.html">1150</a></td>
+</tr>
+<tr>
+<td>0858</td>
+<td>布莉姆温</td>
+<td><a href="1287.html">1287</a></td>
+</tr>
+<tr>
+<td>0861</td>
+<td>长毛巨魔</td>
+<td><a href="1153.html">1153</a></td>
+</tr>
+<tr>
+<td>0861</td>
+<td>长毛巨魔</td>
+<td><a href="1288.html">1288</a></td>
+</tr>
+<tr>
+<td>0869</td>
+<td>霜奶仙</td>
+<td><a href="1161.html">1161</a></td>
+</tr>
+<tr>
+<td>0869</td>
+<td>霜奶仙</td>
+<td><a href="1196.html">1196</a></td>
+</tr>
+<tr>
+<td>0869</td>
+<td>霜奶仙</td>
+<td><a href="1197.html">1197</a></td>
+</tr>
+<tr>
+<td>0869</td>
+<td>霜奶仙</td>
+<td><a href="1198.html">1198</a></td>
+</tr>
+<tr>
+<td>0869</td>
+<td>霜奶仙</td>
+<td><a href="1199.html">1199</a></td>
+</tr>
+<tr>
+<td>0869</td>
+<td>霜奶仙</td>
+<td><a href="1200.html">1200</a></td>
+</tr>
+<tr>
+<td>0869</td>
+<td>霜奶仙</td>
+<td><a href="1201.html">1201</a></td>
+</tr>
+<tr>
+<td>0869</td>
+<td>霜奶仙</td>
+<td><a href="1289.html">1289</a></td>
+</tr>
+<tr>
+<td>0870</td>
+<td>列阵兵</td>
+<td><a href="1162.html">1162</a></td>
+</tr>
+<tr>
+<td>0870</td>
+<td>列阵兵</td>
+<td><a href="1401.html">1401</a></td>
+</tr>
+<tr>
+<td>0875</td>
+<td>冰砌鹅</td>
+<td><a href="1167.html">1167</a></td>
+</tr>
+<tr>
+<td>0875</td>
+<td>冰砌鹅</td>
+<td><a href="1202.html">1202</a></td>
+</tr>
+<tr>
+<td>0876</td>
+<td>爱管侍</td>
+<td><a href="1168.html">1168</a></td>
+</tr>
+<tr>
+<td>0876</td>
+<td>爱管侍</td>
+<td><a href="1203.html">1203</a></td>
+</tr>
+<tr>
+<td>0877</td>
+<td>莫鲁贝可</td>
+<td><a href="1169.html">1169</a></td>
+</tr>
+<tr>
+<td>0877</td>
+<td>莫鲁贝可</td>
+<td><a href="1204.html">1204</a></td>
+</tr>
+<tr>
+<td>0879</td>
+<td>大王铜象</td>
+<td><a href="1171.html">1171</a></td>
+</tr>
+<tr>
+<td>0879</td>
+<td>大王铜象</td>
+<td><a href="1290.html">1290</a></td>
+</tr>
+<tr>
+<td>0884</td>
+<td>铝钢龙</td>
+<td><a href="1176.html">1176</a></td>
+</tr>
+<tr>
+<td>0884</td>
+<td>铝钢龙</td>
+<td><a href="1291.html">1291</a></td>
+</tr>
+<tr>
+<td>0888</td>
+<td>苍响</td>
+<td><a href="1180.html">1180</a></td>
+</tr>
+<tr>
+<td>0888</td>
+<td>苍响</td>
+<td><a href="1205.html">1205</a></td>
+</tr>
+<tr>
+<td>0889</td>
+<td>藏玛然特</td>
+<td><a href="1181.html">1181</a></td>
+</tr>
+<tr>
+<td>0889</td>
+<td>藏玛然特</td>
+<td><a href="1206.html">1206</a></td>
+</tr>
+<tr>
+<td>0890</td>
+<td>无极汰那</td>
+<td><a href="1182.html">1182</a></td>
+</tr>
+<tr>
+<td>0890</td>
+<td>无极汰那</td>
+<td><a href="1207.html">1207</a></td>
+</tr>
+<tr>
+<td>0892</td>
+<td>武道熊师</td>
+<td><a href="1184.html">1184</a></td>
+</tr>
+<tr>
+<td>0892</td>
+<td>武道熊师</td>
+<td><a href="1208.html">1208</a></td>
+</tr>
+<tr>
+<td>0892</td>
+<td>武道熊师</td>
+<td><a href="1292.html">1292</a></td>
+</tr>
+<tr>
+<td>0892</td>
+<td>武道熊师</td>
+<td><a href="1293.html">1293</a></td>
+</tr>
+<tr>
+<td>0893</td>
+<td>萨戮德</td>
+<td><a href="1185.html">1185</a></td>
+</tr>
+<tr>
+<td>0893</td>
+<td>萨戮德</td>
+<td><a href="1209.html">1209</a></td>
+</tr>
+<tr>
+<td>0898</td>
+<td>蕾冠王</td>
+<td><a href="1190.html">1190</a></td>
+</tr>
+<tr>
+<td>0898</td>
+<td>蕾冠王</td>
+<td><a href="1210.html">1210</a></td>
+</tr>
+<tr>
+<td>0898</td>
+<td>蕾冠王</td>
+<td><a href="1211.html">1211</a></td>
+</tr>
+<tr>
+<td>0901</td>
+<td>月月熊</td>
+<td><a href="1253.html">1253</a></td>
+</tr>
+<tr>
+<td>0901</td>
+<td>月月熊</td>
+<td><a href="1527.html">1527</a></td>
+</tr>
+<tr>
+<td>0902</td>
+<td>幽尾玄鱼</td>
+<td><a href="1254.html">1254</a></td>
+</tr>
+<tr>
+<td>0902</td>
+<td>幽尾玄鱼</td>
+<td><a href="1255.html">1255</a></td>
+</tr>
+<tr>
+<td>0905</td>
+<td>眷恋云</td>
+<td><a href="1258.html">1258</a></td>
+</tr>
+<tr>
+<td>0905</td>
+<td>眷恋云</td>
+<td><a href="1259.html">1259</a></td>
+</tr>
+<tr>
+<td>0916</td>
+<td>飘香豚</td>
+<td><a href="1418.html">1418</a></td>
+</tr>
+<tr>
+<td>0916</td>
+<td>飘香豚</td>
+<td><a href="1419.html">1419</a></td>
+</tr>
+<tr>
+<td>0925</td>
+<td>一家鼠</td>
+<td><a href="1428.html">1428</a></td>
+</tr>
+<tr>
+<td>0925</td>
+<td>一家鼠</td>
+<td><a href="1429.html">1429</a></td>
+</tr>
+<tr>
+<td>0931</td>
+<td>怒鹦哥</td>
+<td><a href="1435.html">1435</a></td>
+</tr>
+<tr>
+<td>0931</td>
+<td>怒鹦哥</td>
+<td><a href="1436.html">1436</a></td>
+</tr>
+<tr>
+<td>0931</td>
+<td>怒鹦哥</td>
+<td><a href="1437.html">1437</a></td>
+</tr>
+<tr>
+<td>0931</td>
+<td>怒鹦哥</td>
+<td><a href="1438.html">1438</a></td>
+</tr>
+<tr>
+<td>0964</td>
+<td>海豚侠</td>
+<td><a href="1471.html">1471</a></td>
+</tr>
+<tr>
+<td>0964</td>
+<td>海豚侠</td>
+<td><a href="1472.html">1472</a></td>
+</tr>
+<tr>
+<td>0978</td>
+<td>米立龙</td>
+<td><a href="1486.html">1486</a></td>
+</tr>
+<tr>
+<td>0978</td>
+<td>米立龙</td>
+<td><a href="1487.html">1487</a></td>
+</tr>
+<tr>
+<td>0978</td>
+<td>米立龙</td>
+<td><a href="1488.html">1488</a></td>
+</tr>
+<tr>
+<td>0982</td>
+<td>土龙节节</td>
+<td><a href="0255.html">0255</a></td>
+</tr>
+<tr>
+<td>0982</td>
+<td>土龙节节</td>
+<td><a href="0256.html">0256</a></td>
+</tr>
+<tr>
+<td>0998</td>
+<td>戟脊龙</td>
+<td><a href="0274.html">0274</a></td>
+</tr>
+<tr>
+<td>0998</td>
+<td>戟脊龙</td>
+<td><a href="1509.html">1509</a></td>
+</tr>
+<tr>
+<td>0999</td>
+<td>索财灵</td>
+<td><a href="1510.html">1510</a></td>
+</tr>
+<tr>
+<td>0999</td>
+<td>索财灵</td>
+<td><a href="1511.html">1511</a></td>
+</tr>
+<tr>
+<td>1012</td>
+<td>斯魔茶</td>
+<td><a href="1529.html">1529</a></td>
+</tr>
+<tr>
+<td>1012</td>
+<td>斯魔茶</td>
+<td><a href="1530.html">1530</a></td>
+</tr>
+<tr>
+<td>1013</td>
+<td>来悲粗茶</td>
+<td><a href="1531.html">1531</a></td>
+</tr>
+<tr>
+<td>1013</td>
+<td>来悲粗茶</td>
+<td><a href="1532.html">1532</a></td>
+</tr>
+<tr>
+<td>1017</td>
+<td>厄诡碰</td>
+<td><a href="1536.html">1536</a></td>
+</tr>
+<tr>
+<td>1017</td>
+<td>厄诡碰</td>
+<td><a href="1537.html">1537</a></td>
+</tr>
+<tr>
+<td>1017</td>
+<td>厄诡碰</td>
+<td><a href="1538.html">1538</a></td>
+</tr>
+<tr>
+<td>1017</td>
+<td>厄诡碰</td>
+<td><a href="1539.html">1539</a></td>
+</tr>
+<tr>
+<td>1017</td>
+<td>厄诡碰</td>
+<td><a href="1540.html">1540</a></td>
+</tr>
+<tr>
+<td>1017</td>
+<td>厄诡碰</td>
+<td><a href="1541.html">1541</a></td>
+</tr>
+<tr>
+<td>1017</td>
+<td>厄诡碰</td>
+<td><a href="1542.html">1542</a></td>
+</tr>
+<tr>
+<td>1017</td>
+<td>厄诡碰</td>
+<td><a href="1543.html">1543</a></td>
+</tr>
+<tr>
+<td>1024</td>
+<td>太乐巴戈斯</td>
+<td><a href="1550.html">1550</a></td>
+</tr>
+<tr>
+<td>1024</td>
+<td>太乐巴戈斯</td>
+<td><a href="1551.html">1551</a></td>
+</tr>
+<tr>
+<td>1024</td>
+<td>太乐巴戈斯</td>
+<td><a href="1552.html">1552</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-mega">3. Mega / 超极巨化等战斗形态槽</h2>
+<p>这些槽只作为 Mega 进化（符号 <code>EVO_MEGA</code>，编号 254）或超极巨化（符号 <code>EVO_GIGANTAMAX</code>，编号 253）的目标存在。它们是<strong>战斗中的形态变化候选</strong>，不是可永久获得的独立个体，因此不并入基础物种页。</p>
+<table>
+<thead>
+<tr>
+<th>内部槽</th>
+<th>名称</th>
+<th>全国号</th>
+<th>来源战斗形态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="0003.html">0003</a></td>
+<td>妙蛙花</td>
+<td>3</td>
+<td>Mega 进化（由 妙蛙花 变化）</td>
+</tr>
+<tr>
+<td><a href="0003.html">0003</a></td>
+<td>妙蛙花</td>
+<td>3</td>
+<td>超极巨化（由 妙蛙花 变化）</td>
+</tr>
+<tr>
+<td><a href="0006.html">0006</a></td>
+<td>喷火龙</td>
+<td>6</td>
+<td>Mega 进化（由 喷火龙 变化）</td>
+</tr>
+<tr>
+<td><a href="0006.html">0006</a></td>
+<td>喷火龙</td>
+<td>6</td>
+<td>超极巨化（由 喷火龙 变化）</td>
+</tr>
+<tr>
+<td><a href="0009.html">0009</a></td>
+<td>水箭龟</td>
+<td>9</td>
+<td>Mega 进化（由 水箭龟 变化）</td>
+</tr>
+<tr>
+<td><a href="0009.html">0009</a></td>
+<td>水箭龟</td>
+<td>9</td>
+<td>超极巨化（由 水箭龟 变化）</td>
+</tr>
+<tr>
+<td><a href="0012.html">0012</a></td>
+<td>巴大蝶</td>
+<td>12</td>
+<td>超极巨化（由 巴大蝶 变化）</td>
+</tr>
+<tr>
+<td><a href="0015.html">0015</a></td>
+<td>大针蜂</td>
+<td>15</td>
+<td>Mega 进化（由 大针蜂 变化）</td>
+</tr>
+<tr>
+<td><a href="0018.html">0018</a></td>
+<td>大比鸟</td>
+<td>18</td>
+<td>Mega 进化（由 大比鸟 变化）</td>
+</tr>
+<tr>
+<td><a href="0025.html">0025</a></td>
+<td>皮卡丘</td>
+<td>25</td>
+<td>超极巨化（由 皮卡丘 变化）</td>
+</tr>
+<tr>
+<td><a href="0026.html">0026</a></td>
+<td>雷丘</td>
+<td>26</td>
+<td>Mega 进化（由 雷丘 变化）</td>
+</tr>
+<tr>
+<td><a href="0036.html">0036</a></td>
+<td>皮可西</td>
+<td>36</td>
+<td>Mega 进化（由 皮可西 变化）</td>
+</tr>
+<tr>
+<td><a href="0052.html">0052</a></td>
+<td>喵喵</td>
+<td>52</td>
+<td>超极巨化（由 喵喵 变化）</td>
+</tr>
+<tr>
+<td><a href="0065.html">0065</a></td>
+<td>胡地</td>
+<td>65</td>
+<td>Mega 进化（由 胡地 变化）</td>
+</tr>
+<tr>
+<td><a href="0068.html">0068</a></td>
+<td>怪力</td>
+<td>68</td>
+<td>超极巨化（由 怪力 变化）</td>
+</tr>
+<tr>
+<td><a href="0071.html">0071</a></td>
+<td>大食花</td>
+<td>71</td>
+<td>Mega 进化（由 大食花 变化）</td>
+</tr>
+<tr>
+<td><a href="0080.html">0080</a></td>
+<td>呆壳兽</td>
+<td>80</td>
+<td>Mega 进化（由 呆壳兽 变化）</td>
+</tr>
+<tr>
+<td><a href="0094.html">0094</a></td>
+<td>耿鬼</td>
+<td>94</td>
+<td>Mega 进化（由 耿鬼 变化）</td>
+</tr>
+<tr>
+<td><a href="0094.html">0094</a></td>
+<td>耿鬼</td>
+<td>94</td>
+<td>超极巨化（由 耿鬼 变化）</td>
+</tr>
+<tr>
+<td><a href="0099.html">0099</a></td>
+<td>巨钳蟹</td>
+<td>99</td>
+<td>超极巨化（由 巨钳蟹 变化）</td>
+</tr>
+<tr>
+<td><a href="0115.html">0115</a></td>
+<td>袋兽</td>
+<td>115</td>
+<td>Mega 进化（由 袋兽 变化）</td>
+</tr>
+<tr>
+<td><a href="0121.html">0121</a></td>
+<td>宝石海星</td>
+<td>121</td>
+<td>Mega 进化（由 宝石海星 变化）</td>
+</tr>
+<tr>
+<td><a href="0127.html">0127</a></td>
+<td>凯罗斯</td>
+<td>127</td>
+<td>Mega 进化（由 凯罗斯 变化）</td>
+</tr>
+<tr>
+<td><a href="0130.html">0130</a></td>
+<td>暴鲤龙</td>
+<td>130</td>
+<td>Mega 进化（由 暴鲤龙 变化）</td>
+</tr>
+<tr>
+<td><a href="0131.html">0131</a></td>
+<td>拉普拉斯</td>
+<td>131</td>
+<td>超极巨化（由 拉普拉斯 变化）</td>
+</tr>
+<tr>
+<td><a href="0133.html">0133</a></td>
+<td>伊布</td>
+<td>133</td>
+<td>超极巨化（由 伊布 变化）</td>
+</tr>
+<tr>
+<td><a href="0142.html">0142</a></td>
+<td>化石翼龙</td>
+<td>142</td>
+<td>Mega 进化（由 化石翼龙 变化）</td>
+</tr>
+<tr>
+<td><a href="0143.html">0143</a></td>
+<td>卡比兽</td>
+<td>143</td>
+<td>超极巨化（由 卡比兽 变化）</td>
+</tr>
+<tr>
+<td><a href="0149.html">0149</a></td>
+<td>快龙</td>
+<td>149</td>
+<td>Mega 进化（由 快龙 变化）</td>
+</tr>
+<tr>
+<td><a href="0150.html">0150</a></td>
+<td>超梦</td>
+<td>150</td>
+<td>Mega 进化（由 超梦 变化）</td>
+</tr>
+<tr>
+<td><a href="0154.html">0154</a></td>
+<td>大竺葵</td>
+<td>154</td>
+<td>Mega 进化（由 大竺葵 变化）</td>
+</tr>
+<tr>
+<td><a href="0157.html">0157</a></td>
+<td>火暴兽</td>
+<td>157</td>
+<td>Mega 进化（由 火暴兽 变化）</td>
+</tr>
+<tr>
+<td><a href="0160.html">0160</a></td>
+<td>大力鳄</td>
+<td>160</td>
+<td>Mega 进化（由 大力鳄 变化）</td>
+</tr>
+<tr>
+<td><a href="0181.html">0181</a></td>
+<td>电龙</td>
+<td>181</td>
+<td>Mega 进化（由 电龙 变化）</td>
+</tr>
+<tr>
+<td><a href="0189.html">0189</a></td>
+<td>毽子棉</td>
+<td>189</td>
+<td>Mega 进化（由 毽子棉 变化）</td>
+</tr>
+<tr>
+<td><a href="0208.html">0208</a></td>
+<td>大钢蛇</td>
+<td>208</td>
+<td>Mega 进化（由 大钢蛇 变化）</td>
+</tr>
+<tr>
+<td><a href="0212.html">0212</a></td>
+<td>巨钳螳螂</td>
+<td>212</td>
+<td>Mega 进化（由 巨钳螳螂 变化）</td>
+</tr>
+<tr>
+<td><a href="0214.html">0214</a></td>
+<td>赫拉克罗斯</td>
+<td>214</td>
+<td>Mega 进化（由 赫拉克罗斯 变化）</td>
+</tr>
+<tr>
+<td><a href="0225.html">0225</a></td>
+<td>信使鸟</td>
+<td>225</td>
+<td>Mega 进化（由 信使鸟 变化）</td>
+</tr>
+<tr>
+<td><a href="0227.html">0227</a></td>
+<td>盔甲鸟</td>
+<td>227</td>
+<td>Mega 进化（由 盔甲鸟 变化）</td>
+</tr>
+<tr>
+<td><a href="0229.html">0229</a></td>
+<td>黑鲁加</td>
+<td>229</td>
+<td>Mega 进化（由 黑鲁加 变化）</td>
+</tr>
+<tr>
+<td><a href="0248.html">0248</a></td>
+<td>班基拉斯</td>
+<td>248</td>
+<td>Mega 进化（由 班基拉斯 变化）</td>
+</tr>
+<tr>
+<td><a href="0262.html">0262</a></td>
+<td>水晶灯火灵</td>
+<td>609</td>
+<td>Mega 进化（由 水晶灯火灵 变化）</td>
+</tr>
+<tr>
+<td><a href="0263.html">0263</a></td>
+<td>大竺葵</td>
+<td>154</td>
+<td>Mega 进化（由 大竺葵 变化）</td>
+</tr>
+<tr>
+<td><a href="0264.html">0264</a></td>
+<td>火暴兽</td>
+<td>157</td>
+<td>Mega 进化（由 火暴兽 变化）</td>
+</tr>
+<tr>
+<td><a href="0265.html">0265</a></td>
+<td>大力鳄</td>
+<td>160</td>
+<td>Mega 进化（由 大力鳄 变化）</td>
+</tr>
+<tr>
+<td><a href="0266.html">0266</a></td>
+<td>大食花</td>
+<td>71</td>
+<td>Mega 进化（由 大食花 变化）</td>
+</tr>
+<tr>
+<td><a href="0267.html">0267</a></td>
+<td>头巾混混</td>
+<td>560</td>
+<td>Mega 进化（由 头巾混混 变化）</td>
+</tr>
+<tr>
+<td><a href="0268.html">0268</a></td>
+<td>龙头地鼠</td>
+<td>530</td>
+<td>Mega 进化（由 龙头地鼠 变化）</td>
+</tr>
+<tr>
+<td><a href="0269.html">0269</a></td>
+<td>麻麻鳗鱼王</td>
+<td>604</td>
+<td>Mega 进化（由 麻麻鳗鱼王 变化）</td>
+</tr>
+<tr>
+<td><a href="0270.html">0270</a></td>
+<td>雷丘</td>
+<td>26</td>
+<td>Mega 进化（由 雷丘 变化）</td>
+</tr>
+<tr>
+<td><a href="0271.html">0271</a></td>
+<td>皮可西</td>
+<td>36</td>
+<td>Mega 进化（由 皮可西 变化）</td>
+</tr>
+<tr>
+<td><a href="0272.html">0272</a></td>
+<td>盔甲鸟</td>
+<td>227</td>
+<td>Mega 进化（由 盔甲鸟 变化）</td>
+</tr>
+<tr>
+<td><a href="0273.html">0273</a></td>
+<td>姆克鹰</td>
+<td>398</td>
+<td>Mega 进化（由 姆克鹰 变化）</td>
+</tr>
+<tr>
+<td><a href="0274.html">0274</a></td>
+<td>戟脊龙</td>
+<td>998</td>
+<td>Mega 进化（由 戟脊龙 变化）</td>
+</tr>
+<tr>
+<td><a href="0276.html">0276</a></td>
+<td>宝石海星</td>
+<td>121</td>
+<td>Mega 进化（由 宝石海星 变化）</td>
+</tr>
+<tr>
+<td><a href="0279.html">0279</a></td>
+<td>蜥蜴王</td>
+<td>254</td>
+<td>Mega 进化（由 蜥蜴王 变化）</td>
+</tr>
+<tr>
+<td><a href="0282.html">0282</a></td>
+<td>火焰鸡</td>
+<td>257</td>
+<td>Mega 进化（由 火焰鸡 变化）</td>
+</tr>
+<tr>
+<td><a href="0285.html">0285</a></td>
+<td>巨沼怪</td>
+<td>260</td>
+<td>Mega 进化（由 巨沼怪 变化）</td>
+</tr>
+<tr>
+<td><a href="0322.html">0322</a></td>
+<td>勾魂眼</td>
+<td>302</td>
+<td>Mega 进化（由 勾魂眼 变化）</td>
+</tr>
+<tr>
+<td><a href="0331.html">0331</a></td>
+<td>巨牙鲨</td>
+<td>319</td>
+<td>Mega 进化（由 巨牙鲨 变化）</td>
+</tr>
+<tr>
+<td><a href="0338.html">0338</a></td>
+<td>雷电兽</td>
+<td>310</td>
+<td>Mega 进化（由 雷电兽 变化）</td>
+</tr>
+<tr>
+<td><a href="0340.html">0340</a></td>
+<td>喷火驼</td>
+<td>323</td>
+<td>Mega 进化（由 喷火驼 变化）</td>
+</tr>
+<tr>
+<td><a href="0347.html">0347</a></td>
+<td>冰鬼护</td>
+<td>362</td>
+<td>Mega 进化（由 冰鬼护 变化）</td>
+</tr>
+<tr>
+<td><a href="0355.html">0355</a></td>
+<td>大嘴娃</td>
+<td>303</td>
+<td>Mega 进化（由 大嘴娃 变化）</td>
+</tr>
+<tr>
+<td><a href="0357.html">0357</a></td>
+<td>恰雷姆</td>
+<td>308</td>
+<td>Mega 进化（由 恰雷姆 变化）</td>
+</tr>
+<tr>
+<td><a href="0359.html">0359</a></td>
+<td>七夕青鸟</td>
+<td>334</td>
+<td>Mega 进化（由 七夕青鸟 变化）</td>
+</tr>
+<tr>
+<td><a href="0376.html">0376</a></td>
+<td>阿勃梭鲁</td>
+<td>359</td>
+<td>Mega 进化（由 阿勃梭鲁 变化）</td>
+</tr>
+<tr>
+<td><a href="0378.html">0378</a></td>
+<td>诅咒娃娃</td>
+<td>354</td>
+<td>Mega 进化（由 诅咒娃娃 变化）</td>
+</tr>
+<tr>
+<td><a href="0384.html">0384</a></td>
+<td>波士可多拉</td>
+<td>306</td>
+<td>Mega 进化（由 波士可多拉 变化）</td>
+</tr>
+<tr>
+<td><a href="0394.html">0394</a></td>
+<td>沙奈朵</td>
+<td>282</td>
+<td>Mega 进化（由 沙奈朵 变化）</td>
+</tr>
+<tr>
+<td><a href="0397.html">0397</a></td>
+<td>暴飞龙</td>
+<td>373</td>
+<td>Mega 进化（由 暴飞龙 变化）</td>
+</tr>
+<tr>
+<td><a href="0400.html">0400</a></td>
+<td>巨金怪</td>
+<td>376</td>
+<td>Mega 进化（由 巨金怪 变化）</td>
+</tr>
+<tr>
+<td><a href="0404.html">0404</a></td>
+<td>盖欧卡</td>
+<td>382</td>
+<td>Mega 进化（由 盖欧卡 变化）</td>
+</tr>
+<tr>
+<td><a href="0405.html">0405</a></td>
+<td>固拉多</td>
+<td>383</td>
+<td>Mega 进化（由 固拉多 变化）</td>
+</tr>
+<tr>
+<td><a href="0406.html">0406</a></td>
+<td>烈空坐</td>
+<td>384</td>
+<td>Mega 进化（由 烈空坐 变化）</td>
+</tr>
+<tr>
+<td><a href="0407.html">0407</a></td>
+<td>拉帝亚斯</td>
+<td>380</td>
+<td>Mega 进化（由 拉帝亚斯 变化）</td>
+</tr>
+<tr>
+<td><a href="0408.html">0408</a></td>
+<td>拉帝欧斯</td>
+<td>381</td>
+<td>Mega 进化（由 拉帝欧斯 变化）</td>
+</tr>
+<tr>
+<td><a href="0411.html">0411</a></td>
+<td>风铃铃</td>
+<td>358</td>
+<td>Mega 进化（由 风铃铃 变化）</td>
+</tr>
+<tr>
+<td><a href="0451.html">0451</a></td>
+<td>姆克鹰</td>
+<td>398</td>
+<td>Mega 进化（由 姆克鹰 变化）</td>
+</tr>
+<tr>
+<td><a href="0481.html">0481</a></td>
+<td>长耳兔</td>
+<td>428</td>
+<td>Mega 进化（由 长耳兔 变化）</td>
+</tr>
+<tr>
+<td><a href="0498.html">0498</a></td>
+<td>烈咬陆鲨</td>
+<td>445</td>
+<td>Mega 进化（由 烈咬陆鲨 变化）</td>
+</tr>
+<tr>
+<td><a href="0501.html">0501</a></td>
+<td>路卡利欧</td>
+<td>448</td>
+<td>Mega 进化（由 路卡利欧 变化）</td>
+</tr>
+<tr>
+<td><a href="0513.html">0513</a></td>
+<td>暴雪王</td>
+<td>460</td>
+<td>Mega 进化（由 暴雪王 变化）</td>
+</tr>
+<tr>
+<td><a href="0528.html">0528</a></td>
+<td>艾路雷朵</td>
+<td>475</td>
+<td>Mega 进化（由 艾路雷朵 变化）</td>
+</tr>
+<tr>
+<td><a href="0531.html">0531</a></td>
+<td>雪妖女</td>
+<td>478</td>
+<td>Mega 进化（由 雪妖女 变化）</td>
+</tr>
+<tr>
+<td><a href="0583.html">0583</a></td>
+<td>龙头地鼠</td>
+<td>530</td>
+<td>Mega 进化（由 龙头地鼠 变化）</td>
+</tr>
+<tr>
+<td><a href="0584.html">0584</a></td>
+<td>差不多娃娃</td>
+<td>531</td>
+<td>Mega 进化（由 差不多娃娃 变化）</td>
+</tr>
+<tr>
+<td><a href="0613.html">0613</a></td>
+<td>头巾混混</td>
+<td>560</td>
+<td>Mega 进化（由 头巾混混 变化）</td>
+</tr>
+<tr>
+<td><a href="0622.html">0622</a></td>
+<td>灰尘山</td>
+<td>569</td>
+<td>超极巨化（由 灰尘山 变化）</td>
+</tr>
+<tr>
+<td><a href="0657.html">0657</a></td>
+<td>麻麻鳗鱼王</td>
+<td>604</td>
+<td>Mega 进化（由 麻麻鳗鱼王 变化）</td>
+</tr>
+<tr>
+<td><a href="0662.html">0662</a></td>
+<td>水晶灯火灵</td>
+<td>609</td>
+<td>Mega 进化（由 水晶灯火灵 变化）</td>
+</tr>
+<tr>
+<td><a href="0827.html">0827</a></td>
+<td>蒂安希</td>
+<td>719</td>
+<td>Mega 进化（由 蒂安希 变化）</td>
+</tr>
+<tr>
+<td><a href="0869.html">0869</a></td>
+<td>妙蛙花</td>
+<td>3</td>
+<td>Mega 进化（由 妙蛙花 变化）</td>
+</tr>
+<tr>
+<td><a href="0870.html">0870</a></td>
+<td>喷火龙</td>
+<td>6</td>
+<td>Mega 进化（由 喷火龙 变化）</td>
+</tr>
+<tr>
+<td><a href="0871.html">0871</a></td>
+<td>喷火龙</td>
+<td>6</td>
+<td>Mega 进化（由 喷火龙 变化）</td>
+</tr>
+<tr>
+<td><a href="0872.html">0872</a></td>
+<td>水箭龟</td>
+<td>9</td>
+<td>Mega 进化（由 水箭龟 变化）</td>
+</tr>
+<tr>
+<td><a href="0873.html">0873</a></td>
+<td>大针蜂</td>
+<td>15</td>
+<td>Mega 进化（由 大针蜂 变化）</td>
+</tr>
+<tr>
+<td><a href="0874.html">0874</a></td>
+<td>大比鸟</td>
+<td>18</td>
+<td>Mega 进化（由 大比鸟 变化）</td>
+</tr>
+<tr>
+<td><a href="0875.html">0875</a></td>
+<td>胡地</td>
+<td>65</td>
+<td>Mega 进化（由 胡地 变化）</td>
+</tr>
+<tr>
+<td><a href="0876.html">0876</a></td>
+<td>呆壳兽</td>
+<td>80</td>
+<td>Mega 进化（由 呆壳兽 变化）</td>
+</tr>
+<tr>
+<td><a href="0877.html">0877</a></td>
+<td>耿鬼</td>
+<td>94</td>
+<td>Mega 进化（由 耿鬼 变化）</td>
+</tr>
+<tr>
+<td><a href="0878.html">0878</a></td>
+<td>袋兽</td>
+<td>115</td>
+<td>Mega 进化（由 袋兽 变化）</td>
+</tr>
+<tr>
+<td><a href="0879.html">0879</a></td>
+<td>凯罗斯</td>
+<td>127</td>
+<td>Mega 进化（由 凯罗斯 变化）</td>
+</tr>
+<tr>
+<td><a href="0880.html">0880</a></td>
+<td>暴鲤龙</td>
+<td>130</td>
+<td>Mega 进化（由 暴鲤龙 变化）</td>
+</tr>
+<tr>
+<td><a href="0881.html">0881</a></td>
+<td>化石翼龙</td>
+<td>142</td>
+<td>Mega 进化（由 化石翼龙 变化）</td>
+</tr>
+<tr>
+<td><a href="0882.html">0882</a></td>
+<td>超梦</td>
+<td>150</td>
+<td>Mega 进化（由 超梦 变化）</td>
+</tr>
+<tr>
+<td><a href="0883.html">0883</a></td>
+<td>超梦</td>
+<td>150</td>
+<td>Mega 进化（由 超梦 变化）</td>
+</tr>
+<tr>
+<td><a href="0884.html">0884</a></td>
+<td>电龙</td>
+<td>181</td>
+<td>Mega 进化（由 电龙 变化）</td>
+</tr>
+<tr>
+<td><a href="0885.html">0885</a></td>
+<td>大钢蛇</td>
+<td>208</td>
+<td>Mega 进化（由 大钢蛇 变化）</td>
+</tr>
+<tr>
+<td><a href="0886.html">0886</a></td>
+<td>巨钳螳螂</td>
+<td>212</td>
+<td>Mega 进化（由 巨钳螳螂 变化）</td>
+</tr>
+<tr>
+<td><a href="0887.html">0887</a></td>
+<td>赫拉克罗斯</td>
+<td>214</td>
+<td>Mega 进化（由 赫拉克罗斯 变化）</td>
+</tr>
+<tr>
+<td><a href="0888.html">0888</a></td>
+<td>黑鲁加</td>
+<td>229</td>
+<td>Mega 进化（由 黑鲁加 变化）</td>
+</tr>
+<tr>
+<td><a href="0889.html">0889</a></td>
+<td>班基拉斯</td>
+<td>248</td>
+<td>Mega 进化（由 班基拉斯 变化）</td>
+</tr>
+<tr>
+<td><a href="0890.html">0890</a></td>
+<td>蜥蜴王</td>
+<td>254</td>
+<td>Mega 进化（由 蜥蜴王 变化）</td>
+</tr>
+<tr>
+<td><a href="0891.html">0891</a></td>
+<td>火焰鸡</td>
+<td>257</td>
+<td>Mega 进化（由 火焰鸡 变化）</td>
+</tr>
+<tr>
+<td><a href="0892.html">0892</a></td>
+<td>巨沼怪</td>
+<td>260</td>
+<td>Mega 进化（由 巨沼怪 变化）</td>
+</tr>
+<tr>
+<td><a href="0893.html">0893</a></td>
+<td>沙奈朵</td>
+<td>282</td>
+<td>Mega 进化（由 沙奈朵 变化）</td>
+</tr>
+<tr>
+<td><a href="0894.html">0894</a></td>
+<td>勾魂眼</td>
+<td>302</td>
+<td>Mega 进化（由 勾魂眼 变化）</td>
+</tr>
+<tr>
+<td><a href="0895.html">0895</a></td>
+<td>大嘴娃</td>
+<td>303</td>
+<td>Mega 进化（由 大嘴娃 变化）</td>
+</tr>
+<tr>
+<td><a href="0896.html">0896</a></td>
+<td>波士可多拉</td>
+<td>306</td>
+<td>Mega 进化（由 波士可多拉 变化）</td>
+</tr>
+<tr>
+<td><a href="0897.html">0897</a></td>
+<td>恰雷姆</td>
+<td>308</td>
+<td>Mega 进化（由 恰雷姆 变化）</td>
+</tr>
+<tr>
+<td><a href="0898.html">0898</a></td>
+<td>雷电兽</td>
+<td>310</td>
+<td>Mega 进化（由 雷电兽 变化）</td>
+</tr>
+<tr>
+<td><a href="0899.html">0899</a></td>
+<td>巨牙鲨</td>
+<td>319</td>
+<td>Mega 进化（由 巨牙鲨 变化）</td>
+</tr>
+<tr>
+<td><a href="0900.html">0900</a></td>
+<td>喷火驼</td>
+<td>323</td>
+<td>Mega 进化（由 喷火驼 变化）</td>
+</tr>
+<tr>
+<td><a href="0901.html">0901</a></td>
+<td>七夕青鸟</td>
+<td>334</td>
+<td>Mega 进化（由 七夕青鸟 变化）</td>
+</tr>
+<tr>
+<td><a href="0902.html">0902</a></td>
+<td>诅咒娃娃</td>
+<td>354</td>
+<td>Mega 进化（由 诅咒娃娃 变化）</td>
+</tr>
+<tr>
+<td><a href="0903.html">0903</a></td>
+<td>阿勃梭鲁</td>
+<td>359</td>
+<td>Mega 进化（由 阿勃梭鲁 变化）</td>
+</tr>
+<tr>
+<td><a href="0904.html">0904</a></td>
+<td>冰鬼护</td>
+<td>362</td>
+<td>Mega 进化（由 冰鬼护 变化）</td>
+</tr>
+<tr>
+<td><a href="0905.html">0905</a></td>
+<td>暴飞龙</td>
+<td>373</td>
+<td>Mega 进化（由 暴飞龙 变化）</td>
+</tr>
+<tr>
+<td><a href="0906.html">0906</a></td>
+<td>巨金怪</td>
+<td>376</td>
+<td>Mega 进化（由 巨金怪 变化）</td>
+</tr>
+<tr>
+<td><a href="0907.html">0907</a></td>
+<td>拉帝亚斯</td>
+<td>380</td>
+<td>Mega 进化（由 拉帝亚斯 变化）</td>
+</tr>
+<tr>
+<td><a href="0908.html">0908</a></td>
+<td>拉帝欧斯</td>
+<td>381</td>
+<td>Mega 进化（由 拉帝欧斯 变化）</td>
+</tr>
+<tr>
+<td><a href="0909.html">0909</a></td>
+<td>固拉多</td>
+<td>383</td>
+<td>Mega 进化（由 固拉多 变化）</td>
+</tr>
+<tr>
+<td><a href="0910.html">0910</a></td>
+<td>盖欧卡</td>
+<td>382</td>
+<td>Mega 进化（由 盖欧卡 变化）</td>
+</tr>
+<tr>
+<td><a href="0911.html">0911</a></td>
+<td>烈空坐</td>
+<td>384</td>
+<td>Mega 进化（由 烈空坐 变化）</td>
+</tr>
+<tr>
+<td><a href="0912.html">0912</a></td>
+<td>长耳兔</td>
+<td>428</td>
+<td>Mega 进化（由 长耳兔 变化）</td>
+</tr>
+<tr>
+<td><a href="0913.html">0913</a></td>
+<td>烈咬陆鲨</td>
+<td>445</td>
+<td>Mega 进化（由 烈咬陆鲨 变化）</td>
+</tr>
+<tr>
+<td><a href="0914.html">0914</a></td>
+<td>路卡利欧</td>
+<td>448</td>
+<td>Mega 进化（由 路卡利欧 变化）</td>
+</tr>
+<tr>
+<td><a href="0915.html">0915</a></td>
+<td>暴雪王</td>
+<td>460</td>
+<td>Mega 进化（由 暴雪王 变化）</td>
+</tr>
+<tr>
+<td><a href="0916.html">0916</a></td>
+<td>艾路雷朵</td>
+<td>475</td>
+<td>Mega 进化（由 艾路雷朵 变化）</td>
+</tr>
+<tr>
+<td><a href="0917.html">0917</a></td>
+<td>差不多娃娃</td>
+<td>531</td>
+<td>Mega 进化（由 差不多娃娃 变化）</td>
+</tr>
+<tr>
+<td><a href="0918.html">0918</a></td>
+<td>蒂安希</td>
+<td>719</td>
+<td>Mega 进化（由 蒂安希 变化）</td>
+</tr>
+<tr>
+<td><a href="1079.html">1079</a></td>
+<td>奈克洛兹玛</td>
+<td>800</td>
+<td>Mega 进化（由 奈克洛兹玛 变化）</td>
+</tr>
+<tr>
+<td><a href="1080.html">1080</a></td>
+<td>奈克洛兹玛</td>
+<td>800</td>
+<td>Mega 进化（由 奈克洛兹玛 变化）</td>
+</tr>
+<tr>
+<td><a href="1081.html">1081</a></td>
+<td>奈克洛兹玛</td>
+<td>800</td>
+<td>Mega 进化（由 奈克洛兹玛 变化）</td>
+</tr>
+<tr>
+<td><a href="1084.html">1084</a></td>
+<td>美录梅塔</td>
+<td>809</td>
+<td>超极巨化（由 美录梅塔 变化）</td>
+</tr>
+<tr>
+<td><a href="1104.html">1104</a></td>
+<td>轰擂金刚猩</td>
+<td>812</td>
+<td>超极巨化（由 轰擂金刚猩 变化）</td>
+</tr>
+<tr>
+<td><a href="1107.html">1107</a></td>
+<td>闪焰王牌</td>
+<td>815</td>
+<td>超极巨化（由 闪焰王牌 变化）</td>
+</tr>
+<tr>
+<td><a href="1110.html">1110</a></td>
+<td>千面避役</td>
+<td>818</td>
+<td>超极巨化（由 千面避役 变化）</td>
+</tr>
+<tr>
+<td><a href="1115.html">1115</a></td>
+<td>钢铠鸦</td>
+<td>823</td>
+<td>超极巨化（由 钢铠鸦 变化）</td>
+</tr>
+<tr>
+<td><a href="1118.html">1118</a></td>
+<td>以欧路普</td>
+<td>826</td>
+<td>超极巨化（由 以欧路普 变化）</td>
+</tr>
+<tr>
+<td><a href="1126.html">1126</a></td>
+<td>暴噬龟</td>
+<td>834</td>
+<td>超极巨化（由 暴噬龟 变化）</td>
+</tr>
+<tr>
+<td><a href="1131.html">1131</a></td>
+<td>巨炭山</td>
+<td>839</td>
+<td>超极巨化（由 巨炭山 变化）</td>
+</tr>
+<tr>
+<td><a href="1133.html">1133</a></td>
+<td>苹裹龙</td>
+<td>841</td>
+<td>超极巨化（由 苹裹龙 变化）</td>
+</tr>
+<tr>
+<td><a href="1134.html">1134</a></td>
+<td>丰蜜龙</td>
+<td>842</td>
+<td>超极巨化（由 丰蜜龙 变化）</td>
+</tr>
+<tr>
+<td><a href="1136.html">1136</a></td>
+<td>沙螺蟒</td>
+<td>844</td>
+<td>超极巨化（由 沙螺蟒 变化）</td>
+</tr>
+<tr>
+<td><a href="1141.html">1141</a></td>
+<td>颤弦蝾螈</td>
+<td>849</td>
+<td>超极巨化（由 颤弦蝾螈 变化）</td>
+</tr>
+<tr>
+<td><a href="1143.html">1143</a></td>
+<td>焚焰蚣</td>
+<td>851</td>
+<td>超极巨化（由 焚焰蚣 变化）</td>
+</tr>
+<tr>
+<td><a href="1150.html">1150</a></td>
+<td>布莉姆温</td>
+<td>858</td>
+<td>超极巨化（由 布莉姆温 变化）</td>
+</tr>
+<tr>
+<td><a href="1153.html">1153</a></td>
+<td>长毛巨魔</td>
+<td>861</td>
+<td>超极巨化（由 长毛巨魔 变化）</td>
+</tr>
+<tr>
+<td><a href="1161.html">1161</a></td>
+<td>霜奶仙</td>
+<td>869</td>
+<td>超极巨化（由 霜奶仙 变化）</td>
+</tr>
+<tr>
+<td><a href="1162.html">1162</a></td>
+<td>列阵兵</td>
+<td>870</td>
+<td>Mega 进化（由 列阵兵 变化）</td>
+</tr>
+<tr>
+<td><a href="1171.html">1171</a></td>
+<td>大王铜象</td>
+<td>879</td>
+<td>超极巨化（由 大王铜象 变化）</td>
+</tr>
+<tr>
+<td><a href="1176.html">1176</a></td>
+<td>铝钢龙</td>
+<td>884</td>
+<td>超极巨化（由 铝钢龙 变化）</td>
+</tr>
+<tr>
+<td><a href="1184.html">1184</a></td>
+<td>武道熊师</td>
+<td>892</td>
+<td>超极巨化（由 武道熊师 变化）</td>
+</tr>
+<tr>
+<td><a href="1193.html">1193</a></td>
+<td>颤弦蝾螈</td>
+<td>849</td>
+<td>超极巨化（由 颤弦蝾螈 变化）</td>
+</tr>
+<tr>
+<td><a href="1208.html">1208</a></td>
+<td>武道熊师</td>
+<td>892</td>
+<td>超极巨化（由 武道熊师 变化）</td>
+</tr>
+<tr>
+<td><a href="1260.html">1260</a></td>
+<td>妙蛙花</td>
+<td>3</td>
+<td>超极巨化（由 妙蛙花 变化）</td>
+</tr>
+<tr>
+<td><a href="1261.html">1261</a></td>
+<td>喷火龙</td>
+<td>6</td>
+<td>超极巨化（由 喷火龙 变化）</td>
+</tr>
+<tr>
+<td><a href="1262.html">1262</a></td>
+<td>水箭龟</td>
+<td>9</td>
+<td>超极巨化（由 水箭龟 变化）</td>
+</tr>
+<tr>
+<td><a href="1263.html">1263</a></td>
+<td>巴大蝶</td>
+<td>12</td>
+<td>超极巨化（由 巴大蝶 变化）</td>
+</tr>
+<tr>
+<td><a href="1264.html">1264</a></td>
+<td>皮卡丘</td>
+<td>25</td>
+<td>超极巨化（由 皮卡丘 变化）</td>
+</tr>
+<tr>
+<td><a href="1265.html">1265</a></td>
+<td>喵喵</td>
+<td>52</td>
+<td>超极巨化（由 喵喵 变化）</td>
+</tr>
+<tr>
+<td><a href="1266.html">1266</a></td>
+<td>怪力</td>
+<td>68</td>
+<td>超极巨化（由 怪力 变化）</td>
+</tr>
+<tr>
+<td><a href="1267.html">1267</a></td>
+<td>耿鬼</td>
+<td>94</td>
+<td>超极巨化（由 耿鬼 变化）</td>
+</tr>
+<tr>
+<td><a href="1268.html">1268</a></td>
+<td>巨钳蟹</td>
+<td>99</td>
+<td>超极巨化（由 巨钳蟹 变化）</td>
+</tr>
+<tr>
+<td><a href="1269.html">1269</a></td>
+<td>拉普拉斯</td>
+<td>131</td>
+<td>超极巨化（由 拉普拉斯 变化）</td>
+</tr>
+<tr>
+<td><a href="1270.html">1270</a></td>
+<td>伊布</td>
+<td>133</td>
+<td>超极巨化（由 伊布 变化）</td>
+</tr>
+<tr>
+<td><a href="1271.html">1271</a></td>
+<td>卡比兽</td>
+<td>143</td>
+<td>超极巨化（由 卡比兽 变化）</td>
+</tr>
+<tr>
+<td><a href="1272.html">1272</a></td>
+<td>灰尘山</td>
+<td>569</td>
+<td>超极巨化（由 灰尘山 变化）</td>
+</tr>
+<tr>
+<td><a href="1273.html">1273</a></td>
+<td>美录梅塔</td>
+<td>809</td>
+<td>超极巨化（由 美录梅塔 变化）</td>
+</tr>
+<tr>
+<td><a href="1274.html">1274</a></td>
+<td>轰擂金刚猩</td>
+<td>812</td>
+<td>超极巨化（由 轰擂金刚猩 变化）</td>
+</tr>
+<tr>
+<td><a href="1275.html">1275</a></td>
+<td>闪焰王牌</td>
+<td>815</td>
+<td>超极巨化（由 闪焰王牌 变化）</td>
+</tr>
+<tr>
+<td><a href="1276.html">1276</a></td>
+<td>千面避役</td>
+<td>818</td>
+<td>超极巨化（由 千面避役 变化）</td>
+</tr>
+<tr>
+<td><a href="1277.html">1277</a></td>
+<td>钢铠鸦</td>
+<td>823</td>
+<td>超极巨化（由 钢铠鸦 变化）</td>
+</tr>
+<tr>
+<td><a href="1278.html">1278</a></td>
+<td>以欧路普</td>
+<td>826</td>
+<td>超极巨化（由 以欧路普 变化）</td>
+</tr>
+<tr>
+<td><a href="1279.html">1279</a></td>
+<td>暴噬龟</td>
+<td>834</td>
+<td>超极巨化（由 暴噬龟 变化）</td>
+</tr>
+<tr>
+<td><a href="1280.html">1280</a></td>
+<td>巨炭山</td>
+<td>839</td>
+<td>超极巨化（由 巨炭山 变化）</td>
+</tr>
+<tr>
+<td><a href="1281.html">1281</a></td>
+<td>苹裹龙</td>
+<td>841</td>
+<td>超极巨化（由 苹裹龙 变化）</td>
+</tr>
+<tr>
+<td><a href="1282.html">1282</a></td>
+<td>丰蜜龙</td>
+<td>842</td>
+<td>超极巨化（由 丰蜜龙 变化）</td>
+</tr>
+<tr>
+<td><a href="1283.html">1283</a></td>
+<td>沙螺蟒</td>
+<td>844</td>
+<td>超极巨化（由 沙螺蟒 变化）</td>
+</tr>
+<tr>
+<td><a href="1284.html">1284</a></td>
+<td>颤弦蝾螈</td>
+<td>849</td>
+<td>超极巨化（由 颤弦蝾螈 变化）</td>
+</tr>
+<tr>
+<td><a href="1285.html">1285</a></td>
+<td>颤弦蝾螈</td>
+<td>849</td>
+<td>超极巨化（由 颤弦蝾螈 变化）</td>
+</tr>
+<tr>
+<td><a href="1286.html">1286</a></td>
+<td>焚焰蚣</td>
+<td>851</td>
+<td>超极巨化（由 焚焰蚣 变化）</td>
+</tr>
+<tr>
+<td><a href="1287.html">1287</a></td>
+<td>布莉姆温</td>
+<td>858</td>
+<td>超极巨化（由 布莉姆温 变化）</td>
+</tr>
+<tr>
+<td><a href="1288.html">1288</a></td>
+<td>长毛巨魔</td>
+<td>861</td>
+<td>超极巨化（由 长毛巨魔 变化）</td>
+</tr>
+<tr>
+<td><a href="1289.html">1289</a></td>
+<td>霜奶仙</td>
+<td>869</td>
+<td>超极巨化（由 霜奶仙 变化）</td>
+</tr>
+<tr>
+<td><a href="1290.html">1290</a></td>
+<td>大王铜象</td>
+<td>879</td>
+<td>超极巨化（由 大王铜象 变化）</td>
+</tr>
+<tr>
+<td><a href="1291.html">1291</a></td>
+<td>铝钢龙</td>
+<td>884</td>
+<td>超极巨化（由 铝钢龙 变化）</td>
+</tr>
+<tr>
+<td><a href="1292.html">1292</a></td>
+<td>武道熊师</td>
+<td>892</td>
+<td>超极巨化（由 武道熊师 变化）</td>
+</tr>
+<tr>
+<td><a href="1293.html">1293</a></td>
+<td>武道熊师</td>
+<td>892</td>
+<td>超极巨化（由 武道熊师 变化）</td>
+</tr>
+<tr>
+<td><a href="1401.html">1401</a></td>
+<td>列阵兵</td>
+<td>870</td>
+<td>Mega 进化（由 列阵兵 变化）</td>
+</tr>
+<tr>
+<td><a href="1402.html">1402</a></td>
+<td>风铃铃</td>
+<td>358</td>
+<td>Mega 进化（由 风铃铃 变化）</td>
+</tr>
+<tr>
+<td><a href="1403.html">1403</a></td>
+<td>快龙</td>
+<td>149</td>
+<td>Mega 进化（由 快龙 变化）</td>
+</tr>
+<tr>
+<td><a href="1405.html">1405</a></td>
+<td>毽子棉</td>
+<td>189</td>
+<td>Mega 进化（由 毽子棉 变化）</td>
+</tr>
+<tr>
+<td><a href="1407.html">1407</a></td>
+<td>信使鸟</td>
+<td>225</td>
+<td>Mega 进化（由 信使鸟 变化）</td>
+</tr>
+<tr>
+<td><a href="1491.html">1491</a></td>
+<td>雪妖女</td>
+<td>478</td>
+<td>Mega 进化（由 雪妖女 变化）</td>
+</tr>
+<tr>
+<td><a href="1509.html">1509</a></td>
+<td>戟脊龙</td>
+<td>998</td>
+<td>Mega 进化（由 戟脊龙 变化）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4">4. 物种页上的形态提示</h2>
+<ul>
+<li>形态同名不合并：每个内部槽都有自己的页面与稳定链接 ID（文件名）。</li>
+<li>若某槽同时是普通物种又是战斗形态目标，页面会同时标出两者。</li>
+<li>全国号为 0 或缺失不代表 0% 出现概率，只表示该槽没有有效全国图鉴号。</li>
+</ul><footer>资料依据指定水银1.1 ROM及解包记录。正文的“待补”表示该获取条件尚未整理清楚，不代表无法获得。</footer></main></html>

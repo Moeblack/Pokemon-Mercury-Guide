@@ -1,0 +1,2195 @@
+{
+ "title": "沉睡的潜能",
+ "quest_id": 36,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b1cc",
+    "title": "沉睡的潜能",
+    "title_address": "0x8e3b8ea",
+    "description": "帮助阿露福遗迹的超能力者\n收集所有形态的未知图腾，\n探究宝可梦沉睡的潜能。",
+    "description_address": "0x8e3b8a3",
+    "unknown_u16": 933,
+    "unknown_u16_hex": "0x03A5",
+    "accept_flag": 3184,
+    "accept_flag_hex": "0x0C70",
+    "complete_flag": 3185,
+    "complete_flag_hex": "0x0C71",
+    "map_group": 1,
+    "map_num": 47,
+    "tail_hex": "0d 00 00 00",
+    "index": 36,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3b8a3",
+    "legacy_match_count": 0,
+    "current_description": "帮助阿露福遗迹的超能力者\n收集所有形态的未知图腾，\n探究宝可梦沉睡的潜能。",
+    "catalog_map": {
+     "id": "1:47",
+     "name": "阿露福遗迹"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x09CD0194",
+    "0x09CD019F",
+    "0x09CD01DA",
+    "0x09CD02F4"
+   ],
+   "event_roots": [],
+   "scripts": [
+    {
+     "script": "0x09CD0194",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD0194",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x09CD0195",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x09CD0196",
+       "command": "checkflag",
+       "args": [
+        3185
+       ],
+       "task_flag_labels": [
+        {
+         "title": "沉睡的潜能",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD0199",
+       "command": "goto_if",
+       "args": [
+        1,
+        164430660
+       ],
+       "targets": [
+        "0x09CD0344"
+       ]
+      },
+      {
+       "at": "0x09CD019F",
+       "command": "checkflag",
+       "args": [
+        3184
+       ],
+       "task_flag_labels": [
+        {
+         "title": "沉睡的潜能",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD01A2",
+       "command": "goto_if",
+       "args": [
+        1,
+        164430331
+       ],
+       "targets": [
+        "0x09CD01FB"
+       ]
+      },
+      {
+       "at": "0x09CD01A8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165287151
+       ],
+       "texts": [
+        {
+         "address": "0x09DA14EF",
+         "text": "你听得到吗……？\n这些徘徊在\n阿露福遗迹的未知图腾，\n正在释放着\n某种不可思议的电波。\n如果只是一只两只，\n那电波微弱得根本无法解读。\n但若是将所有形态的\n未知图腾聚集在一起……\n也许就能引发\n足以唤醒宇宙的共鸣。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD01AE",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD01B0",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD01B3",
+       "command": "applymovement",
+       "args": [
+        32783,
+        164430997
+       ]
+      },
+      {
+       "at": "0x09CD01BA",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD01BD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165287346
+       ],
+       "texts": [
+        {
+         "address": "0x09DA15B2",
+         "text": "你是训练家吧？\n如果你能将所有\n形态的未知图腾全都收服，\n并向我展示那个奇迹……\n我就将我从电波中领悟到的\n“力量的真相”传授给你。\n怎么样？\n你要协助我见证这个奇迹吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD01C3",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD01C5",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD01CA",
+       "command": "goto_if",
+       "args": [
+        1,
+        164430298
+       ],
+       "targets": [
+        "0x09CD01DA"
+       ]
+      },
+      {
+       "at": "0x09CD01D0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165287610
+       ],
+       "texts": [
+        {
+         "address": "0x09DA16BA",
+         "text": "这样啊……\n看来现在的你，还无法\n与这股宇宙的电波产生共鸣呢。\n如果你改变主意了，\n随时欢迎你再来找我。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD01D6",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD01D8",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD01D9",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_catalog_flag_anchor",
+       "where": "036"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD019F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD019F",
+       "command": "checkflag",
+       "args": [
+        3184
+       ],
+       "task_flag_labels": [
+        {
+         "title": "沉睡的潜能",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD01A2",
+       "command": "goto_if",
+       "args": [
+        1,
+        164430331
+       ],
+       "targets": [
+        "0x09CD01FB"
+       ]
+      },
+      {
+       "at": "0x09CD01A8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165287151
+       ],
+       "texts": [
+        {
+         "address": "0x09DA14EF",
+         "text": "你听得到吗……？\n这些徘徊在\n阿露福遗迹的未知图腾，\n正在释放着\n某种不可思议的电波。\n如果只是一只两只，\n那电波微弱得根本无法解读。\n但若是将所有形态的\n未知图腾聚集在一起……\n也许就能引发\n足以唤醒宇宙的共鸣。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD01AE",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD01B0",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD01B3",
+       "command": "applymovement",
+       "args": [
+        32783,
+        164430997
+       ]
+      },
+      {
+       "at": "0x09CD01BA",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD01BD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165287346
+       ],
+       "texts": [
+        {
+         "address": "0x09DA15B2",
+         "text": "你是训练家吧？\n如果你能将所有\n形态的未知图腾全都收服，\n并向我展示那个奇迹……\n我就将我从电波中领悟到的\n“力量的真相”传授给你。\n怎么样？\n你要协助我见证这个奇迹吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD01C3",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD01C5",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD01CA",
+       "command": "goto_if",
+       "args": [
+        1,
+        164430298
+       ],
+       "targets": [
+        "0x09CD01DA"
+       ]
+      },
+      {
+       "at": "0x09CD01D0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165287610
+       ],
+       "texts": [
+        {
+         "address": "0x09DA16BA",
+         "text": "这样啊……\n看来现在的你，还无法\n与这股宇宙的电波产生共鸣呢。\n如果你改变主意了，\n随时欢迎你再来找我。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD01D6",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD01D8",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD01D9",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=36"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD01DA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD01DA",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD01DB",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD01DE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165287062
+       ],
+       "texts": [
+        {
+         "address": "0x09DA1496",
+         "text": "接受任务:<沉睡的潜能>"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD01E4",
+       "command": "call",
+       "args": [
+        164430965
+       ],
+       "targets": [
+        "0x09CD0475"
+       ]
+      },
+      {
+       "at": "0x09CD01E9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165287501
+       ],
+       "texts": [
+        {
+         "address": "0x09DA164D",
+         "text": "呵呵呵……我感受到了。\n你的波长里充满了\n探求未知的好奇心。\n那么，去收集所有的\n未知图腾吧，\n我会在这里等你的好消息。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD01EF",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD01F1",
+       "command": "setflag",
+       "args": [
+        3184
+       ],
+       "task_flag_labels": [
+        {
+         "title": "沉睡的潜能",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD01F4",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CD01F9",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD01FA",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD0194"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD01FB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD01FB",
+       "command": "checkflag",
+       "args": [
+        5866
+       ]
+      },
+      {
+       "at": "0x09CD01FE",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD0204",
+       "command": "checkflag",
+       "args": [
+        5867
+       ]
+      },
+      {
+       "at": "0x09CD0207",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD020D",
+       "command": "checkflag",
+       "args": [
+        5868
+       ]
+      },
+      {
+       "at": "0x09CD0210",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD0216",
+       "command": "checkflag",
+       "args": [
+        5869
+       ]
+      },
+      {
+       "at": "0x09CD0219",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD021F",
+       "command": "checkflag",
+       "args": [
+        5870
+       ]
+      },
+      {
+       "at": "0x09CD0222",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD0228",
+       "command": "checkflag",
+       "args": [
+        5871
+       ]
+      },
+      {
+       "at": "0x09CD022B",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD0231",
+       "command": "checkflag",
+       "args": [
+        5872
+       ]
+      },
+      {
+       "at": "0x09CD0234",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD023A",
+       "command": "checkflag",
+       "args": [
+        5873
+       ]
+      },
+      {
+       "at": "0x09CD023D",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD0243",
+       "command": "checkflag",
+       "args": [
+        5874
+       ]
+      },
+      {
+       "at": "0x09CD0246",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD024C",
+       "command": "checkflag",
+       "args": [
+        5875
+       ]
+      },
+      {
+       "at": "0x09CD024F",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD0255",
+       "command": "checkflag",
+       "args": [
+        5876
+       ]
+      },
+      {
+       "at": "0x09CD0258",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD025E",
+       "command": "checkflag",
+       "args": [
+        5877
+       ]
+      },
+      {
+       "at": "0x09CD0261",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD0267",
+       "command": "checkflag",
+       "args": [
+        5878
+       ]
+      },
+      {
+       "at": "0x09CD026A",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD0270",
+       "command": "checkflag",
+       "args": [
+        5879
+       ]
+      },
+      {
+       "at": "0x09CD0273",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD0279",
+       "command": "checkflag",
+       "args": [
+        5880
+       ]
+      },
+      {
+       "at": "0x09CD027C",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD0282",
+       "command": "checkflag",
+       "args": [
+        5881
+       ]
+      },
+      {
+       "at": "0x09CD0285",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD028B",
+       "command": "checkflag",
+       "args": [
+        5882
+       ]
+      },
+      {
+       "at": "0x09CD028E",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD0294",
+       "command": "checkflag",
+       "args": [
+        5883
+       ]
+      },
+      {
+       "at": "0x09CD0297",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD029D",
+       "command": "checkflag",
+       "args": [
+        5884
+       ]
+      },
+      {
+       "at": "0x09CD02A0",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD02A6",
+       "command": "checkflag",
+       "args": [
+        5885
+       ]
+      },
+      {
+       "at": "0x09CD02A9",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD02AF",
+       "command": "checkflag",
+       "args": [
+        5886
+       ]
+      },
+      {
+       "at": "0x09CD02B2",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD02B8",
+       "command": "checkflag",
+       "args": [
+        5887
+       ]
+      },
+      {
+       "at": "0x09CD02BB",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD02C1",
+       "command": "checkflag",
+       "args": [
+        5888
+       ]
+      },
+      {
+       "at": "0x09CD02C4",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD02CA",
+       "command": "checkflag",
+       "args": [
+        5889
+       ]
+      },
+      {
+       "at": "0x09CD02CD",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD02D3",
+       "command": "checkflag",
+       "args": [
+        5890
+       ]
+      },
+      {
+       "at": "0x09CD02D6",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD02DC",
+       "command": "checkflag",
+       "args": [
+        5891
+       ]
+      },
+      {
+       "at": "0x09CD02DF",
+       "command": "goto_if",
+       "args": [
+        0,
+        164430570
+       ],
+       "targets": [
+        "0x09CD02EA"
+       ]
+      },
+      {
+       "at": "0x09CD02E5",
+       "command": "goto",
+       "args": [
+        164430580
+       ],
+       "targets": [
+        "0x09CD02F4"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD0194"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD02EA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD02EA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165287501
+       ],
+       "texts": [
+        {
+         "address": "0x09DA164D",
+         "text": "呵呵呵……我感受到了。\n你的波长里充满了\n探求未知的好奇心。\n那么，去收集所有的\n未知图腾吧，\n我会在这里等你的好消息。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD02F0",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD02F2",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD02F3",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD01FB"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD02F4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD02F4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165287705
+       ],
+       "texts": [
+        {
+         "address": "0x09DA1719",
+         "text": "……这是何等惊人的共鸣！\n你随身携带的宝可梦图鉴里，\n所有未知图腾的电波交织在了一起，\n简直就像是一个完整的小型宇宙！\n我看到了……\n我终于理解了！\n这就是隐藏在每个生命\n最深处的潜能！\n感谢你向我展示了这等奇迹。\n作为约定的回报，\n请收下这个吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD02FA",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD02FC",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        298
+       ],
+       "possible_names_not_semantics": {
+        "species": "橡实果",
+        "item": "TM10",
+        "move": "摇晃舞"
+       }
+      },
+      {
+       "at": "0x09CD0301",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD0306",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD0308",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x09CD0309",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165287931
+       ],
+       "texts": [
+        {
+         "address": "0x09DA17FB",
+         "text": "这张招式学习器里\n记录的招式，\n名为“觉醒力量”。\n它能将宝可梦体内沉睡的潜能，\n化作真实的攻击释放出来。\n并且，根据宝可梦自身\n波长的不同，\n这股力量的“属性”\n也会发生改变。\n是一股深不可测的\n力量呢……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD030F",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD0311",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD0314",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165287089
+       ],
+       "texts": [
+        {
+         "address": "0x09DA14B1",
+         "text": "完成任务:<沉睡的潜能>"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD031A",
+       "command": "call",
+       "args": [
+        164430965
+       ],
+       "targets": [
+        "0x09CD0475"
+       ]
+      },
+      {
+       "at": "0x09CD031F",
+       "command": "addvar",
+       "args": [
+        20789,
+        8
+       ]
+      },
+      {
+       "at": "0x09CD0324",
+       "command": "addmoney",
+       "args": [
+        9000,
+        0
+       ]
+      },
+      {
+       "at": "0x09CD032A",
+       "command": "setflag",
+       "args": [
+        3185
+       ],
+       "task_flag_labels": [
+        {
+         "title": "沉睡的潜能",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD032D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165287116
+       ],
+       "texts": [
+        {
+         "address": "0x09DA14CC",
+         "text": "获得了8点BracerPoints和9000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD0333",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD0335",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CD033A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165288117
+       ],
+       "texts": [
+        {
+         "address": "0x09DA18B5",
+         "text": "多亏了你集齐的未知图腾……\n我现在不仅能看穿\n宝可梦觉醒力量的属性，\n甚至能够引导、改变它的波长。\n那么，如果你想要洞悉或改变\n宝可梦觉醒力量的属性，\n欢迎随时找我。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD0340",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD0342",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD0343",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD01FB"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD0344",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD0344",
+       "command": "setvar",
+       "args": [
+        32774,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CD0349",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165288334
+       ],
+       "texts": [
+        {
+         "address": "0x09DA198E",
+         "text": "查看潜能属性"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD034F",
+       "command": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x09CD0352",
+       "command": "setvar",
+       "args": [
+        32774,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD0357",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165288347
+       ],
+       "texts": [
+        {
+         "address": "0x09DA199B",
+         "text": "改变潜能属性"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD035D",
+       "command": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x09CD0360",
+       "command": "preparemsg",
+       "args": [
+        165288270
+       ],
+       "texts": [
+        {
+         "address": "0x09DA194E",
+         "text": "你想要洞悉谁的\n觉醒力量属性？\n或者是……\n想改变谁的觉醒力量属性呢？"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD0365",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x09CD0366",
+       "command": "multichoice",
+       "args": [
+        18,
+        8,
+        32,
+        0
+       ]
+      },
+      {
+       "at": "0x09CD036B",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        127
+       ],
+       "possible_names_not_semantics": {
+        "species": "凯罗斯",
+        "item": "珠宝邮件",
+        "move": "攀瀑"
+       }
+      },
+      {
+       "at": "0x09CD0370",
+       "command": "goto_if",
+       "args": [
+        1,
+        164430955
+       ],
+       "targets": [
+        "0x09CD046B"
+       ]
+      },
+      {
+       "at": "0x09CD0376",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CD037B",
+       "command": "goto_if",
+       "args": [
+        1,
+        164430726
+       ],
+       "targets": [
+        "0x09CD0386"
+       ]
+      },
+      {
+       "at": "0x09CD0381",
+       "command": "goto",
+       "args": [
+        164430785
+       ],
+       "targets": [
+        "0x09CD03C1"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD0194"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD0386",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD0386",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165288360
+       ],
+       "texts": [
+        {
+         "address": "0x09DA19A8",
+         "text": "请选择一只你想洞悉的\n宝可梦吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD038C",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD038E",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x09CD0391",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x09CD0392",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x09CD0397",
+       "command": "goto_if",
+       "args": [
+        1,
+        164430955
+       ],
+       "targets": [
+        "0x09CD046B"
+       ]
+      },
+      {
+       "at": "0x09CD039D",
+       "command": "callasm",
+       "args": [
+        165020785
+       ]
+      },
+      {
+       "at": "0x09CD03A2",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD03A7",
+       "command": "goto_if",
+       "args": [
+        1,
+        164430775
+       ],
+       "targets": [
+        "0x09CD03B7"
+       ]
+      },
+      {
+       "at": "0x09CD03AD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165288988
+       ],
+       "texts": [
+        {
+         "address": "0x09DA1C1C",
+         "text": "唔……这孩子的波长\n现在还无法解读。\n请换一只宝可梦\n让我看看吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD03B3",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD03B5",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD03B6",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD0344"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD03B7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD03B7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165288391
+       ],
+       "texts": [
+        {
+         "address": "0x09DA19C7",
+         "text": "唔唔唔……我看到了！\n那孩子体内流动的能量波长！\n如果这只[玩家/变量]\n使用觉醒力量，\n它的属性将会是\n[玩家/变量]属性！\n[玩家/变量]属性的力量，\n正沉睡在它的体内哦。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD03BD",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD03BF",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD03C0",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD0386"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD03C1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD03C1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165288517
+       ],
+       "texts": [
+        {
+         "address": "0x09DA1A45",
+         "text": "想要引导宝可梦体内的波长，\n需要心之鳞片来作为引导的媒介。\n如果你拥有心之鳞片，\n我就可以为你的宝可梦改变潜能。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD03C7",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD03C9",
+       "command": "checkitem",
+       "args": [
+        111,
+        1
+       ],
+       "item_name": "心之鳞片"
+      },
+      {
+       "at": "0x09CD03CE",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD03D3",
+       "command": "goto_if",
+       "args": [
+        1,
+        164430819
+       ],
+       "targets": [
+        "0x09CD03E3"
+       ]
+      },
+      {
+       "at": "0x09CD03D9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165288623
+       ],
+       "texts": [
+        {
+         "address": "0x09DA1AAF",
+         "text": "很遗憾，你的包包里\n似乎并没有我需要的心之鳞片呢。\n如果你能找到它，\n再来阿露福遗迹找我吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD03DF",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD03E1",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD03E2",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD0344"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD03E3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD03E3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165288709
+       ],
+       "texts": [
+        {
+         "address": "0x09DA1B05",
+         "text": "很好，\n你确实带着心之鳞片呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD03E9",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD03EB",
+       "command": "preparemsg",
+       "args": [
+        165288737
+       ],
+       "texts": [
+        {
+         "address": "0x09DA1B21",
+         "text": "那么，你想要将宝可梦的\n觉醒力量引导至哪种属性？"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD03F0",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x09CD03F1",
+       "command": "setvar",
+       "args": [
+        32768,
+        5
+       ],
+       "possible_names_not_semantics": {
+        "species": "火恐龙",
+        "item": "狩猎球",
+        "move": "百万吨重拳"
+       }
+      },
+      {
+       "at": "0x09CD03F6",
+       "command": "setvar",
+       "args": [
+        32769,
+        6
+       ],
+       "possible_names_not_semantics": {
+        "species": "喷火龙",
+        "item": "捕网球",
+        "move": "聚宝功"
+       }
+      },
+      {
+       "at": "0x09CD03FB",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CD0400",
+       "command": "special",
+       "args": [
+        344
+       ]
+      },
+      {
+       "at": "0x09CD0403",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x09CD0404",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        16
+       ],
+       "possible_names_not_semantics": {
+        "species": "波波",
+        "item": "解冻药",
+        "move": "起风"
+       }
+      },
+      {
+       "at": "0x09CD0409",
+       "command": "goto_if",
+       "args": [
+        4,
+        164430955
+       ],
+       "targets": [
+        "0x09CD046B"
+       ]
+      },
+      {
+       "at": "0x09CD040F",
+       "command": "copyvar",
+       "args": [
+        32773,
+        32781
+       ]
+      },
+      {
+       "at": "0x09CD0414",
+       "command": "callasm",
+       "args": [
+        165020889
+       ]
+      },
+      {
+       "at": "0x09CD0419",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165288783
+       ],
+       "texts": [
+        {
+         "address": "0x09DA1B4F",
+         "text": "你想要改变哪只\n宝可梦的觉醒力量属性？"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD041F",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD0421",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x09CD0424",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x09CD0425",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x09CD042A",
+       "command": "goto_if",
+       "args": [
+        1,
+        164430955
+       ],
+       "targets": [
+        "0x09CD046B"
+       ]
+      },
+      {
+       "at": "0x09CD0430",
+       "command": "callasm",
+       "args": [
+        165020965
+       ]
+      },
+      {
+       "at": "0x09CD0435",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD043A",
+       "command": "goto_if",
+       "args": [
+        1,
+        164430922
+       ],
+       "targets": [
+        "0x09CD044A"
+       ]
+      },
+      {
+       "at": "0x09CD0440",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165288988
+       ],
+       "texts": [
+        {
+         "address": "0x09DA1C1C",
+         "text": "唔……这孩子的波长\n现在还无法解读。\n请换一只宝可梦\n让我看看吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD0446",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD0448",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD0449",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD03C1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD044A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD044A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165288820
+       ],
+       "texts": [
+        {
+         "address": "0x09DA1B74",
+         "text": "我明白了……\n那么，我要开始了。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD0450",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD0452",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD0454",
+       "command": "cry",
+       "args": [
+        201,
+        255
+       ]
+      },
+      {
+       "at": "0x09CD0459",
+       "command": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x09CD045A",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD045C",
+       "command": "removeitem",
+       "args": [
+        111,
+        1
+       ],
+       "item_name": "心之鳞片"
+      },
+      {
+       "at": "0x09CD0461",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165288848
+       ],
+       "texts": [
+        {
+         "address": "0x09DA1B90",
+         "text": "呼……仪式完成了。\n现在的[玩家/变量]，\n它体内的潜能已经被成功重塑。\n如果你现在让它\n使用觉醒力量，\n它将会释放出\n纯粹的[玩家/变量]属性！\n生命的可能性，\n真是无穷无尽呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD0467",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD0469",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD046A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD03E3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD046B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD046B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165289048
+       ],
+       "texts": [
+        {
+         "address": "0x09DA1C58",
+         "text": "呵呵呵……\n如果你想再次倾听潜能的声音，\n随时欢迎你来找我。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD0471",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD0473",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD0474",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD0344"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD0475",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD0475",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CD0478",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD047D",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD0482",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x09CD0487",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x09CD048C",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x09CD0491",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD0494",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD01DA"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

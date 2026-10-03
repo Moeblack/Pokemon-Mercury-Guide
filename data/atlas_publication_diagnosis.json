@@ -1,0 +1,169 @@
+{
+  "status": "native_loader_traced_normal_game_scene_identity_needed",
+  "layout_byte_comparisons": [
+    {
+      "id": "1:1",
+      "reference": "https://raw.githubusercontent.com/pret/pokefirered/master/data/layouts/MtMoon_1F/map.bin",
+      "reference_bytes": 3840,
+      "rom_bytes": 3840,
+      "equal": true,
+      "different_bytes": 0
+    },
+    {
+      "id": "1:2",
+      "reference": "https://raw.githubusercontent.com/pret/pokefirered/master/data/layouts/MtMoon_B1F/map.bin",
+      "reference_bytes": 3920,
+      "rom_bytes": 3920,
+      "equal": true,
+      "different_bytes": 0
+    },
+    {
+      "id": "1:3",
+      "reference": "https://raw.githubusercontent.com/pret/pokefirered/master/data/layouts/MtMoon_B2F/map.bin",
+      "reference_bytes": 3840,
+      "rom_bytes": 3840,
+      "equal": true,
+      "different_bytes": 0
+    },
+    {
+      "id": "1:4",
+      "reference": "https://raw.githubusercontent.com/pret/pokefirered/master/data/layouts/SSAnne_Exterior/map.bin",
+      "reference_bytes": 4480,
+      "rom_bytes": 4480,
+      "equal": true,
+      "different_bytes": 0
+    }
+  ],
+  "metatile_byte_comparisons": [
+    {
+      "tileset": "0x082D4A94",
+      "reference": "https://raw.githubusercontent.com/pret/pokefirered/master/data/tilesets/primary/general/metatiles.bin",
+      "rom_metatiles": "0x08922B88",
+      "bytes": 10240,
+      "equal": false,
+      "different_bytes": 9587
+    },
+    {
+      "tileset": "0x082D4BFC",
+      "reference": "https://raw.githubusercontent.com/pret/pokefirered/master/data/tilesets/secondary/cave/metatiles.bin",
+      "rom_metatiles": "0x08C55924",
+      "bytes": 2576,
+      "equal": false,
+      "different_bytes": 2069
+    },
+    {
+      "tileset": "0x082D4B24",
+      "reference": "https://raw.githubusercontent.com/pret/pokefirered/master/data/tilesets/secondary/vermilion_city/metatiles.bin",
+      "rom_metatiles": "0x08940374",
+      "bytes": 2688,
+      "equal": false,
+      "different_bytes": 2529
+    }
+  ],
+  "runtime_layout_changed_count": 27,
+  "scope": "布局及metatile对比不能单独证明地图不可达；不得把原版复原图冒充水银实景。",
+  "runtime_layout_verification": {
+    "maps": 871,
+    "corrected": 27,
+    "mismatches": 0
+  },
+  "remaining_render_sources": {
+    "unavailable": 13,
+    "partial": 121
+  },
+  "retracted": [
+    "不能仅凭原版布局字节与变化的metatile表认定废弃或必须用原版素材恢复。",
+    "用户报告正常画面并不证明网页同名槽位就是该游戏场景；尚需对应实际场景ID和状态。"
+  ],
+  "native_trace": {
+    "core_source": "https://buildbot.libretro.com/nightly/windows/x86_64/latest/mgba_libretro.dll.zip",
+    "script": "scripts/trace_map_runtime.py",
+    "source_rom_sha256": "131b009df7ab252deff0d6a0518ab82f88e82c940ee68d50d31033a899f7e3dd",
+    "method": "本地存档副本；隔离核心内调用WarpIntoMap和CB2_LoadMap2，跳过依赖出发地任务的转场动画；原ROM和存档文件不写入。",
+    "results": [
+      {
+        "map_id": "1:3",
+        "layout": {
+          "address": "0x82fc728",
+          "width": 48,
+          "height": 40,
+          "border": "0x82fb820",
+          "map": "0x82fb828",
+          "primary_tileset": "0x82d4a94",
+          "secondary_tileset": "0x82d4bfc",
+          "border_width": 2,
+          "border_height": 2
+        },
+        "changed_cell_count": 0,
+        "load_complete": true,
+        "callback": "0x80565b5",
+        "record": "data/runtime_trace/map_1_3.native.json",
+        "image": "data/runtime_trace/map_1_3.png"
+      },
+      {
+        "map_id": "1:4",
+        "layout": {
+          "address": "0x82ff610",
+          "width": 70,
+          "height": 32,
+          "border": "0x82fe488",
+          "map": "0x82fe490",
+          "primary_tileset": "0x82d4a94",
+          "secondary_tileset": "0x82d4b24",
+          "border_width": 2,
+          "border_height": 2
+        },
+        "changed_cell_count": 0,
+        "load_complete": true,
+        "callback": "0x80565b5",
+        "record": "data/runtime_trace/map_1_4.native.json",
+        "image": "data/runtime_trace/map_1_4.png"
+      },
+      {
+        "map_id": "1:94",
+        "layout": {
+          "address": "0x8cc8fa4",
+          "width": 36,
+          "height": 26,
+          "border": "0x8cc884c",
+          "map": "0x8cc8854",
+          "primary_tileset": "0x82d4b6c",
+          "secondary_tileset": "0x82d4bfc",
+          "border_width": 2,
+          "border_height": 2
+        },
+        "changed_cell_count": 0,
+        "load_complete": true,
+        "callback": "0x80565b5",
+        "record": "data/runtime_trace/map_1_94.native.json",
+        "image": "data/runtime_trace/map_1_94.png"
+      }
+    ],
+    "observations": {
+      "1:3": "原生执行仍出现树木与洞壁错配，实际layout=082FC728；不是该状态下漏取另一张布局。",
+      "1:4": "原生执行仍出现轨道式横条与杂乱方块，实际layout=082FF610。",
+      "1:94": "同名呆呆兽之井，原生执行为正常洞窟；layout=08CC8FA4。"
+    },
+    "remaining": "需将用户所指正常游戏画面/即时存档与具体map ID、实际ROM和进入前状态对应；直接进入指定ID不能穷尽所有剧情进入分支。"
+  },
+  "discussion_20261004": {
+    "related_entries": {
+      "rgb_atlas_and_28_mega": "../README.md#RGB地图与野生Mega",
+      "batch_render_and_palette_evidence": "atlas_research_findings.json"
+    },
+    "user_request": "记录本次关于ROM旧地图数据残留与攻略误收录的讨论；本轮不继续修复。",
+    "current_assessment": "目前最有证据支持的解释是：ROM保留了火红旧地图布局，攻略将这些槽位与水银实际场景混在一起收录。问题首先是地图身份和收录关联，不应继续把旧月见山当作实际呆呆兽之井修图。",
+    "established_facts": [
+      "1:3布局与火红月见山地下二层逐字节一致，地区段名称却显示呆呆兽之井，配套metatile表已变化。",
+      "隔离核心按网页编号强制加载1:3和1:4，仍出现相同图块错配；1:94同名呆呆兽之井场景正常。",
+      "跑到月见山是助手指定1:3旧槽位的结果，不是用户正常游玩进入月见山的证据。"
+    ],
+    "unresolved": "正常流程是否使用这些具体槽位、所有残留槽位的完整范围及条件入口仍需核对；不得把强制进入结果写成正常流程可达性证明，也不得仅按原版名称断言废弃。",
+    "corrections": [
+      "撤回仅凭静态资源变化就要求使用原版素材复原的判断。",
+      "撤回游戏画面正常就必然是渲染器解码错误的笼统判断。",
+      "不将此问题表述为用户正常游玩的地图已经损坏。"
+    ],
+    "next_direction": "恢复任务时先核对水银正常流程实际使用的地图、入口和剧情条件，区分实际场景与旧槽位，再修正攻略收录及关联；不擅自替换素材或删除未经判定的地图。"
+  }
+}

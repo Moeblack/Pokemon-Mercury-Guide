@@ -1,0 +1,28 @@
+{
+  "id": 63,
+  "title": "8bit的感动",
+  "start_locations": [],
+  "requirements": [
+    "未定位"
+  ],
+  "steps": [],
+  "completion": [
+    "未定位（目录两行 accept/complete 均为自身：5196 / 5197）"
+  ],
+  "rewards": [
+    "未定位（不得把 062 的图图犬奖励自动复用）"
+  ],
+  "pitfalls": [
+    "原始包与扩展包中本任务均为 script 数 0、event_roots 数 0，无法给出可证实的步骤。"
+  ],
+  "related_items": [],
+  "related_species": [],
+  "related_trainers": [],
+  "open_questions": [
+    "quest_packets_expanded/063.json 两条记录均为 script 0 / root 0。",
+    "目录第 64 行与第 63 行标题、描述、描述地址相同；accept/complete 旗标分别为 5196(行63)/5197(行64)，用途未解释。",
+    "旁证：062 结算脚本 0x09CD8C18 开头出现「完成任务:<8bit的感动>」，完成提示与旗标与 062 分开。"
+  ],
+  "source_packet": "data/quest_packets_expanded/063.json",
+  "status": "partial"
+}

@@ -1,0 +1,1117 @@
+{
+  "quest_count": 97,
+  "quests": [
+    {
+      "id": 2,
+      "title": "皮丘的旅途",
+      "file": "data/quest_packets/002.json",
+      "catalog_rows": [
+        2
+      ],
+      "script_count": 32,
+      "root_count": 3,
+      "bytes": 58934
+    },
+    {
+      "id": 3,
+      "title": "向往天空的理由",
+      "file": "data/quest_packets/003.json",
+      "catalog_rows": [
+        3
+      ],
+      "script_count": 36,
+      "root_count": 3,
+      "bytes": 92362
+    },
+    {
+      "id": 4,
+      "title": "钢铁与黑曜",
+      "file": "data/quest_packets/004.json",
+      "catalog_rows": [
+        4
+      ],
+      "script_count": 4,
+      "root_count": 0,
+      "bytes": 4953
+    },
+    {
+      "id": 5,
+      "title": "霓虹灯外的月光",
+      "file": "data/quest_packets/005.json",
+      "catalog_rows": [
+        5
+      ],
+      "script_count": 4,
+      "root_count": 0,
+      "bytes": 3636
+    },
+    {
+      "id": 6,
+      "title": "无法冻结的时间",
+      "file": "data/quest_packets/006.json",
+      "catalog_rows": [
+        6
+      ],
+      "script_count": 3,
+      "root_count": 0,
+      "bytes": 2867
+    },
+    {
+      "id": 7,
+      "title": "水与火的修罗场",
+      "file": "data/quest_packets/007.json",
+      "catalog_rows": [
+        7
+      ],
+      "script_count": 11,
+      "root_count": 1,
+      "bytes": 33376
+    },
+    {
+      "id": 8,
+      "title": "山顶的秘密",
+      "file": "data/quest_packets/008.json",
+      "catalog_rows": [
+        8
+      ],
+      "script_count": 16,
+      "root_count": 4,
+      "bytes": 42730
+    },
+    {
+      "id": 9,
+      "title": "冻土上的捉迷藏",
+      "file": "data/quest_packets/009.json",
+      "catalog_rows": [
+        9
+      ],
+      "script_count": 10,
+      "root_count": 2,
+      "bytes": 42211
+    },
+    {
+      "id": 10,
+      "title": "纯白的魅影",
+      "file": "data/quest_packets/010.json",
+      "catalog_rows": [
+        10
+      ],
+      "script_count": 9,
+      "root_count": 2,
+      "bytes": 37965
+    },
+    {
+      "id": 11,
+      "title": "在未知的土地上",
+      "file": "data/quest_packets/011.json",
+      "catalog_rows": [
+        11
+      ],
+      "script_count": 17,
+      "root_count": 3,
+      "bytes": 47098
+    },
+    {
+      "id": 12,
+      "title": "来自未来的回响",
+      "file": "data/quest_packets/012.json",
+      "catalog_rows": [
+        12
+      ],
+      "script_count": 12,
+      "root_count": 3,
+      "bytes": 51634
+    },
+    {
+      "id": 13,
+      "title": "少女的烦恼",
+      "file": "data/quest_packets/013.json",
+      "catalog_rows": [
+        13
+      ],
+      "script_count": 20,
+      "root_count": 1,
+      "bytes": 26870
+    },
+    {
+      "id": 14,
+      "title": "进化之谜",
+      "file": "data/quest_packets/014.json",
+      "catalog_rows": [
+        14
+      ],
+      "script_count": 13,
+      "root_count": 1,
+      "bytes": 23572
+    },
+    {
+      "id": 15,
+      "title": "红色火球之谜",
+      "file": "data/quest_packets/015.json",
+      "catalog_rows": [
+        15
+      ],
+      "script_count": 13,
+      "root_count": 1,
+      "bytes": 23478
+    },
+    {
+      "id": 16,
+      "title": "小猫怪的耳朵",
+      "file": "data/quest_packets/016.json",
+      "catalog_rows": [
+        16
+      ],
+      "script_count": 10,
+      "root_count": 1,
+      "bytes": 21954
+    },
+    {
+      "id": 17,
+      "title": "口渴的大叔",
+      "file": "data/quest_packets/017.json",
+      "catalog_rows": [
+        17
+      ],
+      "script_count": 18,
+      "root_count": 1,
+      "bytes": 27168
+    },
+    {
+      "id": 18,
+      "title": "精灵爷爷的实验",
+      "file": "data/quest_packets/018.json",
+      "catalog_rows": [
+        18
+      ],
+      "script_count": 54,
+      "root_count": 1,
+      "bytes": 136732
+    },
+    {
+      "id": 19,
+      "title": "希鲁夫的遗产",
+      "file": "data/quest_packets/019.json",
+      "catalog_rows": [
+        19
+      ],
+      "script_count": 60,
+      "root_count": 2,
+      "bytes": 157077
+    },
+    {
+      "id": 20,
+      "title": "连接未来的牵绊",
+      "file": "data/quest_packets/020.json",
+      "catalog_rows": [
+        20
+      ],
+      "script_count": 55,
+      "root_count": 1,
+      "bytes": 148679
+    },
+    {
+      "id": 21,
+      "title": "收集研究所物资",
+      "file": "data/quest_packets/021.json",
+      "catalog_rows": [
+        21
+      ],
+      "script_count": 12,
+      "root_count": 1,
+      "bytes": 22168
+    },
+    {
+      "id": 22,
+      "title": "要进化的绿毛虫",
+      "file": "data/quest_packets/022.json",
+      "catalog_rows": [
+        22
+      ],
+      "script_count": 24,
+      "root_count": 1,
+      "bytes": 34496
+    },
+    {
+      "id": 23,
+      "title": "制服狂暴宝可梦",
+      "file": "data/quest_packets/023.json",
+      "catalog_rows": [
+        23
+      ],
+      "script_count": 40,
+      "root_count": 5,
+      "bytes": 58244
+    },
+    {
+      "id": 24,
+      "title": "红色碎片告急",
+      "file": "data/quest_packets/024.json",
+      "catalog_rows": [
+        24
+      ],
+      "script_count": 21,
+      "root_count": 1,
+      "bytes": 53075
+    },
+    {
+      "id": 25,
+      "title": "复习宝可梦知识",
+      "file": "data/quest_packets/025.json",
+      "catalog_rows": [
+        25
+      ],
+      "script_count": 18,
+      "root_count": 2,
+      "bytes": 25640
+    },
+    {
+      "id": 26,
+      "title": "修行的难题",
+      "file": "data/quest_packets/026.json",
+      "catalog_rows": [
+        26
+      ],
+      "script_count": 33,
+      "root_count": 1,
+      "bytes": 48141
+    },
+    {
+      "id": 27,
+      "title": "痛苦的大食花",
+      "file": "data/quest_packets/027.json",
+      "catalog_rows": [
+        27
+      ],
+      "script_count": 32,
+      "root_count": 1,
+      "bytes": 46691
+    },
+    {
+      "id": 28,
+      "title": "喇叭芽塔的妖怪",
+      "file": "data/quest_packets/028.json",
+      "catalog_rows": [
+        28
+      ],
+      "script_count": 24,
+      "root_count": 1,
+      "bytes": 30322
+    },
+    {
+      "id": 29,
+      "title": "可爱的姆克儿",
+      "file": "data/quest_packets/029.json",
+      "catalog_rows": [
+        29
+      ],
+      "script_count": 17,
+      "root_count": 1,
+      "bytes": 25902
+    },
+    {
+      "id": 30,
+      "title": "帅与可爱的精灵",
+      "file": "data/quest_packets/030.json",
+      "catalog_rows": [
+        30
+      ],
+      "script_count": 11,
+      "root_count": 5,
+      "bytes": 32432
+    },
+    {
+      "id": 31,
+      "title": "七大不可思议",
+      "file": "data/quest_packets/031.json",
+      "catalog_rows": [
+        31
+      ],
+      "script_count": 29,
+      "root_count": 2,
+      "bytes": 51391
+    },
+    {
+      "id": 32,
+      "title": "阿始的新节目",
+      "file": "data/quest_packets/032.json",
+      "catalog_rows": [
+        32
+      ],
+      "script_count": 44,
+      "root_count": 1,
+      "bytes": 100089
+    },
+    {
+      "id": 33,
+      "title": "阿始的极限秀",
+      "file": "data/quest_packets/033.json",
+      "catalog_rows": [
+        33
+      ],
+      "script_count": 44,
+      "root_count": 1,
+      "bytes": 99473
+    },
+    {
+      "id": 34,
+      "title": "最后的大哥秀",
+      "file": "data/quest_packets/034.json",
+      "catalog_rows": [
+        34
+      ],
+      "script_count": 45,
+      "root_count": 1,
+      "bytes": 105881
+    },
+    {
+      "id": 35,
+      "title": "阿露福遗迹之谜",
+      "file": "data/quest_packets/035.json",
+      "catalog_rows": [
+        35
+      ],
+      "script_count": 16,
+      "root_count": 3,
+      "bytes": 48114
+    },
+    {
+      "id": 36,
+      "title": "沉睡的潜能",
+      "file": "data/quest_packets/036.json",
+      "catalog_rows": [
+        36
+      ],
+      "script_count": 0,
+      "root_count": 0,
+      "bytes": 1354
+    },
+    {
+      "id": 37,
+      "title": "目标是虫系大师",
+      "file": "data/quest_packets/037.json",
+      "catalog_rows": [
+        37
+      ],
+      "script_count": 12,
+      "root_count": 1,
+      "bytes": 19320
+    },
+    {
+      "id": 38,
+      "title": "传达情书",
+      "file": "data/quest_packets/038.json",
+      "catalog_rows": [
+        38
+      ],
+      "script_count": 37,
+      "root_count": 8,
+      "bytes": 53908
+    },
+    {
+      "id": 39,
+      "title": "洞穴深处的回响",
+      "file": "data/quest_packets/039.json",
+      "catalog_rows": [
+        39
+      ],
+      "script_count": 10,
+      "root_count": 1,
+      "bytes": 20933
+    },
+    {
+      "id": 40,
+      "title": "穿玩偶装的人",
+      "file": "data/quest_packets/040.json",
+      "catalog_rows": [
+        40
+      ],
+      "script_count": 10,
+      "root_count": 1,
+      "bytes": 18352
+    },
+    {
+      "id": 41,
+      "title": "抱住圆木的来客",
+      "file": "data/quest_packets/041.json",
+      "catalog_rows": [
+        41
+      ],
+      "script_count": 17,
+      "root_count": 2,
+      "bytes": 29742
+    },
+    {
+      "id": 42,
+      "title": "异样的呆呆兽",
+      "file": "data/quest_packets/042.json",
+      "catalog_rows": [
+        42
+      ],
+      "script_count": 11,
+      "root_count": 2,
+      "bytes": 28985
+    },
+    {
+      "id": 43,
+      "title": "闪耀的一等星",
+      "file": "data/quest_packets/043.json",
+      "catalog_rows": [
+        43
+      ],
+      "script_count": 41,
+      "root_count": 2,
+      "bytes": 75787
+    },
+    {
+      "id": 44,
+      "title": "闪耀的电波",
+      "file": "data/quest_packets/044.json",
+      "catalog_rows": [
+        44
+      ],
+      "script_count": 36,
+      "root_count": 1,
+      "bytes": 70759
+    },
+    {
+      "id": 45,
+      "title": "闪耀的暗影",
+      "file": "data/quest_packets/045.json",
+      "catalog_rows": [
+        45
+      ],
+      "script_count": 34,
+      "root_count": 1,
+      "bytes": 72572
+    },
+    {
+      "id": 46,
+      "title": "成为一般系大师",
+      "file": "data/quest_packets/046.json",
+      "catalog_rows": [
+        46
+      ],
+      "script_count": 18,
+      "root_count": 1,
+      "bytes": 34147
+    },
+    {
+      "id": 47,
+      "title": "诡异的绿光",
+      "file": "data/quest_packets/047.json",
+      "catalog_rows": [
+        47
+      ],
+      "script_count": 16,
+      "root_count": 2,
+      "bytes": 26836
+    },
+    {
+      "id": 48,
+      "title": "家乡的味道",
+      "file": "data/quest_packets/048.json",
+      "catalog_rows": [
+        48
+      ],
+      "script_count": 20,
+      "root_count": 3,
+      "bytes": 38349
+    },
+    {
+      "id": 49,
+      "title": "如期未至的朋友",
+      "file": "data/quest_packets/049.json",
+      "catalog_rows": [
+        49
+      ],
+      "script_count": 11,
+      "root_count": 2,
+      "bytes": 20942
+    },
+    {
+      "id": 50,
+      "title": "失踪的父亲",
+      "file": "data/quest_packets/050.json",
+      "catalog_rows": [
+        50
+      ],
+      "script_count": 15,
+      "root_count": 2,
+      "bytes": 35856
+    },
+    {
+      "id": 51,
+      "title": "聂梓的签名",
+      "file": "data/quest_packets/051.json",
+      "catalog_rows": [
+        51
+      ],
+      "script_count": 37,
+      "root_count": 1,
+      "bytes": 66960
+    },
+    {
+      "id": 52,
+      "title": "时髦的宝可梦？",
+      "file": "data/quest_packets/052.json",
+      "catalog_rows": [
+        52
+      ],
+      "script_count": 39,
+      "root_count": 2,
+      "bytes": 69755
+    },
+    {
+      "id": 53,
+      "title": "如梦似幻般的银",
+      "file": "data/quest_packets/053.json",
+      "catalog_rows": [
+        53
+      ],
+      "script_count": 14,
+      "root_count": 2,
+      "bytes": 28049
+    },
+    {
+      "id": 54,
+      "title": "失散的过动猿",
+      "file": "data/quest_packets/054.json",
+      "catalog_rows": [
+        54
+      ],
+      "script_count": 12,
+      "root_count": 3,
+      "bytes": 26196
+    },
+    {
+      "id": 55,
+      "title": "孩子一生平安",
+      "file": "data/quest_packets/055.json",
+      "catalog_rows": [
+        55
+      ],
+      "script_count": 29,
+      "root_count": 3,
+      "bytes": 64872
+    },
+    {
+      "id": 56,
+      "title": "奇怪的树",
+      "file": "data/quest_packets/056.json",
+      "catalog_rows": [
+        56
+      ],
+      "script_count": 10,
+      "root_count": 1,
+      "bytes": 20719
+    },
+    {
+      "id": 57,
+      "title": "遗失的玩偶",
+      "file": "data/quest_packets/057.json",
+      "catalog_rows": [
+        57
+      ],
+      "script_count": 31,
+      "root_count": 4,
+      "bytes": 71643
+    },
+    {
+      "id": 58,
+      "title": "传递信件",
+      "file": "data/quest_packets/058.json",
+      "catalog_rows": [
+        58
+      ],
+      "script_count": 9,
+      "root_count": 2,
+      "bytes": 21544
+    },
+    {
+      "id": 59,
+      "title": "五彩斑斓的头巾",
+      "file": "data/quest_packets/059.json",
+      "catalog_rows": [
+        59
+      ],
+      "script_count": 0,
+      "root_count": 0,
+      "bytes": 1587
+    },
+    {
+      "id": 60,
+      "title": "生病的呆呆兽",
+      "file": "data/quest_packets/060.json",
+      "catalog_rows": [
+        60
+      ],
+      "script_count": 15,
+      "root_count": 1,
+      "bytes": 25313
+    },
+    {
+      "id": 61,
+      "title": "头号球迷的朝圣",
+      "file": "data/quest_packets/061.json",
+      "catalog_rows": [
+        61
+      ],
+      "script_count": 86,
+      "root_count": 2,
+      "bytes": 128434
+    },
+    {
+      "id": 62,
+      "title": "满金Cos大会！？",
+      "file": "data/quest_packets/062.json",
+      "catalog_rows": [
+        62
+      ],
+      "script_count": 105,
+      "root_count": 2,
+      "bytes": 166324
+    },
+    {
+      "id": 63,
+      "title": "8bit的感动",
+      "file": "data/quest_packets/063.json",
+      "catalog_rows": [
+        63,
+        64
+      ],
+      "script_count": 0,
+      "root_count": 0,
+      "bytes": 2436
+    },
+    {
+      "id": 65,
+      "title": "怯场的男友",
+      "file": "data/quest_packets/065.json",
+      "catalog_rows": [
+        65
+      ],
+      "script_count": 0,
+      "root_count": 0,
+      "bytes": 1604
+    },
+    {
+      "id": 66,
+      "title": "胡桃的风景特辑",
+      "file": "data/quest_packets/066.json",
+      "catalog_rows": [
+        66
+      ],
+      "script_count": 68,
+      "root_count": 4,
+      "bytes": 63506
+    },
+    {
+      "id": 67,
+      "title": "消失的正辉",
+      "file": "data/quest_packets/067.json",
+      "catalog_rows": [
+        67
+      ],
+      "script_count": 18,
+      "root_count": 2,
+      "bytes": 25718
+    },
+    {
+      "id": 68,
+      "title": "闪闪发光的误会",
+      "file": "data/quest_packets/068.json",
+      "catalog_rows": [
+        68
+      ],
+      "script_count": 3,
+      "root_count": 1,
+      "bytes": 31676
+    },
+    {
+      "id": 69,
+      "title": "姿态各异的舞者",
+      "file": "data/quest_packets/069.json",
+      "catalog_rows": [
+        69
+      ],
+      "script_count": 19,
+      "root_count": 4,
+      "bytes": 29594
+    },
+    {
+      "id": 70,
+      "title": "遗失的钥匙",
+      "file": "data/quest_packets/070.json",
+      "catalog_rows": [
+        70
+      ],
+      "script_count": 15,
+      "root_count": 1,
+      "bytes": 22836
+    },
+    {
+      "id": 71,
+      "title": "卖假货的奸商",
+      "file": "data/quest_packets/071.json",
+      "catalog_rows": [
+        71
+      ],
+      "script_count": 13,
+      "root_count": 2,
+      "bytes": 33281
+    },
+    {
+      "id": 72,
+      "title": "像气球的宝可梦",
+      "file": "data/quest_packets/072.json",
+      "catalog_rows": [
+        72
+      ],
+      "script_count": 10,
+      "root_count": 1,
+      "bytes": 17586
+    },
+    {
+      "id": 73,
+      "title": "逾期图书的回收",
+      "file": "data/quest_packets/073.json",
+      "catalog_rows": [
+        73
+      ],
+      "script_count": 21,
+      "root_count": 5,
+      "bytes": 34952
+    },
+    {
+      "id": 74,
+      "title": "遥远的约定",
+      "file": "data/quest_packets/074.json",
+      "catalog_rows": [
+        74
+      ],
+      "script_count": 20,
+      "root_count": 2,
+      "bytes": 49087
+    },
+    {
+      "id": 75,
+      "title": "迷路的小锯鳄",
+      "file": "data/quest_packets/075.json",
+      "catalog_rows": [
+        75
+      ],
+      "script_count": 4,
+      "root_count": 1,
+      "bytes": 10288
+    },
+    {
+      "id": 76,
+      "title": "没精神的大奶罐",
+      "file": "data/quest_packets/076.json",
+      "catalog_rows": [
+        76
+      ],
+      "script_count": 19,
+      "root_count": 2,
+      "bytes": 37085
+    },
+    {
+      "id": 77,
+      "title": "帕底亚的礼物梦",
+      "file": "data/quest_packets/077.json",
+      "catalog_rows": [
+        77
+      ],
+      "script_count": 10,
+      "root_count": 1,
+      "bytes": 23610
+    },
+    {
+      "id": 78,
+      "title": "非现世的气息",
+      "file": "data/quest_packets/078.json",
+      "catalog_rows": [
+        78
+      ],
+      "script_count": 10,
+      "root_count": 1,
+      "bytes": 18639
+    },
+    {
+      "id": 79,
+      "title": "错位的忍道",
+      "file": "data/quest_packets/079.json",
+      "catalog_rows": [
+        79
+      ],
+      "script_count": 17,
+      "root_count": 2,
+      "bytes": 45491
+    },
+    {
+      "id": 80,
+      "title": "忍法!捉迷藏",
+      "file": "data/quest_packets/080.json",
+      "catalog_rows": [
+        80
+      ],
+      "script_count": 17,
+      "root_count": 2,
+      "bytes": 29102
+    },
+    {
+      "id": 81,
+      "title": "外卖订单的配送",
+      "file": "data/quest_packets/081.json",
+      "catalog_rows": [
+        81
+      ],
+      "script_count": 17,
+      "root_count": 2,
+      "bytes": 29155
+    },
+    {
+      "id": 82,
+      "title": "白色长裙的女孩",
+      "file": "data/quest_packets/082.json",
+      "catalog_rows": [
+        82
+      ],
+      "script_count": 11,
+      "root_count": 1,
+      "bytes": 19180
+    },
+    {
+      "id": 83,
+      "title": "彼岸的宝可梦",
+      "file": "data/quest_packets/083.json",
+      "catalog_rows": [
+        83
+      ],
+      "script_count": 21,
+      "root_count": 1,
+      "bytes": 41038
+    },
+    {
+      "id": 84,
+      "title": "海之传说",
+      "file": "data/quest_packets/084.json",
+      "catalog_rows": [
+        84
+      ],
+      "script_count": 23,
+      "root_count": 5,
+      "bytes": 46289
+    },
+    {
+      "id": 85,
+      "title": "电气鼠派对",
+      "file": "data/quest_packets/085.json",
+      "catalog_rows": [
+        85
+      ],
+      "script_count": 31,
+      "root_count": 3,
+      "bytes": 46176
+    },
+    {
+      "id": 86,
+      "title": "海星连接宇宙",
+      "file": "data/quest_packets/086.json",
+      "catalog_rows": [
+        86
+      ],
+      "script_count": 7,
+      "root_count": 1,
+      "bytes": 18733
+    },
+    {
+      "id": 87,
+      "title": "深夜电视异闻录",
+      "file": "data/quest_packets/087.json",
+      "catalog_rows": [
+        87
+      ],
+      "script_count": 22,
+      "root_count": 3,
+      "bytes": 32067
+    },
+    {
+      "id": 88,
+      "title": "不安的太阳珊瑚",
+      "file": "data/quest_packets/088.json",
+      "catalog_rows": [
+        88
+      ],
+      "script_count": 11,
+      "root_count": 1,
+      "bytes": 19357
+    },
+    {
+      "id": 89,
+      "title": "黑色的千针鱼",
+      "file": "data/quest_packets/089.json",
+      "catalog_rows": [
+        89
+      ],
+      "script_count": 18,
+      "root_count": 6,
+      "bytes": 29814
+    },
+    {
+      "id": 90,
+      "title": "被抢走的宝可梦",
+      "file": "data/quest_packets/090.json",
+      "catalog_rows": [
+        90
+      ],
+      "script_count": 8,
+      "root_count": 1,
+      "bytes": 13830
+    },
+    {
+      "id": 91,
+      "title": "完美的能量餐",
+      "file": "data/quest_packets/091.json",
+      "catalog_rows": [
+        91
+      ],
+      "script_count": 14,
+      "root_count": 2,
+      "bytes": 32988
+    },
+    {
+      "id": 92,
+      "title": "海浪卷走的乌波",
+      "file": "data/quest_packets/092.json",
+      "catalog_rows": [
+        92
+      ],
+      "script_count": 25,
+      "root_count": 4,
+      "bytes": 48712
+    },
+    {
+      "id": 93,
+      "title": "漆黑的魅影",
+      "file": "data/quest_packets/093.json",
+      "catalog_rows": [
+        93
+      ],
+      "script_count": 3,
+      "root_count": 1,
+      "bytes": 7451
+    },
+    {
+      "id": 94,
+      "title": "亚玄的修炼",
+      "file": "data/quest_packets/094.json",
+      "catalog_rows": [
+        94
+      ],
+      "script_count": 36,
+      "root_count": 4,
+      "bytes": 50633
+    },
+    {
+      "id": 95,
+      "title": "波导的勇者",
+      "file": "data/quest_packets/095.json",
+      "catalog_rows": [
+        95
+      ],
+      "script_count": 17,
+      "root_count": 1,
+      "bytes": 41309
+    },
+    {
+      "id": 96,
+      "title": "被遗忘的遗忘",
+      "file": "data/quest_packets/096.json",
+      "catalog_rows": [
+        96
+      ],
+      "script_count": 0,
+      "root_count": 0,
+      "bytes": 1499
+    },
+    {
+      "id": 97,
+      "title": "收集玻璃哨",
+      "file": "data/quest_packets/097.json",
+      "catalog_rows": [
+        97
+      ],
+      "script_count": 9,
+      "root_count": 1,
+      "bytes": 21506
+    },
+    {
+      "id": 98,
+      "title": "是谁在捣乱？",
+      "file": "data/quest_packets/098.json",
+      "catalog_rows": [
+        98
+      ],
+      "script_count": 10,
+      "root_count": 1,
+      "bytes": 17486
+    },
+    {
+      "id": 99,
+      "title": "被解开的封印",
+      "file": "data/quest_packets/099.json",
+      "catalog_rows": [
+        99
+      ],
+      "script_count": 14,
+      "root_count": 2,
+      "bytes": 25947
+    }
+  ],
+  "excluded_main_story_rows": [
+    {
+      "row_offset": "0xe3aefc",
+      "title": "宝可梦大师之路",
+      "title_address": "0x8e3cb8e",
+      "description": "收集八个道馆的徽章，\\n然后挑战精灵联盟。",
+      "description_address": "0x8e3cb68",
+      "unknown_u16": 1,
+      "unknown_u16_hex": "0x0001",
+      "accept_flag": 4240,
+      "accept_flag_hex": "0x1090",
+      "complete_flag": 257,
+      "complete_flag_hex": "0x0101",
+      "map_group": 0,
+      "map_num": 0,
+      "tail_hex": "00 00 00 00",
+      "index": 0,
+      "legacy_description_candidates": [],
+      "description_source": "current_row",
+      "description_address_merged": "0x8e3cb68",
+      "legacy_match_count": 0
+    },
+    {
+      "row_offset": "0xe3af10",
+      "title": "宝可梦大师之路",
+      "title_address": "0x8e3cb8e",
+      "description": "收集八个道馆的徽章，\\n然后挑战精灵联盟。",
+      "description_address": "0x8e3cb68",
+      "unknown_u16": 29,
+      "unknown_u16_hex": "0x001D",
+      "accept_flag": 4241,
+      "accept_flag_hex": "0x1091",
+      "complete_flag": 257,
+      "complete_flag_hex": "0x0101",
+      "map_group": 0,
+      "map_num": 0,
+      "tail_hex": "00 00 00 00",
+      "index": 1,
+      "legacy_description_candidates": [],
+      "description_source": "current_row",
+      "description_address_merged": "0x8e3cb68",
+      "legacy_match_count": 0
+    }
+  ]
+}

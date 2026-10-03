@@ -1,0 +1,76 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>006 无法冻结的时间 · 水银攻略</title><style>*{box-sizing:border-box}body{margin:0;color:#243247;background:#f5f7fb;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}header{background:#142b48;color:white;padding:22px max(22px,calc((100vw - 1180px)/2))}header a{color:#e5efff;text-decoration:none}nav{display:flex;gap:20px;flex-wrap:wrap;font-size:15px}main{max-width:1180px;margin:auto;padding:28px 22px 60px}h1{font-size:30px;line-height:1.4}h2{margin-top:32px;border-bottom:1px solid #d9e0eb;padding-bottom:8px}a{color:#155b9b}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow:auto;background:white}td,th{padding:10px 12px;border:1px solid #dde4ed;text-align:left;min-width:65px}th{background:#eaf0f8}tr:nth-child(even){background:#f7f9fc}code{font-size:.88em;background:#edf0f5;padding:2px 4px;border-radius:3px;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:15px;background:#edf0f5}img{max-width:100%;height:auto;image-rendering:pixelated}blockquote{border-left:4px solid #809cbe;background:#edf2f8;margin:18px 0;padding:10px 18px}input,select{font:inherit;padding:10px 14px;border:1px solid #bccbdd;border-radius:7px}input{flex:1;min-width:180px}.searchbox{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px}.card{background:white;border:1px solid #dbe3ee;border-radius:10px;padding:20px}.result{background:white;margin:10px 0;padding:14px 18px;border-radius:7px;border:1px solid #e0e6ee}.result small,.muted{color:#60718a}.badge{background:#e7eff9;border-radius:4px;padding:2px 7px;font-size:13px}details{margin:15px 0}footer{margin-top:40px;border-top:1px solid #dde4ed;padding-top:15px;color:#60718a;font-size:13px}@media(max-width:600px){main{padding:16px 12px}h1{font-size:25px}td,th{padding:8px}}
+.atlas-cards{margin:32px 0;padding-top:8px;border-top:1px solid #d9e0eb}.atlas-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}.atlas-card{background:#fff;border:1px solid #d9e0eb;border-radius:10px;overflow:hidden}.atlas-card h3{font-size:16px;margin:12px 14px 6px}.atlas-card p{font-size:13px;line-height:1.6;margin:8px 14px 14px}.atlas-frame{height:240px;position:relative;background:#e8edf1}.atlas-frame img{position:absolute;width:100%;height:100%;object-fit:contain;image-rendering:pixelated}.atlas-frame svg{position:absolute;width:100%;height:100%;inset:0;pointer-events:none}.atlas-label{paint-order:stroke;stroke:#fff;stroke-width:3px;fill:#142b48;font-weight:bold;text-anchor:middle;dominant-baseline:central}.atlas-cards details{margin-top:16px}.atlas-cards summary{cursor:pointer;color:#155b9b;margin-bottom:12px}.atlas-feature{padding:12px 16px;background:#eaf0f8;border-radius:8px;margin:16px 0}.atlas-unavailable{height:240px;display:grid;place-items:center;color:#59677a;font-size:14px;padding:24px;text-align:center}
+</style><header><a href="../index.html"><strong>宝可梦水银 1.1 · 玩家攻略</strong></a><nav><a href="../quests/index.html">支线攻略</a><a href="../items/index.html">道具搜集</a><a href="../pokemon/index.html">宝可梦获取</a><a href="../trainers/index.html">训练家配队</a><a href="../maps/index.html">地点地图</a><a href="../pokemon/wild_mega.html">野生Mega</a></nav></header><main><h1 id="006">006 无法冻结的时间</h1>
+<p><strong>一句话目标</strong>：应柳伯之请，陪他前往冰天地直面那面无法融化的冰壁，击碎他冰封三十年的心结。</p>
+<h2 id="_1">接取地点</h2>
+<ul>
+<li><strong>擂钵山</strong>（地图 <code>55:13</code>）：NPC 柳伯，对象 localId 19，坐标约 (23,11)，随接取旗标 3305 出现。<a href="../maps/index.html#map=55:13&amp;page=quests/006.md">[地图]</a></li>
+<li>任务目的地：<strong>冰天地</strong>（地图组 02，如 <code>2:12</code>）。<a href="../maps/index.html#map=2:12&amp;page=quests/006.md">[示例地图]</a></li>
+<li>冰天地内两段场景的正文已恢复；其<strong>地图入口未确认</strong>，正文中不代入推断坐标。</li>
+</ul>
+<h2 id="_2">准备条件</h2>
+<ul>
+<li>无道具/物种要求；需要接受柳伯的同行请求，并在冰天地完成他发起的战斗。</li>
+</ul>
+<h2 id="_3">操作步骤</h2>
+<h3 id="_4">一、擂钵山：接取</h3>
+<ol>
+<li>与柳伯对话。他起初独自念白：“<strong>难道就没有办法了吗……</strong>”</li>
+<li>他认出玩家：“……是你啊，[玩家/变量]。道馆战已经结束了。如果你是来寻求特训的，今天我没有那个心情。冬天之所以严酷，是因为它能让一切静止。流水会停下，生命会冬眠……我曾经以为只要足够冷，就连时间也可以冻结。只要冻结了时间，那些失去的东西……就不会离我而去。”</li>
+<li>他道出缘由与请求：“在冰天地的最深处，有一面无论用什么高温都无法融化的冰壁。三十年来，我无数次前往那里，试图将其凿开……但每一次，碎裂的都只有那颗早就被冻死的心。……我想请你和我一起去趟冰天地。去看看那个……被我遗弃在暴风雪里的家人。”</li>
+<li>他问“<strong>你愿意陪我走这一趟吗？</strong>”，回答“<strong>是</strong>”。
+   - 选“否”：“……是啊，暴风雪的严寒，并不是每个人都有义务去承受的。……如果哪天你的内心里燃起了足以融化冰雪的觉悟……我会在这里等你。”</li>
+<li>显示 <strong>接受任务:&lt;无法冻结的时间&gt;</strong>。柳伯道谢：“……事不宜迟，我先出发去冰天地了！”随后他从擂钵山消失（置接取旗标 3305）。之后在别处再遇时他说：“我会先去冰天地。那面冰壁……还有被我留在那里的过去，都已经等得太久了。”</li>
+<li>自行前往 <strong>冰天地</strong>。</li>
+</ol>
+<h3 id="_5">二、冰天地·冰壁前：与铁包袱之战</h3>
+<ol start="7">
+<li>到达冰壁前与柳伯会合。他先念“你来了啊……”，随后讲述三十年前的大塌方：两只拉普拉斯为救他，用身体挡住碎冰与落石，被封死在通道里，他隔着冰看着它们的体温一点点消失。</li>
+<li>此时一只异常的存在现身：“这是……信使鸟？！不对！这冰冷得毫无生命迹象的金属身躯……我们一起迎击它吧，[玩家/变量]！”</li>
+<li>与 <strong>铁包袱</strong> 交战（野外观测记录为 Lv40；<code>setwildbattle</code> 只证明对战设置，不保证可捕捉）。</li>
+<li>战后：“铁包袱消失了……”，冰壁随之碎裂（“冰壁……碎了……！？”）。柳伯先行进入（置旗标 3308，冰壁地形被打破）。</li>
+</ol>
+<h3 id="_6">三、冰天地·深处：蛋与柳伯之战</h3>
+<ol start="11">
+<li>进入深处，冰雾散去：两只拉普拉斯的遗体仍保持着当年的模样，在它们身躯围成的避风港里有一个散发微光的东西。</li>
+<li>柳伯认出那是一颗仍有微弱温度的蛋，领悟到它们“不是在让蛋被冻住，而是为了让蛋孵化”，承认是自己把春天挡在门外三十年。</li>
+<li>蛋壳碎裂，小拉普拉斯破壳（“小拉普拉斯：呜……？”）。柳伯哽咽：“好久不见……欢迎回来。”随后他说：“为了感谢你击碎了我心中的坚冰……用你的全部实力，来接下我这不再迷惘的极寒吧！！”</li>
+<li>与 <strong>柳伯</strong> 对战（训练家 395）。<a href="../trainers/0395.html">[对战页]</a></li>
+<li>战胜后领奖：柳伯决定亲自抚养小拉普拉斯。他说“带着这个继续你的旅途吧……不管是时间，还是人，都是无法被冻结的……好了，后会有期！”，随后离开并显示 <strong>完成任务:&lt;无法冻结的时间&gt;</strong>。</li>
+</ol>
+<h2 id="_7">交付检查</h2>
+<ul>
+<li>击碎冰壁、小拉普拉斯破壳，并战胜柳伯（训练家 395）。</li>
+<li>置完成旗标 3307（置位脚本位于深处场景末尾）。</li>
+</ul>
+<h2 id="_8">奖励</h2>
+<ul>
+<li><strong>10 BracerPoints</strong>。</li>
+<li><strong>12000 金钱</strong>。</li>
+<li><strong>雪妖女超级进化的波动注入超级石</strong>（界面提示，无独立道具 ID）。</li>
+<li>小拉普拉斯由柳伯亲自抚养，不赠予玩家（正文明确说明）。</li>
+</ul>
+<h2 id="_9">容易卡住的位置</h2>
+<ul>
+<li>接受后柳伯立即从擂钵山消失，需自行前往冰天地。</li>
+<li>冰壁前须先打赢铁包袱，冰壁才会碎裂放行。</li>
+<li>深处要先看完蛋的剧情，才会触发与柳伯的对战与奖励结算。</li>
+<li>冰天地两段场景的地图入口未确认；只有场景正文与旗标可证事实。</li>
+<li>念白用的角色使役编号（0x8004 = 269/270/271/272/273）身份未确认，不据此指认人物。</li>
+</ul>
+<h2 id="_10">来源与待补字段</h2>
+<ul>
+<li>来源包：<code>data/quest_packets_expanded/006.json</code>；相关脚本：接取 <code>0x09CD5B67</code> / <code>0x09CD5C2B</code> / <code>0x09CD5C89</code> / <code>0x09CD5CAC</code>；冰壁场景 <code>0x09CD5CCF</code>；深处场景 <code>0x09CD5E6C</code>；旗标切换 <code>0x087B346E</code> / <code>0x087B347C</code> / <code>0x087B348A</code>；对象接触脚本 <code>0x087B3458</code>。</li>
+<li>待补字段：冰天地两段场景的具体地图入口；旗标 3306、3308 与完整流程的接线；铁包袱是否可捕捉（<code>setwildbattle</code> 不证明）。</li>
+</ul>
+<details>
+<summary>技术证据（脚本与旗标映射）</summary>
+<ul>
+<li>接取 <code>0x09CD5B67</code>：<code>checkflag 3307</code>→<code>0x09CD5CAC</code>（完成态）；否则 <code>checkflag 3305</code>→<code>0x09CD5C89</code>（已接取）；否则初次见面。接受分支 <code>0x09CD5C2B</code>：显示“接受任务:&lt;无法冻结的时间&gt;”→“……谢谢你……”→<code>removeobject 0x800F</code>→<code>setflag 3305</code>。拒绝分支 <code>0x09CD5C17</code>（不置旗标）。</li>
+<li>冰壁场景 <code>0x09CD5CCF</code>：柳伯回忆→<code>addobject 4</code>、<code>movesprite 4,19,3</code>（铁包袱）→<code>setvar 0x5011,395</code>、<code>setvar 0x5012,23</code>、<code>setflag 2316/2312/5480</code>→<code>setwildbattle [1502,40,0]</code>（species 1502 铁包袱）→<code>special 280</code> 开战→战后“铁包袱消失了……”→<code>setflag 3308</code>→<code>setmaptile 19,2,838,1</code> 破壁→<code>special 142</code>→柳伯离开（<code>removeobject 3</code>、<code>setflag 3306</code>）。</li>
+<li>深处场景 <code>0x09CD5E6C</code>：蛋的发现与领悟→蛋壳碎裂→<code>cry 131</code>（拉普拉斯）→<code>trainerbattle0 [3,395,1536,...]</code>（柳伯 395）→战后 <code>setflag 3133</code>→<code>preparemsg</code> 雪妖女超进化波动→<code>removeobject 1</code>、<code>setflag 3307</code>→“完成任务:&lt;无法冻结的时间&gt;”→<code>addvar 0x5135,10</code>、<code>addmoney 12000</code>、<code>setvar 0x51D4,1</code>。</li>
+<li>地图脚本 <code>0x087B346E</code>：<code>setflag 3306</code>；<code>0x087B347C</code>：若 <code>3308</code> 未置则 <code>clearflag 3306</code>。</li>
+<li>对象接触脚本 <code>0x087B3458</code>：<code>setvar 0x8004,93</code>→<code>callasm</code>。</li>
+<li>上述场景均为 <code>supplemental_branch_candidate</code>：只证明分支正文，不证明地图入口。</li>
+</ul>
+</details><section class="atlas-cards"><h2>地点地图</h2><p>共享RGB底图；点击可缩放定位。数字对应本页相关地点，不代表地图上全部事件。</p><div class="atlas-card-grid"><article class="atlas-card"><h3><a href="../maps/index.html#map=55:13&amp;page=quests/006.md&amp;point=quest-7e141da8958b41">擂钵山</a></h3><a href="../maps/index.html#map=55:13&amp;page=quests/006.md&amp;point=quest-7e141da8958b41" aria-label="在大地图中打开擂钵山"><div class="atlas-frame"><img src="../maps/base/d06016a71cf31ca2.png" alt="擂钵山地图" loading="lazy" decoding="async" width="704" height="736"><svg viewBox="0 0 704 736" aria-hidden="true"><circle cx="376" cy="184" r="20.444444444444443" fill="#155b9b" stroke="white" stroke-width="4.088888888888889"/><text x="376" y="184" fill="white" font-family="sans-serif" font-weight="bold" font-size="26.577777777777776" text-anchor="middle" dominant-baseline="central">1</text></svg></div></a><p>1 无法冻结的时间（23,11）</p><p><a href="../maps/index.html#map=55:13&amp;page=quests/006.md&amp;point=quest-7e141da8958b41">放大定位与查看相邻入口 →</a></p></article><article class="atlas-card"><h3><a href="../maps/index.html#map=2:12&amp;page=quests/006.md">冰天地</a></h3><a href="../maps/index.html#map=2:12&amp;page=quests/006.md" aria-label="在大地图中打开冰天地"><div class="atlas-frame"><img src="../maps/base/ed392f1c79181bef.png" alt="冰天地地图" loading="lazy" decoding="async" width="176" height="176"><svg viewBox="0 0 176 176" aria-hidden="true"></svg></div></a><p>地图范围记录：当前资料没有精确人物／遭遇坐标。</p><p><a href="../maps/index.html#map=2:12&amp;page=quests/006.md">放大定位与查看相邻入口 →</a></p></article></div></section><footer>资料依据指定水银1.1 ROM及解包记录。正文的“待补”表示该获取条件尚未整理清楚，不代表无法获得。</footer></main></html>

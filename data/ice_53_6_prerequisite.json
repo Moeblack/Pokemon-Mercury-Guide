@@ -1,0 +1,2868 @@
+{
+  "map": "53:5",
+  "coordinates": "zero-based x,y",
+  "layout": {
+    "address": "0x08B526F0",
+    "width": 31,
+    "height": 44,
+    "border": "0x08B51C40",
+    "map": "0x08B51C48",
+    "primary_tileset": "0x082D4B6C",
+    "secondary_tileset": "0x08A375BC",
+    "border_width": 2,
+    "border_height": 2
+  },
+  "start": [
+    [
+      24,
+      7
+    ],
+    [
+      10,
+      12
+    ]
+  ],
+  "target_object": {
+    "index": 2,
+    "addr": "0x08B33A08",
+    "raw": "036100000a000c0000005500000000001de11b085a160000",
+    "local_id": 3,
+    "graphics_id_low": 97,
+    "in_connection": 0,
+    "graphics_id_high": 0,
+    "graphics_id": 97,
+    "x": 10,
+    "y": 12,
+    "elevation": 0,
+    "movement_type": 0,
+    "movement_range_x": 5,
+    "movement_range_y": 5,
+    "trainer_type": 0,
+    "trainer_range_berry_tree_id": 0,
+    "script": "0x081BE11D",
+    "script_is_rom": true,
+    "flag_id": 5722,
+    "flag_id2": 0
+  },
+  "target_hole": {
+    "index": 4,
+    "addr": "0x08B33AB8",
+    "raw": "0b00090000040635",
+    "x": 11,
+    "y": 9,
+    "elevation": 0,
+    "warp_id": 4,
+    "map_num": 6,
+    "map_group": 53,
+    "map_defined": true
+  },
+  "objects": [
+    {
+      "index": 0,
+      "addr": "0x08B339D8",
+      "raw": "016100000d000d000000aa00000000001de11b085b160000",
+      "local_id": 1,
+      "graphics_id_low": 97,
+      "in_connection": 0,
+      "graphics_id_high": 0,
+      "graphics_id": 97,
+      "x": 13,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": 0,
+      "movement_range_x": 10,
+      "movement_range_y": 10,
+      "trainer_type": 0,
+      "trainer_range_berry_tree_id": 0,
+      "script": "0x081BE11D",
+      "script_is_rom": true,
+      "flag_id": 5723,
+      "flag_id2": 0
+    },
+    {
+      "index": 1,
+      "addr": "0x08B339F0",
+      "raw": "0261000013000b000000aa00000000001de11b085c160000",
+      "local_id": 2,
+      "graphics_id_low": 97,
+      "in_connection": 0,
+      "graphics_id_high": 0,
+      "graphics_id": 97,
+      "x": 19,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": 0,
+      "movement_range_x": 10,
+      "movement_range_y": 10,
+      "trainer_type": 0,
+      "trainer_range_berry_tree_id": 0,
+      "script": "0x081BE11D",
+      "script_is_rom": true,
+      "flag_id": 5724,
+      "flag_id2": 0
+    },
+    {
+      "index": 2,
+      "addr": "0x08B33A08",
+      "raw": "036100000a000c0000005500000000001de11b085a160000",
+      "local_id": 3,
+      "graphics_id_low": 97,
+      "in_connection": 0,
+      "graphics_id_high": 0,
+      "graphics_id": 97,
+      "x": 10,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": 0,
+      "movement_range_x": 5,
+      "movement_range_y": 5,
+      "trainer_type": 0,
+      "trainer_range_berry_tree_id": 0,
+      "script": "0x081BE11D",
+      "script_is_rom": true,
+      "flag_id": 5722,
+      "flag_id2": 0
+    },
+    {
+      "index": 3,
+      "addr": "0x08B33A20",
+      "raw": "0461000019000b000000aa00000000001de11b085d160000",
+      "local_id": 4,
+      "graphics_id_low": 97,
+      "in_connection": 0,
+      "graphics_id_high": 0,
+      "graphics_id": 97,
+      "x": 25,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": 0,
+      "movement_range_x": 10,
+      "movement_range_y": 10,
+      "trainer_type": 0,
+      "trainer_range_berry_tree_id": 0,
+      "script": "0x081BE11D",
+      "script_is_rom": true,
+      "flag_id": 5725,
+      "flag_id2": 0
+    },
+    {
+      "index": 4,
+      "addr": "0x08B33A38",
+      "raw": "0500000002001b0000000000000000000000000800000000",
+      "local_id": 5,
+      "graphics_id_low": 0,
+      "in_connection": 0,
+      "graphics_id_high": 0,
+      "graphics_id": 0,
+      "x": 2,
+      "y": 27,
+      "elevation": 0,
+      "movement_type": 0,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_range_berry_tree_id": 0,
+      "script": "0x08000000",
+      "script_is_rom": true,
+      "flag_id": 0,
+      "flag_id2": 0
+    },
+    {
+      "index": 5,
+      "addr": "0x08B33A50",
+      "raw": "066100000c00250000005500000000001de11b0800000000",
+      "local_id": 6,
+      "graphics_id_low": 97,
+      "in_connection": 0,
+      "graphics_id_high": 0,
+      "graphics_id": 97,
+      "x": 12,
+      "y": 37,
+      "elevation": 0,
+      "movement_type": 0,
+      "movement_range_x": 5,
+      "movement_range_y": 5,
+      "trainer_type": 0,
+      "trainer_range_berry_tree_id": 0,
+      "script": "0x081BE11D",
+      "script_is_rom": true,
+      "flag_id": 0,
+      "flag_id2": 0
+    },
+    {
+      "index": 6,
+      "addr": "0x08B33A68",
+      "raw": "0700000003001b0000000000000000000000000000000000",
+      "local_id": 7,
+      "graphics_id_low": 0,
+      "in_connection": 0,
+      "graphics_id_high": 0,
+      "graphics_id": 0,
+      "x": 3,
+      "y": 27,
+      "elevation": 0,
+      "movement_type": 0,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_range_berry_tree_id": 0,
+      "script": "0x00000000",
+      "script_is_rom": false,
+      "flag_id": 0,
+      "flag_id2": 0
+    },
+    {
+      "index": 7,
+      "addr": "0x08B33A80",
+      "raw": "085c00000d00290000000000000000008eedf4082b0a0000",
+      "local_id": 8,
+      "graphics_id_low": 92,
+      "in_connection": 0,
+      "graphics_id_high": 0,
+      "graphics_id": 92,
+      "x": 13,
+      "y": 41,
+      "elevation": 0,
+      "movement_type": 0,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_range_berry_tree_id": 0,
+      "script": "0x08F4ED8E",
+      "script_is_rom": true,
+      "flag_id": 2603,
+      "flag_id2": 0
+    }
+  ],
+  "warps": [
+    {
+      "index": 0,
+      "addr": "0x08B33A98",
+      "raw": "0600140000010435",
+      "x": 6,
+      "y": 20,
+      "elevation": 0,
+      "warp_id": 1,
+      "map_num": 4,
+      "map_group": 53,
+      "map_defined": true
+    },
+    {
+      "index": 1,
+      "addr": "0x08B33AA0",
+      "raw": "1800070000000635",
+      "x": 24,
+      "y": 7,
+      "elevation": 0,
+      "warp_id": 0,
+      "map_num": 6,
+      "map_group": 53,
+      "map_defined": true
+    },
+    {
+      "index": 2,
+      "addr": "0x08B33AA8",
+      "raw": "1800200000030635",
+      "x": 24,
+      "y": 32,
+      "elevation": 0,
+      "warp_id": 3,
+      "map_num": 6,
+      "map_group": 53,
+      "map_defined": true
+    },
+    {
+      "index": 3,
+      "addr": "0x08B33AB0",
+      "raw": "0600220000020435",
+      "x": 6,
+      "y": 34,
+      "elevation": 0,
+      "warp_id": 2,
+      "map_num": 4,
+      "map_group": 53,
+      "map_defined": true
+    },
+    {
+      "index": 4,
+      "addr": "0x08B33AB8",
+      "raw": "0b00090000040635",
+      "x": 11,
+      "y": 9,
+      "elevation": 0,
+      "warp_id": 4,
+      "map_num": 6,
+      "map_group": 53,
+      "map_defined": true
+    },
+    {
+      "index": 5,
+      "addr": "0x08B33AC0",
+      "raw": "0a00110000050635",
+      "x": 10,
+      "y": 17,
+      "elevation": 0,
+      "warp_id": 5,
+      "map_num": 6,
+      "map_group": 53,
+      "map_defined": true
+    },
+    {
+      "index": 6,
+      "addr": "0x08B33AC8",
+      "raw": "1200060000060635",
+      "x": 18,
+      "y": 6,
+      "elevation": 0,
+      "warp_id": 6,
+      "map_num": 6,
+      "map_group": 53,
+      "map_defined": true
+    },
+    {
+      "index": 7,
+      "addr": "0x08B33AD0",
+      "raw": "1300120000070635",
+      "x": 19,
+      "y": 18,
+      "elevation": 0,
+      "warp_id": 7,
+      "map_num": 6,
+      "map_group": 53,
+      "map_defined": true
+    }
+  ],
+  "behavior_histogram": {
+    "0": 1335,
+    "102": 4,
+    "96": 4,
+    "35": 21
+  },
+  "collision_histogram": {
+    "0": 986,
+    "1": 378
+  },
+  "behavior_0x66_cells": [
+    {
+      "x": 18,
+      "y": 6,
+      "cell": "0x0379",
+      "cell_address": "0x08B51DE0",
+      "collision": 0,
+      "elevation": 0,
+      "metatile_id": 889,
+      "behavior": 102,
+      "attribute": "0x20000066"
+    },
+    {
+      "x": 11,
+      "y": 9,
+      "cell": "0x3379",
+      "cell_address": "0x08B51E8C",
+      "collision": 0,
+      "elevation": 3,
+      "metatile_id": 889,
+      "behavior": 102,
+      "attribute": "0x20000066"
+    },
+    {
+      "x": 10,
+      "y": 17,
+      "cell": "0x0379",
+      "cell_address": "0x08B5207A",
+      "collision": 0,
+      "elevation": 0,
+      "metatile_id": 889,
+      "behavior": 102,
+      "attribute": "0x20000066"
+    },
+    {
+      "x": 19,
+      "y": 18,
+      "cell": "0x3379",
+      "cell_address": "0x08B520CA",
+      "collision": 0,
+      "elevation": 3,
+      "metatile_id": 889,
+      "behavior": 102,
+      "attribute": "0x20000066"
+    }
+  ],
+  "found": true,
+  "input_count": 44,
+  "push_count": 6,
+  "route": [
+    {
+      "kind": "walk",
+      "direction": "上",
+      "start": [
+        24,
+        7
+      ],
+      "end": [
+        24,
+        6
+      ],
+      "traversed": [
+        {
+          "x": 24,
+          "y": 6,
+          "cell": "0x3361",
+          "cell_address": "0x08B51DEC",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 865,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        }
+      ],
+      "sliding": false,
+      "input_number": 1
+    },
+    {
+      "kind": "walk",
+      "direction": "上",
+      "start": [
+        24,
+        6
+      ],
+      "end": [
+        24,
+        5
+      ],
+      "traversed": [
+        {
+          "x": 24,
+          "y": 5,
+          "cell": "0x32B4",
+          "cell_address": "0x08B51DAE",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 692,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 2
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        24,
+        5
+      ],
+      "end": [
+        23,
+        5
+      ],
+      "traversed": [
+        {
+          "x": 23,
+          "y": 5,
+          "cell": "0x32D8",
+          "cell_address": "0x08B51DAC",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 728,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        }
+      ],
+      "sliding": false,
+      "input_number": 3
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        23,
+        5
+      ],
+      "end": [
+        22,
+        5
+      ],
+      "traversed": [
+        {
+          "x": 22,
+          "y": 5,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51DAA",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 4
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        22,
+        5
+      ],
+      "end": [
+        21,
+        5
+      ],
+      "traversed": [
+        {
+          "x": 21,
+          "y": 5,
+          "cell": "0x02BC",
+          "cell_address": "0x08B51DA8",
+          "collision": 0,
+          "elevation": 0,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 5
+    },
+    {
+      "kind": "walk",
+      "direction": "下",
+      "start": [
+        21,
+        5
+      ],
+      "end": [
+        21,
+        6
+      ],
+      "traversed": [
+        {
+          "x": 21,
+          "y": 6,
+          "cell": "0x02C7",
+          "cell_address": "0x08B51DE6",
+          "collision": 0,
+          "elevation": 0,
+          "metatile_id": 711,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        }
+      ],
+      "sliding": false,
+      "input_number": 6
+    },
+    {
+      "kind": "walk",
+      "direction": "下",
+      "start": [
+        21,
+        6
+      ],
+      "end": [
+        21,
+        7
+      ],
+      "traversed": [
+        {
+          "x": 21,
+          "y": 7,
+          "cell": "0x02CF",
+          "cell_address": "0x08B51E24",
+          "collision": 0,
+          "elevation": 0,
+          "metatile_id": 719,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        }
+      ],
+      "sliding": false,
+      "input_number": 7
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        21,
+        7
+      ],
+      "end": [
+        20,
+        7
+      ],
+      "traversed": [
+        {
+          "x": 20,
+          "y": 7,
+          "cell": "0x42CE",
+          "cell_address": "0x08B51E22",
+          "collision": 0,
+          "elevation": 4,
+          "metatile_id": 718,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        }
+      ],
+      "sliding": false,
+      "input_number": 8
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        20,
+        7
+      ],
+      "end": [
+        19,
+        7
+      ],
+      "traversed": [
+        {
+          "x": 19,
+          "y": 7,
+          "cell": "0x02BC",
+          "cell_address": "0x08B51E20",
+          "collision": 0,
+          "elevation": 0,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 9
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        19,
+        7
+      ],
+      "end": [
+        18,
+        7
+      ],
+      "traversed": [
+        {
+          "x": 18,
+          "y": 7,
+          "cell": "0x02BC",
+          "cell_address": "0x08B51E1E",
+          "collision": 0,
+          "elevation": 0,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 10
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        18,
+        7
+      ],
+      "end": [
+        17,
+        7
+      ],
+      "traversed": [
+        {
+          "x": 17,
+          "y": 7,
+          "cell": "0x02BC",
+          "cell_address": "0x08B51E1C",
+          "collision": 0,
+          "elevation": 0,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 11
+    },
+    {
+      "kind": "walk",
+      "direction": "上",
+      "start": [
+        17,
+        7
+      ],
+      "end": [
+        17,
+        6
+      ],
+      "traversed": [
+        {
+          "x": 17,
+          "y": 6,
+          "cell": "0x0378",
+          "cell_address": "0x08B51DDE",
+          "collision": 0,
+          "elevation": 0,
+          "metatile_id": 888,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        }
+      ],
+      "sliding": false,
+      "input_number": 12
+    },
+    {
+      "kind": "walk",
+      "direction": "上",
+      "start": [
+        17,
+        6
+      ],
+      "end": [
+        17,
+        5
+      ],
+      "traversed": [
+        {
+          "x": 17,
+          "y": 5,
+          "cell": "0x0370",
+          "cell_address": "0x08B51DA0",
+          "collision": 0,
+          "elevation": 0,
+          "metatile_id": 880,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        }
+      ],
+      "sliding": false,
+      "input_number": 13
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        17,
+        5
+      ],
+      "end": [
+        16,
+        5
+      ],
+      "traversed": [
+        {
+          "x": 16,
+          "y": 5,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51D9E",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 14
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        16,
+        5
+      ],
+      "end": [
+        15,
+        5
+      ],
+      "traversed": [
+        {
+          "x": 15,
+          "y": 5,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51D9C",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 15
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        15,
+        5
+      ],
+      "end": [
+        14,
+        5
+      ],
+      "traversed": [
+        {
+          "x": 14,
+          "y": 5,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51D9A",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 16
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        14,
+        5
+      ],
+      "end": [
+        13,
+        5
+      ],
+      "traversed": [
+        {
+          "x": 13,
+          "y": 5,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51D98",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 17
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        13,
+        5
+      ],
+      "end": [
+        12,
+        5
+      ],
+      "traversed": [
+        {
+          "x": 12,
+          "y": 5,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51D96",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 18
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        12,
+        5
+      ],
+      "end": [
+        11,
+        5
+      ],
+      "traversed": [
+        {
+          "x": 11,
+          "y": 5,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51D94",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 19
+    },
+    {
+      "kind": "walk",
+      "direction": "下",
+      "start": [
+        11,
+        5
+      ],
+      "end": [
+        11,
+        6
+      ],
+      "traversed": [
+        {
+          "x": 11,
+          "y": 6,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51DD2",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 20
+    },
+    {
+      "kind": "walk",
+      "direction": "下",
+      "start": [
+        11,
+        6
+      ],
+      "end": [
+        11,
+        7
+      ],
+      "traversed": [
+        {
+          "x": 11,
+          "y": 7,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51E10",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 21
+    },
+    {
+      "kind": "walk",
+      "direction": "下",
+      "start": [
+        11,
+        7
+      ],
+      "end": [
+        11,
+        8
+      ],
+      "traversed": [
+        {
+          "x": 11,
+          "y": 8,
+          "cell": "0x3371",
+          "cell_address": "0x08B51E4E",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 881,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        }
+      ],
+      "sliding": false,
+      "input_number": 22
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        11,
+        8
+      ],
+      "end": [
+        10,
+        8
+      ],
+      "traversed": [
+        {
+          "x": 10,
+          "y": 8,
+          "cell": "0x3370",
+          "cell_address": "0x08B51E4C",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 880,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        }
+      ],
+      "sliding": false,
+      "input_number": 23
+    },
+    {
+      "kind": "walk",
+      "direction": "下",
+      "start": [
+        10,
+        8
+      ],
+      "end": [
+        10,
+        9
+      ],
+      "traversed": [
+        {
+          "x": 10,
+          "y": 9,
+          "cell": "0x3378",
+          "cell_address": "0x08B51E8A",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 888,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        }
+      ],
+      "sliding": false,
+      "input_number": 24
+    },
+    {
+      "kind": "walk",
+      "direction": "下",
+      "start": [
+        10,
+        9
+      ],
+      "end": [
+        10,
+        10
+      ],
+      "traversed": [
+        {
+          "x": 10,
+          "y": 10,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51EC8",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 25
+    },
+    {
+      "kind": "walk",
+      "direction": "下",
+      "start": [
+        10,
+        10
+      ],
+      "end": [
+        10,
+        11
+      ],
+      "traversed": [
+        {
+          "x": 10,
+          "y": 11,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51F06",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 26
+    },
+    {
+      "kind": "walk",
+      "direction": "右",
+      "start": [
+        10,
+        11
+      ],
+      "end": [
+        11,
+        11
+      ],
+      "traversed": [
+        {
+          "x": 11,
+          "y": 11,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51F08",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 27
+    },
+    {
+      "kind": "walk",
+      "direction": "下",
+      "start": [
+        11,
+        11
+      ],
+      "end": [
+        11,
+        12
+      ],
+      "traversed": [
+        {
+          "x": 11,
+          "y": 12,
+          "cell": "0x32C6",
+          "cell_address": "0x08B51F46",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 710,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        }
+      ],
+      "sliding": false,
+      "input_number": 28
+    },
+    {
+      "kind": "walk",
+      "direction": "下",
+      "start": [
+        11,
+        12
+      ],
+      "end": [
+        11,
+        13
+      ],
+      "traversed": [
+        {
+          "x": 11,
+          "y": 13,
+          "cell": "0x32CE",
+          "cell_address": "0x08B51F84",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 718,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        }
+      ],
+      "sliding": false,
+      "input_number": 29
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        11,
+        13
+      ],
+      "end": [
+        10,
+        13
+      ],
+      "traversed": [
+        {
+          "x": 10,
+          "y": 13,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51F82",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 30
+    },
+    {
+      "kind": "push",
+      "direction": "上",
+      "start": [
+        10,
+        13
+      ],
+      "end": [
+        10,
+        12
+      ],
+      "rock_start": [
+        10,
+        12
+      ],
+      "rock_end": [
+        10,
+        11
+      ],
+      "traversed": [
+        {
+          "x": 10,
+          "y": 12,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51F44",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "rock_destination_evidence": {
+        "x": 10,
+        "y": 11,
+        "cell": "0x32BC",
+        "cell_address": "0x08B51F06",
+        "collision": 0,
+        "elevation": 3,
+        "metatile_id": 700,
+        "behavior": 0,
+        "attribute": "0x01000800"
+      },
+      "sliding": false,
+      "input_number": 31
+    },
+    {
+      "kind": "push",
+      "direction": "上",
+      "start": [
+        10,
+        12
+      ],
+      "end": [
+        10,
+        11
+      ],
+      "rock_start": [
+        10,
+        11
+      ],
+      "rock_end": [
+        10,
+        10
+      ],
+      "traversed": [
+        {
+          "x": 10,
+          "y": 11,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51F06",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "rock_destination_evidence": {
+        "x": 10,
+        "y": 10,
+        "cell": "0x32BC",
+        "cell_address": "0x08B51EC8",
+        "collision": 0,
+        "elevation": 3,
+        "metatile_id": 700,
+        "behavior": 0,
+        "attribute": "0x01000800"
+      },
+      "sliding": false,
+      "input_number": 32
+    },
+    {
+      "kind": "push",
+      "direction": "上",
+      "start": [
+        10,
+        11
+      ],
+      "end": [
+        10,
+        10
+      ],
+      "rock_start": [
+        10,
+        10
+      ],
+      "rock_end": [
+        10,
+        9
+      ],
+      "traversed": [
+        {
+          "x": 10,
+          "y": 10,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51EC8",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "rock_destination_evidence": {
+        "x": 10,
+        "y": 9,
+        "cell": "0x3378",
+        "cell_address": "0x08B51E8A",
+        "collision": 0,
+        "elevation": 3,
+        "metatile_id": 888,
+        "behavior": 0,
+        "attribute": "0x20000000"
+      },
+      "sliding": false,
+      "input_number": 33
+    },
+    {
+      "kind": "push",
+      "direction": "上",
+      "start": [
+        10,
+        10
+      ],
+      "end": [
+        10,
+        9
+      ],
+      "rock_start": [
+        10,
+        9
+      ],
+      "rock_end": [
+        10,
+        8
+      ],
+      "traversed": [
+        {
+          "x": 10,
+          "y": 9,
+          "cell": "0x3378",
+          "cell_address": "0x08B51E8A",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 888,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        }
+      ],
+      "rock_destination_evidence": {
+        "x": 10,
+        "y": 8,
+        "cell": "0x3370",
+        "cell_address": "0x08B51E4C",
+        "collision": 0,
+        "elevation": 3,
+        "metatile_id": 880,
+        "behavior": 0,
+        "attribute": "0x20000000"
+      },
+      "sliding": false,
+      "input_number": 34
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        10,
+        9
+      ],
+      "end": [
+        9,
+        9
+      ],
+      "traversed": [
+        {
+          "x": 9,
+          "y": 9,
+          "cell": "0x3308",
+          "cell_address": "0x08B51E88",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 776,
+          "behavior": 0,
+          "attribute": "0x00000400"
+        }
+      ],
+      "sliding": false,
+      "input_number": 35
+    },
+    {
+      "kind": "walk",
+      "direction": "上",
+      "start": [
+        9,
+        9
+      ],
+      "end": [
+        9,
+        8
+      ],
+      "traversed": [
+        {
+          "x": 9,
+          "y": 8,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51E4A",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 36
+    },
+    {
+      "kind": "push",
+      "direction": "右",
+      "start": [
+        9,
+        8
+      ],
+      "end": [
+        10,
+        8
+      ],
+      "rock_start": [
+        10,
+        8
+      ],
+      "rock_end": [
+        11,
+        8
+      ],
+      "traversed": [
+        {
+          "x": 10,
+          "y": 8,
+          "cell": "0x3370",
+          "cell_address": "0x08B51E4C",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 880,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        }
+      ],
+      "rock_destination_evidence": {
+        "x": 11,
+        "y": 8,
+        "cell": "0x3371",
+        "cell_address": "0x08B51E4E",
+        "collision": 0,
+        "elevation": 3,
+        "metatile_id": 881,
+        "behavior": 0,
+        "attribute": "0x20000000"
+      },
+      "sliding": false,
+      "input_number": 37
+    },
+    {
+      "kind": "walk",
+      "direction": "左",
+      "start": [
+        10,
+        8
+      ],
+      "end": [
+        9,
+        8
+      ],
+      "traversed": [
+        {
+          "x": 9,
+          "y": 8,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51E4A",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 38
+    },
+    {
+      "kind": "walk",
+      "direction": "上",
+      "start": [
+        9,
+        8
+      ],
+      "end": [
+        9,
+        7
+      ],
+      "traversed": [
+        {
+          "x": 9,
+          "y": 7,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51E0C",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 39
+    },
+    {
+      "kind": "walk",
+      "direction": "上",
+      "start": [
+        9,
+        7
+      ],
+      "end": [
+        9,
+        6
+      ],
+      "traversed": [
+        {
+          "x": 9,
+          "y": 6,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51DCE",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 40
+    },
+    {
+      "kind": "walk",
+      "direction": "右",
+      "start": [
+        9,
+        6
+      ],
+      "end": [
+        10,
+        6
+      ],
+      "traversed": [
+        {
+          "x": 10,
+          "y": 6,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51DD0",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 41
+    },
+    {
+      "kind": "walk",
+      "direction": "右",
+      "start": [
+        10,
+        6
+      ],
+      "end": [
+        11,
+        6
+      ],
+      "traversed": [
+        {
+          "x": 11,
+          "y": 6,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51DD2",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 42
+    },
+    {
+      "kind": "walk",
+      "direction": "下",
+      "start": [
+        11,
+        6
+      ],
+      "end": [
+        11,
+        7
+      ],
+      "traversed": [
+        {
+          "x": 11,
+          "y": 7,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51E10",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        }
+      ],
+      "sliding": false,
+      "input_number": 43
+    },
+    {
+      "kind": "push",
+      "direction": "下",
+      "start": [
+        11,
+        7
+      ],
+      "end": [
+        11,
+        8
+      ],
+      "rock_start": [
+        11,
+        8
+      ],
+      "rock_end": [
+        11,
+        9
+      ],
+      "traversed": [
+        {
+          "x": 11,
+          "y": 8,
+          "cell": "0x3371",
+          "cell_address": "0x08B51E4E",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 881,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        }
+      ],
+      "rock_destination_evidence": {
+        "x": 11,
+        "y": 9,
+        "cell": "0x3379",
+        "cell_address": "0x08B51E8C",
+        "collision": 0,
+        "elevation": 3,
+        "metatile_id": 889,
+        "behavior": 102,
+        "attribute": "0x20000066"
+      },
+      "sliding": false,
+      "input_number": 44
+    }
+  ],
+  "pushes": [
+    {
+      "push_number": 1,
+      "approach": [
+        {
+          "direction": "上",
+          "steps": 2,
+          "start": [
+            24,
+            7
+          ],
+          "end": [
+            24,
+            5
+          ],
+          "sliding": false
+        },
+        {
+          "direction": "左",
+          "steps": 3,
+          "start": [
+            24,
+            5
+          ],
+          "end": [
+            21,
+            5
+          ],
+          "sliding": false
+        },
+        {
+          "direction": "下",
+          "steps": 2,
+          "start": [
+            21,
+            5
+          ],
+          "end": [
+            21,
+            7
+          ],
+          "sliding": false
+        },
+        {
+          "direction": "左",
+          "steps": 4,
+          "start": [
+            21,
+            7
+          ],
+          "end": [
+            17,
+            7
+          ],
+          "sliding": false
+        },
+        {
+          "direction": "上",
+          "steps": 2,
+          "start": [
+            17,
+            7
+          ],
+          "end": [
+            17,
+            5
+          ],
+          "sliding": false
+        },
+        {
+          "direction": "左",
+          "steps": 6,
+          "start": [
+            17,
+            5
+          ],
+          "end": [
+            11,
+            5
+          ],
+          "sliding": false
+        },
+        {
+          "direction": "下",
+          "steps": 3,
+          "start": [
+            11,
+            5
+          ],
+          "end": [
+            11,
+            8
+          ],
+          "sliding": false
+        },
+        {
+          "direction": "左",
+          "steps": 1,
+          "start": [
+            11,
+            8
+          ],
+          "end": [
+            10,
+            8
+          ],
+          "sliding": false
+        },
+        {
+          "direction": "下",
+          "steps": 3,
+          "start": [
+            10,
+            8
+          ],
+          "end": [
+            10,
+            11
+          ],
+          "sliding": false
+        },
+        {
+          "direction": "右",
+          "steps": 1,
+          "start": [
+            10,
+            11
+          ],
+          "end": [
+            11,
+            11
+          ],
+          "sliding": false
+        },
+        {
+          "direction": "下",
+          "steps": 2,
+          "start": [
+            11,
+            11
+          ],
+          "end": [
+            11,
+            13
+          ],
+          "sliding": false
+        },
+        {
+          "direction": "左",
+          "steps": 1,
+          "start": [
+            11,
+            13
+          ],
+          "end": [
+            10,
+            13
+          ],
+          "sliding": false
+        }
+      ],
+      "push": {
+        "kind": "push",
+        "direction": "上",
+        "start": [
+          10,
+          13
+        ],
+        "end": [
+          10,
+          12
+        ],
+        "rock_start": [
+          10,
+          12
+        ],
+        "rock_end": [
+          10,
+          11
+        ],
+        "traversed": [
+          {
+            "x": 10,
+            "y": 12,
+            "cell": "0x32BC",
+            "cell_address": "0x08B51F44",
+            "collision": 0,
+            "elevation": 3,
+            "metatile_id": 700,
+            "behavior": 0,
+            "attribute": "0x01000800"
+          }
+        ],
+        "rock_destination_evidence": {
+          "x": 10,
+          "y": 11,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51F06",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        },
+        "sliding": false,
+        "input_number": 31
+      }
+    },
+    {
+      "push_number": 2,
+      "approach": [],
+      "push": {
+        "kind": "push",
+        "direction": "上",
+        "start": [
+          10,
+          12
+        ],
+        "end": [
+          10,
+          11
+        ],
+        "rock_start": [
+          10,
+          11
+        ],
+        "rock_end": [
+          10,
+          10
+        ],
+        "traversed": [
+          {
+            "x": 10,
+            "y": 11,
+            "cell": "0x32BC",
+            "cell_address": "0x08B51F06",
+            "collision": 0,
+            "elevation": 3,
+            "metatile_id": 700,
+            "behavior": 0,
+            "attribute": "0x01000800"
+          }
+        ],
+        "rock_destination_evidence": {
+          "x": 10,
+          "y": 10,
+          "cell": "0x32BC",
+          "cell_address": "0x08B51EC8",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 700,
+          "behavior": 0,
+          "attribute": "0x01000800"
+        },
+        "sliding": false,
+        "input_number": 32
+      }
+    },
+    {
+      "push_number": 3,
+      "approach": [],
+      "push": {
+        "kind": "push",
+        "direction": "上",
+        "start": [
+          10,
+          11
+        ],
+        "end": [
+          10,
+          10
+        ],
+        "rock_start": [
+          10,
+          10
+        ],
+        "rock_end": [
+          10,
+          9
+        ],
+        "traversed": [
+          {
+            "x": 10,
+            "y": 10,
+            "cell": "0x32BC",
+            "cell_address": "0x08B51EC8",
+            "collision": 0,
+            "elevation": 3,
+            "metatile_id": 700,
+            "behavior": 0,
+            "attribute": "0x01000800"
+          }
+        ],
+        "rock_destination_evidence": {
+          "x": 10,
+          "y": 9,
+          "cell": "0x3378",
+          "cell_address": "0x08B51E8A",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 888,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        },
+        "sliding": false,
+        "input_number": 33
+      }
+    },
+    {
+      "push_number": 4,
+      "approach": [],
+      "push": {
+        "kind": "push",
+        "direction": "上",
+        "start": [
+          10,
+          10
+        ],
+        "end": [
+          10,
+          9
+        ],
+        "rock_start": [
+          10,
+          9
+        ],
+        "rock_end": [
+          10,
+          8
+        ],
+        "traversed": [
+          {
+            "x": 10,
+            "y": 9,
+            "cell": "0x3378",
+            "cell_address": "0x08B51E8A",
+            "collision": 0,
+            "elevation": 3,
+            "metatile_id": 888,
+            "behavior": 0,
+            "attribute": "0x20000000"
+          }
+        ],
+        "rock_destination_evidence": {
+          "x": 10,
+          "y": 8,
+          "cell": "0x3370",
+          "cell_address": "0x08B51E4C",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 880,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        },
+        "sliding": false,
+        "input_number": 34
+      }
+    },
+    {
+      "push_number": 5,
+      "approach": [
+        {
+          "direction": "左",
+          "steps": 1,
+          "start": [
+            10,
+            9
+          ],
+          "end": [
+            9,
+            9
+          ],
+          "sliding": false
+        },
+        {
+          "direction": "上",
+          "steps": 1,
+          "start": [
+            9,
+            9
+          ],
+          "end": [
+            9,
+            8
+          ],
+          "sliding": false
+        }
+      ],
+      "push": {
+        "kind": "push",
+        "direction": "右",
+        "start": [
+          9,
+          8
+        ],
+        "end": [
+          10,
+          8
+        ],
+        "rock_start": [
+          10,
+          8
+        ],
+        "rock_end": [
+          11,
+          8
+        ],
+        "traversed": [
+          {
+            "x": 10,
+            "y": 8,
+            "cell": "0x3370",
+            "cell_address": "0x08B51E4C",
+            "collision": 0,
+            "elevation": 3,
+            "metatile_id": 880,
+            "behavior": 0,
+            "attribute": "0x20000000"
+          }
+        ],
+        "rock_destination_evidence": {
+          "x": 11,
+          "y": 8,
+          "cell": "0x3371",
+          "cell_address": "0x08B51E4E",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 881,
+          "behavior": 0,
+          "attribute": "0x20000000"
+        },
+        "sliding": false,
+        "input_number": 37
+      }
+    },
+    {
+      "push_number": 6,
+      "approach": [
+        {
+          "direction": "左",
+          "steps": 1,
+          "start": [
+            10,
+            8
+          ],
+          "end": [
+            9,
+            8
+          ],
+          "sliding": false
+        },
+        {
+          "direction": "上",
+          "steps": 2,
+          "start": [
+            9,
+            8
+          ],
+          "end": [
+            9,
+            6
+          ],
+          "sliding": false
+        },
+        {
+          "direction": "右",
+          "steps": 2,
+          "start": [
+            9,
+            6
+          ],
+          "end": [
+            11,
+            6
+          ],
+          "sliding": false
+        },
+        {
+          "direction": "下",
+          "steps": 1,
+          "start": [
+            11,
+            6
+          ],
+          "end": [
+            11,
+            7
+          ],
+          "sliding": false
+        }
+      ],
+      "push": {
+        "kind": "push",
+        "direction": "下",
+        "start": [
+          11,
+          7
+        ],
+        "end": [
+          11,
+          8
+        ],
+        "rock_start": [
+          11,
+          8
+        ],
+        "rock_end": [
+          11,
+          9
+        ],
+        "traversed": [
+          {
+            "x": 11,
+            "y": 8,
+            "cell": "0x3371",
+            "cell_address": "0x08B51E4E",
+            "collision": 0,
+            "elevation": 3,
+            "metatile_id": 881,
+            "behavior": 0,
+            "attribute": "0x20000000"
+          }
+        ],
+        "rock_destination_evidence": {
+          "x": 11,
+          "y": 9,
+          "cell": "0x3379",
+          "cell_address": "0x08B51E8C",
+          "collision": 0,
+          "elevation": 3,
+          "metatile_id": 889,
+          "behavior": 102,
+          "attribute": "0x20000066"
+        },
+        "sliding": false,
+        "input_number": 44
+      }
+    }
+  ],
+  "strength_script_evidence": [
+    {
+      "address": "0x081BE11D",
+      "instructions": [
+        {
+          "addr": "0x081BE11D",
+          "opcode": "0x25",
+          "name": "special",
+          "names": [
+            "special"
+          ],
+          "args": [
+            {
+              "width": 2,
+              "value": 391,
+              "addr": "0x081BE11E"
+            }
+          ],
+          "raw": "258701",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE120",
+          "opcode": "0x21",
+          "name": "comparevartovalue",
+          "names": [
+            "comparevartovalue",
+            "compare",
+            "case"
+          ],
+          "args": [
+            {
+              "width": 2,
+              "value": 32781,
+              "addr": "0x081BE121"
+            },
+            {
+              "width": 2,
+              "value": 2,
+              "addr": "0x081BE123"
+            }
+          ],
+          "raw": "210d800200",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE125",
+          "opcode": "0x06",
+          "name": "goto_if",
+          "names": [
+            "goto_if"
+          ],
+          "args": [
+            {
+              "width": 1,
+              "value": 1,
+              "addr": "0x081BE126"
+            },
+            {
+              "width": 4,
+              "value": 135953120,
+              "addr": "0x081BE127",
+              "class": "script"
+            }
+          ],
+          "raw": "0601e07a1a08",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE12B",
+          "opcode": "0x69",
+          "name": "lockall",
+          "names": [
+            "lockall"
+          ],
+          "args": [],
+          "raw": "69",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE12C",
+          "opcode": "0x2B",
+          "name": "checkflag",
+          "names": [
+            "checkflag"
+          ],
+          "args": [
+            {
+              "width": 2,
+              "value": 2679,
+              "addr": "0x081BE12D"
+            }
+          ],
+          "raw": "2b770a",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE12F",
+          "opcode": "0x06",
+          "name": "goto_if",
+          "names": [
+            "goto_if"
+          ],
+          "args": [
+            {
+              "width": 1,
+              "value": 0,
+              "addr": "0x081BE130"
+            },
+            {
+              "width": 4,
+              "value": 136044933,
+              "addr": "0x081BE131",
+              "class": "script"
+            }
+          ],
+          "raw": "060085e11b08",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE135",
+          "opcode": "0x2B",
+          "name": "checkflag",
+          "names": [
+            "checkflag"
+          ],
+          "args": [
+            {
+              "width": 2,
+              "value": 2053,
+              "addr": "0x081BE136"
+            }
+          ],
+          "raw": "2b0508",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE138",
+          "opcode": "0x06",
+          "name": "goto_if",
+          "names": [
+            "goto_if"
+          ],
+          "args": [
+            {
+              "width": 1,
+              "value": 1,
+              "addr": "0x081BE139"
+            },
+            {
+              "width": 4,
+              "value": 136044942,
+              "addr": "0x081BE13A",
+              "class": "script"
+            }
+          ],
+          "raw": "06018ee11b08",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE13E",
+          "opcode": "0x9D",
+          "name": "setanimation",
+          "names": [
+            "setanimation",
+            "setfieldeffectarg"
+          ],
+          "args": [
+            {
+              "width": 1,
+              "value": 0,
+              "addr": "0x081BE13F"
+            },
+            {
+              "width": 2,
+              "value": 32781,
+              "addr": "0x081BE140"
+            }
+          ],
+          "raw": "9d000d80",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE142",
+          "opcode": "0x0F",
+          "name": "loadpointer",
+          "names": [
+            "loadpointer",
+            "loadword",
+            "msgbox"
+          ],
+          "args": [
+            {
+              "width": 1,
+              "value": 0,
+              "addr": "0x081BE143"
+            },
+            {
+              "width": 4,
+              "value": 136044954,
+              "addr": "0x081BE144",
+              "class": "text"
+            }
+          ],
+          "raw": "0f009ae11b08",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE148",
+          "opcode": "0x09",
+          "name": "callstd",
+          "names": [
+            "callstd"
+          ],
+          "args": [
+            {
+              "width": 1,
+              "value": 5,
+              "addr": "0x081BE149"
+            }
+          ],
+          "raw": "0905",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE14A",
+          "opcode": "0x21",
+          "name": "comparevartovalue",
+          "names": [
+            "comparevartovalue",
+            "compare",
+            "case"
+          ],
+          "args": [
+            {
+              "width": 2,
+              "value": 32781,
+              "addr": "0x081BE14B"
+            },
+            {
+              "width": 2,
+              "value": 0,
+              "addr": "0x081BE14D"
+            }
+          ],
+          "raw": "210d800000",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE14F",
+          "opcode": "0x06",
+          "name": "goto_if",
+          "names": [
+            "goto_if"
+          ],
+          "args": [
+            {
+              "width": 1,
+              "value": 1,
+              "addr": "0x081BE150"
+            },
+            {
+              "width": 4,
+              "value": 136044951,
+              "addr": "0x081BE151",
+              "class": "script"
+            }
+          ],
+          "raw": "060197e11b08",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE155",
+          "opcode": "0x05",
+          "name": "goto",
+          "names": [
+            "goto",
+            "jump"
+          ],
+          "args": [
+            {
+              "width": 4,
+              "value": 150327193,
+              "addr": "0x081BE156",
+              "class": "script"
+            }
+          ],
+          "raw": "0599cff508",
+          "layout_source": "macro"
+        }
+      ],
+      "texts": [
+        {
+          "addr": "0x081BE19A",
+          "text": "一块大石头，但宝可梦\\n看起来能够推起它。\\p你想要使用劲力吗？",
+          "bytes": 56,
+          "raw": "0f0b080002d30beb0d1f3b02e9016307d70966fe07c20aab082909d204830d2e0aab0c9f37fb09d90e180ef10bf50f7107520879092a3dff",
+          "referenced_by": [
+            {
+              "script": "0x081BE11D",
+              "at": "0x081BE144",
+              "cmd": "loadpointer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "address": "0x081A7AE0",
+      "instructions": [
+        {
+          "addr": "0x081A7AE0",
+          "opcode": "0x6C",
+          "name": "release",
+          "names": [
+            "release"
+          ],
+          "args": [],
+          "raw": "6c",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081A7AE1",
+          "opcode": "0x02",
+          "name": "end",
+          "names": [
+            "end"
+          ],
+          "args": [],
+          "raw": "02",
+          "layout_source": "macro"
+        }
+      ],
+      "texts": []
+    },
+    {
+      "address": "0x081BE185",
+      "instructions": [
+        {
+          "addr": "0x081BE185",
+          "opcode": "0x0F",
+          "name": "loadpointer",
+          "names": [
+            "loadpointer",
+            "loadword",
+            "msgbox"
+          ],
+          "args": [
+            {
+              "width": 1,
+              "value": 0,
+              "addr": "0x081BE186"
+            },
+            {
+              "width": 4,
+              "value": 136045124,
+              "addr": "0x081BE187",
+              "class": "text"
+            }
+          ],
+          "raw": "0f0044e21b08",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE18B",
+          "opcode": "0x09",
+          "name": "callstd",
+          "names": [
+            "callstd"
+          ],
+          "args": [
+            {
+              "width": 1,
+              "value": 3,
+              "addr": "0x081BE18C"
+            }
+          ],
+          "raw": "0903",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE18D",
+          "opcode": "0x02",
+          "name": "end",
+          "names": [
+            "end"
+          ],
+          "args": [],
+          "raw": "02",
+          "layout_source": "macro"
+        }
+      ],
+      "texts": [
+        {
+          "addr": "0x081BE244",
+          "text": "一块大石头，但是宝可梦\\n好像能推动它。",
+          "bytes": 36,
+          "raw": "0f0b080002d30beb0d1f3b02e90c0c016307d70966fe04e90e1e09d20d2e03540c9f37ff",
+          "referenced_by": [
+            {
+              "script": "0x081BE185",
+              "at": "0x081BE187",
+              "cmd": "loadpointer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "address": "0x081BE18E",
+      "instructions": [
+        {
+          "addr": "0x081BE18E",
+          "opcode": "0x0F",
+          "name": "loadpointer",
+          "names": [
+            "loadpointer",
+            "loadword",
+            "msgbox"
+          ],
+          "args": [
+            {
+              "width": 1,
+              "value": 0,
+              "addr": "0x081BE18F"
+            },
+            {
+              "width": 4,
+              "value": 136045188,
+              "addr": "0x081BE190",
+              "class": "text"
+            }
+          ],
+          "raw": "0f0084e21b08",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE194",
+          "opcode": "0x09",
+          "name": "callstd",
+          "names": [
+            "callstd"
+          ],
+          "args": [
+            {
+              "width": 1,
+              "value": 3,
+              "addr": "0x081BE195"
+            }
+          ],
+          "raw": "0903",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE196",
+          "opcode": "0x02",
+          "name": "end",
+          "names": [
+            "end"
+          ],
+          "args": [],
+          "raw": "02",
+          "layout_source": "macro"
+        }
+      ],
+      "texts": [
+        {
+          "addr": "0x081BE284",
+          "text": "劲力\\n使大石头移动了！",
+          "bytes": 21,
+          "raw": "07520879fe0bf502d30beb0d1f0f160354089e3cff",
+          "referenced_by": [
+            {
+              "script": "0x081BE18E",
+              "at": "0x081BE190",
+              "cmd": "loadpointer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "address": "0x081BE197",
+      "instructions": [
+        {
+          "addr": "0x081BE197",
+          "opcode": "0x68",
+          "name": "closeonkeypress",
+          "names": [
+            "closeonkeypress",
+            "closemessage"
+          ],
+          "args": [],
+          "raw": "68",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE198",
+          "opcode": "0x6B",
+          "name": "releaseall",
+          "names": [
+            "releaseall"
+          ],
+          "args": [],
+          "raw": "6b",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x081BE199",
+          "opcode": "0x02",
+          "name": "end",
+          "names": [
+            "end"
+          ],
+          "args": [],
+          "raw": "02",
+          "layout_source": "macro"
+        }
+      ],
+      "texts": []
+    },
+    {
+      "address": "0x08F5CF99",
+      "instructions": [
+        {
+          "addr": "0x08F5CF99",
+          "opcode": "0x68",
+          "name": "closeonkeypress",
+          "names": [
+            "closeonkeypress",
+            "closemessage"
+          ],
+          "args": [],
+          "raw": "68",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x08F5CF9A",
+          "opcode": "0x29",
+          "name": "setflag",
+          "names": [
+            "setflag"
+          ],
+          "args": [
+            {
+              "width": 2,
+              "value": 2690,
+              "addr": "0x08F5CF9B"
+            }
+          ],
+          "raw": "29820a",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x08F5CF9D",
+          "opcode": "0x9C",
+          "name": "doanimation",
+          "names": [
+            "doanimation",
+            "dofieldeffect"
+          ],
+          "args": [
+            {
+              "width": 2,
+              "value": 40,
+              "addr": "0x08F5CF9E"
+            }
+          ],
+          "raw": "9c2800",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x08F5CFA0",
+          "opcode": "0x27",
+          "name": "waitstate",
+          "names": [
+            "waitstate"
+          ],
+          "args": [],
+          "raw": "27",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x08F5CFA1",
+          "opcode": "0x2A",
+          "name": "clearflag",
+          "names": [
+            "clearflag"
+          ],
+          "args": [
+            {
+              "width": 2,
+              "value": 2690,
+              "addr": "0x08F5CFA2"
+            }
+          ],
+          "raw": "2a820a",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x08F5CFA4",
+          "opcode": "0x05",
+          "name": "goto",
+          "names": [
+            "goto",
+            "jump"
+          ],
+          "args": [
+            {
+              "width": 4,
+              "value": 136044921,
+              "addr": "0x08F5CFA5",
+              "class": "script"
+            }
+          ],
+          "raw": "0579e11b08",
+          "layout_source": "macro"
+        }
+      ],
+      "texts": []
+    }
+  ],
+  "assumptions": [
+    "Only local3 boulder moves; all other objects block.",
+    "Player never enters a warp; boulder may enter target hole and finish.",
+    "Elevation zero connects adjacent nonzero elevations.",
+    "Behavior 0x23 slides player; boulder pushes onto ice excluded as unverified.",
+    "Behavior 0x66 is new on this map and occurs at its four hole warps.",
+    "Strength must already be usable/enabled; menu interaction is not counted.",
+    "ROM model calculation only, not emulator verification."
+  ]
+}

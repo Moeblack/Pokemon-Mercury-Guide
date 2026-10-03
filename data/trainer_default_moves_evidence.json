@@ -1,0 +1,12 @@
+{
+ "schema": "trainer_default_moves_evidence_v1",
+ "source": "Main 亲读 ROM 0x09D41E54–0x09D41EC8（2026-10-03 裁定）",
+ "rom_addresses": ["0x09D41E54", "0x09D41EC8"],
+ "algorithm": "GetBoxMonData(species) → GetLevelFromBoxMonExp → 学习表指针表 [0x08043E20][species]；按原表顺序读 3byte 记录 {u16 move, u8 level}，遇首个 level>当前等级即停止（不是过滤后排序）；取已读取列表最后 4 条，再依次 GiveMoveToBoxMon；重复招式返回 0xFFFE 跳过且不回填，满 4 返回 0xFFFF 停止。",
+ "applies_to": "partyFlags.custom_moves=false 的队伍成员",
+ "source_table": "wiki_export/core/data/learnsets.json['level_up'][str(species_id)]",
+ "output_label": "按基础等级生成的默认招式",
+ "level_note": "按成员基础等级生成；运行时等级缩放时不代表最终招式，不冒称为固定招式。",
+ "not_applied_to": "partyFlags.custom_moves=true 的成员保留原配招；缺少学习表的物种保留缺失，不自行生成。",
+ "generated_in": "player_guide/scripts/build_trainers.py"
+}

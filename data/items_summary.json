@@ -1,0 +1,21 @@
+{
+ "条目数": 750,
+ "有来源条目数": 491,
+ "空来源条目数": 259,
+ "来源记录数": 2826,
+ "输出文件数": 752,
+ "输出文件": {
+  "道具页": 750,
+  "index.md": 1,
+  "by_location.md": 1,
+  "data/items.json": 1,
+  "data/items_summary.json": 1
+ },
+ "输入文件": [
+  "wiki_export/core/data/items.json",
+  "wiki_export/world/data/acquisition_by_item.json",
+  "wiki_export/world/data/shops.json",
+  "wiki_export/world/data/hidden_items.json",
+  "wiki_export/world/data/maps.json"
+ ]
+}

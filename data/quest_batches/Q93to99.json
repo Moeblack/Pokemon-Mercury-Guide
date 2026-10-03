@@ -1,0 +1,14 @@
+{
+ "batch": "Q93to99",
+ "completed": [
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99
+ ],
+ "partial": [],
+ "notes": "全部7项compiled。096已按扩展包player_guide/data/quest_packets_expanded/096.json补写：根0x09CD08BA/0x09CD2F40；接取旗标3281、完成旗标3282；交付心之鳞片(111)给招式教学狂→水晶护符(743)×1+经验糖果S(537)×3+4BP+4000$；前置旗标4246。0x09CD…为quest_catalog_flag_anchor/quest_flag_branch_candidate，仅证明旗标分支正文，未据此伪造NPC坐标，起点按目录关联map 32:3。094收尾/赠蛋脚本(0x08EC58C4、0x08EC591F、0x08EC6B63、0x08EC6B25)与098目标战斗脚本(0x08F3FB98)位于对应地图脚本/事件，不在各自包scripts内，已按地图页证据纳入并标注。未做全局检索/未运行验收。"
+}

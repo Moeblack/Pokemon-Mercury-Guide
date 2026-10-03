@@ -1,0 +1,1959 @@
+{
+  "map": "53:6",
+  "coordinates": "zero-based map tile x,y; x right, y down",
+  "rom_sha256": "131b009df7ab252deff0d6a0518ab82f88e82c940ee68d50d31033a899f7e3dd",
+  "layout": {
+    "address": "0x08B4FA80",
+    "width": 60,
+    "height": 27,
+    "border": "0x08B4EDD0",
+    "map": "0x08B4EDD8",
+    "primary_tileset": "0x082D4B6C",
+    "secondary_tileset": "0x08A375BC",
+    "border_width": 2,
+    "border_height": 2
+  },
+  "entrance": {
+    "old_display_number": 23,
+    "index": 0,
+    "addr": "0x08B5E6D8",
+    "raw": "1800090000010535",
+    "x": 24,
+    "y": 9,
+    "elevation": 0,
+    "warp_id": 1,
+    "map_num": 5,
+    "map_group": 53,
+    "map_defined": true
+  },
+  "destination": {
+    "old_display_number": 24,
+    "index": 1,
+    "addr": "0x08B5E6E0",
+    "raw": "0e00100000000735",
+    "x": 14,
+    "y": 16,
+    "elevation": 0,
+    "warp_id": 0,
+    "map_num": 7,
+    "map_group": 53,
+    "map_defined": true
+  },
+  "extraction": {
+    "mask_table": "0x08352EF0",
+    "shift_table": "0x08352F10",
+    "selector": 0,
+    "mask": 511,
+    "shift": 0,
+    "behavior_function_bytes": "00 b5 00 04 00 14 09 04 09 14 00 22 ff f7 e0 ff 02 bc 08 47",
+    "extract_function_bytes": "fc 6d 03 02 00 b5 02 1c 09 06 0b 0e 07 2b 08 d8 05 49 98 00 40 18 00 68 02 40 04 48 18 18 00 78 c2 40 10 1c 02 bc 08 47 f0 2e 35 08 10 2f 35 08",
+    "ice_predicate_bytes": "00 b5 00 06 00 0e 23 28 01 d0 00 20 00 e0 01 20 02 bc 08 47",
+    "attribute_addresses": [
+      "0x0894F7C0",
+      "0x08B58AB0"
+    ]
+  },
+  "behavior_histogram": {
+    "0": 1139,
+    "35": 477,
+    "96": 4
+  },
+  "collision_histogram": {
+    "0": 1218,
+    "1": 402
+  },
+  "elevation_histogram": {
+    "0": 61,
+    "3": 1465,
+    "4": 93,
+    "15": 1
+  },
+  "objects": [
+    {
+      "index": 0,
+      "addr": "0x08B5E630",
+      "raw": "016100000a000c00000000000000000006c7aa085e160000",
+      "local_id": 1,
+      "graphics_id_low": 97,
+      "in_connection": 0,
+      "graphics_id_high": 0,
+      "graphics_id": 97,
+      "x": 10,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": 0,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_range_berry_tree_id": 0,
+      "script": "0x08AAC706",
+      "script_is_rom": true,
+      "flag_id": 5726,
+      "flag_id2": 0
+    },
+    {
+      "index": 1,
+      "addr": "0x08B5E648",
+      "raw": "0261000009001400000000000000000006c7aa085f160000",
+      "local_id": 2,
+      "graphics_id_low": 97,
+      "in_connection": 0,
+      "graphics_id_high": 0,
+      "graphics_id": 97,
+      "x": 9,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": 0,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_range_berry_tree_id": 0,
+      "script": "0x08AAC706",
+      "script_is_rom": true,
+      "flag_id": 5727,
+      "flag_id2": 0
+    },
+    {
+      "index": 2,
+      "addr": "0x08B5E660",
+      "raw": "0361000011000900000000000000000006c7aa0860160000",
+      "local_id": 3,
+      "graphics_id_low": 97,
+      "in_connection": 0,
+      "graphics_id_high": 0,
+      "graphics_id": 97,
+      "x": 17,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": 0,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_range_berry_tree_id": 0,
+      "script": "0x08AAC706",
+      "script_is_rom": true,
+      "flag_id": 5728,
+      "flag_id2": 0
+    },
+    {
+      "index": 3,
+      "addr": "0x08B5E678",
+      "raw": "0461000012001500000000000000000006c7aa0861160000",
+      "local_id": 4,
+      "graphics_id_low": 97,
+      "in_connection": 0,
+      "graphics_id_high": 0,
+      "graphics_id": 97,
+      "x": 18,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": 0,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_range_berry_tree_id": 0,
+      "script": "0x08AAC706",
+      "script_is_rom": true,
+      "flag_id": 5729,
+      "flag_id2": 0
+    },
+    {
+      "index": 4,
+      "addr": "0x08B5E690",
+      "raw": "055c000003000b0000000000000000009bedf4082c0a0000",
+      "local_id": 5,
+      "graphics_id_low": 92,
+      "in_connection": 0,
+      "graphics_id_high": 0,
+      "graphics_id": 92,
+      "x": 3,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": 0,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_range_berry_tree_id": 0,
+      "script": "0x08F4ED9B",
+      "script_is_rom": true,
+      "flag_id": 2604,
+      "flag_id2": 0
+    },
+    {
+      "index": 5,
+      "addr": "0x08B5E6A8",
+      "raw": "065c00000d000e000000000000000000a8edf4082d0a0000",
+      "local_id": 6,
+      "graphics_id_low": 92,
+      "in_connection": 0,
+      "graphics_id_high": 0,
+      "graphics_id": 92,
+      "x": 13,
+      "y": 14,
+      "elevation": 0,
+      "movement_type": 0,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_range_berry_tree_id": 0,
+      "script": "0x08F4EDA8",
+      "script_is_rom": true,
+      "flag_id": 2605,
+      "flag_id2": 0
+    },
+    {
+      "index": 6,
+      "addr": "0x08B5E6C0",
+      "raw": "075c0000370017000000000000000000b5edf4082e0a0000",
+      "local_id": 7,
+      "graphics_id_low": 92,
+      "in_connection": 0,
+      "graphics_id_high": 0,
+      "graphics_id": 92,
+      "x": 55,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": 0,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_range_berry_tree_id": 0,
+      "script": "0x08F4EDB5",
+      "script_is_rom": true,
+      "flag_id": 2606,
+      "flag_id2": 0
+    }
+  ],
+  "warps": [
+    {
+      "index": 0,
+      "addr": "0x08B5E6D8",
+      "raw": "1800090000010535",
+      "x": 24,
+      "y": 9,
+      "elevation": 0,
+      "warp_id": 1,
+      "map_num": 5,
+      "map_group": 53,
+      "map_defined": true
+    },
+    {
+      "index": 1,
+      "addr": "0x08B5E6E0",
+      "raw": "0e00100000000735",
+      "x": 14,
+      "y": 16,
+      "elevation": 0,
+      "warp_id": 0,
+      "map_num": 7,
+      "map_group": 53,
+      "map_defined": true
+    },
+    {
+      "index": 2,
+      "addr": "0x08B5E6E8",
+      "raw": "2f00040000010735",
+      "x": 47,
+      "y": 4,
+      "elevation": 0,
+      "warp_id": 1,
+      "map_num": 7,
+      "map_group": 53,
+      "map_defined": true
+    },
+    {
+      "index": 3,
+      "addr": "0x08B5E6F0",
+      "raw": "2900150000020535",
+      "x": 41,
+      "y": 21,
+      "elevation": 0,
+      "warp_id": 2,
+      "map_num": 5,
+      "map_group": 53,
+      "map_defined": true
+    },
+    {
+      "index": 4,
+      "addr": "0x08B5E6F8",
+      "raw": "0a000b0000000000",
+      "x": 10,
+      "y": 11,
+      "elevation": 0,
+      "warp_id": 0,
+      "map_num": 0,
+      "map_group": 0,
+      "map_defined": true
+    },
+    {
+      "index": 5,
+      "addr": "0x08B5E700",
+      "raw": "0900130000000000",
+      "x": 9,
+      "y": 19,
+      "elevation": 0,
+      "warp_id": 0,
+      "map_num": 0,
+      "map_group": 0,
+      "map_defined": true
+    },
+    {
+      "index": 6,
+      "addr": "0x08B5E708",
+      "raw": "1100080000000000",
+      "x": 17,
+      "y": 8,
+      "elevation": 0,
+      "warp_id": 0,
+      "map_num": 0,
+      "map_group": 0,
+      "map_defined": true
+    },
+    {
+      "index": 7,
+      "addr": "0x08B5E710",
+      "raw": "1200140000000000",
+      "x": 18,
+      "y": 20,
+      "elevation": 0,
+      "warp_id": 0,
+      "map_num": 0,
+      "map_group": 0,
+      "map_defined": true
+    }
+  ],
+  "assumptions": [
+    "All object event coordinates blocked regardless of hide flag.",
+    "Every warp terminates movement; non-target warps cannot be crossed.",
+    "Different nonzero elevations blocked pending mechanism verification.",
+    "Elevation zero treated as neutral; all transitions retained in evidence.",
+    "Ice behavior 0x23; collision != 0 blocked; no emulator used."
+  ],
+  "found": true,
+  "input_count": 14,
+  "route": [
+    {
+      "direction": "down",
+      "direction_zh": "下",
+      "start": [
+        24,
+        9
+      ],
+      "traversed": [
+        {
+          "x": 24,
+          "y": 10,
+          "cell_address": "0x08B4F2B8",
+          "cell": "0x42DE",
+          "metatile_id": 734,
+          "collision": 0,
+          "elevation": 4,
+          "attribute_address": "0x08B58C28",
+          "attribute": "0x20000000",
+          "behavior": 0
+        }
+      ],
+      "start_evidence": {
+        "x": 24,
+        "y": 9,
+        "cell_address": "0x08B4F240",
+        "cell": "0x436C",
+        "metatile_id": 876,
+        "collision": 0,
+        "elevation": 4,
+        "attribute_address": "0x08B58E60",
+        "attribute": "0x20000060",
+        "behavior": 96
+      },
+      "end": [
+        24,
+        10
+      ],
+      "sliding": false,
+      "stop_reason": "non_ice",
+      "blocked_next": null,
+      "final_warp": null,
+      "input_number": 1
+    },
+    {
+      "direction": "down",
+      "direction_zh": "下",
+      "start": [
+        24,
+        10
+      ],
+      "traversed": [
+        {
+          "x": 24,
+          "y": 11,
+          "cell_address": "0x08B4F330",
+          "cell": "0x02C4",
+          "metatile_id": 708,
+          "collision": 0,
+          "elevation": 0,
+          "attribute_address": "0x08B58BC0",
+          "attribute": "0x01000800",
+          "behavior": 0
+        }
+      ],
+      "start_evidence": {
+        "x": 24,
+        "y": 10,
+        "cell_address": "0x08B4F2B8",
+        "cell": "0x42DE",
+        "metatile_id": 734,
+        "collision": 0,
+        "elevation": 4,
+        "attribute_address": "0x08B58C28",
+        "attribute": "0x20000000",
+        "behavior": 0
+      },
+      "end": [
+        24,
+        11
+      ],
+      "sliding": false,
+      "stop_reason": "non_ice",
+      "blocked_next": null,
+      "final_warp": null,
+      "input_number": 2
+    },
+    {
+      "direction": "down",
+      "direction_zh": "下",
+      "start": [
+        24,
+        11
+      ],
+      "traversed": [
+        {
+          "x": 24,
+          "y": 12,
+          "cell_address": "0x08B4F3A8",
+          "cell": "0x331E",
+          "metatile_id": 798,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D28",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 24,
+          "y": 13,
+          "cell_address": "0x08B4F420",
+          "cell": "0x32F9",
+          "metatile_id": 761,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58C94",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 24,
+          "y": 14,
+          "cell_address": "0x08B4F498",
+          "cell": "0x32F9",
+          "metatile_id": 761,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58C94",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 24,
+          "y": 15,
+          "cell_address": "0x08B4F510",
+          "cell": "0x32F9",
+          "metatile_id": 761,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58C94",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 24,
+          "y": 16,
+          "cell_address": "0x08B4F588",
+          "cell": "0x32F9",
+          "metatile_id": 761,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58C94",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 24,
+          "y": 17,
+          "cell_address": "0x08B4F600",
+          "cell": "0x32F9",
+          "metatile_id": 761,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58C94",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 24,
+          "y": 18,
+          "cell_address": "0x08B4F678",
+          "cell": "0x32F9",
+          "metatile_id": 761,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58C94",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 24,
+          "y": 19,
+          "cell_address": "0x08B4F6F0",
+          "cell": "0x32F9",
+          "metatile_id": 761,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58C94",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 24,
+          "y": 20,
+          "cell_address": "0x08B4F768",
+          "cell": "0x332E",
+          "metatile_id": 814,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D68",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 24,
+          "y": 21,
+          "cell_address": "0x08B4F7E0",
+          "cell": "0x32B4",
+          "metatile_id": 692,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58B80",
+          "attribute": "0x01000800",
+          "behavior": 0
+        }
+      ],
+      "start_evidence": {
+        "x": 24,
+        "y": 11,
+        "cell_address": "0x08B4F330",
+        "cell": "0x02C4",
+        "metatile_id": 708,
+        "collision": 0,
+        "elevation": 0,
+        "attribute_address": "0x08B58BC0",
+        "attribute": "0x01000800",
+        "behavior": 0
+      },
+      "end": [
+        24,
+        21
+      ],
+      "sliding": true,
+      "stop_reason": "non_ice",
+      "blocked_next": null,
+      "final_warp": null,
+      "input_number": 3
+    },
+    {
+      "direction": "right",
+      "direction_zh": "右",
+      "start": [
+        24,
+        21
+      ],
+      "traversed": [
+        {
+          "x": 25,
+          "y": 21,
+          "cell_address": "0x08B4F7E2",
+          "cell": "0x32B4",
+          "metatile_id": 692,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58B80",
+          "attribute": "0x01000800",
+          "behavior": 0
+        }
+      ],
+      "start_evidence": {
+        "x": 24,
+        "y": 21,
+        "cell_address": "0x08B4F7E0",
+        "cell": "0x32B4",
+        "metatile_id": 692,
+        "collision": 0,
+        "elevation": 3,
+        "attribute_address": "0x08B58B80",
+        "attribute": "0x01000800",
+        "behavior": 0
+      },
+      "end": [
+        25,
+        21
+      ],
+      "sliding": false,
+      "stop_reason": "non_ice",
+      "blocked_next": null,
+      "final_warp": null,
+      "input_number": 4
+    },
+    {
+      "direction": "right",
+      "direction_zh": "右",
+      "start": [
+        25,
+        21
+      ],
+      "traversed": [
+        {
+          "x": 26,
+          "y": 21,
+          "cell_address": "0x08B4F7E4",
+          "cell": "0x32B5",
+          "metatile_id": 693,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58B84",
+          "attribute": "0x01000800",
+          "behavior": 0
+        }
+      ],
+      "start_evidence": {
+        "x": 25,
+        "y": 21,
+        "cell_address": "0x08B4F7E2",
+        "cell": "0x32B4",
+        "metatile_id": 692,
+        "collision": 0,
+        "elevation": 3,
+        "attribute_address": "0x08B58B80",
+        "attribute": "0x01000800",
+        "behavior": 0
+      },
+      "end": [
+        26,
+        21
+      ],
+      "sliding": false,
+      "stop_reason": "non_ice",
+      "blocked_next": null,
+      "final_warp": null,
+      "input_number": 5
+    },
+    {
+      "direction": "up",
+      "direction_zh": "上",
+      "start": [
+        26,
+        21
+      ],
+      "traversed": [
+        {
+          "x": 26,
+          "y": 20,
+          "cell_address": "0x08B4F76C",
+          "cell": "0x332F",
+          "metatile_id": 815,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D6C",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 26,
+          "y": 19,
+          "cell_address": "0x08B4F6F4",
+          "cell": "0x3327",
+          "metatile_id": 807,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D4C",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 26,
+          "y": 18,
+          "cell_address": "0x08B4F67C",
+          "cell": "0x3327",
+          "metatile_id": 807,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D4C",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 26,
+          "y": 17,
+          "cell_address": "0x08B4F604",
+          "cell": "0x3327",
+          "metatile_id": 807,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D4C",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 26,
+          "y": 16,
+          "cell_address": "0x08B4F58C",
+          "cell": "0x3327",
+          "metatile_id": 807,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D4C",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 26,
+          "y": 15,
+          "cell_address": "0x08B4F514",
+          "cell": "0x3327",
+          "metatile_id": 807,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D4C",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 26,
+          "y": 14,
+          "cell_address": "0x08B4F49C",
+          "cell": "0x3327",
+          "metatile_id": 807,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D4C",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 26,
+          "y": 13,
+          "cell_address": "0x08B4F424",
+          "cell": "0x3327",
+          "metatile_id": 807,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D4C",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 26,
+          "y": 12,
+          "cell_address": "0x08B4F3AC",
+          "cell": "0x331F",
+          "metatile_id": 799,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D2C",
+          "attribute": "0x20000023",
+          "behavior": 35
+        }
+      ],
+      "start_evidence": {
+        "x": 26,
+        "y": 21,
+        "cell_address": "0x08B4F7E4",
+        "cell": "0x32B5",
+        "metatile_id": 693,
+        "collision": 0,
+        "elevation": 3,
+        "attribute_address": "0x08B58B84",
+        "attribute": "0x01000800",
+        "behavior": 0
+      },
+      "end": [
+        26,
+        12
+      ],
+      "sliding": true,
+      "stop_reason": "collision",
+      "blocked_next": {
+        "x": 26,
+        "y": 11,
+        "cell_address": "0x08B4F334",
+        "cell": "0x372A",
+        "metatile_id": 810,
+        "collision": 1,
+        "elevation": 3,
+        "attribute_address": "0x08B58D58",
+        "attribute": "0x20000000",
+        "behavior": 0
+      },
+      "final_warp": null,
+      "input_number": 6
+    },
+    {
+      "direction": "left",
+      "direction_zh": "左",
+      "start": [
+        26,
+        12
+      ],
+      "traversed": [
+        {
+          "x": 25,
+          "y": 12,
+          "cell_address": "0x08B4F3AA",
+          "cell": "0x331E",
+          "metatile_id": 798,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D28",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 24,
+          "y": 12,
+          "cell_address": "0x08B4F3A8",
+          "cell": "0x331E",
+          "metatile_id": 798,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D28",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 23,
+          "y": 12,
+          "cell_address": "0x08B4F3A6",
+          "cell": "0x031E",
+          "metatile_id": 798,
+          "collision": 0,
+          "elevation": 0,
+          "attribute_address": "0x08B58D28",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 22,
+          "y": 12,
+          "cell_address": "0x08B4F3A4",
+          "cell": "0x431E",
+          "metatile_id": 798,
+          "collision": 0,
+          "elevation": 4,
+          "attribute_address": "0x08B58D28",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 21,
+          "y": 12,
+          "cell_address": "0x08B4F3A2",
+          "cell": "0x42BE",
+          "metatile_id": 702,
+          "collision": 0,
+          "elevation": 4,
+          "attribute_address": "0x08B58BA8",
+          "attribute": "0x20000823",
+          "behavior": 35
+        },
+        {
+          "x": 20,
+          "y": 12,
+          "cell_address": "0x08B4F3A0",
+          "cell": "0x42F9",
+          "metatile_id": 761,
+          "collision": 0,
+          "elevation": 4,
+          "attribute_address": "0x08B58C94",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 19,
+          "y": 12,
+          "cell_address": "0x08B4F39E",
+          "cell": "0x02F9",
+          "metatile_id": 761,
+          "collision": 0,
+          "elevation": 0,
+          "attribute_address": "0x08B58C94",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 18,
+          "y": 12,
+          "cell_address": "0x08B4F39C",
+          "cell": "0x32B7",
+          "metatile_id": 695,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58B8C",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 17,
+          "y": 12,
+          "cell_address": "0x08B4F39A",
+          "cell": "0x332E",
+          "metatile_id": 814,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D68",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 16,
+          "y": 12,
+          "cell_address": "0x08B4F398",
+          "cell": "0x332E",
+          "metatile_id": 814,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D68",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 15,
+          "y": 12,
+          "cell_address": "0x08B4F396",
+          "cell": "0x332E",
+          "metatile_id": 814,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D68",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 14,
+          "y": 12,
+          "cell_address": "0x08B4F394",
+          "cell": "0x332E",
+          "metatile_id": 814,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D68",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 13,
+          "y": 12,
+          "cell_address": "0x08B4F392",
+          "cell": "0x332E",
+          "metatile_id": 814,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D68",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 12,
+          "y": 12,
+          "cell_address": "0x08B4F390",
+          "cell": "0x332E",
+          "metatile_id": 814,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58D68",
+          "attribute": "0x20000023",
+          "behavior": 35
+        },
+        {
+          "x": 11,
+          "y": 12,
+          "cell_address": "0x08B4F38E",
+          "cell": "0x337F",
+          "metatile_id": 895,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58EAC",
+          "attribute": "0x20000023",
+          "behavior": 35
+        }
+      ],
+      "start_evidence": {
+        "x": 26,
+        "y": 12,
+        "cell_address": "0x08B4F3AC",
+        "cell": "0x331F",
+        "metatile_id": 799,
+        "collision": 0,
+        "elevation": 3,
+        "attribute_address": "0x08B58D2C",
+        "attribute": "0x20000023",
+        "behavior": 35
+      },
+      "end": [
+        11,
+        12
+      ],
+      "sliding": true,
+      "stop_reason": "object_assumed_present",
+      "blocked_next": {
+        "x": 10,
+        "y": 12,
+        "cell_address": "0x08B4F38C",
+        "cell": "0x3376",
+        "metatile_id": 886,
+        "collision": 0,
+        "elevation": 3,
+        "attribute_address": "0x08B58E88",
+        "attribute": "0x20000000",
+        "behavior": 0
+      },
+      "final_warp": null,
+      "input_number": 7
+    },
+    {
+      "direction": "down",
+      "direction_zh": "下",
+      "start": [
+        11,
+        12
+      ],
+      "traversed": [
+        {
+          "x": 11,
+          "y": 13,
+          "cell_address": "0x08B4F406",
+          "cell": "0x3377",
+          "metatile_id": 887,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58E8C",
+          "attribute": "0x20000000",
+          "behavior": 0
+        }
+      ],
+      "start_evidence": {
+        "x": 11,
+        "y": 12,
+        "cell_address": "0x08B4F38E",
+        "cell": "0x337F",
+        "metatile_id": 895,
+        "collision": 0,
+        "elevation": 3,
+        "attribute_address": "0x08B58EAC",
+        "attribute": "0x20000023",
+        "behavior": 35
+      },
+      "end": [
+        11,
+        13
+      ],
+      "sliding": false,
+      "stop_reason": "non_ice",
+      "blocked_next": null,
+      "final_warp": null,
+      "input_number": 8
+    },
+    {
+      "direction": "down",
+      "direction_zh": "下",
+      "start": [
+        11,
+        13
+      ],
+      "traversed": [
+        {
+          "x": 11,
+          "y": 14,
+          "cell_address": "0x08B4F47E",
+          "cell": "0x32B3",
+          "metatile_id": 691,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58B7C",
+          "attribute": "0x01000800",
+          "behavior": 0
+        }
+      ],
+      "start_evidence": {
+        "x": 11,
+        "y": 13,
+        "cell_address": "0x08B4F406",
+        "cell": "0x3377",
+        "metatile_id": 887,
+        "collision": 0,
+        "elevation": 3,
+        "attribute_address": "0x08B58E8C",
+        "attribute": "0x20000000",
+        "behavior": 0
+      },
+      "end": [
+        11,
+        14
+      ],
+      "sliding": false,
+      "stop_reason": "non_ice",
+      "blocked_next": null,
+      "final_warp": null,
+      "input_number": 9
+    },
+    {
+      "direction": "down",
+      "direction_zh": "下",
+      "start": [
+        11,
+        14
+      ],
+      "traversed": [
+        {
+          "x": 11,
+          "y": 15,
+          "cell_address": "0x08B4F4F6",
+          "cell": "0x32BB",
+          "metatile_id": 699,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58B9C",
+          "attribute": "0x01000800",
+          "behavior": 0
+        }
+      ],
+      "start_evidence": {
+        "x": 11,
+        "y": 14,
+        "cell_address": "0x08B4F47E",
+        "cell": "0x32B3",
+        "metatile_id": 691,
+        "collision": 0,
+        "elevation": 3,
+        "attribute_address": "0x08B58B7C",
+        "attribute": "0x01000800",
+        "behavior": 0
+      },
+      "end": [
+        11,
+        15
+      ],
+      "sliding": false,
+      "stop_reason": "non_ice",
+      "blocked_next": null,
+      "final_warp": null,
+      "input_number": 10
+    },
+    {
+      "direction": "down",
+      "direction_zh": "下",
+      "start": [
+        11,
+        15
+      ],
+      "traversed": [
+        {
+          "x": 11,
+          "y": 16,
+          "cell_address": "0x08B4F56E",
+          "cell": "0x32BB",
+          "metatile_id": 699,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58B9C",
+          "attribute": "0x01000800",
+          "behavior": 0
+        }
+      ],
+      "start_evidence": {
+        "x": 11,
+        "y": 15,
+        "cell_address": "0x08B4F4F6",
+        "cell": "0x32BB",
+        "metatile_id": 699,
+        "collision": 0,
+        "elevation": 3,
+        "attribute_address": "0x08B58B9C",
+        "attribute": "0x01000800",
+        "behavior": 0
+      },
+      "end": [
+        11,
+        16
+      ],
+      "sliding": false,
+      "stop_reason": "non_ice",
+      "blocked_next": null,
+      "final_warp": null,
+      "input_number": 11
+    },
+    {
+      "direction": "right",
+      "direction_zh": "右",
+      "start": [
+        11,
+        16
+      ],
+      "traversed": [
+        {
+          "x": 12,
+          "y": 16,
+          "cell_address": "0x08B4F570",
+          "cell": "0x32BC",
+          "metatile_id": 700,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58BA0",
+          "attribute": "0x01000800",
+          "behavior": 0
+        }
+      ],
+      "start_evidence": {
+        "x": 11,
+        "y": 16,
+        "cell_address": "0x08B4F56E",
+        "cell": "0x32BB",
+        "metatile_id": 699,
+        "collision": 0,
+        "elevation": 3,
+        "attribute_address": "0x08B58B9C",
+        "attribute": "0x01000800",
+        "behavior": 0
+      },
+      "end": [
+        12,
+        16
+      ],
+      "sliding": false,
+      "stop_reason": "non_ice",
+      "blocked_next": null,
+      "final_warp": null,
+      "input_number": 12
+    },
+    {
+      "direction": "right",
+      "direction_zh": "右",
+      "start": [
+        12,
+        16
+      ],
+      "traversed": [
+        {
+          "x": 13,
+          "y": 16,
+          "cell_address": "0x08B4F572",
+          "cell": "0x3368",
+          "metatile_id": 872,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58E50",
+          "attribute": "0x20000000",
+          "behavior": 0
+        }
+      ],
+      "start_evidence": {
+        "x": 12,
+        "y": 16,
+        "cell_address": "0x08B4F570",
+        "cell": "0x32BC",
+        "metatile_id": 700,
+        "collision": 0,
+        "elevation": 3,
+        "attribute_address": "0x08B58BA0",
+        "attribute": "0x01000800",
+        "behavior": 0
+      },
+      "end": [
+        13,
+        16
+      ],
+      "sliding": false,
+      "stop_reason": "non_ice",
+      "blocked_next": null,
+      "final_warp": null,
+      "input_number": 13
+    },
+    {
+      "direction": "right",
+      "direction_zh": "右",
+      "start": [
+        13,
+        16
+      ],
+      "traversed": [
+        {
+          "x": 14,
+          "y": 16,
+          "cell_address": "0x08B4F574",
+          "cell": "0x3369",
+          "metatile_id": 873,
+          "collision": 0,
+          "elevation": 3,
+          "attribute_address": "0x08B58E54",
+          "attribute": "0x20000060",
+          "behavior": 96
+        }
+      ],
+      "start_evidence": {
+        "x": 13,
+        "y": 16,
+        "cell_address": "0x08B4F572",
+        "cell": "0x3368",
+        "metatile_id": 872,
+        "collision": 0,
+        "elevation": 3,
+        "attribute_address": "0x08B58E50",
+        "attribute": "0x20000000",
+        "behavior": 0
+      },
+      "end": [
+        14,
+        16
+      ],
+      "sliding": false,
+      "stop_reason": "warp",
+      "blocked_next": null,
+      "final_warp": {
+        "index": 1,
+        "addr": "0x08B5E6E0",
+        "raw": "0e00100000000735",
+        "x": 14,
+        "y": 16,
+        "elevation": 0,
+        "warp_id": 0,
+        "map_num": 7,
+        "map_group": 53,
+        "map_defined": true
+      },
+      "input_number": 14
+    }
+  ],
+  "player_groups": [
+    {
+      "direction": "down",
+      "direction_zh": "下",
+      "sliding": false,
+      "steps": 2,
+      "start": [
+        24,
+        9
+      ],
+      "end": [
+        24,
+        11
+      ]
+    },
+    {
+      "direction": "down",
+      "direction_zh": "下",
+      "sliding": true,
+      "steps": 1,
+      "start": [
+        24,
+        11
+      ],
+      "end": [
+        24,
+        21
+      ]
+    },
+    {
+      "direction": "right",
+      "direction_zh": "右",
+      "sliding": false,
+      "steps": 2,
+      "start": [
+        24,
+        21
+      ],
+      "end": [
+        26,
+        21
+      ]
+    },
+    {
+      "direction": "up",
+      "direction_zh": "上",
+      "sliding": true,
+      "steps": 1,
+      "start": [
+        26,
+        21
+      ],
+      "end": [
+        26,
+        12
+      ]
+    },
+    {
+      "direction": "left",
+      "direction_zh": "左",
+      "sliding": true,
+      "steps": 1,
+      "start": [
+        26,
+        12
+      ],
+      "end": [
+        11,
+        12
+      ]
+    },
+    {
+      "direction": "down",
+      "direction_zh": "下",
+      "sliding": false,
+      "steps": 4,
+      "start": [
+        11,
+        12
+      ],
+      "end": [
+        11,
+        16
+      ]
+    },
+    {
+      "direction": "right",
+      "direction_zh": "右",
+      "sliding": false,
+      "steps": 3,
+      "start": [
+        11,
+        16
+      ],
+      "end": [
+        14,
+        16
+      ]
+    }
+  ],
+  "unverified_transitions": [
+    {
+      "start": [
+        24,
+        9
+      ],
+      "end": [
+        24,
+        8
+      ],
+      "reason": "unverified_elevation_transition"
+    },
+    {
+      "start": [
+        23,
+        8
+      ],
+      "end": [
+        24,
+        8
+      ],
+      "reason": "unverified_elevation_transition"
+    },
+    {
+      "start": [
+        12,
+        17
+      ],
+      "end": [
+        12,
+        18
+      ],
+      "reason": "unverified_elevation_transition"
+    }
+  ],
+  "rock_present": true,
+  "object_cleared_scenario": {
+    "map": "53:6",
+    "coordinates": "zero-based map tile x,y; x right, y down",
+    "rom_sha256": "131b009df7ab252deff0d6a0518ab82f88e82c940ee68d50d31033a899f7e3dd",
+    "layout": {
+      "address": "0x08B4FA80",
+      "width": 60,
+      "height": 27,
+      "border": "0x08B4EDD0",
+      "map": "0x08B4EDD8",
+      "primary_tileset": "0x082D4B6C",
+      "secondary_tileset": "0x08A375BC",
+      "border_width": 2,
+      "border_height": 2
+    },
+    "entrance": {
+      "old_display_number": 23,
+      "index": 0,
+      "addr": "0x08B5E6D8",
+      "raw": "1800090000010535",
+      "x": 24,
+      "y": 9,
+      "elevation": 0,
+      "warp_id": 1,
+      "map_num": 5,
+      "map_group": 53,
+      "map_defined": true
+    },
+    "destination": {
+      "old_display_number": 24,
+      "index": 1,
+      "addr": "0x08B5E6E0",
+      "raw": "0e00100000000735",
+      "x": 14,
+      "y": 16,
+      "elevation": 0,
+      "warp_id": 0,
+      "map_num": 7,
+      "map_group": 53,
+      "map_defined": true
+    },
+    "extraction": {
+      "mask_table": "0x08352EF0",
+      "shift_table": "0x08352F10",
+      "selector": 0,
+      "mask": 511,
+      "shift": 0,
+      "behavior_function_bytes": "00 b5 00 04 00 14 09 04 09 14 00 22 ff f7 e0 ff 02 bc 08 47",
+      "extract_function_bytes": "fc 6d 03 02 00 b5 02 1c 09 06 0b 0e 07 2b 08 d8 05 49 98 00 40 18 00 68 02 40 04 48 18 18 00 78 c2 40 10 1c 02 bc 08 47 f0 2e 35 08 10 2f 35 08",
+      "ice_predicate_bytes": "00 b5 00 06 00 0e 23 28 01 d0 00 20 00 e0 01 20 02 bc 08 47",
+      "attribute_addresses": [
+        "0x0894F7C0",
+        "0x08B58AB0"
+      ]
+    },
+    "behavior_histogram": {
+      "0": 1139,
+      "35": 477,
+      "96": 4
+    },
+    "collision_histogram": {
+      "0": 1218,
+      "1": 402
+    },
+    "elevation_histogram": {
+      "0": 61,
+      "3": 1465,
+      "4": 93,
+      "15": 1
+    },
+    "objects": [
+      {
+        "index": 0,
+        "addr": "0x08B5E630",
+        "raw": "016100000a000c00000000000000000006c7aa085e160000",
+        "local_id": 1,
+        "graphics_id_low": 97,
+        "in_connection": 0,
+        "graphics_id_high": 0,
+        "graphics_id": 97,
+        "x": 10,
+        "y": 12,
+        "elevation": 0,
+        "movement_type": 0,
+        "movement_range_x": 0,
+        "movement_range_y": 0,
+        "trainer_type": 0,
+        "trainer_range_berry_tree_id": 0,
+        "script": "0x08AAC706",
+        "script_is_rom": true,
+        "flag_id": 5726,
+        "flag_id2": 0
+      },
+      {
+        "index": 1,
+        "addr": "0x08B5E648",
+        "raw": "0261000009001400000000000000000006c7aa085f160000",
+        "local_id": 2,
+        "graphics_id_low": 97,
+        "in_connection": 0,
+        "graphics_id_high": 0,
+        "graphics_id": 97,
+        "x": 9,
+        "y": 20,
+        "elevation": 0,
+        "movement_type": 0,
+        "movement_range_x": 0,
+        "movement_range_y": 0,
+        "trainer_type": 0,
+        "trainer_range_berry_tree_id": 0,
+        "script": "0x08AAC706",
+        "script_is_rom": true,
+        "flag_id": 5727,
+        "flag_id2": 0
+      },
+      {
+        "index": 2,
+        "addr": "0x08B5E660",
+        "raw": "0361000011000900000000000000000006c7aa0860160000",
+        "local_id": 3,
+        "graphics_id_low": 97,
+        "in_connection": 0,
+        "graphics_id_high": 0,
+        "graphics_id": 97,
+        "x": 17,
+        "y": 9,
+        "elevation": 0,
+        "movement_type": 0,
+        "movement_range_x": 0,
+        "movement_range_y": 0,
+        "trainer_type": 0,
+        "trainer_range_berry_tree_id": 0,
+        "script": "0x08AAC706",
+        "script_is_rom": true,
+        "flag_id": 5728,
+        "flag_id2": 0
+      },
+      {
+        "index": 3,
+        "addr": "0x08B5E678",
+        "raw": "0461000012001500000000000000000006c7aa0861160000",
+        "local_id": 4,
+        "graphics_id_low": 97,
+        "in_connection": 0,
+        "graphics_id_high": 0,
+        "graphics_id": 97,
+        "x": 18,
+        "y": 21,
+        "elevation": 0,
+        "movement_type": 0,
+        "movement_range_x": 0,
+        "movement_range_y": 0,
+        "trainer_type": 0,
+        "trainer_range_berry_tree_id": 0,
+        "script": "0x08AAC706",
+        "script_is_rom": true,
+        "flag_id": 5729,
+        "flag_id2": 0
+      },
+      {
+        "index": 4,
+        "addr": "0x08B5E690",
+        "raw": "055c000003000b0000000000000000009bedf4082c0a0000",
+        "local_id": 5,
+        "graphics_id_low": 92,
+        "in_connection": 0,
+        "graphics_id_high": 0,
+        "graphics_id": 92,
+        "x": 3,
+        "y": 11,
+        "elevation": 0,
+        "movement_type": 0,
+        "movement_range_x": 0,
+        "movement_range_y": 0,
+        "trainer_type": 0,
+        "trainer_range_berry_tree_id": 0,
+        "script": "0x08F4ED9B",
+        "script_is_rom": true,
+        "flag_id": 2604,
+        "flag_id2": 0
+      },
+      {
+        "index": 5,
+        "addr": "0x08B5E6A8",
+        "raw": "065c00000d000e000000000000000000a8edf4082d0a0000",
+        "local_id": 6,
+        "graphics_id_low": 92,
+        "in_connection": 0,
+        "graphics_id_high": 0,
+        "graphics_id": 92,
+        "x": 13,
+        "y": 14,
+        "elevation": 0,
+        "movement_type": 0,
+        "movement_range_x": 0,
+        "movement_range_y": 0,
+        "trainer_type": 0,
+        "trainer_range_berry_tree_id": 0,
+        "script": "0x08F4EDA8",
+        "script_is_rom": true,
+        "flag_id": 2605,
+        "flag_id2": 0
+      },
+      {
+        "index": 6,
+        "addr": "0x08B5E6C0",
+        "raw": "075c0000370017000000000000000000b5edf4082e0a0000",
+        "local_id": 7,
+        "graphics_id_low": 92,
+        "in_connection": 0,
+        "graphics_id_high": 0,
+        "graphics_id": 92,
+        "x": 55,
+        "y": 23,
+        "elevation": 0,
+        "movement_type": 0,
+        "movement_range_x": 0,
+        "movement_range_y": 0,
+        "trainer_type": 0,
+        "trainer_range_berry_tree_id": 0,
+        "script": "0x08F4EDB5",
+        "script_is_rom": true,
+        "flag_id": 2606,
+        "flag_id2": 0
+      }
+    ],
+    "warps": [
+      {
+        "index": 0,
+        "addr": "0x08B5E6D8",
+        "raw": "1800090000010535",
+        "x": 24,
+        "y": 9,
+        "elevation": 0,
+        "warp_id": 1,
+        "map_num": 5,
+        "map_group": 53,
+        "map_defined": true
+      },
+      {
+        "index": 1,
+        "addr": "0x08B5E6E0",
+        "raw": "0e00100000000735",
+        "x": 14,
+        "y": 16,
+        "elevation": 0,
+        "warp_id": 0,
+        "map_num": 7,
+        "map_group": 53,
+        "map_defined": true
+      },
+      {
+        "index": 2,
+        "addr": "0x08B5E6E8",
+        "raw": "2f00040000010735",
+        "x": 47,
+        "y": 4,
+        "elevation": 0,
+        "warp_id": 1,
+        "map_num": 7,
+        "map_group": 53,
+        "map_defined": true
+      },
+      {
+        "index": 3,
+        "addr": "0x08B5E6F0",
+        "raw": "2900150000020535",
+        "x": 41,
+        "y": 21,
+        "elevation": 0,
+        "warp_id": 2,
+        "map_num": 5,
+        "map_group": 53,
+        "map_defined": true
+      },
+      {
+        "index": 4,
+        "addr": "0x08B5E6F8",
+        "raw": "0a000b0000000000",
+        "x": 10,
+        "y": 11,
+        "elevation": 0,
+        "warp_id": 0,
+        "map_num": 0,
+        "map_group": 0,
+        "map_defined": true
+      },
+      {
+        "index": 5,
+        "addr": "0x08B5E700",
+        "raw": "0900130000000000",
+        "x": 9,
+        "y": 19,
+        "elevation": 0,
+        "warp_id": 0,
+        "map_num": 0,
+        "map_group": 0,
+        "map_defined": true
+      },
+      {
+        "index": 6,
+        "addr": "0x08B5E708",
+        "raw": "1100080000000000",
+        "x": 17,
+        "y": 8,
+        "elevation": 0,
+        "warp_id": 0,
+        "map_num": 0,
+        "map_group": 0,
+        "map_defined": true
+      },
+      {
+        "index": 7,
+        "addr": "0x08B5E710",
+        "raw": "1200140000000000",
+        "x": 18,
+        "y": 20,
+        "elevation": 0,
+        "warp_id": 0,
+        "map_num": 0,
+        "map_group": 0,
+        "map_defined": true
+      }
+    ],
+    "assumptions": [
+      "All objects blocked except local_id 1 when rock_present is false.",
+      "Every warp terminates movement; non-target warps cannot be crossed.",
+      "Different nonzero elevations blocked pending mechanism verification.",
+      "Elevation zero treated as neutral; all transitions retained in evidence.",
+      "Ice behavior 0x23; collision != 0 blocked; no emulator used."
+    ],
+    "rock_present": false,
+    "found": false,
+    "input_count": 0,
+    "route": [],
+    "player_groups": [],
+    "unverified_transitions": [
+      {
+        "start": [
+          24,
+          9
+        ],
+        "end": [
+          24,
+          8
+        ],
+        "reason": "unverified_elevation_transition"
+      },
+      {
+        "start": [
+          23,
+          8
+        ],
+        "end": [
+          24,
+          8
+        ],
+        "reason": "unverified_elevation_transition"
+      }
+    ]
+  },
+  "object_script_evidence": {
+    "coordinate": [
+      10,
+      12
+    ],
+    "local_id": 1,
+    "flag_id": 5726,
+    "script": {
+      "addr": "0x08AAC706",
+      "sources": [
+        {
+          "kind": "object",
+          "where": "53:6/local1"
+        },
+        {
+          "kind": "object",
+          "where": "53:6/local2"
+        },
+        {
+          "kind": "object",
+          "where": "53:6/local3"
+        },
+        {
+          "kind": "object",
+          "where": "53:6/local4"
+        }
+      ],
+      "instructions": [
+        {
+          "addr": "0x08AAC706",
+          "opcode": "0x0F",
+          "name": "loadpointer",
+          "names": [
+            "loadpointer",
+            "loadword",
+            "msgbox"
+          ],
+          "args": [
+            {
+              "width": 1,
+              "value": 0,
+              "addr": "0x08AAC707"
+            },
+            {
+              "width": 4,
+              "value": 145409911,
+              "addr": "0x08AAC708",
+              "class": "text"
+            }
+          ],
+          "raw": "0f0077c7aa08",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x08AAC70C",
+          "opcode": "0x09",
+          "name": "callstd",
+          "names": [
+            "callstd"
+          ],
+          "args": [
+            {
+              "width": 1,
+              "value": 6,
+              "addr": "0x08AAC70D"
+            }
+          ],
+          "raw": "0906",
+          "layout_source": "macro"
+        },
+        {
+          "addr": "0x08AAC70E",
+          "opcode": "0x02",
+          "name": "end",
+          "names": [
+            "end"
+          ],
+          "args": [],
+          "raw": "02",
+          "layout_source": "macro"
+        }
+      ],
+      "unknown_at": null,
+      "bytes": 9
+    },
+    "text": {
+      "addr": "0x08AAC777",
+      "text": "陷进冰里了，没法推……",
+      "bytes": 20,
+      "raw": "0e0a074a01b60864089e3b095303ab0d2eb0b0ff",
+      "referenced_by": [
+        {
+          "script": "0x08AAC706",
+          "at": "0x08AAC708",
+          "cmd": "loadpointer"
+        }
+      ]
+    },
+    "conclusion": "Root only loads text, callstd 6, end; no setflag/removeobject or direct script-address call. Text says stuck in ice and cannot push; not evidence of Rock Smash removability.",
+    "limitation": "Engine standard-script dispatch for callstd 6 not expanded; no claims about other scripts changing the flag."
+  },
+  "delivery_status": "conditional_on_upper_floor_boulder",
+  "prerequisite": {
+    "map": "53:5",
+    "boulder_local_id": 3,
+    "boulder_start": [
+      10,
+      12
+    ],
+    "hole": [
+      11,
+      9
+    ],
+    "completion_flag": 5722,
+    "lower_visibility_flag": 5726,
+    "lower_load_script": "0x08AACB82",
+    "show_boulder_script": "0x08AACBB4",
+    "explanation": "下层加载先隐藏岩石；上层巨石完成旗标5722已设置时才清除隐藏旗标5726。首次交付遗漏了上层推石阶段，不能将本图直接用于岩石尚未出现的状态。"
+  }
+}

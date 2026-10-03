@@ -1,0 +1,1111 @@
+{
+ "title": "小猫怪的耳朵",
+ "quest_id": 16,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b03c",
+    "title": "小猫怪的耳朵",
+    "title_address": "0x8e3c97e",
+    "description": "小猫怪的耳朵上有特别的花纹，\n可具体是怎样，我已经记不清了。\n有人可以来29号道路帮帮我吗？",
+    "description_address": "0x8e3c955",
+    "unknown_u16": 73,
+    "unknown_u16_hex": "0x0049",
+    "accept_flag": 5789,
+    "accept_flag_hex": "0x169D",
+    "complete_flag": 5790,
+    "complete_flag_hex": "0x169E",
+    "map_group": 3,
+    "map_num": 79,
+    "tail_hex": "02 00 00 00",
+    "index": 16,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39454",
+      "title": "小猫怪的耳朵",
+      "description_address": "0x8e3a9b3",
+      "description": "小猫怪的耳朵上有特别的花纹，\\n可具体是怎样，我已经记不清了。\\n有人可以来29号道路帮帮我吗？"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a9b3",
+    "legacy_match_count": 1,
+    "current_description": "给29号道路的短裤少年\n看一看小猫怪的耳朵。",
+    "catalog_map": {
+     "id": "3:79",
+     "name": "29号道路"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AB99AB",
+    "0x08AC2538",
+    "0x08AC52AE"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F50353",
+     "map_id": "3:79",
+     "place": "29号道路",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 28,
+     "y": 17,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n079.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089C6F56",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089C6F56",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144469856
+       ],
+       "texts": [
+        {
+         "address": "0x089C6F60",
+         "text": "哟，\n你的精灵还好吗？\n如果精灵太虚弱，\n不想让它战斗，\n那你走路的时候，\n尽量避开草丛比较好。"
+        }
+       ]
+      },
+      {
+       "at": "0x089C6F5C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089C6F5E",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AB4B79",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB4B79",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AB4B7C",
+       "command": "goto_if",
+       "args": [
+        1,
+        150275836
+       ],
+       "targets": [
+        "0x08F506FC"
+       ]
+      },
+      {
+       "at": "0x08AB4B82",
+       "command": "goto",
+       "args": [
+        144469846
+       ],
+       "targets": [
+        "0x089C6F56"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AB99AB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB99AB",
+       "command": "checkflag",
+       "args": [
+        5789
+       ],
+       "task_flag_labels": [
+        {
+         "title": "小猫怪的耳朵",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB99AE",
+       "command": "goto_if",
+       "args": [
+        1,
+        145511086
+       ],
+       "targets": [
+        "0x08AC52AE"
+       ]
+      },
+      {
+       "at": "0x08AB99B4",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AB99B5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145471956
+       ],
+       "texts": [
+        {
+         "address": "0x08ABB9D4",
+         "text": "唔……我记得小猫怪的耳朵上\n应该有着特别的花纹……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB99BB",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AB99BD",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AB99C0",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145471788
+       ]
+      },
+      {
+       "at": "0x08AB99C7",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AB99CA",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AB99CB",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AB99CC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145473206
+       ],
+       "texts": [
+        {
+         "address": "0x08ABBEB6",
+         "text": "不行，我想不起来！\n但我很想从这烦躁的心情中解脱。\n你是协会的训练家，对吧？\n如果你捉到小猫怪就给我看看吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB99D2",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AB99D4",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AB99D5",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB99D8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145473308
+       ],
+       "texts": [
+        {
+         "address": "0x08ABBF1C",
+         "text": "接受任务:<小猫怪的耳朵>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB99DE",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AB99E3",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AB99E8",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AB99ED",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AB99F2",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AB99F7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145473337
+       ],
+       "texts": [
+        {
+         "address": "0x08ABBF39",
+         "text": "那么就拜托你了，\n我想亲眼确认一下！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB99FD",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AB99FF",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AB9A04",
+       "command": "setflag",
+       "args": [
+        5789
+       ],
+       "task_flag_labels": [
+        {
+         "title": "小猫怪的耳朵",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB9A07",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AB9E07",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB9E07",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AB9E08",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145473373
+       ],
+       "texts": [
+        {
+         "address": "0x08ABBF5D",
+         "text": "怎么样，\n你找到小猫怪了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB9E0E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB9E10",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AB9E11",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AB9E14",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x08AB9E17",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08AB9E18",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x08AB9E1D",
+       "command": "goto_if",
+       "args": [
+        1,
+        145464900
+       ],
+       "targets": [
+        "0x08AB9E44"
+       ]
+      },
+      {
+       "at": "0x08AB9E23",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AB9E28",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AB9E29",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08AB9E2E",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        456
+       ],
+       "possible_names_not_semantics": {
+        "species": "小猫怪",
+        "item": "扁樱果",
+        "move": "仿效"
+       }
+      },
+      {
+       "at": "0x08AB9E33",
+       "command": "goto_if",
+       "args": [
+        1,
+        145471614
+       ],
+       "targets": [
+        "0x08ABB87E"
+       ]
+      },
+      {
+       "at": "0x08AB9E39",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AB9E3A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145473401
+       ],
+       "texts": [
+        {
+         "address": "0x08ABBF79",
+         "text": "不对，\n这不是小猫怪吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB9E40",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB9E42",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AB9E44",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB9E44",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145473425
+       ],
+       "texts": [
+        {
+         "address": "0x08ABBF91",
+         "text": "好吧，如果你捉到了小猫怪，\n请务必给我看看。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB9E4A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB9E4C",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08ABB87E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08ABB87E",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08ABB87F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145473869
+       ],
+       "texts": [
+        {
+         "address": "0x08ABC14D",
+         "text": "那么，\n它那圆耳朵上的花纹是……"
+        }
+       ]
+      },
+      {
+       "at": "0x08ABB885",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08ABB887",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08ABB888",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08ABB88B",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145471788
+       ]
+      },
+      {
+       "at": "0x08ABB892",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08ABB895",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08ABB896",
+       "command": "showpokepic",
+       "args": [
+        456,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08ABB89B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145473900
+       ],
+       "texts": [
+        {
+         "address": "0x08ABC16C",
+         "text": "黄色的十字！\n就是这个！像星星一样的花纹！"
+        }
+       ]
+      },
+      {
+       "at": "0x08ABB8A1",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08ABB8A3",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08ABB8A4",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08ABB8A7",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08ABB8A8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145473941
+       ],
+       "texts": [
+        {
+         "address": "0x08ABC195",
+         "text": "本来我有一股\n嗓子里扎着刺的烦躁感。\n多亏了你，现在舒服多了！\n这是给你的报酬！"
+        }
+       ]
+      },
+      {
+       "at": "0x08ABB8AE",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08ABB8B0",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08ABB8B1",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        139
+       ],
+       "possible_names_not_semantics": {
+        "species": "多刺菊石兽",
+        "item": "橙橙果",
+        "move": "毒瓦斯"
+       }
+      },
+      {
+       "at": "0x08ABB8B6",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        5
+       ],
+       "possible_names_not_semantics": {
+        "species": "火恐龙",
+        "item": "狩猎球",
+        "move": "百万吨重拳"
+       }
+      },
+      {
+       "at": "0x08ABB8BB",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08ABB8BD",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08ABB8BE",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08ABB8C1",
+       "command": "showmoney",
+       "args": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08ABB8C5",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08ABB8C6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145474017
+       ],
+       "texts": [
+        {
+         "address": "0x08ABC1E1",
+         "text": "这些钱……\n你也收下吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08ABB8CC",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08ABB8CE",
+       "command": "addmoney",
+       "args": [
+        3000,
+        0
+       ]
+      },
+      {
+       "at": "0x08ABB8D4",
+       "command": "updatemoney",
+       "args": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08ABB8D8",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08ABB8DB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145474040
+       ],
+       "texts": [
+        {
+         "address": "0x08ABC1F8",
+         "text": "真的是太感谢你了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08ABB8E1",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08ABB8E3",
+       "command": "hidemoney",
+       "args": [
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08ABB8E6",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08ABB8E7",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08ABB8E8",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08ABB8EB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145474060
+       ],
+       "texts": [
+        {
+         "address": "0x08ABC20C",
+         "text": "任务完成:<小猫怪的耳朵>"
+        }
+       ]
+      },
+      {
+       "at": "0x08ABB8F1",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08ABB8F6",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08ABB8FB",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08ABB900",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08ABB905",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08ABB90A",
+       "command": "goto",
+       "args": [
+        145499448
+       ],
+       "targets": [
+        "0x08AC2538"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AC2538",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC2538",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145687024
+       ],
+       "texts": [
+        {
+         "address": "0x08AF01F0",
+         "text": "获得了3点BracerPoints!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC253E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC2540",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AC2545",
+       "command": "setflag",
+       "args": [
+        5790
+       ],
+       "task_flag_labels": [
+        {
+         "title": "小猫怪的耳朵",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC2548",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08AC254D",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AC2552",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AC52AE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC52AE",
+       "command": "checkflag",
+       "args": [
+        5790
+       ],
+       "task_flag_labels": [
+        {
+         "title": "小猫怪的耳朵",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC52B1",
+       "command": "goto_if",
+       "args": [
+        1,
+        144469846
+       ],
+       "targets": [
+        "0x089C6F56"
+       ]
+      },
+      {
+       "at": "0x08AC52B7",
+       "command": "goto",
+       "args": [
+        145464839
+       ],
+       "targets": [
+        "0x08AB9E07"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F50353",
+     "event_roots": [
+      {
+       "map_id": "3:79",
+       "place": "29号道路",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 28,
+       "y": 17,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n079.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F50353",
+       "command": "applymovement",
+       "args": [
+        19,
+        150274915
+       ]
+      },
+      {
+       "at": "0x08F5035A",
+       "command": "waitmovement",
+       "args": [
+        19
+       ]
+      },
+      {
+       "at": "0x08F5035D",
+       "command": "goto",
+       "args": [
+        145443705
+       ],
+       "targets": [
+        "0x08AB4B79"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F506FC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F506FC",
+       "command": "setflag",
+       "args": [
+        2623
+       ]
+      },
+      {
+       "at": "0x08F506FF",
+       "command": "goto",
+       "args": [
+        145463723
+       ],
+       "targets": [
+        "0x08AB99AB"
+       ]
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

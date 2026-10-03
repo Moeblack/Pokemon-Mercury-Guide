@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>地图图鉴 · 宝可梦水银</title><link rel="stylesheet" href="atlas.css"><script defer src="atlas-data.js"></script><script defer src="atlas.js"></script></head>
+<body>
+<header><a href="../index.html">← 攻略首页</a><h1>地图图鉴 <small>宝可梦水银</small></h1><a href="../pokemon/wild_mega.html">野生 Mega →</a></header>
+<main>
+<aside aria-label="地点导航">
+<div class="search-panel"><label for="search">搜索地图与地点</label><input id="search" type="search" placeholder="地图名、地点名、条件…" autocomplete="off"><fieldset id="filters"><legend>地点类型（可多选）</legend></fieldset><div id="page-scope" hidden><span></span><button id="clear-page" type="button">清除攻略筛选</button></div><p id="count" role="status"></p></div>
+<div id="results" aria-label="搜索结果"></div>
+<section class="legend"><h2>地图图例</h2><div id="legend"></div><p>编号为各张地图内的地点编号；形状与颜色区分类型。深蓝堆叠标记显示地点数量，点击可逐项查看。范围记录仅提示所属地图，不代表精确位置。</p></section>
+</aside>
+<section class="map-panel" aria-label="地图浏览">
+<div class="map-toolbar"><div class="view-mode" role="group" aria-label="显示范围"><button id="mode-region" aria-pressed="true">区域拼接</button><button id="mode-map" aria-pressed="false">单张地图</button></div><span id="map-title"></span><label><input type="checkbox" id="boundaries" checked>边界 / 名称</label></div>
+<div id="source-notice" role="status" hidden></div>
+<div id="viewport" tabindex="0" role="region" aria-label="地图画布，方向键平移，加减键缩放，F适应，0原生，Escape关闭明细"><div id="world"></div><div id="markers"></div><div id="empty" role="status"></div></div>
+<div class="zoom-controls" role="group" aria-label="地图缩放"><button id="zoom-in" aria-label="放大">＋</button><button id="zoom-out" aria-label="缩小">−</button><button id="fit">适应</button><button id="native">原生</button><button id="reset">复位</button></div>
+<div id="area-hint" role="status"></div>
+<section id="detail" hidden aria-labelledby="detail-title"><button id="close-detail" aria-label="关闭地点明细">×</button><p id="detail-kind"></p><h2 id="detail-title"></h2><p id="detail-map"></p><p id="detail-text"></p><p id="detail-geometry"></p><nav id="detail-links" aria-label="相关攻略"></nav></section>
+<footer><span id="view-status" aria-live="polite"></span><span>拖动平移 · 滚轮缩放 · 方向键移动</span></footer>
+</section>
+</main>
+</body></html>

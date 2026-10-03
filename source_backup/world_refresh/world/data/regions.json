@@ -1,0 +1,3771 @@
+[
+ {
+  "mapsec": "0x58",
+  "mapsec_id": 88,
+  "ptr": "0x083EECFC",
+  "name": "真新镇",
+  "bytes": 7,
+  "raw": "10590e4d1065ff",
+  "pool_index": 0,
+  "map_ids": [
+   "2:27",
+   "2:28",
+   "3:0",
+   "42:1",
+   "42:2",
+   "42:3",
+   "42:4",
+   "43:8",
+   "43:9",
+   "44:15",
+   "44:9",
+   "45:8",
+   "49:20",
+   "49:21",
+   "49:22",
+   "4:0",
+   "4:1",
+   "4:2",
+   "4:3",
+   "52:10",
+   "52:13",
+   "52:14",
+   "52:15",
+   "52:16",
+   "52:17",
+   "52:18",
+   "52:19",
+   "52:20",
+   "52:21",
+   "52:22",
+   "52:25",
+   "52:26",
+   "52:28",
+   "52:29",
+   "52:30",
+   "52:31",
+   "52:32",
+   "52:33",
+   "52:34",
+   "52:35",
+   "52:38",
+   "52:39",
+   "52:4",
+   "52:40",
+   "52:41",
+   "52:8",
+   "52:9",
+   "53:18",
+   "54:10",
+   "55:35",
+   "55:37",
+   "55:38",
+   "55:39",
+   "55:42",
+   "55:43",
+   "55:44",
+   "55:45",
+   "55:46",
+   "55:47",
+   "55:48",
+   "55:49",
+   "55:50",
+   "55:51",
+   "55:52",
+   "55:53",
+   "55:55",
+   "55:57",
+   "55:58",
+   "56:16",
+   "56:31",
+   "56:39",
+   "56:47",
+   "56:48",
+   "56:50",
+   "56:54",
+   "56:55",
+   "56:56",
+   "56:57",
+   "56:58",
+   "56:59",
+   "56:60",
+   "56:61",
+   "56:62",
+   "56:63",
+   "56:64",
+   "56:65",
+   "56:66",
+   "56:67",
+   "56:68",
+   "56:70",
+   "56:71",
+   "56:72",
+   "56:73",
+   "56:75",
+   "56:79",
+   "56:8",
+   "56:80",
+   "56:81"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/0",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0088.md"
+ },
+ {
+  "mapsec": "0x59",
+  "mapsec_id": 89,
+  "ptr": "0x083EED08",
+  "name": "常青市",
+  "bytes": 7,
+  "raw": "02250b020c15ff",
+  "pool_index": 1,
+  "map_ids": [
+   "3:1",
+   "5:0",
+   "5:1",
+   "5:2",
+   "5:3",
+   "5:4",
+   "5:5"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/1",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0089.md"
+ },
+ {
+  "mapsec": "0x5A",
+  "mapsec_id": 90,
+  "ptr": "0x083EED16",
+  "name": "尼比市",
+  "bytes": 7,
+  "raw": "09d701850c15ff",
+  "pool_index": 2,
+  "map_ids": [
+   "3:2",
+   "6:0",
+   "6:1",
+   "6:2",
+   "6:3",
+   "6:4",
+   "6:5",
+   "6:6",
+   "6:7"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/2",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0090.md"
+ },
+ {
+  "mapsec": "0x5B",
+  "mapsec_id": 91,
+  "ptr": "0x083EED22",
+  "name": "华蓝市",
+  "bytes": 7,
+  "raw": "0537082b0c15ff",
+  "pool_index": 3,
+  "map_ids": [
+   "3:3",
+   "7:0",
+   "7:1",
+   "7:2",
+   "7:3",
+   "7:4",
+   "7:5",
+   "7:6",
+   "7:7",
+   "7:8",
+   "7:9"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/3",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0091.md"
+ },
+ {
+  "mapsec": "0x5C",
+  "mapsec_id": 92,
+  "ptr": "0x083EED30",
+  "name": "紫苑镇",
+  "bytes": 7,
+  "raw": "11070fc31065ff",
+  "pool_index": 4,
+  "map_ids": [
+   "3:4",
+   "8:0",
+   "8:1",
+   "8:2",
+   "8:3",
+   "8:4",
+   "8:5"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/4",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0092.md"
+ },
+ {
+  "mapsec": "0x5D",
+  "mapsec_id": 93,
+  "ptr": "0x083EED3E",
+  "name": "枯叶市",
+  "bytes": 7,
+  "raw": "07eb0f060c15ff",
+  "pool_index": 5,
+  "map_ids": [
+   "3:5",
+   "9:0",
+   "9:1",
+   "9:2",
+   "9:3",
+   "9:4",
+   "9:5",
+   "9:6",
+   "9:7"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/5",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0093.md"
+ },
+ {
+  "mapsec": "0x5E",
+  "mapsec_id": 94,
+  "ptr": "0x083EED4D",
+  "name": "玉虹市",
+  "bytes": 7,
+  "raw": "0f9f05160c15ff",
+  "pool_index": 6,
+  "map_ids": [
+   "10:0",
+   "10:1",
+   "10:10",
+   "10:11",
+   "10:12",
+   "10:13",
+   "10:14",
+   "10:15",
+   "10:16",
+   "10:17",
+   "10:18",
+   "10:19",
+   "10:2",
+   "10:3",
+   "10:4",
+   "10:5",
+   "10:6",
+   "10:7",
+   "10:8",
+   "10:9",
+   "3:6"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/6",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0094.md"
+ },
+ {
+  "mapsec": "0x5F",
+  "mapsec_id": 95,
+  "ptr": "0x083EED5A",
+  "name": "浅红市",
+  "bytes": 7,
+  "raw": "0acc051b0c15ff",
+  "pool_index": 7,
+  "map_ids": [
+   "11:0",
+   "11:1",
+   "11:2",
+   "11:3",
+   "11:4",
+   "11:5",
+   "11:6",
+   "11:7",
+   "11:8",
+   "11:9",
+   "3:7"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/7",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0095.md"
+ },
+ {
+  "mapsec": "0x60",
+  "mapsec_id": 96,
+  "ptr": "0x083EED67",
+  "name": "红莲岛",
+  "bytes": 7,
+  "raw": "051b087e0301ff",
+  "pool_index": 8,
+  "map_ids": [
+   "12:0",
+   "12:1",
+   "12:2",
+   "12:3",
+   "12:4",
+   "12:5",
+   "12:6",
+   "12:7",
+   "3:8"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/8",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0096.md"
+ },
+ {
+  "mapsec": "0x61",
+  "mapsec_id": 97,
+  "ptr": "0x083EED77",
+  "name": "石英高原",
+  "bytes": 9,
+  "raw": "0beb0f5004490fb9ff",
+  "pool_index": 9,
+  "map_ids": [
+   "13:0",
+   "13:1",
+   "34:1",
+   "34:3",
+   "3:9"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/9",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0097.md"
+ },
+ {
+  "mapsec": "0x62",
+  "mapsec_id": 98,
+  "ptr": "0x083EED86",
+  "name": "山吹市",
+  "bytes": 7,
+  "raw": "0b9b02950c15ff",
+  "pool_index": 10,
+  "map_ids": [
+   "14:0",
+   "14:1",
+   "14:2",
+   "14:3",
+   "14:4",
+   "14:5",
+   "14:6",
+   "14:7",
+   "14:8",
+   "14:9",
+   "3:10",
+   "3:11"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/10",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0098.md"
+ },
+ {
+  "mapsec": "0x63",
+  "mapsec_id": 99,
+  "ptr": "0x083EED93",
+  "name": "擂钵山",
+  "bytes": 7,
+  "raw": "085301c20b9bff",
+  "pool_index": 11,
+  "map_ids": [
+   "1:111",
+   "42:0",
+   "55:10",
+   "55:11",
+   "55:12",
+   "55:13",
+   "55:36",
+   "55:41",
+   "55:8",
+   "55:9",
+   "56:42"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/11",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0099.md"
+ },
+ {
+  "mapsec": "0x64",
+  "mapsec_id": 100,
+  "ptr": "0x083EED9B",
+  "name": "10号公路",
+  "bytes": 9,
+  "raw": "a2a104eb047308e8ff",
+  "pool_index": 12,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/12",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0100.md"
+ },
+ {
+  "mapsec": "0x65",
+  "mapsec_id": 101,
+  "ptr": "0x083EEDA4",
+  "name": "1号公路",
+  "bytes": 8,
+  "raw": "a204eb047308e8ff",
+  "pool_index": 13,
+  "map_ids": [
+   "3:19"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/13",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0101.md"
+ },
+ {
+  "mapsec": "0x66",
+  "mapsec_id": 102,
+  "ptr": "0x083EEDAC",
+  "name": "2号公路",
+  "bytes": 8,
+  "raw": "a304eb047308e8ff",
+  "pool_index": 14,
+  "map_ids": [
+   "15:0",
+   "15:1",
+   "15:2",
+   "15:3",
+   "3:20"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/14",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0102.md"
+ },
+ {
+  "mapsec": "0x67",
+  "mapsec_id": 103,
+  "ptr": "0x083EEDB4",
+  "name": "3号公路",
+  "bytes": 8,
+  "raw": "a404eb047308e8ff",
+  "pool_index": 15,
+  "map_ids": [
+   "3:21"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/15",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0103.md"
+ },
+ {
+  "mapsec": "0x68",
+  "mapsec_id": 104,
+  "ptr": "0x083EEDBC",
+  "name": "4号公路",
+  "bytes": 8,
+  "raw": "a504eb047308e8ff",
+  "pool_index": 16,
+  "map_ids": [
+   "16:0",
+   "16:1",
+   "3:22"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/16",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0104.md"
+ },
+ {
+  "mapsec": "0x69",
+  "mapsec_id": 105,
+  "ptr": "0x083EEDC4",
+  "name": "5号公路",
+  "bytes": 8,
+  "raw": "a604eb047308e8ff",
+  "pool_index": 17,
+  "map_ids": [
+   "17:0",
+   "17:1",
+   "3:23"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/17",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0105.md"
+ },
+ {
+  "mapsec": "0x6A",
+  "mapsec_id": 106,
+  "ptr": "0x083EEDCC",
+  "name": "6号公路",
+  "bytes": 8,
+  "raw": "a704eb047308e8ff",
+  "pool_index": 18,
+  "map_ids": [
+   "18:0",
+   "18:1",
+   "3:24"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/18",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0106.md"
+ },
+ {
+  "mapsec": "0x6B",
+  "mapsec_id": 107,
+  "ptr": "0x083EEDD4",
+  "name": "7号公路",
+  "bytes": 8,
+  "raw": "a804eb047308e8ff",
+  "pool_index": 19,
+  "map_ids": [
+   "19:0",
+   "3:25"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/19",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0107.md"
+ },
+ {
+  "mapsec": "0x6C",
+  "mapsec_id": 108,
+  "ptr": "0x083EEDDC",
+  "name": "8号公路",
+  "bytes": 8,
+  "raw": "a904eb047308e8ff",
+  "pool_index": 20,
+  "map_ids": [
+   "20:0",
+   "3:26"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/20",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0108.md"
+ },
+ {
+  "mapsec": "0x6D",
+  "mapsec_id": 109,
+  "ptr": "0x083EEDE4",
+  "name": "9号公路",
+  "bytes": 8,
+  "raw": "aa04eb047308e8ff",
+  "pool_index": 21,
+  "map_ids": [
+   "3:27"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/21",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0109.md"
+ },
+ {
+  "mapsec": "0x6E",
+  "mapsec_id": 110,
+  "ptr": "0x083EEDEC",
+  "name": "10号公路",
+  "bytes": 9,
+  "raw": "a2a104eb047308e8ff",
+  "pool_index": 22,
+  "map_ids": [
+   "21:0",
+   "21:1",
+   "3:28"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/22",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0110.md"
+ },
+ {
+  "mapsec": "0x6F",
+  "mapsec_id": 111,
+  "ptr": "0x083EEDF5",
+  "name": "11号公路",
+  "bytes": 9,
+  "raw": "a2a204eb047308e8ff",
+  "pool_index": 23,
+  "map_ids": [
+   "22:0",
+   "22:1",
+   "3:29"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/23",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0111.md"
+ },
+ {
+  "mapsec": "0x70",
+  "mapsec_id": 112,
+  "ptr": "0x083EEDFE",
+  "name": "12号公路",
+  "bytes": 9,
+  "raw": "a2a304eb047308e8ff",
+  "pool_index": 24,
+  "map_ids": [
+   "23:0",
+   "23:1",
+   "23:2",
+   "3:30"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/24",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0112.md"
+ },
+ {
+  "mapsec": "0x71",
+  "mapsec_id": 113,
+  "ptr": "0x083EEE07",
+  "name": "13号公路",
+  "bytes": 9,
+  "raw": "a2a404eb047308e8ff",
+  "pool_index": 25,
+  "map_ids": [
+   "3:31"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/25",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0113.md"
+ },
+ {
+  "mapsec": "0x72",
+  "mapsec_id": 114,
+  "ptr": "0x083EEE10",
+  "name": "14号公路",
+  "bytes": 9,
+  "raw": "a2a504eb047308e8ff",
+  "pool_index": 26,
+  "map_ids": [
+   "3:32"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/26",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0114.md"
+ },
+ {
+  "mapsec": "0x73",
+  "mapsec_id": 115,
+  "ptr": "0x083EEE19",
+  "name": "15号公路",
+  "bytes": 9,
+  "raw": "a2a604eb047308e8ff",
+  "pool_index": 27,
+  "map_ids": [
+   "24:0",
+   "24:1",
+   "3:33"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/27",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0115.md"
+ },
+ {
+  "mapsec": "0x74",
+  "mapsec_id": 116,
+  "ptr": "0x083EEE22",
+  "name": "16号公路",
+  "bytes": 9,
+  "raw": "a2a704eb047308e8ff",
+  "pool_index": 28,
+  "map_ids": [
+   "25:0",
+   "25:1",
+   "25:2",
+   "3:34"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/28",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0116.md"
+ },
+ {
+  "mapsec": "0x75",
+  "mapsec_id": 117,
+  "ptr": "0x083EEE2B",
+  "name": "17号公路",
+  "bytes": 9,
+  "raw": "a2a804eb047308e8ff",
+  "pool_index": 29,
+  "map_ids": [
+   "3:35"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/29",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0117.md"
+ },
+ {
+  "mapsec": "0x76",
+  "mapsec_id": 118,
+  "ptr": "0x083EEE34",
+  "name": "18号公路",
+  "bytes": 9,
+  "raw": "a2a904eb047308e8ff",
+  "pool_index": 30,
+  "map_ids": [
+   "26:0",
+   "26:1",
+   "3:36"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/30",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0118.md"
+ },
+ {
+  "mapsec": "0x77",
+  "mapsec_id": 119,
+  "ptr": "0x083EEE3D",
+  "name": "19号航道",
+  "bytes": 9,
+  "raw": "a2aa04eb04e30307ff",
+  "pool_index": 31,
+  "map_ids": [
+   "27:0",
+   "3:37"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/31",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0119.md"
+ },
+ {
+  "mapsec": "0x78",
+  "mapsec_id": 120,
+  "ptr": "0x083EEE46",
+  "name": "20号航道",
+  "bytes": 9,
+  "raw": "a3a104eb04e30307ff",
+  "pool_index": 32,
+  "map_ids": [
+   "3:38"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/32",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0120.md"
+ },
+ {
+  "mapsec": "0x79",
+  "mapsec_id": 121,
+  "ptr": "0x083EEE4F",
+  "name": "21号航道",
+  "bytes": 9,
+  "raw": "a3a204eb04e30307ff",
+  "pool_index": 33,
+  "map_ids": [
+   "3:39",
+   "3:40"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/33",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0121.md"
+ },
+ {
+  "mapsec": "0x7A",
+  "mapsec_id": 122,
+  "ptr": "0x083EEE58",
+  "name": "22号公路",
+  "bytes": 9,
+  "raw": "a3a304eb047308e8ff",
+  "pool_index": 34,
+  "map_ids": [
+   "28:0",
+   "3:41"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/34",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0122.md"
+ },
+ {
+  "mapsec": "0x7B",
+  "mapsec_id": 123,
+  "ptr": "0x083EEE61",
+  "name": "23号公路",
+  "bytes": 9,
+  "raw": "a3a404eb047308e8ff",
+  "pool_index": 35,
+  "map_ids": [
+   "29:0",
+   "3:42"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/35",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0123.md"
+ },
+ {
+  "mapsec": "0x7C",
+  "mapsec_id": 124,
+  "ptr": "0x083EEE6A",
+  "name": "24号公路",
+  "bytes": 9,
+  "raw": "a3a504eb047308e8ff",
+  "pool_index": 36,
+  "map_ids": [
+   "3:43"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/36",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0124.md"
+ },
+ {
+  "mapsec": "0x7D",
+  "mapsec_id": 125,
+  "ptr": "0x083EEE73",
+  "name": "25号公路",
+  "bytes": 9,
+  "raw": "a3a604eb047308e8ff",
+  "pool_index": 37,
+  "map_ids": [
+   "30:0",
+   "3:44"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/37",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0125.md"
+ },
+ {
+  "mapsec": "0x7E",
+  "mapsec_id": 126,
+  "ptr": "0x083EEE7C",
+  "name": "常磐森林",
+  "bytes": 9,
+  "raw": "02250a2a0b8b08a9ff",
+  "pool_index": 38,
+  "map_ids": [
+   "1:0"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/38",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0126.md"
+ },
+ {
+  "mapsec": "0x7F",
+  "mapsec_id": 127,
+  "ptr": "0x08C34CBC",
+  "name": "呆呆兽之井",
+  "bytes": 11,
+  "raw": "02d402d40c23107f075eff",
+  "pool_index": 39,
+  "map_ids": [
+   "1:1",
+   "1:123",
+   "1:2",
+   "1:3",
+   "1:94",
+   "1:95",
+   "55:2",
+   "55:3",
+   "55:4",
+   "55:60"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/39",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0127.md"
+ },
+ {
+  "mapsec": "0x80",
+  "mapsec_id": 128,
+  "ptr": "0x083EEE95",
+  "name": "圣安奴号",
+  "bytes": 9,
+  "raw": "0be101110a0804ebff",
+  "pool_index": 40,
+  "map_ids": [
+   "1:10",
+   "1:11",
+   "1:12",
+   "1:13",
+   "1:14",
+   "1:15",
+   "1:16",
+   "1:17",
+   "1:18",
+   "1:19",
+   "1:20",
+   "1:21",
+   "1:22",
+   "1:23",
+   "1:24",
+   "1:25",
+   "1:26",
+   "1:27",
+   "1:28",
+   "1:29",
+   "1:4",
+   "1:5",
+   "1:6",
+   "1:7",
+   "1:8",
+   "1:9"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/40",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0128.md"
+ },
+ {
+  "mapsec": "0x81",
+  "mapsec_id": 129,
+  "ptr": "0x083EEE9F",
+  "name": "49号水路",
+  "bytes": 9,
+  "raw": "a5aa04eb0c5108e8ff",
+  "pool_index": 41,
+  "map_ids": [
+   "1:30",
+   "1:31",
+   "1:32"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/41",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0129.md"
+ },
+ {
+  "mapsec": "0x82",
+  "mapsec_id": 130,
+  "ptr": "0x083EEEB0",
+  "name": "50号水路",
+  "bytes": 9,
+  "raw": "a6a104eb0c5108e8ff",
+  "pool_index": 42,
+  "map_ids": [
+   "1:33",
+   "1:34",
+   "1:35",
+   "3:102",
+   "3:103",
+   "3:105"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/42",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0130.md"
+ },
+ {
+  "mapsec": "0x83",
+  "mapsec_id": 131,
+  "ptr": "0x083EEEC1",
+  "name": "地鼠洞",
+  "bytes": 7,
+  "raw": "031f0c380359ff",
+  "pool_index": 43,
+  "map_ids": [
+   "1:36",
+   "1:37",
+   "1:38"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/43",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0131.md"
+ },
+ {
+  "mapsec": "0x84",
+  "mapsec_id": 132,
+  "ptr": "0x083EEED0",
+  "name": "冠军之路",
+  "bytes": 9,
+  "raw": "04a207ac107f08e8ff",
+  "pool_index": 44,
+  "map_ids": [
+   "1:39",
+   "1:40",
+   "1:41",
+   "53:10",
+   "53:8",
+   "53:9"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/44",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0132.md"
+ },
+ {
+  "mapsec": "0x85",
+  "mapsec_id": 133,
+  "ptr": "0x083EEEDD",
+  "name": "火箭队基地",
+  "bytes": 11,
+  "raw": "057d05e803780586031fff",
+  "pool_index": 45,
+  "map_ids": [
+   "1:42",
+   "1:43",
+   "1:44",
+   "1:45",
+   "1:46",
+   "56:44",
+   "56:45",
+   "56:46"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/45",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0133.md"
+ },
+ {
+  "mapsec": "0x86",
+  "mapsec_id": 134,
+  "ptr": "0x08EB2AE1",
+  "name": "阿露福遗迹",
+  "bytes": 11,
+  "raw": "010108e7040d0f15058eff",
+  "pool_index": 46,
+  "map_ids": [
+   "1:47",
+   "1:48",
+   "1:49",
+   "1:50",
+   "1:51",
+   "1:52",
+   "1:53",
+   "1:54",
+   "1:55",
+   "1:56",
+   "1:57",
+   "1:58",
+   "56:9"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/46",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0134.md"
+ },
+ {
+  "mapsec": "0x87",
+  "mapsec_id": 135,
+  "ptr": "0x083EEEF6",
+  "name": "铃铛塔",
+  "bytes": 7,
+  "raw": "08b819e20ca1ff",
+  "pool_index": 47,
+  "map_ids": [
+   "1:59",
+   "1:60",
+   "1:61",
+   "1:62",
+   "55:17",
+   "55:18",
+   "55:19",
+   "55:20",
+   "55:21",
+   "55:22",
+   "55:23",
+   "55:24",
+   "55:25",
+   "55:26",
+   "55:27",
+   "55:56"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/47",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0135.md"
+ },
+ {
+  "mapsec": "0x88",
+  "mapsec_id": 136,
+  "ptr": "0x083EEF06",
+  "name": "野生原野区",
+  "bytes": 11,
+  "raw": "0f000bd80fb90f000b1aff",
+  "pool_index": 48,
+  "map_ids": [
+   "1:63",
+   "1:64",
+   "1:65",
+   "1:66",
+   "1:67",
+   "1:68",
+   "1:69",
+   "1:70",
+   "1:71"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/48",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0136.md"
+ },
+ {
+  "mapsec": "0x89",
+  "mapsec_id": 137,
+  "ptr": "0x083EEF12",
+  "name": "宝可梦联盟",
+  "bytes": 11,
+  "raw": "016307d70966087d0963ff",
+  "pool_index": 49,
+  "map_ids": [
+   "1:75",
+   "1:76",
+   "1:77",
+   "1:78",
+   "1:79",
+   "1:80"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/49",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0137.md"
+ },
+ {
+  "mapsec": "0x8A",
+  "mapsec_id": 138,
+  "ptr": "0x083EEF21",
+  "name": "岩山隧道",
+  "bytes": 9,
+  "raw": "0ebb0b9b0c900307ff",
+  "pool_index": 50,
+  "map_ids": [
+   "1:81",
+   "1:82"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/50",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0138.md"
+ },
+ {
+  "mapsec": "0x8B",
+  "mapsec_id": 139,
+  "ptr": "0x083EEF2D",
+  "name": "双子岛",
+  "bytes": 7,
+  "raw": "0c4e110b0301ff",
+  "pool_index": 51,
+  "map_ids": [
+   "1:83",
+   "1:84",
+   "1:85",
+   "1:86",
+   "1:87"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/51",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0139.md"
+ },
+ {
+  "mapsec": "0x8C",
+  "mapsec_id": 140,
+  "ptr": "0x083EEF3D",
+  "name": "喇叭芽之塔",
+  "bytes": 11,
+  "raw": "082301270ea8107f0ca1ff",
+  "pool_index": 52,
+  "map_ids": [
+   "1:88",
+   "1:89",
+   "1:90",
+   "1:91",
+   "1:92",
+   "1:93",
+   "52:2",
+   "52:3"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/52",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0140.md"
+ },
+ {
+  "mapsec": "0x8D",
+  "mapsec_id": 141,
+  "ptr": "0x083EEF4B",
+  "name": "华蓝洞",
+  "bytes": 7,
+  "raw": "0537082b0359ff",
+  "pool_index": 53,
+  "map_ids": [
+   "1:72",
+   "1:73",
+   "1:74"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/53",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0141.md"
+ },
+ {
+  "mapsec": "0x8E",
+  "mapsec_id": 142,
+  "ptr": "0x083EEF59",
+  "name": "无人发电所",
+  "bytes": 11,
+  "raw": "0da40b4b03a5032e0c9cff",
+  "pool_index": 54,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/54",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0142.md"
+ },
+ {
+  "mapsec": "0x8F",
+  "mapsec_id": 143,
+  "ptr": "0x083EEF65",
+  "name": "若叶镇",
+  "bytes": 7,
+  "raw": "0b740f061065ff",
+  "pool_index": 55,
+  "map_ids": [
+   "32:1",
+   "32:4",
+   "3:12",
+   "3:66",
+   "43:0",
+   "43:1",
+   "43:2",
+   "43:3",
+   "43:4",
+   "43:5",
+   "43:6",
+   "43:7"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/55",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0143.md"
+ },
+ {
+  "mapsec": "0x90",
+  "mapsec_id": 144,
+  "ptr": "0x083EEF70",
+  "name": "吉野市",
+  "bytes": 7,
+  "raw": "05950f000c15ff",
+  "pool_index": 56,
+  "map_ids": [
+   "33:0",
+   "33:2",
+   "33:3",
+   "33:4",
+   "3:13",
+   "3:67",
+   "45:0",
+   "45:1",
+   "45:2",
+   "45:3",
+   "45:4"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/56",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0144.md"
+ },
+ {
+  "mapsec": "0x91",
+  "mapsec_id": 145,
+  "ptr": "0x083EEF7B",
+  "name": "桔梗市",
+  "bytes": 7,
+  "raw": "072d046b0c15ff",
+  "pool_index": 57,
+  "map_ids": [
+   "1:122",
+   "34:2",
+   "34:6",
+   "3:14",
+   "3:68",
+   "46:0",
+   "46:1",
+   "46:2",
+   "46:3",
+   "46:4",
+   "46:5",
+   "46:6",
+   "46:7",
+   "46:9",
+   "56:0",
+   "56:1",
+   "56:2",
+   "56:3",
+   "56:4",
+   "56:5",
+   "56:6",
+   "56:7"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/57",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0145.md"
+ },
+ {
+  "mapsec": "0x92",
+  "mapsec_id": 146,
+  "ptr": "0x083EEF88",
+  "name": "桧皮镇",
+  "bytes": 7,
+  "raw": "17940a5f1065ff",
+  "pool_index": 58,
+  "map_ids": [
+   "35:2",
+   "35:3",
+   "35:5",
+   "35:6",
+   "35:7",
+   "3:15",
+   "3:69",
+   "41:1",
+   "44:5",
+   "47:0",
+   "47:1",
+   "47:2",
+   "47:3",
+   "47:4",
+   "47:5",
+   "47:6",
+   "47:7"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/58",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0146.md"
+ },
+ {
+  "mapsec": "0x93",
+  "mapsec_id": 147,
+  "ptr": "0x083EEF94",
+  "name": "满金市",
+  "bytes": 7,
+  "raw": "093407420c15ff",
+  "pool_index": 59,
+  "map_ids": [
+   "35:1",
+   "35:4",
+   "36:0",
+   "36:1",
+   "36:2",
+   "36:3",
+   "37:0",
+   "3:108",
+   "3:111",
+   "3:112",
+   "3:16",
+   "3:75",
+   "3:76",
+   "3:77",
+   "3:78",
+   "44:14",
+   "50:1",
+   "50:10",
+   "50:11",
+   "50:12",
+   "50:13",
+   "50:14",
+   "50:15",
+   "50:16",
+   "50:17",
+   "50:18",
+   "50:19",
+   "50:2",
+   "50:20",
+   "50:21",
+   "50:22",
+   "50:23",
+   "50:24",
+   "50:25",
+   "50:26",
+   "50:27",
+   "50:28",
+   "50:29",
+   "50:3",
+   "50:30",
+   "50:31",
+   "50:32",
+   "50:33",
+   "50:34",
+   "50:35",
+   "50:36",
+   "50:37",
+   "50:38",
+   "50:39",
+   "50:4",
+   "50:40",
+   "50:41",
+   "50:42",
+   "50:43",
+   "50:44",
+   "50:45",
+   "50:46",
+   "50:47",
+   "50:48",
+   "50:49",
+   "50:5",
+   "50:50",
+   "50:6",
+   "50:7",
+   "50:8",
+   "50:9",
+   "51:3",
+   "51:4",
+   "51:5",
+   "51:6",
+   "51:7",
+   "52:36",
+   "52:37",
+   "53:11",
+   "53:12",
+   "53:13",
+   "53:14",
+   "53:15",
+   "53:16",
+   "54:11",
+   "55:54",
+   "55:6",
+   "55:7",
+   "56:10",
+   "56:11",
+   "56:12",
+   "56:13",
+   "56:14",
+   "56:15",
+   "56:51",
+   "56:52",
+   "56:69",
+   "56:77",
+   "56:78"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/59",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0147.md"
+ },
+ {
+  "mapsec": "0x94",
+  "mapsec_id": 148,
+  "ptr": "0x083EEFA0",
+  "name": "缘朱市",
+  "bytes": 7,
+  "raw": "0fc110bd0c15ff",
+  "pool_index": 60,
+  "map_ids": [
+   "31:1",
+   "31:4",
+   "31:5",
+   "31:6",
+   "34:0",
+   "35:0",
+   "3:17",
+   "3:70",
+   "48:0",
+   "48:1",
+   "48:5",
+   "48:6",
+   "48:7",
+   "51:0",
+   "52:11",
+   "52:5",
+   "55:28",
+   "55:29",
+   "55:30",
+   "55:31",
+   "55:32",
+   "55:33",
+   "55:34",
+   "55:5"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/60",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0148.md"
+ },
+ {
+  "mapsec": "0x95",
+  "mapsec_id": 149,
+  "ptr": "0x083EEFAD",
+  "name": "浅葱市",
+  "bytes": 7,
+  "raw": "0acc02b00c15ff",
+  "pool_index": 61,
+  "map_ids": [
+   "37:1",
+   "37:2",
+   "3:18",
+   "3:72",
+   "49:10",
+   "49:11",
+   "49:17",
+   "49:6",
+   "49:7",
+   "49:8",
+   "49:9",
+   "51:1"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/61",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0149.md"
+ },
+ {
+  "mapsec": "0x96",
+  "mapsec_id": 150,
+  "ptr": "0x083EEFB8",
+  "name": "湛蓝市",
+  "bytes": 7,
+  "raw": "1032082b0c15ff",
+  "pool_index": 62,
+  "map_ids": [
+   "31:0",
+   "3:45",
+   "3:73",
+   "49:0",
+   "49:1",
+   "49:2",
+   "49:3",
+   "49:4",
+   "49:5",
+   "51:2",
+   "52:0"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/62",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0150.md"
+ },
+ {
+  "mapsec": "0x97",
+  "mapsec_id": 151,
+  "ptr": "0x083EEFC4",
+  "name": "卡吉镇",
+  "bytes": 7,
+  "raw": "07b605951065ff",
+  "pool_index": 63,
+  "map_ids": [
+   "3:74",
+   "53:0",
+   "53:1",
+   "53:2",
+   "53:3"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/63",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0151.md"
+ },
+ {
+  "mapsec": "0x98",
+  "mapsec_id": 152,
+  "ptr": "0x083EEFD3",
+  "name": "烟墨市",
+  "bytes": 7,
+  "raw": "0eb509a10c15ff",
+  "pool_index": 64,
+  "map_ids": [
+   "31:2",
+   "32:0",
+   "32:2",
+   "32:3",
+   "33:1",
+   "3:71",
+   "54:0",
+   "54:4",
+   "54:5",
+   "54:6",
+   "54:7"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/64",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0152.md"
+ },
+ {
+  "mapsec": "0x99",
+  "mapsec_id": 153,
+  "ptr": "0x083EEFDE",
+  "name": "绊桥",
+  "bytes": 5,
+  "raw": "014c0adeff",
+  "pool_index": 65,
+  "map_ids": [
+   "3:48"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/65",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0153.md"
+ },
+ {
+  "mapsec": "0x9A",
+  "mapsec_id": 154,
+  "ptr": "0x083EEFEA",
+  "name": "29号道路",
+  "bytes": 9,
+  "raw": "a3aa04eb030708e8ff",
+  "pool_index": 66,
+  "map_ids": [
+   "38:0",
+   "3:79",
+   "44:0"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/66",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0154.md"
+ },
+ {
+  "mapsec": "0x9B",
+  "mapsec_id": 155,
+  "ptr": "0x083EEFFA",
+  "name": "30号道路",
+  "bytes": 9,
+  "raw": "a4a104eb030708e8ff",
+  "pool_index": 67,
+  "map_ids": [
+   "3:50",
+   "3:82",
+   "56:76"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/67",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0155.md"
+ },
+ {
+  "mapsec": "0x9C",
+  "mapsec_id": 156,
+  "ptr": "0x083EF007",
+  "name": "31号道路",
+  "bytes": 9,
+  "raw": "a4a204eb030708e8ff",
+  "pool_index": 68,
+  "map_ids": [
+   "3:51",
+   "3:83",
+   "44:1",
+   "45:5",
+   "45:6"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/68",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0156.md"
+ },
+ {
+  "mapsec": "0x9D",
+  "mapsec_id": 157,
+  "ptr": "0x083EF014",
+  "name": "32号道路",
+  "bytes": 9,
+  "raw": "a4a304eb030708e8ff",
+  "pool_index": 69,
+  "map_ids": [
+   "3:52",
+   "3:84",
+   "44:4",
+   "46:8"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/69",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0157.md"
+ },
+ {
+  "mapsec": "0x9E",
+  "mapsec_id": 158,
+  "ptr": "0x083EF021",
+  "name": "33号道路",
+  "bytes": 9,
+  "raw": "a4a404eb030708e8ff",
+  "pool_index": 70,
+  "map_ids": [
+   "3:53",
+   "3:87"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/70",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0158.md"
+ },
+ {
+  "mapsec": "0x9F",
+  "mapsec_id": 159,
+  "ptr": "0x083EF02E",
+  "name": "34号道路",
+  "bytes": 9,
+  "raw": "a4a504eb030708e8ff",
+  "pool_index": 71,
+  "map_ids": [
+   "3:46",
+   "3:47",
+   "3:54",
+   "3:88",
+   "44:6",
+   "44:7",
+   "50:0"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/71",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0159.md"
+ },
+ {
+  "mapsec": "0xA0",
+  "mapsec_id": 160,
+  "ptr": "0x083EF03E",
+  "name": "35号道路",
+  "bytes": 9,
+  "raw": "a4a604eb030708e8ff",
+  "pool_index": 72,
+  "map_ids": [
+   "3:55",
+   "3:90",
+   "44:10",
+   "44:8"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/72",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0160.md"
+ },
+ {
+  "mapsec": "0xA1",
+  "mapsec_id": 161,
+  "ptr": "0x083EF04E",
+  "name": "36号道路",
+  "bytes": 9,
+  "raw": "a4a704eb030708e8ff",
+  "pool_index": 73,
+  "map_ids": [
+   "3:56",
+   "3:85",
+   "44:11",
+   "44:2",
+   "44:3"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/73",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0161.md"
+ },
+ {
+  "mapsec": "0xA2",
+  "mapsec_id": 162,
+  "ptr": "0x083EF05F",
+  "name": "37号道路",
+  "bytes": 9,
+  "raw": "a4a804eb030708e8ff",
+  "pool_index": 74,
+  "map_ids": [
+   "3:57",
+   "3:89"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/74",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0162.md"
+ },
+ {
+  "mapsec": "0xA3",
+  "mapsec_id": 163,
+  "ptr": "0x083EF06F",
+  "name": "38号道路",
+  "bytes": 9,
+  "raw": "a4a904eb030708e8ff",
+  "pool_index": 75,
+  "map_ids": [
+   "3:58",
+   "3:91",
+   "3:92"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/75",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0163.md"
+ },
+ {
+  "mapsec": "0xA4",
+  "mapsec_id": 164,
+  "ptr": "0x083EF07E",
+  "name": "39号道路",
+  "bytes": 9,
+  "raw": "a4aa04eb030708e8ff",
+  "pool_index": 76,
+  "map_ids": [
+   "3:59",
+   "3:93",
+   "52:6",
+   "52:7"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/76",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0164.md"
+ },
+ {
+  "mapsec": "0xA5",
+  "mapsec_id": 165,
+  "ptr": "0x083EF089",
+  "name": "40号水路",
+  "bytes": 9,
+  "raw": "a5a104eb0c5108e8ff",
+  "pool_index": 77,
+  "map_ids": [
+   "3:109",
+   "3:110",
+   "3:60",
+   "3:95",
+   "52:27",
+   "56:23",
+   "56:32"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/77",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0165.md"
+ },
+ {
+  "mapsec": "0xA6",
+  "mapsec_id": 166,
+  "ptr": "0x083EF094",
+  "name": "41号水路",
+  "bytes": 9,
+  "raw": "a5a204eb0c5108e8ff",
+  "pool_index": 78,
+  "map_ids": [
+   "3:114",
+   "3:49",
+   "3:61",
+   "3:96",
+   "44:16"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/78",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0166.md"
+ },
+ {
+  "mapsec": "0xA7",
+  "mapsec_id": 167,
+  "ptr": "0x083EF0A0",
+  "name": "42号道路",
+  "bytes": 9,
+  "raw": "a5a304eb030708e8ff",
+  "pool_index": 79,
+  "map_ids": [
+   "3:62",
+   "3:97",
+   "44:12"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/79",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0167.md"
+ },
+ {
+  "mapsec": "0xA8",
+  "mapsec_id": 168,
+  "ptr": "0x083EF0AE",
+  "name": "43号道路",
+  "bytes": 9,
+  "raw": "a5a404eb030708e8ff",
+  "pool_index": 80,
+  "map_ids": [
+   "3:63",
+   "3:99",
+   "44:13"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/80",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0168.md"
+ },
+ {
+  "mapsec": "0xA9",
+  "mapsec_id": 169,
+  "ptr": "0x083EF0BE",
+  "name": "44号道路",
+  "bytes": 9,
+  "raw": "a5a504eb030708e8ff",
+  "pool_index": 81,
+  "map_ids": [
+   "3:64",
+   "3:98"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/81",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0169.md"
+ },
+ {
+  "mapsec": "0xAA",
+  "mapsec_id": 170,
+  "ptr": "0x083EF0CD",
+  "name": "45号道路",
+  "bytes": 9,
+  "raw": "a5a604eb030708e8ff",
+  "pool_index": 82,
+  "map_ids": [
+   "3:101",
+   "3:65"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/82",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0170.md"
+ },
+ {
+  "mapsec": "0xAB",
+  "mapsec_id": 171,
+  "ptr": "0x083EF0DA",
+  "name": "46号道路",
+  "bytes": 9,
+  "raw": "a5a704eb030708e8ff",
+  "pool_index": 83,
+  "map_ids": [
+   "3:80"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/83",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0171.md"
+ },
+ {
+  "mapsec": "0xAC",
+  "mapsec_id": 172,
+  "ptr": "0x083EF0E8",
+  "name": "47号道路",
+  "bytes": 9,
+  "raw": "a5a804eb030708e8ff",
+  "pool_index": 84,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/84",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0172.md"
+ },
+ {
+  "mapsec": "0xAD",
+  "mapsec_id": 173,
+  "ptr": "0x083EF0F6",
+  "name": "48号道路",
+  "bytes": 9,
+  "raw": "a5a904eb030708e8ff",
+  "pool_index": 85,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/85",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0173.md"
+ },
+ {
+  "mapsec": "0xAE",
+  "mapsec_id": 174,
+  "ptr": "0x08C33A90",
+  "name": "毁坏的世界",
+  "bytes": 11,
+  "raw": "05660542030b0c050739ff",
+  "pool_index": 86,
+  "map_ids": [
+   "2:37",
+   "2:38",
+   "2:39",
+   "2:40",
+   "2:41",
+   "2:42",
+   "2:47",
+   "2:48",
+   "2:49",
+   "2:50",
+   "2:51",
+   "2:52",
+   "2:53",
+   "2:59",
+   "45:7"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/86",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0174.md"
+ },
+ {
+  "mapsec": "0xAF",
+  "mapsec_id": 175,
+  "ptr": "0x083EF10F",
+  "name": "寂静之丘",
+  "bytes": 9,
+  "raw": "05b00762107f0b12ff",
+  "pool_index": 87,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/87",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0175.md"
+ },
+ {
+  "mapsec": "0xB0",
+  "mapsec_id": 176,
+  "ptr": "0x083EF119",
+  "name": "漩涡岛",
+  "bytes": 7,
+  "raw": "161c0d960301ff",
+  "pool_index": 88,
+  "map_ids": [
+   "1:109",
+   "55:14",
+   "55:15",
+   "55:16"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/88",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0176.md"
+ },
+ {
+  "mapsec": "0xB1",
+  "mapsec_id": 177,
+  "ptr": "0x083EF126",
+  "name": "黑暗洞穴",
+  "bytes": 9,
+  "raw": "0509011403590e91ff",
+  "pool_index": 89,
+  "map_ids": [
+   "1:125",
+   "1:126"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/89",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0177.md"
+ },
+ {
+  "mapsec": "0xB2",
+  "mapsec_id": 178,
+  "ptr": "0x083EF133",
+  "name": "自然公园",
+  "bytes": 9,
+  "raw": "110c0b3b04730fbcff",
+  "pool_index": 90,
+  "map_ids": [
+   "1:114",
+   "1:124",
+   "55:59"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/90",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0178.md"
+ },
+ {
+  "mapsec": "0xB3",
+  "mapsec_id": 179,
+  "ptr": "0x083EF144",
+  "name": "训练师之塔",
+  "bytes": 11,
+  "raw": "0e9e088a0be2107f0ca1ff",
+  "pool_index": 91,
+  "map_ids": [
+   "2:1",
+   "2:10",
+   "2:11",
+   "2:2",
+   "2:3",
+   "2:4",
+   "2:5",
+   "2:6",
+   "2:7",
+   "2:8",
+   "2:9"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/91",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0179.md"
+ },
+ {
+  "mapsec": "0xB4",
+  "mapsec_id": 180,
+  "ptr": "0x083EF152",
+  "name": "连接洞",
+  "bytes": 7,
+  "raw": "087f07250359ff",
+  "pool_index": 92,
+  "map_ids": [
+   "1:115",
+   "1:116",
+   "1:117",
+   "1:118",
+   "1:119",
+   "1:120",
+   "3:107",
+   "3:86",
+   "3:94"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/92",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0180.md"
+ },
+ {
+  "mapsec": "0xB5",
+  "mapsec_id": 181,
+  "ptr": "0x083EF15E",
+  "name": "冰天地",
+  "bytes": 7,
+  "raw": "01b60ced031fff",
+  "pool_index": 93,
+  "map_ids": [
+   "2:12",
+   "2:13",
+   "2:14",
+   "2:15",
+   "2:16",
+   "2:17",
+   "2:18",
+   "2:19",
+   "2:20",
+   "2:21",
+   "2:22",
+   "2:23",
+   "2:24",
+   "2:25",
+   "2:26",
+   "53:17",
+   "53:4",
+   "53:5",
+   "53:6",
+   "53:7"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/93",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0181.md"
+ },
+ {
+  "mapsec": "0xB6",
+  "mapsec_id": 182,
+  "ptr": "0x083EF168",
+  "name": "桐树林",
+  "bytes": 7,
+  "raw": "0d110c3c08a9ff",
+  "pool_index": 94,
+  "map_ids": [
+   "1:121",
+   "55:40"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/94",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0182.md"
+ },
+ {
+  "mapsec": "0xB7",
+  "mapsec_id": 183,
+  "ptr": "0x083EF175",
+  "name": "烧焦塔",
+  "bytes": 7,
+  "raw": "0bb3070b0ca1ff",
+  "pool_index": 95,
+  "map_ids": [
+   "48:3",
+   "48:4"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/95",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0183.md"
+ },
+ {
+  "mapsec": "0xB8",
+  "mapsec_id": 184,
+  "ptr": "0x083EF183",
+  "name": "桔梗市道馆",
+  "bytes": 11,
+  "raw": "072d046b0c15030704a5ff",
+  "pool_index": 96,
+  "map_ids": [
+   "52:1"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/96",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0184.md"
+ },
+ {
+  "mapsec": "0xB9",
+  "mapsec_id": 185,
+  "ptr": "0x083EF193",
+  "name": "铃音小道",
+  "bytes": 9,
+  "raw": "08b80f440e2c0307ff",
+  "pool_index": 97,
+  "map_ids": [
+   "2:34",
+   "48:2",
+   "52:12"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/97",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0185.md"
+ },
+ {
+  "mapsec": "0xBA",
+  "mapsec_id": 186,
+  "ptr": "0x08EB2AFC",
+  "name": "光辉灯塔",
+  "bytes": 9,
+  "raw": "04aa0561030d0ca1ff",
+  "pool_index": 98,
+  "map_ids": [
+   "2:35",
+   "49:12",
+   "49:13",
+   "49:14",
+   "49:15",
+   "49:16",
+   "49:18",
+   "49:19"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/98",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0186.md"
+ },
+ {
+  "mapsec": "0xBB",
+  "mapsec_id": 187,
+  "ptr": "0x083EF1AE",
+  "name": "愤怒之湖",
+  "bytes": 9,
+  "raw": "03e20a0a107f052dff",
+  "pool_index": 99,
+  "map_ids": [
+   "2:56",
+   "2:58",
+   "34:7",
+   "3:100"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/99",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0187.md"
+ },
+ {
+  "mapsec": "0xBC",
+  "mapsec_id": 188,
+  "ptr": "0x083EF1BB",
+  "name": "52号水路",
+  "bytes": 9,
+  "raw": "a6a304eb0c5108e8ff",
+  "pool_index": 100,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/100",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0188.md"
+ },
+ {
+  "mapsec": "0xBD",
+  "mapsec_id": 189,
+  "ptr": "0x083EF1CA",
+  "name": "那藏石室",
+  "bytes": 9,
+  "raw": "09bd01f30beb0c17ff",
+  "pool_index": 101,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/101",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0189.md"
+ },
+ {
+  "mapsec": "0xBE",
+  "mapsec_id": 190,
+  "ptr": "0x083EF1D9",
+  "name": "由格石室",
+  "bytes": 9,
+  "raw": "0f77045b0beb0c17ff",
+  "pool_index": 102,
+  "map_ids": [
+   "2:29"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/102",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0190.md"
+ },
+ {
+  "mapsec": "0xBF",
+  "mapsec_id": 191,
+  "ptr": "0x083EF1E8",
+  "name": "阿利波卡石室",
+  "bytes": 13,
+  "raw": "0101087001c307b60beb0c17ff",
+  "pool_index": 103,
+  "map_ids": [
+   "2:30"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/103",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0191.md"
+ },
+ {
+  "mapsec": "0xC0",
+  "mapsec_id": 192,
+  "ptr": "0x083EF1F8",
+  "name": "科斗石室",
+  "bytes": 9,
+  "raw": "07d4035c0beb0c17ff",
+  "pool_index": 104,
+  "map_ids": [
+   "2:31"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/104",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0192.md"
+ },
+ {
+  "mapsec": "0xC1",
+  "mapsec_id": 193,
+  "ptr": "0x083EF207",
+  "name": "阿努泽石室",
+  "bytes": 11,
+  "raw": "01010a0910080beb0c17ff",
+  "pool_index": 105,
+  "map_ids": [
+   "2:32"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/105",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0193.md"
+ },
+ {
+  "mapsec": "0xC2",
+  "mapsec_id": 194,
+  "ptr": "0x083EF214",
+  "name": "澳利弗石室",
+  "bytes": 11,
+  "raw": "01230870040f0beb0c17ff",
+  "pool_index": 106,
+  "map_ids": [
+   "2:33"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/106",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0194.md"
+ },
+ {
+  "mapsec": "0xC3",
+  "mapsec_id": 195,
+  "ptr": "0x083EF224",
+  "name": "51号水路",
+  "bytes": 9,
+  "raw": "a6a204eb0c5108e8ff",
+  "pool_index": 107,
+  "map_ids": [
+   "2:57",
+   "3:104"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/107",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0195.md"
+ },
+ {
+  "mapsec": "0xC4",
+  "mapsec_id": 196,
+  "ptr": "0x083EF22E",
+  "name": "彩虹百货大楼",
+  "bytes": 13,
+  "raw": "01e505160138058202d308d6ff",
+  "pool_index": 108,
+  "map_ids": [
+   "0:0",
+   "0:1",
+   "0:2",
+   "0:3",
+   "0:4"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/108",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0196.md"
+ },
+ {
+  "mapsec": "0xC5",
+  "mapsec_id": 197,
+  "ptr": "0x083EF22E",
+  "name": "彩虹百货大楼",
+  "bytes": 13,
+  "raw": "01e505160138058202d308d6ff",
+  "pool_index": 109,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/109",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0197.md"
+ },
+ {
+  "mapsec": "0xC6",
+  "mapsec_id": 198,
+  "ptr": "0x0896F000",
+  "name": "断崖通道",
+  "bytes": 9,
+  "raw": "03740eab0d100307ff",
+  "pool_index": 110,
+  "map_ids": [
+   "1:107",
+   "1:99",
+   "56:24",
+   "56:28",
+   "56:29",
+   "56:30"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/110",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0198.md"
+ },
+ {
+  "mapsec": "0xC7",
+  "mapsec_id": 199,
+  "ptr": "0x0896F00C",
+  "name": "48号道路",
+  "bytes": 9,
+  "raw": "a5a904eb030708e8ff",
+  "pool_index": 111,
+  "map_ids": [
+   "56:26"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/111",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0199.md"
+ },
+ {
+  "mapsec": "0xC8",
+  "mapsec_id": 200,
+  "ptr": "0x0896F018",
+  "name": "47号道路",
+  "bytes": 9,
+  "raw": "a5a804eb030708e8ff",
+  "pool_index": 112,
+  "map_ids": [
+   "56:25"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/112",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0200.md"
+ },
+ {
+  "mapsec": "0xC9",
+  "mapsec_id": 201,
+  "ptr": "0x0896F024",
+  "name": "断崖镇",
+  "bytes": 7,
+  "raw": "03740eab1065ff",
+  "pool_index": 113,
+  "map_ids": [
+   "1:101",
+   "34:4",
+   "34:5",
+   "37:3",
+   "40:0",
+   "56:27",
+   "56:74"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/113",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0201.md"
+ },
+ {
+  "mapsec": "0xCA",
+  "mapsec_id": 202,
+  "ptr": "0x0896F030",
+  "name": "27号道路",
+  "bytes": 9,
+  "raw": "a3a804eb030708e8ff",
+  "pool_index": 114,
+  "map_ids": [
+   "3:81",
+   "41:0"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/114",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0202.md"
+ },
+ {
+  "mapsec": "0xCB",
+  "mapsec_id": 203,
+  "ptr": "0x0896F03C",
+  "name": "26号道路",
+  "bytes": 9,
+  "raw": "a3a704eb030708e8ff",
+  "pool_index": 115,
+  "map_ids": [
+   "39:0",
+   "3:106",
+   "55:1"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/115",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0203.md"
+ },
+ {
+  "mapsec": "0xCC",
+  "mapsec_id": 204,
+  "ptr": "0x0896F048",
+  "name": "28号道路",
+  "bytes": 9,
+  "raw": "a3a904eb030708e8ff",
+  "pool_index": 116,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/116",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0204.md"
+ },
+ {
+  "mapsec": "0xCD",
+  "mapsec_id": 205,
+  "ptr": "0x0896F054",
+  "name": "白银山",
+  "bytes": 7,
+  "raw": "01360f480b9bff",
+  "pool_index": 117,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/117",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0205.md"
+ },
+ {
+  "mapsec": "0xCE",
+  "mapsec_id": 206,
+  "ptr": "0x0896F060",
+  "name": "幻影之森",
+  "bytes": 9,
+  "raw": "05500f5e107f0b8bff",
+  "pool_index": 118,
+  "map_ids": [
+   "1:112",
+   "56:43"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/118",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0206.md"
+ },
+ {
+  "mapsec": "0xCF",
+  "mapsec_id": 207,
+  "ptr": "0x0896F06C",
+  "name": "破海洞穴",
+  "bytes": 9,
+  "raw": "0a8104c903590e91ff",
+  "pool_index": 119,
+  "map_ids": [
+   "1:108",
+   "1:113",
+   "56:33",
+   "56:34",
+   "56:35",
+   "56:36",
+   "56:37",
+   "56:38"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/119",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0207.md"
+ },
+ {
+  "mapsec": "0xD0",
+  "mapsec_id": 208,
+  "ptr": "0x0896F078",
+  "name": "海之彼岸",
+  "bytes": 9,
+  "raw": "04c9107f01880115ff",
+  "pool_index": 120,
+  "map_ids": [
+   "56:41"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/120",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0208.md"
+ },
+ {
+  "mapsec": "0xD1",
+  "mapsec_id": 209,
+  "ptr": "0x0896F084",
+  "name": "不知名遗迹",
+  "bytes": 11,
+  "raw": "01d6107b09930f15058eff",
+  "pool_index": 121,
+  "map_ids": [
+   "56:17",
+   "56:18",
+   "56:19",
+   "56:20",
+   "56:21",
+   "56:22"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/121",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0209.md"
+ },
+ {
+  "mapsec": "0xD2",
+  "mapsec_id": 210,
+  "ptr": "0x0896F090",
+  "name": "都城瀑布",
+  "bytes": 9,
+  "raw": "036102490a9401d7ff",
+  "pool_index": 122,
+  "map_ids": [
+   "55:0"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/122",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0210.md"
+ },
+ {
+  "mapsec": "0xD3",
+  "mapsec_id": 211,
+  "ptr": "0x0896F09C",
+  "name": "埋藏之塔",
+  "bytes": 9,
+  "raw": "092b01f3107f0ca1ff",
+  "pool_index": 123,
+  "map_ids": [
+   "56:49"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/123",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0211.md"
+ },
+ {
+  "mapsec": "0xD4",
+  "mapsec_id": 212,
+  "ptr": "0x0896F0B0",
+  "name": "寂静之丘",
+  "bytes": 9,
+  "raw": "05b00762107f0b12ff",
+  "pool_index": 124,
+  "map_ids": [
+   "1:100",
+   "1:102",
+   "1:103",
+   "1:104",
+   "1:105",
+   "1:106",
+   "1:96",
+   "1:97",
+   "1:98",
+   "56:40"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/124",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0212.md"
+ },
+ {
+  "mapsec": "0xD5",
+  "mapsec_id": 213,
+  "ptr": "0x0896F0C0",
+  "name": "跨海大桥",
+  "bytes": 9,
+  "raw": "07f504c902d30adeff",
+  "pool_index": 125,
+  "map_ids": [
+   "3:115",
+   "51:8"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/125",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0213.md"
+ },
+ {
+  "mapsec": "0xD6",
+  "mapsec_id": 214,
+  "ptr": "0x0896F0D0",
+  "name": "城都矿山",
+  "bytes": 9,
+  "raw": "02490361080a0b9bff",
+  "pool_index": 126,
+  "map_ids": [
+   "1:110",
+   "36:4",
+   "37:4",
+   "3:113",
+   "51:9"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/126",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0214.md"
+ },
+ {
+  "mapsec": "0xD7",
+  "mapsec_id": 215,
+  "ptr": "0x0896F0E0",
+  "name": "纯白冻土",
+  "bytes": 9,
+  "raw": "029f013603580d29ff",
+  "pool_index": 127,
+  "map_ids": [
+   "52:23",
+   "52:24"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/127",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0215.md"
+ },
+ {
+  "mapsec": "0xD8",
+  "mapsec_id": 216,
+  "ptr": "0x0896F130",
+  "name": "互动广场",
+  "bytes": 9,
+  "raw": "0532035404ab0223ff",
+  "pool_index": 128,
+  "map_ids": [
+   "51:10"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/128",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0216.md"
+ },
+ {
+  "mapsec": "0xD9",
+  "mapsec_id": 217,
+  "ptr": "0x0896F140",
+  "name": "龙穴",
+  "bytes": 5,
+  "raw": "08cd0e91ff",
+  "pool_index": 129,
+  "map_ids": [
+   "54:1",
+   "54:2",
+   "54:3",
+   "54:8",
+   "54:9"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/129",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0217.md"
+ },
+ {
+  "mapsec": "0xDA",
+  "mapsec_id": 218,
+  "ptr": "0x0896F150",
+  "name": "脐之岩",
+  "bytes": 7,
+  "raw": "0aa5107f0ebbff",
+  "pool_index": 130,
+  "map_ids": [
+   "2:0",
+   "2:36",
+   "2:43",
+   "2:44",
+   "2:45",
+   "2:46",
+   "2:54",
+   "2:55",
+   "56:53"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/130",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0218.md"
+ },
+ {
+  "mapsec": "0xDB",
+  "mapsec_id": 219,
+  "ptr": "0x0896F160",
+  "name": "对战开拓区",
+  "bytes": 11,
+  "raw": "0379103007b80d400b1aff",
+  "pool_index": 131,
+  "map_ids": [
+   "31:3",
+   "54:12"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/131",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0219.md"
+ },
+ {
+  "mapsec": "0xDC",
+  "mapsec_id": 220,
+  "ptr": "0x0896F170",
+  "name": "对战塔",
+  "bytes": 7,
+  "raw": "037910300ca1ff",
+  "pool_index": 132,
+  "map_ids": [
+   "54:13",
+   "54:14",
+   "54:15",
+   "54:16",
+   "54:17",
+   "54:18",
+   "54:19",
+   "54:20"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/132",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0220.md"
+ },
+ {
+  "mapsec": "0xDD",
+  "mapsec_id": 221,
+  "ptr": "0x0896F180",
+  "name": "秘密基地",
+  "bytes": 9,
+  "raw": "097009740586031fff",
+  "pool_index": 133,
+  "map_ids": [
+   "57:0",
+   "57:1",
+   "57:10",
+   "57:11",
+   "57:12",
+   "57:13",
+   "57:14",
+   "57:15",
+   "57:2",
+   "57:3",
+   "57:4",
+   "57:5",
+   "57:6",
+   "57:7",
+   "57:8",
+   "57:9"
+  ],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/133",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0221.md"
+ },
+ {
+  "mapsec": "0xDE",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 222,
+  "pool_index": 134,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/134",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0222.md"
+ },
+ {
+  "mapsec": "0xDF",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 223,
+  "pool_index": 135,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/135",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0223.md"
+ },
+ {
+  "mapsec": "0xE0",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 224,
+  "pool_index": 136,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/136",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0224.md"
+ },
+ {
+  "mapsec": "0xE1",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 225,
+  "pool_index": 137,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/137",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0225.md"
+ },
+ {
+  "mapsec": "0xE2",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 226,
+  "pool_index": 138,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/138",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0226.md"
+ },
+ {
+  "mapsec": "0xE3",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 227,
+  "pool_index": 139,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/139",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0227.md"
+ },
+ {
+  "mapsec": "0xE4",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 228,
+  "pool_index": 140,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/140",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0228.md"
+ },
+ {
+  "mapsec": "0xE5",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 229,
+  "pool_index": 141,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/141",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0229.md"
+ },
+ {
+  "mapsec": "0xE6",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 230,
+  "pool_index": 142,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/142",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0230.md"
+ },
+ {
+  "mapsec": "0xE7",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 231,
+  "pool_index": 143,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/143",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0231.md"
+ },
+ {
+  "mapsec": "0xE8",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 232,
+  "pool_index": 144,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/144",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0232.md"
+ },
+ {
+  "mapsec": "0xE9",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 233,
+  "pool_index": 145,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/145",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0233.md"
+ },
+ {
+  "mapsec": "0xEA",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 234,
+  "pool_index": 146,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/146",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0234.md"
+ },
+ {
+  "mapsec": "0xEB",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 235,
+  "pool_index": 147,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/147",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0235.md"
+ },
+ {
+  "mapsec": "0xEC",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 236,
+  "pool_index": 148,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/148",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0236.md"
+ },
+ {
+  "mapsec": "0xED",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 237,
+  "pool_index": 149,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/149",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0237.md"
+ },
+ {
+  "mapsec": "0xEE",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 238,
+  "pool_index": 150,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/150",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0238.md"
+ },
+ {
+  "mapsec": "0xEF",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 239,
+  "pool_index": 151,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/151",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0239.md"
+ },
+ {
+  "mapsec": "0xF0",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 240,
+  "pool_index": 152,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/152",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0240.md"
+ },
+ {
+  "mapsec": "0xF1",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 241,
+  "pool_index": 153,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/153",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0241.md"
+ },
+ {
+  "mapsec": "0xF2",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 242,
+  "pool_index": 154,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/154",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0242.md"
+ },
+ {
+  "mapsec": "0xF3",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 243,
+  "pool_index": 155,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/155",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0243.md"
+ },
+ {
+  "mapsec": "0xF4",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 244,
+  "pool_index": 156,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/156",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0244.md"
+ },
+ {
+  "mapsec": "0xF5",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 245,
+  "pool_index": 157,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/157",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0245.md"
+ },
+ {
+  "mapsec": "0xF6",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 246,
+  "pool_index": 158,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/158",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0246.md"
+ },
+ {
+  "mapsec": "0xF7",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 247,
+  "pool_index": 159,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/159",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0247.md"
+ },
+ {
+  "mapsec": "0xF8",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 248,
+  "pool_index": 160,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/160",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0248.md"
+ },
+ {
+  "mapsec": "0xF9",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 249,
+  "pool_index": 161,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/161",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0249.md"
+ },
+ {
+  "mapsec": "0xFA",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 250,
+  "pool_index": 162,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/162",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0250.md"
+ },
+ {
+  "mapsec": "0xFB",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 251,
+  "pool_index": 163,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/163",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0251.md"
+ },
+ {
+  "mapsec": "0xFC",
+  "ptr": "0xFFFFFFFF",
+  "name": null,
+  "error": "pointer outside ROM",
+  "mapsec_id": 252,
+  "pool_index": 164,
+  "map_ids": [],
+  "source": {
+   "path": "maps_research/out/maps/mapsec_names.json",
+   "json_pointer": "/names/164",
+   "file_sha256": "60eae9ad6ccb185c6a4562e25a1c7403635e6077c038572f3d4842ab335fa8b6"
+  },
+  "region_semantics": "ROM map section; not inferred major region",
+  "page_path": "world/pages/regions/0252.md"
+ }
+]

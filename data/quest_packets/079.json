@@ -1,0 +1,2295 @@
+{
+ "title": "错位的忍道",
+ "quest_id": 79,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b528",
+    "title": "错位的忍道",
+    "title_address": "0x8e3bd2c",
+    "description": "我正在寻找\n忍者之乡隐居的长老！\n希望有人能助我一臂之力！",
+    "description_address": "0x8e3bd01",
+    "unknown_u16": 693,
+    "unknown_u16_hex": "0x02B5",
+    "accept_flag": 2923,
+    "accept_flag_hex": "0x0B6B",
+    "complete_flag": 2925,
+    "complete_flag_hex": "0x0B6D",
+    "map_group": 3,
+    "map_num": 74,
+    "tail_hex": "06 00 00 00",
+    "index": 79,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39744",
+      "title": "错位的忍道",
+      "description_address": "0x8e39bf6",
+      "description": "我正在寻找\\n忍者之乡隐居的长老！\\n希望有人能助我一臂之力！"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39bf6",
+    "legacy_match_count": 1,
+    "current_description": "帮助外来的忍者寻找\n藏匿在宝可梦中心的长老。",
+    "catalog_map": {
+     "id": "3:74",
+     "name": "卡吉镇"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08EDEC43",
+    "0x08EDF2BE",
+    "0x08EE0B9E",
+    "0x08EE1101"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08EDEC43",
+     "map_id": "53:1",
+     "place": "卡吉镇",
+     "kind": "人物",
+     "local_id": 1,
+     "event_index": 0,
+     "x": 10,
+     "y": 12,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g53_n001.md"
+    },
+    {
+     "script": "0x08EDF2BE",
+     "map_id": "3:74",
+     "place": "卡吉镇",
+     "kind": "人物",
+     "local_id": 19,
+     "event_index": 18,
+     "x": 11,
+     "y": 7,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n074.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x0816A2CF",
+     "event_roots": [
+      {
+       "map_id": "5:4",
+       "place": "常青市",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 7,
+       "y": 2,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g05_n004.md"
+      },
+      {
+       "map_id": "45:0",
+       "place": "吉野市",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 10,
+       "y": 12,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g45_n000.md"
+      },
+      {
+       "map_id": "46:0",
+       "place": "桔梗市",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 10,
+       "y": 12,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g46_n000.md"
+      },
+      {
+       "map_id": "46:8",
+       "place": "32号道路",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 10,
+       "y": 12,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g46_n008.md"
+      },
+      {
+       "map_id": "47:3",
+       "place": "桧皮镇",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 10,
+       "y": 12,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g47_n003.md"
+      },
+      {
+       "map_id": "48:6",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 10,
+       "y": 12,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g48_n006.md"
+      },
+      {
+       "map_id": "49:5",
+       "place": "湛蓝市",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 10,
+       "y": 12,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g49_n005.md"
+      },
+      {
+       "map_id": "49:10",
+       "place": "浅葱市",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 10,
+       "y": 12,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g49_n010.md"
+      },
+      {
+       "map_id": "56:74",
+       "place": "断崖镇",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 10,
+       "y": 12,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g56_n074.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x0816A2CF",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x0816A2D0",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x0816A2D1",
+       "command": "call",
+       "args": [
+        135947640
+       ],
+       "targets": [
+        "0x081A6578"
+       ]
+      },
+      {
+       "at": "0x0816A2D6",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x0816A2D7",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x081A6578",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x081A6578",
+       "command": "special",
+       "args": [
+        391
+       ]
+      },
+      {
+       "at": "0x081A657B",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x081A6580",
+       "command": "goto_if",
+       "args": [
+        1,
+        135953120
+       ],
+       "targets": [
+        "0x081A7AE0"
+       ]
+      },
+      {
+       "at": "0x081A6586",
+       "command": "preparemsg",
+       "args": [
+        135943299
+       ],
+       "texts": [
+        {
+         "address": "0x081A5483",
+         "text": "欢迎来到宝可梦中心！\n请问您需要对您的\n宝可梦进行治疗吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x081A658B",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x081A658C",
+       "command": "multichoice",
+       "args": [
+        19,
+        8,
+        0,
+        2
+       ]
+      },
+      {
+       "at": "0x081A6591",
+       "command": "copyvar",
+       "args": [
+        32768,
+        32781
+       ]
+      },
+      {
+       "at": "0x081A6596",
+       "command": "comparevartovalue",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x081A659B",
+       "command": "goto_if",
+       "args": [
+        1,
+        135947704
+       ],
+       "targets": [
+        "0x081A65B8"
+       ]
+      },
+      {
+       "at": "0x081A65A1",
+       "command": "comparevartovalue",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x081A65A6",
+       "command": "goto_if",
+       "args": [
+        1,
+        135947875
+       ],
+       "targets": [
+        "0x081A6663"
+       ]
+      },
+      {
+       "at": "0x081A65AC",
+       "command": "comparevartovalue",
+       "args": [
+        32768,
+        127
+       ],
+       "possible_names_not_semantics": {
+        "species": "凯罗斯",
+        "item": "珠宝邮件",
+        "move": "攀瀑"
+       }
+      },
+      {
+       "at": "0x081A65B1",
+       "command": "goto_if",
+       "args": [
+        1,
+        135947875
+       ],
+       "targets": [
+        "0x081A6663"
+       ]
+      },
+      {
+       "at": "0x081A65B7",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x081A65B8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x081A65B8",
+       "command": "incrementgamestat",
+       "args": [
+        15
+       ]
+      },
+      {
+       "at": "0x081A65BA",
+       "command": "preparemsg",
+       "args": [
+        135943393
+       ],
+       "texts": [
+        {
+         "address": "0x081A54E1",
+         "text": "好的，\n请耐心等待几秒钟。"
+        }
+       ]
+      },
+      {
+       "at": "0x081A65BF",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x081A65C0",
+       "command": "call",
+       "args": [
+        164427592
+       ],
+       "targets": [
+        "0x09CCF748"
+       ]
+      },
+      {
+       "at": "0x081A65C5",
+       "command": "special",
+       "args": [
+        361
+       ]
+      },
+      {
+       "at": "0x081A65C8",
+       "command": "goto",
+       "args": [
+        135947756
+       ],
+       "targets": [
+        "0x081A65EC"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x081A65EC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x081A65EC",
+       "command": "special2",
+       "args": [
+        32781,
+        433
+       ]
+      },
+      {
+       "at": "0x081A65F1",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x081A65F6",
+       "command": "goto_if",
+       "args": [
+        1,
+        135947805
+       ],
+       "targets": [
+        "0x081A661D"
+       ]
+      },
+      {
+       "at": "0x081A65FC",
+       "command": "special2",
+       "args": [
+        32781,
+        387
+       ]
+      },
+      {
+       "at": "0x081A6601",
+       "command": "copyvar",
+       "args": [
+        32776,
+        32781
+       ]
+      },
+      {
+       "at": "0x081A6606",
+       "command": "comparevartovalue",
+       "args": [
+        32776,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x081A660B",
+       "command": "goto_if",
+       "args": [
+        1,
+        135947805
+       ],
+       "targets": [
+        "0x081A661D"
+       ]
+      },
+      {
+       "at": "0x081A6611",
+       "command": "comparevartovalue",
+       "args": [
+        32776,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x081A6616",
+       "command": "goto_if",
+       "args": [
+        1,
+        135947830
+       ],
+       "targets": [
+        "0x081A6636"
+       ]
+      },
+      {
+       "at": "0x081A661C",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x081A661D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x081A661D",
+       "command": "preparemsg",
+       "args": [
+        135943467
+       ],
+       "texts": [
+        {
+         "address": "0x081A552B",
+         "text": "感谢您的耐心等待。\n我们已经把你的宝可梦\n恢复到最佳状态了。"
+        }
+       ]
+      },
+      {
+       "at": "0x081A6622",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x081A6623",
+       "command": "applymovement",
+       "args": [
+        32783,
+        135947884
+       ]
+      },
+      {
+       "at": "0x081A662A",
+       "command": "waitmovement",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x081A662D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        135943441
+       ],
+       "texts": [
+        {
+         "address": "0x081A5511",
+         "text": "我们期待与您再次见面！"
+        }
+       ]
+      },
+      {
+       "at": "0x081A6633",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x081A6635",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x081A6636",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x081A6636",
+       "command": "checkflag",
+       "args": [
+        2114
+       ]
+      },
+      {
+       "at": "0x081A6639",
+       "command": "goto_if",
+       "args": [
+        1,
+        135947805
+       ],
+       "targets": [
+        "0x081A661D"
+       ]
+      },
+      {
+       "at": "0x081A663F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        135943467
+       ],
+       "texts": [
+        {
+         "address": "0x081A552B",
+         "text": "感谢您的耐心等待。\n我们已经把你的宝可梦\n恢复到最佳状态了。"
+        }
+       ]
+      },
+      {
+       "at": "0x081A6645",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x081A6647",
+       "command": "setflag",
+       "args": [
+        2114
+       ]
+      },
+      {
+       "at": "0x081A664A",
+       "command": "preparemsg",
+       "args": [
+        136039626
+       ],
+       "texts": [
+        {
+         "address": "0x081BCCCA",
+         "text": "看来[玩家/变量]已经玩得很\n顺利了。\n上吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x081A664F",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x081A6650",
+       "command": "applymovement",
+       "args": [
+        32783,
+        135947884
+       ]
+      },
+      {
+       "at": "0x081A6657",
+       "command": "waitmovement",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x081A665A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        135943441
+       ],
+       "texts": [
+        {
+         "address": "0x081A5511",
+         "text": "我们期待与您再次见面！"
+        }
+       ]
+      },
+      {
+       "at": "0x081A6660",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x081A6662",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x081A6663",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x081A6663",
+       "command": "loadpointer",
+       "args": [
+        0,
+        135943441
+       ],
+       "texts": [
+        {
+         "address": "0x081A5511",
+         "text": "我们期待与您再次见面！"
+        }
+       ]
+      },
+      {
+       "at": "0x081A6669",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x081A666B",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDEC43",
+     "event_roots": [
+      {
+       "map_id": "53:1",
+       "place": "卡吉镇",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 10,
+       "y": 12,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g53_n001.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EDEC43",
+       "command": "checkflag",
+       "args": [
+        2924
+       ]
+      },
+      {
+       "at": "0x08EDEC46",
+       "command": "goto_if",
+       "args": [
+        1,
+        135701199
+       ],
+       "targets": [
+        "0x0816A2CF"
+       ]
+      },
+      {
+       "at": "0x08EDEC4C",
+       "command": "checkflag",
+       "args": [
+        2923
+       ],
+       "task_flag_labels": [
+        {
+         "title": "错位的忍道",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDEC4F",
+       "command": "goto_if",
+       "args": [
+        1,
+        149817212
+       ],
+       "targets": [
+        "0x08EE077C"
+       ]
+      },
+      {
+       "at": "0x08EDEC55",
+       "command": "goto",
+       "args": [
+        135701199
+       ],
+       "targets": [
+        "0x0816A2CF"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EDF2BE",
+     "event_roots": [
+      {
+       "map_id": "3:74",
+       "place": "卡吉镇",
+       "kind": "人物",
+       "local_id": 19,
+       "event_index": 18,
+       "x": 11,
+       "y": 7,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n074.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EDF2BE",
+       "command": "checkflag",
+       "args": [
+        2924
+       ]
+      },
+      {
+       "at": "0x08EDF2C1",
+       "command": "goto_if",
+       "args": [
+        1,
+        149816928
+       ],
+       "targets": [
+        "0x08EE0660"
+       ]
+      },
+      {
+       "at": "0x08EDF2C7",
+       "command": "checkflag",
+       "args": [
+        2923
+       ],
+       "task_flag_labels": [
+        {
+         "title": "错位的忍道",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDF2CA",
+       "command": "goto_if",
+       "args": [
+        1,
+        149818674
+       ],
+       "targets": [
+        "0x08EE0D32"
+       ]
+      },
+      {
+       "at": "0x08EDF2D0",
+       "command": "applymovement",
+       "args": [
+        48,
+        149816203
+       ]
+      },
+      {
+       "at": "0x08EDF2D7",
+       "command": "waitmovement",
+       "args": [
+        48
+       ]
+      },
+      {
+       "at": "0x08EDF2DA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149818929
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0E31",
+         "text": "呼……\n不愧是传说中的忍者之乡卡吉镇！\n连空气里都弥漫着隐秘的气息！\n我从遥远的地方赶来，\n就是为了让我的呱头蛙\n在这里接受最正统的忍术训练！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDF2E0",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDF2E2",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08EDF2E5",
+       "command": "goto_if",
+       "args": [
+        1,
+        149818217
+       ],
+       "targets": [
+        "0x08EE0B69"
+       ]
+      },
+      {
+       "at": "0x08EDF2EB",
+       "command": "applymovement",
+       "args": [
+        48,
+        150330793
+       ]
+      },
+      {
+       "at": "0x08EDF2F2",
+       "command": "waitmovement",
+       "args": [
+        48
+       ]
+      },
+      {
+       "at": "0x08EDF2F5",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EDF2F6",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE0660",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE0660",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149818088
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0AE8",
+         "text": "噢噢！果然在这里！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0666",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE0668",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EE066B",
+       "command": "applymovement",
+       "args": [
+        19,
+        149818926
+       ]
+      },
+      {
+       "at": "0x08EE0672",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EE0675",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149818107
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0AFB",
+         "text": "什么？长老竟然\n就是那位乔伊小姐？！\n这就是传说中的\n大隐隐于市吗……\n快，呱头蛙！我们一起来\n感受这究极的忍术奥义吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE067B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE067D",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EE0680",
+       "command": "applymovement",
+       "args": [
+        18,
+        149818083
+       ]
+      },
+      {
+       "at": "0x08EE0687",
+       "command": "waitmovement",
+       "args": [
+        18
+       ]
+      },
+      {
+       "at": "0x08EE068A",
+       "command": "signmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EE068B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149818059
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0ACB",
+         "text": "呱头蛙一脚踢飞了卷轴！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0691",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE0693",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE0696",
+       "command": "normalmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EE0697",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE069A",
+       "command": "applymovement",
+       "args": [
+        19,
+        149818055
+       ]
+      },
+      {
+       "at": "0x08EE06A1",
+       "command": "waitmovement",
+       "args": [
+        19
+       ]
+      },
+      {
+       "at": "0x08EE06A4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149817999
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0A8F",
+         "text": "诶？！为什么生气啊？\n等一下……\n这封面上写着<伊贺流>奥义！？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE06AA",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE06AC",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EE06AF",
+       "command": "applymovement",
+       "args": [
+        19,
+        149817995
+       ]
+      },
+      {
+       "at": "0x08EE06B6",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EE06B9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149817658
+       ],
+       "texts": [
+        {
+         "address": "0x08EE093A",
+         "text": "糟了！我完全搞错了！\n呱呱泡蛙进化后是<甲贺>忍蛙！\n它是天生的<甲贺流>传人，\n怎么可能学习\n死对头<伊贺流>的忍术啊！\n难怪它这么抗拒！\n看来我的方向完全反了……\n难道说真正的甲贺流高手……\n是在关都地区的浅红市吗？\n我要立刻出发，跨过大海去挑战\n浅红道馆的阿杏小姐！\n这次总不会搞错了吧……\n总之谢谢你！这个就当做是\n你见识到长老实力的封口费吧！\n我们关都地区再见！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE06BF",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE06C1",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        194
+       ],
+       "possible_names_not_semantics": {
+        "species": "乌波",
+        "item": "烟雾球",
+        "move": "同命"
+       }
+      },
+      {
+       "at": "0x08EE06C6",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        5
+       ],
+       "possible_names_not_semantics": {
+        "species": "火恐龙",
+        "item": "狩猎球",
+        "move": "百万吨重拳"
+       }
+      },
+      {
+       "at": "0x08EE06CB",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE06CD",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE06D0",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        690
+       ],
+       "possible_names_not_semantics": {
+        "species": "火神蛾",
+        "item": "冰冷岩石",
+        "move": "换场"
+       }
+      },
+      {
+       "at": "0x08EE06D5",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE06DA",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE06DC",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE06DF",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        537
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕路奇亚",
+        "item": "经验糖果S",
+        "move": "暗黑爆破"
+       }
+      },
+      {
+       "at": "0x08EE06E4",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE06E9",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE06EB",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE06EE",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EE06EF",
+       "command": "goto",
+       "args": [
+        149819649
+       ],
+       "targets": [
+        "0x08EE1101"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EE077C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE077C",
+       "command": "callasm",
+       "args": [
+        147456081
+       ]
+      },
+      {
+       "at": "0x08EE0781",
+       "command": "goto",
+       "args": [
+        149817222
+       ],
+       "targets": [
+        "0x08EE0786"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EE0786",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE0786",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149817175
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0757",
+         "text": "欢迎来到宝可梦中心……\n哦呵呵呵呵呵……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE078C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE078E",
+       "command": "pause",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08EE0791",
+       "command": "movesprite",
+       "args": [
+        1,
+        10,
+        15
+       ]
+      },
+      {
+       "at": "0x08EE0798",
+       "command": "pause",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08EE079B",
+       "command": "playsong",
+       "args": [
+        479,
+        51
+       ]
+      },
+      {
+       "at": "0x08EE079F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149816465
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0491",
+         "text": "嘘……你是为了\n那个修行的小鬼而来的吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE07A5",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE07A7",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EE07AA",
+       "command": "applymovement",
+       "args": [
+        255,
+        149816461
+       ]
+      },
+      {
+       "at": "0x08EE07B1",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EE07B4",
+       "command": "pause",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08EE07B7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149816429
+       ],
+       "texts": [
+        {
+         "address": "0x08EE046D",
+         "text": "呵呵，不要被\n这身护士服所迷惑。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE07BD",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE07BF",
+       "command": "pause",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08EE07C2",
+       "command": "movesprite",
+       "args": [
+        1,
+        9,
+        14
+       ]
+      },
+      {
+       "at": "0x08EE07C9",
+       "command": "pause",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08EE07CC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149819062
+       ]
+      },
+      {
+       "at": "0x08EE07D2",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE07D4",
+       "command": "pause",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08EE07D7",
+       "command": "movesprite",
+       "args": [
+        1,
+        11,
+        14
+       ]
+      },
+      {
+       "at": "0x08EE07DE",
+       "command": "pause",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08EE07E1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149816306
+       ],
+       "texts": [
+        {
+         "address": "0x08EE03F2",
+         "text": "既然你有\n这等勇气找上门来，\n这卷由妾身\n亲自编写的<伊贺忍术奥义>……\n就替我转交给\n那个外乡的小子吧\n哦呵呵呵呵呵呵……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE07E7",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08EE07E9",
+       "command": "fanfare",
+       "args": [
+        318
+       ]
+      },
+      {
+       "at": "0x08EE07EC",
+       "command": "preparemsg",
+       "args": [
+        149813893
+       ],
+       "texts": [
+        {
+         "address": "0x08EDFA85",
+         "text": "[玩家/变量]收下了<伊贺忍术奥义>！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE07F1",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08EE07F2",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EE07F3",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x08EE07F4",
+       "command": "pause",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08EE07F7",
+       "command": "movesprite",
+       "args": [
+        1,
+        10,
+        12
+       ]
+      },
+      {
+       "at": "0x08EE07FE",
+       "command": "fadedefaultbgm",
+       "args": []
+      },
+      {
+       "at": "0x08EE07FF",
+       "command": "pause",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08EE0802",
+       "command": "applymovement",
+       "args": [
+        255,
+        149819116
+       ]
+      },
+      {
+       "at": "0x08EE0809",
+       "command": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08EE080C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149813834
+       ],
+       "texts": [
+        {
+         "address": "0x08EDFA4A",
+         "text": "感谢您的耐心等待。\n我们已经把你的宝可梦\n恢复到最佳状态了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0812",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE0814",
+       "command": "setflag",
+       "args": [
+        2924
+       ]
+      },
+      {
+       "at": "0x08EE0817",
+       "command": "applymovement",
+       "args": [
+        32783,
+        135947884
+       ]
+      },
+      {
+       "at": "0x08EE081E",
+       "command": "waitmovement",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE0821",
+       "command": "loadpointer",
+       "args": [
+        0,
+        135943441
+       ],
+       "texts": [
+        {
+         "address": "0x081A5511",
+         "text": "我们期待与您再次见面！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0827",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08EE0829",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE082C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149813783
+       ],
+       "texts": [
+        {
+         "address": "0x08EDFA17",
+         "text": "乔伊露出意味深长的笑容。\n感觉到了一丝寒意……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0832",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE0834",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE0837",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE0B69",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE0B69",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EE0B6C",
+       "command": "applymovement",
+       "args": [
+        19,
+        149818926
+       ]
+      },
+      {
+       "at": "0x08EE0B73",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EE0B76",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149818791
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0DA7",
+         "text": "听说镇上的长老隐居在\n宝可梦中心。\n但我总觉得那里的\n气氛太温和了，\n完全不像是忍者的据点……\n你能帮我去拜访一下长老，\n求取一份<秘传忍术>吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0B7C",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE0B7E",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE0B83",
+       "command": "goto_if",
+       "args": [
+        1,
+        149818270
+       ],
+       "targets": [
+        "0x08EE0B9E"
+       ]
+      },
+      {
+       "at": "0x08EE0B89",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149818772
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0D94",
+         "text": "可恶，你这个叛忍！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0B8F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE0B91",
+       "command": "applymovement",
+       "args": [
+        48,
+        150330793
+       ]
+      },
+      {
+       "at": "0x08EE0B98",
+       "command": "waitmovement",
+       "args": [
+        48
+       ]
+      },
+      {
+       "at": "0x08EE0B9B",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EE0B9C",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE0B9E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE0B9E",
+       "command": "setflag",
+       "args": [
+        2923
+       ],
+       "task_flag_labels": [
+        {
+         "title": "错位的忍道",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0BA1",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE0BA4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149818684
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0D3C",
+         "text": "接受任务:<错位的忍道>"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0BAA",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE0BAF",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE0BB4",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08EE0BB9",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EE0BBE",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08EE0BC3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149818711
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0D57",
+         "text": "拜托了！\n一定要证明我的眼光！\n去镇上的\n宝可梦中心寻找长老吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0BC9",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE0BCB",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EE0BD0",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE0D32",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE0D32",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149818711
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0D57",
+         "text": "拜托了！\n一定要证明我的眼光！\n去镇上的\n宝可梦中心寻找长老吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0D38",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE0D3A",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE1101",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE1101",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE1104",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EE1106",
+       "command": "removeobject",
+       "args": [
+        19
+       ]
+      },
+      {
+       "at": "0x08EE1109",
+       "command": "removeobject",
+       "args": [
+        18
+       ]
+      },
+      {
+       "at": "0x08EE110C",
+       "command": "setflag",
+       "args": [
+        2925
+       ],
+       "task_flag_labels": [
+        {
+         "title": "错位的忍道",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE110F",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08EE1112",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE1114",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE1117",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE111A",
+       "command": "addmoney",
+       "args": [
+        5000,
+        0
+       ]
+      },
+      {
+       "at": "0x08EE1120",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x08EE1125",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149817149
+       ],
+       "texts": [
+        {
+         "address": "0x08EE073D",
+         "text": "完成任务:<错位的忍道>"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE112B",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE1130",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE1135",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08EE113A",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EE113F",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08EE1144",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149811839
+       ],
+       "texts": [
+        {
+         "address": "0x08EDF27F",
+         "text": "获得了4点BracerPoints和5000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE114A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE114C",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EE1151",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x09CCF748",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CCF748",
+       "command": "callasm",
+       "args": [
+        164801765
+       ]
+      },
+      {
+       "at": "0x09CCF74D",
+       "command": "applymovement",
+       "args": [
+        32783,
+        135951847
+       ]
+      },
+      {
+       "at": "0x09CCF754",
+       "command": "waitmovement",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CCF757",
+       "command": "doanimation",
+       "args": [
+        25
+       ]
+      },
+      {
+       "at": "0x09CCF75A",
+       "command": "waitfieldeffect",
+       "args": [
+        25
+       ]
+      },
+      {
+       "at": "0x09CCF75D",
+       "command": "applymovement",
+       "args": [
+        32783,
+        135951853
+       ]
+      },
+      {
+       "at": "0x09CCF764",
+       "command": "waitmovement",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CCF767",
+       "command": "special",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CCF76A",
+       "command": "setvar",
+       "args": [
+        32788,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CCF76F",
+       "command": "callasm",
+       "args": [
+        164817385
+       ]
+      },
+      {
+       "at": "0x09CCF774",
+       "command": "callasm",
+       "args": [
+        164820837
+       ]
+      },
+      {
+       "at": "0x09CCF779",
+       "command": "return",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [
+    "0x081A7AE0"
+   ],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

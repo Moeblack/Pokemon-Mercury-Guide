@@ -1,0 +1,82 @@
+{
+ "title": "8bit的感动",
+ "quest_id": 63,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b3e8",
+    "title": "8bit的感动",
+    "title_address": "0x8e3b6f9",
+    "description": "在满金CosPlay大会带大家一起找回了8bit的感动。",
+    "description_address": "0x8e3b6cc",
+    "unknown_u16": 14445,
+    "unknown_u16_hex": "0x386D",
+    "accept_flag": 5196,
+    "accept_flag_hex": "0x144C",
+    "complete_flag": 5196,
+    "complete_flag_hex": "0x144C",
+    "map_group": 47,
+    "map_num": 2,
+    "tail_hex": "01 01 00 00",
+    "index": 63,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3b6cc",
+    "legacy_match_count": 0,
+    "current_description": "在满金CosPlay大会带大家一起找回了8bit的感动。",
+    "catalog_map": {
+     "id": "47:2",
+     "name": "桧皮镇"
+    }
+   },
+   "direct_flag_scripts": [],
+   "event_roots": [],
+   "scripts": [],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  },
+  {
+   "quest": {
+    "row_offset": "0xe3b3fc",
+    "title": "8bit的感动",
+    "title_address": "0x8e3b6f9",
+    "description": "在满金CosPlay大会带大家一起找回了8bit的感动。",
+    "description_address": "0x8e3b6cc",
+    "unknown_u16": 14465,
+    "unknown_u16_hex": "0x3881",
+    "accept_flag": 5197,
+    "accept_flag_hex": "0x144D",
+    "complete_flag": 5197,
+    "complete_flag_hex": "0x144D",
+    "map_group": 47,
+    "map_num": 2,
+    "tail_hex": "01 01 00 00",
+    "index": 64,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3b6cc",
+    "legacy_match_count": 0,
+    "current_description": "在满金CosPlay大会带大家一起找回了8bit的感动。",
+    "catalog_map": {
+     "id": "47:2",
+     "name": "桧皮镇"
+    }
+   },
+   "direct_flag_scripts": [],
+   "event_roots": [],
+   "scripts": [],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1533 @@
+{
+ "title": "生病的呆呆兽",
+ "quest_id": 60,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b3ac",
+    "title": "生病的呆呆兽",
+    "title_address": "0x8e3bc47",
+    "description": "我的呆呆兽\n最近好像生病了...\n有人能来商业区帮我看看吗？",
+    "description_address": "0x8e3bc22",
+    "unknown_u16": 693,
+    "unknown_u16_hex": "0x02B5",
+    "accept_flag": 2948,
+    "accept_flag_hex": "0x0B84",
+    "complete_flag": 2950,
+    "complete_flag_hex": "0x0B86",
+    "map_group": 3,
+    "map_num": 76,
+    "tail_hex": "08 00 00 00",
+    "index": 60,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39634",
+      "title": "生病的呆呆兽",
+      "description_address": "0x8e398cd",
+      "description": "我的呆呆兽\\n最近好像生病了...\\n有人能来商业区帮我看看吗？"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e398cd",
+    "legacy_match_count": 1,
+    "current_description": "带来自伽勒尔的留学生\n前往呆呆兽之井。",
+    "catalog_map": {
+     "id": "3:76",
+     "name": "满金市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08EE5C8B",
+    "0x08EE5CAC",
+    "0x08EE6813",
+    "0x08EE6848",
+    "0x08EE68AE",
+    "0x08EE69E1",
+    "0x08EE69F0",
+    "0x08EE7494"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08EE6848",
+     "map_id": "3:76",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 30,
+     "event_index": 29,
+     "x": 50,
+     "y": 31,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n076.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08AAE3DE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AAE3DE",
+       "command": "checkflag",
+       "args": [
+        5730
+       ]
+      },
+      {
+       "at": "0x08AAE3E1",
+       "command": "goto_if",
+       "args": [
+        1,
+        145417196
+       ],
+       "targets": [
+        "0x08AAE3EC"
+       ]
+      },
+      {
+       "at": "0x08AAE3E7",
+       "command": "setflag",
+       "args": [
+        5734
+       ]
+      },
+      {
+       "at": "0x08AAE3EA",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EE5C8B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AAE3EC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AAE3EC",
+       "command": "comparevartovalue",
+       "args": [
+        20859,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x08AAE3F1",
+       "command": "goto_if",
+       "args": [
+        1,
+        145417212
+       ],
+       "targets": [
+        "0x08AAE3FC"
+       ]
+      },
+      {
+       "at": "0x08AAE3F7",
+       "command": "clearflag",
+       "args": [
+        5734
+       ]
+      },
+      {
+       "at": "0x08AAE3FA",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AAE3DE"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AAE3FC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AAE3FC",
+       "command": "setflag",
+       "args": [
+        5734
+       ]
+      },
+      {
+       "at": "0x08AAE3FF",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AAE3EC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EE5C8B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE5C8B",
+       "command": "setflag",
+       "args": [
+        2951
+       ]
+      },
+      {
+       "at": "0x08EE5C8E",
+       "command": "checkflag",
+       "args": [
+        2948
+       ],
+       "task_flag_labels": [
+        {
+         "title": "生病的呆呆兽",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE5C91",
+       "command": "call_if",
+       "args": [
+        1,
+        149839020
+       ],
+       "targets": [
+        "0x08EE5CAC"
+       ]
+      },
+      {
+       "at": "0x08EE5C97",
+       "command": "goto",
+       "args": [
+        145417182
+       ],
+       "targets": [
+        "0x08AAE3DE"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "map_script",
+       "where": "3:69/tag3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EE5CAC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE5CAC",
+       "command": "clearflag",
+       "args": [
+        2951
+       ]
+      },
+      {
+       "at": "0x08EE5CAF",
+       "command": "checkflag",
+       "args": [
+        2950
+       ],
+       "task_flag_labels": [
+        {
+         "title": "生病的呆呆兽",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE5CB2",
+       "command": "call_if",
+       "args": [
+        1,
+        149842397
+       ],
+       "targets": [
+        "0x08EE69DD"
+       ]
+      },
+      {
+       "at": "0x08EE5CB8",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EE5C8B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EE6813",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE6813",
+       "command": "checkflag",
+       "args": [
+        2950
+       ],
+       "task_flag_labels": [
+        {
+         "title": "生病的呆呆兽",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE6816",
+       "command": "goto_if",
+       "args": [
+        1,
+        149842109
+       ],
+       "targets": [
+        "0x08EE68BD"
+       ]
+      },
+      {
+       "at": "0x08EE681C",
+       "command": "applymovement",
+       "args": [
+        48,
+        149843006
+       ]
+      },
+      {
+       "at": "0x08EE6823",
+       "command": "waitmovement",
+       "args": [
+        48
+       ]
+      },
+      {
+       "at": "0x08EE6826",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144572503
+       ],
+       "texts": [
+        {
+         "address": "0x089E0057",
+         "text": "我是从遥远的地方\n到城都来留学的。\n这只呆呆兽也是从\n那儿陪我过来的伙伴。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE682C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE682E",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08EE6831",
+       "command": "goto_if",
+       "args": [
+        1,
+        149841988
+       ],
+       "targets": [
+        "0x08EE6844"
+       ]
+      },
+      {
+       "at": "0x08EE6837",
+       "command": "applymovement",
+       "args": [
+        48,
+        149843003
+       ]
+      },
+      {
+       "at": "0x08EE683E",
+       "command": "waitmovement",
+       "args": [
+        48
+       ]
+      },
+      {
+       "at": "0x08EE6841",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EE6842",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=60"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EE6844",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE6844",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EE6847",
+       "command": "applymovement",
+       "args": [
+        34347,
+        4060153355
+       ]
+      },
+      {
+       "at": "0x08EE684E",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08EE684F",
+       "command": null,
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EE6813"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EE6848",
+     "event_roots": [
+      {
+       "map_id": "3:76",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 30,
+       "event_index": 29,
+       "x": 50,
+       "y": 31,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n076.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EE6848",
+       "command": "checkflag",
+       "args": [
+        2950
+       ],
+       "task_flag_labels": [
+        {
+         "title": "生病的呆呆兽",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE684B",
+       "command": "goto_if",
+       "args": [
+        1,
+        149842162
+       ],
+       "targets": [
+        "0x08EE68F2"
+       ]
+      },
+      {
+       "at": "0x08EE6851",
+       "command": "applymovement",
+       "args": [
+        48,
+        149843006
+       ]
+      },
+      {
+       "at": "0x08EE6858",
+       "command": "waitmovement",
+       "args": [
+        48
+       ]
+      },
+      {
+       "at": "0x08EE685B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144572503
+       ],
+       "texts": [
+        {
+         "address": "0x089E0057",
+         "text": "我是从遥远的地方\n到城都来留学的。\n这只呆呆兽也是从\n那儿陪我过来的伙伴。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE6861",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE6863",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08EE6866",
+       "command": "goto_if",
+       "args": [
+        1,
+        149842041
+       ],
+       "targets": [
+        "0x08EE6879"
+       ]
+      },
+      {
+       "at": "0x08EE686C",
+       "command": "applymovement",
+       "args": [
+        48,
+        149843003
+       ]
+      },
+      {
+       "at": "0x08EE6873",
+       "command": "waitmovement",
+       "args": [
+        48
+       ]
+      },
+      {
+       "at": "0x08EE6876",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EE6877",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "3:76/local30"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EE6879",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE6879",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EE687C",
+       "command": "applymovement",
+       "args": [
+        32783,
+        149843000
+       ]
+      },
+      {
+       "at": "0x08EE6883",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EE6886",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149842626
+       ],
+       "texts": [
+        {
+         "address": "0x08EE6AC2",
+         "text": "自从我们来到城都地区后，\n它就一直没怎么动过，\n连最喜欢吃的\n辣味树果都不碰了。\n我想……\n它大概是水土不服，\n觉得自己和\n这里的宝可梦格格不入吧……\n我听说在桧皮镇，\n有一个叫呆呆兽之井的地方。\n那里生活着\n很多城都地区的呆呆兽。\n我想带它去那里看看同类，\n或许能让它打起精神来。\n但是，我有点\n不太敢下到井里去……\n听说井里有很多超音蝠……\n你能去桧皮镇的\n呆呆兽之井入口处和我汇合，\n带我们进去看一看吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE688C",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE688E",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE6893",
+       "command": "goto_if",
+       "args": [
+        1,
+        149842094
+       ],
+       "targets": [
+        "0x08EE68AE"
+       ]
+      },
+      {
+       "at": "0x08EE6899",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149842371
+       ],
+       "texts": [
+        {
+         "address": "0x08EE69C3",
+         "text": "好吧……\n我再想想其他办法。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE689F",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE68A1",
+       "command": "applymovement",
+       "args": [
+        48,
+        149843003
+       ]
+      },
+      {
+       "at": "0x08EE68A8",
+       "command": "waitmovement",
+       "args": [
+        48
+       ]
+      },
+      {
+       "at": "0x08EE68AB",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EE68AC",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EE6848"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EE68AE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE68AE",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE68B1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149842284
+       ],
+       "texts": [
+        {
+         "address": "0x08EE696C",
+         "text": "接受任务:<同一片天空下的哈欠>"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE68B7",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE68BC",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE68C1",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08EE68C6",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EE68CB",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08EE68D0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149842319
+       ],
+       "texts": [
+        {
+         "address": "0x08EE698F",
+         "text": "实在是太感谢你了！\n那么我们先到呆呆兽之井入口处了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE68D6",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE68D8",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EE68DD",
+       "command": "setflag",
+       "args": [
+        2948
+       ],
+       "task_flag_labels": [
+        {
+         "title": "生病的呆呆兽",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE68E0",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EE68E2",
+       "command": "removeobject",
+       "args": [
+        30
+       ]
+      },
+      {
+       "at": "0x08EE68E5",
+       "command": "removeobject",
+       "args": [
+        31
+       ]
+      },
+      {
+       "at": "0x08EE68E8",
+       "command": "setflag",
+       "args": [
+        2949
+       ]
+      },
+      {
+       "at": "0x08EE68EB",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08EE68EE",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE68F0",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EE6879"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EE68BD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE68BD",
+       "command": "nop1",
+       "args": []
+      },
+      {
+       "at": "0x08EE68BE",
+       "command": "bufferitem",
+       "args": [
+        1,
+        5632
+       ]
+      },
+      {
+       "at": "0x08EE68C2",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EE6813"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EE68F2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE68F2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149842172
+       ],
+       "texts": [
+        {
+         "address": "0x08EE68FC",
+         "text": "对呆呆兽来说，\n只要能一起打个哈欠，\n一起悠闲地发呆，\n就是最好的同伴。\n宝可梦的世界，比我们人类\n想象的要纯粹得多呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE68F8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE68FA",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EE6848"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EE69DD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE69DD",
+       "command": "setflag",
+       "args": [
+        2951
+       ]
+      },
+      {
+       "at": "0x08EE69E0",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EE5CAC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EE69E1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE69E1",
+       "command": "checkflag",
+       "args": [
+        2948
+       ],
+       "task_flag_labels": [
+        {
+         "title": "生病的呆呆兽",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE69E4",
+       "command": "call_if",
+       "args": [
+        1,
+        149842416
+       ],
+       "targets": [
+        "0x08EE69F0"
+       ]
+      },
+      {
+       "at": "0x08EE69EA",
+       "command": "goto",
+       "args": [
+        150148411
+       ],
+       "targets": [
+        "0x08F3153B"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "map_script",
+       "where": "3:76/tag3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EE69F0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE69F0",
+       "command": "setflag",
+       "args": [
+        2949
+       ]
+      },
+      {
+       "at": "0x08EE69F3",
+       "command": "checkflag",
+       "args": [
+        2950
+       ],
+       "task_flag_labels": [
+        {
+         "title": "生病的呆呆兽",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE69F6",
+       "command": "call_if",
+       "args": [
+        1,
+        149842430
+       ],
+       "targets": [
+        "0x08EE69FE"
+       ]
+      },
+      {
+       "at": "0x08EE69FC",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EE69E1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EE69FE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE69FE",
+       "command": "clearflag",
+       "args": [
+        2949
+       ]
+      },
+      {
+       "at": "0x08EE6A01",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EE69F0"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EE7494",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE7494",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08EE7497",
+       "command": "applymovement",
+       "args": [
+        1,
+        149844721
+       ]
+      },
+      {
+       "at": "0x08EE749E",
+       "command": "applymovement",
+       "args": [
+        255,
+        149844724
+       ]
+      },
+      {
+       "at": "0x08EE74A5",
+       "command": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08EE74A8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149844269
+       ],
+       "texts": [
+        {
+         "address": "0x08EE712D",
+         "text": "原来……\n是我想太多了。\n我一直担心它因为外表不同、\n属性不同，会被本地的宝可梦排挤。\n其实，真正害怕\n无法融入这里的……\n是我自己。\n因为口音不同，\n因为不习惯城都的饮食，\n我总是把自己关在宿舍里，\n不敢去交朋友。\n我把自己的焦虑，\n强加到了它的身上。\n但是你看它们，\n多开心啊。\n不管额头是\n黄色的还是粉色的，\n不管尾巴是\n辣的还是甜的……\n对它们来说，\n只要能一起打个哈欠，\n一起悠闲地发呆，\n就是最好的同伴。\n宝可梦的世界，比我们人类\n想象的要纯粹得多呢。\n谢谢你带我们来这里！\n这是给你的报酬！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE74AE",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE74B0",
+       "command": "giveegg",
+       "args": [
+        1215
+       ],
+       "species_name": "呆呆兽"
+      },
+      {
+       "at": "0x08EE74B3",
+       "command": "preparemsg",
+       "args": [
+        149844243
+       ],
+       "texts": [
+        {
+         "address": "0x08EE7113",
+         "text": "[玩家/变量]得了呆呆兽的蛋！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE74B8",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EE74B9",
+       "command": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x08EE74BC",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08EE74BD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149844161
+       ],
+       "texts": [
+        {
+         "address": "0x08EE70C1",
+         "text": "这是我之前把\n呆呆兽寄存在培育屋时，\n培育屋的老爷爷发现的蛋！\n还有这个，也请你收下！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE74C3",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE74C5",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        237
+       ],
+       "possible_names_not_semantics": {
+        "species": "战舞郎",
+        "item": "伽勒豆蔻手环",
+        "move": "觉醒力量"
+       }
+      },
+      {
+       "at": "0x08EE74CA",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE74CF",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE74D1",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE74D4",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        238
+       ],
+       "possible_names_not_semantics": {
+        "species": "迷唇娃",
+        "item": "伽勒豆蔻花圈",
+        "move": "十字劈"
+       }
+      },
+      {
+       "at": "0x08EE74D9",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE74DE",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE74E0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149843987
+       ],
+       "texts": [
+        {
+         "address": "0x08EE7013",
+         "text": "这些是用我们伽勒尔地区\n特有的伽勒豆蔻枝编织的饰品。\n看着呆呆兽们……\n我也稍微有了点勇气。\n明天，我决定去\n满金市的百货大楼，\n试着用城都的方言\n和大家打个招呼！\n那么，我先回满金市了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE74E6",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE74E8",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08EE74ED",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08EE74F3",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE74F6",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE74F9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149843952
+       ],
+       "texts": [
+        {
+         "address": "0x08EE6FF0",
+         "text": "完成任务:<同一片天空下的哈欠>"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE74FF",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE7504",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE7509",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08EE750E",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EE7513",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08EE7518",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149843917
+       ],
+       "texts": [
+        {
+         "address": "0x08EE6FCD",
+         "text": "获得了3点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE751E",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE7520",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EE7525",
+       "command": "setflag",
+       "args": [
+        2950
+       ],
+       "task_flag_labels": [
+        {
+         "title": "生病的呆呆兽",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE7528",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE752B",
+       "command": "warpmuted",
+       "args": [
+        1,
+        95,
+        255,
+        14,
+        9
+       ]
+      },
+      {
+       "at": "0x08EE7533",
+       "command": "pause",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08EE7536",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EE7748"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F3153B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3153B",
+       "command": "setflag",
+       "args": [
+        6284
+       ]
+      },
+      {
+       "at": "0x08F3153E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EE69E1"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

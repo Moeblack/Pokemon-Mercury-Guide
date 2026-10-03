@@ -1,0 +1,249 @@
+{
+ "title": "钢铁与黑曜",
+ "quest_id": 4,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3af4c",
+    "title": "钢铁与黑曜",
+    "title_address": "0x8e3bac8",
+    "description": "去桐树林寻找阿笔，\n协助他完成有关\n虫宝可梦的研究。",
+    "description_address": "0x8e3ba97",
+    "unknown_u16": 457,
+    "unknown_u16_hex": "0x01C9",
+    "accept_flag": 2969,
+    "accept_flag_hex": "0x0B99",
+    "complete_flag": 2970,
+    "complete_flag_hex": "0x0B9A",
+    "map_group": 47,
+    "map_num": 0,
+    "tail_hex": "04 01 00 00",
+    "index": 4,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3ba97",
+    "legacy_match_count": 0,
+    "current_description": "去桐树林寻找阿笔，\n协助他完成有关\n虫宝可梦的研究。",
+    "catalog_map": {
+     "id": "47:0",
+     "name": "桧皮镇"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08EEA9E8",
+    "0x08EEA9F9",
+    "0x08EEAA0E",
+    "0x08EEAA1F"
+   ],
+   "event_roots": [],
+   "scripts": [
+    {
+     "script": "0x08EEA9E8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEA9E8",
+       "command": "setflag",
+       "args": [
+        2969
+       ],
+       "task_flag_labels": [
+        {
+         "title": "钢铁与黑曜",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEA9EB",
+       "command": "checkflag",
+       "args": [
+        5774
+       ]
+      },
+      {
+       "at": "0x08EEA9EE",
+       "command": "goto_if",
+       "args": [
+        1,
+        149858809
+       ],
+       "targets": [
+        "0x08EEA9F9"
+       ]
+      },
+      {
+       "at": "0x08EEA9F4",
+       "command": "setflag",
+       "args": [
+        2970
+       ],
+       "task_flag_labels": [
+        {
+         "title": "钢铁与黑曜",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEA9F7",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EEA9F9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEA9F9",
+       "command": "setflag",
+       "args": [
+        5446
+       ]
+      },
+      {
+       "at": "0x08EEA9FC",
+       "command": "checkflag",
+       "args": [
+        2972
+       ]
+      },
+      {
+       "at": "0x08EEA9FF",
+       "command": "goto_if",
+       "args": [
+        1,
+        149858830
+       ],
+       "targets": [
+        "0x08EEAA0E"
+       ]
+      },
+      {
+       "at": "0x08EEAA05",
+       "command": "clearflag",
+       "args": [
+        2970
+       ],
+       "task_flag_labels": [
+        {
+         "title": "钢铁与黑曜",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEAA08",
+       "command": "spritebehave",
+       "args": [
+        1,
+        10
+       ]
+      },
+      {
+       "at": "0x08EEAA0C",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EEAA0E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEAA0E",
+       "command": "checkflag",
+       "args": [
+        2973
+       ]
+      },
+      {
+       "at": "0x08EEAA11",
+       "command": "goto_if",
+       "args": [
+        1,
+        149858847
+       ],
+       "targets": [
+        "0x08EEAA1F"
+       ]
+      },
+      {
+       "at": "0x08EEAA17",
+       "command": "setflag",
+       "args": [
+        2970
+       ],
+       "task_flag_labels": [
+        {
+         "title": "钢铁与黑曜",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEAA1A",
+       "command": "setflag",
+       "args": [
+        2971
+       ]
+      },
+      {
+       "at": "0x08EEAA1D",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EEAA1F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEAA1F",
+       "command": "setflag",
+       "args": [
+        2970
+       ],
+       "task_flag_labels": [
+        {
+         "title": "钢铁与黑曜",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEAA22",
+       "command": "clearflag",
+       "args": [
+        2971
+       ]
+      },
+      {
+       "at": "0x08EEAA25",
+       "command": "clearflag",
+       "args": [
+        5446
+       ]
+      },
+      {
+       "at": "0x08EEAA28",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1045 @@
+{
+ "title": "收集玻璃哨",
+ "quest_id": 97,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b690",
+    "title": "收集玻璃哨",
+    "title_address": "0x8e3b7f2",
+    "description": "布尔乔瓦先生正在收集\n出自琉璃工坊的玻璃哨！\n有意者请来精灵中心咨询详情！",
+    "description_address": "0x8e3b7cb",
+    "unknown_u16": 245,
+    "unknown_u16_hex": "0x00F5",
+    "accept_flag": 6324,
+    "accept_flag_hex": "0x18B4",
+    "complete_flag": 6325,
+    "complete_flag_hex": "0x18B5",
+    "map_group": 32,
+    "map_num": 0,
+    "tail_hex": "02 01 00 00",
+    "index": 97,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe397d4",
+      "title": "玻璃哨的收集",
+      "description_address": "0x8e399bb",
+      "description": "布尔乔瓦先生正在收集\\n出自琉璃工坊的玻璃哨！\\n有意者请来精灵中心咨询详情！"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e399bb",
+    "legacy_match_count": 1,
+    "current_description": "帮助布尔乔瓦先生\n收集五种颜色的玻璃哨。",
+    "catalog_map": {
+     "id": "32:0",
+     "name": "烟墨市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08F3F8F1",
+    "0x08F3F940",
+    "0x08F3F975"
+   ],
+   "event_roots": [
+    {
+     "script": "0x087BA79C",
+     "map_id": "32:0",
+     "place": "烟墨市",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 4,
+     "y": 17,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g32_n000.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x087BA79C",
+     "event_roots": [
+      {
+       "map_id": "32:0",
+       "place": "烟墨市",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 4,
+       "y": 17,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g32_n000.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x087BA79C",
+       "command": "applymovement",
+       "args": [
+        11,
+        142321633
+       ]
+      },
+      {
+       "at": "0x087BA7A3",
+       "command": "waitmovement",
+       "args": [
+        11
+       ]
+      },
+      {
+       "at": "0x087BA7A6",
+       "command": "goto",
+       "args": [
+        150206705
+       ],
+       "targets": [
+        "0x08F3F8F1"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x087BA822",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087BA822",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x087BA825",
+       "command": "goto_if",
+       "args": [
+        1,
+        150206742
+       ],
+       "targets": [
+        "0x08F3F916"
+       ]
+      },
+      {
+       "at": "0x087BA82B",
+       "command": "applymovement",
+       "args": [
+        11,
+        142321864
+       ]
+      },
+      {
+       "at": "0x087BA832",
+       "command": "waitmovement",
+       "args": [
+        11
+       ]
+      },
+      {
+       "at": "0x087BA835",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x087BA836",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x087BA9C1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087BA9C1",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087BA9C6",
+       "command": "goto_if",
+       "args": [
+        1,
+        150206784
+       ],
+       "targets": [
+        "0x08F3F940"
+       ]
+      },
+      {
+       "at": "0x087BA9CC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150206077
+       ],
+       "texts": [
+        {
+         "address": "0x08F3F67D",
+         "text": "怎么会……！"
+        }
+       ]
+      },
+      {
+       "at": "0x087BA9D2",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087BA9D4",
+       "command": "applymovement",
+       "args": [
+        11,
+        142321864
+       ]
+      },
+      {
+       "at": "0x087BA9DB",
+       "command": "waitmovement",
+       "args": [
+        11
+       ]
+      },
+      {
+       "at": "0x087BA9DE",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x087BA9DF",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3F8F1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3F8F1",
+       "command": "checkflag",
+       "args": [
+        6325
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集玻璃哨",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3F8F4",
+       "command": "goto_if",
+       "args": [
+        1,
+        150207046
+       ],
+       "targets": [
+        "0x08F3FA46"
+       ]
+      },
+      {
+       "at": "0x08F3F8FA",
+       "command": "checkflag",
+       "args": [
+        6324
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集玻璃哨",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3F8FD",
+       "command": "goto_if",
+       "args": [
+        1,
+        150206837
+       ],
+       "targets": [
+        "0x08F3F975"
+       ]
+      },
+      {
+       "at": "0x08F3F903",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150203969
+       ],
+       "texts": [
+        {
+         "address": "0x08F3EE41",
+         "text": "珍贵的玻璃哨……\n究竟在何处呢？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3F909",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3F90B",
+       "command": "goto",
+       "args": [
+        142321698
+       ],
+       "targets": [
+        "0x087BA822"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F3F916",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3F916",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F3F919",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150202281
+       ]
+      },
+      {
+       "at": "0x08F3F920",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F3F923",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150205693
+       ]
+      },
+      {
+       "at": "0x08F3F929",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F3F92B",
+       "command": "goto",
+       "args": [
+        142322113
+       ],
+       "targets": [
+        "0x087BA9C1"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F3F940",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3F940",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3F943",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150206089
+       ],
+       "texts": [
+        {
+         "address": "0x08F3F689",
+         "text": "接受任务:<收集玻璃哨>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3F949",
+       "command": "setflag",
+       "args": [
+        6324
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集玻璃哨",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3F94C",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3F951",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3F956",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F3F95B",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F3F960",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F3F965",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142287977
+       ],
+       "texts": [
+        {
+         "address": "0x087B2469",
+         "text": "太好了……！\n如果你找齐了红色、黄色、蓝色、\n黑色、白色五种颜色的玻璃哨，\n请务必联系我！\n本人可是花重金打听过情报的。\n据说红色的沉睡在愤怒之湖，\n蓝色的则遗落在极寒的冰天地。\n黄色的似乎漂流到了51号水路，\n黑色的隐匿于黑暗洞穴的深处。\n至于白色的嘛……\n也许就在某处崎岖的47号道路上。\n去吧！\n为了本大富豪的伟大收藏，\n用尽你的全力去寻找吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3F96B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3F96D",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F3F972",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F3F973",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3F975",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3F975",
+       "command": "checkitem",
+       "args": [
+        39,
+        1
+       ],
+       "item_name": "蓝色玻璃哨"
+      },
+      {
+       "at": "0x08F3F97A",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08F3F97F",
+       "command": "goto_if",
+       "args": [
+        1,
+        150207036
+       ],
+       "targets": [
+        "0x08F3FA3C"
+       ]
+      },
+      {
+       "at": "0x08F3F985",
+       "command": "checkitem",
+       "args": [
+        40,
+        1
+       ],
+       "item_name": "黄色玻璃哨"
+      },
+      {
+       "at": "0x08F3F98A",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08F3F98F",
+       "command": "goto_if",
+       "args": [
+        1,
+        150207036
+       ],
+       "targets": [
+        "0x08F3FA3C"
+       ]
+      },
+      {
+       "at": "0x08F3F995",
+       "command": "checkitem",
+       "args": [
+        41,
+        1
+       ],
+       "item_name": "红色玻璃哨"
+      },
+      {
+       "at": "0x08F3F99A",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08F3F99F",
+       "command": "goto_if",
+       "args": [
+        1,
+        150207036
+       ],
+       "targets": [
+        "0x08F3FA3C"
+       ]
+      },
+      {
+       "at": "0x08F3F9A5",
+       "command": "checkitem",
+       "args": [
+        42,
+        1
+       ],
+       "item_name": "黑色玻璃哨"
+      },
+      {
+       "at": "0x08F3F9AA",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08F3F9AF",
+       "command": "goto_if",
+       "args": [
+        1,
+        150207036
+       ],
+       "targets": [
+        "0x08F3FA3C"
+       ]
+      },
+      {
+       "at": "0x08F3F9B5",
+       "command": "checkitem",
+       "args": [
+        43,
+        1
+       ],
+       "item_name": "白色玻璃哨"
+      },
+      {
+       "at": "0x08F3F9BA",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08F3F9BF",
+       "command": "goto_if",
+       "args": [
+        1,
+        150207036
+       ],
+       "targets": [
+        "0x08F3FA3C"
+       ]
+      },
+      {
+       "at": "0x08F3F9C5",
+       "command": "removeitem",
+       "args": [
+        39,
+        1
+       ],
+       "item_name": "蓝色玻璃哨"
+      },
+      {
+       "at": "0x08F3F9CA",
+       "command": "removeitem",
+       "args": [
+        40,
+        1
+       ],
+       "item_name": "黄色玻璃哨"
+      },
+      {
+       "at": "0x08F3F9CF",
+       "command": "removeitem",
+       "args": [
+        41,
+        1
+       ],
+       "item_name": "红色玻璃哨"
+      },
+      {
+       "at": "0x08F3F9D4",
+       "command": "removeitem",
+       "args": [
+        42,
+        1
+       ],
+       "item_name": "黑色玻璃哨"
+      },
+      {
+       "at": "0x08F3F9D9",
+       "command": "removeitem",
+       "args": [
+        43,
+        1
+       ],
+       "item_name": "白色玻璃哨"
+      },
+      {
+       "at": "0x08F3F9DE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150206305
+       ],
+       "texts": [
+        {
+         "address": "0x08F3F761",
+         "text": "什么！？\n五种颜色的玻璃哨都找齐了？\n我不是在做梦吧……\n这精致的做工……\n的确是出自琉璃工坊之手！\n好吧！\n这个就交给你了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3F9E4",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3F9E6",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        670
+       ],
+       "possible_names_not_semantics": {
+        "species": "敏捷虫",
+        "item": "龙之宝石",
+        "move": "号令"
+       }
+      },
+      {
+       "at": "0x08F3F9EB",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3F9F0",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F3F9F2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150206418
+       ]
+      },
+      {
+       "at": "0x08F3F9F8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3F9FA",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F3F9FD",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3FA00",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150206585
+       ],
+       "texts": [
+        {
+         "address": "0x08F3F879",
+         "text": "完成任务:<收集玻璃哨>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FA06",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3FA0B",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3FA10",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F3FA15",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F3FA1A",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F3FA1F",
+       "command": "addvar",
+       "args": [
+        20789,
+        5
+       ]
+      },
+      {
+       "at": "0x08F3FA24",
+       "command": "addmoney",
+       "args": [
+        15000,
+        0
+       ]
+      },
+      {
+       "at": "0x08F3FA2A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150206612
+       ],
+       "texts": [
+        {
+         "address": "0x08F3F894",
+         "text": "获得了5点BracerPoints和15000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FA30",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3FA32",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F3FA37",
+       "command": "setflag",
+       "args": [
+        6325
+       ],
+       "task_flag_labels": [
+        {
+         "title": "收集玻璃哨",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FA3A",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3FA3C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3FA3C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142287313
+       ],
+       "texts": [
+        {
+         "address": "0x087B21D1",
+         "text": "如果你找齐了红色、黄色、蓝色、\n黑色、白色五种颜色的玻璃哨，\n请务必联系我！\n本人可是花重金打听过情报的。\n据说红色的沉睡在愤怒之湖，\n蓝色的则遗落在极寒的冰天地。\n黄色的似乎漂流到了51号水路，\n黑色的隐匿于黑暗洞穴的深处。\n至于白色的嘛……\n也许就在某处崎岖的47号道路上。\n去吧！\n为了本大富豪的伟大收藏，\n用尽你的全力去寻找吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FA42",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3FA44",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3FA46",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3FA46",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08F3FA47",
+       "command": "preparemsg",
+       "args": [
+        150206648
+       ],
+       "texts": [
+        {
+         "address": "0x08F3F8B8",
+         "text": "嗯？\n想要买珍贵的宝石吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FA4C",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08F3FA4D",
+       "command": "pokemart",
+       "args": [
+        150208582
+       ]
+      },
+      {
+       "at": "0x08F3FA52",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150206674
+       ],
+       "texts": [
+        {
+         "address": "0x08F3F8D2",
+         "text": "好好珍惜\n来自大富豪的慈悲吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FA58",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F3FA5A",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F3FA5B",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>032 阿始的新节目 · 水银攻略</title><style>*{box-sizing:border-box}body{margin:0;color:#243247;background:#f5f7fb;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}header{background:#142b48;color:white;padding:22px max(22px,calc((100vw - 1180px)/2))}header a{color:#e5efff;text-decoration:none}nav{display:flex;gap:20px;flex-wrap:wrap;font-size:15px}main{max-width:1180px;margin:auto;padding:28px 22px 60px}h1{font-size:30px;line-height:1.4}h2{margin-top:32px;border-bottom:1px solid #d9e0eb;padding-bottom:8px}a{color:#155b9b}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow:auto;background:white}td,th{padding:10px 12px;border:1px solid #dde4ed;text-align:left;min-width:65px}th{background:#eaf0f8}tr:nth-child(even){background:#f7f9fc}code{font-size:.88em;background:#edf0f5;padding:2px 4px;border-radius:3px;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:15px;background:#edf0f5}img{max-width:100%;height:auto;image-rendering:pixelated}blockquote{border-left:4px solid #809cbe;background:#edf2f8;margin:18px 0;padding:10px 18px}input,select{font:inherit;padding:10px 14px;border:1px solid #bccbdd;border-radius:7px}input{flex:1;min-width:180px}.searchbox{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px}.card{background:white;border:1px solid #dbe3ee;border-radius:10px;padding:20px}.result{background:white;margin:10px 0;padding:14px 18px;border-radius:7px;border:1px solid #e0e6ee}.result small,.muted{color:#60718a}.badge{background:#e7eff9;border-radius:4px;padding:2px 7px;font-size:13px}details{margin:15px 0}footer{margin-top:40px;border-top:1px solid #dde4ed;padding-top:15px;color:#60718a;font-size:13px}@media(max-width:600px){main{padding:16px 12px}h1{font-size:25px}td,th{padding:8px}}
+.atlas-cards{margin:32px 0;padding-top:8px;border-top:1px solid #d9e0eb}.atlas-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}.atlas-card{background:#fff;border:1px solid #d9e0eb;border-radius:10px;overflow:hidden}.atlas-card h3{font-size:16px;margin:12px 14px 6px}.atlas-card p{font-size:13px;line-height:1.6;margin:8px 14px 14px}.atlas-frame{height:240px;position:relative;background:#e8edf1}.atlas-frame img{position:absolute;width:100%;height:100%;object-fit:contain;image-rendering:pixelated}.atlas-frame svg{position:absolute;width:100%;height:100%;inset:0;pointer-events:none}.atlas-label{paint-order:stroke;stroke:#fff;stroke-width:3px;fill:#142b48;font-weight:bold;text-anchor:middle;dominant-baseline:central}.atlas-cards details{margin-top:16px}.atlas-cards summary{cursor:pointer;color:#155b9b;margin-bottom:12px}.atlas-feature{padding:12px 16px;background:#eaf0f8;border-radius:8px;margin:16px 0}.atlas-unavailable{height:240px;display:grid;place-items:center;color:#59677a;font-size:14px;padding:24px;text-align:center}
+</style><header><a href="../index.html"><strong>宝可梦水银 1.1 · 玩家攻略</strong></a><nav><a href="../quests/index.html">支线攻略</a><a href="../items/index.html">道具搜集</a><a href="../pokemon/index.html">宝可梦获取</a><a href="../trainers/index.html">训练家配队</a><a href="../maps/index.html">地点地图</a><a href="../pokemon/wild_mega.html">野生Mega</a></nav></header><main><h1 id="032">032 阿始的新节目</h1>
+<p>一句话目标：在桔梗市宝可梦中心找到电视教学明星“阿始大哥哥”，配合他录制一期全新的电视教学节目。</p>
+<h2 id="_1">接取地点</h2>
+<ul>
+<li>桔梗市・宝可梦中心内部（室内地图 <a href="../maps/index.html#map=46:0&amp;page=quests/032.md">46:0</a>，背景音乐为宝可梦中心），阿始（local_id 20，坐标 14,10）。</li>
+<li>当前目录描述：帮助阿始录制新的电视教学节目；旧表描述亦作“阿始的电视教学”，并注明“有兴趣者可来精灵中心找我”。</li>
+</ul>
+<h2 id="_2">准备条件</h2>
+<ul>
+<li>前置旗标 4246 已置位（共用接取进度条件；置位剧情由 Main 定位；未置位时阿始只做自我介绍，不给委托）。</li>
+<li>无需携带特定道具或宝可梦。</li>
+</ul>
+<h2 id="_3">操作步骤</h2>
+<ol>
+<li>与阿始对话。若前置未满足，他只说“你好啊！！我是精灵迷所熟知的电视教学的阿始大哥哥！”。满足前置后他会说明：他正准备拍摄新的教学电视节目，与往期不同，新节目需要其他人配合参演，并问你是否愿意参演。</li>
+<li>选择配合。脚本 <code>0x08AE5885</code> 置接取旗标 5862，显示“接受任务:&lt;阿始的新节目&gt;”，随后他说“好嘞！如果你准备好拍摄了，就告诉哥哥我哦！”。</li>
+<li>再次与阿始对话，他会问“怎么样，准备好前往拍摄场地了吗？”，确认后他说“好嘞，那么我们一起出发吧！”，脚本 <code>0x08AE5A46</code> 将你传送至拍摄地图 <a href="../maps/index.html#map=56:8&amp;page=quests/032.md">56:8</a>。</li>
+<li>在拍摄地点完成本期录影（该地图在训练师栏关联“262 阿始”，拍摄流程含与阿始的对战演出，细节未包含在包内）。</li>
+<li>录影结算由脚本 <code>0x08AE694E</code> 执行：置完成旗标 5863、获得 3 点 BracerPoints，并传送回桔梗市。</li>
+<li>回到桔梗市宝可梦中心再与阿始对话（脚本 <code>0x08AF031B</code>）：他把自己的电话号码登录到你的精灵齿轮（置旗标 5968），并说“这次的录制辛苦你了！下次需要拍摄的时候，我会联系你哦！”。</li>
+</ol>
+<h2 id="_4">交付检查</h2>
+<ul>
+<li>完成旗标 5863 置位即本期录影结束；完成后再对话进入电话登录对白，不再重复拍摄。</li>
+</ul>
+<h2 id="_5">奖励</h2>
+<ul>
+<li>3 点 BracerPoints</li>
+<li>追加：阿始的电话号码（登录到精灵齿轮，旗标 5968）</li>
+</ul>
+<h2 id="_6">容易卡住的位置</h2>
+<ul>
+<li>前置旗标 4246 未满足时，阿始只会自我介绍，拿不到委托。</li>
+<li>拍摄在独立地图 56:8 进行，触发方式是在接取后<strong>再次与阿始对话并确认出发</strong>，不是在桔梗市原地完成。</li>
+<li>完成后的再次对话是电话登录剧情，不是新任务或第二期拍摄。</li>
+</ul>
+<h2 id="_7">来源与待补</h2>
+<ul>
+<li>包：<code>data/quest_packets/032.json</code>；接取脚本 <code>0x08AE5885</code>，入口脚本 <code>0x08AE5820</code>/<code>0x08AE5581</code>，前往拍摄 <code>0x08AE58F1</code>/<code>0x08AE5A46</code>，完成 <code>0x08AE694E</code>，电话 <code>0x08AF031B</code>。</li>
+<li>相关训练师：<a href="../trainers/0262.html">262 阿始</a>。</li>
+<li>相关地图：<a href="../maps/index.html#map=46:0&amp;page=quests/032.md">桔梗市宝可梦中心 46:0</a>、<a href="../maps/index.html#map=56:8&amp;page=quests/032.md">拍摄地图 56:8</a>。</li>
+<li>未定位/待补：拍摄地图 56:8 内部演出与对战脚本不在本包内，其细节（是否有胜负要求、回合流程）需另查；前置旗标 4246 的置位剧情由 Main 定位，勿据第 023 号脚本反推。</li>
+</ul><section class="atlas-cards"><h2>地点地图</h2><p>共享RGB底图；点击可缩放定位。数字对应本页相关地点，不代表地图上全部事件。</p><div class="atlas-card-grid"><article class="atlas-card"><h3><a href="../maps/index.html#map=46:0&amp;page=quests/032.md&amp;point=quest-188e27c2d39318">桔梗市</a></h3><a href="../maps/index.html#map=46:0&amp;page=quests/032.md&amp;point=quest-188e27c2d39318" aria-label="在大地图中打开桔梗市"><div class="atlas-frame"><img src="../maps/base/7387dde0de8a10cc.png" alt="桔梗市地图" loading="lazy" decoding="async" width="320" height="352"><img src="../maps/objects/46_0.png" alt="建筑与大型固定对象" loading="lazy" decoding="async" width="320" height="352"><svg viewBox="0 0 320 352" aria-hidden="true"><circle cx="232" cy="168" r="9.777777777777779" fill="#155b9b" stroke="white" stroke-width="2"/><text x="232" y="168" fill="white" font-family="sans-serif" font-weight="bold" font-size="12.711111111111112" text-anchor="middle" dominant-baseline="central">1</text></svg></div></a><p>1 阿始的新节目（14,10）</p><p><a href="../maps/index.html#map=46:0&amp;page=quests/032.md&amp;point=quest-188e27c2d39318">放大定位与查看相邻入口 →</a></p></article><article class="atlas-card"><h3><a href="../maps/index.html#map=56:8&amp;page=quests/032.md">真新镇</a></h3><a href="../maps/index.html#map=56:8&amp;page=quests/032.md" aria-label="在大地图中打开真新镇"><div class="atlas-frame"><img src="../maps/base/a8f7345e69bcc8a2.png" alt="真新镇地图" loading="lazy" decoding="async" width="256" height="320"><svg viewBox="0 0 256 320" aria-hidden="true"></svg></div></a><p>地图范围记录：当前资料没有精确人物／遭遇坐标。</p><p><a href="../maps/index.html#map=56:8&amp;page=quests/032.md">放大定位与查看相邻入口 →</a></p></article></div></section><footer>资料依据指定水银1.1 ROM及解包记录。正文的“待补”表示该获取条件尚未整理清楚，不代表无法获得。</footer></main></html>

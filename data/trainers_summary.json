@@ -1,0 +1,27 @@
+{
+ "generated_pages": 743,
+ "special_ids": [
+  "919",
+  "920",
+  "921"
+ ],
+ "areas": 90,
+ "location_overrides": 2,
+ "shared_battle_scene_records": 2,
+ "trainers_with_area": 843,
+ "trainers_without_area": 199,
+ "empty_party_placeholders": 1,
+ "double_battle": 32,
+ "pages_with_level_generated_moves": 0,
+ "members_with_default_moves": 1284,
+ "pages_with_default_moves": 561,
+ "members_missing_learnset": 0,
+ "members_using_custom_moves": 608,
+ "members_with_ev_spread": 273,
+ "forced_shiny_records": 1,
+ "special_rule_records": 1,
+ "gym_leader_records_class_0x54": 20,
+ "duplicate_name_groups": 121,
+ "distinct_names": 476,
+ "unnamed_records": 43
+}

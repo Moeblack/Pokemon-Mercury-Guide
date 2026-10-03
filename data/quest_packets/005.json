@@ -1,0 +1,176 @@
+{
+ "title": "霓虹灯外的月光",
+ "quest_id": 5,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3af60",
+    "title": "霓虹灯外的月光",
+    "title_address": "0x8e3baf2",
+    "description": "帮助小茜\n与皮可西学会接纳自己。",
+    "description_address": "0x8e3bad3",
+    "unknown_u16": 461,
+    "unknown_u16_hex": "0x01CD",
+    "accept_flag": 2943,
+    "accept_flag_hex": "0x0B7F",
+    "complete_flag": 2943,
+    "complete_flag_hex": "0x0B7F",
+    "map_group": 50,
+    "map_num": 19,
+    "tail_hex": "02 01 00 00",
+    "index": 5,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3bad3",
+    "legacy_match_count": 0,
+    "current_description": "帮助小茜\n与皮可西学会接纳自己。",
+    "catalog_map": {
+     "id": "50:19",
+     "name": "满金市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08EE25FF",
+    "0x08EEB105"
+   ],
+   "event_roots": [],
+   "scripts": [
+    {
+     "script": "0x08EE25FF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE25FF",
+       "command": "checkflag",
+       "args": [
+        2943
+       ],
+       "task_flag_labels": [
+        {
+         "title": "霓虹灯外的月光",
+         "role": "accept_flag"
+        },
+        {
+         "title": "霓虹灯外的月光",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE2602",
+       "command": "goto_if",
+       "args": [
+        1,
+        149825037
+       ],
+       "targets": [
+        "0x08EE260D"
+       ]
+      },
+      {
+       "at": "0x08EE2608",
+       "command": "clearflag",
+       "args": [
+        2942
+       ]
+      },
+      {
+       "at": "0x08EE260B",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE260D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE260D",
+       "command": "setflag",
+       "args": [
+        2942
+       ]
+      },
+      {
+       "at": "0x08EE2610",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EEB105",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEB105",
+       "command": "checkflag",
+       "args": [
+        2943
+       ],
+       "task_flag_labels": [
+        {
+         "title": "霓虹灯外的月光",
+         "role": "accept_flag"
+        },
+        {
+         "title": "霓虹灯外的月光",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEB108",
+       "command": "goto_if",
+       "args": [
+        1,
+        149860627
+       ],
+       "targets": [
+        "0x08EEB113"
+       ]
+      },
+      {
+       "at": "0x08EEB10E",
+       "command": "setflag",
+       "args": [
+        2984
+       ]
+      },
+      {
+       "at": "0x08EEB111",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EEB113",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEB113",
+       "command": "clearflag",
+       "args": [
+        2984
+       ]
+      },
+      {
+       "at": "0x08EEB116",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

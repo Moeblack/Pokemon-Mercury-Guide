@@ -1,0 +1,1775 @@
+{
+ "title": "卖假货的奸商",
+ "quest_id": 71,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b488",
+    "title": "卖假货的奸商",
+    "title_address": "0x8e3c497",
+    "description": "太可恶了！卖假货的奸商\n卖给了我假的凤王的羽毛！\n真希望有人能够惩罚他。",
+    "description_address": "0x8e3c476",
+    "unknown_u16": 89,
+    "unknown_u16_hex": "0x0059",
+    "accept_flag": 6012,
+    "accept_flag_hex": "0x177C",
+    "complete_flag": 6006,
+    "complete_flag_hex": "0x1776",
+    "map_group": 48,
+    "map_num": 6,
+    "tail_hex": "02 01 00 00",
+    "index": 71,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39684",
+      "title": "卖假货的奸商",
+      "description_address": "0x8e3a308",
+      "description": "太可恶了！卖假货的奸商\\n卖给了我假的凤王的羽毛！\\n真希望有人能够惩罚他。"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a308",
+    "legacy_match_count": 1,
+    "current_description": "找到缘朱市\n卖假货的奸商并惩罚他。",
+    "catalog_map": {
+     "id": "48:6",
+     "name": "缘朱市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AF29C6",
+    "0x08AF2A0A",
+    "0x08AF2A50",
+    "0x08F5BA74"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08AF2A50",
+     "map_id": "3:70",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 40,
+     "event_index": 37,
+     "x": 53,
+     "y": 23,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n070.md"
+    },
+    {
+     "script": "0x08F5B4B3",
+     "map_id": "48:6",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 8,
+     "event_index": 5,
+     "x": 6,
+     "y": 15,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g48_n006.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08AF29B3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF29B3",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AF29B6",
+       "command": "goto_if",
+       "args": [
+        1,
+        145697222
+       ],
+       "targets": [
+        "0x08AF29C6"
+       ]
+      },
+      {
+       "at": "0x08AF29BC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145697890
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2C62",
+         "text": "太可恶了…！\n一定不能放过他！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF29C2",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF29C4",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B4B3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF29C6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF29C6",
+       "command": "checkflag",
+       "args": [
+        6006
+       ],
+       "task_flag_labels": [
+        {
+         "title": "卖假货的奸商",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF29C9",
+       "command": "goto_if",
+       "args": [
+        1,
+        145697541
+       ],
+       "targets": [
+        "0x08AF2B05"
+       ]
+      },
+      {
+       "at": "0x08AF29CF",
+       "command": "checkflag",
+       "args": [
+        6012
+       ],
+       "task_flag_labels": [
+        {
+         "title": "卖假货的奸商",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF29D2",
+       "command": "goto_if",
+       "args": [
+        1,
+        145697342
+       ],
+       "targets": [
+        "0x08AF2A3E"
+       ]
+      },
+      {
+       "at": "0x08AF29D8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145697890
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2C62",
+         "text": "太可恶了…！\n一定不能放过他！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF29DE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF29E0",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AF29E3",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145698165
+       ]
+      },
+      {
+       "at": "0x08AF29EA",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AF29ED",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145697946
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2C9A",
+         "text": "嘿，\n你有看见我的委托吗？\n我遇到了一名自称\n正在贩卖凤王的羽毛的商人，\n在他的诱导下，\n我购买了他贩卖的羽毛。\n可是，事后\n我才发现那是大嘴雀的羽毛……\n当我准备回去找他的时候，\n他已经失去踪影了……\n你能帮我找到他，\n并狠狠地惩罚他吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF29F3",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AF29F5",
+       "command": "goto",
+       "args": [
+        150321086
+       ],
+       "targets": [
+        "0x08F5B7BE"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF29B3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF2A0A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF2A0A",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2A0D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145697656
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2B78",
+         "text": "接受任务:<卖假货的奸商>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2A13",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2A18",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2A1D",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AF2A22",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AF2A27",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AF2A2C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145697685
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2B95",
+         "text": "谢谢你！\n那个卖假货的奸商全身上下\n都穿着黑色的衣服，\n还戴着一顶黑色的帽子，\n在人群中应该很显眼……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2A32",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AF2A34",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AF2A39",
+       "command": "setflag",
+       "args": [
+        6012
+       ],
+       "task_flag_labels": [
+        {
+         "title": "卖假货的奸商",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2A3C",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B7BE"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF2A3E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF2A3E",
+       "command": "checkflag",
+       "args": [
+        6020
+       ]
+      },
+      {
+       "at": "0x08AF2A41",
+       "command": "goto_if",
+       "args": [
+        1,
+        145697447
+       ],
+       "targets": [
+        "0x08AF2AA7"
+       ]
+      },
+      {
+       "at": "0x08AF2A47",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145697685
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2B95",
+         "text": "谢谢你！\n那个卖假货的奸商全身上下\n都穿着黑色的衣服，\n还戴着一顶黑色的帽子，\n在人群中应该很显眼……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2A4D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2A4F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF29C6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF2A50",
+     "event_roots": [
+      {
+       "map_id": "3:70",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 40,
+       "event_index": 37,
+       "x": 53,
+       "y": 23,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n070.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AF2A50",
+       "command": "checkflag",
+       "args": [
+        6012
+       ],
+       "task_flag_labels": [
+        {
+         "title": "卖假货的奸商",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2A53",
+       "command": "goto_if",
+       "args": [
+        1,
+        145697379
+       ],
+       "targets": [
+        "0x08AF2A63"
+       ]
+      },
+      {
+       "at": "0x08AF2A59",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145698524
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2EDC",
+         "text": "有…有什么事吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2A5F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2A61",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "3:70/local40"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF2A63",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF2A63",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145698524
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2EDC",
+         "text": "有…有什么事吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2A69",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2A6B",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AF2A6E",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145698541
+       ]
+      },
+      {
+       "at": "0x08AF2A75",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AF2A78",
+       "command": "showmoney",
+       "args": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2A7C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145698643
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2F53",
+         "text": "哎呀，这位朋友，\n难道你是来缘朱市旅游的吗？\n既然这样，\n我们在这里相遇也是缘分！\n就让我为你展示\n缘朱市最稀有的宝物吧！\n瞧瞧！\n这是传说中凤王的羽毛！\n可遇不可求！只要一万，\n我就把它转让给你！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2A82",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AF2A84",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2A89",
+       "command": "goto_if",
+       "args": [
+        1,
+        145698167
+       ],
+       "targets": [
+        "0x08AF2D77"
+       ]
+      },
+      {
+       "at": "0x08AF2A8F",
+       "command": "hidemoney",
+       "args": [
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2A92",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AF2A93",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144514209
+       ],
+       "texts": [
+        {
+         "address": "0x089D1CA1",
+         "text": "不要吗！\n滚一边去！滚！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2A99",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2A9B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF2A50"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF2AA7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF2AA7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145697781
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2BF5",
+         "text": "刚刚那个卖假货的奸商\n把钱退给我了，\n真的是太感谢你了！\n这是给你的报酬。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2AAD",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2AAF",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AF2AB0",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF2AB3",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        117
+       ],
+       "possible_names_not_semantics": {
+        "species": "海刺龙",
+        "item": "美丽之羽",
+        "move": "忍耐"
+       }
+      },
+      {
+       "at": "0x08AF2AB8",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        4
+       ],
+       "possible_names_not_semantics": {
+        "species": "小火龙",
+        "item": "精灵球",
+        "move": "连续拳"
+       }
+      },
+      {
+       "at": "0x08AF2ABD",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2ABF",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF2AC2",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AF2AC3",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF2AC6",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        537
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕路奇亚",
+        "item": "经验糖果S",
+        "move": "暗黑爆破"
+       }
+      },
+      {
+       "at": "0x08AF2ACB",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AF2AD0",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2AD2",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF2AD5",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2AD8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145697852
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2C3C",
+         "text": "完成任务:<卖假货的奸商>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2ADE",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2AE3",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2AE8",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AF2AED",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AF2AF2",
+       "command": "goto",
+       "args": [
+        150321780
+       ],
+       "targets": [
+        "0x08F5BA74"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF2A3E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF2B05",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF2B05",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145697551
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2B0F",
+         "text": "话说回来，\n凤王确实和大嘴雀挺像的……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2B0B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2B0D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF29C6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF2D77",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF2D77",
+       "command": "checkmoney",
+       "args": [
+        10000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2D7D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AF2D82",
+       "command": "goto_if",
+       "args": [
+        1,
+        145698465
+       ],
+       "targets": [
+        "0x08AF2EA1"
+       ]
+      },
+      {
+       "at": "0x08AF2D88",
+       "command": "removemoney",
+       "args": [
+        10000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2D8E",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08AF2D91",
+       "command": "updatemoney",
+       "args": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2D95",
+       "command": "pause",
+       "args": [
+        48
+       ]
+      },
+      {
+       "at": "0x08AF2D98",
+       "command": "hidemoney",
+       "args": [
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2D9B",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AF2D9C",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08AF2D9F",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        117
+       ],
+       "possible_names_not_semantics": {
+        "species": "海刺龙",
+        "item": "美丽之羽",
+        "move": "忍耐"
+       }
+      },
+      {
+       "at": "0x08AF2DA4",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2DA9",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2DAB",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2DAE",
+       "command": "signmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AF2DAF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145698544
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2EF0",
+         "text": "……仔细观察之后，\n发现只是普通的大嘴雀的羽毛……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2DB5",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2DB7",
+       "command": "normalmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AF2DB8",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AF2DBB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145698591
+       ]
+      },
+      {
+       "at": "0x08AF2DC1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2DC3",
+       "command": "trainerbattle0",
+       "args": [
+        3,
+        340,
+        0,
+        145698480
+       ]
+      },
+      {
+       "at": "0x08AF2DCD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145698396
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2E5C",
+         "text": "对不起……\n我再也不会这么做了……\n我会把钱退还给你的，\n这些你也收下吧……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2DD3",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2DD5",
+       "command": "addmoney",
+       "args": [
+        10000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2DDB",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2DDE",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        57
+       ],
+       "possible_names_not_semantics": {
+        "species": "火暴猴",
+        "item": "体力之羽",
+        "move": "冲浪"
+       }
+      },
+      {
+       "at": "0x08AF2DE3",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2DE8",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2DEA",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2DED",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        58
+       ],
+       "possible_names_not_semantics": {
+        "species": "卡蒂狗",
+        "item": "肌力之羽",
+        "move": "冰冻光束"
+       }
+      },
+      {
+       "at": "0x08AF2DF2",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2DF7",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2DF9",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2DFC",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        59
+       ],
+       "possible_names_not_semantics": {
+        "species": "风速狗",
+        "item": "抵抗之羽",
+        "move": "暴风雪"
+       }
+      },
+      {
+       "at": "0x08AF2E01",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2E06",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2E08",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2E0B",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        60
+       ],
+       "possible_names_not_semantics": {
+        "species": "蚊香蝌蚪",
+        "item": "智力之羽",
+        "move": "幻象光线"
+       }
+      },
+      {
+       "at": "0x08AF2E10",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2E15",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2E17",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2E1A",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        61
+       ],
+       "possible_names_not_semantics": {
+        "species": "蚊香君",
+        "item": "精神之羽",
+        "move": "泡沫光线"
+       }
+      },
+      {
+       "at": "0x08AF2E1F",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2E24",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2E26",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2E29",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        62
+       ],
+       "possible_names_not_semantics": {
+        "species": "蚊香泳士",
+        "item": "瞬发之羽",
+        "move": "极光束"
+       }
+      },
+      {
+       "at": "0x08AF2E2E",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2E33",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2E35",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2E38",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145698383
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2E4F",
+         "text": "饶了我吧…！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2E3E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2E40",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF2E42",
+       "command": "removeobject",
+       "args": [
+        39
+       ]
+      },
+      {
+       "at": "0x08AF2E45",
+       "command": "removeobject",
+       "args": [
+        40
+       ]
+      },
+      {
+       "at": "0x08AF2E48",
+       "command": "setflag",
+       "args": [
+        6020
+       ]
+      },
+      {
+       "at": "0x08AF2E4B",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2E4D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF2A63"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF2EA1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF2EA1",
+       "command": "hidemoney",
+       "args": [
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2EA4",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AF2EA5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144514232
+       ],
+       "texts": [
+        {
+         "address": "0x089D1CB8",
+         "text": "你的钱根本不够嘛！\n切！我还以为现在的小朋友\n都很有钱呢…"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2EAB",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2EAD",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AF2EAE",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF2D77"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5B4B3",
+     "event_roots": [
+      {
+       "map_id": "48:6",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 8,
+       "event_index": 5,
+       "x": 6,
+       "y": 15,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g48_n006.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5B4B3",
+       "command": "applymovement",
+       "args": [
+        12,
+        150320834
+       ]
+      },
+      {
+       "at": "0x08F5B4BA",
+       "command": "waitmovement",
+       "args": [
+        12
+       ]
+      },
+      {
+       "at": "0x08F5B4BD",
+       "command": "goto",
+       "args": [
+        145697203
+       ],
+       "targets": [
+        "0x08AF29B3"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "48:6/local8"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5B7BE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5B7BE",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5B7C3",
+       "command": "goto_if",
+       "args": [
+        1,
+        145697290
+       ],
+       "targets": [
+        "0x08AF2A0A"
+       ]
+      },
+      {
+       "at": "0x08F5B7C9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145697919
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2C7F",
+         "text": "你不会也和他是一伙的吧！？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5B7CF",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5B7D1",
+       "command": "applymovement",
+       "args": [
+        12,
+        150321118
+       ]
+      },
+      {
+       "at": "0x08F5B7D8",
+       "command": "waitmovement",
+       "args": [
+        12
+       ]
+      },
+      {
+       "at": "0x08F5B7DB",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5B7DC",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF29C6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5BA74",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5BA74",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F5BA79",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145697621
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2B55",
+         "text": "获得了4点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5BA7F",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F5BA81",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F5BA86",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08F5BA8C",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x08F5BA91",
+       "command": "setflag",
+       "args": [
+        6006
+       ],
+       "task_flag_labels": [
+        {
+         "title": "卖假货的奸商",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5BA94",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF2AA7"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

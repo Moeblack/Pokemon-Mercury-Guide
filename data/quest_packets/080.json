@@ -1,0 +1,1482 @@
+{
+ "title": "忍法!捉迷藏",
+ "quest_id": 80,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b53c",
+    "title": "忍法!捉迷藏",
+    "title_address": "0x8e3bcf5",
+    "description": "忍者的尊严需要\n捉迷藏来证明！请来\n镇上的民居和本小姐较量！",
+    "description_address": "0x8e3bcd6",
+    "unknown_u16": 709,
+    "unknown_u16_hex": "0x02C5",
+    "accept_flag": 2926,
+    "accept_flag_hex": "0x0B6E",
+    "complete_flag": 2934,
+    "complete_flag_hex": "0x0B76",
+    "map_group": 53,
+    "map_num": 0,
+    "tail_hex": "00 01 00 00",
+    "index": 80,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39754",
+      "title": "忍法!捉迷藏",
+      "description_address": "0x8e39bb1",
+      "description": "忍者的尊严需要\\n捉迷藏来证明！请来\\n镇上的民居和本小姐较量！"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39bb1",
+    "legacy_match_count": 1,
+    "current_description": "和卡吉镇的忍者\n来一场捉迷藏吧！",
+    "catalog_map": {
+     "id": "53:0",
+     "name": "卡吉镇"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08EDE523",
+    "0x08EDF2F7",
+    "0x08EDF9E4",
+    "0x08EE0F23",
+    "0x08EE183E"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08EDF2F7",
+     "map_id": "53:0",
+     "place": "卡吉镇",
+     "kind": "人物",
+     "local_id": 4,
+     "event_index": 3,
+     "x": 1,
+     "y": 3,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g53_n000.md"
+    },
+    {
+     "script": "0x08EE183E",
+     "map_id": "53:1",
+     "place": "卡吉镇",
+     "kind": "人物",
+     "local_id": 14,
+     "event_index": 13,
+     "x": 10,
+     "y": 3,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g53_n001.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08AB0E43",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB0E43",
+       "command": "checkflag",
+       "args": [
+        5786
+       ]
+      },
+      {
+       "at": "0x08AB0E46",
+       "command": "goto_if",
+       "args": [
+        1,
+        145438499
+       ],
+       "targets": [
+        "0x08AB3723"
+       ]
+      },
+      {
+       "at": "0x08AB0E4C",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AB3723",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB3723",
+       "command": "checkflag",
+       "args": [
+        5787
+       ]
+      },
+      {
+       "at": "0x08AB3726",
+       "command": "goto_if",
+       "args": [
+        1,
+        145439211
+       ],
+       "targets": [
+        "0x08AB39EB"
+       ]
+      },
+      {
+       "at": "0x08AB372C",
+       "command": "setvar",
+       "args": [
+        20888,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AB3731",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AB39EB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB39EB",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDE523",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDE523",
+       "command": "checkflag",
+       "args": [
+        2934
+       ],
+       "task_flag_labels": [
+        {
+         "title": "忍法!捉迷藏",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDE526",
+       "command": "goto_if",
+       "args": [
+        1,
+        149808636
+       ],
+       "targets": [
+        "0x08EDE5FC"
+       ]
+      },
+      {
+       "at": "0x08EDE52C",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDE5FC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDE5FC",
+       "command": "clearflag",
+       "args": [
+        2928
+       ]
+      },
+      {
+       "at": "0x08EDE5FF",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDF2F7",
+     "event_roots": [
+      {
+       "map_id": "53:0",
+       "place": "卡吉镇",
+       "kind": "人物",
+       "local_id": 4,
+       "event_index": 3,
+       "x": 1,
+       "y": 3,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g53_n000.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EDF2F7",
+       "command": "checkflag",
+       "args": [
+        2934
+       ],
+       "task_flag_labels": [
+        {
+         "title": "忍法!捉迷藏",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDF2FA",
+       "command": "goto_if",
+       "args": [
+        1,
+        149812192
+       ],
+       "targets": [
+        "0x08EDF3E0"
+       ]
+      },
+      {
+       "at": "0x08EDF300",
+       "command": "checkflag",
+       "args": [
+        2926
+       ],
+       "task_flag_labels": [
+        {
+         "title": "忍法!捉迷藏",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDF303",
+       "command": "goto_if",
+       "args": [
+        1,
+        149819223
+       ],
+       "targets": [
+        "0x08EE0F57"
+       ]
+      },
+      {
+       "at": "0x08EDF309",
+       "command": "applymovement",
+       "args": [
+        5,
+        149816203
+       ]
+      },
+      {
+       "at": "0x08EDF310",
+       "command": "waitmovement",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EDF313",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149819890
+       ],
+       "texts": [
+        {
+         "address": "0x08EE11F2",
+         "text": "嘿！你看起来是拥有\n“察觉”特性的训练家呢！\n本小姐是一名见习忍者，\n正在练习替身术。\n不过一个人修行\n实在是太无聊了……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDF319",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDF31B",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08EDF31E",
+       "command": "goto_if",
+       "args": [
+        1,
+        149819118
+       ],
+       "targets": [
+        "0x08EE0EEE"
+       ]
+      },
+      {
+       "at": "0x08EDF324",
+       "command": "applymovement",
+       "args": [
+        5,
+        150330793
+       ]
+      },
+      {
+       "at": "0x08EDF32B",
+       "command": "waitmovement",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EDF32E",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EDF32F",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDF3E0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDF3E0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149817400
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0838",
+         "text": "嘿嘿，\n还是来找本小姐了吗？\n这才是像样的忍者！\n想让哪只宝可梦学会毒菱呢？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDF3E6",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDF3E8",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EDF3EA",
+       "command": "setvar",
+       "args": [
+        32773,
+        73
+       ],
+       "possible_names_not_semantics": {
+        "species": "毒刺水母",
+        "item": "能力防守",
+        "move": "寄生种子"
+       }
+      },
+      {
+       "at": "0x08EDF3EF",
+       "command": "special",
+       "args": [
+        397
+       ]
+      },
+      {
+       "at": "0x08EDF3F2",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08EDF3F3",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08EDF3F8",
+       "command": "goto_if",
+       "args": [
+        1,
+        149812243
+       ],
+       "targets": [
+        "0x08EDF413"
+       ]
+      },
+      {
+       "at": "0x08EDF3FE",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08EDF403",
+       "command": "goto_if",
+       "args": [
+        1,
+        149812253
+       ],
+       "targets": [
+        "0x08EDF41D"
+       ]
+      },
+      {
+       "at": "0x08EDF409",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149812987
+       ],
+       "texts": [
+        {
+         "address": "0x08EDF6FB",
+         "text": "绝妙！看着对手因为中毒而\n慢慢露出痛苦的表情……\n这才是忍者的战斗方式啊！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDF40F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDF411",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDF413",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDF413",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149816569
+       ],
+       "texts": [
+        {
+         "address": "0x08EE04F9",
+         "text": "诶？难道你更倾向于\n那种硬碰硬的正统战斗吗？\n真可惜。如果你改变主意了，\n就重新来找本小姐吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDF419",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDF41B",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDF41D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDF41D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149816658
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0552",
+         "text": "这只宝可梦体内的查克拉\n似乎和毒菱不太匹配呢……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDF423",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDF425",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDF9E4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDF9E4",
+       "command": "setflag",
+       "args": [
+        2933
+       ]
+      },
+      {
+       "at": "0x08EDF9E7",
+       "command": "checkflag",
+       "args": [
+        2932
+       ]
+      },
+      {
+       "at": "0x08EDF9EA",
+       "command": "call_if",
+       "args": [
+        1,
+        149813759
+       ],
+       "targets": [
+        "0x08EDF9FF"
+       ]
+      },
+      {
+       "at": "0x08EDF9F0",
+       "command": "checkflag",
+       "args": [
+        2934
+       ],
+       "task_flag_labels": [
+        {
+         "title": "忍法!捉迷藏",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDF9F3",
+       "command": "call_if",
+       "args": [
+        1,
+        149813764
+       ],
+       "targets": [
+        "0x08EDFA04"
+       ]
+      },
+      {
+       "at": "0x08EDF9F9",
+       "command": "goto",
+       "args": [
+        145428035
+       ],
+       "targets": [
+        "0x08AB0E43"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EDF9FF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDF9FF",
+       "command": "clearflag",
+       "args": [
+        2933
+       ]
+      },
+      {
+       "at": "0x08EDFA02",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDFA04",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDFA04",
+       "command": "setflag",
+       "args": [
+        2933
+       ]
+      },
+      {
+       "at": "0x08EDFA07",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE0EEE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE0EEE",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EE0EF1",
+       "command": "applymovement",
+       "args": [
+        4,
+        149818926
+       ]
+      },
+      {
+       "at": "0x08EE0EF8",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EE0EFB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149820002
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1262",
+         "text": "怎么样？\n如果你对洞察力有自信，\n要不要来陪本小姐进行\n一场堵上忍者尊严的捉迷藏？\n只要你能连续\n三次识破本小姐的伪装，\n本小姐就教你一个绝技！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0F01",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE0F03",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE0F08",
+       "command": "goto_if",
+       "args": [
+        1,
+        149819171
+       ],
+       "targets": [
+        "0x08EE0F23"
+       ]
+      },
+      {
+       "at": "0x08EE0F0E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149820138
+       ],
+       "texts": [
+        {
+         "address": "0x08EE12EA",
+         "text": "切，真没意思。\n那本小姐还是\n去变成一块石头，\n吓唬路过的呆呆兽好了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0F14",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE0F16",
+       "command": "applymovement",
+       "args": [
+        5,
+        150330793
+       ]
+      },
+      {
+       "at": "0x08EE0F1D",
+       "command": "waitmovement",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE0F20",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EE0F21",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE0F23",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE0F23",
+       "command": "setflag",
+       "args": [
+        2926
+       ],
+       "task_flag_labels": [
+        {
+         "title": "忍法!捉迷藏",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0F26",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE0F29",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149820204
+       ],
+       "texts": [
+        {
+         "address": "0x08EE132C",
+         "text": "接受任务:<忍法!捉迷藏>"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0F2F",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE0F34",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE0F39",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08EE0F3E",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EE0F43",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08EE0F48",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149820232
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1348",
+         "text": "太好了！\n如果你准备好\n开始的话，就告诉本小姐吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0F4E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE0F50",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EE0F55",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE0F57",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE0F57",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08EE0F58",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149819816
+       ],
+       "texts": [
+        {
+         "address": "0x08EE11A8",
+         "text": "怎么样，\n准备好开始了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0F5E",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE0F60",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE0F65",
+       "command": "goto_if",
+       "args": [
+        1,
+        149819253
+       ],
+       "targets": [
+        "0x08EE0F75"
+       ]
+      },
+      {
+       "at": "0x08EE0F6B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149819842
+       ],
+       "texts": [
+        {
+         "address": "0x08EE11C2",
+         "text": "你这家伙……\n不相信自己的人\n连努力的价值都没有！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0F71",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE0F73",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE0F75",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE0F75",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149819730
+       ]
+      },
+      {
+       "at": "0x08EE0F7B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE0F7D",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EE0F80",
+       "command": "applymovement",
+       "args": [
+        255,
+        149818926
+       ]
+      },
+      {
+       "at": "0x08EE0F87",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EE0F8A",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EE0F8C",
+       "command": "sound",
+       "args": [
+        17
+       ]
+      },
+      {
+       "at": "0x08EE0F8F",
+       "command": "removeobject",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08EE0F92",
+       "command": "setflag",
+       "args": [
+        2927
+       ]
+      },
+      {
+       "at": "0x08EE0F95",
+       "command": "setflag",
+       "args": [
+        2928
+       ]
+      },
+      {
+       "at": "0x08EE0F98",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08EE0F9B",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE0F9D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149819303
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0FA7",
+         "text": "见习忍者释放忍术消失了……\n尝试在镇上的各处寻找她吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0FA3",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE0FA5",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE183E",
+     "event_roots": [
+      {
+       "map_id": "53:1",
+       "place": "卡吉镇",
+       "kind": "人物",
+       "local_id": 14,
+       "event_index": 13,
+       "x": 10,
+       "y": 3,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g53_n001.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EE183E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149822101
+       ]
+      },
+      {
+       "at": "0x08EE1844",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE1846",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EE1849",
+       "command": "applymovement",
+       "args": [
+        32783,
+        149822175
+       ]
+      },
+      {
+       "at": "0x08EE1850",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EE1853",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149822115
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1AA3",
+         "text": "彻底认输了！\n你竟然连精灵中心的\n盆栽数量都记得这么清楚吗？！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE1859",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08EE185B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149821810
+       ]
+      },
+      {
+       "at": "0x08EE1861",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE1863",
+       "command": "applymovement",
+       "args": [
+        255,
+        149822098
+       ]
+      },
+      {
+       "at": "0x08EE186A",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EE186D",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EE1870",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EE1872",
+       "command": "sound",
+       "args": [
+        17
+       ]
+      },
+      {
+       "at": "0x08EE1875",
+       "command": "removeobject",
+       "args": [
+        14
+       ]
+      },
+      {
+       "at": "0x08EE1878",
+       "command": "setflag",
+       "args": [
+        2933
+       ]
+      },
+      {
+       "at": "0x08EE187B",
+       "command": "setflag",
+       "args": [
+        2934
+       ],
+       "task_flag_labels": [
+        {
+         "title": "忍法!捉迷藏",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE187E",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08EE1881",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE1883",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149821742
+       ],
+       "texts": [
+        {
+         "address": "0x08EE192E",
+         "text": "见习忍者释放忍术消失了……\n如果想要学习毒菱，\n就去她的家中找她吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE1889",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE188B",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE188E",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        537
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕路奇亚",
+        "item": "经验糖果S",
+        "move": "暗黑爆破"
+       }
+      },
+      {
+       "at": "0x08EE1893",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE1898",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE189A",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE189D",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EE189E",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE18A1",
+       "command": "addmoney",
+       "args": [
+        7000,
+        0
+       ]
+      },
+      {
+       "at": "0x08EE18A7",
+       "command": "addvar",
+       "args": [
+        20789,
+        5
+       ]
+      },
+      {
+       "at": "0x08EE18AC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149821679
+       ],
+       "texts": [
+        {
+         "address": "0x08EE18EF",
+         "text": "完成任务:<忍法!捉迷藏>"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE18B2",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE18B7",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE18BC",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08EE18C1",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EE18C6",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08EE18CB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149821707
+       ],
+       "texts": [
+        {
+         "address": "0x08EE190B",
+         "text": "获得了5点BracerPoints和7000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE18D1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE18D3",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EE18D8",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

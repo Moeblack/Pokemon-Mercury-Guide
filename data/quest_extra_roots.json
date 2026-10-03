@@ -1,0 +1,1657 @@
+{
+  "roots": [
+    {
+      "root": "0x08AE6348",
+      "check_addr": "0x08AE6348",
+      "flag": 5794,
+      "target": "0x08AE7278",
+      "raw": "02022ba21606017872ae08",
+      "quest_ids": [
+        2
+      ],
+      "titles": [
+        "皮丘的旅途"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AE7278",
+      "check_addr": "0x08AE7278",
+      "flag": 5795,
+      "target": "0x089D4B81",
+      "raw": "08022ba3160601814b9d08",
+      "quest_ids": [
+        2
+      ],
+      "titles": [
+        "皮丘的旅途"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08EE6A5B",
+      "check_addr": "0x08EE6A5B",
+      "flag": 2958,
+      "target": "0x08EE8E77",
+      "raw": "ee082b8e0b0601778eee08",
+      "quest_ids": [
+        3
+      ],
+      "titles": [
+        "向往天空的理由"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08EE6CF3",
+      "check_addr": "0x08EE6CF3",
+      "flag": 2958,
+      "target": "0x08EE8F5D",
+      "raw": "ee082b8e0b06015d8fee08",
+      "quest_ids": [
+        3
+      ],
+      "titles": [
+        "向往天空的理由"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08EE7673",
+      "check_addr": "0x08EE7673",
+      "flag": 2958,
+      "target": "0x08EE9043",
+      "raw": "ee082b8e0b06014390ee08",
+      "quest_ids": [
+        3
+      ],
+      "titles": [
+        "向往天空的理由"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08EE79F0",
+      "check_addr": "0x08EE79F0",
+      "flag": 2958,
+      "target": "0x08EE93DB",
+      "raw": "ee082b8e0b0601db93ee08",
+      "quest_ids": [
+        3
+      ],
+      "titles": [
+        "向往天空的理由"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08EE8BAE",
+      "check_addr": "0x08EE8BAE",
+      "flag": 2958,
+      "target": "0x08EE8BBD",
+      "raw": "9d082b8e0b0601bd8bee08",
+      "quest_ids": [
+        3
+      ],
+      "titles": [
+        "向往天空的理由"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08EE6A49",
+      "check_addr": "0x08EE6A49",
+      "flag": 3076,
+      "target": "0x08EE9136",
+      "raw": "60fe2b040c06013691ee08",
+      "quest_ids": [
+        3
+      ],
+      "titles": [
+        "向往天空的理由"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08EE6CE1",
+      "check_addr": "0x08EE6CE1",
+      "flag": 3076,
+      "target": "0x08EE921C",
+      "raw": "00022b040c06011c92ee08",
+      "quest_ids": [
+        3
+      ],
+      "titles": [
+        "向往天空的理由"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08EE7661",
+      "check_addr": "0x08EE7661",
+      "flag": 3076,
+      "target": "0x08EE9302",
+      "raw": "ff002b040c06010293ee08",
+      "quest_ids": [
+        3
+      ],
+      "titles": [
+        "向往天空的理由"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08EE79DE",
+      "check_addr": "0x08EE79DE",
+      "flag": 3076,
+      "target": "0x08EE969A",
+      "raw": "ff002b040c06019a96ee08",
+      "quest_ids": [
+        3
+      ],
+      "titles": [
+        "向往天空的理由"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CD5B72",
+      "check_addr": "0x09CD5B72",
+      "flag": 3305,
+      "target": "0x09CD5C89",
+      "raw": "cd092be90c0601895ccd09",
+      "quest_ids": [
+        6
+      ],
+      "titles": [
+        "无法冻结的时间"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CD5B67",
+      "check_addr": "0x09CD5B69",
+      "flag": 3307,
+      "target": "0x09CD5CAC",
+      "raw": "695a2beb0c0601ac5ccd09",
+      "quest_ids": [
+        6
+      ],
+      "titles": [
+        "无法冻结的时间"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CDF8EF",
+      "check_addr": "0x09CDF8EF",
+      "flag": 3032,
+      "target": "0x09CDF91A",
+      "raw": "09002bd80b06011af9cd09",
+      "quest_ids": [
+        12
+      ],
+      "titles": [
+        "来自未来的回响"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089D3C96",
+      "check_addr": "0x089D3C96",
+      "flag": 5391,
+      "target": "0x089D3CE9",
+      "raw": "02ff2b0f150601e93c9d08",
+      "quest_ids": [
+        13
+      ],
+      "titles": [
+        "少女的烦恼"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E2E7B",
+      "check_addr": "0x089E2E7B",
+      "flag": 5391,
+      "target": "0x089D3CE9",
+      "raw": "08ff2b0f150601e93c9d08",
+      "quest_ids": [
+        13
+      ],
+      "titles": [
+        "少女的烦恼"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E4396",
+      "check_addr": "0x089E4396",
+      "flag": 5472,
+      "target": "0x089E43E5",
+      "raw": "9e082b60150601e5439e08",
+      "quest_ids": [
+        21
+      ],
+      "titles": [
+        "收集研究所物资"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E440B",
+      "check_addr": "0x089E440B",
+      "flag": 5472,
+      "target": "0x089E445A",
+      "raw": "9e082b601506015a449e08",
+      "quest_ids": [
+        21
+      ],
+      "titles": [
+        "收集研究所物资"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E4480",
+      "check_addr": "0x089E4480",
+      "flag": 5472,
+      "target": "0x089E44CF",
+      "raw": "9e082b60150601cf449e08",
+      "quest_ids": [
+        21
+      ],
+      "titles": [
+        "收集研究所物资"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E44F5",
+      "check_addr": "0x089E44F5",
+      "flag": 5472,
+      "target": "0x089E4544",
+      "raw": "9e082b6015060144459e08",
+      "quest_ids": [
+        21
+      ],
+      "titles": [
+        "收集研究所物资"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E456A",
+      "check_addr": "0x089E456A",
+      "flag": 5472,
+      "target": "0x089E45B9",
+      "raw": "9e082b60150601b9459e08",
+      "quest_ids": [
+        21
+      ],
+      "titles": [
+        "收集研究所物资"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E438D",
+      "check_addr": "0x089E438D",
+      "flag": 5473,
+      "target": "0x089E2EBF",
+      "raw": "ff002b61150601bf2e9e08",
+      "quest_ids": [
+        21
+      ],
+      "titles": [
+        "收集研究所物资"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E4402",
+      "check_addr": "0x089E4402",
+      "flag": 5473,
+      "target": "0x089E2EBF",
+      "raw": "08092b61150601bf2e9e08",
+      "quest_ids": [
+        21
+      ],
+      "titles": [
+        "收集研究所物资"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E4477",
+      "check_addr": "0x089E4477",
+      "flag": 5473,
+      "target": "0x089E2EBF",
+      "raw": "08092b61150601bf2e9e08",
+      "quest_ids": [
+        21
+      ],
+      "titles": [
+        "收集研究所物资"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E44EC",
+      "check_addr": "0x089E44EC",
+      "flag": 5473,
+      "target": "0x089E2EBF",
+      "raw": "08092b61150601bf2e9e08",
+      "quest_ids": [
+        21
+      ],
+      "titles": [
+        "收集研究所物资"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E4561",
+      "check_addr": "0x089E4561",
+      "flag": 5473,
+      "target": "0x089E2EBF",
+      "raw": "08092b61150601bf2e9e08",
+      "quest_ids": [
+        21
+      ],
+      "titles": [
+        "收集研究所物资"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E7518",
+      "check_addr": "0x089E7518",
+      "flag": 5493,
+      "target": "0x089E7706",
+      "raw": "9e082b7515060106779e08",
+      "quest_ids": [
+        28
+      ],
+      "titles": [
+        "喇叭芽塔的妖怪"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E777E",
+      "check_addr": "0x089E777E",
+      "flag": 5493,
+      "target": "0x089E781B",
+      "raw": "9e082b751506011b789e08",
+      "quest_ids": [
+        28
+      ],
+      "titles": [
+        "喇叭芽塔的妖怪"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E750F",
+      "check_addr": "0x089E750F",
+      "flag": 5494,
+      "target": "0x089E7826",
+      "raw": "15022b7615060126789e08",
+      "quest_ids": [
+        28
+      ],
+      "titles": [
+        "喇叭芽塔的妖怪"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E7775",
+      "check_addr": "0x089E7775",
+      "flag": 5494,
+      "target": "0x089E791D",
+      "raw": "00092b761506011d799e08",
+      "quest_ids": [
+        28
+      ],
+      "titles": [
+        "喇叭芽塔的妖怪"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E7B68",
+      "check_addr": "0x089E7B68",
+      "flag": 5495,
+      "target": "0x089E7DDC",
+      "raw": "9c082b77150601dc7d9e08",
+      "quest_ids": [
+        29
+      ],
+      "titles": [
+        "可爱的姆克儿"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E7B8B",
+      "check_addr": "0x089E7B8B",
+      "flag": 5495,
+      "target": "0x089E7DDC",
+      "raw": "9c082b77150601dc7d9e08",
+      "quest_ids": [
+        29
+      ],
+      "titles": [
+        "可爱的姆克儿"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E7B5F",
+      "check_addr": "0x089E7B5F",
+      "flag": 5496,
+      "target": "0x089CF824",
+      "raw": "ff002b7815060124f89c08",
+      "quest_ids": [
+        29
+      ],
+      "titles": [
+        "可爱的姆克儿"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x089E7B82",
+      "check_addr": "0x089E7B82",
+      "flag": 5496,
+      "target": "0x089CF824",
+      "raw": "0f002b7815060124f89c08",
+      "quest_ids": [
+        29
+      ],
+      "titles": [
+        "可爱的姆克儿"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08ECC6DD",
+      "check_addr": "0x08ECC6DD",
+      "flag": 2834,
+      "target": "0x08AF04BC",
+      "raw": "ed082b120b0601bc04af08",
+      "quest_ids": [
+        33
+      ],
+      "titles": [
+        "阿始的极限秀"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x087B0000",
+      "check_addr": "0x087B0000",
+      "flag": 2837,
+      "target": "0x087B000A",
+      "raw": "ffff2b150b06010a007b08",
+      "quest_ids": [
+        34
+      ],
+      "titles": [
+        "最后的大哥秀"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CD019F",
+      "check_addr": "0x09CD019F",
+      "flag": 3184,
+      "target": "0x09CD01FB",
+      "raw": "cd092b700c0601fb01cd09",
+      "quest_ids": [
+        36
+      ],
+      "titles": [
+        "沉睡的潜能"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CD0194",
+      "check_addr": "0x09CD0196",
+      "flag": 3185,
+      "target": "0x09CD0344",
+      "raw": "695a2b710c06014403cd09",
+      "quest_ids": [
+        36
+      ],
+      "titles": [
+        "沉睡的潜能"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AE870F",
+      "check_addr": "0x08AE870F",
+      "flag": 5751,
+      "target": "0x08AE872C",
+      "raw": "ae082b771606012c87ae08",
+      "quest_ids": [
+        38
+      ],
+      "titles": [
+        "传达情书"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AE882A",
+      "check_addr": "0x08AE882A",
+      "flag": 5751,
+      "target": "0x08AE8847",
+      "raw": "ae082b771606014788ae08",
+      "quest_ids": [
+        38
+      ],
+      "titles": [
+        "传达情书"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AE8706",
+      "check_addr": "0x08AE8706",
+      "flag": 5752,
+      "target": "0x08AE8722",
+      "raw": "6a5a2b781606012287ae08",
+      "quest_ids": [
+        38
+      ],
+      "titles": [
+        "传达情书"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AE8821",
+      "check_addr": "0x08AE8821",
+      "flag": 5752,
+      "target": "0x08AE883D",
+      "raw": "6a5a2b781606013d88ae08",
+      "quest_ids": [
+        38
+      ],
+      "titles": [
+        "传达情书"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F34824",
+      "check_addr": "0x08F34824",
+      "flag": 6289,
+      "target": "0x08F349D1",
+      "raw": "03022b91180601d149f308",
+      "quest_ids": [
+        39
+      ],
+      "titles": [
+        "洞穴深处的回响"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F34856",
+      "check_addr": "0x08F34856",
+      "flag": 6289,
+      "target": "0x08F349D1",
+      "raw": "feff2b91180601d149f308",
+      "quest_ids": [
+        39
+      ],
+      "titles": [
+        "洞穴深处的回响"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F349D1",
+      "check_addr": "0x08F349D1",
+      "flag": 6291,
+      "target": "0x08F34B0C",
+      "raw": "02ff2b931806010c4bf308",
+      "quest_ids": [
+        39
+      ],
+      "titles": [
+        "洞穴深处的回响"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F3425B",
+      "check_addr": "0x08F3425B",
+      "flag": 6285,
+      "target": "0x08F342D1",
+      "raw": "02ff2b8d180601d142f308",
+      "quest_ids": [
+        40
+      ],
+      "titles": [
+        "穿玩偶装的人"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F342EF",
+      "check_addr": "0x08F342EF",
+      "flag": 6285,
+      "target": "0x08F34365",
+      "raw": "02ff2b8d1806016543f308",
+      "quest_ids": [
+        40
+      ],
+      "titles": [
+        "穿玩偶装的人"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F34378",
+      "check_addr": "0x08F34378",
+      "flag": 6287,
+      "target": "0x08F343EE",
+      "raw": "02ff2b8f180601ee43f308",
+      "quest_ids": [
+        40
+      ],
+      "titles": [
+        "穿玩偶装的人"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08EDE570",
+      "check_addr": "0x08EDE570",
+      "flag": 2918,
+      "target": "0x08EDE58E",
+      "raw": "ff002b660b06018ee5ed08",
+      "quest_ids": [
+        42
+      ],
+      "titles": [
+        "异样的呆呆兽"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AAFF25",
+      "check_addr": "0x08AAFF25",
+      "flag": 5764,
+      "target": "0x08AB1E3E",
+      "raw": "ab082b841606013e1eab08",
+      "quest_ids": [
+        43
+      ],
+      "titles": [
+        "闪耀的一等星"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AB1A05",
+      "check_addr": "0x08AB1A05",
+      "flag": 5764,
+      "target": "0x08AB22C0",
+      "raw": "ab082b84160601c022ab08",
+      "quest_ids": [
+        43
+      ],
+      "titles": [
+        "闪耀的一等星"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AAFF13",
+      "check_addr": "0x08AAFF13",
+      "flag": 5767,
+      "target": "0x08AAFF5C",
+      "raw": "ff002b871606015cffaa08",
+      "quest_ids": [
+        43
+      ],
+      "titles": [
+        "闪耀的一等星"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AB19F3",
+      "check_addr": "0x08AB19F3",
+      "flag": 5767,
+      "target": "0x08AB1E3E",
+      "raw": "02802b871606013e1eab08",
+      "quest_ids": [
+        43
+      ],
+      "titles": [
+        "闪耀的一等星"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08ECB6A1",
+      "check_addr": "0x08ECB6A1",
+      "flag": 2822,
+      "target": "0x08ECB6BE",
+      "raw": "ff002b060b0601beb6ec08",
+      "quest_ids": [
+        44
+      ],
+      "titles": [
+        "闪耀的电波"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AEB8AA",
+      "check_addr": "0x08AEB8AA",
+      "flag": 5973,
+      "target": "0x08AEB8C2",
+      "raw": "ae082b55170601c2b8ae08",
+      "quest_ids": [
+        48
+      ],
+      "titles": [
+        "家乡的味道"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AEC3D4",
+      "check_addr": "0x08AEC3D4",
+      "flag": 5976,
+      "target": "0x08AEC444",
+      "raw": "ae082b5817060144c4ae08",
+      "quest_ids": [
+        49
+      ],
+      "titles": [
+        "如期未至的朋友"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AECB31",
+      "check_addr": "0x08AECB31",
+      "flag": 5978,
+      "target": "0x08AECB3F",
+      "raw": "02ff2b5a1706013fcbae08",
+      "quest_ids": [
+        49
+      ],
+      "titles": [
+        "如期未至的朋友"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08ED5AC9",
+      "check_addr": "0x08ED5AC9",
+      "flag": 5978,
+      "target": "0x08ED5C21",
+      "raw": "1bfe2b5a170601215ced08",
+      "quest_ids": [
+        49
+      ],
+      "titles": [
+        "如期未至的朋友"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AECC7E",
+      "check_addr": "0x08AECC7E",
+      "flag": 5980,
+      "target": "0x08AECD20",
+      "raw": "ae082b5c17060120cdae08",
+      "quest_ids": [
+        50
+      ],
+      "titles": [
+        "失踪的父亲"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AED8E3",
+      "check_addr": "0x08AED8E3",
+      "flag": 5980,
+      "target": "0x08AED900",
+      "raw": "08022b5c17060100d9ae08",
+      "quest_ids": [
+        50
+      ],
+      "titles": [
+        "失踪的父亲"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CDF829",
+      "check_addr": "0x09CDF829",
+      "flag": 5985,
+      "target": "0x09CDF833",
+      "raw": "01402b6117060033f8cd09",
+      "quest_ids": [
+        51
+      ],
+      "titles": [
+        "聂梓的签名"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AEF05E",
+      "check_addr": "0x08AEF05E",
+      "flag": 5990,
+      "target": "0x08AEF0E0",
+      "raw": "ae082b66170601e0f0ae08",
+      "quest_ids": [
+        52
+      ],
+      "titles": [
+        "时髦的宝可梦？"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AEF0D1",
+      "check_addr": "0x08AEF0D1",
+      "flag": 5990,
+      "target": "0x08AEF153",
+      "raw": "ae082b6617060153f1ae08",
+      "quest_ids": [
+        52
+      ],
+      "titles": [
+        "时髦的宝可梦？"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AEF144",
+      "check_addr": "0x08AEF144",
+      "flag": 5990,
+      "target": "0x08AEF1C6",
+      "raw": "ae082b66170601c6f1ae08",
+      "quest_ids": [
+        52
+      ],
+      "titles": [
+        "时髦的宝可梦？"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AEF055",
+      "check_addr": "0x08AEF055",
+      "flag": 5991,
+      "target": "0x08AEF18D",
+      "raw": "9f082b671706018df1ae08",
+      "quest_ids": [
+        52
+      ],
+      "titles": [
+        "时髦的宝可梦？"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AEF0C8",
+      "check_addr": "0x08AEF0C8",
+      "flag": 5991,
+      "target": "0x08AEF200",
+      "raw": "02ff2b6717060100f2ae08",
+      "quest_ids": [
+        52
+      ],
+      "titles": [
+        "时髦的宝可梦？"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AEF13B",
+      "check_addr": "0x08AEF13B",
+      "flag": 5991,
+      "target": "0x08AEF273",
+      "raw": "02ff2b6717060173f2ae08",
+      "quest_ids": [
+        52
+      ],
+      "titles": [
+        "时髦的宝可梦？"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08EE7834",
+      "check_addr": "0x08EE7834",
+      "flag": 5846,
+      "target": "0x08EE6C58",
+      "raw": "00022bd6160601586cee08",
+      "quest_ids": [
+        55
+      ],
+      "titles": [
+        "孩子一生平安"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AF0453",
+      "check_addr": "0x08AF0453",
+      "flag": 6000,
+      "target": "0x08AF09E0",
+      "raw": "ff002b70170601e009af08",
+      "quest_ids": [
+        56
+      ],
+      "titles": [
+        "奇怪的树"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AF046A",
+      "check_addr": "0x08AF046A",
+      "flag": 6000,
+      "target": "0x08AF09E0",
+      "raw": "0f802b70170601e009af08",
+      "quest_ids": [
+        56
+      ],
+      "titles": [
+        "奇怪的树"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AF09E0",
+      "check_addr": "0x08AF09E0",
+      "flag": 6001,
+      "target": "0x08AA492F",
+      "raw": "ff002b711706012f49aa08",
+      "quest_ids": [
+        56
+      ],
+      "titles": [
+        "奇怪的树"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F5BF09",
+      "check_addr": "0x08F5BF09",
+      "flag": 6264,
+      "target": "0x08F5C111",
+      "raw": "09062b7818060111c1f508",
+      "quest_ids": [
+        57
+      ],
+      "titles": [
+        "遗失的玩偶"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F48DCF",
+      "check_addr": "0x08F48DCF",
+      "flag": 2581,
+      "target": "0x08F49735",
+      "raw": "f4082b150a06013597f408",
+      "quest_ids": [
+        58
+      ],
+      "titles": [
+        "传递信件"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F48DC6",
+      "check_addr": "0x08F48DC6",
+      "flag": 2582,
+      "target": "0x08F490F3",
+      "raw": "00022b160a0601f390f408",
+      "quest_ids": [
+        58
+      ],
+      "titles": [
+        "传递信件"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CD312C",
+      "check_addr": "0x09CD312C",
+      "flag": 2962,
+      "target": "0x09CD31DB",
+      "raw": "cd092b920b0601db31cd09",
+      "quest_ids": [
+        59
+      ],
+      "titles": [
+        "五彩斑斓的头巾"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CD3121",
+      "check_addr": "0x09CD3123",
+      "flag": 2963,
+      "target": "0x09CD331A",
+      "raw": "695a2b930b06011a33cd09",
+      "quest_ids": [
+        59
+      ],
+      "titles": [
+        "五彩斑斓的头巾"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08EE6813",
+      "check_addr": "0x08EE6813",
+      "flag": 2950,
+      "target": "0x08EE68BD",
+      "raw": "ff002b860b0601bd68ee08",
+      "quest_ids": [
+        60
+      ],
+      "titles": [
+        "生病的呆呆兽"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CD82F3",
+      "check_addr": "0x09CD82F3",
+      "flag": 5175,
+      "target": "0x09CD836A",
+      "raw": "cd092b371406016a83cd09",
+      "quest_ids": [
+        62
+      ],
+      "titles": [
+        "满金Cos大会！？"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CD39D3",
+      "check_addr": "0x09CD39D3",
+      "flag": 2975,
+      "target": "0x09CD3A5B",
+      "raw": "cd092b9f0b06015b3acd09",
+      "quest_ids": [
+        65
+      ],
+      "titles": [
+        "怯场的男友"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CD3AF5",
+      "check_addr": "0x09CD3AF7",
+      "flag": 2975,
+      "target": "0x09CD3B1C",
+      "raw": "695a2b9f0b06001c3bcd09",
+      "quest_ids": [
+        65
+      ],
+      "titles": [
+        "怯场的男友"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CD39C8",
+      "check_addr": "0x09CD39CA",
+      "flag": 2976,
+      "target": "0x09CD3AEB",
+      "raw": "695a2ba00b0601eb3acd09",
+      "quest_ids": [
+        65
+      ],
+      "titles": [
+        "怯场的男友"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CD3E72",
+      "check_addr": "0x09CD3E72",
+      "flag": 2978,
+      "target": "0x09CD3F12",
+      "raw": "cd092ba20b0601123fcd09",
+      "quest_ids": [
+        66
+      ],
+      "titles": [
+        "胡桃的风景特辑"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CD3E67",
+      "check_addr": "0x09CD3E69",
+      "flag": 2983,
+      "target": "0x09CD401B",
+      "raw": "695a2ba70b06011b40cd09",
+      "quest_ids": [
+        66
+      ],
+      "titles": [
+        "胡桃的风景特辑"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AF17A7",
+      "check_addr": "0x08AF17A7",
+      "flag": 6010,
+      "target": "0x08AF192E",
+      "raw": "9d082b7a1706012e19af08",
+      "quest_ids": [
+        69
+      ],
+      "titles": [
+        "姿态各异的舞者"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AF179E",
+      "check_addr": "0x08AF179E",
+      "flag": 6004,
+      "target": "0x089D8FB8",
+      "raw": "9f082b74170601b88f9d08",
+      "quest_ids": [
+        69
+      ],
+      "titles": [
+        "姿态各异的舞者"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AF2582",
+      "check_addr": "0x08AF2582",
+      "flag": 6011,
+      "target": "0x08AF260B",
+      "raw": "af082b7b1706010b26af08",
+      "quest_ids": [
+        70
+      ],
+      "titles": [
+        "遗失的钥匙"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AF335F",
+      "check_addr": "0x08AF335F",
+      "flag": 6014,
+      "target": "0x08AF33CE",
+      "raw": "af082b7e170601ce33af08",
+      "quest_ids": [
+        73
+      ],
+      "titles": [
+        "逾期图书的回收"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AF3902",
+      "check_addr": "0x08AF3902",
+      "flag": 6014,
+      "target": "0x08AF3911",
+      "raw": "9d082b7e1706011139af08",
+      "quest_ids": [
+        73
+      ],
+      "titles": [
+        "逾期图书的回收"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AF3356",
+      "check_addr": "0x08AF3356",
+      "flag": 6008,
+      "target": "0x08AF334C",
+      "raw": "02ff2b781706014c33af08",
+      "quest_ids": [
+        73
+      ],
+      "titles": [
+        "逾期图书的回收"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AF38F9",
+      "check_addr": "0x08AF38F9",
+      "flag": 6008,
+      "target": "0x089D7A27",
+      "raw": "ff002b78170601277a9d08",
+      "quest_ids": [
+        73
+      ],
+      "titles": [
+        "逾期图书的回收"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F5EE64",
+      "check_addr": "0x08F5EE64",
+      "flag": 2700,
+      "target": "0x08F5FC5B",
+      "raw": "f5082b8c0a06015bfcf508",
+      "quest_ids": [
+        74
+      ],
+      "titles": [
+        "遥远的约定"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F5B921",
+      "check_addr": "0x08F5B921",
+      "flag": 2682,
+      "target": "0x08F5BB75",
+      "raw": "ff002b7a0a060175bbf508",
+      "quest_ids": [
+        75
+      ],
+      "titles": [
+        "迷路的小锯鳄"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AF8F2C",
+      "check_addr": "0x08AF8F2C",
+      "flag": 6070,
+      "target": "0x08AFABE8",
+      "raw": "9d082bb6170601e8abaf08",
+      "quest_ids": [
+        81
+      ],
+      "titles": [
+        "外卖订单的配送"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AF8F43",
+      "check_addr": "0x08AF8F43",
+      "flag": 6070,
+      "target": "0x08AFB867",
+      "raw": "9d082bb617060167b8af08",
+      "quest_ids": [
+        81
+      ],
+      "titles": [
+        "外卖订单的配送"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AFCE6A",
+      "check_addr": "0x08AFCE6A",
+      "flag": 6076,
+      "target": "0x08AFCEED",
+      "raw": "af082bbc170601edceaf08",
+      "quest_ids": [
+        82
+      ],
+      "titles": [
+        "白色长裙的女孩"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AFCE61",
+      "check_addr": "0x08AFCE61",
+      "flag": 6077,
+      "target": "0x08AFCEB0",
+      "raw": "ff002bbd170601b0ceaf08",
+      "quest_ids": [
+        82
+      ],
+      "titles": [
+        "白色长裙的女孩"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AFD6A0",
+      "check_addr": "0x08AFD6A0",
+      "flag": 6079,
+      "target": "0x08AFD7CC",
+      "raw": "07002bbf170601ccd7af08",
+      "quest_ids": [
+        83
+      ],
+      "titles": [
+        "彼岸的宝可梦"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AFD6B3",
+      "check_addr": "0x08AFD6B3",
+      "flag": 6079,
+      "target": "0x08AFD7CC",
+      "raw": "00002bbf170601ccd7af08",
+      "quest_ids": [
+        83
+      ],
+      "titles": [
+        "彼岸的宝可梦"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AFDDE9",
+      "check_addr": "0x08AFDDE9",
+      "flag": 6079,
+      "target": "0x08AFDE10",
+      "raw": "07002bbf17060110deaf08",
+      "quest_ids": [
+        83
+      ],
+      "titles": [
+        "彼岸的宝可梦"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AFDDFF",
+      "check_addr": "0x08AFDDFF",
+      "flag": 6079,
+      "target": "0x08AFDE10",
+      "raw": "00002bbf17060110deaf08",
+      "quest_ids": [
+        83
+      ],
+      "titles": [
+        "彼岸的宝可梦"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AC3CD0",
+      "check_addr": "0x08AC3CD0",
+      "flag": 6034,
+      "target": "0x08AC3D42",
+      "raw": "ff002b92170601423dac08",
+      "quest_ids": [
+        87
+      ],
+      "titles": [
+        "深夜电视异闻录"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AC3CE7",
+      "check_addr": "0x08AC3CE7",
+      "flag": 6034,
+      "target": "0x08AC3D59",
+      "raw": "0f802b92170601593dac08",
+      "quest_ids": [
+        87
+      ],
+      "titles": [
+        "深夜电视异闻录"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08AFF9B9",
+      "check_addr": "0x08AFF9B9",
+      "flag": 6099,
+      "target": "0x08AFFA33",
+      "raw": "ff002bd317060133faaf08",
+      "quest_ids": [
+        88
+      ],
+      "titles": [
+        "不安的太阳珊瑚"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F34B2A",
+      "check_addr": "0x08F34B2A",
+      "flag": 6298,
+      "target": "0x08F3586A",
+      "raw": "f3082b9a1806016a58f308",
+      "quest_ids": [
+        89
+      ],
+      "titles": [
+        "黑色的千针鱼"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F358A5",
+      "check_addr": "0x08F358A5",
+      "flag": 6298,
+      "target": "0x08F359A0",
+      "raw": "6c022b9a180601a059f308",
+      "quest_ids": [
+        89
+      ],
+      "titles": [
+        "黑色的千针鱼"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F3586A",
+      "check_addr": "0x08F3586A",
+      "flag": 6299,
+      "target": "0x08F358A3",
+      "raw": "62fe2b9b180601a358f308",
+      "quest_ids": [
+        89
+      ],
+      "titles": [
+        "黑色的千针鱼"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F358B1",
+      "check_addr": "0x08F358B1",
+      "flag": 6299,
+      "target": "0x08F358ED",
+      "raw": "02ff2b9b180601ed58f308",
+      "quest_ids": [
+        89
+      ],
+      "titles": [
+        "黑色的千针鱼"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F35983",
+      "check_addr": "0x08F35983",
+      "flag": 6299,
+      "target": "0x08F358ED",
+      "raw": "00022b9b180601ed58f308",
+      "quest_ids": [
+        89
+      ],
+      "titles": [
+        "黑色的千针鱼"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F359A0",
+      "check_addr": "0x08F359A0",
+      "flag": 6299,
+      "target": "0x08F358ED",
+      "raw": "6c022b9b180601ed58f308",
+      "quest_ids": [
+        89
+      ],
+      "titles": [
+        "黑色的千针鱼"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08EC51E3",
+      "check_addr": "0x08EC51E3",
+      "flag": 2762,
+      "target": "0x08EC5366",
+      "raw": "01022bca0a06016653ec08",
+      "quest_ids": [
+        94
+      ],
+      "titles": [
+        "亚玄的修炼"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CD08C3",
+      "check_addr": "0x09CD08C5",
+      "flag": 3281,
+      "target": "0x09CD2F2A",
+      "raw": "695a2bd10c06012a2fcd09",
+      "quest_ids": [
+        96
+      ],
+      "titles": [
+        "被遗忘的遗忘"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CD2F49",
+      "check_addr": "0x09CD2F49",
+      "flag": 3281,
+      "target": "0x09CD3024",
+      "raw": "cd092bd10c06002430cd09",
+      "quest_ids": [
+        96
+      ],
+      "titles": [
+        "被遗忘的遗忘"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CD08BA",
+      "check_addr": "0x09CD08BA",
+      "flag": 3282,
+      "target": "0x09CD2F3B",
+      "raw": "6b022bd20c06013b2fcd09",
+      "quest_ids": [
+        96
+      ],
+      "titles": [
+        "被遗忘的遗忘"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x09CD2F40",
+      "check_addr": "0x09CD2F40",
+      "flag": 3282,
+      "target": "0x09CD3024",
+      "raw": "16082bd20c06012430cd09",
+      "quest_ids": [
+        96
+      ],
+      "titles": [
+        "被遗忘的遗忘"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F3F30D",
+      "check_addr": "0x08F3F30D",
+      "flag": 6324,
+      "target": "0x08F3F3EF",
+      "raw": "f3082bb4180601eff3f308",
+      "quest_ids": [
+        97
+      ],
+      "titles": [
+        "收集玻璃哨"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F3F304",
+      "check_addr": "0x08F3F304",
+      "flag": 6325,
+      "target": "0x08F3F4C0",
+      "raw": "00ff2bb5180601c0f4f308",
+      "quest_ids": [
+        97
+      ],
+      "titles": [
+        "收集玻璃哨"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F3EE71",
+      "check_addr": "0x08F3EE71",
+      "flag": 6326,
+      "target": "0x08F3EE8D",
+      "raw": "f3082bb61806018deef308",
+      "quest_ids": [
+        98
+      ],
+      "titles": [
+        "是谁在捣乱？"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    },
+    {
+      "root": "0x08F3EE5F",
+      "check_addr": "0x08F3EE5F",
+      "flag": 6327,
+      "target": "0x08F3FB1C",
+      "raw": "ff002bb71806011cfbf308",
+      "quest_ids": [
+        98
+      ],
+      "titles": [
+        "是谁在捣乱？"
+      ],
+      "basis": "exact checkflag + conditional goto + ROM target; candidate entry, not map reachability proof"
+    }
+  ],
+  "count": 118
+}

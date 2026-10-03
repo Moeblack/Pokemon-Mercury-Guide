@@ -1,0 +1,5701 @@
+{
+ "generated": "2026-10-03T15:42:58",
+ "rom": "宝可梦水银FC~致150年后的你 Version 1.1 (1).gba",
+ "sha256": "131b009df7ab252deff0d6a0518ab82f88e82c940ee68d50d31033a899f7e3dd",
+ "generator": "maps_research/scripts/extract_scripts.py",
+ "command": "uv run --no-project python maps_research/scripts/extract_scripts.py",
+ "change": {
+  "comment": "BgEvent.script for kind 0 -> 0..4",
+  "condition": "if b.get('kind') == 0: -> if b.get('kind') in (0, 1, 2, 3, 4):",
+  "scope": "only the bg-event entry condition widened; no other parsing semantics changed"
+ },
+ "stdout": [
+  "std scripts: 10 specials: 444",
+  "entry scripts: 7018 sentinel script uses: {'0x08000000': 613, '0x08000001': 371}",
+  "scripts decoded: 13085 instructions: 105542 undefined opcode hits: {255: 11, 239: 1, 238: 1, 250: 2, 214: 1, 228: 1, 254: 3, 234: 2, 224: 1, 243: 1}",
+  "text strings: 7706"
+ ],
+ "counts": {
+  "before": {
+   "entry_count": 6680,
+   "script_count": 12627,
+   "instruction_count": 102298,
+   "text_count": 7513,
+   "failure_count": 24,
+   "root_count": 4612
+  },
+  "after": {
+   "entry_count": 7018,
+   "script_count": 13085,
+   "instruction_count": 105542,
+   "text_count": 7706,
+   "failure_count": 24,
+   "root_count": 4760
+  },
+  "delta": {
+   "entry_count": 338,
+   "script_count": 458,
+   "instruction_count": 3244,
+   "text_count": 193,
+   "failure_count": 0,
+   "root_count": 148,
+   "removed_scripts": []
+  }
+ },
+ "new_roots": [
+  {
+   "addr": "0x08162212",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:59"
+    }
+   ],
+   "instruction_count": 8
+  },
+  {
+   "addr": "0x08162264",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:60"
+    },
+    {
+     "kind": "bg",
+     "where": "48:3"
+    }
+   ],
+   "instruction_count": 8
+  },
+  {
+   "addr": "0x081622B1",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:61"
+    }
+   ],
+   "instruction_count": 8
+  },
+  {
+   "addr": "0x0816230C",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:62"
+    },
+    {
+     "kind": "bg",
+     "where": "1:62"
+    },
+    {
+     "kind": "bg",
+     "where": "53:4"
+    }
+   ],
+   "instruction_count": 8
+  },
+  {
+   "addr": "0x081638EC",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:96"
+    },
+    {
+     "kind": "bg",
+     "where": "1:96"
+    },
+    {
+     "kind": "bg",
+     "where": "1:96"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x081638F5",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:96"
+    },
+    {
+     "kind": "bg",
+     "where": "1:96"
+    },
+    {
+     "kind": "bg",
+     "where": "1:96"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x081638FE",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:96"
+    },
+    {
+     "kind": "bg",
+     "where": "1:96"
+    },
+    {
+     "kind": "bg",
+     "where": "1:96"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08163907",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:96"
+    },
+    {
+     "kind": "bg",
+     "where": "1:96"
+    },
+    {
+     "kind": "bg",
+     "where": "1:96"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08163910",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:96"
+    },
+    {
+     "kind": "bg",
+     "where": "1:96"
+    },
+    {
+     "kind": "bg",
+     "where": "1:96"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08163919",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:96"
+    },
+    {
+     "kind": "bg",
+     "where": "1:96"
+    },
+    {
+     "kind": "bg",
+     "where": "1:96"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08163922",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:96"
+    },
+    {
+     "kind": "bg",
+     "where": "1:96"
+    },
+    {
+     "kind": "bg",
+     "where": "1:96"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x0816392B",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:96"
+    },
+    {
+     "kind": "bg",
+     "where": "1:96"
+    },
+    {
+     "kind": "bg",
+     "where": "1:96"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08163934",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:96"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x0816393D",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:96"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08163F78",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:114"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816418C",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:116"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08164195",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:119"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x0816419E",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:118"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x081641A7",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:117"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x0816441F",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:120"
+    }
+   ],
+   "instruction_count": 66
+  },
+  {
+   "addr": "0x08164AD8",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "2:10"
+    }
+   ],
+   "instruction_count": 7
+  },
+  {
+   "addr": "0x08168A48",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:57"
+    }
+   ],
+   "instruction_count": 16
+  },
+  {
+   "addr": "0x0816BBB8",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:2"
+    },
+    {
+     "kind": "bg",
+     "where": "50:15"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816BBC1",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:2"
+    },
+    {
+     "kind": "bg",
+     "where": "50:15"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816BBCA",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816BBD3",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:2"
+    },
+    {
+     "kind": "bg",
+     "where": "50:15"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816BBE5",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:2"
+    },
+    {
+     "kind": "bg",
+     "where": "10:2"
+    },
+    {
+     "kind": "bg",
+     "where": "50:15"
+    },
+    {
+     "kind": "bg",
+     "where": "50:15"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816C43E",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:9"
+    },
+    {
+     "kind": "bg",
+     "where": "10:9"
+    },
+    {
+     "kind": "bg",
+     "where": "50:24"
+    },
+    {
+     "kind": "bg",
+     "where": "50:24"
+    },
+    {
+     "kind": "bg",
+     "where": "50:26"
+    },
+    {
+     "kind": "bg",
+     "where": "50:26"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816C447",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:9"
+    },
+    {
+     "kind": "bg",
+     "where": "10:9"
+    },
+    {
+     "kind": "bg",
+     "where": "50:24"
+    },
+    {
+     "kind": "bg",
+     "where": "50:26"
+    },
+    {
+     "kind": "bg",
+     "where": "50:26"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816C450",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:9"
+    },
+    {
+     "kind": "bg",
+     "where": "10:9"
+    },
+    {
+     "kind": "bg",
+     "where": "50:24"
+    },
+    {
+     "kind": "bg",
+     "where": "50:26"
+    },
+    {
+     "kind": "bg",
+     "where": "50:26"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816C95E",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816C9A4",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816C9B0",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816C9BC",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816C9D4",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816C9E0",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816C9EC",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816C9F8",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816CA04",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816CA10",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816CA1C",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816CA28",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816CA34",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816CA40",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816CA58",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816CA64",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816CA7C",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816CA88",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816CA94",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816CB5A",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816CB63",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816CB6C",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816DBE8",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "12:0"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816DBF4",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "12:0"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816DCDD",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "12:0"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816DCE9",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "12:0"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816DDBB",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "12:0"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816DDC7",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "12:0"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816DE92",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "12:0"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816DE9E",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "12:0"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816DF69",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "12:0"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816DF75",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "12:0"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816E040",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "12:0"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x0816E04C",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "12:0"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x081706DD",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "30:0"
+    }
+   ],
+   "instruction_count": 9
+  },
+  {
+   "addr": "0x081ACD65",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "5:2"
+    },
+    {
+     "kind": "bg",
+     "where": "5:2"
+    },
+    {
+     "kind": "bg",
+     "where": "45:3"
+    },
+    {
+     "kind": "bg",
+     "where": "45:3"
+    }
+   ],
+   "instruction_count": 13
+  },
+  {
+   "addr": "0x081ACDD0",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "35:1"
+    }
+   ],
+   "instruction_count": 9
+  },
+  {
+   "addr": "0x081ACE1C",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "6:0"
+    },
+    {
+     "kind": "bg",
+     "where": "6:0"
+    },
+    {
+     "kind": "bg",
+     "where": "47:2"
+    },
+    {
+     "kind": "bg",
+     "where": "47:2"
+    }
+   ],
+   "instruction_count": 9
+  },
+  {
+   "addr": "0x081ACF07",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "12:0"
+    }
+   ],
+   "instruction_count": 11
+  },
+  {
+   "addr": "0x081ACF2C",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "39:0"
+    },
+    {
+     "kind": "bg",
+     "where": "39:0"
+    }
+   ],
+   "instruction_count": 9
+  },
+  {
+   "addr": "0x081B2867",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "10:14"
+    },
+    {
+     "kind": "bg",
+     "where": "50:20"
+    },
+    {
+     "kind": "bg",
+     "where": "51:0"
+    },
+    {
+     "kind": "bg",
+     "where": "51:2"
+    }
+   ],
+   "instruction_count": 26
+  },
+  {
+   "addr": "0x087B2A9A",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "56:77"
+    }
+   ],
+   "instruction_count": 1
+  },
+  {
+   "addr": "0x087B3495",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "56:77"
+    }
+   ],
+   "instruction_count": 1
+  },
+  {
+   "addr": "0x087B39AB",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "56:77"
+    }
+   ],
+   "instruction_count": 1
+  },
+  {
+   "addr": "0x087BB542",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "50:5"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x087BB7EB",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:81"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x087BCBAC",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "56:77"
+    }
+   ],
+   "instruction_count": 13
+  },
+  {
+   "addr": "0x087BD238",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:106"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x087BEACE",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:9"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x089CF4FF",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "45:0"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x089CFB00",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:68"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x089D3A2A",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    },
+    {
+     "kind": "bg",
+     "where": "46:6"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x089D4C73",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:121"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x089D56B5",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "1:95"
+    }
+   ],
+   "instruction_count": 6
+  },
+  {
+   "addr": "0x089D6C95",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:89"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x089D9CD5",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:73"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x089D9D0F",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:73"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x089D9D8A",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:73"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x089D9DEF",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:73"
+    }
+   ],
+   "instruction_count": 1
+  },
+  {
+   "addr": "0x089D9E4F",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:73"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x089DF15B",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "50:5"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x089DF29E",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "50:7"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x089DF46B",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "50:10"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x089DF512",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "50:10"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x089E0515",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "50:15"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x089E2671",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:91"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x089E2698",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:93"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x089E2AE6",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "45:0"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x089E4F87",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "46:0"
+    },
+    {
+     "kind": "bg",
+     "where": "46:8"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x089EA4DA",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "47:3"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x089EF844",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "51:0"
+    }
+   ],
+   "instruction_count": 8
+  },
+  {
+   "addr": "0x089EF900",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "51:0"
+    }
+   ],
+   "instruction_count": 8
+  },
+  {
+   "addr": "0x089EF943",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "51:0"
+    }
+   ],
+   "instruction_count": 8
+  },
+  {
+   "addr": "0x089EF986",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "51:0"
+    }
+   ],
+   "instruction_count": 8
+  },
+  {
+   "addr": "0x089FAB3E",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "50:10"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08AA06A6",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "50:10"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08AA24A4",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "50:48"
+    },
+    {
+     "kind": "bg",
+     "where": "50:48"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08AA24CB",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "50:48"
+    },
+    {
+     "kind": "bg",
+     "where": "50:48"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08AA3A20",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "50:24"
+    },
+    {
+     "kind": "bg",
+     "where": "53:13"
+    },
+    {
+     "kind": "bg",
+     "where": "53:13"
+    },
+    {
+     "kind": "bg",
+     "where": "53:13"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08AA3B90",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "50:24"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08AA4E98",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:90"
+    },
+    {
+     "kind": "bg",
+     "where": "3:90"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08AA5754",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:85"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08AAFB28",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "35:1"
+    },
+    {
+     "kind": "bg",
+     "where": "37:0"
+    },
+    {
+     "kind": "bg",
+     "where": "50:3"
+    },
+    {
+     "kind": "bg",
+     "where": "56:15"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08AF0D16",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "48:6"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08AF5E9C",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "49:10"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08AF8393",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "42:4"
+    },
+    {
+     "kind": "bg",
+     "where": "43:1"
+    }
+   ],
+   "instruction_count": 12
+  },
+  {
+   "addr": "0x08AFE016",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "56:17"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08AFE037",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "56:17"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08AFE058",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "56:17"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08AFE075",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "56:17"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08AFE1EA",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "56:18"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08EC1A78",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "56:21"
+    },
+    {
+     "kind": "bg",
+     "where": "56:21"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08EC210E",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "49:5"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08EDB1BA",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:71"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08EEC079",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "50:20"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08F338AA",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:75"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08F3392A",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:75"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08F339E2",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:76"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08F33AB5",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:76"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08F33B4E",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:76"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08F33CE2",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:76"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08F33DB5",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:76"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08F33E88",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:77"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08F33F5B",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:77"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08F34039",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:76"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08F4737C",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:84"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08F49593",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:102"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08F4BA14",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:104"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08F4DAF7",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "3:97"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08F4EFD4",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "32:0"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x08F510BC",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "50:35"
+    },
+    {
+     "kind": "bg",
+     "where": "50:35"
+    }
+   ],
+   "instruction_count": 3
+  },
+  {
+   "addr": "0x08F5CFBB",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "53:1"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x09CDFDC0",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "51:9"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x09CDFEF3",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "51:9"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x09CE0026",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "51:9"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x09CE0159",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "51:9"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x09CE028C",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "51:9"
+    }
+   ],
+   "instruction_count": 5
+  },
+  {
+   "addr": "0x09CE03BF",
+   "sources": [
+    {
+     "kind": "bg",
+     "where": "51:9"
+    }
+   ],
+   "instruction_count": 5
+  }
+ ],
+ "new_scripts": [
+  "0x08162212",
+  "0x08162264",
+  "0x081622B1",
+  "0x0816230C",
+  "0x081638EC",
+  "0x081638F5",
+  "0x081638FE",
+  "0x08163907",
+  "0x08163910",
+  "0x08163919",
+  "0x08163922",
+  "0x0816392B",
+  "0x08163934",
+  "0x0816393D",
+  "0x08163F78",
+  "0x0816418C",
+  "0x08164195",
+  "0x0816419E",
+  "0x081641A7",
+  "0x0816441F",
+  "0x08164AD8",
+  "0x08168A48",
+  "0x08168A86",
+  "0x08168A9B",
+  "0x08168B0B",
+  "0x08168CE4",
+  "0x0816BBB8",
+  "0x0816BBC1",
+  "0x0816BBCA",
+  "0x0816BBD3",
+  "0x0816BBE5",
+  "0x0816C43E",
+  "0x0816C447",
+  "0x0816C450",
+  "0x0816C95E",
+  "0x0816C96A",
+  "0x0816C96C",
+  "0x0816C9A4",
+  "0x0816C9B0",
+  "0x0816C9BC",
+  "0x0816C9D4",
+  "0x0816C9E0",
+  "0x0816C9EC",
+  "0x0816C9F8",
+  "0x0816CA04",
+  "0x0816CA10",
+  "0x0816CA1C",
+  "0x0816CA28",
+  "0x0816CA34",
+  "0x0816CA40",
+  "0x0816CA58",
+  "0x0816CA64",
+  "0x0816CA7C",
+  "0x0816CA88",
+  "0x0816CA94",
+  "0x0816CAA0",
+  "0x0816CB5A",
+  "0x0816CB63",
+  "0x0816CB6C",
+  "0x0816DBE8",
+  "0x0816DBF4",
+  "0x0816DC00",
+  "0x0816DC27",
+  "0x0816DC34",
+  "0x0816DC43",
+  "0x0816DC58",
+  "0x0816DC68",
+  "0x0816DC6A",
+  "0x0816DC7A",
+  "0x0816DCB4",
+  "0x0816DCC6",
+  "0x0816DCDD",
+  "0x0816DCE9",
+  "0x0816DCF5",
+  "0x0816DD1C",
+  "0x0816DD31",
+  "0x0816DD41",
+  "0x0816DD51",
+  "0x0816DD8B",
+  "0x0816DD9D",
+  "0x0816DDBB",
+  "0x0816DDC7",
+  "0x0816DDD3",
+  "0x0816DDFA",
+  "0x0816DE0F",
+  "0x0816DE1F",
+  "0x0816DE2F",
+  "0x0816DE69",
+  "0x0816DE7B",
+  "0x0816DE92",
+  "0x0816DE9E",
+  "0x0816DEAA",
+  "0x0816DED1",
+  "0x0816DEE6",
+  "0x0816DEF6",
+  "0x0816DF06",
+  "0x0816DF40",
+  "0x0816DF52",
+  "0x0816DF69",
+  "0x0816DF75",
+  "0x0816DF81",
+  "0x0816DFA8",
+  "0x0816DFBD",
+  "0x0816DFCD",
+  "0x0816DFDD",
+  "0x0816E017",
+  "0x0816E029",
+  "0x0816E040",
+  "0x0816E04C",
+  "0x0816E058",
+  "0x0816E07F",
+  "0x0816E094",
+  "0x0816E0A4",
+  "0x0816E0B4",
+  "0x0816E0EE",
+  "0x0816E100",
+  "0x081706DD",
+  "0x081706FA",
+  "0x081707B6",
+  "0x081707CA",
+  "0x081707D8",
+  "0x0817082B",
+  "0x08170840",
+  "0x08170855",
+  "0x0817086A",
+  "0x0817087F",
+  "0x081A7AE2",
+  "0x081A7B3B",
+  "0x081A7B70",
+  "0x081A7C5C",
+  "0x081A7DD8",
+  "0x081A7EDF",
+  "0x081A8025",
+  "0x081A926C",
+  "0x081ACD65",
+  "0x081ACDD0",
+  "0x081ACE1C",
+  "0x081ACF07",
+  "0x081ACF2C",
+  "0x081B2867",
+  "0x081B28DB",
+  "0x081B28E6",
+  "0x081B28F1",
+  "0x081B28FC",
+  "0x081B2907",
+  "0x081B2926",
+  "0x081B292B",
+  "0x087B2A9A",
+  "0x087B3495",
+  "0x087B39AB",
+  "0x087BB542",
+  "0x087BB5A9",
+  "0x087BB7EB",
+  "0x087BBF12",
+  "0x087BBF4C",
+  "0x087BBF6D",
+  "0x087BBFA1",
+  "0x087BBFBF",
+  "0x087BC093",
+  "0x087BC09C",
+  "0x087BC0A8",
+  "0x087BC0C7",
+  "0x087BC0D3",
+  "0x087BC0EE",
+  "0x087BC0F5",
+  "0x087BC12F",
+  "0x087BC1F1",
+  "0x087BC225",
+  "0x087BC243",
+  "0x087BC262",
+  "0x087BC26B",
+  "0x087BC2A2",
+  "0x087BC2C1",
+  "0x087BC2CD",
+  "0x087BC2E8",
+  "0x087BC2EF",
+  "0x087BC329",
+  "0x087BC34A",
+  "0x087BC37E",
+  "0x087BC39C",
+  "0x087BC3BB",
+  "0x087BC3C4",
+  "0x087BC3D0",
+  "0x087BC404",
+  "0x087BC425",
+  "0x087BC444",
+  "0x087BC450",
+  "0x087BC46B",
+  "0x087BC472",
+  "0x087BC585",
+  "0x087BCBAC",
+  "0x087BCBE5",
+  "0x087BD238",
+  "0x087BEACE",
+  "0x089CF4FF",
+  "0x089CF526",
+  "0x089CFB00",
+  "0x089D3A2A",
+  "0x089D4C73",
+  "0x089D56B5",
+  "0x089D56CB",
+  "0x089D6C95",
+  "0x089D9CD5",
+  "0x089D9D0F",
+  "0x089D9D8A",
+  "0x089D9DEF",
+  "0x089D9DF5",
+  "0x089D9DFB",
+  "0x089D9E4F",
+  "0x089DF15B",
+  "0x089DF29E",
+  "0x089DF46B",
+  "0x089DF512",
+  "0x089E0515",
+  "0x089E2671",
+  "0x089E2698",
+  "0x089E2AE6",
+  "0x089E4F87",
+  "0x089E5E28",
+  "0x089EA4DA",
+  "0x089EB391",
+  "0x089EF844",
+  "0x089EF86E",
+  "0x089EF8CE",
+  "0x089EF8E7",
+  "0x089EF900",
+  "0x089EF92A",
+  "0x089EF943",
+  "0x089EF96D",
+  "0x089EF986",
+  "0x089EF9B0",
+  "0x089EFB6B",
+  "0x089FAB3E",
+  "0x08AA06A6",
+  "0x08AA24A4",
+  "0x08AA24CB",
+  "0x08AA3A20",
+  "0x08AA3B90",
+  "0x08AA4E98",
+  "0x08AA5754",
+  "0x08AAFB28",
+  "0x08AB143C",
+  "0x08AE9CD5",
+  "0x08AF0D16",
+  "0x08AF131C",
+  "0x08AF49E9",
+  "0x08AF49FF",
+  "0x08AF5E9C",
+  "0x08AF6013",
+  "0x08AF8393",
+  "0x08AF96FA",
+  "0x08AFB516",
+  "0x08AFB69D",
+  "0x08AFB799",
+  "0x08AFB7E8",
+  "0x08AFB8BC",
+  "0x08AFBA16",
+  "0x08AFBDDB",
+  "0x08AFBF5E",
+  "0x08AFE016",
+  "0x08AFE037",
+  "0x08AFE058",
+  "0x08AFE075",
+  "0x08AFE1EA",
+  "0x08AFFE28",
+  "0x08D53318",
+  "0x08EC1A78",
+  "0x08EC1C2B",
+  "0x08EC1C4D",
+  "0x08EC210E",
+  "0x08EC218A",
+  "0x08EDB1BA",
+  "0x08EEC079",
+  "0x08EEC0F4",
+  "0x08EEC12D",
+  "0x08EEC138",
+  "0x08F338AA",
+  "0x08F338BD",
+  "0x08F3392A",
+  "0x08F3393D",
+  "0x08F339AA",
+  "0x08F339C6",
+  "0x08F339E2",
+  "0x08F339F5",
+  "0x08F33A04",
+  "0x08F33A0E",
+  "0x08F33AB5",
+  "0x08F33AC8",
+  "0x08F33AD7",
+  "0x08F33AE1",
+  "0x08F33B4E",
+  "0x08F33C22",
+  "0x08F33C31",
+  "0x08F33C3B",
+  "0x08F33CE2",
+  "0x08F33CF5",
+  "0x08F33D04",
+  "0x08F33D0E",
+  "0x08F33DB5",
+  "0x08F33DC8",
+  "0x08F33DD7",
+  "0x08F33DE1",
+  "0x08F33E88",
+  "0x08F33E9B",
+  "0x08F33EAA",
+  "0x08F33EB4",
+  "0x08F33F5B",
+  "0x08F33F6E",
+  "0x08F33F7D",
+  "0x08F33F87",
+  "0x08F34039",
+  "0x08F3404C",
+  "0x08F340FC",
+  "0x08F341EA",
+  "0x08F4737C",
+  "0x08F47526",
+  "0x08F49593",
+  "0x08F4B4F5",
+  "0x08F4B50B",
+  "0x08F4B9E5",
+  "0x08F4B9FB",
+  "0x08F4BA14",
+  "0x08F4CB15",
+  "0x08F4CB2B",
+  "0x08F4CEDF",
+  "0x08F4CF34",
+  "0x08F4CF4A",
+  "0x08F4CF53",
+  "0x08F4CF5F",
+  "0x08F4CF6E",
+  "0x08F4CF80",
+  "0x08F4CF95",
+  "0x08F4CF9B",
+  "0x08F4CFA9",
+  "0x08F4CFBE",
+  "0x08F4CFDD",
+  "0x08F4CFF4",
+  "0x08F4D000",
+  "0x08F4D00B",
+  "0x08F4D13C",
+  "0x08F4D1FD",
+  "0x08F4D213",
+  "0x08F4D21C",
+  "0x08F4D228",
+  "0x08F4D237",
+  "0x08F4D249",
+  "0x08F4D25E",
+  "0x08F4D264",
+  "0x08F4D2B5",
+  "0x08F4D2CA",
+  "0x08F4D2E9",
+  "0x08F4D300",
+  "0x08F4D30C",
+  "0x08F4D317",
+  "0x08F4D3F3",
+  "0x08F4D448",
+  "0x08F4D45E",
+  "0x08F4D467",
+  "0x08F4D473",
+  "0x08F4D482",
+  "0x08F4D494",
+  "0x08F4D4A9",
+  "0x08F4D4AF",
+  "0x08F4D4D5",
+  "0x08F4D4EA",
+  "0x08F4D509",
+  "0x08F4D520",
+  "0x08F4D52C",
+  "0x08F4D57C",
+  "0x08F4DAF7",
+  "0x08F4DB08",
+  "0x08F4DB1E",
+  "0x08F4DB38",
+  "0x08F4DB8D",
+  "0x08F4DBA3",
+  "0x08F4DBAC",
+  "0x08F4DC5A",
+  "0x08F4DC69",
+  "0x08F4DC7B",
+  "0x08F4DC90",
+  "0x08F4DC96",
+  "0x08F4DCA4",
+  "0x08F4DCB9",
+  "0x08F4DCD8",
+  "0x08F4DCEF",
+  "0x08F4DCFB",
+  "0x08F4DD06",
+  "0x08F4EFD4",
+  "0x08F4EFE7",
+  "0x08F510BC",
+  "0x08F5CFBB",
+  "0x08F5D49D",
+  "0x09CDFDC0",
+  "0x09CDFDD2",
+  "0x09CDFDF0",
+  "0x09CDFE0F",
+  "0x09CDFE29",
+  "0x09CDFE49",
+  "0x09CDFE7A",
+  "0x09CDFEAF",
+  "0x09CDFEC0",
+  "0x09CDFED1",
+  "0x09CDFEE2",
+  "0x09CDFEF3",
+  "0x09CDFF05",
+  "0x09CDFF23",
+  "0x09CDFF42",
+  "0x09CDFF5C",
+  "0x09CDFF7C",
+  "0x09CDFFAD",
+  "0x09CDFFE2",
+  "0x09CDFFF3",
+  "0x09CE0004",
+  "0x09CE0015",
+  "0x09CE0026",
+  "0x09CE0038",
+  "0x09CE0056",
+  "0x09CE0075",
+  "0x09CE008F",
+  "0x09CE00AF",
+  "0x09CE00E0",
+  "0x09CE0115",
+  "0x09CE0126",
+  "0x09CE0137",
+  "0x09CE0148",
+  "0x09CE0159",
+  "0x09CE016B",
+  "0x09CE0189",
+  "0x09CE01A8",
+  "0x09CE01C2",
+  "0x09CE01E2",
+  "0x09CE0213",
+  "0x09CE0248",
+  "0x09CE0259",
+  "0x09CE026A",
+  "0x09CE027B",
+  "0x09CE028C",
+  "0x09CE029E",
+  "0x09CE02BC",
+  "0x09CE02DB",
+  "0x09CE02F5",
+  "0x09CE0315",
+  "0x09CE0346",
+  "0x09CE037B",
+  "0x09CE038C",
+  "0x09CE039D",
+  "0x09CE03AE",
+  "0x09CE03BF",
+  "0x09CE03D1",
+  "0x09CE03EF",
+  "0x09CE040E",
+  "0x09CE0428",
+  "0x09CE0448",
+  "0x09CE0479",
+  "0x09CE04AE",
+  "0x09CE04BF",
+  "0x09CE04D0",
+  "0x09CE04E1"
+ ],
+ "new_text": [
+  {
+   "addr": "0x0817747B",
+   "text": "谁不愿意？",
+   "bytes": 10
+  },
+  {
+   "addr": "0x08177489",
+   "text": "还没到时候呢！",
+   "bytes": 14
+  },
+  {
+   "addr": "0x0818B095",
+   "text": "碑上刻着：\\n“阿岩长眠于此”。\\p坟墓的前面放着\\n一罐综合调味乳作为祭品。",
+   "bytes": 65
+  },
+  {
+   "addr": "0x0818B105",
+   "text": "你也想留下一罐综合调味乳\\n作为祭品吗？",
+   "bytes": 37
+  },
+  {
+   "addr": "0x0818B13E",
+   "text": "\\var[01]在坟墓前面\\n放了一罐综合调味乳。",
+   "bytes": 33
+  },
+  {
+   "addr": "0x0818B171",
+   "text": "谢谢你……\\p那是我的阿岩最爱喝的饮料……\\p我不知道你是谁，但是\\n你的仁慈感动了我……\\p我现在振作一些了。\\p作为我的谢意，\\n你能收下这个吗？",
+   "bytes": 123
+  },
+  {
+   "addr": "0x0818B2F8",
+   "text": "这个碑是一些很干净的石块做成的。\\p碑上刻着：\\n“阿岩长眠于此”。",
+   "bytes": 58
+  },
+  {
+   "addr": "0x08195897",
+   "text": "一款体育游戏！\\n是爸爸喜欢的游戏！",
+   "bytes": 32
+  },
+  {
+   "addr": "0x081958B8",
+   "text": "一款拼图游戏！\\n看起来很有趣！",
+   "bytes": 28
+  },
+  {
+   "addr": "0x081958D8",
+   "text": "一款格斗游戏！\\n看上去很过瘾！",
+   "bytes": 28
+  },
+  {
+   "addr": "0x08195907",
+   "text": "红版和绿版！\\n都是精灵宝可梦游戏！",
+   "bytes": 32
+  },
+  {
+   "addr": "0x0819640C",
+   "text": "这是游戏程序！弄乱了的话\\n游戏会出故障的！",
+   "bytes": 40
+  },
+  {
+   "addr": "0x0819644B",
+   "text": "有些人是在玩游戏，\\n没在工作！",
+   "bytes": 28
+  },
+  {
+   "addr": "0x08196478",
+   "text": "这是脚本！\\n可别偷看结局哦！",
+   "bytes": 26
+  },
+  {
+   "addr": "0x08196F0D",
+   "text": "你还没有代币盒……",
+   "bytes": 17
+  },
+  {
+   "addr": "0x08196F46",
+   "text": "一台老虎机！\\n想玩玩吗？",
+   "bytes": 22
+  },
+  {
+   "addr": "0x08196FA0",
+   "text": "不知是谁的钥匙！\\n他们还会回来的。",
+   "bytes": 32
+  },
+  {
+   "addr": "0x0819983F",
+   "text": "过去我是一名小偷\\n但我现在是一名正直的训练师。",
+   "bytes": 45
+  },
+  {
+   "addr": "0x081998BD",
+   "text": "我很努力的学过了宝可梦的知识。\\n你赢不了我的！",
+   "bytes": 44
+  },
+  {
+   "addr": "0x081999B7",
+   "text": "我知道夏伯为什么会\\n成为一名训练师。",
+   "bytes": 35
+  },
+  {
+   "addr": "0x08199A7F",
+   "text": "我去过许多道馆，\\n但这个最合我的口味。",
+   "bytes": 36
+  },
+  {
+   "addr": "0x08199AFC",
+   "text": "火对H2O不利。",
+   "bytes": 13
+  },
+  {
+   "addr": "0x08199C9F",
+   "text": "宝可梦竞答！\\p答对了，\\n通向下一个房间的门就会打开。\\p答错了，就得面对训练师的挑战！\\p你如果想要把你的实力\\n保留到最后一刻……\\p那就要尽可能的答对！\\n三，二，一，开始了！",
+   "bytes": 152
+  },
+  {
+   "addr": "0x08199D5A",
+   "text": "绿毛虫进化成铁甲蛹吗？",
+   "bytes": 22
+  },
+  {
+   "addr": "0x08199D79",
+   "text": "宝可梦联盟徽章\\n一共有九枚？",
+   "bytes": 27
+  },
+  {
+   "addr": "0x08199DA9",
+   "text": "蚊香蝌蚪能进化三次？",
+   "bytes": 20
+  },
+  {
+   "addr": "0x08199DC6",
+   "text": "电属性技能对地上系\\n宝可梦有效果吗？",
+   "bytes": 35
+  },
+  {
+   "addr": "0x08199E00",
+   "text": "同一种宝可梦有着同样的等级\\n它们的能力却不一定一样？",
+   "bytes": 51
+  },
+  {
+   "addr": "0x08199E36",
+   "text": "TM28是石头坟墓吗?",
+   "bytes": 18
+  },
+  {
+   "addr": "0x08199E4F",
+   "text": "你答得太对了！\\p请通过！",
+   "bytes": 22
+  },
+  {
+   "addr": "0x08199E8A",
+   "text": "这张照片上的人是夏伯和\\n富士老人。\\p他们咧着嘴笑着\\n肩并肩的站在一起。",
+   "bytes": 66
+  },
+  {
+   "addr": "0x081A0402",
+   "text": "传送装置显示在\\n电脑的屏幕上。",
+   "bytes": 29
+  },
+  {
+   "addr": "0x081A042D",
+   "text": "\\var[01]启动了传送装置的\\n细胞分离器。",
+   "bytes": 31
+  },
+  {
+   "addr": "0x081A045B",
+   "text": "正辉的最爱的宝可梦列表！",
+   "bytes": 24
+  },
+  {
+   "addr": "0x081A0479",
+   "text": "你想看哪只宝可梦？",
+   "bytes": 18
+  },
+  {
+   "addr": "0x081A5420",
+   "text": "\\var[01]启动了电脑。",
+   "bytes": 14
+  },
+  {
+   "addr": "0x081A928B",
+   "text": "趋+e",
+   "bytes": 5
+  },
+  {
+   "addr": "0x081A9290",
+   "text": "羰医ì",
+   "bytes": 6
+  },
+  {
+   "addr": "0x081A9296",
+   "text": "猕教",
+   "bytes": 5
+  },
+  {
+   "addr": "0x081A929F",
+   "text": "唉Â",
+   "bytes": 4
+  },
+  {
+   "addr": "0x081A92A3",
+   "text": "医É",
+   "bytes": 4
+  },
+  {
+   "addr": "0x081A92A7",
+   "text": "茛ç",
+   "bytes": 4
+  },
+  {
+   "addr": "0x081A92AB",
+   "text": "饕=",
+   "bytes": 4
+  },
+  {
+   "addr": "0x081A92AF",
+   "text": "晴Ê",
+   "bytes": 4
+  },
+  {
+   "addr": "0x081A92B3",
+   "text": "箱ß",
+   "bytes": 4
+  },
+  {
+   "addr": "0x081A92B7",
+   "text": "缰糈",
+   "bytes": 5
+  },
+  {
+   "addr": "0x081A9321",
+   "text": "猕鳌鳟缕飨ç",
+   "bytes": 12
+  },
+  {
+   "addr": "0x081A932D",
+   "text": "遗É骺裸ÉeÔ",
+   "bytes": 11
+  },
+  {
+   "addr": "0x081A9338",
+   "text": "澍礻萝",
+   "bytes": 7
+  },
+  {
+   "addr": "0x081A9356",
+   "text": "狄ee律鳌鳟Ì",
+   "bytes": 12
+  },
+  {
+   "addr": "0x081A9368",
+   "text": "飨煜剿É箩囚",
+   "bytes": 12
+  },
+  {
+   "addr": "0x081A9374",
+   "text": "溏熬ÉeÔ",
+   "bytes": 8
+  },
+  {
+   "addr": "0x081A93AB",
+   "text": "鳟缕e蛮ì",
+   "bytes": 9
+  },
+  {
+   "addr": "0x081B146A",
+   "text": "宝可梦特刊\\p专题：尼比道馆\\n馆主小刚!\\p小刚几乎不怎么笑，\\n但是据说他笑起来就停不下。",
+   "bytes": 79
+  },
+  {
+   "addr": "0x081B17E9",
+   "text": "宝可梦特刊\\p专题：红莲道馆\\n馆主夏伯！\\p据说夏伯仅仅会在想出\\n问题的答案后\\l摘下黑眼睛。",
+   "bytes": 81
+  },
+  {
+   "addr": "0x081B1AB9",
+   "text": "宝可梦特刊\\p专题：大木博士，\\n宝可梦研究者！\\p据说大木博士与他的子孙们\\n娜娜美和\\var[06]一起生活。",
+   "bytes": 85
+  },
+  {
+   "addr": "0x081B1D7D",
+   "text": "宝可梦打印机！\\p他可以在你的训练师卡片的后面\\n影印上你的宝可梦。\\p而且仅仅要50$哦，\\n要不要试试呢？",
+   "bytes": 92
+  },
+  {
+   "addr": "0x081B1E07",
+   "text": "你的钱不够……",
+   "bytes": 13
+  },
+  {
+   "addr": "0x081B1E24",
+   "text": "请选择印刷的样式。",
+   "bytes": 18
+  },
+  {
+   "addr": "0x081B1E42",
+   "text": "要拍照了，来，微笑吧！\\n3…2…1…\\p咔嚓！",
+   "bytes": 33
+  },
+  {
+   "addr": "0x081B1E7D",
+   "text": "你的宝可梦已经印刷完毕了！\\n快看看你的训练师卡片吧。",
+   "bytes": 50
+  },
+  {
+   "addr": "0x087BB555",
+   "text": "这个前面禁止进入！",
+   "bytes": 18
+  },
+  {
+   "addr": "0x087BB597",
+   "text": "\\var[01]\\n插入地下钥匙！",
+   "bytes": 17
+  },
+  {
+   "addr": "0x087BE189",
+   "text": "这里是都城瀑布\\n关都与城都的交界处",
+   "bytes": 34
+  },
+  {
+   "addr": "0x087BED73",
+   "text": "这里是石英高原。\\p宝可梦训练家的顶点！\\n宝可梦最高机关，\\l宝可梦联盟本部。",
+   "bytes": 68
+  },
+  {
+   "addr": "0x089CF51B",
+   "text": "一台电脑？",
+   "bytes": 10
+  },
+  {
+   "addr": "0x089CFB0A",
+   "text": "喇叭芽之塔\\n通过修行来断绝迷茫",
+   "bytes": 30
+  },
+  {
+   "addr": "0x089D4C7D",
+   "text": "这片桐森林\\n草木葱茏，枝繁叶茂。\\l天空都被遮住了。\\p四周比较黑暗，\\n务必注意脚边的遗失物。",
+   "bytes": 82
+  },
+  {
+   "addr": "0x089D56E6",
+   "text": "你要爬上这个梯子吗？",
+   "bytes": 20
+  },
+  {
+   "addr": "0x089D9CDF",
+   "text": "这里是湛蓝药店，\\n创业已经500年了。\\l欢迎业务洽谈。",
+   "bytes": 47
+  },
+  {
+   "addr": "0x089D9D19",
+   "text": "这里是照相老爹的家，\\n请来一张旅行的纪念照吧。",
+   "bytes": 44
+  },
+  {
+   "addr": "0x089D9D94",
+   "text": "去往狩猎地带的道路入口，\\n因为充满着惊险，\\p要和宝可梦好好交流哦！\\n狩猎地带就在这个入口的外面！",
+   "bytes": 90
+  },
+  {
+   "addr": "0x089D9E2A",
+   "text": "\\ctrl[0D 32]这里是湛蓝市\\n\\ctrl[0D 32]毗邻怒涛的海之城",
+   "bytes": 36
+  },
+  {
+   "addr": "0x089DF165",
+   "text": "这个前面禁止进入！",
+   "bytes": 18
+  },
+  {
+   "addr": "0x089DF2A8",
+   "text": "宝可梦玩偶店\\n专卖各种可爱的宝可梦玩偶店！",
+   "bytes": 41
+  },
+  {
+   "addr": "0x089DF475",
+   "text": "七星餐厅\\n讲究过头的美味你来尝",
+   "bytes": 30
+  },
+  {
+   "addr": "0x089DF51C",
+   "text": "“挥指时尚精品馆“\\n我的时尚我做主",
+   "bytes": 32
+  },
+  {
+   "addr": "0x089E051F",
+   "text": "三楼：对战藏品",
+   "bytes": 14
+  },
+  {
+   "addr": "0x089E267B",
+   "text": "这里是39号道路\\n大家的浅葱市",
+   "bytes": 28
+  },
+  {
+   "addr": "0x089E2AF0",
+   "text": "精灵中心的电脑，\\n训练家可以随意使用。",
+   "bytes": 36
+  },
+  {
+   "addr": "0x089EB3FD",
+   "text": "一台电脑？",
+   "bytes": 10
+  },
+  {
+   "addr": "0x089EF8D1",
+   "text": "看不见的幽灵现形了！",
+   "bytes": 20
+  },
+  {
+   "addr": "0x089FBC03",
+   "text": "满金咖啡馆\\n提供美味的树果汁！",
+   "bytes": 29
+  },
+  {
+   "addr": "0x08AA06B0",
+   "text": "银杏商会举行的拍卖会\\n每周三、周五、周日开办！",
+   "bytes": 43
+  },
+  {
+   "addr": "0x08AA24AE",
+   "text": "箱子里放着分类好的煤炭样本！",
+   "bytes": 28
+  },
+  {
+   "addr": "0x08AA24D5",
+   "text": "陈列着各个地域的煤炭！",
+   "bytes": 22
+  },
+  {
+   "addr": "0x08AA3B57",
+   "text": "大木博士的精灵讲座\\n好评播放中！",
+   "bytes": 31
+  },
+  {
+   "addr": "0x08AA575E",
+   "text": "有用的公告牌！\\p即使是相同种类的宝可梦，\\n也各有强弱。\\p即使初始时没有差异，\\n但在成长过程中差距会越来越大。",
+   "bytes": 100
+  },
+  {
+   "addr": "0x08AF1388",
+   "text": "一台电脑？",
+   "bytes": 10
+  },
+  {
+   "addr": "0x08AF4A26",
+   "text": "电视机里倒映出了\\n某个人的样子……\\l又似乎是某只宝可梦的样子？\\p敲几下电视机好像就会出来，\\n要敲敲看吗？",
+   "bytes": 96
+  },
+  {
+   "addr": "0x08AF4A88",
+   "text": "\\var[01]\\n用力敲打了电视机！",
+   "bytes": 21
+  },
+  {
+   "addr": "0x08AF4AA2",
+   "text": "吾即汝、汝即吾……\\n汝……开启门扉之人啊……",
+   "bytes": 37
+  },
+  {
+   "addr": "0x08AF607F",
+   "text": "一台电脑？",
+   "bytes": 10
+  },
+  {
+   "addr": "0x08AF974C",
+   "text": "整理",
+   "bytes": 5
+  },
+  {
+   "addr": "0x08AF9753",
+   "text": "装饰",
+   "bytes": 5
+  },
+  {
+   "addr": "0x08AF975A",
+   "text": "退出",
+   "bytes": 5
+  },
+  {
+   "addr": "0x08AFA63A",
+   "text": "你要做什么呢？",
+   "bytes": 14
+  },
+  {
+   "addr": "0x08AFB82E",
+   "text": "将床收起来了。",
+   "bytes": 14
+  },
+  {
+   "addr": "0x08AFB83E",
+   "text": "将床装饰上了。",
+   "bytes": 14
+  },
+  {
+   "addr": "0x08AFB84E",
+   "text": "床",
+   "bytes": 3
+  },
+  {
+   "addr": "0x08AFB853",
+   "text": "地毯",
+   "bytes": 5
+  },
+  {
+   "addr": "0x08AFB85A",
+   "text": "玩偶",
+   "bytes": 5
+  },
+  {
+   "addr": "0x08AFB861",
+   "text": "退出",
+   "bytes": 5
+  },
+  {
+   "addr": "0x08AFB8A7",
+   "text": "想要装饰什么家具呢？",
+   "bytes": 20
+  },
+  {
+   "addr": "0x08AFBFDD",
+   "text": "将地毯收起来了。",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08AFBFEF",
+   "text": "将地毯装饰上了。",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08AFE020",
+   "text": "战……\\n不……输……胜……冲……",
+   "bytes": 22
+  },
+  {
+   "addr": "0x08AFE041",
+   "text": "……斗……台\\n每……可……夺……",
+   "bytes": 22
+  },
+  {
+   "addr": "0x08AFE062",
+   "text": "……工厂\\n和……前冲……",
+   "bytes": 18
+  },
+  {
+   "addr": "0x08AFE07F",
+   "text": "……城……\\n……练……堡……数……",
+   "bytes": 22
+  },
+  {
+   "addr": "0x08AFE1F4",
+   "text": "……总有一种被监视的感觉……",
+   "bytes": 25
+  },
+  {
+   "addr": "0x08AFFECD",
+   "text": "感觉正在被\\n一股力量吸入电视……",
+   "bytes": 30
+  },
+  {
+   "addr": "0x08AFFEED",
+   "text": "感觉越来越困了……\\n要闭上眼睛吗？",
+   "bytes": 31
+  },
+  {
+   "addr": "0x08AFFF0E",
+   "text": "……",
+   "bytes": 3
+  },
+  {
+   "addr": "0x08AFFF16",
+   "text": "闭上眼睛",
+   "bytes": 9
+  },
+  {
+   "addr": "0x08AFFF24",
+   "text": "原来是宝可梦的恶作剧吗…？\\n可是总感觉事情没有这么简单……",
+   "bytes": 54
+  },
+  {
+   "addr": "0x08EB1419",
+   "text": "一个秘密的开关！\\p要按下它吗？",
+   "bytes": 28
+  },
+  {
+   "addr": "0x08EB1FEE",
+   "text": "一款角色扮演游戏！\\n现在可不是玩游戏的时候！",
+   "bytes": 42
+  },
+  {
+   "addr": "0x08EB20F8",
+   "text": "上面显示“程序故障”\\n看来这台机器坏了。",
+   "bytes": 37
+  },
+  {
+   "addr": "0x08EB212D",
+   "text": "上面显示“外出用餐”\\n看来这台机器被占了。",
+   "bytes": 39
+  },
+  {
+   "addr": "0x08EB21F9",
+   "text": "走自己的路让别人说去吧。\\n我就只喜欢炎属性的宝可梦。",
+   "bytes": 50
+  },
+  {
+   "addr": "0x08EB225F",
+   "text": "不好意思！\\n答错了！",
+   "bytes": 18
+  },
+  {
+   "addr": "0x08EC1D90",
+   "text": "好可疑的电视机……\\n感觉在朝这里看……",
+   "bytes": 34
+  },
+  {
+   "addr": "0x08EC21F6",
+   "text": "一台电脑？",
+   "bytes": 10
+  },
+  {
+   "addr": "0x08EEC13B",
+   "text": "一台老虎机！\\n想玩玩吗？",
+   "bytes": 22
+  },
+  {
+   "addr": "0x08EEC153",
+   "text": "你还没有代币盒……",
+   "bytes": 17
+  },
+  {
+   "addr": "0x08F33919",
+   "text": "这是一个垃圾桶。",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F33999",
+   "text": "这是一个垃圾桶。",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F33A2B",
+   "text": "这是一个垃圾桶。",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F33AFE",
+   "text": "这是一个垃圾桶。",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F33C58",
+   "text": "这是一个垃圾桶。",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F33D2B",
+   "text": "这是一个垃圾桶。",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F33DFE",
+   "text": "这是一个垃圾桶。",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F33ED1",
+   "text": "这是一个垃圾桶。",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F33FA4",
+   "text": "这是一个垃圾桶。",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F34106",
+   "text": "好可爱的玩偶！\\n快把这个玩偶带给他看看吧！",
+   "bytes": 40
+  },
+  {
+   "addr": "0x08F34130",
+   "text": "胖丁似乎\\n有什么东西掉在了这里？",
+   "bytes": 31
+  },
+  {
+   "addr": "0x08F34151",
+   "text": "这是一个垃圾桶。",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F34163",
+   "text": "在垃圾桶中发现了胖丁玩偶？\\p这应该就是\\n他要找的粉色玩偶了吧？\\p等等……\\n这不是胖丁玩偶，\\l这是真正的胖丁！",
+   "bytes": 98
+  },
+  {
+   "addr": "0x08F341C7",
+   "text": "\\var[01]睡着了……",
+   "bytes": 11
+  },
+  {
+   "addr": "0x08F341D4",
+   "text": "\\var[01]醒过来了。",
+   "bytes": 12
+  },
+  {
+   "addr": "0x08F4D021",
+   "text": "要进入小洞穴吗？",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F4D033",
+   "text": "墙上有个凹洞……",
+   "bytes": 15
+  },
+  {
+   "addr": "0x08F4D044",
+   "text": "墙上有个凹洞。\\n使用秘密之力吗？",
+   "bytes": 30
+  },
+  {
+   "addr": "0x08F4D0AF",
+   "text": "野生的\\n大尾立使用了秘密之力！",
+   "bytes": 29
+  },
+  {
+   "addr": "0x08F4D0CE",
+   "text": "发现一个小洞穴！",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F4D32D",
+   "text": "要进入小洞穴吗？",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F4D33F",
+   "text": "墙上有个凹洞……",
+   "bytes": 15
+  },
+  {
+   "addr": "0x08F4D350",
+   "text": "墙上有个凹洞。\\n使用秘密之力吗？",
+   "bytes": 30
+  },
+  {
+   "addr": "0x08F4D370",
+   "text": "野生的\\n大尾立使用了秘密之力！",
+   "bytes": 29
+  },
+  {
+   "addr": "0x08F4D38F",
+   "text": "发现一个小洞穴！",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F4D592",
+   "text": "要进入小洞穴吗？",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F4D5A4",
+   "text": "墙上有个凹洞……",
+   "bytes": 15
+  },
+  {
+   "addr": "0x08F4D5B5",
+   "text": "墙上有个凹洞。\\n使用秘密之力吗？",
+   "bytes": 30
+  },
+  {
+   "addr": "0x08F4D5D5",
+   "text": "野生的\\n大尾立使用了秘密之力！",
+   "bytes": 29
+  },
+  {
+   "addr": "0x08F4D5F4",
+   "text": "发现一个小洞穴！",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F4DD1C",
+   "text": "要进入小洞穴吗？",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F4DD43",
+   "text": "墙上有个凹洞……",
+   "bytes": 15
+  },
+  {
+   "addr": "0x08F4DD54",
+   "text": "墙上有个凹洞。\\n使用秘密之力吗？",
+   "bytes": 30
+  },
+  {
+   "addr": "0x08F4DD74",
+   "text": "野生的\\n大尾立使用了秘密之力！",
+   "bytes": 29
+  },
+  {
+   "addr": "0x08F4DD93",
+   "text": "发现一个小洞穴！",
+   "bytes": 16
+  },
+  {
+   "addr": "0x08F4F053",
+   "text": "一台电脑？",
+   "bytes": 10
+  },
+  {
+   "addr": "0x08F5D509",
+   "text": "一台电脑？",
+   "bytes": 10
+  },
+  {
+   "addr": "0x09DB25A4",
+   "text": "墙壁有一点隆起，\\n要是有可以挖掘的工具就好了……",
+   "bytes": 45
+  },
+  {
+   "addr": "0x09DB25D1",
+   "text": "墙壁有一点隆起，\\n要挖挖看吗？",
+   "bytes": 28
+  },
+  {
+   "addr": "0x09DB25ED",
+   "text": "墙壁崩塌了……\\n要花2000",
+   "bytes": 22
+  },
+  {
+   "addr": "0x09DB260F",
+   "text": "不好意思，您的钱不够。",
+   "bytes": 21
+  },
+  {
+   "addr": "0x09DB2624",
+   "text": "墙壁复原了！",
+   "bytes": 12
+  },
+  {
+   "addr": "0x09DB2630",
+   "text": "墙壁有一点隆起，\\n要是有可以挖掘的工具就好了……",
+   "bytes": 45
+  },
+  {
+   "addr": "0x09DB265D",
+   "text": "墙壁有一点隆起，\\n要挖挖看吗？",
+   "bytes": 28
+  },
+  {
+   "addr": "0x09DB2679",
+   "text": "墙壁崩塌了……\\n要花2000",
+   "bytes": 22
+  },
+  {
+   "addr": "0x09DB269B",
+   "text": "不好意思，您的钱不够。",
+   "bytes": 21
+  },
+  {
+   "addr": "0x09DB26B0",
+   "text": "墙壁复原了！",
+   "bytes": 12
+  },
+  {
+   "addr": "0x09DB26BC",
+   "text": "墙壁有一点隆起，\\n要是有可以挖掘的工具就好了……",
+   "bytes": 45
+  },
+  {
+   "addr": "0x09DB26E9",
+   "text": "墙壁有一点隆起，\\n要挖挖看吗？",
+   "bytes": 28
+  },
+  {
+   "addr": "0x09DB2705",
+   "text": "墙壁崩塌了……\\n要花2000",
+   "bytes": 22
+  },
+  {
+   "addr": "0x09DB2727",
+   "text": "不好意思，您的钱不够。",
+   "bytes": 21
+  },
+  {
+   "addr": "0x09DB273C",
+   "text": "墙壁复原了！",
+   "bytes": 12
+  },
+  {
+   "addr": "0x09DB2748",
+   "text": "墙壁有一点隆起，\\n要是有可以挖掘的工具就好了……",
+   "bytes": 45
+  },
+  {
+   "addr": "0x09DB2775",
+   "text": "墙壁有一点隆起，\\n要挖挖看吗？",
+   "bytes": 28
+  },
+  {
+   "addr": "0x09DB2791",
+   "text": "墙壁崩塌了……\\n要花2000",
+   "bytes": 22
+  },
+  {
+   "addr": "0x09DB27B3",
+   "text": "不好意思，您的钱不够。",
+   "bytes": 21
+  },
+  {
+   "addr": "0x09DB27C8",
+   "text": "墙壁复原了！",
+   "bytes": 12
+  },
+  {
+   "addr": "0x09DB27D4",
+   "text": "墙壁有一点隆起，\\n要是有可以挖掘的工具就好了……",
+   "bytes": 45
+  },
+  {
+   "addr": "0x09DB2801",
+   "text": "墙壁有一点隆起，\\n要挖挖看吗？",
+   "bytes": 28
+  },
+  {
+   "addr": "0x09DB281D",
+   "text": "墙壁崩塌了……\\n要花2000",
+   "bytes": 22
+  },
+  {
+   "addr": "0x09DB283F",
+   "text": "不好意思，您的钱不够。",
+   "bytes": 21
+  },
+  {
+   "addr": "0x09DB2854",
+   "text": "墙壁复原了！",
+   "bytes": 12
+  },
+  {
+   "addr": "0x09DB2860",
+   "text": "墙壁有一点隆起，\\n要是有可以挖掘的工具就好了……",
+   "bytes": 45
+  },
+  {
+   "addr": "0x09DB288D",
+   "text": "墙壁有一点隆起，\\n要挖挖看吗？",
+   "bytes": 28
+  },
+  {
+   "addr": "0x09DB28A9",
+   "text": "墙壁崩塌了……\\n要花2000",
+   "bytes": 22
+  },
+  {
+   "addr": "0x09DB28CB",
+   "text": "不好意思，您的钱不够。",
+   "bytes": 21
+  },
+  {
+   "addr": "0x09DB28E0",
+   "text": "墙壁复原了！",
+   "bytes": 12
+  }
+ ],
+ "checks": {
+  "0x08F34039_present_after": true,
+  "0x08F34039_present_before": false,
+  "0x08F34039_sources": [
+   {
+    "kind": "bg",
+    "where": "3:76"
+   }
+  ],
+  "0x08F34039_instruction_count": 5,
+  "0x08F34039_first_instruction": "checkflag",
+  "new_bg_roots_count": 148,
+  "std_scripts": 10,
+  "specials": 444,
+  "bg_root_maps": [
+   {
+    "addr": "0x08162212",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:59"
+     }
+    ],
+    "instruction_count": 8
+   },
+   {
+    "addr": "0x08162264",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:60"
+     },
+     {
+      "kind": "bg",
+      "where": "48:3"
+     }
+    ],
+    "instruction_count": 8
+   },
+   {
+    "addr": "0x081622B1",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:61"
+     }
+    ],
+    "instruction_count": 8
+   },
+   {
+    "addr": "0x0816230C",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:62"
+     },
+     {
+      "kind": "bg",
+      "where": "1:62"
+     },
+     {
+      "kind": "bg",
+      "where": "53:4"
+     }
+    ],
+    "instruction_count": 8
+   },
+   {
+    "addr": "0x081638EC",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:96"
+     },
+     {
+      "kind": "bg",
+      "where": "1:96"
+     },
+     {
+      "kind": "bg",
+      "where": "1:96"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x081638F5",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:96"
+     },
+     {
+      "kind": "bg",
+      "where": "1:96"
+     },
+     {
+      "kind": "bg",
+      "where": "1:96"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x081638FE",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:96"
+     },
+     {
+      "kind": "bg",
+      "where": "1:96"
+     },
+     {
+      "kind": "bg",
+      "where": "1:96"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08163907",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:96"
+     },
+     {
+      "kind": "bg",
+      "where": "1:96"
+     },
+     {
+      "kind": "bg",
+      "where": "1:96"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08163910",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:96"
+     },
+     {
+      "kind": "bg",
+      "where": "1:96"
+     },
+     {
+      "kind": "bg",
+      "where": "1:96"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08163919",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:96"
+     },
+     {
+      "kind": "bg",
+      "where": "1:96"
+     },
+     {
+      "kind": "bg",
+      "where": "1:96"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08163922",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:96"
+     },
+     {
+      "kind": "bg",
+      "where": "1:96"
+     },
+     {
+      "kind": "bg",
+      "where": "1:96"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x0816392B",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:96"
+     },
+     {
+      "kind": "bg",
+      "where": "1:96"
+     },
+     {
+      "kind": "bg",
+      "where": "1:96"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08163934",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:96"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x0816393D",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:96"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08163F78",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:114"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816418C",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:116"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08164195",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:119"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x0816419E",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:118"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x081641A7",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:117"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x0816441F",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:120"
+     }
+    ],
+    "instruction_count": 66
+   },
+   {
+    "addr": "0x08164AD8",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "2:10"
+     }
+    ],
+    "instruction_count": 7
+   },
+   {
+    "addr": "0x08168A48",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:57"
+     }
+    ],
+    "instruction_count": 16
+   },
+   {
+    "addr": "0x0816BBB8",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:2"
+     },
+     {
+      "kind": "bg",
+      "where": "50:15"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816BBC1",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:2"
+     },
+     {
+      "kind": "bg",
+      "where": "50:15"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816BBCA",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816BBD3",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:2"
+     },
+     {
+      "kind": "bg",
+      "where": "50:15"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816BBE5",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:2"
+     },
+     {
+      "kind": "bg",
+      "where": "10:2"
+     },
+     {
+      "kind": "bg",
+      "where": "50:15"
+     },
+     {
+      "kind": "bg",
+      "where": "50:15"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816C43E",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:9"
+     },
+     {
+      "kind": "bg",
+      "where": "10:9"
+     },
+     {
+      "kind": "bg",
+      "where": "50:24"
+     },
+     {
+      "kind": "bg",
+      "where": "50:24"
+     },
+     {
+      "kind": "bg",
+      "where": "50:26"
+     },
+     {
+      "kind": "bg",
+      "where": "50:26"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816C447",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:9"
+     },
+     {
+      "kind": "bg",
+      "where": "10:9"
+     },
+     {
+      "kind": "bg",
+      "where": "50:24"
+     },
+     {
+      "kind": "bg",
+      "where": "50:26"
+     },
+     {
+      "kind": "bg",
+      "where": "50:26"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816C450",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:9"
+     },
+     {
+      "kind": "bg",
+      "where": "10:9"
+     },
+     {
+      "kind": "bg",
+      "where": "50:24"
+     },
+     {
+      "kind": "bg",
+      "where": "50:26"
+     },
+     {
+      "kind": "bg",
+      "where": "50:26"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816C95E",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816C9A4",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816C9B0",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816C9BC",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816C9D4",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816C9E0",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816C9EC",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816C9F8",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816CA04",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816CA10",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816CA1C",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816CA28",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816CA34",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816CA40",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816CA58",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816CA64",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816CA7C",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816CA88",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816CA94",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816CB5A",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816CB63",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816CB6C",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816DBE8",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "12:0"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816DBF4",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "12:0"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816DCDD",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "12:0"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816DCE9",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "12:0"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816DDBB",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "12:0"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816DDC7",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "12:0"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816DE92",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "12:0"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816DE9E",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "12:0"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816DF69",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "12:0"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816DF75",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "12:0"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816E040",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "12:0"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x0816E04C",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "12:0"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x081706DD",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "30:0"
+     }
+    ],
+    "instruction_count": 9
+   },
+   {
+    "addr": "0x081ACD65",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "5:2"
+     },
+     {
+      "kind": "bg",
+      "where": "5:2"
+     },
+     {
+      "kind": "bg",
+      "where": "45:3"
+     },
+     {
+      "kind": "bg",
+      "where": "45:3"
+     }
+    ],
+    "instruction_count": 13
+   },
+   {
+    "addr": "0x081ACDD0",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "35:1"
+     }
+    ],
+    "instruction_count": 9
+   },
+   {
+    "addr": "0x081ACE1C",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "6:0"
+     },
+     {
+      "kind": "bg",
+      "where": "6:0"
+     },
+     {
+      "kind": "bg",
+      "where": "47:2"
+     },
+     {
+      "kind": "bg",
+      "where": "47:2"
+     }
+    ],
+    "instruction_count": 9
+   },
+   {
+    "addr": "0x081ACF07",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "12:0"
+     }
+    ],
+    "instruction_count": 11
+   },
+   {
+    "addr": "0x081ACF2C",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "39:0"
+     },
+     {
+      "kind": "bg",
+      "where": "39:0"
+     }
+    ],
+    "instruction_count": 9
+   },
+   {
+    "addr": "0x081B2867",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "10:14"
+     },
+     {
+      "kind": "bg",
+      "where": "50:20"
+     },
+     {
+      "kind": "bg",
+      "where": "51:0"
+     },
+     {
+      "kind": "bg",
+      "where": "51:2"
+     }
+    ],
+    "instruction_count": 26
+   },
+   {
+    "addr": "0x087B2A9A",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "56:77"
+     }
+    ],
+    "instruction_count": 1
+   },
+   {
+    "addr": "0x087B3495",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "56:77"
+     }
+    ],
+    "instruction_count": 1
+   },
+   {
+    "addr": "0x087B39AB",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "56:77"
+     }
+    ],
+    "instruction_count": 1
+   },
+   {
+    "addr": "0x087BB542",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "50:5"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x087BB7EB",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:81"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x087BCBAC",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "56:77"
+     }
+    ],
+    "instruction_count": 13
+   },
+   {
+    "addr": "0x087BD238",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:106"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x087BEACE",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:9"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x089CF4FF",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "45:0"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x089CFB00",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:68"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x089D3A2A",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     },
+     {
+      "kind": "bg",
+      "where": "46:6"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x089D4C73",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:121"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x089D56B5",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "1:95"
+     }
+    ],
+    "instruction_count": 6
+   },
+   {
+    "addr": "0x089D6C95",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:89"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x089D9CD5",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:73"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x089D9D0F",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:73"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x089D9D8A",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:73"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x089D9DEF",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:73"
+     }
+    ],
+    "instruction_count": 1
+   },
+   {
+    "addr": "0x089D9E4F",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:73"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x089DF15B",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "50:5"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x089DF29E",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "50:7"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x089DF46B",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "50:10"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x089DF512",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "50:10"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x089E0515",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "50:15"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x089E2671",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:91"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x089E2698",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:93"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x089E2AE6",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "45:0"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x089E4F87",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "46:0"
+     },
+     {
+      "kind": "bg",
+      "where": "46:8"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x089EA4DA",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "47:3"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x089EF844",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "51:0"
+     }
+    ],
+    "instruction_count": 8
+   },
+   {
+    "addr": "0x089EF900",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "51:0"
+     }
+    ],
+    "instruction_count": 8
+   },
+   {
+    "addr": "0x089EF943",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "51:0"
+     }
+    ],
+    "instruction_count": 8
+   },
+   {
+    "addr": "0x089EF986",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "51:0"
+     }
+    ],
+    "instruction_count": 8
+   },
+   {
+    "addr": "0x089FAB3E",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "50:10"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08AA06A6",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "50:10"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08AA24A4",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "50:48"
+     },
+     {
+      "kind": "bg",
+      "where": "50:48"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08AA24CB",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "50:48"
+     },
+     {
+      "kind": "bg",
+      "where": "50:48"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08AA3A20",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "50:24"
+     },
+     {
+      "kind": "bg",
+      "where": "53:13"
+     },
+     {
+      "kind": "bg",
+      "where": "53:13"
+     },
+     {
+      "kind": "bg",
+      "where": "53:13"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08AA3B90",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "50:24"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08AA4E98",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:90"
+     },
+     {
+      "kind": "bg",
+      "where": "3:90"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08AA5754",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:85"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08AAFB28",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "35:1"
+     },
+     {
+      "kind": "bg",
+      "where": "37:0"
+     },
+     {
+      "kind": "bg",
+      "where": "50:3"
+     },
+     {
+      "kind": "bg",
+      "where": "56:15"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08AF0D16",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "48:6"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08AF5E9C",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "49:10"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08AF8393",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "42:4"
+     },
+     {
+      "kind": "bg",
+      "where": "43:1"
+     }
+    ],
+    "instruction_count": 12
+   },
+   {
+    "addr": "0x08AFE016",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "56:17"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08AFE037",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "56:17"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08AFE058",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "56:17"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08AFE075",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "56:17"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08AFE1EA",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "56:18"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08EC1A78",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "56:21"
+     },
+     {
+      "kind": "bg",
+      "where": "56:21"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08EC210E",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "49:5"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08EDB1BA",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:71"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08EEC079",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "50:20"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08F338AA",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:75"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08F3392A",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:75"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08F339E2",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:76"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08F33AB5",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:76"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08F33B4E",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:76"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08F33CE2",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:76"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08F33DB5",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:76"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08F33E88",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:77"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08F33F5B",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:77"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08F34039",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:76"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08F4737C",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:84"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08F49593",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:102"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08F4BA14",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:104"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08F4DAF7",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "3:97"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08F4EFD4",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "32:0"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x08F510BC",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "50:35"
+     },
+     {
+      "kind": "bg",
+      "where": "50:35"
+     }
+    ],
+    "instruction_count": 3
+   },
+   {
+    "addr": "0x08F5CFBB",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "53:1"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x09CDFDC0",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "51:9"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x09CDFEF3",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "51:9"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x09CE0026",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "51:9"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x09CE0159",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "51:9"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x09CE028C",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "51:9"
+     }
+    ],
+    "instruction_count": 5
+   },
+   {
+    "addr": "0x09CE03BF",
+    "sources": [
+     {
+      "kind": "bg",
+      "where": "51:9"
+     }
+    ],
+    "instruction_count": 5
+   }
+  ],
+  "std_scripts_base": "0x08160450",
+  "specials_range": "0x0815FD60..0x08160450"
+ }
+}

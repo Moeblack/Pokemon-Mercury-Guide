@@ -1,0 +1,73 @@
+{
+ "id": 17,
+ "title": "口渴的大叔",
+ "start_locations": [
+  {
+   "map_id": "45:5",
+   "place": "30号道路一侧的小屋（地图名31号道路）",
+   "x": 4,
+   "y": 4,
+   "npc_hint": "叔父(local_id 1)"
+  }
+ ],
+ "requirements": [
+  "主线前置旗标（入口脚本0x08AE627E先检查，具体剧情点未解释）",
+  "树果汁(44)×30"
+ ],
+ "steps": [
+  {
+   "text": "进入30号道路一侧的小屋，与叔父对话，他抱怨这里被误认成精灵爷爷家、解释到口干舌燥，请你带30瓶树果汁。",
+   "source_scripts": [
+    "0x08F50386",
+    "0x08AE627E",
+    "0x08AE62B7"
+   ],
+   "map_id": "45:5"
+  },
+  {
+   "text": "答应后出现'接受任务:<口渴的大叔>'，他提示满金市有卖树果汁的商店。",
+   "source_scripts": [
+    "0x08F50783",
+    "0x08F507DE",
+    "0x08AE62FB"
+   ]
+  },
+  {
+   "text": "凑齐树果汁(44)×30后回去对话，他问是否交出。",
+   "source_scripts": [
+    "0x08AE632F",
+    "0x08AE639F"
+   ]
+  },
+  {
+   "text": "确认后交出30瓶并交付报酬。",
+   "source_scripts": [
+    "0x08AE63BD"
+   ]
+  }
+ ],
+ "completion": [
+  "背包中树果汁(44)≥30时对话出现交付确认并扣除30瓶"
+ ],
+ "rewards": [
+  "金珠×3",
+  "6 BracerPoints"
+ ],
+ "pitfalls": [
+  "不足30瓶时提示'没存在感的大叔'或重复商店提示",
+  "屋内NPC不是精灵爷爷本人",
+  "完成后每天赠送树果属任务后的日常互动"
+ ],
+ "related_items": [
+  44,
+  110,
+  139
+ ],
+ "related_species": [],
+ "related_trainers": [],
+ "open_questions": [
+  "'每天'由每日旗标控制，刷新时点未解释；赠送树果品种为随机结果"
+ ],
+ "source_packet": "data/quest_packets/017.json",
+ "status": "compiled"
+}

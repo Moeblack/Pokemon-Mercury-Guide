@@ -1,0 +1,51 @@
+{
+ "title": "怯场的男友",
+ "quest_id": 65,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b410",
+    "title": "怯场的男友",
+    "title_address": "0x8e3bbeb",
+    "description": "我男朋友他啊，居然因怯场，\n不敢去报名参加华丽大赛...\n有谁能来鼓励一下他吗？",
+    "description_address": "0x8e3bbb8",
+    "unknown_u16": 89,
+    "unknown_u16_hex": "0x0059",
+    "accept_flag": 2975,
+    "accept_flag_hex": "0x0B9F",
+    "complete_flag": 2976,
+    "complete_flag_hex": "0x0BA0",
+    "map_group": 35,
+    "map_num": 4,
+    "tail_hex": "04 01 00 00",
+    "index": 65,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39654",
+      "title": "怯场的男友",
+      "description_address": "0x8e39837",
+      "description": "我男朋友他啊，居然因怯场，\\n不敢去报名参加华丽大赛...\\n有谁能来鼓励一下他吗？"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39837",
+    "legacy_match_count": 1,
+    "current_description": "通过大师级华丽大赛，\n鼓励华丽大赛会场\n的少女的男友。",
+    "catalog_map": {
+     "id": "35:4",
+     "name": "满金市"
+    }
+   },
+   "direct_flag_scripts": [],
+   "event_roots": [],
+   "scripts": [],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

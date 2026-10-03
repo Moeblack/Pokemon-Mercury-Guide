@@ -1,0 +1,48 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>037 目标是虫系大师 · 水银攻略</title><style>*{box-sizing:border-box}body{margin:0;color:#243247;background:#f5f7fb;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}header{background:#142b48;color:white;padding:22px max(22px,calc((100vw - 1180px)/2))}header a{color:#e5efff;text-decoration:none}nav{display:flex;gap:20px;flex-wrap:wrap;font-size:15px}main{max-width:1180px;margin:auto;padding:28px 22px 60px}h1{font-size:30px;line-height:1.4}h2{margin-top:32px;border-bottom:1px solid #d9e0eb;padding-bottom:8px}a{color:#155b9b}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow:auto;background:white}td,th{padding:10px 12px;border:1px solid #dde4ed;text-align:left;min-width:65px}th{background:#eaf0f8}tr:nth-child(even){background:#f7f9fc}code{font-size:.88em;background:#edf0f5;padding:2px 4px;border-radius:3px;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:15px;background:#edf0f5}img{max-width:100%;height:auto;image-rendering:pixelated}blockquote{border-left:4px solid #809cbe;background:#edf2f8;margin:18px 0;padding:10px 18px}input,select{font:inherit;padding:10px 14px;border:1px solid #bccbdd;border-radius:7px}input{flex:1;min-width:180px}.searchbox{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px}.card{background:white;border:1px solid #dbe3ee;border-radius:10px;padding:20px}.result{background:white;margin:10px 0;padding:14px 18px;border-radius:7px;border:1px solid #e0e6ee}.result small,.muted{color:#60718a}.badge{background:#e7eff9;border-radius:4px;padding:2px 7px;font-size:13px}details{margin:15px 0}footer{margin-top:40px;border-top:1px solid #dde4ed;padding-top:15px;color:#60718a;font-size:13px}@media(max-width:600px){main{padding:16px 12px}h1{font-size:25px}td,th{padding:8px}}
+.atlas-cards{margin:32px 0;padding-top:8px;border-top:1px solid #d9e0eb}.atlas-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}.atlas-card{background:#fff;border:1px solid #d9e0eb;border-radius:10px;overflow:hidden}.atlas-card h3{font-size:16px;margin:12px 14px 6px}.atlas-card p{font-size:13px;line-height:1.6;margin:8px 14px 14px}.atlas-frame{height:240px;position:relative;background:#e8edf1}.atlas-frame img{position:absolute;width:100%;height:100%;object-fit:contain;image-rendering:pixelated}.atlas-frame svg{position:absolute;width:100%;height:100%;inset:0;pointer-events:none}.atlas-label{paint-order:stroke;stroke:#fff;stroke-width:3px;fill:#142b48;font-weight:bold;text-anchor:middle;dominant-baseline:central}.atlas-cards details{margin-top:16px}.atlas-cards summary{cursor:pointer;color:#155b9b;margin-bottom:12px}.atlas-feature{padding:12px 16px;background:#eaf0f8;border-radius:8px;margin:16px 0}.atlas-unavailable{height:240px;display:grid;place-items:center;color:#59677a;font-size:14px;padding:24px;text-align:center}
+</style><header><a href="../index.html"><strong>宝可梦水银 1.1 · 玩家攻略</strong></a><nav><a href="../quests/index.html">支线攻略</a><a href="../items/index.html">道具搜集</a><a href="../pokemon/index.html">宝可梦获取</a><a href="../trainers/index.html">训练家配队</a><a href="../maps/index.html">地点地图</a><a href="../pokemon/wild_mega.html">野生Mega</a></nav></header><main><h1 id="037">037 目标是虫系大师</h1>
+<p>一句话目标：帮桧皮镇一名向往成为虫系大师的女孩制作（凑齐）3 个速度球，供她捕捉飞天螳螂。</p>
+<h2 id="_1">接取地点</h2>
+<ul>
+<li>桧皮镇（地图 <a href="../maps/index.html#map=3:69&amp;page=quests/037.md">3:69</a>），女孩（local_id 12，坐标 30,16），位于碳工匠小屋（钢铁先生处）附近。</li>
+<li>当前目录描述：帮助桧皮镇的女孩制作 3 个速度球；旧表描述作“目标是虫属性大师”，并注明“请来碳工匠小屋附近帮帮我”。</li>
+</ul>
+<h2 id="_2">准备条件</h2>
+<ul>
+<li>前置旗标 4246 已置位（共用接取进度条件；置位剧情由 Main 定位；未置位时女孩只会说“你也是来找钢铁先生制作精灵球的吗？好多人都是这样。”）。</li>
+<li>需能拿出 速度球（道具 243）×3；对白说明速度球要用白色圆柑果实制作。</li>
+</ul>
+<h2 id="_3">操作步骤</h2>
+<ol>
+<li>与女孩对话。满足前置后她说：桧皮镇馆主阿笔是虫属性宝可梦的专家、是她向往的目标；她想抓一只飞天螳螂，但总被它从球中逃脱；听说钢铁先生制作的速度球对飞天螳螂有 4 倍捕获几率，请你帮她做 3 个速度球（需要白色圆柑果实）。</li>
+<li>选择答应。脚本 <code>0x08AE6F7B</code> 置接取旗标 5847，显示“接受任务:&lt;目标是虫属性大师&gt;”，她说“那么就拜托你啦，谢谢你！”。</li>
+<li>凑齐 速度球 ×3（道具 243）。用白色圆柑果实制成 3 个即可。</li>
+<li>携带 3 个速度球回去找女孩。脚本以 <code>checkitem 243,3</code> 判定数量；足够时执行 <code>removeitem 243,3</code> 收下速度球，她说“就是这个速度球！太好啦，有了这个我一定能捕捉飞天螳螂……对了，这个送给你作为谢礼吧！”，并给出 白色香草（180）×1 与 经验糖果XS（536）×5。</li>
+<li>结算脚本 <code>0x08F523F7</code>/<code>0x08AE725C</code> 置完成旗标 5844、获得 3 点 BracerPoints 与 4000$。</li>
+</ol>
+<h2 id="_4">交付检查</h2>
+<ul>
+<li>以背包内 速度球（道具 243）数量 ≥3 判定；交出后被移除 3 个。</li>
+<li>数量不足时女孩只会问“你好，速度球的事怎么样了？”，不会结算。</li>
+</ul>
+<h2 id="_5">奖励</h2>
+<ul>
+<li>白色香草（道具 180）×1</li>
+<li>经验糖果XS（道具 536）×5</li>
+<li>3 点 BracerPoints</li>
+<li>4000$</li>
+</ul>
+<h2 id="_6">容易卡住的位置</h2>
+<ul>
+<li>必须先满足前置旗标 4246，否则拿不到委托。</li>
+<li>判定用的是背包里的 速度球（道具 243）实际数量，共需 3 个；速度球要自行用白色圆柑果实制作，不能凭空获得。</li>
+<li>交付后再对话，她只会说“谢谢你，我现在就要去捕捉飞天螳螂试试！”。</li>
+</ul>
+<h2 id="_7">来源与待补</h2>
+<ul>
+<li>包：<code>data/quest_packets/037.json</code>；入口 <code>0x08F50983</code>，派发 <code>0x08AE6912</code>，委托/接取 <code>0x08AE6B1D</code>/<code>0x08AE6F7B</code>，交付 <code>0x08AE6B00</code>/<code>0x08AE7252</code>/<code>0x08AE6B49</code>，结算 <code>0x08F523F7</code>/<code>0x08AE725C</code>。</li>
+<li>相关道具：<a href="../items/0243.html">速度球 0243</a>、<a href="../items/0180.html">白色香草 0180</a>、<a href="../items/0536.html">经验糖果XS 0536</a>。</li>
+<li>相关宝可梦：<a href="../pokemon/0123.html">飞天螳螂 0123</a>。</li>
+<li>相关地图：<a href="../maps/index.html#map=3:69&amp;page=quests/037.md">桧皮镇 3:69</a>。</li>
+<li>未定位/待补：速度球“由白色圆柑果实制作”的具体制作途径（哪位 NPC/哪台机器）来自对白，包内未给出制作脚本；前置旗标 4246 的置位剧情由 Main 定位，勿据第 023 号脚本反推。</li>
+</ul><section class="atlas-cards"><h2>地点地图</h2><p>共享RGB底图；点击可缩放定位。数字对应本页相关地点，不代表地图上全部事件。</p><div class="atlas-card-grid"><article class="atlas-card"><h3><a href="../maps/index.html#map=3:69&amp;page=quests/037.md&amp;point=quest-6f0c5953324e29">桧皮镇</a></h3><a href="../maps/index.html#map=3:69&amp;page=quests/037.md&amp;point=quest-6f0c5953324e29" aria-label="在大地图中打开桧皮镇"><div class="atlas-frame"><img src="../maps/base/bdcec76d39c50a82.png" alt="桧皮镇地图" loading="lazy" decoding="async" width="960" height="640"><img src="../maps/objects/3_69.png" alt="建筑与大型固定对象" loading="lazy" decoding="async" width="960" height="640"><svg viewBox="0 0 960 640" aria-hidden="true"><circle cx="488" cy="264" r="19.2" fill="#155b9b" stroke="white" stroke-width="3.84"/><text x="488" y="264" fill="white" font-family="sans-serif" font-weight="bold" font-size="24.96" text-anchor="middle" dominant-baseline="central">1</text></svg></div></a><p>1 目标是虫系大师（30,16）</p><p><a href="../maps/index.html#map=3:69&amp;page=quests/037.md&amp;point=quest-6f0c5953324e29">放大定位与查看相邻入口 →</a></p></article></div></section><footer>资料依据指定水银1.1 ROM及解包记录。正文的“待补”表示该获取条件尚未整理清楚，不代表无法获得。</footer></main></html>

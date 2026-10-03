@@ -1,0 +1,1640 @@
+{
+  "generated_by": "player_guide/scripts/locate_quest_catalog.py (stage 3)",
+  "generated_at": "2026-10-03T07:53:49.605006+00:00",
+  "purpose": "Collection only: raw flag-pattern hits (+/-48 hex) and text keyword hits for Main's judgment.",
+  "disclaimer": "Raw ROM matches are NOT asserted to be scripts or new production entries; no interpretation applied.",
+  "rom": {
+    "path": "C:/Users/Moeblack/Downloads/宝可梦水银/宝可梦水银FC~致150年后的你 Version 1.1 (1).gba",
+    "size": 33554432,
+    "sha256": "131b009df7ab252deff0d6a0518ab82f88e82c940ee68d50d31033a899f7e3dd"
+  },
+  "patterns": {
+    "checkflag": "2B <flag u16 le> 06 (checkflag immediately followed by goto_if)",
+    "setflag": "29 <flag u16 le>"
+  },
+  "sources": {
+    "scripts_json": "C:/Users/Moeblack/Downloads/宝可梦水银/解包研究\\maps_research\\out\\scripts\\scripts.json",
+    "text_json": "C:/Users/Moeblack/Downloads/宝可梦水银/解包研究\\maps_research\\out\\scripts\\text.json"
+  },
+  "target_quests": [
+    {
+      "quest_id": 4,
+      "title": "钢铁与黑曜",
+      "catalog_row": 4,
+      "catalog_row_offset": "0xe3af4c",
+      "accept_flag": "0x0B99",
+      "complete_flag": "0x0B9A",
+      "map": [
+        47,
+        0
+      ]
+    },
+    {
+      "quest_id": 5,
+      "title": "霓虹灯外的月光",
+      "catalog_row": 5,
+      "catalog_row_offset": "0xe3af60",
+      "accept_flag": "0x0B7F",
+      "complete_flag": "0x0B7F",
+      "map": [
+        50,
+        19
+      ]
+    },
+    {
+      "quest_id": 6,
+      "title": "无法冻结的时间",
+      "catalog_row": 6,
+      "catalog_row_offset": "0xe3af74",
+      "accept_flag": "0x0CE9",
+      "complete_flag": "0x0CEB",
+      "map": [
+        55,
+        13
+      ]
+    },
+    {
+      "quest_id": 36,
+      "title": "沉睡的潜能",
+      "catalog_row": 36,
+      "catalog_row_offset": "0xe3b1cc",
+      "accept_flag": "0x0C70",
+      "complete_flag": "0x0C71",
+      "map": [
+        1,
+        47
+      ]
+    },
+    {
+      "quest_id": 59,
+      "title": "五彩斑斓的头巾",
+      "catalog_row": 59,
+      "catalog_row_offset": "0xe3b398",
+      "accept_flag": "0x0B92",
+      "complete_flag": "0x0B93",
+      "map": [
+        35,
+        4
+      ]
+    },
+    {
+      "quest_id": 63,
+      "title": "8bit的感动",
+      "catalog_row": 63,
+      "catalog_row_offset": "0xe3b3e8",
+      "accept_flag": "0x144C",
+      "complete_flag": "0x144C",
+      "map": [
+        47,
+        2
+      ]
+    },
+    {
+      "quest_id": 64,
+      "title": "8bit的感动",
+      "catalog_row": 64,
+      "catalog_row_offset": "0xe3b3fc",
+      "accept_flag": "0x144D",
+      "complete_flag": "0x144D",
+      "map": [
+        47,
+        2
+      ]
+    },
+    {
+      "quest_id": 65,
+      "title": "怯场的男友",
+      "catalog_row": 65,
+      "catalog_row_offset": "0xe3b410",
+      "accept_flag": "0x0B9F",
+      "complete_flag": "0x0BA0",
+      "map": [
+        35,
+        4
+      ]
+    },
+    {
+      "quest_id": 96,
+      "title": "被遗忘的遗忘",
+      "catalog_row": 96,
+      "catalog_row_offset": "0xe3b67c",
+      "accept_flag": "0x0CD1",
+      "complete_flag": "0x0CD2",
+      "map": [
+        32,
+        3
+      ]
+    }
+  ],
+  "flag_pattern_hits": [
+    {
+      "quest_id": 4,
+      "title": "钢铁与黑曜",
+      "flag_kind": "accept",
+      "flag": "0x0B99",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "29990b",
+      "rom_offset": "0xee7609",
+      "rom_addr": "0x8ee7609",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x08EEA9E8",
+          "ins_addr": "0x08EEA9E8",
+          "name": "setflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0xee75d9",
+          "0xee7638"
+        ],
+        "text": "00EE75D9  fe 0a 6f 07 51 0b 2b 08 79 0e 18 0e f1 01 60 05\n00EE75E9  31 04 c8 11 0b 03 0b 0e 4f 0b 0b 3b fa 03 61 0c\n00EE75F9  0c 0d 52 0b 2b 0f 0b 0e e2 03 0b 0e a6 37 ff 00\n00EE7609  29 99 0b 2b 8e 16 07 01 01 00 00 08 29 9a 0b 02\n00EE7619  ff ff ff 4f ff 00 35 7a ee 08 28 40 00 05 9c 71\n00EE7629  d5 08 ff 14 f1 08 a7 03 f2 03 42 fe 0a 6f 09 94"
+      }
+    },
+    {
+      "quest_id": 4,
+      "title": "钢铁与黑曜",
+      "flag_kind": "accept",
+      "flag": "0x0B99",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "29990b",
+      "rom_offset": "0xeea843",
+      "rom_addr": "0x8eea843",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x08EEA9E8",
+          "ins_addr": "0x08EEA9E8",
+          "name": "setflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0xeea813",
+          "0xeea872"
+        ],
+        "text": "00EEA813  06 01 35 a8 ee 08 2a 8c 17 02 2b 9d 0b 06 01 39\n00EEA823  a8 ee 08 29 9a 0b 29 9b 0b 02 ff ff ff ff ff ff\n00EEA833  ff ff 29 8c 17 02 29 9a 0b 2a 9b 0b 2a 46 15 02\n00EEA843  29 99 0b 2b 8e 16 07 01 01 00 00 08 29 9a 0b 02\n00EEA853  ff 29 46 15 2b 9c 0b 06 01 69 a8 ee 08 2a 9a 0b\n00EEA863  65 01 00 0a 02 ff 2b 9d 0b 06 01 de a9 ee 08 29"
+      }
+    },
+    {
+      "quest_id": 4,
+      "title": "钢铁与黑曜",
+      "flag_kind": "accept",
+      "flag": "0x0B99",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "29990b",
+      "rom_offset": "0xeea9e8",
+      "rom_addr": "0x8eea9e8",
+      "is_existing_instruction_address": true,
+      "existing_exact_instruction": {
+        "script": "0x08EEA9E8",
+        "ins_addr": "0x08EEA9E8",
+        "name": "setflag"
+      },
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x08EEA9E8",
+          "ins_addr": "0x08EEA9E8",
+          "name": "setflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0xeea9b8",
+          "0xeeaa17"
+        ],
+        "text": "00EEA9B8  08 04 6a 2b 9c 08 16 06 80 fb 00 04 85 2b 9c 08\n00EEA9C8  0f 00 09 a2 ee 08 09 06 04 99 2b 9c 08 04 a8 2b\n00EEA9D8  9c 08 28 05 00 02 29 9a 0b 2a 9b 0b 2a 46 15 02\n00EEA9E8  29 99 0b 2b 8e 16 06 01 f9 a9 ee 08 29 9a 0b 02\n00EEA9F8  ff 29 46 15 2b 9c 0b 06 01 0e aa ee 08 2a 9a 0b\n00EEAA08  65 01 00 0a 02 ff 2b 9d 0b 06 01 1f aa ee 08 29"
+      }
+    },
+    {
+      "quest_id": 4,
+      "title": "钢铁与黑曜",
+      "flag_kind": "accept",
+      "flag": "0x0B99",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "29990b",
+      "rom_offset": "0x1cd346c",
+      "rom_addr": "0x9cd346c",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x08EEA9E8",
+          "ins_addr": "0x08EEA9E8",
+          "name": "setflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0x1cd343c",
+          "0x1cd349b"
+        ],
+        "text": "01CD343C  01 00 16 01 80 01 00 16 02 80 1c 00 16 03 80 02\n01CD344C  00 23 51 64 9b 08 0f 00 54 c9 d9 09 09 06 23 01\n01CD345C  01 fb 08 4f 2b 00 ed 35 cd 09 51 2b 00 53 2b 00\n01CD346C  29 99 0b 23 65 f7 d2 09 6b 02 04 4c 2b 9c 08 0f\n01CD347C  00 d7 c9 d9 09 04 6a 2b 9c 08 03 04 85 2b 9c 08\n01CD348C  a1 00 00 ff 00 03 04 99 2b 9c 08 03 04 a8 2b 9c"
+      }
+    },
+    {
+      "quest_id": 4,
+      "title": "钢铁与黑曜",
+      "flag_kind": "complete",
+      "flag": "0x0B9A",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "299a0b",
+      "rom_offset": "0xee7615",
+      "rom_addr": "0x8ee7615",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x08EEA9E8",
+          "ins_addr": "0x08EEA9F4",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA0E",
+          "ins_addr": "0x08EEAA17",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA1F",
+          "ins_addr": "0x08EEAA1F",
+          "name": "setflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0xee75e5",
+          "0xee7644"
+        ],
+        "text": "00EE75E5  f1 01 60 05 31 04 c8 11 0b 03 0b 0e 4f 0b 0b 3b\n00EE75F5  fa 03 61 0c 0c 0d 52 0b 2b 0f 0b 0e e2 03 0b 0e\n00EE7605  a6 37 ff 00 29 99 0b 2b 8e 16 07 01 01 00 00 08\n00EE7615  29 9a 0b 02 ff ff ff 4f ff 00 35 7a ee 08 28 40\n00EE7625  00 05 9c 71 d5 08 ff 14 f1 08 a7 03 f2 03 42 fe\n00EE7635  0a 6f 09 94 0e 18 01 60 05 31 02 ac 0d 78 02 68"
+      }
+    },
+    {
+      "quest_id": 4,
+      "title": "钢铁与黑曜",
+      "flag_kind": "complete",
+      "flag": "0x0B9A",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "299a0b",
+      "rom_offset": "0xeea826",
+      "rom_addr": "0x8eea826",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x08EEA9E8",
+          "ins_addr": "0x08EEA9F4",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA0E",
+          "ins_addr": "0x08EEAA17",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA1F",
+          "ins_addr": "0x08EEAA1F",
+          "name": "setflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0xeea7f6",
+          "0xeea855"
+        ],
+        "text": "00EEA7F6  91 0b 07 01 04 a8 ee 08 05 2d 53 af 08 ff 29 97\n00EEA806  0b 03 ff 2a 97 0b 2a 98 0b 03 2b 8e 16 06 01 35\n00EEA816  a8 ee 08 2a 8c 17 02 2b 9d 0b 06 01 39 a8 ee 08\n00EEA826  29 9a 0b 29 9b 0b 02 ff ff ff ff ff ff ff ff 29\n00EEA836  8c 17 02 29 9a 0b 2a 9b 0b 2a 46 15 02 29 99 0b\n00EEA846  2b 8e 16 07 01 01 00 00 08 29 9a 0b 02 ff 29 46"
+      }
+    },
+    {
+      "quest_id": 4,
+      "title": "钢铁与黑曜",
+      "flag_kind": "complete",
+      "flag": "0x0B9A",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "299a0b",
+      "rom_offset": "0xeea839",
+      "rom_addr": "0x8eea839",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x08EEA9E8",
+          "ins_addr": "0x08EEA9F4",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA0E",
+          "ins_addr": "0x08EEAA17",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA1F",
+          "ins_addr": "0x08EEAA1F",
+          "name": "setflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0xeea809",
+          "0xeea868"
+        ],
+        "text": "00EEA809  2a 97 0b 2a 98 0b 03 2b 8e 16 06 01 35 a8 ee 08\n00EEA819  2a 8c 17 02 2b 9d 0b 06 01 39 a8 ee 08 29 9a 0b\n00EEA829  29 9b 0b 02 ff ff ff ff ff ff ff ff 29 8c 17 02\n00EEA839  29 9a 0b 2a 9b 0b 2a 46 15 02 29 99 0b 2b 8e 16\n00EEA849  07 01 01 00 00 08 29 9a 0b 02 ff 29 46 15 2b 9c\n00EEA859  0b 06 01 69 a8 ee 08 2a 9a 0b 65 01 00 0a 02 ff"
+      }
+    },
+    {
+      "quest_id": 4,
+      "title": "钢铁与黑曜",
+      "flag_kind": "complete",
+      "flag": "0x0B9A",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "299a0b",
+      "rom_offset": "0xeea84f",
+      "rom_addr": "0x8eea84f",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x08EEA9E8",
+          "ins_addr": "0x08EEA9F4",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA0E",
+          "ins_addr": "0x08EEAA17",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA1F",
+          "ins_addr": "0x08EEAA1F",
+          "name": "setflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0xeea81f",
+          "0xeea87e"
+        ],
+        "text": "00EEA81F  0b 06 01 39 a8 ee 08 29 9a 0b 29 9b 0b 02 ff ff\n00EEA82F  ff ff ff ff ff ff 29 8c 17 02 29 9a 0b 2a 9b 0b\n00EEA83F  2a 46 15 02 29 99 0b 2b 8e 16 07 01 01 00 00 08\n00EEA84F  29 9a 0b 02 ff 29 46 15 2b 9c 0b 06 01 69 a8 ee\n00EEA85F  08 2a 9a 0b 65 01 00 0a 02 ff 2b 9d 0b 06 01 de\n00EEA86F  a9 ee 08 29 9a 0b 29 9b 0b 02 0f 00 33 ac ee 08"
+      }
+    },
+    {
+      "quest_id": 4,
+      "title": "钢铁与黑曜",
+      "flag_kind": "complete",
+      "flag": "0x0B9A",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "299a0b",
+      "rom_offset": "0xeea872",
+      "rom_addr": "0x8eea872",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x08EEA9E8",
+          "ins_addr": "0x08EEA9F4",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA0E",
+          "ins_addr": "0x08EEAA17",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA1F",
+          "ins_addr": "0x08EEAA1F",
+          "name": "setflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0xeea842",
+          "0xeea8a1"
+        ],
+        "text": "00EEA842  02 29 99 0b 2b 8e 16 07 01 01 00 00 08 29 9a 0b\n00EEA852  02 ff 29 46 15 2b 9c 0b 06 01 69 a8 ee 08 2a 9a\n00EEA862  0b 65 01 00 0a 02 ff 2b 9d 0b 06 01 de a9 ee 08\n00EEA872  29 9a 0b 29 9b 0b 02 0f 00 33 ac ee 08 09 02 02\n00EEA882  ff 2f 99 00 97 01 23 01 00 8b 08 11 40 12 00 00\n00EEA892  04 0f 00 29 9f ee 08 09 06 28 05 00 11 00 12 00"
+      }
+    },
+    {
+      "quest_id": 4,
+      "title": "钢铁与黑曜",
+      "flag_kind": "complete",
+      "flag": "0x0B9A",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "299a0b",
+      "rom_offset": "0xeea9de",
+      "rom_addr": "0x8eea9de",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x08EEA9E8",
+          "ins_addr": "0x08EEA9F4",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA0E",
+          "ins_addr": "0x08EEAA17",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA1F",
+          "ins_addr": "0x08EEAA1F",
+          "name": "setflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0xeea9ae",
+          "0xeeaa0d"
+        ],
+        "text": "00EEA9AE  04 4c 2b 9c 08 0f 00 35 0b 9d 08 04 6a 2b 9c 08\n00EEA9BE  16 06 80 fb 00 04 85 2b 9c 08 0f 00 09 a2 ee 08\n00EEA9CE  09 06 04 99 2b 9c 08 04 a8 2b 9c 08 28 05 00 02\n00EEA9DE  29 9a 0b 2a 9b 0b 2a 46 15 02 29 99 0b 2b 8e 16\n00EEA9EE  06 01 f9 a9 ee 08 29 9a 0b 02 ff 29 46 15 2b 9c\n00EEA9FE  0b 06 01 0e aa ee 08 2a 9a 0b 65 01 00 0a 02 ff"
+      }
+    },
+    {
+      "quest_id": 4,
+      "title": "钢铁与黑曜",
+      "flag_kind": "complete",
+      "flag": "0x0B9A",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "299a0b",
+      "rom_offset": "0xeea9f4",
+      "rom_addr": "0x8eea9f4",
+      "is_existing_instruction_address": true,
+      "existing_exact_instruction": {
+        "script": "0x08EEA9E8",
+        "ins_addr": "0x08EEA9F4",
+        "name": "setflag"
+      },
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x08EEA9E8",
+          "ins_addr": "0x08EEA9F4",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA0E",
+          "ins_addr": "0x08EEAA17",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA1F",
+          "ins_addr": "0x08EEAA1F",
+          "name": "setflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0xeea9c4",
+          "0xeeaa23"
+        ],
+        "text": "00EEA9C4  85 2b 9c 08 0f 00 09 a2 ee 08 09 06 04 99 2b 9c\n00EEA9D4  08 04 a8 2b 9c 08 28 05 00 02 29 9a 0b 2a 9b 0b\n00EEA9E4  2a 46 15 02 29 99 0b 2b 8e 16 06 01 f9 a9 ee 08\n00EEA9F4  29 9a 0b 02 ff 29 46 15 2b 9c 0b 06 01 0e aa ee\n00EEAA04  08 2a 9a 0b 65 01 00 0a 02 ff 2b 9d 0b 06 01 1f\n00EEAA14  aa ee 08 29 9a 0b 29 9b 0b 02 ff 29 9a 0b 2a 9b"
+      }
+    },
+    {
+      "quest_id": 4,
+      "title": "钢铁与黑曜",
+      "flag_kind": "complete",
+      "flag": "0x0B9A",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "299a0b",
+      "rom_offset": "0xeeaa17",
+      "rom_addr": "0x8eeaa17",
+      "is_existing_instruction_address": true,
+      "existing_exact_instruction": {
+        "script": "0x08EEAA0E",
+        "ins_addr": "0x08EEAA17",
+        "name": "setflag"
+      },
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x08EEA9E8",
+          "ins_addr": "0x08EEA9F4",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA0E",
+          "ins_addr": "0x08EEAA17",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA1F",
+          "ins_addr": "0x08EEAA1F",
+          "name": "setflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0xeea9e7",
+          "0xeeaa46"
+        ],
+        "text": "00EEA9E7  02 29 99 0b 2b 8e 16 06 01 f9 a9 ee 08 29 9a 0b\n00EEA9F7  02 ff 29 46 15 2b 9c 0b 06 01 0e aa ee 08 2a 9a\n00EEAA07  0b 65 01 00 0a 02 ff 2b 9d 0b 06 01 1f aa ee 08\n00EEAA17  29 9a 0b 29 9b 0b 02 ff 29 9a 0b 2a 9b 0b 2a 46\n00EEAA27  15 02 07 8e 0a c8 1c 80 1c 62 04 e9 0e 1e 0b e3\n00EEAA37  0b 25 08 9e 0e 50 0e 4f b0 b0 ff 00 2b 9d 0b 06"
+      }
+    },
+    {
+      "quest_id": 4,
+      "title": "钢铁与黑曜",
+      "flag_kind": "complete",
+      "flag": "0x0B9A",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "299a0b",
+      "rom_offset": "0xeeaa1f",
+      "rom_addr": "0x8eeaa1f",
+      "is_existing_instruction_address": true,
+      "existing_exact_instruction": {
+        "script": "0x08EEAA1F",
+        "ins_addr": "0x08EEAA1F",
+        "name": "setflag"
+      },
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x08EEA9E8",
+          "ins_addr": "0x08EEA9F4",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA0E",
+          "ins_addr": "0x08EEAA17",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA1F",
+          "ins_addr": "0x08EEAA1F",
+          "name": "setflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0xeea9ef",
+          "0xeeaa4e"
+        ],
+        "text": "00EEA9EF  01 f9 a9 ee 08 29 9a 0b 02 ff 29 46 15 2b 9c 0b\n00EEA9FF  06 01 0e aa ee 08 2a 9a 0b 65 01 00 0a 02 ff 2b\n00EEAA0F  9d 0b 06 01 1f aa ee 08 29 9a 0b 29 9b 0b 02 ff\n00EEAA1F  29 9a 0b 2a 9b 0b 2a 46 15 02 07 8e 0a c8 1c 80\n00EEAA2F  1c 62 04 e9 0e 1e 0b e3 0b 25 08 9e 0e 50 0e 4f\n00EEAA3F  b0 b0 ff 00 2b 9d 0b 06 01 c0 63 9d 08 2b 8e 16"
+      }
+    },
+    {
+      "quest_id": 4,
+      "title": "钢铁与黑曜",
+      "flag_kind": "complete",
+      "flag": "0x0B9A",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "299a0b",
+      "rom_offset": "0x1cd341f",
+      "rom_addr": "0x9cd341f",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x08EEA9E8",
+          "ins_addr": "0x08EEA9F4",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA0E",
+          "ins_addr": "0x08EEAA17",
+          "name": "setflag"
+        },
+        {
+          "script": "0x08EEAA1F",
+          "ins_addr": "0x08EEAA1F",
+          "name": "setflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0x1cd33ef",
+          "0x1cd344e"
+        ],
+        "text": "01CD33EF  34 cd 09 16 06 80 01 01 04 87 34 cd 09 0f 00 18\n01CD33FF  c9 d9 09 09 03 04 92 34 cd 09 04 98 34 cd 09 28\n01CD340F  05 00 04 08 35 cd 09 51 00 00 53 01 00 53 22 00\n01CD341F  29 9a 0b 29 9b 0b 29 9c 0b 04 17 35 cd 09 28 05\n01CD342F  00 2f 02 00 0f 00 7c c9 d9 09 16 00 80 01 00 16\n01CD343F  01 80 01 00 16 02 80 1c 00 16 03 80 02 00 23 51"
+      }
+    },
+    {
+      "quest_id": 5,
+      "title": "霓虹灯外的月光",
+      "flag_kind": "accept",
+      "flag": "0x0B7F",
+      "mode": "checkflag_2B_flag_06",
+      "pattern_hex": "2b7f0b06",
+      "rom_offset": "0xee25ff",
+      "rom_addr": "0x8ee25ff",
+      "is_existing_instruction_address": true,
+      "existing_exact_instruction": {
+        "script": "0x08EE25FF",
+        "ins_addr": "0x08EE25FF",
+        "name": "checkflag"
+      },
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x08EE25FF",
+          "ins_addr": "0x08EE25FF",
+          "name": "checkflag"
+        },
+        {
+          "script": "0x08EEB105",
+          "ins_addr": "0x08EEB105",
+          "name": "checkflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0xee25cf",
+          "0xee262e"
+        ],
+        "text": "00EE25CF  ee 08 02 04 01 8f 9c 08 0f 00 fe 90 9c 08 04 08\n00EE25DF  8f 9c 08 0f 00 60 27 ee 08 09 05 04 ad 8f 9c 08\n00EE25EF  6b 28 05 00 21 0d 80 01 00 06 01 b6 26 ee 08 02\n00EE25FF  2b 7f 0b 06 01 0d 26 ee 08 2a 7e 0b 02 ff 29 7e\n00EE260F  0b 02 ff 5a 67 43 25 ee 08 66 6f 1a 08 20 00 21\n00EE261F  0d 80 00 00 06 01 14 04 f5 08 21 0d 80 01 00 06"
+      }
+    },
+    {
+      "quest_id": 5,
+      "title": "霓虹灯外的月光",
+      "flag_kind": "accept",
+      "flag": "0x0B7F",
+      "mode": "checkflag_2B_flag_06",
+      "pattern_hex": "2b7f0b06",
+      "rom_offset": "0xeeb105",
+      "rom_addr": "0x8eeb105",
+      "is_existing_instruction_address": true,
+      "existing_exact_instruction": {
+        "script": "0x08EEB105",
+        "ins_addr": "0x08EEB105",
+        "name": "checkflag"
+      },
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x08EE25FF",
+          "ins_addr": "0x08EE25FF",
+          "name": "checkflag"
+        },
+        {
+          "script": "0x08EEB105",
+          "ins_addr": "0x08EEB105",
+          "name": "checkflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0xeeb0d5",
+          "0xeeb134"
+        ],
+        "text": "00EEB0D5  0a 5f 07 b6 0b 12 3e 0a 5f 07 b6 3c ff 00 16 04\n00EEB0E5  80 09 00 23 c1 a6 96 08 02 03 1f 0d e6 0b aa 0f\n00EEB0F5  05 07 28 ff 00 2b 8e 16 06 01 05 b1 ee 08 02 ff\n00EEB105  2b 7f 0b 06 01 13 b1 ee 08 29 a8 0b 02 ff 2a a8\n00EEB115  0b 02 2b a9 0b 06 01 25 b1 ee 08 29 b4 0b 02 ff\n00EEB125  2b 18 0c 06 01 33 b1 ee 08 2a b4 0b 02 ff 29 b4"
+      }
+    },
+    {
+      "quest_id": 5,
+      "title": "霓虹灯外的月光",
+      "flag_kind": "accept",
+      "flag": "0x0B7F",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "297f0b",
+      "rom_offset": "0xcfdf2",
+      "rom_addr": "0x80cfdf2",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0xcfdc2",
+          "0xcfe21"
+        ],
+        "text": "000CFDC2  2d f0 3f f8 03 20 32 f7 1e f9 32 f7 fa fe 01 20\n000CFDD2  32 f7 19 f9 32 f7 f5 fe 00 20 32 f7 14 f9 32 f7\n000CFDE2  f0 fe 34 f7 72 f8 0c 48 0d 49 bd 19 ed 00 6d 18\n000CFDF2  29 7f 0b 4a 12 78 01 3a 12 06 12 0e 0a 4b 0a 4c\n000CFE02  24 88 00 94 64 f0 97 fc a8 8a 01 30 a8 82 13 e1\n000CFE12  00 00 b8 7a 03 02 3c 3f 00 03 84 42 02 02 90 50"
+      }
+    },
+    {
+      "quest_id": 5,
+      "title": "霓虹灯外的月光",
+      "flag_kind": "accept",
+      "flag": "0x0B7F",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "297f0b",
+      "rom_offset": "0x1cd4219",
+      "rom_addr": "0x9cd4219",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd41e9",
+          "0x1cd4248"
+        ],
+        "text": "01CD41E9  28 05 00 2f 02 00 0f 00 81 e0 d9 09 16 00 80 01\n01CD41F9  00 16 01 80 01 00 16 02 80 1c 00 16 03 80 02 00\n01CD4209  23 51 64 9b 08 17 35 51 0a 00 90 e0 2e 00 00 00\n01CD4219  29 7f 0b 28 05 00 0f 00 a0 e0 d9 09 09 06 23 01\n01CD4229  01 fb 08 28 05 00 3a 01 7c ff 25 00 32 00 28 10\n01CD4239  00 2a 41 10 28 ff 00 02 04 4c 2b 9c 08 0f 00 c5"
+      }
+    },
+    {
+      "quest_id": 6,
+      "title": "无法冻结的时间",
+      "flag_kind": "accept",
+      "flag": "0x0CE9",
+      "mode": "checkflag_2B_flag_06",
+      "pattern_hex": "2be90c06",
+      "rom_offset": "0x7b3471",
+      "rom_addr": "0x87b3471",
+      "is_existing_instruction_address": true,
+      "existing_exact_instruction": {
+        "script": "0x087B346E",
+        "ins_addr": "0x087B3471",
+        "name": "checkflag"
+      },
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x087B346E",
+          "ins_addr": "0x087B3471",
+          "name": "checkflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0x7b3441",
+          "0x7b34a0"
+        ],
+        "text": "007B3441  66 2f 03 00 28 10 00 68 6c 02 ff f9 e4 07 5b 08\n007B3451  bc 0e f6 0e f6 ff 00 16 04 80 5d 00 23 c1 a6 96\n007B3461  08 02 16 04 80 5e 00 23 c1 a6 96 08 02 29 ea 0c\n007B3471  2b e9 0c 06 01 7c 34 7b 08 02 ff 2b ec 0c 06 01\n007B3481  8a 34 7b 08 2a ea 0c 02 ff 02 2b ec 0c 06 01 d4\n007B3491  36 7b 08 02 05 f5 c0 7b 08 ff 60 fe ff fc 06 00"
+      }
+    },
+    {
+      "quest_id": 6,
+      "title": "无法冻结的时间",
+      "flag_kind": "accept",
+      "flag": "0x0CE9",
+      "mode": "checkflag_2B_flag_06",
+      "pattern_hex": "2be90c06",
+      "rom_offset": "0x1cd5b72",
+      "rom_addr": "0x9cd5b72",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [
+        {
+          "script": "0x087B346E",
+          "ins_addr": "0x087B3471",
+          "name": "checkflag"
+        }
+      ],
+      "hex_pm48": {
+        "range": [
+          "0x1cd5b42",
+          "0x1cd5ba1"
+        ],
+        "text": "01CD5B42  68 00 67 73 28 da 09 66 69 67 77 28 da 09 66 28\n01CD5B52  10 00 2f 68 00 69 67 73 28 da 09 66 2f 03 00 28\n01CD5B62  10 00 68 6b 02 69 5a 2b eb 0c 06 01 ac 5c cd 09\n01CD5B72  2b e9 0c 06 01 89 5c cd 09 04 c0 60 cd 09 16 06\n01CD5B82  80 0d 01 04 d1 60 cd 09 0f 00 fc 3f da 09 09 03\n01CD5B92  04 dc 60 cd 09 04 e2 60 cd 09 28 05 00 2f 15 00"
+      }
+    },
+    {
+      "quest_id": 6,
+      "title": "无法冻结的时间",
+      "flag_kind": "accept",
+      "flag": "0x0CE9",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "29e90c",
+      "rom_offset": "0x1cd5c7d",
+      "rom_addr": "0x9cd5c7d",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd5c4d",
+          "0x1cd5cac"
+        ],
+        "text": "01CD5C4D  03 80 02 00 23 51 64 9b 08 69 04 c0 60 cd 09 16\n01CD5C5D  06 80 7b 00 04 d1 60 cd 09 0f 00 96 42 da 09 09\n01CD5C6D  03 04 dc 60 cd 09 04 e2 60 cd 09 97 01 53 0f 80\n01CD5C7D  29 e9 0c 97 00 23 01 01 fb 08 6b 02 04 c0 60 cd\n01CD5C8D  09 16 06 80 7b 00 04 d1 60 cd 09 0f 00 dd 43 da\n01CD5C9D  09 09 03 04 dc 60 cd 09 04 e2 60 cd 09 6b 02 04"
+      }
+    },
+    {
+      "quest_id": 6,
+      "title": "无法冻结的时间",
+      "flag_kind": "complete",
+      "flag": "0x0CEB",
+      "mode": "checkflag_2B_flag_06",
+      "pattern_hex": "2beb0c06",
+      "rom_offset": "0x1cd5b69",
+      "rom_addr": "0x9cd5b69",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd5b39",
+          "0x1cd5b98"
+        ],
+        "text": "01CD5B39  05 3e 5b cd 09 28 10 00 2f 68 00 67 73 28 da 09\n01CD5B49  66 69 67 77 28 da 09 66 28 10 00 2f 68 00 69 67\n01CD5B59  73 28 da 09 66 2f 03 00 28 10 00 68 6b 02 69 5a\n01CD5B69  2b eb 0c 06 01 ac 5c cd 09 2b e9 0c 06 01 89 5c\n01CD5B79  cd 09 04 c0 60 cd 09 16 06 80 0d 01 04 d1 60 cd\n01CD5B89  09 0f 00 fc 3f da 09 09 03 04 dc 60 cd 09 04 e2"
+      }
+    },
+    {
+      "quest_id": 6,
+      "title": "无法冻结的时间",
+      "flag_kind": "complete",
+      "flag": "0x0CEB",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "29eb0c",
+      "rom_offset": "0x1cd6051",
+      "rom_addr": "0x9cd6051",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd6021",
+          "0x1cd6080"
+        ],
+        "text": "01CD6021  09 31 03 01 32 66 68 28 15 00 04 c0 60 cd 09 16\n01CD6031  06 80 11 01 04 d1 60 cd 09 0f 00 fc 4f da 09 09\n01CD6041  03 04 dc 60 cd 09 04 e2 60 cd 09 97 01 53 01 00\n01CD6051  29 eb 0c 04 e8 60 cd 09 28 05 00 0f 00 c9 50 da\n01CD6061  09 09 06 28 05 00 04 f4 60 cd 09 97 00 28 05 00\n01CD6071  36 21 02 2f 02 00 0f 00 26 51 da 09 16 00 80 01"
+      }
+    },
+    {
+      "quest_id": 36,
+      "title": "沉睡的潜能",
+      "flag_kind": "accept",
+      "flag": "0x0C70",
+      "mode": "checkflag_2B_flag_06",
+      "pattern_hex": "2b700c06",
+      "rom_offset": "0x1cd019f",
+      "rom_addr": "0x9cd019f",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd016f",
+          "0x1cd01ce"
+        ],
+        "text": "01CD016F  21 0d 80 02 00 06 01 86 01 cd 09 21 0d 80 7f 00\n01CD017F  06 01 86 01 cd 09 03 16 0d 80 02 00 16 04 80 02\n01CD018F  00 03 00 c0 46 69 5a 2b 71 0c 06 01 44 03 cd 09\n01CD019F  2b 70 0c 06 01 fb 01 cd 09 0f 00 ef 14 da 09 09\n01CD01AF  06 2f 15 00 4f 0f 80 95 04 cd 09 28 40 00 0f 00\n01CD01BF  b2 15 da 09 09 05 21 0d 80 01 00 06 01 da 01 cd"
+      }
+    },
+    {
+      "quest_id": 36,
+      "title": "沉睡的潜能",
+      "flag_kind": "accept",
+      "flag": "0x0C70",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "29700c",
+      "rom_offset": "0x1cd01f1",
+      "rom_addr": "0x9cd01f1",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd01c1",
+          "0x1cd0220"
+        ],
+        "text": "01CD01C1  da 09 09 05 21 0d 80 01 00 06 01 da 01 cd 09 0f\n01CD01D1  00 ba 16 da 09 09 06 6b 02 6b 28 05 00 0f 00 96\n01CD01E1  14 da 09 04 75 04 cd 09 0f 00 4d 16 da 09 09 06\n01CD01F1  29 70 0c 23 01 01 fb 08 6b 02 2b ea 16 06 00 ea\n01CD0201  02 cd 09 2b eb 16 06 00 ea 02 cd 09 2b ec 16 06\n01CD0211  00 ea 02 cd 09 2b ed 16 06 00 ea 02 cd 09 2b ee"
+      }
+    },
+    {
+      "quest_id": 36,
+      "title": "沉睡的潜能",
+      "flag_kind": "complete",
+      "flag": "0x0C71",
+      "mode": "checkflag_2B_flag_06",
+      "pattern_hex": "2b710c06",
+      "rom_offset": "0x1cd0196",
+      "rom_addr": "0x9cd0196",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd0166",
+          "0x1cd01c5"
+        ],
+        "text": "01CD0166  25 58 01 27 19 04 80 0d 80 21 0d 80 02 00 06 01\n01CD0176  86 01 cd 09 21 0d 80 7f 00 06 01 86 01 cd 09 03\n01CD0186  16 0d 80 02 00 16 04 80 02 00 03 00 c0 46 69 5a\n01CD0196  2b 71 0c 06 01 44 03 cd 09 2b 70 0c 06 01 fb 01\n01CD01A6  cd 09 0f 00 ef 14 da 09 09 06 2f 15 00 4f 0f 80\n01CD01B6  95 04 cd 09 28 40 00 0f 00 b2 15 da 09 09 05 21"
+      }
+    },
+    {
+      "quest_id": 36,
+      "title": "沉睡的潜能",
+      "flag_kind": "complete",
+      "flag": "0x0C71",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "29710c",
+      "rom_offset": "0x1cd032a",
+      "rom_addr": "0x9cd032a",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd02fa",
+          "0x1cd0359"
+        ],
+        "text": "01CD02FA  09 06 1a 00 80 2a 01 1a 01 80 01 00 09 00 69 0f\n01CD030A  00 fb 17 da 09 09 06 28 05 00 0f 00 b1 14 da 09\n01CD031A  04 75 04 cd 09 17 35 51 08 00 90 28 23 00 00 00\n01CD032A  29 71 0c 0f 00 cc 14 da 09 09 06 23 01 01 fb 08\n01CD033A  0f 00 b5 18 da 09 09 06 6b 02 16 06 80 00 00 0f\n01CD034A  00 8e 19 da 09 25 25 00 16 06 80 01 00 0f 00 9b"
+      }
+    },
+    {
+      "quest_id": 59,
+      "title": "五彩斑斓的头巾",
+      "flag_kind": "accept",
+      "flag": "0x0B92",
+      "mode": "checkflag_2B_flag_06",
+      "pattern_hex": "2b920b06",
+      "rom_offset": "0x1cd312c",
+      "rom_addr": "0x9cd312c",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd30fc",
+          "0x1cd315b"
+        ],
+        "text": "01CD30FC  51 06 00 5b 06 00 02 5b ff 00 03 28 10 00 03 12\n01CD310C  fe 10 fe 10 12 12 fe 12 10 10 fe 10 10 12 12 11\n01CD311C  fe 62 fe 13 fe 69 5a 2b 93 0b 06 01 1a 33 cd 09\n01CD312C  2b 92 0b 06 01 db 31 cd 09 04 31 33 cd 09 04 47\n01CD313C  33 cd 09 0f 00 50 bf d9 09 09 06 04 58 33 cd 09\n01CD314C  28 05 00 2b 96 10 06 01 5f 31 cd 09 04 3c 33 cd"
+      }
+    },
+    {
+      "quest_id": 59,
+      "title": "五彩斑斓的头巾",
+      "flag_kind": "accept",
+      "flag": "0x0B92",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "29920b",
+      "rom_offset": "0x1cd31d1",
+      "rom_addr": "0x9cd31d1",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd31a1",
+          "0x1cd3200"
+        ],
+        "text": "01CD31A1  28 05 00 2f 02 00 0f 00 48 c7 d9 09 16 00 80 01\n01CD31B1  00 16 01 80 01 00 16 02 80 1c 00 16 03 80 02 00\n01CD31C1  23 51 64 9b 08 28 05 00 0f 00 ff c1 d9 09 09 06\n01CD31D1  29 92 0b 23 01 01 fb 08 6b 02 04 47 33 cd 09 0f\n01CD31E1  00 2f c4 d9 09 09 06 04 58 33 cd 09 6b 2f 15 00\n01CD31F1  4f 07 00 60 33 cd 09 28 40 00 47 fe 00 01 00 21"
+      }
+    },
+    {
+      "quest_id": 59,
+      "title": "五彩斑斓的头巾",
+      "flag_kind": "complete",
+      "flag": "0x0B93",
+      "mode": "checkflag_2B_flag_06",
+      "pattern_hex": "2b930b06",
+      "rom_offset": "0x1cd3123",
+      "rom_addr": "0x9cd3123",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd30f3",
+          "0x1cd3152"
+        ],
+        "text": "01CD30F3  cd 09 28 20 00 5b 05 00 01 51 06 00 5b 06 00 02\n01CD3103  5b ff 00 03 28 10 00 03 12 fe 10 fe 10 12 12 fe\n01CD3113  12 10 10 fe 10 10 12 12 11 fe 62 fe 13 fe 69 5a\n01CD3123  2b 93 0b 06 01 1a 33 cd 09 2b 92 0b 06 01 db 31\n01CD3133  cd 09 04 31 33 cd 09 04 47 33 cd 09 0f 00 50 bf\n01CD3143  d9 09 09 06 04 58 33 cd 09 28 05 00 2b 96 10 06"
+      }
+    },
+    {
+      "quest_id": 59,
+      "title": "五彩斑斓的头巾",
+      "flag_kind": "complete",
+      "flag": "0x0B93",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "29930b",
+      "rom_offset": "0x1cd32f0",
+      "rom_addr": "0x9cd32f0",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd32c0",
+          "0x1cd331f"
+        ],
+        "text": "01CD32C0  28 05 00 2f 02 00 0f 00 67 c7 d9 09 16 00 80 01\n01CD32D0  00 16 01 80 01 00 16 02 80 1c 00 16 03 80 02 00\n01CD32E0  23 51 64 9b 08 17 35 51 0a 00 90 10 27 00 00 00\n01CD32F0  29 93 0b 28 05 00 0f 00 86 c7 d9 09 09 06 23 01\n01CD3300  01 fb 08 04 47 33 cd 09 0f 00 c1 c7 d9 09 09 06\n01CD3310  04 58 33 cd 09 28 05 00 6b 02 04 47 33 cd 09 0f"
+      }
+    },
+    {
+      "quest_id": 65,
+      "title": "怯场的男友",
+      "flag_kind": "accept",
+      "flag": "0x0B9F",
+      "mode": "checkflag_2B_flag_06",
+      "pattern_hex": "2b9f0b06",
+      "rom_offset": "0x1cd39d3",
+      "rom_addr": "0x9cd39d3",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd39a3",
+          "0x1cd3a02"
+        ],
+        "text": "01CD39A3  24 fe 65 fe 12 11 11 11 13 13 13 13 11 11 11 11\n01CD39B3  11 11 fe 13 12 11 11 11 13 13 13 13 11 11 11 11\n01CD39C3  11 11 fe 1f fe 69 5a 2b a0 0b 06 01 eb 3a cd 09\n01CD39D3  2b 9f 0b 06 01 5b 3a cd 09 04 4b 3b cd 09 0f 00\n01CD39E3  d7 ce d9 09 09 06 2b 96 10 06 01 f7 39 cd 09 05\n01CD39F3  e4 3a cd 09 2f 15 00 4f 0a 00 14 40 9d 08 28 40"
+      }
+    },
+    {
+      "quest_id": 65,
+      "title": "怯场的男友",
+      "flag_kind": "accept",
+      "flag": "0x0B9F",
+      "mode": "checkflag_2B_flag_06",
+      "pattern_hex": "2b9f0b06",
+      "rom_offset": "0x1cd3af7",
+      "rom_addr": "0x9cd3af7",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd3ac7",
+          "0x1cd3b26"
+        ],
+        "text": "01CD3AC7  29 a0 0b 28 05 00 0f 00 aa d1 d9 09 09 06 23 01\n01CD3AD7  01 fb 08 0f 00 41 d0 d9 09 09 06 6b 02 04 56 3b\n01CD3AE7  cd 09 6b 02 0f 00 41 d0 d9 09 09 06 6b 02 69 5a\n01CD3AF7  2b 9f 0b 06 00 1c 3b cd 09 2b a1 0b 06 01 41 3b\n01CD3B07  cd 09 2b d0 18 06 01 26 3b cd 09 0f 00 9b d0 d9\n01CD3B17  09 09 06 6b 02 0f 00 61 d0 d9 09 09 06 6b 02 0f"
+      }
+    },
+    {
+      "quest_id": 65,
+      "title": "怯场的男友",
+      "flag_kind": "accept",
+      "flag": "0x0B9F",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "299f0b",
+      "rom_offset": "0x1cd3a51",
+      "rom_addr": "0x9cd3a51",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd3a21",
+          "0x1cd3a80"
+        ],
+        "text": "01CD3A21  3a cd 09 28 05 00 2f 02 00 0f 00 74 d1 d9 09 16\n01CD3A31  00 80 01 00 16 01 80 01 00 16 02 80 1c 00 16 03\n01CD3A41  80 02 00 23 51 64 9b 08 0f 00 7c cf d9 09 09 06\n01CD3A51  29 9f 0b 23 01 01 fb 08 6b 02 2b a1 0b 06 01 81\n01CD3A61  3a cd 09 2b d0 18 06 01 77 3a cd 09 0f 00 7c cf\n01CD3A71  d9 09 09 06 6b 02 0f 00 c3 cf d9 09 09 06 6b 02"
+      }
+    },
+    {
+      "quest_id": 65,
+      "title": "怯场的男友",
+      "flag_kind": "complete",
+      "flag": "0x0BA0",
+      "mode": "checkflag_2B_flag_06",
+      "pattern_hex": "2ba00b06",
+      "rom_offset": "0x1cd39ca",
+      "rom_addr": "0x9cd39ca",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd399a",
+          "0x1cd39f9"
+        ],
+        "text": "01CD399A  4d fe 13 10 fe 10 fe 60 fe 24 fe 65 fe 12 11 11\n01CD39AA  11 13 13 13 13 11 11 11 11 11 11 fe 13 12 11 11\n01CD39BA  11 13 13 13 13 11 11 11 11 11 11 fe 1f fe 69 5a\n01CD39CA  2b a0 0b 06 01 eb 3a cd 09 2b 9f 0b 06 01 5b 3a\n01CD39DA  cd 09 04 4b 3b cd 09 0f 00 d7 ce d9 09 09 06 2b\n01CD39EA  96 10 06 01 f7 39 cd 09 05 e4 3a cd 09 2f 15 00"
+      }
+    },
+    {
+      "quest_id": 65,
+      "title": "怯场的男友",
+      "flag_kind": "complete",
+      "flag": "0x0BA0",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "29a00b",
+      "rom_offset": "0x1cd3ac7",
+      "rom_addr": "0x9cd3ac7",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd3a97",
+          "0x1cd3af6"
+        ],
+        "text": "01CD3A97  28 05 00 2f 02 00 0f 00 8f d1 d9 09 16 00 80 01\n01CD3AA7  00 16 01 80 01 00 16 02 80 1c 00 16 03 80 02 00\n01CD3AB7  23 51 64 9b 08 17 35 51 05 00 90 70 17 00 00 00\n01CD3AC7  29 a0 0b 28 05 00 0f 00 aa d1 d9 09 09 06 23 01\n01CD3AD7  01 fb 08 0f 00 41 d0 d9 09 09 06 6b 02 04 56 3b\n01CD3AE7  cd 09 6b 02 0f 00 41 d0 d9 09 09 06 6b 02 69 5a"
+      }
+    },
+    {
+      "quest_id": 96,
+      "title": "被遗忘的遗忘",
+      "flag_kind": "accept",
+      "flag": "0x0CD1",
+      "mode": "checkflag_2B_flag_06",
+      "pattern_hex": "2bd10c06",
+      "rom_offset": "0x1cd08c5",
+      "rom_addr": "0x9cd08c5",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd0895",
+          "0x1cd08f4"
+        ],
+        "text": "01CD0895  00 80 13 00 1a 01 80 01 00 09 01 02 1a 00 80 13\n01CD08A5  00 1a 01 80 01 00 09 01 02 69 5a 0f 00 2e 13 da\n01CD08B5  09 09 02 6b 02 2b d2 0c 06 01 3b 2f cd 09 69 5a\n01CD08C5  2b d1 0c 06 01 2a 2f cd 09 04 29 30 cd 09 0f 00\n01CD08D5  e0 bc d9 09 09 06 2b 96 10 06 01 e9 08 cd 09 05\n01CD08E5  34 2f cd 09 2f 15 00 4f 05 00 14 40 9d 08 28 40"
+      }
+    },
+    {
+      "quest_id": 96,
+      "title": "被遗忘的遗忘",
+      "flag_kind": "accept",
+      "flag": "0x0CD1",
+      "mode": "checkflag_2B_flag_06",
+      "pattern_hex": "2bd10c06",
+      "rom_offset": "0x1cd2f49",
+      "rom_addr": "0x9cd2f49",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd2f19",
+          "0x1cd2f78"
+        ],
+        "text": "01CD2F19  1a 00 80 0b 80 1a 01 80 01 00 09 00 6c 28 05 00\n01CD2F29  03 0f 00 ac bd d9 09 09 06 6b 02 04 34 30 cd 09\n01CD2F39  6b 02 05 95 d8 16 08 2b d2 0c 06 01 24 30 cd 09\n01CD2F49  2b d1 0c 06 00 24 30 cd 09 69 5a 47 6f 00 01 00\n01CD2F59  21 0d 80 01 00 06 01 6e 2f cd 09 0f 00 1b be d9\n01CD2F69  09 09 06 6b 02 23 e5 ac d2 09 0f 00 4e be d9 09"
+      }
+    },
+    {
+      "quest_id": 96,
+      "title": "被遗忘的遗忘",
+      "flag_kind": "accept",
+      "flag": "0x0CD1",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "29d10c",
+      "rom_offset": "0x1cd0948",
+      "rom_addr": "0x9cd0948",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd0918",
+          "0x1cd0977"
+        ],
+        "text": "01CD0918  00 2f 02 00 0f 00 fe bd d9 09 16 00 80 01 00 16\n01CD0928  01 80 01 00 16 02 80 1c 00 16 03 80 02 00 23 51\n01CD0938  64 9b 08 0f 00 ac bd d9 09 09 06 23 01 01 fb 08\n01CD0948  29 d1 0c 6b 02 23 e5 ac d2 09 5a 21 cf 51 07 00\n01CD0958  06 01 13 0c cd 09 21 cf 51 01 00 06 01 c1 09 cd\n01CD0968  09 0f 00 52 00 da 09 09 06 2f 15 00 4f 0f 80 8c"
+      }
+    },
+    {
+      "quest_id": 96,
+      "title": "被遗忘的遗忘",
+      "flag_kind": "accept",
+      "flag": "0x0CD1",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "29d10c",
+      "rom_offset": "0x1d75b8e",
+      "rom_addr": "0x9d75b8e",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1d75b5e",
+          "0x1d75bbd"
+        ],
+        "text": "01D75B5E  be 4a d3 18 1b 8d 00 2b 08 d0 2b 00 43 33 1b 78\n01D75B6E  01 00 59 43 52 18 13 8d 00 2b 34 d1 2a 00 58 20\n01D75B7E  3e 32 11 78 02 00 4a 43 b4 4b 9b 18 1b 8d 00 2b\n01D75B8E  29 d1 0c 22 20 00 50 43 ae 4b c3 5c 08 98 1c 00\n01D75B9E  f1 f7 0f fb 00 28 1e d0 32 00 39 00 09 98 0d f0\n01D75BAE  56 ff 00 28 17 d1 1d 2c 15 d0 68 2c 13 d0 2c 2c"
+      }
+    },
+    {
+      "quest_id": 96,
+      "title": "被遗忘的遗忘",
+      "flag_kind": "complete",
+      "flag": "0x0CD2",
+      "mode": "checkflag_2B_flag_06",
+      "pattern_hex": "2bd20c06",
+      "rom_offset": "0x1cd08ba",
+      "rom_addr": "0x9cd08ba",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd088a",
+          "0x1cd08e9"
+        ],
+        "text": "01CD088A  25 00 1a 01 80 01 00 09 01 02 1a 00 80 13 00 1a\n01CD089A  01 80 01 00 09 01 02 1a 00 80 13 00 1a 01 80 01\n01CD08AA  00 09 01 02 69 5a 0f 00 2e 13 da 09 09 02 6b 02\n01CD08BA  2b d2 0c 06 01 3b 2f cd 09 69 5a 2b d1 0c 06 01\n01CD08CA  2a 2f cd 09 04 29 30 cd 09 0f 00 e0 bc d9 09 09\n01CD08DA  06 2b 96 10 06 01 e9 08 cd 09 05 34 2f cd 09 2f"
+      }
+    },
+    {
+      "quest_id": 96,
+      "title": "被遗忘的遗忘",
+      "flag_kind": "complete",
+      "flag": "0x0CD2",
+      "mode": "checkflag_2B_flag_06",
+      "pattern_hex": "2bd20c06",
+      "rom_offset": "0x1cd2f40",
+      "rom_addr": "0x9cd2f40",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd2f10",
+          "0x1cd2f6f"
+        ],
+        "text": "01CD2F10  01 00 09 00 6c 28 05 00 03 1a 00 80 0b 80 1a 01\n01CD2F20  80 01 00 09 00 6c 28 05 00 03 0f 00 ac bd d9 09\n01CD2F30  09 06 6b 02 04 34 30 cd 09 6b 02 05 95 d8 16 08\n01CD2F40  2b d2 0c 06 01 24 30 cd 09 2b d1 0c 06 00 24 30\n01CD2F50  cd 09 69 5a 47 6f 00 01 00 21 0d 80 01 00 06 01\n01CD2F60  6e 2f cd 09 0f 00 1b be d9 09 09 06 6b 02 23 e5"
+      }
+    },
+    {
+      "quest_id": 96,
+      "title": "被遗忘的遗忘",
+      "flag_kind": "complete",
+      "flag": "0x0CD2",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "29d20c",
+      "rom_offset": "0x160070",
+      "rom_addr": "0x8160070",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x160040",
+          "0x16009f"
+        ],
+        "text": "00160040  ad 62 04 08 89 66 04 08 61 64 04 08 81 55 04 08\n00160050  29 6b 04 08 b9 6a 04 08 99 58 04 08 39 58 04 08\n00160060  29 57 04 08 21 6e 04 08 d5 6f 04 08 ad 6e 04 08\n00160070  29 d2 0c 08 fd fd 09 08 21 fe 09 08 01 06 0a 08\n00160080  c5 a3 0c 08 19 88 d5 09 3d 88 d5 09 59 88 d5 09\n00160090  41 99 d5 09 c5 0e 0a 08 ed 0e 0a 08 09 9f d5 09"
+      }
+    },
+    {
+      "quest_id": 96,
+      "title": "被遗忘的遗忘",
+      "flag_kind": "complete",
+      "flag": "0x0CD2",
+      "mode": "setflag_29_flag",
+      "pattern_hex": "29d20c",
+      "rom_offset": "0x1cd3005",
+      "rom_addr": "0x9cd3005",
+      "is_existing_instruction_address": false,
+      "existing_exact_instruction": null,
+      "existing_scripts_with_same_flag": [],
+      "hex_pm48": {
+        "range": [
+          "0x1cd2fd5",
+          "0x1cd3034"
+        ],
+        "text": "01CD2FD5  28 05 00 2f 02 00 0f 00 c6 be d9 09 16 00 80 01\n01CD2FE5  00 16 01 80 01 00 16 02 80 1c 00 16 03 80 02 00\n01CD2FF5  23 51 64 9b 08 17 35 51 04 00 90 a0 0f 00 00 00\n01CD3005  29 d2 0c 0f 00 e3 be d9 09 09 06 23 01 01 fb 08\n01CD3015  0f 00 06 bf d9 09 09 06 23 65 f7 d2 09 6b 02 05\n01CD3025  19 16 17 08 4f 07 00 2c 06 f5 08 51 07 00 03 4f"
+      }
+    }
+  ],
+  "flag_pattern_hit_counts": {
+    "total": 44,
+    "already_existing_instruction_address": 7
+  },
+  "text_keyword_hits": {
+    "阿笔": {
+      "count": 7,
+      "hits": [
+        {
+          "addr": "0x089D3902",
+          "text": "桧皮镇道馆\\n馆主阿笔\\l陆行虫系精灵的专家",
+          "bytes": 39,
+          "raw": "17940a5f1065030704a5fe04a510c801010187fa08ee0e5b02680dd9075b08bc030b10d705bdff",
+          "referenced_by": [
+            {
+              "script": "0x089D38F8",
+              "at": "0x089D38FA",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x089D6578",
+          "text": "我是阿笔！\\n虫精灵的相关知识，\\l我不会输给任何人！\\p毕竟我将来打算靠虫系\\n精灵的研究去成为伟大的博士！\\p所以，就让你来见识见识\\n我的研究成果吧。",
+          "bytes": 133,
+          "raw": "0d980c0c010101873cfe0268075b08bc030b0e0d04a0107b0bf23bfa0d9801d6056e0c2904620b4e04f40b4b3cfb018c07690d9805f4082902d20c8607cd02680dd9fe075b08bc030b0eb9076f0b25024b0d700d7602d3030b01c40c043cfb0c9c0f243b077d0b4309d9082905e60bf205e60bf2fe0d98030b0eb9076f024b04c3012837ff",
+          "referenced_by": [
+            {
+              "script": "0x08A00771",
+              "at": "0x08A00773",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x089D6650",
+          "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]从阿笔处\\n得到了昆虫徽章！",
+          "bytes": 33,
+          "raw": "fc0106fc0309fd0102b3010101870286fe030a0304089e081a0268056210353cff",
+          "referenced_by": [
+            {
+              "script": "0x089D6476",
+              "at": "0x089D6499",
+              "cmd": "preparemsg"
+            }
+          ]
+        },
+        {
+          "addr": "0x089D67E8",
+          "text": "这道馆就是阿笔建造出的\\n虫属性宝可梦的巨大的\\symbol[D3]巢\\symbol[D3]啊！\\p阿笔虽然还年轻，\\n却能将虫属性宝可梦自如地运用！\\p没人指点会很辛苦？\\n好嘞，交给我吧！\\p是这样的！\\n虫属性宝可梦讨厌火焰！\\l还有，飞行属性也有显著效果！",
+          "bytes": 191,
+          "raw": "1055030704a5077d0c0c0101018705f110010278030bfe02680c390e5f016307d70966030b078e02d3030bf9d30234f9d301003cfb010101870c870b3b054609e00b033bfe0b3409d205f402680c390e5f016307d70966110c0b67031f0fd70f713cfb09530b4b1089032a056e050b0e4c07ee3dfe04e9146b3b070d04620d9801283cfb0c0c10550ee2030b3cfe02680c390e5f016307d709660cd70eca057d0ecf3cfa05460f7e3b03cc0e5b0c390e5f0f020f7e0e0110c90e3204c33cff",
+          "referenced_by": [
+            {
+              "script": "0x089D6783",
+              "at": "0x089D67AB",
+              "cmd": "loadpointer"
+            },
+            {
+              "script": "0x089D67C0",
+              "at": "0x089D67C2",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x089DC843",
+          "text": "听说这所道馆是阿笔\\n受到神奥地区某个道馆\\l的启发改建而来的哦。",
+          "bytes": 60,
+          "raw": "0d070c5810550c9c030704a50c0c01010187fe0c2103040bcf0121031f0b1a09a90460030704a5fa030b0aaf03a5042e05f1039d0829030b0a1337ff",
+          "referenced_by": [
+            {
+              "script": "0x089DC4D1",
+              "at": "0x089DC4E1",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x08AA9494",
+          "text": "对了，\\n忘记向你自我介绍了。\\p我叫阿笔，\\n是桧皮镇的道馆馆主。\\l请多指教，\\var[01]！\\p我也在和莉拉小姐\\n一起调查呆呆兽失踪的事情。\\p那么，我先留在这里\\n照顾钢铁先生吧，\\p莉拉小姐，\\var[01]，\\n就拜托你们去追火箭队了。",
+          "bytes": 183,
+          "raw": "0379089e3bfe0d6405b20e1f09d9110c0d98073b0bba089e37fb0d980722010101873bfe0c0c17940a5f1065030b030704a504a510c837fa0b0d03851089071e3bfd013cfb0d980f020fe604f3086708220e2c0735fe0f0b0aab033e020d02d402d40c230be31111030b0c070b0b37fb09bd094c3b0d980dec08c70fe610550864fe1048049304400d040dec0bd801283bfb086708220e2c07353bfd013bfe077d013c0d3809d9095f0b2510e6057d05e80378089e37ff",
+          "referenced_by": [
+            {
+              "script": "0x08AA8FA8",
+              "at": "0x08AA8FC4",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x08AE701E",
+          "text": "桧皮镇的馆主阿笔是虫宝可梦\\n的专家，他是我向往的目标，\\p为此我也想捕捉各种虫属性宝可梦。\\n目前我想捕捉一只飞天螳螂，\\l但无论如何都会被它从球中逃脱。\\p我听说钢铁先生制作的速度球\\n能够对飞天螳螂有4倍的捕获几率，\\l你能帮我做3个速度球吗？\\p速度球需要白色的圆柑果实制作，\\n拜托你啦!",
+          "bytes": 261,
+          "raw": "17940a5f1065030b04a510c8010101870c0c0268016307d70966fe030b10d705bd3b0c9e0c0c0d980e1f0d61030b09b501a73bfb0d7002ab0d980f020e1801d110ec046110a702680c390e5f016307d7096637fe09b50ac90d980e1801d110ec0f0b108c03cc0ced1c801c623bfa02e90da409150b6704f40361056e01780c9f02b30b1410a10cd40d3937fb0d980d070c5804400d040dec0bd81097112f030b0c7c036d0b14fe09d20483037903cc0ced1c801c620f7ea50173030b01d1057e05a309043bfa09d909d2014e0d98112ea404600c7c036d0b14092a3dfb0c7c036d0b140e730ef101360b89030b0fbe043604c30bf11097112f3bfe013c0d3809d90827abff",
+          "referenced_by": [
+            {
+              "script": "0x08AE6B1D",
+              "at": "0x08AE6B2E",
+              "cmd": "loadpointer"
+            }
+          ]
+        }
+      ]
+    },
+    "黑曜": {
+      "count": 0,
+      "hits": []
+    },
+    "皮可西": {
+      "count": 7,
+      "hits": [
+        {
+          "addr": "0x08EE4C09",
+          "text": "是这样的……\\p我的皮皮自从\\n进化成皮可西以后，\\l它就变得一点精神都没有了！\\p连最喜欢喝的\\n哞哞牛奶都不喝了……\\p宝可梦中心也说它没有生病。\\n难道是因为进化失败了吗？\\l还是说它讨厌我了？呜呜……",
+          "bytes": 174,
+          "raw": "0c0c10550ee2030bb0b0fb0d98030b0a5f0a5f110c02b3fe074a053c024b0a5f07d70dbd0f2405223bfa0c9f077d01a1030a0f0b032a075b0bcf036109530f7e089e3cfb087f11260dd6054304ee030bfe142614260a0009c2036101d604ee089eb0b0fb016307d7096610a10e4f0f020c580c9f09530f7e0bd801bc37fe09c703070c0c0f420d70074a053c0be3013b089e092a3dfa05460c0c0c580c9f0cd70eca0d98089e3d0d9e0d9eb0b0ff",
+          "referenced_by": [
+            {
+              "script": "0x08EE4A39",
+              "at": "0x08EE4ACF",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x08EE4DFE",
+          "text": "广播塔的电波声、\\n磁悬浮列车的轰鸣声、\\p还有把夜空\\n照得发白的霓虹灯……\\p满金市的这些繁华，\\n对皮可西来说，\\l全都是折磨吗？\\p\\var[01]，我们\\n带它去自然公园吧！",
+          "bytes": 138,
+          "raw": "04ab01c00ca1030b032e01c30bd73afe02a50e87040b08a30237030b051309910bd73afb05460f7e01300f0907e3fe1048030a03a50136030b09d40516030db0b0fb093407420c15030b10550e3403b405373bfe03790a5f07d70dbd08290c583bfa0b2b03610c0c104e099b092a3dfbfd013b0d98095ffe02d80c9f0b25110c0b3b04730fbc01283cff",
+          "referenced_by": [
+            {
+              "script": "0x08EE4CB8",
+              "at": "0x08EE4DDE",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x08EE4E8D",
+          "text": "等一下……\\n我记得书上说过，\\p皮可西是听觉\\n极其敏锐的宝可梦，\\p甚至能听到\\n一公里外针落地的声音。\\p而且它们非常向往月光，\\n总是生活在宁静的深山里……",
+          "bytes": 136,
+          "raw": "030f0f0b0de6b0b0fe0d9805b2030a0c2e0bad0c5804c53bfb0a5f07d70dbd0c0c0d0707a5fe05960a9f098c0b71030b016307d709663bfb0bd3109209d20d070304fe0f0b047308640d4a105e091e031f030b0bd70f4437fb039d0aeb0c9f095f03ca02250e1f0d610fce04aa3bfe11140c0c0bd8057b0fe609f40762030b0bcc0b9b0864b0b0ff",
+          "referenced_by": [
+            {
+              "script": "0x08EE4CB8",
+              "at": "0x08EE4D9D",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x08EE4F17",
+          "text": "诶？皮可西，你怎么了？\\n是在害怕吗？",
+          "bytes": 32,
+          "raw": "12163d0a5f07d70dbd3b09d9100a094c089e3dfe0c0c0fe604cc0a1f092a3dff",
+          "referenced_by": [
+            {
+              "script": "0x08EE4CB8",
+              "at": "0x08EE4D69",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x08EE4F3C",
+          "text": "来，皮可西！\\n你看，这里的灯光多漂亮啊！\\l我们去百货大楼那边转转吧？",
+          "bytes": 62,
+          "raw": "08293b0a5f07d70dbd3cfe09d907c23b10550864030b030d04aa03850a6a089401003cfa0d98095f0b250138058202d308d609bd019c10d910d901283dff",
+          "referenced_by": [
+            {
+              "script": "0x08EE4CB8",
+              "at": "0x08EE4CF1",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x08EE56AB",
+          "text": "皮可！皮可西！",
+          "bytes": 13,
+          "raw": "0a5f07d73c0a5f07d70dbd3cff",
+          "referenced_by": [
+            {
+              "script": "0x08EE4F8C",
+              "at": "0x08EE4FC7",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x08EE56BA",
+          "text": "皮可西沐浴在月光下，\\n恢复了活力！",
+          "bytes": 32,
+          "raw": "0a5f07d70dbd15a40fad0fe60fce04aa0de63bfe0563041e089e057b08793cff",
+          "referenced_by": [
+            {
+              "script": "0x08EE4F8C",
+              "at": "0x08EE4FDA",
+              "cmd": "loadpointer"
+            }
+          ]
+        }
+      ]
+    },
+    "冰壁": {
+      "count": 2,
+      "hits": [
+        {
+          "addr": "0x087B3983",
+          "text": "一面冰壁……",
+          "bytes": 11,
+          "raw": "0f0b097e01b60197b0b0ff",
+          "referenced_by": [
+            {
+              "script": "0x087B36DE",
+              "at": "0x087B36E9",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x087B3990",
+          "text": "冰壁出现了裂痕，\\n要进去吗？",
+          "bytes": 26,
+          "raw": "01b6019702780e03089e08a4050a3bfe0ef1074a0b25092a3dff",
+          "referenced_by": [
+            {
+              "script": "0x087B36F1",
+              "at": "0x087B36F3",
+              "cmd": "loadpointer"
+            }
+          ]
+        }
+      ]
+    },
+    "潜能": {
+      "count": 2,
+      "hits": [
+        {
+          "addr": "0x089E6DD6",
+          "text": "这么快就攻克了我\\n留下的谜题吗？\\p看来你有成为优秀\\n的驯鸟师的潜能呢……\\p怎么样，\\n现在要前往对战场地吗？",
+          "bytes": 97,
+          "raw": "1055094c0803077d046d07d9089e0d98fe08c70de6030b096d0ce3092a3dfb07c2082909d90f7e024b0d700f730e6efe030b0e9a09e70be2030b0aca09d209ceb0b0fb100a094c0ee23bfe0e030fe60ef10ac90d61037910300223031f092a3dff",
+          "referenced_by": [
+            {
+              "script": "0x089E6D8F",
+              "at": "0x089E6DB0",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x08EC3D41",
+          "text": "施主，\\n欢迎来到这里。\\p宝可梦的内心深处，往往蕴藏\\n着连训练家都难以察觉的潜能。\\p这种潜能\\n就像未经雕琢的璞玉，\\p只需稍加指引，\\n便能绽放出截然不同的光芒。\\p若施主愿意供奉一枚护符，\\n贫僧愿意通过祈祷来聆听\\l它们内心的声音，\\l引导其精神走向新的境界。\\p那么……\\n请问施主要供奉护符吗？",
+          "bytes": 259,
+          "raw": "0be510c83bfe05430f5b082903041055086437fb016307d70966030b09d00e4f0bcc02863b0d610d610fd801f3fe10f4087f0e9e088a05bd036109c70f24021007a5030b0aca09d237fb105510a70aca09d2fe077d0e1e0d7a075d033810f0030b17580f9f3bfb108c0e730bb205be10890f4d3bfe01a009d2103303c80278072a0b3b01d60d14030b04aa093a37fb0b740be510c80fc40f32047103f10f0b094e053104073bfe0a710b8c0fc40f320d1004c50aa8030208291c0f0d07fa0c9f095f09d00e4f030b0bd70f443bfa0f4d03030a9f075b0bcf11170e1f0e4d030b0763073937fb09bd094cb0b0fe0b0d0d900be510c80ef1047103f105310407092a3dff",
+          "referenced_by": [
+            {
+              "script": "0x08EC3A93",
+              "at": "0x08EC3A96",
+              "cmd": "loadpointer"
+            }
+          ]
+        }
+      ]
+    },
+    "头巾": {
+      "count": 1,
+      "hits": [
+        {
+          "addr": "0x08EEAF33",
+          "text": "你可别小看这条头巾哦。\\p虽然在城都，它可能只是\\n一件用来打扮的普通装饰品……\\p但我听说，在遥远的地区……\\n给宝可梦系上对应颜色的头巾，\\p是能在华丽大赛的\\n审查阶段真正发挥作用的！",
+          "bytes": 164,
+          "raw": "09d907d701ad0e2c07c210550cf60d1f073f0a1337fb0c870b3b0fe6024903613b0c9f07d709d2108c0c0cfe0f0b05e90f71082902d20146030b0a900d1010df0c130a72b0b0fb02e90d980d070c583b0fe60eea0fc2030b031f0b1ab0b0fe0462016307d709660dd90bad03790f540ebe0b89030b0d1f073f3bfb0c0c09d20fe60537086b02d30b7c030bfe0bd1020d072903731059107003a50560112f0f71030b3cff",
+          "referenced_by": [
+            {
+              "script": "0x08EEADB5",
+              "at": "0x08EEADB7",
+              "cmd": "loadpointer"
+            },
+            {
+              "script": "0x08EEADFE",
+              "at": "0x08EEAE1A",
+              "cmd": "loadpointer"
+            }
+          ]
+        }
+      ]
+    },
+    "8bit": {
+      "count": 0,
+      "hits": []
+    },
+    "怯场": {
+      "count": 0,
+      "hits": []
+    },
+    "遗忘": {
+      "count": 6,
+      "hits": [
+        {
+          "addr": "0x08173E7B",
+          "text": "小树可以用\\n一字斩砍倒。\\p但记住！\\n一字斩是一个秘传机的技巧。\\p一旦学会，\\n它是不能轻易被遗忘的。",
+          "bytes": 89,
+          "raw": "0e2c0c3c07d70f240f71fe0f0b110e102907c1030037fb02e905b210d03cfe0f0b110e10290c0c0f0b04600970028b0587030b05a70ae237fb0f0b02e70e90056e3bfe0c9f0c0c01d609d20b030f2701780f150d64030b37ff",
+          "referenced_by": [
+            {
+              "script": "0x08160CE9",
+              "at": "0x08160CEB",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x08AAD85E",
+          "text": "哎呀，你也想\\n让精灵遗忘技能吗？",
+          "bytes": 30,
+          "raw": "01040ea63b09d90f020e18fe0b43075b08bc0f150d6405a709d2092a3dff",
+          "referenced_by": [
+            {
+              "script": "0x08AAD550",
+              "at": "0x08AAD552",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x08EB217D",
+          "text": "呃……我想说什么来着？\\n我想起来了，我就是遗忘大师。\\p我能让宝可梦忘记\\n它们学会的技能。\\p你需要我展示一下这门绝活吗？",
+          "bytes": 108,
+          "raw": "13f5b0b00d980e180c580bee094c082910f43dfe0d980e180aab0829089e3b0d98077d0c0c0f150d6402d30be237fb0d9809d20b43016307d709660d6405b2fe0c9f095f0e90056e030b05a709d237fb09d90e730ef10d98102c0c030f0b0de61055095d07a8057b092a3dff",
+          "referenced_by": [
+            {
+              "script": "0x0816D895",
+              "at": "0x0816D899",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x08ED1D24",
+          "text": "其实……刚才\\n在他绝望地大喊时，\\p我突然觉得……\\n那个声音，听起来好熟悉。\\p在遇到你之前，\\n在空无一人的地下通道里……\\p我也曾无数次有过那样的念头。\\p“为什么没人看我？”\\n“为什么我的声音传达不到？”\\p那种被世界遗忘的寒冷……\\n那种想要破坏一切的冲动……\\l其实……我也曾有过啊。",
+          "bytes": 244,
+          "raw": "0a9f0bf1b0b0043f01e0fe0fe60c9e07a80d63031f02d304d60bed3bfb0d980d230b3b07a5030ab0b0fe09bd04600bd70f443b0d070aab082904e90c310dc837fb0fe60fa4030409d9107f0ac93bfe0fe607e30da40f0b0b4b030b031f0de60d1003070864b0b0fb0d980f02100d0da40c4202ae0f7e04c509bd0ee2030b09e40d1f37fbb10d700bee094c09530b4b07c20d983db2feb10d700bee094c0d98030b0bd70f44028b02cf01d603043db2fb09bd10a701780c0507390f150d64030b04d40859b0b0fe09bd10a70e180ef10a8105420f0b0ae9030b02670354b0b0fa0a9f0bf1b0b00d980f02100d0f7e04c5010037ff",
+          "referenced_by": [
+            {
+              "script": "0x08ECE47F",
+              "at": "0x08ECE49A",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x08EDEB03",
+          "text": "那是一段无法遗忘的时光……\\p祖先们说，\\n那只快龙并不善言语，\\l但它能理解人心。\\p它往返于山外与烟墨之间，\\n为我等撑起与世界的桥梁。\\p流星之民感念于心，\\n为它在洞穴中建起了龙之祠堂。\\p铭刻其恩德，\\n并奉其为城都的“龙神大人”。",
+          "bytes": 203,
+          "raw": "09bd0c0c0f0b03730da403ab0f150d64030b0bed04aab0b0fb111e0dec095f0c583bfe09bd108c080308cd01bd01d60ba40ebd0f9d3bfa02e90c9f09d2086207340b4b0e4f37fb0c9f0d6103b80f880b9b0d4a0f990eb509a1107f05cf3bfe0d700d98030f02470aab0f990c050739030b0ade088d37fb08ca0e52107f0989043a09e40f880e4f3bfe0d700c9f0fe603590e9110a105f10aab089e08cd107f19250cc437fb099207da0a9f039c03093bfe01bd03f10a9f0d7002490361030bb108cd0bcf02d30b4bb237ff",
+          "referenced_by": [
+            {
+              "script": "0x08EDE340",
+              "at": "0x08EDE3D2",
+              "cmd": "loadpointer"
+            }
+          ]
+        },
+        {
+          "addr": "0x08F4EF1A",
+          "text": "如果有无论如何也想\\n忘记的招式，\\l去找遗忘大叔，\\l就可以忘记秘传招式了！",
+          "bytes": 67,
+          "raw": "0b6704c30f7e0da409150b6704f40f020e18fe0d6405b2030b10430c023bfa0b2510450f150d6402d30c2a3bfa077d07d70f240d6405b20970028b10430c02089e3cff",
+          "referenced_by": [
+            {
+              "script": "0x08F47A50",
+              "at": "0x08F47A52",
+              "cmd": "loadpointer"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

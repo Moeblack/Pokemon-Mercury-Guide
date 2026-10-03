@@ -1,0 +1,24 @@
+{
+ "batch": "Q69to74",
+ "completed": [
+  69,
+  70,
+  71,
+  72,
+  73,
+  74
+ ],
+ "partial": {},
+ "notes": [
+  "069/070/071/072 的接取脚本均以旗标4246判定主线进度，4246的具体条件未定位",
+  "072的目标由旗标5528/6022门控，与“周三”的对应关系未在数据中直接标注"
+ ],
+ "source_packets": [
+  "data/quest_packets/069.json",
+  "data/quest_packets/070.json",
+  "data/quest_packets/071.json",
+  "data/quest_packets/072.json",
+  "data/quest_packets/073.json",
+  "data/quest_packets/074.json"
+ ]
+}

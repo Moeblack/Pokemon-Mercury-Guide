@@ -1,0 +1,21 @@
+{
+  "batch": "Q50to55",
+  "quests": [50, 51, 52, 53, 54, 55],
+  "items": [
+    {"id": 50, "title": "失踪的父亲", "status": "compiled", "file": "data/quests/050.json", "page": "quests/050.md"},
+    {"id": 51, "title": "聂梓的签名", "status": "partial", "file": "data/quests/051.json", "page": "quests/051.md",
+     "partial_reason": "酒吧(55:6)内聂梓出现与签名脚本0x08AEEEA6的触发条件（周日/活动计数变量20884）未在本包定位；trainerbattle0 的920/921不在导出训练家表内。"},
+    {"id": 52, "title": "时髦的宝可梦？", "status": "partial", "file": "data/quests/052.json", "page": "quests/052.md",
+     "partial_reason": "多丽米亚(784)的确切出现地点/时间无遭遇表，仅有对白提示“周一/自然公园/高草丛”。"},
+    {"id": 53, "title": "如梦似幻般的银", "status": "partial", "file": "data/quests/053.json", "page": "quests/053.md",
+     "partial_reason": "浅葱市水手对白不在本包（仅设为旗标3327）；过场地图52:30表头名“真新镇”与对白“漩涡岛”不符；梦中宝可梦身份未点名。"},
+    {"id": 54, "title": "失散的过动猿", "status": "compiled", "file": "data/quests/054.json", "page": "quests/054.md"},
+    {"id": 55, "title": "孩子一生平安", "status": "partial", "file": "data/quests/055.json", "page": "quests/055.md",
+     "partial_reason": "祠堂供奉事件本体（地图55:40过场）不在本包；复命对白中“狩猎凤蝶”与供奉对象时拉比的关系未明。包内混入任务002(皮丘的旅途)祠堂脚本，已按本任务旗标区分。"}
+  ],
+  "notes": [
+    "仅制作 050-055 六条，未改动 index 与其它批次。",
+    "所有物种/道具名均查 out/species.json 与 out/items.json。",
+    "未运行测试/验收/格式化。"
+  ]
+}

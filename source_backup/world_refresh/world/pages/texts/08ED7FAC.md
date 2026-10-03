@@ -1,0 +1,35 @@
+# 文本 0x08ED7FAC
+
+来源：`maps_research/out/scripts/text.json`，JSON pointer `/strings/0x08ED7FAC`。
+
+控制符按原导出保留；Unicode为外部字表注释。
+
+## 完整解码原文
+
+```text
+两个没用的东西……\n居然连两个小孩也搞不定！
+```
+
+## 原字节
+
+`0890046009530f71030b03500dbdb0b0fe07830b3b087f089004600e2c04c80f02044d01d6034d3cff`
+
+bytes：41
+
+## 来源引用
+
+| 脚本 | 指令 | 参数at | 命令 | 地图 |
+|---|---|---|---|---|
+| 0x08ED794D | 0x08ED79B6 | 0x08ED79B8 | loadpointer | [53:13 满金市](../maps/g53_n013.md) |
+
+原referenced_by（完整）：
+
+```json
+[
+ {
+  "script": "0x08ED794D",
+  "at": "0x08ED79B8",
+  "cmd": "loadpointer"
+ }
+]
+```

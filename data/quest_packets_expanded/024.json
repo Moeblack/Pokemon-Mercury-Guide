@@ -1,0 +1,2824 @@
+{
+ "title": "红色碎片告急",
+ "quest_id": 24,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b0dc",
+    "title": "红色碎片告急",
+    "title_address": "0x8e3cabd",
+    "description": "我的红色碎片不够了！\n请有意帮忙的训练家前往\n精灵中心旁与我交谈。",
+    "description_address": "0x8e3ca98",
+    "unknown_u16": 673,
+    "unknown_u16_hex": "0x02A1",
+    "accept_flag": 5481,
+    "accept_flag_hex": "0x1569",
+    "complete_flag": 5482,
+    "complete_flag_hex": "0x156A",
+    "map_group": 3,
+    "map_num": 68,
+    "tail_hex": "0f 00 00 00",
+    "index": 24,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe394b4",
+      "title": "红色碎片告急",
+      "description_address": "0x8e3ab19",
+      "description": "我的红色碎片不够了！\\n请有意帮忙的训练家前往\\n精灵中心旁与我交谈。"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3ab19",
+    "legacy_match_count": 1,
+    "current_description": "帮助独自旅行的杂耍艺人\n收集红色碎片。",
+    "catalog_map": {
+     "id": "3:68",
+     "name": "桔梗市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x089E5E93",
+    "0x089E5EE2",
+    "0x08AE3353"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F5048E",
+     "map_id": "3:68",
+     "place": "桔梗市",
+     "kind": "人物",
+     "local_id": 9,
+     "event_index": 8,
+     "x": 54,
+     "y": 58,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n068.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089CDDB7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089CDDB7",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144499173
+       ]
+      },
+      {
+       "at": "0x089CDDBE",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089CDDC1",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089CDDC2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144498751
+       ],
+       "texts": [
+        {
+         "address": "0x089CE03F",
+         "text": "用碎片换果实！\n用碎片换果实！\n呀，呀！我是\n碎片和树果的交换人。\n给我一个碎片的话，\n我就把3个树果\n作为礼物给你！"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDDC8",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x089CDDCA",
+       "command": "setvar",
+       "args": [
+        32774,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089CDDCF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144498858
+       ],
+       "texts": [
+        {
+         "address": "0x089CE0AA",
+         "text": "红色碎片"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDDD5",
+       "command": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x089CDDD8",
+       "command": "setvar",
+       "args": [
+        32774,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDDDD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144498869
+       ],
+       "texts": [
+        {
+         "address": "0x089CE0B5",
+         "text": "蓝色碎片"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDDE3",
+       "command": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x089CDDE6",
+       "command": "setvar",
+       "args": [
+        32774,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089CDDEB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144498880
+       ],
+       "texts": [
+        {
+         "address": "0x089CE0C0",
+         "text": "黄色碎片"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDDF1",
+       "command": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x089CDDF4",
+       "command": "setvar",
+       "args": [
+        32774,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x089CDDF9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144498891
+       ],
+       "texts": [
+        {
+         "address": "0x089CE0CB",
+         "text": "绿色碎片"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDDFF",
+       "command": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x089CDE02",
+       "command": "preparemsg",
+       "args": [
+        144498902
+       ],
+       "texts": [
+        {
+         "address": "0x089CE0D6",
+         "text": "要用哪个碎片换果实？"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDE07",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x089CDE08",
+       "command": "multichoice",
+       "args": [
+        1,
+        4,
+        34,
+        0
+       ]
+      },
+      {
+       "at": "0x089CDE0D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089CDE12",
+       "command": "goto_if",
+       "args": [
+        1,
+        144498243
+       ],
+       "targets": [
+        "0x089CDE43"
+       ]
+      },
+      {
+       "at": "0x089CDE18",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDE1D",
+       "command": "goto_if",
+       "args": [
+        1,
+        144498280
+       ],
+       "targets": [
+        "0x089CDE68"
+       ]
+      },
+      {
+       "at": "0x089CDE23",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089CDE28",
+       "command": "goto_if",
+       "args": [
+        1,
+        144498317
+       ],
+       "targets": [
+        "0x089CDE8D"
+       ]
+      },
+      {
+       "at": "0x089CDE2E",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x089CDE33",
+       "command": "goto_if",
+       "args": [
+        1,
+        144498354
+       ],
+       "targets": [
+        "0x089CDEB2"
+       ]
+      },
+      {
+       "at": "0x089CDE39",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144498924
+       ],
+       "texts": [
+        {
+         "address": "0x089CE0EC",
+         "text": "不？真遗憾。\n好吧，你改变主意的话再来。"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDE3F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089CDE41",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E5E93"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089CDE43",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089CDE43",
+       "command": "checkitem",
+       "args": [
+        48,
+        1
+       ],
+       "item_name": "红色碎片"
+      },
+      {
+       "at": "0x089CDE48",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDE4D",
+       "command": "call_if",
+       "args": [
+        1,
+        144498391
+       ],
+       "targets": [
+        "0x089CDED7"
+       ]
+      },
+      {
+       "at": "0x089CDE53",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144499173
+       ]
+      },
+      {
+       "at": "0x089CDE5A",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089CDE5D",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089CDE5E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144498962
+       ],
+       "texts": [
+        {
+         "address": "0x089CE112",
+         "text": "你没有找到什么宝藏啊…\n如果你发现了碎片，比如\n红色碎片，就来和我交换吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDE64",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089CDE66",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089CDDB7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089CDE68",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089CDE68",
+       "command": "checkitem",
+       "args": [
+        49,
+        1
+       ],
+       "item_name": "蓝色碎片"
+      },
+      {
+       "at": "0x089CDE6D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDE72",
+       "command": "call_if",
+       "args": [
+        1,
+        144498446
+       ],
+       "targets": [
+        "0x089CDF0E"
+       ]
+      },
+      {
+       "at": "0x089CDE78",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144499173
+       ]
+      },
+      {
+       "at": "0x089CDE7F",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089CDE82",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089CDE83",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144498962
+       ],
+       "texts": [
+        {
+         "address": "0x089CE112",
+         "text": "你没有找到什么宝藏啊…\n如果你发现了碎片，比如\n红色碎片，就来和我交换吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDE89",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089CDE8B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089CDDB7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089CDE8D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089CDE8D",
+       "command": "checkitem",
+       "args": [
+        50,
+        1
+       ],
+       "item_name": "黄色碎片"
+      },
+      {
+       "at": "0x089CDE92",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDE97",
+       "command": "call_if",
+       "args": [
+        1,
+        144498501
+       ],
+       "targets": [
+        "0x089CDF45"
+       ]
+      },
+      {
+       "at": "0x089CDE9D",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144499173
+       ]
+      },
+      {
+       "at": "0x089CDEA4",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089CDEA7",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089CDEA8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144498962
+       ],
+       "texts": [
+        {
+         "address": "0x089CE112",
+         "text": "你没有找到什么宝藏啊…\n如果你发现了碎片，比如\n红色碎片，就来和我交换吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDEAE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089CDEB0",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089CDDB7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089CDEB2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089CDEB2",
+       "command": "checkitem",
+       "args": [
+        51,
+        1
+       ],
+       "item_name": "绿色碎片"
+      },
+      {
+       "at": "0x089CDEB7",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDEBC",
+       "command": "call_if",
+       "args": [
+        1,
+        144498556
+       ],
+       "targets": [
+        "0x089CDF7C"
+       ]
+      },
+      {
+       "at": "0x089CDEC2",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144499173
+       ]
+      },
+      {
+       "at": "0x089CDEC9",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089CDECC",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089CDECD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144498962
+       ],
+       "texts": [
+        {
+         "address": "0x089CE112",
+         "text": "你没有找到什么宝藏啊…\n如果你发现了碎片，比如\n红色碎片，就来和我交换吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDED3",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089CDED5",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089CDDB7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089CDED7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089CDED7",
+       "command": "removeitem",
+       "args": [
+        48,
+        1
+       ],
+       "item_name": "红色碎片"
+      },
+      {
+       "at": "0x089CDEDC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144499033
+       ],
+       "texts": [
+        {
+         "address": "0x089CE159",
+         "text": "给我红色碎片的话，\n送你树果套装A！"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDEE2",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089CDEE4",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        133
+       ],
+       "possible_names_not_semantics": {
+        "species": "伊布",
+        "item": "樱子果",
+        "move": "瞬间失忆"
+       }
+      },
+      {
+       "at": "0x089CDEE9",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDEEE",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089CDEF0",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        135
+       ],
+       "possible_names_not_semantics": {
+        "species": "雷伊布",
+        "item": "桃桃果",
+        "move": "生蛋"
+       }
+      },
+      {
+       "at": "0x089CDEF5",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDEFA",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089CDEFC",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        138
+       ],
+       "possible_names_not_semantics": {
+        "species": "菊石兽",
+        "item": "苹野果",
+        "move": "食梦"
+       }
+      },
+      {
+       "at": "0x089CDF01",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDF06",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089CDF08",
+       "command": "goto",
+       "args": [
+        144498611
+       ],
+       "targets": [
+        "0x089CDFB3"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089CDE43"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089CDF0E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089CDF0E",
+       "command": "removeitem",
+       "args": [
+        49,
+        1
+       ],
+       "item_name": "蓝色碎片"
+      },
+      {
+       "at": "0x089CDF13",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144499068
+       ],
+       "texts": [
+        {
+         "address": "0x089CE17C",
+         "text": "给我蓝色碎片的话，\n送你树果套装B！"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDF19",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089CDF1B",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        134
+       ],
+       "possible_names_not_semantics": {
+        "species": "水伊布",
+        "item": "零余果",
+        "move": "折弯汤匙"
+       }
+      },
+      {
+       "at": "0x089CDF20",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDF25",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089CDF27",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        139
+       ],
+       "possible_names_not_semantics": {
+        "species": "多刺菊石兽",
+        "item": "橙橙果",
+        "move": "毒瓦斯"
+       }
+      },
+      {
+       "at": "0x089CDF2C",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDF31",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089CDF33",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        144
+       ],
+       "possible_names_not_semantics": {
+        "species": "急冻鸟",
+        "item": "异奇果",
+        "move": "变身"
+       }
+      },
+      {
+       "at": "0x089CDF38",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDF3D",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089CDF3F",
+       "command": "goto",
+       "args": [
+        144498611
+       ],
+       "targets": [
+        "0x089CDFB3"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089CDE68"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089CDF45",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089CDF45",
+       "command": "removeitem",
+       "args": [
+        50,
+        1
+       ],
+       "item_name": "黄色碎片"
+      },
+      {
+       "at": "0x089CDF4A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144499103
+       ],
+       "texts": [
+        {
+         "address": "0x089CE19F",
+         "text": "给我黄色碎片的话，\n送你树果套装C！"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDF50",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089CDF52",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        137
+       ],
+       "possible_names_not_semantics": {
+        "species": "多边兽",
+        "item": "利木果",
+        "move": "大蛇瞪眼"
+       }
+      },
+      {
+       "at": "0x089CDF57",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDF5C",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089CDF5E",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        142
+       ],
+       "possible_names_not_semantics": {
+        "species": "化石翼龙",
+        "item": "文柚果",
+        "move": "恶魔之吻"
+       }
+      },
+      {
+       "at": "0x089CDF63",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDF68",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089CDF6A",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        147
+       ],
+       "possible_names_not_semantics": {
+        "species": "迷你龙",
+        "item": "芭亚果",
+        "move": "蘑菇孢子"
+       }
+      },
+      {
+       "at": "0x089CDF6F",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDF74",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089CDF76",
+       "command": "goto",
+       "args": [
+        144498611
+       ],
+       "targets": [
+        "0x089CDFB3"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089CDE8D"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089CDF7C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089CDF7C",
+       "command": "removeitem",
+       "args": [
+        51,
+        1
+       ],
+       "item_name": "绿色碎片"
+      },
+      {
+       "at": "0x089CDF81",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144499138
+       ],
+       "texts": [
+        {
+         "address": "0x089CE1C2",
+         "text": "给我绿色碎片的话，\n送你树果套装D！"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDF87",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089CDF89",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        136
+       ],
+       "possible_names_not_semantics": {
+        "species": "火伊布",
+        "item": "莓莓果",
+        "move": "飞膝踢"
+       }
+      },
+      {
+       "at": "0x089CDF8E",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDF93",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089CDF95",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        141
+       ],
+       "possible_names_not_semantics": {
+        "species": "镰刀盔",
+        "item": "木子果",
+        "move": "吸血"
+       }
+      },
+      {
+       "at": "0x089CDF9A",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDF9F",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089CDFA1",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        146
+       ],
+       "possible_names_not_semantics": {
+        "species": "火焰鸟",
+        "item": "乐芭果",
+        "move": "迷昏拳"
+       }
+      },
+      {
+       "at": "0x089CDFA6",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDFAB",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089CDFAD",
+       "command": "goto",
+       "args": [
+        144498611
+       ],
+       "targets": [
+        "0x089CDFB3"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089CDEB2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089CDFB3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089CDFB3",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x089CDFB4",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144499173
+       ]
+      },
+      {
+       "at": "0x089CDFBB",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089CDFBE",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089CDFBF",
+       "command": "goto",
+       "args": [
+        144498629
+       ],
+       "targets": [
+        "0x089CDFC5"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089CDED7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089CDFC5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089CDFC5",
+       "command": "setvar",
+       "args": [
+        32774,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089CDFCA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144498858
+       ],
+       "texts": [
+        {
+         "address": "0x089CE0AA",
+         "text": "红色碎片"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDFD0",
+       "command": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x089CDFD3",
+       "command": "setvar",
+       "args": [
+        32774,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CDFD8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144498869
+       ],
+       "texts": [
+        {
+         "address": "0x089CE0B5",
+         "text": "蓝色碎片"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDFDE",
+       "command": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x089CDFE1",
+       "command": "setvar",
+       "args": [
+        32774,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089CDFE6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144498880
+       ],
+       "texts": [
+        {
+         "address": "0x089CE0C0",
+         "text": "黄色碎片"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDFEC",
+       "command": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x089CDFEF",
+       "command": "setvar",
+       "args": [
+        32774,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x089CDFF4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144498891
+       ],
+       "texts": [
+        {
+         "address": "0x089CE0CB",
+         "text": "绿色碎片"
+        }
+       ]
+      },
+      {
+       "at": "0x089CDFFA",
+       "command": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x089CDFFD",
+       "command": "preparemsg",
+       "args": [
+        144498902
+       ],
+       "texts": [
+        {
+         "address": "0x089CE0D6",
+         "text": "要用哪个碎片换果实？"
+        }
+       ]
+      },
+      {
+       "at": "0x089CE002",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x089CE003",
+       "command": "multichoice",
+       "args": [
+        1,
+        4,
+        34,
+        0
+       ]
+      },
+      {
+       "at": "0x089CE008",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089CE00D",
+       "command": "goto_if",
+       "args": [
+        1,
+        144498243
+       ],
+       "targets": [
+        "0x089CDE43"
+       ]
+      },
+      {
+       "at": "0x089CE013",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089CE018",
+       "command": "goto_if",
+       "args": [
+        1,
+        144498280
+       ],
+       "targets": [
+        "0x089CDE68"
+       ]
+      },
+      {
+       "at": "0x089CE01E",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089CE023",
+       "command": "goto_if",
+       "args": [
+        1,
+        144498317
+       ],
+       "targets": [
+        "0x089CDE8D"
+       ]
+      },
+      {
+       "at": "0x089CE029",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089CE02E",
+       "command": "goto_if",
+       "args": [
+        1,
+        144498354
+       ],
+       "targets": [
+        "0x089CDEB2"
+       ]
+      },
+      {
+       "at": "0x089CE034",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089CE035",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144498924
+       ],
+       "texts": [
+        {
+         "address": "0x089CE0EC",
+         "text": "不？真遗憾。\n好吧，你改变主意的话再来。"
+        }
+       ]
+      },
+      {
+       "at": "0x089CE03B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089CE03D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089CDFB3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E5E93",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E5E93",
+       "command": "checkflag",
+       "args": [
+        5482
+       ],
+       "task_flag_labels": [
+        {
+         "title": "红色碎片告急",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E5E96",
+       "command": "goto_if",
+       "args": [
+        1,
+        144498103
+       ],
+       "targets": [
+        "0x089CDDB7"
+       ]
+      },
+      {
+       "at": "0x089E5E9C",
+       "command": "checkflag",
+       "args": [
+        5481
+       ],
+       "task_flag_labels": [
+        {
+         "title": "红色碎片告急",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E5E9F",
+       "command": "goto_if",
+       "args": [
+        1,
+        144596758
+       ],
+       "targets": [
+        "0x089E5F16"
+       ]
+      },
+      {
+       "at": "0x089E5EA5",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E5EA8",
+       "command": "goto_if",
+       "args": [
+        1,
+        150278928
+       ],
+       "targets": [
+        "0x08F51310"
+       ]
+      },
+      {
+       "at": "0x089E5EAE",
+       "command": "goto",
+       "args": [
+        144498103
+       ],
+       "targets": [
+        "0x089CDDB7"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5048E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E5EB4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E5EB4",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144597025
+       ]
+      },
+      {
+       "at": "0x089E5EBB",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089E5EBE",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E5EC1",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E5EC4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144597028
+       ],
+       "texts": [
+        {
+         "address": "0x089E6024",
+         "text": "是你接下了我的委托吗？\n我是一名独自旅行的杂耍艺人，\n原本打算在桔梗市准备一场\n个人表演，可惜在来的路上遭到了\n一只狂暴宝可梦的攻击，\n丢失了不少表演用的道具。\n虽然我努力地凑齐了大部分，\n但是红色碎片的数量不太够，\n请问能帮我收集一下吗？\n拜托啦，只要一个就够啦。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E5ECA",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E5ECC",
+       "command": "goto",
+       "args": [
+        150279620
+       ],
+       "targets": [
+        "0x08F515C4"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F51310"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E5EE2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E5EE2",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E5EE5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144597343
+       ],
+       "texts": [
+        {
+         "address": "0x089E615F",
+         "text": "接受任务:<红色碎片告急>"
+        }
+       ]
+      },
+      {
+       "at": "0x089E5EEB",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E5EF0",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E5EF5",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x089E5EFA",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E5EFF",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x089E5F04",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144597305
+       ],
+       "texts": [
+        {
+         "address": "0x089E6139",
+         "text": "你真的愿意帮助我吗？\n真是太感谢你了！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E5F0A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E5F0C",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E5F11",
+       "command": "setflag",
+       "args": [
+        5481
+       ],
+       "task_flag_labels": [
+        {
+         "title": "红色碎片告急",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E5F14",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F515C4"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E5F16",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E5F16",
+       "command": "checkitem",
+       "args": [
+        48,
+        1
+       ],
+       "item_name": "红色碎片"
+      },
+      {
+       "at": "0x089E5F1B",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E5F20",
+       "command": "goto_if",
+       "args": [
+        1,
+        144596784
+       ],
+       "targets": [
+        "0x089E5F30"
+       ]
+      },
+      {
+       "at": "0x089E5F26",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144597372
+       ],
+       "texts": [
+        {
+         "address": "0x089E617C",
+         "text": "对了，我是从烟墨市那边\n穿过黑暗洞穴过来的。\n我也正是在黑暗洞穴\n被狂暴的宝可梦袭击的……\n你也一定要注意哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E5F2C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E5F2E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E5E93"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E5F30",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E5F30",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E5F31",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144596814
+       ],
+       "texts": [
+        {
+         "address": "0x089E5F4E",
+         "text": "要把红色碎片交给\n杂耍艺人吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E5F37",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E5F39",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E5F3E",
+       "command": "goto_if",
+       "args": [
+        1,
+        144596845
+       ],
+       "targets": [
+        "0x089E5F6D"
+       ]
+      },
+      {
+       "at": "0x089E5F44",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144597372
+       ],
+       "texts": [
+        {
+         "address": "0x089E617C",
+         "text": "对了，我是从烟墨市那边\n穿过黑暗洞穴过来的。\n我也正是在黑暗洞穴\n被狂暴的宝可梦袭击的……\n你也一定要注意哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E5F4A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E5F4C",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E5F16"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E5F6D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E5F6D",
+       "command": "removeitem",
+       "args": [
+        48,
+        1
+       ],
+       "item_name": "红色碎片"
+      },
+      {
+       "at": "0x089E5F72",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144597476
+       ],
+       "texts": [
+        {
+         "address": "0x089E61E4",
+         "text": "哇，\n你真的找到我需要的红色碎片啦！\n没错，这艳丽的红色，\n就是我需要的道具！\n真是太感谢啦，\n那么我就收下啦。\n作为感谢，\n这些树果就送给你吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E5F78",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E5F7A",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        133
+       ],
+       "possible_names_not_semantics": {
+        "species": "伊布",
+        "item": "樱子果",
+        "move": "瞬间失忆"
+       }
+      },
+      {
+       "at": "0x089E5F7F",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x089E5F84",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E5F86",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089E5F89",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        135
+       ],
+       "possible_names_not_semantics": {
+        "species": "雷伊布",
+        "item": "桃桃果",
+        "move": "生蛋"
+       }
+      },
+      {
+       "at": "0x089E5F8E",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x089E5F93",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E5F95",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089E5F98",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        138
+       ],
+       "possible_names_not_semantics": {
+        "species": "菊石兽",
+        "item": "苹野果",
+        "move": "食梦"
+       }
+      },
+      {
+       "at": "0x089E5F9D",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x089E5FA2",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E5FA4",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089E5FA7",
+       "command": "goto",
+       "args": [
+        145634131
+       ],
+       "targets": [
+        "0x08AE3353"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E5F30"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE3353",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE3353",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AE3354",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE3357",
+       "command": "showmoney",
+       "args": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE335B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145691169
+       ],
+       "texts": [
+        {
+         "address": "0x08AF1221",
+         "text": "还有…这些钱！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE3361",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AE3363",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE3369",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08AE336C",
+       "command": "updatemoney",
+       "args": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE3370",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144597609
+       ],
+       "texts": [
+        {
+         "address": "0x089E6269",
+         "text": "这次也算是提醒了我\n要多准备些道具了，\n以后要是你有发现\n各类颜色碎片都可以带给我，\n我会像今天一样\n给你各类树果作为交换的。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE3376",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE3378",
+       "command": "hidemoney",
+       "args": [
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE337B",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AE337C",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE337F",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE3382",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144596971
+       ],
+       "texts": [
+        {
+         "address": "0x089E5FEB",
+         "text": "任务完成:<红色碎片告急>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE3388",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE338D",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE3392",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE3397",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AE339C",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AE33A1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145687241
+       ],
+       "texts": [
+        {
+         "address": "0x08AF02C9",
+         "text": "获得了3点BracerPoints!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE33A7",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE33A9",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AE33AE",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08AE33B3",
+       "command": "setflag",
+       "args": [
+        5482
+       ],
+       "task_flag_labels": [
+        {
+         "title": "红色碎片告急",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE33B6",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E5F6D"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5048E",
+     "event_roots": [
+      {
+       "map_id": "3:68",
+       "place": "桔梗市",
+       "kind": "人物",
+       "local_id": 9,
+       "event_index": 8,
+       "x": 54,
+       "y": 58,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n068.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5048E",
+       "command": "applymovement",
+       "args": [
+        36,
+        150278729
+       ]
+      },
+      {
+       "at": "0x08F50495",
+       "command": "waitmovement",
+       "args": [
+        36
+       ]
+      },
+      {
+       "at": "0x08F50498",
+       "command": "goto",
+       "args": [
+        144596627
+       ],
+       "targets": [
+        "0x089E5E93"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "3:68/local9"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F51310",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F51310",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150279563
+       ],
+       "texts": [
+        {
+         "address": "0x08F5158B",
+         "text": "我的碎片……\n这可怎么办呢…？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F51316",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F51318",
+       "command": "goto",
+       "args": [
+        144596660
+       ],
+       "targets": [
+        "0x089E5EB4"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E5E93"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F515C4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F515C4",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F515C9",
+       "command": "goto_if",
+       "args": [
+        1,
+        144596706
+       ],
+       "targets": [
+        "0x089E5EE2"
+       ]
+      },
+      {
+       "at": "0x08F515CF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144597278
+       ],
+       "texts": [
+        {
+         "address": "0x089E611E",
+         "text": "好吧……\n我会自己想办法的。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F515D5",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F515D7",
+       "command": "applymovement",
+       "args": [
+        36,
+        150280376
+       ]
+      },
+      {
+       "at": "0x08F515DE",
+       "command": "waitmovement",
+       "args": [
+        36
+       ]
+      },
+      {
+       "at": "0x08F515E1",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F515E2",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089E5EB4"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

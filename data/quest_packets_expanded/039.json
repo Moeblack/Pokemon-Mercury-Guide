@@ -1,0 +1,3025 @@
+{
+ "title": "洞穴深处的回响",
+ "quest_id": 39,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b208",
+    "title": "洞穴深处的回响",
+    "title_address": "0x8e3c2c2",
+    "description": "连接洞深处传来的宝可梦的\n叫声很令我在意...有人可以\n来连接洞协助我调查吗？",
+    "description_address": "0x8e3c299",
+    "unknown_u16": 209,
+    "unknown_u16_hex": "0x00D1",
+    "accept_flag": 6289,
+    "accept_flag_hex": "0x1891",
+    "complete_flag": 6291,
+    "complete_flag_hex": "0x1893",
+    "map_group": 3,
+    "map_num": 86,
+    "tail_hex": "06 01 00 00",
+    "index": 39,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39534",
+      "title": "洞穴深处的回响",
+      "description_address": "0x8e3a145",
+      "description": "连接洞深处传来的宝可梦的\\n叫声很令我在意...有人可以\\n来连接洞协助我调查吗？"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a145",
+    "legacy_match_count": 1,
+    "current_description": "调查每周五在连接洞\n深处发出叫声的宝可梦。",
+    "catalog_map": {
+     "id": "3:86",
+     "name": "连接洞"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08F34824",
+    "0x08F34856",
+    "0x08F3499D",
+    "0x08F349D1",
+    "0x08F34A95",
+    "0x08F34B0E",
+    "0x08F34B40",
+    "0x08F34C87",
+    "0x08F34CBB",
+    "0x08F34D7F"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F34B0E",
+     "map_id": "3:86",
+     "place": "连接洞",
+     "kind": "人物",
+     "local_id": 1,
+     "event_index": 0,
+     "x": 10,
+     "y": 46,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n086.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089D343E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089D343E",
+       "command": "trainerbattle0",
+       "args": [
+        0,
+        24,
+        0,
+        144520318,
+        144520397
+       ]
+      },
+      {
+       "at": "0x089D344C",
+       "command": "goto",
+       "args": [
+        150277981
+       ],
+       "targets": [
+        "0x08F50F5D"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34B0E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34824",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34824",
+       "command": "checkflag",
+       "args": [
+        6289
+       ],
+       "task_flag_labels": [
+        {
+         "title": "洞穴深处的回响",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34827",
+       "command": "goto_if",
+       "args": [
+        1,
+        150161873
+       ],
+       "targets": [
+        "0x08F349D1"
+       ]
+      },
+      {
+       "at": "0x08F3482D",
+       "command": "goto",
+       "args": [
+        144520254
+       ],
+       "targets": [
+        "0x089D343E"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=39"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34856",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34856",
+       "command": "checkflag",
+       "args": [
+        6289
+       ],
+       "task_flag_labels": [
+        {
+         "title": "洞穴深处的回响",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34859",
+       "command": "goto_if",
+       "args": [
+        1,
+        150161873
+       ],
+       "targets": [
+        "0x08F349D1"
+       ]
+      },
+      {
+       "at": "0x08F3485F",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F34862",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150161491
+       ]
+      },
+      {
+       "at": "0x08F34869",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F3486C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150161545
+       ],
+       "texts": [
+        {
+         "address": "0x08F34889",
+         "text": "可惜，洞窟深处需要\n有学会冲浪的宝可梦才能抵达。\n所以……\n你能够帮我调查这件事吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34872",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F34874",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F34879",
+       "command": "goto_if",
+       "args": [
+        1,
+        150161821
+       ],
+       "targets": [
+        "0x08F3499D"
+       ]
+      },
+      {
+       "at": "0x08F3487F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150161624
+       ],
+       "texts": [
+        {
+         "address": "0x08F348D8",
+         "text": "这样吗？\n那太遗憾了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34885",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34887",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=39"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F3499D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3499D",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F349A0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150161646
+       ],
+       "texts": [
+        {
+         "address": "0x08F348EE",
+         "text": "接受任务:<洞穴深处的回响>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F349A6",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F349AB",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F349B0",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F349B5",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F349BA",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F349BF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150161677
+       ],
+       "texts": [
+        {
+         "address": "0x08F3490D",
+         "text": "谢谢你！\n如果你收服了每周五\n在洞窟深处发出叫声的精灵，\n就把它给我看看吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F349C5",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F349C7",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F349CC",
+       "command": "setflag",
+       "args": [
+        6289
+       ],
+       "task_flag_labels": [
+        {
+         "title": "洞穴深处的回响",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F349CF",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34856"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F349D1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F349D1",
+       "command": "checkflag",
+       "args": [
+        6291
+       ],
+       "task_flag_labels": [
+        {
+         "title": "洞穴深处的回响",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F349D4",
+       "command": "goto_if",
+       "args": [
+        1,
+        150162188
+       ],
+       "targets": [
+        "0x08F34B0C"
+       ]
+      },
+      {
+       "at": "0x08F349DA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150161762
+       ],
+       "texts": [
+        {
+         "address": "0x08F34962",
+         "text": "你收服到了每周五\n在洞窟深处发出叫声的精灵吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F349E0",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F349E2",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F349E4",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F349E5",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F349E8",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x08F349EB",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08F349EC",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x08F349F1",
+       "command": "goto_if",
+       "args": [
+        1,
+        150161981
+       ],
+       "targets": [
+        "0x08F34A3D"
+       ]
+      },
+      {
+       "at": "0x08F349F7",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08F349FC",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F349FD",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08F34A02",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        131
+       ],
+       "possible_names_not_semantics": {
+        "species": "拉普拉斯",
+        "item": "奇迹邮件",
+        "move": "尖刺加农炮"
+       }
+      },
+      {
+       "at": "0x08F34A07",
+       "command": "goto_if",
+       "args": [
+        1,
+        150162069
+       ],
+       "targets": [
+        "0x08F34A95"
+       ]
+      },
+      {
+       "at": "0x08F34A0D",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F34A0E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150161944
+       ],
+       "texts": [
+        {
+         "address": "0x08F34A18",
+         "text": "不对……这怎么看\n也不是那只宝可梦吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34A14",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34A16",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=39"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34A3D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34A3D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150161991
+       ],
+       "texts": [
+        {
+         "address": "0x08F34A47",
+         "text": "好吧，如果你收服到了\n那只宝可梦，就给我看看吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34A43",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34A45",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F349D1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34A95",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34A95",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F34A98",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150161491
+       ]
+      },
+      {
+       "at": "0x08F34A9F",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F34AA2",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F34AA3",
+       "command": "showpokepic",
+       "args": [
+        131,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08F34AA8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150162198
+       ]
+      },
+      {
+       "at": "0x08F34AAE",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F34AB0",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08F34AB1",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F34AB4",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F34AB5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150162261
+       ]
+      },
+      {
+       "at": "0x08F34ABB",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F34ABD",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F34ABE",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        693
+       ],
+       "possible_names_not_semantics": {
+        "species": "毕力吉翁",
+        "item": "潮湿岩石",
+        "move": "装饰"
+       }
+      },
+      {
+       "at": "0x08F34AC3",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F34AC8",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F34ACA",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34ACD",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34AD0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150162038
+       ],
+       "texts": [
+        {
+         "address": "0x08F34A76",
+         "text": "完成任务:<洞穴深处的回响>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34AD6",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F34ADB",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F34AE0",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F34AE5",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F34AEA",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F34AEF",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08F34AF4",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08F34AFA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150161178
+       ],
+       "texts": [
+        {
+         "address": "0x08F3471A",
+         "text": "获得了3点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34B00",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34B02",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F34B07",
+       "command": "setflag",
+       "args": [
+        6291
+       ],
+       "task_flag_labels": [
+        {
+         "title": "洞穴深处的回响",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34B0A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F349D1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34B0C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34B0C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        102273323
+       ]
+      },
+      {
+       "at": "0x08F34B12",
+       "command": "nop1",
+       "args": []
+      },
+      {
+       "at": "0x08F34B13",
+       "command": "vgoto_if",
+       "args": [
+        76,
+        1040517363
+       ]
+      },
+      {
+       "at": "0x08F34B19",
+       "command": "savebgm",
+       "args": [
+        2205
+       ]
+      },
+      {
+       "at": "0x08F34B1C",
+       "command": "checkflag",
+       "args": [
+        6298
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34B1F",
+       "command": "goto_if",
+       "args": [
+        1,
+        150164449
+       ],
+       "targets": [
+        "0x08F353E1"
+       ]
+      },
+      {
+       "at": "0x08F34B25",
+       "command": "goto",
+       "args": [
+        150164520
+       ],
+       "targets": [
+        "0x08F35428"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F349D1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34B0E",
+     "event_roots": [
+      {
+       "map_id": "3:86",
+       "place": "连接洞",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 10,
+       "y": 46,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n086.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F34B0E",
+       "command": "checkflag",
+       "args": [
+        6289
+       ],
+       "task_flag_labels": [
+        {
+         "title": "洞穴深处的回响",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34B11",
+       "command": "goto_if",
+       "args": [
+        1,
+        150162619
+       ],
+       "targets": [
+        "0x08F34CBB"
+       ]
+      },
+      {
+       "at": "0x08F34B17",
+       "command": "goto",
+       "args": [
+        144520254
+       ],
+       "targets": [
+        "0x089D343E"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "3:86/local1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34B40",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34B40",
+       "command": "checkflag",
+       "args": [
+        6289
+       ],
+       "task_flag_labels": [
+        {
+         "title": "洞穴深处的回响",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34B43",
+       "command": "goto_if",
+       "args": [
+        1,
+        150162619
+       ],
+       "targets": [
+        "0x08F34CBB"
+       ]
+      },
+      {
+       "at": "0x08F34B49",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F34B4C",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150162237
+       ]
+      },
+      {
+       "at": "0x08F34B53",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F34B56",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150162291
+       ],
+       "texts": [
+        {
+         "address": "0x08F34B73",
+         "text": "可惜，洞窟深处需要\n有学会冲浪的宝可梦才能抵达。\n所以……\n你能够帮我调查这件事吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34B5C",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F34B5E",
+       "command": "goto",
+       "args": [
+        150278941
+       ],
+       "targets": [
+        "0x08F5131D"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F50F5D"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34C87",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34C87",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34C8A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150162392
+       ],
+       "texts": [
+        {
+         "address": "0x08F34BD8",
+         "text": "接受任务:<洞穴深处的回响>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34C90",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F34C95",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F34C9A",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F34C9F",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F34CA4",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F34CA9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150162423
+       ],
+       "texts": [
+        {
+         "address": "0x08F34BF7",
+         "text": "谢谢你！\n如果你收服了每周五\n在洞窟深处发出叫声的精灵，\n就把它给我看看吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34CAF",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34CB1",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F34CB6",
+       "command": "setflag",
+       "args": [
+        6289
+       ],
+       "task_flag_labels": [
+        {
+         "title": "洞穴深处的回响",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34CB9",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5131D"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34CBB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34CBB",
+       "command": "checkflag",
+       "args": [
+        6291
+       ],
+       "task_flag_labels": [
+        {
+         "title": "洞穴深处的回响",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34CBE",
+       "command": "goto_if",
+       "args": [
+        1,
+        150162934
+       ],
+       "targets": [
+        "0x08F34DF6"
+       ]
+      },
+      {
+       "at": "0x08F34CC4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150162508
+       ],
+       "texts": [
+        {
+         "address": "0x08F34C4C",
+         "text": "你收服到了每周五在\n洞窟深处发出叫声的精灵吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34CCA",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34CCC",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F34CCE",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F34CCF",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F34CD2",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x08F34CD5",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08F34CD6",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x08F34CDB",
+       "command": "goto_if",
+       "args": [
+        1,
+        150162727
+       ],
+       "targets": [
+        "0x08F34D27"
+       ]
+      },
+      {
+       "at": "0x08F34CE1",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08F34CE6",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F34CE7",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08F34CEC",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        131
+       ],
+       "possible_names_not_semantics": {
+        "species": "拉普拉斯",
+        "item": "奇迹邮件",
+        "move": "尖刺加农炮"
+       }
+      },
+      {
+       "at": "0x08F34CF1",
+       "command": "goto_if",
+       "args": [
+        1,
+        150162815
+       ],
+       "targets": [
+        "0x08F34D7F"
+       ]
+      },
+      {
+       "at": "0x08F34CF7",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F34CF8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150162690
+       ],
+       "texts": [
+        {
+         "address": "0x08F34D02",
+         "text": "不对……这怎么看\n也不是那只宝可梦吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34CFE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34D00",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34B0E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34D27",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34D27",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150162737
+       ],
+       "texts": [
+        {
+         "address": "0x08F34D31",
+         "text": "好吧，如果你收服到了\n那只宝可梦，就给我看看吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34D2D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34D2F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34CBB"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34D7F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34D7F",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F34D82",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150162237
+       ]
+      },
+      {
+       "at": "0x08F34D89",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F34D8C",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F34D8D",
+       "command": "showpokepic",
+       "args": [
+        131,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08F34D92",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150163018
+       ],
+       "texts": [
+        {
+         "address": "0x08F34E4A",
+         "text": "这就是……\n洞窟深处的宝可梦吗？\n这只宝可梦\n应该叫拉普拉斯，对吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34D98",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F34D9A",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08F34D9B",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F34D9E",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F34D9F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150163081
+       ],
+       "texts": [
+        {
+         "address": "0x08F34E89",
+         "text": "骑着拉普拉斯的少年……\n这是我曾经听过的一首歌。\n没想到在今天，\n我真的见到拉普拉斯了！\n谢谢你，\n这个就请你收下吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34DA5",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F34DA7",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F34DA8",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        693
+       ],
+       "possible_names_not_semantics": {
+        "species": "毕力吉翁",
+        "item": "潮湿岩石",
+        "move": "装饰"
+       }
+      },
+      {
+       "at": "0x08F34DAD",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F34DB2",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F34DB4",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34DB7",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34DBA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150162784
+       ],
+       "texts": [
+        {
+         "address": "0x08F34D60",
+         "text": "完成任务:<洞穴深处的回响>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34DC0",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F34DC5",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F34DCA",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F34DCF",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F34DD4",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F34DD9",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08F34DDE",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08F34DE4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150161178
+       ],
+       "texts": [
+        {
+         "address": "0x08F3471A",
+         "text": "获得了3点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34DEA",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34DEC",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F34DF1",
+       "command": "setflag",
+       "args": [
+        6291
+       ],
+       "task_flag_labels": [
+        {
+         "title": "洞穴深处的回响",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34DF4",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34CBB"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34DF6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34DF6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150162944
+       ],
+       "texts": [
+        {
+         "address": "0x08F34E00",
+         "text": "没想到能够\n在这里见到拉普拉斯……\n多亏了你，我才\n能够在收集之路上继续前进！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34DFC",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34DFE",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34CBB"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F353E1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F353E1",
+       "command": "checkflag",
+       "args": [
+        6299
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F353E4",
+       "command": "goto_if",
+       "args": [
+        1,
+        150164539
+       ],
+       "targets": [
+        "0x08F3543B"
+       ]
+      },
+      {
+       "at": "0x08F353EA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150164781
+       ],
+       "texts": [
+        {
+         "address": "0x08F3552D",
+         "text": "怎么样？\n你收服到黑色的千针鱼了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F353F0",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F353F2",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F353F3",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F353F6",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x08F353F9",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08F353FA",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x08F353FF",
+       "command": "goto_if",
+       "args": [
+        1,
+        150164549
+       ],
+       "targets": [
+        "0x08F35445"
+       ]
+      },
+      {
+       "at": "0x08F35405",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08F3540A",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F3540B",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08F35410",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1239
+       ],
+       "possible_names_not_semantics": {
+        "species": "千针鱼",
+        "item": null,
+        "move": null
+       }
+      },
+      {
+       "at": "0x08F35415",
+       "command": "goto_if",
+       "args": [
+        1,
+        150164559
+       ],
+       "targets": [
+        "0x08F3544F"
+       ]
+      },
+      {
+       "at": "0x08F3541B",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F3541C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150275237
+       ],
+       "texts": [
+        {
+         "address": "0x08F504A5",
+         "text": "嗯？\n你是在开玩笑吧……\n黑色的千针鱼……\n我是在41号水路\n的潮旋附近遇到的。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35422",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F35424",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34B1C"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F35428",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F35428",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150164840
+       ],
+       "texts": [
+        {
+         "address": "0x08F35568",
+         "text": "难道真的是错觉吗……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3542E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F35430",
+       "command": "goto",
+       "args": [
+        150274758
+       ],
+       "targets": [
+        "0x08F502C6"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34B1C"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F3543B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3543B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150164861
+       ],
+       "texts": [
+        {
+         "address": "0x08F3557D",
+         "text": "不知道的事情还很多……\n有空就去\n缘朱市的图书馆查阅一下资料吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35441",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F35443",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F353E1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F35445",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F35445",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150274779
+       ],
+       "texts": [
+        {
+         "address": "0x08F502DB",
+         "text": "黑色的千针鱼……\n我是在41号水路\n的潮旋附近遇到的。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3544B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3544D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F353E1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F3544F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3544F",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F35452",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150165608
+       ]
+      },
+      {
+       "at": "0x08F35459",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F3545C",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F3545D",
+       "command": "showpokepic",
+       "args": [
+        1239,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08F35462",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150164967
+       ],
+       "texts": [
+        {
+         "address": "0x08F355E7",
+         "text": "没错！\n这就是我那天看到的……\n比起我们经常见到的千针鱼，\n它的毒针更短更粗……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35468",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F3546A",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08F3546B",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F3546E",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F3546F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150165042
+       ],
+       "texts": [
+        {
+         "address": "0x08F35632",
+         "text": "总感觉它\n不是来自这个地区，\n甚至是这个时代的宝可梦呢……\n可它为什么又会\n出现在这个时间，这个地点呢？\n不知道的事情还很多……\n但还是谢谢你，让我见到了它！\n这是给你的报酬。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35475",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F35477",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F35478",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        255
+       ],
+       "possible_names_not_semantics": {
+        "species": "土龙节节",
+        "item": "蓝色头巾",
+        "move": "喷出"
+       }
+      },
+      {
+       "at": "0x08F3547D",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F35482",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F35484",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F35487",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3548A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150165204
+       ],
+       "texts": [
+        {
+         "address": "0x08F356D4",
+         "text": "完成任务:<黑色的千针鱼>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35490",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F35495",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3549A",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F3549F",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F354A4",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F354A9",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08F354AE",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08F354B4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150165233
+       ],
+       "texts": [
+        {
+         "address": "0x08F356F1",
+         "text": "获得了3点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F354BA",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F354BC",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F354C1",
+       "command": "setflag",
+       "args": [
+        6299
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F354C4",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F353E1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F354C6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F354C6",
+       "command": "checkflag",
+       "args": [
+        6298
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F354C9",
+       "command": "goto_if",
+       "args": [
+        1,
+        150164449
+       ],
+       "targets": [
+        "0x08F353E1"
+       ]
+      },
+      {
+       "at": "0x08F354CF",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F354D2",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150165608
+       ]
+      },
+      {
+       "at": "0x08F354D9",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F354DC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150165268
+       ],
+       "texts": [
+        {
+         "address": "0x08F35714",
+         "text": "你来啦！\n事情是这样的……\n那天我正在41号水路游泳，\n游到潮旋附近时，\n忽然间感到一阵眩晕……\n接着，一只黑色的\n千针鱼从我面前游过。\n之后我想游过去追上它，\n却再也找不到了。\n我都怀疑那是不是错觉了……\n所以，你能够帮我调查一下吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F354E2",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F354E4",
+       "command": "goto",
+       "args": [
+        150274727
+       ],
+       "targets": [
+        "0x08F502A7"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F502C6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F354F9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F354F9",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F354FC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150165521
+       ],
+       "texts": [
+        {
+         "address": "0x08F35811",
+         "text": "接受任务:<黑色的千针鱼>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35502",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F35507",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3550C",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F35511",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F35516",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F3551B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150165550
+       ],
+       "texts": [
+        {
+         "address": "0x08F3582E",
+         "text": "太感谢你了！\n如果你收服了那只\n黑色的千针鱼，就给我看看吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35521",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F35523",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F35528",
+       "command": "setflag",
+       "args": [
+        6298
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3552B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F502A7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F502A7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F502A7",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F502AC",
+       "command": "goto_if",
+       "args": [
+        1,
+        150164729
+       ],
+       "targets": [
+        "0x08F354F9"
+       ]
+      },
+      {
+       "at": "0x08F502B2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150165492
+       ],
+       "texts": [
+        {
+         "address": "0x08F357F4",
+         "text": "嗯……\n或许那真的是我的错觉。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F502B8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F502BA",
+       "command": "applymovement",
+       "args": [
+        2,
+        150274523
+       ]
+      },
+      {
+       "at": "0x08F502C1",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F502C4",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F502C5",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F354C6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F502C6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F502C6",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08F502C9",
+       "command": "goto_if",
+       "args": [
+        1,
+        150164678
+       ],
+       "targets": [
+        "0x08F354C6"
+       ]
+      },
+      {
+       "at": "0x08F502CF",
+       "command": "applymovement",
+       "args": [
+        2,
+        150274523
+       ]
+      },
+      {
+       "at": "0x08F502D6",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F502D9",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F502DA",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F35428"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F50F5D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F50F5D",
+       "command": "applymovement",
+       "args": [
+        24,
+        150278746
+       ]
+      },
+      {
+       "at": "0x08F50F64",
+       "command": "waitmovement",
+       "args": [
+        24
+       ]
+      },
+      {
+       "at": "0x08F50F67",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144520419
+       ],
+       "texts": [
+        {
+         "address": "0x089D34E3",
+         "text": "一到周五，\n这个洞窟的深处就会\n传出精灵的叫声。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F50F6D",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F50F6F",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08F50F72",
+       "command": "goto_if",
+       "args": [
+        1,
+        150162240
+       ],
+       "targets": [
+        "0x08F34B40"
+       ]
+      },
+      {
+       "at": "0x08F50F78",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089D343E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5131D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5131D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F51322",
+       "command": "goto_if",
+       "args": [
+        1,
+        150162567
+       ],
+       "targets": [
+        "0x08F34C87"
+       ]
+      },
+      {
+       "at": "0x08F51328",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150162370
+       ],
+       "texts": [
+        {
+         "address": "0x08F34BC2",
+         "text": "这样吗？\n那太遗憾了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5132E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F51330",
+       "command": "applymovement",
+       "args": [
+        24,
+        150279848
+       ]
+      },
+      {
+       "at": "0x08F51337",
+       "command": "waitmovement",
+       "args": [
+        24
+       ]
+      },
+      {
+       "at": "0x08F5133A",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5133B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34B40"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

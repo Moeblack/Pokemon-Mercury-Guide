@@ -1,0 +1,68 @@
+{
+ "id": 70,
+ "title": "遗失的钥匙",
+ "start_locations": [
+  {
+   "map_id": "3:70",
+   "place": "缘朱市",
+   "x": 27,
+   "y": 26,
+   "npc_hint": "守着打不开家门的男性"
+  }
+ ],
+ "requirements": [
+  "主线推进到脚本以旗标4246判定的阶段",
+  "接受后获得探宝器（道具261）"
+ ],
+ "steps": [
+  {
+   "text": "与男子对话，接受寻找钥匙的委托，获赠探宝器。",
+   "source_scripts": [
+    "0x08AF25F5",
+    "0x08AF2630"
+   ],
+   "map_id": "3:70"
+  },
+  {
+   "text": "在缘朱市使用探宝器探测隐藏道具“回家的钥匙”(道具284)，位置(63,26)，调查拾取。",
+   "source_scripts": [
+    "0x08AF267E"
+   ],
+   "map_id": "3:70"
+  },
+  {
+   "text": "持钥匙回到男子处交付，男子回家、关门，任务完成。",
+   "source_scripts": [
+    "0x08AF2698",
+    "0x08AF2992",
+    "0x08AF295A"
+   ],
+   "map_id": "3:70"
+  }
+ ],
+ "completion": [
+  "持有道具“回家的钥匙”(284)并交给男子（removeitem 284）",
+  "男子离场并置位6005"
+ ],
+ "rewards": [
+  "招式学习器56（道具381）×1",
+  "4000$",
+  "3点BracerPoints"
+ ],
+ "pitfalls": [
+  "钥匙为隐藏道具，需先使用探宝器探测",
+  "未持钥匙时男子不会收下"
+ ],
+ "related_items": [
+  261,
+  284,
+  381
+ ],
+ "related_species": [],
+ "related_trainers": [],
+ "open_questions": [
+  "探宝器提示音与隐藏道具的距离判定未在脚本体现"
+ ],
+ "source_packet": "data/quest_packets/070.json",
+ "status": "compiled"
+}

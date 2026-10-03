@@ -1,0 +1,2304 @@
+{
+ "title": "黑色的千针鱼",
+ "quest_id": 89,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b5f0",
+    "title": "黑色的千针鱼",
+    "title_address": "0x8e3bffe",
+    "description": "我在游泳时遇见了一只黑色\n千针鱼，有人能帮我调查\n这个吗？我在城镇东南部的民居！",
+    "description_address": "0x8e3bfd3",
+    "unknown_u16": 693,
+    "unknown_u16_hex": "0x02B5",
+    "accept_flag": 6298,
+    "accept_flag_hex": "0x189A",
+    "complete_flag": 6299,
+    "complete_flag_hex": "0x189B",
+    "map_group": 31,
+    "map_num": 0,
+    "tail_hex": "00 01 00 00",
+    "index": 89,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39774",
+      "title": "黑色的千针鱼",
+      "description_address": "0x8e39d94",
+      "description": "我在游泳时遇见了一只黑色\\n千针鱼，有人能帮我调查\\n这个吗？我在城镇东南部的民居！"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39d94",
+    "legacy_match_count": 1,
+    "current_description": "调查41号水路漩涡附近\n出现黑色千针鱼的传闻。",
+    "catalog_map": {
+     "id": "31:0",
+     "name": "湛蓝市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08F34B0C",
+    "0x08F34B1C",
+    "0x08F34B2A",
+    "0x08F353E1",
+    "0x08F3544F",
+    "0x08F354C6",
+    "0x08F354F9",
+    "0x08F3586A",
+    "0x08F358A5",
+    "0x08F358B1",
+    "0x08F358EF",
+    "0x08F358FB",
+    "0x08F35983",
+    "0x08F359A0"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F34B1C",
+     "map_id": "49:0",
+     "place": "湛蓝市",
+     "kind": "人物",
+     "local_id": 4,
+     "event_index": 3,
+     "x": 10,
+     "y": 2,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g49_n000.md"
+    },
+    {
+     "script": "0x08F358EF",
+     "map_id": "3:96",
+     "place": "41号水路",
+     "kind": "坐标事件",
+     "local_id": null,
+     "event_index": 0,
+     "x": 22,
+     "y": 7,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n096.md"
+    },
+    {
+     "script": "0x08F358EF",
+     "map_id": "3:96",
+     "place": "41号水路",
+     "kind": "坐标事件",
+     "local_id": null,
+     "event_index": 1,
+     "x": 54,
+     "y": 28,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n096.md"
+    },
+    {
+     "script": "0x08F358EF",
+     "map_id": "3:96",
+     "place": "41号水路",
+     "kind": "坐标事件",
+     "local_id": null,
+     "event_index": 2,
+     "x": 9,
+     "y": 31,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n096.md"
+    },
+    {
+     "script": "0x08F358EF",
+     "map_id": "3:96",
+     "place": "41号水路",
+     "kind": "坐标事件",
+     "local_id": null,
+     "event_index": 3,
+     "x": 37,
+     "y": 46,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n096.md"
+    },
+    {
+     "script": "0x08F4F6B5",
+     "map_id": "31:0",
+     "place": "湛蓝市",
+     "kind": "人物",
+     "local_id": 1,
+     "event_index": 0,
+     "x": 4,
+     "y": 4,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g31_n000.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08F34B0C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34B0C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        102273323
+       ]
+      },
+      {
+       "at": "0x08F34B12",
+       "command": "nop1",
+       "args": []
+      },
+      {
+       "at": "0x08F34B13",
+       "command": "vgoto_if",
+       "args": [
+        76,
+        1040517363
+       ]
+      },
+      {
+       "at": "0x08F34B19",
+       "command": "savebgm",
+       "args": [
+        2205
+       ]
+      },
+      {
+       "at": "0x08F34B1C",
+       "command": "checkflag",
+       "args": [
+        6298
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34B1F",
+       "command": "goto_if",
+       "args": [
+        1,
+        150164449
+       ],
+       "targets": [
+        "0x08F353E1"
+       ]
+      },
+      {
+       "at": "0x08F34B25",
+       "command": "goto",
+       "args": [
+        150164520
+       ],
+       "targets": [
+        "0x08F35428"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F349D1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34B1C",
+     "event_roots": [
+      {
+       "map_id": "49:0",
+       "place": "湛蓝市",
+       "kind": "人物",
+       "local_id": 4,
+       "event_index": 3,
+       "x": 10,
+       "y": 2,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g49_n000.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F34B1C",
+       "command": "checkflag",
+       "args": [
+        6298
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34B1F",
+       "command": "goto_if",
+       "args": [
+        1,
+        150164449
+       ],
+       "targets": [
+        "0x08F353E1"
+       ]
+      },
+      {
+       "at": "0x08F34B25",
+       "command": "goto",
+       "args": [
+        150164520
+       ],
+       "targets": [
+        "0x08F35428"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "49:0/local4"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34B2A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34B2A",
+       "command": "checkflag",
+       "args": [
+        6298
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34B2D",
+       "command": "goto_if",
+       "args": [
+        1,
+        150165610
+       ],
+       "targets": [
+        "0x08F3586A"
+       ]
+      },
+      {
+       "at": "0x08F34B33",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F34B34",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=89"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F353E1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F353E1",
+       "command": "checkflag",
+       "args": [
+        6299
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F353E4",
+       "command": "goto_if",
+       "args": [
+        1,
+        150164539
+       ],
+       "targets": [
+        "0x08F3543B"
+       ]
+      },
+      {
+       "at": "0x08F353EA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150164781
+       ],
+       "texts": [
+        {
+         "address": "0x08F3552D",
+         "text": "怎么样？\n你收服到黑色的千针鱼了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F353F0",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F353F2",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F353F3",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F353F6",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x08F353F9",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08F353FA",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x08F353FF",
+       "command": "goto_if",
+       "args": [
+        1,
+        150164549
+       ],
+       "targets": [
+        "0x08F35445"
+       ]
+      },
+      {
+       "at": "0x08F35405",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08F3540A",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F3540B",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08F35410",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1239
+       ],
+       "possible_names_not_semantics": {
+        "species": "千针鱼",
+        "item": null,
+        "move": null
+       }
+      },
+      {
+       "at": "0x08F35415",
+       "command": "goto_if",
+       "args": [
+        1,
+        150164559
+       ],
+       "targets": [
+        "0x08F3544F"
+       ]
+      },
+      {
+       "at": "0x08F3541B",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F3541C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150275237
+       ],
+       "texts": [
+        {
+         "address": "0x08F504A5",
+         "text": "嗯？\n你是在开玩笑吧……\n黑色的千针鱼……\n我是在41号水路\n的潮旋附近遇到的。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35422",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F35424",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34B1C"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F35428",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F35428",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150164840
+       ],
+       "texts": [
+        {
+         "address": "0x08F35568",
+         "text": "难道真的是错觉吗……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3542E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F35430",
+       "command": "goto",
+       "args": [
+        150274758
+       ],
+       "targets": [
+        "0x08F502C6"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34B1C"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F3543B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3543B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150164861
+       ],
+       "texts": [
+        {
+         "address": "0x08F3557D",
+         "text": "不知道的事情还很多……\n有空就去\n缘朱市的图书馆查阅一下资料吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35441",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F35443",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F353E1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F35445",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F35445",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150274779
+       ],
+       "texts": [
+        {
+         "address": "0x08F502DB",
+         "text": "黑色的千针鱼……\n我是在41号水路\n的潮旋附近遇到的。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3544B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3544D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F353E1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F3544F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3544F",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F35452",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150165608
+       ]
+      },
+      {
+       "at": "0x08F35459",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F3545C",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F3545D",
+       "command": "showpokepic",
+       "args": [
+        1239,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08F35462",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150164967
+       ],
+       "texts": [
+        {
+         "address": "0x08F355E7",
+         "text": "没错！\n这就是我那天看到的……\n比起我们经常见到的千针鱼，\n它的毒针更短更粗……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35468",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F3546A",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08F3546B",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F3546E",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F3546F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150165042
+       ],
+       "texts": [
+        {
+         "address": "0x08F35632",
+         "text": "总感觉它\n不是来自这个地区，\n甚至是这个时代的宝可梦呢……\n可它为什么又会\n出现在这个时间，这个地点呢？\n不知道的事情还很多……\n但还是谢谢你，让我见到了它！\n这是给你的报酬。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35475",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F35477",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F35478",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        255
+       ],
+       "possible_names_not_semantics": {
+        "species": "土龙节节",
+        "item": "蓝色头巾",
+        "move": "喷出"
+       }
+      },
+      {
+       "at": "0x08F3547D",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F35482",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F35484",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F35487",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3548A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150165204
+       ],
+       "texts": [
+        {
+         "address": "0x08F356D4",
+         "text": "完成任务:<黑色的千针鱼>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35490",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F35495",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3549A",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F3549F",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F354A4",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F354A9",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08F354AE",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08F354B4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150165233
+       ],
+       "texts": [
+        {
+         "address": "0x08F356F1",
+         "text": "获得了3点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F354BA",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F354BC",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F354C1",
+       "command": "setflag",
+       "args": [
+        6299
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F354C4",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F353E1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F354C6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F354C6",
+       "command": "checkflag",
+       "args": [
+        6298
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F354C9",
+       "command": "goto_if",
+       "args": [
+        1,
+        150164449
+       ],
+       "targets": [
+        "0x08F353E1"
+       ]
+      },
+      {
+       "at": "0x08F354CF",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F354D2",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150165608
+       ]
+      },
+      {
+       "at": "0x08F354D9",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F354DC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150165268
+       ],
+       "texts": [
+        {
+         "address": "0x08F35714",
+         "text": "你来啦！\n事情是这样的……\n那天我正在41号水路游泳，\n游到潮旋附近时，\n忽然间感到一阵眩晕……\n接着，一只黑色的\n千针鱼从我面前游过。\n之后我想游过去追上它，\n却再也找不到了。\n我都怀疑那是不是错觉了……\n所以，你能够帮我调查一下吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F354E2",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F354E4",
+       "command": "goto",
+       "args": [
+        150274727
+       ],
+       "targets": [
+        "0x08F502A7"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F502C6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F354F9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F354F9",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F354FC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150165521
+       ],
+       "texts": [
+        {
+         "address": "0x08F35811",
+         "text": "接受任务:<黑色的千针鱼>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35502",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F35507",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3550C",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F35511",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F35516",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F3551B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150165550
+       ],
+       "texts": [
+        {
+         "address": "0x08F3582E",
+         "text": "太感谢你了！\n如果你收服了那只\n黑色的千针鱼，就给我看看吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35521",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F35523",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F35528",
+       "command": "setflag",
+       "args": [
+        6298
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3552B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F502A7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F3586A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3586A",
+       "command": "checkflag",
+       "args": [
+        6299
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3586D",
+       "command": "goto_if",
+       "args": [
+        1,
+        150165667
+       ],
+       "targets": [
+        "0x08F358A3"
+       ]
+      },
+      {
+       "at": "0x08F35873",
+       "command": "checkflag",
+       "args": [
+        27
+       ]
+      },
+      {
+       "at": "0x08F35876",
+       "command": "goto_if",
+       "args": [
+        1,
+        150165667
+       ],
+       "targets": [
+        "0x08F358A3"
+       ]
+      },
+      {
+       "at": "0x08F3587C",
+       "command": "checkflag",
+       "args": [
+        26
+       ]
+      },
+      {
+       "at": "0x08F3587F",
+       "command": "goto_if",
+       "args": [
+        1,
+        150165639
+       ],
+       "targets": [
+        "0x08F35887"
+       ]
+      },
+      {
+       "at": "0x08F35885",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=89"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F35887",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F35887",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F3588A",
+       "command": "applymovement",
+       "args": [
+        255,
+        150165664
+       ]
+      },
+      {
+       "at": "0x08F35891",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F35894",
+       "command": "setwildbattle",
+       "args": [
+        1239,
+        20,
+        0
+       ],
+       "species_name": "千针鱼"
+      },
+      {
+       "at": "0x08F3589A",
+       "command": "dowildbattle",
+       "args": []
+      },
+      {
+       "at": "0x08F3589B",
+       "command": "setflag",
+       "args": [
+        27
+       ]
+      },
+      {
+       "at": "0x08F3589E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F3586A"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F358A3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F358A3",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F358A4",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F3586A"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F358A5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F358A5",
+       "command": "checkflag",
+       "args": [
+        6298
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F358A8",
+       "command": "goto_if",
+       "args": [
+        1,
+        150165920
+       ],
+       "targets": [
+        "0x08F359A0"
+       ]
+      },
+      {
+       "at": "0x08F358AE",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F358AF",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=89"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F358B1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F358B1",
+       "command": "checkflag",
+       "args": [
+        6299
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F358B4",
+       "command": "goto_if",
+       "args": [
+        1,
+        150165741
+       ],
+       "targets": [
+        "0x08F358ED"
+       ]
+      },
+      {
+       "at": "0x08F358BA",
+       "command": "checkflag",
+       "args": [
+        27
+       ]
+      },
+      {
+       "at": "0x08F358BD",
+       "command": "goto_if",
+       "args": [
+        1,
+        150165741
+       ],
+       "targets": [
+        "0x08F358ED"
+       ]
+      },
+      {
+       "at": "0x08F358C3",
+       "command": "checkflag",
+       "args": [
+        26
+       ]
+      },
+      {
+       "at": "0x08F358C6",
+       "command": "goto_if",
+       "args": [
+        1,
+        150165710
+       ],
+       "targets": [
+        "0x08F358CE"
+       ]
+      },
+      {
+       "at": "0x08F358CC",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=89"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F358CE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F358CE",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F358D1",
+       "command": "applymovement",
+       "args": [
+        255,
+        150165738
+       ]
+      },
+      {
+       "at": "0x08F358D8",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F358DB",
+       "command": "setflag",
+       "args": [
+        6301
+       ]
+      },
+      {
+       "at": "0x08F358DE",
+       "command": "setwildbattle",
+       "args": [
+        1239,
+        20,
+        0
+       ],
+       "species_name": "千针鱼"
+      },
+      {
+       "at": "0x08F358E4",
+       "command": "dowildbattle",
+       "args": []
+      },
+      {
+       "at": "0x08F358E5",
+       "command": "setflag",
+       "args": [
+        27
+       ]
+      },
+      {
+       "at": "0x08F358E8",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F358B1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F358ED",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F358ED",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F358EE",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F358B1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F358EF",
+     "event_roots": [
+      {
+       "map_id": "3:96",
+       "place": "41号水路",
+       "kind": "坐标事件",
+       "local_id": null,
+       "event_index": 0,
+       "x": 22,
+       "y": 7,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n096.md"
+      },
+      {
+       "map_id": "3:96",
+       "place": "41号水路",
+       "kind": "坐标事件",
+       "local_id": null,
+       "event_index": 1,
+       "x": 54,
+       "y": 28,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n096.md"
+      },
+      {
+       "map_id": "3:96",
+       "place": "41号水路",
+       "kind": "坐标事件",
+       "local_id": null,
+       "event_index": 2,
+       "x": 9,
+       "y": 31,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n096.md"
+      },
+      {
+       "map_id": "3:96",
+       "place": "41号水路",
+       "kind": "坐标事件",
+       "local_id": null,
+       "event_index": 3,
+       "x": 37,
+       "y": 46,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n096.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F358EF",
+       "command": "checkflag",
+       "args": [
+        6298
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F358F2",
+       "command": "goto_if",
+       "args": [
+        1,
+        150165755
+       ],
+       "targets": [
+        "0x08F358FB"
+       ]
+      },
+      {
+       "at": "0x08F358F8",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F358F9",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "coord",
+       "where": "3:96"
+      },
+      {
+       "kind": "coord",
+       "where": "3:96"
+      },
+      {
+       "kind": "coord",
+       "where": "3:96"
+      },
+      {
+       "kind": "coord",
+       "where": "3:96"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F358FB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F358FB",
+       "command": "checkflag",
+       "args": [
+        6299
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F358FE",
+       "command": "goto_if",
+       "args": [
+        1,
+        150165833
+       ],
+       "targets": [
+        "0x08F35949"
+       ]
+      },
+      {
+       "at": "0x08F35904",
+       "command": "checkflag",
+       "args": [
+        26
+       ]
+      },
+      {
+       "at": "0x08F35907",
+       "command": "goto_if",
+       "args": [
+        0,
+        150165776
+       ],
+       "targets": [
+        "0x08F35910"
+       ]
+      },
+      {
+       "at": "0x08F3590D",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F3590E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F358EF"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F35910",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F35910",
+       "command": "goto",
+       "args": [
+        150165835
+       ],
+       "targets": [
+        "0x08F3594B"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F358FB"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F35949",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F35949",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F3594A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F358FB"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F3594B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3594B",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F3594E",
+       "command": "applymovement",
+       "args": [
+        255,
+        150165830
+       ]
+      },
+      {
+       "at": "0x08F35955",
+       "command": "goto",
+       "args": [
+        150165981
+       ],
+       "targets": [
+        "0x08F359DD"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F35910"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F35983",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F35983",
+       "command": "checkflag",
+       "args": [
+        6299
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35986",
+       "command": "goto_if",
+       "args": [
+        1,
+        150165741
+       ],
+       "targets": [
+        "0x08F358ED"
+       ]
+      },
+      {
+       "at": "0x08F3598C",
+       "command": "checkflag",
+       "args": [
+        27
+       ]
+      },
+      {
+       "at": "0x08F3598F",
+       "command": "goto_if",
+       "args": [
+        1,
+        150165741
+       ],
+       "targets": [
+        "0x08F358ED"
+       ]
+      },
+      {
+       "at": "0x08F35995",
+       "command": "checkflag",
+       "args": [
+        26
+       ]
+      },
+      {
+       "at": "0x08F35998",
+       "command": "goto_if",
+       "args": [
+        1,
+        150165710
+       ],
+       "targets": [
+        "0x08F358CE"
+       ]
+      },
+      {
+       "at": "0x08F3599E",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F3599F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=89"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F359A0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F359A0",
+       "command": "checkflag",
+       "args": [
+        6299
+       ],
+       "task_flag_labels": [
+        {
+         "title": "黑色的千针鱼",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F359A3",
+       "command": "goto_if",
+       "args": [
+        1,
+        150165741
+       ],
+       "targets": [
+        "0x08F358ED"
+       ]
+      },
+      {
+       "at": "0x08F359A9",
+       "command": "checkflag",
+       "args": [
+        27
+       ]
+      },
+      {
+       "at": "0x08F359AC",
+       "command": "goto_if",
+       "args": [
+        1,
+        150165741
+       ],
+       "targets": [
+        "0x08F358ED"
+       ]
+      },
+      {
+       "at": "0x08F359B2",
+       "command": "goto",
+       "args": [
+        150165710
+       ],
+       "targets": [
+        "0x08F358CE"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=89"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F359DD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F359DD",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F359E0",
+       "command": "fadesong",
+       "args": [
+        482
+       ]
+      },
+      {
+       "at": "0x08F359E3",
+       "command": "setvar",
+       "args": [
+        32781,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x08F359E8",
+       "command": "callasm",
+       "args": [
+        144089969
+       ]
+      },
+      {
+       "at": "0x08F359ED",
+       "command": "pause",
+       "args": [
+        160
+       ]
+      },
+      {
+       "at": "0x08F359F0",
+       "command": "goto",
+       "args": [
+        150199542
+       ],
+       "targets": [
+        "0x08F3DCF6"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F3594B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F3DCF6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3DCF6",
+       "command": "callasm",
+       "args": [
+        144090017
+       ]
+      },
+      {
+       "at": "0x08F3DCFB",
+       "command": "pause",
+       "args": [
+        192
+       ]
+      },
+      {
+       "at": "0x08F3DCFE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150165805
+       ],
+       "texts": [
+        {
+         "address": "0x08F3592D",
+         "text": "周围的时空扭曲了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3DD04",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F3DD06",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F3DD07",
+       "command": "setflag",
+       "args": [
+        26
+       ]
+      },
+      {
+       "at": "0x08F3DD0A",
+       "command": "setflag",
+       "args": [
+        6301
+       ]
+      },
+      {
+       "at": "0x08F3DD0D",
+       "command": "setwildbattle",
+       "args": [
+        1239,
+        20,
+        0
+       ],
+       "species_name": "千针鱼"
+      },
+      {
+       "at": "0x08F3DD13",
+       "command": "dowildbattle",
+       "args": []
+      },
+      {
+       "at": "0x08F3DD14",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F359DD"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F4F6B5",
+     "event_roots": [
+      {
+       "map_id": "31:0",
+       "place": "湛蓝市",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 4,
+       "y": 4,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g31_n000.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F4F6B5",
+       "command": "applymovement",
+       "args": [
+        2,
+        150274402
+       ]
+      },
+      {
+       "at": "0x08F4F6BC",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F4F6BF",
+       "command": "goto",
+       "args": [
+        150162204
+       ],
+       "targets": [
+        "0x08F34B1C"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "31:0/local1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F502A7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F502A7",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F502AC",
+       "command": "goto_if",
+       "args": [
+        1,
+        150164729
+       ],
+       "targets": [
+        "0x08F354F9"
+       ]
+      },
+      {
+       "at": "0x08F502B2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150165492
+       ],
+       "texts": [
+        {
+         "address": "0x08F357F4",
+         "text": "嗯……\n或许那真的是我的错觉。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F502B8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F502BA",
+       "command": "applymovement",
+       "args": [
+        2,
+        150274523
+       ]
+      },
+      {
+       "at": "0x08F502C1",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F502C4",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F502C5",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F354C6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F502C6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F502C6",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08F502C9",
+       "command": "goto_if",
+       "args": [
+        1,
+        150164678
+       ],
+       "targets": [
+        "0x08F354C6"
+       ]
+      },
+      {
+       "at": "0x08F502CF",
+       "command": "applymovement",
+       "args": [
+        2,
+        150274523
+       ]
+      },
+      {
+       "at": "0x08F502D6",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F502D9",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F502DA",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F35428"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

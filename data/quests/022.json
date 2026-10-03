@@ -1,0 +1,41 @@
+{
+  "id": 22,
+  "title": "要进化的绿毛虫",
+  "start_locations": [
+    {"map_id": "45:4", "place": "吉野市", "x": 8, "y": 4, "npc_hint": "女孩"}
+  ],
+  "requirements": [
+    "已加入游击士协会（剧情旗标 4246 成立）",
+    "队伍中持有绿毛虫（species 10）作为交付物"
+  ],
+  "steps": [
+    {"text": "在吉野市与女孩对话，她请求你抓一只绿毛虫让给她培育进化。", "source_scripts": ["0x08F50377", "0x089E2D65", "0x089E2D1F", "0x08F50454", "0x08F5070C", "0x089E2DE6"], "map_id": "45:4"},
+    {"text": "选择答应，任务接取（接受任务:<要进化的绿毛虫>，接取旗标5466）。", "source_scripts": ["0x08F5070C", "0x089E2DE6"]},
+    {"text": "在野外捕捉一只绿毛虫并放进队伍。", "source_scripts": []},
+    {"text": "回到女孩处对话，回答“收服到了”，进入队伍选择界面，从队伍中选中绿毛虫。", "source_scripts": ["0x089E2E19", "0x089E31D9"]},
+    {"text": "系统核对物种为绿毛虫(10)后再次确认“真的要让出这只宝可梦吗？”，选“是”。", "source_scripts": ["0x089E329D"]},
+    {"text": "绿毛虫离队，播放进化过场与对话，女孩给出报酬，任务完成（完成旗标5467）。", "source_scripts": ["0x089E329D", "0x089E376C", "0x089E3CC1", "0x08AC43DD", "0x089E373A", "0x089E3D5D"]}
+  ],
+  "completion": [
+    "从队伍中交出一只绿毛虫（species 10）",
+    "完成旗标 5467 成立"
+  ],
+  "rewards": [
+    "经验糖果XS×2",
+    "5000元",
+    "3 BracerPoints"
+  ],
+  "pitfalls": [
+    "交付物必须是队伍中的绿毛虫，放在盒子里不行",
+    "带错物种会被识破（“诶，绿毛虫应该不长这样吧？”）并结束",
+    "绿毛虫是离队交出，不是普通道具扣除；确认界面选“否”可取消且不消耗"
+  ],
+  "related_items": [536],
+  "related_species": [10],
+  "related_trainers": [],
+  "open_questions": [
+    "入口 script1 通过 compare 0x800C 的条件分支未解释，仅影响同一对白路径的进入方式，未影响交付要求。"
+  ],
+  "source_packet": "data/quest_packets/022.json",
+  "status": "compiled"
+}

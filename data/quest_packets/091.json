@@ -1,0 +1,1696 @@
+{
+ "title": "完美的能量餐",
+ "quest_id": 91,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b618",
+    "title": "完美的能量餐",
+    "title_address": "0x8e3bf8c",
+    "description": "我正在调制完美的能量餐！\n但现在缺少了关键的材料...\n有人能来城镇北部帮帮我吗？",
+    "description_address": "0x8e3bf50",
+    "unknown_u16": 217,
+    "unknown_u16_hex": "0x00D9",
+    "accept_flag": 2613,
+    "accept_flag_hex": "0x0A35",
+    "complete_flag": 2937,
+    "complete_flag_hex": "0x0B79",
+    "map_group": 3,
+    "map_num": 73,
+    "tail_hex": "00 00 00 00",
+    "index": 91,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39794",
+      "title": "完美的能量餐",
+      "description_address": "0x8e39c97",
+      "description": "我正在调制完美的能量餐！\\n但现在缺少了关键的材料...\\n有人能来城镇北部帮帮我吗？"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39c97",
+    "legacy_match_count": 1,
+    "current_description": "帮助湛蓝市的空手道王\n去药店拿取调制完美的\n能量餐所需的材料。",
+    "catalog_map": {
+     "id": "3:73",
+     "name": "湛蓝市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08EDF34F",
+    "0x08EDFAA4",
+    "0x08EDFB20",
+    "0x08EE1AE1",
+    "0x08EE1D0D"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08EDF34F",
+     "map_id": "49:4",
+     "place": "湛蓝市",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 3,
+     "y": 4,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g49_n004.md"
+    },
+    {
+     "script": "0x08EDF426",
+     "map_id": "3:73",
+     "place": "湛蓝市",
+     "kind": "人物",
+     "local_id": 28,
+     "event_index": 27,
+     "x": 18,
+     "y": 11,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n073.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08EC20FB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC20FB",
+       "command": "setvar",
+       "args": [
+        20535,
+        1329
+       ],
+       "possible_names_not_semantics": {
+        "species": "36",
+        "item": null,
+        "move": null
+       }
+      },
+      {
+       "at": "0x08EC2100",
+       "command": "setvar",
+       "args": [
+        20536,
+        10
+       ],
+       "possible_names_not_semantics": {
+        "species": "绿毛虫",
+        "item": "计时球",
+        "move": "抓"
+       }
+      },
+      {
+       "at": "0x08EC2105",
+       "command": "setvar",
+       "args": [
+        20537,
+        14
+       ],
+       "possible_names_not_semantics": {
+        "species": "铁壳蛹",
+        "item": "解毒药",
+        "move": "剑舞"
+       }
+      },
+      {
+       "at": "0x08EC210A",
+       "command": "setflag",
+       "args": [
+        2638
+       ]
+      },
+      {
+       "at": "0x08EC210D",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDF34F",
+     "event_roots": [
+      {
+       "map_id": "49:4",
+       "place": "湛蓝市",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 3,
+       "y": 4,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g49_n004.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EDF34F",
+       "command": "checkflag",
+       "args": [
+        2613
+       ],
+       "task_flag_labels": [
+        {
+         "title": "完美的能量餐",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDF352",
+       "command": "goto_if",
+       "args": [
+        1,
+        149814768
+       ],
+       "targets": [
+        "0x08EDFDF0"
+       ]
+      },
+      {
+       "at": "0x08EDF358",
+       "command": "goto",
+       "args": [
+        149814810
+       ],
+       "targets": [
+        "0x08EDFE1A"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EDF426",
+     "event_roots": [
+      {
+       "map_id": "3:73",
+       "place": "湛蓝市",
+       "kind": "人物",
+       "local_id": 28,
+       "event_index": 27,
+       "x": 18,
+       "y": 11,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n073.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EDF426",
+       "command": "applymovement",
+       "args": [
+        77,
+        149823307
+       ]
+      },
+      {
+       "at": "0x08EDF42D",
+       "command": "waitmovement",
+       "args": [
+        77
+       ]
+      },
+      {
+       "at": "0x08EDF430",
+       "command": "goto",
+       "args": [
+        149814048
+       ],
+       "targets": [
+        "0x08EDFB20"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EDFAA4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDFAA4",
+       "command": "setflag",
+       "args": [
+        2936
+       ]
+      },
+      {
+       "at": "0x08EDFAA7",
+       "command": "checkflag",
+       "args": [
+        2937
+       ],
+       "task_flag_labels": [
+        {
+         "title": "完美的能量餐",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDFAAA",
+       "command": "call_if",
+       "args": [
+        1,
+        149814084
+       ],
+       "targets": [
+        "0x08EDFB44"
+       ]
+      },
+      {
+       "at": "0x08EDFAB0",
+       "command": "goto",
+       "args": [
+        149692667
+       ],
+       "targets": [
+        "0x08EC20FB"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EDFB20",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDFB20",
+       "command": "checkflag",
+       "args": [
+        2935
+       ]
+      },
+      {
+       "at": "0x08EDFB23",
+       "command": "goto_if",
+       "args": [
+        1,
+        149822177
+       ],
+       "targets": [
+        "0x08EE1AE1"
+       ]
+      },
+      {
+       "at": "0x08EDFB29",
+       "command": "checkflag",
+       "args": [
+        2613
+       ],
+       "task_flag_labels": [
+        {
+         "title": "完美的能量餐",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDFB2C",
+       "command": "goto_if",
+       "args": [
+        1,
+        149822670
+       ],
+       "targets": [
+        "0x08EE1CCE"
+       ]
+      },
+      {
+       "at": "0x08EDFB32",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149822809
+       ]
+      },
+      {
+       "at": "0x08EDFB38",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDFB3A",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08EDFB3D",
+       "command": "goto_if",
+       "args": [
+        1,
+        149822680
+       ],
+       "targets": [
+        "0x08EE1CD8"
+       ]
+      },
+      {
+       "at": "0x08EDFB43",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDFB44",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDFB44",
+       "command": "clearflag",
+       "args": [
+        2936
+       ]
+      },
+      {
+       "at": "0x08EDFB47",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDFDF0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDFDF0",
+       "command": "checkflag",
+       "args": [
+        2935
+       ]
+      },
+      {
+       "at": "0x08EDFDF3",
+       "command": "goto_if",
+       "args": [
+        1,
+        149814810
+       ],
+       "targets": [
+        "0x08EDFE1A"
+       ]
+      },
+      {
+       "at": "0x08EDFDF9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149823474
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1FF2",
+         "text": "哦？是帮那位\n空手道王取药的吗？\n那家伙总是想些奇怪的配方……\n给，这是他订购的药材。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDFDFF",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDFE01",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        30
+       ],
+       "possible_names_not_semantics": {
+        "species": "尼多娜",
+        "item": "元气粉",
+        "move": "角撞"
+       }
+      },
+      {
+       "at": "0x08EDFE06",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EDFE0B",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EDFE0D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149823442
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1FD2",
+         "text": "这种药劲很大，\n普通人可受不了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDFE13",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDFE15",
+       "command": "setflag",
+       "args": [
+        2935
+       ]
+      },
+      {
+       "at": "0x08EDFE18",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDFE1A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDFE1A",
+       "command": "checkflag",
+       "args": [
+        6225
+       ]
+      },
+      {
+       "at": "0x08EDFE1D",
+       "command": "goto_if",
+       "args": [
+        1,
+        149814829
+       ],
+       "targets": [
+        "0x08EDFE2D"
+       ]
+      },
+      {
+       "at": "0x08EDFE23",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149823316
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1F54",
+         "text": "欢迎光临湛蓝药店！\n虽然很想这么说……\n可是师傅现在不在呢。\n也许可以先去\n附近的断崖镇看看？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDFE29",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDFE2B",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDFE2D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDFE2D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149823404
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1FAC",
+         "text": "欢迎光临湛蓝药店！\n师傅已经回来了哦。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDFE33",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDFE35",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE1AE1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE1AE1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149823060
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1E54",
+         "text": "噢噢！就是这个元气粉！\n这就是最后的拼图！\n看好了！这才是极致的科学！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE1AE7",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE1AE9",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EE1AEA",
+       "command": "removeitem",
+       "args": [
+        30,
+        1
+       ],
+       "item_name": "元气粉"
+      },
+      {
+       "at": "0x08EE1AEF",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EE1AF1",
+       "command": "sound",
+       "args": [
+        84
+       ]
+      },
+      {
+       "at": "0x08EE1AF4",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08EE1AF7",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE1AF9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149823126
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1E96",
+         "text": "好！调制好了！\n我也分你一瓶吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE1AFF",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE1B01",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EE1B02",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        64
+       ],
+       "possible_names_not_semantics": {
+        "species": "勇基拉",
+        "item": "攻击增强剂",
+        "move": "啄"
+       }
+      },
+      {
+       "at": "0x08EE1B07",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE1B0C",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE1B0E",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EE1B0F",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE1B12",
+       "command": "sound",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EE1B15",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149822840
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1D78",
+         "text": "空手道王\n喝下了攻击增强剂！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE1B1B",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE1B1D",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EE1B20",
+       "command": "applymovement",
+       "args": [
+        32783,
+        149823553
+       ]
+      },
+      {
+       "at": "0x08EE1B27",
+       "command": "pause",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x08EE1B2A",
+       "command": "playsong",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08EE1B2E",
+       "command": "sound",
+       "args": [
+        263
+       ]
+      },
+      {
+       "at": "0x08EE1B31",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149823283
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1F33",
+         "text": "哎呀？\n空手道王的情形！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE1B37",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08EE1B39",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EE1B3A",
+       "command": "playsong",
+       "args": [
+        264,
+        255
+       ]
+      },
+      {
+       "at": "0x08EE1B3E",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EE1B40",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE1B43",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE1B45",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE1B48",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EE1B4A",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE1B4D",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE1B4F",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE1B52",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EE1B54",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE1B57",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE1B59",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE1B5C",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EE1B5E",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE1B61",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE1B63",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE1B66",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EE1B68",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08EE1B6B",
+       "command": "removeobject",
+       "args": [
+        28
+       ]
+      },
+      {
+       "at": "0x08EE1B6E",
+       "command": "setflag",
+       "args": [
+        2937
+       ],
+       "task_flag_labels": [
+        {
+         "title": "完美的能量餐",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE1B71",
+       "command": "clearflag",
+       "args": [
+        2936
+       ]
+      },
+      {
+       "at": "0x08EE1B74",
+       "command": "addobject",
+       "args": [
+        22
+       ]
+      },
+      {
+       "at": "0x08EE1B77",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE1B79",
+       "command": "preparemsg",
+       "args": [
+        149822785
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1D41",
+         "text": "恭喜！\n空手道王进化了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE1B7E",
+       "command": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x08EE1B81",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08EE1B82",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EE1B83",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08EE1B84",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EE1B87",
+       "command": "goto",
+       "args": [
+        149823768
+       ],
+       "targets": [
+        "0x08EE2118"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EE1CCE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE1CCE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149822869
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1D95",
+         "text": "那么就拜托你了！\n药店的助理应该已经准备好了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE1CD4",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE1CD6",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE1CD8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE1CD8",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EE1CDB",
+       "command": "applymovement",
+       "args": [
+        32783,
+        149823310
+       ]
+      },
+      {
+       "at": "0x08EE1CE2",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EE1CE5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149822915
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1DC3",
+         "text": "我正在研制完美的能量餐……\n只要吃下它，就能获得击碎\n一切阻碍的力量！\n可恶，还差\n最后一种关键药材！\n你能帮我去南边的湛蓝药店，\n把我订好的药材取回来吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE1CEB",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE1CED",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE1CF2",
+       "command": "goto_if",
+       "args": [
+        1,
+        149822733
+       ],
+       "targets": [
+        "0x08EE1D0D"
+       ]
+      },
+      {
+       "at": "0x08EE1CF8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149823221
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1EF5",
+         "text": "好吧，\n我的拳头已经饥渴难耐了……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE1CFE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE1D00",
+       "command": "applymovement",
+       "args": [
+        77,
+        149823314
+       ]
+      },
+      {
+       "at": "0x08EE1D07",
+       "command": "waitmovement",
+       "args": [
+        77
+       ]
+      },
+      {
+       "at": "0x08EE1D0A",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EE1D0B",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE1D0D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE1D0D",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE1D10",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149823254
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1F16",
+         "text": "接受任务:<完美的能量餐>"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE1D16",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE1D1B",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE1D20",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08EE1D25",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EE1D2A",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08EE1D2F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149822869
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1D95",
+         "text": "那么就拜托你了！\n药店的助理应该已经准备好了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE1D35",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE1D37",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EE1D3C",
+       "command": "setflag",
+       "args": [
+        2613
+       ],
+       "task_flag_labels": [
+        {
+         "title": "完美的能量餐",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE1D3F",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE2118",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE2118",
+       "command": "applymovement",
+       "args": [
+        22,
+        149822666
+       ]
+      },
+      {
+       "at": "0x08EE211F",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EE2122",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149822604
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1C8C",
+         "text": "哈哈哈！\n有一种丰收的喜悦，\n喝了之后非常开心，\n浑身充满了力量。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE2128",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE212A",
+       "command": "applymovement",
+       "args": [
+        22,
+        149822600
+       ]
+      },
+      {
+       "at": "0x08EE2131",
+       "command": "waitmovement",
+       "args": [
+        22
+       ]
+      },
+      {
+       "at": "0x08EE2134",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08EE2139",
+       "command": "special",
+       "args": [
+        90
+       ]
+      },
+      {
+       "at": "0x08EE213C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149822490
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1C1A",
+         "text": "耗油根！！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE2142",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE2144",
+       "command": "applymovement",
+       "args": [
+        22,
+        149822600
+       ]
+      },
+      {
+       "at": "0x08EE214B",
+       "command": "special",
+       "args": [
+        273
+       ]
+      },
+      {
+       "at": "0x08EE214E",
+       "command": "applymovement",
+       "args": [
+        17,
+        145400701
+       ]
+      },
+      {
+       "at": "0x08EE2155",
+       "command": "applymovement",
+       "args": [
+        22,
+        149822487
+       ]
+      },
+      {
+       "at": "0x08EE215C",
+       "command": "waitmovement",
+       "args": [
+        17
+       ]
+      },
+      {
+       "at": "0x08EE215F",
+       "command": "waitmovement",
+       "args": [
+        22
+       ]
+      },
+      {
+       "at": "0x08EE2162",
+       "command": "setvar",
+       "args": [
+        32772,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE2167",
+       "command": "special",
+       "args": [
+        90
+       ]
+      },
+      {
+       "at": "0x08EE216A",
+       "command": "fadedefaultbgm",
+       "args": []
+      },
+      {
+       "at": "0x08EE216B",
+       "command": "applymovement",
+       "args": [
+        22,
+        149823942
+       ]
+      },
+      {
+       "at": "0x08EE2172",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08EE2173",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149822501
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1C25",
+         "text": "噢噢噢噢！力量涌上来了！\n这就是完美的境界！\n这一拳的威力，\n连我自己都感到害怕！\n那么，\n这是给你的报酬！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE2179",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EE217B",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        642
+       ],
+       "possible_names_not_semantics": {
+        "species": "骑士蜗牛",
+        "item": "力量护腕",
+        "move": "传递礼物"
+       }
+      },
+      {
+       "at": "0x08EE2180",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE2185",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EE2187",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE218A",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EE218B",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE218E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149823157
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1EB5",
+         "text": "完成任务:<完美的能量餐>"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE2194",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE2199",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE219E",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08EE21A3",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EE21A8",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08EE21AD",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x08EE21B2",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08EE21B8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149823186
+       ],
+       "texts": [
+        {
+         "address": "0x08EE1ED2",
+         "text": "获得了4点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE21BE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE21C0",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EE21C5",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

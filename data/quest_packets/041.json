@@ -1,0 +1,1434 @@
+{
+ "title": "抱住圆木的来客",
+ "quest_id": 41,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b230",
+    "title": "抱住圆木的来客",
+    "title_address": "0x8e3c256",
+    "description": "糟了！我好像闯祸了...\n这...这可怎么办？\n谁能来精灵中心帮帮我？",
+    "description_address": "0x8e3c21b",
+    "unknown_u16": 217,
+    "unknown_u16_hex": "0x00D9",
+    "accept_flag": 2644,
+    "accept_flag_hex": "0x0A54",
+    "complete_flag": 2645,
+    "complete_flag_hex": "0x0A55",
+    "map_group": 47,
+    "map_num": 3,
+    "tail_hex": "04 01 00 00",
+    "index": 41,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39554",
+      "title": "抱住圆木的来客",
+      "description_address": "0x8e3a0ac",
+      "description": "糟了！我好像闯祸了...\\n这...这可怎么办？\\n谁能来精灵中心帮帮我？"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a0ac",
+    "legacy_match_count": 1,
+    "current_description": "帮助碳工匠小屋的学徒，\n前往桐树林确认那只\n昏睡宝可梦的安危。",
+    "catalog_map": {
+     "id": "47:3",
+     "name": "桧皮镇"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08F50BE4",
+    "0x08F51060",
+    "0x08F51CEA",
+    "0x08F51F64",
+    "0x08F5A6C2"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F50AFB",
+     "map_id": "47:3",
+     "place": "桧皮镇",
+     "kind": "人物",
+     "local_id": 10,
+     "event_index": 9,
+     "x": 3,
+     "y": 8,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g47_n003.md"
+    },
+    {
+     "script": "0x08F5A6C2",
+     "map_id": "55:34",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 4,
+     "event_index": 3,
+     "x": 5,
+     "y": 16,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g55_n034.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089DC2ED",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089DC2ED",
+       "command": "checkflag",
+       "args": [
+        5401
+       ]
+      },
+      {
+       "at": "0x089DC2F0",
+       "command": "goto_if",
+       "args": [
+        0,
+        144557159
+       ],
+       "targets": [
+        "0x089DC467"
+       ]
+      },
+      {
+       "at": "0x089DC2F6",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089DC467",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089DC467",
+       "command": "checkflag",
+       "args": [
+        5449
+       ]
+      },
+      {
+       "at": "0x089DC46A",
+       "command": "goto_if",
+       "args": [
+        1,
+        144557312
+       ],
+       "targets": [
+        "0x089DC500"
+       ]
+      },
+      {
+       "at": "0x089DC470",
+       "command": "setflag",
+       "args": [
+        5448
+       ]
+      },
+      {
+       "at": "0x089DC473",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089DC500",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089DC500",
+       "command": "clearflag",
+       "args": [
+        5448
+       ]
+      },
+      {
+       "at": "0x089DC503",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F50AFB",
+     "event_roots": [
+      {
+       "map_id": "47:3",
+       "place": "桧皮镇",
+       "kind": "人物",
+       "local_id": 10,
+       "event_index": 9,
+       "x": 3,
+       "y": 8,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g47_n003.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F50AFB",
+       "command": "applymovement",
+       "args": [
+        11,
+        150278176
+       ]
+      },
+      {
+       "at": "0x08F50B02",
+       "command": "waitmovement",
+       "args": [
+        11
+       ]
+      },
+      {
+       "at": "0x08F50B05",
+       "command": "goto",
+       "args": [
+        150277092
+       ],
+       "targets": [
+        "0x08F50BE4"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F50BE4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F50BE4",
+       "command": "checkflag",
+       "args": [
+        2644
+       ],
+       "task_flag_labels": [
+        {
+         "title": "抱住圆木的来客",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F50BE7",
+       "command": "goto_if",
+       "args": [
+        1,
+        150278042
+       ],
+       "targets": [
+        "0x08F50F9A"
+       ]
+      },
+      {
+       "at": "0x08F50BED",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08F50BF0",
+       "command": "goto_if",
+       "args": [
+        1,
+        150278178
+       ],
+       "targets": [
+        "0x08F51022"
+       ]
+      },
+      {
+       "at": "0x08F50BF6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150277867
+       ],
+       "texts": [
+        {
+         "address": "0x08F50EEB",
+         "text": "……怎么办……要是师傅\n知道我把宝可梦撞坏了……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F50BFC",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F50BFE",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F50F9A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F50F9A",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F50F9B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150282295
+       ],
+       "texts": [
+        {
+         "address": "0x08F52037",
+         "text": "……怎么样，你找到那只\n灰色的、像小熊一样的宝可梦了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F50FA1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F50FA3",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F50FA4",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F50FA7",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x08F50FAA",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08F50FAB",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x08F50FB0",
+       "command": "goto_if",
+       "args": [
+        1,
+        150278103
+       ],
+       "targets": [
+        "0x08F50FD7"
+       ]
+      },
+      {
+       "at": "0x08F50FB6",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08F50FBB",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F50FBC",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08F50FC1",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        992
+       ],
+       "possible_names_not_semantics": {
+        "species": "树枕尾熊",
+        "item": null,
+        "move": "起草"
+       }
+      },
+      {
+       "at": "0x08F50FC6",
+       "command": "goto_if",
+       "args": [
+        1,
+        150281450
+       ],
+       "targets": [
+        "0x08F51CEA"
+       ]
+      },
+      {
+       "at": "0x08F50FCC",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F50FCD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150282455
+       ],
+       "texts": [
+        {
+         "address": "0x08F520D7",
+         "text": "这不是那只宝可梦吧……\n在桐树林使用\n头锤技能撞树找找看吧……\n如果有找到那只\n灰色的、像小熊一样的宝可梦……\n请务必把它带回来让我道歉！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F50FD3",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F50FD5",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F50FD7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F50FD7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150282348
+       ],
+       "texts": [
+        {
+         "address": "0x08F5206C",
+         "text": "在桐树林使用\n头锤技能撞树找找看吧……\n如果有找到那只\n灰色的、像小熊一样的宝可梦……\n请务必把它带回来让我道歉！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F50FDD",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F50FDF",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F51022",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F51022",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150277867
+       ],
+       "texts": [
+        {
+         "address": "0x08F50EEB",
+         "text": "……怎么办……要是师傅\n知道我把宝可梦撞坏了……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F51028",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5102A",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F5102D",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145648410
+       ]
+      },
+      {
+       "at": "0x08F51034",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08F51037",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F51038",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08F51039",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150280870
+       ],
+       "texts": [
+        {
+         "address": "0x08F51AA6",
+         "text": "哇！……吓死我了。\n你是……协会的训练家？\n太好了！请你一定要帮帮我！\n是这样的，\n我是碳工匠小屋的学徒。\n师傅让我去\n桐树林挑选制作木炭的圆木。\n你知道的，\n有些好木材藏在树冠里，\n需要用头锤\n撞击树干才能弄下来。\n我对着一棵树狠狠撞了一下，\n结果……掉下来一只灰色的、\n像小熊一样的宝可梦！\n它怀里还紧紧\n抱着一根半截的圆木。\n重点是……\n它掉在地上后一动也不动！\n无论我怎么推它、喊它，\n它都闭着眼睛没有任何反应！\n我、我当时太害怕，\n以为把它撞出事了，\n就逃回来了……\n你是训练家，\n懂的一定比我多。\n求求你，\n去桐树林帮我找找它，\n确认一下\n它是不是还……还活着？\n如果能把它带回来\n让我道歉就更好了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5103F",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F51041",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F51046",
+       "command": "goto_if",
+       "args": [
+        1,
+        150282084
+       ],
+       "targets": [
+        "0x08F51F64"
+       ]
+      },
+      {
+       "at": "0x08F5104C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150281415
+       ],
+       "texts": [
+        {
+         "address": "0x08F51CC7",
+         "text": "完…完蛋了！\n师傅一定不会原谅我的！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F51052",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F51054",
+       "command": "applymovement",
+       "args": [
+        11,
+        150279850
+       ]
+      },
+      {
+       "at": "0x08F5105B",
+       "command": "waitmovement",
+       "args": [
+        11
+       ]
+      },
+      {
+       "at": "0x08F5105E",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5105F",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F51060",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F51060",
+       "command": "setflag",
+       "args": [
+        2646
+       ]
+      },
+      {
+       "at": "0x08F51063",
+       "command": "checkflag",
+       "args": [
+        2645
+       ],
+       "task_flag_labels": [
+        {
+         "title": "抱住圆木的来客",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F51066",
+       "command": "call_if",
+       "args": [
+        1,
+        150278285
+       ],
+       "targets": [
+        "0x08F5108D"
+       ]
+      },
+      {
+       "at": "0x08F5106C",
+       "command": "goto",
+       "args": [
+        144556781
+       ],
+       "targets": [
+        "0x089DC2ED"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F5108D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5108D",
+       "command": "clearflag",
+       "args": [
+        2646
+       ]
+      },
+      {
+       "at": "0x08F51090",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F51CEA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F51CEA",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08F51CED",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F51CF0",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145471788
+       ]
+      },
+      {
+       "at": "0x08F51CF7",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F51CFA",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F51CFB",
+       "command": "showpokepic",
+       "args": [
+        992,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08F51D00",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150281610
+       ]
+      },
+      {
+       "at": "0x08F51D06",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F51D08",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F51D09",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08F51D0A",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F51D0B",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F51D0E",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F51D0F",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F51D12",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150282081
+       ]
+      },
+      {
+       "at": "0x08F51D19",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F51D1C",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F51D1D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150281677
+       ],
+       "texts": [
+        {
+         "address": "0x08F51DCD",
+         "text": "什么！？\n一生都在睡觉？\n吃饭和战斗也是？\n……呼……吓死我了！！\n我还以为\n是我用力过猛把它撞晕了！\n太好了，\n只要没受伤就好。\n不过，它手里的那根圆木……\n看着纹理很不错啊，\n一定是上等的木炭材料……\n啊不不不！\n我不会抢它的东西的！\n谢谢你解开了我的误会！\n既然这只宝可梦这么爱睡觉，\n或许你会需要这个招式。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F51D23",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F51D25",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F51D26",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        407
+       ],
+       "possible_names_not_semantics": {
+        "species": "拉帝亚斯",
+        "item": "TM82",
+        "move": "冰息"
+       }
+      },
+      {
+       "at": "0x08F51D2B",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F51D30",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F51D32",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F51D33",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F51D34",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F51D37",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        536
+       ],
+       "possible_names_not_semantics": {
+        "species": "帝牙卢卡",
+        "item": "经验糖果XS",
+        "move": "找伙伴"
+       }
+      },
+      {
+       "at": "0x08F51D3C",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        4
+       ],
+       "possible_names_not_semantics": {
+        "species": "小火龙",
+        "item": "精灵球",
+        "move": "连续拳"
+       }
+      },
+      {
+       "at": "0x08F51D41",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F51D43",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F51D44",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F51D45",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150281955
+       ],
+       "texts": [
+        {
+         "address": "0x08F51EE3",
+         "text": "这样一来，\n我也不需要躲在精灵中心了……\n该回师傅那里了，再见！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F51D4B",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F51D4D",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F51D4F",
+       "command": "removeobject",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x08F51D52",
+       "command": "setflag",
+       "args": [
+        2645
+       ],
+       "task_flag_labels": [
+        {
+         "title": "抱住圆木的来客",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F51D55",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F51D57",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F51D58",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F51D59",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F51D5C",
+       "command": "goto",
+       "args": [
+        150283218
+       ],
+       "targets": [
+        "0x08F523D2"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F51F64",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F51F64",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F51F67",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150282137
+       ],
+       "texts": [
+        {
+         "address": "0x08F51F99",
+         "text": "接受任务:<抱着圆木的来客>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F51F6D",
+       "command": "setflag",
+       "args": [
+        2644
+       ],
+       "task_flag_labels": [
+        {
+         "title": "抱住圆木的来客",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F51F70",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F51F75",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F51F7A",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F51F7F",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F51F84",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F51F89",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150282168
+       ],
+       "texts": [
+        {
+         "address": "0x08F51FB8",
+         "text": "实在是……太感谢你了！\n在桐树林使用\n头锤技能撞树找找看吧……\n如果有找到那只\n灰色的、像小熊一样的宝可梦……\n请务必把它带回来让我道歉！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F51F8F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F51F91",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F51F96",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F51F97",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F52156",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F52156",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F5215B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150282046
+       ],
+       "texts": [
+        {
+         "address": "0x08F51F3E",
+         "text": "获得了3点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F52161",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F52163",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F52168",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08F5216D",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F52172",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F523D2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F523D2",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08F523D8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150282015
+       ],
+       "texts": [
+        {
+         "address": "0x08F51F1F",
+         "text": "完成任务:<抱着圆木的来客>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F523DE",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F523E3",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F523E8",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F523ED",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F523F2",
+       "command": "goto",
+       "args": [
+        150282582
+       ],
+       "targets": [
+        "0x08F52156"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F5A6C2",
+     "event_roots": [
+      {
+       "map_id": "55:34",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 4,
+       "event_index": 3,
+       "x": 5,
+       "y": 16,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g55_n034.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5A6C2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150316784
+       ],
+       "texts": [
+        {
+         "address": "0x08F5A6F0",
+         "text": "……在这里能见到\n许多珍贵的木材呢！\n比如民居内的地板……\n踩上去会发出清脆声响。\n这种地板被称作“咕咕地板”。\n据说是在很久以前……\n为了防止附近“忍者之乡”\n的忍者潜入所作的设计。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5A6C8",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F5A6CA",
+       "command": "checkflag",
+       "args": [
+        2645
+       ],
+       "task_flag_labels": [
+        {
+         "title": "抱住圆木的来客",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5A6CD",
+       "command": "goto_if",
+       "args": [
+        1,
+        150316757
+       ],
+       "targets": [
+        "0x08F5A6D5"
+       ]
+      },
+      {
+       "at": "0x08F5A6D3",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F5A6D5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5A6D5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150316951
+       ],
+       "texts": [
+        {
+         "address": "0x08F5A797",
+         "text": "哈？你也在吗？\n你也是来寻找珍贵的木材的吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5A6DB",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5A6DD",
+       "command": "goto",
+       "args": [
+        150316771
+       ],
+       "targets": [
+        "0x08F5A6E3"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F5A6E3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5A6E3",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150316994
+       ]
+      },
+      {
+       "at": "0x08F5A6EA",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x08F5A6ED",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5A6EE",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

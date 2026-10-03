@@ -1,0 +1,1853 @@
+{
+ "title": "失踪的父亲",
+ "quest_id": 50,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b2e4",
+    "title": "失踪的父亲",
+    "title_address": "0x8e3c677",
+    "description": "我的父亲在前几天去了桐树林\n后就没有回来了，有人可以来\n住宅区北部的住宅帮帮我吗？",
+    "description_address": "0x8e3c64e",
+    "unknown_u16": 685,
+    "unknown_u16_hex": "0x02AD",
+    "accept_flag": 5980,
+    "accept_flag_hex": "0x175C",
+    "complete_flag": 5984,
+    "complete_flag_hex": "0x1760",
+    "map_group": 56,
+    "map_num": 11,
+    "tail_hex": "01 01 00 00",
+    "index": 50,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe395b4",
+      "title": "失踪的父亲",
+      "description_address": "0x8e3a62d",
+      "description": "我的父亲在前几天去了桐树林\\n后就没有回来了，有人可以来\\n住宅区北部的住宅帮帮我吗？"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a62d",
+    "legacy_match_count": 1,
+    "current_description": "帮助满金市的玛琳\n找到在桐树林失踪的父亲。",
+    "catalog_map": {
+     "id": "56:11",
+     "name": "满金市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AECD1C",
+    "0x08AECD8A",
+    "0x08AED914",
+    "0x08AEDB7B"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08AED914",
+     "map_id": "1:121",
+     "place": "桐树林",
+     "kind": "人物",
+     "local_id": 19,
+     "event_index": 17,
+     "x": 29,
+     "y": 13,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g01_n121.md"
+    },
+    {
+     "script": "0x08F56A86",
+     "map_id": "56:11",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 4,
+     "event_index": 3,
+     "x": 9,
+     "y": 4,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g56_n011.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x081BDF91",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x081BDF91",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x081BDF92",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x081BDF93",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AECCF4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AECCF4",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AECCF7",
+       "command": "goto_if",
+       "args": [
+        1,
+        145673500
+       ],
+       "targets": [
+        "0x08AECD1C"
+       ]
+      },
+      {
+       "at": "0x08AECCFD",
+       "command": "call",
+       "args": [
+        144572174
+       ],
+       "targets": [
+        "0x089DFF0E"
+       ]
+      },
+      {
+       "at": "0x08AECD02",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145673871
+       ]
+      },
+      {
+       "at": "0x08AECD08",
+       "command": "call",
+       "args": [
+        144572204
+       ],
+       "targets": [
+        "0x089DFF2C"
+       ]
+      },
+      {
+       "at": "0x08AECD0D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145673705
+       ],
+       "texts": [
+        {
+         "address": "0x08AECDE9",
+         "text": "父亲究竟到哪里去了呢？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AECD13",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AECD15",
+       "command": "call",
+       "args": [
+        144572231
+       ],
+       "targets": [
+        "0x089DFF47"
+       ]
+      },
+      {
+       "at": "0x08AECD1A",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AECD1C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AECD1C",
+       "command": "checkflag",
+       "args": [
+        5981
+       ]
+      },
+      {
+       "at": "0x08AECD1F",
+       "command": "goto_if",
+       "args": [
+        1,
+        145677179
+       ],
+       "targets": [
+        "0x08AEDB7B"
+       ]
+      },
+      {
+       "at": "0x08AECD25",
+       "command": "checkflag",
+       "args": [
+        5980
+       ],
+       "task_flag_labels": [
+        {
+         "title": "失踪的父亲",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AECD28",
+       "command": "goto_if",
+       "args": [
+        1,
+        145673671
+       ],
+       "targets": [
+        "0x08AECDC7"
+       ]
+      },
+      {
+       "at": "0x08AECD2E",
+       "command": "call",
+       "args": [
+        144572174
+       ],
+       "targets": [
+        "0x089DFF0E"
+       ]
+      },
+      {
+       "at": "0x08AECD33",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145673871
+       ]
+      },
+      {
+       "at": "0x08AECD39",
+       "command": "call",
+       "args": [
+        144572204
+       ],
+       "targets": [
+        "0x089DFF2C"
+       ]
+      },
+      {
+       "at": "0x08AECD3E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145673705
+       ],
+       "texts": [
+        {
+         "address": "0x08AECDE9",
+         "text": "父亲究竟到哪里去了呢？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AECD44",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AECD46",
+       "command": "call",
+       "args": [
+        144572231
+       ],
+       "targets": [
+        "0x089DFF47"
+       ]
+      },
+      {
+       "at": "0x08AECD4B",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AECD4E",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AECD51",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145673868
+       ]
+      },
+      {
+       "at": "0x08AECD58",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AECD5B",
+       "command": "call",
+       "args": [
+        144572174
+       ],
+       "targets": [
+        "0x089DFF0E"
+       ]
+      },
+      {
+       "at": "0x08AECD60",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145673859
+       ]
+      },
+      {
+       "at": "0x08AECD66",
+       "command": "call",
+       "args": [
+        144572204
+       ],
+       "targets": [
+        "0x089DFF2C"
+       ]
+      },
+      {
+       "at": "0x08AECD6B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145673729
+       ],
+       "texts": [
+        {
+         "address": "0x08AECE01",
+         "text": "你好，\n是协会的训练家吗？\n我叫宝琳，我的父亲前几天\n去桐树林采蘑菇，\n至今没有回家……\n请问你可以帮我找找他吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AECD71",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AECD73",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AECD78",
+       "command": "goto_if",
+       "args": [
+        1,
+        145673610
+       ],
+       "targets": [
+        "0x08AECD8A"
+       ]
+      },
+      {
+       "at": "0x08AECD7E",
+       "command": "goto",
+       "args": [
+        150303297
+       ],
+       "targets": [
+        "0x08F57241"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AECD8A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AECD8A",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AECD8B",
+       "command": "call",
+       "args": [
+        144572231
+       ],
+       "targets": [
+        "0x089DFF47"
+       ]
+      },
+      {
+       "at": "0x08AECD90",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AECD93",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AECD96",
+       "command": "setflag",
+       "args": [
+        5980
+       ],
+       "task_flag_labels": [
+        {
+         "title": "失踪的父亲",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AECD99",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145676399
+       ],
+       "texts": [
+        {
+         "address": "0x08AED86F",
+         "text": "接受任务:<失踪的父亲>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AECD9F",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AECDA4",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AECDA9",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AECDAE",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AECDB3",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AECDB8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145676426
+       ],
+       "texts": [
+        {
+         "address": "0x08AED88A",
+         "text": "真的太感谢你了…！\n我的父亲戴着一顶红帽子，我想\n他也许是在桐树林里迷路了吧……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AECDBE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AECDC0",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AECDC5",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AECDC7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AECDC7",
+       "command": "call",
+       "args": [
+        144572174
+       ],
+       "targets": [
+        "0x089DFF0E"
+       ]
+      },
+      {
+       "at": "0x08AECDCC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145673859
+       ]
+      },
+      {
+       "at": "0x08AECDD2",
+       "command": "call",
+       "args": [
+        144572204
+       ],
+       "targets": [
+        "0x089DFF2C"
+       ]
+      },
+      {
+       "at": "0x08AECDD7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145676426
+       ],
+       "texts": [
+        {
+         "address": "0x08AED88A",
+         "text": "真的太感谢你了…！\n我的父亲戴着一顶红帽子，我想\n他也许是在桐树林里迷路了吧……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AECDDD",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AECDDF",
+       "command": "call",
+       "args": [
+        144572231
+       ],
+       "targets": [
+        "0x089DFF47"
+       ]
+      },
+      {
+       "at": "0x08AECDE4",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AED914",
+     "event_roots": [
+      {
+       "map_id": "1:121",
+       "place": "桐树林",
+       "kind": "人物",
+       "local_id": 19,
+       "event_index": 17,
+       "x": 29,
+       "y": 13,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g01_n121.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AED914",
+       "command": "checkflag",
+       "args": [
+        5980
+       ],
+       "task_flag_labels": [
+        {
+         "title": "失踪的父亲",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AED917",
+       "command": "goto_if",
+       "args": [
+        1,
+        145677126
+       ],
+       "targets": [
+        "0x08AEDB46"
+       ]
+      },
+      {
+       "at": "0x08AED91D",
+       "command": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08AED922",
+       "command": "cry",
+       "args": [
+        453,
+        255
+       ]
+      },
+      {
+       "at": "0x08AED927",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145676794
+       ],
+       "texts": [
+        {
+         "address": "0x08AED9FA",
+         "text": "这只大尾狸看上去怪怪的……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AED92D",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AED92F",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AED931",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AED931",
+       "command": "bufferpartypokemon",
+       "args": [
+        0,
+        32781
+       ]
+      },
+      {
+       "at": "0x08AED935",
+       "command": "setanimation",
+       "args": [
+        0,
+        32781
+       ]
+      },
+      {
+       "at": "0x08AED939",
+       "command": "bufferattack",
+       "args": [
+        1,
+        78
+       ]
+      },
+      {
+       "at": "0x08AED93D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145676852
+       ],
+       "texts": [
+        {
+         "address": "0x08AEDA34",
+         "text": "想要对\n大尾狸使用麻痹粉吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AED943",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AED945",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AED94A",
+       "command": "goto_if",
+       "args": [
+        1,
+        136044433
+       ],
+       "targets": [
+        "0x081BDF91"
+       ]
+      },
+      {
+       "at": "0x08AED950",
+       "command": "loadpointer",
+       "args": [
+        0,
+        136044503
+       ],
+       "texts": [
+        {
+         "address": "0x081BDFD7",
+         "text": "[玩家/变量]使用了[玩家/变量]！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AED956",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AED958",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08AED959",
+       "command": "doanimation",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AED95C",
+       "command": "pause",
+       "args": [
+        160
+       ]
+      },
+      {
+       "at": "0x08AED95F",
+       "command": "fadescreenspeed",
+       "args": [
+        1,
+        3
+       ]
+      },
+      {
+       "at": "0x08AED962",
+       "command": "cry",
+       "args": [
+        453,
+        255
+       ]
+      },
+      {
+       "at": "0x08AED967",
+       "command": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x08AED968",
+       "command": "removeobject",
+       "args": [
+        19
+       ]
+      },
+      {
+       "at": "0x08AED96B",
+       "command": "setflag",
+       "args": [
+        5981
+       ]
+      },
+      {
+       "at": "0x08AED96E",
+       "command": "clearflag",
+       "args": [
+        5450
+       ]
+      },
+      {
+       "at": "0x08AED971",
+       "command": "addobject",
+       "args": [
+        54
+       ]
+      },
+      {
+       "at": "0x08AED974",
+       "command": "fadescreenspeed",
+       "args": [
+        0,
+        3
+       ]
+      },
+      {
+       "at": "0x08AED977",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AED97A",
+       "command": "applymovement",
+       "args": [
+        54,
+        145677078
+       ]
+      },
+      {
+       "at": "0x08AED981",
+       "command": "waitmovement",
+       "args": [
+        54
+       ]
+      },
+      {
+       "at": "0x08AED984",
+       "command": "call",
+       "args": [
+        144572174
+       ],
+       "targets": [
+        "0x089DFF0E"
+       ]
+      },
+      {
+       "at": "0x08AED989",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145677069
+       ]
+      },
+      {
+       "at": "0x08AED98F",
+       "command": "call",
+       "args": [
+        144572204
+       ],
+       "targets": [
+        "0x089DFF2C"
+       ]
+      },
+      {
+       "at": "0x08AED994",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145676881
+       ],
+       "texts": [
+        {
+         "address": "0x08AEDA51",
+         "text": "呼咬了一口蘑菇后，\n俺就做了个自己变成大牙狸的梦。\n在梦中自己又咬了一口蘑菇，\n于是进化成了大尾狸……\n虽然不记得接下来做了些什么，\n但总觉得过得很快乐唷！\n什么，宝琳在找俺？\n也是，是时候该回去了……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AED99A",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AED99C",
+       "command": "call",
+       "args": [
+        144572231
+       ],
+       "targets": [
+        "0x089DFF47"
+       ]
+      },
+      {
+       "at": "0x08AED9A1",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AED9A4",
+       "command": "fadescreenspeed",
+       "args": [
+        1,
+        2
+       ]
+      },
+      {
+       "at": "0x08AED9A7",
+       "command": "removeobject",
+       "args": [
+        54
+       ]
+      },
+      {
+       "at": "0x08AED9AA",
+       "command": "setflag",
+       "args": [
+        5450
+       ]
+      },
+      {
+       "at": "0x08AED9AD",
+       "command": "fadescreenspeed",
+       "args": [
+        0,
+        2
+       ]
+      },
+      {
+       "at": "0x08AED9B0",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AED9CE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AED9CE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145676760
+       ],
+       "texts": [
+        {
+         "address": "0x08AED9D8",
+         "text": "要是有会\n麻痹粉的宝可梦就好了……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AED9D4",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AED9D6",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEDB46",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEDB46",
+       "command": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08AEDB4B",
+       "command": "cry",
+       "args": [
+        453,
+        255
+       ]
+      },
+      {
+       "at": "0x08AEDB50",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145676821
+       ]
+      },
+      {
+       "at": "0x08AEDB56",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AEDB58",
+       "command": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x08AEDB59",
+       "command": "special",
+       "args": [
+        391
+       ]
+      },
+      {
+       "at": "0x08AEDB5C",
+       "command": "checkattack",
+       "args": [
+        78
+       ]
+      },
+      {
+       "at": "0x08AEDB5F",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        6
+       ],
+       "possible_names_not_semantics": {
+        "species": "喷火龙",
+        "item": "捕网球",
+        "move": "聚宝功"
+       }
+      },
+      {
+       "at": "0x08AEDB64",
+       "command": "goto_if",
+       "args": [
+        1,
+        145676750
+       ],
+       "targets": [
+        "0x08AED9CE"
+       ]
+      },
+      {
+       "at": "0x08AEDB6A",
+       "command": "goto",
+       "args": [
+        145677167
+       ],
+       "targets": [
+        "0x08AEDB6F"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEDB6F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEDB6F",
+       "command": "setflag",
+       "args": [
+        5982
+       ]
+      },
+      {
+       "at": "0x08AEDB72",
+       "command": "goto",
+       "args": [
+        145676593
+       ],
+       "targets": [
+        "0x08AED931"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEDB7B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEDB7B",
+       "command": "checkflag",
+       "args": [
+        5984
+       ],
+       "task_flag_labels": [
+        {
+         "title": "失踪的父亲",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEDB7E",
+       "command": "goto_if",
+       "args": [
+        1,
+        145677575
+       ],
+       "targets": [
+        "0x08AEDD07"
+       ]
+      },
+      {
+       "at": "0x08AEDB84",
+       "command": "call",
+       "args": [
+        144572174
+       ],
+       "targets": [
+        "0x089DFF0E"
+       ]
+      },
+      {
+       "at": "0x08AEDB89",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145673859
+       ]
+      },
+      {
+       "at": "0x08AEDB8F",
+       "command": "call",
+       "args": [
+        144572204
+       ],
+       "targets": [
+        "0x089DFF2C"
+       ]
+      },
+      {
+       "at": "0x08AEDB94",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145677606
+       ],
+       "texts": [
+        {
+         "address": "0x08AEDD26",
+         "text": "谢谢你帮我找到父亲，\n这是给你的报酬！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEDB9A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEDB9C",
+       "command": "call",
+       "args": [
+        144572231
+       ],
+       "targets": [
+        "0x089DFF47"
+       ]
+      },
+      {
+       "at": "0x08AEDBA1",
+       "command": "pause",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08AEDBA4",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AEDBA5",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        157
+       ],
+       "possible_names_not_semantics": {
+        "species": "火暴兽",
+        "item": "萄葡果",
+        "move": "岩崩"
+       }
+      },
+      {
+       "at": "0x08AEDBAA",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x08AEDBAF",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AEDBB1",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AEDBB2",
+       "command": "pause",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08AEDBB5",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AEDBB6",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        449
+       ],
+       "possible_names_not_semantics": {
+        "species": "姆克儿",
+        "item": "罗子果",
+        "move": "加农光炮"
+       }
+      },
+      {
+       "at": "0x08AEDBBB",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x08AEDBC0",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AEDBC2",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AEDBC3",
+       "command": "pause",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08AEDBC6",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AEDBC7",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        105
+       ],
+       "possible_names_not_semantics": {
+        "species": "嘎啦嘎啦",
+        "item": "芳香蘑菇",
+        "move": "自我再生"
+       }
+      },
+      {
+       "at": "0x08AEDBCC",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEDBD1",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AEDBD3",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AEDBD4",
+       "command": "pause",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08AEDBD7",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AEDBD8",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        537
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕路奇亚",
+        "item": "经验糖果S",
+        "move": "暗黑爆破"
+       }
+      },
+      {
+       "at": "0x08AEDBDD",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEDBE2",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AEDBE4",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AEDBE5",
+       "command": "call",
+       "args": [
+        144572174
+       ],
+       "targets": [
+        "0x089DFF0E"
+       ]
+      },
+      {
+       "at": "0x08AEDBEA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145673859
+       ]
+      },
+      {
+       "at": "0x08AEDBF0",
+       "command": "call",
+       "args": [
+        144572204
+       ],
+       "targets": [
+        "0x089DFF2C"
+       ]
+      },
+      {
+       "at": "0x08AEDBF5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145678471
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE087",
+         "text": "吃下奇怪的蘑菇，\n然后变成了大尾狸吗？\n感觉有点像\n我小时候玩过的游戏呢……\n哎呀，以后得看住父亲，\n不能让他乱吃蘑菇了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEDBFB",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEDBFD",
+       "command": "call",
+       "args": [
+        144572231
+       ],
+       "targets": [
+        "0x089DFF47"
+       ]
+      },
+      {
+       "at": "0x08AEDC02",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AEDC03",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEDC06",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEDC09",
+       "command": "setflag",
+       "args": [
+        5984
+       ],
+       "task_flag_labels": [
+        {
+         "title": "失踪的父亲",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEDC0C",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x08AEDC11",
+       "command": "addmoney",
+       "args": [
+        5000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AEDC17",
+       "command": "goto",
+       "args": [
+        150308626
+       ],
+       "targets": [
+        "0x08F58712"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEDD07",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEDD07",
+       "command": "call",
+       "args": [
+        144572174
+       ],
+       "targets": [
+        "0x089DFF0E"
+       ]
+      },
+      {
+       "at": "0x08AEDD0C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145673859
+       ]
+      },
+      {
+       "at": "0x08AEDD12",
+       "command": "call",
+       "args": [
+        144572204
+       ],
+       "targets": [
+        "0x089DFF2C"
+       ]
+      },
+      {
+       "at": "0x08AEDD17",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145678471
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE087",
+         "text": "吃下奇怪的蘑菇，\n然后变成了大尾狸吗？\n感觉有点像\n我小时候玩过的游戏呢……\n哎呀，以后得看住父亲，\n不能让他乱吃蘑菇了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEDD1D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEDD1F",
+       "command": "call",
+       "args": [
+        144572231
+       ],
+       "targets": [
+        "0x089DFF47"
+       ]
+      },
+      {
+       "at": "0x08AEDD24",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F56A86",
+     "event_roots": [
+      {
+       "map_id": "56:11",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 4,
+       "event_index": 3,
+       "x": 9,
+       "y": 4,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g56_n011.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F56A86",
+       "command": "applymovement",
+       "args": [
+        2,
+        150302809
+       ]
+      },
+      {
+       "at": "0x08F56A8D",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F56A90",
+       "command": "goto",
+       "args": [
+        145673460
+       ],
+       "targets": [
+        "0x08AECCF4"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F57241",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F57241",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145673834
+       ],
+       "texts": [
+        {
+         "address": "0x08AECE6A",
+         "text": "好吧……\n我会自己想办法。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F57247",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F57249",
+       "command": "call",
+       "args": [
+        144572231
+       ],
+       "targets": [
+        "0x089DFF47"
+       ]
+      },
+      {
+       "at": "0x08F5724E",
+       "command": "applymovement",
+       "args": [
+        2,
+        150303323
+       ]
+      },
+      {
+       "at": "0x08F57255",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F57258",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F57259",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F58712",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F58712",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145678584
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE0F8",
+         "text": "完成任务:<失踪的父亲>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F58718",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5871D",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F58722",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F58727",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F5872C",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F58731",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145678611
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE113",
+         "text": "获得了4点BracerPoints和5000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F58737",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F58739",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F5873E",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [
+    "0x089DFF0E",
+    "0x089DFF2C",
+    "0x089DFF47"
+   ],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

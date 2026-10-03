@@ -1,0 +1,1328 @@
+{
+ "title": "可爱的姆克儿",
+ "quest_id": 29,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b140",
+    "title": "可爱的姆克儿",
+    "title_address": "0x8e3c9eb",
+    "description": "姆克儿看着就感觉很治愈！\n有人可以把姆克儿给我摸摸吗？\n我在西侧的民居里哦！",
+    "description_address": "0x8e3c9bb",
+    "unknown_u16": 709,
+    "unknown_u16_hex": "0x02C5",
+    "accept_flag": 5495,
+    "accept_flag_hex": "0x1577",
+    "complete_flag": 5496,
+    "complete_flag_hex": "0x1578",
+    "map_group": 46,
+    "map_num": 2,
+    "tail_hex": "02 01 00 00",
+    "index": 29,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe394e4",
+      "title": "可爱的姆克儿",
+      "description_address": "0x8e3aa15",
+      "description": "姆克儿看着就感觉很治愈！\\n有人可以把姆克儿给我摸摸吗？\\n我在西侧的民居里哦！"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3aa15",
+    "legacy_match_count": 1,
+    "current_description": "捕捉一只姆克儿，并把它\n给桔梗市的小女孩摸一摸吧。",
+    "catalog_map": {
+     "id": "46:2",
+     "name": "桔梗市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x089E7E35",
+    "0x089E7EBE",
+    "0x089E7FBE"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F50806",
+     "map_id": "46:2",
+     "place": "桔梗市",
+     "kind": "人物",
+     "local_id": 1,
+     "event_index": 0,
+     "x": 6,
+     "y": 2,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g46_n002.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089CF824",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089CF824",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144504878
+       ],
+       "texts": [
+        {
+         "address": "0x089CF82E",
+         "text": "我的波波的名字\n是最甜甜甜甜的小草莓！"
+        }
+       ]
+      },
+      {
+       "at": "0x089CF82A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089CF82C",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089E7E35",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7E35",
+       "command": "checkflag",
+       "args": [
+        5496
+       ],
+       "task_flag_labels": [
+        {
+         "title": "可爱的姆克儿",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7E38",
+       "command": "goto_if",
+       "args": [
+        1,
+        144504868
+       ],
+       "targets": [
+        "0x089CF824"
+       ]
+      },
+      {
+       "at": "0x089E7E3E",
+       "command": "checkflag",
+       "args": [
+        5495
+       ],
+       "task_flag_labels": [
+        {
+         "title": "可爱的姆克儿",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7E41",
+       "command": "goto_if",
+       "args": [
+        1,
+        144604758
+       ],
+       "targets": [
+        "0x089E7E56"
+       ]
+      },
+      {
+       "at": "0x089E7E47",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E7E4A",
+       "command": "goto_if",
+       "args": [
+        1,
+        144604815
+       ],
+       "targets": [
+        "0x089E7E8F"
+       ]
+      },
+      {
+       "at": "0x089E7E50",
+       "command": "goto",
+       "args": [
+        144504868
+       ],
+       "targets": [
+        "0x089CF824"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E7E56",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7E56",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144605128
+       ],
+       "texts": [
+        {
+         "address": "0x089E7FC8",
+         "text": "前辈，\n姆克儿的事怎么样了？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7E5C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7E5E",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x089E7E61",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x089E7E64",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x089E7E65",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x089E7E6A",
+       "command": "goto_if",
+       "args": [
+        1,
+        144604845
+       ],
+       "targets": [
+        "0x089E7EAD"
+       ]
+      },
+      {
+       "at": "0x089E7E70",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089E7E75",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x089E7E7A",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        449
+       ],
+       "possible_names_not_semantics": {
+        "species": "姆克儿",
+        "item": "罗子果",
+        "move": "加农光炮"
+       }
+      },
+      {
+       "at": "0x089E7E7F",
+       "command": "goto_if",
+       "args": [
+        1,
+        144604855
+       ],
+       "targets": [
+        "0x089E7EB7"
+       ]
+      },
+      {
+       "at": "0x089E7E85",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144605158
+       ],
+       "texts": [
+        {
+         "address": "0x089E7FE6",
+         "text": "不对，\n这不是姆克儿吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7E8B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7E8D",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089E7E8F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7E8F",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E7E90",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144610396
+       ],
+       "texts": [
+        {
+         "address": "0x089E945C",
+         "text": "前辈，\n你看见了我的委托吗？\n想要摸一摸姆克儿的，\n正是我哦。\n来自神奥地区的姆克儿，\n看着就很治愈！\n摸起来一定很舒服的！\n怎么样，\n前辈愿意帮帮我吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7E96",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E7E98",
+       "command": "goto",
+       "args": [
+        150279717
+       ],
+       "targets": [
+        "0x08F51625"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E7EAD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7EAD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144605285
+       ],
+       "texts": [
+        {
+         "address": "0x089E8065",
+         "text": "加油啊，\n寻找姆克儿的前辈！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7EB3",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7EB5",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089E7EB7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7EB7",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x089E7EB8",
+       "command": "goto",
+       "args": [
+        144604914
+       ],
+       "targets": [
+        "0x089E7EF2"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E7EBE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7EBE",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7EC1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144605315
+       ],
+       "texts": [
+        {
+         "address": "0x089E8083",
+         "text": "接受任务:<可爱的姆克儿>"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7EC7",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E7ECC",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E7ED1",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x089E7ED6",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E7EDB",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x089E7EE0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144605344
+       ],
+       "texts": [
+        {
+         "address": "0x089E80A0",
+         "text": "姆克儿的事，\n就拜托前辈啦！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7EE6",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E7EE8",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E7EED",
+       "command": "setflag",
+       "args": [
+        5495
+       ],
+       "task_flag_labels": [
+        {
+         "title": "可爱的姆克儿",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7EF0",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089E7EF2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7EF2",
+       "command": "goto",
+       "args": [
+        145632916
+       ],
+       "targets": [
+        "0x08AE2E94"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E7F00",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7F00",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x089E7F01",
+       "command": "goto",
+       "args": [
+        144605035
+       ],
+       "targets": [
+        "0x089E7F6B"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E7F6B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7F6B",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        58
+       ],
+       "possible_names_not_semantics": {
+        "species": "卡蒂狗",
+        "item": "肌力之羽",
+        "move": "冰冻光束"
+       }
+      },
+      {
+       "at": "0x089E7F70",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        10
+       ],
+       "possible_names_not_semantics": {
+        "species": "绿毛虫",
+        "item": "计时球",
+        "move": "抓"
+       }
+      },
+      {
+       "at": "0x089E7F75",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E7F77",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089E7F7A",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        536
+       ],
+       "possible_names_not_semantics": {
+        "species": "帝牙卢卡",
+        "item": "经验糖果XS",
+        "move": "找伙伴"
+       }
+      },
+      {
+       "at": "0x089E7F7F",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x089E7F84",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E7F86",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089E7F89",
+       "command": "goto",
+       "args": [
+        145634273
+       ],
+       "targets": [
+        "0x08AE33E1"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E7FBE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7FBE",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E7FC3",
+       "command": "setflag",
+       "args": [
+        5496
+       ],
+       "task_flag_labels": [
+        {
+         "title": "可爱的姆克儿",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E7FC6",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AE2E94",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE2E94",
+       "command": "goto",
+       "args": [
+        145633821
+       ],
+       "targets": [
+        "0x08AE321D"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE321D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE321D",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x08AE321E",
+       "command": "setvar",
+       "args": [
+        32774,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AE3223",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145634848
+       ],
+       "texts": [
+        {
+         "address": "0x08AE3620",
+         "text": "你要碰碰它吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE3229",
+       "command": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x08AE322C",
+       "command": "setvar",
+       "args": [
+        32774,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE3231",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145634864
+       ],
+       "texts": [
+        {
+         "address": "0x08AE3630",
+         "text": "你要摸摸它吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE3237",
+       "command": "special",
+       "args": [
+        37
+       ]
+      },
+      {
+       "at": "0x08AE323A",
+       "command": "showpokepic",
+       "args": [
+        449,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08AE323F",
+       "command": "preparemsg",
+       "args": [
+        144605374
+       ],
+       "texts": [
+        {
+         "address": "0x089E80BE",
+         "text": "这就是姆克儿吗？\n小小的……香香的……\n嘿嘿……我的姆克儿……\n简直就和我的小草莓一样可爱嘛！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE3244",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AE3245",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08AE3246",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE3249",
+       "command": "multichoice",
+       "args": [
+        18,
+        8,
+        32,
+        1
+       ]
+      },
+      {
+       "at": "0x08AE324E",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AE324F",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AE3252",
+       "command": "goto",
+       "args": [
+        145635743
+       ],
+       "targets": [
+        "0x08AE399F"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE33E1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE33E1",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AE33E2",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE33E5",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x08AE33E6",
+       "command": "showmoney",
+       "args": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE33EA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145634972
+       ],
+       "texts": [
+        {
+         "address": "0x08AE369C",
+         "text": "这是我的一点零花钱…\n分你一点吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE33F0",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AE33F2",
+       "command": "addmoney",
+       "args": [
+        3000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE33F8",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08AE33FB",
+       "command": "updatemoney",
+       "args": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE33FF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145635006
+       ],
+       "texts": [
+        {
+         "address": "0x08AE36BE",
+         "text": "我果然还是\n更喜欢我的小草莓呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE3405",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE3407",
+       "command": "hidemoney",
+       "args": [
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE340A",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AE340B",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE340E",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE3411",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144605495
+       ],
+       "texts": [
+        {
+         "address": "0x089E8137",
+         "text": "完成任务:<可爱的姆克儿>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE3417",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE341C",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE3421",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE3426",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AE342B",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AE3430",
+       "command": "addvar",
+       "args": [
+        20789,
+        2
+       ]
+      },
+      {
+       "at": "0x08AE3435",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145688118
+       ],
+       "texts": [
+        {
+         "address": "0x08AF0636",
+         "text": "获得了2点BracerPoints!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE343B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE343D",
+       "command": "goto",
+       "args": [
+        144605118
+       ],
+       "targets": [
+        "0x089E7FBE"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE399F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE399F",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AE39A2",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145635039
+       ]
+      },
+      {
+       "at": "0x08AE39A9",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AE39AC",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE39AD",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE39AF",
+       "command": "cry",
+       "args": [
+        449,
+        255
+       ]
+      },
+      {
+       "at": "0x08AE39B4",
+       "command": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x08AE39B5",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AE39B7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145634880
+       ],
+       "texts": [
+        {
+         "address": "0x08AE3640",
+         "text": "不要!\n果然还是看看就满足了呢，\n它不像我的小草莓一样温顺呀……\n不管怎么样，\n谢谢你，前辈！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE39BD",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE39BF",
+       "command": "goto",
+       "args": [
+        144604928
+       ],
+       "targets": [
+        "0x089E7F00"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F50806",
+     "event_roots": [
+      {
+       "map_id": "46:2",
+       "place": "桔梗市",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 6,
+       "y": 2,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g46_n002.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F50806",
+       "command": "applymovement",
+       "args": [
+        4,
+        150278729
+       ]
+      },
+      {
+       "at": "0x08F5080D",
+       "command": "waitmovement",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F50810",
+       "command": "goto",
+       "args": [
+        144604725
+       ],
+       "targets": [
+        "0x089E7E35"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F51625",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F51625",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5162A",
+       "command": "goto_if",
+       "args": [
+        1,
+        144604862
+       ],
+       "targets": [
+        "0x089E7EBE"
+       ]
+      },
+      {
+       "at": "0x08F51630",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144605270
+       ],
+       "texts": [
+        {
+         "address": "0x089E8056",
+         "text": "呜呜……\n好吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F51636",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F51638",
+       "command": "applymovement",
+       "args": [
+        4,
+        150280376
+       ]
+      },
+      {
+       "at": "0x08F5163F",
+       "command": "waitmovement",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F51642",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F51643",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

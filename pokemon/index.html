@@ -1,0 +1,10416 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>宝可梦索引（按全国图鉴号与中文名） · 水银攻略</title><style>*{box-sizing:border-box}body{margin:0;color:#243247;background:#f5f7fb;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}header{background:#142b48;color:white;padding:22px max(22px,calc((100vw - 1180px)/2))}header a{color:#e5efff;text-decoration:none}nav{display:flex;gap:20px;flex-wrap:wrap;font-size:15px}main{max-width:1180px;margin:auto;padding:28px 22px 60px}h1{font-size:30px;line-height:1.4}h2{margin-top:32px;border-bottom:1px solid #d9e0eb;padding-bottom:8px}a{color:#155b9b}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow:auto;background:white}td,th{padding:10px 12px;border:1px solid #dde4ed;text-align:left;min-width:65px}th{background:#eaf0f8}tr:nth-child(even){background:#f7f9fc}code{font-size:.88em;background:#edf0f5;padding:2px 4px;border-radius:3px;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:15px;background:#edf0f5}img{max-width:100%;height:auto;image-rendering:pixelated}blockquote{border-left:4px solid #809cbe;background:#edf2f8;margin:18px 0;padding:10px 18px}input,select{font:inherit;padding:10px 14px;border:1px solid #bccbdd;border-radius:7px}input{flex:1;min-width:180px}.searchbox{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px}.card{background:white;border:1px solid #dbe3ee;border-radius:10px;padding:20px}.result{background:white;margin:10px 0;padding:14px 18px;border-radius:7px;border:1px solid #e0e6ee}.result small,.muted{color:#60718a}.badge{background:#e7eff9;border-radius:4px;padding:2px 7px;font-size:13px}details{margin:15px 0}footer{margin-top:40px;border-top:1px solid #dde4ed;padding-top:15px;color:#60718a;font-size:13px}@media(max-width:600px){main{padding:16px 12px}h1{font-size:25px}td,th{padding:8px}}
+.atlas-cards{margin:32px 0;padding-top:8px;border-top:1px solid #d9e0eb}.atlas-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}.atlas-card{background:#fff;border:1px solid #d9e0eb;border-radius:10px;overflow:hidden}.atlas-card h3{font-size:16px;margin:12px 14px 6px}.atlas-card p{font-size:13px;line-height:1.6;margin:8px 14px 14px}.atlas-frame{height:240px;position:relative;background:#e8edf1}.atlas-frame img{position:absolute;width:100%;height:100%;object-fit:contain;image-rendering:pixelated}.atlas-frame svg{position:absolute;width:100%;height:100%;inset:0;pointer-events:none}.atlas-label{paint-order:stroke;stroke:#fff;stroke-width:3px;fill:#142b48;font-weight:bold;text-anchor:middle;dominant-baseline:central}.atlas-cards details{margin-top:16px}.atlas-cards summary{cursor:pointer;color:#155b9b;margin-bottom:12px}.atlas-feature{padding:12px 16px;background:#eaf0f8;border-radius:8px;margin:16px 0}.atlas-unavailable{height:240px;display:grid;place-items:center;color:#59677a;font-size:14px;padding:24px;text-align:center}
+</style><header><a href="../index.html"><strong>宝可梦水银 1.1 · 玩家攻略</strong></a><nav><a href="../quests/index.html">支线攻略</a><a href="../items/index.html">道具搜集</a><a href="../pokemon/index.html">宝可梦获取</a><a href="../trainers/index.html">训练家配队</a><a href="../maps/index.html">地点地图</a><a href="../pokemon/wild_mega.html">野生Mega</a></nav></header><main><h1 id="_1">宝可梦索引（按全国图鉴号与中文名）</h1>
+<p>本索引覆盖全部 <strong>1554</strong> 个内部槽。</p>
+<ul>
+<li><strong>1435</strong> 个槽有全国图鉴号（正常物种与形态，同一全国号的多个槽不合并）；</li>
+<li><strong>119</strong> 个槽没有全国图鉴号（其中 115 个是占位槽，另 4 个是特殊内码槽）；</li>
+<li>另有 <strong>4</strong> 个槽虽映射到全国图鉴号，但种族值全为 0、属占位槽；</li>
+<li>
+<p>合计占位/无效槽 <strong>119</strong> 个，它们不当作宝可梦陈列，清单见 <a href="forms.html">forms.md</a>。</p>
+</li>
+<li>
+<p>地点索引：<a href="by_location.html">by_location.md</a></p>
+</li>
+<li>形态与占位：<a href="forms.html">forms.md</a></li>
+<li>同一个中文名/全国号的多个内部槽（形态）<strong>不合并</strong>，各自独立成页。</li>
+<li>内部槽编号即页面文件名（如 <code>0001.md</code>），是稳定的链接 ID。</li>
+</ul>
+<h2 id="_2">阅读说明</h2>
+<p><strong>Mega / 战斗形态</strong>：进化方式符号 <strong>254</strong> = <code>EVO_MEGA</code>（Mega 进化），<strong>253</strong> = <code>EVO_GIGANTAMAX</code>。两者都是战斗中的形态变化候选，不作为永久获得，也不与基础物种合并。</p>
+<p><strong>权重口径</strong>：野生与广播的「选槽权重」是同一地图/方式/时段内的选槽比例，不是整体遇见概率，也不是捕获概率；「遇敌率表值」是遭遇表的出现率字段。</p>
+<p><strong>时段口径</strong>：清晨 05:00–09:59 ｜ 白天 10:00–16:59 ｜ 黄昏 17:00–18:59 ｜ 夜晚 19:00–04:59。</p>
+<p><strong>碎岩与撞树</strong>：两者共用同一张槽表（<code>rock_smash_headbutt</code>），本资料不把它强行判定为其中一种。</p>
+<p><strong>广播遭遇</strong>：需要在宝可梦齿轮收音机播放对应地区之声（周三/丰缘之声、周四/神奥之声、周日/伽勒尔之声），且当天星期匹配，才会替换当地普通遭遇；未播放时有兜底出现表。</p>
+<p><strong>群聚（大量出现）</strong>：按区域（mapsec）关联，同一区域的多张地图共用同一只宝可梦。</p>
+<p><strong>剧情战斗候选</strong>：<code>setwildbattle</code> 只说明脚本会发起战斗，不保证可捕获或可获得。</p>
+<p><strong>未记录 ≠ 不存在</strong>：数据集里没有的字段写作未释明/未覆盖，不代表该游戏内一定没有；本资料不把缺失推断成零概率，也不写成无法获得。</p>
+<p><strong>进化道具</strong>：页面中的进化道具名称链接到道具版块（<code>../items/NNNN.md</code>）。</p>
+<h2 id="no00010099">No.0001–0099</h2>
+<table>
+<thead>
+<tr>
+<th>全国号</th>
+<th>中文名</th>
+<th>内部槽</th>
+<th>属性</th>
+<th>获取要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0001</td>
+<td>妙蛙种子</td>
+<td><a href="0001.html">0001</a></td>
+<td>草 / 毒</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0002</td>
+<td>妙蛙草</td>
+<td><a href="0002.html">0002</a></td>
+<td>草 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0003</td>
+<td>妙蛙花（形态槽 0003）</td>
+<td><a href="0003.html">0003</a></td>
+<td>草 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0003</td>
+<td>妙蛙花（形态槽 0869）</td>
+<td><a href="0869.html">0869</a></td>
+<td>草 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0003</td>
+<td>妙蛙花（形态槽 1260）</td>
+<td><a href="1260.html">1260</a></td>
+<td>草 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0004</td>
+<td>小火龙</td>
+<td><a href="0004.html">0004</a></td>
+<td>火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0005</td>
+<td>火恐龙</td>
+<td><a href="0005.html">0005</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0006</td>
+<td>喷火龙（形态槽 0006）</td>
+<td><a href="0006.html">0006</a></td>
+<td>火 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0006</td>
+<td>喷火龙（形态槽 0870）</td>
+<td><a href="0870.html">0870</a></td>
+<td>火 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0006</td>
+<td>喷火龙（形态槽 0871）</td>
+<td><a href="0871.html">0871</a></td>
+<td>火 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0006</td>
+<td>喷火龙（形态槽 1261）</td>
+<td><a href="1261.html">1261</a></td>
+<td>火 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0007</td>
+<td>杰尼龟</td>
+<td><a href="0007.html">0007</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0008</td>
+<td>卡咪龟</td>
+<td><a href="0008.html">0008</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0009</td>
+<td>水箭龟（形态槽 0009）</td>
+<td><a href="0009.html">0009</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0009</td>
+<td>水箭龟（形态槽 0872）</td>
+<td><a href="0872.html">0872</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0009</td>
+<td>水箭龟（形态槽 1262）</td>
+<td><a href="1262.html">1262</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0010</td>
+<td>绿毛虫</td>
+<td><a href="0010.html">0010</a></td>
+<td>虫</td>
+<td>野生 10 处</td>
+</tr>
+<tr>
+<td>0011</td>
+<td>铁甲蛹</td>
+<td><a href="0011.html">0011</a></td>
+<td>虫</td>
+<td>野生 9 处</td>
+</tr>
+<tr>
+<td>0012</td>
+<td>巴大蝶（形态槽 0012）</td>
+<td><a href="0012.html">0012</a></td>
+<td>虫 / 飞行</td>
+<td>野生 12 处</td>
+</tr>
+<tr>
+<td>0012</td>
+<td>巴大蝶（形态槽 1263）</td>
+<td><a href="1263.html">1263</a></td>
+<td>虫 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0013</td>
+<td>独角虫</td>
+<td><a href="0013.html">0013</a></td>
+<td>虫 / 毒</td>
+<td>野生 10 处</td>
+</tr>
+<tr>
+<td>0014</td>
+<td>铁壳蛹</td>
+<td><a href="0014.html">0014</a></td>
+<td>虫 / 毒</td>
+<td>野生 9 处</td>
+</tr>
+<tr>
+<td>0015</td>
+<td>大针蜂（形态槽 0015）</td>
+<td><a href="0015.html">0015</a></td>
+<td>虫 / 毒</td>
+<td>野生 9 处</td>
+</tr>
+<tr>
+<td>0015</td>
+<td>大针蜂（形态槽 0873）</td>
+<td><a href="0873.html">0873</a></td>
+<td>虫 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0016</td>
+<td>波波</td>
+<td><a href="0016.html">0016</a></td>
+<td>一般 / 飞行</td>
+<td>野生 26 处</td>
+</tr>
+<tr>
+<td>0017</td>
+<td>比比鸟</td>
+<td><a href="0017.html">0017</a></td>
+<td>一般 / 飞行</td>
+<td>野生 11 处</td>
+</tr>
+<tr>
+<td>0018</td>
+<td>大比鸟（形态槽 0018）</td>
+<td><a href="0018.html">0018</a></td>
+<td>一般 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0018</td>
+<td>大比鸟（形态槽 0874）</td>
+<td><a href="0874.html">0874</a></td>
+<td>一般 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0019</td>
+<td>小拉达（形态槽 0019）</td>
+<td><a href="0019.html">0019</a></td>
+<td>一般</td>
+<td>野生 59 处、赠送</td>
+</tr>
+<tr>
+<td>0019</td>
+<td>小拉达（形态槽 1020）</td>
+<td><a href="1020.html">1020</a></td>
+<td>恶</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0020</td>
+<td>拉达（形态槽 0020）</td>
+<td><a href="0020.html">0020</a></td>
+<td>一般</td>
+<td>野生 27 处</td>
+</tr>
+<tr>
+<td>0020</td>
+<td>拉达（形态槽 1021）</td>
+<td><a href="1021.html">1021</a></td>
+<td>恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0021</td>
+<td>烈雀</td>
+<td><a href="0021.html">0021</a></td>
+<td>一般 / 飞行</td>
+<td>野生 14 处</td>
+</tr>
+<tr>
+<td>0022</td>
+<td>大嘴雀</td>
+<td><a href="0022.html">0022</a></td>
+<td>一般 / 飞行</td>
+<td>野生 13 处</td>
+</tr>
+<tr>
+<td>0023</td>
+<td>阿柏蛇</td>
+<td><a href="0023.html">0023</a></td>
+<td>毒</td>
+<td>野生 11 处</td>
+</tr>
+<tr>
+<td>0024</td>
+<td>阿柏怪</td>
+<td><a href="0024.html">0024</a></td>
+<td>毒</td>
+<td>野生 13 处</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 0025）</td>
+<td><a href="0025.html">0025</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 1085）</td>
+<td><a href="1085.html">1085</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 1086）</td>
+<td><a href="1086.html">1086</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 1087）</td>
+<td><a href="1087.html">1087</a></td>
+<td>电</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 1088）</td>
+<td><a href="1088.html">1088</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 1089）</td>
+<td><a href="1089.html">1089</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 1090）</td>
+<td><a href="1090.html">1090</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 1091）</td>
+<td><a href="1091.html">1091</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 1092）</td>
+<td><a href="1092.html">1092</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 1093）</td>
+<td><a href="1093.html">1093</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 1094）</td>
+<td><a href="1094.html">1094</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 1095）</td>
+<td><a href="1095.html">1095</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 1096）</td>
+<td><a href="1096.html">1096</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 1097）</td>
+<td><a href="1097.html">1097</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 1098）</td>
+<td><a href="1098.html">1098</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 1099）</td>
+<td><a href="1099.html">1099</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0025</td>
+<td>皮卡丘（形态槽 1264）</td>
+<td><a href="1264.html">1264</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0026</td>
+<td>雷丘（形态槽 0026）</td>
+<td><a href="0026.html">0026</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0026</td>
+<td>雷丘（形态槽 0270）</td>
+<td><a href="0270.html">0270</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0026</td>
+<td>雷丘（形态槽 1022）</td>
+<td><a href="1022.html">1022</a></td>
+<td>电 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0027</td>
+<td>穿山鼠（形态槽 0027）</td>
+<td><a href="0027.html">0027</a></td>
+<td>地面</td>
+<td>野生 8 处</td>
+</tr>
+<tr>
+<td>0027</td>
+<td>穿山鼠（形态槽 1023）</td>
+<td><a href="1023.html">1023</a></td>
+<td>冰 / 钢</td>
+<td>野生 5 处</td>
+</tr>
+<tr>
+<td>0028</td>
+<td>穿山王（形态槽 0028）</td>
+<td><a href="0028.html">0028</a></td>
+<td>地面</td>
+<td>野生 34 处</td>
+</tr>
+<tr>
+<td>0028</td>
+<td>穿山王（形态槽 1024）</td>
+<td><a href="1024.html">1024</a></td>
+<td>冰 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0029</td>
+<td>尼多兰♀</td>
+<td><a href="0029.html">0029</a></td>
+<td>毒</td>
+<td>野生 7 处</td>
+</tr>
+<tr>
+<td>0030</td>
+<td>尼多娜</td>
+<td><a href="0030.html">0030</a></td>
+<td>毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0031</td>
+<td>尼多后</td>
+<td><a href="0031.html">0031</a></td>
+<td>毒 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0032</td>
+<td>尼多郎♂</td>
+<td><a href="0032.html">0032</a></td>
+<td>毒</td>
+<td>野生 7 处</td>
+</tr>
+<tr>
+<td>0033</td>
+<td>尼多力诺</td>
+<td><a href="0033.html">0033</a></td>
+<td>毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0034</td>
+<td>尼多王</td>
+<td><a href="0034.html">0034</a></td>
+<td>毒 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0035</td>
+<td>皮皮</td>
+<td><a href="0035.html">0035</a></td>
+<td>妖精</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0036</td>
+<td>皮可西（形态槽 0036）</td>
+<td><a href="0036.html">0036</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0036</td>
+<td>皮可西（形态槽 0271）</td>
+<td><a href="0271.html">0271</a></td>
+<td>妖精 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0037</td>
+<td>六尾（形态槽 0037）</td>
+<td><a href="0037.html">0037</a></td>
+<td>火</td>
+<td>野生 9 处</td>
+</tr>
+<tr>
+<td>0037</td>
+<td>六尾（形态槽 1025）</td>
+<td><a href="1025.html">1025</a></td>
+<td>冰</td>
+<td>野生 5 处</td>
+</tr>
+<tr>
+<td>0038</td>
+<td>九尾（形态槽 0038）</td>
+<td><a href="0038.html">0038</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0038</td>
+<td>九尾（形态槽 1026）</td>
+<td><a href="1026.html">1026</a></td>
+<td>冰 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0039</td>
+<td>胖丁</td>
+<td><a href="0039.html">0039</a></td>
+<td>一般 / 妖精</td>
+<td>野生 12 处</td>
+</tr>
+<tr>
+<td>0040</td>
+<td>胖可丁</td>
+<td><a href="0040.html">0040</a></td>
+<td>一般 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0041</td>
+<td>超音蝠</td>
+<td><a href="0041.html">0041</a></td>
+<td>毒 / 飞行</td>
+<td>野生 102 处、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0042</td>
+<td>大嘴蝠</td>
+<td><a href="0042.html">0042</a></td>
+<td>毒 / 飞行</td>
+<td>野生 89 处</td>
+</tr>
+<tr>
+<td>0043</td>
+<td>走路草</td>
+<td><a href="0043.html">0043</a></td>
+<td>草 / 毒</td>
+<td>野生 7 处</td>
+</tr>
+<tr>
+<td>0044</td>
+<td>臭臭花</td>
+<td><a href="0044.html">0044</a></td>
+<td>草 / 毒</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0045</td>
+<td>霸王花</td>
+<td><a href="0045.html">0045</a></td>
+<td>草 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0046</td>
+<td>派拉斯</td>
+<td><a href="0046.html">0046</a></td>
+<td>虫 / 草</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0047</td>
+<td>派拉斯特</td>
+<td><a href="0047.html">0047</a></td>
+<td>虫 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0048</td>
+<td>毛球</td>
+<td><a href="0048.html">0048</a></td>
+<td>虫 / 毒</td>
+<td>野生 11 处</td>
+</tr>
+<tr>
+<td>0049</td>
+<td>摩鲁蛾</td>
+<td><a href="0049.html">0049</a></td>
+<td>虫 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0050</td>
+<td>地鼠（形态槽 0050）</td>
+<td><a href="0050.html">0050</a></td>
+<td>地面</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0050</td>
+<td>地鼠（形态槽 1027）</td>
+<td><a href="1027.html">1027</a></td>
+<td>地面 / 钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0051</td>
+<td>三地鼠（形态槽 0051）</td>
+<td><a href="0051.html">0051</a></td>
+<td>地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0051</td>
+<td>三地鼠（形态槽 1028）</td>
+<td><a href="1028.html">1028</a></td>
+<td>地面 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0052</td>
+<td>喵喵（形态槽 0052）</td>
+<td><a href="0052.html">0052</a></td>
+<td>一般</td>
+<td>野生 9 处</td>
+</tr>
+<tr>
+<td>0052</td>
+<td>喵喵（形态槽 1029）</td>
+<td><a href="1029.html">1029</a></td>
+<td>恶</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0052</td>
+<td>喵喵（形态槽 1212）</td>
+<td><a href="1212.html">1212</a></td>
+<td>钢</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0052</td>
+<td>喵喵（形态槽 1265）</td>
+<td><a href="1265.html">1265</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0053</td>
+<td>猫老大（形态槽 0053）</td>
+<td><a href="0053.html">0053</a></td>
+<td>一般</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0053</td>
+<td>猫老大（形态槽 1030）</td>
+<td><a href="1030.html">1030</a></td>
+<td>恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0054</td>
+<td>可达鸭</td>
+<td><a href="0054.html">0054</a></td>
+<td>水</td>
+<td>野生 19 处</td>
+</tr>
+<tr>
+<td>0055</td>
+<td>哥达鸭</td>
+<td><a href="0055.html">0055</a></td>
+<td>水</td>
+<td>野生 6 处</td>
+</tr>
+<tr>
+<td>0056</td>
+<td>猴怪</td>
+<td><a href="0056.html">0056</a></td>
+<td>格斗</td>
+<td>野生 5 处</td>
+</tr>
+<tr>
+<td>0057</td>
+<td>火暴猴</td>
+<td><a href="0057.html">0057</a></td>
+<td>格斗</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0058</td>
+<td>卡蒂狗（形态槽 0058）</td>
+<td><a href="0058.html">0058</a></td>
+<td>火</td>
+<td>野生 10 处</td>
+</tr>
+<tr>
+<td>0058</td>
+<td>卡蒂狗（形态槽 1234）</td>
+<td><a href="1234.html">1234</a></td>
+<td>火 / 岩石</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0059</td>
+<td>风速狗（形态槽 0059）</td>
+<td><a href="0059.html">0059</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0059</td>
+<td>风速狗（形态槽 1235）</td>
+<td><a href="1235.html">1235</a></td>
+<td>火 / 岩石</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0060</td>
+<td>蚊香蝌蚪</td>
+<td><a href="0060.html">0060</a></td>
+<td>水</td>
+<td>野生 66 处</td>
+</tr>
+<tr>
+<td>0061</td>
+<td>蚊香君</td>
+<td><a href="0061.html">0061</a></td>
+<td>水</td>
+<td>野生 18 处</td>
+</tr>
+<tr>
+<td>0062</td>
+<td>蚊香泳士</td>
+<td><a href="0062.html">0062</a></td>
+<td>水 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0063</td>
+<td>凯西</td>
+<td><a href="0063.html">0063</a></td>
+<td>超能</td>
+<td>野生 12 处</td>
+</tr>
+<tr>
+<td>0064</td>
+<td>勇基拉</td>
+<td><a href="0064.html">0064</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0065</td>
+<td>胡地（形态槽 0065）</td>
+<td><a href="0065.html">0065</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0065</td>
+<td>胡地（形态槽 0875）</td>
+<td><a href="0875.html">0875</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0066</td>
+<td>腕力</td>
+<td><a href="0066.html">0066</a></td>
+<td>格斗</td>
+<td>野生 20 处</td>
+</tr>
+<tr>
+<td>0067</td>
+<td>豪力</td>
+<td><a href="0067.html">0067</a></td>
+<td>格斗</td>
+<td>野生 24 处</td>
+</tr>
+<tr>
+<td>0068</td>
+<td>怪力（形态槽 0068）</td>
+<td><a href="0068.html">0068</a></td>
+<td>格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0068</td>
+<td>怪力（形态槽 1266）</td>
+<td><a href="1266.html">1266</a></td>
+<td>格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0069</td>
+<td>喇叭芽</td>
+<td><a href="0069.html">0069</a></td>
+<td>草 / 毒</td>
+<td>野生 7 处、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0070</td>
+<td>口呆花</td>
+<td><a href="0070.html">0070</a></td>
+<td>草 / 毒</td>
+<td>野生 6 处</td>
+</tr>
+<tr>
+<td>0071</td>
+<td>大食花（形态槽 0071）</td>
+<td><a href="0071.html">0071</a></td>
+<td>草 / 毒</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0071</td>
+<td>大食花（形态槽 0266）</td>
+<td><a href="0266.html">0266</a></td>
+<td>草 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0072</td>
+<td>玛瑙水母</td>
+<td><a href="0072.html">0072</a></td>
+<td>水 / 毒</td>
+<td>野生 65 处</td>
+</tr>
+<tr>
+<td>0073</td>
+<td>毒刺水母</td>
+<td><a href="0073.html">0073</a></td>
+<td>水 / 毒</td>
+<td>野生 46 处</td>
+</tr>
+<tr>
+<td>0074</td>
+<td>小拳石（形态槽 0074）</td>
+<td><a href="0074.html">0074</a></td>
+<td>岩石 / 地面</td>
+<td>野生 70 处、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0074</td>
+<td>小拳石（形态槽 1031）</td>
+<td><a href="1031.html">1031</a></td>
+<td>岩石 / 电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0075</td>
+<td>隆隆石（形态槽 0075）</td>
+<td><a href="0075.html">0075</a></td>
+<td>岩石 / 地面</td>
+<td>野生 88 处</td>
+</tr>
+<tr>
+<td>0075</td>
+<td>隆隆石（形态槽 1032）</td>
+<td><a href="1032.html">1032</a></td>
+<td>岩石 / 电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0076</td>
+<td>隆隆岩（形态槽 0076）</td>
+<td><a href="0076.html">0076</a></td>
+<td>岩石 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0076</td>
+<td>隆隆岩（形态槽 1033）</td>
+<td><a href="1033.html">1033</a></td>
+<td>岩石 / 电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0077</td>
+<td>小火马（形态槽 0077）</td>
+<td><a href="0077.html">0077</a></td>
+<td>火</td>
+<td>野生 12 处</td>
+</tr>
+<tr>
+<td>0077</td>
+<td>小火马（形态槽 1213）</td>
+<td><a href="1213.html">1213</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0078</td>
+<td>烈焰马（形态槽 0078）</td>
+<td><a href="0078.html">0078</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0078</td>
+<td>烈焰马（形态槽 1214）</td>
+<td><a href="1214.html">1214</a></td>
+<td>超能 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0079</td>
+<td>呆呆兽（形态槽 0079）</td>
+<td><a href="0079.html">0079</a></td>
+<td>水 / 超能</td>
+<td>野生 10 处、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0079</td>
+<td>呆呆兽（形态槽 1215）</td>
+<td><a href="1215.html">1215</a></td>
+<td>超能</td>
+<td>蛋</td>
+</tr>
+<tr>
+<td>0080</td>
+<td>呆壳兽（形态槽 0080）</td>
+<td><a href="0080.html">0080</a></td>
+<td>水 / 超能</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0080</td>
+<td>呆壳兽（形态槽 0876）</td>
+<td><a href="0876.html">0876</a></td>
+<td>水 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0080</td>
+<td>呆壳兽（形态槽 1216）</td>
+<td><a href="1216.html">1216</a></td>
+<td>毒 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0081</td>
+<td>小磁怪</td>
+<td><a href="0081.html">0081</a></td>
+<td>电 / 钢</td>
+<td>野生 7 处、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0082</td>
+<td>三合一磁怪</td>
+<td><a href="0082.html">0082</a></td>
+<td>电 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0083</td>
+<td>大葱鸭（形态槽 0083）</td>
+<td><a href="0083.html">0083</a></td>
+<td>一般 / 飞行</td>
+<td>野生 9 处</td>
+</tr>
+<tr>
+<td>0083</td>
+<td>大葱鸭（形态槽 1217）</td>
+<td><a href="1217.html">1217</a></td>
+<td>格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0084</td>
+<td>嘟嘟</td>
+<td><a href="0084.html">0084</a></td>
+<td>一般 / 飞行</td>
+<td>野生 7 处</td>
+</tr>
+<tr>
+<td>0085</td>
+<td>嘟嘟利</td>
+<td><a href="0085.html">0085</a></td>
+<td>一般 / 飞行</td>
+<td>野生 3 处</td>
+</tr>
+<tr>
+<td>0086</td>
+<td>小海狮</td>
+<td><a href="0086.html">0086</a></td>
+<td>水</td>
+<td>野生 12 处</td>
+</tr>
+<tr>
+<td>0087</td>
+<td>白海狮</td>
+<td><a href="0087.html">0087</a></td>
+<td>水 / 冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0088</td>
+<td>臭泥（形态槽 0088）</td>
+<td><a href="0088.html">0088</a></td>
+<td>毒</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0088</td>
+<td>臭泥（形态槽 1034）</td>
+<td><a href="1034.html">1034</a></td>
+<td>毒 / 恶</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0089</td>
+<td>臭臭泥（形态槽 0089）</td>
+<td><a href="0089.html">0089</a></td>
+<td>毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0089</td>
+<td>臭臭泥（形态槽 1035）</td>
+<td><a href="1035.html">1035</a></td>
+<td>毒 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0090</td>
+<td>大舌贝</td>
+<td><a href="0090.html">0090</a></td>
+<td>水</td>
+<td>野生 15 处、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0091</td>
+<td>刺甲贝</td>
+<td><a href="0091.html">0091</a></td>
+<td>水 / 冰</td>
+<td>野生 6 处</td>
+</tr>
+<tr>
+<td>0092</td>
+<td>鬼斯</td>
+<td><a href="0092.html">0092</a></td>
+<td>幽灵 / 毒</td>
+<td>野生 35 处</td>
+</tr>
+<tr>
+<td>0093</td>
+<td>鬼斯通</td>
+<td><a href="0093.html">0093</a></td>
+<td>幽灵 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0094</td>
+<td>耿鬼（形态槽 0094）</td>
+<td><a href="0094.html">0094</a></td>
+<td>幽灵 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0094</td>
+<td>耿鬼（形态槽 0877）</td>
+<td><a href="0877.html">0877</a></td>
+<td>幽灵 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0094</td>
+<td>耿鬼（形态槽 1267）</td>
+<td><a href="1267.html">1267</a></td>
+<td>幽灵 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0095</td>
+<td>大岩蛇</td>
+<td><a href="0095.html">0095</a></td>
+<td>岩石 / 地面</td>
+<td>野生 59 处、广播</td>
+</tr>
+<tr>
+<td>0096</td>
+<td>催眠貘</td>
+<td><a href="0096.html">0096</a></td>
+<td>超能</td>
+<td>野生 5 处、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0097</td>
+<td>引梦貘人</td>
+<td><a href="0097.html">0097</a></td>
+<td>超能</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0098</td>
+<td>大钳蟹</td>
+<td><a href="0098.html">0098</a></td>
+<td>水</td>
+<td>野生 117 处</td>
+</tr>
+<tr>
+<td>0099</td>
+<td>巨钳蟹（形态槽 0099）</td>
+<td><a href="0099.html">0099</a></td>
+<td>水</td>
+<td>野生 57 处</td>
+</tr>
+<tr>
+<td>0099</td>
+<td>巨钳蟹（形态槽 1268）</td>
+<td><a href="1268.html">1268</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>## No.0100–0199</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>全国号</th>
+<th>中文名</th>
+<th>内部槽</th>
+<th>属性</th>
+<th>获取要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0100</td>
+<td>霹雳电球（形态槽 0100）</td>
+<td><a href="0100.html">0100</a></td>
+<td>电</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0100</td>
+<td>霹雳电球（形态槽 1236）</td>
+<td><a href="1236.html">1236</a></td>
+<td>电 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0101</td>
+<td>顽皮雷弹（形态槽 0101）</td>
+<td><a href="0101.html">0101</a></td>
+<td>电</td>
+<td>赠送、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0101</td>
+<td>顽皮雷弹（形态槽 1237）</td>
+<td><a href="1237.html">1237</a></td>
+<td>电 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0102</td>
+<td>蛋蛋（形态槽 0102）</td>
+<td><a href="0102.html">0102</a></td>
+<td>草 / 超能</td>
+<td>野生 39 处</td>
+</tr>
+<tr>
+<td>0102</td>
+<td>蛋蛋（形态槽 1036）</td>
+<td><a href="1036.html">1036</a></td>
+<td>草 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0103</td>
+<td>椰蛋树（形态槽 0103）</td>
+<td><a href="0103.html">0103</a></td>
+<td>草 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0103</td>
+<td>椰蛋树（形态槽 1037）</td>
+<td><a href="1037.html">1037</a></td>
+<td>草 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0104</td>
+<td>卡拉卡拉（形态槽 0104）</td>
+<td><a href="0104.html">0104</a></td>
+<td>地面</td>
+<td>野生 3 处</td>
+</tr>
+<tr>
+<td>0104</td>
+<td>卡拉卡拉（形态槽 1038）</td>
+<td><a href="1038.html">1038</a></td>
+<td>地面</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0105</td>
+<td>嘎啦嘎啦（形态槽 0105）</td>
+<td><a href="0105.html">0105</a></td>
+<td>地面</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0105</td>
+<td>嘎啦嘎啦（形态槽 1039）</td>
+<td><a href="1039.html">1039</a></td>
+<td>火 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0106</td>
+<td>飞腿郎</td>
+<td><a href="0106.html">0106</a></td>
+<td>格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0107</td>
+<td>快拳郎</td>
+<td><a href="0107.html">0107</a></td>
+<td>格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0108</td>
+<td>大舌头</td>
+<td><a href="0108.html">0108</a></td>
+<td>一般</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0109</td>
+<td>瓦斯弹（形态槽 0109）</td>
+<td><a href="0109.html">0109</a></td>
+<td>毒</td>
+<td>野生 8 处、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0109</td>
+<td>瓦斯弹（形态槽 1218）</td>
+<td><a href="1218.html">1218</a></td>
+<td>毒</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0110</td>
+<td>双弹瓦斯（形态槽 0110）</td>
+<td><a href="0110.html">0110</a></td>
+<td>毒</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0110</td>
+<td>双弹瓦斯（形态槽 1219）</td>
+<td><a href="1219.html">1219</a></td>
+<td>毒 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0111</td>
+<td>独角犀牛</td>
+<td><a href="0111.html">0111</a></td>
+<td>地面 / 岩石</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0112</td>
+<td>钻角犀兽</td>
+<td><a href="0112.html">0112</a></td>
+<td>地面 / 岩石</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0113</td>
+<td>吉利蛋</td>
+<td><a href="0113.html">0113</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0114</td>
+<td>蔓藤怪</td>
+<td><a href="0114.html">0114</a></td>
+<td>草</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0115</td>
+<td>袋兽（形态槽 0115）</td>
+<td><a href="0115.html">0115</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0115</td>
+<td>袋兽（形态槽 0878）</td>
+<td><a href="0878.html">0878</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0116</td>
+<td>墨海马</td>
+<td><a href="0116.html">0116</a></td>
+<td>水</td>
+<td>野生 6 处</td>
+</tr>
+<tr>
+<td>0117</td>
+<td>海刺龙</td>
+<td><a href="0117.html">0117</a></td>
+<td>水</td>
+<td>野生 12 处</td>
+</tr>
+<tr>
+<td>0118</td>
+<td>角金鱼</td>
+<td><a href="0118.html">0118</a></td>
+<td>水</td>
+<td>野生 79 处</td>
+</tr>
+<tr>
+<td>0119</td>
+<td>金鱼王</td>
+<td><a href="0119.html">0119</a></td>
+<td>水</td>
+<td>野生 39 处</td>
+</tr>
+<tr>
+<td>0120</td>
+<td>海星星</td>
+<td><a href="0120.html">0120</a></td>
+<td>水</td>
+<td>野生 70 处</td>
+</tr>
+<tr>
+<td>0121</td>
+<td>宝石海星（形态槽 0121）</td>
+<td><a href="0121.html">0121</a></td>
+<td>水 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0121</td>
+<td>宝石海星（形态槽 0276）</td>
+<td><a href="0276.html">0276</a></td>
+<td>水 / 超能</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0122</td>
+<td>魔墙人偶（形态槽 0122）</td>
+<td><a href="0122.html">0122</a></td>
+<td>超能 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0122</td>
+<td>魔墙人偶（形态槽 1220）</td>
+<td><a href="1220.html">1220</a></td>
+<td>冰 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0123</td>
+<td>飞天螳螂</td>
+<td><a href="0123.html">0123</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0124</td>
+<td>迷唇姐</td>
+<td><a href="0124.html">0124</a></td>
+<td>冰 / 超能</td>
+<td>野生 8 处</td>
+</tr>
+<tr>
+<td>0125</td>
+<td>电击兽</td>
+<td><a href="0125.html">0125</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0126</td>
+<td>鸭嘴火兽</td>
+<td><a href="0126.html">0126</a></td>
+<td>火</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0127</td>
+<td>凯罗斯（形态槽 0127）</td>
+<td><a href="0127.html">0127</a></td>
+<td>虫</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0127</td>
+<td>凯罗斯（形态槽 0879）</td>
+<td><a href="0879.html">0879</a></td>
+<td>虫 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0128</td>
+<td>肯泰罗（形态槽 0128）</td>
+<td><a href="0128.html">0128</a></td>
+<td>一般</td>
+<td>野生 8 处</td>
+</tr>
+<tr>
+<td>0128</td>
+<td>肯泰罗（形态槽 1523）</td>
+<td><a href="1523.html">1523</a></td>
+<td>格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0128</td>
+<td>肯泰罗（形态槽 1524）</td>
+<td><a href="1524.html">1524</a></td>
+<td>格斗 / 火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0128</td>
+<td>肯泰罗（形态槽 1525）</td>
+<td><a href="1525.html">1525</a></td>
+<td>格斗 / 水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0129</td>
+<td>鲤鱼王</td>
+<td><a href="0129.html">0129</a></td>
+<td>水</td>
+<td>野生 141 处、赠送</td>
+</tr>
+<tr>
+<td>0130</td>
+<td>暴鲤龙（形态槽 0130）</td>
+<td><a href="0130.html">0130</a></td>
+<td>水 / 飞行</td>
+<td>野生 34 处、赠送、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0130</td>
+<td>暴鲤龙（形态槽 0880）</td>
+<td><a href="0880.html">0880</a></td>
+<td>水 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0131</td>
+<td>拉普拉斯（形态槽 0131）</td>
+<td><a href="0131.html">0131</a></td>
+<td>水 / 冰</td>
+<td>赠送、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0131</td>
+<td>拉普拉斯（形态槽 1269）</td>
+<td><a href="1269.html">1269</a></td>
+<td>水 / 冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0132</td>
+<td>百变怪</td>
+<td><a href="0132.html">0132</a></td>
+<td>一般</td>
+<td>野生 8 处、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0133</td>
+<td>伊布（形态槽 0133）</td>
+<td><a href="0133.html">0133</a></td>
+<td>一般</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0133</td>
+<td>伊布（形态槽 1270）</td>
+<td><a href="1270.html">1270</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0134</td>
+<td>水伊布</td>
+<td><a href="0134.html">0134</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0135</td>
+<td>雷伊布</td>
+<td><a href="0135.html">0135</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0136</td>
+<td>火伊布</td>
+<td><a href="0136.html">0136</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0137</td>
+<td>多边兽</td>
+<td><a href="0137.html">0137</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0138</td>
+<td>菊石兽</td>
+<td><a href="0138.html">0138</a></td>
+<td>岩石 / 水</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0139</td>
+<td>多刺菊石兽</td>
+<td><a href="0139.html">0139</a></td>
+<td>岩石 / 水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0140</td>
+<td>化石盔</td>
+<td><a href="0140.html">0140</a></td>
+<td>岩石 / 水</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0141</td>
+<td>镰刀盔</td>
+<td><a href="0141.html">0141</a></td>
+<td>岩石 / 水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0142</td>
+<td>化石翼龙（形态槽 0142）</td>
+<td><a href="0142.html">0142</a></td>
+<td>岩石 / 飞行</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0142</td>
+<td>化石翼龙（形态槽 0881）</td>
+<td><a href="0881.html">0881</a></td>
+<td>岩石 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0143</td>
+<td>卡比兽（形态槽 0143）</td>
+<td><a href="0143.html">0143</a></td>
+<td>一般</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0143</td>
+<td>卡比兽（形态槽 1271）</td>
+<td><a href="1271.html">1271</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0144</td>
+<td>急冻鸟（形态槽 0144）</td>
+<td><a href="0144.html">0144</a></td>
+<td>冰 / 飞行</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0144</td>
+<td>急冻鸟（形态槽 1221）</td>
+<td><a href="1221.html">1221</a></td>
+<td>超能 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0145</td>
+<td>闪电鸟（形态槽 0145）</td>
+<td><a href="0145.html">0145</a></td>
+<td>电 / 飞行</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0145</td>
+<td>闪电鸟（形态槽 1222）</td>
+<td><a href="1222.html">1222</a></td>
+<td>格斗 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0146</td>
+<td>火焰鸟（形态槽 0146）</td>
+<td><a href="0146.html">0146</a></td>
+<td>火 / 飞行</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0146</td>
+<td>火焰鸟（形态槽 1223）</td>
+<td><a href="1223.html">1223</a></td>
+<td>恶 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0147</td>
+<td>迷你龙</td>
+<td><a href="0147.html">0147</a></td>
+<td>龙</td>
+<td>野生 11 处</td>
+</tr>
+<tr>
+<td>0148</td>
+<td>哈克龙</td>
+<td><a href="0148.html">0148</a></td>
+<td>龙</td>
+<td>野生 9 处</td>
+</tr>
+<tr>
+<td>0149</td>
+<td>快龙（形态槽 0149）</td>
+<td><a href="0149.html">0149</a></td>
+<td>龙 / 飞行</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0149</td>
+<td>快龙（形态槽 1403）</td>
+<td><a href="1403.html">1403</a></td>
+<td>龙 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0150</td>
+<td>超梦（形态槽 0150）</td>
+<td><a href="0150.html">0150</a></td>
+<td>超能</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0150</td>
+<td>超梦（形态槽 0882）</td>
+<td><a href="0882.html">0882</a></td>
+<td>超能 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0150</td>
+<td>超梦（形态槽 0883）</td>
+<td><a href="0883.html">0883</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0151</td>
+<td>梦幻</td>
+<td><a href="0151.html">0151</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0152</td>
+<td>菊草叶</td>
+<td><a href="0152.html">0152</a></td>
+<td>草</td>
+<td>野生 3 处</td>
+</tr>
+<tr>
+<td>0153</td>
+<td>月桂叶</td>
+<td><a href="0153.html">0153</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0154</td>
+<td>大竺葵（形态槽 0154）</td>
+<td><a href="0154.html">0154</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0154</td>
+<td>大竺葵（形态槽 0263）</td>
+<td><a href="0263.html">0263</a></td>
+<td>草 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0155</td>
+<td>火球鼠</td>
+<td><a href="0155.html">0155</a></td>
+<td>火</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0156</td>
+<td>火岩鼠</td>
+<td><a href="0156.html">0156</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0157</td>
+<td>火暴兽（形态槽 0157）</td>
+<td><a href="0157.html">0157</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0157</td>
+<td>火暴兽（形态槽 0264）</td>
+<td><a href="0264.html">0264</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0157</td>
+<td>火暴兽（形态槽 1238）</td>
+<td><a href="1238.html">1238</a></td>
+<td>火 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0158</td>
+<td>小锯鳄</td>
+<td><a href="0158.html">0158</a></td>
+<td>水</td>
+<td>野生 2 处</td>
+</tr>
+<tr>
+<td>0159</td>
+<td>蓝鳄</td>
+<td><a href="0159.html">0159</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0160</td>
+<td>大力鳄（形态槽 0160）</td>
+<td><a href="0160.html">0160</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0160</td>
+<td>大力鳄（形态槽 0265）</td>
+<td><a href="0265.html">0265</a></td>
+<td>水 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0161</td>
+<td>尾立</td>
+<td><a href="0161.html">0161</a></td>
+<td>一般</td>
+<td>野生 10 处</td>
+</tr>
+<tr>
+<td>0162</td>
+<td>大尾立</td>
+<td><a href="0162.html">0162</a></td>
+<td>一般</td>
+<td>野生 11 处</td>
+</tr>
+<tr>
+<td>0163</td>
+<td>咕咕</td>
+<td><a href="0163.html">0163</a></td>
+<td>一般 / 飞行</td>
+<td>野生 68 处</td>
+</tr>
+<tr>
+<td>0164</td>
+<td>猫头夜鹰</td>
+<td><a href="0164.html">0164</a></td>
+<td>一般 / 飞行</td>
+<td>野生 24 处、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0165</td>
+<td>芭瓢虫</td>
+<td><a href="0165.html">0165</a></td>
+<td>虫 / 飞行</td>
+<td>野生 28 处</td>
+</tr>
+<tr>
+<td>0166</td>
+<td>安瓢虫（形态槽 0166）</td>
+<td><a href="0166.html">0166</a></td>
+<td>虫 / 飞行</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0166</td>
+<td>安瓢虫（形态槽 1406）</td>
+<td><a href="1406.html">1406</a></td>
+<td>虫 / 钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0167</td>
+<td>圆丝蛛</td>
+<td><a href="0167.html">0167</a></td>
+<td>虫 / 毒</td>
+<td>野生 39 处</td>
+</tr>
+<tr>
+<td>0168</td>
+<td>阿利多斯</td>
+<td><a href="0168.html">0168</a></td>
+<td>虫 / 毒</td>
+<td>野生 6 处</td>
+</tr>
+<tr>
+<td>0169</td>
+<td>叉字蝠</td>
+<td><a href="0169.html">0169</a></td>
+<td>毒 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0170</td>
+<td>灯笼鱼</td>
+<td><a href="0170.html">0170</a></td>
+<td>水 / 电</td>
+<td>野生 11 处</td>
+</tr>
+<tr>
+<td>0171</td>
+<td>电灯怪</td>
+<td><a href="0171.html">0171</a></td>
+<td>水 / 电</td>
+<td>野生 8 处</td>
+</tr>
+<tr>
+<td>0172</td>
+<td>皮丘（形态槽 0172）</td>
+<td><a href="0172.html">0172</a></td>
+<td>电</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0172</td>
+<td>皮丘（形态槽 1100）</td>
+<td><a href="1100.html">1100</a></td>
+<td>电</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0173</td>
+<td>皮宝宝</td>
+<td><a href="0173.html">0173</a></td>
+<td>妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0174</td>
+<td>宝宝丁</td>
+<td><a href="0174.html">0174</a></td>
+<td>一般 / 妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0175</td>
+<td>波克比</td>
+<td><a href="0175.html">0175</a></td>
+<td>妖精</td>
+<td>蛋</td>
+</tr>
+<tr>
+<td>0176</td>
+<td>波克基古</td>
+<td><a href="0176.html">0176</a></td>
+<td>妖精 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0177</td>
+<td>天然雀</td>
+<td><a href="0177.html">0177</a></td>
+<td>超能 / 飞行</td>
+<td>野生 10 处</td>
+</tr>
+<tr>
+<td>0178</td>
+<td>天然鸟</td>
+<td><a href="0178.html">0178</a></td>
+<td>超能 / 飞行</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0179</td>
+<td>咩利羊</td>
+<td><a href="0179.html">0179</a></td>
+<td>电</td>
+<td>野生 12 处</td>
+</tr>
+<tr>
+<td>0180</td>
+<td>茸茸羊</td>
+<td><a href="0180.html">0180</a></td>
+<td>电</td>
+<td>野生 7 处</td>
+</tr>
+<tr>
+<td>0181</td>
+<td>电龙（形态槽 0181）</td>
+<td><a href="0181.html">0181</a></td>
+<td>电</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0181</td>
+<td>电龙（形态槽 0884）</td>
+<td><a href="0884.html">0884</a></td>
+<td>电 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0182</td>
+<td>美丽花</td>
+<td><a href="0182.html">0182</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0183</td>
+<td>玛力露</td>
+<td><a href="0183.html">0183</a></td>
+<td>水 / 妖精</td>
+<td>野生 14 处</td>
+</tr>
+<tr>
+<td>0184</td>
+<td>玛力露丽</td>
+<td><a href="0184.html">0184</a></td>
+<td>水 / 妖精</td>
+<td>野生 8 处</td>
+</tr>
+<tr>
+<td>0185</td>
+<td>树才怪</td>
+<td><a href="0185.html">0185</a></td>
+<td>岩石</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0186</td>
+<td>蚊香蛙皇</td>
+<td><a href="0186.html">0186</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0187</td>
+<td>毽子草</td>
+<td><a href="0187.html">0187</a></td>
+<td>草 / 飞行</td>
+<td>野生 13 处</td>
+</tr>
+<tr>
+<td>0188</td>
+<td>毽子花</td>
+<td><a href="0188.html">0188</a></td>
+<td>草 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0189</td>
+<td>毽子棉（形态槽 0189）</td>
+<td><a href="0189.html">0189</a></td>
+<td>草 / 飞行</td>
+<td>野生 3 处</td>
+</tr>
+<tr>
+<td>0189</td>
+<td>毽子棉（形态槽 1405）</td>
+<td><a href="1405.html">1405</a></td>
+<td>草 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0190</td>
+<td>长尾怪手</td>
+<td><a href="0190.html">0190</a></td>
+<td>一般</td>
+<td>野生 21 处</td>
+</tr>
+<tr>
+<td>0191</td>
+<td>向日种子</td>
+<td><a href="0191.html">0191</a></td>
+<td>草</td>
+<td>野生 2 处</td>
+</tr>
+<tr>
+<td>0192</td>
+<td>向日花怪</td>
+<td><a href="0192.html">0192</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0193</td>
+<td>蜻蜻蜓</td>
+<td><a href="0193.html">0193</a></td>
+<td>虫 / 飞行</td>
+<td>野生 9 处、群聚</td>
+</tr>
+<tr>
+<td>0194</td>
+<td>乌波（形态槽 0194）</td>
+<td><a href="0194.html">0194</a></td>
+<td>水 / 地面</td>
+<td>野生 73 处</td>
+</tr>
+<tr>
+<td>0194</td>
+<td>乌波（形态槽 0258）</td>
+<td><a href="0258.html">0258</a></td>
+<td>毒 / 地面</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0195</td>
+<td>沼王</td>
+<td><a href="0195.html">0195</a></td>
+<td>水 / 地面</td>
+<td>野生 130 处</td>
+</tr>
+<tr>
+<td>0196</td>
+<td>太阳伊布</td>
+<td><a href="0196.html">0196</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0197</td>
+<td>月亮伊布</td>
+<td><a href="0197.html">0197</a></td>
+<td>恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0198</td>
+<td>黑暗鸦</td>
+<td><a href="0198.html">0198</a></td>
+<td>恶 / 飞行</td>
+<td>野生 2 处</td>
+</tr>
+<tr>
+<td>0199</td>
+<td>呆呆王（形态槽 0199）</td>
+<td><a href="0199.html">0199</a></td>
+<td>水 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0199</td>
+<td>呆呆王（形态槽 1224）</td>
+<td><a href="1224.html">1224</a></td>
+<td>毒 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>## No.0200–0299</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>全国号</th>
+<th>中文名</th>
+<th>内部槽</th>
+<th>属性</th>
+<th>获取要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0200</td>
+<td>梦妖</td>
+<td><a href="0200.html">0200</a></td>
+<td>幽灵</td>
+<td>野生 10 处、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0201）</td>
+<td><a href="0201.html">0201</a></td>
+<td>超能</td>
+<td>野生 6 处</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0413）</td>
+<td><a href="0413.html">0413</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0414）</td>
+<td><a href="0414.html">0414</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0415）</td>
+<td><a href="0415.html">0415</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0416）</td>
+<td><a href="0416.html">0416</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0417）</td>
+<td><a href="0417.html">0417</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0418）</td>
+<td><a href="0418.html">0418</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0419）</td>
+<td><a href="0419.html">0419</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0420）</td>
+<td><a href="0420.html">0420</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0421）</td>
+<td><a href="0421.html">0421</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0422）</td>
+<td><a href="0422.html">0422</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0423）</td>
+<td><a href="0423.html">0423</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0424）</td>
+<td><a href="0424.html">0424</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0425）</td>
+<td><a href="0425.html">0425</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0426）</td>
+<td><a href="0426.html">0426</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0427）</td>
+<td><a href="0427.html">0427</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0428）</td>
+<td><a href="0428.html">0428</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0429）</td>
+<td><a href="0429.html">0429</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0430）</td>
+<td><a href="0430.html">0430</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0431）</td>
+<td><a href="0431.html">0431</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0432）</td>
+<td><a href="0432.html">0432</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0433）</td>
+<td><a href="0433.html">0433</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0434）</td>
+<td><a href="0434.html">0434</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0435）</td>
+<td><a href="0435.html">0435</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0436）</td>
+<td><a href="0436.html">0436</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0437）</td>
+<td><a href="0437.html">0437</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0438）</td>
+<td><a href="0438.html">0438</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0201</td>
+<td>未知图腾（形态槽 0439）</td>
+<td><a href="0439.html">0439</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0202</td>
+<td>果然翁</td>
+<td><a href="0202.html">0202</a></td>
+<td>超能</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0203</td>
+<td>麒麟奇</td>
+<td><a href="0203.html">0203</a></td>
+<td>一般 / 超能</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0204</td>
+<td>榛果球</td>
+<td><a href="0204.html">0204</a></td>
+<td>虫</td>
+<td>野生 40 处</td>
+</tr>
+<tr>
+<td>0205</td>
+<td>佛烈托斯</td>
+<td><a href="0205.html">0205</a></td>
+<td>虫 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0206</td>
+<td>土龙弟弟</td>
+<td><a href="0206.html">0206</a></td>
+<td>一般</td>
+<td>野生 37 处</td>
+</tr>
+<tr>
+<td>0207</td>
+<td>天蝎</td>
+<td><a href="0207.html">0207</a></td>
+<td>地面 / 飞行</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0208</td>
+<td>大钢蛇（形态槽 0208）</td>
+<td><a href="0208.html">0208</a></td>
+<td>钢 / 地面</td>
+<td>野生 5 处</td>
+</tr>
+<tr>
+<td>0208</td>
+<td>大钢蛇（形态槽 0885）</td>
+<td><a href="0885.html">0885</a></td>
+<td>钢 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0209</td>
+<td>布鲁</td>
+<td><a href="0209.html">0209</a></td>
+<td>妖精</td>
+<td>野生 10 处</td>
+</tr>
+<tr>
+<td>0210</td>
+<td>布鲁皇</td>
+<td><a href="0210.html">0210</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0211</td>
+<td>千针鱼（形态槽 0211）</td>
+<td><a href="0211.html">0211</a></td>
+<td>水 / 毒</td>
+<td>野生 6 处、群聚</td>
+</tr>
+<tr>
+<td>0211</td>
+<td>千针鱼（形态槽 1239）</td>
+<td><a href="1239.html">1239</a></td>
+<td>恶 / 毒</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0212</td>
+<td>巨钳螳螂（形态槽 0212）</td>
+<td><a href="0212.html">0212</a></td>
+<td>虫 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0212</td>
+<td>巨钳螳螂（形态槽 0886）</td>
+<td><a href="0886.html">0886</a></td>
+<td>虫 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0213</td>
+<td>壶壶</td>
+<td><a href="0213.html">0213</a></td>
+<td>虫 / 岩石</td>
+<td>野生 2 处、赠送</td>
+</tr>
+<tr>
+<td>0214</td>
+<td>赫拉克罗斯（形态槽 0214）</td>
+<td><a href="0214.html">0214</a></td>
+<td>虫 / 格斗</td>
+<td>野生 18 处</td>
+</tr>
+<tr>
+<td>0214</td>
+<td>赫拉克罗斯（形态槽 0887）</td>
+<td><a href="0887.html">0887</a></td>
+<td>虫 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0215</td>
+<td>狃拉（形态槽 0215）</td>
+<td><a href="0215.html">0215</a></td>
+<td>恶 / 冰</td>
+<td>野生 10 处</td>
+</tr>
+<tr>
+<td>0215</td>
+<td>狃拉（形态槽 1240）</td>
+<td><a href="1240.html">1240</a></td>
+<td>毒 / 格斗</td>
+<td>野生 7 处</td>
+</tr>
+<tr>
+<td>0216</td>
+<td>熊宝宝</td>
+<td><a href="0216.html">0216</a></td>
+<td>一般</td>
+<td>野生 8 处</td>
+</tr>
+<tr>
+<td>0217</td>
+<td>圈圈熊</td>
+<td><a href="0217.html">0217</a></td>
+<td>一般</td>
+<td>野生 18 处、赠送</td>
+</tr>
+<tr>
+<td>0218</td>
+<td>熔岩虫</td>
+<td><a href="0218.html">0218</a></td>
+<td>火</td>
+<td>野生 7 处</td>
+</tr>
+<tr>
+<td>0219</td>
+<td>熔岩蜗牛</td>
+<td><a href="0219.html">0219</a></td>
+<td>火 / 岩石</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0220</td>
+<td>小山猪</td>
+<td><a href="0220.html">0220</a></td>
+<td>冰 / 地面</td>
+<td>野生 19 处</td>
+</tr>
+<tr>
+<td>0221</td>
+<td>长毛猪</td>
+<td><a href="0221.html">0221</a></td>
+<td>冰 / 地面</td>
+<td>野生 9 处</td>
+</tr>
+<tr>
+<td>0222</td>
+<td>太阳珊瑚（形态槽 0222）</td>
+<td><a href="0222.html">0222</a></td>
+<td>水 / 岩石</td>
+<td>野生 25 处</td>
+</tr>
+<tr>
+<td>0222</td>
+<td>太阳珊瑚（形态槽 1225）</td>
+<td><a href="1225.html">1225</a></td>
+<td>幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0223</td>
+<td>铁炮鱼</td>
+<td><a href="0223.html">0223</a></td>
+<td>水</td>
+<td>野生 3 处</td>
+</tr>
+<tr>
+<td>0224</td>
+<td>章鱼桶</td>
+<td><a href="0224.html">0224</a></td>
+<td>水</td>
+<td>野生 3 处</td>
+</tr>
+<tr>
+<td>0225</td>
+<td>信使鸟（形态槽 0225）</td>
+<td><a href="0225.html">0225</a></td>
+<td>冰 / 飞行</td>
+<td>野生 10 处</td>
+</tr>
+<tr>
+<td>0225</td>
+<td>信使鸟（形态槽 1407）</td>
+<td><a href="1407.html">1407</a></td>
+<td>冰 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0226</td>
+<td>巨翅飞鱼</td>
+<td><a href="0226.html">0226</a></td>
+<td>水 / 飞行</td>
+<td>野生 6 处</td>
+</tr>
+<tr>
+<td>0227</td>
+<td>盔甲鸟（形态槽 0227）</td>
+<td><a href="0227.html">0227</a></td>
+<td>钢 / 飞行</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0227</td>
+<td>盔甲鸟（形态槽 0272）</td>
+<td><a href="0272.html">0272</a></td>
+<td>钢 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0228</td>
+<td>戴鲁比</td>
+<td><a href="0228.html">0228</a></td>
+<td>恶 / 火</td>
+<td>野生 28 处</td>
+</tr>
+<tr>
+<td>0229</td>
+<td>黑鲁加（形态槽 0229）</td>
+<td><a href="0229.html">0229</a></td>
+<td>恶 / 火</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0229</td>
+<td>黑鲁加（形态槽 0888）</td>
+<td><a href="0888.html">0888</a></td>
+<td>恶 / 火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0230</td>
+<td>刺龙王</td>
+<td><a href="0230.html">0230</a></td>
+<td>水 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0231</td>
+<td>小小象</td>
+<td><a href="0231.html">0231</a></td>
+<td>地面</td>
+<td>野生 12 处</td>
+</tr>
+<tr>
+<td>0232</td>
+<td>顿甲</td>
+<td><a href="0232.html">0232</a></td>
+<td>地面</td>
+<td>野生 18 处</td>
+</tr>
+<tr>
+<td>0233</td>
+<td>多边兽2</td>
+<td><a href="0233.html">0233</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0234</td>
+<td>惊角鹿</td>
+<td><a href="0234.html">0234</a></td>
+<td>一般</td>
+<td>野生 10 处</td>
+</tr>
+<tr>
+<td>0235</td>
+<td>图图犬（形态槽 0235）</td>
+<td><a href="0235.html">0235</a></td>
+<td>一般</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0235</td>
+<td>图图犬（形态槽 1404）</td>
+<td><a href="1404.html">1404</a></td>
+<td>一般</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0236</td>
+<td>无畏小子</td>
+<td><a href="0236.html">0236</a></td>
+<td>格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0237</td>
+<td>战舞郎</td>
+<td><a href="0237.html">0237</a></td>
+<td>格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0238</td>
+<td>迷唇娃</td>
+<td><a href="0238.html">0238</a></td>
+<td>冰 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0239</td>
+<td>电击怪</td>
+<td><a href="0239.html">0239</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0240</td>
+<td>鸭嘴宝宝</td>
+<td><a href="0240.html">0240</a></td>
+<td>火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0241</td>
+<td>大奶罐</td>
+<td><a href="0241.html">0241</a></td>
+<td>一般</td>
+<td>野生 8 处</td>
+</tr>
+<tr>
+<td>0242</td>
+<td>幸福蛋</td>
+<td><a href="0242.html">0242</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0243</td>
+<td>雷公</td>
+<td><a href="0243.html">0243</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0244</td>
+<td>炎帝</td>
+<td><a href="0244.html">0244</a></td>
+<td>火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0245</td>
+<td>水君</td>
+<td><a href="0245.html">0245</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0246</td>
+<td>幼基拉斯</td>
+<td><a href="0246.html">0246</a></td>
+<td>岩石 / 地面</td>
+<td>野生 6 处</td>
+</tr>
+<tr>
+<td>0247</td>
+<td>沙基拉斯</td>
+<td><a href="0247.html">0247</a></td>
+<td>岩石 / 地面</td>
+<td>野生 6 处</td>
+</tr>
+<tr>
+<td>0248</td>
+<td>班基拉斯（形态槽 0248）</td>
+<td><a href="0248.html">0248</a></td>
+<td>岩石 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0248</td>
+<td>班基拉斯（形态槽 0889）</td>
+<td><a href="0889.html">0889</a></td>
+<td>岩石 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0249</td>
+<td>洛奇亚</td>
+<td><a href="0249.html">0249</a></td>
+<td>超能 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0250</td>
+<td>凤王</td>
+<td><a href="0250.html">0250</a></td>
+<td>火 / 飞行</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0251</td>
+<td>时拉比</td>
+<td><a href="0251.html">0251</a></td>
+<td>超能 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0252</td>
+<td>木守宫</td>
+<td><a href="0277.html">0277</a></td>
+<td>草</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0253</td>
+<td>森林蜥蜴</td>
+<td><a href="0278.html">0278</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0254</td>
+<td>蜥蜴王（形态槽 0279）</td>
+<td><a href="0279.html">0279</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0254</td>
+<td>蜥蜴王（形态槽 0890）</td>
+<td><a href="0890.html">0890</a></td>
+<td>草 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0255</td>
+<td>火稚鸡</td>
+<td><a href="0280.html">0280</a></td>
+<td>火</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0256</td>
+<td>力壮鸡</td>
+<td><a href="0281.html">0281</a></td>
+<td>火 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0257</td>
+<td>火焰鸡（形态槽 0282）</td>
+<td><a href="0282.html">0282</a></td>
+<td>火 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0257</td>
+<td>火焰鸡（形态槽 0891）</td>
+<td><a href="0891.html">0891</a></td>
+<td>火 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0258</td>
+<td>水跃鱼</td>
+<td><a href="0283.html">0283</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0259</td>
+<td>沼跃鱼</td>
+<td><a href="0284.html">0284</a></td>
+<td>水 / 地面</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0260</td>
+<td>巨沼怪（形态槽 0285）</td>
+<td><a href="0285.html">0285</a></td>
+<td>水 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0260</td>
+<td>巨沼怪（形态槽 0892）</td>
+<td><a href="0892.html">0892</a></td>
+<td>水 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0261</td>
+<td>土狼犬</td>
+<td><a href="0286.html">0286</a></td>
+<td>恶</td>
+<td>野生 1 处、群聚</td>
+</tr>
+<tr>
+<td>0262</td>
+<td>大狼犬</td>
+<td><a href="0287.html">0287</a></td>
+<td>恶</td>
+<td>野生 4 处、广播</td>
+</tr>
+<tr>
+<td>0263</td>
+<td>蛇纹熊（形态槽 0288）</td>
+<td><a href="0288.html">0288</a></td>
+<td>一般</td>
+<td>野生 8 处、广播</td>
+</tr>
+<tr>
+<td>0263</td>
+<td>蛇纹熊（形态槽 1226）</td>
+<td><a href="1226.html">1226</a></td>
+<td>恶</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0264</td>
+<td>直冲熊（形态槽 0289）</td>
+<td><a href="0289.html">0289</a></td>
+<td>一般</td>
+<td>野生 13 处、广播</td>
+</tr>
+<tr>
+<td>0264</td>
+<td>直冲熊（形态槽 1227）</td>
+<td><a href="1227.html">1227</a></td>
+<td>恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0265</td>
+<td>刺尾虫</td>
+<td><a href="0290.html">0290</a></td>
+<td>虫</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0266</td>
+<td>甲壳茧</td>
+<td><a href="0291.html">0291</a></td>
+<td>虫</td>
+<td>野生 2 处</td>
+</tr>
+<tr>
+<td>0267</td>
+<td>狩猎凤蝶</td>
+<td><a href="0292.html">0292</a></td>
+<td>虫 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0268</td>
+<td>盾甲茧</td>
+<td><a href="0293.html">0293</a></td>
+<td>虫</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0269</td>
+<td>毒粉蛾</td>
+<td><a href="0294.html">0294</a></td>
+<td>虫 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0270</td>
+<td>莲叶童子</td>
+<td><a href="0295.html">0295</a></td>
+<td>水 / 草</td>
+<td>野生 1 处、广播</td>
+</tr>
+<tr>
+<td>0271</td>
+<td>莲帽小童</td>
+<td><a href="0296.html">0296</a></td>
+<td>水 / 草</td>
+<td>野生 3 处</td>
+</tr>
+<tr>
+<td>0272</td>
+<td>乐天河童</td>
+<td><a href="0297.html">0297</a></td>
+<td>水 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0273</td>
+<td>橡实果</td>
+<td><a href="0298.html">0298</a></td>
+<td>草</td>
+<td>野生 1 处、群聚</td>
+</tr>
+<tr>
+<td>0274</td>
+<td>长鼻叶</td>
+<td><a href="0299.html">0299</a></td>
+<td>草 / 恶</td>
+<td>野生 2 处</td>
+</tr>
+<tr>
+<td>0275</td>
+<td>狡猾天狗</td>
+<td><a href="0300.html">0300</a></td>
+<td>草 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0276</td>
+<td>傲骨燕</td>
+<td><a href="0304.html">0304</a></td>
+<td>一般 / 飞行</td>
+<td>野生 6 处、广播</td>
+</tr>
+<tr>
+<td>0277</td>
+<td>大王燕</td>
+<td><a href="0305.html">0305</a></td>
+<td>一般 / 飞行</td>
+<td>野生 5 处、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0278</td>
+<td>长翅鸥</td>
+<td><a href="0309.html">0309</a></td>
+<td>水 / 飞行</td>
+<td>野生 47 处、广播</td>
+</tr>
+<tr>
+<td>0279</td>
+<td>大嘴鸥</td>
+<td><a href="0310.html">0310</a></td>
+<td>水 / 飞行</td>
+<td>野生 54 处</td>
+</tr>
+<tr>
+<td>0280</td>
+<td>拉鲁拉丝</td>
+<td><a href="0392.html">0392</a></td>
+<td>超能 / 妖精</td>
+<td>群聚</td>
+</tr>
+<tr>
+<td>0281</td>
+<td>奇鲁莉安</td>
+<td><a href="0393.html">0393</a></td>
+<td>超能 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0282</td>
+<td>沙奈朵（形态槽 0394）</td>
+<td><a href="0394.html">0394</a></td>
+<td>超能 / 妖精</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0282</td>
+<td>沙奈朵（形态槽 0893）</td>
+<td><a href="0893.html">0893</a></td>
+<td>超能 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0283</td>
+<td>溜溜糖球</td>
+<td><a href="0311.html">0311</a></td>
+<td>虫 / 水</td>
+<td>野生 13 处、广播</td>
+</tr>
+<tr>
+<td>0284</td>
+<td>雨翅蛾</td>
+<td><a href="0312.html">0312</a></td>
+<td>虫 / 飞行</td>
+<td>野生 7 处</td>
+</tr>
+<tr>
+<td>0285</td>
+<td>蘑蘑菇</td>
+<td><a href="0306.html">0306</a></td>
+<td>草</td>
+<td>野生 7 处、广播</td>
+</tr>
+<tr>
+<td>0286</td>
+<td>斗笠菇</td>
+<td><a href="0307.html">0307</a></td>
+<td>草 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0287</td>
+<td>懒人獭</td>
+<td><a href="0364.html">0364</a></td>
+<td>一般</td>
+<td>野生 3 处、广播</td>
+</tr>
+<tr>
+<td>0288</td>
+<td>过动猿</td>
+<td><a href="0365.html">0365</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0289</td>
+<td>请假王</td>
+<td><a href="0366.html">0366</a></td>
+<td>一般</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0290</td>
+<td>土居忍士</td>
+<td><a href="0301.html">0301</a></td>
+<td>虫 / 地面</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0291</td>
+<td>铁面忍者</td>
+<td><a href="0302.html">0302</a></td>
+<td>虫 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0292</td>
+<td>脱壳忍者</td>
+<td><a href="0303.html">0303</a></td>
+<td>虫 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0293</td>
+<td>咕妞妞</td>
+<td><a href="0370.html">0370</a></td>
+<td>一般</td>
+<td>野生 17 处、广播</td>
+</tr>
+<tr>
+<td>0294</td>
+<td>吼爆弹</td>
+<td><a href="0371.html">0371</a></td>
+<td>一般</td>
+<td>野生 2 处、广播</td>
+</tr>
+<tr>
+<td>0295</td>
+<td>爆音怪</td>
+<td><a href="0372.html">0372</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0296</td>
+<td>幕下力士</td>
+<td><a href="0335.html">0335</a></td>
+<td>格斗</td>
+<td>野生 16 处、广播</td>
+</tr>
+<tr>
+<td>0297</td>
+<td>铁掌力士</td>
+<td><a href="0336.html">0336</a></td>
+<td>格斗</td>
+<td>野生 5 处</td>
+</tr>
+<tr>
+<td>0298</td>
+<td>露力丽</td>
+<td><a href="0350.html">0350</a></td>
+<td>一般 / 妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0299</td>
+<td>朝北鼻</td>
+<td><a href="0320.html">0320</a></td>
+<td>岩石</td>
+<td>野生 14 处、广播</td>
+</tr>
+<tr>
+<td>## No.0300–0399</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>全国号</th>
+<th>中文名</th>
+<th>内部槽</th>
+<th>属性</th>
+<th>获取要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0300</td>
+<td>向尾喵</td>
+<td><a href="0315.html">0315</a></td>
+<td>一般</td>
+<td>野生 11 处、广播、赠送</td>
+</tr>
+<tr>
+<td>0301</td>
+<td>优雅猫</td>
+<td><a href="0316.html">0316</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0302</td>
+<td>勾魂眼（形态槽 0322）</td>
+<td><a href="0322.html">0322</a></td>
+<td>恶 / 幽灵</td>
+<td>野生 21 处、广播、赠送、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0302</td>
+<td>勾魂眼（形态槽 0894）</td>
+<td><a href="0894.html">0894</a></td>
+<td>恶 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0303</td>
+<td>大嘴娃（形态槽 0355）</td>
+<td><a href="0355.html">0355</a></td>
+<td>钢 / 妖精</td>
+<td>野生 19 处、广播</td>
+</tr>
+<tr>
+<td>0303</td>
+<td>大嘴娃（形态槽 0895）</td>
+<td><a href="0895.html">0895</a></td>
+<td>钢 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0304</td>
+<td>可可多拉</td>
+<td><a href="0382.html">0382</a></td>
+<td>钢 / 岩石</td>
+<td>野生 15 处、广播</td>
+</tr>
+<tr>
+<td>0305</td>
+<td>可多拉</td>
+<td><a href="0383.html">0383</a></td>
+<td>钢 / 岩石</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0306</td>
+<td>波士可多拉（形态槽 0384）</td>
+<td><a href="0384.html">0384</a></td>
+<td>钢 / 岩石</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0306</td>
+<td>波士可多拉（形态槽 0896）</td>
+<td><a href="0896.html">0896</a></td>
+<td>钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0307</td>
+<td>玛沙那</td>
+<td><a href="0356.html">0356</a></td>
+<td>格斗 / 超能</td>
+<td>野生 25 处、广播</td>
+</tr>
+<tr>
+<td>0308</td>
+<td>恰雷姆（形态槽 0357）</td>
+<td><a href="0357.html">0357</a></td>
+<td>格斗 / 超能</td>
+<td>野生 5 处</td>
+</tr>
+<tr>
+<td>0308</td>
+<td>恰雷姆（形态槽 0897）</td>
+<td><a href="0897.html">0897</a></td>
+<td>格斗 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0309</td>
+<td>落雷兽</td>
+<td><a href="0337.html">0337</a></td>
+<td>电</td>
+<td>野生 1 处、广播</td>
+</tr>
+<tr>
+<td>0310</td>
+<td>雷电兽（形态槽 0338）</td>
+<td><a href="0338.html">0338</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0310</td>
+<td>雷电兽（形态槽 0898）</td>
+<td><a href="0898.html">0898</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0311</td>
+<td>正电拍拍</td>
+<td><a href="0353.html">0353</a></td>
+<td>电</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0312</td>
+<td>负电拍拍</td>
+<td><a href="0354.html">0354</a></td>
+<td>电</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0313</td>
+<td>电萤虫</td>
+<td><a href="0386.html">0386</a></td>
+<td>虫</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0314</td>
+<td>甜甜萤</td>
+<td><a href="0387.html">0387</a></td>
+<td>虫</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0315</td>
+<td>毒蔷薇</td>
+<td><a href="0363.html">0363</a></td>
+<td>草 / 毒</td>
+<td>野生 11 处、广播</td>
+</tr>
+<tr>
+<td>0316</td>
+<td>溶食兽</td>
+<td><a href="0367.html">0367</a></td>
+<td>毒</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0317</td>
+<td>吞食兽</td>
+<td><a href="0368.html">0368</a></td>
+<td>毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0318</td>
+<td>利牙鱼</td>
+<td><a href="0330.html">0330</a></td>
+<td>水 / 恶</td>
+<td>野生 21 处</td>
+</tr>
+<tr>
+<td>0319</td>
+<td>巨牙鲨（形态槽 0331）</td>
+<td><a href="0331.html">0331</a></td>
+<td>水 / 恶</td>
+<td>野生 3 处</td>
+</tr>
+<tr>
+<td>0319</td>
+<td>巨牙鲨（形态槽 0899）</td>
+<td><a href="0899.html">0899</a></td>
+<td>水 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0320</td>
+<td>吼吼鲸</td>
+<td><a href="0313.html">0313</a></td>
+<td>水</td>
+<td>野生 21 处</td>
+</tr>
+<tr>
+<td>0321</td>
+<td>吼鲸王</td>
+<td><a href="0314.html">0314</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0322</td>
+<td>呆火驼</td>
+<td><a href="0339.html">0339</a></td>
+<td>火 / 地面</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0323</td>
+<td>喷火驼（形态槽 0340）</td>
+<td><a href="0340.html">0340</a></td>
+<td>火 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0323</td>
+<td>喷火驼（形态槽 0900）</td>
+<td><a href="0900.html">0900</a></td>
+<td>火 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0324</td>
+<td>煤炭龟</td>
+<td><a href="0321.html">0321</a></td>
+<td>火</td>
+<td>群聚</td>
+</tr>
+<tr>
+<td>0325</td>
+<td>跳跳猪</td>
+<td><a href="0351.html">0351</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0326</td>
+<td>噗噗猪</td>
+<td><a href="0352.html">0352</a></td>
+<td>超能</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0327</td>
+<td>晃晃斑</td>
+<td><a href="0308.html">0308</a></td>
+<td>一般</td>
+<td>广播、群聚</td>
+</tr>
+<tr>
+<td>0328</td>
+<td>大颚蚁</td>
+<td><a href="0332.html">0332</a></td>
+<td>地面</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0329</td>
+<td>超音波幼虫</td>
+<td><a href="0333.html">0333</a></td>
+<td>地面 / 龙</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0330</td>
+<td>沙漠蜻蜓</td>
+<td><a href="0334.html">0334</a></td>
+<td>地面 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0331</td>
+<td>刺球仙人掌</td>
+<td><a href="0344.html">0344</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0332</td>
+<td>梦歌仙人掌</td>
+<td><a href="0345.html">0345</a></td>
+<td>草 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0333</td>
+<td>青绵鸟</td>
+<td><a href="0358.html">0358</a></td>
+<td>一般 / 飞行</td>
+<td>野生 11 处、广播</td>
+</tr>
+<tr>
+<td>0334</td>
+<td>七夕青鸟（形态槽 0359）</td>
+<td><a href="0359.html">0359</a></td>
+<td>龙 / 飞行</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0334</td>
+<td>七夕青鸟（形态槽 0901）</td>
+<td><a href="0901.html">0901</a></td>
+<td>龙 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0335</td>
+<td>猫鼬斩</td>
+<td><a href="0380.html">0380</a></td>
+<td>一般</td>
+<td>野生 2 处、广播</td>
+</tr>
+<tr>
+<td>0336</td>
+<td>饭匙蛇</td>
+<td><a href="0379.html">0379</a></td>
+<td>毒</td>
+<td>野生 3 处、广播</td>
+</tr>
+<tr>
+<td>0337</td>
+<td>月石</td>
+<td><a href="0348.html">0348</a></td>
+<td>岩石 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0338</td>
+<td>太阳岩</td>
+<td><a href="0349.html">0349</a></td>
+<td>岩石 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0339</td>
+<td>泥泥鳅</td>
+<td><a href="0323.html">0323</a></td>
+<td>水 / 地面</td>
+<td>野生 2 处</td>
+</tr>
+<tr>
+<td>0340</td>
+<td>鲶鱼王</td>
+<td><a href="0324.html">0324</a></td>
+<td>水 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0341</td>
+<td>龙虾小兵</td>
+<td><a href="0326.html">0326</a></td>
+<td>水</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0342</td>
+<td>铁螯龙虾</td>
+<td><a href="0327.html">0327</a></td>
+<td>水 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0343</td>
+<td>天秤偶</td>
+<td><a href="0318.html">0318</a></td>
+<td>地面 / 超能</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0344</td>
+<td>念力土偶</td>
+<td><a href="0319.html">0319</a></td>
+<td>地面 / 超能</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0345</td>
+<td>触手百合</td>
+<td><a href="0388.html">0388</a></td>
+<td>岩石 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0346</td>
+<td>摇篮百合</td>
+<td><a href="0389.html">0389</a></td>
+<td>岩石 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0347</td>
+<td>太古羽虫</td>
+<td><a href="0390.html">0390</a></td>
+<td>岩石 / 虫</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0348</td>
+<td>太古盔甲</td>
+<td><a href="0391.html">0391</a></td>
+<td>岩石 / 虫</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0349</td>
+<td>丑丑鱼</td>
+<td><a href="0328.html">0328</a></td>
+<td>水</td>
+<td>野生 9 处</td>
+</tr>
+<tr>
+<td>0350</td>
+<td>美纳斯</td>
+<td><a href="0329.html">0329</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0351</td>
+<td>飘浮泡泡</td>
+<td><a href="0385.html">0385</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0352</td>
+<td>变隐龙</td>
+<td><a href="0317.html">0317</a></td>
+<td>一般</td>
+<td>野生 3 处</td>
+</tr>
+<tr>
+<td>0353</td>
+<td>怨影娃娃</td>
+<td><a href="0377.html">0377</a></td>
+<td>幽灵</td>
+<td>野生 2 处、广播、群聚</td>
+</tr>
+<tr>
+<td>0354</td>
+<td>诅咒娃娃（形态槽 0378）</td>
+<td><a href="0378.html">0378</a></td>
+<td>幽灵</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0354</td>
+<td>诅咒娃娃（形态槽 0902）</td>
+<td><a href="0902.html">0902</a></td>
+<td>幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0355</td>
+<td>夜巡灵</td>
+<td><a href="0361.html">0361</a></td>
+<td>幽灵</td>
+<td>野生 23 处、广播</td>
+</tr>
+<tr>
+<td>0356</td>
+<td>彷徨夜灵</td>
+<td><a href="0362.html">0362</a></td>
+<td>幽灵</td>
+<td>野生 7 处</td>
+</tr>
+<tr>
+<td>0357</td>
+<td>热带龙</td>
+<td><a href="0369.html">0369</a></td>
+<td>草 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0358</td>
+<td>风铃铃（形态槽 0411）</td>
+<td><a href="0411.html">0411</a></td>
+<td>超能</td>
+<td>野生 40 处、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0358</td>
+<td>风铃铃（形态槽 1402）</td>
+<td><a href="1402.html">1402</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0359</td>
+<td>阿勃梭鲁（形态槽 0376）</td>
+<td><a href="0376.html">0376</a></td>
+<td>恶</td>
+<td>野生 5 处、广播</td>
+</tr>
+<tr>
+<td>0359</td>
+<td>阿勃梭鲁（形态槽 0903）</td>
+<td><a href="0903.html">0903</a></td>
+<td>恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0360</td>
+<td>小果然</td>
+<td><a href="0360.html">0360</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0361</td>
+<td>雪童子</td>
+<td><a href="0346.html">0346</a></td>
+<td>冰</td>
+<td>野生 14 处、广播</td>
+</tr>
+<tr>
+<td>0362</td>
+<td>冰鬼护（形态槽 0347）</td>
+<td><a href="0347.html">0347</a></td>
+<td>冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0362</td>
+<td>冰鬼护（形态槽 0904）</td>
+<td><a href="0904.html">0904</a></td>
+<td>冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0363</td>
+<td>海豹球</td>
+<td><a href="0341.html">0341</a></td>
+<td>冰 / 水</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0364</td>
+<td>海魔狮</td>
+<td><a href="0342.html">0342</a></td>
+<td>冰 / 水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0365</td>
+<td>帝牙海狮</td>
+<td><a href="0343.html">0343</a></td>
+<td>冰 / 水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0366</td>
+<td>珍珠贝</td>
+<td><a href="0373.html">0373</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0367</td>
+<td>猎斑鱼</td>
+<td><a href="0374.html">0374</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0368</td>
+<td>樱花鱼</td>
+<td><a href="0375.html">0375</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0369</td>
+<td>古空棘鱼</td>
+<td><a href="0381.html">0381</a></td>
+<td>水 / 岩石</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0370</td>
+<td>爱心鱼</td>
+<td><a href="0325.html">0325</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0371</td>
+<td>宝贝龙</td>
+<td><a href="0395.html">0395</a></td>
+<td>龙</td>
+<td>野生 8 处、广播</td>
+</tr>
+<tr>
+<td>0372</td>
+<td>甲壳龙</td>
+<td><a href="0396.html">0396</a></td>
+<td>龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0373</td>
+<td>暴飞龙（形态槽 0397）</td>
+<td><a href="0397.html">0397</a></td>
+<td>龙 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0373</td>
+<td>暴飞龙（形态槽 0905）</td>
+<td><a href="0905.html">0905</a></td>
+<td>龙 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0374</td>
+<td>铁哑铃</td>
+<td><a href="0398.html">0398</a></td>
+<td>钢 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0375</td>
+<td>金属怪</td>
+<td><a href="0399.html">0399</a></td>
+<td>钢 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0376</td>
+<td>巨金怪（形态槽 0400）</td>
+<td><a href="0400.html">0400</a></td>
+<td>钢 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0376</td>
+<td>巨金怪（形态槽 0906）</td>
+<td><a href="0906.html">0906</a></td>
+<td>钢 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0377</td>
+<td>雷吉洛克</td>
+<td><a href="0401.html">0401</a></td>
+<td>岩石</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0378</td>
+<td>雷吉艾斯</td>
+<td><a href="0402.html">0402</a></td>
+<td>冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0379</td>
+<td>雷吉斯奇鲁</td>
+<td><a href="0403.html">0403</a></td>
+<td>钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0380</td>
+<td>拉帝亚斯（形态槽 0407）</td>
+<td><a href="0407.html">0407</a></td>
+<td>龙 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0380</td>
+<td>拉帝亚斯（形态槽 0907）</td>
+<td><a href="0907.html">0907</a></td>
+<td>龙 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0381</td>
+<td>拉帝欧斯（形态槽 0408）</td>
+<td><a href="0408.html">0408</a></td>
+<td>龙 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0381</td>
+<td>拉帝欧斯（形态槽 0908）</td>
+<td><a href="0908.html">0908</a></td>
+<td>龙 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0382</td>
+<td>盖欧卡（形态槽 0404）</td>
+<td><a href="0404.html">0404</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0382</td>
+<td>盖欧卡（形态槽 0910）</td>
+<td><a href="0910.html">0910</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0383</td>
+<td>固拉多（形态槽 0405）</td>
+<td><a href="0405.html">0405</a></td>
+<td>地面</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0383</td>
+<td>固拉多（形态槽 0909）</td>
+<td><a href="0909.html">0909</a></td>
+<td>地面 / 火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0384</td>
+<td>烈空坐（形态槽 0406）</td>
+<td><a href="0406.html">0406</a></td>
+<td>龙 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0384</td>
+<td>烈空坐（形态槽 0911）</td>
+<td><a href="0911.html">0911</a></td>
+<td>龙 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0385</td>
+<td>基拉祈</td>
+<td><a href="0409.html">0409</a></td>
+<td>钢 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0386</td>
+<td>代欧奇希斯（形态槽 0410）</td>
+<td><a href="0410.html">0410</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0386</td>
+<td>代欧奇希斯（形态槽 1040）</td>
+<td><a href="1040.html">1040</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0386</td>
+<td>代欧奇希斯（形态槽 1041）</td>
+<td><a href="1041.html">1041</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0386</td>
+<td>代欧奇希斯（形态槽 1042）</td>
+<td><a href="1042.html">1042</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0387</td>
+<td>草苗龟</td>
+<td><a href="0440.html">0440</a></td>
+<td>草</td>
+<td>广播、赠送</td>
+</tr>
+<tr>
+<td>0388</td>
+<td>树林龟</td>
+<td><a href="0441.html">0441</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0389</td>
+<td>土台龟</td>
+<td><a href="0442.html">0442</a></td>
+<td>草 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0390</td>
+<td>小火焰猴</td>
+<td><a href="0443.html">0443</a></td>
+<td>火</td>
+<td>广播、赠送</td>
+</tr>
+<tr>
+<td>0391</td>
+<td>猛火猴</td>
+<td><a href="0444.html">0444</a></td>
+<td>火 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0392</td>
+<td>烈焰猴</td>
+<td><a href="0445.html">0445</a></td>
+<td>火 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0393</td>
+<td>波加曼</td>
+<td><a href="0446.html">0446</a></td>
+<td>水</td>
+<td>广播、赠送</td>
+</tr>
+<tr>
+<td>0394</td>
+<td>波皇子</td>
+<td><a href="0447.html">0447</a></td>
+<td>水</td>
+<td>野生 3 处</td>
+</tr>
+<tr>
+<td>0395</td>
+<td>帝王拿波</td>
+<td><a href="0448.html">0448</a></td>
+<td>水 / 钢</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0396</td>
+<td>姆克儿</td>
+<td><a href="0449.html">0449</a></td>
+<td>一般 / 飞行</td>
+<td>野生 22 处、广播</td>
+</tr>
+<tr>
+<td>0397</td>
+<td>姆克鸟</td>
+<td><a href="0450.html">0450</a></td>
+<td>一般 / 飞行</td>
+<td>野生 12 处、广播</td>
+</tr>
+<tr>
+<td>0398</td>
+<td>姆克鹰（形态槽 0273）</td>
+<td><a href="0273.html">0273</a></td>
+<td>格斗 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0398</td>
+<td>姆克鹰（形态槽 0451）</td>
+<td><a href="0451.html">0451</a></td>
+<td>一般 / 飞行</td>
+<td>赠送、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0399</td>
+<td>大牙狸</td>
+<td><a href="0452.html">0452</a></td>
+<td>一般</td>
+<td>野生 16 处、广播</td>
+</tr>
+<tr>
+<td>## No.0400–0499</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>全国号</th>
+<th>中文名</th>
+<th>内部槽</th>
+<th>属性</th>
+<th>获取要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0400</td>
+<td>大尾狸</td>
+<td><a href="0453.html">0453</a></td>
+<td>一般 / 水</td>
+<td>野生 19 处</td>
+</tr>
+<tr>
+<td>0401</td>
+<td>圆法师</td>
+<td><a href="0454.html">0454</a></td>
+<td>虫</td>
+<td>野生 9 处</td>
+</tr>
+<tr>
+<td>0402</td>
+<td>音箱蟀</td>
+<td><a href="0455.html">0455</a></td>
+<td>虫</td>
+<td>野生 3 处</td>
+</tr>
+<tr>
+<td>0403</td>
+<td>小猫怪</td>
+<td><a href="0456.html">0456</a></td>
+<td>电</td>
+<td>野生 7 处、广播</td>
+</tr>
+<tr>
+<td>0404</td>
+<td>勒克猫</td>
+<td><a href="0457.html">0457</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0405</td>
+<td>伦琴猫</td>
+<td><a href="0458.html">0458</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0406</td>
+<td>含羞苞</td>
+<td><a href="0459.html">0459</a></td>
+<td>草 / 毒</td>
+<td>野生 18 处、广播</td>
+</tr>
+<tr>
+<td>0407</td>
+<td>罗丝雷朵</td>
+<td><a href="0460.html">0460</a></td>
+<td>草 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0408</td>
+<td>头盖龙</td>
+<td><a href="0461.html">0461</a></td>
+<td>岩石</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0409</td>
+<td>战槌龙</td>
+<td><a href="0462.html">0462</a></td>
+<td>岩石</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0410</td>
+<td>盾甲龙</td>
+<td><a href="0463.html">0463</a></td>
+<td>岩石 / 钢</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0411</td>
+<td>护城龙</td>
+<td><a href="0464.html">0464</a></td>
+<td>岩石 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0412</td>
+<td>结草儿（形态槽 0465）</td>
+<td><a href="0465.html">0465</a></td>
+<td>虫</td>
+<td>野生 17 处、广播</td>
+</tr>
+<tr>
+<td>0412</td>
+<td>结草儿（形态槽 0707）</td>
+<td><a href="0707.html">0707</a></td>
+<td>虫</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0412</td>
+<td>结草儿（形态槽 0708）</td>
+<td><a href="0708.html">0708</a></td>
+<td>虫</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0413</td>
+<td>结草贵妇（形态槽 0466）</td>
+<td><a href="0466.html">0466</a></td>
+<td>虫 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0413</td>
+<td>结草贵妇（形态槽 0709）</td>
+<td><a href="0709.html">0709</a></td>
+<td>虫 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0413</td>
+<td>结草贵妇（形态槽 0710）</td>
+<td><a href="0710.html">0710</a></td>
+<td>虫 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0414</td>
+<td>绅士蛾</td>
+<td><a href="0467.html">0467</a></td>
+<td>虫 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0415</td>
+<td>三蜜蜂</td>
+<td><a href="0468.html">0468</a></td>
+<td>虫 / 飞行</td>
+<td>野生 11 处、广播</td>
+</tr>
+<tr>
+<td>0416</td>
+<td>蜂女王</td>
+<td><a href="0469.html">0469</a></td>
+<td>虫 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0417</td>
+<td>帕奇利兹</td>
+<td><a href="0470.html">0470</a></td>
+<td>电</td>
+<td>野生 8 处、广播</td>
+</tr>
+<tr>
+<td>0418</td>
+<td>泳圈鼬</td>
+<td><a href="0471.html">0471</a></td>
+<td>水</td>
+<td>野生 21 处、广播</td>
+</tr>
+<tr>
+<td>0419</td>
+<td>浮潜鼬</td>
+<td><a href="0472.html">0472</a></td>
+<td>水</td>
+<td>野生 14 处、广播</td>
+</tr>
+<tr>
+<td>0420</td>
+<td>樱花宝</td>
+<td><a href="0473.html">0473</a></td>
+<td>草</td>
+<td>野生 7 处、广播</td>
+</tr>
+<tr>
+<td>0421</td>
+<td>樱花儿（形态槽 0474）</td>
+<td><a href="0474.html">0474</a></td>
+<td>草</td>
+<td>野生 2 处</td>
+</tr>
+<tr>
+<td>0421</td>
+<td>樱花儿（形态槽 0751）</td>
+<td><a href="0751.html">0751</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0422</td>
+<td>无壳海兔（形态槽 0475）</td>
+<td><a href="0475.html">0475</a></td>
+<td>水</td>
+<td>野生 32 处、广播</td>
+</tr>
+<tr>
+<td>0422</td>
+<td>无壳海兔（形态槽 0711）</td>
+<td><a href="0711.html">0711</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0423</td>
+<td>海兔兽（形态槽 0476）</td>
+<td><a href="0476.html">0476</a></td>
+<td>水 / 地面</td>
+<td>野生 39 处</td>
+</tr>
+<tr>
+<td>0423</td>
+<td>海兔兽（形态槽 0712）</td>
+<td><a href="0712.html">0712</a></td>
+<td>水 / 地面</td>
+<td>野生 8 处</td>
+</tr>
+<tr>
+<td>0424</td>
+<td>双尾怪手</td>
+<td><a href="0477.html">0477</a></td>
+<td>一般</td>
+<td>野生 3 处</td>
+</tr>
+<tr>
+<td>0425</td>
+<td>飘飘球</td>
+<td><a href="0478.html">0478</a></td>
+<td>幽灵 / 飞行</td>
+<td>广播、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0426</td>
+<td>随风球</td>
+<td><a href="0479.html">0479</a></td>
+<td>幽灵 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0427</td>
+<td>卷卷耳</td>
+<td><a href="0480.html">0480</a></td>
+<td>一般</td>
+<td>野生 8 处、广播</td>
+</tr>
+<tr>
+<td>0428</td>
+<td>长耳兔（形态槽 0481）</td>
+<td><a href="0481.html">0481</a></td>
+<td>一般</td>
+<td>野生 3 处、赠送</td>
+</tr>
+<tr>
+<td>0428</td>
+<td>长耳兔（形态槽 0912）</td>
+<td><a href="0912.html">0912</a></td>
+<td>一般 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0429</td>
+<td>梦妖魔</td>
+<td><a href="0482.html">0482</a></td>
+<td>幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0430</td>
+<td>乌鸦头头</td>
+<td><a href="0483.html">0483</a></td>
+<td>恶 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0431</td>
+<td>魅力喵</td>
+<td><a href="0484.html">0484</a></td>
+<td>一般</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0432</td>
+<td>东施喵</td>
+<td><a href="0485.html">0485</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0433</td>
+<td>铃铛响</td>
+<td><a href="0486.html">0486</a></td>
+<td>超能</td>
+<td>野生 62 处、广播</td>
+</tr>
+<tr>
+<td>0434</td>
+<td>臭鼬噗</td>
+<td><a href="0487.html">0487</a></td>
+<td>毒 / 恶</td>
+<td>野生 5 处、广播</td>
+</tr>
+<tr>
+<td>0435</td>
+<td>坦克臭鼬</td>
+<td><a href="0488.html">0488</a></td>
+<td>毒 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0436</td>
+<td>铜镜怪</td>
+<td><a href="0489.html">0489</a></td>
+<td>钢 / 超能</td>
+<td>野生 43 处、广播</td>
+</tr>
+<tr>
+<td>0437</td>
+<td>青铜钟</td>
+<td><a href="0490.html">0490</a></td>
+<td>钢 / 超能</td>
+<td>野生 14 处</td>
+</tr>
+<tr>
+<td>0438</td>
+<td>盆才怪</td>
+<td><a href="0491.html">0491</a></td>
+<td>岩石</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0439</td>
+<td>魔尼尼（形态槽 0492）</td>
+<td><a href="0492.html">0492</a></td>
+<td>超能 / 妖精</td>
+<td>蛋</td>
+</tr>
+<tr>
+<td>0439</td>
+<td>魔尼尼（形态槽 1228）</td>
+<td><a href="1228.html">1228</a></td>
+<td>超能 / 妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0440</td>
+<td>小福蛋</td>
+<td><a href="0493.html">0493</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0441</td>
+<td>聒噪鸟</td>
+<td><a href="0494.html">0494</a></td>
+<td>一般 / 飞行</td>
+<td>野生 12 处、广播</td>
+</tr>
+<tr>
+<td>0442</td>
+<td>花岩怪</td>
+<td><a href="0495.html">0495</a></td>
+<td>幽灵 / 恶</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0443</td>
+<td>圆陆鲨</td>
+<td><a href="0496.html">0496</a></td>
+<td>龙 / 地面</td>
+<td>广播、剧情战斗候选</td>
+</tr>
+<tr>
+<td>0444</td>
+<td>尖牙陆鲨</td>
+<td><a href="0497.html">0497</a></td>
+<td>龙 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0445</td>
+<td>烈咬陆鲨（形态槽 0498）</td>
+<td><a href="0498.html">0498</a></td>
+<td>龙 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0445</td>
+<td>烈咬陆鲨（形态槽 0913）</td>
+<td><a href="0913.html">0913</a></td>
+<td>龙 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0446</td>
+<td>小卡比兽</td>
+<td><a href="0499.html">0499</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0447</td>
+<td>利欧路</td>
+<td><a href="0500.html">0500</a></td>
+<td>格斗</td>
+<td>广播、赠送、蛋</td>
+</tr>
+<tr>
+<td>0448</td>
+<td>路卡利欧（形态槽 0501）</td>
+<td><a href="0501.html">0501</a></td>
+<td>格斗 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0448</td>
+<td>路卡利欧（形态槽 0914）</td>
+<td><a href="0914.html">0914</a></td>
+<td>格斗 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0449</td>
+<td>沙河马（形态槽 0502）</td>
+<td><a href="0502.html">0502</a></td>
+<td>地面</td>
+<td>野生 2 处、广播</td>
+</tr>
+<tr>
+<td>0449</td>
+<td>沙河马（形态槽 0744）</td>
+<td><a href="0744.html">0744</a></td>
+<td>地面</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0450</td>
+<td>河马兽（形态槽 0503）</td>
+<td><a href="0503.html">0503</a></td>
+<td>地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0450</td>
+<td>河马兽（形态槽 0745）</td>
+<td><a href="0745.html">0745</a></td>
+<td>地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0451</td>
+<td>钳尾蝎</td>
+<td><a href="0504.html">0504</a></td>
+<td>毒 / 虫</td>
+<td>野生 1 处、广播</td>
+</tr>
+<tr>
+<td>0452</td>
+<td>龙王蝎</td>
+<td><a href="0505.html">0505</a></td>
+<td>毒 / 恶</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0453</td>
+<td>不良蛙</td>
+<td><a href="0506.html">0506</a></td>
+<td>毒 / 格斗</td>
+<td>野生 4 处、广播</td>
+</tr>
+<tr>
+<td>0454</td>
+<td>毒骷蛙</td>
+<td><a href="0507.html">0507</a></td>
+<td>毒 / 格斗</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0455</td>
+<td>尖牙笼</td>
+<td><a href="0508.html">0508</a></td>
+<td>草</td>
+<td>野生 6 处、广播</td>
+</tr>
+<tr>
+<td>0456</td>
+<td>荧光鱼</td>
+<td><a href="0509.html">0509</a></td>
+<td>水</td>
+<td>野生 45 处</td>
+</tr>
+<tr>
+<td>0457</td>
+<td>霓虹鱼</td>
+<td><a href="0510.html">0510</a></td>
+<td>水</td>
+<td>野生 18 处</td>
+</tr>
+<tr>
+<td>0458</td>
+<td>小球飞鱼</td>
+<td><a href="0511.html">0511</a></td>
+<td>水 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0459</td>
+<td>雪笠怪</td>
+<td><a href="0512.html">0512</a></td>
+<td>草 / 冰</td>
+<td>野生 16 处、广播</td>
+</tr>
+<tr>
+<td>0460</td>
+<td>暴雪王（形态槽 0513）</td>
+<td><a href="0513.html">0513</a></td>
+<td>草 / 冰</td>
+<td>野生 3 处</td>
+</tr>
+<tr>
+<td>0460</td>
+<td>暴雪王（形态槽 0915）</td>
+<td><a href="0915.html">0915</a></td>
+<td>草 / 冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0461</td>
+<td>玛狃拉</td>
+<td><a href="0514.html">0514</a></td>
+<td>恶 / 冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0462</td>
+<td>自爆磁怪</td>
+<td><a href="0515.html">0515</a></td>
+<td>电 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0463</td>
+<td>大舌舔</td>
+<td><a href="0516.html">0516</a></td>
+<td>一般</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0464</td>
+<td>超甲狂犀</td>
+<td><a href="0517.html">0517</a></td>
+<td>地面 / 岩石</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0465</td>
+<td>巨蔓藤</td>
+<td><a href="0518.html">0518</a></td>
+<td>草</td>
+<td>野生 3 处</td>
+</tr>
+<tr>
+<td>0466</td>
+<td>电击魔兽</td>
+<td><a href="0519.html">0519</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0467</td>
+<td>鸭嘴炎兽</td>
+<td><a href="0520.html">0520</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0468</td>
+<td>波克基斯</td>
+<td><a href="0521.html">0521</a></td>
+<td>妖精 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0469</td>
+<td>远古巨蜓</td>
+<td><a href="0522.html">0522</a></td>
+<td>虫 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0470</td>
+<td>叶伊布</td>
+<td><a href="0523.html">0523</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0471</td>
+<td>冰伊布</td>
+<td><a href="0524.html">0524</a></td>
+<td>冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0472</td>
+<td>天蝎王</td>
+<td><a href="0525.html">0525</a></td>
+<td>地面 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0473</td>
+<td>象牙猪</td>
+<td><a href="0526.html">0526</a></td>
+<td>冰 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0474</td>
+<td>多边兽Z</td>
+<td><a href="0527.html">0527</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0475</td>
+<td>艾路雷朵（形态槽 0528）</td>
+<td><a href="0528.html">0528</a></td>
+<td>超能 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0475</td>
+<td>艾路雷朵（形态槽 0916）</td>
+<td><a href="0916.html">0916</a></td>
+<td>超能 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0476</td>
+<td>大朝北鼻</td>
+<td><a href="0529.html">0529</a></td>
+<td>岩石 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0477</td>
+<td>黑夜魔灵</td>
+<td><a href="0530.html">0530</a></td>
+<td>幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0478</td>
+<td>雪妖女（形态槽 0531）</td>
+<td><a href="0531.html">0531</a></td>
+<td>冰 / 幽灵</td>
+<td>野生 6 处</td>
+</tr>
+<tr>
+<td>0478</td>
+<td>雪妖女（形态槽 1491）</td>
+<td><a href="1491.html">1491</a></td>
+<td>冰 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0479</td>
+<td>洛托姆（形态槽 0532）</td>
+<td><a href="0532.html">0532</a></td>
+<td>电 / 幽灵</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0479</td>
+<td>洛托姆（形态槽 0713）</td>
+<td><a href="0713.html">0713</a></td>
+<td>电 / 火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0479</td>
+<td>洛托姆（形态槽 0714）</td>
+<td><a href="0714.html">0714</a></td>
+<td>电 / 水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0479</td>
+<td>洛托姆（形态槽 0715）</td>
+<td><a href="0715.html">0715</a></td>
+<td>电 / 冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0479</td>
+<td>洛托姆（形态槽 0716）</td>
+<td><a href="0716.html">0716</a></td>
+<td>电 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0479</td>
+<td>洛托姆（形态槽 0717）</td>
+<td><a href="0717.html">0717</a></td>
+<td>电 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0480</td>
+<td>由克希</td>
+<td><a href="0533.html">0533</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0481</td>
+<td>艾姆利多</td>
+<td><a href="0534.html">0534</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0482</td>
+<td>亚克诺姆</td>
+<td><a href="0535.html">0535</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0483</td>
+<td>帝牙卢卡（形态槽 0536）</td>
+<td><a href="0536.html">0536</a></td>
+<td>钢 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0483</td>
+<td>帝牙卢卡（形态槽 0919）</td>
+<td><a href="0919.html">0919</a></td>
+<td>钢 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0484</td>
+<td>帕路奇亚（形态槽 0537）</td>
+<td><a href="0537.html">0537</a></td>
+<td>水 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0484</td>
+<td>帕路奇亚（形态槽 0920）</td>
+<td><a href="0920.html">0920</a></td>
+<td>水 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0485</td>
+<td>席多蓝恩</td>
+<td><a href="0538.html">0538</a></td>
+<td>火 / 钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0486</td>
+<td>雷吉奇卡斯</td>
+<td><a href="0539.html">0539</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0487</td>
+<td>骑拉帝纳（形态槽 0540）</td>
+<td><a href="0540.html">0540</a></td>
+<td>幽灵 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0487</td>
+<td>骑拉帝纳（形态槽 0718）</td>
+<td><a href="0718.html">0718</a></td>
+<td>幽灵 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0488</td>
+<td>克雷色利亚</td>
+<td><a href="0541.html">0541</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0489</td>
+<td>霏欧纳</td>
+<td><a href="0542.html">0542</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0490</td>
+<td>玛纳霏</td>
+<td><a href="0543.html">0543</a></td>
+<td>水</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0491</td>
+<td>达克莱伊</td>
+<td><a href="0544.html">0544</a></td>
+<td>恶</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0492</td>
+<td>谢米（形态槽 0545）</td>
+<td><a href="0545.html">0545</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0492</td>
+<td>谢米（形态槽 0719）</td>
+<td><a href="0719.html">0719</a></td>
+<td>草 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0546）</td>
+<td><a href="0546.html">0546</a></td>
+<td>一般</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0720）</td>
+<td><a href="0720.html">0720</a></td>
+<td>格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0721）</td>
+<td><a href="0721.html">0721</a></td>
+<td>飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0722）</td>
+<td><a href="0722.html">0722</a></td>
+<td>毒</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0723）</td>
+<td><a href="0723.html">0723</a></td>
+<td>地面</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0724）</td>
+<td><a href="0724.html">0724</a></td>
+<td>岩石</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0725）</td>
+<td><a href="0725.html">0725</a></td>
+<td>虫</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0726）</td>
+<td><a href="0726.html">0726</a></td>
+<td>幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0727）</td>
+<td><a href="0727.html">0727</a></td>
+<td>钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0728）</td>
+<td><a href="0728.html">0728</a></td>
+<td>火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0729）</td>
+<td><a href="0729.html">0729</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0730）</td>
+<td><a href="0730.html">0730</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0731）</td>
+<td><a href="0731.html">0731</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0732）</td>
+<td><a href="0732.html">0732</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0733）</td>
+<td><a href="0733.html">0733</a></td>
+<td>冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0734）</td>
+<td><a href="0734.html">0734</a></td>
+<td>龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0735）</td>
+<td><a href="0735.html">0735</a></td>
+<td>恶</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0493</td>
+<td>阿尔宙斯（形态槽 0834）</td>
+<td><a href="0834.html">0834</a></td>
+<td>妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0494</td>
+<td>比克提尼</td>
+<td><a href="0547.html">0547</a></td>
+<td>超能 / 火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0495</td>
+<td>藤藤蛇</td>
+<td><a href="0548.html">0548</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0496</td>
+<td>青藤蛇</td>
+<td><a href="0549.html">0549</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0497</td>
+<td>君主蛇</td>
+<td><a href="0550.html">0550</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0498</td>
+<td>暖暖猪</td>
+<td><a href="0551.html">0551</a></td>
+<td>火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0499</td>
+<td>炒炒猪</td>
+<td><a href="0552.html">0552</a></td>
+<td>火 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>## No.0500–0599</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>全国号</th>
+<th>中文名</th>
+<th>内部槽</th>
+<th>属性</th>
+<th>获取要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0500</td>
+<td>炎武王</td>
+<td><a href="0553.html">0553</a></td>
+<td>火 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0501</td>
+<td>水水獭</td>
+<td><a href="0554.html">0554</a></td>
+<td>水</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0502</td>
+<td>双刃丸</td>
+<td><a href="0555.html">0555</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0503</td>
+<td>大剑鬼（形态槽 0556）</td>
+<td><a href="0556.html">0556</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0503</td>
+<td>大剑鬼（形态槽 1241）</td>
+<td><a href="1241.html">1241</a></td>
+<td>水 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0504</td>
+<td>探探鼠</td>
+<td><a href="0557.html">0557</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0505</td>
+<td>步哨鼠</td>
+<td><a href="0558.html">0558</a></td>
+<td>一般</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0506</td>
+<td>小约克</td>
+<td><a href="0559.html">0559</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0507</td>
+<td>哈约克</td>
+<td><a href="0560.html">0560</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0508</td>
+<td>长毛狗</td>
+<td><a href="0561.html">0561</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0509</td>
+<td>扒手猫</td>
+<td><a href="0562.html">0562</a></td>
+<td>恶</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0510</td>
+<td>酷豹</td>
+<td><a href="0563.html">0563</a></td>
+<td>恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0511</td>
+<td>花椰猴</td>
+<td><a href="0564.html">0564</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0512</td>
+<td>花椰猿</td>
+<td><a href="0565.html">0565</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0513</td>
+<td>爆香猴</td>
+<td><a href="0566.html">0566</a></td>
+<td>火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0514</td>
+<td>爆香猿</td>
+<td><a href="0567.html">0567</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0515</td>
+<td>冷水猴</td>
+<td><a href="0568.html">0568</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0516</td>
+<td>冷水猿</td>
+<td><a href="0569.html">0569</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0517</td>
+<td>食梦梦</td>
+<td><a href="0570.html">0570</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0518</td>
+<td>梦梦蚀</td>
+<td><a href="0571.html">0571</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0519</td>
+<td>豆豆鸽</td>
+<td><a href="0572.html">0572</a></td>
+<td>一般 / 飞行</td>
+<td>群聚</td>
+</tr>
+<tr>
+<td>0520</td>
+<td>咕咕鸽</td>
+<td><a href="0573.html">0573</a></td>
+<td>一般 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0521</td>
+<td>高傲雉鸡（形态槽 0574）</td>
+<td><a href="0574.html">0574</a></td>
+<td>一般 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0521</td>
+<td>高傲雉鸡（形态槽 0703）</td>
+<td><a href="0703.html">0703</a></td>
+<td>一般 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0522</td>
+<td>斑斑马</td>
+<td><a href="0575.html">0575</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0523</td>
+<td>雷电斑马</td>
+<td><a href="0576.html">0576</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0524</td>
+<td>石丸子</td>
+<td><a href="0577.html">0577</a></td>
+<td>岩石</td>
+<td>野生 28 处、广播</td>
+</tr>
+<tr>
+<td>0525</td>
+<td>地幔岩</td>
+<td><a href="0578.html">0578</a></td>
+<td>岩石</td>
+<td>野生 8 处</td>
+</tr>
+<tr>
+<td>0526</td>
+<td>庞岩怪</td>
+<td><a href="0579.html">0579</a></td>
+<td>岩石</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0527</td>
+<td>滚滚蝙蝠</td>
+<td><a href="0580.html">0580</a></td>
+<td>超能 / 飞行</td>
+<td>广播、群聚</td>
+</tr>
+<tr>
+<td>0528</td>
+<td>心蝙蝠</td>
+<td><a href="0581.html">0581</a></td>
+<td>超能 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0529</td>
+<td>螺钉地鼠</td>
+<td><a href="0582.html">0582</a></td>
+<td>地面</td>
+<td>野生 6 处</td>
+</tr>
+<tr>
+<td>0530</td>
+<td>龙头地鼠（形态槽 0268）</td>
+<td><a href="0268.html">0268</a></td>
+<td>地面 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0530</td>
+<td>龙头地鼠（形态槽 0583）</td>
+<td><a href="0583.html">0583</a></td>
+<td>地面 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0531</td>
+<td>差不多娃娃（形态槽 0584）</td>
+<td><a href="0584.html">0584</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0531</td>
+<td>差不多娃娃（形态槽 0917）</td>
+<td><a href="0917.html">0917</a></td>
+<td>一般 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0532</td>
+<td>搬运小匠</td>
+<td><a href="0585.html">0585</a></td>
+<td>格斗</td>
+<td>野生 8 处、广播</td>
+</tr>
+<tr>
+<td>0533</td>
+<td>铁骨土人</td>
+<td><a href="0586.html">0586</a></td>
+<td>格斗</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0534</td>
+<td>修建老匠</td>
+<td><a href="0587.html">0587</a></td>
+<td>格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0535</td>
+<td>圆蝌蚪</td>
+<td><a href="0588.html">0588</a></td>
+<td>水</td>
+<td>野生 26 处、群聚</td>
+</tr>
+<tr>
+<td>0536</td>
+<td>蓝蟾蜍</td>
+<td><a href="0589.html">0589</a></td>
+<td>水 / 地面</td>
+<td>野生 28 处</td>
+</tr>
+<tr>
+<td>0537</td>
+<td>蟾蜍王</td>
+<td><a href="0590.html">0590</a></td>
+<td>水 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0538</td>
+<td>投摔鬼</td>
+<td><a href="0591.html">0591</a></td>
+<td>格斗</td>
+<td>野生 2 处</td>
+</tr>
+<tr>
+<td>0539</td>
+<td>打击鬼</td>
+<td><a href="0592.html">0592</a></td>
+<td>格斗</td>
+<td>野生 2 处</td>
+</tr>
+<tr>
+<td>0540</td>
+<td>虫宝包</td>
+<td><a href="0593.html">0593</a></td>
+<td>虫 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0541</td>
+<td>宝包茧</td>
+<td><a href="0594.html">0594</a></td>
+<td>虫 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0542</td>
+<td>保姆虫</td>
+<td><a href="0595.html">0595</a></td>
+<td>虫 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0543</td>
+<td>百足蜈蚣</td>
+<td><a href="0596.html">0596</a></td>
+<td>虫 / 毒</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0544</td>
+<td>车轮球</td>
+<td><a href="0597.html">0597</a></td>
+<td>虫 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0545</td>
+<td>蜈蚣王</td>
+<td><a href="0598.html">0598</a></td>
+<td>虫 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0546</td>
+<td>木棉球</td>
+<td><a href="0599.html">0599</a></td>
+<td>草 / 妖精</td>
+<td>野生 2 处、群聚</td>
+</tr>
+<tr>
+<td>0547</td>
+<td>风妖精</td>
+<td><a href="0600.html">0600</a></td>
+<td>草 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0548</td>
+<td>百合根娃娃</td>
+<td><a href="0601.html">0601</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0549</td>
+<td>裙儿小姐（形态槽 0602）</td>
+<td><a href="0602.html">0602</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0549</td>
+<td>裙儿小姐（形态槽 1242）</td>
+<td><a href="1242.html">1242</a></td>
+<td>草 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0550</td>
+<td>野蛮鲈鱼（形态槽 0603）</td>
+<td><a href="0603.html">0603</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0550</td>
+<td>野蛮鲈鱼（形态槽 0736）</td>
+<td><a href="0736.html">0736</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0550</td>
+<td>野蛮鲈鱼（形态槽 1243）</td>
+<td><a href="1243.html">1243</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0551</td>
+<td>黑眼鳄</td>
+<td><a href="0604.html">0604</a></td>
+<td>地面 / 恶</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0552</td>
+<td>混混鳄</td>
+<td><a href="0605.html">0605</a></td>
+<td>地面 / 恶</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0553</td>
+<td>流氓鳄</td>
+<td><a href="0606.html">0606</a></td>
+<td>地面 / 恶</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0554</td>
+<td>火红不倒翁（形态槽 0607）</td>
+<td><a href="0607.html">0607</a></td>
+<td>火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0554</td>
+<td>火红不倒翁（形态槽 1229）</td>
+<td><a href="1229.html">1229</a></td>
+<td>冰</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0555</td>
+<td>达摩狒狒（形态槽 0608）</td>
+<td><a href="0608.html">0608</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0555</td>
+<td>达摩狒狒（形态槽 0737）</td>
+<td><a href="0737.html">0737</a></td>
+<td>火 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0555</td>
+<td>达摩狒狒（形态槽 1230）</td>
+<td><a href="1230.html">1230</a></td>
+<td>冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0555</td>
+<td>达摩狒狒（形态槽 1231）</td>
+<td><a href="1231.html">1231</a></td>
+<td>冰 / 火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0556</td>
+<td>沙铃仙人掌</td>
+<td><a href="0609.html">0609</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0557</td>
+<td>石居蟹</td>
+<td><a href="0610.html">0610</a></td>
+<td>虫 / 岩石</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0558</td>
+<td>岩殿居蟹</td>
+<td><a href="0611.html">0611</a></td>
+<td>虫 / 岩石</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0559</td>
+<td>滑滑小子</td>
+<td><a href="0612.html">0612</a></td>
+<td>恶 / 格斗</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0560</td>
+<td>头巾混混（形态槽 0267）</td>
+<td><a href="0267.html">0267</a></td>
+<td>恶 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0560</td>
+<td>头巾混混（形态槽 0613）</td>
+<td><a href="0613.html">0613</a></td>
+<td>恶 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0561</td>
+<td>象征鸟</td>
+<td><a href="0614.html">0614</a></td>
+<td>超能 / 飞行</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0562</td>
+<td>哭哭面具（形态槽 0615）</td>
+<td><a href="0615.html">0615</a></td>
+<td>幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0562</td>
+<td>哭哭面具（形态槽 1232）</td>
+<td><a href="1232.html">1232</a></td>
+<td>地面 / 幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0563</td>
+<td>死神棺</td>
+<td><a href="0616.html">0616</a></td>
+<td>幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0564</td>
+<td>原盖海龟</td>
+<td><a href="0617.html">0617</a></td>
+<td>水 / 岩石</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0565</td>
+<td>肋骨海龟</td>
+<td><a href="0618.html">0618</a></td>
+<td>水 / 岩石</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0566</td>
+<td>始祖小鸟</td>
+<td><a href="0619.html">0619</a></td>
+<td>岩石 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0567</td>
+<td>始祖大鸟</td>
+<td><a href="0620.html">0620</a></td>
+<td>岩石 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0568</td>
+<td>破破袋</td>
+<td><a href="0621.html">0621</a></td>
+<td>毒</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0569</td>
+<td>灰尘山（形态槽 0622）</td>
+<td><a href="0622.html">0622</a></td>
+<td>毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0569</td>
+<td>灰尘山（形态槽 1272）</td>
+<td><a href="1272.html">1272</a></td>
+<td>毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0570</td>
+<td>索罗亚（形态槽 0623）</td>
+<td><a href="0623.html">0623</a></td>
+<td>恶</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0570</td>
+<td>索罗亚（形态槽 1244）</td>
+<td><a href="1244.html">1244</a></td>
+<td>一般 / 幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0571</td>
+<td>索罗亚克（形态槽 0624）</td>
+<td><a href="0624.html">0624</a></td>
+<td>恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0571</td>
+<td>索罗亚克（形态槽 1245）</td>
+<td><a href="1245.html">1245</a></td>
+<td>一般 / 幽灵</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0572</td>
+<td>泡沫栗鼠</td>
+<td><a href="0625.html">0625</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0573</td>
+<td>奇诺栗鼠</td>
+<td><a href="0626.html">0626</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0574</td>
+<td>哥德宝宝</td>
+<td><a href="0627.html">0627</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0575</td>
+<td>哥德小童</td>
+<td><a href="0628.html">0628</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0576</td>
+<td>哥德小姐</td>
+<td><a href="0629.html">0629</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0577</td>
+<td>单卵细胞球</td>
+<td><a href="0630.html">0630</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0578</td>
+<td>双卵细胞球</td>
+<td><a href="0631.html">0631</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0579</td>
+<td>人造细胞卵</td>
+<td><a href="0632.html">0632</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0580</td>
+<td>鸭宝宝</td>
+<td><a href="0633.html">0633</a></td>
+<td>水 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0581</td>
+<td>舞天鹅</td>
+<td><a href="0634.html">0634</a></td>
+<td>水 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0582</td>
+<td>迷你冰</td>
+<td><a href="0635.html">0635</a></td>
+<td>冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0583</td>
+<td>多多冰</td>
+<td><a href="0636.html">0636</a></td>
+<td>冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0584</td>
+<td>双倍多多冰</td>
+<td><a href="0637.html">0637</a></td>
+<td>冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0585</td>
+<td>四季鹿（形态槽 0638）</td>
+<td><a href="0638.html">0638</a></td>
+<td>一般 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0585</td>
+<td>四季鹿（形态槽 0738）</td>
+<td><a href="0738.html">0738</a></td>
+<td>一般 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0585</td>
+<td>四季鹿（形态槽 0739）</td>
+<td><a href="0739.html">0739</a></td>
+<td>一般 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0585</td>
+<td>四季鹿（形态槽 0740）</td>
+<td><a href="0740.html">0740</a></td>
+<td>一般 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0586</td>
+<td>萌芽鹿（形态槽 0639）</td>
+<td><a href="0639.html">0639</a></td>
+<td>一般 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0586</td>
+<td>萌芽鹿（形态槽 0741）</td>
+<td><a href="0741.html">0741</a></td>
+<td>一般 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0586</td>
+<td>萌芽鹿（形态槽 0742）</td>
+<td><a href="0742.html">0742</a></td>
+<td>一般 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0586</td>
+<td>萌芽鹿（形态槽 0743）</td>
+<td><a href="0743.html">0743</a></td>
+<td>一般 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0587</td>
+<td>电飞鼠</td>
+<td><a href="0640.html">0640</a></td>
+<td>电 / 飞行</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0588</td>
+<td>盖盖虫</td>
+<td><a href="0641.html">0641</a></td>
+<td>虫</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0589</td>
+<td>骑士蜗牛</td>
+<td><a href="0642.html">0642</a></td>
+<td>虫 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0590</td>
+<td>哎呀球菇</td>
+<td><a href="0643.html">0643</a></td>
+<td>草 / 毒</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0591</td>
+<td>败露球菇</td>
+<td><a href="0644.html">0644</a></td>
+<td>草 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0592</td>
+<td>轻飘飘（形态槽 0645）</td>
+<td><a href="0645.html">0645</a></td>
+<td>水 / 幽灵</td>
+<td>蛋</td>
+</tr>
+<tr>
+<td>0592</td>
+<td>轻飘飘（形态槽 0704）</td>
+<td><a href="0704.html">0704</a></td>
+<td>水 / 幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0593</td>
+<td>胖嘟嘟（形态槽 0646）</td>
+<td><a href="0646.html">0646</a></td>
+<td>水 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0593</td>
+<td>胖嘟嘟（形态槽 0705）</td>
+<td><a href="0705.html">0705</a></td>
+<td>水 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0594</td>
+<td>保姆曼波</td>
+<td><a href="0647.html">0647</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0595</td>
+<td>电电虫</td>
+<td><a href="0648.html">0648</a></td>
+<td>虫 / 电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0596</td>
+<td>电蜘蛛</td>
+<td><a href="0649.html">0649</a></td>
+<td>虫 / 电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0597</td>
+<td>种子铁球</td>
+<td><a href="0650.html">0650</a></td>
+<td>草 / 钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0598</td>
+<td>坚果哑铃</td>
+<td><a href="0651.html">0651</a></td>
+<td>草 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0599</td>
+<td>齿轮儿</td>
+<td><a href="0652.html">0652</a></td>
+<td>钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>## No.0600–0699</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>全国号</th>
+<th>中文名</th>
+<th>内部槽</th>
+<th>属性</th>
+<th>获取要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0600</td>
+<td>齿轮组</td>
+<td><a href="0653.html">0653</a></td>
+<td>钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0601</td>
+<td>齿轮怪</td>
+<td><a href="0654.html">0654</a></td>
+<td>钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0602</td>
+<td>麻麻小鱼</td>
+<td><a href="0655.html">0655</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0603</td>
+<td>麻麻鳗</td>
+<td><a href="0656.html">0656</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0604</td>
+<td>麻麻鳗鱼王（形态槽 0269）</td>
+<td><a href="0269.html">0269</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0604</td>
+<td>麻麻鳗鱼王（形态槽 0657）</td>
+<td><a href="0657.html">0657</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0605</td>
+<td>小灰怪</td>
+<td><a href="0658.html">0658</a></td>
+<td>超能</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0606</td>
+<td>大宇怪</td>
+<td><a href="0659.html">0659</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0607</td>
+<td>烛光灵</td>
+<td><a href="0660.html">0660</a></td>
+<td>幽灵 / 火</td>
+<td>野生 3 处、广播</td>
+</tr>
+<tr>
+<td>0608</td>
+<td>灯火幽灵</td>
+<td><a href="0661.html">0661</a></td>
+<td>幽灵 / 火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0609</td>
+<td>水晶灯火灵（形态槽 0262）</td>
+<td><a href="0262.html">0262</a></td>
+<td>幽灵 / 火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0609</td>
+<td>水晶灯火灵（形态槽 0662）</td>
+<td><a href="0662.html">0662</a></td>
+<td>幽灵 / 火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0610</td>
+<td>牙牙</td>
+<td><a href="0663.html">0663</a></td>
+<td>龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0611</td>
+<td>斧牙龙</td>
+<td><a href="0664.html">0664</a></td>
+<td>龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0612</td>
+<td>双斧战龙</td>
+<td><a href="0665.html">0665</a></td>
+<td>龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0613</td>
+<td>喷嚏熊</td>
+<td><a href="0666.html">0666</a></td>
+<td>冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0614</td>
+<td>冻原熊</td>
+<td><a href="0667.html">0667</a></td>
+<td>冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0615</td>
+<td>几何雪花</td>
+<td><a href="0668.html">0668</a></td>
+<td>冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0616</td>
+<td>小嘴蜗</td>
+<td><a href="0669.html">0669</a></td>
+<td>虫</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0617</td>
+<td>敏捷虫</td>
+<td><a href="0670.html">0670</a></td>
+<td>虫</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0618</td>
+<td>泥巴鱼（形态槽 0671）</td>
+<td><a href="0671.html">0671</a></td>
+<td>地面 / 电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0618</td>
+<td>泥巴鱼（形态槽 1233）</td>
+<td><a href="1233.html">1233</a></td>
+<td>地面 / 钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0619</td>
+<td>功夫鼬</td>
+<td><a href="0672.html">0672</a></td>
+<td>格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0620</td>
+<td>师父鼬</td>
+<td><a href="0673.html">0673</a></td>
+<td>格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0621</td>
+<td>赤面龙</td>
+<td><a href="0674.html">0674</a></td>
+<td>龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0622</td>
+<td>泥偶小人</td>
+<td><a href="0675.html">0675</a></td>
+<td>地面 / 幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0623</td>
+<td>泥偶巨人</td>
+<td><a href="0676.html">0676</a></td>
+<td>地面 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0624</td>
+<td>驹刀小兵</td>
+<td><a href="0677.html">0677</a></td>
+<td>恶 / 钢</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0625</td>
+<td>劈斩司令</td>
+<td><a href="0678.html">0678</a></td>
+<td>恶 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0626</td>
+<td>爆炸头水牛</td>
+<td><a href="0679.html">0679</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0627</td>
+<td>毛头小鹰</td>
+<td><a href="0680.html">0680</a></td>
+<td>一般 / 飞行</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0628</td>
+<td>勇士雄鹰（形态槽 0681）</td>
+<td><a href="0681.html">0681</a></td>
+<td>一般 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0628</td>
+<td>勇士雄鹰（形态槽 1246）</td>
+<td><a href="1246.html">1246</a></td>
+<td>超能 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0629</td>
+<td>秃鹰丫头</td>
+<td><a href="0682.html">0682</a></td>
+<td>恶 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0630</td>
+<td>秃鹰娜</td>
+<td><a href="0683.html">0683</a></td>
+<td>恶 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0631</td>
+<td>熔蚁兽</td>
+<td><a href="0684.html">0684</a></td>
+<td>火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0632</td>
+<td>铁蚁</td>
+<td><a href="0685.html">0685</a></td>
+<td>虫 / 钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0633</td>
+<td>单首龙</td>
+<td><a href="0686.html">0686</a></td>
+<td>恶 / 龙</td>
+<td>野生 2 处</td>
+</tr>
+<tr>
+<td>0634</td>
+<td>双首暴龙</td>
+<td><a href="0687.html">0687</a></td>
+<td>恶 / 龙</td>
+<td>野生 2 处</td>
+</tr>
+<tr>
+<td>0635</td>
+<td>三首恶龙</td>
+<td><a href="0688.html">0688</a></td>
+<td>恶 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0636</td>
+<td>燃烧虫</td>
+<td><a href="0689.html">0689</a></td>
+<td>虫 / 火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0637</td>
+<td>火神蛾</td>
+<td><a href="0690.html">0690</a></td>
+<td>虫 / 火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0638</td>
+<td>勾帕路翁</td>
+<td><a href="0691.html">0691</a></td>
+<td>钢 / 格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0639</td>
+<td>代拉基翁</td>
+<td><a href="0692.html">0692</a></td>
+<td>岩石 / 格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0640</td>
+<td>毕力吉翁</td>
+<td><a href="0693.html">0693</a></td>
+<td>草 / 格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0641</td>
+<td>龙卷云（形态槽 0694）</td>
+<td><a href="0694.html">0694</a></td>
+<td>飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0641</td>
+<td>龙卷云（形态槽 0754）</td>
+<td><a href="0754.html">0754</a></td>
+<td>飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0642</td>
+<td>雷电云（形态槽 0695）</td>
+<td><a href="0695.html">0695</a></td>
+<td>电 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0642</td>
+<td>雷电云（形态槽 0755）</td>
+<td><a href="0755.html">0755</a></td>
+<td>电 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0643</td>
+<td>莱希拉姆</td>
+<td><a href="0696.html">0696</a></td>
+<td>龙 / 火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0644</td>
+<td>捷克罗姆</td>
+<td><a href="0697.html">0697</a></td>
+<td>龙 / 电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0645</td>
+<td>土地云（形态槽 0698）</td>
+<td><a href="0698.html">0698</a></td>
+<td>地面 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0645</td>
+<td>土地云（形态槽 0756）</td>
+<td><a href="0756.html">0756</a></td>
+<td>地面 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0646</td>
+<td>酋雷姆（形态槽 0699）</td>
+<td><a href="0699.html">0699</a></td>
+<td>龙 / 冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0646</td>
+<td>酋雷姆（形态槽 0752）</td>
+<td><a href="0752.html">0752</a></td>
+<td>龙 / 冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0646</td>
+<td>酋雷姆（形态槽 0753）</td>
+<td><a href="0753.html">0753</a></td>
+<td>龙 / 冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0647</td>
+<td>凯路迪欧（形态槽 0700）</td>
+<td><a href="0700.html">0700</a></td>
+<td>水 / 格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0647</td>
+<td>凯路迪欧（形态槽 0757）</td>
+<td><a href="0757.html">0757</a></td>
+<td>水 / 格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0648</td>
+<td>美洛耶塔（形态槽 0701）</td>
+<td><a href="0701.html">0701</a></td>
+<td>一般 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0648</td>
+<td>美洛耶塔（形态槽 0746）</td>
+<td><a href="0746.html">0746</a></td>
+<td>一般 / 格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0649</td>
+<td>盖诺赛克特（形态槽 0702）</td>
+<td><a href="0702.html">0702</a></td>
+<td>虫 / 钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0649</td>
+<td>盖诺赛克特（形态槽 0747）</td>
+<td><a href="0747.html">0747</a></td>
+<td>虫 / 钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0649</td>
+<td>盖诺赛克特（形态槽 0748）</td>
+<td><a href="0748.html">0748</a></td>
+<td>虫 / 钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0649</td>
+<td>盖诺赛克特（形态槽 0749）</td>
+<td><a href="0749.html">0749</a></td>
+<td>虫 / 钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0649</td>
+<td>盖诺赛克特（形态槽 0750）</td>
+<td><a href="0750.html">0750</a></td>
+<td>虫 / 钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0650</td>
+<td>哈力栗</td>
+<td><a href="0758.html">0758</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0651</td>
+<td>胖胖哈力</td>
+<td><a href="0759.html">0759</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0652</td>
+<td>布里卡隆</td>
+<td><a href="0760.html">0760</a></td>
+<td>草 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0653</td>
+<td>火狐狸</td>
+<td><a href="0761.html">0761</a></td>
+<td>火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0654</td>
+<td>长尾火狐</td>
+<td><a href="0762.html">0762</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0655</td>
+<td>妖火红狐</td>
+<td><a href="0763.html">0763</a></td>
+<td>火 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0656</td>
+<td>呱呱泡蛙</td>
+<td><a href="0764.html">0764</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0657</td>
+<td>呱头蛙</td>
+<td><a href="0765.html">0765</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0658</td>
+<td>甲贺忍蛙（形态槽 0766）</td>
+<td><a href="0766.html">0766</a></td>
+<td>水 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0658</td>
+<td>甲贺忍蛙（形态槽 0839）</td>
+<td><a href="0839.html">0839</a></td>
+<td>水 / 恶</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0659</td>
+<td>掘掘兔</td>
+<td><a href="0767.html">0767</a></td>
+<td>一般</td>
+<td>群聚</td>
+</tr>
+<tr>
+<td>0660</td>
+<td>掘地兔</td>
+<td><a href="0768.html">0768</a></td>
+<td>一般 / 地面</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0661</td>
+<td>小箭雀</td>
+<td><a href="0769.html">0769</a></td>
+<td>一般 / 飞行</td>
+<td>野生 10 处</td>
+</tr>
+<tr>
+<td>0662</td>
+<td>火箭雀</td>
+<td><a href="0770.html">0770</a></td>
+<td>火 / 飞行</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0663</td>
+<td>烈箭鹰</td>
+<td><a href="0771.html">0771</a></td>
+<td>火 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0664</td>
+<td>粉蝶虫</td>
+<td><a href="0772.html">0772</a></td>
+<td>虫</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0665</td>
+<td>粉蝶蛹</td>
+<td><a href="0773.html">0773</a></td>
+<td>虫</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0774）</td>
+<td><a href="0774.html">0774</a></td>
+<td>虫 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0868）</td>
+<td><a href="0868.html">0868</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0921）</td>
+<td><a href="0921.html">0921</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0922）</td>
+<td><a href="0922.html">0922</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0923）</td>
+<td><a href="0923.html">0923</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0924）</td>
+<td><a href="0924.html">0924</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0925）</td>
+<td><a href="0925.html">0925</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0926）</td>
+<td><a href="0926.html">0926</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0927）</td>
+<td><a href="0927.html">0927</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0928）</td>
+<td><a href="0928.html">0928</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0929）</td>
+<td><a href="0929.html">0929</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0930）</td>
+<td><a href="0930.html">0930</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0931）</td>
+<td><a href="0931.html">0931</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0932）</td>
+<td><a href="0932.html">0932</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0933）</td>
+<td><a href="0933.html">0933</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0934）</td>
+<td><a href="0934.html">0934</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0935）</td>
+<td><a href="0935.html">0935</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0936）</td>
+<td><a href="0936.html">0936</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0937）</td>
+<td><a href="0937.html">0937</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0666</td>
+<td>彩粉蝶（形态槽 0938）</td>
+<td><a href="0938.html">0938</a></td>
+<td>虫 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0667</td>
+<td>小狮狮</td>
+<td><a href="0775.html">0775</a></td>
+<td>火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0668</td>
+<td>火炎狮（形态槽 0776）</td>
+<td><a href="0776.html">0776</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0668</td>
+<td>火炎狮（形态槽 0831）</td>
+<td><a href="0831.html">0831</a></td>
+<td>火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0669</td>
+<td>花蓓蓓（形态槽 0777）</td>
+<td><a href="0777.html">0777</a></td>
+<td>妖精</td>
+<td>野生 3 处</td>
+</tr>
+<tr>
+<td>0669</td>
+<td>花蓓蓓（形态槽 0840）</td>
+<td><a href="0840.html">0840</a></td>
+<td>妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0669</td>
+<td>花蓓蓓（形态槽 0841）</td>
+<td><a href="0841.html">0841</a></td>
+<td>妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0669</td>
+<td>花蓓蓓（形态槽 0842）</td>
+<td><a href="0842.html">0842</a></td>
+<td>妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0669</td>
+<td>花蓓蓓（形态槽 0843）</td>
+<td><a href="0843.html">0843</a></td>
+<td>妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0670</td>
+<td>花叶蒂（形态槽 0778）</td>
+<td><a href="0778.html">0778</a></td>
+<td>妖精</td>
+<td>野生 2 处</td>
+</tr>
+<tr>
+<td>0670</td>
+<td>花叶蒂（形态槽 0844）</td>
+<td><a href="0844.html">0844</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0670</td>
+<td>花叶蒂（形态槽 0845）</td>
+<td><a href="0845.html">0845</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0670</td>
+<td>花叶蒂（形态槽 0846）</td>
+<td><a href="0846.html">0846</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0670</td>
+<td>花叶蒂（形态槽 0847）</td>
+<td><a href="0847.html">0847</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0670</td>
+<td>花叶蒂（形态槽 0848）</td>
+<td><a href="0848.html">0848</a></td>
+<td>妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0671</td>
+<td>花洁夫人（形态槽 0779）</td>
+<td><a href="0779.html">0779</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0671</td>
+<td>花洁夫人（形态槽 0849）</td>
+<td><a href="0849.html">0849</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0671</td>
+<td>花洁夫人（形态槽 0850）</td>
+<td><a href="0850.html">0850</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0671</td>
+<td>花洁夫人（形态槽 0851）</td>
+<td><a href="0851.html">0851</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0671</td>
+<td>花洁夫人（形态槽 0852）</td>
+<td><a href="0852.html">0852</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0672</td>
+<td>坐骑小羊</td>
+<td><a href="0780.html">0780</a></td>
+<td>草</td>
+<td>野生 5 处</td>
+</tr>
+<tr>
+<td>0673</td>
+<td>坐骑山羊</td>
+<td><a href="0781.html">0781</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0674</td>
+<td>顽皮熊猫</td>
+<td><a href="0782.html">0782</a></td>
+<td>格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0675</td>
+<td>流氓熊猫</td>
+<td><a href="0783.html">0783</a></td>
+<td>格斗 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚（形态槽 0784）</td>
+<td><a href="0784.html">0784</a></td>
+<td>一般</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚（形态槽 0859）</td>
+<td><a href="0859.html">0859</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚（形态槽 0860）</td>
+<td><a href="0860.html">0860</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚（形态槽 0861）</td>
+<td><a href="0861.html">0861</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚（形态槽 0862）</td>
+<td><a href="0862.html">0862</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚（形态槽 0863）</td>
+<td><a href="0863.html">0863</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚（形态槽 0864）</td>
+<td><a href="0864.html">0864</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚（形态槽 0865）</td>
+<td><a href="0865.html">0865</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚（形态槽 0866）</td>
+<td><a href="0866.html">0866</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0676</td>
+<td>多丽米亚（形态槽 0867）</td>
+<td><a href="0867.html">0867</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0677</td>
+<td>妙喵</td>
+<td><a href="0785.html">0785</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0678</td>
+<td>超能妙喵（形态槽 0786）</td>
+<td><a href="0786.html">0786</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0678</td>
+<td>超能妙喵（形态槽 0832）</td>
+<td><a href="0832.html">0832</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0679</td>
+<td>独剑鞘</td>
+<td><a href="0787.html">0787</a></td>
+<td>钢 / 幽灵</td>
+<td>野生 2 处</td>
+</tr>
+<tr>
+<td>0680</td>
+<td>双剑鞘</td>
+<td><a href="0788.html">0788</a></td>
+<td>钢 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0681</td>
+<td>坚盾剑怪（形态槽 0789）</td>
+<td><a href="0789.html">0789</a></td>
+<td>钢 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0681</td>
+<td>坚盾剑怪（形态槽 0833）</td>
+<td><a href="0833.html">0833</a></td>
+<td>钢 / 幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0682</td>
+<td>粉香香</td>
+<td><a href="0790.html">0790</a></td>
+<td>妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0683</td>
+<td>芳香精</td>
+<td><a href="0791.html">0791</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0684</td>
+<td>绵绵泡芙</td>
+<td><a href="0792.html">0792</a></td>
+<td>妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0685</td>
+<td>胖甜妮</td>
+<td><a href="0793.html">0793</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0686</td>
+<td>好啦鱿</td>
+<td><a href="0794.html">0794</a></td>
+<td>恶 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0687</td>
+<td>乌贼王</td>
+<td><a href="0795.html">0795</a></td>
+<td>恶 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0688</td>
+<td>龟脚脚</td>
+<td><a href="0796.html">0796</a></td>
+<td>岩石 / 水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0689</td>
+<td>龟足巨铠</td>
+<td><a href="0797.html">0797</a></td>
+<td>岩石 / 水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0690</td>
+<td>垃垃藻</td>
+<td><a href="0798.html">0798</a></td>
+<td>毒 / 水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0691</td>
+<td>毒藻龙</td>
+<td><a href="0799.html">0799</a></td>
+<td>毒 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0692</td>
+<td>铁臂枪虾</td>
+<td><a href="0800.html">0800</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0693</td>
+<td>钢炮臂虾</td>
+<td><a href="0801.html">0801</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0694</td>
+<td>伞电蜥</td>
+<td><a href="0802.html">0802</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0695</td>
+<td>光电伞蜥</td>
+<td><a href="0803.html">0803</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0696</td>
+<td>宝宝暴龙</td>
+<td><a href="0804.html">0804</a></td>
+<td>岩石 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0697</td>
+<td>怪颚龙</td>
+<td><a href="0805.html">0805</a></td>
+<td>岩石 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0698</td>
+<td>冰雪龙</td>
+<td><a href="0806.html">0806</a></td>
+<td>岩石 / 冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0699</td>
+<td>冰雪巨龙</td>
+<td><a href="0807.html">0807</a></td>
+<td>岩石 / 冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>## No.0700–0799</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>全国号</th>
+<th>中文名</th>
+<th>内部槽</th>
+<th>属性</th>
+<th>获取要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0700</td>
+<td>仙子伊布</td>
+<td><a href="0808.html">0808</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0701</td>
+<td>摔角鹰人</td>
+<td><a href="0809.html">0809</a></td>
+<td>格斗 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0702</td>
+<td>咚咚鼠</td>
+<td><a href="0810.html">0810</a></td>
+<td>电 / 妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0703</td>
+<td>小碎钻</td>
+<td><a href="0811.html">0811</a></td>
+<td>岩石 / 妖精</td>
+<td>野生 2 处</td>
+</tr>
+<tr>
+<td>0704</td>
+<td>黏黏宝</td>
+<td><a href="0812.html">0812</a></td>
+<td>龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0705</td>
+<td>黏美儿（形态槽 0813）</td>
+<td><a href="0813.html">0813</a></td>
+<td>龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0705</td>
+<td>黏美儿（形态槽 1247）</td>
+<td><a href="1247.html">1247</a></td>
+<td>龙 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0706</td>
+<td>黏美龙（形态槽 0814）</td>
+<td><a href="0814.html">0814</a></td>
+<td>龙</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0706</td>
+<td>黏美龙（形态槽 1248）</td>
+<td><a href="1248.html">1248</a></td>
+<td>龙 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0707</td>
+<td>钥圈儿</td>
+<td><a href="0815.html">0815</a></td>
+<td>钢 / 妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0708</td>
+<td>小木灵</td>
+<td><a href="0816.html">0816</a></td>
+<td>幽灵 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0709</td>
+<td>朽木妖</td>
+<td><a href="0817.html">0817</a></td>
+<td>幽灵 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0710</td>
+<td>南瓜精（形态槽 0818）</td>
+<td><a href="0818.html">0818</a></td>
+<td>幽灵 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0710</td>
+<td>南瓜精（形态槽 0853）</td>
+<td><a href="0853.html">0853</a></td>
+<td>幽灵 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0710</td>
+<td>南瓜精（形态槽 0854）</td>
+<td><a href="0854.html">0854</a></td>
+<td>幽灵 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0710</td>
+<td>南瓜精（形态槽 0855）</td>
+<td><a href="0855.html">0855</a></td>
+<td>幽灵 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0711</td>
+<td>南瓜怪人（形态槽 0819）</td>
+<td><a href="0819.html">0819</a></td>
+<td>幽灵 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0711</td>
+<td>南瓜怪人（形态槽 0856）</td>
+<td><a href="0856.html">0856</a></td>
+<td>幽灵 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0711</td>
+<td>南瓜怪人（形态槽 0857）</td>
+<td><a href="0857.html">0857</a></td>
+<td>幽灵 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0711</td>
+<td>南瓜怪人（形态槽 0858）</td>
+<td><a href="0858.html">0858</a></td>
+<td>幽灵 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0712</td>
+<td>冰宝</td>
+<td><a href="0820.html">0820</a></td>
+<td>冰</td>
+<td>野生 8 处</td>
+</tr>
+<tr>
+<td>0713</td>
+<td>冰岩怪（形态槽 0821）</td>
+<td><a href="0821.html">0821</a></td>
+<td>冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0713</td>
+<td>冰岩怪（形态槽 1249）</td>
+<td><a href="1249.html">1249</a></td>
+<td>冰 / 岩石</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0714</td>
+<td>嗡蝠</td>
+<td><a href="0822.html">0822</a></td>
+<td>飞行 / 龙</td>
+<td>群聚</td>
+</tr>
+<tr>
+<td>0715</td>
+<td>音波龙</td>
+<td><a href="0823.html">0823</a></td>
+<td>飞行 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0716</td>
+<td>哲尔尼亚斯（形态槽 0824）</td>
+<td><a href="0824.html">0824</a></td>
+<td>妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0716</td>
+<td>哲尔尼亚斯（形态槽 1101）</td>
+<td><a href="1101.html">1101</a></td>
+<td>妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0717</td>
+<td>伊裴尔塔尔</td>
+<td><a href="0825.html">0825</a></td>
+<td>恶 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0718</td>
+<td>基格尔德（形态槽 0826）</td>
+<td><a href="0826.html">0826</a></td>
+<td>龙 / 地面</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0718</td>
+<td>基格尔德（形态槽 0835）</td>
+<td><a href="0835.html">0835</a></td>
+<td>龙 / 地面</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0718</td>
+<td>基格尔德（形态槽 0836）</td>
+<td><a href="0836.html">0836</a></td>
+<td>龙 / 地面</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0718</td>
+<td>基格尔德（形态槽 0837）</td>
+<td><a href="0837.html">0837</a></td>
+<td>龙 / 地面</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0718</td>
+<td>基格尔德（形态槽 0838）</td>
+<td><a href="0838.html">0838</a></td>
+<td>龙 / 地面</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0719</td>
+<td>蒂安希（形态槽 0827）</td>
+<td><a href="0827.html">0827</a></td>
+<td>岩石 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0719</td>
+<td>蒂安希（形态槽 0918）</td>
+<td><a href="0918.html">0918</a></td>
+<td>岩石 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0720</td>
+<td>胡帕（形态槽 0828）</td>
+<td><a href="0828.html">0828</a></td>
+<td>超能 / 幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0720</td>
+<td>胡帕（形态槽 0829）</td>
+<td><a href="0829.html">0829</a></td>
+<td>超能 / 恶</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0721</td>
+<td>波尔凯尼恩</td>
+<td><a href="0830.html">0830</a></td>
+<td>火 / 水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0722</td>
+<td>木木枭</td>
+<td><a href="0939.html">0939</a></td>
+<td>草 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0723</td>
+<td>投羽枭</td>
+<td><a href="0940.html">0940</a></td>
+<td>草 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0724</td>
+<td>狙射树枭（形态槽 0941）</td>
+<td><a href="0941.html">0941</a></td>
+<td>草 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0724</td>
+<td>狙射树枭（形态槽 1250）</td>
+<td><a href="1250.html">1250</a></td>
+<td>草 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0725</td>
+<td>火斑喵</td>
+<td><a href="0942.html">0942</a></td>
+<td>火</td>
+<td>蛋</td>
+</tr>
+<tr>
+<td>0726</td>
+<td>炎热喵</td>
+<td><a href="0943.html">0943</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0727</td>
+<td>炽焰咆哮虎</td>
+<td><a href="0944.html">0944</a></td>
+<td>火 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0728</td>
+<td>球球海狮</td>
+<td><a href="0945.html">0945</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0729</td>
+<td>花漾海狮</td>
+<td><a href="0946.html">0946</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0730</td>
+<td>西狮海壬</td>
+<td><a href="0947.html">0947</a></td>
+<td>水 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0731</td>
+<td>小笃儿</td>
+<td><a href="0948.html">0948</a></td>
+<td>一般 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0732</td>
+<td>喇叭啄鸟</td>
+<td><a href="0949.html">0949</a></td>
+<td>一般 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0733</td>
+<td>铳嘴大鸟</td>
+<td><a href="0950.html">0950</a></td>
+<td>一般 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0734</td>
+<td>猫鼬少</td>
+<td><a href="0951.html">0951</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0735</td>
+<td>猫鼬探长</td>
+<td><a href="0952.html">0952</a></td>
+<td>一般</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0736</td>
+<td>强颚鸡母虫</td>
+<td><a href="0953.html">0953</a></td>
+<td>虫</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0737</td>
+<td>虫电宝</td>
+<td><a href="0954.html">0954</a></td>
+<td>虫 / 电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0738</td>
+<td>锹农炮虫</td>
+<td><a href="0955.html">0955</a></td>
+<td>虫 / 电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0739</td>
+<td>好胜蟹</td>
+<td><a href="0956.html">0956</a></td>
+<td>格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0740</td>
+<td>好胜毛蟹</td>
+<td><a href="0957.html">0957</a></td>
+<td>格斗 / 冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0741</td>
+<td>花舞鸟（形态槽 0958）</td>
+<td><a href="0958.html">0958</a></td>
+<td>火 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0741</td>
+<td>花舞鸟（形态槽 1043）</td>
+<td><a href="1043.html">1043</a></td>
+<td>电 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0741</td>
+<td>花舞鸟（形态槽 1044）</td>
+<td><a href="1044.html">1044</a></td>
+<td>超能 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0741</td>
+<td>花舞鸟（形态槽 1045）</td>
+<td><a href="1045.html">1045</a></td>
+<td>幽灵 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0742</td>
+<td>萌虻</td>
+<td><a href="0959.html">0959</a></td>
+<td>虫 / 妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0743</td>
+<td>蝶结萌虻</td>
+<td><a href="0960.html">0960</a></td>
+<td>虫 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0744</td>
+<td>岩狗狗</td>
+<td><a href="0961.html">0961</a></td>
+<td>岩石</td>
+<td>野生 24 处</td>
+</tr>
+<tr>
+<td>0745</td>
+<td>鬃岩狼人（形态槽 0962）</td>
+<td><a href="0962.html">0962</a></td>
+<td>岩石</td>
+<td>野生 30 处</td>
+</tr>
+<tr>
+<td>0745</td>
+<td>鬃岩狼人（形态槽 1046）</td>
+<td><a href="1046.html">1046</a></td>
+<td>岩石</td>
+<td>野生 10 处</td>
+</tr>
+<tr>
+<td>0745</td>
+<td>鬃岩狼人（形态槽 1082）</td>
+<td><a href="1082.html">1082</a></td>
+<td>岩石</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0746</td>
+<td>弱丁鱼（形态槽 0963）</td>
+<td><a href="0963.html">0963</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0746</td>
+<td>弱丁鱼（形态槽 1047）</td>
+<td><a href="1047.html">1047</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0747</td>
+<td>好坏星</td>
+<td><a href="0964.html">0964</a></td>
+<td>毒 / 水</td>
+<td>野生 24 处</td>
+</tr>
+<tr>
+<td>0748</td>
+<td>超坏星</td>
+<td><a href="0965.html">0965</a></td>
+<td>毒 / 水</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0749</td>
+<td>泥驴仔</td>
+<td><a href="0966.html">0966</a></td>
+<td>地面</td>
+<td>群聚</td>
+</tr>
+<tr>
+<td>0750</td>
+<td>重泥挽马</td>
+<td><a href="0967.html">0967</a></td>
+<td>地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0751</td>
+<td>滴蛛</td>
+<td><a href="0968.html">0968</a></td>
+<td>水 / 虫</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0752</td>
+<td>滴蛛霸</td>
+<td><a href="0969.html">0969</a></td>
+<td>水 / 虫</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0753</td>
+<td>伪螳草</td>
+<td><a href="0970.html">0970</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0754</td>
+<td>兰螳花</td>
+<td><a href="0971.html">0971</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0755</td>
+<td>睡睡菇</td>
+<td><a href="0972.html">0972</a></td>
+<td>草 / 妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0756</td>
+<td>灯罩夜菇</td>
+<td><a href="0973.html">0973</a></td>
+<td>草 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0757</td>
+<td>夜盗火蜥</td>
+<td><a href="0974.html">0974</a></td>
+<td>毒 / 火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0758</td>
+<td>焰后蜥</td>
+<td><a href="0975.html">0975</a></td>
+<td>毒 / 火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0759</td>
+<td>童偶熊</td>
+<td><a href="0976.html">0976</a></td>
+<td>一般 / 格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0760</td>
+<td>穿着熊</td>
+<td><a href="0977.html">0977</a></td>
+<td>一般 / 格斗</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0761</td>
+<td>甜竹竹</td>
+<td><a href="0978.html">0978</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0762</td>
+<td>甜舞妮</td>
+<td><a href="0979.html">0979</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0763</td>
+<td>甜冷美后</td>
+<td><a href="0980.html">0980</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0764</td>
+<td>花疗环环</td>
+<td><a href="0981.html">0981</a></td>
+<td>妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0765</td>
+<td>智挥猩</td>
+<td><a href="0982.html">0982</a></td>
+<td>一般 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0766</td>
+<td>投掷猴</td>
+<td><a href="0983.html">0983</a></td>
+<td>格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0767</td>
+<td>胆小虫</td>
+<td><a href="0984.html">0984</a></td>
+<td>虫 / 水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0768</td>
+<td>具甲武者</td>
+<td><a href="0985.html">0985</a></td>
+<td>虫 / 水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0769</td>
+<td>沙丘娃</td>
+<td><a href="0986.html">0986</a></td>
+<td>幽灵 / 地面</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0770</td>
+<td>噬沙堡爷</td>
+<td><a href="0987.html">0987</a></td>
+<td>幽灵 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0771</td>
+<td>拳海参</td>
+<td><a href="0988.html">0988</a></td>
+<td>水</td>
+<td>野生 4 处</td>
+</tr>
+<tr>
+<td>0772</td>
+<td>属性:空</td>
+<td><a href="0989.html">0989</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 0990）</td>
+<td><a href="0990.html">0990</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1048）</td>
+<td><a href="1048.html">1048</a></td>
+<td>格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1049）</td>
+<td><a href="1049.html">1049</a></td>
+<td>飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1050）</td>
+<td><a href="1050.html">1050</a></td>
+<td>毒</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1051）</td>
+<td><a href="1051.html">1051</a></td>
+<td>地面</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1052）</td>
+<td><a href="1052.html">1052</a></td>
+<td>岩石</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1053）</td>
+<td><a href="1053.html">1053</a></td>
+<td>虫</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1054）</td>
+<td><a href="1054.html">1054</a></td>
+<td>幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1055）</td>
+<td><a href="1055.html">1055</a></td>
+<td>钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1056）</td>
+<td><a href="1056.html">1056</a></td>
+<td>火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1057）</td>
+<td><a href="1057.html">1057</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1058）</td>
+<td><a href="1058.html">1058</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1059）</td>
+<td><a href="1059.html">1059</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1060）</td>
+<td><a href="1060.html">1060</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1061）</td>
+<td><a href="1061.html">1061</a></td>
+<td>冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1062）</td>
+<td><a href="1062.html">1062</a></td>
+<td>龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1063）</td>
+<td><a href="1063.html">1063</a></td>
+<td>恶</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0773</td>
+<td>银伴战兽（形态槽 1064）</td>
+<td><a href="1064.html">1064</a></td>
+<td>妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0774</td>
+<td>小陨星（形态槽 0991）</td>
+<td><a href="0991.html">0991</a></td>
+<td>岩石 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0774</td>
+<td>小陨星（形态槽 1065）</td>
+<td><a href="1065.html">1065</a></td>
+<td>岩石 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0774</td>
+<td>小陨星（形态槽 1066）</td>
+<td><a href="1066.html">1066</a></td>
+<td>岩石 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0774</td>
+<td>小陨星（形态槽 1067）</td>
+<td><a href="1067.html">1067</a></td>
+<td>岩石 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0774</td>
+<td>小陨星（形态槽 1068）</td>
+<td><a href="1068.html">1068</a></td>
+<td>岩石 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0774</td>
+<td>小陨星（形态槽 1069）</td>
+<td><a href="1069.html">1069</a></td>
+<td>岩石 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0774</td>
+<td>小陨星（形态槽 1070）</td>
+<td><a href="1070.html">1070</a></td>
+<td>岩石 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0774</td>
+<td>小陨星（形态槽 1071）</td>
+<td><a href="1071.html">1071</a></td>
+<td>岩石 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0775</td>
+<td>树枕尾熊</td>
+<td><a href="0992.html">0992</a></td>
+<td>一般</td>
+<td>野生 18 处</td>
+</tr>
+<tr>
+<td>0776</td>
+<td>爆焰龟兽</td>
+<td><a href="0993.html">0993</a></td>
+<td>火 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0777</td>
+<td>托戈德玛尔</td>
+<td><a href="0994.html">0994</a></td>
+<td>电 / 钢</td>
+<td>野生 2 处、广播</td>
+</tr>
+<tr>
+<td>0778</td>
+<td>谜拟Q（形态槽 0995）</td>
+<td><a href="0995.html">0995</a></td>
+<td>幽灵 / 妖精</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0778</td>
+<td>谜拟Q（形态槽 1072）</td>
+<td><a href="1072.html">1072</a></td>
+<td>幽灵 / 妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0779</td>
+<td>磨牙彩皮鱼</td>
+<td><a href="0996.html">0996</a></td>
+<td>水 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0780</td>
+<td>老翁龙</td>
+<td><a href="0997.html">0997</a></td>
+<td>一般 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0781</td>
+<td>破破舵轮</td>
+<td><a href="0998.html">0998</a></td>
+<td>幽灵 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0782</td>
+<td>心鳞宝</td>
+<td><a href="0999.html">0999</a></td>
+<td>龙</td>
+<td>野生 14 处</td>
+</tr>
+<tr>
+<td>0783</td>
+<td>鳞甲龙</td>
+<td><a href="1000.html">1000</a></td>
+<td>龙 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0784</td>
+<td>杖尾鳞甲龙</td>
+<td><a href="1001.html">1001</a></td>
+<td>龙 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0785</td>
+<td>卡璞.鸣鸣</td>
+<td><a href="1002.html">1002</a></td>
+<td>电 / 妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0786</td>
+<td>卡璞.蝶蝶</td>
+<td><a href="1003.html">1003</a></td>
+<td>超能 / 妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0787</td>
+<td>卡璞.哞哞</td>
+<td><a href="1004.html">1004</a></td>
+<td>草 / 妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0788</td>
+<td>卡璞.鳍鳍</td>
+<td><a href="1005.html">1005</a></td>
+<td>水 / 妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0789</td>
+<td>科斯莫古</td>
+<td><a href="1006.html">1006</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0790</td>
+<td>科斯莫姆</td>
+<td><a href="1007.html">1007</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0791</td>
+<td>索尔迦雷欧</td>
+<td><a href="1008.html">1008</a></td>
+<td>超能 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0792</td>
+<td>露奈雅拉</td>
+<td><a href="1009.html">1009</a></td>
+<td>超能 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0793</td>
+<td>虚吾伊德</td>
+<td><a href="1010.html">1010</a></td>
+<td>岩石 / 毒</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0794</td>
+<td>爆肌蚊</td>
+<td><a href="1011.html">1011</a></td>
+<td>虫 / 格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0795</td>
+<td>费洛美螂</td>
+<td><a href="1012.html">1012</a></td>
+<td>虫 / 格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0796</td>
+<td>电束木</td>
+<td><a href="1013.html">1013</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0797</td>
+<td>铁火辉夜</td>
+<td><a href="1014.html">1014</a></td>
+<td>钢 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0798</td>
+<td>纸御剑</td>
+<td><a href="1015.html">1015</a></td>
+<td>草 / 钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0799</td>
+<td>恶食大王</td>
+<td><a href="1016.html">1016</a></td>
+<td>恶 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>## No.0800–0899</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>全国号</th>
+<th>中文名</th>
+<th>内部槽</th>
+<th>属性</th>
+<th>获取要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0800</td>
+<td>奈克洛兹玛（形态槽 1017）</td>
+<td><a href="1017.html">1017</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0800</td>
+<td>奈克洛兹玛（形态槽 1079）</td>
+<td><a href="1079.html">1079</a></td>
+<td>超能 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0800</td>
+<td>奈克洛兹玛（形态槽 1080）</td>
+<td><a href="1080.html">1080</a></td>
+<td>超能 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0800</td>
+<td>奈克洛兹玛（形态槽 1081）</td>
+<td><a href="1081.html">1081</a></td>
+<td>超能 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0801</td>
+<td>玛机雅娜（形态槽 1018）</td>
+<td><a href="1018.html">1018</a></td>
+<td>钢 / 妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0801</td>
+<td>玛机雅娜（形态槽 1073）</td>
+<td><a href="1073.html">1073</a></td>
+<td>钢 / 妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0802</td>
+<td>玛夏多</td>
+<td><a href="1019.html">1019</a></td>
+<td>格斗 / 幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0803</td>
+<td>毒贝比</td>
+<td><a href="1074.html">1074</a></td>
+<td>毒</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0804</td>
+<td>四颚针龙</td>
+<td><a href="1075.html">1075</a></td>
+<td>毒 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0805</td>
+<td>垒磊石</td>
+<td><a href="1076.html">1076</a></td>
+<td>岩石 / 钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0806</td>
+<td>砰头小丑</td>
+<td><a href="1077.html">1077</a></td>
+<td>火 / 幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0807</td>
+<td>捷拉奥拉</td>
+<td><a href="1078.html">1078</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0808</td>
+<td>美录坦</td>
+<td><a href="1083.html">1083</a></td>
+<td>钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0809</td>
+<td>美录梅塔（形态槽 1084）</td>
+<td><a href="1084.html">1084</a></td>
+<td>钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0809</td>
+<td>美录梅塔（形态槽 1273）</td>
+<td><a href="1273.html">1273</a></td>
+<td>钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0810</td>
+<td>敲音猴</td>
+<td><a href="1102.html">1102</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0811</td>
+<td>啪咚猴</td>
+<td><a href="1103.html">1103</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0812</td>
+<td>轰擂金刚猩（形态槽 1104）</td>
+<td><a href="1104.html">1104</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0812</td>
+<td>轰擂金刚猩（形态槽 1274）</td>
+<td><a href="1274.html">1274</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0813</td>
+<td>炎兔儿</td>
+<td><a href="1105.html">1105</a></td>
+<td>火</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0814</td>
+<td>腾蹴小将</td>
+<td><a href="1106.html">1106</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0815</td>
+<td>闪焰王牌（形态槽 1107）</td>
+<td><a href="1107.html">1107</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0815</td>
+<td>闪焰王牌（形态槽 1275）</td>
+<td><a href="1275.html">1275</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0816</td>
+<td>泪眼蜥</td>
+<td><a href="1108.html">1108</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0817</td>
+<td>变涩蜥</td>
+<td><a href="1109.html">1109</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0818</td>
+<td>千面避役（形态槽 1110）</td>
+<td><a href="1110.html">1110</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0818</td>
+<td>千面避役（形态槽 1276）</td>
+<td><a href="1276.html">1276</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0819</td>
+<td>贪心栗鼠</td>
+<td><a href="1111.html">1111</a></td>
+<td>一般</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0820</td>
+<td>藏饱栗鼠</td>
+<td><a href="1112.html">1112</a></td>
+<td>一般</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0821</td>
+<td>稚山雀</td>
+<td><a href="1113.html">1113</a></td>
+<td>飞行</td>
+<td>野生 9 处、广播</td>
+</tr>
+<tr>
+<td>0822</td>
+<td>蓝鸦</td>
+<td><a href="1114.html">1114</a></td>
+<td>飞行</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0823</td>
+<td>钢铠鸦（形态槽 1115）</td>
+<td><a href="1115.html">1115</a></td>
+<td>飞行 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0823</td>
+<td>钢铠鸦（形态槽 1277）</td>
+<td><a href="1277.html">1277</a></td>
+<td>飞行 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0824</td>
+<td>索侦虫</td>
+<td><a href="1116.html">1116</a></td>
+<td>虫</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0825</td>
+<td>天罩虫</td>
+<td><a href="1117.html">1117</a></td>
+<td>虫 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0826</td>
+<td>以欧路普（形态槽 1118）</td>
+<td><a href="1118.html">1118</a></td>
+<td>虫 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0826</td>
+<td>以欧路普（形态槽 1278）</td>
+<td><a href="1278.html">1278</a></td>
+<td>虫 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0827</td>
+<td>偷儿狐</td>
+<td><a href="1119.html">1119</a></td>
+<td>恶</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0828</td>
+<td>狐大盗</td>
+<td><a href="1120.html">1120</a></td>
+<td>恶</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0829</td>
+<td>幼棉棉</td>
+<td><a href="1121.html">1121</a></td>
+<td>草</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0830</td>
+<td>白蓬蓬</td>
+<td><a href="1122.html">1122</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0831</td>
+<td>毛辫羊</td>
+<td><a href="1123.html">1123</a></td>
+<td>一般</td>
+<td>野生 8 处、广播</td>
+</tr>
+<tr>
+<td>0832</td>
+<td>毛毛角羊</td>
+<td><a href="1124.html">1124</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0833</td>
+<td>咬咬龟</td>
+<td><a href="1125.html">1125</a></td>
+<td>水</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0834</td>
+<td>暴噬龟（形态槽 1126）</td>
+<td><a href="1126.html">1126</a></td>
+<td>水 / 岩石</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0834</td>
+<td>暴噬龟（形态槽 1279）</td>
+<td><a href="1279.html">1279</a></td>
+<td>水 / 岩石</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0835</td>
+<td>来电汪</td>
+<td><a href="1127.html">1127</a></td>
+<td>电</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0836</td>
+<td>逐电犬</td>
+<td><a href="1128.html">1128</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0837</td>
+<td>小炭仔</td>
+<td><a href="1129.html">1129</a></td>
+<td>岩石</td>
+<td>野生 3 处、广播</td>
+</tr>
+<tr>
+<td>0838</td>
+<td>大炭车</td>
+<td><a href="1130.html">1130</a></td>
+<td>岩石 / 火</td>
+<td>野生 24 处</td>
+</tr>
+<tr>
+<td>0839</td>
+<td>巨炭山（形态槽 1131）</td>
+<td><a href="1131.html">1131</a></td>
+<td>岩石 / 火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0839</td>
+<td>巨炭山（形态槽 1280）</td>
+<td><a href="1280.html">1280</a></td>
+<td>岩石 / 火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0840</td>
+<td>啃果虫</td>
+<td><a href="1132.html">1132</a></td>
+<td>草 / 龙</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0841</td>
+<td>苹裹龙（形态槽 1133）</td>
+<td><a href="1133.html">1133</a></td>
+<td>草 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0841</td>
+<td>苹裹龙（形态槽 1281）</td>
+<td><a href="1281.html">1281</a></td>
+<td>草 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0842</td>
+<td>丰蜜龙（形态槽 1134）</td>
+<td><a href="1134.html">1134</a></td>
+<td>草 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0842</td>
+<td>丰蜜龙（形态槽 1282）</td>
+<td><a href="1282.html">1282</a></td>
+<td>草 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0843</td>
+<td>沙包蛇</td>
+<td><a href="1135.html">1135</a></td>
+<td>地面</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0844</td>
+<td>沙螺蟒（形态槽 1136）</td>
+<td><a href="1136.html">1136</a></td>
+<td>地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0844</td>
+<td>沙螺蟒（形态槽 1283）</td>
+<td><a href="1283.html">1283</a></td>
+<td>地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0845</td>
+<td>古月鸟（形态槽 1137）</td>
+<td><a href="1137.html">1137</a></td>
+<td>飞行 / 水</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0845</td>
+<td>古月鸟（形态槽 1191）</td>
+<td><a href="1191.html">1191</a></td>
+<td>飞行 / 水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0845</td>
+<td>古月鸟（形态槽 1192）</td>
+<td><a href="1192.html">1192</a></td>
+<td>飞行 / 水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0846</td>
+<td>刺梭鱼</td>
+<td><a href="1138.html">1138</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0847</td>
+<td>戽斗尖梭</td>
+<td><a href="1139.html">1139</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0848</td>
+<td>毒电婴</td>
+<td><a href="1140.html">1140</a></td>
+<td>电 / 毒</td>
+<td>赠送</td>
+</tr>
+<tr>
+<td>0849</td>
+<td>颤弦蝾螈（形态槽 1141）</td>
+<td><a href="1141.html">1141</a></td>
+<td>电 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0849</td>
+<td>颤弦蝾螈（形态槽 1193）</td>
+<td><a href="1193.html">1193</a></td>
+<td>电 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0849</td>
+<td>颤弦蝾螈（形态槽 1284）</td>
+<td><a href="1284.html">1284</a></td>
+<td>电 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0849</td>
+<td>颤弦蝾螈（形态槽 1285）</td>
+<td><a href="1285.html">1285</a></td>
+<td>电 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0850</td>
+<td>烧火蚣</td>
+<td><a href="1142.html">1142</a></td>
+<td>火 / 虫</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0851</td>
+<td>焚焰蚣（形态槽 1143）</td>
+<td><a href="1143.html">1143</a></td>
+<td>火 / 虫</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0851</td>
+<td>焚焰蚣（形态槽 1286）</td>
+<td><a href="1286.html">1286</a></td>
+<td>火 / 虫</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0852</td>
+<td>拳拳蛸</td>
+<td><a href="1144.html">1144</a></td>
+<td>格斗</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0853</td>
+<td>八爪武师</td>
+<td><a href="1145.html">1145</a></td>
+<td>格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0854</td>
+<td>来悲茶（形态槽 1146）</td>
+<td><a href="1146.html">1146</a></td>
+<td>幽灵</td>
+<td>野生 1 处、广播</td>
+</tr>
+<tr>
+<td>0854</td>
+<td>来悲茶（形态槽 1194）</td>
+<td><a href="1194.html">1194</a></td>
+<td>幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0855</td>
+<td>怖思壶（形态槽 1147）</td>
+<td><a href="1147.html">1147</a></td>
+<td>幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0855</td>
+<td>怖思壶（形态槽 1195）</td>
+<td><a href="1195.html">1195</a></td>
+<td>幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0856</td>
+<td>迷布莉姆</td>
+<td><a href="1148.html">1148</a></td>
+<td>超能</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0857</td>
+<td>提布莉姆</td>
+<td><a href="1149.html">1149</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0858</td>
+<td>布莉姆温（形态槽 1150）</td>
+<td><a href="1150.html">1150</a></td>
+<td>超能 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0858</td>
+<td>布莉姆温（形态槽 1287）</td>
+<td><a href="1287.html">1287</a></td>
+<td>超能 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0859</td>
+<td>捣蛋小妖</td>
+<td><a href="1151.html">1151</a></td>
+<td>恶 / 妖精</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0860</td>
+<td>诈唬魔</td>
+<td><a href="1152.html">1152</a></td>
+<td>恶 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0861</td>
+<td>长毛巨魔（形态槽 1153）</td>
+<td><a href="1153.html">1153</a></td>
+<td>恶 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0861</td>
+<td>长毛巨魔（形态槽 1288）</td>
+<td><a href="1288.html">1288</a></td>
+<td>恶 / 妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0862</td>
+<td>堵拦熊</td>
+<td><a href="1154.html">1154</a></td>
+<td>恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0863</td>
+<td>喵头目</td>
+<td><a href="1155.html">1155</a></td>
+<td>钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0864</td>
+<td>魔灵珊瑚</td>
+<td><a href="1156.html">1156</a></td>
+<td>幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0865</td>
+<td>葱游兵</td>
+<td><a href="1157.html">1157</a></td>
+<td>格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0866</td>
+<td>踏冰人偶</td>
+<td><a href="1158.html">1158</a></td>
+<td>冰 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0867</td>
+<td>死神板</td>
+<td><a href="1159.html">1159</a></td>
+<td>地面 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0868</td>
+<td>小仙奶</td>
+<td><a href="1160.html">1160</a></td>
+<td>妖精</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0869</td>
+<td>霜奶仙（形态槽 1161）</td>
+<td><a href="1161.html">1161</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0869</td>
+<td>霜奶仙（形态槽 1196）</td>
+<td><a href="1196.html">1196</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0869</td>
+<td>霜奶仙（形态槽 1197）</td>
+<td><a href="1197.html">1197</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0869</td>
+<td>霜奶仙（形态槽 1198）</td>
+<td><a href="1198.html">1198</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0869</td>
+<td>霜奶仙（形态槽 1199）</td>
+<td><a href="1199.html">1199</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0869</td>
+<td>霜奶仙（形态槽 1200）</td>
+<td><a href="1200.html">1200</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0869</td>
+<td>霜奶仙（形态槽 1201）</td>
+<td><a href="1201.html">1201</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0869</td>
+<td>霜奶仙（形态槽 1289）</td>
+<td><a href="1289.html">1289</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0870</td>
+<td>列阵兵（形态槽 1162）</td>
+<td><a href="1162.html">1162</a></td>
+<td>格斗</td>
+<td>野生 4 处、广播</td>
+</tr>
+<tr>
+<td>0870</td>
+<td>列阵兵（形态槽 1401）</td>
+<td><a href="1401.html">1401</a></td>
+<td>格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0871</td>
+<td>啪嚓海胆</td>
+<td><a href="1163.html">1163</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0872</td>
+<td>雪吞虫</td>
+<td><a href="1164.html">1164</a></td>
+<td>冰 / 虫</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0873</td>
+<td>雪绒蛾</td>
+<td><a href="1165.html">1165</a></td>
+<td>冰 / 虫</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0874</td>
+<td>巨石丁</td>
+<td><a href="1166.html">1166</a></td>
+<td>岩石</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0875</td>
+<td>冰砌鹅（形态槽 1167）</td>
+<td><a href="1167.html">1167</a></td>
+<td>冰</td>
+<td>野生 4 处、广播</td>
+</tr>
+<tr>
+<td>0875</td>
+<td>冰砌鹅（形态槽 1202）</td>
+<td><a href="1202.html">1202</a></td>
+<td>冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0876</td>
+<td>爱管侍（形态槽 1168）</td>
+<td><a href="1168.html">1168</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0876</td>
+<td>爱管侍（形态槽 1203）</td>
+<td><a href="1203.html">1203</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0877</td>
+<td>莫鲁贝可（形态槽 1169）</td>
+<td><a href="1169.html">1169</a></td>
+<td>电 / 恶</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0877</td>
+<td>莫鲁贝可（形态槽 1204）</td>
+<td><a href="1204.html">1204</a></td>
+<td>电 / 恶</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0878</td>
+<td>铜象</td>
+<td><a href="1170.html">1170</a></td>
+<td>钢</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0879</td>
+<td>大王铜象（形态槽 1171）</td>
+<td><a href="1171.html">1171</a></td>
+<td>钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0879</td>
+<td>大王铜象（形态槽 1290）</td>
+<td><a href="1290.html">1290</a></td>
+<td>钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0880</td>
+<td>雷鸟龙</td>
+<td><a href="1172.html">1172</a></td>
+<td>电 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0881</td>
+<td>雷鸟海兽</td>
+<td><a href="1173.html">1173</a></td>
+<td>电 / 冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0882</td>
+<td>鳃鱼龙</td>
+<td><a href="1174.html">1174</a></td>
+<td>水 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0883</td>
+<td>鳃鱼海兽</td>
+<td><a href="1175.html">1175</a></td>
+<td>水 / 冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0884</td>
+<td>铝钢龙（形态槽 1176）</td>
+<td><a href="1176.html">1176</a></td>
+<td>钢 / 龙</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0884</td>
+<td>铝钢龙（形态槽 1291）</td>
+<td><a href="1291.html">1291</a></td>
+<td>钢 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0885</td>
+<td>多龙梅西亚</td>
+<td><a href="1177.html">1177</a></td>
+<td>龙 / 幽灵</td>
+<td>广播</td>
+</tr>
+<tr>
+<td>0886</td>
+<td>多龙奇</td>
+<td><a href="1178.html">1178</a></td>
+<td>龙 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0887</td>
+<td>多龙巴鲁托</td>
+<td><a href="1179.html">1179</a></td>
+<td>龙 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0888</td>
+<td>苍响（形态槽 1180）</td>
+<td><a href="1180.html">1180</a></td>
+<td>妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0888</td>
+<td>苍响（形态槽 1205）</td>
+<td><a href="1205.html">1205</a></td>
+<td>妖精 / 钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0889</td>
+<td>藏玛然特（形态槽 1181）</td>
+<td><a href="1181.html">1181</a></td>
+<td>格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0889</td>
+<td>藏玛然特（形态槽 1206）</td>
+<td><a href="1206.html">1206</a></td>
+<td>格斗 / 钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0890</td>
+<td>无极汰那（形态槽 1182）</td>
+<td><a href="1182.html">1182</a></td>
+<td>毒 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0890</td>
+<td>无极汰那（形态槽 1207）</td>
+<td><a href="1207.html">1207</a></td>
+<td>毒 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0891</td>
+<td>熊徒弟</td>
+<td><a href="1183.html">1183</a></td>
+<td>格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0892</td>
+<td>武道熊师（形态槽 1184）</td>
+<td><a href="1184.html">1184</a></td>
+<td>格斗 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0892</td>
+<td>武道熊师（形态槽 1208）</td>
+<td><a href="1208.html">1208</a></td>
+<td>格斗 / 水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0892</td>
+<td>武道熊师（形态槽 1292）</td>
+<td><a href="1292.html">1292</a></td>
+<td>格斗 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0892</td>
+<td>武道熊师（形态槽 1293）</td>
+<td><a href="1293.html">1293</a></td>
+<td>格斗 / 水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0893</td>
+<td>萨戮德（形态槽 1185）</td>
+<td><a href="1185.html">1185</a></td>
+<td>恶 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0893</td>
+<td>萨戮德（形态槽 1209）</td>
+<td><a href="1209.html">1209</a></td>
+<td>恶 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0894</td>
+<td>雷吉艾勒奇</td>
+<td><a href="1186.html">1186</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0895</td>
+<td>雷吉铎拉戈</td>
+<td><a href="1187.html">1187</a></td>
+<td>龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0896</td>
+<td>雪暴马</td>
+<td><a href="1188.html">1188</a></td>
+<td>冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0897</td>
+<td>灵幽马</td>
+<td><a href="1189.html">1189</a></td>
+<td>幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0898</td>
+<td>蕾冠王（形态槽 1190）</td>
+<td><a href="1190.html">1190</a></td>
+<td>超能 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0898</td>
+<td>蕾冠王（形态槽 1210）</td>
+<td><a href="1210.html">1210</a></td>
+<td>超能 / 冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0898</td>
+<td>蕾冠王（形态槽 1211）</td>
+<td><a href="1211.html">1211</a></td>
+<td>超能 / 幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0899</td>
+<td>诡角鹿</td>
+<td><a href="1251.html">1251</a></td>
+<td>一般 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>## No.0900–0999</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>全国号</th>
+<th>中文名</th>
+<th>内部槽</th>
+<th>属性</th>
+<th>获取要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0900</td>
+<td>劈斧螳螂</td>
+<td><a href="1252.html">1252</a></td>
+<td>虫 / 岩石</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0901</td>
+<td>月月熊（形态槽 1253）</td>
+<td><a href="1253.html">1253</a></td>
+<td>一般 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0901</td>
+<td>月月熊（形态槽 1527）</td>
+<td><a href="1527.html">1527</a></td>
+<td>地面</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0902</td>
+<td>幽尾玄鱼（形态槽 1254）</td>
+<td><a href="1254.html">1254</a></td>
+<td>水 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0902</td>
+<td>幽尾玄鱼（形态槽 1255）</td>
+<td><a href="1255.html">1255</a></td>
+<td>水 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0903</td>
+<td>大狃拉</td>
+<td><a href="1256.html">1256</a></td>
+<td>毒 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0904</td>
+<td>万针鱼</td>
+<td><a href="1257.html">1257</a></td>
+<td>恶 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0905</td>
+<td>眷恋云（形态槽 1258）</td>
+<td><a href="1258.html">1258</a></td>
+<td>妖精 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0905</td>
+<td>眷恋云（形态槽 1259）</td>
+<td><a href="1259.html">1259</a></td>
+<td>妖精 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0906</td>
+<td>新叶喵</td>
+<td><a href="1408.html">1408</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0907</td>
+<td>蒂蕾喵</td>
+<td><a href="1409.html">1409</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0908</td>
+<td>魔幻假面喵</td>
+<td><a href="1410.html">1410</a></td>
+<td>草 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0909</td>
+<td>呆火鳄</td>
+<td><a href="1411.html">1411</a></td>
+<td>火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0910</td>
+<td>炙烫鳄</td>
+<td><a href="1412.html">1412</a></td>
+<td>火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0911</td>
+<td>骨纹巨声鳄</td>
+<td><a href="1413.html">1413</a></td>
+<td>火 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0912</td>
+<td>润水鸭</td>
+<td><a href="1414.html">1414</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0913</td>
+<td>涌跃鸭</td>
+<td><a href="1415.html">1415</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0914</td>
+<td>狂欢浪舞鸭</td>
+<td><a href="1416.html">1416</a></td>
+<td>水 / 格斗</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0915</td>
+<td>爱吃豚</td>
+<td><a href="1417.html">1417</a></td>
+<td>一般</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0916</td>
+<td>飘香豚（形态槽 1418）</td>
+<td><a href="1418.html">1418</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0916</td>
+<td>飘香豚（形态槽 1419）</td>
+<td><a href="1419.html">1419</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0917</td>
+<td>团珠蛛</td>
+<td><a href="1420.html">1420</a></td>
+<td>虫</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0918</td>
+<td>操陷蛛</td>
+<td><a href="1421.html">1421</a></td>
+<td>虫</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0919</td>
+<td>豆蟋蟀</td>
+<td><a href="1422.html">1422</a></td>
+<td>虫</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0920</td>
+<td>烈腿蝗</td>
+<td><a href="1423.html">1423</a></td>
+<td>虫 / 恶</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0921</td>
+<td>布拨</td>
+<td><a href="1424.html">1424</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0922</td>
+<td>布土拨</td>
+<td><a href="1425.html">1425</a></td>
+<td>电 / 格斗</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0923</td>
+<td>巴布土拨</td>
+<td><a href="1426.html">1426</a></td>
+<td>电 / 格斗</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0924</td>
+<td>一对鼠</td>
+<td><a href="1427.html">1427</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0925</td>
+<td>一家鼠（形态槽 1428）</td>
+<td><a href="1428.html">1428</a></td>
+<td>一般</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0925</td>
+<td>一家鼠（形态槽 1429）</td>
+<td><a href="1429.html">1429</a></td>
+<td>一般</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0926</td>
+<td>狗仔包</td>
+<td><a href="1430.html">1430</a></td>
+<td>妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0927</td>
+<td>麻花犬</td>
+<td><a href="1431.html">1431</a></td>
+<td>妖精</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0928</td>
+<td>迷你芙</td>
+<td><a href="1432.html">1432</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0929</td>
+<td>奥利纽</td>
+<td><a href="1433.html">1433</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0930</td>
+<td>奥利瓦</td>
+<td><a href="1434.html">1434</a></td>
+<td>草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0931</td>
+<td>怒鹦哥（形态槽 1435）</td>
+<td><a href="1435.html">1435</a></td>
+<td>一般 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0931</td>
+<td>怒鹦哥（形态槽 1436）</td>
+<td><a href="1436.html">1436</a></td>
+<td>一般 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0931</td>
+<td>怒鹦哥（形态槽 1437）</td>
+<td><a href="1437.html">1437</a></td>
+<td>一般 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0931</td>
+<td>怒鹦哥（形态槽 1438）</td>
+<td><a href="1438.html">1438</a></td>
+<td>一般 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0932</td>
+<td>盐石宝</td>
+<td><a href="1439.html">1439</a></td>
+<td>岩石</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0933</td>
+<td>盐石垒</td>
+<td><a href="1440.html">1440</a></td>
+<td>岩石</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0934</td>
+<td>盐石巨灵</td>
+<td><a href="1441.html">1441</a></td>
+<td>岩石</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0935</td>
+<td>炭小侍</td>
+<td><a href="1442.html">1442</a></td>
+<td>火</td>
+<td>野生 24 处</td>
+</tr>
+<tr>
+<td>0936</td>
+<td>红莲铠骑</td>
+<td><a href="1443.html">1443</a></td>
+<td>火 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0937</td>
+<td>苍炎刃鬼</td>
+<td><a href="1444.html">1444</a></td>
+<td>火 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0938</td>
+<td>光蚪仔</td>
+<td><a href="1445.html">1445</a></td>
+<td>电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0939</td>
+<td>电肚蛙</td>
+<td><a href="1446.html">1446</a></td>
+<td>电</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0940</td>
+<td>电海燕</td>
+<td><a href="1447.html">1447</a></td>
+<td>电 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0941</td>
+<td>大电海燕</td>
+<td><a href="1448.html">1448</a></td>
+<td>电 / 飞行</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0942</td>
+<td>偶叫獒</td>
+<td><a href="1449.html">1449</a></td>
+<td>恶</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0943</td>
+<td>獒教父</td>
+<td><a href="1450.html">1450</a></td>
+<td>恶</td>
+<td>野生 1 处</td>
+</tr>
+<tr>
+<td>0944</td>
+<td>滋汁鼹</td>
+<td><a href="1451.html">1451</a></td>
+<td>毒</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0945</td>
+<td>涂标客</td>
+<td><a href="1452.html">1452</a></td>
+<td>毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0946</td>
+<td>纳噬草</td>
+<td><a href="1453.html">1453</a></td>
+<td>草 / 幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0947</td>
+<td>怖纳噬草</td>
+<td><a href="1454.html">1454</a></td>
+<td>草 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0948</td>
+<td>原野水母</td>
+<td><a href="1455.html">1455</a></td>
+<td>地面 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0949</td>
+<td>陆地水母</td>
+<td><a href="1456.html">1456</a></td>
+<td>地面 / 草</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0950</td>
+<td>毛崖蟹</td>
+<td><a href="1457.html">1457</a></td>
+<td>岩石</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0951</td>
+<td>热辣娃</td>
+<td><a href="1458.html">1458</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0952</td>
+<td>狠辣椒</td>
+<td><a href="1459.html">1459</a></td>
+<td>草 / 火</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0953</td>
+<td>虫滚泥</td>
+<td><a href="1460.html">1460</a></td>
+<td>虫</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0954</td>
+<td>虫甲圣</td>
+<td><a href="1461.html">1461</a></td>
+<td>虫 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0955</td>
+<td>飘飘雏</td>
+<td><a href="1462.html">1462</a></td>
+<td>超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0956</td>
+<td>超能艳鸵</td>
+<td><a href="1463.html">1463</a></td>
+<td>超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0957</td>
+<td>小锻匠</td>
+<td><a href="1464.html">1464</a></td>
+<td>妖精 / 钢</td>
+<td>群聚</td>
+</tr>
+<tr>
+<td>0958</td>
+<td>巧锻匠</td>
+<td><a href="1465.html">1465</a></td>
+<td>妖精 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0959</td>
+<td>巨锻匠</td>
+<td><a href="1466.html">1466</a></td>
+<td>妖精 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0960</td>
+<td>海地鼠</td>
+<td><a href="1467.html">1467</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0961</td>
+<td>三海地鼠</td>
+<td><a href="1468.html">1468</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0962</td>
+<td>下石鸟</td>
+<td><a href="1469.html">1469</a></td>
+<td>飞行 / 恶</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0963</td>
+<td>波普海豚</td>
+<td><a href="1470.html">1470</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0964</td>
+<td>海豚侠（形态槽 1471）</td>
+<td><a href="1471.html">1471</a></td>
+<td>水</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0964</td>
+<td>海豚侠（形态槽 1472）</td>
+<td><a href="1472.html">1472</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0965</td>
+<td>噗隆隆</td>
+<td><a href="1473.html">1473</a></td>
+<td>钢 / 毒</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0966</td>
+<td>普隆隆姆</td>
+<td><a href="1474.html">1474</a></td>
+<td>钢 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0967</td>
+<td>摩托蜥</td>
+<td><a href="1475.html">1475</a></td>
+<td>龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0968</td>
+<td>拖拖蚓</td>
+<td><a href="1476.html">1476</a></td>
+<td>钢</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0969</td>
+<td>晶光芽</td>
+<td><a href="1477.html">1477</a></td>
+<td>岩石 / 毒</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0970</td>
+<td>晶光花</td>
+<td><a href="1478.html">1478</a></td>
+<td>岩石 / 毒</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0971</td>
+<td>墓仔狗</td>
+<td><a href="1479.html">1479</a></td>
+<td>幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0972</td>
+<td>墓扬犬</td>
+<td><a href="1480.html">1480</a></td>
+<td>幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0973</td>
+<td>缠红鹤</td>
+<td><a href="1481.html">1481</a></td>
+<td>飞行 / 格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0974</td>
+<td>走鲸</td>
+<td><a href="1482.html">1482</a></td>
+<td>冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0975</td>
+<td>浩大鲸</td>
+<td><a href="1483.html">1483</a></td>
+<td>冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0976</td>
+<td>轻身鳕</td>
+<td><a href="1484.html">1484</a></td>
+<td>水 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0977</td>
+<td>吃吼霸</td>
+<td><a href="1485.html">1485</a></td>
+<td>水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0978</td>
+<td>米立龙（形态槽 1486）</td>
+<td><a href="1486.html">1486</a></td>
+<td>龙 / 水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0978</td>
+<td>米立龙（形态槽 1487）</td>
+<td><a href="1487.html">1487</a></td>
+<td>龙 / 水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0978</td>
+<td>米立龙（形态槽 1488）</td>
+<td><a href="1488.html">1488</a></td>
+<td>龙 / 水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0979</td>
+<td>弃世猴</td>
+<td><a href="0257.html">0257</a></td>
+<td>格斗 / 幽灵</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0980</td>
+<td>土王</td>
+<td><a href="0259.html">0259</a></td>
+<td>毒 / 地面</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0981</td>
+<td>奇麒麟</td>
+<td><a href="0254.html">0254</a></td>
+<td>一般 / 超能</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0982</td>
+<td>土龙节节（形态槽 0255）</td>
+<td><a href="0255.html">0255</a></td>
+<td>一般</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0982</td>
+<td>土龙节节（形态槽 0256）</td>
+<td><a href="0256.html">0256</a></td>
+<td>一般</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0983</td>
+<td>仆刀将军</td>
+<td><a href="1494.html">1494</a></td>
+<td>恶 / 钢</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0984</td>
+<td>雄伟牙</td>
+<td><a href="1495.html">1495</a></td>
+<td>地面 / 格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0985</td>
+<td>吼叫尾</td>
+<td><a href="1496.html">1496</a></td>
+<td>妖精 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0986</td>
+<td>猛恶菇</td>
+<td><a href="1497.html">1497</a></td>
+<td>草 / 恶</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0987</td>
+<td>振翼发</td>
+<td><a href="1498.html">1498</a></td>
+<td>幽灵 / 妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0988</td>
+<td>爬地翅</td>
+<td><a href="1499.html">1499</a></td>
+<td>虫 / 格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0989</td>
+<td>沙铁皮</td>
+<td><a href="1500.html">1500</a></td>
+<td>电 / 地面</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0990</td>
+<td>铁辙迹</td>
+<td><a href="1501.html">1501</a></td>
+<td>地面 / 钢</td>
+<td>剧情战斗候选</td>
+</tr>
+<tr>
+<td>0991</td>
+<td>铁包袱</td>
+<td><a href="1502.html">1502</a></td>
+<td>冰 / 水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0992</td>
+<td>铁臂膀</td>
+<td><a href="1503.html">1503</a></td>
+<td>格斗 / 电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0993</td>
+<td>铁脖颈</td>
+<td><a href="1504.html">1504</a></td>
+<td>恶 / 飞行</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0994</td>
+<td>铁毒蛾</td>
+<td><a href="1505.html">1505</a></td>
+<td>火 / 毒</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0995</td>
+<td>铁荆棘</td>
+<td><a href="1506.html">1506</a></td>
+<td>岩石 / 电</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0996</td>
+<td>凉脊龙</td>
+<td><a href="1507.html">1507</a></td>
+<td>龙 / 冰</td>
+<td>野生 5 处</td>
+</tr>
+<tr>
+<td>0997</td>
+<td>冻脊龙</td>
+<td><a href="1508.html">1508</a></td>
+<td>龙 / 冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0998</td>
+<td>戟脊龙（形态槽 0274）</td>
+<td><a href="0274.html">0274</a></td>
+<td>龙 / 冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0998</td>
+<td>戟脊龙（形态槽 1509）</td>
+<td><a href="1509.html">1509</a></td>
+<td>龙 / 冰</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>0999</td>
+<td>索财灵（形态槽 1510）</td>
+<td><a href="1510.html">1510</a></td>
+<td>幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>0999</td>
+<td>索财灵（形态槽 1511）</td>
+<td><a href="1511.html">1511</a></td>
+<td>幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>## No.1000–1099</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>全国号</th>
+<th>中文名</th>
+<th>内部槽</th>
+<th>属性</th>
+<th>获取要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1000</td>
+<td>赛富豪</td>
+<td><a href="1512.html">1512</a></td>
+<td>钢 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>1001</td>
+<td>古简蜗</td>
+<td><a href="1513.html">1513</a></td>
+<td>恶 / 草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>古剑豹</td>
+<td><a href="1514.html">1514</a></td>
+<td>恶 / 冰</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1003</td>
+<td>古鼎鹿</td>
+<td><a href="1515.html">1515</a></td>
+<td>恶 / 地面</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1004</td>
+<td>古玉鱼</td>
+<td><a href="1516.html">1516</a></td>
+<td>恶 / 火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1005</td>
+<td>轰鸣月</td>
+<td><a href="1517.html">1517</a></td>
+<td>龙 / 恶</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1006</td>
+<td>铁武者</td>
+<td><a href="1518.html">1518</a></td>
+<td>妖精 / 格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1007</td>
+<td>故勒顿</td>
+<td><a href="1519.html">1519</a></td>
+<td>格斗 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1008</td>
+<td>密勒顿</td>
+<td><a href="1520.html">1520</a></td>
+<td>电 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1009</td>
+<td>波荡水</td>
+<td><a href="1521.html">1521</a></td>
+<td>水 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1010</td>
+<td>铁斑叶</td>
+<td><a href="1522.html">1522</a></td>
+<td>草 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1011</td>
+<td>裹蜜虫</td>
+<td><a href="1528.html">1528</a></td>
+<td>草 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1012</td>
+<td>斯魔茶（形态槽 1529）</td>
+<td><a href="1529.html">1529</a></td>
+<td>草 / 幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1012</td>
+<td>斯魔茶（形态槽 1530）</td>
+<td><a href="1530.html">1530</a></td>
+<td>草 / 幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1013</td>
+<td>来悲粗茶（形态槽 1531）</td>
+<td><a href="1531.html">1531</a></td>
+<td>草 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>1013</td>
+<td>来悲粗茶（形态槽 1532）</td>
+<td><a href="1532.html">1532</a></td>
+<td>草 / 幽灵</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>1014</td>
+<td>够赞狗</td>
+<td><a href="1533.html">1533</a></td>
+<td>毒 / 格斗</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1015</td>
+<td>愿增猿</td>
+<td><a href="1534.html">1534</a></td>
+<td>毒 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1016</td>
+<td>吉雉鸡</td>
+<td><a href="1535.html">1535</a></td>
+<td>毒 / 妖精</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1017</td>
+<td>厄诡碰（形态槽 1536）</td>
+<td><a href="1536.html">1536</a></td>
+<td>草</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1017</td>
+<td>厄诡碰（形态槽 1537）</td>
+<td><a href="1537.html">1537</a></td>
+<td>草 / 水</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1017</td>
+<td>厄诡碰（形态槽 1538）</td>
+<td><a href="1538.html">1538</a></td>
+<td>草 / 火</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1017</td>
+<td>厄诡碰（形态槽 1539）</td>
+<td><a href="1539.html">1539</a></td>
+<td>草 / 岩石</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1017</td>
+<td>厄诡碰（形态槽 1540）</td>
+<td><a href="1540.html">1540</a></td>
+<td>一般</td>
+<td>占位槽</td>
+</tr>
+<tr>
+<td>1017</td>
+<td>厄诡碰（形态槽 1541）</td>
+<td><a href="1541.html">1541</a></td>
+<td>一般</td>
+<td>占位槽</td>
+</tr>
+<tr>
+<td>1017</td>
+<td>厄诡碰（形态槽 1542）</td>
+<td><a href="1542.html">1542</a></td>
+<td>一般</td>
+<td>占位槽</td>
+</tr>
+<tr>
+<td>1017</td>
+<td>厄诡碰（形态槽 1543）</td>
+<td><a href="1543.html">1543</a></td>
+<td>一般</td>
+<td>占位槽</td>
+</tr>
+<tr>
+<td>1018</td>
+<td>铝钢桥龙</td>
+<td><a href="1544.html">1544</a></td>
+<td>钢 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1019</td>
+<td>蜜集大蛇</td>
+<td><a href="1545.html">1545</a></td>
+<td>草 / 龙</td>
+<td>由进化获得</td>
+</tr>
+<tr>
+<td>1020</td>
+<td>破空焰</td>
+<td><a href="1546.html">1546</a></td>
+<td>火 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1021</td>
+<td>猛雷鼓</td>
+<td><a href="1547.html">1547</a></td>
+<td>电 / 龙</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1022</td>
+<td>铁磐岩</td>
+<td><a href="1548.html">1548</a></td>
+<td>岩石 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1023</td>
+<td>铁头壳</td>
+<td><a href="1549.html">1549</a></td>
+<td>钢 / 超能</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1024</td>
+<td>太乐巴戈斯（形态槽 1550）</td>
+<td><a href="1550.html">1550</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1024</td>
+<td>太乐巴戈斯（形态槽 1551）</td>
+<td><a href="1551.html">1551</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1024</td>
+<td>太乐巴戈斯（形态槽 1552）</td>
+<td><a href="1552.html">1552</a></td>
+<td>一般</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1026</td>
+<td>桃歹郎</td>
+<td><a href="1553.html">1553</a></td>
+<td>毒 / 幽灵</td>
+<td>无直接记录</td>
+</tr>
+<tr>
+<td>1027</td>
+<td>多边兽零式</td>
+<td><a href="0275.html">0275</a></td>
+<td>一般</td>
+<td>赠送</td>
+</tr>
+</tbody>
+</table>
+<h2 id="119">无全国图鉴号的槽（119 个）</h2>
+<p>这些槽没有有效全国图鉴号：115 个为占位槽，另 4 个是特殊内码槽（如 MISSINGNO. 类，名称存在但无有效图鉴号）。再加上 4 个有全国号但种族值全 0 的占位槽，合计 119 个占位/无效槽。逐个说明见 <a href="forms.html">forms.md</a>。</p>
+<ul>
+<li><a href="0000.html">??????</a> ｜ 内部槽 0000（占位）</li>
+<li><a href="0252.html">蛋</a> ｜ 内部槽 0252（占位）</li>
+<li><a href="0253.html">MISSINGNO.</a> ｜ 内部槽 0253（无全国图鉴号）</li>
+<li><a href="0260.html">杰克霜精</a> ｜ 内部槽 0260（无全国图鉴号）</li>
+<li><a href="0261.html">洛奇亚</a> ｜ 内部槽 0261（无全国图鉴号）</li>
+<li><a href="0412.html">坏蛋</a> ｜ 内部槽 0412（占位）</li>
+<li><a href="0706.html">战士</a> ｜ 内部槽 0706（无全国图鉴号）</li>
+<li><a href="1294.html">1</a> ｜ 内部槽 1294（占位）</li>
+<li><a href="1295.html">2</a> ｜ 内部槽 1295（占位）</li>
+<li><a href="1296.html">3</a> ｜ 内部槽 1296（占位）</li>
+<li><a href="1297.html">4</a> ｜ 内部槽 1297（占位）</li>
+<li><a href="1298.html">5</a> ｜ 内部槽 1298（占位）</li>
+<li><a href="1299.html">6</a> ｜ 内部槽 1299（占位）</li>
+<li><a href="1300.html">7</a> ｜ 内部槽 1300（占位）</li>
+<li><a href="1301.html">8</a> ｜ 内部槽 1301（占位）</li>
+<li><a href="1302.html">9</a> ｜ 内部槽 1302（占位）</li>
+<li><a href="1303.html">10</a> ｜ 内部槽 1303（占位）</li>
+<li><a href="1304.html">11</a> ｜ 内部槽 1304（占位）</li>
+<li><a href="1305.html">12</a> ｜ 内部槽 1305（占位）</li>
+<li><a href="1306.html">13</a> ｜ 内部槽 1306（占位）</li>
+<li><a href="1307.html">14</a> ｜ 内部槽 1307（占位）</li>
+<li><a href="1308.html">15</a> ｜ 内部槽 1308（占位）</li>
+<li><a href="1309.html">16</a> ｜ 内部槽 1309（占位）</li>
+<li><a href="1310.html">17</a> ｜ 内部槽 1310（占位）</li>
+<li><a href="1311.html">18</a> ｜ 内部槽 1311（占位）</li>
+<li><a href="1312.html">19</a> ｜ 内部槽 1312（占位）</li>
+<li><a href="1313.html">20</a> ｜ 内部槽 1313（占位）</li>
+<li><a href="1314.html">21</a> ｜ 内部槽 1314（占位）</li>
+<li><a href="1315.html">22</a> ｜ 内部槽 1315（占位）</li>
+<li><a href="1316.html">23</a> ｜ 内部槽 1316（占位）</li>
+<li><a href="1317.html">24</a> ｜ 内部槽 1317（占位）</li>
+<li><a href="1318.html">25</a> ｜ 内部槽 1318（占位）</li>
+<li><a href="1319.html">26</a> ｜ 内部槽 1319（占位）</li>
+<li><a href="1320.html">27</a> ｜ 内部槽 1320（占位）</li>
+<li><a href="1321.html">28</a> ｜ 内部槽 1321（占位）</li>
+<li><a href="1322.html">29</a> ｜ 内部槽 1322（占位）</li>
+<li><a href="1323.html">30</a> ｜ 内部槽 1323（占位）</li>
+<li><a href="1324.html">31</a> ｜ 内部槽 1324（占位）</li>
+<li><a href="1325.html">32</a> ｜ 内部槽 1325（占位）</li>
+<li><a href="1326.html">33</a> ｜ 内部槽 1326（占位）</li>
+<li><a href="1327.html">34</a> ｜ 内部槽 1327（占位）</li>
+<li><a href="1328.html">35</a> ｜ 内部槽 1328（占位）</li>
+<li><a href="1329.html">36</a> ｜ 内部槽 1329（占位）</li>
+<li><a href="1330.html">37</a> ｜ 内部槽 1330（占位）</li>
+<li><a href="1331.html">38</a> ｜ 内部槽 1331（占位）</li>
+<li><a href="1332.html">39</a> ｜ 内部槽 1332（占位）</li>
+<li><a href="1333.html">40</a> ｜ 内部槽 1333（占位）</li>
+<li><a href="1334.html">41</a> ｜ 内部槽 1334（占位）</li>
+<li><a href="1335.html">42</a> ｜ 内部槽 1335（占位）</li>
+<li><a href="1336.html">43</a> ｜ 内部槽 1336（占位）</li>
+<li><a href="1337.html">44</a> ｜ 内部槽 1337（占位）</li>
+<li><a href="1338.html">45</a> ｜ 内部槽 1338（占位）</li>
+<li><a href="1339.html">46</a> ｜ 内部槽 1339（占位）</li>
+<li><a href="1340.html">47</a> ｜ 内部槽 1340（占位）</li>
+<li><a href="1341.html">48</a> ｜ 内部槽 1341（占位）</li>
+<li><a href="1342.html">49</a> ｜ 内部槽 1342（占位）</li>
+<li><a href="1343.html">50</a> ｜ 内部槽 1343（占位）</li>
+<li><a href="1344.html">51</a> ｜ 内部槽 1344（占位）</li>
+<li><a href="1345.html">52</a> ｜ 内部槽 1345（占位）</li>
+<li><a href="1346.html">53</a> ｜ 内部槽 1346（占位）</li>
+<li><a href="1347.html">54</a> ｜ 内部槽 1347（占位）</li>
+<li><a href="1348.html">55</a> ｜ 内部槽 1348（占位）</li>
+<li><a href="1349.html">56</a> ｜ 内部槽 1349（占位）</li>
+<li><a href="1350.html">57</a> ｜ 内部槽 1350（占位）</li>
+<li><a href="1351.html">58</a> ｜ 内部槽 1351（占位）</li>
+<li><a href="1352.html">59</a> ｜ 内部槽 1352（占位）</li>
+<li><a href="1353.html">60</a> ｜ 内部槽 1353（占位）</li>
+<li><a href="1354.html">61</a> ｜ 内部槽 1354（占位）</li>
+<li><a href="1355.html">62</a> ｜ 内部槽 1355（占位）</li>
+<li><a href="1356.html">63</a> ｜ 内部槽 1356（占位）</li>
+<li><a href="1357.html">64</a> ｜ 内部槽 1357（占位）</li>
+<li><a href="1358.html">65</a> ｜ 内部槽 1358（占位）</li>
+<li><a href="1359.html">66</a> ｜ 内部槽 1359（占位）</li>
+<li><a href="1360.html">67</a> ｜ 内部槽 1360（占位）</li>
+<li><a href="1361.html">68</a> ｜ 内部槽 1361（占位）</li>
+<li><a href="1362.html">69</a> ｜ 内部槽 1362（占位）</li>
+<li><a href="1363.html">70</a> ｜ 内部槽 1363（占位）</li>
+<li><a href="1364.html">71</a> ｜ 内部槽 1364（占位）</li>
+<li><a href="1365.html">72</a> ｜ 内部槽 1365（占位）</li>
+<li><a href="1366.html">73</a> ｜ 内部槽 1366（占位）</li>
+<li><a href="1367.html">74</a> ｜ 内部槽 1367（占位）</li>
+<li><a href="1368.html">75</a> ｜ 内部槽 1368（占位）</li>
+<li><a href="1369.html">76</a> ｜ 内部槽 1369（占位）</li>
+<li><a href="1370.html">77</a> ｜ 内部槽 1370（占位）</li>
+<li><a href="1371.html">78</a> ｜ 内部槽 1371（占位）</li>
+<li><a href="1372.html">79</a> ｜ 内部槽 1372（占位）</li>
+<li><a href="1373.html">80</a> ｜ 内部槽 1373（占位）</li>
+<li><a href="1374.html">81</a> ｜ 内部槽 1374（占位）</li>
+<li><a href="1375.html">82</a> ｜ 内部槽 1375（占位）</li>
+<li><a href="1376.html">83</a> ｜ 内部槽 1376（占位）</li>
+<li><a href="1377.html">84</a> ｜ 内部槽 1377（占位）</li>
+<li><a href="1378.html">85</a> ｜ 内部槽 1378（占位）</li>
+<li><a href="1379.html">86</a> ｜ 内部槽 1379（占位）</li>
+<li><a href="1380.html">87</a> ｜ 内部槽 1380（占位）</li>
+<li><a href="1381.html">88</a> ｜ 内部槽 1381（占位）</li>
+<li><a href="1382.html">89</a> ｜ 内部槽 1382（占位）</li>
+<li><a href="1383.html">90</a> ｜ 内部槽 1383（占位）</li>
+<li><a href="1384.html">91</a> ｜ 内部槽 1384（占位）</li>
+<li><a href="1385.html">92</a> ｜ 内部槽 1385（占位）</li>
+<li><a href="1386.html">93</a> ｜ 内部槽 1386（占位）</li>
+<li><a href="1387.html">94</a> ｜ 内部槽 1387（占位）</li>
+<li><a href="1388.html">95</a> ｜ 内部槽 1388（占位）</li>
+<li><a href="1389.html">96</a> ｜ 内部槽 1389（占位）</li>
+<li><a href="1390.html">97</a> ｜ 内部槽 1390（占位）</li>
+<li><a href="1391.html">98</a> ｜ 内部槽 1391（占位）</li>
+<li><a href="1392.html">99</a> ｜ 内部槽 1392（占位）</li>
+<li><a href="1393.html">100</a> ｜ 内部槽 1393（占位）</li>
+<li><a href="1394.html">101</a> ｜ 内部槽 1394（占位）</li>
+<li><a href="1395.html">102</a> ｜ 内部槽 1395（占位）</li>
+<li><a href="1396.html">103</a> ｜ 内部槽 1396（占位）</li>
+<li><a href="1397.html">104</a> ｜ 内部槽 1397（占位）</li>
+<li><a href="1398.html">105</a> ｜ 内部槽 1398（占位）</li>
+<li><a href="1399.html">106</a> ｜ 内部槽 1399（占位）</li>
+<li><a href="1400.html">107</a> ｜ 内部槽 1400（占位）</li>
+<li><a href="1489.html">弃世猴</a> ｜ 内部槽 1489（占位）</li>
+<li><a href="1490.html">土王</a> ｜ 内部槽 1490（占位）</li>
+<li><a href="1492.html">土龙节节</a> ｜ 内部槽 1492（占位）</li>
+<li><a href="1493.html">土龙节节</a> ｜ 内部槽 1493（占位）</li>
+<li><a href="1526.html">乌波</a> ｜ 内部槽 1526（占位）</li>
+<li><a href="1540.html">厄诡碰</a> ｜ 内部槽 1540（占位）</li>
+<li><a href="1541.html">厄诡碰</a> ｜ 内部槽 1541（占位）</li>
+<li><a href="1542.html">厄诡碰</a> ｜ 内部槽 1542（占位）</li>
+<li><a href="1543.html">厄诡碰</a> ｜ 内部槽 1543（占位）</li>
+</ul>
+<hr />
+<p>数据来源与字段缺口见 <a href="../data/pokemon_summary.json">../data/pokemon_summary.json</a>。</p><footer>资料依据指定水银1.1 ROM及解包记录。正文的“待补”表示该获取条件尚未整理清楚，不代表无法获得。</footer></main></html>

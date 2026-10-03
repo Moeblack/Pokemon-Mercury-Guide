@@ -1,0 +1,157 @@
+{
+  "generated_by": "player_guide/scripts/locate_quest_catalog.py",
+  "generated_at": "2026-10-03T07:53:48.820594+00:00",
+  "purpose": "Locate ROM strings + 32-bit LE pointer refs for the sidequest catalog; Main chooses the structure.",
+  "rom": {
+    "path": "C:/Users/Moeblack/Downloads/宝可梦水银/宝可梦水银FC~致150年后的你 Version 1.1 (1).gba",
+    "size": 33554432,
+    "size_hex": "0x2000000",
+    "sha256": "131b009df7ab252deff0d6a0518ab82f88e82c940ee68d50d31033a899f7e3dd"
+  },
+  "reference_notes": {
+    "file": "reference/azoth-wiki/docs/news/index.md",
+    "lines": {
+      "70": "- 97个支线任务",
+      "10": "2. 完成阿球的支线任务后改为传送回满金市，避免导致后续 CosPlay 大会支线时序错误",
+      "20": "12. 精灵爷爷的支线去除了徽章检测，一开始就可以领取通信电缆，以防后面忘记",
+      "193": "支线设计沿用了《Z-A》/《究极日月》…充实了城镇里的每一个支线和微小事件"
+    },
+    "claim": "官方新闻宣称 97 个支线任务"
+  },
+  "search_string": "红色火球之谜",
+  "encoding": {
+    "source": "out/charmap.json",
+    "structure": "2-byte CJK codes, lead byte in 0x01-0x1E, stored big-endian (lead,trail)",
+    "corroboration": "maps_research/out/scripts/text.json encoding note",
+    "per_char_codes": {
+      "红": [
+        "051B"
+      ],
+      "色": [
+        "0B89"
+      ],
+      "火": [
+        "057D"
+      ],
+      "球": [
+        "0B14"
+      ],
+      "之": [
+        "107F"
+      ],
+      "谜": [
+        "096D"
+      ]
+    },
+    "ambiguous": {}
+  },
+  "rom_pattern_big_endian_hex": "051b0b89057d0b14107f096d",
+  "rom_pattern_little_endian_hex": "1b05890b7d05140b7f106d09",
+  "hits": [
+    {
+      "rom_offset": "0xabb0fc",
+      "rom_addr": "0x8abb0fc",
+      "string_bytes_hex": "051b0b89057d0b14107f096d",
+      "u32_le_pointer_ref_offsets": [],
+      "u32_le_pointer_ref_count": 0,
+      "hex_pm128": {
+        "range": [
+          "0xabb07c",
+          "0xabb17b"
+        ],
+        "text": "00ABB07C  f4 cf d2 ff 20 07 98 20 d3 69 99 f1 91 a0 4b 89\n00ABB08C  37 7b 23 22 f8 7f 80 30 01 0f 00 03 c3 ab 08 09\n00ABB09C  02 1a 00 80 6e 00 1a 01 80 02 00 09 00 2f 02 00\n00ABB0AC  0f 00 ef b0 ab 08 16 00 80 01 00 16 01 80 01 00\n00ABB0BC  16 02 80 1c 00 16 03 80 02 00 23 51 64 9b 08 0f\n00ABB0CC  00 0b 02 af 08 09 02 23 01 01 fb 08 17 35 51 03\n00ABB0DC  00 29 a0 16 02 01 01 fb 08 17 35 51 03 00 29 a0\n00ABB0EC  16 02 ff fc 06 00 0b 4e 0d b7 0d 52 02 4b f0 85\n00ABB0FC  05 1b 0b 89 05 7d 0b 14 10 7f 09 6d 86 ff 00 ff\n00ABB10C  62 fe ff ff ff ff ff ff 10 00 10 00 30 01 20 f0\n00ABB11C  01 30 01 02 20 03 20 00 03 20 04 20 05 20 06 20\n00ABB12C  00 07 20 08 20 09 20 0a 20 24 0b 20 d0 01 08 20\n00ABB13C  90 01 0c 20 03 0d 20 0e 20 12 20 f0 27 f0 01 84\n00ABB14C  10 01 14 20 16 20 10 01 17 20 30 1e 20 f0 01 10\n00ABB15C  01 1f 20 20 20 c0 f0 01 30 01 21 20 22 20 25 20\n00ABB16C  e0 f0 01 f0 01 30 01 2a 20 2b 20 2c 01 20 2c 20"
+      }
+    },
+    {
+      "rom_offset": "0xabc996",
+      "rom_addr": "0x8abc996",
+      "string_bytes_hex": "051b0b89057d0b14107f096d",
+      "u32_le_pointer_ref_offsets": [],
+      "u32_le_pointer_ref_count": 0,
+      "hex_pm128": {
+        "range": [
+          "0xabc916",
+          "0xabca15"
+        ],
+        "text": "00ABC916  24 24 fe ff 62 fe ff 01 fe ff 11 11 fe 11 fe ff\n00ABC926  11 fe 11 fe ff 22 22 fe ff 02 fe ff 03 fe ff 10\n00ABC936  12 12 03 fe fe 03 fe ff 10 02 fe 02 fe ff 12 12\n00ABC946  12 12 12 12 12 12 12 fe 0b 67 04 f4 3b fe 09 d9\n00ABC956  10 ec 03 04 05 1b 0b 89 03 0b 05 7d 0b 14 08 9e\n00ABC966  09 2a 3d ff 00 ff 01 d6 03 79 b0 b0 fe 0d 98 0f\n00ABC976  4f 0e 20 10 a1 01 d6 0c 0c 10 55 0e e2 03 0b 37\n00ABC986  ff 00 ff fc 06 00 07 25 0c 21 0b 4e 0d b7 f0 85\n00ABC996  05 1b 0b 89 05 7d 0b 14 10 7f 09 6d 86 ff 00 0f\n00ABC9A6  e6 0b cc 08 2b 0b 89 03 0b 04 c9 08 64 0f 7c 0f\n00ABC9B6  6c b0 fe 04 3a 07 a5 10 59 03 0b 05 0b 01 53 3c\n00ABC9C6  ff 00 ff ff ff 00 fe 4f 0f 80 7e cf ab 08 28 13\n00ABC9D6  00 2a 69 16 55 12 00 4f 12 00 8a 12 ac 08 51 12\n00ABC9E6  00 2f 02 00 0f 00 30 48 ac 08 16 00 80 01 00 16\n00ABC9F6  01 80 01 00 16 02 80 1c 00 16 03 80 02 00 23 51\n00ABCA06  64 9b 08 0f 00 87 4a ab 08 09 06 23 01 01 fb 08"
+      }
+    },
+    {
+      "rom_offset": "0xe3ac52",
+      "rom_addr": "0x8e3ac52",
+      "string_bytes_hex": "051b0b89057d0b14107f096d",
+      "u32_le_pointer_ref_offsets": [
+        "0xe39444"
+      ],
+      "u32_le_pointer_ref_count": 1,
+      "hex_pm128": {
+        "range": [
+          "0xe3abd2",
+          "0xe3acd1"
+        ],
+        "text": "00E3ABD2  9e 08 8a 05 bd 07 d7 0a c9 0d 61 fe 0d 98 03 0b\n00E3ABE2  05 bd 10 a1 11 01 0e 98 0e 0d 04 a0 0c 07 0f 1b\n00E3ABF2  37 ff 07 5b 08 bc 0e f6 0e f6 03 0b 0e 4d 03 a5\n00E3AC02  09 8f ff 0d 98 0f e6 a3 aa 04 eb 03 07 08 e8 03\n00E3AC12  a5 0e 03 08 9e 04 b6 0f 3c 03 0b fe 05 1b 0b 89\n00E3AC22  05 7d 0b 14 3c 0d c7 0d 63 0f 7e 09 d2 08 79 03\n00E3AC32  0b 0e 9e 08 8a 05 bd fe 07 d7 0f 24 01 4e 0d 98\n00E3AC42  03 3e 02 0d 0f 0b 0d e6 10 55 05 e9 0c 07 37 ff\n00E3AC52  05 1b 0b 89 05 7d 0b 14 10 7f 09 6d ff 0d 98 0e\n00E3AC62  18 0a f0 0c 1b 0a 3d 0f ab 0f 0b 10 8c 09 06 09\n00E3AC72  43 02 68 3b fe 01 bd 0b 43 0c 9f 07 4a 05 3c 37\n00E3AC82  04 61 0d 81 0b 67 04 c3 10 d4 03 04 fe 0c 9f 03\n00E3AC92  0b 05 3d 3b 09 d2 03 f4 05 f4 0c 9f 0b 43 04 62\n00E3ACA2  0d 98 09 ce 3d ff 0e f1 07 4a 05 3c 03 0b 09 06\n00E3ACB2  09 43 02 68 ff 0e 18 0e f1 10 7b 03 07 0e 17 0b\n00E3ACC2  0b 03 0b 05 3d 3b fe 0b 0d 0a c9 0d 61 a4 a1 04"
+      }
+    },
+    {
+      "rom_offset": "0xe3c9ae",
+      "rom_addr": "0x8e3c9ae",
+      "string_bytes_hex": "051b0b89057d0b14107f096d",
+      "u32_le_pointer_ref_offsets": [
+        "0xe3b028"
+      ],
+      "u32_le_pointer_ref_count": 1,
+      "hex_pm128": {
+        "range": [
+          "0xe3c92e",
+          "0xe3ca2d"
+        ],
+        "text": "00E3C92E  08 bc ff 02 d8 10 f4 0a 5f 0b 12 fe 0b 25 0d 11\n00E3C93E  0c 3c 08 a9 07 c2 07 c2 01 28 37 ff 0a 5f 0b 12\n00E3C94E  03 0b 08 f4 0d 26 ff 04 62 a3 aa 04 eb 03 07 08\n00E3C95E  e8 03 0b 03 71 07 f1 0b b7 09 e0 fe 07 c2 0f 0b\n00E3C96E  07 c2 0e 2c 09 40 04 9e 03 0b 03 9f 03 89 37 ff\n00E3C97E  0e 2c 09 40 04 9e 03 0b 03 9f 03 89 ff 01 4e 10\n00E3C98E  cb a3 aa 04 eb 03 07 08 e8 03 0b 09 c6 11 0b fe\n00E3C99E  10 ec 10 d0 05 1b 0b 89 03 0b 05 7d 0b 14 37 ff\n00E3C9AE  05 1b 0b 89 05 7d 0b 14 10 7f 09 6d ff 01 d1 10\n00E3C9BE  ec 0f 0b 10 8c 09 ad 07 d9 03 9e 3b 01 bd 01 30\n00E3C9CE  0c 9f fe 04 62 07 2d 04 6b 0c 15 03 0b 0e 2c 0a\n00E3C9DE  0b 04 c8 09 96 0f 0b 09 96 01 28 37 ff 07 d7 01\n00E3C9EE  0d 03 0b 09 ad 07 d9 03 9e ff 0b 25 02 0d 0b 07\n00E3C9FE  04 a0 0f 88 08 23 01 27 0e a8 10 7f 0c a1 fe 03\n00E3CA0E  0b 0e e6 04 9e 03 0b 10 59 0e 0d 01 28 3c ff 08\n00E3CA1E  23 01 27 0e a8 0c a1 03 0b 0e e6 04 9e ff 01 4e"
+      }
+    }
+  ],
+  "pointer_ref_slots": [
+    {
+      "hit_rom_offset": "0xe3ac52",
+      "hit_rom_addr": "0x8e3ac52",
+      "ref_rom_offset": "0xe39444",
+      "ref_rom_addr": "0x8e39444",
+      "ref_bytes_le": "52 ac e3 08",
+      "ref_hex_pm128": {
+        "range": [
+          "0xe393c4",
+          "0xe394c3"
+        ],
+        "text": "00E393C4  7c af e2 08 00 10 00 00 00 d6 e1 08 00 02 00 10\n00E393D4  3c d8 e1 08 00 02 00 10 c4 d3 e1 08 00 02 00 10\n00E393E4  64 d6 e1 08 00 02 00 10 90 ab e2 08 00 02 00 10\n00E393F4  f4 ab e2 08 00 02 00 10 ec ad e2 08 00 02 00 10\n00E39404  38 af e2 08 00 02 00 10 00 10 00 10 c4 ad e3 08\n00E39414  f0 1c 23 08 00 00 00 00 fc 1c 23 08 0d 76 00 08\n00E39424  a7 ad e3 08 64 ad e3 08 59 00 00 14 10 15 00 00\n00E39434  aa a9 e3 08 65 a9 e3 08 a9 00 00 14 43 17 00 00\n00E39444  52 ac e3 08 05 ac e3 08 4d 00 00 14 a0 16 00 00\n00E39454  08 aa e3 08 b3 a9 e3 08 49 00 00 14 9e 16 00 00\n00E39464  4f ad e3 08 fa ac e3 08 99 02 00 14 67 15 00 00\n00E39474  a8 ac e3 08 5f ac e3 08 59 00 00 14 5b 15 00 00\n00E39484  22 a7 e3 08 df a6 e3 08 69 00 00 14 41 17 00 00\n00E39494  f4 ab e3 08 b1 ab e3 08 f5 00 00 14 5e 15 00 00\n00E394A4  a6 ab e3 08 65 ab e3 08 7d 02 01 14 72 15 00 00\n00E394B4  58 ab e3 08 19 ab e3 08 a1 02 01 14 6a 15 00 00"
+      }
+    },
+    {
+      "hit_rom_offset": "0xe3c9ae",
+      "hit_rom_addr": "0x8e3c9ae",
+      "ref_rom_offset": "0xe3b028",
+      "ref_rom_addr": "0x8e3b028",
+      "ref_bytes_le": "ae c9 e3 08",
+      "ref_hex_pm128": {
+        "range": [
+          "0xe3afa8",
+          "0xe3b0a7"
+        ],
+        "text": "00E3AFA8  d0 0b 2a 00 00 01 00 00 23 ba e3 08 00 ba e3 08\n00E3AFB8  ad 12 d1 0b d2 0b 38 2a 00 00 00 00 f5 b9 e3 08\n00E3AFC8  b6 b9 e3 08 75 17 d3 0b d4 0b 38 2a 00 00 00 00\n00E3AFD8  a7 b9 e3 08 71 b9 e3 08 ed 2d d5 0b d6 0b 38 2a\n00E3AFE8  00 00 00 00 62 b9 e3 08 31 b9 e3 08 ed 2d d7 0b\n00E3AFF8  d8 0b 2a 00 00 01 00 00 c2 cb e3 08 9d cb e3 08\n00E3B008  59 00 0f 15 10 15 03 42 06 00 00 00 62 c8 e3 08\n00E3B018  39 c8 e3 08 a9 00 42 17 43 17 2b 04 01 01 00 00\n00E3B028  ae c9 e3 08 8b c9 e3 08 4d 00 9f 16 a0 16 03 4f\n00E3B038  01 00 00 00 7e c9 e3 08 55 c9 e3 08 49 00 9d 16\n00E3B048  9e 16 03 4f 02 00 00 00 8a c8 e3 08 6b c8 e3 08\n00E3B058  69 00 40 17 41 17 2d 05 01 01 00 00 59 cb e3 08\n00E3B068  34 cb e3 08 f5 00 5d 15 5e 15 2d 06 02 01 00 00\n00E3B078  9d bd e3 08 7c bd e3 08 f5 00 7c 0b e8 0b 2d 06\n00E3B088  02 01 00 00 6d bd e3 08 37 bd e3 08 f5 00 e8 0b\n00E3B098  e8 0b 2d 06 02 01 00 00 25 cb e3 08 fc ca e3 08"
+      }
+    }
+  ],
+  "counts": {
+    "big_endian_hits": 4,
+    "little_endian_hits": 0,
+    "pointer_ref_slots": 2
+  },
+  "old_text_json": {
+    "file": "maps_research/out/scripts/text.json",
+    "count": 7513,
+    "contains_quest_name": false,
+    "note": "name absent from decoded script-text dump (3 copies checked)"
+  },
+  "code_research_entry": {
+    "quest_table_doc_filename": null,
+    "note": "no filename in code_research mentions quest/任务/支线; MANIFEST.md index-only"
+  }
+}

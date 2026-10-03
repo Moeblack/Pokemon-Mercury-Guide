@@ -1,0 +1,53 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>035 阿露福遗迹之谜 · 水银攻略</title><style>*{box-sizing:border-box}body{margin:0;color:#243247;background:#f5f7fb;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}header{background:#142b48;color:white;padding:22px max(22px,calc((100vw - 1180px)/2))}header a{color:#e5efff;text-decoration:none}nav{display:flex;gap:20px;flex-wrap:wrap;font-size:15px}main{max-width:1180px;margin:auto;padding:28px 22px 60px}h1{font-size:30px;line-height:1.4}h2{margin-top:32px;border-bottom:1px solid #d9e0eb;padding-bottom:8px}a{color:#155b9b}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow:auto;background:white}td,th{padding:10px 12px;border:1px solid #dde4ed;text-align:left;min-width:65px}th{background:#eaf0f8}tr:nth-child(even){background:#f7f9fc}code{font-size:.88em;background:#edf0f5;padding:2px 4px;border-radius:3px;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:15px;background:#edf0f5}img{max-width:100%;height:auto;image-rendering:pixelated}blockquote{border-left:4px solid #809cbe;background:#edf2f8;margin:18px 0;padding:10px 18px}input,select{font:inherit;padding:10px 14px;border:1px solid #bccbdd;border-radius:7px}input{flex:1;min-width:180px}.searchbox{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px}.card{background:white;border:1px solid #dbe3ee;border-radius:10px;padding:20px}.result{background:white;margin:10px 0;padding:14px 18px;border-radius:7px;border:1px solid #e0e6ee}.result small,.muted{color:#60718a}.badge{background:#e7eff9;border-radius:4px;padding:2px 7px;font-size:13px}details{margin:15px 0}footer{margin-top:40px;border-top:1px solid #dde4ed;padding-top:15px;color:#60718a;font-size:13px}@media(max-width:600px){main{padding:16px 12px}h1{font-size:25px}td,th{padding:8px}}
+.atlas-cards{margin:32px 0;padding-top:8px;border-top:1px solid #d9e0eb}.atlas-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}.atlas-card{background:#fff;border:1px solid #d9e0eb;border-radius:10px;overflow:hidden}.atlas-card h3{font-size:16px;margin:12px 14px 6px}.atlas-card p{font-size:13px;line-height:1.6;margin:8px 14px 14px}.atlas-frame{height:240px;position:relative;background:#e8edf1}.atlas-frame img{position:absolute;width:100%;height:100%;object-fit:contain;image-rendering:pixelated}.atlas-frame svg{position:absolute;width:100%;height:100%;inset:0;pointer-events:none}.atlas-label{paint-order:stroke;stroke:#fff;stroke-width:3px;fill:#142b48;font-weight:bold;text-anchor:middle;dominant-baseline:central}.atlas-cards details{margin-top:16px}.atlas-cards summary{cursor:pointer;color:#155b9b;margin-bottom:12px}.atlas-feature{padding:12px 16px;background:#eaf0f8;border-radius:8px;margin:16px 0}.atlas-unavailable{height:240px;display:grid;place-items:center;color:#59677a;font-size:14px;padding:24px;text-align:center}
+</style><header><a href="../index.html"><strong>宝可梦水银 1.1 · 玩家攻略</strong></a><nav><a href="../quests/index.html">支线攻略</a><a href="../items/index.html">道具搜集</a><a href="../pokemon/index.html">宝可梦获取</a><a href="../trainers/index.html">训练家配队</a><a href="../maps/index.html">地点地图</a><a href="../pokemon/wild_mega.html">野生Mega</a></nav></header><main><h1 id="035">035 阿露福遗迹之谜</h1>
+<p>一句话目标：加入阿露福遗迹调查队，按研究员给出的课题逐步调查遗迹，最终集齐所有形态的未知图腾、解开遗迹真相。</p>
+<h2 id="_1">接取地点</h2>
+<ul>
+<li>阿露福遗迹・地下（地图 <a href="../maps/index.html#map=1:50&amp;page=quests/035.md">1:50</a>），从上方掉落到 (4,6)/(5,6) 时的研究员（local_id 4）。</li>
+<li>后续课题由阿露福遗迹内的资深研究员（室内地图 <a href="../maps/index.html#map=56:9&amp;page=quests/035.md">56:9</a>，local_id 2，坐标 7,3）发布。</li>
+<li>当前目录描述：解开有关阿露福遗迹的真相！</li>
+</ul>
+<h2 id="_2">准备条件</h2>
+<ul>
+<li>需先在解密石室解开石版拼图，从上方掉入遗迹地下，才能触发入队剧情。</li>
+<li>入队时变量 20893 须为未置位状态（触发后置 1，防止重复触发）。</li>
+</ul>
+<h2 id="_3">操作步骤</h2>
+<ol>
+<li>前往阿露福遗迹的解密石室，完成石版拼图后从上方掉落，落点 (4,6)/(5,6) 触发脚本 <code>0x08AF0695</code> 或 <code>0x08AF0803</code>。研究员出现：“从上面掉下来，也就是说……你完成了石版的拼图？！……从现在开始，你就是我们遗迹研究所的一员了！我把这个笔记给你吧，抓到的未知图腾会自动记录起来，非常方便！”</li>
+<li>获得 未知图腾笔记（道具 740 ×1），脚本置接取旗标 5969、变量 20893=1，显示“[玩家/变量]成为遗迹调查队的一员！”，研究员随即离场（置旗标 5998）。</li>
+<li>之后到 56:9 找资深研究员（local_id 2，坐标 7,3）对话，依次推进课题（对话脚本 <code>0x08EC8125</code>→<code>0x08EC857F</code>）：
+   - 课题一（旗标 2784）：记录后进入“遗迹中的神秘的电波”主题（该段第一段正文未在包内提取）。
+   - 课题二：在遗迹里打开收音机，收到未知图腾之间用神秘电波对话的证据（外部置旗标 2785），再找研究员确认，脚本置 2786；下一课题为“未知图腾研究”——已确认 26 种文字，数量与文字种类相同，需集齐全部；并提示解开 3 个解密石室的拼图后遗迹会出现更多种类。
+   - 课题三：集齐已确认的 26 种未知图腾（旗标 5866–5891），再找研究员记录（置 2787）；下一课题为“遗迹中的秘密房间”——解密石室最里面墙上会有未知图腾摆成的图案，按图案指示行动即可进入。
+   - 课题四：进入秘密房间（外部置旗标 2788），再找研究员记录（置 2789）；下一课题为“又有两种新文字被发现”。
+   - 课题五：找齐最后两种未知图腾（旗标 5892、5893）。</li>
+<li>集齐 26+2 共 28 种后，与研究员对话触发结算脚本 <code>0x08EC857F</code>：他解读出遗迹中未知图腾曾与人类共同生活、人类建了地下房间的宝可梦像等真相，并说“考古也是学无止境啊……谢谢你这段时间的协助！”。</li>
+</ol>
+<h2 id="_4">交付检查</h2>
+<ul>
+<li>完成旗标 5970 置位即结题；判定条件为旗标 5892、5893 均已置位（即最后两种未知图腾也已记录）。</li>
+</ul>
+<h2 id="_5">奖励</h2>
+<ul>
+<li>秘密琥珀（道具 354）×1</li>
+<li>贝壳化石（道具 357）×1</li>
+<li>甲壳化石（道具 358）×1</li>
+<li>15 点 BracerPoints</li>
+<li>15000$</li>
+</ul>
+<h2 id="_6">容易卡住的位置</h2>
+<ul>
+<li>入队必须先“从上方掉落”，单纯到遗迹里找研究员只会得到“这个遗迹大概建造于 1500 年前……”的讲解。</li>
+<li>课题推进依赖多个外部旗标：收音机电波（2785）与找到秘密房间（2788）的置位方式在本包内未定位，需相应去遗迹内实践后才会推进。</li>
+<li>需集齐 28 种未知图腾（26 种已确认 + 秘密房间相关两种），漏一种都无法结题。</li>
+</ul>
+<h2 id="_7">来源与待补</h2>
+<ul>
+<li>包：<code>data/quest_packets/035.json</code>；入队 <code>0x08AF0695</code>/<code>0x08AF0803</code>/<code>0x08AF0972</code>/<code>0x08AF098D</code>，研究员对话链 <code>0x08EC8125</code>–<code>0x08EC857F</code>。</li>
+<li>相关道具：<a href="../items/0740.html">未知图腾笔记 0740</a>、<a href="../items/0354.html">秘密琥珀 0354</a>、<a href="../items/0357.html">贝壳化石 0357</a>、<a href="../items/0358.html">甲壳化石 0358</a>。</li>
+<li>相关宝可梦：<a href="../pokemon/0201.html">未知图腾 0201</a>。</li>
+<li>相关地图：<a href="../maps/index.html#map=1:50&amp;page=quests/035.md">阿露福遗迹地下 1:50</a>、<a href="../maps/index.html#map=56:9&amp;page=quests/035.md">阿露福遗迹 56:9</a>。</li>
+<li>未定位/待补：课题一与若干记录段落的正文（如 <code>0x08EC83CF</code>、<code>0x08EC851C</code> 等 loadpointer）未在包内提取；外部旗标 2785、2788 的置位脚本未定位；26/28 种未知图腾的对应旗标编号与具体获得地点需另查。</li>
+</ul><section class="atlas-cards"><h2>地点地图</h2><p>共享RGB底图；点击可缩放定位。数字对应本页相关地点，不代表地图上全部事件。</p><div class="atlas-card-grid"><article class="atlas-card"><h3><a href="../maps/index.html#map=1:50&amp;page=quests/035.md&amp;point=quest-fc194313d0072e">阿露福遗迹</a></h3><a href="../maps/index.html#map=1:50&amp;page=quests/035.md&amp;point=quest-fc194313d0072e" aria-label="在大地图中打开阿露福遗迹"><div class="atlas-frame"><img src="../maps/base/f6e4e6a93f8ada79.png" alt="阿露福遗迹地图" loading="lazy" decoding="async" width="576" height="576"><svg viewBox="0 0 576 576" aria-hidden="true"><circle cx="72" cy="104" r="16.0" fill="#155b9b" stroke="white" stroke-width="3.2"/><text x="72" y="104" fill="white" font-family="sans-serif" font-weight="bold" font-size="20.8" text-anchor="middle" dominant-baseline="central">1</text></svg></div></a><p>1 阿露福遗迹之谜（4,6）</p><p><a href="../maps/index.html#map=1:50&amp;page=quests/035.md&amp;point=quest-fc194313d0072e">放大定位与查看相邻入口 →</a></p></article><article class="atlas-card"><h3><a href="../maps/index.html#map=56:9&amp;page=quests/035.md&amp;point=quest-b3aac0a7e27e8c">阿露福遗迹</a></h3><a href="../maps/index.html#map=56:9&amp;page=quests/035.md&amp;point=quest-b3aac0a7e27e8c" aria-label="在大地图中打开阿露福遗迹"><div class="atlas-frame"><img src="../maps/base/ec38753b6190242b.png" alt="阿露福遗迹地图" loading="lazy" decoding="async" width="176" height="192"><svg viewBox="0 0 176 192" aria-hidden="true"><circle cx="120" cy="56" r="8" fill="#155b9b" stroke="white" stroke-width="2"/><text x="120" y="56" fill="white" font-family="sans-serif" font-weight="bold" font-size="10.4" text-anchor="middle" dominant-baseline="central">1</text></svg></div></a><p>1 阿露福遗迹之谜（7,3）</p><p><a href="../maps/index.html#map=56:9&amp;page=quests/035.md&amp;point=quest-b3aac0a7e27e8c">放大定位与查看相邻入口 →</a></p></article></div></section><footer>资料依据指定水银1.1 ROM及解包记录。正文的“待补”表示该获取条件尚未整理清楚，不代表无法获得。</footer></main></html>

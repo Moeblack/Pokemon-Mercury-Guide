@@ -1,0 +1,1359 @@
+{
+ "title": "少女的烦恼",
+ "quest_id": 13,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b000",
+    "title": "少女的烦恼",
+    "title_address": "0x8e3cbc2",
+    "description": "我和我的大牙狸遇到了\n非常非常大的困难，在此\n恳求各位来若叶镇帮助我！",
+    "description_address": "0x8e3cb9d",
+    "unknown_u16": 89,
+    "unknown_u16_hex": "0x0059",
+    "accept_flag": 5391,
+    "accept_flag_hex": "0x150F",
+    "complete_flag": 5392,
+    "complete_flag_hex": "0x1510",
+    "map_group": 3,
+    "map_num": 66,
+    "tail_hex": "06 00 00 00",
+    "index": 13,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39424",
+      "title": "大牙狸少女的烦恼",
+      "description_address": "0x8e3ad64",
+      "description": "我和我的大牙狸遇到了\\n非常非常大的困难，在此\\n恳求各位来若叶镇帮助我！"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3ad64",
+    "legacy_match_count": 1,
+    "current_description": "帮助若叶镇的大牙狸少女\n寻找不变之石。",
+    "catalog_map": {
+     "id": "3:66",
+     "name": "若叶镇"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x089D3CE9",
+    "0x089D3D03",
+    "0x089E351E",
+    "0x089E3DB5",
+    "0x08F506EE",
+    "0x08F5110A"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F506EE",
+     "map_id": "3:66",
+     "place": "若叶镇",
+     "kind": "人物",
+     "local_id": 20,
+     "event_index": 8,
+     "x": 24,
+     "y": 14,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n066.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089C19EC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089C19EC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144448000
+       ],
+       "texts": [
+        {
+         "address": "0x089C1A00",
+         "text": "看！\n我的大牙狸可爱吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089C19F2",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089C19F4",
+       "command": "applymovement",
+       "args": [
+        20,
+        144448024
+       ]
+      },
+      {
+       "at": "0x089C19FB",
+       "command": "waitmovement",
+       "args": [
+        20
+       ]
+      },
+      {
+       "at": "0x089C19FE",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089D3CE9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089D3CE9",
+       "command": "checkflag",
+       "args": [
+        5392
+       ],
+       "task_flag_labels": [
+        {
+         "title": "少女的烦恼",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089D3CEC",
+       "command": "goto_if",
+       "args": [
+        1,
+        144522599
+       ],
+       "targets": [
+        "0x089D3D67"
+       ]
+      },
+      {
+       "at": "0x089D3CF2",
+       "command": "goto",
+       "args": [
+        144585236
+       ],
+       "targets": [
+        "0x089E3214"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089D3D03",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089D3D03",
+       "command": "checkflag",
+       "args": [
+        5392
+       ],
+       "task_flag_labels": [
+        {
+         "title": "少女的烦恼",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089D3D06",
+       "command": "goto_if",
+       "args": [
+        1,
+        144522599
+       ],
+       "targets": [
+        "0x089D3D67"
+       ]
+      },
+      {
+       "at": "0x089D3D0C",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089D3D0F",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144523284
+       ]
+      },
+      {
+       "at": "0x089D3D16",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089D3D19",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x089D3D1C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144523032
+       ],
+       "texts": [
+        {
+         "address": "0x089D3F18",
+         "text": "哇！\n没想到你真的找到了不变之石！\n我已经不知道如何来\n表达我的谢意了。\n这…这是我的一点小心意！"
+        }
+       ]
+      },
+      {
+       "at": "0x089D3D22",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089D3D24",
+       "command": "removeitem",
+       "args": [
+        195,
+        1
+       ],
+       "item_name": "不变之石"
+      },
+      {
+       "at": "0x089D3D29",
+       "command": "goto",
+       "args": [
+        144588213
+       ],
+       "targets": [
+        "0x089E3DB5"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089D3D67",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089D3D67",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144523196
+       ],
+       "texts": [
+        {
+         "address": "0x089D3FBC",
+         "text": "看！\n我的大牙狸可爱吗？\n你也来一起玩吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x089D3D6D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089D3D6F",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089E2EB1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E2EB1",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E2EB4",
+       "command": "goto_if",
+       "args": [
+        1,
+        150278410
+       ],
+       "targets": [
+        "0x08F5110A"
+       ]
+      },
+      {
+       "at": "0x089E2EBA",
+       "command": "goto",
+       "args": [
+        144447980
+       ],
+       "targets": [
+        "0x089C19EC"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E3139",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E3139",
+       "command": "goto",
+       "args": [
+        144585071
+       ],
+       "targets": [
+        "0x089E316F"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E316F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E316F",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144523284
+       ]
+      },
+      {
+       "at": "0x089E3176",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089E3179",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E317C",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E317D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144591256
+       ],
+       "texts": [
+        {
+         "address": "0x089E4998",
+         "text": "哇，是你！\n你看到了我的支援请求，对吧？\n事情是这样的……\n最近我的大牙狸时不时会发光，\n为此我特地拜访了空木博士。\n博士告诉我，\n这是快要进化的迹象。\n可…可是！！\n一旦我的大牙狸进化了，\n我就再也见不到它现在这般\n可爱的模样了……！\n我不想失去如此可爱的大牙狸！\n呜……呜呜……\n我听说有一种叫不变之石的石头，\n可以让精灵永不进化。\n我想如果有不变之石的话，\n我的问题就可以解决了吧！\n那么……\n你愿意帮我的忙吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E3183",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E3185",
+       "command": "goto",
+       "args": [
+        150274971
+       ],
+       "targets": [
+        "0x08F5039B"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E3214",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E3214",
+       "command": "checkitem",
+       "args": [
+        195,
+        1
+       ],
+       "item_name": "不变之石"
+      },
+      {
+       "at": "0x089E3219",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E321E",
+       "command": "goto_if",
+       "args": [
+        1,
+        144585321
+       ],
+       "targets": [
+        "0x089E3269"
+       ]
+      },
+      {
+       "at": "0x089E3224",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144522983
+       ],
+       "texts": [
+        {
+         "address": "0x089D3EE7",
+         "text": "如果你有找到不变之石的话，\n要记得和我联系哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E322A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E322C",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089E3269",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E3269",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E326A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144586073
+       ],
+       "texts": [
+        {
+         "address": "0x089E3559",
+         "text": "要将不变之石\n交给女孩吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E3270",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E3272",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E3277",
+       "command": "goto_if",
+       "args": [
+        1,
+        144588267
+       ],
+       "targets": [
+        "0x089E3DEB"
+       ]
+      },
+      {
+       "at": "0x089E327D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144522983
+       ],
+       "texts": [
+        {
+         "address": "0x089D3EE7",
+         "text": "如果你有找到不变之石的话，\n要记得和我联系哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E3283",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E3285",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089E351E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E351E",
+       "command": "setflag",
+       "args": [
+        5391
+       ],
+       "task_flag_labels": [
+        {
+         "title": "少女的烦恼",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E3521",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E3524",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144586247
+       ],
+       "texts": [
+        {
+         "address": "0x089E3607",
+         "text": "接受任务:<大牙狸少女的烦恼>"
+        }
+       ]
+      },
+      {
+       "at": "0x089E352A",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E352F",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E3534",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x089E3539",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E353E",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x089E3543",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144522954
+       ],
+       "texts": [
+        {
+         "address": "0x089D3ECA",
+         "text": "真的吗？\n真是太…太感谢你了！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E3549",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x089E354B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144522983
+       ],
+       "texts": [
+        {
+         "address": "0x089D3EE7",
+         "text": "如果你有找到不变之石的话，\n要记得和我联系哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E3551",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E3553",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E3558",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089E35C6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E35C6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144586359
+       ],
+       "texts": [
+        {
+         "address": "0x089E3677",
+         "text": "任务完成:<大牙狸少女的烦恼>"
+        }
+       ]
+      },
+      {
+       "at": "0x089E35CC",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E35D1",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E35D6",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x089E35DB",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E35E0",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x089E35E5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145686922
+       ],
+       "texts": [
+        {
+         "address": "0x08AF018A",
+         "text": "获得了3点BracerPoints!"
+        }
+       ]
+      },
+      {
+       "at": "0x089E35EB",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E35ED",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E35F2",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089E3DB5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E3DB5",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        537
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕路奇亚",
+        "item": "经验糖果S",
+        "move": "暗黑爆破"
+       }
+      },
+      {
+       "at": "0x089E3DBA",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E3DBF",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E3DC1",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E3DC4",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        435
+       ],
+       "possible_names_not_semantics": {
+        "species": "未知图腾",
+        "item": "TM110",
+        "move": "烈火深渊"
+       }
+      },
+      {
+       "at": "0x089E3DC9",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E3DCE",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E3DD0",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E3DD3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144523124
+       ],
+       "texts": [
+        {
+         "address": "0x089D3F74",
+         "text": "我不是很懂这些道具，\n但是它们应该对作为训练家的你，\n还是有一点用处的吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E3DD9",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E3DDB",
+       "command": "setflag",
+       "args": [
+        5392
+       ],
+       "task_flag_labels": [
+        {
+         "title": "少女的烦恼",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E3DDE",
+       "command": "goto",
+       "args": [
+        145499401
+       ],
+       "targets": [
+        "0x08AC2509"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E3DEB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E3DEB",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x089E3DEC",
+       "command": "goto",
+       "args": [
+        144522499
+       ],
+       "targets": [
+        "0x089D3D03"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AC20B8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC20B8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145501041
+       ],
+       "texts": [
+        {
+         "address": "0x08AC2B71",
+         "text": "对了……\n还有这些钱……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC20BE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC20C0",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08AC20C3",
+       "command": "addmoney",
+       "args": [
+        5000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AC20C9",
+       "command": "updatemoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AC20CD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145501486
+       ],
+       "texts": [
+        {
+         "address": "0x08AC2D2E",
+         "text": "这也是给你的报酬……\n收好啦！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC20D3",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC20D5",
+       "command": "hidemoney",
+       "args": [
+        20,
+        0
+       ]
+      },
+      {
+       "at": "0x08AC20D8",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AC20D9",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08AC20DC",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08AC20E1",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC20E4",
+       "command": "goto",
+       "args": [
+        144586182
+       ],
+       "targets": [
+        "0x089E35C6"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AC2509",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC2509",
+       "command": "showmoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AC250D",
+       "command": "goto",
+       "args": [
+        145498296
+       ],
+       "targets": [
+        "0x08AC20B8"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F50259",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F50259",
+       "command": "applymovement",
+       "args": [
+        25,
+        150275628
+       ]
+      },
+      {
+       "at": "0x08F50260",
+       "command": "waitmovement",
+       "args": [
+        25
+       ]
+      },
+      {
+       "at": "0x08F50263",
+       "command": "goto",
+       "args": [
+        144584369
+       ],
+       "targets": [
+        "0x089E2EB1"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F5039B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5039B",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F503A0",
+       "command": "goto_if",
+       "args": [
+        1,
+        150275620
+       ],
+       "targets": [
+        "0x08F50624"
+       ]
+      },
+      {
+       "at": "0x08F503A6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144522940
+       ],
+       "texts": [
+        {
+         "address": "0x089D3EBC",
+         "text": "好吧，\n呜呜。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F503AC",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F503AE",
+       "command": "applymovement",
+       "args": [
+        25,
+        150275618
+       ]
+      },
+      {
+       "at": "0x08F503B5",
+       "command": "waitmovement",
+       "args": [
+        25
+       ]
+      },
+      {
+       "at": "0x08F503B8",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F503B9",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F50624",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F50624",
+       "command": "setflag",
+       "args": [
+        2620
+       ]
+      },
+      {
+       "at": "0x08F50627",
+       "command": "goto",
+       "args": [
+        144586014
+       ],
+       "targets": [
+        "0x089E351E"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F506EE",
+     "event_roots": [
+      {
+       "map_id": "3:66",
+       "place": "若叶镇",
+       "kind": "人物",
+       "local_id": 20,
+       "event_index": 8,
+       "x": 24,
+       "y": 14,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n066.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F506EE",
+       "command": "checkflag",
+       "args": [
+        5392
+       ],
+       "task_flag_labels": [
+        {
+         "title": "少女的烦恼",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F506F1",
+       "command": "goto_if",
+       "args": [
+        1,
+        144522599
+       ],
+       "targets": [
+        "0x089D3D67"
+       ]
+      },
+      {
+       "at": "0x08F506F7",
+       "command": "goto",
+       "args": [
+        150274649
+       ],
+       "targets": [
+        "0x08F50259"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F5110A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5110A",
+       "command": "checkflag",
+       "args": [
+        5391
+       ],
+       "task_flag_labels": [
+        {
+         "title": "少女的烦恼",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5110D",
+       "command": "goto_if",
+       "args": [
+        1,
+        144522473
+       ],
+       "targets": [
+        "0x089D3CE9"
+       ]
+      },
+      {
+       "at": "0x08F51113",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144448000
+       ],
+       "texts": [
+        {
+         "address": "0x089C1A00",
+         "text": "看！\n我的大牙狸可爱吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F51119",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5111B",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F5111E",
+       "command": "goto",
+       "args": [
+        144585017
+       ],
+       "targets": [
+        "0x089E3139"
+       ]
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

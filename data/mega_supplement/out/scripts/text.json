@@ -1,0 +1,1617 @@
+{
+ "rom": "宝可梦水银FC~致150年后的你 Version 1.1 (1).gba",
+ "sha256": "131b009df7ab252deff0d6a0518ab82f88e82c940ee68d50d31033a899f7e3dd",
+ "encoding": "2-byte lead(0x01-0x1E)/trail from the wiki charmap + engine control codes decoded first (0xFA=\\l, 0xFB=\\p, 0xFE=\\n; 0xFD/0xF8/0xF9 one parameter; 0xFC control code with pret text.c parameter counts); 0xFF terminates",
+ "count": 93,
+ "strings": {
+  "0x087B3E47": {
+   "addr": "0x087B3E47",
+   "text": "\\ctrl[06 00]获得了6点BracerPoints和6000$!",
+   "bytes": 33,
+   "raw": "fc0600057e030a089ea7032abce6d5d7d9e6cae3dde2e8e704f3a7a1a1a1b7abff",
+   "referenced_by": [
+    {
+     "script": "0x087B4B67",
+     "at": "0x087B4BB1",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B41AD": {
+   "addr": "0x087B41AD",
+   "text": "被彻底冻结的两只拉普拉斯……\\n它们紧紧依偎在一起，\\l仿佛陷入了永恒的沉睡。\\p虽然已经感受不到生命的气息，\\n但那庞大的身躯周围，\\l似乎还萦绕着某种温柔的余温。\\p三十年的暴风雪终于平息。\\n它们静静地留在这里，\\l化作了不朽的丰碑。",
+   "bytes": 207,
+   "raw": "0178023b031e03580733030b0890108c08220a9008220c5cb0b0fe0c9f095f074607460f1011ba0fe60f0b0aab3bfa03c503f30e0a0b6b089e0f6e0512030b02430c5237fb0c870b3b0f21075d043a0c2101d603040bd80994030b0ab30dc63bfe02e909bd0a3002d3030b0bcb0b1d10ad0d6d3bfa0c6905240546134c0b4610f409a910a70d880b61030b0f8e0d8837fb0b7d0bea09e0030b016603ea0e9210a60f880a780dc637fe0c9f095f07620762031f08c70fe6105508643bfa053c112f089e01d60e6b030b03e4016b37ff",
+   "referenced_by": [
+    {
+     "script": "0x087B4136",
+     "at": "0x087B41A5",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B46B2": {
+   "addr": "0x087B46B2",
+   "text": "û貉Á",
+   "bytes": 5,
+   "raw": "28050002ff",
+   "referenced_by": [
+    {
+     "script": "0x087B4136",
+     "at": "0x087B4173",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B46D6": {
+   "addr": "0x087B46D6",
+   "text": "小碎钻\\n骄傲地挺起了胸膛，\\p勾魂眼则像个\\n小跟班一样讨好地望着它。",
+   "bytes": 62,
+   "raw": "0e2c0c8c1122fe07100120031f0d0e0aab089e0e630cc63bfb047c05770ec410070e1e0460fe0e2c0464013f0f0b0ee20cd704e9031f0d6310f40c9f37ff",
+   "referenced_by": [
+    {
+     "script": "0x087B44DF",
+     "at": "0x087B4623",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B4716": {
+   "addr": "0x087B4716",
+   "text": "天敌竟然\\n变成了抛光师和雇主……\\p宝可梦的生态，真是比\\n书本上写的要有趣一万倍啊！\\l我要赶紧把这个课题写成论文！",
+   "bytes": 104,
+   "raw": "0ced031707690b3bfe01a1024b089e0a3404aa0be204f3049510c8b0b0fb016307d70966030b0bd80cad3b10590c0c0185fe0c2e017b0bad0e3f030b0ef10f7e0b240f0b0d5a017301003cfa0d980ef10439074601301055046007dc0ce30e3f024b09150d8a3cff",
+   "referenced_by": [
+    {
+     "script": "0x087B4B67",
+     "at": "0x087B4B69",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B4780": {
+   "addr": "0x087B4780",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级勾魂眼的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a1047c05770ec4030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x087B44DF",
+     "at": "0x087B465B",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x087B47AF": {
+   "addr": "0x087B47AF",
+   "text": "勾魂眼好像有东西要给你！",
+   "bytes": 24,
+   "raw": "047c05770ec404e90e1e0f7e03500dbd0ef1046209d93cff",
+   "referenced_by": [
+    {
+     "script": "0x087B44DF",
+     "at": "0x087B4651",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B47CD": {
+   "addr": "0x087B47CD",
+   "text": "原来如此……太惊人了！\\p这只勾魂眼\\n根本不是想吃小碎钻，\\p而是因为它超级进化以后，\\n胸口的宝石膨胀起来，\\l只靠自己根本弄不干净……\\p所以才一路追赶小碎钻……\\p是想利用小碎钻\\n身上极其坚硬的钻石，\\l来帮它抛光这颗宝石啊！！\\p勾魂眼那副天生吓人的笑脸，\\n再加上图鉴里可怕的天敌传说……\\l难怪小碎钻会被吓得一路逃跑。\\p这简直是\\n宝可梦世界里最大的乌龙！\\p呼，虽然是个误会。\\n但如果不是你打破僵局，\\p它们俩恐怕\\n永远无法理解彼此吧。",
+   "bytes": 385,
+   "raw": "0fb908290b6702abb0b00cac075a0b4b089e3cfb1055108c047c05770ec4fe0463017b01d60c0c0e1802560e2c0c8c11223bfb039d0c0c0f420d700c9f022e05a1074a053c0f2405223bfe0e6307e8030b01630beb0a4f10400aab08293bfa108c07cd110c05a50463017b0a0701d60433076bb0b0fb0c9c0f2401e00f0b08e810e604390e2c0c8c1122b0b0fb0c0c0e1808700f710e2c0c8c1122fe0bcb0bad05960a9f05cc0f60030b11220beb3bfa0829014e0c9f0a3404aa105507d301630beb01003c3cfb047c05770ec409bd041b0ced0bd80de90b4b030b0e3108863bfe0fe505be0bad0d2405e3086407d70a1f030b0ced0317028b0c58b0b0fa09c7049e0e2c0c8c1122056e01780de9030a0f0b08e80cd40a3937fb105505dd10820c0cfe016307d709660c0507390864112602d3030b0da008cd3cfb05233b0c870b3b0c0c04600db9056e37fe02e90b6704c301d60c0c09d902d20a8105f207863bfb0c9f095f087c07e40a1ffe0f6e0fc20da403ab08620734018802ab012837ff",
+   "referenced_by": [
+    {
+     "script": "0x087B44DF",
+     "at": "0x087B4635",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B4954": {
+   "addr": "0x087B4954",
+   "text": "桀！！",
+   "bytes": 5,
+   "raw": "17953c3cff",
+   "referenced_by": [
+    {
+     "script": "0x087B44DF",
+     "at": "0x087B4610",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B49DC": {
+   "addr": "0x087B49DC",
+   "text": "小碎钻：钻！",
+   "bytes": 11,
+   "raw": "0e2c0c8c11223e11223cff",
+   "referenced_by": [
+    {
+     "script": "0x087B44DF",
+     "at": "0x087B459E",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B49E9": {
+   "addr": "0x087B49E9",
+   "text": "看见勾魂眼抱着的宝石，\\n小碎钻突然明白了什么。",
+   "bytes": 44,
+   "raw": "07c205e6047c05770ec4016410f4030b01630beb3bfe0e2c0c8c11220d230b3b098f0136089e0bee094c37ff",
+   "referenced_by": [
+    {
+     "script": "0x087B44DF",
+     "at": "0x087B4572",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B4A1E": {
+   "addr": "0x087B4A1E",
+   "text": "诶？这只勾魂眼……\\n好像没有什么恶意？\\p等等，\\var[01]！\\n你看那块石头！",
+   "bytes": 57,
+   "raw": "12163d1055108c047c05770ec4b0b0fe04e90e1e09530f7e0bee094c03960f323dfb030f030f3bfd013cfe09d907c209bd08000beb0d1f3cff",
+   "referenced_by": [
+    {
+     "script": "0x087B44DF",
+     "at": "0x087B4550",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B4A5C": {
+   "addr": "0x087B4A5C",
+   "text": "呜呜……",
+   "bytes": 7,
+   "raw": "0d9e0d9eb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x087B44DF",
+     "at": "0x087B4530",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087B58D9": {
+   "addr": "0x087B58D9",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级暴鲤龙的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a10166086508cd030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x087B584E",
+     "at": "0x087B5895",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x087B5908": {
+   "addr": "0x087B5908",
+   "text": "暴鲤龙的力量被削弱了，\\n趁现在制服它吧！",
+   "bytes": 38,
+   "raw": "0166086508cd030b0879089201780e240b75089e3bfe02450e030fe61097040a0c9f01283cff",
+   "referenced_by": [
+    {
+     "script": "0x087B584E",
+     "at": "0x087B5884",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x087BCD5C": {
+   "addr": "0x087BCD5C",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级黑鲁加的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a1050908e405be030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x087BCD07",
+     "at": "0x087BCD40",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x087BD2D8": {
+   "addr": "0x087BD2D8",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级风铃铃的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a103ea08b808b8030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x087BD289",
+     "at": "0x087BD2C2",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x08EC50E2": {
+   "addr": "0x08EC50E2",
+   "text": "警告！你所确认的\\n个体即将失控超级进化！\\p是否要应对\\n失控超级进化的个体？",
+   "bytes": 69,
+   "raw": "075f04503c09d90c9c0b370b4f030bfe04600ce6059f05f40be307e6022e05a1074a053c3cfb0c0c03f40ef10f540379fe0be307e6022e05a1074a053c030b04600ce63dff",
+   "referenced_by": [
+    {
+     "script": "0x09CD47BB",
+     "at": "0x09CD47E5",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD484A",
+     "at": "0x09CD4874",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD48D9",
+     "at": "0x09CD4903",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD4968",
+     "at": "0x09CD4992",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD49F7",
+     "at": "0x09CD4A21",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD4A86",
+     "at": "0x09CD4AB0",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD4B15",
+     "at": "0x09CD4B3F",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD4BA4",
+     "at": "0x09CD4BCE",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08ED534D": {
+   "addr": "0x08ED534D",
+   "text": "精灵齿轮检测到周围的\\n超级能浓度正在极速上升！",
+   "bytes": 45,
+   "raw": "075b08bc025f091005d70206030410ad0d6d030bfe022e05a109d20a05036d10700fe605960c7c0bad0bdb3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CD47BB",
+     "at": "0x09CD47C9",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD484A",
+     "at": "0x09CD4858",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD48D9",
+     "at": "0x09CD48E7",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD4968",
+     "at": "0x09CD4976",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD49F7",
+     "at": "0x09CD4A05",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD4A86",
+     "at": "0x09CD4A94",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD4B15",
+     "at": "0x09CD4B23",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CD4BA4",
+     "at": "0x09CD4BB2",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EDEBD4": {
+   "addr": "0x08EDEBD4",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将呆壳兽超级进化的波动\\n储存在了超级石中。",
+   "bytes": 49,
+   "raw": "fc0106fc0309fd0105f402d407d50c23022e05a1074a053c030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x08EDE95F",
+     "at": "0x08EDE98F",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x08EDEC07": {
+   "addr": "0x08EDEC07",
+   "text": "尾巴上的大舌贝\\n似乎闪耀着光芒……",
+   "bytes": 32,
+   "raw": "0d78012c0bad030b02d30bbe0171fe0c6905240b9f0ef210f404aa093ab0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08EDE95F",
+     "at": "0x08EDE978",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EED098": {
+   "addr": "0x08EED098",
+   "text": "大食花冷静了下来。\\n似乎回到了喇叭芽之塔……\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 73,
+   "raw": "02d30bef053508590762089e0de6082937fe0c69052405650304089e082301270ea8107f0ca1b0b0fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x08EECE69",
+     "at": "0x08EECEA9",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x08EED0EE": {
+   "addr": "0x08EED0EE",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级大食花的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a102d30bef0535030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x08EECE69",
+     "at": "0x08EECEB3",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9EFCC": {
+   "addr": "0x09D9EFCC",
+   "text": "平息了失控超级进化的\\n大嘴娃。\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 61,
+   "raw": "0a780dc6089e0be307e6022e05a1074a053c030bfe02d311240d4637fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD47FB",
+     "at": "0x09CD4835",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9F009": {
+   "addr": "0x09D9F009",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级大嘴娃的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a102d311240d46030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD47FB",
+     "at": "0x09CD483F",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9F036": {
+   "addr": "0x09D9F036",
+   "text": "平息了失控超级进化的\\n头巾混混。\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 63,
+   "raw": "0a780dc6089e0be307e6022e05a1074a053c030bfe0d1f073f0579057937fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD488A",
+     "at": "0x09CD48C4",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9F075": {
+   "addr": "0x09D9F075",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级头巾混混的波动\\n储存在了超级石中。",
+   "bytes": 47,
+   "raw": "fc0106fc0309fd0105f4022e05a10d1f073f05790579030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD488A",
+     "at": "0x09CD48CE",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9F0A4": {
+   "addr": "0x09D9F0A4",
+   "text": "平息了失控超级进化的\\n麻麻鳗鱼王。\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 65,
+   "raw": "0a780dc6089e0be307e6022e05a1074a053c030bfe092309231e080f910d5d37fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4919",
+     "at": "0x09CD4953",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9F0E5": {
+   "addr": "0x09D9F0E5",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级麻麻鳗鱼王的波动\\n储存在了超级石中。",
+   "bytes": 49,
+   "raw": "fc0106fc0309fd0105f4022e05a1092309231e080f910d5d030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4919",
+     "at": "0x09CD495D",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9F116": {
+   "addr": "0x09D9F116",
+   "text": "平息了失控超级进化的\\n大针蜂。\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 61,
+   "raw": "0a780dc6089e0be307e6022e05a1074a053c030bfe02d3105e03e737fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD49A8",
+     "at": "0x09CD49E2",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9F153": {
+   "addr": "0x09D9F153",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级大针蜂的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a102d3105e03e7030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD49A8",
+     "at": "0x09CD49EC",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9F180": {
+   "addr": "0x09D9F180",
+   "text": "平息了失控超级进化的\\n水晶灯火灵。\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 65,
+   "raw": "0a780dc6089e0be307e6022e05a1074a053c030bfe0c510757030d057d08bc37fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4A37",
+     "at": "0x09CD4A71",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9F1C1": {
+   "addr": "0x09D9F1C1",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级水晶灯火灵的波动\\n储存在了超级石中。",
+   "bytes": 49,
+   "raw": "fc0106fc0309fd0105f4022e05a10c510757030d057d08bc030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4A37",
+     "at": "0x09CD4A7B",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9F1F2": {
+   "addr": "0x09D9F1F2",
+   "text": "平息了失控超级进化的\\n冰鬼护。\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 61,
+   "raw": "0a780dc6089e0be307e6022e05a1074a053c030bfe01b604b5053137fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4AC6",
+     "at": "0x09CD4B00",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9F22F": {
+   "addr": "0x09D9F22F",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级冰鬼护的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a101b604b50531030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4AC6",
+     "at": "0x09CD4B0A",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9F25C": {
+   "addr": "0x09D9F25C",
+   "text": "平息了失控超级进化的\\n阿勃梭鲁。\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 63,
+   "raw": "0a780dc6089e0be307e6022e05a1074a053c030bfe010101c50c9608e437fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4B55",
+     "at": "0x09CD4B8F",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9F29B": {
+   "addr": "0x09D9F29B",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级阿勃梭鲁的波动\\n储存在了超级石中。",
+   "bytes": 47,
+   "raw": "fc0106fc0309fd0105f4022e05a1010101c50c9608e4030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4B55",
+     "at": "0x09CD4B99",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9F2CA": {
+   "addr": "0x09D9F2CA",
+   "text": "平息了失控超级进化的\\n火焰鸡。\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 61,
+   "raw": "0a780dc6089e0be307e6022e05a1074a053c030bfe057d0ecf059137fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4BE4",
+     "at": "0x09CD4C1E",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9F307": {
+   "addr": "0x09D9F307",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级火焰鸡的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a1057d0ecf0591030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4BE4",
+     "at": "0x09CD4C28",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9F334": {
+   "addr": "0x09D9F334",
+   "text": "平息了失控超级进化的\\n暴雪王。\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 61,
+   "raw": "0a780dc6089e0be307e6022e05a1074a053c030bfe01660e920d5d37fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4C73",
+     "at": "0x09CD4CAD",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9F371": {
+   "addr": "0x09D9F371",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级暴雪王的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a101660e920d5d030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4C73",
+     "at": "0x09CD4CB7",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9F39E": {
+   "addr": "0x09D9F39E",
+   "text": "平息了失控超级进化的\\n波士可多拉。\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 65,
+   "raw": "0a780dc6089e0be307e6022e05a1074a053c030bfe01c30c0407d70385082237fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4D02",
+     "at": "0x09CD4D3C",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9F3DF": {
+   "addr": "0x09D9F3DF",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级波士可多拉的波动\\n储存在了超级石中。",
+   "bytes": 49,
+   "raw": "fc0106fc0309fd0105f4022e05a101c30c0407d703850822030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4D02",
+     "at": "0x09CD4D46",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9F410": {
+   "addr": "0x09D9F410",
+   "text": "平息了失控超级进化的\\n巨沼怪。\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 61,
+   "raw": "0a780dc6089e0be307e6022e05a1074a053c030bfe078e1046049e37fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4D91",
+     "at": "0x09CD4DCB",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9F44D": {
+   "addr": "0x09D9F44D",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级巨沼怪的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a1078e1046049e030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4D91",
+     "at": "0x09CD4DD5",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9F47A": {
+   "addr": "0x09D9F47A",
+   "text": "平息了失控超级进化的\\n恰雷姆。\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 61,
+   "raw": "0a780dc6089e0be307e6022e05a1074a053c030bfe0aba084c09ad37fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4E20",
+     "at": "0x09CD4E5A",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9F4B7": {
+   "addr": "0x09D9F4B7",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级恰雷姆的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a10aba084c09ad030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4E20",
+     "at": "0x09CD4E64",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9F4E4": {
+   "addr": "0x09D9F4E4",
+   "text": "平息了失控超级进化的\\n蜥蜴王。\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 61,
+   "raw": "0a780dc6089e0be307e6022e05a1074a053c030bfe1c581c5d0d5d37fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4EAF",
+     "at": "0x09CD4EE9",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9F521": {
+   "addr": "0x09D9F521",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级蜥蜴王的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a11c581c5d0d5d030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4EAF",
+     "at": "0x09CD4EF3",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9F54E": {
+   "addr": "0x09D9F54E",
+   "text": "平息了失控超级进化的\\n巨牙鲨。\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 61,
+   "raw": "0a780dc6089e0be307e6022e05a1074a053c030bfe078e0ea91de037fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4F3E",
+     "at": "0x09CD4F78",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9F58B": {
+   "addr": "0x09D9F58B",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级巨牙鲨的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a1078e0ea91de0030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4F3E",
+     "at": "0x09CD4F82",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9F5B8": {
+   "addr": "0x09D9F5B8",
+   "text": "平息了失控超级进化的\\n赫拉克罗斯。\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 65,
+   "raw": "0a780dc6089e0be307e6022e05a1074a053c030bfe0504082207d909180c5c37fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4FCD",
+     "at": "0x09CD5007",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9F5F9": {
+   "addr": "0x09D9F5F9",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级赫拉克罗斯的波动\\n储存在了超级石中。",
+   "bytes": 49,
+   "raw": "fc0106fc0309fd0105f4022e05a10504082207d909180c5c030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD4FCD",
+     "at": "0x09CD5011",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09D9F62A": {
+   "addr": "0x09D9F62A",
+   "text": "平息了失控超级进化的\\n班基拉斯。\\p它身上似乎还有什么\\n残留的气息……",
+   "bytes": 63,
+   "raw": "0a780dc6089e0be307e6022e05a1074a053c030bfe013f058608220c5c37fb0c9f0bcb0bad0c69052405460f7e0bee094cfe01eb08c7030b0ab30dc6b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD505C",
+     "at": "0x09CD5096",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09D9F669": {
+   "addr": "0x09D9F669",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级班基拉斯的波动\\n储存在了超级石中。",
+   "bytes": 47,
+   "raw": "fc0106fc0309fd0105f4022e05a1013f058608220c5c030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CD505C",
+     "at": "0x09CD50A0",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09DAD30B": {
+   "addr": "0x09DAD30B",
+   "text": "\\var[01]！抱歉，\\n我来迟了！\\p天空中散布的异样电波，\\n干扰了鸟宝可梦的飞行。\\p降落稍微花了点时间。",
+   "bytes": 83,
+   "raw": "fd013c01640ad13bfe0d980829025b089e3cfb0ced07e310a10b8001d7030b0f3c0ee2032e01c33bfe04330b45089e09e7016307d70966030b03cc0e5b37fb0707091e0bb20d680535089e032a0bed05cf37ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDCFE7",
+     "at": "0x09CDD037",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCFEE",
+     "at": "0x09CDD037",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD35E": {
+   "addr": "0x09DAD35E",
+   "text": "它要过来了！\\n我们一起上！",
+   "bytes": 24,
+   "raw": "0c9f0ef104c50829089e3cfe0d98095f0f0b0aab0bad3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CDCFE7",
+     "at": "0x09CDD0A2",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCFEE",
+     "at": "0x09CDD0A2",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD376": {
+   "addr": "0x09DAD376",
+   "text": "将与阿速共同作战，\\n请选择参战的宝可梦。",
+   "bytes": 38,
+   "raw": "05f40f9901010c7c047a0d14112f10303bfe0b0d0e8a100601e91030030b016307d7096637ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDCFE7",
+     "at": "0x09CDD0C1",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCFEE",
+     "at": "0x09CDD0C1",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD0BE",
+     "at": "0x09CDD0C1",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD39C": {
+   "addr": "0x09DAD39C",
+   "text": "长耳兔似乎平静了一些……",
+   "bytes": 23,
+   "raw": "0226039f0d2b0c6905240a780762089e0f0b0e34b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDD0F2",
+     "at": "0x09CDD122",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCFE7",
+     "at": "0x09CDD122",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCFEE",
+     "at": "0x09CDD122",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD0BE",
+     "at": "0x09CDD122",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD3B3": {
+   "addr": "0x09DAD3B3",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级长耳兔的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a10226039f0d2b030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDD0F2",
+     "at": "0x09CDD12F",
+     "cmd": "preparemsg"
+    },
+    {
+     "script": "0x09CDCFE7",
+     "at": "0x09CDD12F",
+     "cmd": "preparemsg"
+    },
+    {
+     "script": "0x09CDCFEE",
+     "at": "0x09CDD12F",
+     "cmd": "preparemsg"
+    },
+    {
+     "script": "0x09CDD0BE",
+     "at": "0x09CDD12F",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09DAD40B": {
+   "addr": "0x09DAD40B",
+   "text": "呼……总算压制住\\n它的行动了。\\p\\var[01]，你的宝可梦\\n都累了吧？\\l快用这个恢复一下体力！",
+   "bytes": 73,
+   "raw": "0523b0b011140c860ea2109710d0fe0c9f030b0e5b0354089e37fbfd013b09d9030b016307d70966fe03610850089e01283dfa08030f71105504600563041e0f0b0de60ce608793cff",
+   "referenced_by": [
+    {
+     "script": "0x09CDD0F2",
+     "at": "0x09CDD152",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCFE7",
+     "at": "0x09CDD152",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCFEE",
+     "at": "0x09CDD152",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD0BE",
+     "at": "0x09CDD152",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD454": {
+   "addr": "0x09DAD454",
+   "text": "这只长耳兔交给我，\\n我会和大比鸟在天空中，\\l一直盯着它的！\\p你快向广播塔去！\\p去击碎那些玷污天空，\\n伤害宝可梦的混蛋们，\\l粉碎他们的野心！",
+   "bytes": 126,
+   "raw": "1055108c0226039f0d2b070d04620d983bfe0d98056e04f302d3018509e70fe60ced07e310a13bfa0f0b1082034710f40c9f030b3cfb09d908030e1f04ab01c00ca10b253cfb0b2505840c8c09bd0e3417310da10ced07e33bfe0ba904cc016307d70966030b057902ee095f3bfa03de0c8c0c9e095f030b0f000e4f3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CDD0F2",
+     "at": "0x09CDD181",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCFE7",
+     "at": "0x09CDD181",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCFEE",
+     "at": "0x09CDD181",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD0BE",
+     "at": "0x09CDD181",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD4D9": {
+   "addr": "0x09DAD4D9",
+   "text": "那、那个……请等一下！\\p……太好了，赶上了。\\n\\var[01]……你没事吧？\\p之前在浅葱市的灯塔\\n你和大家为了光儿，为了我，\\l那么勇敢地对抗火箭队……\\p那、那份恩情，我一直记在心里！\\p所以……这次轮到我来保护你了！",
+   "bytes": 173,
+   "raw": "09bd3a09bd0460b0b00b0d030f0f0b0de63cfbb0b00cac04e9089e3b04390bad089e37fefd01b0b009d909530c0701283dfb107f0ac90fe60acc02b00c15030b030d0ca1fe09d904f302d305bd0d70089e04aa039e3b0d70089e0d983bfa09bd094c0f70043c031f037907c7057d05e80378b0b0fb09bd3a09bd03e0039c0b0b3b0d980f0b108205b20fe60e4f08643cfb0c9c0f24b0b0105502ae091003040d9808290160053109d9089e3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CDCAF4",
+     "at": "0x09CDCB41",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCAFB",
+     "at": "0x09CDCB41",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD586": {
+   "addr": "0x09DAD586",
+   "text": "钢……钢属性是……\\n非常坚硬的！\\l绝对不会让它伤害到你！",
+   "bytes": 49,
+   "raw": "0440b0b004400c390e5f0c0cb0b0fe03ca022505cc0f60030b3cfa07a8037901d6056e0b430c9f0ba904cc030409d93cff",
+   "referenced_by": [
+    {
+     "script": "0x09CDCAF4",
+     "at": "0x09CDCBAC",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCAFB",
+     "at": "0x09CDCBAC",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD5B7": {
+   "addr": "0x09DAD5B7",
+   "text": "将与蜜柑共同作战，\\n请选择参战的宝可梦。",
+   "bytes": 38,
+   "raw": "05f40f9909730436047a0d14112f10303bfe0b0d0e8a100601e91030030b016307d7096637ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDCAF4",
+     "at": "0x09CDCBCB",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCAFB",
+     "at": "0x09CDCBCB",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCBC8",
+     "at": "0x09CDCBCB",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD5DD": {
+   "addr": "0x09DAD5DD",
+   "text": "太好了，它暂时安静下来了。",
+   "bytes": 25,
+   "raw": "0cac04e9089e3b0c9f0fe90bed011107620de60829089e37ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDCBFC",
+     "at": "0x09CDCC2C",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCAF4",
+     "at": "0x09CDCC2C",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCAFB",
+     "at": "0x09CDCC2C",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCBC8",
+     "at": "0x09CDCC2C",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD5F6": {
+   "addr": "0x09DAD5F6",
+   "text": "那个，\\var[01]……\\n请让宝可梦们稍微休息一下吧。",
+   "bytes": 38,
+   "raw": "09bd04603bfd01b0b0fe0b0d0b43016307d70966095f0bb20d680e680dc60f0b0de6012837ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDCBFC",
+     "at": "0x09CDCC5C",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCAF4",
+     "at": "0x09CDCC5C",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCAFB",
+     "at": "0x09CDCC5C",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCBC8",
+     "at": "0x09CDCC5C",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD61C": {
+   "addr": "0x09DAD61C",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将化石翼龙超级进化的波动\\n储存在了超级石中。",
+   "bytes": 51,
+   "raw": "fc0106fc0309fd0105f4053c0beb0f3d08cd022e05a1074a053c030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDCBFC",
+     "at": "0x09CDCC39",
+     "cmd": "preparemsg"
+    },
+    {
+     "script": "0x09CDCAF4",
+     "at": "0x09CDCC39",
+     "cmd": "preparemsg"
+    },
+    {
+     "script": "0x09CDCAFB",
+     "at": "0x09CDCC39",
+     "cmd": "preparemsg"
+    },
+    {
+     "script": "0x09CDCBC8",
+     "at": "0x09CDCC39",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09DAD64F": {
+   "addr": "0x09DAD64F",
+   "text": "请继续前进吧，\\var[01]。\\p这只化石翼龙……\\n就由我和大钢蛇来拦住！\\l请一定要小心……",
+   "bytes": 69,
+   "raw": "0b0d05b70e830ac9074a01283bfd0137fb1055108c053c0beb0f3d08cdb0b0fe077d0f770d9804f302d304400bbd0829082e10d03cfa0b0d0f0b034d0ef10e2c0e4fb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDCBFC",
+     "at": "0x09CDCC8B",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCAF4",
+     "at": "0x09CDCC8B",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCAFB",
+     "at": "0x09CDCC8B",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCBC8",
+     "at": "0x09CDCC8B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD694": {
+   "addr": "0x09DAD694",
+   "text": "别怕，\\var[01]！\\p说到昆虫宝可梦的知识，\\n我绝不会输给任何人！\\p即使面对因超级进化而暴走的\\n虫属性宝可梦……\\p我也一定能找到办法，\\n让它冷静下来！\\p让它见识一下，\\n我们的厉害吧！",
+   "bytes": 155,
+   "raw": "01ad0a1f3bfd013cfb0c580304081a0268016307d70966030b107b0bf23bfe0d9807a801d6056e0c2904620b4e04f40b4b3cfb059f0bf5097e03790f42022e05a1074a053c039d01661117030bfe02680c390e5f016307d70966b0b0fb0d980f020f0b034d09d210450304014b03ab3bfe0b430c9f085907620de608293cfb0b430c9f05e60bf20f0b0de63bfe0d98095f030b086c04cc01283cff",
+   "referenced_by": [
+    {
+     "script": "0x09CDCD88",
+     "at": "0x09CDCDD5",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCD8F",
+     "at": "0x09CDCDD5",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD72F": {
+   "addr": "0x09DAD72F",
+   "text": "将与阿笔共同作战，\\n请选择参战的宝可梦。",
+   "bytes": 38,
+   "raw": "05f40f9901010187047a0d14112f10303bfe0b0d0e8a100601e91030030b016307d7096637ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDCD88",
+     "at": "0x09CDCE3B",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCD8F",
+     "at": "0x09CDCE3B",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCE38",
+     "at": "0x09CDCE3B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD755": {
+   "addr": "0x09DAD755",
+   "text": "凯罗斯似乎平静了一些……",
+   "bytes": 23,
+   "raw": "07bb09180c5c0c6905240a780762089e0f0b0e34b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDCE6C",
+     "at": "0x09CDCE9C",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCD88",
+     "at": "0x09CDCE9C",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCD8F",
+     "at": "0x09CDCE9C",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCE38",
+     "at": "0x09CDCE9C",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD76C": {
+   "addr": "0x09DAD76C",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级凯罗斯的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a107bb09180c5c030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDCE6C",
+     "at": "0x09CDCEA9",
+     "cmd": "preparemsg"
+    },
+    {
+     "script": "0x09CDCD88",
+     "at": "0x09CDCEA9",
+     "cmd": "preparemsg"
+    },
+    {
+     "script": "0x09CDCD8F",
+     "at": "0x09CDCEA9",
+     "cmd": "preparemsg"
+    },
+    {
+     "script": "0x09CDCE38",
+     "at": "0x09CDCEA9",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09DAD799": {
+   "addr": "0x09DAD799",
+   "text": "哇，比想象中还要难对付呢。\\p不过，它作为虫属性的\\n极限研究对象，真是再好不过！\\p……不对，\\n现在不是搞研究的时候！\\p你快去广播塔，\\n一定要阻止火箭队！\\p\\var[01]，不要停下脚步！\\p宝可梦的体力，\\n我来帮你恢复。",
+   "bytes": 179,
+   "raw": "0d433b01850e180e2010a105460ef109c70379042009ce37fb01d604c53b0c9f112f0d7002680c390e5f030bfe05960e0b0eb9076f03790e203b10590c0c0fe504e901d604c53cfbb0b001d603793bfe0e030fe601d60c0c044d0eb9076f030b0bed05213cfb09d908030b2504ab01c00ca13bfe0f0b034d0ef11120108a057d05e803783cfbfd013b01d60ef10d0b0de6071701d83cfb016307d70966030b0ce608793bfe0d980829014e09d90563041e37ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDCE6C",
+     "at": "0x09CDCECC",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCD88",
+     "at": "0x09CDCECC",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCD8F",
+     "at": "0x09CDCECC",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCE38",
+     "at": "0x09CDCECC",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD890": {
+   "addr": "0x09DAD890",
+   "text": "这只凯罗斯就交给我来安抚！\\p快去吧，\\n去斩断这一切的源头！",
+   "bytes": 54,
+   "raw": "1055108c07bb09180c5c077d070d04620d980829011104113cfb08030b2501283bfe0b251029037410550f0b0ae9030b0fc00d1f3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CDCE6C",
+     "at": "0x09CDCEFB",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCD88",
+     "at": "0x09CDCEFB",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCD8F",
+     "at": "0x09CDCEFB",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDCE38",
+     "at": "0x09CDCEFB",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD8CD": {
+   "addr": "0x09DAD8CD",
+   "text": "\\var[01]！\\n看来你也被这些失控的\\l宝可梦绊住了脚步。\\p拥有极高智商的胡地，\\n一旦因为超级进化而暴走，\\l它的精神力将是极其危险的武器。",
+   "bytes": 117,
+   "raw": "fd013cfe07c2082909d90f02017810550e340be307e6030bfa016307d70966014c10d0089e071701d837fb0f630f7e0596044910980baa030b0529031f3bfe0f0b02e70f420d70022e05a1074a053c039d016611173bfa0c9f030b075b0bcf087905f40c0c05960a9f0d690e02030b0daa0ab237ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDD83E",
+     "at": "0x09CDD88B",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD845",
+     "at": "0x09CDD88B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD942": {
+   "addr": "0x09DAD942",
+   "text": "我们上，\\var[01]！",
+   "bytes": 11,
+   "raw": "0d98095f0bad3bfd013cff",
+   "referenced_by": [
+    {
+     "script": "0x09CDD83E",
+     "at": "0x09CDD8F6",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD845",
+     "at": "0x09CDD8F6",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD94D": {
+   "addr": "0x09DAD94D",
+   "text": "将与松叶共同作战，\\n请选择参战的宝可梦。",
+   "bytes": 38,
+   "raw": "05f40f990c6c0f06047a0d14112f10303bfe0b0d0e8a100601e91030030b016307d7096637ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDD83E",
+     "at": "0x09CDD915",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD845",
+     "at": "0x09CDD915",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD912",
+     "at": "0x09CDD915",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD973": {
+   "addr": "0x09DAD973",
+   "text": "胡地似乎平静了一些……",
+   "bytes": 21,
+   "raw": "0529031f0c6905240a780762089e0f0b0e34b0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDD946",
+     "at": "0x09CDD976",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD83E",
+     "at": "0x09CDD976",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD845",
+     "at": "0x09CDD976",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD912",
+     "at": "0x09CDD976",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD988": {
+   "addr": "0x09DAD988",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级胡地的波动\\n储存在了超级石中。",
+   "bytes": 43,
+   "raw": "fc0106fc0309fd0105f4022e05a10529031f030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CDD946",
+     "at": "0x09CDD983",
+     "cmd": "preparemsg"
+    },
+    {
+     "script": "0x09CDD83E",
+     "at": "0x09CDD983",
+     "cmd": "preparemsg"
+    },
+    {
+     "script": "0x09CDD845",
+     "at": "0x09CDD983",
+     "cmd": "preparemsg"
+    },
+    {
+     "script": "0x09CDD912",
+     "at": "0x09CDD983",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09DAD9B3": {
+   "addr": "0x09DAD9B3",
+   "text": "我来帮你\\n处理宝可梦的伤势吧！",
+   "bytes": 29,
+   "raw": "0d980829014e09d9fe02860862016307d70966030b0ba90c0b01283cff",
+   "referenced_by": [
+    {
+     "script": "0x09CDD946",
+     "at": "0x09CDD9A6",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD83E",
+     "at": "0x09CDD9A6",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD845",
+     "at": "0x09CDD9A6",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD912",
+     "at": "0x09CDD9A6",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DAD9D0": {
+   "addr": "0x09DAD9D0",
+   "text": "\\var[01]，听我说……\\n之前在缘朱市的图书馆，\\p我们推测银色之羽遗落在\\n某座古老的塔上。\\p我查阅了更多的古籍，\\n终于明白了……\\p如今的满金广播塔，\\n在改建之前正是一座\\l历史悠久的木造古塔！",
+   "bytes": 163,
+   "raw": "fd013b0d070d980c58b0b0fe107f0ac90fe60fc110bd0c15030b0d240c2e04a53bfb0d98095f0d2e02060f480b89107f0f9e0f15091e0fe6fe09a91131048d0844030b0ca10bad37fb0d98020d0fd0089e04660385030b048d05993bfe10a60f88098f0136089eb0b0fb0b670743030b0934074204ab01c00ca13bfe0fe6042e05f1107f0ac910700c0c0f0b1131fa086f0bf30f740773030b09b41001048d0ca13cff",
+   "referenced_by": [
+    {
+     "script": "0x09CDD946",
+     "at": "0x09CDD9D5",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD83E",
+     "at": "0x09CDD9D5",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD845",
+     "at": "0x09CDD9D5",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD912",
+     "at": "0x09CDD9D5",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DADA73": {
+   "addr": "0x09DADA73",
+   "text": "也就是说……\\n阿波罗占领广播塔，\\l根本不是为了控制电台节目！\\p他真正的目的，\\n是藏在这里的……银色之羽！\\p集齐海声铃铛碎片和银色之羽，\\n他们就能……\\p总之，这只胡地交给我。\\n\\var[01]！快进去！\\p赶在阿波罗得到银色之羽前，\\n粉碎他们的野心！",
+   "bytes": 206,
+   "raw": "0f02077d0c0c0c58b0b0fe010101c30918102f08bf04ab01c00ca13bfa0463017b01d60c0c0d70089e07e61097032e0ca9072c09b53cfb0c9e10591070030b09b5030b3bfe0c0c01f30fe610550864030bb0b00f480b89107f0f9e3cfb059a0aa604c90bd708b819e20c8c0a6704f30f480b89107f0f9e3bfe0c9e095f077d09d2b0b0fb1114107f3b1055108c0529031f070d04620d9837fefd013c0803074a0b253cfb04390fe6010101c30918030a03040f480b89107f0f9e0ac93bfe03de0c8c0c9e095f030b0f000e4f3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CDD946",
+     "at": "0x09CDDA09",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD83E",
+     "at": "0x09CDDA09",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD845",
+     "at": "0x09CDDA09",
+     "cmd": "loadpointer"
+    },
+    {
+     "script": "0x09CDD912",
+     "at": "0x09CDDA09",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DB29E5": {
+   "addr": "0x09DB29E5",
+   "text": "小碎钻\\n骄傲地挺起了胸膛，\\p勾魂眼则像个\\n小跟班一样讨好地望着它。",
+   "bytes": 62,
+   "raw": "0e2c0c8c1122fe07100120031f0d0e0aab089e0e630cc63bfb047c05770ec410070e1e0460fe0e2c0464013f0f0b0ee20cd704e9031f0d6310f40c9f37ff",
+   "referenced_by": [
+    {
+     "script": "0x09CE0627",
+     "at": "0x09CE076B",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DB2A23": {
+   "addr": "0x09DB2A23",
+   "text": "原来如此……太惊人了！\\p这只勾魂眼\\n根本不是想吃小碎钻，\\p而是因为它超级进化以后，\\n胸口的宝石膨胀起来，\\l只靠自己根本弄不干净……\\p所以才一路追赶小碎钻……\\p是想利用小碎钻\\n身上极其坚硬的钻石，\\l来帮它抛光这颗宝石啊！！\\p勾魂眼那副天生吓人的笑脸，\\n再加上图鉴里可怕的天敌传说……\\l难怪小碎钻会被吓得一路逃跑。\\p这简直是\\n宝可梦世界里最大的乌龙！\\p呼，虽然是个误会。\\n但如果不是你打破僵局，\\p它们俩恐怕\\n永远无法理解彼此吧。",
+   "bytes": 385,
+   "raw": "0fb908290b6702abb0b00cac075a0b4b089e3cfb1055108c047c05770ec4fe0463017b01d60c0c0e1802560e2c0c8c11223bfb039d0c0c0f420d700c9f022e05a1074a053c0f2405223bfe0e6307e8030b01630beb0a4f10400aab08293bfa108c07cd110c05a50463017b0a0701d60433076bb0b0fb0c9c0f2401e00f0b08e810e604390e2c0c8c1122b0b0fb0c0c0e1808700f710e2c0c8c1122fe0bcb0bad05960a9f05cc0f60030b11220beb3bfa0829014e0c9f0a3404aa105507d301630beb01003c3cfb047c05770ec409bd041b0ced0bd80de90b4b030b0e3108863bfe0fe505be0bad0d2405e3086407d70a1f030b0ced0317028b0c58b0b0fa09c7049e0e2c0c8c1122056e01780de9030a0f0b08e80cd40a3937fb105505dd10820c0cfe016307d709660c0507390864112602d3030b0da008cd3cfb05233b0c870b3b0c0c04600db9056e37fe02e90b6704c301d60c0c09d902d20a8105f207863bfb0c9f095f087c07e40a1ffe0f6e0fc20da403ab08620734018802ab012837ff",
+   "referenced_by": [
+    {
+     "script": "0x09CE0627",
+     "at": "0x09CE077D",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DB2BA4": {
+   "addr": "0x09DB2BA4",
+   "text": "勾魂眼好像有东西要给你！",
+   "bytes": 24,
+   "raw": "047c05770ec404e90e1e0f7e03500dbd0ef1046209d93cff",
+   "referenced_by": [
+    {
+     "script": "0x09CE0627",
+     "at": "0x09CE0799",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DB2BBC": {
+   "addr": "0x09DB2BBC",
+   "text": "\\ctrl[01 06]\\ctrl[03 09]\\var[01]将超级勾魂眼的波动\\n储存在了超级石中。",
+   "bytes": 45,
+   "raw": "fc0106fc0309fd0105f4022e05a1047c05770ec4030b01c30354fe028202c60fe6089e022e05a10beb10a137ff",
+   "referenced_by": [
+    {
+     "script": "0x09CE0627",
+     "at": "0x09CE07A3",
+     "cmd": "preparemsg"
+    }
+   ]
+  },
+  "0x09DB2BE9": {
+   "addr": "0x09DB2BE9",
+   "text": "天敌竟然\\n变成了抛光师和雇主……\\p宝可梦的生态，真是比\\n书本上写的要有趣一万倍啊！\\l我要赶紧把这个课题写成论文！",
+   "bytes": 104,
+   "raw": "0ced031707690b3bfe01a1024b089e0a3404aa0be204f3049510c8b0b0fb016307d70966030b0bd80cad3b10590c0c0185fe0c2e017b0bad0e3f030b0ef10f7e0b240f0b0d5a017301003cfa0d980ef10439074601301055046007dc0ce30e3f024b09150d8a3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CE07B2",
+     "at": "0x09CE07B4",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DB2CE8": {
+   "addr": "0x09DB2CE8",
+   "text": "呜呜……",
+   "bytes": 7,
+   "raw": "0d9e0d9eb0b0ff",
+   "referenced_by": [
+    {
+     "script": "0x09CE0627",
+     "at": "0x09CE0678",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DB2CEF": {
+   "addr": "0x09DB2CEF",
+   "text": "诶？这只勾魂眼……\\n好像没有什么恶意？\\p等等，\\var[01]！\\n你看那块石头！",
+   "bytes": 57,
+   "raw": "12163d1055108c047c05770ec4b0b0fe04e90e1e09530f7e0bee094c03960f323dfb030f030f3bfd013cfe09d907c209bd08000beb0d1f3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CE0627",
+     "at": "0x09CE0698",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DB2D28": {
+   "addr": "0x09DB2D28",
+   "text": "看见勾魂眼抱着的宝石，\\n小碎钻突然明白了什么。",
+   "bytes": 44,
+   "raw": "07c205e6047c05770ec4016410f4030b01630beb3bfe0e2c0c8c11220d230b3b098f0136089e0bee094c37ff",
+   "referenced_by": [
+    {
+     "script": "0x09CE0627",
+     "at": "0x09CE06BA",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DB2D54": {
+   "addr": "0x09DB2D54",
+   "text": "小碎钻：钻！",
+   "bytes": 11,
+   "raw": "0e2c0c8c11223e11223cff",
+   "referenced_by": [
+    {
+     "script": "0x09CE0627",
+     "at": "0x09CE06E6",
+     "cmd": "loadpointer"
+    }
+   ]
+  },
+  "0x09DB2DDB": {
+   "addr": "0x09DB2DDB",
+   "text": "桀！！",
+   "bytes": 5,
+   "raw": "17953c3cff",
+   "referenced_by": [
+    {
+     "script": "0x09CE0627",
+     "at": "0x09CE0758",
+     "cmd": "loadpointer"
+    }
+   ]
+  }
+ }
+}

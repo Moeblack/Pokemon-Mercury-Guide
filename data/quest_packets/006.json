@@ -1,0 +1,136 @@
+{
+ "title": "无法冻结的时间",
+ "quest_id": 6,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3af74",
+    "title": "无法冻结的时间",
+    "title_address": "0x8e3b824",
+    "description": "和柳伯一起去冰天地\n看看无法融化的冰壁。",
+    "description_address": "0x8e3b7fd",
+    "unknown_u16": 469,
+    "unknown_u16_hex": "0x01D5",
+    "accept_flag": 3305,
+    "accept_flag_hex": "0x0CE9",
+    "complete_flag": 3307,
+    "complete_flag_hex": "0x0CEB",
+    "map_group": 55,
+    "map_num": 13,
+    "tail_hex": "02 01 00 00",
+    "index": 6,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3b7fd",
+    "legacy_match_count": 0,
+    "current_description": "和柳伯一起去冰天地\n看看无法融化的冰壁。",
+    "catalog_map": {
+     "id": "55:13",
+     "name": "擂钵山"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x087B346E"
+   ],
+   "event_roots": [],
+   "scripts": [
+    {
+     "script": "0x087B346E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B346E",
+       "command": "setflag",
+       "args": [
+        3306
+       ]
+      },
+      {
+       "at": "0x087B3471",
+       "command": "checkflag",
+       "args": [
+        3305
+       ],
+       "task_flag_labels": [
+        {
+         "title": "无法冻结的时间",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x087B3474",
+       "command": "goto_if",
+       "args": [
+        1,
+        142292092
+       ],
+       "targets": [
+        "0x087B347C"
+       ]
+      },
+      {
+       "at": "0x087B347A",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x087B347C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B347C",
+       "command": "checkflag",
+       "args": [
+        3308
+       ]
+      },
+      {
+       "at": "0x087B347F",
+       "command": "goto_if",
+       "args": [
+        1,
+        142292106
+       ],
+       "targets": [
+        "0x087B348A"
+       ]
+      },
+      {
+       "at": "0x087B3485",
+       "command": "clearflag",
+       "args": [
+        3306
+       ]
+      },
+      {
+       "at": "0x087B3488",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x087B348A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B348A",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

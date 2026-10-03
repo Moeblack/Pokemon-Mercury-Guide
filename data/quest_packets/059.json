@@ -1,0 +1,51 @@
+{
+ "title": "五彩斑斓的头巾",
+ "quest_id": 59,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b398",
+    "title": "五彩斑斓的头巾",
+    "title_address": "0x8e3bc73",
+    "description": "我正在收集五种颜色的头巾！\n感兴趣的可以前往\n华丽大赛会场找我，哦呵呵呵！",
+    "description_address": "0x8e3bc54",
+    "unknown_u16": 11741,
+    "unknown_u16_hex": "0x2DDD",
+    "accept_flag": 2962,
+    "accept_flag_hex": "0x0B92",
+    "complete_flag": 2963,
+    "complete_flag_hex": "0x0B93",
+    "map_group": 35,
+    "map_num": 4,
+    "tail_hex": "03 01 00 00",
+    "index": 59,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39624",
+      "title": "五彩斑斓的头巾",
+      "description_address": "0x8e39911",
+      "description": "我正在收集五种颜色的头巾！\\n感兴趣的可以前往\\n华丽大赛会场找我，哦呵呵呵！"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39911",
+    "legacy_match_count": 1,
+    "current_description": "帮助梅丽莎\n收集五种颜色的头巾。",
+    "catalog_map": {
+     "id": "35:4",
+     "name": "满金市"
+    }
+   },
+   "direct_flag_scripts": [],
+   "event_roots": [],
+   "scripts": [],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

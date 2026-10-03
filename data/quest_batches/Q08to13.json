@@ -1,0 +1,24 @@
+{
+ "batch": "Q08to13",
+ "quests": [8, 9, 10, 11, 12, 13],
+ "items": [
+  {"id": 8, "title": "山顶的秘密", "status": "compiled", "file": "data/quests/008.json", "page": "quests/008.md"},
+  {"id": 9, "title": "冻土上的捉迷藏", "status": "compiled", "file": "data/quests/009.json", "page": "quests/009.md"},
+  {"id": 10, "title": "纯白的魅影", "status": "compiled", "file": "data/quests/010.json", "page": "quests/010.md"},
+  {"id": 11, "title": "在未知的土地上", "status": "compiled", "file": "data/quests/011.json", "page": "quests/011.md"},
+  {"id": 12, "title": "来自未来的回响", "status": "compiled", "file": "data/quests/012.json", "page": "quests/012.md"},
+  {"id": 13, "title": "少女的烦恼", "status": "partial", "file": "data/quests/013.json", "page": "quests/013.md",
+   "partial_reason": "不变之石(item 195)的具体获取来源未在包内给出；items获取页仅有三个script_item_candidate候选(10号公路21:0/0x0816FC65，寂静之丘1:106/0x08EC516E，若叶镇43:6/0x08F5193C)，均不保证运行时可获得，故交付前的关键步骤地点未确定。"}
+ ],
+ "completed": [8, 9, 10, 11, 12],
+ "partial": [
+  {"id": 13, "reason": "不变之石获取来源未定位（仅三个script_item_candidate候选，不保证可达）"}
+ ],
+ "notes": [
+  "008–012 是擂钵山/纯白冻土的连续剧情链：007『水与火的修罗场』(3021/3022) 收尾时自动接取 008(3023/3024，山顶坐标事件) → 传送到 52:23 触发 009(3025/3026) → 找到两只隐藏宝可梦(3034/3035)后出现 010 的索罗亚克(1245,Lv30,3027/3028) → 同段演出衔接 011 拉苯博士(3029/3030) → 送回 42:0 由地图脚本0x09CD0C22推进 012(3031/3032)。009 与 010、011 与 012 分别共用完成场景，完成旗标成对设置。",
+  "012 的奖励在 0x09CD0C22 发放：精灵球模具(747)×1、森之羊羹(53)×5、护符金币(189)×1、20000$、15 BracerPoints；009/010/011 均无奖励指令。",
+  "010 的 52:24(16,116) 对象在找到 3034/3035 后才会出现（0x09CD10B3 同时检查两旗标后 clearflag 3045）。",
+  "012 的收尾脚本 0x09CD0C22 属 42:0 的 map_script 表，包内未标明其具体触发槽位，已记入 open_questions，不影响可执行步骤。",
+  "本次未做全局检索、未运行验收/格式化。"
+ ]
+}

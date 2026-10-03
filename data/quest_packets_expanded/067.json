@@ -1,0 +1,1385 @@
+{
+ "title": "消失的正辉",
+ "quest_id": 67,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b438",
+    "title": "消失的正辉",
+    "title_address": "0x8e3b760",
+    "description": "帮助正辉的妹妹\n寻找消失的正辉。",
+    "description_address": "0x8e3b741",
+    "unknown_u16": 69,
+    "unknown_u16_hex": "0x0045",
+    "accept_flag": 5186,
+    "accept_flag_hex": "0x1442",
+    "complete_flag": 5188,
+    "complete_flag_hex": "0x1444",
+    "map_group": 50,
+    "map_num": 31,
+    "tail_hex": "02 01 00 00",
+    "index": 67,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3b741",
+    "legacy_match_count": 0,
+    "current_description": "帮助正辉的妹妹\n寻找消失的正辉。",
+    "catalog_map": {
+     "id": "50:31",
+     "name": "满金市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x087B98AE",
+    "0x087B98C6",
+    "0x087B9BBD",
+    "0x087B9E0E",
+    "0x09CD9383",
+    "0x09CD9396"
+   ],
+   "event_roots": [
+    {
+     "script": "0x087B9867",
+     "map_id": "50:31",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 18,
+     "y": 5,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g50_n031.md"
+    },
+    {
+     "script": "0x087B98C6",
+     "map_id": "3:99",
+     "place": "43号道路",
+     "kind": "人物",
+     "local_id": 7,
+     "event_index": 6,
+     "x": 35,
+     "y": 47,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n099.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x087B3262",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B3262",
+       "command": "setvar",
+       "args": [
+        32772,
+        88
+       ],
+       "possible_names_not_semantics": {
+        "species": "臭泥",
+        "item": "护具",
+        "move": "落石"
+       }
+      },
+      {
+       "at": "0x087B3267",
+       "command": "callasm",
+       "args": [
+        144090817
+       ]
+      },
+      {
+       "at": "0x087B326C",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B98C6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B9867",
+     "event_roots": [
+      {
+       "map_id": "50:31",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 18,
+       "y": 5,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n031.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x087B9867",
+       "command": "checkflag",
+       "args": [
+        5395
+       ]
+      },
+      {
+       "at": "0x087B986A",
+       "command": "goto_if",
+       "args": [
+        1,
+        142317686
+       ],
+       "targets": [
+        "0x087B9876"
+       ]
+      },
+      {
+       "at": "0x087B9870",
+       "command": "goto",
+       "args": [
+        144668419
+       ],
+       "targets": [
+        "0x089F7703"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "50:31/local2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B9876",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B9876",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x087B9877",
+       "command": "checkflag",
+       "args": [
+        5184
+       ]
+      },
+      {
+       "at": "0x087B987A",
+       "command": "goto_if",
+       "args": [
+        1,
+        142318525
+       ],
+       "targets": [
+        "0x087B9BBD"
+       ]
+      },
+      {
+       "at": "0x087B9880",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142319675
+       ],
+       "texts": [
+        {
+         "address": "0x087BA03B",
+         "text": "嘿，[玩家/变量]！\n要把我哥哥帅气的\n电话号码告诉你么？"
+        }
+       ]
+      },
+      {
+       "at": "0x087B9886",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B9888",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B988D",
+       "command": "goto_if",
+       "args": [
+        1,
+        142319592
+       ],
+       "targets": [
+        "0x087B9FE8"
+       ]
+      },
+      {
+       "at": "0x087B9893",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x087B9894",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B9867"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B9896",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B9896",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142318247
+       ],
+       "texts": [
+        {
+         "address": "0x087B9AA7",
+         "text": "自从那天\n被我们拆穿之后，\n哥哥就再也不好意思\n去花店转悠了。\n他一整天都把\n自己关在电脑前，\n假装和蓝莓学院的人\n开跨地区会议。\n结果他之前找借口\n买回来的那些盆栽，\n现在全都要\n靠我来浇水照顾……\n唉，这个笨蛋哥哥！\n比起研究那种\n能变成宝可梦的高科技，\n他明明更需要研究一下\n怎么和女孩子搭话吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B989C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B989E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B9BBD"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B98AE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B98AE",
+       "command": "setflag",
+       "args": [
+        5189
+       ]
+      },
+      {
+       "at": "0x087B98B1",
+       "command": "setflag",
+       "args": [
+        2901
+       ]
+      },
+      {
+       "at": "0x087B98B4",
+       "command": "checkflag",
+       "args": [
+        5188
+       ],
+       "task_flag_labels": [
+        {
+         "title": "消失的正辉",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x087B98B7",
+       "command": "call_if",
+       "args": [
+        1,
+        142317759
+       ],
+       "targets": [
+        "0x087B98BF"
+       ]
+      },
+      {
+       "at": "0x087B98BD",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B989F"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B98BF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B98BF",
+       "command": "clearflag",
+       "args": [
+        5189
+       ]
+      },
+      {
+       "at": "0x087B98C2",
+       "command": "clearflag",
+       "args": [
+        2901
+       ]
+      },
+      {
+       "at": "0x087B98C5",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B98AE"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B98C6",
+     "event_roots": [
+      {
+       "map_id": "3:99",
+       "place": "43号道路",
+       "kind": "人物",
+       "local_id": 7,
+       "event_index": 6,
+       "x": 35,
+       "y": 47,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n099.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x087B98C6",
+       "command": "checkflag",
+       "args": [
+        5186
+       ],
+       "task_flag_labels": [
+        {
+         "title": "消失的正辉",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x087B98C9",
+       "command": "goto_if",
+       "args": [
+        1,
+        142317781
+       ],
+       "targets": [
+        "0x087B98D5"
+       ]
+      },
+      {
+       "at": "0x087B98CF",
+       "command": "goto",
+       "args": [
+        142291554
+       ],
+       "targets": [
+        "0x087B3262"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "3:99/local7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B98D5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B98D5",
+       "command": "checkflag",
+       "args": [
+        5187
+       ]
+      },
+      {
+       "at": "0x087B98D8",
+       "command": "goto_if",
+       "args": [
+        1,
+        142291554
+       ],
+       "targets": [
+        "0x087B3262"
+       ]
+      },
+      {
+       "at": "0x087B98DE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142319772
+       ],
+       "texts": [
+        {
+         "address": "0x087BA09C",
+         "text": "嘿嘿嘿，[玩家/变量]！\n你也是来听我讲\n正辉先生的八卦的吗？\n什么？\n正辉先生失踪了？！\n而且连他妹妹\n都不知道去哪了？！\n哼哼，不要慌！\n作为正辉先生的头号粉丝，\n我可是掌握着独家内幕情报的！\n听好了……\n正辉先生其实一直偷偷\n暗恋着满金花店店长的女儿！\n如果他不在家，肯定又是红着脸\n偷偷跑到花店附近转悠去了！\n快回满金市把这个\n秘密告诉他妹妹吧！\n这可是只有\n我才知道的情报哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x087B98E4",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B98E6",
+       "command": "setflag",
+       "args": [
+        5187
+       ]
+      },
+      {
+       "at": "0x087B98E9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142317816
+       ],
+       "texts": [
+        {
+         "address": "0x087B98F8",
+         "text": "正辉可能去\n满金市的花店了吗？\n把这个情报\n告诉正辉的妹妹吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B98EF",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x087B98F1",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B98F4",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B98C6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B9BBD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B9BBD",
+       "command": "checkflag",
+       "args": [
+        5188
+       ],
+       "task_flag_labels": [
+        {
+         "title": "消失的正辉",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x087B9BC0",
+       "command": "goto_if",
+       "args": [
+        1,
+        142317718
+       ],
+       "targets": [
+        "0x087B9896"
+       ]
+      },
+      {
+       "at": "0x087B9BC6",
+       "command": "checkflag",
+       "args": [
+        5187
+       ]
+      },
+      {
+       "at": "0x087B9BC9",
+       "command": "goto_if",
+       "args": [
+        1,
+        142318630
+       ],
+       "targets": [
+        "0x087B9C26"
+       ]
+      },
+      {
+       "at": "0x087B9BCF",
+       "command": "checkflag",
+       "args": [
+        5186
+       ],
+       "task_flag_labels": [
+        {
+         "title": "消失的正辉",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x087B9BD2",
+       "command": "goto_if",
+       "args": [
+        1,
+        142318941
+       ],
+       "targets": [
+        "0x087B9D5D"
+       ]
+      },
+      {
+       "at": "0x087B9BD8",
+       "command": "checkflag",
+       "args": [
+        5185
+       ]
+      },
+      {
+       "at": "0x087B9BDB",
+       "command": "goto_if",
+       "args": [
+        1,
+        142318951
+       ],
+       "targets": [
+        "0x087B9D67"
+       ]
+      },
+      {
+       "at": "0x087B9BE1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142319618
+       ],
+       "texts": [
+        {
+         "address": "0x087BA002",
+         "text": "打电话给哥哥的话，\n他会告诉你存放宝可梦的\n箱子的情况哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x087B9BE7",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B9BE9",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B9876"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B9C26",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B9C26",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142318697
+       ]
+      },
+      {
+       "at": "0x087B9C2C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B9C2E",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x087B9C31",
+       "command": "applymovement",
+       "args": [
+        2,
+        142318694
+       ]
+      },
+      {
+       "at": "0x087B9C38",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x087B9C3B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142318740
+       ],
+       "texts": [
+        {
+         "address": "0x087B9C94",
+         "text": "什么？小诚说，\n哥哥暗恋花店店长的女儿？！\n……仔细想想，哥哥最近\n确实经常买一堆\n奇怪的盆栽回家。\n原来是这么回事啊……\n[玩家/变量]，你能陪我\n一起去花店找找哥哥吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x087B9C41",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B9C43",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B9C48",
+       "command": "goto_if",
+       "args": [
+        1,
+        142318680
+       ],
+       "targets": [
+        "0x087B9C58"
+       ]
+      },
+      {
+       "at": "0x087B9C4E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142318888
+       ],
+       "texts": [
+        {
+         "address": "0x087B9D28",
+         "text": "你是不是还有\n其他急事要处理？\n那我在这里再等一下吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x087B9C54",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B9C56",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B9BBD"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B9C58",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B9C58",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x087B9C59",
+       "command": "warpmuted",
+       "args": [
+        52,
+        38,
+        255,
+        6,
+        10
+       ]
+      },
+      {
+       "at": "0x087B9C61",
+       "command": "pause",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x087B9C64",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B9C26"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B9D5D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B9D5D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142319174
+       ],
+       "texts": [
+        {
+         "address": "0x087B9E46",
+         "text": "太感谢了！\n那么，你问完43号道路的\n怪兽狂小诚之后，再来找我吧！\n我就在家里等你！拜托了！"
+        }
+       ]
+      },
+      {
+       "at": "0x087B9D63",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B9D65",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B9BBD"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B9D67",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B9D67",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142319285
+       ],
+       "texts": [
+        {
+         "address": "0x087B9EB5",
+         "text": "啊，[玩家/变量]！\n你总算来了！\n是这样的，哥哥他最近一直在\n捣鼓什么不得了的新发明……\n刚才我只是出门\n去买他最喜欢的树果汁，\n结果一回来，\n他人就不见了！\n碰巧妈妈现在也不在家……\n如果他是跑去\n野外找宝可梦的话，\n43号道路那个\n叫小诚的怪兽狂，\n平时对哥哥的\n行踪最了解了！\n[玩家/变量]，你能帮我去问问\n43号道路的怪兽狂小诚，\n寻找一下哥哥的线索吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x087B9D6D",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B9D6F",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B9D74",
+       "command": "goto_if",
+       "args": [
+        1,
+        142319118
+       ],
+       "targets": [
+        "0x087B9E0E"
+       ]
+      },
+      {
+       "at": "0x087B9D7A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142318980
+       ],
+       "texts": [
+        {
+         "address": "0x087B9D84",
+         "text": "诶……\n怎么这样……\n你是不是还有\n其他急事要处理？\n那我在这里再等一下吧。\n如果你忙完了，\n请一定要帮帮我！\n哥哥他平时笨手笨脚的，\n我真的很担心他……"
+        }
+       ]
+      },
+      {
+       "at": "0x087B9D80",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B9D82",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B9BBD"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B9E0E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B9E0E",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x087B9E0F",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B9E12",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B9E15",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142319258
+       ],
+       "texts": [
+        {
+         "address": "0x087B9E9A",
+         "text": "接受任务:<消失的正辉>"
+        }
+       ]
+      },
+      {
+       "at": "0x087B9E1B",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B9E20",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087B9E25",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x087B9E2A",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x087B9E2F",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x087B9E34",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142319174
+       ],
+       "texts": [
+        {
+         "address": "0x087B9E46",
+         "text": "太感谢了！\n那么，你问完43号道路的\n怪兽狂小诚之后，再来找我吧！\n我就在家里等你！拜托了！"
+        }
+       ]
+      },
+      {
+       "at": "0x087B9E3A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087B9E3C",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x087B9E41",
+       "command": "setflag",
+       "args": [
+        5186
+       ],
+       "task_flag_labels": [
+        {
+         "title": "消失的正辉",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x087B9E44",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B9D67"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B9FE8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B9FE8",
+       "command": "fanfare",
+       "args": [
+        317
+       ]
+      },
+      {
+       "at": "0x087B9FEB",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x087B9FEE",
+       "command": "preparemsg",
+       "args": [
+        142319728
+       ],
+       "texts": [
+        {
+         "address": "0x087BA070",
+         "text": "[玩家/变量]把正辉的电话号码\n登陆到了精灵齿轮！"
+        }
+       ]
+      },
+      {
+       "at": "0x087B9FF3",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x087B9FF4",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x087B9FF5",
+       "command": "setflag",
+       "args": [
+        5184
+       ]
+      },
+      {
+       "at": "0x087B9FF8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        142319618
+       ],
+       "texts": [
+        {
+         "address": "0x087BA002",
+         "text": "打电话给哥哥的话，\n他会告诉你存放宝可梦的\n箱子的情况哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x087B9FFE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087BA000",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B9876"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F7703",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F7703",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144668613
+       ],
+       "texts": [
+        {
+         "address": "0x089F77C5",
+         "text": "用电脑存放宝可梦\n的系统是我哥哥做的哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x089F7709",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089F770B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B9867"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD9383",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD9383",
+       "command": "addvar",
+       "args": [
+        20789,
+        25
+       ]
+      },
+      {
+       "at": "0x09CD9388",
+       "command": "addmoney",
+       "args": [
+        10000,
+        0
+       ]
+      },
+      {
+       "at": "0x09CD938E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165321317
+       ],
+       "texts": [
+        {
+         "address": "0x09DA9A65",
+         "text": "获得了25点BracerPoints和10000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD9394",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD9396",
+       "command": "setflag",
+       "args": [
+        5188
+       ],
+       "task_flag_labels": [
+        {
+         "title": "消失的正辉",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD9399",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CD939E",
+       "command": "warpmuted",
+       "args": [
+        50,
+        31,
+        255,
+        12,
+        5
+       ]
+      },
+      {
+       "at": "0x09CD93A6",
+       "command": "pause",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x09CD93A9",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD9283"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD9396",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD9396",
+       "command": "setflag",
+       "args": [
+        5188
+       ],
+       "task_flag_labels": [
+        {
+         "title": "消失的正辉",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD9399",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CD939E",
+       "command": "warpmuted",
+       "args": [
+        50,
+        31,
+        255,
+        12,
+        5
+       ]
+      },
+      {
+       "at": "0x09CD93A6",
+       "command": "pause",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x09CD93A9",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD9283"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

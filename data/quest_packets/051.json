@@ -1,0 +1,3640 @@
+{
+ "title": "聂梓的签名",
+ "quest_id": 51,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b2f8",
+    "title": "聂梓的签名",
+    "title_address": "0x8e3c643",
+    "description": "听说著名的创作歌手聂梓来到了\n满金市！我好想要他的签名.\n有人能来酒吧附近帮帮我吗？",
+    "description_address": "0x8e3c607",
+    "unknown_u16": 89,
+    "unknown_u16_hex": "0x0059",
+    "accept_flag": 5985,
+    "accept_flag_hex": "0x1761",
+    "complete_flag": 5987,
+    "complete_flag_hex": "0x1763",
+    "map_group": 3,
+    "map_num": 77,
+    "tail_hex": "06 00 00 00",
+    "index": 51,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe395c4",
+      "title": "聂梓的签名",
+      "description_address": "0x8e3a5d2",
+      "description": "听说著名的创作歌手聂梓来到了\\n满金市！我好想要他的签名.\\n有人能来酒吧附近帮帮我吗？"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a5d2",
+    "legacy_match_count": 1,
+    "current_description": "帮助满金市的追星女孩\n得到伽勒尔地区知名\n创作歌手聂梓的签名。",
+    "catalog_map": {
+     "id": "3:77",
+     "name": "满金市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AEE3BA",
+    "0x08AEE3F5",
+    "0x08AEE429",
+    "0x08AEE445",
+    "0x08AEE58C",
+    "0x08ED57FD"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F56A95",
+     "map_id": "3:77",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 49,
+     "event_index": 42,
+     "x": 39,
+     "y": 37,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n077.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08AB6704",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB6704",
+       "command": "clearflag",
+       "args": [
+        5758
+       ]
+      },
+      {
+       "at": "0x08AB6707",
+       "command": "applymovement",
+       "args": [
+        8,
+        145454759
+       ]
+      },
+      {
+       "at": "0x08AB670E",
+       "command": "waitmovement",
+       "args": [
+        8
+       ]
+      },
+      {
+       "at": "0x08AB6711",
+       "command": "setflag",
+       "args": [
+        5759
+       ]
+      },
+      {
+       "at": "0x08AB6714",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AB6717",
+       "command": "sound",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08AB671A",
+       "command": "removeobject",
+       "args": [
+        8
+       ]
+      },
+      {
+       "at": "0x08AB671D",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AB6720",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AB6725",
+       "command": "goto_if",
+       "args": [
+        1,
+        145451033
+       ],
+       "targets": [
+        "0x08AB6819"
+       ]
+      },
+      {
+       "at": "0x08AB672B",
+       "command": "setvar",
+       "args": [
+        20884,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AB6730",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08AB6733",
+       "command": "applymovement",
+       "args": [
+        127,
+        145454767
+       ]
+      },
+      {
+       "at": "0x08AB673A",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08AB673D",
+       "command": "goto",
+       "args": [
+        145500948
+       ],
+       "targets": [
+        "0x08AC2B14"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AB6819",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB6819",
+       "command": "goto",
+       "args": [
+        145679183
+       ],
+       "targets": [
+        "0x08AEE34F"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AB6C8A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB6C8A",
+       "command": "setvar",
+       "args": [
+        20884,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AB6C8F",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08AB6C92",
+       "command": "applymovement",
+       "args": [
+        127,
+        145454767
+       ]
+      },
+      {
+       "at": "0x08AB6C99",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08AB6C9C",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08AB6C9F",
+       "command": "applymovement",
+       "args": [
+        255,
+        145454771
+       ]
+      },
+      {
+       "at": "0x08AB6CA6",
+       "command": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08AB6CA9",
+       "command": "checkflag",
+       "args": [
+        5754
+       ]
+      },
+      {
+       "at": "0x08AB6CAC",
+       "command": "goto_if",
+       "args": [
+        1,
+        145452653
+       ],
+       "targets": [
+        "0x08AB6E6D"
+       ]
+      },
+      {
+       "at": "0x08AB6CB2",
+       "command": "checkflag",
+       "args": [
+        5755
+       ]
+      },
+      {
+       "at": "0x08AB6CB5",
+       "command": "goto_if",
+       "args": [
+        1,
+        145453440
+       ],
+       "targets": [
+        "0x08AB7180"
+       ]
+      },
+      {
+       "at": "0x08AB6CBB",
+       "command": "checkflag",
+       "args": [
+        5756
+       ]
+      },
+      {
+       "at": "0x08AB6CBE",
+       "command": "goto_if",
+       "args": [
+        1,
+        145453515
+       ],
+       "targets": [
+        "0x08AB71CB"
+       ]
+      },
+      {
+       "at": "0x08AB6CC4",
+       "command": "checkflag",
+       "args": [
+        5757
+       ]
+      },
+      {
+       "at": "0x08AB6CC7",
+       "command": "goto_if",
+       "args": [
+        1,
+        145454371
+       ],
+       "targets": [
+        "0x08AB7523"
+       ]
+      },
+      {
+       "at": "0x08AB6CCD",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AB6DFC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB6DFC",
+       "command": "checkflag",
+       "args": [
+        5754
+       ]
+      },
+      {
+       "at": "0x08AB6DFF",
+       "command": "goto_if",
+       "args": [
+        1,
+        145452578
+       ],
+       "targets": [
+        "0x08AB6E22"
+       ]
+      },
+      {
+       "at": "0x08AB6E05",
+       "command": "checkflag",
+       "args": [
+        5755
+       ]
+      },
+      {
+       "at": "0x08AB6E08",
+       "command": "goto_if",
+       "args": [
+        1,
+        145454471
+       ],
+       "targets": [
+        "0x08AB7587"
+       ]
+      },
+      {
+       "at": "0x08AB6E0E",
+       "command": "checkflag",
+       "args": [
+        5756
+       ]
+      },
+      {
+       "at": "0x08AB6E11",
+       "command": "goto_if",
+       "args": [
+        1,
+        145454546
+       ],
+       "targets": [
+        "0x08AB75D2"
+       ]
+      },
+      {
+       "at": "0x08AB6E17",
+       "command": "checkflag",
+       "args": [
+        5757
+       ]
+      },
+      {
+       "at": "0x08AB6E1A",
+       "command": "goto_if",
+       "args": [
+        1,
+        145454621
+       ],
+       "targets": [
+        "0x08AB761D"
+       ]
+      },
+      {
+       "at": "0x08AB6E20",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AB6E22",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB6E22",
+       "command": "showmoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB6E26",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145496540
+       ]
+      },
+      {
+       "at": "0x08AB6E2C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB6E2E",
+       "command": "clearflag",
+       "args": [
+        2352
+       ]
+      },
+      {
+       "at": "0x08AB6E31",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08AB6E34",
+       "command": "removemoney",
+       "args": [
+        10000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB6E3A",
+       "command": "updatemoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB6E3E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145454728
+       ],
+       "texts": [
+        {
+         "address": "0x08AB7688",
+         "text": "你输了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB6E44",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB6E46",
+       "command": "hidemoney",
+       "args": [
+        20,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB6E49",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AB6E4A",
+       "command": "special",
+       "args": [
+        40
+       ]
+      },
+      {
+       "at": "0x08AB6E4D",
+       "command": "goto",
+       "args": [
+        145498038
+       ],
+       "targets": [
+        "0x08AC1FB6"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AB6E6D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB6E6D",
+       "command": "showmoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB6E71",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145496540
+       ]
+      },
+      {
+       "at": "0x08AB6E77",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB6E79",
+       "command": "clearflag",
+       "args": [
+        2352
+       ]
+      },
+      {
+       "at": "0x08AB6E7C",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08AB6E7F",
+       "command": "addmoney",
+       "args": [
+        10000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB6E85",
+       "command": "updatemoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB6E89",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145454446
+       ],
+       "texts": [
+        {
+         "address": "0x08AB756E",
+         "text": "你赢了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB6E8F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB6E91",
+       "command": "hidemoney",
+       "args": [
+        20,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB6E94",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AB6E95",
+       "command": "special",
+       "args": [
+        40
+       ]
+      },
+      {
+       "at": "0x08AB6E98",
+       "command": "goto",
+       "args": [
+        145498038
+       ],
+       "targets": [
+        "0x08AC1FB6"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AB7180",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB7180",
+       "command": "showmoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB7184",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145496540
+       ]
+      },
+      {
+       "at": "0x08AB718A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB718C",
+       "command": "clearflag",
+       "args": [
+        2352
+       ]
+      },
+      {
+       "at": "0x08AB718F",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08AB7192",
+       "command": "addmoney",
+       "args": [
+        30000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB7198",
+       "command": "updatemoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB719C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145454446
+       ],
+       "texts": [
+        {
+         "address": "0x08AB756E",
+         "text": "你赢了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB71A2",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB71A4",
+       "command": "hidemoney",
+       "args": [
+        20,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB71A7",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AB71A8",
+       "command": "special",
+       "args": [
+        40
+       ]
+      },
+      {
+       "at": "0x08AB71AB",
+       "command": "goto",
+       "args": [
+        145498038
+       ],
+       "targets": [
+        "0x08AC1FB6"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AB71CB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB71CB",
+       "command": "showmoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB71CF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145496540
+       ]
+      },
+      {
+       "at": "0x08AB71D5",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB71D7",
+       "command": "clearflag",
+       "args": [
+        2352
+       ]
+      },
+      {
+       "at": "0x08AB71DA",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08AB71DD",
+       "command": "addmoney",
+       "args": [
+        50000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB71E3",
+       "command": "updatemoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB71E7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145454446
+       ],
+       "texts": [
+        {
+         "address": "0x08AB756E",
+         "text": "你赢了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB71ED",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB71EF",
+       "command": "hidemoney",
+       "args": [
+        20,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB71F2",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AB71F3",
+       "command": "special",
+       "args": [
+        40
+       ]
+      },
+      {
+       "at": "0x08AB71F6",
+       "command": "goto",
+       "args": [
+        145498038
+       ],
+       "targets": [
+        "0x08AC1FB6"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AB7523",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB7523",
+       "command": "showmoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB7527",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145496540
+       ]
+      },
+      {
+       "at": "0x08AB752D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB752F",
+       "command": "clearflag",
+       "args": [
+        2352
+       ]
+      },
+      {
+       "at": "0x08AB7532",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08AB7535",
+       "command": "addmoney",
+       "args": [
+        100000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB753B",
+       "command": "updatemoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB753F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145454446
+       ],
+       "texts": [
+        {
+         "address": "0x08AB756E",
+         "text": "你赢了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB7545",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB7547",
+       "command": "hidemoney",
+       "args": [
+        20,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB754A",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AB754B",
+       "command": "special",
+       "args": [
+        40
+       ]
+      },
+      {
+       "at": "0x08AB754E",
+       "command": "goto",
+       "args": [
+        145498038
+       ],
+       "targets": [
+        "0x08AC1FB6"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AB7587",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB7587",
+       "command": "showmoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB758B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145496540
+       ]
+      },
+      {
+       "at": "0x08AB7591",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB7593",
+       "command": "clearflag",
+       "args": [
+        2352
+       ]
+      },
+      {
+       "at": "0x08AB7596",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08AB7599",
+       "command": "removemoney",
+       "args": [
+        30000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB759F",
+       "command": "updatemoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB75A3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145454728
+       ],
+       "texts": [
+        {
+         "address": "0x08AB7688",
+         "text": "你输了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB75A9",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB75AB",
+       "command": "hidemoney",
+       "args": [
+        20,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB75AE",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AB75AF",
+       "command": "special",
+       "args": [
+        40
+       ]
+      },
+      {
+       "at": "0x08AB75B2",
+       "command": "goto",
+       "args": [
+        145498038
+       ],
+       "targets": [
+        "0x08AC1FB6"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AB75D2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB75D2",
+       "command": "showmoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB75D6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145496540
+       ]
+      },
+      {
+       "at": "0x08AB75DC",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB75DE",
+       "command": "clearflag",
+       "args": [
+        2352
+       ]
+      },
+      {
+       "at": "0x08AB75E1",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08AB75E4",
+       "command": "removemoney",
+       "args": [
+        50000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB75EA",
+       "command": "updatemoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB75EE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145454728
+       ],
+       "texts": [
+        {
+         "address": "0x08AB7688",
+         "text": "你输了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB75F4",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB75F6",
+       "command": "hidemoney",
+       "args": [
+        20,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB75F9",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AB75FA",
+       "command": "special",
+       "args": [
+        40
+       ]
+      },
+      {
+       "at": "0x08AB75FD",
+       "command": "goto",
+       "args": [
+        145498038
+       ],
+       "targets": [
+        "0x08AC1FB6"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AB761D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AB761D",
+       "command": "showmoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB7621",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145496540
+       ]
+      },
+      {
+       "at": "0x08AB7627",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB7629",
+       "command": "clearflag",
+       "args": [
+        2352
+       ]
+      },
+      {
+       "at": "0x08AB762C",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x08AB762F",
+       "command": "removemoney",
+       "args": [
+        100000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB7635",
+       "command": "updatemoney",
+       "args": [
+        20,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB7639",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145454728
+       ],
+       "texts": [
+        {
+         "address": "0x08AB7688",
+         "text": "你输了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AB763F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AB7641",
+       "command": "hidemoney",
+       "args": [
+        20,
+        0
+       ]
+      },
+      {
+       "at": "0x08AB7644",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AB7645",
+       "command": "special",
+       "args": [
+        40
+       ]
+      },
+      {
+       "at": "0x08AB7648",
+       "command": "goto",
+       "args": [
+        145498038
+       ],
+       "targets": [
+        "0x08AC1FB6"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AC19E9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC19E9",
+       "command": "applymovement",
+       "args": [
+        8,
+        145425617
+       ]
+      },
+      {
+       "at": "0x08AC19F0",
+       "command": "waitmovement",
+       "args": [
+        8
+       ]
+      },
+      {
+       "at": "0x08AC19F3",
+       "command": "setvar",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AC19F8",
+       "command": "setvar",
+       "args": [
+        32769,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AC19FD",
+       "command": "special",
+       "args": [
+        83
+       ]
+      },
+      {
+       "at": "0x08AC1A00",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AC1A02",
+       "command": "setflag",
+       "args": [
+        5758
+       ]
+      },
+      {
+       "at": "0x08AC1A05",
+       "command": "trainerbattle0",
+       "args": [
+        9,
+        921,
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AC1A13",
+       "command": "goto",
+       "args": [
+        145450756
+       ],
+       "targets": [
+        "0x08AB6704"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AC1FB6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC1FB6",
+       "command": "applymovement",
+       "args": [
+        3,
+        145454456
+       ]
+      },
+      {
+       "at": "0x08AC1FBD",
+       "command": "applymovement",
+       "args": [
+        4,
+        145454459
+       ]
+      },
+      {
+       "at": "0x08AC1FC4",
+       "command": "applymovement",
+       "args": [
+        7,
+        145454462
+       ]
+      },
+      {
+       "at": "0x08AC1FCB",
+       "command": "applymovement",
+       "args": [
+        6,
+        145454465
+       ]
+      },
+      {
+       "at": "0x08AC1FD2",
+       "command": "applymovement",
+       "args": [
+        10,
+        145454468
+       ]
+      },
+      {
+       "at": "0x08AC1FD9",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AC2B14",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AC2B14",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08AC2B17",
+       "command": "applymovement",
+       "args": [
+        255,
+        145454771
+       ]
+      },
+      {
+       "at": "0x08AC2B1E",
+       "command": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08AC2B21",
+       "command": "goto",
+       "args": [
+        145452540
+       ],
+       "targets": [
+        "0x08AB6DFC"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEDCED",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEDCED",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AEDCF0",
+       "command": "goto_if",
+       "args": [
+        1,
+        145679290
+       ],
+       "targets": [
+        "0x08AEE3BA"
+       ]
+      },
+      {
+       "at": "0x08AEDCF6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145680076
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE6CC",
+         "text": "聂梓大人\n真的来城都地区了吗…？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEDCFC",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEDCFE",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE34F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE34F",
+       "command": "addvar",
+       "args": [
+        20884,
+        1
+       ]
+      },
+      {
+       "at": "0x08AEE354",
+       "command": "checkflag",
+       "args": [
+        5544
+       ]
+      },
+      {
+       "at": "0x08AEE357",
+       "command": "goto_if",
+       "args": [
+        0,
+        145679533
+       ],
+       "targets": [
+        "0x08AEE4AD"
+       ]
+      },
+      {
+       "at": "0x08AEE35D",
+       "command": "comparevartovalue",
+       "args": [
+        20884,
+        5
+       ],
+       "possible_names_not_semantics": {
+        "species": "火恐龙",
+        "item": "狩猎球",
+        "move": "百万吨重拳"
+       }
+      },
+      {
+       "at": "0x08AEE362",
+       "command": "goto_if",
+       "args": [
+        1,
+        145452170
+       ],
+       "targets": [
+        "0x08AB6C8A"
+       ]
+      },
+      {
+       "at": "0x08AEE368",
+       "command": "setvar",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AEE36D",
+       "command": "setvar",
+       "args": [
+        32769,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AEE372",
+       "command": "special2",
+       "args": [
+        16400,
+        82
+       ]
+      },
+      {
+       "at": "0x08AEE377",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08AEE37A",
+       "command": "applymovement",
+       "args": [
+        127,
+        145449207
+       ]
+      },
+      {
+       "at": "0x08AEE381",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08AEE384",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08AEE387",
+       "command": "clearflag",
+       "args": [
+        5759
+       ]
+      },
+      {
+       "at": "0x08AEE38A",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEE38D",
+       "command": "sound",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08AEE390",
+       "command": "addobject",
+       "args": [
+        8
+       ]
+      },
+      {
+       "at": "0x08AEE393",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEE396",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08AEE399",
+       "command": "applymovement",
+       "args": [
+        127,
+        145449210
+       ]
+      },
+      {
+       "at": "0x08AEE3A0",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08AEE3A3",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08AEE3A6",
+       "command": "goto",
+       "args": [
+        145496553
+       ],
+       "targets": [
+        "0x08AC19E9"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE3BA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE3BA",
+       "command": "checkflag",
+       "args": [
+        5985
+       ],
+       "task_flag_labels": [
+        {
+         "title": "聂梓的签名",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE3BD",
+       "command": "goto_if",
+       "args": [
+        1,
+        145679401
+       ],
+       "targets": [
+        "0x08AEE429"
+       ]
+      },
+      {
+       "at": "0x08AEE3C3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145680076
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE6CC",
+         "text": "聂梓大人\n真的来城都地区了吗…？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE3C9",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEE3CB",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEE3CE",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145680108
+       ]
+      },
+      {
+       "at": "0x08AEE3D5",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AEE3D8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145680188
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE73C",
+         "text": "是你！\n你有看见我的委托吗？\n什么？\n你该不会不知道聂梓是谁吧？\n真是的……\n聂梓大人现在可是伽勒尔地区…\n乃至全世界最知名的创作歌手！\n总之，有人声称周日的时候\n在酒吧遇见了聂梓大人……\n如果你有碰到聂梓大人的话，\n可以帮我要一张他的签名？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE3DE",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AEE3E0",
+       "command": "goto",
+       "args": [
+        150301535
+       ],
+       "targets": [
+        "0x08F56B5F"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE3F5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE3F5",
+       "command": "setflag",
+       "args": [
+        5985
+       ],
+       "task_flag_labels": [
+        {
+         "title": "聂梓的签名",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE3F8",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEE3FB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145680006
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE686",
+         "text": "接受任务:<聂梓的签名>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE401",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEE406",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEE40B",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AEE410",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AEE415",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AEE41A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145680422
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE826",
+         "text": "谢谢你啦！\n在周日去参加酒吧的活动，\n也许这样碰到聂梓大人\n的概率要大一些哦？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE420",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEE422",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AEE427",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE429",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE429",
+       "command": "checkflag",
+       "args": [
+        5987
+       ],
+       "task_flag_labels": [
+        {
+         "title": "聂梓的签名",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE42C",
+       "command": "goto_if",
+       "args": [
+        1,
+        145679861
+       ],
+       "targets": [
+        "0x08AEE5F5"
+       ]
+      },
+      {
+       "at": "0x08AEE432",
+       "command": "checkflag",
+       "args": [
+        5986
+       ]
+      },
+      {
+       "at": "0x08AEE435",
+       "command": "goto_if",
+       "args": [
+        1,
+        145679429
+       ],
+       "targets": [
+        "0x08AEE445"
+       ]
+      },
+      {
+       "at": "0x08AEE43B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145680422
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE826",
+         "text": "谢谢你啦！\n在周日去参加酒吧的活动，\n也许这样碰到聂梓大人\n的概率要大一些哦？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE441",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEE443",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE445",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE445",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AEE446",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145680509
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE87D",
+         "text": "什么！？\n你真的要到了聂梓大人的签名吗！？\n让我摸一摸………闻一闻……\n啊…！这质感……这味道……\n和我朋友在小团体里\n的描述一模一样！\n是货真价实的\n聂梓大人的签名耶！\n真的是太感谢你了！\n这只宝可梦就当谢礼送给你吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE44C",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AEE44E",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AEE451",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AEE452",
+       "command": "showpokepic",
+       "args": [
+        1140,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08AEE457",
+       "command": "preparemsg",
+       "args": [
+        145679982
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE66E",
+         "text": "[玩家/变量]获得了毒电婴！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE45C",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AEE45D",
+       "command": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x08AEE460",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08AEE461",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08AEE462",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145680111
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE6EF",
+         "text": "这是我费了好大劲，\n才从伽勒尔地区倒腾过来的\n聂梓大人的同款宝可梦！\n你懂的…！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE468",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEE46A",
+       "command": "setflag",
+       "args": [
+        5987
+       ],
+       "task_flag_labels": [
+        {
+         "title": "聂梓的签名",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE46D",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x08AEE472",
+       "command": "addmoney",
+       "args": [
+        5000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AEE478",
+       "command": "pause",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08AEE47B",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEE47E",
+       "command": "goto",
+       "args": [
+        145680763
+       ],
+       "targets": [
+        "0x08AEE97B"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE4AD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE4AD",
+       "command": "comparevartovalue",
+       "args": [
+        20884,
+        4
+       ],
+       "possible_names_not_semantics": {
+        "species": "小火龙",
+        "item": "精灵球",
+        "move": "连续拳"
+       }
+      },
+      {
+       "at": "0x08AEE4B2",
+       "command": "goto_if",
+       "args": [
+        1,
+        145679623
+       ],
+       "targets": [
+        "0x08AEE507"
+       ]
+      },
+      {
+       "at": "0x08AEE4B8",
+       "command": "comparevartovalue",
+       "args": [
+        20884,
+        5
+       ],
+       "possible_names_not_semantics": {
+        "species": "火恐龙",
+        "item": "狩猎球",
+        "move": "百万吨重拳"
+       }
+      },
+      {
+       "at": "0x08AEE4BD",
+       "command": "goto_if",
+       "args": [
+        1,
+        145452170
+       ],
+       "targets": [
+        "0x08AB6C8A"
+       ]
+      },
+      {
+       "at": "0x08AEE4C3",
+       "command": "setvar",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AEE4C8",
+       "command": "setvar",
+       "args": [
+        32769,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AEE4CD",
+       "command": "special2",
+       "args": [
+        16400,
+        82
+       ]
+      },
+      {
+       "at": "0x08AEE4D2",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08AEE4D5",
+       "command": "applymovement",
+       "args": [
+        127,
+        145449207
+       ]
+      },
+      {
+       "at": "0x08AEE4DC",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08AEE4DF",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08AEE4E2",
+       "command": "clearflag",
+       "args": [
+        5759
+       ]
+      },
+      {
+       "at": "0x08AEE4E5",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEE4E8",
+       "command": "sound",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08AEE4EB",
+       "command": "addobject",
+       "args": [
+        8
+       ]
+      },
+      {
+       "at": "0x08AEE4EE",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEE4F1",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08AEE4F4",
+       "command": "applymovement",
+       "args": [
+        127,
+        145449210
+       ]
+      },
+      {
+       "at": "0x08AEE4FB",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08AEE4FE",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08AEE501",
+       "command": "goto",
+       "args": [
+        145496553
+       ],
+       "targets": [
+        "0x08AC19E9"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE507",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE507",
+       "command": "setvar",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AEE50C",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEE511",
+       "command": "special2",
+       "args": [
+        16400,
+        82
+       ]
+      },
+      {
+       "at": "0x08AEE516",
+       "command": "comparevartovalue",
+       "args": [
+        16400,
+        130
+       ],
+       "possible_names_not_semantics": {
+        "species": "暴鲤龙",
+        "item": "梦境邮件",
+        "move": "火箭头锤"
+       }
+      },
+      {
+       "at": "0x08AEE51B",
+       "command": "goto_if",
+       "args": [
+        5,
+        145679623
+       ],
+       "targets": [
+        "0x08AEE507"
+       ]
+      },
+      {
+       "at": "0x08AEE521",
+       "command": "goto",
+       "args": [
+        145679655
+       ],
+       "targets": [
+        "0x08AEE527"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE527",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE527",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08AEE52A",
+       "command": "applymovement",
+       "args": [
+        127,
+        145449207
+       ]
+      },
+      {
+       "at": "0x08AEE531",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08AEE534",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08AEE537",
+       "command": "clearflag",
+       "args": [
+        5759
+       ]
+      },
+      {
+       "at": "0x08AEE53A",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEE53D",
+       "command": "sound",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08AEE540",
+       "command": "addobject",
+       "args": [
+        8
+       ]
+      },
+      {
+       "at": "0x08AEE543",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEE546",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08AEE549",
+       "command": "applymovement",
+       "args": [
+        127,
+        145449210
+       ]
+      },
+      {
+       "at": "0x08AEE550",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08AEE553",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08AEE556",
+       "command": "goto",
+       "args": [
+        145679708
+       ],
+       "targets": [
+        "0x08AEE55C"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE55C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE55C",
+       "command": "applymovement",
+       "args": [
+        8,
+        145425617
+       ]
+      },
+      {
+       "at": "0x08AEE563",
+       "command": "waitmovement",
+       "args": [
+        8
+       ]
+      },
+      {
+       "at": "0x08AEE566",
+       "command": "setvar",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AEE56B",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEE570",
+       "command": "special",
+       "args": [
+        83
+       ]
+      },
+      {
+       "at": "0x08AEE573",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEE575",
+       "command": "setflag",
+       "args": [
+        5758
+       ]
+      },
+      {
+       "at": "0x08AEE578",
+       "command": "goto",
+       "args": [
+        145679829
+       ],
+       "targets": [
+        "0x08AEE5D5"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE58C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE58C",
+       "command": "checkflag",
+       "args": [
+        5985
+       ],
+       "task_flag_labels": [
+        {
+         "title": "聂梓的签名",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE58F",
+       "command": "call_if",
+       "args": [
+        1,
+        145680708
+       ],
+       "targets": [
+        "0x08AEE944"
+       ]
+      },
+      {
+       "at": "0x08AEE595",
+       "command": "clearflag",
+       "args": [
+        5758
+       ]
+      },
+      {
+       "at": "0x08AEE598",
+       "command": "applymovement",
+       "args": [
+        8,
+        145454759
+       ]
+      },
+      {
+       "at": "0x08AEE59F",
+       "command": "waitmovement",
+       "args": [
+        8
+       ]
+      },
+      {
+       "at": "0x08AEE5A2",
+       "command": "setflag",
+       "args": [
+        5759
+       ]
+      },
+      {
+       "at": "0x08AEE5A5",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEE5A8",
+       "command": "sound",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08AEE5AB",
+       "command": "removeobject",
+       "args": [
+        8
+       ]
+      },
+      {
+       "at": "0x08AEE5AE",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEE5B1",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AEE5B6",
+       "command": "goto_if",
+       "args": [
+        1,
+        145451033
+       ],
+       "targets": [
+        "0x08AB6819"
+       ]
+      },
+      {
+       "at": "0x08AEE5BC",
+       "command": "setvar",
+       "args": [
+        20884,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AEE5C1",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08AEE5C4",
+       "command": "applymovement",
+       "args": [
+        127,
+        145454767
+       ]
+      },
+      {
+       "at": "0x08AEE5CB",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08AEE5CE",
+       "command": "goto",
+       "args": [
+        145500948
+       ],
+       "targets": [
+        "0x08AC2B14"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE5D5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE5D5",
+       "command": "setvar",
+       "args": [
+        20538,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AEE5DA",
+       "command": "setvar",
+       "args": [
+        20539,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AEE5DF",
+       "command": "setflag",
+       "args": [
+        2340
+       ]
+      },
+      {
+       "at": "0x08AEE5E2",
+       "command": "trainerbattle0",
+       "args": [
+        9,
+        920,
+        512,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AEE5F0",
+       "command": "goto",
+       "args": [
+        145679756
+       ],
+       "targets": [
+        "0x08AEE58C"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE5F5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE5F5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145679871
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE5FF",
+         "text": "有了聂梓大人的签名，\n我以后一定能加入呐喊队吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE5FB",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEE5FD",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE944",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE944",
+       "command": "checkflag",
+       "args": [
+        5986
+       ]
+      },
+      {
+       "at": "0x08AEE947",
+       "command": "call_if",
+       "args": [
+        0,
+        145682086
+       ],
+       "targets": [
+        "0x08AEEEA6"
+       ]
+      },
+      {
+       "at": "0x08AEE94D",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE97B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE97B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145679919
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE62F",
+         "text": "完成任务:<聂梓的签名>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE981",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEE986",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEE98B",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AEE990",
+       "command": "goto",
+       "args": [
+        145680808
+       ],
+       "targets": [
+        "0x08AEE9A8"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AEE9A8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEE9A8",
+       "command": "givepokemon",
+       "args": [
+        1140,
+        5,
+        727,
+        0,
+        0,
+        0
+       ],
+       "species_name": "毒电婴"
+      },
+      {
+       "at": "0x08AEE9B7",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AEE9BC",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AEE9C1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145679946
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE64A",
+         "text": "获得了4点BracerPoints和5000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEE9C7",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEE9C9",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AEE9CE",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AEEEA6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEEEA6",
+       "command": "setvar",
+       "args": [
+        32774,
+        109
+       ],
+       "possible_names_not_semantics": {
+        "species": "瓦斯弹",
+        "item": "星星碎片",
+        "move": "奇异之光"
+       }
+      },
+      {
+       "at": "0x08AEEEAB",
+       "command": "call",
+       "args": [
+        144461359
+       ],
+       "targets": [
+        "0x089C4E2F"
+       ]
+      },
+      {
+       "at": "0x08AEEEB0",
+       "command": "call",
+       "args": [
+        144461379
+       ],
+       "targets": [
+        "0x089C4E43"
+       ]
+      },
+      {
+       "at": "0x08AEEEB5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145683465
+       ]
+      },
+      {
+       "at": "0x08AEEEBB",
+       "command": "call",
+       "args": [
+        144461409
+       ],
+       "targets": [
+        "0x089C4E61"
+       ]
+      },
+      {
+       "at": "0x08AEEEC0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145682031
+       ],
+       "texts": [
+        {
+         "address": "0x08AEEE6F",
+         "text": "什么……想要签名吗？\n我明白了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEEEC6",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEEEC8",
+       "command": "call",
+       "args": [
+        144461436
+       ],
+       "targets": [
+        "0x089C4E7C"
+       ]
+      },
+      {
+       "at": "0x08AEEECD",
+       "command": "call",
+       "args": [
+        144461451
+       ],
+       "targets": [
+        "0x089C4E8B"
+       ]
+      },
+      {
+       "at": "0x08AEEED2",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AEEED5",
+       "command": "preparemsg",
+       "args": [
+        145682061
+       ],
+       "texts": [
+        {
+         "address": "0x08AEEE8D",
+         "text": "得到了聂梓的签名！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEEEDA",
+       "command": "playsong",
+       "args": [
+        406,
+        51
+       ]
+      },
+      {
+       "at": "0x08AEEEDE",
+       "command": "pause",
+       "args": [
+        101
+       ]
+      },
+      {
+       "at": "0x08AEEEE1",
+       "command": "fadedefaultbgm",
+       "args": []
+      },
+      {
+       "at": "0x08AEEEE2",
+       "command": "pause",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x08AEEEE5",
+       "command": "setvar",
+       "args": [
+        32774,
+        109
+       ],
+       "possible_names_not_semantics": {
+        "species": "瓦斯弹",
+        "item": "星星碎片",
+        "move": "奇异之光"
+       }
+      },
+      {
+       "at": "0x08AEEEEA",
+       "command": "call",
+       "args": [
+        144461359
+       ],
+       "targets": [
+        "0x089C4E2F"
+       ]
+      },
+      {
+       "at": "0x08AEEEEF",
+       "command": "call",
+       "args": [
+        144461379
+       ],
+       "targets": [
+        "0x089C4E43"
+       ]
+      },
+      {
+       "at": "0x08AEEEF4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145683465
+       ]
+      },
+      {
+       "at": "0x08AEEEFA",
+       "command": "call",
+       "args": [
+        144461409
+       ],
+       "targets": [
+        "0x089C4E61"
+       ]
+      },
+      {
+       "at": "0x08AEEEFF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145683458
+       ],
+       "texts": [
+        {
+         "address": "0x08AEF402",
+         "text": "再见。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEEF05",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEEF07",
+       "command": "call",
+       "args": [
+        144461436
+       ],
+       "targets": [
+        "0x089C4E7C"
+       ]
+      },
+      {
+       "at": "0x08AEEF0C",
+       "command": "call",
+       "args": [
+        144461451
+       ],
+       "targets": [
+        "0x089C4E8B"
+       ]
+      },
+      {
+       "at": "0x08AEEF11",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AEEF14",
+       "command": "setflag",
+       "args": [
+        5986
+       ]
+      },
+      {
+       "at": "0x08AEEF17",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08ED57FD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08ED57FD",
+       "command": "setvar",
+       "args": [
+        20535,
+        818
+       ],
+       "possible_names_not_semantics": {
+        "species": "南瓜精",
+        "item": null,
+        "move": "Z-Move 29"
+       }
+      },
+      {
+       "at": "0x08ED5802",
+       "command": "setvar",
+       "args": [
+        20536,
+        10
+       ],
+       "possible_names_not_semantics": {
+        "species": "绿毛虫",
+        "item": "计时球",
+        "move": "抓"
+       }
+      },
+      {
+       "at": "0x08ED5807",
+       "command": "setvar",
+       "args": [
+        20537,
+        14
+       ],
+       "possible_names_not_semantics": {
+        "species": "铁壳蛹",
+        "item": "解毒药",
+        "move": "剑舞"
+       }
+      },
+      {
+       "at": "0x08ED580C",
+       "command": "setflag",
+       "args": [
+        5737
+       ]
+      },
+      {
+       "at": "0x08ED580F",
+       "command": "setflag",
+       "args": [
+        5781
+       ]
+      },
+      {
+       "at": "0x08ED5812",
+       "command": "setflag",
+       "args": [
+        5782
+       ]
+      },
+      {
+       "at": "0x08ED5815",
+       "command": "clearflag",
+       "args": [
+        5780
+       ]
+      },
+      {
+       "at": "0x08ED5818",
+       "command": "clearflag",
+       "args": [
+        5738
+       ]
+      },
+      {
+       "at": "0x08ED581B",
+       "command": "clearflag",
+       "args": [
+        16385
+       ]
+      },
+      {
+       "at": "0x08ED581E",
+       "command": "checkflag",
+       "args": [
+        5985
+       ],
+       "task_flag_labels": [
+        {
+         "title": "聂梓的签名",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08ED5821",
+       "command": "goto_if",
+       "args": [
+        0,
+        149772418
+       ],
+       "targets": [
+        "0x08ED5882"
+       ]
+      },
+      {
+       "at": "0x08ED5827",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08ED5882",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08ED5882",
+       "command": "clearflag",
+       "args": [
+        2663
+       ]
+      },
+      {
+       "at": "0x08ED5885",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F56A95",
+     "event_roots": [
+      {
+       "map_id": "3:77",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 49,
+       "event_index": 42,
+       "x": 39,
+       "y": 37,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n077.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F56A95",
+       "command": "applymovement",
+       "args": [
+        20,
+        150301429
+       ]
+      },
+      {
+       "at": "0x08F56A9C",
+       "command": "waitmovement",
+       "args": [
+        20
+       ]
+      },
+      {
+       "at": "0x08F56A9F",
+       "command": "goto",
+       "args": [
+        145677549
+       ],
+       "targets": [
+        "0x08AEDCED"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F56B5F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F56B5F",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F56B64",
+       "command": "goto_if",
+       "args": [
+        1,
+        150301597
+       ],
+       "targets": [
+        "0x08F56B9D"
+       ]
+      },
+      {
+       "at": "0x08F56B6A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145680033
+       ],
+       "texts": [
+        {
+         "address": "0x08AEE6A1",
+         "text": "难道……\n你不喜欢聂梓大人吗？\n没品位的家伙！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F56B70",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F56B72",
+       "command": "applymovement",
+       "args": [
+        20,
+        150301567
+       ]
+      },
+      {
+       "at": "0x08F56B79",
+       "command": "waitmovement",
+       "args": [
+        20
+       ]
+      },
+      {
+       "at": "0x08F56B7C",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F56B7D",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F56B9D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F56B9D",
+       "command": "setflag",
+       "args": [
+        2663
+       ]
+      },
+      {
+       "at": "0x08F56BA0",
+       "command": "goto",
+       "args": [
+        145679349
+       ],
+       "targets": [
+        "0x08AEE3F5"
+       ]
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [
+    "0x089C4E2F",
+    "0x089C4E43",
+    "0x089C4E61",
+    "0x089C4E7C",
+    "0x089C4E8B"
+   ],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

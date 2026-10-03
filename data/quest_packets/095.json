@@ -1,0 +1,2100 @@
+{
+ "title": "波导的勇者",
+ "quest_id": 95,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b668",
+    "title": "波导的勇者",
+    "title_address": "0x8e3bf0f",
+    "description": "孵化亚玄赠予的宝可梦蛋，\n并将进化后的\n宝可梦给亚玄看看。",
+    "description_address": "0x8e3bed8",
+    "unknown_u16": 11697,
+    "unknown_u16_hex": "0x2DB1",
+    "accept_flag": 2767,
+    "accept_flag_hex": "0x0ACF",
+    "complete_flag": 2769,
+    "complete_flag_hex": "0x0AD1",
+    "map_group": 56,
+    "map_num": 40,
+    "tail_hex": "01 00 00 00",
+    "index": 95,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3bed8",
+    "legacy_match_count": 0,
+    "current_description": "孵化亚玄赠予的宝可梦蛋，\n并将进化后的\n宝可梦给亚玄看看。",
+    "catalog_map": {
+     "id": "56:40",
+     "name": "寂静之丘"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08EC5BA7",
+    "0x08EC5D2A",
+    "0x08EC6081"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08EC5BA7",
+     "map_id": "56:40",
+     "place": "寂静之丘",
+     "kind": "人物",
+     "local_id": 6,
+     "event_index": 5,
+     "x": 20,
+     "y": 31,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g56_n040.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08EC5BA7",
+     "event_roots": [
+      {
+       "map_id": "56:40",
+       "place": "寂静之丘",
+       "kind": "人物",
+       "local_id": 6,
+       "event_index": 5,
+       "x": 20,
+       "y": 31,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g56_n040.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EC5BA7",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08EC5BA8",
+       "command": "checkflag",
+       "args": [
+        2769
+       ],
+       "task_flag_labels": [
+        {
+         "title": "波导的勇者",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC5BAB",
+       "command": "goto_if",
+       "args": [
+        1,
+        149707790
+       ],
+       "targets": [
+        "0x08EC5C0E"
+       ]
+      },
+      {
+       "at": "0x08EC5BB1",
+       "command": "checkflag",
+       "args": [
+        2768
+       ]
+      },
+      {
+       "at": "0x08EC5BB4",
+       "command": "goto_if",
+       "args": [
+        1,
+        149707824
+       ],
+       "targets": [
+        "0x08EC5C30"
+       ]
+      },
+      {
+       "at": "0x08EC5BBA",
+       "command": "checkflag",
+       "args": [
+        2767
+       ],
+       "task_flag_labels": [
+        {
+         "title": "波导的勇者",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC5BBD",
+       "command": "goto_if",
+       "args": [
+        1,
+        149707930
+       ],
+       "targets": [
+        "0x08EC5C9A"
+       ]
+      },
+      {
+       "at": "0x08EC5BC3",
+       "command": "call",
+       "args": [
+        149707996
+       ],
+       "targets": [
+        "0x08EC5CDC"
+       ]
+      },
+      {
+       "at": "0x08EC5BC8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149705361
+       ]
+      },
+      {
+       "at": "0x08EC5BCE",
+       "command": "call",
+       "args": [
+        149708026
+       ],
+       "targets": [
+        "0x08EC5CFA"
+       ]
+      },
+      {
+       "at": "0x08EC5BD3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149709159
+       ],
+       "texts": [
+        {
+         "address": "0x08EC6167",
+         "text": "[玩家/变量]，我可以\n再拜托你一件事吗？\n蛋里的宝可梦\n孵化并且进化以后，\n你能把它带给我看看吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC5BD9",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC5BDB",
+       "command": "call",
+       "args": [
+        149708053
+       ],
+       "targets": [
+        "0x08EC5D15"
+       ]
+      },
+      {
+       "at": "0x08EC5BE0",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08EC5BE1",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC5BE4",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC5BE9",
+       "command": "goto_if",
+       "args": [
+        1,
+        149708068
+       ],
+       "targets": [
+        "0x08EC5D24"
+       ]
+      },
+      {
+       "at": "0x08EC5BEF",
+       "command": "call",
+       "args": [
+        149707996
+       ],
+       "targets": [
+        "0x08EC5CDC"
+       ]
+      },
+      {
+       "at": "0x08EC5BF4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149705361
+       ]
+      },
+      {
+       "at": "0x08EC5BFA",
+       "command": "call",
+       "args": [
+        149708026
+       ],
+       "targets": [
+        "0x08EC5CFA"
+       ]
+      },
+      {
+       "at": "0x08EC5BFF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149709242
+       ],
+       "texts": [
+        {
+         "address": "0x08EC61BA",
+         "text": "这样吗……\n真是遗憾。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC5C05",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC5C07",
+       "command": "call",
+       "args": [
+        149708053
+       ],
+       "targets": [
+        "0x08EC5D15"
+       ]
+      },
+      {
+       "at": "0x08EC5C0C",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC5C0E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC5C0E",
+       "command": "call",
+       "args": [
+        149707996
+       ],
+       "targets": [
+        "0x08EC5CDC"
+       ]
+      },
+      {
+       "at": "0x08EC5C13",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149705361
+       ]
+      },
+      {
+       "at": "0x08EC5C19",
+       "command": "call",
+       "args": [
+        149708026
+       ],
+       "targets": [
+        "0x08EC5CFA"
+       ]
+      },
+      {
+       "at": "0x08EC5C1E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149709263
+       ],
+       "texts": [
+        {
+         "address": "0x08EC61CF",
+         "text": "通过与你的对战，\n那股原本模糊的波导开始变得清晰。\n如果继续在这里修行下去，\n我或许就能触及到……\n那股波导之所在吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC5C24",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC5C26",
+       "command": "call",
+       "args": [
+        149708053
+       ],
+       "targets": [
+        "0x08EC5D15"
+       ]
+      },
+      {
+       "at": "0x08EC5C2B",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC5C2E",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC5C30",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC5C30",
+       "command": "call",
+       "args": [
+        149707996
+       ],
+       "targets": [
+        "0x08EC5CDC"
+       ]
+      },
+      {
+       "at": "0x08EC5C35",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149705361
+       ]
+      },
+      {
+       "at": "0x08EC5C3B",
+       "command": "call",
+       "args": [
+        149708026
+       ],
+       "targets": [
+        "0x08EC5CFA"
+       ]
+      },
+      {
+       "at": "0x08EC5C40",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149709722
+       ],
+       "texts": [
+        {
+         "address": "0x08EC639A",
+         "text": "[玩家/变量]，准备好\n进行波导之间的碰撞了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC5C46",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC5C48",
+       "command": "call",
+       "args": [
+        149708053
+       ],
+       "targets": [
+        "0x08EC5D15"
+       ]
+      },
+      {
+       "at": "0x08EC5C4D",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08EC5C4E",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC5C51",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC5C56",
+       "command": "goto_if",
+       "args": [
+        1,
+        149708074
+       ],
+       "targets": [
+        "0x08EC5D2A"
+       ]
+      },
+      {
+       "at": "0x08EC5C5C",
+       "command": "call",
+       "args": [
+        149707996
+       ],
+       "targets": [
+        "0x08EC5CDC"
+       ]
+      },
+      {
+       "at": "0x08EC5C61",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149705361
+       ]
+      },
+      {
+       "at": "0x08EC5C67",
+       "command": "call",
+       "args": [
+        149708026
+       ],
+       "targets": [
+        "0x08EC5CFA"
+       ]
+      },
+      {
+       "at": "0x08EC5C6C",
+       "command": "goto",
+       "args": [
+        149708290
+       ],
+       "targets": [
+        "0x08EC5E02"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EC5C9A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC5C9A",
+       "command": "call",
+       "args": [
+        149707996
+       ],
+       "targets": [
+        "0x08EC5CDC"
+       ]
+      },
+      {
+       "at": "0x08EC5C9F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149705361
+       ]
+      },
+      {
+       "at": "0x08EC5CA5",
+       "command": "call",
+       "args": [
+        149708026
+       ],
+       "targets": [
+        "0x08EC5CFA"
+       ]
+      },
+      {
+       "at": "0x08EC5CAA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149709818
+       ],
+       "texts": [
+        {
+         "address": "0x08EC63FA",
+         "text": "怎么样了，[玩家/变量]？\n它已经完成了进化吗？\n能让我看看现在的样子吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC5CB0",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC5CB2",
+       "command": "call",
+       "args": [
+        149708053
+       ],
+       "targets": [
+        "0x08EC5D15"
+       ]
+      },
+      {
+       "at": "0x08EC5CB7",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08EC5CB8",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC5CBB",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC5CC0",
+       "command": "goto_if",
+       "args": [
+        1,
+        149708852
+       ],
+       "targets": [
+        "0x08EC6034"
+       ]
+      },
+      {
+       "at": "0x08EC5CC6",
+       "command": "call",
+       "args": [
+        149707996
+       ],
+       "targets": [
+        "0x08EC5CDC"
+       ]
+      },
+      {
+       "at": "0x08EC5CCB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149705361
+       ]
+      },
+      {
+       "at": "0x08EC5CD1",
+       "command": "call",
+       "args": [
+        149708026
+       ],
+       "targets": [
+        "0x08EC5CFA"
+       ]
+      },
+      {
+       "at": "0x08EC5CD6",
+       "command": "goto",
+       "args": [
+        149708911
+       ],
+       "targets": [
+        "0x08EC606F"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EC5CDC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC5CDC",
+       "command": "setvar",
+       "args": [
+        32774,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08EC5CE1",
+       "command": "setvar",
+       "args": [
+        32772,
+        42
+       ],
+       "possible_names_not_semantics": {
+        "species": "大嘴蝠",
+        "item": "黑色玻璃哨",
+        "move": "飞弹针"
+       }
+      },
+      {
+       "at": "0x08EC5CE6",
+       "command": "setvar",
+       "args": [
+        32773,
+        83
+       ],
+       "possible_names_not_semantics": {
+        "species": "大葱鸭",
+        "item": "白银喷雾",
+        "move": "火焰旋涡"
+       }
+      },
+      {
+       "at": "0x08EC5CEB",
+       "command": "setvar",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08EC5CF0",
+       "command": "setvar",
+       "args": [
+        32775,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC5CF5",
+       "command": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x08EC5CF8",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC5CFA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC5CFA",
+       "command": "setvar",
+       "args": [
+        32768,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EC5CFF",
+       "command": "setvar",
+       "args": [
+        32769,
+        12
+       ],
+       "possible_names_not_semantics": {
+        "species": "巴大蝶",
+        "item": "纪念球",
+        "move": "极落钳"
+       }
+      },
+      {
+       "at": "0x08EC5D04",
+       "command": "setvar",
+       "args": [
+        32770,
+        6
+       ],
+       "possible_names_not_semantics": {
+        "species": "喷火龙",
+        "item": "捕网球",
+        "move": "聚宝功"
+       }
+      },
+      {
+       "at": "0x08EC5D09",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EC5D0E",
+       "command": "callasm",
+       "args": [
+        150667265
+       ]
+      },
+      {
+       "at": "0x08EC5D13",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC5D15",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC5D15",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08EC5D1A",
+       "command": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x08EC5D1D",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EC5D22",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC5D24",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC5D24",
+       "command": "goto",
+       "args": [
+        149708929
+       ],
+       "targets": [
+        "0x08EC6081"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EC5D2A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC5D2A",
+       "command": "call",
+       "args": [
+        149707996
+       ],
+       "targets": [
+        "0x08EC5CDC"
+       ]
+      },
+      {
+       "at": "0x08EC5D2F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149705361
+       ]
+      },
+      {
+       "at": "0x08EC5D35",
+       "command": "call",
+       "args": [
+        149708026
+       ],
+       "targets": [
+        "0x08EC5CFA"
+       ]
+      },
+      {
+       "at": "0x08EC5D3A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149709929
+       ],
+       "texts": [
+        {
+         "address": "0x08EC6469",
+         "text": "很好，路卡利欧也期望着\n与你来一场全力以赴的战斗！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC5D40",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC5D42",
+       "command": "call",
+       "args": [
+        149708053
+       ],
+       "targets": [
+        "0x08EC5D15"
+       ]
+      },
+      {
+       "at": "0x08EC5D47",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC5D4A",
+       "command": "setvar",
+       "args": [
+        20538,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08EC5D4F",
+       "command": "setvar",
+       "args": [
+        20539,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC5D54",
+       "command": "trainerbattle0",
+       "args": [
+        3,
+        349,
+        3328,
+        149712917
+       ]
+      },
+      {
+       "at": "0x08EC5D5E",
+       "command": "call",
+       "args": [
+        149707996
+       ],
+       "targets": [
+        "0x08EC5CDC"
+       ]
+      },
+      {
+       "at": "0x08EC5D63",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149705361
+       ]
+      },
+      {
+       "at": "0x08EC5D69",
+       "command": "call",
+       "args": [
+        149708026
+       ],
+       "targets": [
+        "0x08EC5CFA"
+       ]
+      },
+      {
+       "at": "0x08EC5D6E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149709979
+       ]
+      },
+      {
+       "at": "0x08EC5D74",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC5D76",
+       "command": "call",
+       "args": [
+        149708053
+       ],
+       "targets": [
+        "0x08EC5D15"
+       ]
+      },
+      {
+       "at": "0x08EC5D7B",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC5D7E",
+       "command": "setflag",
+       "args": [
+        2769
+       ],
+       "task_flag_labels": [
+        {
+         "title": "波导的勇者",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC5D81",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC5D84",
+       "command": "preparemsg",
+       "args": [
+        149710117
+       ],
+       "texts": [
+        {
+         "address": "0x08EC6525",
+         "text": "亚玄将路卡利欧超级进化的波动\n储存在了[玩家/变量]的超级石中。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC5D89",
+       "command": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x08EC5D8C",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08EC5D8D",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EC5D90",
+       "command": "setflag",
+       "args": [
+        2857
+       ]
+      },
+      {
+       "at": "0x08EC5D93",
+       "command": "call",
+       "args": [
+        149707996
+       ],
+       "targets": [
+        "0x08EC5CDC"
+       ]
+      },
+      {
+       "at": "0x08EC5D98",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149705361
+       ]
+      },
+      {
+       "at": "0x08EC5D9E",
+       "command": "call",
+       "args": [
+        149708026
+       ],
+       "targets": [
+        "0x08EC5CFA"
+       ]
+      },
+      {
+       "at": "0x08EC5DA3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149710585
+       ],
+       "texts": [
+        {
+         "address": "0x08EC66F9",
+         "text": "这样一来，你的路卡利欧\n就可以进行超级进化了。\n不过请注意，\n路卡利欧超级进化的能量，\n会和波导混合在一起来回乱窜。\n如果心智不坚，\n便会迷失在力量中……\n不过我冥冥之中\n从路卡利欧的波导中感受到，\n在那已知的尽头之外，路卡利欧\n似乎还蕴藏着另一种可能性。\n为此，我正和路卡利欧在\n世界各地进行着无止境的修行。\n而刚才，通过与你的对战，\n那股原本模糊的波导开始变得清晰。\n如果继续在这里修行下去，\n我或许就能触及到……\n那股波导之所在吧！\n对了……\n你有精灵齿轮吧？\n我们留一个联系方式吧。\n如果我的修行有新的成果的话，\n我会第一时间联系你的！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC5DA9",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC5DAB",
+       "command": "call",
+       "args": [
+        149708053
+       ],
+       "targets": [
+        "0x08EC5D15"
+       ]
+      },
+      {
+       "at": "0x08EC5DB0",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC5DB3",
+       "command": "addvar",
+       "args": [
+        20789,
+        10
+       ]
+      },
+      {
+       "at": "0x08EC5DB8",
+       "command": "addmoney",
+       "args": [
+        8000,
+        0
+       ]
+      },
+      {
+       "at": "0x08EC5DBE",
+       "command": "pause",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08EC5DC1",
+       "command": "fanfare",
+       "args": [
+        317
+       ]
+      },
+      {
+       "at": "0x08EC5DC4",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC5DC7",
+       "command": "preparemsg",
+       "args": [
+        149711084
+       ],
+       "texts": [
+        {
+         "address": "0x08EC68EC",
+         "text": "[玩家/变量]把亚玄的电话号码\n登陆到了精灵齿轮！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC5DCC",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08EC5DCD",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EC5DCE",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC5DD1",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC5DD4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149711129
+       ],
+       "texts": [
+        {
+         "address": "0x08EC6919",
+         "text": "完成任务:<波导的勇者>"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC5DDA",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC5DDF",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC5DE4",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08EC5DE9",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EC5DEE",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08EC5DF3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149711156
+       ],
+       "texts": [
+        {
+         "address": "0x08EC6934",
+         "text": "获得了10点BracerPoints和8000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC5DF9",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC5DFB",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EC5E00",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC5E02",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC5E02",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149709758
+       ],
+       "texts": [
+        {
+         "address": "0x08EC63BE",
+         "text": "我明白了。\n我和路卡利欧会一直在这等候，\n直到你们的斗志燃起。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC5E08",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC5E0A",
+       "command": "call",
+       "args": [
+        149708053
+       ],
+       "targets": [
+        "0x08EC5D15"
+       ]
+      },
+      {
+       "at": "0x08EC5E0F",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC5E12",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC6034",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC6034",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x08EC6037",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08EC6038",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x08EC603D",
+       "command": "goto_if",
+       "args": [
+        1,
+        149708984
+       ],
+       "targets": [
+        "0x08EC60B8"
+       ]
+      },
+      {
+       "at": "0x08EC6043",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08EC6048",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EC6049",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08EC604E",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        500
+       ],
+       "possible_names_not_semantics": {
+        "species": "利欧路",
+        "item": "碧绿石板",
+        "move": "制裁光砾"
+       }
+      },
+      {
+       "at": "0x08EC6053",
+       "command": "goto_if",
+       "args": [
+        1,
+        149709018
+       ],
+       "targets": [
+        "0x08EC60DA"
+       ]
+      },
+      {
+       "at": "0x08EC6059",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        501
+       ],
+       "possible_names_not_semantics": {
+        "species": "路卡利欧",
+        "item": "雷电石板",
+        "move": "冷冻干燥"
+       }
+      },
+      {
+       "at": "0x08EC605E",
+       "command": "goto_if",
+       "args": [
+        1,
+        149709052
+       ],
+       "targets": [
+        "0x08EC60FC"
+       ]
+      },
+      {
+       "at": "0x08EC6064",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EC6065",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149711192
+       ],
+       "texts": [
+        {
+         "address": "0x08EC6958",
+         "text": "唔……\n虽然是一只优秀的宝可梦，\n但这并不是\n我托付给你的那只吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC606B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC606D",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC606F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC606F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149709877
+       ],
+       "texts": [
+        {
+         "address": "0x08EC6435",
+         "text": "没关系，\n等你们准备好了再来。\n波导会指引你们的方向。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC6075",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC6077",
+       "command": "call",
+       "args": [
+        149708053
+       ],
+       "targets": [
+        "0x08EC5D15"
+       ]
+      },
+      {
+       "at": "0x08EC607C",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC607F",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC6081",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC6081",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC6084",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149711254
+       ],
+       "texts": [
+        {
+         "address": "0x08EC6996",
+         "text": "接受任务:<波导的勇者>"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC608A",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC608F",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC6094",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08EC6099",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EC609E",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08EC60A3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149711281
+       ],
+       "texts": [
+        {
+         "address": "0x08EC69B1",
+         "text": "真的是太感谢你了！\n我期待着那一天的到来。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC60A9",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EC60AB",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EC60B0",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC60B3",
+       "command": "setflag",
+       "args": [
+        2767
+       ],
+       "task_flag_labels": [
+        {
+         "title": "波导的勇者",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC60B6",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC60B8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC60B8",
+       "command": "call",
+       "args": [
+        149707996
+       ],
+       "targets": [
+        "0x08EC5CDC"
+       ]
+      },
+      {
+       "at": "0x08EC60BD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149705361
+       ]
+      },
+      {
+       "at": "0x08EC60C3",
+       "command": "call",
+       "args": [
+        149708026
+       ],
+       "targets": [
+        "0x08EC5CFA"
+       ]
+      },
+      {
+       "at": "0x08EC60C8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149709877
+       ],
+       "texts": [
+        {
+         "address": "0x08EC6435",
+         "text": "没关系，\n等你们准备好了再来。\n波导会指引你们的方向。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC60CE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC60D0",
+       "command": "call",
+       "args": [
+        149708053
+       ],
+       "targets": [
+        "0x08EC5D15"
+       ]
+      },
+      {
+       "at": "0x08EC60D5",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC60D8",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC60DA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC60DA",
+       "command": "call",
+       "args": [
+        149707996
+       ],
+       "targets": [
+        "0x08EC5CDC"
+       ]
+      },
+      {
+       "at": "0x08EC60DF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149705361
+       ]
+      },
+      {
+       "at": "0x08EC60E5",
+       "command": "call",
+       "args": [
+        149708026
+       ],
+       "targets": [
+        "0x08EC5CFA"
+       ]
+      },
+      {
+       "at": "0x08EC60EA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149711375
+       ],
+       "texts": [
+        {
+         "address": "0x08EC6A0F",
+         "text": "[玩家/变量]，看来\n你把它照顾得很好。\n不过，这孩子现在的波导，\n就像是一颗正待萌发的种子……\n尝试和它增进感情吧！\n我很期待，看到你\n指引它完成进化的那一天。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC60F0",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC60F2",
+       "command": "call",
+       "args": [
+        149708053
+       ],
+       "targets": [
+        "0x08EC5D15"
+       ]
+      },
+      {
+       "at": "0x08EC60F7",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC60FA",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC60FC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC60FC",
+       "command": "setflag",
+       "args": [
+        2768
+       ]
+      },
+      {
+       "at": "0x08EC60FF",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EC6102",
+       "command": "applymovement",
+       "args": [
+        6,
+        149711649
+       ]
+      },
+      {
+       "at": "0x08EC6109",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EC610C",
+       "command": "call",
+       "args": [
+        149707996
+       ],
+       "targets": [
+        "0x08EC5CDC"
+       ]
+      },
+      {
+       "at": "0x08EC6111",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149705361
+       ]
+      },
+      {
+       "at": "0x08EC6117",
+       "command": "call",
+       "args": [
+        149708026
+       ],
+       "targets": [
+        "0x08EC5CFA"
+       ]
+      },
+      {
+       "at": "0x08EC611C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149711513
+       ],
+       "texts": [
+        {
+         "address": "0x08EC6A99",
+         "text": "没错，就是这股波导……\n虽然还略显青涩，\n但却充满无限的可能性！\n[玩家/变量]，我想确认一件事。\n既然你们已经\n建立了如此深的羁绊，\n是否能接下我全力的挑战？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC6122",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC6124",
+       "command": "call",
+       "args": [
+        149708053
+       ],
+       "targets": [
+        "0x08EC5D15"
+       ]
+      },
+      {
+       "at": "0x08EC6129",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08EC612A",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC612D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC6132",
+       "command": "goto_if",
+       "args": [
+        1,
+        149708074
+       ],
+       "targets": [
+        "0x08EC5D2A"
+       ]
+      },
+      {
+       "at": "0x08EC6138",
+       "command": "call",
+       "args": [
+        149707996
+       ],
+       "targets": [
+        "0x08EC5CDC"
+       ]
+      },
+      {
+       "at": "0x08EC613D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149705361
+       ]
+      },
+      {
+       "at": "0x08EC6143",
+       "command": "call",
+       "args": [
+        149708026
+       ],
+       "targets": [
+        "0x08EC5CFA"
+       ]
+      },
+      {
+       "at": "0x08EC6148",
+       "command": "goto",
+       "args": [
+        149709134
+       ],
+       "targets": [
+        "0x08EC614E"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EC614E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC614E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149709758
+       ],
+       "texts": [
+        {
+         "address": "0x08EC63BE",
+         "text": "我明白了。\n我和路卡利欧会一直在这等候，\n直到你们的斗志燃起。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC6154",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC6156",
+       "command": "call",
+       "args": [
+        149708053
+       ],
+       "targets": [
+        "0x08EC5D15"
+       ]
+      },
+      {
+       "at": "0x08EC615B",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC615E",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

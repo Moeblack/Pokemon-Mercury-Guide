@@ -1,0 +1,1710 @@
+{
+ "title": "遗失的钥匙",
+ "quest_id": 70,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b474",
+    "title": "遗失的钥匙",
+    "title_address": "0x8e3c4cf",
+    "description": "使用探宝器帮助缘朱市的\n男性找到家里的钥匙。",
+    "description_address": "0x8e3c4a4",
+    "unknown_u16": 165,
+    "unknown_u16_hex": "0x00A5",
+    "accept_flag": 6011,
+    "accept_flag_hex": "0x177B",
+    "complete_flag": 6005,
+    "complete_flag_hex": "0x1775",
+    "map_group": 3,
+    "map_num": 70,
+    "tail_hex": "14 00 00 00",
+    "index": 70,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3c4a4",
+    "legacy_match_count": 0,
+    "current_description": "使用探宝器帮助缘朱市的\n男性找到家里的钥匙。",
+    "catalog_map": {
+     "id": "3:70",
+     "name": "缘朱市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AF2582",
+    "0x08AF25BD",
+    "0x08AF25F5",
+    "0x08AF2630",
+    "0x08AF2992",
+    "0x08F5B6C6"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F5B6E3",
+     "map_id": "3:70",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 38,
+     "event_index": 36,
+     "x": 27,
+     "y": 26,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n070.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08AF0FFC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF0FFC",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AF0FFF",
+       "command": "goto_if",
+       "args": [
+        1,
+        145696245
+       ],
+       "targets": [
+        "0x08AF25F5"
+       ]
+      },
+      {
+       "at": "0x08AF1005",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696604
+       ],
+       "texts": [
+        {
+         "address": "0x08AF275C",
+         "text": "唉，该怎么办呢……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF100B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF100D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B6E3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF2582",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF2582",
+       "command": "checkflag",
+       "args": [
+        6011
+       ],
+       "task_flag_labels": [
+        {
+         "title": "遗失的钥匙",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2585",
+       "command": "goto_if",
+       "args": [
+        1,
+        145696267
+       ],
+       "targets": [
+        "0x08AF260B"
+       ]
+      },
+      {
+       "at": "0x08AF258B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696489
+       ]
+      },
+      {
+       "at": "0x08AF2591",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2593",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AF2596",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145696989
+       ]
+      },
+      {
+       "at": "0x08AF259D",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AF25A0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696507
+       ]
+      },
+      {
+       "at": "0x08AF25A6",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AF25A8",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF25AD",
+       "command": "goto_if",
+       "args": [
+        1,
+        145696189
+       ],
+       "targets": [
+        "0x08AF25BD"
+       ]
+      },
+      {
+       "at": "0x08AF25B3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696603
+       ]
+      },
+      {
+       "at": "0x08AF25B9",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF25BB",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=70"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF25BD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF25BD",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF25C0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696634
+       ]
+      },
+      {
+       "at": "0x08AF25C6",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF25CB",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF25D0",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AF25D5",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AF25DA",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AF25DF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696661
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2795",
+         "text": "匙丢了，\n现在打不开家门而回不了家……\n你能帮我找找钥匙吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF25E5",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AF25E7",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AF25EC",
+       "command": "setflag",
+       "args": [
+        6011
+       ],
+       "task_flag_labels": [
+        {
+         "title": "遗失的钥匙",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF25EF",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF25F2",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        31531
+       ],
+       "possible_names_not_semantics": {
+        "species": null,
+        "item": null,
+        "move": null
+       }
+      },
+      {
+       "at": "0x08AF25F7",
+       "command": "addvar",
+       "args": [
+        262,
+        9854
+       ]
+      },
+      {
+       "at": "0x08AF25FC",
+       "command": "setdooropen",
+       "args": [
+        3848,
+        23552
+       ]
+      },
+      {
+       "at": "0x08AF2601",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08AF2602",
+       "command": "setdooropen",
+       "args": [
+        2312,
+        12034
+       ]
+      },
+      {
+       "at": "0x08AF2607",
+       "command": "copybyte",
+       "args": [
+        2148486912,
+        145697104
+       ]
+      },
+      {
+       "at": "0x08AF2610",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AF2613",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696622
+       ],
+       "texts": [
+        {
+         "address": "0x08AF276E",
+         "text": "是…是你！\n你有看见我的委托吗？\n我家里的钥匙丢了，\n现在打不开家门而回不了家……\n你能帮我找找钥匙吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2619",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AF261B",
+       "command": "goto",
+       "args": [
+        150321218
+       ],
+       "targets": [
+        "0x08F5B842"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF2582"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF25F5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF25F5",
+       "command": "checkflag",
+       "args": [
+        6011
+       ],
+       "task_flag_labels": [
+        {
+         "title": "遗失的钥匙",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF25F8",
+       "command": "goto_if",
+       "args": [
+        1,
+        145696382
+       ],
+       "targets": [
+        "0x08AF267E"
+       ]
+      },
+      {
+       "at": "0x08AF25FE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696604
+       ],
+       "texts": [
+        {
+         "address": "0x08AF275C",
+         "text": "唉，该怎么办呢……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2604",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2606",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AF2609",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145697104
+       ]
+      },
+      {
+       "at": "0x08AF2610",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AF2613",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696622
+       ],
+       "texts": [
+        {
+         "address": "0x08AF276E",
+         "text": "是…是你！\n你有看见我的委托吗？\n我家里的钥匙丢了，\n现在打不开家门而回不了家……\n你能帮我找找钥匙吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2619",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AF261B",
+       "command": "goto",
+       "args": [
+        150321218
+       ],
+       "targets": [
+        "0x08F5B842"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF0FFC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF260B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF260B",
+       "command": "bufferitem",
+       "args": [
+        80,
+        44841
+       ]
+      },
+      {
+       "at": "0x08AF260F",
+       "command": "gotostd",
+       "args": [
+        40
+       ]
+      },
+      {
+       "at": "0x08AF2611",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08AF2612",
+       "command": "nop",
+       "args": []
+      },
+      {
+       "at": "0x08AF2613",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696622
+       ],
+       "texts": [
+        {
+         "address": "0x08AF276E",
+         "text": "是…是你！\n你有看见我的委托吗？\n我家里的钥匙丢了，\n现在打不开家门而回不了家……\n你能帮我找找钥匙吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2619",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AF261B",
+       "command": "goto",
+       "args": [
+        150321218
+       ],
+       "targets": [
+        "0x08F5B842"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF2582"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF2630",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF2630",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2633",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696749
+       ],
+       "texts": [
+        {
+         "address": "0x08AF27ED",
+         "text": "接受任务:<遗失的钥匙>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2639",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF263E",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2643",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AF2648",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AF264D",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AF2652",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696776
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2808",
+         "text": "真的是太感谢你了，\n我想钥匙应该就在\n缘朱市内某处吧……\n毕竟我最近也没有去其他地方……\n对了，这个也给你吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2658",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AF265A",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AF265F",
+       "command": "setflag",
+       "args": [
+        6011
+       ],
+       "task_flag_labels": [
+        {
+         "title": "遗失的钥匙",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2662",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF2665",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        261
+       ],
+       "possible_names_not_semantics": {
+        "species": "洛奇亚",
+        "item": "探宝器",
+        "move": "磷火"
+       }
+      },
+      {
+       "at": "0x08AF266A",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF266F",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2671",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF2674",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696878
+       ],
+       "texts": [
+        {
+         "address": "0x08AF286E",
+         "text": "这个探宝器应该\n会对你有所帮助吧。\n虽然肉眼看不见，\n但各地都散落着隐藏道具。\n当你靠近隐藏道具时，\n探宝器便会有反应。\n试着用探宝器找到钥匙吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF267A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF267C",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B87E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF267E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF267E",
+       "command": "checkitem",
+       "args": [
+        284,
+        1
+       ],
+       "item_name": "回家的钥匙"
+      },
+      {
+       "at": "0x08AF2683",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2688",
+       "command": "goto_if",
+       "args": [
+        1,
+        145696408
+       ],
+       "targets": [
+        "0x08AF2698"
+       ]
+      },
+      {
+       "at": "0x08AF268E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696878
+       ],
+       "texts": [
+        {
+         "address": "0x08AF286E",
+         "text": "这个探宝器应该\n会对你有所帮助吧。\n虽然肉眼看不见，\n但各地都散落着隐藏道具。\n当你靠近隐藏道具时，\n探宝器便会有反应。\n试着用探宝器找到钥匙吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2694",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2696",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF25F5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF2698",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF2698",
+       "command": "removeitem",
+       "args": [
+        284,
+        1
+       ],
+       "item_name": "回家的钥匙"
+      },
+      {
+       "at": "0x08AF269D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145697015
+       ],
+       "texts": [
+        {
+         "address": "0x08AF28F7",
+         "text": "没…没错，\n这正是我掉落的钥匙！\n谢谢你，这是给你的报酬！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF26A3",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF26A5",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF26A8",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        381
+       ],
+       "possible_names_not_semantics": {
+        "species": "古空棘鱼",
+        "item": "招式学习器56",
+        "move": "冰砾"
+       }
+      },
+      {
+       "at": "0x08AF26AD",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF26B2",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF26B4",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF26B7",
+       "command": "goto",
+       "args": [
+        150325909
+       ],
+       "targets": [
+        "0x08F5CA95"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF267E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF295A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF295A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696542
+       ],
+       "texts": [
+        {
+         "address": "0x08AF271E",
+         "text": "完成任务:<遗失的钥匙>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2960",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2965",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF296A",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AF296F",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AF2974",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AF2979",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08AF297E",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2984",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696569
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2739",
+         "text": "获得了3点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF298A",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AF298C",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AF2991",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B934"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF2992",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF2992",
+       "command": "applymovement",
+       "args": [
+        38,
+        145697445
+       ]
+      },
+      {
+       "at": "0x08AF2999",
+       "command": "waitmovement",
+       "args": [
+        38
+       ]
+      },
+      {
+       "at": "0x08AF299C",
+       "command": "removeobject",
+       "args": [
+        38
+       ]
+      },
+      {
+       "at": "0x08AF299F",
+       "command": "setflag",
+       "args": [
+        6005
+       ],
+       "task_flag_labels": [
+        {
+         "title": "遗失的钥匙",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF29A2",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AF29A5",
+       "command": "closedoor",
+       "args": [
+        27,
+        25
+       ]
+      },
+      {
+       "at": "0x08AF29AA",
+       "command": "waitdooranim",
+       "args": []
+      },
+      {
+       "at": "0x08AF29AB",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF29AE",
+       "command": "goto",
+       "args": [
+        150321460
+       ],
+       "targets": [
+        "0x08F5B934"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5CA95"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5B6C6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5B6C6",
+       "command": "checkflag",
+       "args": [
+        6011
+       ],
+       "task_flag_labels": [
+        {
+         "title": "遗失的钥匙",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5B6C9",
+       "command": "call_if",
+       "args": [
+        0,
+        150320863
+       ],
+       "targets": [
+        "0x08F5B6DF"
+       ]
+      },
+      {
+       "at": "0x08F5B6CF",
+       "command": "checkflag",
+       "args": [
+        6005
+       ],
+       "task_flag_labels": [
+        {
+         "title": "遗失的钥匙",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5B6D2",
+       "command": "call_if",
+       "args": [
+        0,
+        150320858
+       ],
+       "targets": [
+        "0x08F5B6DA"
+       ]
+      },
+      {
+       "at": "0x08F5B6D8",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B4F9"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5B6DA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5B6DA",
+       "command": "clearflag",
+       "args": [
+        2678
+       ]
+      },
+      {
+       "at": "0x08F5B6DD",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B6C6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5B6DF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5B6DF",
+       "command": "clearflag",
+       "args": [
+        2677
+       ]
+      },
+      {
+       "at": "0x08F5B6E2",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B6C6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5B6E3",
+     "event_roots": [
+      {
+       "map_id": "3:70",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 38,
+       "event_index": 36,
+       "x": 27,
+       "y": 26,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n070.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5B6E3",
+       "command": "applymovement",
+       "args": [
+        41,
+        150321154
+       ]
+      },
+      {
+       "at": "0x08F5B6EA",
+       "command": "waitmovement",
+       "args": [
+        41
+       ]
+      },
+      {
+       "at": "0x08F5B6ED",
+       "command": "goto",
+       "args": [
+        145690620
+       ],
+       "targets": [
+        "0x08AF0FFC"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "3:70/local38"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5B842",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5B842",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5B847",
+       "command": "goto_if",
+       "args": [
+        1,
+        150321278
+       ],
+       "targets": [
+        "0x08F5B87E"
+       ]
+      },
+      {
+       "at": "0x08F5B84D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696718
+       ],
+       "texts": [
+        {
+         "address": "0x08AF27CE",
+         "text": "好…好吧，\n我会自己再找找看的。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5B853",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5B855",
+       "command": "applymovement",
+       "args": [
+        41,
+        150321250
+       ]
+      },
+      {
+       "at": "0x08F5B85C",
+       "command": "waitmovement",
+       "args": [
+        41
+       ]
+      },
+      {
+       "at": "0x08F5B85F",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5B860",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF25F5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5B87E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5B87E",
+       "command": "setflag",
+       "args": [
+        2677
+       ]
+      },
+      {
+       "at": "0x08F5B881",
+       "command": "goto",
+       "args": [
+        145696304
+       ],
+       "targets": [
+        "0x08AF2630"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B842"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5B934",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5B934",
+       "command": "setflag",
+       "args": [
+        2678
+       ]
+      },
+      {
+       "at": "0x08F5B937",
+       "command": "goto",
+       "args": [
+        145697114
+       ],
+       "targets": [
+        "0x08AF295A"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF2992"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5CA95",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5CA95",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5CA98",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        537
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕路奇亚",
+        "item": "经验糖果S",
+        "move": "暗黑爆破"
+       }
+      },
+      {
+       "at": "0x08F5CA9D",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5CAA2",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F5CAA4",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5CAA7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145697069
+       ],
+       "texts": [
+        {
+         "address": "0x08AF292D",
+         "text": "那么我回家了，再见！\n欢迎常来玩哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5CAAD",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5CAAF",
+       "command": "opendoor",
+       "args": [
+        27,
+        25
+       ]
+      },
+      {
+       "at": "0x08F5CAB4",
+       "command": "waitdooranim",
+       "args": []
+      },
+      {
+       "at": "0x08F5CAB5",
+       "command": "applymovement",
+       "args": [
+        38,
+        145697107
+       ]
+      },
+      {
+       "at": "0x08F5CABC",
+       "command": "waitmovement",
+       "args": [
+        38
+       ]
+      },
+      {
+       "at": "0x08F5CABF",
+       "command": "sound",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08F5CAC2",
+       "command": "goto",
+       "args": [
+        145697170
+       ],
+       "targets": [
+        "0x08AF2992"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF2698"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

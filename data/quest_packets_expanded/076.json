@@ -1,0 +1,2034 @@
+{
+ "title": "没精神的大奶罐",
+ "quest_id": 76,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b4ec",
+    "title": "没精神的大奶罐",
+    "title_address": "0x8e3c3fe",
+    "description": "我们哞哞牧场的大奶罐忽然\n失去了精神，奶也挤不出了...\n有人能来帮我们看看吗？",
+    "description_address": "0x8e3c3db",
+    "unknown_u16": 601,
+    "unknown_u16_hex": "0x0259",
+    "accept_flag": 6015,
+    "accept_flag_hex": "0x177F",
+    "complete_flag": 6009,
+    "complete_flag_hex": "0x1779",
+    "map_group": 52,
+    "map_num": 6,
+    "tail_hex": "02 01 00 00",
+    "index": 76,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe396c4",
+      "title": "失去精神的大奶罐",
+      "description_address": "0x8e3a1ef",
+      "description": "我们哞哞牧场的大奶罐忽然\\n失去了精神，奶也挤不出了...\\n有人能来帮我们看看吗？"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a1ef",
+    "legacy_match_count": 1,
+    "current_description": "帮助哞哞牧场的\n大奶罐重新恢复精神。",
+    "catalog_map": {
+     "id": "52:6",
+     "name": "39号道路"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AF3B3F",
+    "0x08AF3B86",
+    "0x08AF3C74",
+    "0x08AF3D21"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08AF3D21",
+     "map_id": "52:7",
+     "place": "39号道路",
+     "kind": "人物",
+     "local_id": 1,
+     "event_index": 0,
+     "x": 6,
+     "y": 5,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g52_n007.md"
+    },
+    {
+     "script": "0x08EC1429",
+     "map_id": "52:6",
+     "place": "39号道路",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 9,
+     "y": 4,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g52_n006.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089F1F36",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F1F36",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x089F1F37",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089F1F38",
+       "command": "checkflag",
+       "args": [
+        5581
+       ]
+      },
+      {
+       "at": "0x089F1F3B",
+       "command": "goto_if",
+       "args": [
+        1,
+        144646261
+       ],
+       "targets": [
+        "0x089F2075"
+       ]
+      },
+      {
+       "at": "0x089F1F41",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144646315
+       ],
+       "texts": [
+        {
+         "address": "0x089F20AB",
+         "text": "我们的牛奶也会在关都地区出售。\n所以奶牛挤不出好喝的牛奶\n我们也很困扰！"
+        }
+       ]
+      },
+      {
+       "at": "0x089F1F47",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x089F1F49",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x089F1F4A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF17B5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F2075",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F2075",
+       "command": "checkflag",
+       "args": [
+        5582
+       ]
+      },
+      {
+       "at": "0x089F2078",
+       "command": "goto_if",
+       "args": [
+        1,
+        144646304
+       ],
+       "targets": [
+        "0x089F20A0"
+       ]
+      },
+      {
+       "at": "0x089F207E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144646386
+       ],
+       "texts": [
+        {
+         "address": "0x089F20F2",
+         "text": "奶牛能挤出好喝的牛奶\n多亏了你！\n这个给你\n收下吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x089F2084",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x089F2086",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        445
+       ],
+       "possible_names_not_semantics": {
+        "species": "烈焰猴",
+        "item": "TM120",
+        "move": "巴投"
+       }
+      },
+      {
+       "at": "0x089F208B",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089F2090",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089F2092",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144646436
+       ],
+       "texts": [
+        {
+         "address": "0x089F2124",
+         "text": "那是大自然的恩惠，\n招式的类型和威力\n会根据所在的场所而变化哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x089F2098",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x089F209A",
+       "command": "setflag",
+       "args": [
+        5582
+       ]
+      },
+      {
+       "at": "0x089F209D",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x089F209E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089F1F36"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F20A0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F20A0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144646436
+       ],
+       "texts": [
+        {
+         "address": "0x089F2124",
+         "text": "那是大自然的恩惠，\n招式的类型和威力\n会根据所在的场所而变化哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x089F20A6",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x089F20A8",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x089F20A9",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3C74"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F2162",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F2162",
+       "command": "checkflag",
+       "args": [
+        5581
+       ]
+      },
+      {
+       "at": "0x089F2165",
+       "command": "goto_if",
+       "args": [
+        1,
+        144646578
+       ],
+       "targets": [
+        "0x089F21B2"
+       ]
+      },
+      {
+       "at": "0x089F216B",
+       "command": "cry",
+       "args": [
+        241,
+        255
+       ]
+      },
+      {
+       "at": "0x089F2170",
+       "command": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x089F2171",
+       "command": "setvar",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089F2176",
+       "command": "setvar",
+       "args": [
+        32772,
+        48
+       ],
+       "possible_names_not_semantics": {
+        "species": "毛球",
+        "item": "红色碎片",
+        "move": "超音波"
+       }
+      },
+      {
+       "at": "0x089F217B",
+       "command": "setvar",
+       "args": [
+        32773,
+        79
+       ],
+       "possible_names_not_semantics": {
+        "species": "呆呆兽",
+        "item": "特攻强化",
+        "move": "催眠粉"
+       }
+      },
+      {
+       "at": "0x089F2180",
+       "command": "setvar",
+       "args": [
+        32774,
+        210
+       ],
+       "possible_names_not_semantics": {
+        "species": "布鲁皇",
+        "item": "锐利鸟嘴",
+        "move": "连斩"
+       }
+      },
+      {
+       "at": "0x089F2185",
+       "command": "setvar",
+       "args": [
+        32775,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089F218A",
+       "command": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x089F218D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144646709
+       ],
+       "texts": [
+        {
+         "address": "0x089F2235",
+         "text": "大奶罐：……哞\n叫声没精神……\n给大奶罐\n橙橙果吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089F2193",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089F2195",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089F219A",
+       "command": "goto_if",
+       "args": [
+        1,
+        144646630
+       ],
+       "targets": [
+        "0x089F21E6"
+       ]
+      },
+      {
+       "at": "0x089F21A0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144646755
+       ],
+       "texts": [
+        {
+         "address": "0x089F2263",
+         "text": "[玩家/变量]没有拿出\n橙橙果……\n大奶罐\n一脸伤心的表情……"
+        }
+       ]
+      },
+      {
+       "at": "0x089F21A6",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x089F21A8",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089F21AD",
+       "command": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x089F21B0",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3D21"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F21B2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F21B2",
+       "command": "cry",
+       "args": [
+        241,
+        255
+       ]
+      },
+      {
+       "at": "0x089F21B7",
+       "command": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x089F21B8",
+       "command": "setvar",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089F21BD",
+       "command": "setvar",
+       "args": [
+        32772,
+        48
+       ],
+       "possible_names_not_semantics": {
+        "species": "毛球",
+        "item": "红色碎片",
+        "move": "超音波"
+       }
+      },
+      {
+       "at": "0x089F21C2",
+       "command": "setvar",
+       "args": [
+        32773,
+        79
+       ],
+       "possible_names_not_semantics": {
+        "species": "呆呆兽",
+        "item": "特攻强化",
+        "move": "催眠粉"
+       }
+      },
+      {
+       "at": "0x089F21C7",
+       "command": "setvar",
+       "args": [
+        32774,
+        211
+       ],
+       "possible_names_not_semantics": {
+        "species": "千针鱼",
+        "item": "毒针",
+        "move": "钢翼"
+       }
+      },
+      {
+       "at": "0x089F21CC",
+       "command": "setvar",
+       "args": [
+        32775,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089F21D1",
+       "command": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x089F21D4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144646928
+       ],
+       "texts": [
+        {
+         "address": "0x089F2310",
+         "text": "大奶罐：哞！\n很有精神！"
+        }
+       ]
+      },
+      {
+       "at": "0x089F21DA",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089F21DC",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089F21E1",
+       "command": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x089F21E4",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3D21"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F21E6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F21E6",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x089F21EB",
+       "command": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x089F21EE",
+       "command": "checkitem",
+       "args": [
+        139,
+        1
+       ],
+       "item_name": "橙橙果"
+      },
+      {
+       "at": "0x089F21F3",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089F21F8",
+       "command": "goto_if",
+       "args": [
+        1,
+        144647118
+       ],
+       "targets": [
+        "0x089F23CE"
+       ]
+      },
+      {
+       "at": "0x089F21FE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144646801
+       ],
+       "texts": [
+        {
+         "address": "0x089F2291",
+         "text": "[玩家/变量]没有带着\n橙橙果。"
+        }
+       ]
+      },
+      {
+       "at": "0x089F2204",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089F2206",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089F2162"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F23BA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F23BA",
+       "command": "playsong",
+       "args": [
+        281,
+        51
+       ]
+      },
+      {
+       "at": "0x089F23BE",
+       "command": "pause",
+       "args": [
+        96
+       ]
+      },
+      {
+       "at": "0x089F23C1",
+       "command": "fadedefaultbgm",
+       "args": []
+      },
+      {
+       "at": "0x089F23C2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144646907
+       ],
+       "texts": [
+        {
+         "address": "0x089F22FB",
+         "text": "大奶罐\n非常精神了！"
+        }
+       ]
+      },
+      {
+       "at": "0x089F23C8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089F23CA",
+       "command": "setflag",
+       "args": [
+        5581
+       ]
+      },
+      {
+       "at": "0x089F23CD",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089F258E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F23CE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F23CE",
+       "command": "goto",
+       "args": [
+        144647566
+       ],
+       "targets": [
+        "0x089F258E"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089F21E6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F249F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F249F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144647519
+       ],
+       "texts": [
+        {
+         "address": "0x089F255F",
+         "text": "大奶罐\n有一点精神了！"
+        }
+       ]
+      },
+      {
+       "at": "0x089F24A5",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089F24A7",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089F258E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F24A9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F24A9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144647542
+       ],
+       "texts": [
+        {
+         "address": "0x089F2576",
+         "text": "大奶罐\n渐渐精神起来了！"
+        }
+       ]
+      },
+      {
+       "at": "0x089F24AF",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089F24B1",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089F258E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F258E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F258E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144648023
+       ],
+       "texts": [
+        {
+         "address": "0x089F2757",
+         "text": "[玩家/变量]给了\n橙橙果！"
+        }
+       ]
+      },
+      {
+       "at": "0x089F2594",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089F2596",
+       "command": "removeitem",
+       "args": [
+        139,
+        1
+       ],
+       "item_name": "橙橙果"
+      },
+      {
+       "at": "0x089F259B",
+       "command": "addvar",
+       "args": [
+        20828,
+        1
+       ]
+      },
+      {
+       "at": "0x089F25A0",
+       "command": "comparevartovalue",
+       "args": [
+        20828,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x089F25A5",
+       "command": "goto_if",
+       "args": [
+        1,
+        144647327
+       ],
+       "targets": [
+        "0x089F249F"
+       ]
+      },
+      {
+       "at": "0x089F25AB",
+       "command": "comparevartovalue",
+       "args": [
+        20828,
+        5
+       ],
+       "possible_names_not_semantics": {
+        "species": "火恐龙",
+        "item": "狩猎球",
+        "move": "百万吨重拳"
+       }
+      },
+      {
+       "at": "0x089F25B0",
+       "command": "goto_if",
+       "args": [
+        1,
+        144647337
+       ],
+       "targets": [
+        "0x089F24A9"
+       ]
+      },
+      {
+       "at": "0x089F25B6",
+       "command": "comparevartovalue",
+       "args": [
+        20828,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x089F25BB",
+       "command": "goto_if",
+       "args": [
+        1,
+        144647098
+       ],
+       "targets": [
+        "0x089F23BA"
+       ]
+      },
+      {
+       "at": "0x089F25C1",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089F23CE"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF17B5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF17B5",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AF17B8",
+       "command": "goto_if",
+       "args": [
+        1,
+        145701695
+       ],
+       "targets": [
+        "0x08AF3B3F"
+       ]
+      },
+      {
+       "at": "0x08AF17BE",
+       "command": "goto",
+       "args": [
+        144645942
+       ],
+       "targets": [
+        "0x089F1F36"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EC1429"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3B3F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF3B3F",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AF3B40",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AF3B41",
+       "command": "checkflag",
+       "args": [
+        5581
+       ]
+      },
+      {
+       "at": "0x08AF3B44",
+       "command": "goto_if",
+       "args": [
+        1,
+        145702004
+       ],
+       "targets": [
+        "0x08AF3C74"
+       ]
+      },
+      {
+       "at": "0x08AF3B4A",
+       "command": "checkflag",
+       "args": [
+        6015
+       ],
+       "task_flag_labels": [
+        {
+         "title": "没精神的大奶罐",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3B4D",
+       "command": "goto_if",
+       "args": [
+        1,
+        145701818
+       ],
+       "targets": [
+        "0x08AF3BBA"
+       ]
+      },
+      {
+       "at": "0x08AF3B53",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144646315
+       ],
+       "texts": [
+        {
+         "address": "0x089F20AB",
+         "text": "我们的牛奶也会在关都地区出售。\n所以奶牛挤不出好喝的牛奶\n我们也很困扰！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3B59",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AF3B5B",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AF3B5E",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145701828
+       ]
+      },
+      {
+       "at": "0x08AF3B65",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AF3B68",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145701831
+       ],
+       "texts": [
+        {
+         "address": "0x08AF3BC7",
+         "text": "您好，\n看见了我们的委托吗？\n您能帮我们治好大奶罐吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3B6E",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AF3B70",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF3B75",
+       "command": "goto",
+       "args": [
+        149689477
+       ],
+       "targets": [
+        "0x08EC1485"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF17B5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3B86",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF3B86",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF3B89",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145701950
+       ],
+       "texts": [
+        {
+         "address": "0x08AF3C3E",
+         "text": "接受任务:<失去精神的大奶罐>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3B8F",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF3B94",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF3B99",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AF3B9E",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AF3BA3",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AF3BA8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145701900
+       ],
+       "texts": [
+        {
+         "address": "0x08AF3C0C",
+         "text": "谢谢您！\n大奶罐就在隔壁，\n去看看它出了什么问题吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3BAE",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AF3BB0",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AF3BB5",
+       "command": "setflag",
+       "args": [
+        6015
+       ],
+       "task_flag_labels": [
+        {
+         "title": "没精神的大奶罐",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3BB8",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EC1485"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3BBA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF3BBA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145701900
+       ],
+       "texts": [
+        {
+         "address": "0x08AF3C0C",
+         "text": "谢谢您！\n大奶罐就在隔壁，\n去看看它出了什么问题吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3BC0",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF3BC2",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3B3F"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3C74",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF3C74",
+       "command": "checkflag",
+       "args": [
+        5582
+       ]
+      },
+      {
+       "at": "0x08AF3C77",
+       "command": "goto_if",
+       "args": [
+        1,
+        144646304
+       ],
+       "targets": [
+        "0x089F20A0"
+       ]
+      },
+      {
+       "at": "0x08AF3C7D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144646386
+       ],
+       "texts": [
+        {
+         "address": "0x089F20F2",
+         "text": "奶牛能挤出好喝的牛奶\n多亏了你！\n这个给你\n收下吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3C83",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AF3C85",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        445
+       ],
+       "possible_names_not_semantics": {
+        "species": "烈焰猴",
+        "item": "TM120",
+        "move": "巴投"
+       }
+      },
+      {
+       "at": "0x08AF3C8A",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF3C8F",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF3C91",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144646436
+       ],
+       "texts": [
+        {
+         "address": "0x089F2124",
+         "text": "那是大自然的恩惠，\n招式的类型和威力\n会根据所在的场所而变化哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3C97",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AF3C99",
+       "command": "setflag",
+       "args": [
+        5582
+       ]
+      },
+      {
+       "at": "0x08AF3C9C",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF3C9F",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF3CA2",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x08AF3CA7",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AF3CAD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145702111
+       ],
+       "texts": [
+        {
+         "address": "0x08AF3CDF",
+         "text": "完成任务:<失去精神的大奶罐>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3CB3",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF3CB8",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF3CBD",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AF3CC2",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AF3CC7",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AF3CCC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145702144
+       ],
+       "texts": [
+        {
+         "address": "0x08AF3D00",
+         "text": "获得了4点BracerPoints和4000$"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3CD2",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AF3CD4",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AF3CD9",
+       "command": "setflag",
+       "args": [
+        6009
+       ],
+       "task_flag_labels": [
+        {
+         "title": "没精神的大奶罐",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3CDC",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AF3CDD",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3B3F"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3D21",
+     "event_roots": [
+      {
+       "map_id": "52:7",
+       "place": "39号道路",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 6,
+       "y": 5,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g52_n007.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AF3D21",
+       "command": "checkflag",
+       "args": [
+        6015
+       ],
+       "task_flag_labels": [
+        {
+         "title": "没精神的大奶罐",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3D24",
+       "command": "goto_if",
+       "args": [
+        1,
+        144646498
+       ],
+       "targets": [
+        "0x089F2162"
+       ]
+      },
+      {
+       "at": "0x08AF3D2A",
+       "command": "checkflag",
+       "args": [
+        5581
+       ]
+      },
+      {
+       "at": "0x08AF3D2D",
+       "command": "goto_if",
+       "args": [
+        1,
+        144646578
+       ],
+       "targets": [
+        "0x089F21B2"
+       ]
+      },
+      {
+       "at": "0x08AF3D33",
+       "command": "cry",
+       "args": [
+        241,
+        255
+       ]
+      },
+      {
+       "at": "0x08AF3D38",
+       "command": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x08AF3D39",
+       "command": "setvar",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AF3D3E",
+       "command": "setvar",
+       "args": [
+        32772,
+        48
+       ],
+       "possible_names_not_semantics": {
+        "species": "毛球",
+        "item": "红色碎片",
+        "move": "超音波"
+       }
+      },
+      {
+       "at": "0x08AF3D43",
+       "command": "setvar",
+       "args": [
+        32773,
+        79
+       ],
+       "possible_names_not_semantics": {
+        "species": "呆呆兽",
+        "item": "特攻强化",
+        "move": "催眠粉"
+       }
+      },
+      {
+       "at": "0x08AF3D48",
+       "command": "setvar",
+       "args": [
+        32774,
+        210
+       ],
+       "possible_names_not_semantics": {
+        "species": "布鲁皇",
+        "item": "锐利鸟嘴",
+        "move": "连斩"
+       }
+      },
+      {
+       "at": "0x08AF3D4D",
+       "command": "setvar",
+       "args": [
+        32775,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AF3D52",
+       "command": "special",
+       "args": [
+        156
+       ]
+      },
+      {
+       "at": "0x08AF3D55",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145702246
+       ],
+       "texts": [
+        {
+         "address": "0x08AF3D66",
+         "text": "大奶罐：……哞\n叫声没精神……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3D5B",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AF3D5D",
+       "command": "setvar",
+       "args": [
+        32772,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AF3D62",
+       "command": "special",
+       "args": [
+        91
+       ]
+      },
+      {
+       "at": "0x08AF3D65",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "52:7/local1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EC1429",
+     "event_roots": [
+      {
+       "map_id": "52:6",
+       "place": "39号道路",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 9,
+       "y": 4,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g52_n006.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EC1429",
+       "command": "applymovement",
+       "args": [
+        3,
+        149689401
+       ]
+      },
+      {
+       "at": "0x08EC1430",
+       "command": "waitmovement",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08EC1433",
+       "command": "goto",
+       "args": [
+        145692597
+       ],
+       "targets": [
+        "0x08AF17B5"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "52:6/local2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EC1485",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC1485",
+       "command": "goto_if",
+       "args": [
+        1,
+        145701766
+       ],
+       "targets": [
+        "0x08AF3B86"
+       ]
+      },
+      {
+       "at": "0x08EC148B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145701883
+       ],
+       "texts": [
+        {
+         "address": "0x08AF3BFB",
+         "text": "这该怎么办呢……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC1491",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC1493",
+       "command": "applymovement",
+       "args": [
+        3,
+        149689504
+       ]
+      },
+      {
+       "at": "0x08EC149A",
+       "command": "waitmovement",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08EC149D",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EC149E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3B3F"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

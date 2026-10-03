@@ -1,0 +1,3684 @@
+{
+ "title": "传达情书",
+ "quest_id": 38,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b1f4",
+    "title": "传达情书",
+    "title_address": "0x8e3c765",
+    "description": "我想要给我的恋人寄一封信，\n希望有人能来帮帮我，\n我现在正在道馆附近。",
+    "description_address": "0x8e3c737",
+    "unknown_u16": 77,
+    "unknown_u16_hex": "0x004D",
+    "accept_flag": 5751,
+    "accept_flag_hex": "0x1677",
+    "complete_flag": 5752,
+    "complete_flag_hex": "0x1678",
+    "map_group": 3,
+    "map_num": 69,
+    "tail_hex": "08 00 00 00",
+    "index": 38,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39524",
+      "title": "情书的传达",
+      "description_address": "0x8e3a865",
+      "description": "我想要给我的恋人寄一封信，\\n希望有人能来帮帮我，\\n我现在正在道馆附近。"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a865",
+    "legacy_match_count": 1,
+    "current_description": "帮助桧皮镇的青年\n向他在满金市的恋人\n传达情书。",
+    "catalog_map": {
+     "id": "3:69",
+     "name": "桧皮镇"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AE847A",
+    "0x08AE84C6",
+    "0x08AE851A",
+    "0x08AE8706",
+    "0x08AE870F",
+    "0x08AE8821",
+    "0x08AE882A",
+    "0x08AE8909",
+    "0x08AE8A25",
+    "0x08AE8B10",
+    "0x08AE8BCA",
+    "0x08AE8CC4",
+    "0x08AE8D4E",
+    "0x08AE8E8D",
+    "0x08AE8F85"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08AE8909",
+     "map_id": "50:32",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 5,
+     "event_index": 4,
+     "x": 10,
+     "y": 3,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g50_n032.md"
+    },
+    {
+     "script": "0x08AE8A25",
+     "map_id": "50:32",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 1,
+     "event_index": 0,
+     "x": 10,
+     "y": 7,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g50_n032.md"
+    },
+    {
+     "script": "0x08AE8B10",
+     "map_id": "50:32",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 4,
+     "event_index": 3,
+     "x": 3,
+     "y": 8,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g50_n032.md"
+    },
+    {
+     "script": "0x08AE8BCA",
+     "map_id": "50:32",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 3,
+     "event_index": 2,
+     "x": 1,
+     "y": 4,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g50_n032.md"
+    },
+    {
+     "script": "0x08AE8BCA",
+     "map_id": "51:6",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 3,
+     "event_index": 2,
+     "x": 18,
+     "y": 5,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g51_n006.md"
+    },
+    {
+     "script": "0x08AE8CC4",
+     "map_id": "50:32",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 7,
+     "y": 7,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g50_n032.md"
+    },
+    {
+     "script": "0x08AE8E8D",
+     "map_id": "50:32",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 6,
+     "event_index": 5,
+     "x": 17,
+     "y": 7,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g50_n032.md"
+    },
+    {
+     "script": "0x08F507C9",
+     "map_id": "3:69",
+     "place": "桧皮镇",
+     "kind": "人物",
+     "local_id": 30,
+     "event_index": 29,
+     "x": 17,
+     "y": 20,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n069.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08AE847A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE847A",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE847B",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE847C",
+       "command": "checkflag",
+       "args": [
+        5752
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE847F",
+       "command": "goto_if",
+       "args": [
+        1,
+        145654932
+       ],
+       "targets": [
+        "0x08AE8494"
+       ]
+      },
+      {
+       "at": "0x08AE8485",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AE8488",
+       "command": "goto_if",
+       "args": [
+        1,
+        145654982
+       ],
+       "targets": [
+        "0x08AE84C6"
+       ]
+      },
+      {
+       "at": "0x08AE848E",
+       "command": "goto",
+       "args": [
+        145655046
+       ],
+       "targets": [
+        "0x08AE8506"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F507C9"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8494",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8494",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145654942
+       ],
+       "texts": [
+        {
+         "address": "0x08AE849E",
+         "text": "我的恋人给我回信了，\n真的是太感谢你了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE849A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE849C",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE847A"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE84C6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE84C6",
+       "command": "checkflag",
+       "args": [
+        5751
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE84C9",
+       "command": "goto_if",
+       "args": [
+        1,
+        145655056
+       ],
+       "targets": [
+        "0x08AE8510"
+       ]
+      },
+      {
+       "at": "0x08AE84CF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655344
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8630",
+         "text": "唉，\n这该如何是好呢……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE84D5",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE84D7",
+       "command": "applymovement",
+       "args": [
+        30,
+        145655553
+       ]
+      },
+      {
+       "at": "0x08AE84DE",
+       "command": "waitmovement",
+       "args": [
+        30
+       ]
+      },
+      {
+       "at": "0x08AE84E1",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AE84E4",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AE84E7",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE84E8",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE84E9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655132
+       ]
+      },
+      {
+       "at": "0x08AE84EF",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE84F1",
+       "command": "goto",
+       "args": [
+        150277312
+       ],
+       "targets": [
+        "0x08F50CC0"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE847A"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8506",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8506",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655344
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8630",
+         "text": "唉，\n这该如何是好呢……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE850C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE850E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE847A"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8510",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8510",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655427
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8683",
+         "text": "谢谢你！\n我的恋人住在时尚的满金市，\n她的住宅在满金市的海边。\n她是个既美丽又可爱的女孩，\n你一眼就能认出她！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8516",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8518",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE84C6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE851A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE851A",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x08AE851B",
+       "command": "fanfare",
+       "args": [
+        318
+       ]
+      },
+      {
+       "at": "0x08AE851E",
+       "command": "preparemsg",
+       "args": [
+        145655531
+       ],
+       "texts": [
+        {
+         "address": "0x08AE86EB",
+         "text": "[玩家/变量]收下了信件！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8523",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08AE8524",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AE8525",
+       "command": "setflag",
+       "args": [
+        5751
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8528",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE852B",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE852E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655401
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8669",
+         "text": "接受任务:<传达情书>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8534",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE8539",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE853E",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE8543",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AE8548",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AE854D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655427
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8683",
+         "text": "谢谢你！\n我的恋人住在时尚的满金市，\n她的住宅在满金市的海边。\n她是个既美丽又可爱的女孩，\n你一眼就能认出她！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8553",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8555",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AE855A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F516B6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8706",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8706",
+       "command": "checkflag",
+       "args": [
+        5752
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8709",
+       "command": "goto_if",
+       "args": [
+        1,
+        145655586
+       ],
+       "targets": [
+        "0x08AE8722"
+       ]
+      },
+      {
+       "at": "0x08AE870F",
+       "command": "checkflag",
+       "args": [
+        5751
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8712",
+       "command": "goto_if",
+       "args": [
+        1,
+        145655596
+       ],
+       "targets": [
+        "0x08AE872C"
+       ]
+      },
+      {
+       "at": "0x08AE8718",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655639
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8757",
+         "text": "我们是满金市的五姐妹！\n我们的美丽可不会\n输给缘朱市的和服女孩哦！\n不过，\n我们之中有两个人已经名花有主了呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE871E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8720",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=38"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE870F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE870F",
+       "command": "checkflag",
+       "args": [
+        5751
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8712",
+       "command": "goto_if",
+       "args": [
+        1,
+        145655596
+       ],
+       "targets": [
+        "0x08AE872C"
+       ]
+      },
+      {
+       "at": "0x08AE8718",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655639
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8757",
+         "text": "我们是满金市的五姐妹！\n我们的美丽可不会\n输给缘朱市的和服女孩哦！\n不过，\n我们之中有两个人已经名花有主了呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE871E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8720",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=38"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8722",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8722",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655639
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8757",
+         "text": "我们是满金市的五姐妹！\n我们的美丽可不会\n输给缘朱市的和服女孩哦！\n不过，\n我们之中有两个人已经名花有主了呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8728",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE872A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8706"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE872C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE872C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655639
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8757",
+         "text": "我们是满金市的五姐妹！\n我们的美丽可不会\n输给缘朱市的和服女孩哦！\n不过，\n我们之中有两个人已经名花有主了呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8732",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AE8734",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655744
+       ],
+       "texts": [
+        {
+         "address": "0x08AE87C0",
+         "text": "要把桧皮镇\n男子的信件送给她吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE873A",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE873C",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE8741",
+       "command": "goto_if",
+       "args": [
+        1,
+        145655626
+       ],
+       "targets": [
+        "0x08AE874A"
+       ]
+      },
+      {
+       "at": "0x08AE8747",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08AE8748",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE870F"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE874A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE874A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655777
+       ],
+       "texts": [
+        {
+         "address": "0x08AE87E1",
+         "text": "什么，在想我的事件？\n哎呀，你是我的倾慕者吗？\n……？\n不是吗？真可惜！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8750",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8752",
+       "command": "setflag",
+       "args": [
+        5753
+       ]
+      },
+      {
+       "at": "0x08AE8755",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE872C"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8821",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8821",
+       "command": "checkflag",
+       "args": [
+        5752
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8824",
+       "command": "goto_if",
+       "args": [
+        1,
+        145655869
+       ],
+       "targets": [
+        "0x08AE883D"
+       ]
+      },
+      {
+       "at": "0x08AE882A",
+       "command": "checkflag",
+       "args": [
+        5751
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE882D",
+       "command": "goto_if",
+       "args": [
+        1,
+        145655879
+       ],
+       "targets": [
+        "0x08AE8847"
+       ]
+      },
+      {
+       "at": "0x08AE8833",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655922
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8872",
+         "text": "我们虽然是亲姐妹，\n但是喜欢的属性都不一样!\n比如说，三妹喜欢水系的精灵，\n而四妹喜欢妖精系的精灵！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8839",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE883B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=38"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE882A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE882A",
+       "command": "checkflag",
+       "args": [
+        5751
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE882D",
+       "command": "goto_if",
+       "args": [
+        1,
+        145655879
+       ],
+       "targets": [
+        "0x08AE8847"
+       ]
+      },
+      {
+       "at": "0x08AE8833",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655922
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8872",
+         "text": "我们虽然是亲姐妹，\n但是喜欢的属性都不一样!\n比如说，三妹喜欢水系的精灵，\n而四妹喜欢妖精系的精灵！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8839",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE883B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=38"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE883D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE883D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655922
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8872",
+         "text": "我们虽然是亲姐妹，\n但是喜欢的属性都不一样!\n比如说，三妹喜欢水系的精灵，\n而四妹喜欢妖精系的精灵！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8843",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8845",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8821"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8847",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8847",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655922
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8872",
+         "text": "我们虽然是亲姐妹，\n但是喜欢的属性都不一样!\n比如说，三妹喜欢水系的精灵，\n而四妹喜欢妖精系的精灵！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE884D",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AE884F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656017
+       ],
+       "texts": [
+        {
+         "address": "0x08AE88D1",
+         "text": "要把桧皮镇\n男子的信件送给她吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8855",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE8857",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE885C",
+       "command": "goto_if",
+       "args": [
+        1,
+        145655909
+       ],
+       "targets": [
+        "0x08AE8865"
+       ]
+      },
+      {
+       "at": "0x08AE8862",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08AE8863",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE882A"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8865",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8865",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656050
+       ],
+       "texts": [
+        {
+         "address": "0x08AE88F2",
+         "text": "呀，\n我已经有男朋友了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE886B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE886D",
+       "command": "setflag",
+       "args": [
+        5753
+       ]
+      },
+      {
+       "at": "0x08AE8870",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8847"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8909",
+     "event_roots": [
+      {
+       "map_id": "50:32",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 5,
+       "event_index": 4,
+       "x": 10,
+       "y": 3,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n032.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AE8909",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE890A",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE890B",
+       "command": "checkflag",
+       "args": [
+        5752
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE890E",
+       "command": "goto_if",
+       "args": [
+        1,
+        145656103
+       ],
+       "targets": [
+        "0x08AE8927"
+       ]
+      },
+      {
+       "at": "0x08AE8914",
+       "command": "checkflag",
+       "args": [
+        5751
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8917",
+       "command": "goto_if",
+       "args": [
+        1,
+        145656113
+       ],
+       "targets": [
+        "0x08AE8931"
+       ]
+      },
+      {
+       "at": "0x08AE891D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656157
+       ],
+       "texts": [
+        {
+         "address": "0x08AE895D",
+         "text": "我们是满金市的五姐妹！\n我们的美丽可不会\n输给缘朱市的和服女孩哦！\n不过，我们之中\n有两个人已经名花有主了呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8923",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8925",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "50:32/local5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8927",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8927",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656157
+       ],
+       "texts": [
+        {
+         "address": "0x08AE895D",
+         "text": "我们是满金市的五姐妹！\n我们的美丽可不会\n输给缘朱市的和服女孩哦！\n不过，我们之中\n有两个人已经名花有主了呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE892D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE892F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8909"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8931",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8931",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE8932",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656157
+       ],
+       "texts": [
+        {
+         "address": "0x08AE895D",
+         "text": "我们是满金市的五姐妹！\n我们的美丽可不会\n输给缘朱市的和服女孩哦！\n不过，我们之中\n有两个人已经名花有主了呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8938",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE893A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656262
+       ],
+       "texts": [
+        {
+         "address": "0x08AE89C6",
+         "text": "要把桧皮镇\n男子的信件送给她吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8940",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE8942",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE8947",
+       "command": "goto_if",
+       "args": [
+        1,
+        145656144
+       ],
+       "targets": [
+        "0x08AE8950"
+       ]
+      },
+      {
+       "at": "0x08AE894D",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08AE894E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8909"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8950",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8950",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656295
+       ],
+       "texts": [
+        {
+         "address": "0x08AE89E7",
+         "text": "什么，在想我的事情？\n哎呀，你是我的倾慕者吗？\n……？\n不是吗？真可惜！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8956",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8958",
+       "command": "setflag",
+       "args": [
+        5753
+       ]
+      },
+      {
+       "at": "0x08AE895B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8931"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8A25",
+     "event_roots": [
+      {
+       "map_id": "50:32",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 10,
+       "y": 7,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n032.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AE8A25",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE8A26",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE8A27",
+       "command": "checkflag",
+       "args": [
+        5752
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8A2A",
+       "command": "goto_if",
+       "args": [
+        1,
+        145656387
+       ],
+       "targets": [
+        "0x08AE8A43"
+       ]
+      },
+      {
+       "at": "0x08AE8A30",
+       "command": "checkflag",
+       "args": [
+        5751
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8A33",
+       "command": "goto_if",
+       "args": [
+        1,
+        145656397
+       ],
+       "targets": [
+        "0x08AE8A4D"
+       ]
+      },
+      {
+       "at": "0x08AE8A39",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656441
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8A79",
+         "text": "我们虽然是亲姐妹，\n但是喜欢的属性都不一样!\n比如说，三妹喜欢草系的精灵，\n而五妹喜欢妖精系的精灵！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8A3F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8A41",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "50:32/local1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8A43",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8A43",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656441
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8A79",
+         "text": "我们虽然是亲姐妹，\n但是喜欢的属性都不一样!\n比如说，三妹喜欢草系的精灵，\n而五妹喜欢妖精系的精灵！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8A49",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8A4B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8A25"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8A4D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8A4D",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE8A4E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656441
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8A79",
+         "text": "我们虽然是亲姐妹，\n但是喜欢的属性都不一样!\n比如说，三妹喜欢草系的精灵，\n而五妹喜欢妖精系的精灵！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8A54",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE8A56",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656536
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8AD8",
+         "text": "要把桧皮镇\n男子的信件送给她吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8A5C",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE8A5E",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE8A63",
+       "command": "goto_if",
+       "args": [
+        1,
+        145656428
+       ],
+       "targets": [
+        "0x08AE8A6C"
+       ]
+      },
+      {
+       "at": "0x08AE8A69",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08AE8A6A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8A25"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8A6C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8A6C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656569
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8AF9",
+         "text": "呀，\n我已经有男朋友了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8A72",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8A74",
+       "command": "setflag",
+       "args": [
+        5753
+       ]
+      },
+      {
+       "at": "0x08AE8A77",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8A4D"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8B10",
+     "event_roots": [
+      {
+       "map_id": "50:32",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 4,
+       "event_index": 3,
+       "x": 3,
+       "y": 8,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n032.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AE8B10",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE8B11",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE8B12",
+       "command": "checkflag",
+       "args": [
+        5752
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8B15",
+       "command": "goto_if",
+       "args": [
+        1,
+        145656622
+       ],
+       "targets": [
+        "0x08AE8B2E"
+       ]
+      },
+      {
+       "at": "0x08AE8B1B",
+       "command": "checkflag",
+       "args": [
+        5751
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8B1E",
+       "command": "goto_if",
+       "args": [
+        1,
+        145656632
+       ],
+       "targets": [
+        "0x08AE8B38"
+       ]
+      },
+      {
+       "at": "0x08AE8B24",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656676
+       ]
+      },
+      {
+       "at": "0x08AE8B2A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8B2C",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "50:32/local4"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8B2E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8B2E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656676
+       ]
+      },
+      {
+       "at": "0x08AE8B34",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8B36",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8B10"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8B38",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8B38",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE8B39",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656676
+       ]
+      },
+      {
+       "at": "0x08AE8B3F",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE8B41",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656719
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8B8F",
+         "text": "要把桧皮镇\n男子的信件送给她吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8B47",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE8B49",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE8B4E",
+       "command": "goto_if",
+       "args": [
+        1,
+        145656663
+       ],
+       "targets": [
+        "0x08AE8B57"
+       ]
+      },
+      {
+       "at": "0x08AE8B54",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08AE8B55",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8B10"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8B57",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8B57",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656752
+       ]
+      },
+      {
+       "at": "0x08AE8B5D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8B5F",
+       "command": "setflag",
+       "args": [
+        5753
+       ]
+      },
+      {
+       "at": "0x08AE8B62",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8B38"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8BCA",
+     "event_roots": [
+      {
+       "map_id": "50:32",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 3,
+       "event_index": 2,
+       "x": 1,
+       "y": 4,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n032.md"
+      },
+      {
+       "map_id": "51:6",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 3,
+       "event_index": 2,
+       "x": 18,
+       "y": 5,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g51_n006.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AE8BCA",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE8BCB",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE8BCC",
+       "command": "checkflag",
+       "args": [
+        5752
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8BCF",
+       "command": "goto_if",
+       "args": [
+        1,
+        145656808
+       ],
+       "targets": [
+        "0x08AE8BE8"
+       ]
+      },
+      {
+       "at": "0x08AE8BD5",
+       "command": "checkflag",
+       "args": [
+        5751
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8BD8",
+       "command": "goto_if",
+       "args": [
+        1,
+        145656818
+       ],
+       "targets": [
+        "0x08AE8BF2"
+       ]
+      },
+      {
+       "at": "0x08AE8BDE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656862
+       ]
+      },
+      {
+       "at": "0x08AE8BE4",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8BE6",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "50:32/local3"
+      },
+      {
+       "kind": "object",
+       "where": "51:6/local3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8BE8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8BE8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656862
+       ]
+      },
+      {
+       "at": "0x08AE8BEE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8BF0",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8BCA"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8BF2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8BF2",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE8BF3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656862
+       ]
+      },
+      {
+       "at": "0x08AE8BF9",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE8BFB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656959
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8C7F",
+         "text": "要把桧皮镇\n男子的信件送给她吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8C01",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE8C03",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE8C08",
+       "command": "goto_if",
+       "args": [
+        1,
+        145656849
+       ],
+       "targets": [
+        "0x08AE8C11"
+       ]
+      },
+      {
+       "at": "0x08AE8C0E",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08AE8C0F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8BCA"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8C11",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8C11",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145656992
+       ]
+      },
+      {
+       "at": "0x08AE8C17",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8C19",
+       "command": "setflag",
+       "args": [
+        5753
+       ]
+      },
+      {
+       "at": "0x08AE8C1C",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8BF2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8CC4",
+     "event_roots": [
+      {
+       "map_id": "50:32",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 7,
+       "y": 7,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n032.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AE8CC4",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE8CC5",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE8CC6",
+       "command": "checkflag",
+       "args": [
+        5752
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8CC9",
+       "command": "goto_if",
+       "args": [
+        1,
+        145657219
+       ],
+       "targets": [
+        "0x08AE8D83"
+       ]
+      },
+      {
+       "at": "0x08AE8CCF",
+       "command": "checkflag",
+       "args": [
+        5751
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8CD2",
+       "command": "goto_if",
+       "args": [
+        1,
+        145657068
+       ],
+       "targets": [
+        "0x08AE8CEC"
+       ]
+      },
+      {
+       "at": "0x08AE8CD8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145657229
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8D8D",
+         "text": "二姐的男朋友住在别的地方，\n所以两个人平时很难见面呢……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8CDE",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8CE0",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "50:32/local2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8CEC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8CEC",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE8CED",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145657229
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8D8D",
+         "text": "二姐的男朋友住在别的地方，\n所以两个人平时很难见面呢……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8CF3",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE8CF5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145657284
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8DC4",
+         "text": "要把桧皮镇\n男子的信件送给她吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8CFB",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE8CFD",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE8D02",
+       "command": "goto_if",
+       "args": [
+        1,
+        145657099
+       ],
+       "targets": [
+        "0x08AE8D0B"
+       ]
+      },
+      {
+       "at": "0x08AE8D08",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08AE8D09",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8CC4"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8D0B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8D0B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145657317
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8DE5",
+         "text": "这是…他的字迹！难道说，\n你是来替他送这封信的吗？\n谢谢你！\n请收下这个作为我的谢礼！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8D11",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8D13",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        688
+       ],
+       "possible_names_not_semantics": {
+        "species": "三首恶龙",
+        "item": "红线",
+        "move": "电喙"
+       }
+      },
+      {
+       "at": "0x08AE8D18",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE8D1D",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AE8D1F",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE8D22",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AE8D23",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE8D26",
+       "command": "checkflag",
+       "args": [
+        5753
+       ]
+      },
+      {
+       "at": "0x08AE8D29",
+       "command": "goto_if",
+       "args": [
+        0,
+        145657141
+       ],
+       "targets": [
+        "0x08AE8D35"
+       ]
+      },
+      {
+       "at": "0x08AE8D2F",
+       "command": "goto",
+       "args": [
+        145657166
+       ],
+       "targets": [
+        "0x08AE8D4E"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8CEC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8D35",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8D35",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        696
+       ],
+       "possible_names_not_semantics": {
+        "species": "莱希拉姆",
+        "item": "讲究眼镜",
+        "move": "火焰球"
+       }
+      },
+      {
+       "at": "0x08AE8D3A",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE8D3F",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AE8D41",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE8D44",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AE8D45",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE8D48",
+       "command": "goto",
+       "args": [
+        145657733
+       ],
+       "targets": [
+        "0x08AE8F85"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8D0B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8D4E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8D4E",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8D51",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145657398
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8E36",
+         "text": "任务完成:<传达情书>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8D57",
+       "command": "setflag",
+       "args": [
+        5752
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8D5A",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE8D5F",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE8D64",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE8D69",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AE8D6E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145657451
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8E6B",
+         "text": "获得了3点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8D74",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8D76",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08AE8D7B",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE8D81",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8D0B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8D83",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8D83",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145657423
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8E4F",
+         "text": "谢谢你，\n我会写回信给他的！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8D89",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8D8B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8CC4"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8E8D",
+     "event_roots": [
+      {
+       "map_id": "50:32",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 6,
+       "event_index": 5,
+       "x": 17,
+       "y": 7,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n032.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AE8E8D",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE8E8E",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE8E8F",
+       "command": "checkflag",
+       "args": [
+        5752
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8E92",
+       "command": "goto_if",
+       "args": [
+        1,
+        145657515
+       ],
+       "targets": [
+        "0x08AE8EAB"
+       ]
+      },
+      {
+       "at": "0x08AE8E98",
+       "command": "checkflag",
+       "args": [
+        5751
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8E9B",
+       "command": "goto_if",
+       "args": [
+        1,
+        145657525
+       ],
+       "targets": [
+        "0x08AE8EB5"
+       ]
+      },
+      {
+       "at": "0x08AE8EA1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145657569
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8EE1",
+         "text": "唉……\n我家里只有我一个男生……\n大姐和四姐又是单身，害得我\n总是被误认成她们的男朋友。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8EA7",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8EA9",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "50:32/local6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8EAB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8EAB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145657569
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8EE1",
+         "text": "唉……\n我家里只有我一个男生……\n大姐和四姐又是单身，害得我\n总是被误认成她们的男朋友。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8EB1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8EB3",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8E8D"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8EB5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8EB5",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE8EB6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145657569
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8EE1",
+         "text": "唉……\n我家里只有我一个男生……\n大姐和四姐又是单身，害得我\n总是被误认成她们的男朋友。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8EBC",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE8EBE",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE8EBF",
+       "command": "goto",
+       "args": [
+        145657795
+       ],
+       "targets": [
+        "0x08AE8FC3"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8E8D"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8ED4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8ED4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145657684
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8F54",
+         "text": "哈？？？！\n吓死我了……\n(我还以为我的秘密被发现了……)"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8EDA",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8EDC",
+       "command": "setflag",
+       "args": [
+        5753
+       ]
+      },
+      {
+       "at": "0x08AE8EDF",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8FC3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8F85",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8F85",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8F88",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145657398
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8E36",
+         "text": "任务完成:<传达情书>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8F8E",
+       "command": "setflag",
+       "args": [
+        5752
+       ],
+       "task_flag_labels": [
+        {
+         "title": "传达情书",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8F91",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE8F96",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE8F9B",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE8FA0",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AE8FA5",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AE8FAA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145657451
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8E6B",
+         "text": "获得了3点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8FB0",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE8FB2",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AE8FB7",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08AE8FBC",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE8FC2",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8D35"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE8FC3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE8FC3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145657651
+       ],
+       "texts": [
+        {
+         "address": "0x08AE8F33",
+         "text": "要把桧皮镇\n男子的信件送给他吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE8FC9",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE8FCB",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE8FD0",
+       "command": "goto_if",
+       "args": [
+        1,
+        145657556
+       ],
+       "targets": [
+        "0x08AE8ED4"
+       ]
+      },
+      {
+       "at": "0x08AE8FD6",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08AE8FD7",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE8EB5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F507C9",
+     "event_roots": [
+      {
+       "map_id": "3:69",
+       "place": "桧皮镇",
+       "kind": "人物",
+       "local_id": 30,
+       "event_index": 29,
+       "x": 17,
+       "y": 20,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n069.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F507C9",
+       "command": "applymovement",
+       "args": [
+        32,
+        150277088
+       ]
+      },
+      {
+       "at": "0x08F507D0",
+       "command": "waitmovement",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x08F507D3",
+       "command": "goto",
+       "args": [
+        145654906
+       ],
+       "targets": [
+        "0x08AE847A"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "3:69/local30"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F50CC0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F50CC0",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F50CC5",
+       "command": "goto_if",
+       "args": [
+        1,
+        150279862
+       ],
+       "targets": [
+        "0x08F516B6"
+       ]
+      },
+      {
+       "at": "0x08F50CCB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145655273
+       ]
+      },
+      {
+       "at": "0x08F50CD1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F50CD3",
+       "command": "applymovement",
+       "args": [
+        32,
+        150278009
+       ]
+      },
+      {
+       "at": "0x08F50CDA",
+       "command": "waitmovement",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x08F50CDD",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F50CDE",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE84C6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F516B6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F516B6",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F516B7",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F516B8",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08F516BB",
+       "command": "goto",
+       "args": [
+        145655066
+       ],
+       "targets": [
+        "0x08AE851A"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F50CC0"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

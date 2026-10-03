@@ -1,0 +1,3627 @@
+{
+ "title": "遗失的玩偶",
+ "quest_id": 57,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b370",
+    "title": "遗失的玩偶",
+    "title_address": "0x8e3c210",
+    "description": "帮助满金市地下商业街\n的富家少爷找到遗失的玩偶。",
+    "description_address": "0x8e3c1e1",
+    "unknown_u16": 441,
+    "unknown_u16_hex": "0x01B9",
+    "accept_flag": 6264,
+    "accept_flag_hex": "0x1878",
+    "complete_flag": 6274,
+    "complete_flag_hex": "0x1882",
+    "map_group": 50,
+    "map_num": 8,
+    "tail_hex": "04 01 00 00",
+    "index": 57,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3c1e1",
+    "legacy_match_count": 0,
+    "current_description": "帮助满金市地下商业街\n的富家少爷找到遗失的玩偶。",
+    "catalog_map": {
+     "id": "50:8",
+     "name": "满金市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08F32241",
+    "0x08F323C8",
+    "0x08F32E7B",
+    "0x08F33364",
+    "0x08F33761",
+    "0x08F53F96",
+    "0x08F58213",
+    "0x08F5C3FD"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F32241",
+     "map_id": "50:20",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 7,
+     "event_index": 6,
+     "x": 6,
+     "y": 2,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g50_n020.md"
+    },
+    {
+     "script": "0x08F33761",
+     "map_id": "50:8",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 7,
+     "event_index": 6,
+     "x": 9,
+     "y": 7,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g50_n008.md"
+    },
+    {
+     "script": "0x08F53F96",
+     "map_id": "50:8",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 6,
+     "event_index": 5,
+     "x": 12,
+     "y": 8,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g50_n008.md"
+    },
+    {
+     "script": "0x08F5BE76",
+     "map_id": "55:33",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 10,
+     "y": 35,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g55_n033.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x0816C68D",
+     "event_roots": [
+      {
+       "map_id": "10:14",
+       "place": "玉虹市",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 6,
+       "y": 2,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g10_n014.md"
+      },
+      {
+       "map_id": "51:1",
+       "place": "浅葱市",
+       "kind": "人物",
+       "local_id": 7,
+       "event_index": 6,
+       "x": 3,
+       "y": 24,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g51_n001.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x0816C68D",
+       "command": "special",
+       "args": [
+        391
+       ]
+      },
+      {
+       "at": "0x0816C690",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x0816C695",
+       "command": "goto_if",
+       "args": [
+        1,
+        135953120
+       ],
+       "targets": [
+        "0x081A7AE0"
+       ]
+      },
+      {
+       "at": "0x0816C69B",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x0816C69C",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x0816C69D",
+       "command": "showmoney",
+       "args": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x0816C6A1",
+       "command": "showcoins",
+       "args": [
+        0,
+        5
+       ]
+      },
+      {
+       "at": "0x0816C6A4",
+       "command": "preparemsg",
+       "args": [
+        135883140
+       ],
+       "texts": [
+        {
+         "address": "0x08196984",
+         "text": "欢迎来到满金游戏城！\n你需要代币吗？\n是否想购买一些呢？"
+        }
+       ]
+      },
+      {
+       "at": "0x0816C6A9",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x0816C6AA",
+       "command": "multichoice",
+       "args": [
+        13,
+        0,
+        27,
+        0
+       ]
+      },
+      {
+       "at": "0x0816C6AF",
+       "command": "copyvar",
+       "args": [
+        32777,
+        32781
+       ]
+      },
+      {
+       "at": "0x0816C6B4",
+       "command": "copyvar",
+       "args": [
+        32768,
+        32781
+       ]
+      },
+      {
+       "at": "0x0816C6B9",
+       "command": "comparevartovalue",
+       "args": [
+        32768,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x0816C6BE",
+       "command": "goto_if",
+       "args": [
+        1,
+        135710438
+       ],
+       "targets": [
+        "0x0816C6E6"
+       ]
+      },
+      {
+       "at": "0x0816C6C4",
+       "command": "comparevartovalue",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x0816C6C9",
+       "command": "goto_if",
+       "args": [
+        1,
+        135710438
+       ],
+       "targets": [
+        "0x0816C6E6"
+       ]
+      },
+      {
+       "at": "0x0816C6CF",
+       "command": "comparevartovalue",
+       "args": [
+        32768,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x0816C6D4",
+       "command": "goto_if",
+       "args": [
+        1,
+        135710594
+       ],
+       "targets": [
+        "0x0816C782"
+       ]
+      },
+      {
+       "at": "0x0816C6DA",
+       "command": "comparevartovalue",
+       "args": [
+        32768,
+        127
+       ],
+       "possible_names_not_semantics": {
+        "species": "凯罗斯",
+        "item": "珠宝邮件",
+        "move": "攀瀑"
+       }
+      },
+      {
+       "at": "0x0816C6DF",
+       "command": "goto_if",
+       "args": [
+        1,
+        135710594
+       ],
+       "targets": [
+        "0x0816C782"
+       ]
+      },
+      {
+       "at": "0x0816C6E5",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x0816C6E6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x0816C6E6",
+       "command": "checkflag",
+       "args": [
+        5454
+       ]
+      },
+      {
+       "at": "0x0816C6E9",
+       "command": "goto_if",
+       "args": [
+        0,
+        135710608
+       ],
+       "targets": [
+        "0x0816C790"
+       ]
+      },
+      {
+       "at": "0x0816C6EF",
+       "command": "comparevartovalue",
+       "args": [
+        32777,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x0816C6F4",
+       "command": "goto_if",
+       "args": [
+        1,
+        135710516
+       ],
+       "targets": [
+        "0x0816C734"
+       ]
+      },
+      {
+       "at": "0x0816C6FA",
+       "command": "comparevartovalue",
+       "args": [
+        32777,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x0816C6FF",
+       "command": "goto_if",
+       "args": [
+        1,
+        135710470
+       ],
+       "targets": [
+        "0x0816C706"
+       ]
+      },
+      {
+       "at": "0x0816C705",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x0816C706",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x0816C706",
+       "command": "checkcoins",
+       "args": [
+        16385
+       ]
+      },
+      {
+       "at": "0x0816C709",
+       "command": "comparevartovalue",
+       "args": [
+        16385,
+        9500
+       ],
+       "possible_names_not_semantics": {
+        "species": null,
+        "item": null,
+        "move": null
+       }
+      },
+      {
+       "at": "0x0816C70E",
+       "command": "goto_if",
+       "args": [
+        4,
+        135710622
+       ],
+       "targets": [
+        "0x0816C79E"
+       ]
+      },
+      {
+       "at": "0x0816C714",
+       "command": "checkmoney",
+       "args": [
+        10000,
+        0
+       ]
+      },
+      {
+       "at": "0x0816C71A",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x0816C71F",
+       "command": "goto_if",
+       "args": [
+        1,
+        135710636
+       ],
+       "targets": [
+        "0x0816C7AC"
+       ]
+      },
+      {
+       "at": "0x0816C725",
+       "command": "addcoins",
+       "args": [
+        500
+       ]
+      },
+      {
+       "at": "0x0816C728",
+       "command": "removemoney",
+       "args": [
+        10000,
+        0
+       ]
+      },
+      {
+       "at": "0x0816C72E",
+       "command": "goto",
+       "args": [
+        135710562
+       ],
+       "targets": [
+        "0x0816C762"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x0816C734",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x0816C734",
+       "command": "checkcoins",
+       "args": [
+        16385
+       ]
+      },
+      {
+       "at": "0x0816C737",
+       "command": "comparevartovalue",
+       "args": [
+        16385,
+        9950
+       ],
+       "possible_names_not_semantics": {
+        "species": null,
+        "item": null,
+        "move": null
+       }
+      },
+      {
+       "at": "0x0816C73C",
+       "command": "goto_if",
+       "args": [
+        4,
+        135710622
+       ],
+       "targets": [
+        "0x0816C79E"
+       ]
+      },
+      {
+       "at": "0x0816C742",
+       "command": "checkmoney",
+       "args": [
+        1000,
+        0
+       ]
+      },
+      {
+       "at": "0x0816C748",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x0816C74D",
+       "command": "goto_if",
+       "args": [
+        1,
+        135710636
+       ],
+       "targets": [
+        "0x0816C7AC"
+       ]
+      },
+      {
+       "at": "0x0816C753",
+       "command": "addcoins",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x0816C756",
+       "command": "removemoney",
+       "args": [
+        1000,
+        0
+       ]
+      },
+      {
+       "at": "0x0816C75C",
+       "command": "goto",
+       "args": [
+        135710562
+       ],
+       "targets": [
+        "0x0816C762"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x0816C762",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x0816C762",
+       "command": "updatemoney",
+       "args": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x0816C766",
+       "command": "updatecoins",
+       "args": [
+        0,
+        5
+       ]
+      },
+      {
+       "at": "0x0816C769",
+       "command": "sound",
+       "args": [
+        248
+       ]
+      },
+      {
+       "at": "0x0816C76C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        135883362
+       ],
+       "texts": [
+        {
+         "address": "0x08196A62",
+         "text": "谢谢。\n给你代币！"
+        }
+       ]
+      },
+      {
+       "at": "0x0816C772",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x0816C774",
+       "command": "goto",
+       "args": [
+        135710586
+       ],
+       "targets": [
+        "0x0816C77A"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x0816C77A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x0816C77A",
+       "command": "hidemoney",
+       "args": [
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x0816C77D",
+       "command": "hidecoins",
+       "args": [
+        0,
+        5
+       ]
+      },
+      {
+       "at": "0x0816C780",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x0816C781",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x0816C782",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x0816C782",
+       "command": "loadpointer",
+       "args": [
+        0,
+        135883228
+       ],
+       "texts": [
+        {
+         "address": "0x081969DC",
+         "text": "不需要？\n那改天再来玩玩！"
+        }
+       ]
+      },
+      {
+       "at": "0x0816C788",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x0816C78A",
+       "command": "goto",
+       "args": [
+        135710586
+       ],
+       "targets": [
+        "0x0816C77A"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x0816C790",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x0816C790",
+       "command": "loadpointer",
+       "args": [
+        0,
+        135883259
+       ],
+       "texts": [
+        {
+         "address": "0x081969FB",
+         "text": "啊，抱歉。\n你还没有代币盒。"
+        }
+       ]
+      },
+      {
+       "at": "0x0816C796",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x0816C798",
+       "command": "goto",
+       "args": [
+        135710586
+       ],
+       "targets": [
+        "0x0816C77A"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x0816C79E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x0816C79E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        135883302
+       ],
+       "texts": [
+        {
+         "address": "0x08196A26",
+         "text": "哎哟！\n你的代币盒满了。"
+        }
+       ]
+      },
+      {
+       "at": "0x0816C7A4",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x0816C7A6",
+       "command": "goto",
+       "args": [
+        135710586
+       ],
+       "targets": [
+        "0x0816C77A"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x0816C7AC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x0816C7AC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        135883334
+       ],
+       "texts": [
+        {
+         "address": "0x08196A46",
+         "text": "你的代币数不够。"
+        }
+       ]
+      },
+      {
+       "at": "0x0816C7B2",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x0816C7B4",
+       "command": "goto",
+       "args": [
+        135710586
+       ],
+       "targets": [
+        "0x0816C77A"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F32241",
+     "event_roots": [
+      {
+       "map_id": "50:20",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 7,
+       "event_index": 6,
+       "x": 6,
+       "y": 2,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n020.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F32241",
+       "command": "checkflag",
+       "args": [
+        6265
+       ]
+      },
+      {
+       "at": "0x08F32244",
+       "command": "goto_if",
+       "args": [
+        1,
+        135710349
+       ],
+       "targets": [
+        "0x0816C68D"
+       ]
+      },
+      {
+       "at": "0x08F3224A",
+       "command": "checkflag",
+       "args": [
+        6264
+       ],
+       "task_flag_labels": [
+        {
+         "title": "遗失的玩偶",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3224D",
+       "command": "goto_if",
+       "args": [
+        1,
+        150157180
+       ],
+       "targets": [
+        "0x08F3377C"
+       ]
+      },
+      {
+       "at": "0x08F32253",
+       "command": "goto",
+       "args": [
+        135710349
+       ],
+       "targets": [
+        "0x0816C68D"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F323C8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F323C8",
+       "command": "checkflag",
+       "args": [
+        6264
+       ],
+       "task_flag_labels": [
+        {
+         "title": "遗失的玩偶",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F323CB",
+       "command": "goto_if",
+       "args": [
+        1,
+        150155277
+       ],
+       "targets": [
+        "0x08F3300D"
+       ]
+      },
+      {
+       "at": "0x08F323D1",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08F323D2",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F323D5",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150156991
+       ]
+      },
+      {
+       "at": "0x08F323DC",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F323DF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150157026
+       ],
+       "texts": [
+        {
+         "address": "0x08F336E2",
+         "text": "你……\n在满金市的\n商业区有没有捡到什么？\n怎么说呢，那个……\n比如说，类似粉色的玩偶什么的。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F323E5",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F323E7",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F323E8",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F323E9",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F323EC",
+       "command": "writebytetoaddr",
+       "args": [
+        112,
+        67108882
+       ]
+      },
+      {
+       "at": "0x08F323F2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150157111
+       ],
+       "texts": [
+        {
+         "address": "0x08F33737",
+         "text": "哇声音太大啦！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F323F8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F323FA",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F323FD",
+       "command": "writebytetoaddr",
+       "args": [
+        0,
+        67108882
+       ]
+      },
+      {
+       "at": "0x08F32403",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08F32406",
+       "command": "applymovement",
+       "args": [
+        127,
+        150154868
+       ]
+      },
+      {
+       "at": "0x08F3240D",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08F32410",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08F32413",
+       "command": "applymovement",
+       "args": [
+        6,
+        150154872
+       ]
+      },
+      {
+       "at": "0x08F3241A",
+       "command": "waitmovement",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F3241D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150154805
+       ],
+       "texts": [
+        {
+         "address": "0x08F32E35",
+         "text": "你怎么了，\n突然叫得那么大声。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F32423",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F32425",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F32428",
+       "command": "applymovement",
+       "args": [
+        7,
+        150154862
+       ]
+      },
+      {
+       "at": "0x08F3242F",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F32432",
+       "command": "waitmovement",
+       "args": [
+        7
+       ]
+      },
+      {
+       "at": "0x08F32435",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150154778
+       ],
+       "texts": [
+        {
+         "address": "0x08F32E1A",
+         "text": "呃……啊，\n不……没、没什么啦。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3243B",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F3243D",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F32440",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150152381
+       ],
+       "texts": [
+        {
+         "address": "0x08F324BD",
+         "text": "……是吗？\n呵呵，你好奇怪啊。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F32446",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F32448",
+       "command": "applymovement",
+       "args": [
+        6,
+        150152497
+       ]
+      },
+      {
+       "at": "0x08F3244F",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08F32452",
+       "command": "applymovement",
+       "args": [
+        127,
+        150152493
+       ]
+      },
+      {
+       "at": "0x08F32459",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08F3245C",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08F3245F",
+       "command": "goto",
+       "args": [
+        150157128
+       ],
+       "targets": [
+        "0x08F33748"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F32478",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F32478",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150152337
+       ],
+       "texts": [
+        {
+         "address": "0x08F32491",
+         "text": "失、失礼了，\n是我用词不当。\n求你了，帮帮我吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3247E",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F32480",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F32485",
+       "command": "goto_if",
+       "args": [
+        1,
+        150154875
+       ],
+       "targets": [
+        "0x08F32E7B"
+       ]
+      },
+      {
+       "at": "0x08F3248B",
+       "command": "goto",
+       "args": [
+        150152312
+       ],
+       "targets": [
+        "0x08F32478"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F32E7B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F32E7B",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F32E7E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150154835
+       ],
+       "texts": [
+        {
+         "address": "0x08F32E53",
+         "text": "接受任务:<遗失的玩偶>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F32E84",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F32E89",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F32E8E",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F32E93",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F32E98",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F32E9D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150154956
+       ],
+       "texts": [
+        {
+         "address": "0x08F32ECC",
+         "text": "那么就拜托你了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F32EA3",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F32EA5",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F32EAA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150154974
+       ],
+       "texts": [
+        {
+         "address": "0x08F32EDE",
+         "text": "你知道不久后\n在缘朱市举办的夏日祭吗？\n那个玩偶……\n我无论如何也想在\n那种绝佳的氛围中交给女朋友啊！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F32EB0",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F32EB2",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F32EB5",
+       "command": "applymovement",
+       "args": [
+        7,
+        150155274
+       ]
+      },
+      {
+       "at": "0x08F32EBC",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F32EBF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150155071
+       ],
+       "texts": [
+        {
+         "address": "0x08F32F3F",
+         "text": "嗯……\n问我有什么头绪吗？\n很遗憾，没有……\n我完全没有印象了。\n非要说的话……\n我们到这边以后，\n基本上到处都逛了一遍。\n不过在满金游戏中心，\n我输得血本无归……\n总、总而言之……\n要是你捡到了类似的东西，\n就都拿来给我看看吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F32EC5",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F32EC7",
+       "command": "setflag",
+       "args": [
+        6264
+       ],
+       "task_flag_labels": [
+        {
+         "title": "遗失的玩偶",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F32ECA",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3300D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3300D",
+       "command": "checkflag",
+       "args": [
+        6265
+       ]
+      },
+      {
+       "at": "0x08F33010",
+       "command": "goto_if",
+       "args": [
+        1,
+        150155296
+       ],
+       "targets": [
+        "0x08F33020"
+       ]
+      },
+      {
+       "at": "0x08F33016",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150155071
+       ],
+       "texts": [
+        {
+         "address": "0x08F32F3F",
+         "text": "嗯……\n问我有什么头绪吗？\n很遗憾，没有……\n我完全没有印象了。\n非要说的话……\n我们到这边以后，\n基本上到处都逛了一遍。\n不过在满金游戏中心，\n我输得血本无归……\n总、总而言之……\n要是你捡到了类似的东西，\n就都拿来给我看看吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3301C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3301E",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F33020",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F33020",
+       "command": "checkflag",
+       "args": [
+        6272
+       ]
+      },
+      {
+       "at": "0x08F33023",
+       "command": "goto_if",
+       "args": [
+        1,
+        150156357
+       ],
+       "targets": [
+        "0x08F33445"
+       ]
+      },
+      {
+       "at": "0x08F33029",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150156081
+       ],
+       "texts": [
+        {
+         "address": "0x08F33331",
+         "text": "嗯……？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3302F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F33031",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F33034",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150156991
+       ]
+      },
+      {
+       "at": "0x08F3303B",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F3303E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150156089
+       ],
+       "texts": [
+        {
+         "address": "0x08F33339",
+         "text": "难不成……\n你帮我找到玩偶了吗？\n唔……我看看。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F33044",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F33046",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F33049",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150155274
+       ]
+      },
+      {
+       "at": "0x08F33050",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F33053",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150156681
+       ],
+       "texts": [
+        {
+         "address": "0x08F33589",
+         "text": "……不对，\n不是这个玩偶啦！\n虽然看上去很漂亮……\n但是和我的玩偶还是有点区别。\n唉……我的玩偶，\n到底丢在哪里了呢？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F33059",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3305B",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F3305C",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08F3305F",
+       "command": "applymovement",
+       "args": [
+        127,
+        150154868
+       ]
+      },
+      {
+       "at": "0x08F33066",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08F33069",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08F3306C",
+       "command": "applymovement",
+       "args": [
+        6,
+        150154872
+       ]
+      },
+      {
+       "at": "0x08F33073",
+       "command": "waitmovement",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F33076",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150156786
+       ],
+       "texts": [
+        {
+         "address": "0x08F335F2",
+         "text": "怎么了，\n你好像很没精神啊？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3307C",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F3307E",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F33081",
+       "command": "applymovement",
+       "args": [
+        7,
+        150154862
+       ]
+      },
+      {
+       "at": "0x08F33088",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F3308B",
+       "command": "waitmovement",
+       "args": [
+        7
+       ]
+      },
+      {
+       "at": "0x08F3308E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150156814
+       ],
+       "texts": [
+        {
+         "address": "0x08F3360E",
+         "text": "哎！？不，呃，那个……\n什么事也没有，嗯。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F33094",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F33096",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F33099",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150158179
+       ],
+       "texts": [
+        {
+         "address": "0x08F33B63",
+         "text": "……是吗？\n你看起来可不像没事啊……\n那个，如果你不舒服的话，\n要不要去外边透透气？\n昨天散步的时候，\n我们不是一起在商业区\n的长椅上休息了一下嘛。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3309F",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F330A1",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F330A4",
+       "command": "applymovement",
+       "args": [
+        7,
+        150155274
+       ]
+      },
+      {
+       "at": "0x08F330AB",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F330AE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150156979
+       ],
+       "texts": [
+        {
+         "address": "0x08F336B3",
+         "text": "嗯……是啊。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F330B4",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F330B6",
+       "command": "applymovement",
+       "args": [
+        6,
+        150152497
+       ]
+      },
+      {
+       "at": "0x08F330BD",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08F330C0",
+       "command": "applymovement",
+       "args": [
+        127,
+        150152493
+       ]
+      },
+      {
+       "at": "0x08F330C7",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08F330CA",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08F330CD",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F330D0",
+       "command": "applymovement",
+       "args": [
+        7,
+        150156991
+       ]
+      },
+      {
+       "at": "0x08F330D7",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F330DA",
+       "command": "playsong",
+       "args": [
+        353,
+        51
+       ]
+      },
+      {
+       "at": "0x08F330DE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150155595
+       ],
+       "texts": [
+        {
+         "address": "0x08F3314B",
+         "text": "啊……\n啊啊啊啊啊啊啊啊啊！\n想起来了，我想起来了！\n一定是那个时候！\n和她一起\n坐在的长椅上的时候……\n我曾经确认了那个的存在啊！\n之后进入地下商业街，\n再打开背包的时候，\n就已经不见了……\n如果真是弄丢了，\n也可能是在那个时候，\n丢在商业区和住宅区的某处了！！\n或许是在\n商业区和住宅区的某个垃圾桶里！？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F330E4",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F330E6",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08F330E9",
+       "command": "applymovement",
+       "args": [
+        127,
+        150154868
+       ]
+      },
+      {
+       "at": "0x08F330F0",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08F330F3",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08F330F6",
+       "command": "applymovement",
+       "args": [
+        6,
+        150154872
+       ]
+      },
+      {
+       "at": "0x08F330FD",
+       "command": "waitmovement",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F33100",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150155873
+       ],
+       "texts": [
+        {
+         "address": "0x08F33261",
+         "text": "……那个，你从刚才起，\n一直在说什么呢？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F33106",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F33108",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F3310B",
+       "command": "applymovement",
+       "args": [
+        7,
+        150154862
+       ]
+      },
+      {
+       "at": "0x08F33112",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F33115",
+       "command": "waitmovement",
+       "args": [
+        7
+       ]
+      },
+      {
+       "at": "0x08F33118",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150155930
+       ],
+       "texts": [
+        {
+         "address": "0x08F3329A",
+         "text": "不、不、真的没什么。\n好啦，你就好好\n欣赏一下满金市的美丽街景吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3311E",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F33120",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F33123",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150155910
+       ],
+       "texts": [
+        {
+         "address": "0x08F33286",
+         "text": "……是吗？真奇怪呢……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F33129",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F3312B",
+       "command": "applymovement",
+       "args": [
+        6,
+        150152497
+       ]
+      },
+      {
+       "at": "0x08F33132",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08F33135",
+       "command": "goto",
+       "args": [
+        150157376
+       ],
+       "targets": [
+        "0x08F33840"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F33364",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F33364",
+       "command": "checkflag",
+       "args": [
+        6274
+       ],
+       "task_flag_labels": [
+        {
+         "title": "遗失的玩偶",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F33367",
+       "command": "goto_if",
+       "args": [
+        1,
+        150156270
+       ],
+       "targets": [
+        "0x08F333EE"
+       ]
+      },
+      {
+       "at": "0x08F3336D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150156081
+       ],
+       "texts": [
+        {
+         "address": "0x08F33331",
+         "text": "嗯……？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F33373",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F33375",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F33378",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150156991
+       ]
+      },
+      {
+       "at": "0x08F3337F",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F33382",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150156439
+       ],
+       "texts": [
+        {
+         "address": "0x08F33497",
+         "text": "难不成……\n终于帮我找到玩偶了吗？\n唔……我看看。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F33388",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3338A",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F3338D",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150155274
+       ]
+      },
+      {
+       "at": "0x08F33394",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F33397",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150156484
+       ],
+       "texts": [
+        {
+         "address": "0x08F334C4",
+         "text": "就……就是这个……\n就是这个玩偶啊，没错！\n嗯，谢谢你！\n在缘朱市的夏日祭\n之前能够找到，真是太好了！\n这样应该就能实现\n我那烟火下的求婚计划了。\n谢谢，真不知道\n该怎么感谢你才好。\n对了，不嫌弃的话，\n能不能收下这个？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3339D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3339F",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F333A0",
+       "command": "goto",
+       "args": [
+        150307347
+       ],
+       "targets": [
+        "0x08F58213"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F333EE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F333EE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150156280
+       ],
+       "texts": [
+        {
+         "address": "0x08F333F8",
+         "text": "原、缘朱市的夏日祭……\n如果森林之神真的存在的话……\n请现在就带我穿越到那一天吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F333F4",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F333F6",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F33445",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F33445",
+       "command": "checkflag",
+       "args": [
+        6273
+       ]
+      },
+      {
+       "at": "0x08F33448",
+       "command": "goto_if",
+       "args": [
+        1,
+        150156132
+       ],
+       "targets": [
+        "0x08F33364"
+       ]
+      },
+      {
+       "at": "0x08F3344E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150155992
+       ],
+       "texts": [
+        {
+         "address": "0x08F332D8",
+         "text": "……好、好险……\n总、总而言之，\n你能不能去垃圾桶里帮我找找！？\n说不定玩偶\n就在哪个垃圾桶里呢……！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F33454",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F33456",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F33748",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F33748",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08F33749",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150152408
+       ],
+       "texts": [
+        {
+         "address": "0x08F324D8",
+         "text": "……差、差点就被她发现啦。\n你可真是的……！\n总而言之……作为道歉，\n你要帮我的忙。\n帮我找玩偶。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3374F",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F33751",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F33756",
+       "command": "goto_if",
+       "args": [
+        1,
+        150154875
+       ],
+       "targets": [
+        "0x08F32E7B"
+       ]
+      },
+      {
+       "at": "0x08F3375C",
+       "command": "goto",
+       "args": [
+        150152312
+       ],
+       "targets": [
+        "0x08F32478"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F33761",
+     "event_roots": [
+      {
+       "map_id": "50:8",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 7,
+       "event_index": 6,
+       "x": 9,
+       "y": 7,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n008.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F33761",
+       "command": "checkflag",
+       "args": [
+        6264
+       ],
+       "task_flag_labels": [
+        {
+         "title": "遗失的玩偶",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F33764",
+       "command": "goto_if",
+       "args": [
+        1,
+        150155277
+       ],
+       "targets": [
+        "0x08F3300D"
+       ]
+      },
+      {
+       "at": "0x08F3376A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150156994
+       ],
+       "texts": [
+        {
+         "address": "0x08F336C2",
+         "text": "为什么啊……\n我到底做了什么啊……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F33770",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F33772",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08F33775",
+       "command": "goto_if",
+       "args": [
+        1,
+        150152136
+       ],
+       "targets": [
+        "0x08F323C8"
+       ]
+      },
+      {
+       "at": "0x08F3377B",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3377C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3377C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150157213
+       ],
+       "texts": [
+        {
+         "address": "0x08F3379D",
+         "text": "欢迎来到满金游戏城！\n请问您需要代币？\n啊……什么？\n粉红色的玩偶吗？\n最近好像的确是有客人\n把这样的东西落在我们店里了。\n您看看是不是这个？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F33782",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F33784",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        282
+       ],
+       "possible_names_not_semantics": {
+        "species": "火焰鸡",
+        "item": "皮可西玩偶",
+        "move": "拍落"
+       }
+      },
+      {
+       "at": "0x08F33789",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3378E",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F33790",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150157344
+       ],
+       "texts": [
+        {
+         "address": "0x08F33820",
+         "text": "先把这个\n玩偶带给他看看吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F33796",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F33798",
+       "command": "setflag",
+       "args": [
+        6265
+       ]
+      },
+      {
+       "at": "0x08F3379B",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F33840",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F33840",
+       "command": "applymovement",
+       "args": [
+        127,
+        150152493
+       ]
+      },
+      {
+       "at": "0x08F33847",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08F3384A",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08F3384D",
+       "command": "fadedefaultbgm",
+       "args": []
+      },
+      {
+       "at": "0x08F3384E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150155992
+       ],
+       "texts": [
+        {
+         "address": "0x08F332D8",
+         "text": "……好、好险……\n总、总而言之，\n你能不能去垃圾桶里帮我找找！？\n说不定玩偶\n就在哪个垃圾桶里呢……！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F33854",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F33856",
+       "command": "setflag",
+       "args": [
+        6272
+       ]
+      },
+      {
+       "at": "0x08F33859",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F5133C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5133C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150297291
+       ],
+       "texts": [
+        {
+         "address": "0x08F55ACB",
+         "text": "我的男朋友\n最近有些奇怪呢……\n他不会有\n什么事瞒着我吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F51342",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F51344",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F53F96",
+     "event_roots": [
+      {
+       "map_id": "50:8",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 6,
+       "event_index": 5,
+       "x": 12,
+       "y": 8,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n008.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F53F96",
+       "command": "checkflag",
+       "args": [
+        6274
+       ],
+       "task_flag_labels": [
+        {
+         "title": "遗失的玩偶",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F53F99",
+       "command": "goto_if",
+       "args": [
+        1,
+        150297345
+       ],
+       "targets": [
+        "0x08F55B01"
+       ]
+      },
+      {
+       "at": "0x08F53F9F",
+       "command": "goto",
+       "args": [
+        150278972
+       ],
+       "targets": [
+        "0x08F5133C"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F55B01",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F55B01",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150297409
+       ],
+       "texts": [
+        {
+         "address": "0x08F55B41",
+         "text": "我的男朋友\n最近有些兴奋过头了呢……\n他到底是怎么啦？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F55B07",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F55B09",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F58213",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F58213",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F58214",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F58219",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5821E",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F58220",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F58223",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F58224",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        640
+       ],
+       "possible_names_not_semantics": {
+        "species": "电飞鼠",
+        "item": "金色王冠",
+        "move": "芳香薄雾"
+       }
+      },
+      {
+       "at": "0x08F58229",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5822E",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F58230",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F58233",
+       "command": "removeitem",
+       "args": [
+        281,
+        1
+       ],
+       "item_name": "卡比玩偶"
+      },
+      {
+       "at": "0x08F58238",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5823B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150156376
+       ],
+       "texts": [
+        {
+         "address": "0x08F33458",
+         "text": "完成任务:<遗失的玩偶>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F58241",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F58246",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5824B",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F58250",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F58255",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F5825A",
+       "command": "addvar",
+       "args": [
+        20789,
+        8
+       ]
+      },
+      {
+       "at": "0x08F5825F",
+       "command": "addmoney",
+       "args": [
+        10000,
+        0
+       ]
+      },
+      {
+       "at": "0x08F58265",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150156403
+       ],
+       "texts": [
+        {
+         "address": "0x08F33473",
+         "text": "获得了8点BracerPoints和10000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5826B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5826D",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F58272",
+       "command": "setflag",
+       "args": [
+        6274
+       ],
+       "task_flag_labels": [
+        {
+         "title": "遗失的玩偶",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F58275",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F5BE76",
+     "event_roots": [
+      {
+       "map_id": "55:33",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 10,
+       "y": 35,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g55_n033.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5BE76",
+       "command": "checkflag",
+       "args": [
+        2684
+       ]
+      },
+      {
+       "at": "0x08F5BE79",
+       "command": "goto_if",
+       "args": [
+        1,
+        150323684
+       ],
+       "targets": [
+        "0x08F5C1E4"
+       ]
+      },
+      {
+       "at": "0x08F5BE7F",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08F5BE82",
+       "command": "applymovement",
+       "args": [
+        127,
+        150324416
+       ]
+      },
+      {
+       "at": "0x08F5BE89",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08F5BE8C",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08F5BE8F",
+       "command": "applymovement",
+       "args": [
+        1,
+        150322967
+       ]
+      },
+      {
+       "at": "0x08F5BE96",
+       "command": "waitmovement",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F5BE99",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150322990
+       ],
+       "texts": [
+        {
+         "address": "0x08F5BF2E",
+         "text": "……那个，你从刚才起，\n就好奇怪啊。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5BE9F",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F5BEA1",
+       "command": "applymovement",
+       "args": [
+        2,
+        150322971
+       ]
+      },
+      {
+       "at": "0x08F5BEA8",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5BEAB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150323023
+       ],
+       "texts": [
+        {
+         "address": "0x08F5BF4F",
+         "text": "那、那个！听我说！\n虽、虽然我在\n满金游戏中心输得精光……\n虽然我差点\n就把这东西扔进了垃圾桶……\n但、但是我\n对你的心意是真的！\n请收下这个！！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5BEB1",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F5BEB3",
+       "command": "applymovement",
+       "args": [
+        1,
+        150322967
+       ]
+      },
+      {
+       "at": "0x08F5BEBA",
+       "command": "waitmovement",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F5BEBD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150323153
+       ],
+       "texts": [
+        {
+         "address": "0x08F5BFD1",
+         "text": "哇……\n好可爱的卡比玩偶！\n这就是你在满金市\n一直遮遮掩掩的东西？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5BEC3",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F5BEC5",
+       "command": "applymovement",
+       "args": [
+        2,
+        150322971
+       ]
+      },
+      {
+       "at": "0x08F5BECC",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5BECF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150323215
+       ],
+       "texts": [
+        {
+         "address": "0x08F5C00F",
+         "text": "不、不止是玩偶！\n你看玩偶的手里……\n拿着什么？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5BED5",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F5BED7",
+       "command": "goto",
+       "args": [
+        150324221
+       ],
+       "targets": [
+        "0x08F5C3FD"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F5C111",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5C111",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150323694
+       ],
+       "texts": [
+        {
+         "address": "0x08F5C1EE",
+         "text": "哇！是你！\n真没想到\n会在这里再见到你！\n请允许我再次向你表达感谢！\n请收下这个！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5C117",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5C119",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F5C11C",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        639
+       ],
+       "possible_names_not_semantics": {
+        "species": "萌芽鹿",
+        "item": "银色王冠",
+        "move": "水流环"
+       }
+      },
+      {
+       "at": "0x08F5C121",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5C126",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F5C128",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F5C12B",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        110
+       ],
+       "possible_names_not_semantics": {
+        "species": "双弹瓦斯",
+        "item": "金珠",
+        "move": "缩入壳中"
+       }
+      },
+      {
+       "at": "0x08F5C130",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5C135",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F5C137",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F5C13A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150323770
+       ],
+       "texts": [
+        {
+         "address": "0x08F5C23A",
+         "text": "嘿嘿……\n嘿嘿嘿……\n她答应了！她答应了！\n太好了……！\n要是那时候\n没有你帮忙找回玩偶，\n我现在肯定还在\n满金市的垃圾堆里哭呢！\n[玩家/变量]，\n你真的是我的恩人！\n也就是我们要请的头号贵宾！\n以后不管我\n在哪里弄丢了东西……\n啊不对！\n不管我在哪里遇到困难，\n我都会想起你的帮助的！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5C140",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5C142",
+       "command": "setflag",
+       "args": [
+        2684
+       ]
+      },
+      {
+       "at": "0x08F5C145",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F5C1E4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5C1E4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150323770
+       ],
+       "texts": [
+        {
+         "address": "0x08F5C23A",
+         "text": "嘿嘿……\n嘿嘿嘿……\n她答应了！她答应了！\n太好了……！\n要是那时候\n没有你帮忙找回玩偶，\n我现在肯定还在\n满金市的垃圾堆里哭呢！\n[玩家/变量]，\n你真的是我的恩人！\n也就是我们要请的头号贵宾！\n以后不管我\n在哪里弄丢了东西……\n啊不对！\n不管我在哪里遇到困难，\n我都会想起你的帮助的！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5C1EA",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5C1EC",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F5C3FD",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5C3FD",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F5C400",
+       "command": "applymovement",
+       "args": [
+        1,
+        150322980
+       ]
+      },
+      {
+       "at": "0x08F5C407",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F5C40A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150323259
+       ],
+       "texts": [
+        {
+         "address": "0x08F5C03B",
+         "text": "嗯？这是……\n……戒指！？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5C410",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F5C412",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F5C415",
+       "command": "applymovement",
+       "args": [
+        2,
+        150322975
+       ]
+      },
+      {
+       "at": "0x08F5C41C",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F5C41F",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5C422",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150323280
+       ],
+       "texts": [
+        {
+         "address": "0x08F5C050",
+         "text": "呜哇啊啊啊！我不行了！\n太害羞了！\n总之……那个……\n我们在夏日祭的烟火下……\n结、结婚吧！！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5C428",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F5C42A",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F5C42D",
+       "command": "applymovement",
+       "args": [
+        1,
+        150322985
+       ]
+      },
+      {
+       "at": "0x08F5C434",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F5C437",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150323361
+       ]
+      },
+      {
+       "at": "0x08F5C43D",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F5C43F",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08F5C442",
+       "command": "applymovement",
+       "args": [
+        127,
+        150324420
+       ]
+      },
+      {
+       "at": "0x08F5C449",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08F5C44C",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08F5C44F",
+       "command": "checkflag",
+       "args": [
+        6264
+       ],
+       "task_flag_labels": [
+        {
+         "title": "遗失的玩偶",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5C452",
+       "command": "goto_if",
+       "args": [
+        1,
+        150323473
+       ],
+       "targets": [
+        "0x08F5C111"
+       ]
+      },
+      {
+       "at": "0x08F5C458",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [
+    "0x081A7AE0"
+   ],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,675 @@
+{
+ "title": "被抢走的宝可梦",
+ "quest_id": 90,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b604",
+    "title": "被抢走的宝可梦",
+    "title_address": "0x8e3bfc4",
+    "description": "我重要的宝可梦被\n一名凶狠的少年抢走了啊！\n只剩一只宝可梦了，谁来帮帮我！",
+    "description_address": "0x8e3bf99",
+    "unknown_u16": 121,
+    "unknown_u16_hex": "0x0079",
+    "accept_flag": 5415,
+    "accept_flag_hex": "0x1527",
+    "complete_flag": 5415,
+    "complete_flag_hex": "0x1527",
+    "map_group": 49,
+    "map_num": 2,
+    "tail_hex": "01 01 00 00",
+    "index": 90,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39784",
+      "title": "被抢走的宝可梦",
+      "description_address": "0x8e39cf0",
+      "description": "我重要的宝可梦被\\n一名凶狠的少年抢走了啊！\\n只剩一只宝可梦了，谁来帮帮我！"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39cf0",
+    "legacy_match_count": 1,
+    "current_description": "帮助湛蓝市的收集狂\n暂时保管他剩下的宝可梦。",
+    "catalog_map": {
+     "id": "49:2",
+     "name": "湛蓝市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x089DA203",
+    "0x08EC324E"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08EC31AA",
+     "map_id": "49:2",
+     "place": "湛蓝市",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 0,
+     "x": 4,
+     "y": 4,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g49_n002.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089DA203",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089DA203",
+       "command": "checkflag",
+       "args": [
+        5416
+       ]
+      },
+      {
+       "at": "0x089DA206",
+       "command": "goto_if",
+       "args": [
+        1,
+        144548404
+       ],
+       "targets": [
+        "0x089DA234"
+       ]
+      },
+      {
+       "at": "0x089DA20C",
+       "command": "checkflag",
+       "args": [
+        5415
+       ],
+       "task_flag_labels": [
+        {
+         "title": "被抢走的宝可梦",
+         "role": "accept_flag"
+        },
+        {
+         "title": "被抢走的宝可梦",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089DA20F",
+       "command": "goto_if",
+       "args": [
+        1,
+        144548415
+       ],
+       "targets": [
+        "0x089DA23F"
+       ]
+      },
+      {
+       "at": "0x089DA215",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089DA216",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144548507
+       ],
+       "texts": [
+        {
+         "address": "0x089DA29B",
+         "text": "怎…怎么会这样……\n有个和你差不多年纪，\n目光凶狠又留长发的，\n总觉得很可怕的少年，\n把我重要的宝可梦抢走了啊！\n手里只有1只宝可梦了，\n要再被抢走的话该怎么办啊…\n你好像很强的样子，\n暂时把宝可梦寄在你那吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x089DA21C",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089DA21E",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089DA223",
+       "command": "goto",
+       "args": [
+        149696994
+       ],
+       "targets": [
+        "0x08EC31E2"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089DA234",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089DA234",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144548741
+       ],
+       "texts": [
+        {
+         "address": "0x089DA385",
+         "text": "我的宝可梦还精神吗？\n你帮我保管着宝可梦，\n我现在应该安全了。\n请替我好好照顾它！"
+        }
+       ]
+      },
+      {
+       "at": "0x089DA23A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089DA23C",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x089DA23D",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089DA23F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089DA23F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144548819
+       ],
+       "texts": [
+        {
+         "address": "0x089DA3D3",
+         "text": "嗯，那么，拜托了！\n要好好地爱惜它哦。"
+        }
+       ]
+      },
+      {
+       "at": "0x089DA245",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089DA247",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x089DA248",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089DA24A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089DA24A",
+       "command": "countpokemon",
+       "args": []
+      },
+      {
+       "at": "0x089DA24B",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        6
+       ],
+       "possible_names_not_semantics": {
+        "species": "喷火龙",
+        "item": "捕网球",
+        "move": "聚宝功"
+       }
+      },
+      {
+       "at": "0x089DA250",
+       "command": "goto_if",
+       "args": [
+        0,
+        149697102
+       ],
+       "targets": [
+        "0x08EC324E"
+       ]
+      },
+      {
+       "at": "0x089DA256",
+       "command": "goto",
+       "args": [
+        149697270
+       ],
+       "targets": [
+        "0x08EC32F6"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EC31AA",
+     "event_roots": [
+      {
+       "map_id": "49:2",
+       "place": "湛蓝市",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 0,
+       "x": 4,
+       "y": 4,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g49_n002.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EC31AA",
+       "command": "applymovement",
+       "args": [
+        3,
+        149696954
+       ]
+      },
+      {
+       "at": "0x08EC31B1",
+       "command": "waitmovement",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08EC31B4",
+       "command": "goto",
+       "args": [
+        144548355
+       ],
+       "targets": [
+        "0x089DA203"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EC31E2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC31E2",
+       "command": "goto_if",
+       "args": [
+        1,
+        144548426
+       ],
+       "targets": [
+        "0x089DA24A"
+       ]
+      },
+      {
+       "at": "0x08EC31E8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144548701
+       ],
+       "texts": [
+        {
+         "address": "0x089DA35D",
+         "text": "这……这样啊。\n要是再被抢的话该怎么办啊。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC31EE",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EC31F0",
+       "command": "applymovement",
+       "args": [
+        3,
+        149697062
+       ]
+      },
+      {
+       "at": "0x08EC31F7",
+       "command": "waitmovement",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08EC31FA",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EC31FB",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC324E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC324E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144548819
+       ],
+       "texts": [
+        {
+         "address": "0x089DA3D3",
+         "text": "嗯，那么，拜托了！\n要好好地爱惜它哦。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC3254",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EC3256",
+       "command": "copyvar",
+       "args": [
+        32772,
+        32781
+       ]
+      },
+      {
+       "at": "0x08EC325B",
+       "command": "givepokemon",
+       "args": [
+        213,
+        15,
+        139,
+        0,
+        0,
+        0
+       ],
+       "species_name": "壶壶"
+      },
+      {
+       "at": "0x08EC326A",
+       "command": "preparemsg",
+       "args": [
+        144548855
+       ],
+       "texts": [
+        {
+         "address": "0x089DA3F7",
+         "text": "从宝可梦迷那里\n得到了宝可梦！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC326F",
+       "command": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x08EC3272",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08EC3273",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EC3274",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08EC3275",
+       "command": "setflag",
+       "args": [
+        5415
+       ],
+       "task_flag_labels": [
+        {
+         "title": "被抢走的宝可梦",
+         "role": "accept_flag"
+        },
+        {
+         "title": "被抢走的宝可梦",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC3278",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC327B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149697204
+       ],
+       "texts": [
+        {
+         "address": "0x08EC32B4",
+         "text": "完成任务:<被抢走的宝可梦>"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC3281",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC3286",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC328B",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08EC3290",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EC3295",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08EC329A",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08EC329F",
+       "command": "addmoney",
+       "args": [
+        3000,
+        0
+       ]
+      },
+      {
+       "at": "0x08EC32A5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149697235
+       ],
+       "texts": [
+        {
+         "address": "0x08EC32D3",
+         "text": "获得了3点BracerPoints和3000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC32AB",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC32AD",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EC32B2",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC32F6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC32F6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144548892
+       ],
+       "texts": [
+        {
+         "address": "0x089DA41C",
+         "text": "你的队伍已经满了！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC32FC",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EC32FE",
+       "command": "applymovement",
+       "args": [
+        3,
+        149697062
+       ]
+      },
+      {
+       "at": "0x08EC3305",
+       "command": "waitmovement",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08EC3308",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EC3309",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

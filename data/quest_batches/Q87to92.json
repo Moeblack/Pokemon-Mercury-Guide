@@ -1,0 +1,18 @@
+{
+  "batch": "Q87to92",
+  "quests": [87, 88, 89, 90, 91, 92],
+  "items": [
+    {"id": 87, "title": "深夜电视异闻录", "status": "compiled", "file": "data/quests/087.json", "page": "quests/087.md"},
+    {"id": 88, "title": "不安的太阳珊瑚", "status": "compiled", "file": "data/quests/088.json", "page": "quests/088.md"},
+    {"id": 89, "title": "黑色的千针鱼", "status": "compiled", "file": "data/quests/089.json", "page": "quests/089.md"},
+    {"id": 90, "title": "被抢走的宝可梦", "status": "compiled", "file": "data/quests/090.json", "page": "quests/090.md"},
+    {"id": 91, "title": "完美的能量餐", "status": "compiled", "file": "data/quests/091.json", "page": "quests/091.md"},
+    {"id": 92, "title": "海浪卷走的乌波", "status": "compiled", "file": "data/quests/092.json", "page": "quests/092.md"}
+  ],
+  "notes": [
+    "仅制作 087-092 六条，未改动 index 与其它批次。",
+    "所有物种/道具名均查 out/species.json 与 out/items.json；地图链接用 gGG_nNNN 文件名。",
+    "087 的电视触发时间条件（special 161 / special2(…,217)）与 088 完成横幅“白色长裙的女孩”疑为复用字符串，均记入 open_questions。",
+    "092 末尾“左上方的石头”调查点属任务 093（漆黑的魅影），其奖励未计入本任务。"
+  ]
+}

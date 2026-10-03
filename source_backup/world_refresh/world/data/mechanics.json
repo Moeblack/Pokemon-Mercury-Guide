@@ -1,0 +1,178 @@
+[
+ {
+  "topic": "第三道馆Camomons与小茜",
+  "reports": [
+   "README_解包说明.md",
+   "trainers_research/README.md",
+   "trainers_research/out/whitney.json",
+   "trainers_research/out/trainers.json",
+   "trainers_research/out/overrides.json"
+  ],
+  "confirmed_rules": [
+   "规则对双方适用：所有宝可梦属性改为前两个招式的属性，不能按基础物种属性推断。",
+   "初战ID111：皮皮17、长耳兔19、姆克鸟21、大奶罐23；大奶罐嬉闹/铁头对应妖精/钢，持吃剩的东西。",
+   "仅ID111已有special_rules；ID392同名不构成同规则证据。"
+  ],
+  "limits": [
+   "派生属性和配队推论不等于实战验证。"
+  ],
+  "page_path": "world/pages/mechanics/camomons.md",
+  "source": {
+   "path": "wiki_export/world/source_inventory.json",
+   "json_pointer": "/mechanisms/0",
+   "file_sha256": "83d9d167f7a21583c15dea2ffcb30c221380a69cca44e1e099625f85cc77e02c"
+  }
+ },
+ {
+  "topic": "EV spreads与强制闪光",
+  "reports": [
+   "trainers_research/README.md",
+   "trainers_research/README.md",
+   "trainers_research/out/overrides.json"
+  ],
+  "confirmed_rules": [
+   "partyFlags==3且aiFlags>1、索引1..125时首u16低字节作spread索引；10B字段为nature/ivs/hp_ev/atk_ev/def_ev/spe_ev/spa_ev/spd_ev/ball/ability。",
+   "训练家403槽0/1/2强制闪光；不是队伍替换表。"
+  ],
+  "limits": [
+   "高字节含义未证；151镜像候选不作为选表；ability策略不保证每场观测值。"
+  ],
+  "page_path": "world/pages/mechanics/ev_spreads.md",
+  "source": {
+   "path": "wiki_export/world/source_inventory.json",
+   "json_pointer": "/mechanisms/1",
+   "file_sha256": "83d9d167f7a21583c15dea2ffcb30c221380a69cca44e1e099625f85cc77e02c"
+  }
+ },
+ {
+  "topic": "等级缩放",
+  "reports": [
+   "trainers_research/README.md",
+   "trainers_research/out/trainers.json"
+  ],
+  "confirmed_rules": [
+   "现成README定位IsBossTrainerClassForLevelScaling等消费者及普通队伍level字段。"
+  ],
+  "limits": [
+   "当前入口仅局部消费者证据；没有完整缩放公式/触发条件导出，不套官方规则，不把表内等级作为所有实际战斗等级。"
+  ],
+  "page_path": "world/pages/mechanics/level_scaling.md",
+  "source": {
+   "path": "wiki_export/world/source_inventory.json",
+   "json_pointer": "/mechanisms/2",
+   "file_sha256": "83d9d167f7a21583c15dea2ffcb30c221380a69cca44e1e099625f85cc77e02c"
+  }
+ },
+ {
+  "topic": "广播",
+  "reports": [
+   "encounters_research/README.md",
+   "encounters_research/out/encounters.json"
+  ],
+  "confirmed_rules": [
+   "consumer 0x09D647B0读取0x09DDDBE0，100条×26byte；每条3组各4物种。",
+   "dayOfWeek数值3/4/0分别选set0/1/2，其他星期及未命中走现成fallback；星期标签和证据强度原样保留。",
+   "触发后槽权重40/20/20/20；Flag0x17A1==0、Flag31!=0、[sp+0xc]==0、rand%3!=0等为现成门控字段。"
+  ],
+  "limits": [
+   "旧0x09DDDBC6/101条已撤回；内部槽权重不是总体遭遇率；收音机卡剧情与旗标实现、UI/状态生命周期未全面闭合。"
+  ],
+  "page_path": "world/pages/mechanics/broadcast.md",
+  "source": {
+   "path": "wiki_export/world/source_inventory.json",
+   "json_pointer": "/mechanisms/3",
+   "file_sha256": "83d9d167f7a21583c15dea2ffcb30c221380a69cca44e1e099625f85cc77e02c"
+  }
+ },
+ {
+  "topic": "群聚",
+  "reports": [
+   "encounters_research/out/encounters.json",
+   "encounters_research/README.md"
+  ],
+  "confirmed_rules": [
+   "0x09E3CDCE共16条{u16 mapsec_id,u16 species}，mapsec_id==0终止；按地区段关联，多地图可能共用。"
+  ],
+  "limits": [
+   "不凭静态表断言当前群聚已激活或可达。"
+  ],
+  "page_path": "world/pages/mechanics/swarm.md",
+  "source": {
+   "path": "wiki_export/world/source_inventory.json",
+   "json_pointer": "/mechanisms/4",
+   "file_sha256": "83d9d167f7a21583c15dea2ffcb30c221380a69cca44e1e099625f85cc77e02c"
+  }
+ },
+ {
+  "topic": "时段与RTC",
+  "reports": [
+   "encounters_research/README.md",
+   "encounters_research/out/encounters.json"
+  ],
+  "confirmed_rules": [
+   "现成表选择时段：清晨05:00–09:59、白天10:00–16:59、黄昏17:00–18:59、夜晚19:00–04:59。"
+  ],
+  "limits": [
+   "Main确认当前仅有模拟器RTC启用记录，未提供完整RTC报告路径；游戏实际时钟正确性未确认。此处不猜RTC报告路径，不全面反编译。"
+  ],
+  "rtc_report_path": null,
+  "rtc_status_source": "2026-10-03本任务Main补充指示",
+  "page_path": "world/pages/mechanics/rtc.md",
+  "source": {
+   "path": "wiki_export/world/source_inventory.json",
+   "json_pointer": "/mechanisms/5",
+   "file_sha256": "83d9d167f7a21583c15dea2ffcb30c221380a69cca44e1e099625f85cc77e02c"
+  }
+ },
+ {
+  "topic": "mode9环境覆盖生命周期",
+  "reports": [
+   "parallel_acceleration/save_evidence/environment_override_lifecycle.md",
+   "parallel_acceleration/save_evidence/environment_override_lifecycle.json",
+   "parallel_acceleration/save_evidence/mode9_parameter_semantics.md",
+   "parallel_acceleration/save_evidence/mode9_end_callback_window.md"
+  ],
+  "confirmed_rules": [
+   "状态conditional_resume_and_cleanup_mechanism_documented；14根写5007为12/19，mode9消费13byte并保存5C+14到0x020386C4。",
+   "存在config提前结束分支；callback汇合并安装priority10恢复task，满足条件才清外层门控；保存值保持且续接执行后，7根直接清5007为0、7根经clearflag再清0。"
+  ],
+  "limits": [
+   "C1–C8及7项open_conditions必须保留；不是全路径finally，不保证异步必执行/5007必清，不是恢复任意旧值。",
+   "919/920走特殊builder，人物/队伍算法未证，普通743目录无join不是漏普通记录。"
+  ],
+  "page_path": "world/pages/mechanics/mode9_appendix.md",
+  "source": {
+   "path": "wiki_export/world/source_inventory.json",
+   "json_pointer": "/mechanisms/6",
+   "file_sha256": "83d9d167f7a21583c15dea2ffcb30c221380a69cca44e1e099625f85cc77e02c"
+  }
+ },
+ {
+  "topic": "GB播放器、双音乐表与音乐目录",
+  "reports": [
+   "audio_research/README.md",
+   "README_解包说明.md"
+  ],
+  "confirmed_rules": [
+   "flag0x174D清零用0x08960000常规表，置位用0x08DA0000 GB表；脚本0x08AEA158及文本确认开关语义。",
+   "两表各386项；主表385非空，第二表104差异曲目；现成MIDI/SF2/WAV保留。",
+   "叫声两个1554条视图按cry mode选择，不受GB曲目表开关支配。"
+  ],
+  "limits": [
+   "曲名中的原版/参考标签不是ROM内建中文标题；WAV为参考渲染非硬件录音，未做声学验收。"
+  ],
+  "directories": [
+   "audio_research/out/midi/",
+   "audio_research/out/sf2/",
+   "audio_research/out/wav/",
+   "audio_research/out_alt_table/",
+   "audio_research/out/cries/"
+  ],
+  "page_path": "world/pages/mechanics/gb_player.md",
+  "source": {
+   "path": "wiki_export/world/source_inventory.json",
+   "json_pointer": "/mechanisms/7",
+   "file_sha256": "83d9d167f7a21583c15dea2ffcb30c221380a69cca44e1e099625f85cc77e02c"
+  }
+ }
+]

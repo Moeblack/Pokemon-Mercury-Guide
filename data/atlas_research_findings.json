@@ -1,0 +1,44 @@
+{
+  "rgb_palette": {
+    "problem": "旧render_maps.py把副调色板源指针直接当作第7银行来源，漏加0xE0，导致副图块配色偏差。",
+    "rom_evidence": "080599C8跳板到09D1E1E8；09D1E262读取tileset+8，09D1E266比较isSecondary==1，09D1E26C给源地址加0xE0后加载。",
+    "implementation": "scripts/render_atlas.py；BGR555的低5位是R、中5位G、高5位B，*255//31扩展，输出不透明RGB。"
+  },
+  "slot_roles": {
+    "rom_evidence": "08059888–080598C0按调用参数选择复制数量与目的图块，不要求isSecondary与MapLayout槽位相符；08059AB0主640/base0、副384/base640。",
+    "result": "32张非常规主副标志组合的地图在增量批次恢复；没有拒绝引擎允许的图块包复用。标准组合的721份已渲染图像直接复用。"
+  },
+  "batch": {
+    "tilesets": 135,
+    "primary_secondary_pairs": 159,
+    "layouts": 762,
+    "valid_unique_rgb_base_images": 753,
+    "maps_with_rgb_base": 862,
+    "stitched_overviews": 11,
+    "workers": 6,
+    "policy": "单进程读取ROM一次，图块与组合缓存冻结后共用线程池；同布局只编码一次；单图区域不重复输出PNG；页面矢量标记与底图分离。"
+  },
+  "stitching": {
+    "unit": "16像素metatile",
+    "cardinal_offsets": {"south": "(offset,source.height)", "north": "(offset,-target.height)", "west": "(-target.width,offset)", "east": "(source.width,offset)"},
+    "policy": "方向连接按偏移拼接，矩形重叠或循环位置矛盾的连接不强行合并；warp仅提供入口跳转。区域概览最长边不超过4096，交互视图按视口加载原生底图。"
+  },
+  "source_gaps": {
+    "unavailable_maps": 9,
+    "shared_tileset": "0x082D4ECC",
+    "graphics_pointer": "0x0828FBD8",
+    "compressed_flag": 1,
+    "source_first_16_bytes": "ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff",
+    "reason": "源位置为FF填充，不是GBA LZ77数据，不逐图重试或伪造图块。",
+    "partial_maps": 117,
+    "partial_details": "data/atlas_render_report.json各图missing_tile_ids、missing_palette_slots和errors。"
+  },
+  "guide_integration": {
+    "points": 8762,
+    "guide_pages_with_map_cards": 1535,
+    "mega_species": 28,
+    "checks": ["data/link_check.json", "data/atlas_ui_check.json"],
+    "entry": "maps/index.html",
+    "mega_entry": "pokemon/wild_mega.html"
+  }
+}

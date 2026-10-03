@@ -1,0 +1,959 @@
+{
+ "title": "像气球的宝可梦",
+ "quest_id": 72,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b49c",
+    "title": "像气球的宝可梦",
+    "title_address": "0x8e3c467",
+    "description": "我看见有一只像气球一样的\n宝可梦出现在烧焦塔门口。\n那只宝可梦真的很让人在意...",
+    "description_address": "0x8e3c437",
+    "unknown_u16": 69,
+    "unknown_u16_hex": "0x0045",
+    "accept_flag": 6013,
+    "accept_flag_hex": "0x177D",
+    "complete_flag": 6007,
+    "complete_flag_hex": "0x1777",
+    "map_group": 3,
+    "map_num": 70,
+    "tail_hex": "15 00 00 00",
+    "index": 72,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39694",
+      "title": "像气球的宝可梦",
+      "description_address": "0x8e3a2ac",
+      "description": "我看见有一只像气球一样的\\n宝可梦出现在烧焦塔门口。\\n那只宝可梦真的很让人在意..."
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a2ac",
+    "legacy_match_count": 1,
+    "current_description": "调查周三出现在烧焦塔\n门口的像气球一样\n的宝可梦。",
+    "catalog_map": {
+     "id": "3:70",
+     "name": "缘朱市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AF3007",
+    "0x08AF304B",
+    "0x08AF3089",
+    "0x08AF330A"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F5B4A4",
+     "map_id": "3:70",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 1,
+     "event_index": 0,
+     "x": 44,
+     "y": 22,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n070.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08AF2B33",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF2B33",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AF2B36",
+       "command": "goto_if",
+       "args": [
+        1,
+        145698823
+       ],
+       "targets": [
+        "0x08AF3007"
+       ]
+      },
+      {
+       "at": "0x08AF2B3C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145699402
+       ],
+       "texts": [
+        {
+         "address": "0x08AF324A",
+         "text": "像气球一样的宝可梦……\n真的很令人在意呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2B42",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF2B44",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B4A4"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3007",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF3007",
+       "command": "checkflag",
+       "args": [
+        6021
+       ]
+      },
+      {
+       "at": "0x08AF300A",
+       "command": "goto_if",
+       "args": [
+        1,
+        145698953
+       ],
+       "targets": [
+        "0x08AF3089"
+       ]
+      },
+      {
+       "at": "0x08AF3010",
+       "command": "checkflag",
+       "args": [
+        6013
+       ],
+       "task_flag_labels": [
+        {
+         "title": "像气球的宝可梦",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3013",
+       "command": "goto_if",
+       "args": [
+        1,
+        145698943
+       ],
+       "targets": [
+        "0x08AF307F"
+       ]
+      },
+      {
+       "at": "0x08AF3019",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145699402
+       ],
+       "texts": [
+        {
+         "address": "0x08AF324A",
+         "text": "像气球一样的宝可梦……\n真的很令人在意呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF301F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF3021",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AF3024",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145699399
+       ]
+      },
+      {
+       "at": "0x08AF302B",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AF302E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145699054
+       ],
+       "texts": [
+        {
+         "address": "0x08AF30EE",
+         "text": "你…你看见了我的委托吗？\n是这样的……\n周三的时候，我似乎在烧焦塔\n门口看见了像气球一样的宝可梦……\n那只宝可梦……\n真的很令我在意，\n你能帮我调查一下这件事吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3034",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AF3036",
+       "command": "goto",
+       "args": [
+        150321052
+       ],
+       "targets": [
+        "0x08F5B79C"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF2B33"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF304B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF304B",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF304E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145699214
+       ],
+       "texts": [
+        {
+         "address": "0x08AF318E",
+         "text": "接受任务:<像气球的宝可梦>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3054",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF3059",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF305E",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AF3063",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AF3068",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AF306D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145699245
+       ],
+       "texts": [
+        {
+         "address": "0x08AF31AD",
+         "text": "谢…谢谢你了！\n周三……\n烧焦塔的门口……\n这两个条件似乎很重要……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3073",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AF3075",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AF307A",
+       "command": "setflag",
+       "args": [
+        6013
+       ],
+       "task_flag_labels": [
+        {
+         "title": "像气球的宝可梦",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF307D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B79C"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF307F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF307F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145699245
+       ],
+       "texts": [
+        {
+         "address": "0x08AF31AD",
+         "text": "谢…谢谢你了！\n周三……\n烧焦塔的门口……\n这两个条件似乎很重要……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3085",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF3087",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3007"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3089",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF3089",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145699317
+       ],
+       "texts": [
+        {
+         "address": "0x08AF31F5",
+         "text": "原来如此……\n是他们来找我了吗？\n那么，我也该回去了……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF308F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF3091",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF3093",
+       "command": "removeobject",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x08AF3096",
+       "command": "setflag",
+       "args": [
+        6007
+       ],
+       "task_flag_labels": [
+        {
+         "title": "像气球的宝可梦",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3099",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF309B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145699443
+       ],
+       "texts": [
+        {
+         "address": "0x08AF3273",
+         "text": "谢谢你……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF30A1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF30A3",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        92
+       ],
+       "possible_names_not_semantics": {
+        "species": "鬼斯",
+        "item": "灵界之布",
+        "move": "剧毒"
+       }
+      },
+      {
+       "at": "0x08AF30A8",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF30AD",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF30AF",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF30B2",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF30B5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145699368
+       ],
+       "texts": [
+        {
+         "address": "0x08AF3228",
+         "text": "完成任务:<像气球的宝可梦>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF30BB",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF30C0",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF30C5",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AF30CA",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AF30CF",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AF30D4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145697621
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2B55",
+         "text": "获得了4点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF30DA",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AF30DC",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AF30E1",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AF30E7",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x08AF30EC",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3007"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF330A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF330A",
+       "command": "setflag",
+       "args": [
+        2635
+       ]
+      },
+      {
+       "at": "0x08AF330D",
+       "command": "checkflag",
+       "args": [
+        6013
+       ],
+       "task_flag_labels": [
+        {
+         "title": "像气球的宝可梦",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3310",
+       "command": "goto_if",
+       "args": [
+        1,
+        145699623
+       ],
+       "targets": [
+        "0x08AF3327"
+       ]
+      },
+      {
+       "at": "0x08AF3316",
+       "command": "setflag",
+       "args": [
+        6022
+       ]
+      },
+      {
+       "at": "0x08AF3319",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B4F9"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3327",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF3327",
+       "command": "checkflag",
+       "args": [
+        5528
+       ]
+      },
+      {
+       "at": "0x08AF332A",
+       "command": "goto_if",
+       "args": [
+        0,
+        145699637
+       ],
+       "targets": [
+        "0x08AF3335"
+       ]
+      },
+      {
+       "at": "0x08AF3330",
+       "command": "setflag",
+       "args": [
+        6022
+       ]
+      },
+      {
+       "at": "0x08AF3333",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF330A"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3335",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF3335",
+       "command": "clearflag",
+       "args": [
+        6022
+       ]
+      },
+      {
+       "at": "0x08AF3338",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3327"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5B4A4",
+     "event_roots": [
+      {
+       "map_id": "3:70",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 44,
+       "y": 22,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n070.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5B4A4",
+       "command": "applymovement",
+       "args": [
+        60,
+        150320832
+       ]
+      },
+      {
+       "at": "0x08F5B4AB",
+       "command": "waitmovement",
+       "args": [
+        60
+       ]
+      },
+      {
+       "at": "0x08F5B4AE",
+       "command": "goto",
+       "args": [
+        145697587
+       ],
+       "targets": [
+        "0x08AF2B33"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "3:70/local1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5B79C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5B79C",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5B7A1",
+       "command": "goto_if",
+       "args": [
+        1,
+        145698891
+       ],
+       "targets": [
+        "0x08AF304B"
+       ]
+      },
+      {
+       "at": "0x08F5B7A7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145699453
+       ],
+       "texts": [
+        {
+         "address": "0x08AF327D",
+         "text": "好…好吧…"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5B7AD",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5B7AF",
+       "command": "applymovement",
+       "args": [
+        60,
+        150321084
+       ]
+      },
+      {
+       "at": "0x08F5B7B6",
+       "command": "waitmovement",
+       "args": [
+        60
+       ]
+      },
+      {
+       "at": "0x08F5B7B9",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5B7BA",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3007"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

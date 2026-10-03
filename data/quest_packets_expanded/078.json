@@ -1,0 +1,983 @@
+{
+ "title": "非现世的气息",
+ "quest_id": 78,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b514",
+    "title": "非现世的气息",
+    "title_address": "0x8e3c125",
+    "description": "我在擂钵山修炼时感受到了\n一股不祥的气息。有人想要帮忙\n调查这件事吗？我就在精灵中心。",
+    "description_address": "0x8e3c0fa",
+    "unknown_u16": 217,
+    "unknown_u16_hex": "0x00D9",
+    "accept_flag": 6293,
+    "accept_flag_hex": "0x1895",
+    "complete_flag": 6295,
+    "complete_flag_hex": "0x1897",
+    "map_group": 53,
+    "map_num": 1,
+    "tail_hex": "04 01 00 00",
+    "index": 78,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39724",
+      "title": "非现世的气息",
+      "description_address": "0x8e39c38",
+      "description": "我在擂钵山修炼时感受到了\\n一股不祥的气息。有人想要帮忙\\n调查这件事吗？我就在精灵中心。"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39c38",
+    "legacy_match_count": 1,
+    "current_description": "调查每周日出现在\n擂钵山深处的非现世的气息。",
+    "catalog_map": {
+     "id": "53:1",
+     "name": "卡吉镇"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08F34832",
+    "0x08F34F3B",
+    "0x08F34F95",
+    "0x08F34FD2"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F5CFCD",
+     "map_id": "53:1",
+     "place": "卡吉镇",
+     "kind": "人物",
+     "local_id": 8,
+     "event_index": 5,
+     "x": 4,
+     "y": 17,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g53_n001.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08F34832",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34832",
+       "command": "checkflag",
+       "args": [
+        6293
+       ],
+       "task_flag_labels": [
+        {
+         "title": "非现世的气息",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34835",
+       "command": "goto_if",
+       "args": [
+        1,
+        150163259
+       ],
+       "targets": [
+        "0x08F34F3B"
+       ]
+      },
+      {
+       "at": "0x08F3483B",
+       "command": "goto",
+       "args": [
+        150163311
+       ],
+       "targets": [
+        "0x08F34F6F"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5CFCD"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34F3B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34F3B",
+       "command": "checkflag",
+       "args": [
+        6293
+       ],
+       "task_flag_labels": [
+        {
+         "title": "非现世的气息",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34F3E",
+       "command": "goto_if",
+       "args": [
+        1,
+        150163330
+       ],
+       "targets": [
+        "0x08F34F82"
+       ]
+      },
+      {
+       "at": "0x08F34F44",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F34F45",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F34F48",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150164380
+       ]
+      },
+      {
+       "at": "0x08F34F4F",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F34F52",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150163543
+       ],
+       "texts": [
+        {
+         "address": "0x08F35057",
+         "text": "终于来了吗？\n我记得是在周日的时候……\n正在擂钵山下层进行着修炼的我，\n突然感受到了一股\n来自深处的不详的气息……\n那根本就不像是\n来自这个世界的气息，\n简直就是……\n非现世的气息啊！\n自那以后，\n我都不敢靠近擂钵山了……\n所以，你能够\n帮我调查那股气息的源头吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34F58",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F34F5A",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F34F5F",
+       "command": "goto",
+       "args": [
+        150327532
+       ],
+       "targets": [
+        "0x08F5D0EC"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34832"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34F6F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34F6F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150163820
+       ],
+       "texts": [
+        {
+         "address": "0x08F3516C",
+         "text": "那完全不是\n擂钵山该有的气息……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34F75",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34F77",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08F34F7A",
+       "command": "goto_if",
+       "args": [
+        1,
+        150163259
+       ],
+       "targets": [
+        "0x08F34F3B"
+       ]
+      },
+      {
+       "at": "0x08F34F80",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34832"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34F82",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34F82",
+       "command": "checkflag",
+       "args": [
+        6294
+       ]
+      },
+      {
+       "at": "0x08F34F85",
+       "command": "goto_if",
+       "args": [
+        1,
+        150163410
+       ],
+       "targets": [
+        "0x08F34FD2"
+       ]
+      },
+      {
+       "at": "0x08F34F8B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150163852
+       ],
+       "texts": [
+        {
+         "address": "0x08F3518C",
+         "text": "我是在周日感受到那股气息的。\n另外……想要抵达那边，\n需要有学会冲浪和攀岩的宝可梦。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34F91",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34F93",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34F3B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34F95",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34F95",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34F98",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150163944
+       ],
+       "texts": [
+        {
+         "address": "0x08F351E8",
+         "text": "接受任务:<非现世的气息>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34F9E",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F34FA3",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F34FA8",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F34FAD",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F34FB2",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F34FB7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150163852
+       ],
+       "texts": [
+        {
+         "address": "0x08F3518C",
+         "text": "我是在周日感受到那股气息的。\n另外……想要抵达那边，\n需要有学会冲浪和攀岩的宝可梦。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34FBD",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34FBF",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F34FC4",
+       "command": "setflag",
+       "args": [
+        6293
+       ],
+       "task_flag_labels": [
+        {
+         "title": "非现世的气息",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34FC7",
+       "command": "checkflag",
+       "args": [
+        5544
+       ]
+      },
+      {
+       "at": "0x08F34FCA",
+       "command": "goto_if",
+       "args": [
+        0,
+        150163528
+       ],
+       "targets": [
+        "0x08F35048"
+       ]
+      },
+      {
+       "at": "0x08F34FD0",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5D0EC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F34FD2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F34FD2",
+       "command": "checkflag",
+       "args": [
+        6295
+       ],
+       "task_flag_labels": [
+        {
+         "title": "非现世的气息",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34FD5",
+       "command": "goto_if",
+       "args": [
+        1,
+        150163533
+       ],
+       "targets": [
+        "0x08F3504D"
+       ]
+      },
+      {
+       "at": "0x08F34FDB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150163973
+       ],
+       "texts": [
+        {
+         "address": "0x08F35205",
+         "text": "怎么样？\n调查到那股气息的源头了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34FE1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34FE3",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F34FE4",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F34FE7",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150164380
+       ]
+      },
+      {
+       "at": "0x08F34FEE",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F34FF1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150164009
+       ],
+       "texts": [
+        {
+         "address": "0x08F35229",
+         "text": "原来是这样吗？\n那股非现世的气息……\n是来自那只叫弃世猴的宝可梦吗？\n听说在擂钵山中，\n曾经有一只火暴猴因为\n太过生气以至于就这么死去……\n现在看来，\n它并没有“死去”吧……\n而是因为\n怒气突破了临界点，\n而获得了\n能够摆脱肉体束缚的力量……\n成为了非现世之物。\n好了，\n这是给你的报酬！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F34FF7",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F34FF9",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F34FFA",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        120
+       ],
+       "possible_names_not_semantics": {
+        "species": "海星星",
+        "item": "锐利之牙",
+        "move": "玉石俱碎"
+       }
+      },
+      {
+       "at": "0x08F34FFF",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F35004",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F35006",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F35009",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3500C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150164268
+       ],
+       "texts": [
+        {
+         "address": "0x08F3532C",
+         "text": "完成任务:<非现世的气息>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35012",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F35017",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3501C",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F35021",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F35026",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F3502B",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x08F35030",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08F35036",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150164297
+       ],
+       "texts": [
+        {
+         "address": "0x08F35349",
+         "text": "获得了4点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3503C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3503E",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F35043",
+       "command": "setflag",
+       "args": [
+        6295
+       ],
+       "task_flag_labels": [
+        {
+         "title": "非现世的气息",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35046",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34F82"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F35048",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F35048",
+       "command": "clearflag",
+       "args": [
+        6296
+       ]
+      },
+      {
+       "at": "0x08F3504B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34F95"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F3504D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3504D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150164332
+       ],
+       "texts": [
+        {
+         "address": "0x08F3536C",
+         "text": "非现世的气息消失了，\n现在又可以去擂钵山修炼了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F35053",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F35055",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34FD2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5CFCD",
+     "event_roots": [
+      {
+       "map_id": "53:1",
+       "place": "卡吉镇",
+       "kind": "人物",
+       "local_id": 8,
+       "event_index": 5,
+       "x": 4,
+       "y": 17,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g53_n001.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5CFCD",
+       "command": "applymovement",
+       "args": [
+        13,
+        150327460
+       ]
+      },
+      {
+       "at": "0x08F5CFD4",
+       "command": "waitmovement",
+       "args": [
+        13
+       ]
+      },
+      {
+       "at": "0x08F5CFD7",
+       "command": "goto",
+       "args": [
+        150161458
+       ],
+       "targets": [
+        "0x08F34832"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "53:1/local8"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5D0EC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5D0EC",
+       "command": "goto_if",
+       "args": [
+        1,
+        150163349
+       ],
+       "targets": [
+        "0x08F34F95"
+       ]
+      },
+      {
+       "at": "0x08F5D0F2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150163795
+       ],
+       "texts": [
+        {
+         "address": "0x08F35153",
+         "text": "这样吗？\n那该怎么办呢……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D0F8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5D0FA",
+       "command": "applymovement",
+       "args": [
+        13,
+        150328610
+       ]
+      },
+      {
+       "at": "0x08F5D101",
+       "command": "waitmovement",
+       "args": [
+        13
+       ]
+      },
+      {
+       "at": "0x08F5D104",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5D105",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F34F3B"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

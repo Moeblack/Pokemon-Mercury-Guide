@@ -1,0 +1,58 @@
+{
+ "id": 93,
+ "title": "漆黑的魅影",
+ "start_locations": [
+  {
+   "map_id": "56:43",
+   "place": "幻影之森",
+   "x": 8,
+   "y": 5,
+   "npc_hint": "调查点"
+  }
+ ],
+ "requirements": [
+  "完成“海浪卷走的乌波”（该任务完成旗标6139已置位）"
+ ],
+ "steps": [
+  {
+   "text": "在幻影之森(56:43)的(8,5)调查点触发，先显示一句提示文本（0x8D55C4F，未解析）。",
+   "source_scripts": [
+    "0x08EC6E54"
+   ],
+   "map_id": "56:43"
+  },
+  {
+   "text": "出现“仔细一看，后面还有一段话。”并读到最后一句“魅影终将消散，但信念与爱永不熄灭。”",
+   "source_scripts": [
+    "0x08D55BFD"
+   ]
+  },
+  {
+   "text": "结算报酬并置完成旗标6149，出现“完成任务:<漆黑的魅影>”。",
+   "source_scripts": [
+    "0x08D55BFD"
+   ]
+  }
+ ],
+ "completion": [
+  "“海浪卷走的乌波”已完成（旗标6139），并在幻影之森(8,5)读到最后一段话"
+ ],
+ "rewards": [
+  "4 BracerPoints",
+  "5000$"
+ ],
+ "pitfalls": [
+  "未完成“海浪卷走的乌波”时调查点无交付判定",
+  "完成后再调查只重读“魅影终将消散，但信念与爱永不熄灭。”"
+ ],
+ "related_items": [],
+ "related_species": [],
+ "related_trainers": [],
+ "open_questions": [
+  "首句文本地址0x8D55C4F未在text.json解析",
+  "交付脚本中setvar 0x8000=1,0x8001=1,0x8002=28,0x8003=2后callasm 144401489的语义未定位（不能据此认定道具/宝可梦）",
+  "与“海浪卷走的乌波”的衔接仅由旗标6139证明"
+ ],
+ "source_packet": "data/quest_packets/093.json",
+ "status": "compiled"
+}

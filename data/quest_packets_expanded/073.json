@@ -1,0 +1,2394 @@
+{
+ "title": "逾期图书的回收",
+ "quest_id": 73,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b4b0",
+    "title": "逾期图书的回收",
+    "title_address": "0x8e3c428",
+    "description": "图书馆有很多逾期未归还的图书，\n希望有训练家可以帮忙去向\n借阅者们回收这些逾期的图书。",
+    "description_address": "0x8e3c40d",
+    "unknown_u16": 669,
+    "unknown_u16_hex": "0x029D",
+    "accept_flag": 6014,
+    "accept_flag_hex": "0x177E",
+    "complete_flag": 6008,
+    "complete_flag_hex": "0x1778",
+    "map_group": 52,
+    "map_num": 5,
+    "tail_hex": "06 01 00 00",
+    "index": 73,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe396a4",
+      "title": "逾期图书的回收",
+      "description_address": "0x8e3a24a",
+      "description": "图书馆有很多逾期未归还的图书，\\n希望有训练家可以帮忙去向\\n借阅者们回收这些逾期的图书。"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a24a",
+    "legacy_match_count": 1,
+    "current_description": "帮助图书馆\n回收逾期的图书。",
+    "catalog_map": {
+     "id": "52:5",
+     "name": "缘朱市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AF3356",
+    "0x08AF335F",
+    "0x08AF3391",
+    "0x08AF33D5",
+    "0x08AF3556",
+    "0x08AF356D",
+    "0x08AF38F9",
+    "0x08AF3902",
+    "0x08AF3911",
+    "0x08AF3916",
+    "0x08F5BA95"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08AF3556",
+     "map_id": "48:0",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 1,
+     "event_index": 0,
+     "x": 10,
+     "y": 1,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g48_n000.md"
+    },
+    {
+     "script": "0x08AF3556",
+     "map_id": "48:0",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 7,
+     "y": 4,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g48_n000.md"
+    },
+    {
+     "script": "0x08AF356D",
+     "map_id": "52:5",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 3,
+     "event_index": 2,
+     "x": 8,
+     "y": 3,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g52_n005.md"
+    },
+    {
+     "script": "0x08AF3916",
+     "map_id": "48:1",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 7,
+     "y": 4,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g48_n001.md"
+    },
+    {
+     "script": "0x08F5B4EA",
+     "map_id": "52:5",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 4,
+     "event_index": 3,
+     "x": 36,
+     "y": 22,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g52_n005.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089D7836",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089D7836",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089D7837",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144537725
+       ],
+       "texts": [
+        {
+         "address": "0x089D787D",
+         "text": "缘朱市的历史……"
+        }
+       ]
+      },
+      {
+       "at": "0x089D783D",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x089D783F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144537742
+       ],
+       "texts": [
+        {
+         "address": "0x089D788E",
+         "text": "想听我讲讲吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089D7845",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089D7847",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089D784C",
+       "command": "call_if",
+       "args": [
+        1,
+        144537685
+       ],
+       "targets": [
+        "0x089D7855"
+       ]
+      },
+      {
+       "at": "0x089D7852",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x089D7853",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3556"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089D7855",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089D7855",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144537758
+       ],
+       "texts": [
+        {
+         "address": "0x089D789E",
+         "text": "缘朱市有两座塔。\n分别有两只强大的精灵\n栖息在那里。\n但其中一座塔被烧毁了。\n从那以后再也没有人见过\n那两只精灵……"
+        }
+       ]
+      },
+      {
+       "at": "0x089D785B",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x089D785D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144537867
+       ],
+       "texts": [
+        {
+         "address": "0x089D790B",
+         "text": "想继续听我讲吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089D7863",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089D7865",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089D786A",
+       "command": "call_if",
+       "args": [
+        1,
+        144537715
+       ],
+       "targets": [
+        "0x089D7873"
+       ]
+      },
+      {
+       "at": "0x089D7870",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x089D7871",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089D7836"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089D7873",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089D7873",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144537885
+       ],
+       "texts": [
+        {
+         "address": "0x089D791D",
+         "text": "缘朱市也是三只在城镇周围\n奔走的精灵的家。\n传说它们诞生自水流，\n闪电和火焰。\n但它们无法控制住\n那过于强大的力量。\n所以它们如疾风\n穿梭在草丛。"
+        }
+       ]
+      },
+      {
+       "at": "0x089D7879",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x089D787B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x089D7855"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089D7A27",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089D7A27",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144538161
+       ],
+       "texts": [
+        {
+         "address": "0x089D7A31",
+         "text": "那么大的宝可梦\n真的存在么？\n如果真有，那一定非常厉害。"
+        }
+       ]
+      },
+      {
+       "at": "0x089D7A2D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089D7A2F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3916"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089E7386",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E7386",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144638552
+       ],
+       "texts": [
+        {
+         "address": "0x089F0258",
+         "text": "闪烁着彩虹色的宝可梦\n在高塔的顶端优雅地舞动……\n闪烁着银色光芒的宝可梦\n在大海的潮旋处沉睡……\n我怎么也联想不到一块。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E738C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E738E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF356D"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF334C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF334C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144637510
+       ],
+       "texts": [
+        {
+         "address": "0x089EFE46",
+         "text": "你好！\n这里是缘朱图书馆。\n馆内禁止喧哗，\n请保持安静。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3352",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF3354",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3356"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3356",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF3356",
+       "command": "checkflag",
+       "args": [
+        6008
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3359",
+       "command": "goto_if",
+       "args": [
+        1,
+        145699660
+       ],
+       "targets": [
+        "0x08AF334C"
+       ]
+      },
+      {
+       "at": "0x08AF335F",
+       "command": "checkflag",
+       "args": [
+        6014
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3362",
+       "command": "goto_if",
+       "args": [
+        1,
+        145699790
+       ],
+       "targets": [
+        "0x08AF33CE"
+       ]
+      },
+      {
+       "at": "0x08AF3368",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144637510
+       ],
+       "texts": [
+        {
+         "address": "0x089EFE46",
+         "text": "你好！\n这里是缘朱图书馆。\n馆内禁止喧哗，\n请保持安静。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF336E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF3370",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AF3373",
+       "command": "applymovement",
+       "args": [
+        38443,
+        2432763408
+       ]
+      },
+      {
+       "at": "0x08AF337A",
+       "command": "playsong",
+       "args": [
+        2223,
+        15
+       ]
+      },
+      {
+       "at": "0x08AF337E",
+       "command": "nop",
+       "args": []
+      },
+      {
+       "at": "0x08AF337F",
+       "command": "checkitemspace",
+       "args": [
+        40702,
+        2312
+       ]
+      },
+      {
+       "at": "0x08AF3384",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=73"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF335F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF335F",
+       "command": "checkflag",
+       "args": [
+        6014
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3362",
+       "command": "goto_if",
+       "args": [
+        1,
+        145699790
+       ],
+       "targets": [
+        "0x08AF33CE"
+       ]
+      },
+      {
+       "at": "0x08AF3368",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144637510
+       ],
+       "texts": [
+        {
+         "address": "0x089EFE46",
+         "text": "你好！\n这里是缘朱图书馆。\n馆内禁止喧哗，\n请保持安静。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF336E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF3370",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AF3373",
+       "command": "applymovement",
+       "args": [
+        38443,
+        2432763408
+       ]
+      },
+      {
+       "at": "0x08AF337A",
+       "command": "playsong",
+       "args": [
+        2223,
+        15
+       ]
+      },
+      {
+       "at": "0x08AF337E",
+       "command": "nop",
+       "args": []
+      },
+      {
+       "at": "0x08AF337F",
+       "command": "checkitemspace",
+       "args": [
+        40702,
+        2312
+       ]
+      },
+      {
+       "at": "0x08AF3384",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=73"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3374",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF3374",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AF3377",
+       "command": "goto_if",
+       "args": [
+        1,
+        145699729
+       ],
+       "targets": [
+        "0x08AF3391"
+       ]
+      },
+      {
+       "at": "0x08AF337D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144637510
+       ],
+       "texts": [
+        {
+         "address": "0x089EFE46",
+         "text": "你好！\n这里是缘朱图书馆。\n馆内禁止喧哗，\n请保持安静。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3383",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF3385",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B4EA"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3387",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF3387",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144637510
+       ],
+       "texts": [
+        {
+         "address": "0x089EFE46",
+         "text": "你好！\n这里是缘朱图书馆。\n馆内禁止喧哗，\n请保持安静。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF338D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF338F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3391"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3391",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF3391",
+       "command": "checkflag",
+       "args": [
+        6008
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3394",
+       "command": "goto_if",
+       "args": [
+        1,
+        145699719
+       ],
+       "targets": [
+        "0x08AF3387"
+       ]
+      },
+      {
+       "at": "0x08AF339A",
+       "command": "checkflag",
+       "args": [
+        6014
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF339D",
+       "command": "goto_if",
+       "args": [
+        1,
+        145699849
+       ],
+       "targets": [
+        "0x08AF3409"
+       ]
+      },
+      {
+       "at": "0x08AF33A3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144637510
+       ],
+       "texts": [
+        {
+         "address": "0x089EFE46",
+         "text": "你好！\n这里是缘朱图书馆。\n馆内禁止喧哗，\n请保持安静。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF33A9",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF33AB",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AF33AE",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145699975
+       ]
+      },
+      {
+       "at": "0x08AF33B5",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AF33B8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145700234
+       ],
+       "texts": [
+        {
+         "address": "0x08AF358A",
+         "text": "请问是看见了我的委托吗？\n事情是这样的，\n图书馆近期\n有很多逾期未归还的图书，\n可是我现在也抽不开身，\n请问你可以帮我去向\n借阅者们回收这些逾期图书吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF33BE",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AF33C0",
+       "command": "goto",
+       "args": [
+        150321120
+       ],
+       "targets": [
+        "0x08F5B7E0"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3374"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF33CE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF33CE",
+       "command": "fadesong",
+       "args": [
+        2223
+       ]
+      },
+      {
+       "at": "0x08AF33D1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF33D3",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF335F"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF33D5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF33D5",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF33D8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145700407
+       ],
+       "texts": [
+        {
+         "address": "0x08AF3637",
+         "text": "接受任务:<逾期图书的回收>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF33DE",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF33E3",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF33E8",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AF33ED",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AF33F2",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AF33F7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145700438
+       ],
+       "texts": [
+        {
+         "address": "0x08AF3656",
+         "text": "那么就麻烦你了！\n现在还差三本图书需要回收，\n借阅者分别是居住在\n精灵中心附近的老爷爷、\n通往铃铛塔的关卡的僧侣\n和居住在道馆附近的学生。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF33FD",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AF33FF",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AF3404",
+       "command": "setflag",
+       "args": [
+        6014
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3407",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B7E0"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3409",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF3409",
+       "command": "checkflag",
+       "args": [
+        6023
+       ]
+      },
+      {
+       "at": "0x08AF340C",
+       "command": "goto_if",
+       "args": [
+        0,
+        145699965
+       ],
+       "targets": [
+        "0x08AF347D"
+       ]
+      },
+      {
+       "at": "0x08AF3412",
+       "command": "checkflag",
+       "args": [
+        6024
+       ]
+      },
+      {
+       "at": "0x08AF3415",
+       "command": "goto_if",
+       "args": [
+        0,
+        145699965
+       ],
+       "targets": [
+        "0x08AF347D"
+       ]
+      },
+      {
+       "at": "0x08AF341B",
+       "command": "checkflag",
+       "args": [
+        6025
+       ]
+      },
+      {
+       "at": "0x08AF341E",
+       "command": "goto_if",
+       "args": [
+        0,
+        145699965
+       ],
+       "targets": [
+        "0x08AF347D"
+       ]
+      },
+      {
+       "at": "0x08AF3424",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145700044
+       ],
+       "texts": [
+        {
+         "address": "0x08AF34CC",
+         "text": "嗯……\n让我看看……\n<<城都编年史>>、\n<<阿罗拉美女大赏>>和\n<<宝可梦水银攻略本>>\n没错，正是这三本书！\n完好无损地回收了！\n辛苦你了，\n这是给你的报酬。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF342A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF342C",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF342F",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        412
+       ],
+       "possible_names_not_semantics": {
+        "species": "坏蛋",
+        "item": "TM87",
+        "move": "暴风"
+       }
+      },
+      {
+       "at": "0x08AF3434",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF3439",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF343B",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF343E",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        537
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕路奇亚",
+        "item": "经验糖果S",
+        "move": "暗黑爆破"
+       }
+      },
+      {
+       "at": "0x08AF3443",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF3448",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF344A",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF344D",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF3450",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x08AF3455",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AF345B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145699978
+       ],
+       "texts": [
+        {
+         "address": "0x08AF348A",
+         "text": "完成任务:<逾期图书的回收>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3461",
+       "command": "goto",
+       "args": [
+        150321813
+       ],
+       "targets": [
+        "0x08F5BA95"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3391"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF347D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF347D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145700438
+       ],
+       "texts": [
+        {
+         "address": "0x08AF3656",
+         "text": "那么就麻烦你了！\n现在还差三本图书需要回收，\n借阅者分别是居住在\n精灵中心附近的老爷爷、\n通往铃铛塔的关卡的僧侣\n和居住在道馆附近的学生。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3483",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF3485",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3409"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3556",
+     "event_roots": [
+      {
+       "map_id": "48:0",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 10,
+       "y": 1,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g48_n000.md"
+      },
+      {
+       "map_id": "48:0",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 7,
+       "y": 4,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g48_n000.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AF3556",
+       "command": "checkflag",
+       "args": [
+        6008
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3559",
+       "command": "goto_if",
+       "args": [
+        1,
+        144537654
+       ],
+       "targets": [
+        "0x089D7836"
+       ]
+      },
+      {
+       "at": "0x08AF355F",
+       "command": "checkflag",
+       "args": [
+        6014
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3562",
+       "command": "goto_if",
+       "args": [
+        1,
+        145700569
+       ],
+       "targets": [
+        "0x08AF36D9"
+       ]
+      },
+      {
+       "at": "0x08AF3568",
+       "command": "goto",
+       "args": [
+        144537654
+       ],
+       "targets": [
+        "0x089D7836"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "48:0/local1"
+      },
+      {
+       "kind": "object",
+       "where": "48:0/local2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF356D",
+     "event_roots": [
+      {
+       "map_id": "52:5",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 3,
+       "event_index": 2,
+       "x": 8,
+       "y": 3,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g52_n005.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AF356D",
+       "command": "checkflag",
+       "args": [
+        6008
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3570",
+       "command": "goto_if",
+       "args": [
+        1,
+        144601990
+       ],
+       "targets": [
+        "0x089E7386"
+       ]
+      },
+      {
+       "at": "0x08AF3576",
+       "command": "checkflag",
+       "args": [
+        6014
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3579",
+       "command": "goto_if",
+       "args": [
+        1,
+        145700879
+       ],
+       "targets": [
+        "0x08AF380F"
+       ]
+      },
+      {
+       "at": "0x08AF357F",
+       "command": "goto",
+       "args": [
+        144601990
+       ],
+       "targets": [
+        "0x089E7386"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "52:5/local3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF36D9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF36D9",
+       "command": "checkflag",
+       "args": [
+        6023
+       ]
+      },
+      {
+       "at": "0x08AF36DC",
+       "command": "goto_if",
+       "args": [
+        1,
+        145700604
+       ],
+       "targets": [
+        "0x08AF36FC"
+       ]
+      },
+      {
+       "at": "0x08AF36E2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145700614
+       ]
+      },
+      {
+       "at": "0x08AF36E8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF36EA",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF36ED",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145701661
+       ],
+       "texts": [
+        {
+         "address": "0x08AF3B1D",
+         "text": "已回收图书：<<城都编年史>>。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF36F3",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF36F5",
+       "command": "setflag",
+       "args": [
+        6023
+       ]
+      },
+      {
+       "at": "0x08AF36F8",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3556"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF36FC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF36FC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145700828
+       ],
+       "texts": [
+        {
+         "address": "0x08AF37DC",
+         "text": "你也喜欢研究历史吗？看来\n我们的见解颇有相似之处啊。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3702",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF3704",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF36D9"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF380F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF380F",
+       "command": "checkflag",
+       "args": [
+        6024
+       ]
+      },
+      {
+       "at": "0x08AF3812",
+       "command": "goto_if",
+       "args": [
+        1,
+        144601990
+       ],
+       "targets": [
+        "0x089E7386"
+       ]
+      },
+      {
+       "at": "0x08AF3818",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145700914
+       ]
+      },
+      {
+       "at": "0x08AF381E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF3820",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF3823",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145701590
+       ],
+       "texts": [
+        {
+         "address": "0x08AF3AD6",
+         "text": "已回收图书：<<阿罗拉美女大赏>>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3829",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF382B",
+       "command": "setflag",
+       "args": [
+        6024
+       ]
+      },
+      {
+       "at": "0x08AF382E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF356D"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF38F9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF38F9",
+       "command": "checkflag",
+       "args": [
+        6008
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF38FC",
+       "command": "goto_if",
+       "args": [
+        1,
+        144538151
+       ],
+       "targets": [
+        "0x089D7A27"
+       ]
+      },
+      {
+       "at": "0x08AF3902",
+       "command": "checkflag",
+       "args": [
+        6014
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3905",
+       "command": "goto_if",
+       "args": [
+        1,
+        145701137
+       ],
+       "targets": [
+        "0x08AF3911"
+       ]
+      },
+      {
+       "at": "0x08AF390B",
+       "command": "goto",
+       "args": [
+        144538151
+       ],
+       "targets": [
+        "0x089D7A27"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=73"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3902",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF3902",
+       "command": "checkflag",
+       "args": [
+        6014
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3905",
+       "command": "goto_if",
+       "args": [
+        1,
+        145701137
+       ],
+       "targets": [
+        "0x08AF3911"
+       ]
+      },
+      {
+       "at": "0x08AF390B",
+       "command": "goto",
+       "args": [
+        144538151
+       ],
+       "targets": [
+        "0x089D7A27"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=73"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3911",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF3911",
+       "command": "checkflag",
+       "args": [
+        6025
+       ]
+      },
+      {
+       "at": "0x08AF3914",
+       "command": "goto_if",
+       "args": [
+        1,
+        102201387
+       ],
+       "targets": []
+      },
+      {
+       "at": "0x08AF391A",
+       "command": "nop1",
+       "args": []
+      },
+      {
+       "at": "0x08AF391B",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08AF391C",
+       "command": "giveegg",
+       "args": [
+        2205
+       ],
+       "species_name": null
+      },
+      {
+       "at": "0x08AF391F",
+       "command": "checkflag",
+       "args": [
+        6014
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3922",
+       "command": "goto_if",
+       "args": [
+        1,
+        145701166
+       ],
+       "targets": [
+        "0x08AF392E"
+       ]
+      },
+      {
+       "at": "0x08AF3928",
+       "command": "goto",
+       "args": [
+        144538151
+       ],
+       "targets": [
+        "0x089D7A27"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3902"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF3916",
+     "event_roots": [
+      {
+       "map_id": "48:1",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 7,
+       "y": 4,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g48_n001.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AF3916",
+       "command": "checkflag",
+       "args": [
+        6008
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3919",
+       "command": "goto_if",
+       "args": [
+        1,
+        144538151
+       ],
+       "targets": [
+        "0x089D7A27"
+       ]
+      },
+      {
+       "at": "0x08AF391F",
+       "command": "checkflag",
+       "args": [
+        6014
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3922",
+       "command": "goto_if",
+       "args": [
+        1,
+        145701166
+       ],
+       "targets": [
+        "0x08AF392E"
+       ]
+      },
+      {
+       "at": "0x08AF3928",
+       "command": "goto",
+       "args": [
+        144538151
+       ],
+       "targets": [
+        "0x089D7A27"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "48:1/local2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF392E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF392E",
+       "command": "checkflag",
+       "args": [
+        6025
+       ]
+      },
+      {
+       "at": "0x08AF3931",
+       "command": "goto_if",
+       "args": [
+        1,
+        144538151
+       ],
+       "targets": [
+        "0x089D7A27"
+       ]
+      },
+      {
+       "at": "0x08AF3937",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145701261
+       ],
+       "texts": [
+        {
+         "address": "0x08AF398D",
+         "text": "什么？\n已经逾期的图书吗？\n啊……没错，这儿确实有一本书。\n这是我前段时间借阅的\n<<宝可梦水银攻略本>>。\n当时我正在进行游戏里一个\n叫“逾期图书的回收”的支线任务……\n因为找不到游戏里的一名NPC，\n所以借阅了这本书。\n真是垃圾游戏谟！！\n不过现在这本书已经用不上啦！\n你拿去便是了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF393D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF393F",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF3942",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145701552
+       ],
+       "texts": [
+        {
+         "address": "0x08AF3AB0",
+         "text": "回收图书：<<宝可梦水银攻略本>>。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF3948",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF394A",
+       "command": "setflag",
+       "args": [
+        6025
+       ]
+      },
+      {
+       "at": "0x08AF394D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3916"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5B4EA",
+     "event_roots": [
+      {
+       "map_id": "52:5",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 4,
+       "event_index": 3,
+       "x": 36,
+       "y": 22,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g52_n005.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5B4EA",
+       "command": "applymovement",
+       "args": [
+        15,
+        150320836
+       ]
+      },
+      {
+       "at": "0x08F5B4F1",
+       "command": "waitmovement",
+       "args": [
+        15
+       ]
+      },
+      {
+       "at": "0x08F5B4F4",
+       "command": "goto",
+       "args": [
+        145699700
+       ],
+       "targets": [
+        "0x08AF3374"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "52:5/local4"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5B7E0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5B7E0",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5B7E5",
+       "command": "goto_if",
+       "args": [
+        1,
+        145699797
+       ],
+       "targets": [
+        "0x08AF33D5"
+       ]
+      },
+      {
+       "at": "0x08F5B7EB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145700378
+       ],
+       "texts": [
+        {
+         "address": "0x08AF361A",
+         "text": "好吧……\n那我还是另请高明吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5B7F1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5B7F3",
+       "command": "applymovement",
+       "args": [
+        15,
+        150321152
+       ]
+      },
+      {
+       "at": "0x08F5B7FA",
+       "command": "waitmovement",
+       "args": [
+        15
+       ]
+      },
+      {
+       "at": "0x08F5B7FD",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5B7FE",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3391"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5BA95",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5BA95",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5BA9A",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5BA9F",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F5BAA4",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F5BAA9",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F5BAAE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145700009
+       ],
+       "texts": [
+        {
+         "address": "0x08AF34A9",
+         "text": "获得了4点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5BAB4",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F5BAB6",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F5BABB",
+       "command": "setflag",
+       "args": [
+        6008
+       ],
+       "task_flag_labels": [
+        {
+         "title": "逾期图书的回收",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5BABE",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF3409"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

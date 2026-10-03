@@ -1,0 +1,46 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>047 诡异的绿光 · 水银攻略</title><style>*{box-sizing:border-box}body{margin:0;color:#243247;background:#f5f7fb;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}header{background:#142b48;color:white;padding:22px max(22px,calc((100vw - 1180px)/2))}header a{color:#e5efff;text-decoration:none}nav{display:flex;gap:20px;flex-wrap:wrap;font-size:15px}main{max-width:1180px;margin:auto;padding:28px 22px 60px}h1{font-size:30px;line-height:1.4}h2{margin-top:32px;border-bottom:1px solid #d9e0eb;padding-bottom:8px}a{color:#155b9b}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow:auto;background:white}td,th{padding:10px 12px;border:1px solid #dde4ed;text-align:left;min-width:65px}th{background:#eaf0f8}tr:nth-child(even){background:#f7f9fc}code{font-size:.88em;background:#edf0f5;padding:2px 4px;border-radius:3px;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:15px;background:#edf0f5}img{max-width:100%;height:auto;image-rendering:pixelated}blockquote{border-left:4px solid #809cbe;background:#edf2f8;margin:18px 0;padding:10px 18px}input,select{font:inherit;padding:10px 14px;border:1px solid #bccbdd;border-radius:7px}input{flex:1;min-width:180px}.searchbox{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px}.card{background:white;border:1px solid #dbe3ee;border-radius:10px;padding:20px}.result{background:white;margin:10px 0;padding:14px 18px;border-radius:7px;border:1px solid #e0e6ee}.result small,.muted{color:#60718a}.badge{background:#e7eff9;border-radius:4px;padding:2px 7px;font-size:13px}details{margin:15px 0}footer{margin-top:40px;border-top:1px solid #dde4ed;padding-top:15px;color:#60718a;font-size:13px}@media(max-width:600px){main{padding:16px 12px}h1{font-size:25px}td,th{padding:8px}}
+.atlas-cards{margin:32px 0;padding-top:8px;border-top:1px solid #d9e0eb}.atlas-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}.atlas-card{background:#fff;border:1px solid #d9e0eb;border-radius:10px;overflow:hidden}.atlas-card h3{font-size:16px;margin:12px 14px 6px}.atlas-card p{font-size:13px;line-height:1.6;margin:8px 14px 14px}.atlas-frame{height:240px;position:relative;background:#e8edf1}.atlas-frame img{position:absolute;width:100%;height:100%;object-fit:contain;image-rendering:pixelated}.atlas-frame svg{position:absolute;width:100%;height:100%;inset:0;pointer-events:none}.atlas-label{paint-order:stroke;stroke:#fff;stroke-width:3px;fill:#142b48;font-weight:bold;text-anchor:middle;dominant-baseline:central}.atlas-cards details{margin-top:16px}.atlas-cards summary{cursor:pointer;color:#155b9b;margin-bottom:12px}.atlas-feature{padding:12px 16px;background:#eaf0f8;border-radius:8px;margin:16px 0}.atlas-unavailable{height:240px;display:grid;place-items:center;color:#59677a;font-size:14px;padding:24px;text-align:center}
+</style><header><a href="../index.html"><strong>宝可梦水银 1.1 · 玩家攻略</strong></a><nav><a href="../quests/index.html">支线攻略</a><a href="../items/index.html">道具搜集</a><a href="../pokemon/index.html">宝可梦获取</a><a href="../trainers/index.html">训练家配队</a><a href="../maps/index.html">地点地图</a><a href="../pokemon/wild_mega.html">野生Mega</a></nav></header><main><h1 id="047">047 诡异的绿光</h1>
+<p>一句话目标：查明满金市住宅区北部公寓夜里出现诡异绿光的真相。</p>
+<h2 id="_1">接取地点</h2>
+<ul>
+<li>满金市住宅区北部公寓（<a href="../maps/index.html#map=56:10&amp;page=quests/047.md">地图 56:10</a>），公寓管理员（local_id 1/2，约 (11,7)–(11,8)）。</li>
+<li>当前目录描述：查明公寓内出现诡异的绿光的真相。</li>
+<li>旧表说明（同一旗标）：住宅区北部的公寓最近在夜晚时总是会出现诡异的绿光，希望有人可以帮忙调查一下。</li>
+</ul>
+<h2 id="_2">准备条件</h2>
+<ul>
+<li>需先看过“支援请求”（接取分支 <code>0x08AE974A</code> 检查旗标 4246，其来源未在包内定位）。</li>
+<li>行动需在夜晚进行；脚本检查旗标 5548，白天只提示“我们还是等到晚上再行动吧”。</li>
+</ul>
+<h2 id="_3">操作步骤</h2>
+<ol>
+<li>到公寓 (56:10) 找管理员，他说“最近公寓晚上总是会出现诡异的绿光，让租客们有些担心是不是幽灵在作祟……请问你可以帮我找到这个绿光的来源吗？”。</li>
+<li>答应后出现「接受任务:&lt;诡异的绿光&gt;」（接取旗标 5959）。</li>
+<li>等到夜晚再与管理员对话，他说“到晚上了。怎么样，你准备好了吗？”，答应后进入公寓内部（<a href="../maps/index.html#map=56:14&amp;page=quests/047.md">地图 56:14</a>）。</li>
+<li>在公寓内部跟进超音蝠的踪迹：它依次在几处出现并发出“吱吱吱！”（脚本按临时旗标 22/23/24 逐段推进）。</li>
+<li>追到尽头触发与野生超音蝠的战斗（物种 41，Lv12，携带金珠 110）。战斗结束提示“这就是绿光的源头吗？去找公寓的管理员汇报一下吧。”并自动回到 (56:10)。</li>
+<li>回公寓 (56:10) 向管理员汇报，他说原来是因为这只绿色的超音蝠，怪不得最近大家运气都变好、常在角落捡到隐藏道具，“原来是‘蝠到了’呀”，谢谢你并送出<a href="../items/0537.html">经验糖果S 0537</a> ×1，任务结算完成。</li>
+<li>（后续）完成后再找管理员，他会问起那只超音蝠；若队伍中已有<a href="../pokemon/0169.html">叉字蝠 0169</a>，他会让宝可梦学习“顺风”（旗标 5962）。</li>
+</ol>
+<h2 id="_4">交付检查</h2>
+<ul>
+<li>汇报后由脚本 <code>0x08AE988A</code> 置完成旗标 5961 并结算。</li>
+</ul>
+<h2 id="_5">奖励</h2>
+<ul>
+<li><a href="../items/0537.html">经验糖果S 0537</a> ×1</li>
+<li>4000$</li>
+<li>3 BracerPoints</li>
+</ul>
+<h2 id="_6">容易卡住的位置</h2>
+<ul>
+<li>必须在夜晚再找管理员，白天只会让你等到晚上（旗标 5548）。</li>
+<li>绿光来源为野生超音蝠；<code>setwildbattle</code> 只证明战斗设置，不能据此断言必定可捕捉。</li>
+<li>“顺风”教学是完成后的额外内容，需要带着叉字蝠（169）才会触发（species 检查）。</li>
+</ul>
+<h2 id="_7">来源与待补字段</h2>
+<ul>
+<li>来源包：data/quest_packets/047.json；接取脚本 <code>0x08AE976F</code>、<code>0x08AE979A</code>，夜晚入口 <code>0x08AE97CE</code>、<code>0x08AE9AB7</code>，内部追踪 <code>0x08AE9B4B</code>、<code>0x08AE9B83</code>、<code>0x08AE9BBB</code>、<code>0x08AE9EBC</code>，汇报结算 <code>0x08F586F7</code>、<code>0x08AE988A</code>，顺风教学 <code>0x08AE9CFA</code>、<code>0x08AE9D23</code>。</li>
+<li>待补：旗标 4246（支援请求）与 5548（夜晚）的设置来源未在包内定位；相关宝可梦：<a href="../pokemon/0041.html">超音蝠</a>、<a href="../pokemon/0169.html">叉字蝠</a>。</li>
+</ul><section class="atlas-cards"><h2>地点地图</h2><p>共享RGB底图；点击可缩放定位。数字对应本页相关地点，不代表地图上全部事件。</p><div class="atlas-card-grid"><article class="atlas-card"><h3><a href="../maps/index.html#map=56:10&amp;page=quests/047.md&amp;point=quest-81b30925ad20e2">满金市</a></h3><a href="../maps/index.html#map=56:10&amp;page=quests/047.md&amp;point=quest-81b30925ad20e2" aria-label="在大地图中打开满金市"><div class="atlas-frame"><img src="../maps/base/f4afb4e50a1aefa4.png" alt="满金市地图" loading="lazy" decoding="async" width="320" height="192"><svg viewBox="0 0 320 192" aria-hidden="true"><circle cx="184" cy="120" r="8" fill="#155b9b" stroke="white" stroke-width="2"/><text x="184" y="120" fill="white" font-family="sans-serif" font-weight="bold" font-size="10.4" text-anchor="middle" dominant-baseline="central">1</text></svg></div></a><p>1 诡异的绿光（11,7）</p><p><a href="../maps/index.html#map=56:10&amp;page=quests/047.md&amp;point=quest-81b30925ad20e2">放大定位与查看相邻入口 →</a></p></article><article class="atlas-card"><h3><a href="../maps/index.html#map=56:14&amp;page=quests/047.md">满金市</a></h3><a href="../maps/index.html#map=56:14&amp;page=quests/047.md" aria-label="在大地图中打开满金市"><div class="atlas-frame"><img src="../maps/base/45bacc7f8c11dbd4.png" alt="满金市地图" loading="lazy" decoding="async" width="320" height="192"><svg viewBox="0 0 320 192" aria-hidden="true"></svg></div></a><p>地图范围记录：当前资料没有精确人物／遭遇坐标。</p><p><a href="../maps/index.html#map=56:14&amp;page=quests/047.md">放大定位与查看相邻入口 →</a></p></article></div></section><footer>资料依据指定水银1.1 ROM及解包记录。正文的“待补”表示该获取条件尚未整理清楚，不代表无法获得。</footer></main></html>

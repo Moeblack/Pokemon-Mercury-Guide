@@ -1,0 +1,1452 @@
+{
+ "title": "异样的呆呆兽",
+ "quest_id": 42,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b244",
+    "title": "异样的呆呆兽",
+    "title_address": "0x8e3bcc9",
+    "description": "调查呆呆兽之井里\n异样的呆呆兽。",
+    "description_address": "0x8e3bcaa",
+    "unknown_u16": 209,
+    "unknown_u16_hex": "0x00D1",
+    "accept_flag": 2918,
+    "accept_flag_hex": "0x0B66",
+    "complete_flag": 2919,
+    "complete_flag_hex": "0x0B67",
+    "map_group": 1,
+    "map_num": 94,
+    "tail_hex": "01 01 00 00",
+    "index": 42,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3bcaa",
+    "legacy_match_count": 0,
+    "current_description": "调查呆呆兽之井里\n异样的呆呆兽。",
+    "catalog_map": {
+     "id": "1:94",
+     "name": "呆呆兽之井"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08EDE58A",
+    "0x08EDEDE1",
+    "0x08EE0185",
+    "0x08EE039C"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08EDE58A",
+     "map_id": "1:94",
+     "place": "呆呆兽之井",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 20,
+     "y": 8,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g01_n094.md"
+    },
+    {
+     "script": "0x08EDEDE1",
+     "map_id": "1:94",
+     "place": "呆呆兽之井",
+     "kind": "人物",
+     "local_id": 4,
+     "event_index": 3,
+     "x": 12,
+     "y": 7,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g01_n094.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08EDE58A",
+     "event_roots": [
+      {
+       "map_id": "1:94",
+       "place": "呆呆兽之井",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 20,
+       "y": 8,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g01_n094.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EDE58A",
+       "command": "checkflag",
+       "args": [
+        2918
+       ],
+       "task_flag_labels": [
+        {
+         "title": "异样的呆呆兽",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDE58D",
+       "command": "goto_if",
+       "args": [
+        1,
+        149808552
+       ],
+       "targets": [
+        "0x08EDE5A8"
+       ]
+      },
+      {
+       "at": "0x08EDE593",
+       "command": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08EDE598",
+       "command": "cry",
+       "args": [
+        80,
+        255
+       ]
+      },
+      {
+       "at": "0x08EDE59D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149810217
+       ],
+       "texts": [
+        {
+         "address": "0x08EDEC29",
+         "text": "呆呆兽好像很痛苦的样子……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDE5A3",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EDE5A5",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EDE5A6",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDE5A8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDE5A8",
+       "command": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08EDE5AD",
+       "command": "signmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EDE5AE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149771085
+       ],
+       "texts": [
+        {
+         "address": "0x08ED534D",
+         "text": "精灵齿轮检测到周围的\n超级能浓度正在极速上升！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDE5B4",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EDE5B6",
+       "command": "normalmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EDE5B7",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EDE5BA",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EDE5BD",
+       "command": "applymovement",
+       "args": [
+        255,
+        149770862
+       ]
+      },
+      {
+       "at": "0x08EDE5C4",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EDE5C7",
+       "command": "sound",
+       "args": [
+        103
+       ]
+      },
+      {
+       "at": "0x08EDE5CA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149704930
+       ],
+       "texts": [
+        {
+         "address": "0x08EC50E2",
+         "text": "警告！你所确认的\n个体即将失控超级进化！\n是否要应对\n失控超级进化的个体？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDE5D0",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EDE5D2",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EDE5D7",
+       "command": "goto_if",
+       "args": [
+        1,
+        149813571
+       ],
+       "targets": [
+        "0x08EDF943"
+       ]
+      },
+      {
+       "at": "0x08EDE5DD",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EDE5DE",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EDE5E1",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDE95F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDE95F",
+       "command": "setflag",
+       "args": [
+        2749
+       ]
+      },
+      {
+       "at": "0x08EDE962",
+       "command": "setvar",
+       "args": [
+        20544,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EDE967",
+       "command": "setwildbattle",
+       "args": [
+        80,
+        30,
+        0
+       ],
+       "species_name": "呆壳兽"
+      },
+      {
+       "at": "0x08EDE96D",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EDE970",
+       "command": "special",
+       "args": [
+        312
+       ]
+      },
+      {
+       "at": "0x08EDE973",
+       "command": "pause",
+       "args": [
+        160
+       ]
+      },
+      {
+       "at": "0x08EDE976",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149810183
+       ],
+       "texts": [
+        {
+         "address": "0x08EDEC07",
+         "text": "尾巴上的大舌贝\n似乎闪耀着光芒……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDE97C",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08EDE97E",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08EDE981",
+       "command": "applymovement",
+       "args": [
+        255,
+        149770862
+       ]
+      },
+      {
+       "at": "0x08EDE988",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08EDE98B",
+       "command": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x08EDE98E",
+       "command": "preparemsg",
+       "args": [
+        149810132
+       ],
+       "texts": [
+        {
+         "address": "0x08EDEBD4",
+         "text": "[玩家/变量]将呆壳兽超级进化的波动\n储存在了超级石中。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDE993",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EDE994",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08EDE995",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x08EDE996",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EDE997",
+       "command": "setflag",
+       "args": [
+        3078
+       ]
+      },
+      {
+       "at": "0x08EDE99A",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08EDE99C",
+       "command": "removeobject",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDE99F",
+       "command": "setflag",
+       "args": [
+        2920
+       ]
+      },
+      {
+       "at": "0x08EDE9A2",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08EDE9A5",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EDE9A7",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDEDE1",
+     "event_roots": [
+      {
+       "map_id": "1:94",
+       "place": "呆呆兽之井",
+       "kind": "人物",
+       "local_id": 4,
+       "event_index": 3,
+       "x": 12,
+       "y": 7,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g01_n094.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EDEDE1",
+       "command": "checkflag",
+       "args": [
+        2919
+       ],
+       "task_flag_labels": [
+        {
+         "title": "异样的呆呆兽",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDEDE4",
+       "command": "goto_if",
+       "args": [
+        1,
+        149810826
+       ],
+       "targets": [
+        "0x08EDEE8A"
+       ]
+      },
+      {
+       "at": "0x08EDEDEA",
+       "command": "checkflag",
+       "args": [
+        2920
+       ]
+      },
+      {
+       "at": "0x08EDEDED",
+       "command": "goto_if",
+       "args": [
+        1,
+        149811665
+       ],
+       "targets": [
+        "0x08EDF1D1"
+       ]
+      },
+      {
+       "at": "0x08EDEDF3",
+       "command": "checkflag",
+       "args": [
+        2918
+       ],
+       "task_flag_labels": [
+        {
+         "title": "异样的呆呆兽",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDEDF6",
+       "command": "goto_if",
+       "args": [
+        1,
+        149815675
+       ],
+       "targets": [
+        "0x08EE017B"
+       ]
+      },
+      {
+       "at": "0x08EDEDFC",
+       "command": "applymovement",
+       "args": [
+        3,
+        149816203
+       ]
+      },
+      {
+       "at": "0x08EDEE03",
+       "command": "waitmovement",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08EDEE06",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149816130
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0342",
+         "text": "我本来在这里等待着\n呆呆兽进化的那一瞬间，\n可却发现了\n一只异样的呆壳兽……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDEE0C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDEE0E",
+       "command": "applymovement",
+       "args": [
+        4,
+        149816107
+       ]
+      },
+      {
+       "at": "0x08EDEE15",
+       "command": "waitmovement",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08EDEE18",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08EDEE1B",
+       "command": "applymovement",
+       "args": [
+        127,
+        149816120
+       ]
+      },
+      {
+       "at": "0x08EDEE22",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08EDEE25",
+       "command": "cry",
+       "args": [
+        80,
+        255
+       ]
+      },
+      {
+       "at": "0x08EDEE2A",
+       "command": "setvar",
+       "args": [
+        32772,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EDEE2F",
+       "command": "setvar",
+       "args": [
+        32773,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08EDEE34",
+       "command": "setvar",
+       "args": [
+        32774,
+        16
+       ],
+       "possible_names_not_semantics": {
+        "species": "波波",
+        "item": "解冻药",
+        "move": "起风"
+       }
+      },
+      {
+       "at": "0x08EDEE39",
+       "command": "setvar",
+       "args": [
+        32775,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x08EDEE3E",
+       "command": "special",
+       "args": [
+        310
+       ]
+      },
+      {
+       "at": "0x08EDEE41",
+       "command": "waitcry",
+       "args": []
+      },
+      {
+       "at": "0x08EDEE42",
+       "command": "applymovement",
+       "args": [
+        127,
+        149816110
+       ]
+      },
+      {
+       "at": "0x08EDEE49",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08EDEE4C",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08EDEE4F",
+       "command": "applymovement",
+       "args": [
+        4,
+        149816104
+       ]
+      },
+      {
+       "at": "0x08EDEE56",
+       "command": "waitmovement",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08EDEE59",
+       "command": "checkflag",
+       "args": [
+        5774
+       ]
+      },
+      {
+       "at": "0x08EDEE5C",
+       "command": "goto_if",
+       "args": [
+        0,
+        149815834
+       ],
+       "targets": [
+        "0x08EE021A"
+       ]
+      },
+      {
+       "at": "0x08EDEE62",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149816025
+       ],
+       "texts": [
+        {
+         "address": "0x08EE02D9",
+         "text": "看见了吗？\n它散发着一股诡异的气息……\n而且一副很痛苦的样子。\n你能帮我调查一下吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDEE68",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EDEE6A",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EDEE6F",
+       "command": "goto_if",
+       "args": [
+        1,
+        149815685
+       ],
+       "targets": [
+        "0x08EE0185"
+       ]
+      },
+      {
+       "at": "0x08EDEE75",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149815810
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0202",
+         "text": "看来你也不敢接近它吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDEE7B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDEE7D",
+       "command": "applymovement",
+       "args": [
+        3,
+        149815855
+       ]
+      },
+      {
+       "at": "0x08EDEE84",
+       "command": "waitmovement",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08EDEE87",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EDEE88",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDEE8A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDEE8A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149811627
+       ],
+       "texts": [
+        {
+         "address": "0x08EDF1AB",
+         "text": "模仿呆呆兽，\n耐心地等待其进化的瞬间。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDEE90",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDEE92",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EDF1D1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDF1D1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149815356
+       ],
+       "texts": [
+        {
+         "address": "0x08EE003C",
+         "text": "呼……它终于平静下来了。\n野生的宝可梦也会超级进化吗？\n难道是因为尾巴上的\n大舌贝咬到了某种奇怪的物质？\n才导致了呆壳兽的超级进化？\n搞不好，真正超级进化\n的宝可梦是大舌贝呢……\n哈哈……不过\n这些都是我的推测呢。\n还得继续观测观察。\n本来是想观察\n呆呆兽进化的瞬间，\n没想到却观察到了\n呆壳兽超级进化的瞬间……\n无论如何，谢谢你！\n这是给你的报酬。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDF1D7",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EDF1D9",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EDF1DA",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        187
+       ],
+       "possible_names_not_semantics": {
+        "species": "毽子草",
+        "item": "王者之证",
+        "move": "腹鼓"
+       }
+      },
+      {
+       "at": "0x08EDF1DF",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x08EDF1E4",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EDF1E6",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EDF1E7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149811761
+       ],
+       "texts": [
+        {
+         "address": "0x08EDF231",
+         "text": "这是王者之证。\n话说回来，带有王者之证的\n呆呆兽不知为什么\n经常会被大舌贝咬住……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EDF1ED",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08EDF1EF",
+       "command": "goto",
+       "args": [
+        149816220
+       ],
+       "targets": [
+        "0x08EE039C"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EDF943",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EDF943",
+       "command": "setflag",
+       "args": [
+        2316
+       ]
+      },
+      {
+       "at": "0x08EDF946",
+       "command": "goto",
+       "args": [
+        149809503
+       ],
+       "targets": [
+        "0x08EDE95F"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EE017B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE017B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149815766
+       ],
+       "texts": [
+        {
+         "address": "0x08EE01D6",
+         "text": "那么就拜托你了！\n去调查那只异样的呆呆兽吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0181",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE0183",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE0185",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE0185",
+       "command": "setflag",
+       "args": [
+        2918
+       ],
+       "task_flag_labels": [
+        {
+         "title": "异样的呆呆兽",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0188",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE018B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149815737
+       ],
+       "texts": [
+        {
+         "address": "0x08EE01B9",
+         "text": "接受任务:<异样的呆呆兽>"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0191",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE0196",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE019B",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08EE01A0",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EE01A5",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08EE01AA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149815766
+       ],
+       "texts": [
+        {
+         "address": "0x08EE01D6",
+         "text": "那么就拜托你了！\n去调查那只异样的呆呆兽吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE01B0",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE01B2",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EE01B7",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE021A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE021A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149815858
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0232",
+         "text": "看见了吗？\n它散发着一股诡异的气息……\n而且一副很痛苦的样子。\n要是有会使用超级进化的\n训练家帮我调查一下就好了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE0220",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE0222",
+       "command": "applymovement",
+       "args": [
+        3,
+        149815855
+       ]
+      },
+      {
+       "at": "0x08EE0229",
+       "command": "waitmovement",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08EE022C",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08EE022D",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EE039C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EE039C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149816840
+       ],
+       "texts": [
+        {
+         "address": "0x08EE0608",
+         "text": "要不，我们\n留个联系方式吧？\n如果以后有什么\n关于呆呆兽的新发现，\n我会第一时间联系你的！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE03A2",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE03A4",
+       "command": "fanfare",
+       "args": [
+        317
+       ]
+      },
+      {
+       "at": "0x08EE03A7",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE03AA",
+       "command": "preparemsg",
+       "args": [
+        149816519
+       ],
+       "texts": [
+        {
+         "address": "0x08EE04C7",
+         "text": "[玩家/变量]把怪兽狂袋袋的\n电话号码登陆到了精灵齿轮！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE03AF",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08EE03B0",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EE03B1",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EE03B4",
+       "command": "setflag",
+       "args": [
+        2919
+       ],
+       "task_flag_labels": [
+        {
+         "title": "异样的呆呆兽",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE03B7",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE03BA",
+       "command": "addmoney",
+       "args": [
+        5000,
+        0
+       ]
+      },
+      {
+       "at": "0x08EE03C0",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x08EE03C5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149811874
+       ],
+       "texts": [
+        {
+         "address": "0x08EDF2A2",
+         "text": "完成任务:<异样的呆呆兽>"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE03CB",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE03D0",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EE03D5",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08EE03DA",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EE03DF",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08EE03E4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149811839
+       ],
+       "texts": [
+        {
+         "address": "0x08EDF27F",
+         "text": "获得了4点BracerPoints和5000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08EE03EA",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EE03EC",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EE03F1",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2374 @@
+{
+ "title": "阿露福遗迹之谜",
+ "quest_id": 35,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b1b8",
+    "title": "阿露福遗迹之谜",
+    "title_address": "0x8e3c545",
+    "description": "解开有关\n阿露福遗迹的真相！",
+    "description_address": "0x8e3c52a",
+    "unknown_u16": 245,
+    "unknown_u16_hex": "0x00F5",
+    "accept_flag": 5969,
+    "accept_flag_hex": "0x1751",
+    "complete_flag": 5970,
+    "complete_flag_hex": "0x1752",
+    "map_group": 56,
+    "map_num": 9,
+    "tail_hex": "01 01 00 00",
+    "index": 35,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3c52a",
+    "legacy_match_count": 0,
+    "current_description": "解开有关\n阿露福遗迹的真相！",
+    "catalog_map": {
+     "id": "56:9",
+     "name": "阿露福遗迹"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AF0972",
+    "0x08AF098D",
+    "0x08EC8125",
+    "0x08EC857F"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08AF0695",
+     "map_id": "1:50",
+     "place": "阿露福遗迹",
+     "kind": "坐标事件",
+     "local_id": null,
+     "event_index": 0,
+     "x": 4,
+     "y": 6,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g01_n050.md"
+    },
+    {
+     "script": "0x08AF0803",
+     "map_id": "1:50",
+     "place": "阿露福遗迹",
+     "kind": "坐标事件",
+     "local_id": null,
+     "event_index": 1,
+     "x": 5,
+     "y": 6,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g01_n050.md"
+    },
+    {
+     "script": "0x08EC8125",
+     "map_id": "56:9",
+     "place": "阿露福遗迹",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 7,
+     "y": 3,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g56_n009.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08AEC4E7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEC4E7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145686414
+       ],
+       "texts": [
+        {
+         "address": "0x08AEFF8E",
+         "text": "这个遗迹\n大概建造于1500年前，\n我们知道的就只有这个……\n至于是谁出于什么目的建造的\n就不知道了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC4ED",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEC4EF",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AF0695",
+     "event_roots": [
+      {
+       "map_id": "1:50",
+       "place": "阿露福遗迹",
+       "kind": "坐标事件",
+       "local_id": null,
+       "event_index": 0,
+       "x": 4,
+       "y": 6,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g01_n050.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AF0695",
+       "command": "applymovement",
+       "args": [
+        255,
+        145688381
+       ]
+      },
+      {
+       "at": "0x08AF069C",
+       "command": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08AF069F",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AF06A2",
+       "command": "applymovement",
+       "args": [
+        4,
+        145688375
+       ]
+      },
+      {
+       "at": "0x08AF06A9",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AF06AC",
+       "command": "applymovement",
+       "args": [
+        4,
+        145688378
+       ]
+      },
+      {
+       "at": "0x08AF06B3",
+       "command": "waitmovement",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AF06B6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145688384
+       ],
+       "texts": [
+        {
+         "address": "0x08AF0740",
+         "text": "从上面掉下来，\n也就是说……\n你完成了石版的拼图？！\n太棒了！\n看来你很有考古才能啊！\n从现在开始，\n你就是我们遗迹研究所的一员了！\n我把这个笔记给你吧，\n抓到的未知图腾会自动记录起来，\n非常方便！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF06BC",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF06BE",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF06C1",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        740
+       ],
+       "possible_names_not_semantics": {
+        "species": "四季鹿",
+        "item": "未知图腾笔记",
+        "move": "巨龙威能"
+       }
+      },
+      {
+       "at": "0x08AF06C6",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF06CB",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF06CD",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08AF06CE",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08AF06D1",
+       "command": "applymovement",
+       "args": [
+        4,
+        145688564
+       ]
+      },
+      {
+       "at": "0x08AF06D8",
+       "command": "waitmovement",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AF06DB",
+       "command": "removeobject",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AF06DE",
+       "command": "setflag",
+       "args": [
+        5998
+       ]
+      },
+      {
+       "at": "0x08AF06E1",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF06E4",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF06E7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145688344
+       ],
+       "texts": [
+        {
+         "address": "0x08AF0718",
+         "text": "接受任务:<阿露福遗迹之谜>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF06ED",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF06F2",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF06F7",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AF06FC",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AF0701",
+       "command": "goto",
+       "args": [
+        145688973
+       ],
+       "targets": [
+        "0x08AF098D"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AF0803",
+     "event_roots": [
+      {
+       "map_id": "1:50",
+       "place": "阿露福遗迹",
+       "kind": "坐标事件",
+       "local_id": null,
+       "event_index": 1,
+       "x": 5,
+       "y": 6,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g01_n050.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AF0803",
+       "command": "applymovement",
+       "args": [
+        255,
+        145688748
+       ]
+      },
+      {
+       "at": "0x08AF080A",
+       "command": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08AF080D",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AF0810",
+       "command": "applymovement",
+       "args": [
+        4,
+        145688741
+       ]
+      },
+      {
+       "at": "0x08AF0817",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AF081A",
+       "command": "applymovement",
+       "args": [
+        4,
+        145688744
+       ]
+      },
+      {
+       "at": "0x08AF0821",
+       "command": "waitmovement",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AF0824",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145688751
+       ],
+       "texts": [
+        {
+         "address": "0x08AF08AF",
+         "text": "从上面掉下来，\n也就是说……\n你完成了石版的拼图？！\n太棒了！\n看来你很有考古才能啊！\n从现在开始，\n你就是我们遗迹研究所的一员了！\n我把这个笔记给你吧，\n抓到的未知图腾会自动记录起来，\n非常方便！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF082A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF082C",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF082F",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        740
+       ],
+       "possible_names_not_semantics": {
+        "species": "四季鹿",
+        "item": "未知图腾笔记",
+        "move": "巨龙威能"
+       }
+      },
+      {
+       "at": "0x08AF0834",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF0839",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF083B",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08AF083C",
+       "command": "pause",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x08AF083F",
+       "command": "applymovement",
+       "args": [
+        4,
+        145688931
+       ]
+      },
+      {
+       "at": "0x08AF0846",
+       "command": "waitmovement",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AF0849",
+       "command": "removeobject",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AF084C",
+       "command": "setflag",
+       "args": [
+        5998
+       ]
+      },
+      {
+       "at": "0x08AF084F",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08AF0852",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF0855",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145688710
+       ],
+       "texts": [
+        {
+         "address": "0x08AF0886",
+         "text": "接受任务:<阿露福遗迹之谜>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF085B",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF0860",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF0865",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AF086A",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AF086F",
+       "command": "goto",
+       "args": [
+        145688946
+       ],
+       "targets": [
+        "0x08AF0972"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AF0972",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF0972",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AF0977",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145689000
+       ],
+       "texts": [
+        {
+         "address": "0x08AF09A8",
+         "text": "[玩家/变量]成为\n遗迹调查队的一员！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF097D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF097F",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AF0984",
+       "command": "setflag",
+       "args": [
+        5969
+       ],
+       "task_flag_labels": [
+        {
+         "title": "阿露福遗迹之谜",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF0987",
+       "command": "setvar",
+       "args": [
+        20893,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF098C",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AF098D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF098D",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AF0992",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145689000
+       ],
+       "texts": [
+        {
+         "address": "0x08AF09A8",
+         "text": "[玩家/变量]成为\n遗迹调查队的一员！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF0998",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF099A",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AF099F",
+       "command": "setflag",
+       "args": [
+        5969
+       ],
+       "task_flag_labels": [
+        {
+         "title": "阿露福遗迹之谜",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF09A2",
+       "command": "setvar",
+       "args": [
+        20893,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF09A7",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC8125",
+     "event_roots": [
+      {
+       "map_id": "56:9",
+       "place": "阿露福遗迹",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 7,
+       "y": 3,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g56_n009.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08EC8125",
+       "command": "checkflag",
+       "args": [
+        5969
+       ],
+       "task_flag_labels": [
+        {
+         "title": "阿露福遗迹之谜",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC8128",
+       "command": "goto_if",
+       "args": [
+        1,
+        149717958
+       ],
+       "targets": [
+        "0x08EC83C6"
+       ]
+      },
+      {
+       "at": "0x08EC812E",
+       "command": "goto",
+       "args": [
+        145671399
+       ],
+       "targets": [
+        "0x08AEC4E7"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08EC83C6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC83C6",
+       "command": "checkflag",
+       "args": [
+        2784
+       ]
+      },
+      {
+       "at": "0x08EC83C9",
+       "command": "goto_if",
+       "args": [
+        1,
+        149717998
+       ],
+       "targets": [
+        "0x08EC83EE"
+       ]
+      },
+      {
+       "at": "0x08EC83CF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149719776
+       ]
+      },
+      {
+       "at": "0x08EC83D5",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC83D7",
+       "command": "preparemsg",
+       "args": [
+        149719939
+       ],
+       "texts": [
+        {
+         "address": "0x08EC8B83",
+         "text": "[玩家/变量]在\n未知图腾笔记写下记录！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC83DC",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EC83DD",
+       "command": "fanfare",
+       "args": [
+        258
+       ]
+      },
+      {
+       "at": "0x08EC83E0",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08EC83E1",
+       "command": "setflag",
+       "args": [
+        2784
+       ]
+      },
+      {
+       "at": "0x08EC83E4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149719974
+       ],
+       "texts": [
+        {
+         "address": "0x08EC8BA6",
+         "text": "那么，下一个课题是……\n遗迹中的神秘的电波。\n听说在遗迹中打开收音机，\n就能够收到到神秘的电波。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC83EA",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC83EC",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC83EE",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC83EE",
+       "command": "checkflag",
+       "args": [
+        2785
+       ]
+      },
+      {
+       "at": "0x08EC83F1",
+       "command": "goto_if",
+       "args": [
+        1,
+        149718017
+       ],
+       "targets": [
+        "0x08EC8401"
+       ]
+      },
+      {
+       "at": "0x08EC83F7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149719974
+       ],
+       "texts": [
+        {
+         "address": "0x08EC8BA6",
+         "text": "那么，下一个课题是……\n遗迹中的神秘的电波。\n听说在遗迹中打开收音机，\n就能够收到到神秘的电波。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC83FD",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC83FF",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC8401",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC8401",
+       "command": "checkflag",
+       "args": [
+        2786
+       ]
+      },
+      {
+       "at": "0x08EC8404",
+       "command": "goto_if",
+       "args": [
+        1,
+        149718057
+       ],
+       "targets": [
+        "0x08EC8429"
+       ]
+      },
+      {
+       "at": "0x08EC840A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149720064
+       ],
+       "texts": [
+        {
+         "address": "0x08EC8C00",
+         "text": "你在遗迹里打开收音机\n收到了神秘的电波吗！？\n这是未知图腾之间\n通过电波进行对话的证据！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC8410",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC8412",
+       "command": "preparemsg",
+       "args": [
+        149719939
+       ],
+       "texts": [
+        {
+         "address": "0x08EC8B83",
+         "text": "[玩家/变量]在\n未知图腾笔记写下记录！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC8417",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EC8418",
+       "command": "fanfare",
+       "args": [
+        258
+       ]
+      },
+      {
+       "at": "0x08EC841B",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08EC841C",
+       "command": "setflag",
+       "args": [
+        2786
+       ]
+      },
+      {
+       "at": "0x08EC841F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149720149
+       ],
+       "texts": [
+        {
+         "address": "0x08EC8C55",
+         "text": "那么，下一个课题是……\n有关未知图腾的研究。\n未知图腾的数量\n和文字的种类数相同，\n这一点已经确认了！\n现在已经确认到了\n26种文字，\n加油，把所有的未知图腾\n都找出来吧！\n据说解开解密石室\n中的拼图谜题之后，\n遗迹中就会出现\n更多种类的未知图腾。\n也就是说……\n如果想要找到所有的未知图腾，\n需要把3个解密石室\n中的拼图谜题都解开。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC8425",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC8427",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC8429",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC8429",
+       "command": "checkflag",
+       "args": [
+        5866
+       ]
+      },
+      {
+       "at": "0x08EC842C",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC8432",
+       "command": "checkflag",
+       "args": [
+        5867
+       ]
+      },
+      {
+       "at": "0x08EC8435",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC843B",
+       "command": "checkflag",
+       "args": [
+        5868
+       ]
+      },
+      {
+       "at": "0x08EC843E",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC8444",
+       "command": "checkflag",
+       "args": [
+        5869
+       ]
+      },
+      {
+       "at": "0x08EC8447",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC844D",
+       "command": "checkflag",
+       "args": [
+        5870
+       ]
+      },
+      {
+       "at": "0x08EC8450",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC8456",
+       "command": "checkflag",
+       "args": [
+        5871
+       ]
+      },
+      {
+       "at": "0x08EC8459",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC845F",
+       "command": "checkflag",
+       "args": [
+        5872
+       ]
+      },
+      {
+       "at": "0x08EC8462",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC8468",
+       "command": "checkflag",
+       "args": [
+        5873
+       ]
+      },
+      {
+       "at": "0x08EC846B",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC8471",
+       "command": "checkflag",
+       "args": [
+        5874
+       ]
+      },
+      {
+       "at": "0x08EC8474",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC847A",
+       "command": "checkflag",
+       "args": [
+        5875
+       ]
+      },
+      {
+       "at": "0x08EC847D",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC8483",
+       "command": "checkflag",
+       "args": [
+        5876
+       ]
+      },
+      {
+       "at": "0x08EC8486",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC848C",
+       "command": "checkflag",
+       "args": [
+        5877
+       ]
+      },
+      {
+       "at": "0x08EC848F",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC8495",
+       "command": "checkflag",
+       "args": [
+        5878
+       ]
+      },
+      {
+       "at": "0x08EC8498",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC849E",
+       "command": "checkflag",
+       "args": [
+        5879
+       ]
+      },
+      {
+       "at": "0x08EC84A1",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC84A7",
+       "command": "checkflag",
+       "args": [
+        5880
+       ]
+      },
+      {
+       "at": "0x08EC84AA",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC84B0",
+       "command": "checkflag",
+       "args": [
+        5881
+       ]
+      },
+      {
+       "at": "0x08EC84B3",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC84B9",
+       "command": "checkflag",
+       "args": [
+        5882
+       ]
+      },
+      {
+       "at": "0x08EC84BC",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC84C2",
+       "command": "checkflag",
+       "args": [
+        5883
+       ]
+      },
+      {
+       "at": "0x08EC84C5",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC84CB",
+       "command": "checkflag",
+       "args": [
+        5884
+       ]
+      },
+      {
+       "at": "0x08EC84CE",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC84D4",
+       "command": "checkflag",
+       "args": [
+        5885
+       ]
+      },
+      {
+       "at": "0x08EC84D7",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC84DD",
+       "command": "checkflag",
+       "args": [
+        5886
+       ]
+      },
+      {
+       "at": "0x08EC84E0",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC84E6",
+       "command": "checkflag",
+       "args": [
+        5887
+       ]
+      },
+      {
+       "at": "0x08EC84E9",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC84EF",
+       "command": "checkflag",
+       "args": [
+        5888
+       ]
+      },
+      {
+       "at": "0x08EC84F2",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC84F8",
+       "command": "checkflag",
+       "args": [
+        5889
+       ]
+      },
+      {
+       "at": "0x08EC84FB",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC8501",
+       "command": "checkflag",
+       "args": [
+        5890
+       ]
+      },
+      {
+       "at": "0x08EC8504",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC850A",
+       "command": "checkflag",
+       "args": [
+        5891
+       ]
+      },
+      {
+       "at": "0x08EC850D",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718817
+       ],
+       "targets": [
+        "0x08EC8721"
+       ]
+      },
+      {
+       "at": "0x08EC8513",
+       "command": "checkflag",
+       "args": [
+        2787
+       ]
+      },
+      {
+       "at": "0x08EC8516",
+       "command": "goto_if",
+       "args": [
+        1,
+        149718340
+       ],
+       "targets": [
+        "0x08EC8544"
+       ]
+      },
+      {
+       "at": "0x08EC851C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149719587
+       ]
+      },
+      {
+       "at": "0x08EC8522",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC8524",
+       "command": "preparemsg",
+       "args": [
+        149719939
+       ],
+       "texts": [
+        {
+         "address": "0x08EC8B83",
+         "text": "[玩家/变量]在\n未知图腾笔记写下记录！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC8529",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EC852A",
+       "command": "fanfare",
+       "args": [
+        258
+       ]
+      },
+      {
+       "at": "0x08EC852D",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08EC852E",
+       "command": "setflag",
+       "args": [
+        2787
+       ]
+      },
+      {
+       "at": "0x08EC8531",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149719447
+       ],
+       "texts": [
+        {
+         "address": "0x08EC8997",
+         "text": "那么，下一个课题是……\n遗迹中的秘密房间。\n据说解密石室最里面的墙上\n会有未知图腾摆成的图案，\n如果沿着图案\n所指示的要求行动，\n就可以进入秘密房间。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC8537",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC8539",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC8544",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC8544",
+       "command": "checkflag",
+       "args": [
+        2788
+       ]
+      },
+      {
+       "at": "0x08EC8547",
+       "command": "goto_if",
+       "args": [
+        1,
+        149718359
+       ],
+       "targets": [
+        "0x08EC8557"
+       ]
+      },
+      {
+       "at": "0x08EC854D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149719447
+       ],
+       "texts": [
+        {
+         "address": "0x08EC8997",
+         "text": "那么，下一个课题是……\n遗迹中的秘密房间。\n据说解密石室最里面的墙上\n会有未知图腾摆成的图案，\n如果沿着图案\n所指示的要求行动，\n就可以进入秘密房间。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC8553",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC8555",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC8557",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC8557",
+       "command": "checkflag",
+       "args": [
+        2789
+       ]
+      },
+      {
+       "at": "0x08EC855A",
+       "command": "goto_if",
+       "args": [
+        1,
+        149718399
+       ],
+       "targets": [
+        "0x08EC857F"
+       ]
+      },
+      {
+       "at": "0x08EC8560",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149719365
+       ],
+       "texts": [
+        {
+         "address": "0x08EC8945",
+         "text": "哎？！\n在遗迹的地上找到了\n写着未知图腾文字的房间？\n那可是大发现啊！\n我们也调查看看！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC8566",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC8568",
+       "command": "preparemsg",
+       "args": [
+        149719939
+       ],
+       "texts": [
+        {
+         "address": "0x08EC8B83",
+         "text": "[玩家/变量]在\n未知图腾笔记写下记录！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC856D",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EC856E",
+       "command": "fanfare",
+       "args": [
+        258
+       ]
+      },
+      {
+       "at": "0x08EC8571",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08EC8572",
+       "command": "setflag",
+       "args": [
+        2789
+       ]
+      },
+      {
+       "at": "0x08EC8575",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149719259
+       ],
+       "texts": [
+        {
+         "address": "0x08EC88DB",
+         "text": "那么，下一个课题是……\n又有两种新的未知图腾\n文字被发现了！\n也就是说……\n应该还有两种未知图腾\n在什么地方躲着……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC857B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC857D",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC857F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC857F",
+       "command": "checkflag",
+       "args": [
+        5970
+       ],
+       "task_flag_labels": [
+        {
+         "title": "阿露福遗迹之谜",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC8582",
+       "command": "goto_if",
+       "args": [
+        1,
+        149718584
+       ],
+       "targets": [
+        "0x08EC8638"
+       ]
+      },
+      {
+       "at": "0x08EC8588",
+       "command": "checkflag",
+       "args": [
+        5892
+       ]
+      },
+      {
+       "at": "0x08EC858B",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718574
+       ],
+       "targets": [
+        "0x08EC862E"
+       ]
+      },
+      {
+       "at": "0x08EC8591",
+       "command": "checkflag",
+       "args": [
+        5893
+       ]
+      },
+      {
+       "at": "0x08EC8594",
+       "command": "goto_if",
+       "args": [
+        0,
+        149718574
+       ],
+       "targets": [
+        "0x08EC862E"
+       ]
+      },
+      {
+       "at": "0x08EC859A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149718961
+       ],
+       "texts": [
+        {
+         "address": "0x08EC87B1",
+         "text": "最后两种未知图腾也找到了吗？\n看上去像是某种符号呢……\n对了！关于地上的文字\n已经解读出很多信息了！\n……从前这个遗迹里，未知图腾\n好像曾和一群人类一起生活，\n那些人建造了\n地下房间里的宝可梦像，\n未知图腾很胆小，\n从不到外面去，\n遗迹附近人类越来越多，\n各种人都到这里来，\n希望未知图腾和人类\n能共生的那群人离开了这里……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC85A0",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC85A2",
+       "command": "preparemsg",
+       "args": [
+        149719939
+       ],
+       "texts": [
+        {
+         "address": "0x08EC8B83",
+         "text": "[玩家/变量]在\n未知图腾笔记写下记录！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC85A7",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08EC85A8",
+       "command": "fanfare",
+       "args": [
+        258
+       ]
+      },
+      {
+       "at": "0x08EC85AB",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08EC85AC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149718827
+       ],
+       "texts": [
+        {
+         "address": "0x08EC872B",
+         "text": "我们的调查\n加上你的协助\n解开了以上这些疑问！\n但是还有很多很多事\n没搞清楚，\n考古也是学无止境啊……\n不过……无论如何，\n谢谢你这段时间的协助！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC85B2",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC85B4",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EC85B5",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        354
+       ],
+       "possible_names_not_semantics": {
+        "species": "负电拍拍",
+        "item": "秘密琥珀",
+        "move": "精神突进"
+       }
+      },
+      {
+       "at": "0x08EC85BA",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC85BF",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EC85C1",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EC85C2",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC85C5",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EC85C6",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        357
+       ],
+       "possible_names_not_semantics": {
+        "species": "恰雷姆",
+        "item": "贝壳化石",
+        "move": "水流喷射"
+       }
+      },
+      {
+       "at": "0x08EC85CB",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC85D0",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EC85D2",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EC85D3",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC85D6",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EC85D7",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        358
+       ],
+       "possible_names_not_semantics": {
+        "species": "青绵鸟",
+        "item": "甲壳化石",
+        "move": "水流尾"
+       }
+      },
+      {
+       "at": "0x08EC85DC",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC85E1",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08EC85E3",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08EC85E4",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08EC85E7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149718758
+       ],
+       "texts": [
+        {
+         "address": "0x08EC86E6",
+         "text": "这些是我曾经\n在月见山发现的化石。\n这份谢礼，\n就请你收下吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC85ED",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC85EF",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC85F2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149718727
+       ],
+       "texts": [
+        {
+         "address": "0x08EC86C7",
+         "text": "完成任务:<阿露福遗迹之谜>"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC85F8",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC85FD",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08EC8602",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08EC8607",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08EC860C",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08EC8611",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149718690
+       ],
+       "texts": [
+        {
+         "address": "0x08EC86A2",
+         "text": "获得了15点BracerPoints和15000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC8617",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC8619",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08EC861E",
+       "command": "setflag",
+       "args": [
+        5970
+       ],
+       "task_flag_labels": [
+        {
+         "title": "阿露福遗迹之谜",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC8621",
+       "command": "addvar",
+       "args": [
+        20789,
+        15
+       ]
+      },
+      {
+       "at": "0x08EC8626",
+       "command": "addmoney",
+       "args": [
+        15000,
+        0
+       ]
+      },
+      {
+       "at": "0x08EC862C",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC862E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC862E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149719259
+       ],
+       "texts": [
+        {
+         "address": "0x08EC88DB",
+         "text": "那么，下一个课题是……\n又有两种新的未知图腾\n文字被发现了！\n也就是说……\n应该还有两种未知图腾\n在什么地方躲着……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC8634",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC8636",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC8638",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC8638",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149718594
+       ],
+       "texts": [
+        {
+         "address": "0x08EC8642",
+         "text": "我们的调查\n加上你的协助\n解开了以上这些疑问！\n但是还有很多很多事\n没搞清楚，\n考古也是学无止境啊……"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC863E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC8640",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08EC8721",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EC8721",
+       "command": "loadpointer",
+       "args": [
+        0,
+        149720149
+       ],
+       "texts": [
+        {
+         "address": "0x08EC8C55",
+         "text": "那么，下一个课题是……\n有关未知图腾的研究。\n未知图腾的数量\n和文字的种类数相同，\n这一点已经确认了！\n现在已经确认到了\n26种文字，\n加油，把所有的未知图腾\n都找出来吧！\n据说解开解密石室\n中的拼图谜题之后，\n遗迹中就会出现\n更多种类的未知图腾。\n也就是说……\n如果想要找到所有的未知图腾，\n需要把3个解密石室\n中的拼图谜题都解开。"
+        }
+       ]
+      },
+      {
+       "at": "0x08EC8727",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08EC8729",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

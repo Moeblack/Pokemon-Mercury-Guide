@@ -1,0 +1,40 @@
+{
+  "id": 21,
+  "title": "收集研究所物资",
+  "start_locations": [
+    {"map_id": "43:5", "place": "若叶镇", "x": 6, "y": 8, "npc_hint": "空木博士的妻子"}
+  ],
+  "requirements": [
+    "已加入游击士协会（剧情旗标 4246 成立）",
+    "备齐橙橙果×5"
+  ],
+  "steps": [
+    {"text": "在若叶镇与空木博士的妻子对话，她请你在研究所帮忙收集5颗橙橙果。", "source_scripts": ["0x08F50277", "0x089E45D6", "0x089E45F7", "0x08F5068E", "0x08F506E6", "0x089E46D5"], "map_id": "43:5"},
+    {"text": "在她的提议后选择答应，任务接取（接受任务:<收集研究所物资>，接取旗标5472）。", "source_scripts": ["0x08F506E6", "0x089E46D5"]},
+    {"text": "收集橙橙果×5。", "source_scripts": []},
+    {"text": "带5颗橙橙果再次与她对话，确认“要将五颗橙橙果交给博士的妻子吗？”，选“是”。", "source_scripts": ["0x089E48C9", "0x089E4643", "0x08F507EA"]},
+    {"text": "交出橙橙果并领取报酬，任务完成（完成旗标5473）。", "source_scripts": ["0x089E4661", "0x08AEFEFA"]}
+  ],
+  "completion": [
+    "背包内橙橙果≥5，交付时一次性扣除5颗",
+    "完成旗标 5473 成立"
+  ],
+  "rewards": [
+    "经验糖果XS×2",
+    "超级球×5",
+    "4 BracerPoints"
+  ],
+  "pitfalls": [
+    "未加入游击士协会（4246未成立）时她不会提出委托",
+    "必须5颗一起交，不要提前用掉橙橙果",
+    "完成后再次对话会登记电话号码，只给已完成对白"
+  ],
+  "related_items": [139, 536, 3],
+  "related_species": [],
+  "related_trainers": [],
+  "open_questions": [
+    "橙橙果的具体采集点未在本包给出（脚本只做道具检查与扣除）。"
+  ],
+  "source_packet": "data/quest_packets/021.json",
+  "status": "compiled"
+}

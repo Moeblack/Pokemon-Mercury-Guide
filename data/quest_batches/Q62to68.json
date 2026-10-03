@@ -1,0 +1,22 @@
+{
+  "batch": "Q62to68",
+  "assigned": [62, 63, 65, 66, 67, 68],
+  "merged": {"63": [63, 64]},
+  "produced_pages": ["quests/062.md", "quests/063.md", "quests/065.md", "quests/066.md", "quests/067.md", "quests/068.md"],
+  "produced_json": ["data/quests/062.json", "data/quests/063.json", "data/quests/065.json", "data/quests/066.json", "data/quests/067.json", "data/quests/068.json"],
+  "compiled": [62, 65, 66, 67, 68],
+  "partial": [
+    {"id": 63, "reason": "原始包与扩展包(quest_packets_expanded/063.json)两条记录均为 script 数 0、event_roots 数 0；仅 062 结算脚本 0x09CD8C18 出现「完成任务:<8bit的感动>」旁证。未写步骤，也未复用 062 奖励。"}
+  ],
+  "updated_after_expansion": {
+    "62": "补入完整接取/推进：钢铁先生要求粉球果(617)，交出后做呆呆兽粉色Cosplay服装，提示回若叶镇问妈妈(旗标5176)，再参赛；完成奖励图图犬(1404,Lv20)。status=compiled。",
+    "65": "补入完整步骤与奖励：少女(0x09CD39C8)委托→男友(0x09CD3AF5)→通过大师级(6352)→男友给经验糖果S×3(537)→少女给黄色头巾×1(258)+5BP+6000$。status=compiled。",
+    "66": "补入胡桃(0x09CD3E67/0x09CD3E72)接取与交付：四处拍照后赠催眠貘(96,Lv20)+经验糖果S×3(537)+卡比丘×2(748)+15BP+10000$；海之彼岸线索指向浅葱市精灵中心。status=compiled。"
+  },
+  "notes": [
+    "062 结算脚本 0x09CD8C18 同场同时显示「满金CosPlay大会!?」与「8bit的感动」两条完成提示；已按旗标拆开：062 完成旗标 5177 明确，063(5196/5197) 仍无脚本，未复用 062 奖励。",
+    "065 与 066 的接取都先检查同一前置旗标 4246（来源未定位）。",
+    "067 完成脚本存在发奖励(0x09CD9383)与不发奖励(0x09CD9396)两个版本。",
+    "068 剧情文本称获得「超级石」，但包内无对应给予道具指令。"
+  ]
+}

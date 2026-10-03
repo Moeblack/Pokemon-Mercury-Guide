@@ -1,0 +1,161 @@
+{
+ "generated": "2026-10-03T16:10:44",
+ "generator": "player_guide/scripts/extract_quest_supplement.py",
+ "command": "uv run --no-project python player_guide/scripts/extract_quest_supplement.py",
+ "exit_code": 0,
+ "entries": {
+  "fixed_anchors": 10,
+  "anchor_map": {
+   "0x09CD0194": "036",
+   "0x09CD3121": "059",
+   "0x09CD39C8": "065",
+   "0x09CD2F40": "096",
+   "0x09CD5B67": "006",
+   "0x09CD08BA": "096",
+   "0x09CD3362": "004",
+   "0x09CD404B": "005",
+   "0x09CD5CCF": "006",
+   "0x09CD5E6C": "006"
+  },
+  "extra_list": 118,
+  "overlap": [
+   "0x09CD0194",
+   "0x09CD3121",
+   "0x09CD39C8",
+   "0x09CD2F40",
+   "0x09CD5B67",
+   "0x09CD08BA"
+  ],
+  "final_entry_count": 122
+ },
+ "anchor_status": {
+  "0x09CD3362": {
+   "task": "004",
+   "instruction_count": 67,
+   "terminator": "end",
+   "flags": [
+    "0xb99",
+    "0xb9a",
+    "0xb9b",
+    "0xb9c"
+   ],
+   "note": "corrected 004 start; accept 0xB99 / complete 0xB9A present"
+  },
+  "0x09CD404B": {
+   "task": "005",
+   "instruction_count": 119,
+   "terminator": "end",
+   "flags": [
+    "0x924",
+    "0xc35",
+    "0xb7f"
+   ]
+  },
+  "0x09CD5CCF": {
+   "task": "006",
+   "instruction_count": 99,
+   "terminator": "end",
+   "flags": [
+    "0x90c",
+    "0x908",
+    "0x1568",
+    "0xcec",
+    "0xcea"
+   ],
+   "note": "scene 1; does not itself set 0x0CE9/0x0CEB (seeded into packet 006 via its catalog anchor source)"
+  },
+  "0x09CD5E6C": {
+   "task": "006",
+   "instruction_count": 143,
+   "terminator": "end",
+   "flags": [
+    "0x924",
+    "0xc3d",
+    "0xceb"
+   ],
+   "note": "scene 2; complete flag 0x0CEB (3307) present"
+  }
+ },
+ "replaced_root": {
+  "0x09CD335E": {
+   "task": "004",
+   "parsed": false,
+   "instruction_count": 2,
+   "stop": true,
+   "reason": "bytes 62 FE 65 FE are a standalone action, not a script; opcode 0x62=cleartrainerflag consumes FE 65 then 0xFE is outside the ROM dispatcher table. Removed as a root per Main; kept here as the recorded failure."
+  }
+ },
+ "stdout": [
+  "std scripts: 10 specials: 444",
+  "entry scripts: 122 sentinel script uses: {'0x08000000': 613, '0x08000001': 371}",
+  "scripts decoded: 617 instructions: 7481 undefined opcode hits: {255:6,243:3,214:1,224:1,92:1,233:1,241:2,240:1,244:1,238:1,254:1,250:1,220:1,236:1}",
+  "text strings: 370"
+ ],
+ "counts": {
+  "script_count": 617,
+  "instruction_count": 7481,
+  "text_count": 370,
+  "failure_count": 21,
+  "runtime_stop_scripts": 21
+ },
+ "failed_roots": [
+  "0x087B0000",
+  "0x08F34378",
+  "0x08EE7834",
+  "0x08AF0453",
+  "0x08F5B921"
+ ],
+ "failure_scripts": [
+  "0x087B0000",
+  "0x089E45CE",
+  "0x089E4660",
+  "0x08AB19DD",
+  "0x08AB27A0",
+  "0x08AE7319",
+  "0x08AECCE3",
+  "0x08AED900",
+  "0x08AEF0E0",
+  "0x08AEF153",
+  "0x08AF0453",
+  "0x08EE6844",
+  "0x08EE7834",
+  "0x08EE8BBD",
+  "0x08F342D1",
+  "0x08F34378",
+  "0x08F343EE",
+  "0x08F3FAC1",
+  "0x08F49735",
+  "0x08F5B921",
+  "0x08F5FC5B"
+ ],
+ "prepare_quests": {
+  "command": "uv run --no-project python player_guide/scripts/prepare_quests.py",
+  "exit_code": 0,
+  "outputs": [
+   "player_guide/data/quest_packets_expanded/ (97)",
+   "player_guide/data/quest_manifest_expanded.json"
+  ],
+  "seed_rule": "fixed anchors with sources kind=quest_catalog_flag_anchor and where==f'{row[index]:03d}' join seeds; candidates are not bulk-merged",
+  "packet_counts": {
+   "004": [
+    4,
+    22
+   ],
+   "005": [
+    4,
+    9
+   ],
+   "006": [
+    3,
+    17
+   ]
+  },
+  "anchor_in_packet": {
+   "004": "0x09CD3362 (direct seed)",
+   "005": "0x09CD404B (direct seed)",
+   "006": "0x09CD5CCF + 0x09CD5E6C (direct seeds)"
+  }
+ },
+ "production_outputs_untouched": true,
+ "disclaimer": "roots are strict byte-match candidates / Main-determined neighbours, not map entries and not reachability proof"
+}

@@ -1,0 +1,1383 @@
+{
+ "title": "怯场的男友",
+ "quest_id": 65,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b410",
+    "title": "怯场的男友",
+    "title_address": "0x8e3bbeb",
+    "description": "我男朋友他啊，居然因怯场，\n不敢去报名参加华丽大赛...\n有谁能来鼓励一下他吗？",
+    "description_address": "0x8e3bbb8",
+    "unknown_u16": 89,
+    "unknown_u16_hex": "0x0059",
+    "accept_flag": 2975,
+    "accept_flag_hex": "0x0B9F",
+    "complete_flag": 2976,
+    "complete_flag_hex": "0x0BA0",
+    "map_group": 35,
+    "map_num": 4,
+    "tail_hex": "04 01 00 00",
+    "index": 65,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39654",
+      "title": "怯场的男友",
+      "description_address": "0x8e39837",
+      "description": "我男朋友他啊，居然因怯场，\\n不敢去报名参加华丽大赛...\\n有谁能来鼓励一下他吗？"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39837",
+    "legacy_match_count": 1,
+    "current_description": "通过大师级华丽大赛，\n鼓励华丽大赛会场\n的少女的男友。",
+    "catalog_map": {
+     "id": "35:4",
+     "name": "满金市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x09CD39C8",
+    "0x09CD39D3",
+    "0x09CD3A24",
+    "0x09CD3A81",
+    "0x09CD3AF5"
+   ],
+   "event_roots": [],
+   "scripts": [
+    {
+     "script": "0x09CD39C8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD39C8",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x09CD39C9",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x09CD39CA",
+       "command": "checkflag",
+       "args": [
+        2976
+       ],
+       "task_flag_labels": [
+        {
+         "title": "怯场的男友",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD39CD",
+       "command": "goto_if",
+       "args": [
+        1,
+        164444907
+       ],
+       "targets": [
+        "0x09CD3AEB"
+       ]
+      },
+      {
+       "at": "0x09CD39D3",
+       "command": "checkflag",
+       "args": [
+        2975
+       ],
+       "task_flag_labels": [
+        {
+         "title": "怯场的男友",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD39D6",
+       "command": "goto_if",
+       "args": [
+        1,
+        164444763
+       ],
+       "targets": [
+        "0x09CD3A5B"
+       ]
+      },
+      {
+       "at": "0x09CD39DC",
+       "command": "call",
+       "args": [
+        164445003
+       ],
+       "targets": [
+        "0x09CD3B4B"
+       ]
+      },
+      {
+       "at": "0x09CD39E1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269207
+       ],
+       "texts": [
+        {
+         "address": "0x09D9CED7",
+         "text": "我男朋友他啊，\n居然因怯场，\n不敢去报名参加\n华丽大赛。\n真头疼啊……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD39E7",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD39E9",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x09CD39EC",
+       "command": "goto_if",
+       "args": [
+        1,
+        164444663
+       ],
+       "targets": [
+        "0x09CD39F7"
+       ]
+      },
+      {
+       "at": "0x09CD39F2",
+       "command": "goto",
+       "args": [
+        164444900
+       ],
+       "targets": [
+        "0x09CD3AE4"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_catalog_flag_anchor",
+       "where": "065"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD39D3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD39D3",
+       "command": "checkflag",
+       "args": [
+        2975
+       ],
+       "task_flag_labels": [
+        {
+         "title": "怯场的男友",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD39D6",
+       "command": "goto_if",
+       "args": [
+        1,
+        164444763
+       ],
+       "targets": [
+        "0x09CD3A5B"
+       ]
+      },
+      {
+       "at": "0x09CD39DC",
+       "command": "call",
+       "args": [
+        164445003
+       ],
+       "targets": [
+        "0x09CD3B4B"
+       ]
+      },
+      {
+       "at": "0x09CD39E1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269207
+       ],
+       "texts": [
+        {
+         "address": "0x09D9CED7",
+         "text": "我男朋友他啊，\n居然因怯场，\n不敢去报名参加\n华丽大赛。\n真头疼啊……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD39E7",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD39E9",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x09CD39EC",
+       "command": "goto_if",
+       "args": [
+        1,
+        164444663
+       ],
+       "targets": [
+        "0x09CD39F7"
+       ]
+      },
+      {
+       "at": "0x09CD39F2",
+       "command": "goto",
+       "args": [
+        164444900
+       ],
+       "targets": [
+        "0x09CD3AE4"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=65"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD39F7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD39F7",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD39FA",
+       "command": "applymovement",
+       "args": [
+        10,
+        144523284
+       ]
+      },
+      {
+       "at": "0x09CD3A01",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD3A04",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269269
+       ],
+       "texts": [
+        {
+         "address": "0x09D9CF15",
+         "text": "你愿意帮我\n推他一把吗？\n只要你先通过\n大师级华丽大赛，\n他一定会被鼓舞到的！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3A0A",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD3A0C",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD3A11",
+       "command": "goto_if",
+       "args": [
+        1,
+        164444708
+       ],
+       "targets": [
+        "0x09CD3A24"
+       ]
+      },
+      {
+       "at": "0x09CD3A17",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269341
+       ],
+       "texts": [
+        {
+         "address": "0x09D9CF5D",
+         "text": "这样啊……\n那我再想想别的办法吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3A1D",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3A1F",
+       "command": "goto",
+       "args": [
+        164444900
+       ],
+       "targets": [
+        "0x09CD3AE4"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD39C8"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3A24",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3A24",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD3A27",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CD3A2A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269876
+       ],
+       "texts": [
+        {
+         "address": "0x09D9D174",
+         "text": "接受任务:<怯场的男友>"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3A30",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD3A35",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD3A3A",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x09CD3A3F",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x09CD3A44",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x09CD3A49",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269372
+       ],
+       "texts": [
+        {
+         "address": "0x09D9CF7C",
+         "text": "要是你先通过\n大师级华丽大赛，\n再去和他说说看……\n他说不定就能\n鼓起勇气了！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3A4F",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3A51",
+       "command": "setflag",
+       "args": [
+        2975
+       ],
+       "task_flag_labels": [
+        {
+         "title": "怯场的男友",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3A54",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CD3A59",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3A5A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD39F7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3A5B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3A5B",
+       "command": "checkflag",
+       "args": [
+        2977
+       ]
+      },
+      {
+       "at": "0x09CD3A5E",
+       "command": "goto_if",
+       "args": [
+        1,
+        164444801
+       ],
+       "targets": [
+        "0x09CD3A81"
+       ]
+      },
+      {
+       "at": "0x09CD3A64",
+       "command": "checkflag",
+       "args": [
+        6352
+       ]
+      },
+      {
+       "at": "0x09CD3A67",
+       "command": "goto_if",
+       "args": [
+        1,
+        164444791
+       ],
+       "targets": [
+        "0x09CD3A77"
+       ]
+      },
+      {
+       "at": "0x09CD3A6D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269372
+       ],
+       "texts": [
+        {
+         "address": "0x09D9CF7C",
+         "text": "要是你先通过\n大师级华丽大赛，\n再去和他说说看……\n他说不定就能\n鼓起勇气了！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3A73",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3A75",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3A76",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD39C8"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3A77",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3A77",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269443
+       ],
+       "texts": [
+        {
+         "address": "0x09D9CFC3",
+         "text": "你已经通过了\n大师级华丽大赛吧？\n快去和他说说看，\n他肯定会被你鼓舞的！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3A7D",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3A7F",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3A80",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3A5B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3A81",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3A81",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269510
+       ],
+       "texts": [
+        {
+         "address": "0x09D9D006",
+         "text": "我男朋友受你的影响，\n终于下定决心去报名了。\n呵呵，这是谢礼哦。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3A87",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3A89",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3A8A",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        258
+       ],
+       "possible_names_not_semantics": {
+        "species": "乌波",
+        "item": "黄色头巾",
+        "move": "冰雹"
+       }
+      },
+      {
+       "at": "0x09CD3A8F",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD3A94",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD3A96",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3A97",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD3A9A",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CD3A9D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269903
+       ],
+       "texts": [
+        {
+         "address": "0x09D9D18F",
+         "text": "完成任务:<怯场的男友>"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3AA3",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD3AA8",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD3AAD",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x09CD3AB2",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x09CD3AB7",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x09CD3ABC",
+       "command": "addvar",
+       "args": [
+        20789,
+        5
+       ]
+      },
+      {
+       "at": "0x09CD3AC1",
+       "command": "addmoney",
+       "args": [
+        6000,
+        0
+       ]
+      },
+      {
+       "at": "0x09CD3AC7",
+       "command": "setflag",
+       "args": [
+        2976
+       ],
+       "task_flag_labels": [
+        {
+         "title": "怯场的男友",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3ACA",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD3ACD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269930
+       ],
+       "texts": [
+        {
+         "address": "0x09D9D1AA",
+         "text": "获得了5点BracerPoints和6000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3AD3",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3AD5",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CD3ADA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269569
+       ],
+       "texts": [
+        {
+         "address": "0x09D9D041",
+         "text": "我等不及看他在\n舞台上的表现了……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3AE0",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3AE2",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3AE3",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3A5B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3AE4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3AE4",
+       "command": "call",
+       "args": [
+        164445014
+       ],
+       "targets": [
+        "0x09CD3B56"
+       ]
+      },
+      {
+       "at": "0x09CD3AE9",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3AEA",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD39C8"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3AEB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3AEB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269569
+       ],
+       "texts": [
+        {
+         "address": "0x09D9D041",
+         "text": "我等不及看他在\n舞台上的表现了……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3AF1",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3AF3",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3AF4",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD39C8"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3AF5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3AF5",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3AF6",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x09CD3AF7",
+       "command": "checkflag",
+       "args": [
+        2975
+       ],
+       "task_flag_labels": [
+        {
+         "title": "怯场的男友",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3AFA",
+       "command": "goto_if",
+       "args": [
+        0,
+        164444956
+       ],
+       "targets": [
+        "0x09CD3B1C"
+       ]
+      },
+      {
+       "at": "0x09CD3B00",
+       "command": "checkflag",
+       "args": [
+        2977
+       ]
+      },
+      {
+       "at": "0x09CD3B03",
+       "command": "goto_if",
+       "args": [
+        1,
+        164444993
+       ],
+       "targets": [
+        "0x09CD3B41"
+       ]
+      },
+      {
+       "at": "0x09CD3B09",
+       "command": "checkflag",
+       "args": [
+        6352
+       ]
+      },
+      {
+       "at": "0x09CD3B0C",
+       "command": "goto_if",
+       "args": [
+        1,
+        164444966
+       ],
+       "targets": [
+        "0x09CD3B26"
+       ]
+      },
+      {
+       "at": "0x09CD3B12",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269659
+       ],
+       "texts": [
+        {
+         "address": "0x09D9D09B",
+         "text": "我还是不敢参赛……\n要是能看到有人\n在大师级舞台上\n堂堂正正地表演\n就好了。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3B18",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3B1A",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3B1B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=65"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3B1C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3B1C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269601
+       ],
+       "texts": [
+        {
+         "address": "0x09D9D061",
+         "text": "不行不行……\n我一想到站上\n华丽大赛的舞台，\n就紧张得不敢报名。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3B22",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3B24",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3B25",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3AF5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3B26",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3B26",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269729
+       ],
+       "texts": [
+        {
+         "address": "0x09D9D0E1",
+         "text": "看到你在台上\n堂堂正正的表现，\n我备受鼓舞啊！\n好，没问题！\n我绝对没问题的！\n没问题啊！\n谢谢你鼓励了我！\n这些送给你！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3B2C",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3B2E",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3B2F",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        537
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕路奇亚",
+        "item": "经验糖果S",
+        "move": "暗黑爆破"
+       }
+      },
+      {
+       "at": "0x09CD3B34",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x09CD3B39",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD3B3B",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3B3C",
+       "command": "setflag",
+       "args": [
+        2977
+       ]
+      },
+      {
+       "at": "0x09CD3B3F",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3B40",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3AF5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3B41",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3B41",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165269837
+       ],
+       "texts": [
+        {
+         "address": "0x09D9D14D",
+         "text": "好，没问题！\n我这就去报名，\n绝对没问题的！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3B47",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD3B49",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3B4A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3AF5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3B4B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3B4B",
+       "command": "applymovement",
+       "args": [
+        13,
+        150275628
+       ]
+      },
+      {
+       "at": "0x09CD3B52",
+       "command": "waitmovement",
+       "args": [
+        13
+       ]
+      },
+      {
+       "at": "0x09CD3B55",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD39C8"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3B56",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3B56",
+       "command": "applymovement",
+       "args": [
+        13,
+        150275618
+       ]
+      },
+      {
+       "at": "0x09CD3B5D",
+       "command": "waitmovement",
+       "args": [
+        13
+       ]
+      },
+      {
+       "at": "0x09CD3B60",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3AE4"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

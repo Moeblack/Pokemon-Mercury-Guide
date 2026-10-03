@@ -1,0 +1,802 @@
+{
+ "generated": "2026-10-03T16:41:12",
+ "generator": "player_guide/scripts/extract_mega_supplement.py",
+ "command": "uv run --no-project python player_guide/scripts/extract_mega_supplement.py",
+ "exit_code": 0,
+ "pattern": "16 40 50 01 00",
+ "pattern_count": 31,
+ "root_count": 46,
+ "scene_roots": 16,
+ "battle_branch_roots": 30,
+ "pattern_without_29BD0A": [
+  "0x087B3D95"
+ ],
+ "scene_signature_mismatches": [],
+ "counts": {
+  "script_count": 104,
+  "instruction_count": 2767,
+  "text_count": 93,
+  "failure_count": 0,
+  "undefined_opcode_hits": {}
+ },
+ "setwildbattle_unique_sites": 31,
+ "setwildbattle": [
+  {
+   "at": "0x087B4141",
+   "species": 322,
+   "species_name": "勾魂眼",
+   "level": 28,
+   "item": 671,
+   "item_name": "恶之宝石"
+  },
+  {
+   "at": "0x087B44FE",
+   "species": 322,
+   "species_name": "勾魂眼",
+   "level": 28,
+   "item": 671,
+   "item_name": "恶之宝石"
+  },
+  {
+   "at": "0x087B5873",
+   "species": 130,
+   "species_name": "暴鲤龙",
+   "level": 38,
+   "item": 674,
+   "item_name": "力量头带"
+  },
+  {
+   "at": "0x087B588D",
+   "species": 130,
+   "species_name": "暴鲤龙",
+   "level": 38,
+   "item": 0,
+   "item_name": "????????"
+  },
+  {
+   "at": "0x087BCD26",
+   "species": 229,
+   "species_name": "黑鲁加",
+   "level": 40,
+   "item": 215,
+   "item_name": "木炭"
+  },
+  {
+   "at": "0x087BD2A8",
+   "species": 411,
+   "species_name": "风铃铃",
+   "level": 45,
+   "item": 0,
+   "item_name": "????????"
+  },
+  {
+   "at": "0x08ED5245",
+   "species": 451,
+   "species_name": "姆克鹰",
+   "level": 45,
+   "item": 0,
+   "item_name": "????????"
+  },
+  {
+   "at": "0x08ED525A",
+   "species": 1,
+   "species_name": "妙蛙种子",
+   "level": 45,
+   "item": 0,
+   "item_name": "????????"
+  },
+  {
+   "at": "0x08EDE967",
+   "species": 80,
+   "species_name": "呆壳兽",
+   "level": 30,
+   "item": 0,
+   "item_name": "????????"
+  },
+  {
+   "at": "0x08EECE8B",
+   "species": 71,
+   "species_name": "大食花",
+   "level": 28,
+   "item": 675,
+   "item_name": "博识眼镜"
+  },
+  {
+   "at": "0x09CD481A",
+   "species": 355,
+   "species_name": "大嘴娃",
+   "level": 28,
+   "item": 199,
+   "item_name": "金属膜"
+  },
+  {
+   "at": "0x09CD48A9",
+   "species": 613,
+   "species_name": "头巾混混",
+   "level": 28,
+   "item": 674,
+   "item_name": "力量头带"
+  },
+  {
+   "at": "0x09CD4938",
+   "species": 657,
+   "species_name": "麻麻鳗鱼王",
+   "level": 28,
+   "item": 208,
+   "item_name": "磁铁"
+  },
+  {
+   "at": "0x09CD49C7",
+   "species": 15,
+   "species_name": "大针蜂",
+   "level": 28,
+   "item": 188,
+   "item_name": "银粉"
+  },
+  {
+   "at": "0x09CD4A56",
+   "species": 662,
+   "species_name": "水晶灯火灵",
+   "level": 32,
+   "item": 213,
+   "item_name": "咒术之符"
+  },
+  {
+   "at": "0x09CD4AE5",
+   "species": 347,
+   "species_name": "冰鬼护",
+   "level": 32,
+   "item": 212,
+   "item_name": "不融冰"
+  },
+  {
+   "at": "0x09CD4B74",
+   "species": 376,
+   "species_name": "阿勃梭鲁",
+   "level": 32,
+   "item": 119,
+   "item_name": "锐利之爪"
+  },
+  {
+   "at": "0x09CD4C03",
+   "species": 282,
+   "species_name": "火焰鸡",
+   "level": 32,
+   "item": 215,
+   "item_name": "木炭"
+  },
+  {
+   "at": "0x09CD4C92",
+   "species": 513,
+   "species_name": "暴雪王",
+   "level": 36,
+   "item": 699,
+   "item_name": "大根茎"
+  },
+  {
+   "at": "0x09CD4D21",
+   "species": 384,
+   "species_name": "波士可多拉",
+   "level": 36,
+   "item": 204,
+   "item_name": "硬石头"
+  },
+  {
+   "at": "0x09CD4DB0",
+   "species": 285,
+   "species_name": "巨沼怪",
+   "level": 36,
+   "item": 209,
+   "item_name": "神秘水滴"
+  },
+  {
+   "at": "0x09CD4E3F",
+   "species": 357,
+   "species_name": "恰雷姆",
+   "level": 36,
+   "item": 676,
+   "item_name": "达人带"
+  },
+  {
+   "at": "0x09CD4ECE",
+   "species": 279,
+   "species_name": "蜥蜴王",
+   "level": 40,
+   "item": 675,
+   "item_name": "博识眼镜"
+  },
+  {
+   "at": "0x09CD4F5D",
+   "species": 331,
+   "species_name": "巨牙鲨",
+   "level": 40,
+   "item": 206,
+   "item_name": "黑色眼镜"
+  },
+  {
+   "at": "0x09CD4FEC",
+   "species": 214,
+   "species_name": "赫拉克罗斯",
+   "level": 40,
+   "item": 674,
+   "item_name": "力量头带"
+  },
+  {
+   "at": "0x09CD507B",
+   "species": 248,
+   "species_name": "班基拉斯",
+   "level": 40,
+   "item": 203,
+   "item_name": "柔软沙子"
+  },
+  {
+   "at": "0x09CDCC1B",
+   "species": 142,
+   "species_name": "化石翼龙",
+   "level": 40,
+   "item": 678,
+   "item_name": "生命宝珠"
+  },
+  {
+   "at": "0x09CDCE8B",
+   "species": 127,
+   "species_name": "凯罗斯",
+   "level": 40,
+   "item": 674,
+   "item_name": "力量头带"
+  },
+  {
+   "at": "0x09CDD111",
+   "species": 481,
+   "species_name": "长耳兔",
+   "level": 40,
+   "item": 678,
+   "item_name": "生命宝珠"
+  },
+  {
+   "at": "0x09CDD965",
+   "species": 65,
+   "species_name": "胡地",
+   "level": 43,
+   "item": 678,
+   "item_name": "生命宝珠"
+  },
+  {
+   "at": "0x09CE0646",
+   "species": 322,
+   "species_name": "勾魂眼",
+   "level": 28,
+   "item": 671,
+   "item_name": "恶之宝石"
+  }
+ ],
+ "per_root": {
+  "0x087B4136": {
+   "pattern": "0x087B4139",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x087B4141",
+     "species": 322,
+     "species_name": "勾魂眼",
+     "level": 28,
+     "item": 671,
+     "item_name": "恶之宝石"
+    }
+   ]
+  },
+  "0x087B44DF": {
+   "pattern": "0x087B44E2",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x087B44FE",
+     "species": 322,
+     "species_name": "勾魂眼",
+     "level": 28,
+     "item": 671,
+     "item_name": "恶之宝石"
+    }
+   ]
+  },
+  "0x087B584E": {
+   "pattern": "0x087B5851",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x087B5873",
+     "species": 130,
+     "species_name": "暴鲤龙",
+     "level": 38,
+     "item": 674,
+     "item_name": "力量头带"
+    },
+    {
+     "at": "0x087B588D",
+     "species": 130,
+     "species_name": "暴鲤龙",
+     "level": 38,
+     "item": 0,
+     "item_name": "????????"
+    }
+   ]
+  },
+  "0x087BCD07": {
+   "pattern": "0x087BCD0A",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x087BCD26",
+     "species": 229,
+     "species_name": "黑鲁加",
+     "level": 40,
+     "item": 215,
+     "item_name": "木炭"
+    }
+   ]
+  },
+  "0x087BD289": {
+   "pattern": "0x087BD28C",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x087BD2A8",
+     "species": 411,
+     "species_name": "风铃铃",
+     "level": 45,
+     "item": 0,
+     "item_name": "????????"
+    }
+   ]
+  },
+  "0x08ED523D": {
+   "pattern": "0x08ED5240",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x08ED5245",
+     "species": 451,
+     "species_name": "姆克鹰",
+     "level": 45,
+     "item": 0,
+     "item_name": "????????"
+    }
+   ]
+  },
+  "0x08ED5252": {
+   "pattern": "0x08ED5255",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x08ED525A",
+     "species": 1,
+     "species_name": "妙蛙种子",
+     "level": 45,
+     "item": 0,
+     "item_name": "????????"
+    }
+   ]
+  },
+  "0x08EDE95F": {
+   "pattern": "0x08EDE962",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x08EDE967",
+     "species": 80,
+     "species_name": "呆壳兽",
+     "level": 30,
+     "item": 0,
+     "item_name": "????????"
+    }
+   ]
+  },
+  "0x08EECE69": {
+   "pattern": "0x08EECE6C",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x08EECE8B",
+     "species": 71,
+     "species_name": "大食花",
+     "level": 28,
+     "item": 675,
+     "item_name": "博识眼镜"
+    }
+   ]
+  },
+  "0x09CD47FB": {
+   "pattern": "0x09CD47FE",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CD481A",
+     "species": 355,
+     "species_name": "大嘴娃",
+     "level": 28,
+     "item": 199,
+     "item_name": "金属膜"
+    }
+   ]
+  },
+  "0x09CD47BB": {
+   "pattern": "0x09CD47FE",
+   "kind": "scene_root",
+   "wild": []
+  },
+  "0x09CD488A": {
+   "pattern": "0x09CD488D",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CD48A9",
+     "species": 613,
+     "species_name": "头巾混混",
+     "level": 28,
+     "item": 674,
+     "item_name": "力量头带"
+    }
+   ]
+  },
+  "0x09CD484A": {
+   "pattern": "0x09CD488D",
+   "kind": "scene_root",
+   "wild": []
+  },
+  "0x09CD4919": {
+   "pattern": "0x09CD491C",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CD4938",
+     "species": 657,
+     "species_name": "麻麻鳗鱼王",
+     "level": 28,
+     "item": 208,
+     "item_name": "磁铁"
+    }
+   ]
+  },
+  "0x09CD48D9": {
+   "pattern": "0x09CD491C",
+   "kind": "scene_root",
+   "wild": []
+  },
+  "0x09CD49A8": {
+   "pattern": "0x09CD49AB",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CD49C7",
+     "species": 15,
+     "species_name": "大针蜂",
+     "level": 28,
+     "item": 188,
+     "item_name": "银粉"
+    }
+   ]
+  },
+  "0x09CD4968": {
+   "pattern": "0x09CD49AB",
+   "kind": "scene_root",
+   "wild": []
+  },
+  "0x09CD4A37": {
+   "pattern": "0x09CD4A3A",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CD4A56",
+     "species": 662,
+     "species_name": "水晶灯火灵",
+     "level": 32,
+     "item": 213,
+     "item_name": "咒术之符"
+    }
+   ]
+  },
+  "0x09CD49F7": {
+   "pattern": "0x09CD4A3A",
+   "kind": "scene_root",
+   "wild": []
+  },
+  "0x09CD4AC6": {
+   "pattern": "0x09CD4AC9",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CD4AE5",
+     "species": 347,
+     "species_name": "冰鬼护",
+     "level": 32,
+     "item": 212,
+     "item_name": "不融冰"
+    }
+   ]
+  },
+  "0x09CD4A86": {
+   "pattern": "0x09CD4AC9",
+   "kind": "scene_root",
+   "wild": []
+  },
+  "0x09CD4B55": {
+   "pattern": "0x09CD4B58",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CD4B74",
+     "species": 376,
+     "species_name": "阿勃梭鲁",
+     "level": 32,
+     "item": 119,
+     "item_name": "锐利之爪"
+    }
+   ]
+  },
+  "0x09CD4B15": {
+   "pattern": "0x09CD4B58",
+   "kind": "scene_root",
+   "wild": []
+  },
+  "0x09CD4BE4": {
+   "pattern": "0x09CD4BE7",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CD4C03",
+     "species": 282,
+     "species_name": "火焰鸡",
+     "level": 32,
+     "item": 215,
+     "item_name": "木炭"
+    }
+   ]
+  },
+  "0x09CD4BA4": {
+   "pattern": "0x09CD4BE7",
+   "kind": "scene_root",
+   "wild": []
+  },
+  "0x09CD4C73": {
+   "pattern": "0x09CD4C76",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CD4C92",
+     "species": 513,
+     "species_name": "暴雪王",
+     "level": 36,
+     "item": 699,
+     "item_name": "大根茎"
+    }
+   ]
+  },
+  "0x09CD4C33": {
+   "pattern": "0x09CD4C76",
+   "kind": "scene_root",
+   "wild": []
+  },
+  "0x09CD4D02": {
+   "pattern": "0x09CD4D05",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CD4D21",
+     "species": 384,
+     "species_name": "波士可多拉",
+     "level": 36,
+     "item": 204,
+     "item_name": "硬石头"
+    }
+   ]
+  },
+  "0x09CD4CC2": {
+   "pattern": "0x09CD4D05",
+   "kind": "scene_root",
+   "wild": []
+  },
+  "0x09CD4D91": {
+   "pattern": "0x09CD4D94",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CD4DB0",
+     "species": 285,
+     "species_name": "巨沼怪",
+     "level": 36,
+     "item": 209,
+     "item_name": "神秘水滴"
+    }
+   ]
+  },
+  "0x09CD4D51": {
+   "pattern": "0x09CD4D94",
+   "kind": "scene_root",
+   "wild": []
+  },
+  "0x09CD4E20": {
+   "pattern": "0x09CD4E23",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CD4E3F",
+     "species": 357,
+     "species_name": "恰雷姆",
+     "level": 36,
+     "item": 676,
+     "item_name": "达人带"
+    }
+   ]
+  },
+  "0x09CD4DE0": {
+   "pattern": "0x09CD4E23",
+   "kind": "scene_root",
+   "wild": []
+  },
+  "0x09CD4EAF": {
+   "pattern": "0x09CD4EB2",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CD4ECE",
+     "species": 279,
+     "species_name": "蜥蜴王",
+     "level": 40,
+     "item": 675,
+     "item_name": "博识眼镜"
+    }
+   ]
+  },
+  "0x09CD4E6F": {
+   "pattern": "0x09CD4EB2",
+   "kind": "scene_root",
+   "wild": []
+  },
+  "0x09CD4F3E": {
+   "pattern": "0x09CD4F41",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CD4F5D",
+     "species": 331,
+     "species_name": "巨牙鲨",
+     "level": 40,
+     "item": 206,
+     "item_name": "黑色眼镜"
+    }
+   ]
+  },
+  "0x09CD4EFE": {
+   "pattern": "0x09CD4F41",
+   "kind": "scene_root",
+   "wild": []
+  },
+  "0x09CD4FCD": {
+   "pattern": "0x09CD4FD0",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CD4FEC",
+     "species": 214,
+     "species_name": "赫拉克罗斯",
+     "level": 40,
+     "item": 674,
+     "item_name": "力量头带"
+    }
+   ]
+  },
+  "0x09CD4F8D": {
+   "pattern": "0x09CD4FD0",
+   "kind": "scene_root",
+   "wild": []
+  },
+  "0x09CD505C": {
+   "pattern": "0x09CD505F",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CD507B",
+     "species": 248,
+     "species_name": "班基拉斯",
+     "level": 40,
+     "item": 203,
+     "item_name": "柔软沙子"
+    }
+   ]
+  },
+  "0x09CD501C": {
+   "pattern": "0x09CD505F",
+   "kind": "scene_root",
+   "wild": []
+  },
+  "0x09CDCBFC": {
+   "pattern": "0x09CDCBFF",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CDCC1B",
+     "species": 142,
+     "species_name": "化石翼龙",
+     "level": 40,
+     "item": 678,
+     "item_name": "生命宝珠"
+    }
+   ]
+  },
+  "0x09CDCE6C": {
+   "pattern": "0x09CDCE6F",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CDCE8B",
+     "species": 127,
+     "species_name": "凯罗斯",
+     "level": 40,
+     "item": 674,
+     "item_name": "力量头带"
+    }
+   ]
+  },
+  "0x09CDD0F2": {
+   "pattern": "0x09CDD0F5",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CDD111",
+     "species": 481,
+     "species_name": "长耳兔",
+     "level": 40,
+     "item": 678,
+     "item_name": "生命宝珠"
+    }
+   ]
+  },
+  "0x09CDD946": {
+   "pattern": "0x09CDD949",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CDD965",
+     "species": 65,
+     "species_name": "胡地",
+     "level": 43,
+     "item": 678,
+     "item_name": "生命宝珠"
+    }
+   ]
+  },
+  "0x09CE0627": {
+   "pattern": "0x09CE062A",
+   "kind": "battle_branch",
+   "wild": [
+    {
+     "at": "0x09CE0646",
+     "species": 322,
+     "species_name": "勾魂眼",
+     "level": 28,
+     "item": 671,
+     "item_name": "恶之宝石"
+    }
+   ]
+  }
+ },
+ "disclaimer": "roots are byte-match candidates, not map entries and not reachability proof",
+ "extended_coord_roots": [
+  {
+   "root": "0x09CDCA89",
+   "basis": "coord table 0x09DFCA74 / header 0x09DFC9C4"
+  },
+  {
+   "root": "0x09CDCD1D",
+   "basis": "coord table 0x09DFCA74 / header 0x09DFC9C4"
+  },
+  {
+   "root": "0x09CDCF65",
+   "basis": "coord table 0x09DFCA74 / header 0x09DFC9C4"
+  },
+  {
+   "root": "0x09CDD7BC",
+   "basis": "coord table 0x09DFC0F0 / header 0x09DFC0C4"
+  }
+ ]
+}

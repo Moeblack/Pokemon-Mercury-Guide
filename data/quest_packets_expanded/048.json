@@ -1,0 +1,2522 @@
+{
+ "title": "家乡的味道",
+ "quest_id": 48,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b2bc",
+    "title": "家乡的味道",
+    "title_address": "0x8e3c700",
+    "description": "我想回味一下家乡的味道，\n希望有人可以来帮我收集食材。\n我在宝可梦中心东侧的住宅。",
+    "description_address": "0x8e3c6bc",
+    "unknown_u16": 129,
+    "unknown_u16_hex": "0x0081",
+    "accept_flag": 5972,
+    "accept_flag_hex": "0x1754",
+    "complete_flag": 5973,
+    "complete_flag_hex": "0x1755",
+    "map_group": 50,
+    "map_num": 40,
+    "tail_hex": "01 01 00 00",
+    "index": 48,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39604",
+      "title": "家乡的味道",
+      "description_address": "0x8e3a4d4",
+      "description": "我想回味一下家乡的味道，\\n希望有人可以来帮我收集食材。\\n我在宝可梦中心东侧的住宅。"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a4d4",
+    "legacy_match_count": 1,
+    "current_description": "帮助老爷爷收集制作\n大马拉萨达所需的5个\n刺角果，5个椰木果和5个瓜西果。",
+    "catalog_map": {
+     "id": "50:40",
+     "name": "满金市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AEA8AE",
+    "0x08AEB5F6",
+    "0x08AEB63A",
+    "0x08AEB782",
+    "0x08AEB8AA",
+    "0x08AEC1D3"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08AEA8AE",
+     "map_id": "50:1",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 4,
+     "event_index": 3,
+     "x": 2,
+     "y": 5,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g50_n001.md"
+    },
+    {
+     "script": "0x08AEC1D3",
+     "map_id": "3:75",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 20,
+     "event_index": 19,
+     "x": 40,
+     "y": 43,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n075.md"
+    },
+    {
+     "script": "0x08F56A32",
+     "map_id": "50:40",
+     "place": "满金市",
+     "kind": "人物",
+     "local_id": 4,
+     "event_index": 3,
+     "x": 11,
+     "y": 3,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g50_n040.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089DE54A",
+     "event_roots": [
+      {
+       "map_id": "50:1",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 3,
+       "event_index": 2,
+       "x": 3,
+       "y": 5,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n001.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x089DE54A",
+       "command": "applymovement",
+       "args": [
+        3,
+        144566301
+       ]
+      },
+      {
+       "at": "0x089DE551",
+       "command": "waitmovement",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x089DE554",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144566206
+       ],
+       "texts": [
+        {
+         "address": "0x089DE7BE",
+         "text": "什么！？黑色的小拉达？\n我可从来没见过呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x089DE55A",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x089DE55C",
+       "command": "applymovement",
+       "args": [
+        4,
+        144566305
+       ]
+      },
+      {
+       "at": "0x089DE563",
+       "command": "waitmovement",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x089DE566",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144566246
+       ],
+       "texts": [
+        {
+         "address": "0x089DE7E6",
+         "text": "在我们那里可是随处可见的哦！\n还有白色的九尾和穿山鼠……"
+        }
+       ]
+      },
+      {
+       "at": "0x089DE56C",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x089DE56E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "50:1/local3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F7E3E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F7E3E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144670280
+       ],
+       "texts": [
+        {
+         "address": "0x089F7E48",
+         "text": "想被亲切的对待\n因此亲切地对待别人……\n其实这样也是不错的。"
+        }
+       ]
+      },
+      {
+       "at": "0x089F7E44",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089F7E46",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEA5D7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEA5D7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEA5D7",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AEA5DA",
+       "command": "goto_if",
+       "args": [
+        1,
+        145667574
+       ],
+       "targets": [
+        "0x08AEB5F6"
+       ]
+      },
+      {
+       "at": "0x08AEA5E0",
+       "command": "goto",
+       "args": [
+        144670270
+       ],
+       "targets": [
+        "0x089F7E3E"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F56A32"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEA8AE",
+     "event_roots": [
+      {
+       "map_id": "50:1",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 4,
+       "event_index": 3,
+       "x": 2,
+       "y": 5,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n001.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AEA8AE",
+       "command": "checkflag",
+       "args": [
+        5975
+       ]
+      },
+      {
+       "at": "0x08AEA8B1",
+       "command": "goto_if",
+       "args": [
+        1,
+        144565578
+       ],
+       "targets": [
+        "0x089DE54A"
+       ]
+      },
+      {
+       "at": "0x08AEA8B7",
+       "command": "checkflag",
+       "args": [
+        5973
+       ],
+       "task_flag_labels": [
+        {
+         "title": "家乡的味道",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEA8BA",
+       "command": "goto_if",
+       "args": [
+        1,
+        145671062
+       ],
+       "targets": [
+        "0x08AEC396"
+       ]
+      },
+      {
+       "at": "0x08AEA8C0",
+       "command": "goto",
+       "args": [
+        144565578
+       ],
+       "targets": [
+        "0x089DE54A"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "50:1/local4"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEB5F6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEB5F6",
+       "command": "checkflag",
+       "args": [
+        5973
+       ],
+       "task_flag_labels": [
+        {
+         "title": "家乡的味道",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB5F9",
+       "command": "goto_if",
+       "args": [
+        1,
+        145668129
+       ],
+       "targets": [
+        "0x08AEB821"
+       ]
+      },
+      {
+       "at": "0x08AEB5FF",
+       "command": "checkflag",
+       "args": [
+        5972
+       ],
+       "task_flag_labels": [
+        {
+         "title": "家乡的味道",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB602",
+       "command": "goto_if",
+       "args": [
+        1,
+        145667694
+       ],
+       "targets": [
+        "0x08AEB66E"
+       ]
+      },
+      {
+       "at": "0x08AEB608",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144670280
+       ],
+       "texts": [
+        {
+         "address": "0x089F7E48",
+         "text": "想被亲切的对待\n因此亲切地对待别人……\n其实这样也是不错的。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB60E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEB610",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEB613",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145670281
+       ]
+      },
+      {
+       "at": "0x08AEB61A",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AEB61D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145668355
+       ]
+      },
+      {
+       "at": "0x08AEB623",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AEB625",
+       "command": "goto",
+       "args": [
+        150301355
+       ],
+       "targets": [
+        "0x08F56AAB"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEA5D7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEB63A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEB63A",
+       "command": "setflag",
+       "args": [
+        5972
+       ],
+       "task_flag_labels": [
+        {
+         "title": "家乡的味道",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB63D",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEB640",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145668655
+       ],
+       "texts": [
+        {
+         "address": "0x08AEBA2F",
+         "text": "接受任务:<家乡的味道>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB646",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEB64B",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEB650",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AEB655",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AEB65A",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AEB65F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145668682
+       ],
+       "texts": [
+        {
+         "address": "0x08AEBA4A",
+         "text": "真的是太感谢你了！\n现在的年轻人真有热情呢\n我需要5个刺角果、\n5个椰木果还有5个瓜西果。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB665",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEB667",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AEB66C",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F56AAB"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEB66E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEB66E",
+       "command": "checkitem",
+       "args": [
+        163,
+        5
+       ],
+       "item_name": "刺角果"
+      },
+      {
+       "at": "0x08AEB673",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AEB678",
+       "command": "goto_if",
+       "args": [
+        1,
+        145667772
+       ],
+       "targets": [
+        "0x08AEB6BC"
+       ]
+      },
+      {
+       "at": "0x08AEB67E",
+       "command": "checkitem",
+       "args": [
+        164,
+        5
+       ],
+       "item_name": "椰木果"
+      },
+      {
+       "at": "0x08AEB683",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AEB688",
+       "command": "goto_if",
+       "args": [
+        1,
+        145667772
+       ],
+       "targets": [
+        "0x08AEB6BC"
+       ]
+      },
+      {
+       "at": "0x08AEB68E",
+       "command": "checkitem",
+       "args": [
+        165,
+        5
+       ],
+       "item_name": "瓜西果"
+      },
+      {
+       "at": "0x08AEB693",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AEB698",
+       "command": "goto_if",
+       "args": [
+        1,
+        145667772
+       ],
+       "targets": [
+        "0x08AEB6BC"
+       ]
+      },
+      {
+       "at": "0x08AEB69E",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AEB69F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145669783
+       ],
+       "texts": [
+        {
+         "address": "0x08AEBE97",
+         "text": "怎么样，\n你收集到所需的食材了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB6A5",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AEB6A7",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEB6AC",
+       "command": "goto_if",
+       "args": [
+        1,
+        145670283
+       ],
+       "targets": [
+        "0x08AEC08B"
+       ]
+      },
+      {
+       "at": "0x08AEB6B2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145668768
+       ],
+       "texts": [
+        {
+         "address": "0x08AEBAA0",
+         "text": "我需要5个刺角果、\n5个椰木果还有5个瓜西果。\n对了，你可以去\n商业区的花店看看，或者是去\n地下商业街……\n听说每周二的时候，\n会有树果贩子出现在那里。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB6B8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEB6BA",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEB5F6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEB6BC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEB6BC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145668768
+       ],
+       "texts": [
+        {
+         "address": "0x08AEBAA0",
+         "text": "我需要5个刺角果、\n5个椰木果还有5个瓜西果。\n对了，你可以去\n商业区的花店看看，或者是去\n地下商业街……\n听说每周二的时候，\n会有树果贩子出现在那里。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB6C2",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEB6C4",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEB66E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEB782",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEB782",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEB785",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145670281
+       ]
+      },
+      {
+       "at": "0x08AEB78C",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AEB78F",
+       "command": "removeitem",
+       "args": [
+        163,
+        5
+       ],
+       "item_name": "刺角果"
+      },
+      {
+       "at": "0x08AEB794",
+       "command": "removeitem",
+       "args": [
+        164,
+        5
+       ],
+       "item_name": "椰木果"
+      },
+      {
+       "at": "0x08AEB799",
+       "command": "removeitem",
+       "args": [
+        165,
+        5
+       ],
+       "item_name": "瓜西果"
+      },
+      {
+       "at": "0x08AEB79E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145669817
+       ],
+       "texts": [
+        {
+         "address": "0x08AEBEB9",
+         "text": "不愧是现在的年轻人……\n行动能力真是强呢！\n请稍等一下……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB7A4",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEB7A6",
+       "command": "fadescreenspeed",
+       "args": [
+        1,
+        2
+       ]
+      },
+      {
+       "at": "0x08AEB7A9",
+       "command": "sound",
+       "args": [
+        19
+       ]
+      },
+      {
+       "at": "0x08AEB7AC",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEB7AF",
+       "command": "fadescreenspeed",
+       "args": [
+        0,
+        2
+       ]
+      },
+      {
+       "at": "0x08AEB7B2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145669871
+       ],
+       "texts": [
+        {
+         "address": "0x08AEBEEF",
+         "text": "来，美味的\n大马拉萨达做好了"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB7B8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEB7BA",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        82
+       ],
+       "possible_names_not_semantics": {
+        "species": "三合一磁怪",
+        "item": "大马拉萨达",
+        "move": "龙之怒"
+       }
+      },
+      {
+       "at": "0x08AEB7BF",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        5
+       ],
+       "possible_names_not_semantics": {
+        "species": "火恐龙",
+        "item": "狩猎球",
+        "move": "百万吨重拳"
+       }
+      },
+      {
+       "at": "0x08AEB7C4",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AEB7C6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145669902
+       ],
+       "texts": [
+        {
+         "address": "0x08AEBF0E",
+         "text": "虽然味道可能不太正宗，\n但它一定能够让你感受\n到阿罗拉地区独有的风味……\n还有这个，\n也请你收下吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB7CC",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEB7CE",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        742
+       ],
+       "possible_names_not_semantics": {
+        "species": "萌芽鹿",
+        "item": "神秘摆设",
+        "move": "雪矛"
+       }
+      },
+      {
+       "at": "0x08AEB7D3",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEB7D8",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AEB7DA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145670091
+       ],
+       "texts": [
+        {
+         "address": "0x08AEBFCB",
+         "text": "这也是我从故乡带过来的东西……\n对了，如果你有遇到\n我家门口的火斑喵，\n和正在邻居家\n串门的孙女的话，\n也请让他们尝一尝大马拉萨达。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB7E0",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEB7E2",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x08AEB7E7",
+       "command": "addmoney",
+       "args": [
+        6000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AEB7ED",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEB7F0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145669996
+       ],
+       "texts": [
+        {
+         "address": "0x08AEBF6C",
+         "text": "任务完成:<故乡的味道>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB7F6",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEB7FB",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEB800",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AEB805",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AEB80A",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AEB80F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145670023
+       ],
+       "texts": [
+        {
+         "address": "0x08AEBF87",
+         "text": "获得了4点BracerPoints和6000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB815",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEB817",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AEB81C",
+       "command": "setflag",
+       "args": [
+        5973
+       ],
+       "task_flag_labels": [
+        {
+         "title": "家乡的味道",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB81F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEC08B"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEB821",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEB821",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145670058
+       ],
+       "texts": [
+        {
+         "address": "0x08AEBFAA",
+         "text": "故乡的味道……\n还真是令人怀念呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB827",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEB829",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEB5F6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEB8AA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEB8AA",
+       "command": "checkflag",
+       "args": [
+        5973
+       ],
+       "task_flag_labels": [
+        {
+         "title": "家乡的味道",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB8AD",
+       "command": "goto_if",
+       "args": [
+        1,
+        145668290
+       ],
+       "targets": [
+        "0x08AEB8C2"
+       ]
+      },
+      {
+       "at": "0x08AEB8B3",
+       "command": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08AEB8B8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145670404
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC104",
+         "text": "火斑喵似乎对[玩家/变量]不是很感兴趣……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB8BE",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEB8C0",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=48"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEB8C2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEB8C2",
+       "command": "checkitem",
+       "args": [
+        82,
+        1
+       ],
+       "item_name": "大马拉萨达"
+      },
+      {
+       "at": "0x08AEB8C7",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AEB8CC",
+       "command": "goto_if",
+       "args": [
+        1,
+        145670214
+       ],
+       "targets": [
+        "0x08AEC046"
+       ]
+      },
+      {
+       "at": "0x08AEB8D2",
+       "command": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08AEB8D7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145670435
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC123",
+         "text": "火斑喵似乎对[玩家/变量]身上的\n大马拉萨达非常感兴趣！\n要将大马拉萨达分给它吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEB8DD",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AEB8DF",
+       "command": "clearflag",
+       "args": [
+        5983
+       ]
+      },
+      {
+       "at": "0x08AEB8E2",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEB8AA"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEC046",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEC046",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145670398
+       ]
+      },
+      {
+       "at": "0x08AEC04D",
+       "command": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08AEC052",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AEC055",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145670435
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC123",
+         "text": "火斑喵似乎对[玩家/变量]身上的\n大马拉萨达非常感兴趣！\n要将大马拉萨达分给它吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC05B",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AEC05D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEC062",
+       "command": "goto_if",
+       "args": [
+        1,
+        145670289
+       ],
+       "targets": [
+        "0x08AEC091"
+       ]
+      },
+      {
+       "at": "0x08AEC068",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145670504
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC168",
+         "text": "火斑喵看上去很伤心……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC06E",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEC070",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEB8C2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEC08B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEC08B",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AEC08C",
+       "command": "goto",
+       "args": [
+        145667970
+       ],
+       "targets": [
+        "0x08AEB782"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEB66E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEC091",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEC091",
+       "command": "removeitem",
+       "args": [
+        82,
+        1
+       ],
+       "item_name": "大马拉萨达"
+      },
+      {
+       "at": "0x08AEC096",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145670527
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC17F",
+         "text": "火斑喵开心地吃下了大马拉萨达！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC09C",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEC09E",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AEC0A1",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145670401
+       ]
+      },
+      {
+       "at": "0x08AEC0A8",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AEC0AB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145670559
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC19F",
+         "text": "火斑喵似乎想要给[玩家/变量]什么……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC0B1",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEC0B3",
+       "command": "giveegg",
+       "args": [
+        942
+       ],
+       "species_name": "火斑喵"
+      },
+      {
+       "at": "0x08AEC0B6",
+       "command": "preparemsg",
+       "args": [
+        145670586
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC1BA",
+         "text": "[玩家/变量]得了火斑喵的蛋！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC0BB",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AEC0BC",
+       "command": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x08AEC0BF",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08AEC0C0",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145670401
+       ]
+      },
+      {
+       "at": "0x08AEC0C7",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AEC0CA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145670374
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC0E6",
+         "text": "火斑喵对[玩家/变量]充满了好感！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC0D0",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEC0D2",
+       "command": "setflag",
+       "args": [
+        5974
+       ]
+      },
+      {
+       "at": "0x08AEC0D5",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEC046"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEC1D3",
+     "event_roots": [
+      {
+       "map_id": "3:75",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 20,
+       "event_index": 19,
+       "x": 40,
+       "y": 43,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n075.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AEC1D3",
+       "command": "checkflag",
+       "args": [
+        5974
+       ]
+      },
+      {
+       "at": "0x08AEC1D6",
+       "command": "goto_if",
+       "args": [
+        1,
+        145670789
+       ],
+       "targets": [
+        "0x08AEC285"
+       ]
+      },
+      {
+       "at": "0x08AEC1DC",
+       "command": "checkflag",
+       "args": [
+        5973
+       ],
+       "task_flag_labels": [
+        {
+         "title": "家乡的味道",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC1DF",
+       "command": "goto_if",
+       "args": [
+        1,
+        145670644
+       ],
+       "targets": [
+        "0x08AEC1F4"
+       ]
+      },
+      {
+       "at": "0x08AEC1E5",
+       "command": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08AEC1EA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145670834
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC2B2",
+         "text": "火斑喵似乎对\n[玩家/变量]不是很感兴趣…"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC1F0",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEC1F2",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "3:75/local20"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEC1F4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEC1F4",
+       "command": "checkitem",
+       "args": [
+        82,
+        1
+       ],
+       "item_name": "大马拉萨达"
+      },
+      {
+       "at": "0x08AEC1F9",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEC1FE",
+       "command": "goto_if",
+       "args": [
+        1,
+        145670675
+       ],
+       "targets": [
+        "0x08AEC213"
+       ]
+      },
+      {
+       "at": "0x08AEC204",
+       "command": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08AEC209",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145670834
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC2B2",
+         "text": "火斑喵似乎对\n[玩家/变量]不是很感兴趣…"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC20F",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEC211",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEC1D3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEC213",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEC213",
+       "command": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08AEC218",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145670865
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC2D1",
+         "text": "火斑喵似乎对[玩家/变量]身上的\n大马拉萨达非常感兴趣！\n要将大马拉萨达分给它吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC21E",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AEC220",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEC225",
+       "command": "goto_if",
+       "args": [
+        1,
+        145670719
+       ],
+       "targets": [
+        "0x08AEC23F"
+       ]
+      },
+      {
+       "at": "0x08AEC22B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145670934
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC316",
+         "text": "火斑喵看上去很伤心……"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC231",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEC233",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEC1F4"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEC23F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEC23F",
+       "command": "removeitem",
+       "args": [
+        82,
+        1
+       ],
+       "item_name": "大马拉萨达"
+      },
+      {
+       "at": "0x08AEC244",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145670957
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC32D",
+         "text": "火斑喵开心地\n吃下大马拉萨达！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC24A",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AEC24C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145670989
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC34D",
+         "text": "火斑喵似乎\n想要给[玩家/变量]什么…"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC252",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AEC254",
+       "command": "giveegg",
+       "args": [
+        942
+       ],
+       "species_name": "火斑喵"
+      },
+      {
+       "at": "0x08AEC257",
+       "command": "preparemsg",
+       "args": [
+        145671016
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC368",
+         "text": "[玩家/变量]得了火斑喵的蛋！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC25C",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08AEC25D",
+       "command": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x08AEC260",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08AEC261",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145671041
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC381",
+         "text": "火斑喵开心地望向[玩家/变量]！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC267",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEC269",
+       "command": "setflag",
+       "args": [
+        5974
+       ]
+      },
+      {
+       "at": "0x08AEC26C",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEC213"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEC285",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEC285",
+       "command": "callasm",
+       "args": [
+        144089329
+       ]
+      },
+      {
+       "at": "0x08AEC28A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145671041
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC381",
+         "text": "火斑喵开心地望向[玩家/变量]！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC290",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AEC292",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEC1D3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEC396",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEC396",
+       "command": "checkitem",
+       "args": [
+        82,
+        1
+       ],
+       "item_name": "大马拉萨达"
+      },
+      {
+       "at": "0x08AEC39B",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AEC3A0",
+       "command": "goto_if",
+       "args": [
+        1,
+        144565578
+       ],
+       "targets": [
+        "0x089DE54A"
+       ]
+      },
+      {
+       "at": "0x08AEC3A6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145671246
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC44E",
+         "text": "什么，大马拉萨达？\n是爷爷让你带过来的吗？\n谢谢你啦，这是给你的礼物！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC3AC",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEC3AE",
+       "command": "goto",
+       "args": [
+        145671786
+       ],
+       "targets": [
+        "0x08AEC66A"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEA8AE"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AEC66A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AEC66A",
+       "command": "removeitem",
+       "args": [
+        82,
+        1
+       ],
+       "item_name": "大马拉萨达"
+      },
+      {
+       "at": "0x08AEC66F",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEC672",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        181
+       ],
+       "possible_names_not_semantics": {
+        "species": "电龙",
+        "item": "强制锻炼器",
+        "move": "细雪"
+       }
+      },
+      {
+       "at": "0x08AEC677",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AEC67C",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AEC67E",
+       "command": "pause",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEC681",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145671312
+       ],
+       "texts": [
+        {
+         "address": "0x08AEC490",
+         "text": "以后也要常来玩哦！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AEC687",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AEC689",
+       "command": "setflag",
+       "args": [
+        5975
+       ]
+      },
+      {
+       "at": "0x08AEC68C",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEC396"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F56A32",
+     "event_roots": [
+      {
+       "map_id": "50:40",
+       "place": "满金市",
+       "kind": "人物",
+       "local_id": 4,
+       "event_index": 3,
+       "x": 11,
+       "y": 3,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g50_n040.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F56A32",
+       "command": "applymovement",
+       "args": [
+        7,
+        150301286
+       ]
+      },
+      {
+       "at": "0x08F56A39",
+       "command": "waitmovement",
+       "args": [
+        7
+       ]
+      },
+      {
+       "at": "0x08F56A3C",
+       "command": "goto",
+       "args": [
+        145663447
+       ],
+       "targets": [
+        "0x08AEA5D7"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "50:40/local4"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F56AAB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F56AAB",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F56AB0",
+       "command": "goto_if",
+       "args": [
+        1,
+        145667642
+       ],
+       "targets": [
+        "0x08AEB63A"
+       ]
+      },
+      {
+       "at": "0x08F56AB6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145668621
+       ],
+       "texts": [
+        {
+         "address": "0x08AEBA0D",
+         "text": "唉……好吧。\n现在的年轻人都挺忙的。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F56ABC",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F56ABE",
+       "command": "applymovement",
+       "args": [
+        7,
+        150301425
+       ]
+      },
+      {
+       "at": "0x08F56AC5",
+       "command": "waitmovement",
+       "args": [
+        7
+       ]
+      },
+      {
+       "at": "0x08F56AC8",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F56AC9",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AEB5F6"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

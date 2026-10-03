@@ -1,0 +1,44 @@
+{
+ "title": "沉睡的潜能",
+ "quest_id": 36,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b1cc",
+    "title": "沉睡的潜能",
+    "title_address": "0x8e3b8ea",
+    "description": "帮助阿露福遗迹的超能力者\n收集所有形态的未知图腾，\n探究宝可梦沉睡的潜能。",
+    "description_address": "0x8e3b8a3",
+    "unknown_u16": 933,
+    "unknown_u16_hex": "0x03A5",
+    "accept_flag": 3184,
+    "accept_flag_hex": "0x0C70",
+    "complete_flag": 3185,
+    "complete_flag_hex": "0x0C71",
+    "map_group": 1,
+    "map_num": 47,
+    "tail_hex": "0d 00 00 00",
+    "index": 36,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3b8a3",
+    "legacy_match_count": 0,
+    "current_description": "帮助阿露福遗迹的超能力者\n收集所有形态的未知图腾，\n探究宝可梦沉睡的潜能。",
+    "catalog_map": {
+     "id": "1:47",
+     "name": "阿露福遗迹"
+    }
+   },
+   "direct_flag_scripts": [],
+   "event_roots": [],
+   "scripts": [],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

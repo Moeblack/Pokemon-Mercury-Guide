@@ -1,0 +1,180 @@
+{
+  "scope": "水银1.1指定ROM的玩家攻略",
+  "homepage": "index.html",
+  "counts": {
+    "quests": 97,
+    "items": 750,
+    "pokemon_internal_slots": 1554,
+    "trainers": 743
+  },
+  "quest_statuses": {
+    "compiled": 84,
+    "partial": 13
+  },
+  "quests_with_remaining_steps": [
+    {
+      "id": 4,
+      "title": "钢铁与黑曜",
+      "open_questions": [
+        "桐树林调查与完成场景",
+        "接取场景的地图入口",
+        "奖励",
+        "旗标 5446、5774、2971-2973 的语义"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "少女的烦恼",
+      "open_questions": [
+        "不变之石(item 195)的具体获取来源未定位。items获取页候选：10号公路21:0(脚本0x0816FC65)、寂静之丘1:106(脚本0x08EC516E)、若叶镇43:6(脚本0x08F5193C)；均为script_item_candidate，不保证运行时可获得"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "希鲁夫的遗产",
+      "open_questions": [
+        "接取分支0x8EE2836前置旗标2939在包内无置位来源",
+        "目录002中019记为accept2940/complete3048，020记为accept=complete=3048；两页引用同一结算脚本0x087B3299，奖励为与020共用的一次结算，真正完成分界未定位",
+        "多边兽零式+12000$+10BP随020完成后领取，不在019与020分别发放两次",
+        "黑暗洞穴内另有黑色眼镜事件（旗标2594）与本任务共用同一NPC"
+      ]
+    },
+    {
+      "id": 31,
+      "title": "七大不可思议",
+      "open_questions": [
+        "20890==1、==6两则传闻的对白文本未提取（分别传送56:1、56:7）",
+        "56:0-56:7各调查场景脚本不在本包",
+        "前置旗标4246的具体剧情条件未解释"
+      ]
+    },
+    {
+      "id": 36,
+      "title": "沉睡的潜能",
+      "open_questions": [
+        "委托人“超能力者”所在子地图、local_id 与坐标未定位（本包无 event_roots，分支脚本不证明地图入口）。",
+        "与 035 共用形态旗标 5866–5891 的交互先后未在证据中体现，本页只据旗标判定陈述，不推断先后。",
+        "26 种未知图腾各自的具体获得地点。"
+      ]
+    },
+    {
+      "id": 40,
+      "title": "穿玩偶装的人",
+      "open_questions": [
+        "桐树林(1:121)触发玩偶装现身/把人抱走的场景脚本、以及中间旗标6286/6288的来源不在本包内",
+        "旗标4246的剧情来源未解释"
+      ]
+    },
+    {
+      "id": 51,
+      "title": "聂梓的签名",
+      "open_questions": [
+        "酒吧（55:6）内聂梓出现与签名脚本 0x08AEEEA6 的触发条件（周日 / 活动计数变量 20884）未在本包定位。",
+        "脚本中 trainerbattle0 引用的 920、921 不在导出训练家表（id 0–742）内，无法给出姓名。",
+        "fan girl 描述中“酒吧”入口在满金市的确切位置需以满金市地图（3:77）实际场景核对。"
+      ]
+    },
+    {
+      "id": 52,
+      "title": "时髦的宝可梦？",
+      "open_questions": [
+        "多丽米亚的确切出现地点/时间未在本包内（无遭遇表），仅由弟弟对白提示“周一”“自然公园”“高草丛”。"
+      ]
+    },
+    {
+      "id": 53,
+      "title": "如梦似幻般的银",
+      "open_questions": [
+        "浅葱市灯塔附近水手的对白/脚本不在本包（仅知其设置旗标 3327，作为“已打听到线索”的标记）。",
+        "最终过场地图 52:30 的表头名为“真新镇”，与对白所述“漩涡岛”不符，疑为表头占位。",
+        "梦中宝可梦身份未在对白中点名（仅“海之神”“银白色巨大翅膀”“像龙又像鸟”），故未登记物种编号。"
+      ]
+    },
+    {
+      "id": 55,
+      "title": "孩子一生平安",
+      "open_questions": [
+        "桐树林祠堂供奉事件本体（地图 55:40 过场）不在本包，事件过程只能依复命对白概括。",
+        "复命对白提到的“狩猎凤蝶”与本任务供奉对象时拉比的关系未在脚本中说明。",
+        "本包混入了“皮丘的旅途”(任务002)的祠堂脚本，已按本任务旗标（5841/5842/5845/5846）区分，未采信其余对白。"
+      ]
+    },
+    {
+      "id": 63,
+      "title": "8bit的感动",
+      "open_questions": [
+        "quest_packets_expanded/063.json 两条记录均为 script 0 / root 0。",
+        "目录第 64 行与第 63 行标题、描述、描述地址相同；accept/complete 旗标分别为 5196(行63)/5197(行64)，用途未解释。",
+        "旁证：062 结算脚本 0x09CD8C18 开头出现「完成任务:<8bit的感动>」，完成提示与旗标与 062 分开。"
+      ]
+    },
+    {
+      "id": 78,
+      "title": "非现世的气息",
+      "open_questions": [
+        "气息出现的周日刷新判定（旗标 6296/6297 与地图脚本）未在本包定位；能否重复触发、是否只能讨伐一次未明。"
+      ]
+    },
+    {
+      "id": 84,
+      "title": "海之传说",
+      "open_questions": [
+        "破海洞穴入口所在地图ID未在包内定位；包内只给出海之彼岸地图56:41(x13,y6)的玛纳霏坐标事件0x08ED472B/0x08ED51EC。",
+        "'拥有大针的千针鱼'的具体形态未定（数据中有211与1239两条'千针鱼'）。"
+      ]
+    }
+  ],
+  "crosslink_targets": {
+    "items": 124,
+    "pokemon": 85,
+    "trainers": 14
+  },
+  "items_summary": {
+    "条目数": 750,
+    "有来源条目数": 491,
+    "空来源条目数": 259,
+    "来源记录数": 2826,
+    "输出文件数": 752,
+    "输出文件": {
+      "道具页": 750,
+      "index.md": 1,
+      "by_location.md": 1,
+      "data/items.json": 1,
+      "data/items_summary.json": 1
+    },
+    "输入文件": [
+      "wiki_export/core/data/items.json",
+      "wiki_export/world/data/acquisition_by_item.json",
+      "wiki_export/world/data/shops.json",
+      "wiki_export/world/data/hidden_items.json",
+      "wiki_export/world/data/maps.json"
+    ]
+  },
+  "pokemon_summary_file": "data/pokemon_summary.json",
+  "trainers_summary_file": "data/trainers_summary.json",
+  "quest_catalog_rows": 100,
+  "merged_rows": [
+    63,
+    64
+  ],
+  "excluded_main_story_rows": [
+    0,
+    1
+  ],
+  "source_policy": "ROM提取记录与脚本整理；补充分支不自动证明地图入口。未改动ROM或存档。",
+  "atlas": {
+    "map_count": 871,
+    "rgb_maps": 858,
+    "shared_base_images": 742,
+    "stitched_regions": 11,
+    "points": 8756,
+    "guide_pages_with_maps": 1535,
+    "unavailable_maps": 13,
+    "partial_maps": 121,
+    "mega_species": 28,
+    "viewer": "maps/index.html",
+    "mega_guide": "pokemon/wild_mega.html",
+    "plan": "data/atlas_plan.json",
+    "render_report": "data/atlas_render_report.json"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "batch": "Q56to61",
+  "quests": [56, 57, 58, 59, 60, 61],
+  "items": [
+    {"id": 56, "title": "奇怪的树", "status": "compiled", "file": "data/quests/056.json", "page": "quests/056.md"},
+    {"id": 57, "title": "遗失的玩偶", "status": "compiled", "file": "data/quests/057.json", "page": "quests/057.md"},
+    {"id": 58, "title": "传递信件", "status": "compiled", "file": "data/quests/058.json", "page": "quests/058.md"},
+    {"id": 59, "title": "五彩斑斓的头巾", "status": "compiled", "file": "data/quests/059.json", "page": "quests/059.md"},
+    {"id": 60, "title": "生病的呆呆兽", "status": "compiled", "file": "data/quests/060.json", "page": "quests/060.md"},
+    {"id": 61, "title": "头号球迷的朝圣", "status": "compiled", "file": "data/quests/061.json", "page": "quests/061.md"}
+  ],
+  "notes": [
+    "仅制作 056-061 六条，未改动 index 与其它批次。",
+    "056/057 的中间步骤（树的处理、垃圾桶脚本）不在对应 JSON 包内，已按 maps_research 事件/脚本补足定位（056：3:85 树对象与 0x08AAF5CD；057：3:76 垃圾桶 (57,11) 与 0x08F3404C）。",
+    "059 已用 player_guide/data/quest_packets_expanded/059.json 补写并覆盖原空页；脚本 kind=supplemental_branch_candidate、event_roots 为空，仅证明分支正文，未提供入口坐标，头巾获取仅凭对白线索。",
+    "所有物种/道具名均查 out/species.json 与 out/items.json。",
+    "未运行测试/验收/格式化。"
+  ]
+}

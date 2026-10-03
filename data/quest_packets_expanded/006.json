@@ -1,0 +1,3984 @@
+{
+ "title": "无法冻结的时间",
+ "quest_id": 6,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3af74",
+    "title": "无法冻结的时间",
+    "title_address": "0x8e3b824",
+    "description": "和柳伯一起去冰天地\n看看无法融化的冰壁。",
+    "description_address": "0x8e3b7fd",
+    "unknown_u16": 469,
+    "unknown_u16_hex": "0x01D5",
+    "accept_flag": 3305,
+    "accept_flag_hex": "0x0CE9",
+    "complete_flag": 3307,
+    "complete_flag_hex": "0x0CEB",
+    "map_group": 55,
+    "map_num": 13,
+    "tail_hex": "02 01 00 00",
+    "index": 6,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3b7fd",
+    "legacy_match_count": 0,
+    "current_description": "和柳伯一起去冰天地\n看看无法融化的冰壁。",
+    "catalog_map": {
+     "id": "55:13",
+     "name": "擂钵山"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x087B346E",
+    "0x09CD5B67",
+    "0x09CD5B72",
+    "0x09CD5C2B",
+    "0x09CD5CCF",
+    "0x09CD5E6C"
+   ],
+   "event_roots": [],
+   "scripts": [
+    {
+     "script": "0x087B346E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B346E",
+       "command": "setflag",
+       "args": [
+        3306
+       ]
+      },
+      {
+       "at": "0x087B3471",
+       "command": "checkflag",
+       "args": [
+        3305
+       ],
+       "task_flag_labels": [
+        {
+         "title": "无法冻结的时间",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x087B3474",
+       "command": "goto_if",
+       "args": [
+        1,
+        142292092
+       ],
+       "targets": [
+        "0x087B347C"
+       ]
+      },
+      {
+       "at": "0x087B347A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "map_script",
+       "where": "53:7/tag3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B347C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B347C",
+       "command": "checkflag",
+       "args": [
+        3308
+       ]
+      },
+      {
+       "at": "0x087B347F",
+       "command": "goto_if",
+       "args": [
+        1,
+        142292106
+       ],
+       "targets": [
+        "0x087B348A"
+       ]
+      },
+      {
+       "at": "0x087B3485",
+       "command": "clearflag",
+       "args": [
+        3306
+       ]
+      },
+      {
+       "at": "0x087B3488",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B346E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x087B348A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087B348A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x087B347C"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD5B67",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD5B67",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x09CD5B68",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x09CD5B69",
+       "command": "checkflag",
+       "args": [
+        3307
+       ],
+       "task_flag_labels": [
+        {
+         "title": "无法冻结的时间",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5B6C",
+       "command": "goto_if",
+       "args": [
+        1,
+        164453548
+       ],
+       "targets": [
+        "0x09CD5CAC"
+       ]
+      },
+      {
+       "at": "0x09CD5B72",
+       "command": "checkflag",
+       "args": [
+        3305
+       ],
+       "task_flag_labels": [
+        {
+         "title": "无法冻结的时间",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5B75",
+       "command": "goto_if",
+       "args": [
+        1,
+        164453513
+       ],
+       "targets": [
+        "0x09CD5C89"
+       ]
+      },
+      {
+       "at": "0x09CD5B7B",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5B80",
+       "command": "setvar",
+       "args": [
+        32774,
+        269
+       ],
+       "possible_names_not_semantics": {
+        "species": "麻麻鳗鱼王",
+        "item": "得文的物品",
+        "move": "挑衅"
+       }
+      },
+      {
+       "at": "0x09CD5B85",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5B8A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165298172
+       ],
+       "texts": [
+        {
+         "address": "0x09DA3FFC",
+         "text": "难道就没有办法了吗……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5B90",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5B92",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5B97",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5B9C",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5B9F",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD5BA2",
+       "command": "applymovement",
+       "args": [
+        32783,
+        164454680
+       ]
+      },
+      {
+       "at": "0x09CD5BA9",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD5BAC",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x09CD5BAD",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5BB2",
+       "command": "setvar",
+       "args": [
+        32774,
+        270
+       ],
+       "possible_names_not_semantics": {
+        "species": "雷丘",
+        "item": "Soot Sack",
+        "move": "帮助"
+       }
+      },
+      {
+       "at": "0x09CD5BB7",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5BBC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165298193
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4011",
+         "text": "……是你啊，[玩家/变量]。\n道馆战已经结束了。\n如果你是来寻求特训的，\n今天我没有那个心情。\n冬天之所以严酷，\n是因为它能让一切静止。\n流水会停下，生命会冬眠……\n我曾经以为只要足够冷，\n就连时间也可以冻结。\n只要冻结了时间，\n那些失去的东西……\n就不会离我而去。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5BC2",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5BC4",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5BC9",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5BCE",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5BD1",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD5BD4",
+       "command": "applymovement",
+       "args": [
+        32783,
+        164454682
+       ]
+      },
+      {
+       "at": "0x09CD5BDB",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD5BDE",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5BE3",
+       "command": "setvar",
+       "args": [
+        32774,
+        270
+       ],
+       "possible_names_not_semantics": {
+        "species": "雷丘",
+        "item": "Soot Sack",
+        "move": "帮助"
+       }
+      },
+      {
+       "at": "0x09CD5BE8",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5BED",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165298419
+       ],
+       "texts": [
+        {
+         "address": "0x09DA40F3",
+         "text": "在冰天地的最深处，有一面\n无论用什么高温都无法融化的冰壁。\n三十年来，\n我无数次前往那里，\n试图将其凿开……\n但每一次，碎裂的都只有\n我那颗早就被冻死的心。\n我以为，那是\n大自然在惩罚我的软弱，\n把我的一半灵魂\n永远封死在了里面。\n[玩家/变量]，你的眼神里\n燃烧着像火焰一样的热度。\n如果是你的话，\n那份不屈的意志，\n或许能帮我创造奇迹。\n我想请你和我\n一起去趟冰天地。\n去看看那个……\n被我遗弃在暴风雪里的家人。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5BF3",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5BF5",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5BFA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165298785
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4261",
+         "text": "你愿意陪我走这一趟吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5C00",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5C02",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD5C07",
+       "command": "goto_if",
+       "args": [
+        1,
+        164453419
+       ],
+       "targets": [
+        "0x09CD5C2B"
+       ]
+      },
+      {
+       "at": "0x09CD5C0D",
+       "command": "setvar",
+       "args": [
+        32774,
+        270
+       ],
+       "possible_names_not_semantics": {
+        "species": "雷丘",
+        "item": "Soot Sack",
+        "move": "帮助"
+       }
+      },
+      {
+       "at": "0x09CD5C12",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5C17",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165298976
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4320",
+         "text": "……是啊，暴风雪的严寒，\n并不是每个人都有义务去承受的。\n这是我自己造下的孽，\n三十年的沉淀，\n对你这个年纪的孩子\n来说确实太沉重了。\n不过，如果哪天你的内心里\n燃起了足以融化冰雪的觉悟……\n我会在这里等你。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5C1D",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5C1F",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5C24",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5C29",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD5C2A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_catalog_flag_anchor",
+       "where": "006"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD5B72",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD5B72",
+       "command": "checkflag",
+       "args": [
+        3305
+       ],
+       "task_flag_labels": [
+        {
+         "title": "无法冻结的时间",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5B75",
+       "command": "goto_if",
+       "args": [
+        1,
+        164453513
+       ],
+       "targets": [
+        "0x09CD5C89"
+       ]
+      },
+      {
+       "at": "0x09CD5B7B",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5B80",
+       "command": "setvar",
+       "args": [
+        32774,
+        269
+       ],
+       "possible_names_not_semantics": {
+        "species": "麻麻鳗鱼王",
+        "item": "得文的物品",
+        "move": "挑衅"
+       }
+      },
+      {
+       "at": "0x09CD5B85",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5B8A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165298172
+       ],
+       "texts": [
+        {
+         "address": "0x09DA3FFC",
+         "text": "难道就没有办法了吗……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5B90",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5B92",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5B97",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5B9C",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5B9F",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD5BA2",
+       "command": "applymovement",
+       "args": [
+        32783,
+        164454680
+       ]
+      },
+      {
+       "at": "0x09CD5BA9",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD5BAC",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x09CD5BAD",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5BB2",
+       "command": "setvar",
+       "args": [
+        32774,
+        270
+       ],
+       "possible_names_not_semantics": {
+        "species": "雷丘",
+        "item": "Soot Sack",
+        "move": "帮助"
+       }
+      },
+      {
+       "at": "0x09CD5BB7",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5BBC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165298193
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4011",
+         "text": "……是你啊，[玩家/变量]。\n道馆战已经结束了。\n如果你是来寻求特训的，\n今天我没有那个心情。\n冬天之所以严酷，\n是因为它能让一切静止。\n流水会停下，生命会冬眠……\n我曾经以为只要足够冷，\n就连时间也可以冻结。\n只要冻结了时间，\n那些失去的东西……\n就不会离我而去。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5BC2",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5BC4",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5BC9",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5BCE",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5BD1",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD5BD4",
+       "command": "applymovement",
+       "args": [
+        32783,
+        164454682
+       ]
+      },
+      {
+       "at": "0x09CD5BDB",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD5BDE",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5BE3",
+       "command": "setvar",
+       "args": [
+        32774,
+        270
+       ],
+       "possible_names_not_semantics": {
+        "species": "雷丘",
+        "item": "Soot Sack",
+        "move": "帮助"
+       }
+      },
+      {
+       "at": "0x09CD5BE8",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5BED",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165298419
+       ],
+       "texts": [
+        {
+         "address": "0x09DA40F3",
+         "text": "在冰天地的最深处，有一面\n无论用什么高温都无法融化的冰壁。\n三十年来，\n我无数次前往那里，\n试图将其凿开……\n但每一次，碎裂的都只有\n我那颗早就被冻死的心。\n我以为，那是\n大自然在惩罚我的软弱，\n把我的一半灵魂\n永远封死在了里面。\n[玩家/变量]，你的眼神里\n燃烧着像火焰一样的热度。\n如果是你的话，\n那份不屈的意志，\n或许能帮我创造奇迹。\n我想请你和我\n一起去趟冰天地。\n去看看那个……\n被我遗弃在暴风雪里的家人。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5BF3",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5BF5",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5BFA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165298785
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4261",
+         "text": "你愿意陪我走这一趟吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5C00",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5C02",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD5C07",
+       "command": "goto_if",
+       "args": [
+        1,
+        164453419
+       ],
+       "targets": [
+        "0x09CD5C2B"
+       ]
+      },
+      {
+       "at": "0x09CD5C0D",
+       "command": "setvar",
+       "args": [
+        32774,
+        270
+       ],
+       "possible_names_not_semantics": {
+        "species": "雷丘",
+        "item": "Soot Sack",
+        "move": "帮助"
+       }
+      },
+      {
+       "at": "0x09CD5C12",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5C17",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165298976
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4320",
+         "text": "……是啊，暴风雪的严寒，\n并不是每个人都有义务去承受的。\n这是我自己造下的孽，\n三十年的沉淀，\n对你这个年纪的孩子\n来说确实太沉重了。\n不过，如果哪天你的内心里\n燃起了足以融化冰雪的觉悟……\n我会在这里等你。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5C1D",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5C1F",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5C24",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5C29",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD5C2A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD5C2B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD5C2B",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5C30",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD5C31",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5C34",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CD5C37",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165298807
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4277",
+         "text": "接受任务:<无法冻结的时间>"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5C3D",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD5C42",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD5C47",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x09CD5C4C",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x09CD5C51",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x09CD5C56",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x09CD5C57",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5C5C",
+       "command": "setvar",
+       "args": [
+        32774,
+        123
+       ],
+       "possible_names_not_semantics": {
+        "species": "飞天螳螂",
+        "item": "闪亮邮件",
+        "move": "浊雾"
+       }
+      },
+      {
+       "at": "0x09CD5C61",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5C66",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165298838
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4296",
+         "text": "……谢谢你，[玩家/变量]。\n我已经记不清，有多久\n没从别人身上感受到\n这种直达心底的温度了。\n或许，这就是春天\n即将来临的预兆吧。\n事不宜迟，\n我先出发去冰天地了！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5C6C",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5C6E",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5C73",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5C78",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD5C7A",
+       "command": "removeobject",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x09CD5C7D",
+       "command": "setflag",
+       "args": [
+        3305
+       ],
+       "task_flag_labels": [
+        {
+         "title": "无法冻结的时间",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5C80",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD5C82",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CD5C87",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD5C88",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD5B67"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD5C89",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD5C89",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5C8E",
+       "command": "setvar",
+       "args": [
+        32774,
+        123
+       ],
+       "possible_names_not_semantics": {
+        "species": "飞天螳螂",
+        "item": "闪亮邮件",
+        "move": "浊雾"
+       }
+      },
+      {
+       "at": "0x09CD5C93",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5C98",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165299165
+       ],
+       "texts": [
+        {
+         "address": "0x09DA43DD",
+         "text": "我会先去冰天地。\n那面冰壁……\n还有被我留在那里的过去，\n都已经等得太久了。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5C9E",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5CA0",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5CA5",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5CAA",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD5CAB",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD5B67"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD5CAC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD5CAC",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5CB1",
+       "command": "setvar",
+       "args": [
+        32774,
+        123
+       ],
+       "possible_names_not_semantics": {
+        "species": "飞天螳螂",
+        "item": "闪亮邮件",
+        "move": "浊雾"
+       }
+      },
+      {
+       "at": "0x09CD5CB6",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5CBB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165299234
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4422",
+         "text": "时间不会被冻结。\n正因为如此，\n我们才更该珍惜\n还能并肩走下去的今天。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5CC1",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5CC3",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5CC8",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5CCD",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD5CCE",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD5B67"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD5CCF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD5CCF",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x09CD5CD0",
+       "command": "callasm",
+       "args": [
+        164801765
+       ]
+      },
+      {
+       "at": "0x09CD5CD5",
+       "command": "fadesong",
+       "args": [
+        546
+       ]
+      },
+      {
+       "at": "0x09CD5CD8",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5CDD",
+       "command": "setvar",
+       "args": [
+        32774,
+        269
+       ],
+       "possible_names_not_semantics": {
+        "species": "麻麻鳗鱼王",
+        "item": "得文的物品",
+        "move": "挑衅"
+       }
+      },
+      {
+       "at": "0x09CD5CE2",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5CE7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165299299
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4463",
+         "text": "你来了啊……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5CED",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5CEF",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5CF4",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5CF9",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5CFC",
+       "command": "spriteface",
+       "args": [
+        3,
+        1
+       ]
+      },
+      {
+       "at": "0x09CD5D00",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD5D03",
+       "command": "applymovement",
+       "args": [
+        32783,
+        164454682
+       ]
+      },
+      {
+       "at": "0x09CD5D0A",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD5D0D",
+       "command": "spriteface",
+       "args": [
+        255,
+        2
+       ]
+      },
+      {
+       "at": "0x09CD5D11",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5D16",
+       "command": "setvar",
+       "args": [
+        32774,
+        270
+       ],
+       "possible_names_not_semantics": {
+        "species": "雷丘",
+        "item": "Soot Sack",
+        "move": "帮助"
+       }
+      },
+      {
+       "at": "0x09CD5D1B",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5D20",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165299310
+       ],
+       "texts": [
+        {
+         "address": "0x09DA446E",
+         "text": "就是这里……\n三十年前的那个冬天……\n我带着我的\n两只拉普拉斯来到了这里，\n为了追求所谓的冰之极意……\n我以为凭借自己的实力，\n足以征服这地底的严寒……\n然而，地面上连日的特大暴风雪\n引发了山体剧烈的震动……\n冰天地发生了极大的大塌方。\n成百上千吨的巨大碎冰和岩石，\n裹挟着极寒的地下气流，\n就像白色的海啸一样\n在狭窄的洞窟中倾泻而下！\n我差点被\n落下的冰岩砸断了腿，\n只能绝望地看着\n那足以粉碎一切的冰瀑扑面而来。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5D26",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5D28",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5D2D",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5D32",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5D35",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD5D38",
+       "command": "spriteface",
+       "args": [
+        3,
+        2
+       ]
+      },
+      {
+       "at": "0x09CD5D3C",
+       "command": "applymovement",
+       "args": [
+        3,
+        164454682
+       ]
+      },
+      {
+       "at": "0x09CD5D43",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD5D46",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5D4B",
+       "command": "setvar",
+       "args": [
+        32774,
+        271
+       ],
+       "possible_names_not_semantics": {
+        "species": "皮可西",
+        "item": "长老的信",
+        "move": "戏法"
+       }
+      },
+      {
+       "at": "0x09CD5D50",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5D55",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165299691
+       ],
+       "texts": [
+        {
+         "address": "0x09DA45EB",
+         "text": "就在那个瞬间……\n我的那两只拉普拉斯，\n平时性情最温和的它们，\n却爆发出了一股\n连我都觉得骇人的力量。\n它们用尽最后的力气，\n咬住我的衣服，\n将我狠狠甩进了\n一处安全的岩洞缝隙里！\n当我从昏迷中爬起来的时候……\n洞穴里的震动已经停止了。\n但它们……\n却为了保护我，\n用自己庞大的身躯挡住了\n呼啸而下的碎冰与落石，\n被这万年不化的坚冰\n彻底封死在通道里。\n我爬到这里，\n隔着这层冰……\n眼睁睁地看着\n它们的体温一点点消失。\n我甚至能看到……\n它们直到生命的最后一刻，\n都还把身体紧紧地蜷缩在一起，\n身下似乎死死地护着什么……\n从那天起，\n我就亲手掐死了心中的热情。\n我不允许\n自己再去信任牵绊，\n因为牵绊带来的温度，\n在这幽暗残酷的冰穴里……\n只会让人在失去的瞬间，感受到\n那种连灵魂都被撕裂的痛楚！\n……可是今天，\n我要把它们带回……！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5D5B",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5D5D",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5D62",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5D67",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5D6A",
+       "command": "call",
+       "args": [
+        164454656
+       ],
+       "targets": [
+        "0x09CD6100"
+       ]
+      },
+      {
+       "at": "0x09CD5D6F",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD5D72",
+       "command": "applymovement",
+       "args": [
+        255,
+        164454680
+       ]
+      },
+      {
+       "at": "0x09CD5D79",
+       "command": "applymovement",
+       "args": [
+        3,
+        164454680
+       ]
+      },
+      {
+       "at": "0x09CD5D80",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD5D83",
+       "command": "playsong",
+       "args": [
+        425,
+        51
+       ]
+      },
+      {
+       "at": "0x09CD5D87",
+       "command": "applymovement",
+       "args": [
+        255,
+        164454684
+       ]
+      },
+      {
+       "at": "0x09CD5D8E",
+       "command": "applymovement",
+       "args": [
+        3,
+        164454684
+       ]
+      },
+      {
+       "at": "0x09CD5D95",
+       "command": "waitmovement",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD5D98",
+       "command": "sound",
+       "args": [
+        9
+       ]
+      },
+      {
+       "at": "0x09CD5D9B",
+       "command": "movesprite",
+       "args": [
+        4,
+        19,
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5DA2",
+       "command": "addobject",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x09CD5DA5",
+       "command": "spriteface",
+       "args": [
+        4,
+        1
+       ]
+      },
+      {
+       "at": "0x09CD5DA9",
+       "command": "spriteface",
+       "args": [
+        255,
+        2
+       ]
+      },
+      {
+       "at": "0x09CD5DAD",
+       "command": "spriteface",
+       "args": [
+        3,
+        2
+       ]
+      },
+      {
+       "at": "0x09CD5DB1",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x09CD5DB4",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5DB9",
+       "command": "setvar",
+       "args": [
+        32774,
+        269
+       ],
+       "possible_names_not_semantics": {
+        "species": "麻麻鳗鱼王",
+        "item": "得文的物品",
+        "move": "挑衅"
+       }
+      },
+      {
+       "at": "0x09CD5DBE",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5DC3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165300354
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4882",
+         "text": "这是……信使鸟？！\n不对！\n这冰冷得\n毫无生命迹象的金属身躯……\n我们一起迎击它吧，[玩家/变量]！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5DC9",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5DCB",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5DD0",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5DD5",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5DD8",
+       "command": "setvar",
+       "args": [
+        20497,
+        395
+       ],
+       "possible_names_not_semantics": {
+        "species": "宝贝龙",
+        "item": "TM70",
+        "move": "羽栖"
+       }
+      },
+      {
+       "at": "0x09CD5DDD",
+       "command": "setvar",
+       "args": [
+        20498,
+        23
+       ],
+       "possible_names_not_semantics": {
+        "species": "阿柏蛇",
+        "item": "万灵药",
+        "move": "踩踏"
+       }
+      },
+      {
+       "at": "0x09CD5DE2",
+       "command": "setflag",
+       "args": [
+        2316
+       ]
+      },
+      {
+       "at": "0x09CD5DE5",
+       "command": "setflag",
+       "args": [
+        2312
+       ]
+      },
+      {
+       "at": "0x09CD5DE8",
+       "command": "setflag",
+       "args": [
+        5480
+       ]
+      },
+      {
+       "at": "0x09CD5DEB",
+       "command": "setwildbattle",
+       "args": [
+        1502,
+        40,
+        0
+       ],
+       "species_name": "铁包袱"
+      },
+      {
+       "at": "0x09CD5DF1",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD5DF4",
+       "command": "special",
+       "args": [
+        280
+       ]
+      },
+      {
+       "at": "0x09CD5DF7",
+       "command": "pause",
+       "args": [
+        195
+       ]
+      },
+      {
+       "at": "0x09CD5DFA",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD5DFC",
+       "command": "movesprite",
+       "args": [
+        4,
+        28,
+        1
+       ]
+      },
+      {
+       "at": "0x09CD5E03",
+       "command": "removeobject",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x09CD5E06",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x09CD5E09",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD5E0B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165300430
+       ],
+       "texts": [
+        {
+         "address": "0x09DA48CE",
+         "text": "铁包袱消失了……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5E11",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD5E13",
+       "command": "call",
+       "args": [
+        164454656
+       ],
+       "targets": [
+        "0x09CD6100"
+       ]
+      },
+      {
+       "at": "0x09CD5E18",
+       "command": "sound",
+       "args": [
+        35
+       ]
+      },
+      {
+       "at": "0x09CD5E1B",
+       "command": "setflag",
+       "args": [
+        3308
+       ]
+      },
+      {
+       "at": "0x09CD5E1E",
+       "command": "setmaptile",
+       "args": [
+        19,
+        2,
+        838,
+        1
+       ]
+      },
+      {
+       "at": "0x09CD5E27",
+       "command": "special",
+       "args": [
+        142
+       ]
+      },
+      {
+       "at": "0x09CD5E2A",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5E2D",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD5E30",
+       "command": "applymovement",
+       "args": [
+        3,
+        164454680
+       ]
+      },
+      {
+       "at": "0x09CD5E37",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD5E3A",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5E3F",
+       "command": "setvar",
+       "args": [
+        32774,
+        269
+       ],
+       "possible_names_not_semantics": {
+        "species": "麻麻鳗鱼王",
+        "item": "得文的物品",
+        "move": "挑衅"
+       }
+      },
+      {
+       "at": "0x09CD5E44",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5E49",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165300445
+       ],
+       "texts": [
+        {
+         "address": "0x09DA48DD",
+         "text": "冰壁……碎了……！？\n[玩家/变量]……\n我先进去了！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5E4F",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5E51",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5E56",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5E5B",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD5E5D",
+       "command": "removeobject",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5E60",
+       "command": "setflag",
+       "args": [
+        3306
+       ]
+      },
+      {
+       "at": "0x09CD5E63",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD5E65",
+       "command": "callasm",
+       "args": [
+        164820837
+       ]
+      },
+      {
+       "at": "0x09CD5E6A",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD5E6B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_catalog_flag_anchor",
+       "where": "006"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD5E6C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD5E6C",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x09CD5E6D",
+       "command": "callasm",
+       "args": [
+        164801765
+       ]
+      },
+      {
+       "at": "0x09CD5E72",
+       "command": "applymovement",
+       "args": [
+        255,
+        164454688
+       ]
+      },
+      {
+       "at": "0x09CD5E79",
+       "command": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x09CD5E7C",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x09CD5E7F",
+       "command": "applymovement",
+       "args": [
+        127,
+        164454692
+       ]
+      },
+      {
+       "at": "0x09CD5E86",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x09CD5E89",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x09CD5E8C",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD5E8F",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD5E91",
+       "command": "call",
+       "args": [
+        164454632
+       ],
+       "targets": [
+        "0x09CD60E8"
+       ]
+      },
+      {
+       "at": "0x09CD5E96",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5E99",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165300477
+       ],
+       "texts": [
+        {
+         "address": "0x09DA48FD",
+         "text": "冰雾散去……\n两只拉普拉斯的身体\n依然保持着当年的模样，\n但已经没有了生命气息。\n然而，在它们\n巨大身躯围成的避风港里……\n有一个散发着微弱蓝光的东西。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5E9F",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD5EA1",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5EA4",
+       "command": "call",
+       "args": [
+        164454644
+       ],
+       "targets": [
+        "0x09CD60F4"
+       ]
+      },
+      {
+       "at": "0x09CD5EA9",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD5EAB",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5EAE",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD5EB1",
+       "command": "applymovement",
+       "args": [
+        1,
+        164454680
+       ]
+      },
+      {
+       "at": "0x09CD5EB8",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD5EBB",
+       "command": "applymovement",
+       "args": [
+        1,
+        164454695
+       ]
+      },
+      {
+       "at": "0x09CD5EC2",
+       "command": "waitmovement",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD5EC5",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5ECA",
+       "command": "setvar",
+       "args": [
+        32774,
+        269
+       ],
+       "possible_names_not_semantics": {
+        "species": "麻麻鳗鱼王",
+        "item": "得文的物品",
+        "move": "挑衅"
+       }
+      },
+      {
+       "at": "0x09CD5ECF",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5ED4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165300616
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4988",
+         "text": "这是……一个蛋？\n怎么可能……\n在这种绝对零度的环境下……\n三十年了……\n这颗蛋……\n竟然还有微弱的温度？！\n难道说……\n在这暗无天日的冰壁下，\n它们即使失去了生命，\n也一直用彼此的躯体，\n死死护住这最后一丝余温吗……\n它们……\n在用生命抗拒着被冻结的命运……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5EDA",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5EDC",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5EE1",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5EE6",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD5EE9",
+       "command": "applymovement",
+       "args": [
+        1,
+        164454682
+       ]
+      },
+      {
+       "at": "0x09CD5EF0",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD5EF3",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x09CD5EF6",
+       "command": "applymovement",
+       "args": [
+        1,
+        164454697
+       ]
+      },
+      {
+       "at": "0x09CD5EFD",
+       "command": "applymovement",
+       "args": [
+        127,
+        164454699
+       ]
+      },
+      {
+       "at": "0x09CD5F04",
+       "command": "waitmovement",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD5F07",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x09CD5F0A",
+       "command": "fadesong",
+       "args": [
+        484
+       ]
+      },
+      {
+       "at": "0x09CD5F0D",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5F12",
+       "command": "setvar",
+       "args": [
+        32774,
+        271
+       ],
+       "possible_names_not_semantics": {
+        "species": "皮可西",
+        "item": "长老的信",
+        "move": "戏法"
+       }
+      },
+      {
+       "at": "0x09CD5F17",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5F1C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165300841
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4A69",
+         "text": "这么多年来，\n我一直试图冻结时间。\n我以为只要时间不流动，\n我就不用面对\n失去它们的痛苦。\n但是……\n看着这颗蛋，我明白了。\n它们用生命保护这颗蛋，\n不是为了让它被冻住。\n而是为了让它……孵化。\n它们相信的不是\n静止的冬天，\n而是流动的未来啊。\n是我……\n是我这个顽固的家伙，\n把春天挡在了门外三十年。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5F22",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5F24",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5F29",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5F2E",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD5F30",
+       "command": "call",
+       "args": [
+        164454632
+       ],
+       "targets": [
+        "0x09CD60E8"
+       ]
+      },
+      {
+       "at": "0x09CD5F35",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5F38",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165301110
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4B76",
+         "text": "在柳伯体温的感召下，\n加上刚才激烈战斗余温的激发，\n蛋壳发出了清脆的碎裂声。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5F3E",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD5F40",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD5F43",
+       "command": "call",
+       "args": [
+        164454644
+       ],
+       "targets": [
+        "0x09CD60F4"
+       ]
+      },
+      {
+       "at": "0x09CD5F48",
+       "command": "movesprite",
+       "args": [
+        2,
+        8,
+        7
+       ]
+      },
+      {
+       "at": "0x09CD5F4F",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD5F51",
+       "command": "cry",
+       "args": [
+        131,
+        255
+       ]
+      },
+      {
+       "at": "0x09CD5F56",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165301182
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4BBE",
+         "text": "小拉普拉斯：呜……？"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5F5C",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD5F5E",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5F63",
+       "command": "setvar",
+       "args": [
+        32774,
+        272
+       ],
+       "possible_names_not_semantics": {
+        "species": "盔甲鸟",
+        "item": "同步器",
+        "move": "扮演"
+       }
+      },
+      {
+       "at": "0x09CD5F68",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5F6D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165301199
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4BCF",
+         "text": "……！\n啊……\n啊啊……\n好久不见……\n欢迎回来。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5F73",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5F75",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5F7A",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5F7F",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD5F81",
+       "command": "movesprite",
+       "args": [
+        2,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x09CD5F88",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x09CD5F8B",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD5F8D",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5F92",
+       "command": "setvar",
+       "args": [
+        32774,
+        270
+       ],
+       "possible_names_not_semantics": {
+        "species": "雷丘",
+        "item": "Soot Sack",
+        "move": "帮助"
+       }
+      },
+      {
+       "at": "0x09CD5F97",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5F9C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165301236
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4BF4",
+         "text": "[玩家/变量]……让你见笑了。\n三十年的积雪一旦融化，\n原来会化作如此汹涌的感情啊。\n既然春天已经到来，\n我这把老骨头，\n也不能再继续沉睡下去了！\n宝可梦训练家之间，\n是不需要多余言语的！\n为了感谢你击碎了\n我心中的坚冰……\n也为了庆祝这孩子\n崭新的生命！\n[玩家/变量]！\n用你的全部实力，\n来接下我这不再迷惘的\n极寒吧！！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5FA2",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5FA4",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5FA9",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5FAE",
+       "command": "setvar",
+       "args": [
+        20538,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x09CD5FB3",
+       "command": "setvar",
+       "args": [
+        20539,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CD5FB8",
+       "command": "setflag",
+       "args": [
+        2340
+       ]
+      },
+      {
+       "at": "0x09CD5FBB",
+       "command": "savebgm",
+       "args": [
+        486
+       ]
+      },
+      {
+       "at": "0x09CD5FBE",
+       "command": "trainerbattle0",
+       "args": [
+        3,
+        395,
+        1536,
+        165301507
+       ]
+      },
+      {
+       "at": "0x09CD5FC8",
+       "command": "clearflag",
+       "args": [
+        2340
+       ]
+      },
+      {
+       "at": "0x09CD5FCB",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5FD0",
+       "command": "setvar",
+       "args": [
+        32774,
+        269
+       ],
+       "possible_names_not_semantics": {
+        "species": "麻麻鳗鱼王",
+        "item": "得文的物品",
+        "move": "挑衅"
+       }
+      },
+      {
+       "at": "0x09CD5FD5",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD5FDA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165301527
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4D17",
+         "text": "如同破冰的春水一般，\n你的决心不仅温暖，\n而且势不可挡，[玩家/变量]。\n谢谢你陪我走这一趟，\n更谢谢你刚才那场\n倾尽全力的对战。\n那只像机械一般的信使鸟，\n就像是我过去的心结，\n凝结了三十年执念的\n坚冰一样……\n但是，在现在与未来的\n碰撞下，\n终于彻底崩塌、粉碎……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD5FE0",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD5FE2",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD5FE7",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD5FEC",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD5FEF",
+       "command": "applymovement",
+       "args": [
+        1,
+        164454682
+       ]
+      },
+      {
+       "at": "0x09CD5FF6",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD5FF9",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD5FFE",
+       "command": "setvar",
+       "args": [
+        32774,
+        270
+       ],
+       "possible_names_not_semantics": {
+        "species": "雷丘",
+        "item": "Soot Sack",
+        "move": "帮助"
+       }
+      },
+      {
+       "at": "0x09CD6003",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD6008",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165301757
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4DFD",
+         "text": "这只拉普拉斯……\n被暴风雪冻结了整整三十年，\n才终于等来了它的破壳。\n坦白说，\n在看到它的一瞬间，\n我曾想过把它托付给你。\n因为我觉得自己已经是\n风烛残年，\n不配再陪伴它走过\n崭新的未来……\n但在刚才与你的对战中，\n老夫改变主意了。\n既然是我这个顽固的老头子，\n把它的春天挡在门外三十年……\n那我就有责任，\n用我余下的全部生命，\n去填补这孩子缺失的时光！\n我要亲自抚养它长大，\n带着它去看遍城都的\n春夏秋冬。\n哪怕再次面对严冬，\n只要有这孩子在身边，\n我也不会觉得寒冷了。\n再次感谢你，[玩家/变量]！\n这个送给你……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD600E",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD6010",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD6015",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD601A",
+       "command": "setflag",
+       "args": [
+        3133
+       ]
+      },
+      {
+       "at": "0x09CD601D",
+       "command": "preparemsg",
+       "args": [
+        165302213
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4FC5",
+         "text": "柳伯将雪妖女超级进化的\n波动储存在了[玩家/变量]的超级石中。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD6022",
+       "command": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x09CD6025",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x09CD6026",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x09CD6027",
+       "command": "closeonkeypress",
+       "args": []
+      },
+      {
+       "at": "0x09CD6028",
+       "command": "pause",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD602B",
+       "command": "call",
+       "args": [
+        164454592
+       ],
+       "targets": [
+        "0x09CD60C0"
+       ]
+      },
+      {
+       "at": "0x09CD6030",
+       "command": "setvar",
+       "args": [
+        32774,
+        273
+       ],
+       "possible_names_not_semantics": {
+        "species": "姆克鹰",
+        "item": "宝可方块盒",
+        "move": "祈愿"
+       }
+      },
+      {
+       "at": "0x09CD6035",
+       "command": "call",
+       "args": [
+        164454609
+       ],
+       "targets": [
+        "0x09CD60D1"
+       ]
+      },
+      {
+       "at": "0x09CD603A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165302268
+       ],
+       "texts": [
+        {
+         "address": "0x09DA4FFC",
+         "text": "带着这个继续你的旅途吧……\n千万别像我曾经那样，\n妄图用寒冰去强行\n留住什么。\n不管是时间，还是人，\n都是无法被冻结的。\n正因为时间会流逝，\n正因为生命会消逝……\n我们在有限时间里留下的足迹，\n才显得如此珍贵。\n好了，后会有期！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD6040",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD6042",
+       "command": "call",
+       "args": [
+        164454620
+       ],
+       "targets": [
+        "0x09CD60DC"
+       ]
+      },
+      {
+       "at": "0x09CD6047",
+       "command": "call",
+       "args": [
+        164454626
+       ],
+       "targets": [
+        "0x09CD60E2"
+       ]
+      },
+      {
+       "at": "0x09CD604C",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD604E",
+       "command": "removeobject",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD6051",
+       "command": "setflag",
+       "args": [
+        3307
+       ],
+       "task_flag_labels": [
+        {
+         "title": "无法冻结的时间",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD6054",
+       "command": "call",
+       "args": [
+        164454632
+       ],
+       "targets": [
+        "0x09CD60E8"
+       ]
+      },
+      {
+       "at": "0x09CD6059",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD605C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165302473
+       ],
+       "texts": [
+        {
+         "address": "0x09DA50C9",
+         "text": "见证了冬之柳伯\n冰封之心的融化……\n时间无法被冻结，\n但爱可以穿越三十年的暴风雪，\n将生命延续下去……"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD6062",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD6064",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD6067",
+       "command": "call",
+       "args": [
+        164454644
+       ],
+       "targets": [
+        "0x09CD60F4"
+       ]
+      },
+      {
+       "at": "0x09CD606C",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD606E",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD6071",
+       "command": "fadesong",
+       "args": [
+        545
+       ]
+      },
+      {
+       "at": "0x09CD6074",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CD6077",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165302566
+       ],
+       "texts": [
+        {
+         "address": "0x09DA5126",
+         "text": "完成任务:<无法冻结的时间>"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD607D",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD6082",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD6087",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x09CD608C",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x09CD6091",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x09CD6096",
+       "command": "addvar",
+       "args": [
+        20789,
+        10
+       ]
+      },
+      {
+       "at": "0x09CD609B",
+       "command": "addmoney",
+       "args": [
+        12000,
+        0
+       ]
+      },
+      {
+       "at": "0x09CD60A1",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD60A4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165302597
+       ],
+       "texts": [
+        {
+         "address": "0x09DA5145",
+         "text": "获得了10点BracerPoints和12000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD60AA",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD60AC",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CD60B1",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD60B4",
+       "command": "setvar",
+       "args": [
+        20948,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD60B9",
+       "command": "callasm",
+       "args": [
+        164820837
+       ]
+      },
+      {
+       "at": "0x09CD60BE",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD60BF",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_catalog_flag_anchor",
+       "where": "006"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD60C0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD60C0",
+       "command": "call",
+       "args": [
+        144452428
+       ],
+       "targets": [
+        "0x089C2B4C"
+       ]
+      },
+      {
+       "at": "0x09CD60C5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165298165
+       ]
+      },
+      {
+       "at": "0x09CD60CB",
+       "command": "call",
+       "args": [
+        144452458
+       ],
+       "targets": [
+        "0x089C2B6A"
+       ]
+      },
+      {
+       "at": "0x09CD60D0",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD5B67"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD60D1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD60D1",
+       "command": "call",
+       "args": [
+        144452485
+       ],
+       "targets": [
+        "0x089C2B85"
+       ]
+      },
+      {
+       "at": "0x09CD60D6",
+       "command": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x09CD60DB",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD5B67"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD60DC",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD60DC",
+       "command": "call",
+       "args": [
+        144452505
+       ],
+       "targets": [
+        "0x089C2B99"
+       ]
+      },
+      {
+       "at": "0x09CD60E1",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD5B67"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD60E2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD60E2",
+       "command": "call",
+       "args": [
+        144452520
+       ],
+       "targets": [
+        "0x089C2BA8"
+       ]
+      },
+      {
+       "at": "0x09CD60E7",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD5B67"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD60E8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD60E8",
+       "command": "callasm",
+       "args": [
+        143327233
+       ]
+      },
+      {
+       "at": "0x09CD60ED",
+       "command": "writebytetoaddr",
+       "args": [
+        64,
+        67108882
+       ]
+      },
+      {
+       "at": "0x09CD60F3",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD5E6C"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD60F4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD60F4",
+       "command": "writebytetoaddr",
+       "args": [
+        0,
+        67108882
+       ]
+      },
+      {
+       "at": "0x09CD60FA",
+       "command": "callasm",
+       "args": [
+        143327545
+       ]
+      },
+      {
+       "at": "0x09CD60FF",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD5E6C"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD6100",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD6100",
+       "command": "setvar",
+       "args": [
+        32772,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x09CD6105",
+       "command": "setvar",
+       "args": [
+        32773,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x09CD610A",
+       "command": "setvar",
+       "args": [
+        32774,
+        32
+       ],
+       "possible_names_not_semantics": {
+        "species": "尼多郎♂",
+        "item": "万能粉",
+        "move": "角钻"
+       }
+      },
+      {
+       "at": "0x09CD610F",
+       "command": "setvar",
+       "args": [
+        32775,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD6114",
+       "command": "special",
+       "args": [
+        310
+       ]
+      },
+      {
+       "at": "0x09CD6117",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD5CCF"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [
+    "0x089C2B4C",
+    "0x089C2B6A",
+    "0x089C2B85",
+    "0x089C2B99",
+    "0x089C2BA8"
+   ],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

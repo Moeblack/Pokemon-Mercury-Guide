@@ -1,0 +1,18 @@
+{
+  "batch": "Q44to49",
+  "quests": [44, 45, 46, 47, 48, 49],
+  "items": [
+    {"id": 44, "title": "闪耀的电波", "status": "compiled", "file": "data/quests/044.json", "page": "quests/044.md"},
+    {"id": 45, "title": "闪耀的暗影", "status": "compiled", "file": "data/quests/045.json", "page": "quests/045.md"},
+    {"id": 46, "title": "成为一般系大师", "status": "compiled", "file": "data/quests/046.json", "page": "quests/046.md"},
+    {"id": 47, "title": "诡异的绿光", "status": "compiled", "file": "data/quests/047.json", "page": "quests/047.md"},
+    {"id": 48, "title": "家乡的味道", "status": "compiled", "file": "data/quests/048.json", "page": "quests/048.md"},
+    {"id": 49, "title": "如期未至的朋友", "status": "compiled", "file": "data/quests/049.json", "page": "quests/049.md"}
+  ],
+  "notes": [
+    "仅制作 044-049 六条，未改动 index 与其它批次。",
+    "044/045 的接取与完成旗标脚本在包内，但结束剧情位于地图过场（044 用 50:24 与 55:48/55:49，045 用 55:50/51/54/55），这些过场脚本不在包内，已按 goto/call 衔接关系从 maps_research 脚本补足；对应地图名未定位，已在页面待补字段记录。",
+    "所有物种/道具名均查 out/pokemon 与 out/items（page 链接 ID 为内部槽编号）。",
+    "未运行测试/验收/格式化。"
+  ]
+}

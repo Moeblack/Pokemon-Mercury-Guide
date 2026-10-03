@@ -1,0 +1,859 @@
+{
+ "title": "是谁在捣乱？",
+ "quest_id": 98,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b6a4",
+    "title": "是谁在捣乱？",
+    "title_address": "0x8e3b7bf",
+    "description": "龙穴最近出现了一只爱捣乱的\n宝可梦。有人能让它消停一下吗？\n有意者请来道馆下方的民居找我。",
+    "description_address": "0x8e3b79c",
+    "unknown_u16": 169,
+    "unknown_u16_hex": "0x00A9",
+    "accept_flag": 6326,
+    "accept_flag_hex": "0x18B6",
+    "complete_flag": 6327,
+    "complete_flag_hex": "0x18B7",
+    "map_group": 32,
+    "map_num": 2,
+    "tail_hex": "01 01 00 00",
+    "index": 98,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe397c4",
+      "title": "是谁在捣乱?",
+      "description_address": "0x8e39ab5",
+      "description": "龙穴最近出现了一只爱捣乱的\\n宝可梦。有人能让它消停一下吗？\\n有意者请来道馆下方的民居找我。"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39ab5",
+    "legacy_match_count": 1,
+    "current_description": "寻找周六出现在\n龙穴的捣乱的宝可梦。",
+    "catalog_map": {
+     "id": "32:2",
+     "name": "烟墨市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08F3FAE2",
+    "0x08F3FB49",
+    "0x08F3FE75"
+   ],
+   "event_roots": [
+    {
+     "script": "0x087BA76D",
+     "map_id": "32:2",
+     "place": "烟墨市",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 7,
+     "y": 4,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g32_n002.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x087BA76D",
+     "event_roots": [
+      {
+       "map_id": "32:2",
+       "place": "烟墨市",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 7,
+       "y": 4,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g32_n002.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x087BA76D",
+       "command": "applymovement",
+       "args": [
+        3,
+        142321631
+       ]
+      },
+      {
+       "at": "0x087BA774",
+       "command": "waitmovement",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x087BA777",
+       "command": "goto",
+       "args": [
+        150207202
+       ],
+       "targets": [
+        "0x08F3FAE2"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x087BA80D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087BA80D",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x087BA810",
+       "command": "goto_if",
+       "args": [
+        1,
+        150207258
+       ],
+       "targets": [
+        "0x08F3FB1A"
+       ]
+      },
+      {
+       "at": "0x087BA816",
+       "command": "applymovement",
+       "args": [
+        3,
+        142321674
+       ]
+      },
+      {
+       "at": "0x087BA81D",
+       "command": "waitmovement",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x087BA820",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x087BA821",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x087BA8A9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x087BA8A9",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x087BA8AE",
+       "command": "goto_if",
+       "args": [
+        1,
+        150207305
+       ],
+       "targets": [
+        "0x08F3FB49"
+       ]
+      },
+      {
+       "at": "0x087BA8B4",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150208870
+       ],
+       "texts": [
+        {
+         "address": "0x08F40166",
+         "text": "……你也害怕了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x087BA8BA",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x087BA8BC",
+       "command": "applymovement",
+       "args": [
+        3,
+        142321674
+       ]
+      },
+      {
+       "at": "0x087BA8C3",
+       "command": "waitmovement",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x087BA8C6",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x087BA8C7",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3FAE2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3FAE2",
+       "command": "checkflag",
+       "args": [
+        6327
+       ],
+       "task_flag_labels": [
+        {
+         "title": "是谁在捣乱？",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FAE5",
+       "command": "goto_if",
+       "args": [
+        1,
+        150208208
+       ],
+       "targets": [
+        "0x08F3FED0"
+       ]
+      },
+      {
+       "at": "0x08F3FAEB",
+       "command": "checkflag",
+       "args": [
+        6328
+       ]
+      },
+      {
+       "at": "0x08F3FAEE",
+       "command": "goto_if",
+       "args": [
+        1,
+        150208117
+       ],
+       "targets": [
+        "0x08F3FE75"
+       ]
+      },
+      {
+       "at": "0x08F3FAF4",
+       "command": "checkflag",
+       "args": [
+        6326
+       ],
+       "task_flag_labels": [
+        {
+         "title": "是谁在捣乱？",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FAF7",
+       "command": "goto_if",
+       "args": [
+        1,
+        150207248
+       ],
+       "targets": [
+        "0x08F3FB10"
+       ]
+      },
+      {
+       "at": "0x08F3FAFD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150208246
+       ],
+       "texts": [
+        {
+         "address": "0x08F3FEF6",
+         "text": "到底是谁在捣乱呢……？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FB03",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3FB05",
+       "command": "goto",
+       "args": [
+        142321677
+       ],
+       "targets": [
+        "0x087BA80D"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F3FB10",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3FB10",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150208916
+       ],
+       "texts": [
+        {
+         "address": "0x08F40194",
+         "text": "真是太感谢了……\n记得是在周六的时候哦，\n只有在那天才有机会遇见它……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FB16",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3FB18",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3FB1A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3FB1A",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F3FB1D",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150202281
+       ]
+      },
+      {
+       "at": "0x08F3FB24",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F3FB27",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150208620
+       ],
+       "texts": [
+        {
+         "address": "0x08F4006C",
+         "text": "你看到了我的委托吗？\n是这样的……\n最近龙穴出现了一只\n神秘的宝可梦。\n它喜欢对路过的训练家恶作剧。\n可由于它潜藏在地洞里，\n大家拿它也没有办法……\n不过……有人似乎在\n周六看见它钻出了地洞。\n这也许是一个突破口……\n你能帮大家\n教训一下这只爱捣乱的宝可梦吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FB2D",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F3FB2F",
+       "command": "goto",
+       "args": [
+        142321833
+       ],
+       "targets": [
+        "0x087BA8A9"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F3FB44",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3FB44",
+       "command": "clearflag",
+       "args": [
+        6329
+       ]
+      },
+      {
+       "at": "0x08F3FB47",
+       "command": "return",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3FB49",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3FB49",
+       "command": "checkflag",
+       "args": [
+        5540
+       ]
+      },
+      {
+       "at": "0x08F3FB4C",
+       "command": "call_if",
+       "args": [
+        0,
+        150207300
+       ],
+       "targets": [
+        "0x08F3FB44"
+       ]
+      },
+      {
+       "at": "0x08F3FB52",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3FB55",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150208888
+       ],
+       "texts": [
+        {
+         "address": "0x08F40178",
+         "text": "接受任务:<是谁在捣乱?>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FB5B",
+       "command": "setflag",
+       "args": [
+        6326
+       ],
+       "task_flag_labels": [
+        {
+         "title": "是谁在捣乱？",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FB5E",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3FB63",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3FB68",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F3FB6D",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F3FB72",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F3FB77",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150208916
+       ],
+       "texts": [
+        {
+         "address": "0x08F40194",
+         "text": "真是太感谢了……\n记得是在周六的时候哦，\n只有在那天才有机会遇见它……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FB7D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3FB7F",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F3FB84",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F3FB85",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3FE75",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3FE75",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150208994
+       ],
+       "texts": [
+        {
+         "address": "0x08F401E2",
+         "text": "原来那只宝可梦是园陆鲨吗？\n是在城都地区很罕见的宝可梦呢。\n谢谢你！\n这是给你的谢礼。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FE7B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3FE7D",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        715
+       ],
+       "possible_names_not_semantics": {
+        "species": "洛托姆",
+        "item": "胆怯球",
+        "move": "鳞射"
+       }
+      },
+      {
+       "at": "0x08F3FE82",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3FE87",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F3FE89",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150209076
+       ],
+       "texts": [
+        {
+         "address": "0x08F40234",
+         "text": "这样一来，那只\n爱捣乱的园陆鲨也该消停了吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FE8F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3FE91",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3FE94",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150208218
+       ],
+       "texts": [
+        {
+         "address": "0x08F3FEDA",
+         "text": "完成任务:<是谁在捣乱?>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FE9A",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3FE9F",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F3FEA4",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F3FEA9",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F3FEAE",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F3FEB3",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x08F3FEB8",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08F3FEBE",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150209120
+       ],
+       "texts": [
+        {
+         "address": "0x08F40260",
+         "text": "获得了4点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FEC4",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3FEC6",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F3FECB",
+       "command": "setflag",
+       "args": [
+        6327
+       ],
+       "task_flag_labels": [
+        {
+         "title": "是谁在捣乱？",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FECE",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F3FED0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F3FED0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150209076
+       ],
+       "texts": [
+        {
+         "address": "0x08F40234",
+         "text": "这样一来，那只\n爱捣乱的园陆鲨也该消停了吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F3FED6",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F3FED8",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1926 @@
+{
+ "title": "姿态各异的舞者",
+ "quest_id": 69,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b460",
+    "title": "姿态各异的舞者",
+    "title_address": "0x8e3c4f5",
+    "description": "我也想像舞女们一样\n在舞台上翩翩起舞，\n有人来和我一起跳舞吗？",
+    "description_address": "0x8e3c4da",
+    "unknown_u16": 97,
+    "unknown_u16_hex": "0x0061",
+    "accept_flag": 6010,
+    "accept_flag_hex": "0x177A",
+    "complete_flag": 6004,
+    "complete_flag_hex": "0x1774",
+    "map_group": 3,
+    "map_num": 70,
+    "tail_hex": "13 00 00 00",
+    "index": 69,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39674",
+      "title": "姿态各异的舞者",
+      "description_address": "0x8e3a39a",
+      "description": "我也想像舞女们一样\\n在舞台上翩翩起舞，\\n有人来和我一起跳舞吗？"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a39a",
+    "legacy_match_count": 1,
+    "current_description": "帮助缘朱市的少女\n找到舞伴。",
+    "catalog_map": {
+     "id": "3:70",
+     "name": "缘朱市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AF0EF2",
+    "0x08AF1407",
+    "0x08AF1787",
+    "0x08AF179E",
+    "0x08AF17A7",
+    "0x08AF18B5",
+    "0x08AF253A",
+    "0x08F5C9B3"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08AF1787",
+     "map_id": "52:5",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 5,
+     "event_index": 4,
+     "x": 27,
+     "y": 16,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g52_n005.md"
+    },
+    {
+     "script": "0x08AF18B5",
+     "map_id": "48:7",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 5,
+     "event_index": 4,
+     "x": 5,
+     "y": 8,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g48_n007.md"
+    },
+    {
+     "script": "0x08F5B495",
+     "map_id": "3:70",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 13,
+     "event_index": 12,
+     "x": 54,
+     "y": 44,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n070.md"
+    },
+    {
+     "script": "0x08F5C9B3",
+     "map_id": "48:5",
+     "place": "缘朱市",
+     "kind": "人物",
+     "local_id": 4,
+     "event_index": 3,
+     "x": 13,
+     "y": 8,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g48_n005.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089D8FB8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089D8FB8",
+       "command": "trainerbattle0",
+       "args": [
+        0,
+        79,
+        0,
+        144543697,
+        144543736
+       ]
+      },
+      {
+       "at": "0x089D8FC6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144543775
+       ],
+       "texts": [
+        {
+         "address": "0x089D901F",
+         "text": "说起头上的花，\n每个月都会换上不同的呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x089D8FCC",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x089D8FCE",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x089D8FCF",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF17A7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089D95E3",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089D95E3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144545261
+       ],
+       "texts": [
+        {
+         "address": "0x089D95ED",
+         "text": "给其使用活力碎片的话，\n濒死的宝可梦也会变得很精神哦。"
+        }
+       ]
+      },
+      {
+       "at": "0x089D95E9",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089D95EB",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF18B5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x089F02C9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089F02C9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144638786
+       ]
+      },
+      {
+       "at": "0x089F02CF",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x089F02D1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144638709
+       ],
+       "texts": [
+        {
+         "address": "0x089F02F5",
+         "text": "有事吗？\n别影响我读书哦。"
+        }
+       ]
+      },
+      {
+       "at": "0x089F02D7",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089F02D9",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144638735
+       ]
+      },
+      {
+       "at": "0x089F02E0",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089F02E3",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF1787"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF0EF2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF0EF2",
+       "command": "checkflag",
+       "args": [
+        6004
+       ],
+       "task_flag_labels": [
+        {
+         "title": "姿态各异的舞者",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF0EF5",
+       "command": "goto_if",
+       "args": [
+        1,
+        145691888
+       ],
+       "targets": [
+        "0x08AF14F0"
+       ]
+      },
+      {
+       "at": "0x08AF0EFB",
+       "command": "checkflag",
+       "args": [
+        6010
+       ],
+       "task_flag_labels": [
+        {
+         "title": "姿态各异的舞者",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF0EFE",
+       "command": "goto_if",
+       "args": [
+        1,
+        145691830
+       ],
+       "targets": [
+        "0x08AF14B6"
+       ]
+      },
+      {
+       "at": "0x08AF0F04",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144535730
+       ],
+       "texts": [
+        {
+         "address": "0x089D70B2",
+         "text": "过一会儿，舞台上\n要开始舞蹈的练习了。\n方便的话，你也一起来吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF0F0A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF0F0C",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AF0F0F",
+       "command": "goto_if",
+       "args": [
+        1,
+        150320925
+       ],
+       "targets": [
+        "0x08F5B71D"
+       ]
+      },
+      {
+       "at": "0x08AF0F15",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B495"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF0FD2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF0FD2",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AF0FD5",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145692612
+       ]
+      },
+      {
+       "at": "0x08AF0FDC",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AF0FDF",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AF0FE0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145692615
+       ],
+       "texts": [
+        {
+         "address": "0x08AF17C7",
+         "text": "诶，\n你也不擅长跳舞呀……\n哎，\n真想像她们一样翩翩起舞，\n可是我也不太会跳舞，\n只会一点我爸爸在夏威……\n啊，不对！\n是在阿罗拉教给我的草裙舞……\n要不这样，\n你来帮我找几位舞伴吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF0FE6",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AF0FE8",
+       "command": "goto",
+       "args": [
+        150321021
+       ],
+       "targets": [
+        "0x08F5B77D"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B71D"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF1407",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF1407",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF140A",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF140D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145692804
+       ],
+       "texts": [
+        {
+         "address": "0x08AF1884",
+         "text": "接受任务:<姿态各异的舞者>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF1413",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF1418",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF141D",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AF1422",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AF1427",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AF142C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145692516
+       ],
+       "texts": [
+        {
+         "address": "0x08AF1764",
+         "text": "谢谢你，\n那就麻烦你找三位舞者来吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF1432",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AF1434",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AF1439",
+       "command": "setflag",
+       "args": [
+        6010
+       ],
+       "task_flag_labels": [
+        {
+         "title": "姿态各异的舞者",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF143C",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5B77D"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF14B6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF14B6",
+       "command": "checkflag",
+       "args": [
+        6017
+       ]
+      },
+      {
+       "at": "0x08AF14B9",
+       "command": "goto_if",
+       "args": [
+        0,
+        145691878
+       ],
+       "targets": [
+        "0x08AF14E6"
+       ]
+      },
+      {
+       "at": "0x08AF14BF",
+       "command": "checkflag",
+       "args": [
+        6018
+       ]
+      },
+      {
+       "at": "0x08AF14C2",
+       "command": "goto_if",
+       "args": [
+        0,
+        145691878
+       ],
+       "targets": [
+        "0x08AF14E6"
+       ]
+      },
+      {
+       "at": "0x08AF14C8",
+       "command": "checkflag",
+       "args": [
+        6019
+       ]
+      },
+      {
+       "at": "0x08AF14CB",
+       "command": "goto_if",
+       "args": [
+        0,
+        145691878
+       ],
+       "targets": [
+        "0x08AF14E6"
+       ]
+      },
+      {
+       "at": "0x08AF14D1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145691931
+       ]
+      },
+      {
+       "at": "0x08AF14D7",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF14D9",
+       "command": "warpmuted",
+       "args": [
+        56,
+        16,
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "at": "0x08AF14E1",
+       "command": "pause",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08AF14E4",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF0EF2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF14E6",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF14E6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145692516
+       ],
+       "texts": [
+        {
+         "address": "0x08AF1764",
+         "text": "谢谢你，\n那就麻烦你找三位舞者来吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF14EC",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF14EE",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF14B6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF14F0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF14F0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145691898
+       ]
+      },
+      {
+       "at": "0x08AF14F6",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF14F8",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF0EF2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF1787",
+     "event_roots": [
+      {
+       "map_id": "52:5",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 5,
+       "event_index": 4,
+       "x": 27,
+       "y": 16,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g52_n005.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AF1787",
+       "command": "checkflag",
+       "args": [
+        6004
+       ],
+       "task_flag_labels": [
+        {
+         "title": "姿态各异的舞者",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF178A",
+       "command": "goto_if",
+       "args": [
+        1,
+        144638665
+       ],
+       "targets": [
+        "0x089F02C9"
+       ]
+      },
+      {
+       "at": "0x08AF1790",
+       "command": "checkflag",
+       "args": [
+        6010
+       ],
+       "task_flag_labels": [
+        {
+         "title": "姿态各异的舞者",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF1793",
+       "command": "goto_if",
+       "args": [
+        1,
+        145692834
+       ],
+       "targets": [
+        "0x08AF18A2"
+       ]
+      },
+      {
+       "at": "0x08AF1799",
+       "command": "goto",
+       "args": [
+        144638665
+       ],
+       "targets": [
+        "0x089F02C9"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "52:5/local5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF179E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF179E",
+       "command": "checkflag",
+       "args": [
+        6004
+       ],
+       "task_flag_labels": [
+        {
+         "title": "姿态各异的舞者",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF17A1",
+       "command": "goto_if",
+       "args": [
+        1,
+        144543672
+       ],
+       "targets": [
+        "0x089D8FB8"
+       ]
+      },
+      {
+       "at": "0x08AF17A7",
+       "command": "checkflag",
+       "args": [
+        6010
+       ],
+       "task_flag_labels": [
+        {
+         "title": "姿态各异的舞者",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF17AA",
+       "command": "goto_if",
+       "args": [
+        1,
+        145692974
+       ],
+       "targets": [
+        "0x08AF192E"
+       ]
+      },
+      {
+       "at": "0x08AF17B0",
+       "command": "goto",
+       "args": [
+        144543672
+       ],
+       "targets": [
+        "0x089D8FB8"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=69"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF17A7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF17A7",
+       "command": "checkflag",
+       "args": [
+        6010
+       ],
+       "task_flag_labels": [
+        {
+         "title": "姿态各异的舞者",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF17AA",
+       "command": "goto_if",
+       "args": [
+        1,
+        145692974
+       ],
+       "targets": [
+        "0x08AF192E"
+       ]
+      },
+      {
+       "at": "0x08AF17B0",
+       "command": "goto",
+       "args": [
+        144543672
+       ],
+       "targets": [
+        "0x089D8FB8"
+       ]
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_flag_branch_candidate",
+       "where": "quest_ids=69"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF18A2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF18A2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145692881
+       ]
+      },
+      {
+       "at": "0x08AF18A8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF18AA",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF18AC",
+       "command": "removeobject",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AF18AF",
+       "command": "setflag",
+       "args": [
+        6017
+       ]
+      },
+      {
+       "at": "0x08AF18B2",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF18B4",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF1787"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF18B5",
+     "event_roots": [
+      {
+       "map_id": "48:7",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 5,
+       "event_index": 4,
+       "x": 5,
+       "y": 8,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g48_n007.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AF18B5",
+       "command": "checkflag",
+       "args": [
+        6004
+       ],
+       "task_flag_labels": [
+        {
+         "title": "姿态各异的舞者",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF18B8",
+       "command": "goto_if",
+       "args": [
+        1,
+        144545251
+       ],
+       "targets": [
+        "0x089D95E3"
+       ]
+      },
+      {
+       "at": "0x08AF18BE",
+       "command": "checkflag",
+       "args": [
+        6010
+       ],
+       "task_flag_labels": [
+        {
+         "title": "姿态各异的舞者",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF18C1",
+       "command": "goto_if",
+       "args": [
+        1,
+        145692993
+       ],
+       "targets": [
+        "0x08AF1941"
+       ]
+      },
+      {
+       "at": "0x08AF18C7",
+       "command": "goto",
+       "args": [
+        144545251
+       ],
+       "targets": [
+        "0x089D95E3"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "48:7/local5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF192E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF192E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145693018
+       ]
+      },
+      {
+       "at": "0x08AF1934",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF1936",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF1938",
+       "command": "removeobject",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x08AF193B",
+       "command": "setflag",
+       "args": [
+        6018
+       ]
+      },
+      {
+       "at": "0x08AF193E",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF1940",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF17A7"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF1941",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF1941",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145693068
+       ]
+      },
+      {
+       "at": "0x08AF1947",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AF1949",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AF194B",
+       "command": "removeobject",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x08AF194E",
+       "command": "setflag",
+       "args": [
+        6019
+       ]
+      },
+      {
+       "at": "0x08AF1951",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AF1953",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF18B5"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AF253A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AF253A",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x08AF253F",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AF2545",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145695993
+       ],
+       "texts": [
+        {
+         "address": "0x08AF24F9",
+         "text": "完成任务:<姿态各异的舞者>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF254B",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2550",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AF2555",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AF255A",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AF255F",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AF2564",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145696024
+       ],
+       "texts": [
+        {
+         "address": "0x08AF2518",
+         "text": "获得了4点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF256A",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AF256C",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AF2571",
+       "command": "setflag",
+       "args": [
+        6004
+       ],
+       "task_flag_labels": [
+        {
+         "title": "姿态各异的舞者",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AF2574",
+       "command": "setvar",
+       "args": [
+        16537,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AF2579",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF23E6"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5B495",
+     "event_roots": [
+      {
+       "map_id": "3:70",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 13,
+       "event_index": 12,
+       "x": 54,
+       "y": 44,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n070.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5B495",
+       "command": "applymovement",
+       "args": [
+        32,
+        150320830
+       ]
+      },
+      {
+       "at": "0x08F5B49C",
+       "command": "waitmovement",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x08F5B49F",
+       "command": "goto",
+       "args": [
+        145690354
+       ],
+       "targets": [
+        "0x08AF0EF2"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "3:70/local13"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5B71D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5B71D",
+       "command": "checkflag",
+       "args": [
+        2676
+       ]
+      },
+      {
+       "at": "0x08F5B720",
+       "command": "goto_if",
+       "args": [
+        1,
+        145690578
+       ],
+       "targets": [
+        "0x08AF0FD2"
+       ]
+      },
+      {
+       "at": "0x08F5B726",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150320958
+       ],
+       "texts": [
+        {
+         "address": "0x08F5B73E",
+         "text": "嗯？也对哦……\n夏日祭马上就要开始了。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5B72C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5B72E",
+       "command": "applymovement",
+       "args": [
+        32,
+        150320955
+       ]
+      },
+      {
+       "at": "0x08F5B735",
+       "command": "waitmovement",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x08F5B738",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5B739",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF0EF2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5B77D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5B77D",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5B782",
+       "command": "goto_if",
+       "args": [
+        1,
+        145691655
+       ],
+       "targets": [
+        "0x08AF1407"
+       ]
+      },
+      {
+       "at": "0x08F5B788",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145692781
+       ],
+       "texts": [
+        {
+         "address": "0x08AF186D",
+         "text": "好吧，\n我自己试试吧……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5B78E",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5B790",
+       "command": "applymovement",
+       "args": [
+        32,
+        150320955
+       ]
+      },
+      {
+       "at": "0x08F5B797",
+       "command": "waitmovement",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x08F5B79A",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5B79B",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AF0FD2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5C9B3",
+     "event_roots": [
+      {
+       "map_id": "48:5",
+       "place": "缘朱市",
+       "kind": "人物",
+       "local_id": 4,
+       "event_index": 3,
+       "x": 13,
+       "y": 8,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g48_n005.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5C9B3",
+       "command": "checkflag",
+       "args": [
+        6004
+       ],
+       "task_flag_labels": [
+        {
+         "title": "姿态各异的舞者",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5C9B6",
+       "command": "goto_if",
+       "args": [
+        1,
+        150325707
+       ],
+       "targets": [
+        "0x08F5C9CB"
+       ]
+      },
+      {
+       "at": "0x08F5C9BC",
+       "command": "checkflag",
+       "args": [
+        6010
+       ],
+       "task_flag_labels": [
+        {
+         "title": "姿态各异的舞者",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5C9BF",
+       "command": "goto_if",
+       "args": [
+        1,
+        150325746
+       ],
+       "targets": [
+        "0x08F5C9F2"
+       ]
+      },
+      {
+       "at": "0x08F5C9C5",
+       "command": "goto",
+       "args": [
+        150325707
+       ],
+       "targets": [
+        "0x08F5C9CB"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "48:5/local4"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5C9CB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5C9CB",
+       "command": "call",
+       "args": [
+        144452428
+       ],
+       "targets": [
+        "0x089C2B4C"
+       ]
+      },
+      {
+       "at": "0x08F5C9D0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150325795
+       ]
+      },
+      {
+       "at": "0x08F5C9D6",
+       "command": "call",
+       "args": [
+        144452458
+       ],
+       "targets": [
+        "0x089C2B6A"
+       ]
+      },
+      {
+       "at": "0x08F5C9DB",
+       "command": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08F5C9E0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150325804
+       ],
+       "texts": [
+        {
+         "address": "0x08F5CA2C",
+         "text": "喂，\n你是[玩家/变量]对吧？\n真的很出色呢。\n果然那个人\n看人的眼光不错……\n哦呵呵！没啥没啥，\n自言自语啦自言自语……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5C9E6",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5C9E8",
+       "command": "call",
+       "args": [
+        144452505
+       ],
+       "targets": [
+        "0x089C2B99"
+       ]
+      },
+      {
+       "at": "0x08F5C9ED",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F5C9F0",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5C9B3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5C9F2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5C9F2",
+       "command": "call",
+       "args": [
+        144452428
+       ],
+       "targets": [
+        "0x089C2B4C"
+       ]
+      },
+      {
+       "at": "0x08F5C9F7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150325795
+       ]
+      },
+      {
+       "at": "0x08F5C9FD",
+       "command": "call",
+       "args": [
+        144452458
+       ],
+       "targets": [
+        "0x089C2B6A"
+       ]
+      },
+      {
+       "at": "0x08F5CA02",
+       "command": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x08F5CA07",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145693018
+       ]
+      },
+      {
+       "at": "0x08F5CA0D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5CA0F",
+       "command": "call",
+       "args": [
+        144452505
+       ],
+       "targets": [
+        "0x089C2B99"
+       ]
+      },
+      {
+       "at": "0x08F5CA14",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F5CA17",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F5CA19",
+       "command": "removeobject",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x08F5CA1C",
+       "command": "setflag",
+       "args": [
+        6018
+       ]
+      },
+      {
+       "at": "0x08F5CA1F",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F5CA21",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5C9B3"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [
+    "0x089C2B4C",
+    "0x089C2B6A",
+    "0x089C2B99"
+   ],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

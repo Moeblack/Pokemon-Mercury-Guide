@@ -1,0 +1,122 @@
+{
+ "schema_version": 1,
+ "generator": "player_guide/scripts/build_pokemon.py",
+ "sources": {
+  "species": "wiki_export/core/data/species.json",
+  "evolutions": "wiki_export/core/data/evolutions.json",
+  "national_dex": "wiki_export/core/data/national_dex.json",
+  "acquisition_by_species": "wiki_export/world/data/acquisition_by_species.json",
+  "maps": "wiki_export/world/data/maps.json",
+  "encounters": "wiki_export/world/data/encounters.json",
+  "items": "wiki_export/core/data/items.json",
+  "moves": "wiki_export/core/data/moves.json",
+  "evolution_methods": "wiki_export/enrichment/reference_only/evolution_methods.json"
+ },
+ "source_sha256": {
+  "core/data/species.json": "392c70d66320eceeed6ef911bdfd3901e21553b017aae7b0d67c0010172bfa3e",
+  "core/data/evolutions.json": "12abb53ec9ee1a981288ed261a1dcea6e91d0a240096f196c2e4749a34132548",
+  "core/data/national_dex.json": "a08a48e859bdbcb1b877de072f5eb463a4401d955e62c1a5d6f077b3f35f0dc6",
+  "world/data/acquisition_by_species.json": "3727077ec7d2e6028d248cec19708d45f400ba945e6b57458de5a0e471760a28",
+  "world/data/maps.json": "60514e74f851e3070cfb2adc661320598b529948513335eeef3740db1676c45c",
+  "world/data/encounters.json": "0d9dd84b099f306b92486b2e208ad0282382d82de5d9bf2c3e7e46dec0cb308d",
+  "core/data/items.json": "a2d2ff98bb6f416af52bf46c11fcfcbdd53525281c77ae7067c3888422f36c92",
+  "core/data/moves.json": "54d91d019281948e3090108e777bf10badff1c569a6f4d543e6f2a7980a884e5",
+  "enrichment/reference_only/evolution_methods.json": "8d05e640191f5fab478f2d90b2d5006b4f2ea1b6b0aebde0afc91ba809a4874c"
+ },
+ "source_counts": {
+  "maps": 871,
+  "items": 750,
+  "moves": 1015,
+  "evolution_method_symbols": 42
+ },
+ "counts": {
+  "internal_slots": 1554,
+  "slots_with_national_dex": 1435,
+  "slots_without_national_dex": 119,
+  "placeholder_slots": 119,
+  "placeholders_without_national_dex": 115,
+  "placeholders_with_national_dex": 4,
+  "special_slots_without_national_dex": 4,
+  "slots_with_acquisition_records": 405,
+  "acquisition_records_by_category": {
+   "wild": 6624,
+   "gift": 39,
+   "static_battle_candidate": 84,
+   "broadcast": 1212,
+   "egg": 7,
+   "swarm": 63
+  },
+  "slots_with_evolutions_out": 725,
+  "slots_with_evolution_sources": 676,
+  "mega_target_edges": 141,
+  "gmax_target_edges": 68,
+  "slots_no_direct_source_and_no_pre_evolution": 502
+ },
+ "condition_status_counts": {
+  "existing_static_evidence_not_reachability": 6624,
+  "instruction_evidence_not_story_reachability": 130,
+  "broadcast_gating_required_internal_slot_weight_only": 1200,
+  "swarm_activation_not_proven_by_static_table": 63,
+  "fallback_selection_and_broadcast_gates_required": 12
+ },
+ "field_gaps": [
+  {
+   "field": "wild.level",
+   "note": "遭遇表给出的等级范围；个别槽等级缺失时不写成固定值。"
+  },
+  {
+   "field": "broadcast.level",
+   "note": "广播遭遇不携带等级字段，等级未在数据中给出。"
+  },
+  {
+   "field": "swarm.level",
+   "note": "群聚按 mapsec 关联，无等级字段。"
+  },
+  {
+   "field": "gift/egg/static_battle_candidate.level",
+   "symbolic": "level.kind=literal 时取字面值；否则未释明"
+  },
+  {
+   "field": "broadcast.gating",
+   "note": "广播门控旗标（FlagGet 0x1f/0x17A1）与 0x17a1 语义未穷举。"
+  },
+  {
+   "field": "condition_status",
+   "note": "所有获取记录均为静态证据，未证明剧情可达性/实际可捕获性。"
+  },
+  {
+   "field": "evolution.method_param",
+   "note": "部分 method 的 param 语义未释明（如 EVO_TYPE_IN_PARTY、EVO_NATURE_*、EVO_CRITICAL_HIT、EVO_FLAG_SET），页面保留编号并标注未释明。"
+  },
+  {
+   "field": "EVO_MAP.param",
+   "note": "按地图区域编号查地图表名称；未命中时保留编号。"
+  },
+  {
+   "field": "EVO_ITEM.param",
+   "note": "按道具表索引取名称；其中 4 条 param=1 命中『大师球』（标价 0），疑为占位值，页面已就地标注未确认。"
+  },
+  {
+   "field": "rock_smash/headbutt",
+   "note": "共用同一槽表 rock_smash_headbutt，不强行判定为碎岩或撞树其中之一。"
+  },
+  {
+   "field": "numbering",
+   "note": "1554 个内部槽不等于 1554 种宝可梦；119 个为占位/无效槽。"
+  }
+ ],
+ "unresolved": {
+  "unknown_item_param_count": 0,
+  "unknown_move_param_count": 0,
+  "evo_map_param_unmapped": 0,
+  "evolution_item_param_zero_price": 12,
+  "unresolved_evolution_symbols": {}
+ },
+ "outputs": {
+  "pokemon_pages": 1554,
+  "index": "pokemon/index.md",
+  "by_location": "pokemon/by_location.md",
+  "forms": "pokemon/forms.md",
+  "data": "data/pokemon.json"
+ }
+}

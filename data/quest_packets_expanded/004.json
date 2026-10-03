@@ -1,0 +1,2082 @@
+{
+ "title": "钢铁与黑曜",
+ "quest_id": 4,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3af4c",
+    "title": "钢铁与黑曜",
+    "title_address": "0x8e3bac8",
+    "description": "去桐树林寻找阿笔，\n协助他完成有关\n虫宝可梦的研究。",
+    "description_address": "0x8e3ba97",
+    "unknown_u16": 457,
+    "unknown_u16_hex": "0x01C9",
+    "accept_flag": 2969,
+    "accept_flag_hex": "0x0B99",
+    "complete_flag": 2970,
+    "complete_flag_hex": "0x0B9A",
+    "map_group": 47,
+    "map_num": 0,
+    "tail_hex": "04 01 00 00",
+    "index": 4,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3ba97",
+    "legacy_match_count": 0,
+    "current_description": "去桐树林寻找阿笔，\n协助他完成有关\n虫宝可梦的研究。",
+    "catalog_map": {
+     "id": "47:0",
+     "name": "桧皮镇"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08EEA9E8",
+    "0x08EEA9F9",
+    "0x08EEAA0E",
+    "0x08EEAA1F",
+    "0x09CD3362"
+   ],
+   "event_roots": [],
+   "scripts": [
+    {
+     "script": "0x08EEA9E8",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEA9E8",
+       "command": "setflag",
+       "args": [
+        2969
+       ],
+       "task_flag_labels": [
+        {
+         "title": "钢铁与黑曜",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEA9EB",
+       "command": "checkflag",
+       "args": [
+        5774
+       ]
+      },
+      {
+       "at": "0x08EEA9EE",
+       "command": "goto_if",
+       "args": [
+        1,
+        149858809
+       ],
+       "targets": [
+        "0x08EEA9F9"
+       ]
+      },
+      {
+       "at": "0x08EEA9F4",
+       "command": "setflag",
+       "args": [
+        2970
+       ],
+       "task_flag_labels": [
+        {
+         "title": "钢铁与黑曜",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEA9F7",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "map_script",
+       "where": "47:0/tag3"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EEA9F9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEA9F9",
+       "command": "setflag",
+       "args": [
+        5446
+       ]
+      },
+      {
+       "at": "0x08EEA9FC",
+       "command": "checkflag",
+       "args": [
+        2972
+       ]
+      },
+      {
+       "at": "0x08EEA9FF",
+       "command": "goto_if",
+       "args": [
+        1,
+        149858830
+       ],
+       "targets": [
+        "0x08EEAA0E"
+       ]
+      },
+      {
+       "at": "0x08EEAA05",
+       "command": "clearflag",
+       "args": [
+        2970
+       ],
+       "task_flag_labels": [
+        {
+         "title": "钢铁与黑曜",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEAA08",
+       "command": "spritebehave",
+       "args": [
+        1,
+        10
+       ]
+      },
+      {
+       "at": "0x08EEAA0C",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EEA9E8"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EEAA0E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEAA0E",
+       "command": "checkflag",
+       "args": [
+        2973
+       ]
+      },
+      {
+       "at": "0x08EEAA11",
+       "command": "goto_if",
+       "args": [
+        1,
+        149858847
+       ],
+       "targets": [
+        "0x08EEAA1F"
+       ]
+      },
+      {
+       "at": "0x08EEAA17",
+       "command": "setflag",
+       "args": [
+        2970
+       ],
+       "task_flag_labels": [
+        {
+         "title": "钢铁与黑曜",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEAA1A",
+       "command": "setflag",
+       "args": [
+        2971
+       ]
+      },
+      {
+       "at": "0x08EEAA1D",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EEA9F9"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08EEAA1F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08EEAA1F",
+       "command": "setflag",
+       "args": [
+        2970
+       ],
+       "task_flag_labels": [
+        {
+         "title": "钢铁与黑曜",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08EEAA22",
+       "command": "clearflag",
+       "args": [
+        2971
+       ]
+      },
+      {
+       "at": "0x08EEAA25",
+       "command": "clearflag",
+       "args": [
+        5446
+       ]
+      },
+      {
+       "at": "0x08EEAA28",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08EEAA0E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3362",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3362",
+       "command": "lockall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3363",
+       "command": "callasm",
+       "args": [
+        164801765
+       ]
+      },
+      {
+       "at": "0x09CD3368",
+       "command": "spriteface",
+       "args": [
+        1,
+        4
+       ]
+      },
+      {
+       "at": "0x09CD336C",
+       "command": "spriteface",
+       "args": [
+        34,
+        3
+       ]
+      },
+      {
+       "at": "0x09CD3370",
+       "command": "call",
+       "args": [
+        164443254
+       ],
+       "targets": [
+        "0x09CD3476"
+       ]
+      },
+      {
+       "at": "0x09CD3375",
+       "command": "setvar",
+       "args": [
+        32774,
+        258
+       ],
+       "possible_names_not_semantics": {
+        "species": "乌波",
+        "item": "黄色头巾",
+        "move": "冰雹"
+       }
+      },
+      {
+       "at": "0x09CD337A",
+       "command": "call",
+       "args": [
+        164443271
+       ],
+       "targets": [
+        "0x09CD3487"
+       ]
+      },
+      {
+       "at": "0x09CD337F",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165267553
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C861",
+         "text": "不行……\n还是没反应！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3385",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD3387",
+       "command": "call",
+       "args": [
+        164443282
+       ],
+       "targets": [
+        "0x09CD3492"
+       ]
+      },
+      {
+       "at": "0x09CD338C",
+       "command": "call",
+       "args": [
+        164443288
+       ],
+       "targets": [
+        "0x09CD3498"
+       ]
+      },
+      {
+       "at": "0x09CD3391",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD3394",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD3397",
+       "command": "applymovement",
+       "args": [
+        1,
+        164443552
+       ]
+      },
+      {
+       "at": "0x09CD339E",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD33A1",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x09CD33A2",
+       "command": "call",
+       "args": [
+        164443254
+       ],
+       "targets": [
+        "0x09CD3476"
+       ]
+      },
+      {
+       "at": "0x09CD33A7",
+       "command": "setvar",
+       "args": [
+        32774,
+        258
+       ],
+       "possible_names_not_semantics": {
+        "species": "乌波",
+        "item": "黄色头巾",
+        "move": "冰雹"
+       }
+      },
+      {
+       "at": "0x09CD33AC",
+       "command": "call",
+       "args": [
+        164443271
+       ],
+       "targets": [
+        "0x09CD3487"
+       ]
+      },
+      {
+       "at": "0x09CD33B1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165267572
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C874",
+         "text": "啊，是[玩家/变量]啊！\n让你见笑了……\n身为虫属性道馆的馆主，\n我却一直没法让\n巨钳螳螂超级进化……\n究竟是哪里\n出了问题呢？"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD33B7",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD33B9",
+       "command": "call",
+       "args": [
+        164443282
+       ],
+       "targets": [
+        "0x09CD3492"
+       ]
+      },
+      {
+       "at": "0x09CD33BE",
+       "command": "call",
+       "args": [
+        164443288
+       ],
+       "targets": [
+        "0x09CD3498"
+       ]
+      },
+      {
+       "at": "0x09CD33C3",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD33C6",
+       "command": "clearflag",
+       "args": [
+        2969
+       ],
+       "task_flag_labels": [
+        {
+         "title": "钢铁与黑曜",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD33C9",
+       "command": "addobject",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x09CD33CC",
+       "command": "movesprite",
+       "args": [
+        43,
+        13,
+        12
+       ]
+      },
+      {
+       "at": "0x09CD33D3",
+       "command": "call",
+       "args": [
+        164443294
+       ],
+       "targets": [
+        "0x09CD349E"
+       ]
+      },
+      {
+       "at": "0x09CD33D8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165267675
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C8DB",
+         "text": "不好了！\n桐树林里出现了一只\n长着岩石斧头的虫子，\n正在疯狂砍树！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD33DE",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD33E0",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x09CD33E3",
+       "command": "applymovement",
+       "args": [
+        1,
+        164443552
+       ]
+      },
+      {
+       "at": "0x09CD33EA",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x09CD33ED",
+       "command": "call",
+       "args": [
+        164443254
+       ],
+       "targets": [
+        "0x09CD3476"
+       ]
+      },
+      {
+       "at": "0x09CD33F2",
+       "command": "setvar",
+       "args": [
+        32774,
+        257
+       ],
+       "possible_names_not_semantics": {
+        "species": "弃世猴",
+        "item": "绿色头巾",
+        "move": "热风"
+       }
+      },
+      {
+       "at": "0x09CD33F7",
+       "command": "call",
+       "args": [
+        164443271
+       ],
+       "targets": [
+        "0x09CD3487"
+       ]
+      },
+      {
+       "at": "0x09CD33FC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165267736
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C918",
+         "text": "长着岩石斧头的虫子？\n难道是新发现的宝可梦？！\n巨钳螳螂，我们走！"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3402",
+       "command": "callstd",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x09CD3404",
+       "command": "call",
+       "args": [
+        164443282
+       ],
+       "targets": [
+        "0x09CD3492"
+       ]
+      },
+      {
+       "at": "0x09CD3409",
+       "command": "call",
+       "args": [
+        164443288
+       ],
+       "targets": [
+        "0x09CD3498"
+       ]
+      },
+      {
+       "at": "0x09CD340E",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD3411",
+       "command": "call",
+       "args": [
+        164443400
+       ],
+       "targets": [
+        "0x09CD3508"
+       ]
+      },
+      {
+       "at": "0x09CD3416",
+       "command": "waitmovement",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x09CD3419",
+       "command": "removeobject",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x09CD341C",
+       "command": "removeobject",
+       "args": [
+        34
+       ]
+      },
+      {
+       "at": "0x09CD341F",
+       "command": "setflag",
+       "args": [
+        2970
+       ],
+       "task_flag_labels": [
+        {
+         "title": "钢铁与黑曜",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3422",
+       "command": "setflag",
+       "args": [
+        2971
+       ]
+      },
+      {
+       "at": "0x09CD3425",
+       "command": "setflag",
+       "args": [
+        2972
+       ]
+      },
+      {
+       "at": "0x09CD3428",
+       "command": "call",
+       "args": [
+        164443415
+       ],
+       "targets": [
+        "0x09CD3517"
+       ]
+      },
+      {
+       "at": "0x09CD342D",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x09CD3430",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x09CD3433",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165267836
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C97C",
+         "text": "接受任务:<黑曜与钢铁>"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3439",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD343E",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x09CD3443",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x09CD3448",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x09CD344D",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x09CD3452",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165267796
+       ],
+       "texts": [
+        {
+         "address": "0x09D9C954",
+         "text": "那只长着\n岩石斧头的虫子……\n你也去看看吧。"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD3458",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x09CD345A",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x09CD345F",
+       "command": "applymovement",
+       "args": [
+        43,
+        164443629
+       ]
+      },
+      {
+       "at": "0x09CD3466",
+       "command": "waitmovement",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x09CD3469",
+       "command": "removeobject",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x09CD346C",
+       "command": "setflag",
+       "args": [
+        2969
+       ],
+       "task_flag_labels": [
+        {
+         "title": "钢铁与黑曜",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x09CD346F",
+       "command": "callasm",
+       "args": [
+        164820837
+       ]
+      },
+      {
+       "at": "0x09CD3474",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x09CD3475",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "quest_catalog_flag_anchor",
+       "where": "004"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3476",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3476",
+       "command": "call",
+       "args": [
+        144452428
+       ],
+       "targets": [
+        "0x089C2B4C"
+       ]
+      },
+      {
+       "at": "0x09CD347B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        165267927
+       ]
+      },
+      {
+       "at": "0x09CD3481",
+       "command": "call",
+       "args": [
+        144452458
+       ],
+       "targets": [
+        "0x089C2B6A"
+       ]
+      },
+      {
+       "at": "0x09CD3486",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3362"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3487",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3487",
+       "command": "call",
+       "args": [
+        144452485
+       ],
+       "targets": [
+        "0x089C2B85"
+       ]
+      },
+      {
+       "at": "0x09CD348C",
+       "command": "cry",
+       "args": [
+        0,
+        255
+       ]
+      },
+      {
+       "at": "0x09CD3491",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3362"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3492",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3492",
+       "command": "call",
+       "args": [
+        144452505
+       ],
+       "targets": [
+        "0x089C2B99"
+       ]
+      },
+      {
+       "at": "0x09CD3497",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3362"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3498",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3498",
+       "command": "call",
+       "args": [
+        144452520
+       ],
+       "targets": [
+        "0x089C2BA8"
+       ]
+      },
+      {
+       "at": "0x09CD349D",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3362"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD349E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD349E",
+       "command": "getplayerpos",
+       "args": [
+        32772,
+        32773
+       ]
+      },
+      {
+       "at": "0x09CD34A3",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        13
+       ],
+       "possible_names_not_semantics": {
+        "species": "独角虫",
+        "item": "伤药",
+        "move": "旋风刀"
+       }
+      },
+      {
+       "at": "0x09CD34A8",
+       "command": "goto_if",
+       "args": [
+        5,
+        164443321
+       ],
+       "targets": [
+        "0x09CD34B9"
+       ]
+      },
+      {
+       "at": "0x09CD34AE",
+       "command": "comparevartovalue",
+       "args": [
+        32773,
+        17
+       ],
+       "possible_names_not_semantics": {
+        "species": "比比鸟",
+        "item": "解眠药",
+        "move": "翅膀攻击"
+       }
+      },
+      {
+       "at": "0x09CD34B3",
+       "command": "goto_if",
+       "args": [
+        1,
+        164443362
+       ],
+       "targets": [
+        "0x09CD34E2"
+       ]
+      },
+      {
+       "at": "0x09CD34B9",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        12
+       ],
+       "possible_names_not_semantics": {
+        "species": "巴大蝶",
+        "item": "纪念球",
+        "move": "极落钳"
+       }
+      },
+      {
+       "at": "0x09CD34BE",
+       "command": "goto_if",
+       "args": [
+        5,
+        164443343
+       ],
+       "targets": [
+        "0x09CD34CF"
+       ]
+      },
+      {
+       "at": "0x09CD34C4",
+       "command": "comparevartovalue",
+       "args": [
+        32773,
+        16
+       ],
+       "possible_names_not_semantics": {
+        "species": "波波",
+        "item": "解冻药",
+        "move": "起风"
+       }
+      },
+      {
+       "at": "0x09CD34C9",
+       "command": "goto_if",
+       "args": [
+        1,
+        164443381
+       ],
+       "targets": [
+        "0x09CD34F5"
+       ]
+      },
+      {
+       "at": "0x09CD34CF",
+       "command": "applymovement",
+       "args": [
+        43,
+        164443554
+       ]
+      },
+      {
+       "at": "0x09CD34D6",
+       "command": "waitmovement",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x09CD34D9",
+       "command": "spriteface",
+       "args": [
+        1,
+        2
+       ]
+      },
+      {
+       "at": "0x09CD34DD",
+       "command": "spriteface",
+       "args": [
+        43,
+        1
+       ]
+      },
+      {
+       "at": "0x09CD34E1",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3362"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD34B9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD34B9",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        12
+       ],
+       "possible_names_not_semantics": {
+        "species": "巴大蝶",
+        "item": "纪念球",
+        "move": "极落钳"
+       }
+      },
+      {
+       "at": "0x09CD34BE",
+       "command": "goto_if",
+       "args": [
+        5,
+        164443343
+       ],
+       "targets": [
+        "0x09CD34CF"
+       ]
+      },
+      {
+       "at": "0x09CD34C4",
+       "command": "comparevartovalue",
+       "args": [
+        32773,
+        16
+       ],
+       "possible_names_not_semantics": {
+        "species": "波波",
+        "item": "解冻药",
+        "move": "起风"
+       }
+      },
+      {
+       "at": "0x09CD34C9",
+       "command": "goto_if",
+       "args": [
+        1,
+        164443381
+       ],
+       "targets": [
+        "0x09CD34F5"
+       ]
+      },
+      {
+       "at": "0x09CD34CF",
+       "command": "applymovement",
+       "args": [
+        43,
+        164443554
+       ]
+      },
+      {
+       "at": "0x09CD34D6",
+       "command": "waitmovement",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x09CD34D9",
+       "command": "spriteface",
+       "args": [
+        1,
+        2
+       ]
+      },
+      {
+       "at": "0x09CD34DD",
+       "command": "spriteface",
+       "args": [
+        43,
+        1
+       ]
+      },
+      {
+       "at": "0x09CD34E1",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD349E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD34CF",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD34CF",
+       "command": "applymovement",
+       "args": [
+        43,
+        164443554
+       ]
+      },
+      {
+       "at": "0x09CD34D6",
+       "command": "waitmovement",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x09CD34D9",
+       "command": "spriteface",
+       "args": [
+        1,
+        2
+       ]
+      },
+      {
+       "at": "0x09CD34DD",
+       "command": "spriteface",
+       "args": [
+        43,
+        1
+       ]
+      },
+      {
+       "at": "0x09CD34E1",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD349E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD34E2",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD34E2",
+       "command": "applymovement",
+       "args": [
+        43,
+        164443557
+       ]
+      },
+      {
+       "at": "0x09CD34E9",
+       "command": "waitmovement",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x09CD34EC",
+       "command": "spriteface",
+       "args": [
+        1,
+        3
+       ]
+      },
+      {
+       "at": "0x09CD34F0",
+       "command": "spriteface",
+       "args": [
+        43,
+        4
+       ]
+      },
+      {
+       "at": "0x09CD34F4",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD349E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD34F5",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD34F5",
+       "command": "applymovement",
+       "args": [
+        43,
+        164443567
+       ]
+      },
+      {
+       "at": "0x09CD34FC",
+       "command": "waitmovement",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x09CD34FF",
+       "command": "spriteface",
+       "args": [
+        1,
+        1
+       ]
+      },
+      {
+       "at": "0x09CD3503",
+       "command": "spriteface",
+       "args": [
+        43,
+        2
+       ]
+      },
+      {
+       "at": "0x09CD3507",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD349E"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3508",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3508",
+       "command": "applymovement",
+       "args": [
+        1,
+        164443601
+       ]
+      },
+      {
+       "at": "0x09CD350F",
+       "command": "applymovement",
+       "args": [
+        34,
+        164443612
+       ]
+      },
+      {
+       "at": "0x09CD3516",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3362"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3517",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3517",
+       "command": "getplayerpos",
+       "args": [
+        32772,
+        32773
+       ]
+      },
+      {
+       "at": "0x09CD351C",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        13
+       ],
+       "possible_names_not_semantics": {
+        "species": "独角虫",
+        "item": "伤药",
+        "move": "旋风刀"
+       }
+      },
+      {
+       "at": "0x09CD3521",
+       "command": "goto_if",
+       "args": [
+        5,
+        164443442
+       ],
+       "targets": [
+        "0x09CD3532"
+       ]
+      },
+      {
+       "at": "0x09CD3527",
+       "command": "comparevartovalue",
+       "args": [
+        32773,
+        17
+       ],
+       "possible_names_not_semantics": {
+        "species": "比比鸟",
+        "item": "解眠药",
+        "move": "翅膀攻击"
+       }
+      },
+      {
+       "at": "0x09CD352C",
+       "command": "goto_if",
+       "args": [
+        1,
+        164443495
+       ],
+       "targets": [
+        "0x09CD3567"
+       ]
+      },
+      {
+       "at": "0x09CD3532",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        12
+       ],
+       "possible_names_not_semantics": {
+        "species": "巴大蝶",
+        "item": "纪念球",
+        "move": "极落钳"
+       }
+      },
+      {
+       "at": "0x09CD3537",
+       "command": "goto_if",
+       "args": [
+        5,
+        164443464
+       ],
+       "targets": [
+        "0x09CD3548"
+       ]
+      },
+      {
+       "at": "0x09CD353D",
+       "command": "comparevartovalue",
+       "args": [
+        32773,
+        16
+       ],
+       "possible_names_not_semantics": {
+        "species": "波波",
+        "item": "解冻药",
+        "move": "起风"
+       }
+      },
+      {
+       "at": "0x09CD3542",
+       "command": "goto_if",
+       "args": [
+        1,
+        164443514
+       ],
+       "targets": [
+        "0x09CD357A"
+       ]
+      },
+      {
+       "at": "0x09CD3548",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        13
+       ],
+       "possible_names_not_semantics": {
+        "species": "独角虫",
+        "item": "伤药",
+        "move": "旋风刀"
+       }
+      },
+      {
+       "at": "0x09CD354D",
+       "command": "goto_if",
+       "args": [
+        5,
+        164443486
+       ],
+       "targets": [
+        "0x09CD355E"
+       ]
+      },
+      {
+       "at": "0x09CD3553",
+       "command": "comparevartovalue",
+       "args": [
+        32773,
+        15
+       ],
+       "possible_names_not_semantics": {
+        "species": "大针蜂",
+        "item": "灼伤药",
+        "move": "居合劈"
+       }
+      },
+      {
+       "at": "0x09CD3558",
+       "command": "goto_if",
+       "args": [
+        1,
+        164443533
+       ],
+       "targets": [
+        "0x09CD358D"
+       ]
+      },
+      {
+       "at": "0x09CD355E",
+       "command": "spriteface",
+       "args": [
+        43,
+        1
+       ]
+      },
+      {
+       "at": "0x09CD3562",
+       "command": "spriteface",
+       "args": [
+        255,
+        2
+       ]
+      },
+      {
+       "at": "0x09CD3566",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3362"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3532",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3532",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        12
+       ],
+       "possible_names_not_semantics": {
+        "species": "巴大蝶",
+        "item": "纪念球",
+        "move": "极落钳"
+       }
+      },
+      {
+       "at": "0x09CD3537",
+       "command": "goto_if",
+       "args": [
+        5,
+        164443464
+       ],
+       "targets": [
+        "0x09CD3548"
+       ]
+      },
+      {
+       "at": "0x09CD353D",
+       "command": "comparevartovalue",
+       "args": [
+        32773,
+        16
+       ],
+       "possible_names_not_semantics": {
+        "species": "波波",
+        "item": "解冻药",
+        "move": "起风"
+       }
+      },
+      {
+       "at": "0x09CD3542",
+       "command": "goto_if",
+       "args": [
+        1,
+        164443514
+       ],
+       "targets": [
+        "0x09CD357A"
+       ]
+      },
+      {
+       "at": "0x09CD3548",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        13
+       ],
+       "possible_names_not_semantics": {
+        "species": "独角虫",
+        "item": "伤药",
+        "move": "旋风刀"
+       }
+      },
+      {
+       "at": "0x09CD354D",
+       "command": "goto_if",
+       "args": [
+        5,
+        164443486
+       ],
+       "targets": [
+        "0x09CD355E"
+       ]
+      },
+      {
+       "at": "0x09CD3553",
+       "command": "comparevartovalue",
+       "args": [
+        32773,
+        15
+       ],
+       "possible_names_not_semantics": {
+        "species": "大针蜂",
+        "item": "灼伤药",
+        "move": "居合劈"
+       }
+      },
+      {
+       "at": "0x09CD3558",
+       "command": "goto_if",
+       "args": [
+        1,
+        164443533
+       ],
+       "targets": [
+        "0x09CD358D"
+       ]
+      },
+      {
+       "at": "0x09CD355E",
+       "command": "spriteface",
+       "args": [
+        43,
+        1
+       ]
+      },
+      {
+       "at": "0x09CD3562",
+       "command": "spriteface",
+       "args": [
+        255,
+        2
+       ]
+      },
+      {
+       "at": "0x09CD3566",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3517"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3548",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3548",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        13
+       ],
+       "possible_names_not_semantics": {
+        "species": "独角虫",
+        "item": "伤药",
+        "move": "旋风刀"
+       }
+      },
+      {
+       "at": "0x09CD354D",
+       "command": "goto_if",
+       "args": [
+        5,
+        164443486
+       ],
+       "targets": [
+        "0x09CD355E"
+       ]
+      },
+      {
+       "at": "0x09CD3553",
+       "command": "comparevartovalue",
+       "args": [
+        32773,
+        15
+       ],
+       "possible_names_not_semantics": {
+        "species": "大针蜂",
+        "item": "灼伤药",
+        "move": "居合劈"
+       }
+      },
+      {
+       "at": "0x09CD3558",
+       "command": "goto_if",
+       "args": [
+        1,
+        164443533
+       ],
+       "targets": [
+        "0x09CD358D"
+       ]
+      },
+      {
+       "at": "0x09CD355E",
+       "command": "spriteface",
+       "args": [
+        43,
+        1
+       ]
+      },
+      {
+       "at": "0x09CD3562",
+       "command": "spriteface",
+       "args": [
+        255,
+        2
+       ]
+      },
+      {
+       "at": "0x09CD3566",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3517"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD355E",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD355E",
+       "command": "spriteface",
+       "args": [
+        43,
+        1
+       ]
+      },
+      {
+       "at": "0x09CD3562",
+       "command": "spriteface",
+       "args": [
+        255,
+        2
+       ]
+      },
+      {
+       "at": "0x09CD3566",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3517"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD3567",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD3567",
+       "command": "applymovement",
+       "args": [
+        43,
+        164443624
+       ]
+      },
+      {
+       "at": "0x09CD356E",
+       "command": "waitmovement",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x09CD3571",
+       "command": "spriteface",
+       "args": [
+        43,
+        1
+       ]
+      },
+      {
+       "at": "0x09CD3575",
+       "command": "spriteface",
+       "args": [
+        255,
+        2
+       ]
+      },
+      {
+       "at": "0x09CD3579",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3517"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD357A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD357A",
+       "command": "applymovement",
+       "args": [
+        43,
+        164443626
+       ]
+      },
+      {
+       "at": "0x09CD3581",
+       "command": "waitmovement",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x09CD3584",
+       "command": "spriteface",
+       "args": [
+        43,
+        2
+       ]
+      },
+      {
+       "at": "0x09CD3588",
+       "command": "spriteface",
+       "args": [
+        255,
+        1
+       ]
+      },
+      {
+       "at": "0x09CD358C",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3517"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x09CD358D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x09CD358D",
+       "command": "applymovement",
+       "args": [
+        43,
+        164443628
+       ]
+      },
+      {
+       "at": "0x09CD3594",
+       "command": "waitmovement",
+       "args": [
+        43
+       ]
+      },
+      {
+       "at": "0x09CD3597",
+       "command": "spriteface",
+       "args": [
+        43,
+        1
+       ]
+      },
+      {
+       "at": "0x09CD359B",
+       "command": "spriteface",
+       "args": [
+        255,
+        2
+       ]
+      },
+      {
+       "at": "0x09CD359F",
+       "command": "return",
+       "args": []
+      }
+     ],
+     "source_kind": "supplemental_branch_candidate",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x09CD3517"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [
+    "0x089C2B4C",
+    "0x089C2B6A",
+    "0x089C2B85",
+    "0x089C2B99",
+    "0x089C2BA8"
+   ],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

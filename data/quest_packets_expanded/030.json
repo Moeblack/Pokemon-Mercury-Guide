@@ -1,0 +1,1782 @@
+{
+ "title": "帅与可爱的精灵",
+ "quest_id": 30,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b154",
+    "title": "帅与可爱的精灵",
+    "title_address": "0x8e3c922",
+    "description": "寻找既是钢系，又是妖精系，\n兼具帅气与可爱的宝可梦。",
+    "description_address": "0x8e3c8f1",
+    "unknown_u16": 209,
+    "unknown_u16_hex": "0x00D1",
+    "accept_flag": 5797,
+    "accept_flag_hex": "0x16A5",
+    "complete_flag": 5840,
+    "complete_flag_hex": "0x16D0",
+    "map_group": 46,
+    "map_num": 9,
+    "tail_hex": "01 01 00 00",
+    "index": 30,
+    "legacy_description_candidates": [],
+    "description_source": "current_row",
+    "description_address_merged": "0x8e3c8f1",
+    "legacy_match_count": 0,
+    "current_description": "寻找既是钢系，又是妖精系，\n兼具帅气与可爱的宝可梦。",
+    "catalog_map": {
+     "id": "46:9",
+     "name": "桔梗市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AC2553",
+    "0x08AE2E19",
+    "0x08AE2E4D",
+    "0x08AE2E99",
+    "0x08AE3021"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08AB61CA",
+     "map_id": "46:9",
+     "place": "桔梗市",
+     "kind": "坐标事件",
+     "local_id": null,
+     "event_index": 1,
+     "x": 4,
+     "y": 3,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g46_n009.md"
+    },
+    {
+     "script": "0x08AC2553",
+     "map_id": "46:9",
+     "place": "桔梗市",
+     "kind": "坐标事件",
+     "local_id": null,
+     "event_index": 0,
+     "x": 3,
+     "y": 4,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g46_n009.md"
+    },
+    {
+     "script": "0x08AE2E19",
+     "map_id": "46:9",
+     "place": "桔梗市",
+     "kind": "人物",
+     "local_id": 4,
+     "event_index": 3,
+     "x": 4,
+     "y": 6,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g46_n009.md"
+    },
+    {
+     "script": "0x08AE2E4D",
+     "map_id": "46:9",
+     "place": "桔梗市",
+     "kind": "人物",
+     "local_id": 1,
+     "event_index": 0,
+     "x": 2,
+     "y": 6,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g46_n009.md"
+    },
+    {
+     "script": "0x08AE2E99",
+     "map_id": "46:9",
+     "place": "桔梗市",
+     "kind": "人物",
+     "local_id": 2,
+     "event_index": 1,
+     "x": 3,
+     "y": 5,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g46_n009.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08AB61CA",
+     "event_roots": [
+      {
+       "map_id": "46:9",
+       "place": "桔梗市",
+       "kind": "坐标事件",
+       "local_id": null,
+       "event_index": 1,
+       "x": 4,
+       "y": 3,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g46_n009.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AB61CA",
+       "command": "applymovement",
+       "args": [
+        255,
+        145449434
+       ]
+      },
+      {
+       "at": "0x08AB61D1",
+       "command": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08AB61D4",
+       "command": "goto",
+       "args": [
+        145499475
+       ],
+       "targets": [
+        "0x08AC2553"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "coord",
+       "where": "46:9"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AC2553",
+     "event_roots": [
+      {
+       "map_id": "46:9",
+       "place": "桔梗市",
+       "kind": "坐标事件",
+       "local_id": null,
+       "event_index": 0,
+       "x": 3,
+       "y": 4,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g46_n009.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AC2553",
+       "command": "applymovement",
+       "args": [
+        255,
+        145499644
+       ]
+      },
+      {
+       "at": "0x08AC255A",
+       "command": "waitmovement",
+       "args": [
+        255
+       ]
+      },
+      {
+       "at": "0x08AC255D",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08AC2560",
+       "command": "applymovement",
+       "args": [
+        127,
+        145499647
+       ]
+      },
+      {
+       "at": "0x08AC2567",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08AC256A",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08AC256D",
+       "command": "applymovement",
+       "args": [
+        1,
+        145499651
+       ]
+      },
+      {
+       "at": "0x08AC2574",
+       "command": "waitmovement",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AC2577",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145499655
+       ],
+       "texts": [
+        {
+         "address": "0x08AC2607",
+         "text": "钢系才是最帅的！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC257D",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AC257F",
+       "command": "applymovement",
+       "args": [
+        4,
+        145499673
+       ]
+      },
+      {
+       "at": "0x08AC2586",
+       "command": "waitmovement",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AC2589",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145499677
+       ],
+       "texts": [
+        {
+         "address": "0x08AC261D",
+         "text": "妖精系才是最可爱的！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC258F",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AC2591",
+       "command": "special",
+       "args": [
+        275
+       ]
+      },
+      {
+       "at": "0x08AC2594",
+       "command": "applymovement",
+       "args": [
+        127,
+        145499699
+       ]
+      },
+      {
+       "at": "0x08AC259B",
+       "command": "waitmovement",
+       "args": [
+        127
+       ]
+      },
+      {
+       "at": "0x08AC259E",
+       "command": "special",
+       "args": [
+        276
+       ]
+      },
+      {
+       "at": "0x08AC25A1",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AC25A4",
+       "command": "applymovement",
+       "args": [
+        2,
+        145499703
+       ]
+      },
+      {
+       "at": "0x08AC25AB",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AC25AE",
+       "command": "applymovement",
+       "args": [
+        2,
+        145499706
+       ]
+      },
+      {
+       "at": "0x08AC25B5",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC25B8",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145499709
+       ]
+      },
+      {
+       "at": "0x08AC25BE",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AC25C0",
+       "command": "setflag",
+       "args": [
+        5797
+       ],
+       "task_flag_labels": [
+        {
+         "title": "帅与可爱的精灵",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC25C3",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AC25C6",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145501104
+       ],
+       "texts": [
+        {
+         "address": "0x08AC2BB0",
+         "text": "接受任务:<又帅又可爱的精灵>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC25CC",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AC25D1",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AC25D6",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AC25DB",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AC25E0",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AC25E5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145501514
+       ],
+       "texts": [
+        {
+         "address": "0x08AC2D4A",
+         "text": "如果有既是钢系\n又是妖精系的宝可梦……\n或许能解决他们之间的争端吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC25EB",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AC25ED",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AC25F2",
+       "command": "setflag",
+       "args": [
+        5797
+       ],
+       "task_flag_labels": [
+        {
+         "title": "帅与可爱的精灵",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AC25F5",
+       "command": "setvar",
+       "args": [
+        20889,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AC25FA",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "coord",
+       "where": "46:9"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE2E19",
+     "event_roots": [
+      {
+       "map_id": "46:9",
+       "place": "桔梗市",
+       "kind": "人物",
+       "local_id": 4,
+       "event_index": 3,
+       "x": 4,
+       "y": 6,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g46_n009.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AE2E19",
+       "command": "checkflag",
+       "args": [
+        5840
+       ],
+       "task_flag_labels": [
+        {
+         "title": "帅与可爱的精灵",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE2E1C",
+       "command": "goto_if",
+       "args": [
+        1,
+        145632812
+       ],
+       "targets": [
+        "0x08AE2E2C"
+       ]
+      },
+      {
+       "at": "0x08AE2E22",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145632822
+       ],
+       "texts": [
+        {
+         "address": "0x08AE2E36",
+         "text": "钢系宝可梦\n是最帅的！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE2E28",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE2E2A",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "46:9/local4"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE2E2C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE2E2C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145633069
+       ],
+       "texts": [
+        {
+         "address": "0x08AE2F2D",
+         "text": "原来妖精系宝可梦\n也很可爱呢！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE2E32",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE2E34",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE2E19"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE2E4D",
+     "event_roots": [
+      {
+       "map_id": "46:9",
+       "place": "桔梗市",
+       "kind": "人物",
+       "local_id": 1,
+       "event_index": 0,
+       "x": 2,
+       "y": 6,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g46_n009.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AE2E4D",
+       "command": "checkflag",
+       "args": [
+        5840
+       ],
+       "task_flag_labels": [
+        {
+         "title": "帅与可爱的精灵",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE2E50",
+       "command": "goto_if",
+       "args": [
+        1,
+        145632891
+       ],
+       "targets": [
+        "0x08AE2E7B"
+       ]
+      },
+      {
+       "at": "0x08AE2E56",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145633099
+       ],
+       "texts": [
+        {
+         "address": "0x08AE2F4B",
+         "text": "妖精系宝可梦\n才是最可爱的！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE2E5C",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE2E5E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "46:9/local1"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE2E7B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE2E7B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145633128
+       ],
+       "texts": [
+        {
+         "address": "0x08AE2F68",
+         "text": "原来钢系宝可梦\n也很帅呀！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE2E81",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE2E83",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE2E4D"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE2E99",
+     "event_roots": [
+      {
+       "map_id": "46:9",
+       "place": "桔梗市",
+       "kind": "人物",
+       "local_id": 2,
+       "event_index": 1,
+       "x": 3,
+       "y": 5,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g46_n009.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08AE2E99",
+       "command": "checkflag",
+       "args": [
+        5840
+       ],
+       "task_flag_labels": [
+        {
+         "title": "帅与可爱的精灵",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE2E9C",
+       "command": "goto_if",
+       "args": [
+        1,
+        145633050
+       ],
+       "targets": [
+        "0x08AE2F1A"
+       ]
+      },
+      {
+       "at": "0x08AE2EA2",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145633707
+       ],
+       "texts": [
+        {
+         "address": "0x08AE31AB",
+         "text": "怎么样，\n你找到合适的宝可梦了吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE2EA8",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE2EAA",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AE2EAD",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x08AE2EB0",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08AE2EB1",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x08AE2EB6",
+       "command": "goto_if",
+       "args": [
+        1,
+        145633060
+       ],
+       "targets": [
+        "0x08AE2F24"
+       ]
+      },
+      {
+       "at": "0x08AE2EBC",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AE2EC1",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08AE2EC6",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        355
+       ],
+       "possible_names_not_semantics": {
+        "species": "大嘴娃",
+        "item": "钥匙卡",
+        "move": "吸血之牙"
+       }
+      },
+      {
+       "at": "0x08AE2ECB",
+       "command": "goto_if",
+       "args": [
+        1,
+        145633313
+       ],
+       "targets": [
+        "0x08AE3021"
+       ]
+      },
+      {
+       "at": "0x08AE2ED1",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AE2ED6",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08AE2EDB",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        815
+       ],
+       "possible_names_not_semantics": {
+        "species": "钥圈儿",
+        "item": null,
+        "move": "Z-Move 26"
+       }
+      },
+      {
+       "at": "0x08AE2EE0",
+       "command": "goto_if",
+       "args": [
+        1,
+        145633313
+       ],
+       "targets": [
+        "0x08AE3021"
+       ]
+      },
+      {
+       "at": "0x08AE2EE6",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AE2EEB",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08AE2EF0",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1018
+       ],
+       "possible_names_not_semantics": {
+        "species": "玛机雅娜",
+        "item": null,
+        "move": null
+       }
+      },
+      {
+       "at": "0x08AE2EF5",
+       "command": "goto_if",
+       "args": [
+        1,
+        145633313
+       ],
+       "targets": [
+        "0x08AE3021"
+       ]
+      },
+      {
+       "at": "0x08AE2EFB",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08AE2F00",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08AE2F05",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1180
+       ],
+       "possible_names_not_semantics": {
+        "species": "苍响",
+        "item": null,
+        "move": null
+       }
+      },
+      {
+       "at": "0x08AE2F0A",
+       "command": "goto_if",
+       "args": [
+        1,
+        145633313
+       ],
+       "targets": [
+        "0x08AE3021"
+       ]
+      },
+      {
+       "at": "0x08AE2F10",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145633761
+       ],
+       "texts": [
+        {
+         "address": "0x08AE31E1",
+         "text": "这只宝可梦…\n似乎不太合适吧？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE2F16",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE2F18",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "46:9/local2"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE2F1A",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE2F1A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145635041
+       ]
+      },
+      {
+       "at": "0x08AE2F20",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE2F22",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE2E99"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE2F24",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE2F24",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145633741
+       ],
+       "texts": [
+        {
+         "address": "0x08AE31CD",
+         "text": "我期待着你的发现！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE2F2A",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE2F2C",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE2E99"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE3021",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE3021",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AE3024",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145633791
+       ]
+      },
+      {
+       "at": "0x08AE302B",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AE302E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145633794
+       ]
+      },
+      {
+       "at": "0x08AE3034",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE3036",
+       "command": "applymovement",
+       "args": [
+        2,
+        145633912
+       ]
+      },
+      {
+       "at": "0x08AE303D",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE3040",
+       "command": "showpokepic",
+       "args": [
+        32781,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08AE3045",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145633879
+       ]
+      },
+      {
+       "at": "0x08AE304B",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE304D",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE3050",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08AE3051",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AE3052",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE3055",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AE3058",
+       "command": "applymovement",
+       "args": [
+        1,
+        145633916
+       ]
+      },
+      {
+       "at": "0x08AE305F",
+       "command": "applymovement",
+       "args": [
+        4,
+        145633916
+       ]
+      },
+      {
+       "at": "0x08AE3066",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AE3069",
+       "command": "applymovement",
+       "args": [
+        4,
+        145633920
+       ]
+      },
+      {
+       "at": "0x08AE3070",
+       "command": "waitmovement",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AE3073",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145633924
+       ]
+      },
+      {
+       "at": "0x08AE3079",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE307B",
+       "command": "applymovement",
+       "args": [
+        1,
+        145633920
+       ]
+      },
+      {
+       "at": "0x08AE3082",
+       "command": "waitmovement",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE3085",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145633946
+       ]
+      },
+      {
+       "at": "0x08AE308B",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE308D",
+       "command": "applymovement",
+       "args": [
+        2,
+        145633912
+       ]
+      },
+      {
+       "at": "0x08AE3094",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE3097",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145634036
+       ]
+      },
+      {
+       "at": "0x08AE309D",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE309F",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AE30A2",
+       "command": "applymovement",
+       "args": [
+        1,
+        145633916
+       ]
+      },
+      {
+       "at": "0x08AE30A9",
+       "command": "applymovement",
+       "args": [
+        4,
+        145633916
+       ]
+      },
+      {
+       "at": "0x08AE30B0",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08AE30B3",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145634084
+       ]
+      },
+      {
+       "at": "0x08AE30B9",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE30BB",
+       "command": "applymovement",
+       "args": [
+        2,
+        145633912
+       ]
+      },
+      {
+       "at": "0x08AE30C2",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE30C5",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145634370
+       ]
+      },
+      {
+       "at": "0x08AE30CB",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE30CD",
+       "command": "applymovement",
+       "args": [
+        4,
+        145633920
+       ]
+      },
+      {
+       "at": "0x08AE30D4",
+       "command": "waitmovement",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08AE30D7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145634568
+       ]
+      },
+      {
+       "at": "0x08AE30DD",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE30DF",
+       "command": "applymovement",
+       "args": [
+        1,
+        145633920
+       ]
+      },
+      {
+       "at": "0x08AE30E6",
+       "command": "waitmovement",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE30E9",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145634619
+       ],
+       "texts": [
+        {
+         "address": "0x08AE353B",
+         "text": "老师，\n我也知道了，不是所有的\n钢宝可梦都那么可怕。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE30EF",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE30F1",
+       "command": "applymovement",
+       "args": [
+        2,
+        145634669
+       ]
+      },
+      {
+       "at": "0x08AE30F8",
+       "command": "waitmovement",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE30FB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145634672
+       ]
+      },
+      {
+       "at": "0x08AE3101",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE3103",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        438
+       ],
+       "possible_names_not_semantics": {
+        "species": "未知图腾",
+        "item": "TM113",
+        "move": "二连击"
+       }
+      },
+      {
+       "at": "0x08AE3108",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE310D",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AE310F",
+       "command": "setflag",
+       "args": [
+        5840
+       ],
+       "task_flag_labels": [
+        {
+         "title": "帅与可爱的精灵",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE3112",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145635041
+       ]
+      },
+      {
+       "at": "0x08AE3118",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08AE311A",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08AE311D",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE3120",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145635166
+       ],
+       "texts": [
+        {
+         "address": "0x08AE375E",
+         "text": "完成任务:<又帅又可爱的宝可梦>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE3126",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE312B",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE3130",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE3135",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AE313A",
+       "command": "goto",
+       "args": [
+        145637025
+       ],
+       "targets": [
+        "0x08AE3EA1"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE2E99"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08AE3EA1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE3EA1",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AE3EA6",
+       "command": "addvar",
+       "args": [
+        20789,
+        5
+       ]
+      },
+      {
+       "at": "0x08AE3EAB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145687296
+       ],
+       "texts": [
+        {
+         "address": "0x08AF0300",
+         "text": "获得了5点BracerPoints!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE3EB1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE3EB3",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AE3EB8",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08AE3021"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

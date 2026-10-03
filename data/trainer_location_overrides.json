@@ -1,0 +1,27 @@
+{
+ "schema": "trainer_location_overrides_v1",
+ "note": "只收录已有明确依据的实际地点更正；未列出的记录不使用城市场景猜测。shared_battle_scene_maps 内的地图键不能当作 NPC 实际所在地。",
+ "shared_scene_label": "共用对战场景，实际接战地点未定位",
+ "shared_battle_scene_maps": {
+  "52:10": "music gym / warp0:0 / 大量模板对象的共用战斗场景；关联场景名不等于 NPC 实际地点（Main 2026-10-03 指正）。",
+  "52:4": "同签名（music 275、单 warp 0:0、13 模板对象、名称误作真新镇）；不凭常识补实际城市（Main 2026-10-03 裁定）。",
+  "52:9": "同签名（music 275、单 warp 0:0、11 模板对象、名称误作真新镇）；不凭常识补实际城市（Main 2026-10-03 裁定）。",
+  "55:37": "同签名（music 275、单 warp 0:0、15 模板对象、名称误作真新镇）；不凭常识补实际城市（Main 2026-10-03 裁定）。"
+ },
+ "overrides": [
+  {
+   "id": 83,
+   "name": "阿四",
+   "actual_location": "湛蓝市",
+   "evidence": "用户及本轮对白确认（83=湛蓝市阿四）",
+   "original_areas": ["真新镇"]
+  },
+  {
+   "id": 111,
+   "name": "小茜",
+   "actual_location": "满金市",
+   "evidence": "用户及本轮对白确认（111=满金市小茜）",
+   "original_areas": ["6号公路", "满金市"]
+  }
+ ]
+}

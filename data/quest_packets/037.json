@@ -1,0 +1,952 @@
+{
+ "title": "目标是虫系大师",
+ "quest_id": 37,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b1e0",
+    "title": "目标是虫系大师",
+    "title_address": "0x8e3c82a",
+    "description": "我向往成为\n虫属性宝可梦大师！\n请来碳工匠小屋附近帮帮我。",
+    "description_address": "0x8e3c80a",
+    "unknown_u16": 93,
+    "unknown_u16_hex": "0x005D",
+    "accept_flag": 5847,
+    "accept_flag_hex": "0x16D7",
+    "complete_flag": 5844,
+    "complete_flag_hex": "0x16D4",
+    "map_group": 3,
+    "map_num": 69,
+    "tail_hex": "0b 00 00 00",
+    "index": 37,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39514",
+      "title": "目标是虫属性大师",
+      "description_address": "0x8e3a81d",
+      "description": "我向往成为\\n虫属性宝可梦大师！\\n请来碳工匠小屋附近帮帮我。"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3a81d",
+    "legacy_match_count": 1,
+    "current_description": "帮助桧皮镇的女孩\n制作3个速度球。",
+    "catalog_map": {
+     "id": "3:69",
+     "name": "桧皮镇"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08AE6912",
+    "0x08AE6F7B",
+    "0x08F523F7"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F50983",
+     "map_id": "3:69",
+     "place": "桧皮镇",
+     "kind": "人物",
+     "local_id": 12,
+     "event_index": 11,
+     "x": 30,
+     "y": 16,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g03_n069.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08AE6912",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE6912",
+       "command": "checkflag",
+       "args": [
+        5844
+       ],
+       "task_flag_labels": [
+        {
+         "title": "目标是虫系大师",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE6915",
+       "command": "goto_if",
+       "args": [
+        1,
+        145647927
+       ],
+       "targets": [
+        "0x08AE6937"
+       ]
+      },
+      {
+       "at": "0x08AE691B",
+       "command": "checkflag",
+       "args": [
+        5847
+       ],
+       "task_flag_labels": [
+        {
+         "title": "目标是虫系大师",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE691E",
+       "command": "goto_if",
+       "args": [
+        1,
+        145648384
+       ],
+       "targets": [
+        "0x08AE6B00"
+       ]
+      },
+      {
+       "at": "0x08AE6924",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08AE6927",
+       "command": "goto_if",
+       "args": [
+        1,
+        145650245
+       ],
+       "targets": [
+        "0x08AE7245"
+       ]
+      },
+      {
+       "at": "0x08AE692D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144521040
+       ],
+       "texts": [
+        {
+         "address": "0x089D3750",
+         "text": "你也是来找钢铁先生\n制作精灵球的吗？\n好多人都是这样。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE6933",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE6935",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AE6937",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE6937",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145649626
+       ],
+       "texts": [
+        {
+         "address": "0x08AE6FDA",
+         "text": "谢谢你，\n我现在就要去捕捉飞天螳螂试试！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE693D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE693F",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AE6B00",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE6B00",
+       "command": "checkitem",
+       "args": [
+        243,
+        3
+       ],
+       "item_name": "速度球"
+      },
+      {
+       "at": "0x08AE6B05",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE6B0A",
+       "command": "goto_if",
+       "args": [
+        1,
+        145650258
+       ],
+       "targets": [
+        "0x08AE7252"
+       ]
+      },
+      {
+       "at": "0x08AE6B10",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145649666
+       ],
+       "texts": [
+        {
+         "address": "0x08AE7002",
+         "text": "你好，\n速度球的事怎么样了？"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE6B16",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE6B18",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AE6B1D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE6B1D",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08AE6B20",
+       "command": "applymovement",
+       "args": [
+        32783,
+        145648410
+       ]
+      },
+      {
+       "at": "0x08AE6B27",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08AE6B2A",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE6B2B",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08AE6B2C",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145649694
+       ],
+       "texts": [
+        {
+         "address": "0x08AE701E",
+         "text": "桧皮镇的馆主阿笔是虫宝可梦\n的专家，他是我向往的目标，\n为此我也想捕捉各种虫属性宝可梦。\n目前我想捕捉一只飞天螳螂，\n但无论如何都会被它从球中逃脱。\n我听说钢铁先生制作的速度球\n能够对飞天螳螂有4倍的捕获几率，\n你能帮我做3个速度球吗？\n速度球需要白色的圆柑果实制作，\n拜托你啦!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE6B32",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE6B34",
+       "command": "goto",
+       "args": [
+        150278770
+       ],
+       "targets": [
+        "0x08F51272"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE6B49",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE6B49",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145650047
+       ],
+       "texts": [
+        {
+         "address": "0x08AE717F",
+         "text": "就是这个速度球！太好啦，\n有了这个我一定能捕捉飞天螳螂。\n真是太谢谢你了，\n不愧是协会的训练家，\n委托协会果然是正确的。\n对了,这个送给你作为谢礼吧!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE6B4F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE6B51",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE6B52",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        180
+       ],
+       "possible_names_not_semantics": {
+        "species": "茸茸羊",
+        "item": "白色香草",
+        "move": "怨恨"
+       }
+      },
+      {
+       "at": "0x08AE6B57",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE6B5C",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AE6B5E",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AE6B5F",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08AE6B62",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08AE6B63",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        536
+       ],
+       "possible_names_not_semantics": {
+        "species": "帝牙卢卡",
+        "item": "经验糖果XS",
+        "move": "找伙伴"
+       }
+      },
+      {
+       "at": "0x08AE6B68",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        5
+       ],
+       "possible_names_not_semantics": {
+        "species": "火恐龙",
+        "item": "狩猎球",
+        "move": "百万吨重拳"
+       }
+      },
+      {
+       "at": "0x08AE6B6D",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08AE6B6F",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AE6B70",
+       "command": "pause",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x08AE6B73",
+       "command": "goto",
+       "args": [
+        150283255
+       ],
+       "targets": [
+        "0x08F523F7"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE6F7B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE6F7B",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE6F7E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145650187
+       ],
+       "texts": [
+        {
+         "address": "0x08AE720B",
+         "text": "接受任务:<目标是虫属性大师>"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE6F84",
+       "command": "setflag",
+       "args": [
+        5847
+       ],
+       "task_flag_labels": [
+        {
+         "title": "目标是虫系大师",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE6F87",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE6F8C",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08AE6F91",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08AE6F96",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08AE6F9B",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AE6FA0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145650220
+       ],
+       "texts": [
+        {
+         "address": "0x08AE722C",
+         "text": "那么就拜托你啦，\n谢谢你！"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE6FA6",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE6FA8",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AE6FAD",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08AE6FAE",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7245",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7245",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144521040
+       ],
+       "texts": [
+        {
+         "address": "0x089D3750",
+         "text": "你也是来找钢铁先生\n制作精灵球的吗？\n好多人都是这样。"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE724B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE724D",
+       "command": "goto",
+       "args": [
+        145648413
+       ],
+       "targets": [
+        "0x08AE6B1D"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE7252",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE7252",
+       "command": "removeitem",
+       "args": [
+        243,
+        3
+       ],
+       "item_name": "速度球"
+      },
+      {
+       "at": "0x08AE7257",
+       "command": "goto",
+       "args": [
+        145648457
+       ],
+       "targets": [
+        "0x08AE6B49"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08AE725C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08AE725C",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08AE7261",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE7264",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08AE726A",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145650012
+       ],
+       "texts": [
+        {
+         "address": "0x08AE715C",
+         "text": "获得了3点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08AE7270",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08AE7272",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08AE7277",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F50983",
+     "event_roots": [
+      {
+       "map_id": "3:69",
+       "place": "桧皮镇",
+       "kind": "人物",
+       "local_id": 12,
+       "event_index": 11,
+       "x": 30,
+       "y": 16,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g03_n069.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F50983",
+       "command": "applymovement",
+       "args": [
+        33,
+        150278176
+       ]
+      },
+      {
+       "at": "0x08F5098A",
+       "command": "waitmovement",
+       "args": [
+        33
+       ]
+      },
+      {
+       "at": "0x08F5098D",
+       "command": "goto",
+       "args": [
+        145647890
+       ],
+       "targets": [
+        "0x08AE6912"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F51272",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F51272",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F51277",
+       "command": "goto_if",
+       "args": [
+        1,
+        145649531
+       ],
+       "targets": [
+        "0x08AE6F7B"
+       ]
+      },
+      {
+       "at": "0x08F5127D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145649958
+       ],
+       "texts": [
+        {
+         "address": "0x08AE7126",
+         "text": "好吧，\n也许你很忙……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F51283",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F51285",
+       "command": "applymovement",
+       "args": [
+        33,
+        150279850
+       ]
+      },
+      {
+       "at": "0x08F5128C",
+       "command": "waitmovement",
+       "args": [
+        33
+       ]
+      },
+      {
+       "at": "0x08F5128F",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F51290",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F523F7",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F523F7",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145649979
+       ],
+       "texts": [
+        {
+         "address": "0x08AE713B",
+         "text": "任务完成:<目标是虫属性大师>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F523FD",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F52402",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F52407",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F5240C",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F52411",
+       "command": "setflag",
+       "args": [
+        5844
+       ],
+       "task_flag_labels": [
+        {
+         "title": "目标是虫系大师",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F52414",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08F52419",
+       "command": "goto",
+       "args": [
+        145650268
+       ],
+       "targets": [
+        "0x08AE725C"
+       ]
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

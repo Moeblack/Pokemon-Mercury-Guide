@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+data/runtime_trace/
+*.tmp
+*.srm
+*.sav
+*.state
+*.ewram
+*.iwram
+*.vram

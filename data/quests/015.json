@@ -1,0 +1,79 @@
+{
+ "id": 15,
+ "title": "红色火球之谜",
+ "start_locations": [
+  {
+   "map_id": "3:79",
+   "place": "29号道路",
+   "x": 14,
+   "y": 6,
+   "npc_hint": "男子(local_id 6)"
+  }
+ ],
+ "requirements": [
+  "主线前置旗标（入口脚本0x08AB55D9先检查，具体剧情点未解释）",
+  "周四夜晚收听广播'神奥之声'期间前往29号道路（对白明示）",
+  "精灵球与队伍空位"
+ ],
+ "steps": [
+  {
+   "text": "与29号道路(14,6)的男子对话，他讲述周四晚上听'神奥之声'时看到红色火球，请你捉来。",
+   "source_scripts": [
+    "0x08F50365",
+    "0x08AB55D9",
+    "0x08ABA2F5"
+   ],
+   "map_id": "3:79"
+  },
+  {
+   "text": "答应后出现'接受任务:<红色火球之谜>'。",
+   "source_scripts": [
+    "0x08ABA2F5"
+   ]
+  },
+  {
+   "text": "周四夜晚（配合广播）在29号道路草丛捕捉小火焰猴(443)。",
+   "source_scripts": [
+    "0x08ABA44B"
+   ],
+   "map_id": "3:79"
+  },
+  {
+   "text": "带小火焰猴回男子处，他核对是否为红色火球并检查捕获地区。",
+   "source_scripts": [
+    "0x08ABA44B",
+    "0x08ABA491"
+   ]
+  },
+  {
+   "text": "确认后他收下火球并交付报酬。",
+   "source_scripts": [
+    "0x08ABB095"
+   ]
+  }
+ ],
+ "completion": [
+  "同行队伍中携带在29号道路捕获的小火焰猴(443)，男子核验捕获地区后交付"
+ ],
+ "rewards": [
+  "金珠×2",
+  "3 BracerPoints"
+ ],
+ "pitfalls": [
+  "非29号道路捕获会提示'不对，你似乎不是在这里捕获到它的'",
+  "队伍中没有目标时报'好吧……'",
+  "广播只在周四触发，权重表仅表示候选不代表必定出现"
+ ],
+ "related_items": [
+  110
+ ],
+ "related_species": [
+  443
+ ],
+ "related_trainers": [],
+ "open_questions": [
+  "周四广播槽含小火焰猴(443)，但实际出现概率未定"
+ ],
+ "source_packet": "data/quest_packets/015.json",
+ "status": "compiled"
+}

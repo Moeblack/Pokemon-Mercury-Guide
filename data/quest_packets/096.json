@@ -1,0 +1,51 @@
+{
+ "title": "被遗忘的遗忘",
+ "quest_id": 96,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b67c",
+    "title": "被遗忘的遗忘",
+    "title_address": "0x8e3bb50",
+    "description": "我忘记了如何去遗忘招式...\n请来技能之家帮帮我。",
+    "description_address": "0x8e3bb2d",
+    "unknown_u16": 105,
+    "unknown_u16_hex": "0x0069",
+    "accept_flag": 3281,
+    "accept_flag_hex": "0x0CD1",
+    "complete_flag": 3282,
+    "complete_flag_hex": "0x0CD2",
+    "map_group": 32,
+    "map_num": 3,
+    "tail_hex": "01 01 00 00",
+    "index": 96,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe397b4",
+      "title": "被遗忘的遗忘",
+      "description_address": "0x8e39b17",
+      "description": "我忘记了如何去遗忘招式...\\n请来技能之家帮帮我。"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39b17",
+    "legacy_match_count": 1,
+    "current_description": "帮助遗忘爷爷\n回忆起遗忘招式的方法。",
+    "catalog_map": {
+     "id": "32:3",
+     "name": "烟墨市"
+    }
+   },
+   "direct_flag_scripts": [],
+   "event_roots": [],
+   "scripts": [],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

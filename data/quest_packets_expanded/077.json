@@ -1,0 +1,1220 @@
+{
+ "title": "帕底亚的礼物梦",
+ "quest_id": 77,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b500",
+    "title": "帕底亚的礼物梦",
+    "title_address": "0x8e3c172",
+    "description": "关键的灵感...就差一点了！\n梦想的新店，正缺少一个灵魂...\n详情请至精灵中心与我面谈！",
+    "description_address": "0x8e3c132",
+    "unknown_u16": 11625,
+    "unknown_u16_hex": "0x2D69",
+    "accept_flag": 2694,
+    "accept_flag_hex": "0x0A86",
+    "complete_flag": 2695,
+    "complete_flag_hex": "0x0A87",
+    "map_group": 53,
+    "map_num": 1,
+    "tail_hex": "05 01 00 00",
+    "index": 77,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe39734",
+      "title": "帕底亚的礼物梦",
+      "description_address": "0x8e39b52",
+      "description": "关键的灵感...就差一点了！\\n梦想的新店，正缺少一个灵魂...\\n详情请至精灵中心与我面谈！"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e39b52",
+    "legacy_match_count": 1,
+    "current_description": "帮助卡吉镇精灵中心的\n帕底亚商人寻找拥有着\n给予精神的红色宝可梦。",
+    "catalog_map": {
+     "id": "53:1",
+     "name": "卡吉镇"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x08F5D05C",
+    "0x08F5D62D",
+    "0x08F5D662"
+   ],
+   "event_roots": [
+    {
+     "script": "0x08F5CFDC",
+     "map_id": "53:1",
+     "place": "卡吉镇",
+     "kind": "人物",
+     "local_id": 41,
+     "event_index": 10,
+     "x": 15,
+     "y": 14,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g53_n001.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x08F5CFDC",
+     "event_roots": [
+      {
+       "map_id": "53:1",
+       "place": "卡吉镇",
+       "kind": "人物",
+       "local_id": 41,
+       "event_index": 10,
+       "x": 15,
+       "y": 14,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g53_n001.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F5CFDC",
+       "command": "applymovement",
+       "args": [
+        32,
+        150330787
+       ]
+      },
+      {
+       "at": "0x08F5CFE3",
+       "command": "waitmovement",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x08F5CFE6",
+       "command": "goto",
+       "args": [
+        150327388
+       ],
+       "targets": [
+        "0x08F5D05C"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "object",
+       "where": "53:1/local41"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5D05C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5D05C",
+       "command": "checkflag",
+       "args": [
+        2695
+       ],
+       "task_flag_labels": [
+        {
+         "title": "帕底亚的礼物梦",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D05F",
+       "command": "goto_if",
+       "args": [
+        1,
+        150327425
+       ],
+       "targets": [
+        "0x08F5D081"
+       ]
+      },
+      {
+       "at": "0x08F5D065",
+       "command": "checkflag",
+       "args": [
+        2694
+       ],
+       "task_flag_labels": [
+        {
+         "title": "帕底亚的礼物梦",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D068",
+       "command": "goto_if",
+       "args": [
+        1,
+        150328612
+       ],
+       "targets": [
+        "0x08F5D524"
+       ]
+      },
+      {
+       "at": "0x08F5D06E",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x08F5D071",
+       "command": "goto_if",
+       "args": [
+        1,
+        150328673
+       ],
+       "targets": [
+        "0x08F5D561"
+       ]
+      },
+      {
+       "at": "0x08F5D077",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150329001
+       ],
+       "texts": [
+        {
+         "address": "0x08F5D6A9",
+         "text": "好、好冷啊！\n这里的冬天\n简直比大锅湖还要冷……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D07D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5D07F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5CFDC"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5D081",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5D081",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150330507
+       ],
+       "texts": [
+        {
+         "address": "0x08F5DC8B",
+         "text": "呼……\n既然决定了品牌，\n我就得赶紧回去写企划书了。\n第一家店开在哪里比较好呢？\n酿光市和桌台市都是不错的选择……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D087",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5D089",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5D05C"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5D524",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5D524",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F5D525",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150329046
+       ],
+       "texts": [
+        {
+         "address": "0x08F5D6D6",
+         "text": "怎么样，你找到那只在\n冰天地出现的红色宝可梦了吗？\n它的尾巴到底是什么样子的呢？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D52B",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5D52D",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F5D52E",
+       "command": "pause",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F5D531",
+       "command": "special",
+       "args": [
+        159
+       ]
+      },
+      {
+       "at": "0x08F5D534",
+       "command": "waitstate",
+       "args": []
+      },
+      {
+       "at": "0x08F5D535",
+       "command": "comparevartovalue",
+       "args": [
+        32772,
+        7
+       ],
+       "possible_names_not_semantics": {
+        "species": "杰尼龟",
+        "item": "潜水球",
+        "move": "火焰拳"
+       }
+      },
+      {
+       "at": "0x08F5D53A",
+       "command": "goto_if",
+       "args": [
+        1,
+        150328736
+       ],
+       "targets": [
+        "0x08F5D5A0"
+       ]
+      },
+      {
+       "at": "0x08F5D540",
+       "command": "setvar",
+       "args": [
+        32771,
+        0
+       ],
+       "possible_names_not_semantics": {
+        "species": "??????",
+        "item": "????????",
+        "move": "-"
+       }
+      },
+      {
+       "at": "0x08F5D545",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F5D546",
+       "command": "special2",
+       "args": [
+        32781,
+        24
+       ]
+      },
+      {
+       "at": "0x08F5D54B",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        225
+       ],
+       "possible_names_not_semantics": {
+        "species": "信使鸟",
+        "item": "大葱",
+        "move": "龙息"
+       }
+      },
+      {
+       "at": "0x08F5D550",
+       "command": "goto_if",
+       "args": [
+        1,
+        150328746
+       ],
+       "targets": [
+        "0x08F5D5AA"
+       ]
+      },
+      {
+       "at": "0x08F5D556",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F5D557",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150329124
+       ],
+       "texts": [
+        {
+         "address": "0x08F5D724",
+         "text": "这不像是\n有“给予”精神的宝可梦呢…"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D55D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5D55F",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5D05C"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5D561",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5D561",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150329001
+       ],
+       "texts": [
+        {
+         "address": "0x08F5D6A9",
+         "text": "好、好冷啊！\n这里的冬天\n简直比大锅湖还要冷……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D567",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5D569",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F5D56C",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150330790
+       ]
+      },
+      {
+       "at": "0x08F5D573",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x08F5D576",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F5D577",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x08F5D578",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150329452
+       ],
+       "texts": [
+        {
+         "address": "0x08F5D86C",
+         "text": "你好，\n年轻的训练家！\n我是来自帕底亚地区的商人。\n为了开一家新店，\n我来到了城都地区进行实地考察。\n但是……唉。\n这里的礼物商店……\n散发着一种很可疑的气息。\n店员的眼神\n像是在看猎物而不是顾客。\n这不是我想要的商业模式！\n我想要创立的，\n是那种能给旅途中的训练家……\n带来惊喜和支援的店铺！\n就像是……在暴风雪中\n收到礼物一样的温暖感觉！\n听说这附近的冰天地里，\n生活着一种红色的宝可梦。\n据说它会把\n尾巴里的食物分给遇难的人类……\n那种“给予”的精神与“惊喜”的感觉，\n简直就是我理想中的品牌形象！\n所以……\n你能帮我抓到那只\n红色的宝可梦，并给我看看吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D57E",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F5D580",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5D585",
+       "command": "goto_if",
+       "args": [
+        1,
+        150328877
+       ],
+       "targets": [
+        "0x08F5D62D"
+       ]
+      },
+      {
+       "at": "0x08F5D58B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150329959
+       ],
+       "texts": [
+        {
+         "address": "0x08F5DA67",
+         "text": "好吧……\n看来你并没有“给予”精神呢。"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D591",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5D593",
+       "command": "applymovement",
+       "args": [
+        32,
+        150330793
+       ]
+      },
+      {
+       "at": "0x08F5D59A",
+       "command": "waitmovement",
+       "args": [
+        32
+       ]
+      },
+      {
+       "at": "0x08F5D59D",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5D59E",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5D05C"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5D5A0",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5D5A0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150329994
+       ],
+       "texts": [
+        {
+         "address": "0x08F5DA8A",
+         "text": "在冰天地找找看吧，\n那只红色的宝可梦……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D5A6",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5D5A8",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5D524"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5D5AA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5D5AA",
+       "command": "pause",
+       "args": [
+        16
+       ]
+      },
+      {
+       "at": "0x08F5D5AD",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F5D5B0",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150330796
+       ]
+      },
+      {
+       "at": "0x08F5D5B7",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F5D5BA",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F5D5BB",
+       "command": "showpokepic",
+       "args": [
+        225,
+        10,
+        4
+       ]
+      },
+      {
+       "at": "0x08F5D5C0",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150330033
+       ],
+       "texts": [
+        {
+         "address": "0x08F5DAB1",
+         "text": "天、天呐！\n这、这就是……信使鸟！\n快看！快看它的尾巴！\n虽然看起来\n像是拿着一个袋子，\n但其实那就是它的尾巴啊！\n它把重要的东西\n藏在那个像“包包”一样的尾巴里，\n然后慷慨地拿出来分享……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D5C6",
+       "command": "callstd",
+       "args": [
+        4
+       ]
+      },
+      {
+       "at": "0x08F5D5C8",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F5D5C9",
+       "command": "hidepokepic",
+       "args": []
+      },
+      {
+       "at": "0x08F5D5CA",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F5D5CB",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x08F5D5CE",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F5D5CF",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x08F5D5D2",
+       "command": "applymovement",
+       "args": [
+        32783,
+        150330799
+       ]
+      },
+      {
+       "at": "0x08F5D5D9",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x08F5D5DC",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F5D5DD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150330203
+       ]
+      },
+      {
+       "at": "0x08F5D5E3",
+       "command": "callstd",
+       "args": [
+        6
+       ]
+      },
+      {
+       "at": "0x08F5D5E5",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F5D5E6",
+       "command": "givepokemon",
+       "args": [
+        258,
+        20,
+        0,
+        0,
+        0,
+        0
+       ],
+       "species_name": "乌波"
+      },
+      {
+       "at": "0x08F5D5F5",
+       "command": "preparemsg",
+       "args": [
+        150328857
+       ],
+       "texts": [
+        {
+         "address": "0x08F5D619",
+         "text": "[玩家/变量]得了乌波！"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D5FA",
+       "command": "waitmsg",
+       "args": []
+      },
+      {
+       "at": "0x08F5D5FB",
+       "command": "fanfare",
+       "args": [
+        259
+       ]
+      },
+      {
+       "at": "0x08F5D5FE",
+       "command": "waitfanfare",
+       "args": []
+      },
+      {
+       "at": "0x08F5D5FF",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        537
+       ],
+       "possible_names_not_semantics": {
+        "species": "帕路奇亚",
+        "item": "经验糖果S",
+        "move": "暗黑爆破"
+       }
+      },
+      {
+       "at": "0x08F5D604",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F5D609",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x08F5D60B",
+       "command": "pause",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x08F5D60E",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F5D60F",
+       "command": "lock",
+       "args": []
+      },
+      {
+       "at": "0x08F5D610",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5D613",
+       "command": "goto",
+       "args": [
+        150328930
+       ],
+       "targets": [
+        "0x08F5D662"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5D524"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5D62D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5D62D",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5D630",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150330613
+       ],
+       "texts": [
+        {
+         "address": "0x08F5DCF5",
+         "text": "接受任务:<帕底亚的礼物梦>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D636",
+       "command": "setflag",
+       "args": [
+        2694
+       ],
+       "task_flag_labels": [
+        {
+         "title": "帕底亚的礼物梦",
+         "role": "accept_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D639",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5D63E",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5D643",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F5D648",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F5D64D",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F5D652",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150330644
+       ],
+       "texts": [
+        {
+         "address": "0x08F5DD14",
+         "text": "太好了！\n你果然也是拥有“给予”精神的人！\n在冰天地找找看吧，\n那只红色的宝可梦……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D658",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5D65A",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F5D65F",
+       "command": "release",
+       "args": []
+      },
+      {
+       "at": "0x08F5D660",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5D561"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5D662",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5D662",
+       "command": "addmoney",
+       "args": [
+        4000,
+        0
+       ]
+      },
+      {
+       "at": "0x08F5D668",
+       "command": "setflag",
+       "args": [
+        2695
+       ],
+       "task_flag_labels": [
+        {
+         "title": "帕底亚的礼物梦",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D66B",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150330721
+       ],
+       "texts": [
+        {
+         "address": "0x08F5DD61",
+         "text": "完成任务:<帕底亚的礼物梦>"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D671",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5D676",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F5D67B",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x08F5D680",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x08F5D685",
+       "command": "goto",
+       "args": [
+        150328971
+       ],
+       "targets": [
+        "0x08F5D68B"
+       ]
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5D5AA"
+      }
+     ],
+     "decode_stop": null
+    },
+    {
+     "script": "0x08F5D68B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F5D68B",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x08F5D690",
+       "command": "loadpointer",
+       "args": [
+        0,
+        150330752
+       ],
+       "texts": [
+        {
+         "address": "0x08F5DD80",
+         "text": "获得了3点BracerPoints和4000$!"
+        }
+       ]
+      },
+      {
+       "at": "0x08F5D696",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F5D698",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F5D69D",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x08F5D6A2",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x08F5D6A7",
+       "command": "end",
+       "args": []
+      }
+     ],
+     "source_kind": "production_script",
+     "sources": [
+      {
+       "kind": "branch",
+       "where": "0x08F5D662"
+      }
+     ],
+     "decode_stop": null
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}

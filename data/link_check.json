@@ -1,0 +1,59 @@
+{
+  "scope": "四类条目覆盖、生成页面本地链接与首页检索数据，不包含游戏运行验证",
+  "counts": {
+    "quests": {
+      "markdown": 97,
+      "html": 97,
+      "expected": 97
+    },
+    "items": {
+      "markdown": 750,
+      "html": 750,
+      "expected": 750
+    },
+    "pokemon": {
+      "markdown": 1554,
+      "html": 1554,
+      "expected": 1554
+    },
+    "trainers": {
+      "markdown": 743,
+      "html": 743,
+      "expected": 743
+    }
+  },
+  "local_links_checked": 80786,
+  "search_counts": {
+    "quests": 97,
+    "items": 750,
+    "pokemon": 1554,
+    "trainers": 743
+  },
+  "representative_search_titles": {
+    "泥炭块": [
+      "items/0745.html"
+    ],
+    "月月熊": [
+      "pokemon/1253.html",
+      "pokemon/1527.html"
+    ],
+    "阿四": [
+      "trainers/0083.html"
+    ],
+    "红色火球": [
+      "quests/015.html"
+    ],
+    "野生Mega": [
+      "pokemon/wild_mega.html"
+    ]
+  },
+  "errors": [],
+  "atlas": {
+    "rgb_images_checked": 760,
+    "points": 8748,
+    "guide_pages_with_cards": 1535,
+    "mega_species": 28,
+    "unavailable_maps": 13,
+    "partial_maps": 121
+  }
+}

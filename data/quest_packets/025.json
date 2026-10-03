@@ -1,0 +1,1280 @@
+{
+ "title": "复习宝可梦知识",
+ "quest_id": 25,
+ "records": [
+  {
+   "quest": {
+    "row_offset": "0xe3b0f0",
+    "title": "复习宝可梦知识",
+    "title_address": "0x8e3ca89",
+    "description": "马上就要考试了，\n希望有人可以来训练家学校\n与我一起复习宝可梦知识！",
+    "description_address": "0x8e3ca5c",
+    "unknown_u16": 101,
+    "unknown_u16_hex": "0x0065",
+    "accept_flag": 5492,
+    "accept_flag_hex": "0x1574",
+    "complete_flag": 5492,
+    "complete_flag_hex": "0x1574",
+    "map_group": 46,
+    "map_num": 7,
+    "tail_hex": "04 01 00 00",
+    "index": 25,
+    "legacy_description_candidates": [
+     {
+      "row_offset": "0xe394c4",
+      "title": "迈向训练师的第一步",
+      "description_address": "0x8e3aac5",
+      "description": "马上就要考试了，\\n希望有人可以来训练家学校\\n与我一起复习宝可梦知识！"
+     }
+    ],
+    "description_source": "legacy_by_complete_flag",
+    "description_address_merged": "0x8e3aac5",
+    "legacy_match_count": 1,
+    "current_description": "与训练家学校的学生\n一起复习关于宝可梦的知识。",
+    "catalog_map": {
+     "id": "46:7",
+     "name": "桔梗市"
+    }
+   },
+   "direct_flag_scripts": [
+    "0x089E68AC",
+    "0x089E6A3C"
+   ],
+   "event_roots": [
+    {
+     "script": "0x089E68AC",
+     "map_id": "46:9",
+     "place": "桔梗市",
+     "kind": "人物",
+     "local_id": 5,
+     "event_index": 4,
+     "x": 16,
+     "y": 11,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g46_n009.md"
+    },
+    {
+     "script": "0x08F50740",
+     "map_id": "46:7",
+     "place": "桔梗市",
+     "kind": "人物",
+     "local_id": 5,
+     "event_index": 4,
+     "x": 8,
+     "y": 7,
+     "facing": null,
+     "map_page": "../../wiki_export/world/pages/maps/g46_n007.md"
+    }
+   ],
+   "scripts": [
+    {
+     "script": "0x089CFA41",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089CFA41",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144505419
+       ],
+       "texts": [
+        {
+         "address": "0x089CFA4B",
+         "text": "……让精灵携带树果，\n它就会自动回复体力。\n还有很多可以\n让精灵携带的道具……\n老老实实做笔记可真辛苦！"
+        }
+       ]
+      },
+      {
+       "at": "0x089CFA47",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089CFA49",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089E62F9",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E62F9",
+       "command": "faceplayer",
+       "args": []
+      },
+      {
+       "at": "0x089E62FA",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144598243
+       ],
+       "texts": [
+        {
+         "address": "0x089E64E3",
+         "text": "知识就是力量，\n为了成为强大的训练家，\n知识是不可或缺的。\n可惜对于异常状态\n我总是有些记不住……\n啊，你是游击士协会的训练家吧！\n可以帮我一起复习嘛？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E6300",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E6302",
+       "command": "goto",
+       "args": [
+        150276004
+       ],
+       "targets": [
+        "0x08F507A4"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E6317",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E6317",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144598411
+       ],
+       "texts": [
+        {
+         "address": "0x089E658B",
+         "text": "太好啦，\n有人和我一起复习，\n就能加强记忆力，\n更好记住这些知识啦，\n那么快开始吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E631D",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E631F",
+       "command": "fadescreen",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089E6321",
+       "command": "fadesong",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E6324",
+       "command": "pause",
+       "args": [
+        64
+       ]
+      },
+      {
+       "at": "0x089E6327",
+       "command": "fadescreen",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E6329",
+       "command": "playsong",
+       "args": [
+        272,
+        51
+       ]
+      },
+      {
+       "at": "0x089E632D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144598489
+       ],
+       "texts": [
+        {
+         "address": "0x089E65D9",
+         "text": "首先，\n异常状态是不可共存状态，\n共有中毒，睡眠，\n灼伤，冰冻，麻痹五种。\n请问这是正确的吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E6333",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E6335",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E633A",
+       "command": "goto_if",
+       "args": [
+        1,
+        144597846
+       ],
+       "targets": [
+        "0x089E6356"
+       ]
+      },
+      {
+       "at": "0x089E6340",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E6343",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144598575
+       ],
+       "texts": [
+        {
+         "address": "0x089E662F",
+         "text": "没错，你说得对。\n异常状态还有剧毒。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E6349",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E634B",
+       "command": "addvar",
+       "args": [
+        20822,
+        1
+       ]
+      },
+      {
+       "at": "0x089E6350",
+       "command": "goto",
+       "args": [
+        144597863
+       ],
+       "targets": [
+        "0x089E6367"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E6356",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E6356",
+       "command": "sound",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x089E6359",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144598610
+       ],
+       "texts": [
+        {
+         "address": "0x089E6652",
+         "text": "错误的，\n异常状态还有剧毒。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E635F",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E6361",
+       "command": "goto",
+       "args": [
+        144597863
+       ],
+       "targets": [
+        "0x089E6367"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E6367",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E6367",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144598638
+       ],
+       "texts": [
+        {
+         "address": "0x089E666E",
+         "text": "下一题，\n麻痹状态会让宝可梦速度下降，\n每回合都有几率无法动弹，\n但电系宝可梦不会陷入该状态。\n请问这是正确的吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E636D",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E636F",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E6374",
+       "command": "goto_if",
+       "args": [
+        1,
+        144597899
+       ],
+       "targets": [
+        "0x089E638B"
+       ]
+      },
+      {
+       "at": "0x089E637A",
+       "command": "sound",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x089E637D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144598746
+       ],
+       "texts": [
+        {
+         "address": "0x089E66DA",
+         "text": "这是正确的，\n麻痹状态是\n很厉害的一种异常状态。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E6383",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E6385",
+       "command": "goto",
+       "args": [
+        144597921
+       ],
+       "targets": [
+        "0x089E63A1"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E638B",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E638B",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E638E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144598793
+       ],
+       "texts": [
+        {
+         "address": "0x089E6709",
+         "text": "没错！\n麻痹状态是\n很厉害的一种异常状态。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E6394",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E6396",
+       "command": "addvar",
+       "args": [
+        20822,
+        1
+       ]
+      },
+      {
+       "at": "0x089E639B",
+       "command": "goto",
+       "args": [
+        144597921
+       ],
+       "targets": [
+        "0x089E63A1"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E63A1",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E63A1",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144598834
+       ],
+       "texts": [
+        {
+         "address": "0x089E6732",
+         "text": "最后一题了！\n灼伤状态会让宝可梦的物攻减半，\n同时每回合结束时，\n还会损失一定量的HP。\n请问这是正确的吗？"
+        }
+       ]
+      },
+      {
+       "at": "0x089E63A7",
+       "command": "callstd",
+       "args": [
+        5
+       ]
+      },
+      {
+       "at": "0x089E63A9",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E63AE",
+       "command": "goto_if",
+       "args": [
+        1,
+        144597962
+       ],
+       "targets": [
+        "0x089E63CA"
+       ]
+      },
+      {
+       "at": "0x089E63B4",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E63B7",
+       "command": "addvar",
+       "args": [
+        20822,
+        1
+       ]
+      },
+      {
+       "at": "0x089E63BC",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144598934
+       ],
+       "texts": [
+        {
+         "address": "0x089E6796",
+         "text": "没错，\n这也是很容易错的一道题。\n灼伤状态只是让\n物理招式的伤害减半。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E63C2",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E63C4",
+       "command": "goto",
+       "args": [
+        144597979
+       ],
+       "targets": [
+        "0x089E63DB"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E63CA",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E63CA",
+       "command": "sound",
+       "args": [
+        3
+       ]
+      },
+      {
+       "at": "0x089E63CD",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144599001
+       ],
+       "texts": [
+        {
+         "address": "0x089E67D9",
+         "text": "错误的，\n灼伤状态只是让\n物理招式的伤害减半。"
+        }
+       ]
+      },
+      {
+       "at": "0x089E63D3",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E63D5",
+       "command": "goto",
+       "args": [
+        144597979
+       ],
+       "targets": [
+        "0x089E63DB"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E63DB",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E63DB",
+       "command": "applymovement",
+       "args": [
+        32783,
+        144599046
+       ]
+      },
+      {
+       "at": "0x089E63E2",
+       "command": "waitmovement",
+       "args": [
+        32783
+       ]
+      },
+      {
+       "at": "0x089E63E5",
+       "command": "sound",
+       "args": [
+        21
+       ]
+      },
+      {
+       "at": "0x089E63E8",
+       "command": "pause",
+       "args": [
+        50
+       ]
+      },
+      {
+       "at": "0x089E63EB",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144599049
+       ],
+       "texts": [
+        {
+         "address": "0x089E6809",
+         "text": "太好啦！\n这下子关于异常状态的知识，\n我都记住啦。\n我又离强大的训练家近了一步，\n谢谢你的帮忙，这个送给你吧！"
+        }
+       ]
+      },
+      {
+       "at": "0x089E63F1",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E63F3",
+       "command": "setorcopyvar",
+       "args": [
+        32768,
+        675
+       ],
+       "possible_names_not_semantics": {
+        "species": "泥偶小人",
+        "item": "博识眼镜",
+        "move": "自由落体"
+       }
+      },
+      {
+       "at": "0x089E63F8",
+       "command": "setorcopyvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E63FD",
+       "command": "callstd",
+       "args": [
+        0
+       ]
+      },
+      {
+       "at": "0x089E63FF",
+       "command": "pause",
+       "args": [
+        1
+       ]
+      },
+      {
+       "at": "0x089E6402",
+       "command": "sound",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E6405",
+       "command": "addvar",
+       "args": [
+        20822,
+        3
+       ]
+      },
+      {
+       "at": "0x089E640A",
+       "command": "buffernumber",
+       "args": [
+        0,
+        20822
+       ]
+      },
+      {
+       "at": "0x089E640E",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144599152
+       ],
+       "texts": [
+        {
+         "address": "0x089E6870",
+         "text": "任务完成:<迈向训练家的第一步>"
+        }
+       ]
+      },
+      {
+       "at": "0x089E6414",
+       "command": "setvar",
+       "args": [
+        32768,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E6419",
+       "command": "setvar",
+       "args": [
+        32769,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x089E641E",
+       "command": "setvar",
+       "args": [
+        32770,
+        28
+       ],
+       "possible_names_not_semantics": {
+        "species": "穿山王",
+        "item": "果汁牛奶",
+        "move": "泼沙"
+       }
+      },
+      {
+       "at": "0x089E6423",
+       "command": "setvar",
+       "args": [
+        32771,
+        2
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙草",
+        "item": "高级球",
+        "move": "空手劈"
+       }
+      },
+      {
+       "at": "0x089E6428",
+       "command": "callasm",
+       "args": [
+        144401489
+       ]
+      },
+      {
+       "at": "0x089E642D",
+       "command": "loadpointer",
+       "args": [
+        0,
+        145687268
+       ],
+       "texts": [
+        {
+         "address": "0x08AF02E4",
+         "text": "获得了[玩家/变量]点BracerPoints!"
+        }
+       ]
+      },
+      {
+       "at": "0x089E6433",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x089E6435",
+       "command": "callasm",
+       "args": [
+        150667521
+       ]
+      },
+      {
+       "at": "0x089E643A",
+       "command": "goto",
+       "args": [
+        144599564
+       ],
+       "targets": [
+        "0x089E6A0C"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E6468",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E6468",
+       "command": "addvar",
+       "args": [
+        20789,
+        3
+       ]
+      },
+      {
+       "at": "0x089E646D",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089E646F",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E646F",
+       "command": "addvar",
+       "args": [
+        20789,
+        4
+       ]
+      },
+      {
+       "at": "0x089E6474",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089E6476",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E6476",
+       "command": "addvar",
+       "args": [
+        20789,
+        5
+       ]
+      },
+      {
+       "at": "0x089E647B",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089E647D",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E647D",
+       "command": "addvar",
+       "args": [
+        20789,
+        6
+       ]
+      },
+      {
+       "at": "0x089E6482",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x089E68AC",
+     "event_roots": [
+      {
+       "map_id": "46:9",
+       "place": "桔梗市",
+       "kind": "人物",
+       "local_id": 5,
+       "event_index": 4,
+       "x": 16,
+       "y": 11,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g46_n009.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x089E68AC",
+       "command": "checkflag",
+       "args": [
+        5492
+       ],
+       "task_flag_labels": [
+        {
+         "title": "复习宝可梦知识",
+         "role": "accept_flag"
+        },
+        {
+         "title": "复习宝可梦知识",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E68AF",
+       "command": "goto_if",
+       "args": [
+        1,
+        144505409
+       ],
+       "targets": [
+        "0x089CFA41"
+       ]
+      },
+      {
+       "at": "0x089E68B5",
+       "command": "checkflag",
+       "args": [
+        4246
+       ]
+      },
+      {
+       "at": "0x089E68B8",
+       "command": "goto_if",
+       "args": [
+        1,
+        144597753
+       ],
+       "targets": [
+        "0x089E62F9"
+       ]
+      },
+      {
+       "at": "0x089E68BE",
+       "command": "goto",
+       "args": [
+        144505409
+       ],
+       "targets": [
+        "0x089CFA41"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E6A0C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E6A0C",
+       "command": "goto",
+       "args": [
+        144599612
+       ],
+       "targets": [
+        "0x089E6A3C"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x089E6A3C",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x089E6A3C",
+       "command": "fadesong",
+       "args": [
+        337
+       ]
+      },
+      {
+       "at": "0x089E6A3F",
+       "command": "setflag",
+       "args": [
+        5492
+       ],
+       "task_flag_labels": [
+        {
+         "title": "复习宝可梦知识",
+         "role": "accept_flag"
+        },
+        {
+         "title": "复习宝可梦知识",
+         "role": "complete_flag"
+        }
+       ]
+      },
+      {
+       "at": "0x089E6A42",
+       "command": "comparevartovalue",
+       "args": [
+        20822,
+        3
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙花",
+        "item": "超级球",
+        "move": "连环巴掌"
+       }
+      },
+      {
+       "at": "0x089E6A47",
+       "command": "goto_if",
+       "args": [
+        1,
+        144598120
+       ],
+       "targets": [
+        "0x089E6468"
+       ]
+      },
+      {
+       "at": "0x089E6A4D",
+       "command": "comparevartovalue",
+       "args": [
+        20822,
+        4
+       ],
+       "possible_names_not_semantics": {
+        "species": "小火龙",
+        "item": "精灵球",
+        "move": "连续拳"
+       }
+      },
+      {
+       "at": "0x089E6A52",
+       "command": "goto_if",
+       "args": [
+        1,
+        144598127
+       ],
+       "targets": [
+        "0x089E646F"
+       ]
+      },
+      {
+       "at": "0x089E6A58",
+       "command": "comparevartovalue",
+       "args": [
+        20822,
+        5
+       ],
+       "possible_names_not_semantics": {
+        "species": "火恐龙",
+        "item": "狩猎球",
+        "move": "百万吨重拳"
+       }
+      },
+      {
+       "at": "0x089E6A5D",
+       "command": "goto_if",
+       "args": [
+        1,
+        144598134
+       ],
+       "targets": [
+        "0x089E6476"
+       ]
+      },
+      {
+       "at": "0x089E6A63",
+       "command": "comparevartovalue",
+       "args": [
+        20822,
+        6
+       ],
+       "possible_names_not_semantics": {
+        "species": "喷火龙",
+        "item": "捕网球",
+        "move": "聚宝功"
+       }
+      },
+      {
+       "at": "0x089E6A68",
+       "command": "goto_if",
+       "args": [
+        1,
+        144598141
+       ],
+       "targets": [
+        "0x089E647D"
+       ]
+      },
+      {
+       "at": "0x089E6A6E",
+       "command": "end",
+       "args": []
+      }
+     ]
+    },
+    {
+     "script": "0x08F50740",
+     "event_roots": [
+      {
+       "map_id": "46:7",
+       "place": "桔梗市",
+       "kind": "人物",
+       "local_id": 5,
+       "event_index": 4,
+       "x": 8,
+       "y": 7,
+       "facing": null,
+       "map_page": "../../wiki_export/world/pages/maps/g46_n007.md"
+      }
+     ],
+     "instructions": [
+      {
+       "at": "0x08F50740",
+       "command": "applymovement",
+       "args": [
+        18,
+        150275920
+       ]
+      },
+      {
+       "at": "0x08F50747",
+       "command": "waitmovement",
+       "args": [
+        18
+       ]
+      },
+      {
+       "at": "0x08F5074A",
+       "command": "goto",
+       "args": [
+        144599212
+       ],
+       "targets": [
+        "0x089E68AC"
+       ]
+      }
+     ]
+    },
+    {
+     "script": "0x08F507A4",
+     "event_roots": [],
+     "instructions": [
+      {
+       "at": "0x08F507A4",
+       "command": "comparevartovalue",
+       "args": [
+        32781,
+        1
+       ],
+       "possible_names_not_semantics": {
+        "species": "妙蛙种子",
+        "item": "大师球",
+        "move": "拍击"
+       }
+      },
+      {
+       "at": "0x08F507A9",
+       "command": "goto_if",
+       "args": [
+        1,
+        144597783
+       ],
+       "targets": [
+        "0x089E6317"
+       ]
+      },
+      {
+       "at": "0x08F507AF",
+       "command": "loadpointer",
+       "args": [
+        0,
+        144598384
+       ],
+       "texts": [
+        {
+         "address": "0x089E6570",
+         "text": "好吧，\n我自己再努力试试……"
+        }
+       ]
+      },
+      {
+       "at": "0x08F507B5",
+       "command": "callstd",
+       "args": [
+        2
+       ]
+      },
+      {
+       "at": "0x08F507B7",
+       "command": "applymovement",
+       "args": [
+        18,
+        150279653
+       ]
+      },
+      {
+       "at": "0x08F507BE",
+       "command": "waitmovement",
+       "args": [
+        18
+       ]
+      },
+      {
+       "at": "0x08F507C1",
+       "command": "releaseall",
+       "args": []
+      },
+      {
+       "at": "0x08F507C2",
+       "command": "end",
+       "args": []
+      }
+     ]
+    }
+   ],
+   "shared_helpers_not_expanded": [],
+   "source_files": [
+    "player_guide/data/quest_catalog.json",
+    "maps_research/out/scripts/scripts.json",
+    "maps_research/out/scripts/text.json",
+    "maps_research/out/events/events.json"
+   ]
+  }
+ ]
+}
