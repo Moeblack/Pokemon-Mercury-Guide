@@ -42,5 +42,22 @@
     "pokemon": 1554,
     "trainers": 743
   },
-  "browser_script_errors": 0
+  "browser_script_errors": 0,
+  "player_flows": {
+    "date": "2026-10-04",
+    "summary_pages": 3144,
+    "browse_categories_and_task": true,
+    "exit_groups": true,
+    "find_chuck_and_read_party": true,
+    "quest_step_map_retains_task": true,
+    "quest_step_map_restored_on_reload": true,
+    "return_to_quest_origin": true,
+    "same_name_maps_expand_and_select": true,
+    "back_restores_place_query": true,
+    "keyboard_category_return": true,
+    "mobile_width": 390,
+    "mobile_horizontal_overflow": false,
+    "browser_script_errors": 0,
+    "syntax": ["maps/atlas.js", "maps/atlas-navigation.js"]
+  }
 }

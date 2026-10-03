@@ -9,6 +9,8 @@ import argparse
 import json
 from pathlib import Path
 
+from atlas_guide_summaries import build_guide_summaries
+
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="生成离线地图数据包（不渲染底图）")
@@ -24,16 +26,17 @@ def main() -> None:
     report = root / "data/atlas_render_report.json"
     render = json.loads(report.read_text(encoding="utf-8")) if report.exists() else {}
     target = root / "maps"
-    for name in ("index.html", "atlas.css", "atlas.js"):
+    for name in ("index.html", "atlas.css", "atlas.js", "atlas-navigation.js"):
         if not (target / name).is_file():
             raise FileNotFoundError(f"缺少前端源文件：{target / name}")
-    data = json.dumps({"manifest": manifest, "points": points, "render": render}, ensure_ascii=False, separators=(",", ":"))
+    guides = build_guide_summaries(root)
+    data = json.dumps({"manifest": manifest, "points": points, "render": render, "guides": guides}, ensure_ascii=False, separators=(",", ":"))
     data = data.replace("<", "\\u003c").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
     output = target / "atlas-data.js"
     temporary = output.with_suffix(".js.tmp")
     temporary.write_text("window.ATLAS=" + data + ";\n", encoding="utf-8")
     temporary.replace(output)
-    print(f"地图UI数据已生成：{len(manifest['maps'])} 张地图，{len(points['points'])} 条地点记录 → {output}")
+    print(f"地图UI数据已生成：{len(manifest['maps'])} 张地图，{len(points['points'])} 条地点记录，{len(guides)} 个摘要页 → {output}")
 
 
 if __name__ == "__main__":
