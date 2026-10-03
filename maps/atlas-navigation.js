@@ -31,7 +31,7 @@ window.createAtlasNavigation = function(api) {
     const destinations=new Map();for(const p of group.rows){if(!destinations.has(p.map_id))destinations.set(p.map_id,[]);destinations.get(p.map_id).push(p);}
     s.append(el('strong',group.title),el('small',local?`${group.rows.length} 条独立记录，展开选择`:`${destinations.size} 张地图 · ${group.rows.length} 条地点记录`));d.append(s);
     if(local)d.append(recordsList(group.rows));
-    else for(const [id,rows]of destinations){const block=el('section',undefined,'destination-group');block.append(el('h4',maps[id]?.name||id),el('small',`地图 ${id} · ${quality(id).label}`));block.append(recordsList(rows));d.append(block);}
+    else for(const [id,rows]of destinations){const block=el('section',undefined,'destination-group');block.append(el('h4',maps[id]?.name||id),el('small',`地图 ${id} · ${quality(id).label}`,'debug-only'));block.append(recordsList(rows));d.append(block);}
     if(group.rows.some(p=>p.id===state.point))d.open=true;
     return d;
   }
@@ -46,8 +46,8 @@ window.createAtlasNavigation = function(api) {
     const thumb=el('span',undefined,'place-thumbnail');
     const url=guideURL(m.image);
     if(url&&quality(id).label!=='无可用底图'){const img=el('img');img.src=url;img.alt='';img.loading='lazy';img.onerror=()=>{img.remove();thumb.textContent='底图待补';};thumb.append(img);}else thumb.textContent='底图待补';
-    const label=el('span');label.append(el('strong',m.name||id),el('small',`地图 ${id} · ${m.width} × ${m.height}`));
-    const q=quality(id);if(q.warning)label.append(el('small',q.label,'source-warning'));
+    const label=el('span');label.append(el('strong',m.name||id),el('small',`地图 ${id} · ${m.width} × ${m.height}`,'debug-only'));
+    const q=quality(id);if(q.warning)label.append(el('small',q.label,'source-warning debug-only'));
     b.append(thumb,label);return b;
   }
   function mapGroups(parent, ids) {
@@ -82,12 +82,12 @@ window.createAtlasNavigation = function(api) {
     total=`本地图 · ${groups(all).length} 个攻略条目`;
   }
   function exits(parent,rows) {
-    parent.append(el('p','按目的地选择入口。这里只显示已有连接，不推断解锁条件或最短路线。','nav-intro'));
+    parent.append(el('p','选择目的地，再选择门、楼梯或路口。','nav-intro'));
     const connections=(manifest.connection_edges||[]).filter(e=>e.source===state.map&&maps[e.target]);
     if(connections.length){parent.append(el('h3','相邻地图','nav-heading'));const seen=new Set();for(const e of connections){const k=e.target+':'+e.direction;if(seen.has(k))continue;seen.add(k);parent.append(action(`${{1:'南侧',2:'北侧',3:'西侧',4:'东侧'}[e.direction]||'连接'} · ${maps[e.target].name}`,()=>onMap(e.target),'neighbor-link'));}}
     const destinations=new Map();for(const p of rows){const key=p.target||p.id;if(!destinations.has(key))destinations.set(key,[]);destinations.get(key).push(p);}
     if(destinations.size)parent.append(el('h3','门、楼梯与传送入口','nav-heading'));
-    paged(parent,[...destinations],([target,entries])=>{const d=el('details',undefined,'exit-group');const s=el('summary');s.append(el('strong',maps[target]?.name||entries[0].title),el('small',`${entries.length} 个入口${maps[target]?' · 地图 '+target:''}`));d.append(s);entries.forEach(p=>d.append(pointRow(p,`入口 ${api.number.get(p.id)} · ${p.reciprocal?'有对应回程':'回程关系见详情'}`)));return d;});
+    paged(parent,[...destinations],([target,entries])=>{const d=el('details',undefined,'exit-group');const s=el('summary');s.append(el('strong',maps[target]?.name||entries[0].title),el('small',`${entries.length} 个入口`));if(maps[target])s.append(el('small',`地图 ${target}`,'debug-only'));d.append(s);entries.forEach(p=>d.append(pointRow(p,`入口 ${api.number.get(p.id)} · ${p.reciprocal?'有对应回程':'回程关系见详情'}`)));return d;});
     if(!connections.length&&!destinations.size)empty(parent,'尚无可用入口记录','可以通过“换个地方”浏览其它地图。',{text:'换个地方',fn:()=>onState({section:'places'})});
     total=`${connections.length} 条相邻连接 · ${rows.length} 条入口记录`;
   }

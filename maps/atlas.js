@@ -75,6 +75,7 @@
   for (const [kind, label] of Object.entries(kinds)) {
     const key = element('span'); key.append(element('span', '·', `badge ${kind}`), document.createTextNode(label)); $('legend').append(key);
   }
+  $('debug-mode').onchange = () => { document.body.classList.toggle('debug-mode', $('debug-mode').checked); schedule(); writeHash(); };
   function writeHash(push = false) {
     const hash = new URLSearchParams();
     if (state.map) hash.set('map', state.map);
@@ -89,6 +90,7 @@
     if (state.mapQuery) hash.set('placeq',state.mapQuery);
     if (!$('show-markers').checked) hash.set('markers', '0');
     if (!$('boundaries').checked) hash.set('labels', '0');
+    if ($('debug-mode').checked) hash.set('debug', '1');
     const value = '#' + hash.toString();
     if (location.hash === value) return;
     try { history[push ? 'pushState' : 'replaceState'](null, '', value); }
@@ -109,6 +111,8 @@
     state.topic = ['pokemon','item','quest','trainer'].includes(hash.get('topic')) ? hash.get('topic') : 'all';
     state.findType = ['pokemon','item','quest','trainer'].includes(hash.get('kind')) ? hash.get('kind') : 'all';
     $('show-markers').checked = hash.get('markers') !== '0'; $('boundaries').checked = hash.get('labels') !== '0';
+    $('debug-mode').checked = hash.get('debug') === '1';
+    document.body.classList.toggle('debug-mode', $('debug-mode').checked);
     const pageMap = (manifest.page_locations || {})[normalizePage(state.page)]?.[0]?.map_id;
     const defaultMap = maps['3:76'] ? '3:76' : maps['3:66'] ? '3:66' : Object.keys(maps)[0];
     const id = maps[hash.get('map')] ? hash.get('map') : point && maps[point.map_id] ? point.map_id : maps[pageMap] ? pageMap : defaultMap;
@@ -201,7 +205,8 @@
     for (const link of p.links || []) { const url = guideURL(link.page); if (url) { const a = element('a', '打开完整攻略 →'); a.href = url; $('detail-links').append(a); } }
     if (p.target && maps[p.target]) {
       const destination = byId.get(p.target_point);
-      const go = element('button', destination ? `定位到 ${maps[p.target].name} [${p.target}] ${number.get(destination.id)}号入口 →` : `打开 ${maps[p.target].name} [${p.target}]（落点未定位）→`);
+      const go = element('button', destination ? `定位到 ${maps[p.target].name} ${number.get(destination.id)}号入口 →` : `打开 ${maps[p.target].name}（具体位置待补）→`);
+      go.append(element('span', ` [${p.target}]`, 'debug-only'));
       go.onclick = () => {
         if (destination) selectPoint(destination);
         else { state.point = null; $('detail').hidden = true; selectMap(p.target); refreshResults(); }
@@ -300,7 +305,9 @@
             objects.src = guideURL(t.map.objects_image); node.append(objects);
           }
         } else node.classList.add('no-image');
-        node.append(element('span', `${t.map.name || t.id}${unavailable || !path ? ' · 底图不可用' : report?.status === 'partial' ? ' · 底图部分缺块' : ''}`, 'map-name'));
+        const label = element('span', `${t.map.name || t.id}${unavailable || !path ? ' · 地图图片暂不可用' : ''}`, 'map-name');
+        if (report?.status === 'partial') label.append(element('span', ' · 底图部分缺块', 'debug-only'));
+        node.append(label);
         world.append(node); tileNodes.set(t.id, node);
       }
       node.querySelector('.map-name').style.transform = `scale(${1/s})`;
@@ -346,7 +353,7 @@
       if (!node) { node = element('button'); markers.append(node); markerNodes.set(key,node); }
       node.className = `marker${count>1 ? ' cluster' : ''}${selected ? ' active' : ''}`;
       node.replaceChildren(count>1 ? element('span', String(count), 'badge cluster-badge') : badge(p));
-      if (count === 1 && p.kind === 'warp' && p.target_number && (s >= .65 || selected)) node.append(element('span', `${p.reciprocal ? '↔' : '→'} ${p.target} · ${p.target_number}号`, 'warp-target'));
+      if (count === 1 && p.kind === 'warp' && p.target_number && (s >= .65 || selected)) { const target = element('span', `${p.reciprocal ? '↔' : '→'} ${maps[p.target]?.name || '目的地'}`, 'warp-target'); target.append(element('span', ` · ${p.target} · ${p.target_number}号`, 'debug-only')); node.append(target); }
       node.setAttribute('aria-label', count>1 ? `${count} 个地点，打开成员列表` : `${maps[p.map_id]?.name || p.map_id} ${number.get(p.id)}号 ${kinds[p.kind] || '地点'}：${p.title}`);
       node.title = count>1 ? `${count} 个地点 · 点击逐项查看` : `${p.title} · ${maps[p.map_id]?.name || p.map_id}`;
       node.onclick = count>1 ? () => showCluster(members, anchor) : () => selectPoint(p);
@@ -355,9 +362,9 @@
     for (const [id,node] of markerNodes) if (!displayed.has(id)) { node.remove(); markerNodes.delete(id); }
     const tileIds = new Set(state.tiles.map(t => t.id));
     const areas = filtered.filter(p => tileIds.has(p.map_id) && !placed(p));
-    $('area-hint').textContent = selection && !placed(selection) ? `${selection.title}：${geometryLabel(selection)}。虚线框仅表示所属地图。` : areas.length ? `此视图有 ${areas.length} 条范围 / 未定位记录，可在导航列表查看；不绘制虚构点位。` : '';
-    $('view-status').textContent = `${Math.round(s*100)}% · ${visible.length} / ${state.tiles.length} 张底图${$('show-markers').checked ? '' : ' · 标记已隐藏'}`;
-    if (state.map) $('empty').textContent = state.tiles.length ? '' : '此地图尚无有效尺寸，无法显示底图。';
+    $('area-hint').textContent = selection && !placed(selection) ? `${selection.title}：${geometryLabel(selection)} 虚线框表示所属地图。` : areas.length ? `还有 ${areas.length} 项内容未标出精确位置，可在左侧查看。` : '';
+    $('view-status').textContent = `${Math.round(s*100)}%${$('debug-mode').checked ? ` · ${visible.length} / ${state.tiles.length} 张底图` : ''}${$('show-markers').checked ? '' : ' · 标记已隐藏'}`;
+    if (state.map) $('empty').textContent = state.tiles.length ? '' : '地图图片暂不可用，请从左侧继续查看攻略。';
   }
   function zoom(factor, x = viewport.clientWidth/2, y = viewport.clientHeight/2) {
     const old = state.scale, next = Math.max(.01, Math.min(12, old*factor));

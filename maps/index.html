@@ -4,7 +4,7 @@
 <body>
 <a class="skip-link" href="#viewport">跳到地图画布</a>
 <header><a class="brand" href="../index.html">宝可梦水银 <small>玩家攻略</small></a><nav aria-label="攻略导航"><a href="../index.html">搜索攻略</a><a href="index.html" aria-current="page">地图图鉴</a><a href="../pokemon/wild_mega.html">野生 Mega</a></nav></header>
-<div class="workspace-bar"><div><span class="eyebrow">地点与路线</span><h1>地图图鉴</h1></div><button id="toggle-nav" type="button" aria-expanded="true" aria-controls="navigation">收起导航</button></div>
+<div class="workspace-bar"><div><span class="eyebrow">地点与路线</span><h1>地图图鉴</h1></div><div class="workspace-actions"><label><input id="debug-mode" type="checkbox"> Debug</label><button id="toggle-nav" type="button" aria-expanded="true" aria-controls="navigation">收起导航</button></div></div>
 <main>
 <aside id="navigation" aria-label="地点导航">
 <div class="intent-switch" role="tablist" aria-label="你想怎样使用地图"><button id="intent-browse" data-intent="browse" role="tab" aria-selected="true" aria-controls="results">逛地图</button><button id="intent-find" data-intent="find" role="tab" aria-selected="false" aria-controls="results" tabindex="-1">找攻略</button></div>
@@ -18,12 +18,12 @@
 <section class="map-panel" aria-label="地图浏览">
 <div class="map-heading"><h2 id="map-title"></h2></div><p id="view-purpose"></p>
 <div class="map-toolbar"><div class="view-mode" role="group" aria-label="显示范围"><button id="mode-region" aria-pressed="true">区域拼接</button><button id="mode-map" aria-pressed="false">单张地图</button></div><label><input type="checkbox" id="show-markers" checked>地点标记</label><label><input type="checkbox" id="boundaries" checked>边界 / 名称</label><button id="copy-location" type="button">复制定位链接</button></div>
-<details id="map-reference"><summary>地图资料 <span id="map-quality" class="quality"></span></summary><p id="map-reference-id"></p><div id="source-notice" hidden></div><p>图块能显示不等于场景身份已确认；同名地图与剧情条件分别保留。</p></details>
+<details id="map-reference" class="debug-only"><summary>地图资料 <span id="map-quality" class="quality"></span></summary><p id="map-reference-id"></p><div id="source-notice" hidden></div><p>图块能显示不等于场景身份已确认；同名地图与剧情条件分别保留。</p></details>
 <div class="link-feedback"><span id="copy-status" role="status"></span><label id="copy-fallback" hidden>定位链接<input id="location-link" readonly aria-label="可手动复制的定位链接"></label></div>
 <div id="viewport" tabindex="0" role="region" aria-label="地图画布，方向键平移，加减键缩放，F适应，0原生，Escape关闭明细"><div id="world"></div><div id="markers"></div><div id="empty" role="status"></div></div>
 <div class="canvas-controls"><div class="zoom-controls" role="group" aria-label="地图缩放"><button id="zoom-in" aria-label="放大地图">＋</button><button id="zoom-out" aria-label="缩小地图">−</button><button id="fit">适应画布</button><button id="native">原生比例</button><button id="reset">复位视图</button></div><span id="view-status" aria-live="polite"></span></div>
 <div id="area-hint" role="status"></div>
-<footer>拖动或方向键平移 · 滚轮或加减键缩放 · 图块可解码不等于场景身份已确认</footer>
+<footer>拖动或方向键平移 · 滚轮或加减键缩放<span class="debug-only"> · 图块可解码不等于场景身份已确认</span></footer>
 </section>
 <section id="detail" class="detail-panel" hidden aria-labelledby="detail-title"><button id="close-detail" aria-label="关闭地点明细">×</button><p id="detail-kind"></p><h2 id="detail-title"></h2><p id="detail-map"></p><div class="detail-location"><h3>位置与触发</h3><p id="detail-geometry"></p><button id="focus-detail" type="button">回到此地点</button></div><p id="detail-text"></p><div id="guide-preview"></div><nav id="detail-links" aria-label="继续查看攻略"></nav><details class="technical-details"><summary>记录编号与来源</summary><p id="detail-record"></p></details></section>
 </main>
