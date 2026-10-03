@@ -4,8 +4,9 @@
 # ///
 """Package committed static assets; vendor only externally referenced images."""
 from pathlib import Path
-from urllib.parse import urlsplit, unquote
+from urllib.parse import urlsplit, unquote, parse_qsl, urlencode
 import argparse
+import hashlib
 import html
 import json
 import os
@@ -18,6 +19,8 @@ ALLOWED = {'assets', 'data', 'items', 'pokemon', 'quests', 'trainers', 'maps'}
 SUFFIXES = {'.html', '.css', '.js', '.png', '.jpg', '.jpeg', '.webp', '.svg', '.gif', '.json', '.md'}
 IMAGE = re.compile(r'(<img\b[^>]*\bsrc=["\'])([^"\']+)(["\'])', re.I)
 LINK = re.compile(r'<a\b([^>]*?)href=["\']([^"\']+)["\']([^>]*)>(.*?)</a>', re.I | re.S)
+ASSET = re.compile(r'((?:src|href)=["\'])([^"\']+)(["\'])', re.I)
+ASSET_VERSIONS = {}
 
 
 def local_target(page, url):
@@ -74,7 +77,18 @@ def main():
                 external_links += 1
                 return '<span class="source-reference" title="本地研究资料，不包含在网页版中">' + match[4] + '（本地资料）</span>'
             return match[0]
-        target.write_text(LINK.sub(link, text), encoding='utf-8')
+        def version_asset(match):
+            original = local_target(source, match[2])
+            if original is None or not original.is_relative_to(ROOT) or original.suffix not in {'.css', '.js'}:
+                return match[0]
+            if original not in ASSET_VERSIONS:
+                ASSET_VERSIONS[original] = hashlib.sha256(original.read_bytes()).hexdigest()[:12]
+            parts = urlsplit(html.unescape(match[2]))
+            query = [(k, v) for k, v in parse_qsl(parts.query) if k != 'v']
+            query.append(('v', ASSET_VERSIONS[original]))
+            url = parts._replace(query=urlencode(query)).geturl()
+            return match[1] + html.escape(url, quote=True) + match[3]
+        target.write_text(ASSET.sub(version_asset, LINK.sub(link, text)), encoding='utf-8')
     (out / '.nojekyll').write_text('', encoding='utf-8')
     print(json.dumps({'static_files': len(files), 'vendored_images': len(images), 'local_evidence_links_as_text': external_links, 'output': str(out)}, ensure_ascii=False))
 
