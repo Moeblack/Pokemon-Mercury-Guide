@@ -26,7 +26,7 @@ def main() -> None:
     report = root / "data/atlas_render_report.json"
     render = json.loads(report.read_text(encoding="utf-8")) if report.exists() else {}
     target = root / "maps"
-    for name in ("index.html", "atlas.css", "atlas.js", "atlas-navigation.js"):
+    for name in ("index.html", "atlas.css", "atlas.js", "atlas-navigation.js", "atlas-world.js", "world-data.js"):
         if not (target / name).is_file():
             raise FileNotFoundError(f"缺少前端源文件：{target / name}")
     guides = build_guide_summaries(root)

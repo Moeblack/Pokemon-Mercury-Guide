@@ -33,7 +33,7 @@
 
 ## RGB地图与野生Mega
 
-- [打开可缩放区域大地图](maps/index.html#map=3:76)
+- [打开地图图鉴](maps/index.html)：首次进入先选地点，再次进入恢复上次场景；指定地点链接优先于浏览记录。
 - [28种野生Mega所在地](pokemon/wild_mega.html)
 - 保留871张源地图记录，其中858张可生成地形底图，复用742份独立图像；11组区域提供拼接总览。源地图记录不等于当前可游玩地点，同名旧布局另有标注。
 - 已整理8756条地点记录，1535篇攻略接入地图卡片；独立地点、剧情触发区域、地图范围和未定位记录分开处理。同一事件的多个触发格不再算作多个遭遇或奖励。
@@ -56,4 +56,7 @@
 - 现有生成页面与数据已提交，打包执行`uv run scripts/package_pages.py`，输出`_site/`，不需要父工程、ROM或存档。
 - 修改页面生成器后执行`uv run scripts/build_site.py`；地图摘要修改后执行`uv run scripts/build_atlas_ui.py`。提交生成产物后再推送。
 - 只有新增外部精灵图片时，在完整本地研究工作区执行`uv run scripts/package_pages.py --vendor-assets`，将新增`assets/vendor/`图片一并提交。
-- 首页提供目标导航、搜索示例和地图查询入口；地图技术信息由默认关闭的Debug开关控制。
+- 首页仅保留名称、功能与操作说明，不使用宣传句；随机词条每次打开抽取三个，可“换一组”，点击执行搜索。
+- “游戏内地图”可点击城镇或道路，也可使用名称下拉列表；再选择主地图、建筑或其他场景。换地点默认显示总图和城镇列表，不平铺全部场景。
+- 区域底图、热点与标定来源：原研究工程`reference/azoth-wiki/docs/locations/worldmap.png`、`worldmap_data.json`、`worldmap.html`；不是本轮新提取的ROM图形。场景归属取本ROM导出的`wiki_export/world/data/maps.json`地区编号，已核对参考地区名称一致；不导入参考百科的遭遇数据。
+- 区域导航生成器为`uv run scripts/build_world_picker.py`，需要完整本地研究工程；生成的`maps/world-data.js`和`maps/world/region.png`已随仓库发布，Pages部署不需要父工程。技术信息仍由默认关闭的Debug开关控制。

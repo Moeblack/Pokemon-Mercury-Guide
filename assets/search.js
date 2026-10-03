@@ -21,6 +21,24 @@
   const data = source.map((record) => ({ ...record, normalizedTitle: normalize(record.title), normalizedText: normalize(record.text), haystack: normalize(record.title + ' ' + record.text) }));
   let hits = [], shown = 0, terms = [], composing = false, timer;
   const section = () => radios.find((radio) => radio.checked)?.value || '';
+  const randomLinks = document.querySelector('#random-search-links');
+  const randomPool = [...new Set(source.filter(record => /\/\d+\.html$/.test(record.url)).map(record => record.title.replace(/[（(].*$/, '').trim()).filter(title => title && !/未解出|占位|未使用|空白/.test(title)))];
+  function shuffleExamples() {
+    if (!randomLinks || !randomPool.length) return;
+    const previous = new Set([...randomLinks.querySelectorAll('a')].map(link => link.textContent));
+    let pool = randomPool.filter(title => !previous.has(title));
+    if (pool.length < Math.min(3, randomPool.length)) pool = randomPool.slice();
+    randomLinks.replaceChildren();
+    for (let i = 0; i < 3 && pool.length; i++) {
+      const title = pool.splice(Math.floor(Math.random() * pool.length), 1)[0];
+      const link = document.createElement('a');
+      link.textContent = title; link.href = '#q=' + encodeURIComponent(title);
+      randomLinks.append(link);
+    }
+    document.querySelector('#random-search').hidden = false;
+  }
+  document.querySelector('#shuffle-search')?.addEventListener('click', shuffleExamples);
+  shuffleExamples();
   function save() {
     const params = new URLSearchParams();
     if (q.value.trim()) params.set('q', q.value.trim());

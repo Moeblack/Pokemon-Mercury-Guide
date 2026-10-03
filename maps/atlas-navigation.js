@@ -92,16 +92,19 @@ window.createAtlasNavigation = function(api) {
     total=`${connections.length} 条相邻连接 · ${rows.length} 条入口记录`;
   }
   function places(parent) {
+    parent.append(action('在游戏内地图选择地点 →',()=>api.onWorld(),'nav-next'));
     const terms=normalize(state.mapQuery).trim().split(/\s+/).filter(Boolean);
     let ids=Object.keys(maps).filter(id=>mapPageMatch(id)&&terms.every(t=>normalize(`${maps[id].name} ${maps[id].raw_name||''} ${id}`).includes(t)));
     total=`${ids.length} 张地图 · 同名地图分组展示`;
     if(!ids.length){empty(parent,'没有找到这个地方','试试地图名称或编号。',{text:'清除地点搜索',fn:()=>onState({mapQuery:''})});return;}
     if(terms.length){mapGroups(parent,ids);return;}
-    const nearby=(regions[maps[state.map]?.region]?.maps||[]).filter(id=>id!==state.map&&ids.includes(id));
-    if(nearby.length){parent.append(el('h3','当前区域的其它地图','nav-heading'));mapGroups(parent,nearby);}
-    const all=el('details',undefined,'all-places');all.append(el('summary',`浏览全部 ${ids.length} 张地图`));
-    all.addEventListener('toggle',()=>{if(all.open&&!all.dataset.loaded){mapGroups(all,ids);all.dataset.loaded='1';}});parent.append(all);
-    if(!nearby.length)all.open=true;
+    const areas=Object.entries(window.ATLAS_WORLD.sections).filter(([,area])=>area.maps.some(row=>ids.includes(row.id))).sort((a,b)=>a[1].name.localeCompare(b[1].name,'zh'));
+    const towns=areas.filter(([,area])=>!/(道路|水路|公路)$/.test(area.name)&&area.maps.some(row=>['CITY','TOWN'].includes(row.type)&&maps[row.id]&&!maps[row.id].source_issue));
+    const areaButton=([id,area])=>action(area.name,()=>{onState({screen:'world',worldSection:id});document.getElementById('world-selection-title').focus({preventScroll:false});},'neighbor-link');
+    if(towns.length){parent.append(el('h3','城镇','nav-heading'));const list=el('div',undefined,'town-list');for(const area of towns)list.append(areaButton(area));parent.append(list);}
+    const others=areas.filter(area=>!towns.includes(area));if(others.length){const rest=el('details',undefined,'all-places');rest.append(el('summary',`道路与其他地点（${others.length}）`));paged(rest,others,areaButton);parent.append(rest);}
+    const all=el('details',undefined,'all-places');all.append(el('summary',`按场景浏览（${ids.length}）`));all.addEventListener('toggle',()=>{if(all.open&&!all.dataset.loaded){mapGroups(all,ids);all.dataset.loaded='1';}});parent.append(all);
+    total=`${areas.length} 个地点 · 先选地点，再选场景`;
   }
   function find(parent,rows) {
     if(!state.query&&state.findType==='all'&&!state.page){
@@ -125,7 +128,7 @@ window.createAtlasNavigation = function(api) {
     const query=state.intent==='find'?state.query:state.mapQuery;if($('search').value!==query)$('search').value=query;
     for(const r of $('finder-types').querySelectorAll('input'))r.checked=r.value===state.findType;
     $('nav-place-name').textContent=state.intent==='find'?'查找攻略地点':maps[state.map]?.name||'选择地图';
-    $('nav-context').textContent=state.intent==='find'?'查找全库攻略；展开目标选择地点':'围绕当前地图，查看内容或继续探索';
+    $('nav-context').textContent=state.intent==='find'?'查找全库攻略；展开目标选择地点':state.map?'围绕当前地图，查看内容或继续探索':'在游戏内地图选择地点，也可以按名称搜索';
     $('page-scope').hidden=!state.page;
     const guide=api.guides?.[api.normalizePage(state.page)];$('page-scope').querySelector('span').textContent=state.page?`当前攻略：${guide?.title||state.page}`:'';
     $('view-purpose').textContent=state.intent==='find'?(state.query?`正在查找「${state.query}」· 地图显示匹配地点`:'查攻略：先搜索目标，再选择地点定位'):state.section==='exits'?'当前地图的出入口 · 选择入口可查看目的地':state.topic!=='all'?`当前地图 · ${categories[state.topic]}记录`:'当前地图概览 · 点击看点或地图标记了解详情';

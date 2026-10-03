@@ -21,7 +21,8 @@
     mapCounts.set(p.map_id, count); number.set(p.id, count);
   }
   const viewport = $('viewport'), world = $('world'), markers = $('markers');
-  const state = {map:null, point:null, page:'', mode:'map', intent:'browse', section:'local', topic:'all', findType:'all', query:'', mapQuery:'', scale:1, tx:0, ty:0, tiles:[], bounds:null};
+  document.querySelector('.skip-link').onclick = event => { event.preventDefault(); $('map-content').focus({preventScroll:false}); };
+  const state = {map:null, point:null, page:'', mode:'map', screen:'world', worldSection:'', intent:'browse', section:'local', topic:'all', findType:'all', query:'', mapQuery:'', scale:1, tx:0, ty:0, tiles:[], bounds:null};
   const tileNodes = new Map(), markerNodes = new Map();
   let frame = 0, filtered = [], lastFocus = null;
   let writtenHash = null, searchTimer = 0, composing = false;
@@ -39,7 +40,10 @@
     const fromResults = $('results').contains(document.activeElement);
     clearTimeout(searchTimer);
     if (('query' in patch && patch.query !== state.query) || ('findType' in patch && patch.findType !== state.findType)) { state.point = null; $('detail').hidden = true; }
-    Object.assign(state, patch); refreshResults(); writeHash();
+    Object.assign(state, patch);
+    if (state.intent === 'browse' && (patch.section === 'places' || !state.map)) { state.screen = 'world'; state.section = 'places'; }
+    else if (state.map && (patch.section === 'local' || patch.section === 'exits' || patch.intent === 'find')) selectMap(state.map, false);
+    refreshResults(); writeHash();
     if (fromResults) $('results').focus({preventScroll:true});
   }
   function clearFilters() {
@@ -70,8 +74,13 @@
   function geometryLabel(p) { return p.geometry === 'trigger' ? `走入标出的 ${p.trigger_tiles.length} 格区域可触发对应事件；不是宝可梦站立位置，剧情条件仍需满足。` : placed(p) ? `已标出这条记录的位置，可在地图上查看。` : p.geometry === 'area' ? '资料只定位到这张地图，没有精确站位；请结合下方攻略寻找。' : '这条记录的具体位置尚未确定，可先阅读关联攻略。'; }
   const navigation = window.createAtlasNavigation({state,maps,regions,points,manifest,quality,guideURL,pageMatch,mapPageMatch,normalize,badge,number,guides:data.guides,normalizePage,
     onPoint:p=>selectPoint(p), onState:setNavigation,
-    onMap:id=>{ state.point=null; $('detail').hidden=true; Object.assign(state,{intent:'browse',section:'local',topic:'all'}); selectMap(id); refreshResults(); }
+    onMap:chooseMap, onWorld:openWorldPicker
   });
+  const worldPicker = window.createWorldPicker({state,maps,guideURL,onState:setNavigation,onMap:chooseMap});
+  function chooseMap(id) { state.point=null; $('detail').hidden=true; Object.assign(state,{intent:'browse',section:'local',topic:'all'}); selectMap(id); refreshResults(); viewport.focus({preventScroll:false}); }
+  function openWorldPicker() { state.point=null; $('detail').hidden=true; Object.assign(state,{screen:'world',intent:'browse',section:'places'}); refreshResults(); writeHash(true); $('world-place').focus({preventScroll:false}); }
+  $('open-world').onclick = openWorldPicker;
+  $('return-scene').onclick = () => { if (state.map) { state.section='local'; selectMap(state.map); refreshResults(); viewport.focus({preventScroll:false}); } };
   for (const [kind, label] of Object.entries(kinds)) {
     const key = element('span'); key.append(element('span', '·', `badge ${kind}`), document.createTextNode(label)); $('legend').append(key);
   }
@@ -91,6 +100,8 @@
     if (!$('show-markers').checked) hash.set('markers', '0');
     if (!$('boundaries').checked) hash.set('labels', '0');
     if ($('debug-mode').checked) hash.set('debug', '1');
+    if (state.screen === 'world') hash.set('screen','world');
+    if (state.worldSection) hash.set('area',state.worldSection);
     const value = '#' + hash.toString();
     if (location.hash === value) return;
     try { history[push ? 'pushState' : 'replaceState'](null, '', value); }
@@ -114,9 +125,18 @@
     $('debug-mode').checked = hash.get('debug') === '1';
     document.body.classList.toggle('debug-mode', $('debug-mode').checked);
     const pageMap = (manifest.page_locations || {})[normalizePage(state.page)]?.[0]?.map_id;
-    const defaultMap = maps['3:76'] ? '3:76' : maps['3:66'] ? '3:66' : Object.keys(maps)[0];
-    const id = maps[hash.get('map')] ? hash.get('map') : point && maps[point.map_id] ? point.map_id : maps[pageMap] ? pageMap : defaultMap;
-    if (id !== state.map || previousMode !== state.mode) selectMap(id, false);
+    let remembered = null;
+    if (!hash.size) { try { remembered = localStorage.getItem('mercury-atlas-last-map'); } catch {} }
+    const id = maps[hash.get('map')] ? hash.get('map') : point && maps[point.map_id] ? point.map_id : maps[pageMap] ? pageMap : maps[remembered] ? remembered : null;
+    if (id && (id !== state.map || previousMode !== state.mode || state.screen === 'world')) selectMap(id, false);
+    if (!id) {
+      state.map = null; state.tiles = []; state.bounds = null;
+      world.replaceChildren(); markers.replaceChildren(); tileNodes.clear(); markerNodes.clear();
+      $('map-title').textContent = '选择地点'; $('map-quality').textContent = ''; $('source-notice').replaceChildren(); $('map-reference-id').textContent = '';
+      if (state.intent === 'browse') state.section = 'places';
+    }
+    state.screen = !id || hash.get('screen') === 'world' ? 'world' : 'scene';
+    state.worldSection = Object.hasOwn(window.ATLAS_WORLD.sections, hash.get('area') || '') ? hash.get('area') : '';
     refreshResults();
     if (point) selectPoint(point, false, false, false);
     else { state.point = null; $('detail').hidden = true; refreshHighlight(); schedule(); }
@@ -128,11 +148,13 @@
     } else {
       filtered = points.filter(p => p.map_id === state.map && (state.section === 'exits' ? p.kind === 'warp' : p.kind !== 'warp' && pageMatch(p) && (state.section === 'places' || state.topic === 'all' || navigation.category(p) === state.topic)));
     }
-    navigation.render(filtered); refreshHighlight(); schedule();
+    navigation.render(filtered); worldPicker.render(); refreshHighlight(); schedule();
   }
   function selectMap(id, sync = true) {
     if (!maps[id]) { $('empty').textContent = '地图数据尚未生成，请先运行离线数据生成器。'; return; }
     state.map = id;
+    state.screen = 'scene'; state.worldSection = worldPicker.sectionFor(id); worldPicker.render();
+    try { localStorage.setItem('mercury-atlas-last-map', id); } catch {}
     const m = maps[id], region = regions[m.region];
     const ids = state.mode === 'region' && region ? region.maps : [id];
     state.tiles = (ids || [id]).filter(key => maps[key]).map(key => {
@@ -190,7 +212,7 @@
   function selectPoint(p, sync = true, focus = true, move = true) {
     lastFocus = document.activeElement;
     state.point = p.id;
-    if (move && maps[p.map_id] && state.map !== p.map_id) selectMap(p.map_id, false);
+    if (move && maps[p.map_id] && (state.map !== p.map_id || state.screen === 'world')) selectMap(p.map_id, false);
     if (move) focusPoint(p);
     $('detail-kind').textContent = `${kinds[p.kind] || '地点'} · ${number.get(p.id)} 号`;
     $('detail-title').textContent = p.title || p.id;
@@ -364,7 +386,7 @@
     const areas = filtered.filter(p => tileIds.has(p.map_id) && !placed(p));
     $('area-hint').textContent = selection && !placed(selection) ? `${selection.title}：${geometryLabel(selection)} 虚线框表示所属地图。` : areas.length ? `还有 ${areas.length} 项内容未标出精确位置，可在左侧查看。` : '';
     $('view-status').textContent = `${Math.round(s*100)}%${$('debug-mode').checked ? ` · ${visible.length} / ${state.tiles.length} 张底图` : ''}${$('show-markers').checked ? '' : ' · 标记已隐藏'}`;
-    if (state.map) $('empty').textContent = state.tiles.length ? '' : '地图图片暂不可用，请从左侧继续查看攻略。';
+    $('empty').textContent = state.map ? (state.tiles.length ? '' : '地图图片暂不可用，请从左侧继续查看攻略。') : '请选择要查看的地点。';
   }
   function zoom(factor, x = viewport.clientWidth/2, y = viewport.clientHeight/2) {
     const old = state.scale, next = Math.max(.01, Math.min(12, old*factor));
