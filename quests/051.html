@@ -10,7 +10,7 @@
 <body><a class="skip-link" href="#main-content">跳到主要内容</a>
 <header class="site-header"><a class="brand" href="../index.html"><strong>宝可梦水银 1.1 · 玩家攻略</strong></a><nav aria-label="主要导航"><a href="../quests/index.html" aria-current="page">支线攻略</a><a href="../items/index.html">道具搜集</a><a href="../pokemon/index.html">宝可梦获取</a><a href="../trainers/index.html">训练家配队</a><a href="../maps/index.html">地点地图</a><a href="../pokemon/wild_mega.html">野生Mega</a></nav></header>
 <main id="main-content" tabindex="-1"><nav class="breadcrumbs" aria-label="面包屑"><a href="../index.html">首页</a><span aria-hidden="true"> / </span><a href="../quests/index.html">支线攻略</a><span aria-hidden="true"> / </span><span aria-current="page">051 聂梓的签名</span></nav>
-<article class="article-content"><h1 id="051">051 聂梓的签名</h1><details class="chapter-nav"><summary>本页目录</summary><ul><li class="chapter-level-2"><a href="#_1">接取地点</a></li><li class="chapter-level-2"><a href="#_2">准备条件</a></li><li class="chapter-level-2"><a href="#_3">操作步骤</a></li><li class="chapter-level-2"><a href="#_4">交付检查</a></li><li class="chapter-level-2"><a href="#_5">奖励</a></li><li class="chapter-level-2"><a href="#_6">容易卡住的位置</a></li><li class="chapter-level-2"><a href="#_7">来源与待补字段</a></li></ul></details>
+<article class="article-content"><h1 id="051">051 聂梓的签名</h1><details class="chapter-nav"><summary>本页目录</summary><ul><li class="chapter-level-2"><a href="#_1">接取地点</a></li><li class="chapter-level-2"><a href="#_2">准备条件</a></li><li class="chapter-level-2"><a href="#_3">操作步骤</a></li><li class="chapter-level-2"><a href="#_4">实机截图</a></li><li class="chapter-level-2"><a href="#_5">交付检查</a></li><li class="chapter-level-2"><a href="#_6">奖励</a></li><li class="chapter-level-2"><a href="#_7">容易卡住的位置</a></li><li class="chapter-level-2"><a href="#_8">来源与待补字段</a></li></ul></details>
 <p>一句话目标：帮满金市的追星女孩要到伽勒尔创作歌手聂梓的签名。</p>
 <h2 id="_1">接取地点</h2>
 <ul>
@@ -24,23 +24,26 @@
 <h2 id="_3">操作步骤</h2>
 <ol>
 <li>在满金市酒吧附近与追星女孩对话接取任务。她称聂梓是“伽勒尔地区乃至全世界最知名的创作歌手”，并说“有人声称周日的时候在酒吧遇见了聂梓大人”，请你帮忙要一张签名。</li>
-<li>周日前往满金市酒吧参加活动（酒吧为室内场景 55:6，可由满金市东北侧一带进入）。</li>
+<li>周日前往满金市酒吧参加摇手指对战（酒吧为室内场景 55:6，可由满金市东北侧一带进入）。</li>
 <li>在酒吧内遇到聂梓并索要签名：对白「什么……想要签名吗？我明白了。」随后「得到了聂梓的签名！」。</li>
 <li>带签名回满金市，把签名交给追星女孩。</li>
 </ol>
-<h2 id="_4">交付检查</h2>
+<h2 id="_4">实机截图</h2>
+<p><img alt="聂梓发起对战" src="../assets/quests/051/piers-battle.webp" /></p>
+<p><img alt="在满金市酒吧向聂梓索要签名" src="../assets/quests/051/piers-autograph.webp" /></p>
+<h2 id="_5">交付检查</h2>
 <p>把签名交给满金市的追星女孩，获得谢礼，任务完成（旗标 5987）。完成对白：「有了聂梓大人的签名，我以后一定能加入呐喊队吧！」</p>
-<h2 id="_5">奖励</h2>
+<h2 id="_6">奖励</h2>
 <ul>
 <li><a href="../pokemon/1140.html">毒电婴 1140</a>（等级 5，携带<a href="../items/0727.html">爽喉喷雾 0727</a>）</li>
 <li>4 点 BracerPoints、5000$</li>
 </ul>
-<h2 id="_6">容易卡住的位置</h2>
+<h2 id="_7">容易卡住的位置</h2>
 <ul>
-<li>中途脚本含若干训练家对战与一个酒吧活动计数变量（20884），本包未给出可确证的触发条件；先按“周日去酒吧参加活动”推进。</li>
+<li>中途脚本含若干训练家对战与一个酒吧活动计数变量（20884），本包未给出可确证的触发条件；先按“周日前往满金市酒吧参加摇手指对战”推进。</li>
 <li>聂梓出现与签名脚本（0x08AEEEA6）的确切触发条件未在本包定位。</li>
 </ul>
-<h2 id="_7">来源与待补字段</h2>
+<h2 id="_8">来源与待补字段</h2>
 <ul>
 <li>来源包：data/quest_packets/051.json。</li>
 <li>待补：酒吧内聂梓出现的触发条件（周日 / 活动计数变量 20884）；trainerbattle0 引用的 920、921 不在导出训练家表内；酒吧入口在满金市的确切位置。</li>
