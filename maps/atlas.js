@@ -11,11 +11,20 @@
     for (const [index, warp] of (Array.isArray(map.warps) ? map.warps : []).entries()) {
       if (!warp || typeof warp.target !== 'string') continue;
       if (points.some(p => p.map_id === id && p.kind === 'warp' && p.x === warp.x && p.y === warp.y && p.target === warp.target)) continue;
-      points.push({id:`atlas-warp:${id}:${index}`, map_id:id, kind:'warp', title:warp.label || `前往 ${maps[warp.target]?.name || warp.target}`, geometry:Number.isFinite(warp.x) && Number.isFinite(warp.y) ? 'point' : 'area', x:warp.x, y:warp.y, target:warp.target, detail:'出入口仅提供地图间导航，不表示两张地图处于同一平面。', links:[]});
+      points.push({...warp, id:warp.point_id || `atlas-warp:${id}:${index}`, map_id:id, kind:'warp', title:warp.label || `通往 ${maps[warp.target]?.name || '目的地待确认'}`, geometry:Number.isFinite(warp.x) && Number.isFinite(warp.y) ? 'point' : 'area', x:warp.x, y:warp.y, target:warp.target, detail:'', links:[]});
     }
   }
   const byId = new Map(points.map(p => [p.id, p]));
   const number = new Map(), mapCounts = new Map();
+  const exitGroups = [];
+  for (const p of points.filter(p => p.kind === 'warp')) {
+    const matching = exitGroups.filter(g => g.some(q => q.map_id === p.map_id && q.target === p.target && q.target_point && q.target_point === p.target_point && Math.abs(q.x-p.x)+Math.abs(q.y-p.y) <= 1));
+    if (!matching.length) exitGroups.push([p]);
+    else {
+      matching[0].push(p);
+      for (const group of matching.slice(1)) { matching[0].push(...group); exitGroups.splice(exitGroups.indexOf(group),1); }
+    }
+  }
   for (const p of points) {
     const count = (mapCounts.get(p.map_id) || 0) + 1;
     mapCounts.set(p.map_id, count); number.set(p.id, count);
@@ -23,6 +32,7 @@
   const viewport = $('viewport'), world = $('world'), markers = $('markers');
   document.querySelector('.skip-link').onclick = event => { event.preventDefault(); $('map-content').focus({preventScroll:false}); };
   const state = {map:null, point:null, page:'', mode:'map', screen:'world', worldSection:'', intent:'browse', section:'local', topic:'all', findType:'all', query:'', mapQuery:'', scale:1, tx:0, ty:0, tiles:[], bounds:null};
+  try { $('show-exits').checked = localStorage.getItem('mercury-atlas-show-exits') !== '0'; } catch {}
   const tileNodes = new Map(), markerNodes = new Map();
   let frame = 0, filtered = [], lastFocus = null;
   let writtenHash = null, searchTimer = 0, composing = false;
@@ -50,7 +60,7 @@
     setNavigation(state.intent === 'find' ? {query:'',findType:'all',page:''} : {mapQuery:''}); $('search').focus();
   }
   function element(tag, text, cls) { const e = document.createElement(tag); if (text !== undefined) e.textContent = text; if (cls) e.className = cls; return e; }
-  function badge(p) { return element('span', String(number.get(p.id)), `badge ${kinds[p.kind] ? p.kind : 'quest'}`); }
+  function badge(p) { return element('span', p.kind === 'warp' ? '门' : String(number.get(p.id)), `badge ${kinds[p.kind] ? p.kind : 'quest'}`); }
   function guideURL(page) {
     if (typeof page !== 'string' || !page || /^(?:[a-z]+:|[\/\\])|(?:^|[\/\\])\.\.(?:[\/\\]|$)/i.test(page)) return null;
     return '../' + page.replace(/\\/g, '/').replace(/\.md(?=($|#|\?))/i, '.html');
@@ -71,7 +81,7 @@
     const m = maps[p.map_id];
     return ['point','trigger'].includes(p.geometry) && m && Number.isFinite(p.x) && Number.isFinite(p.y) && p.x >= 0 && p.y >= 0 && p.x < m.width && p.y < m.height;
   }
-  function geometryLabel(p) { return p.geometry === 'trigger' ? `走入标出的 ${p.trigger_tiles.length} 格区域可触发对应事件；不是宝可梦站立位置，剧情条件仍需满足。` : placed(p) ? `已标出这条记录的位置，可在地图上查看。` : p.geometry === 'area' ? '资料只定位到这张地图，没有精确站位；请结合下方攻略寻找。' : '这条记录的具体位置尚未确定，可先阅读关联攻略。'; }
+  function geometryLabel(p) { return p.geometry === 'trigger' ? `剧情触发区域：${p.trigger_tiles.length} 格。` : placed(p) ? `位置：（${p.x}, ${p.y}）` : p.geometry === 'area' ? '位置：本场景，具体坐标待补。' : '位置待定位，关联攻略见下方。'; }
   const navigation = window.createAtlasNavigation({state,maps,regions,points,manifest,quality,guideURL,pageMatch,mapPageMatch,normalize,badge,number,guides:data.guides,normalizePage,
     onPoint:p=>selectPoint(p), onState:setNavigation,
     onMap:chooseMap, onWorld:openWorldPicker, onArea:id=>worldPicker.openSection(id)
@@ -85,6 +95,11 @@
     const key = element('span'); key.append(element('span', '·', `badge ${kind}`), document.createTextNode(label)); $('legend').append(key);
   }
   $('debug-mode').onchange = () => { document.body.classList.toggle('debug-mode', $('debug-mode').checked); schedule(); writeHash(); };
+  function rememberView() {
+    if (new URLSearchParams(location.hash.slice(1)).get('map') !== state.map) return;
+    const view = {map:state.map,point:state.point,scale:state.scale,tx:state.tx,ty:state.ty};
+    try { history.replaceState({...history.state,atlasView:view}, '', location.href); } catch {}
+  }
   function writeHash(push = false) {
     const hash = new URLSearchParams();
     if (state.map) hash.set('map', state.map);
@@ -111,6 +126,7 @@
     if (writtenHash === location.hash) { writtenHash = null; return; }
     clearTimeout(searchTimer);
     const hash = new URLSearchParams(location.hash.slice(1));
+    const savedView = history.state?.atlasView;
     const point = byId.get(hash.get('point')), previousMode = state.mode;
     state.page = hash.get('page') || '';
     state.point = point?.id || null;
@@ -140,6 +156,9 @@
     refreshResults();
     if (point) selectPoint(point, false, false, false);
     else { state.point = null; $('detail').hidden = true; refreshHighlight(); schedule(); }
+    if (savedView?.map === state.map && savedView.point === state.point && [savedView.scale,savedView.tx,savedView.ty].every(Number.isFinite)) {
+      Object.assign(state,{scale:savedView.scale,tx:savedView.tx,ty:savedView.ty}); schedule();
+    }
   }
   function refreshResults() {
     const terms = normalize(state.query).trim().split(/\s+/).filter(Boolean);
@@ -166,7 +185,7 @@
     $('map-title').textContent = state.mode === 'region' && region ? `${m.name || id}及周边 · ${state.tiles.length}张地图` : m.name || id;
     $('map-reference-id').textContent = `地图编号 ${id} · ${m.width} × ${m.height} 格`;
     const q = quality(id); $('map-quality').textContent = q.label; $('map-quality').classList.toggle('warning', q.warning);
-    $('map-quality').title = '渲染状态与场景身份是不同信息；图块可解码不代表已确认正常游戏用途。';
+    $('map-quality').title = '底图渲染状态';
     const notice = $('source-notice'), report = data.render?.maps?.[id];
     notice.replaceChildren();
     if (m.source_issue) {
@@ -179,10 +198,10 @@
         notice.append(button);
       }
     } else if (report?.status === 'unavailable') {
-      notice.append(element('p', report.errors?.some(e => e.includes('0xFFFF')) ? `${id}：本图引用的图块描述表为FF填充，源数据失效；不再显示误生成的黑图。` : `${id}：ROM图块源无法解码，没有可用底图。`));
+      notice.append(element('p', report.errors?.some(e => e.includes('0xFFFF')) ? `${id}：图块描述表为FF填充，底图不可用。` : `${id}：ROM图块源无法解码，底图不可用。`));
     }
-    if (report?.status === 'partial') notice.append(element('p', `${id}：本图存在局部图块或调色板缺口；已保留可显示内容，未将其标为完整实景。`));
-    if (report?.object_errors?.length) notice.append(element('p', `${id}：${report.object_errors.length}个大型固定对象未绘制，图形或调色板来源尚未解析；地形底图仍可浏览。`));
+    if (report?.status === 'partial') notice.append(element('p', `${id}：底图存在局部图块或调色板缺口。`));
+    if (report?.object_errors?.length) notice.append(element('p', `${id}：${report.object_errors.length}个大型固定对象的图形或调色板待解析。`));
     notice.hidden = !notice.childNodes.length;
     $('map-reference').open = report?.status === 'unavailable';
     $('mode-region').setAttribute('aria-pressed', String(state.mode === 'region'));
@@ -210,6 +229,7 @@
   }
   // A task can remain selected while its step changes the map being viewed.
   function selectPoint(p, sync = true, focus = true, move = true) {
+    if (sync) rememberView();
     lastFocus = document.activeElement;
     state.point = p.id;
     if (move && maps[p.map_id] && (state.map !== p.map_id || state.screen === 'world')) selectMap(p.map_id, false);
@@ -225,15 +245,34 @@
     renderGuide(p);
     $('detail-links').replaceChildren();
     for (const link of p.links || []) { const url = guideURL(link.page); if (url) { const a = element('a', '打开完整攻略 →'); a.href = url; $('detail-links').append(a); } }
-    if (p.target && maps[p.target]) {
+    if (p.kind === 'warp') {
       const destination = byId.get(p.target_point);
-      const go = element('button', destination ? `定位到 ${maps[p.target].name} ${number.get(destination.id)}号入口 →` : `打开 ${maps[p.target].name}（具体位置待补）→`);
-      go.append(element('span', ` [${p.target}]`, 'debug-only'));
-      go.onclick = () => {
-        if (destination) selectPoint(destination);
-        else { state.point = null; $('detail').hidden = true; selectMap(p.target); refreshResults(); }
-      };
-      $('detail-links').append(go);
+      const targetX = destination?.x ?? p.target_x, targetY = destination?.y ?? p.target_y;
+      const targetLocated = Number.isFinite(targetX) && Number.isFinite(targetY);
+      const targetKnown = !!maps[p.target];
+      $('detail-kind').textContent = '出入口';
+      $('detail-title').textContent = targetKnown ? `通往：${worldPicker.sceneName(p.target)}` : '去向待确认';
+      $('detail-text').textContent = p.reciprocal ? '双向连接' : '去向已记录';
+      $('detail-geometry').textContent = `${placed(p) ? `本图位置：（${p.x}, ${p.y}）` : '本图位置待定位'}\n${targetLocated ? `另一端位置：（${targetX}, ${targetY}）` : '另一端位置待定位'}`;
+      if (targetKnown) {
+        const params = new URLSearchParams({map:p.target,mode:'map',intent:'browse'});
+        if (state.page) params.set('page',state.page);
+        if (destination) params.set('point',destination.id);
+        const go = element('a', targetLocated ? '查看另一端入口 →' : '查看目的地图 →');
+        go.href = '#' + params.toString();
+        go.onclick = event => {
+          if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+          event.preventDefault(); rememberView();
+          Object.assign(state,{mode:'map',intent:'browse',section:'local',topic:'all'});
+          if (destination) selectPoint(destination);
+          else {
+            state.point = null; $('detail').hidden = true; selectMap(p.target,false);
+            if (targetLocated) focusPoint({map_id:p.target,geometry:'point',x:targetX,y:targetY});
+            refreshResults(); writeHash(true);
+          }
+        };
+        $('detail-links').append(go);
+      }
     }
     $('detail').hidden = false;
     refreshResults();
@@ -336,8 +375,10 @@
       node.classList.toggle('selected-area', $('show-markers').checked && !!selection && !placed(selection) && selection.map_id === t.id);
     }
     const tilesById = new Map(visible.map(t => [t.id,t]));
-    const candidates = $('show-markers').checked ? filtered.slice() : [];
-    if ($('show-markers').checked && selection && !candidates.includes(selection)) candidates.push(selection);
+    const candidates = $('show-markers').checked ? filtered.filter(p => p.kind !== 'warp') : [];
+    if ($('show-exits').checked) candidates.push(...exitGroups.filter(g => tilesById.has(g[0].map_id)).map(g => g.find(p => p.id === state.point) || g[0]));
+    if (selection && (selection.kind === 'warp' ? $('show-exits').checked : $('show-markers').checked) && !candidates.includes(selection)) candidates.push(selection);
+    const exitCount = candidates.filter(p => p.kind === 'warp').length;
     for (const node of tileNodes.values()) node.querySelector('.trigger-regions')?.remove();
     for (const p of candidates.filter(p => p.geometry === 'trigger')) {
       const tile = tilesById.get(p.map_id), node = tileNodes.get(p.map_id); if (!tile || !node) continue;
@@ -360,7 +401,7 @@
       if (x < -30 || y < -30 || x > width+30 || y > height+30) continue;
       const selected = p.id === state.point;
       if (selected) selectedPosition = {x,y};
-      const key = selected ? `selected:${p.id}` : `cell:${Math.floor(x/28)}:${Math.floor(y/28)}`;
+      const key = selected ? `selected:${p.id}` : p.kind === 'warp' ? `warp:${p.id}` : `cell:${Math.floor(x/28)}:${Math.floor(y/28)}`;
       if (!groups.has(key)) groups.set(key, {members:[], x:0, y:0, selected});
       const group = groups.get(key); group.members.push(p); group.x += x; group.y += y;
     }
@@ -375,9 +416,12 @@
       if (!node) { node = element('button'); markers.append(node); markerNodes.set(key,node); }
       node.className = `marker${count>1 ? ' cluster' : ''}${selected ? ' active' : ''}`;
       node.replaceChildren(count>1 ? element('span', String(count), 'badge cluster-badge') : badge(p));
-      if (count === 1 && p.kind === 'warp' && p.target_number && (s >= .65 || selected)) { const target = element('span', `${p.reciprocal ? '↔' : '→'} ${maps[p.target]?.name || '目的地'}`, 'warp-target'); target.append(element('span', ` · ${p.target} · ${p.target_number}号`, 'debug-only')); node.append(target); }
-      node.setAttribute('aria-label', count>1 ? `${count} 个地点，打开成员列表` : `${maps[p.map_id]?.name || p.map_id} ${number.get(p.id)}号 ${kinds[p.kind] || '地点'}：${p.title}`);
-      node.title = count>1 ? `${count} 个地点 · 点击逐项查看` : `${p.title} · ${maps[p.map_id]?.name || p.map_id}`;
+      if (count === 1 && p.kind === 'warp' && (selected || (s >= .65 && exitCount <= 6))) {
+        node.append(element('span', `通往：${worldPicker.sceneName(p.target)}`, 'warp-target'));
+      }
+      const pointLabel = p.kind === 'warp' ? `出入口：通往 ${worldPicker.sceneName(p.target)}，位置 ${p.x}, ${p.y}` : `${maps[p.map_id]?.name || p.map_id} ${number.get(p.id)}号 ${kinds[p.kind] || '地点'}：${p.title}`;
+      node.setAttribute('aria-label', count>1 ? `${count} 个地点，打开成员列表` : pointLabel);
+      node.title = count>1 ? `${count} 个地点 · 点击逐项查看` : pointLabel;
       node.onclick = count>1 ? () => showCluster(members, anchor) : () => selectPoint(p);
       node.style.left = x+'px'; node.style.top = y+'px'; node.setAttribute('aria-pressed', String(selected));
     }
@@ -385,8 +429,9 @@
     const tileIds = new Set(state.tiles.map(t => t.id));
     const areas = filtered.filter(p => tileIds.has(p.map_id) && !placed(p));
     $('area-hint').textContent = selection && !placed(selection) ? `${selection.title}：${geometryLabel(selection)} 虚线框表示所属地图。` : areas.length ? `还有 ${areas.length} 项内容未标出精确位置，可在左侧查看。` : '';
-    $('view-status').textContent = `${Math.round(s*100)}%${$('debug-mode').checked ? ` · ${visible.length} / ${state.tiles.length} 张底图` : ''}${$('show-markers').checked ? '' : ' · 标记已隐藏'}`;
+    $('view-status').textContent = `${Math.round(s*100)}%${$('debug-mode').checked ? ` · ${visible.length} / ${state.tiles.length} 张底图` : ''}${$('show-markers').checked ? '' : ' · 看点已隐藏'}${$('show-exits').checked ? '' : ' · 出入口已隐藏'}`;
     $('empty').textContent = state.map ? (state.tiles.length ? '' : '地图图片暂不可用，请从左侧继续查看攻略。') : '请选择要查看的地点。';
+    rememberView();
   }
   function zoom(factor, x = viewport.clientWidth/2, y = viewport.clientHeight/2) {
     const old = state.scale, next = Math.max(.01, Math.min(12, old*factor));
@@ -399,6 +444,11 @@
   $('reset').onclick = () => { state.point = null; $('detail').hidden = true; selectMap(state.map); refreshHighlight(); };
   $('boundaries').onchange = () => { schedule(); writeHash(); };
   $('show-markers').onchange = () => { schedule(); writeHash(); };
+  $('show-exits').onchange = () => {
+    try { localStorage.setItem('mercury-atlas-show-exits', $('show-exits').checked ? '1' : '0'); } catch {}
+    if (!$('show-exits').checked && byId.get(state.point)?.kind === 'warp') closeDetail();
+    schedule();
+  };
   for (const button of document.querySelectorAll('[data-intent]')) button.onclick = () => setNavigation({intent:button.dataset.intent});
   for (const button of document.querySelectorAll('[data-section]')) button.onclick = () => setNavigation({section:button.dataset.section,topic:'all'});
   for (const input of $('finder-types').querySelectorAll('input')) input.onchange = () => setNavigation({findType:input.value});

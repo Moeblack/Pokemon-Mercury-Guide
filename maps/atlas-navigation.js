@@ -64,7 +64,7 @@ window.createAtlasNavigation = function(api) {
     if(state.topic!=='all'){
       parent.append(action('← 返回本地概览',()=>onState({topic:'all'}),'back-overview'),el('h3',`${categories[state.topic]}记录`,'nav-heading'));
       const subjectRows=groups(rows);
-      if(!subjectRows.length)empty(parent,'尚未收录这类内容','没有记录不代表游戏里不存在。可查看其它类别或完整攻略。');
+      if(!subjectRows.length)empty(parent,'尚未收录这类内容','可查看其它类别或完整攻略。');
       else paged(parent,subjectRows,g=>subject(g,true));
       total=`本地图 · ${subjectRows.length} 个条目 / ${rows.length} 条地点记录`;return;
     }
@@ -122,6 +122,10 @@ window.createAtlasNavigation = function(api) {
     for(const b of document.querySelectorAll('[data-intent]')){const active=b.dataset.intent===state.intent;b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;}
     for(const b of document.querySelectorAll('[data-section]')){const active=b.dataset.section===state.section;b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;}
     $('browse-tabs').hidden=state.intent!=='browse';$('finder-types').hidden=state.intent!=='find';
+    $('exit-controls').hidden=!state.map||state.screen==='world';
+    const exitCount=points.filter(p=>p.map_id===state.map&&p.kind==='warp').length;
+    const exitStatus=exitCount?`本场景 ${exitCount} 个出入口`:'本场景暂无已定位的出入口';
+    if($('exit-status').textContent!==exitStatus)$('exit-status').textContent=exitStatus;
     $('search-panel').hidden=state.intent==='browse'&&state.section!=='places';
     $('search-label').textContent=state.intent==='find'?'想找什么攻略？':'想去哪个地方？';
     $('search').placeholder=state.intent==='find'?'宝可梦、道具、任务、训练家…':'地图名称或编号…';

@@ -56,5 +56,9 @@ window.createWorldPicker = function(api) {
     const grid=el('div',undefined,'world-place-grid');for(const row of primary)grid.append(card(row));results.append(grid);
     if(others.length){const details=el('details',undefined,'world-other-places');details.append(el('summary',`建筑、洞穴与其他场景（${others.length}）`));const more=el('div',undefined,'world-place-grid');for(const row of others)more.append(card(row));details.append(more);details.open=!primary.length;results.append(details);}
   }
-  return {render,sectionFor:id=>sectionOf.get(id)||'',openSection:choose};
+  function sceneName(id) {
+    const rows=ordered(sectionOf.get(id)), index=rows.findIndex(row=>row.id===id);
+    return index<0 ? maps[id]?.name||'目的地待确认' : `${maps[id].name} · ${types[rows[index].type]||'场景'} ${index+1}`;
+  }
+  return {render,sceneName,sectionFor:id=>sectionOf.get(id)||'',openSection:choose};
 };
