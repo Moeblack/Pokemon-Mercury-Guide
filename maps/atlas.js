@@ -375,7 +375,8 @@
       node.classList.toggle('selected-area', $('show-markers').checked && !!selection && !placed(selection) && selection.map_id === t.id);
     }
     const tilesById = new Map(visible.map(t => [t.id,t]));
-    const candidates = $('show-markers').checked ? filtered.filter(p => p.kind !== 'warp') : [];
+    const mapPoints = state.intent === 'browse' ? points.filter(p => tilesById.has(p.map_id)) : filtered;
+    const candidates = $('show-markers').checked ? mapPoints.filter(p => p.kind !== 'warp') : [];
     if ($('show-exits').checked) candidates.push(...exitGroups.filter(g => tilesById.has(g[0].map_id)).map(g => g.find(p => p.id === state.point) || g[0]));
     if (selection && (selection.kind === 'warp' ? $('show-exits').checked : $('show-markers').checked) && !candidates.includes(selection)) candidates.push(selection);
     const exitCount = candidates.filter(p => p.kind === 'warp').length;
